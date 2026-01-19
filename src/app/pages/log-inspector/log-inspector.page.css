@@ -1,0 +1,177 @@
+.log-inspector-container {
+  width: min(1100px, 100%);
+  margin-inline: auto;
+}
+
+:host ::ng-deep .log-inspector-container .p-card {
+  width: 100%;
+}
+
+:host ::ng-deep .log-table table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.control-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.control-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+}
+
+.control-row-input {
+  min-width: 240px;
+  overflow: hidden;
+}
+
+.control-row-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.control-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  grid-column: span 3;
+  min-width: 0;
+}
+
+.field label {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.field :is(input, p-multiselect) {
+  width: 100%;
+}
+
+:host ::ng-deep .field .p-multiselect {
+  width: 100%;
+}
+
+.polling {
+  grid-column: span 1;
+}
+
+.polling-ms {
+  grid-column: span 2;
+}
+
+.polling {
+  display: flex;
+  flex-direction: column;
+}
+
+:host ::ng-deep .polling .p-toggleswitch {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.search-field {
+  grid-column: span 9;
+}
+
+@media (max-width: 900px) {
+  .field {
+    grid-column: span 6;
+  }
+
+  .search-field {
+    grid-column: span 6;
+  }
+}
+
+@media (max-width: 600px) {
+  .control-row {
+    grid-template-columns: 1fr;
+  }
+
+  .control-row-actions {
+    grid-column: auto;
+  }
+
+  .field {
+    grid-column: span 12;
+  }
+
+  .search-field {
+    grid-column: span 12;
+  }
+}
+
+.log-file-field {
+  width: 100%;
+}
+
+.log-file-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.auto-width-input {
+  max-width: 100%;
+}
+
+:host ::ng-deep .log-table .p-datatable-wrapper {
+  max-height: 70vh;
+}
+
+.mono {
+  font-family: var(--font-family-monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
+  font-size: 0.85rem;
+}
+
+.message-cell {
+  padding: 0.25rem 0.5rem;
+}
+
+.message-pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: var(--font-family-monospace, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace);
+  font-size: 0.85rem;
+}
+
+:host ::ng-deep .log-row-error td {
+  background: color-mix(in srgb, var(--red-500, #ef4444) 12%, transparent);
+}
+
+:host ::ng-deep .log-row-new td {
+  animation: log-entry-pulse 1.2s ease-out;
+}
+
+@keyframes log-entry-pulse {
+  0% {
+    background: color-mix(in srgb, var(--primary-color, #3b82f6) 20%, transparent);
+  }
+  100% {
+    background: transparent;
+  }
+}

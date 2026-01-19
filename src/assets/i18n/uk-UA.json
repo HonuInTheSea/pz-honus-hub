@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Скасувати",
+    "save": "зберегти",
+    "browse": "Огляд",
+    "yes": "Так",
+    "no": "Ні",
+    "loadingContent": "Завантаження вмісту...",
+    "next": "Далі",
+    "back": "Назад",
+    "finish": "Завершити"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Мова",
+    "languagePlaceholder": "Виберіть мову",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "МОД ФІЛЬТРИ",
+      "modCollectionFilters": "ФІЛЬТРИ КОЛЕКЦІЇ MOD",
+      "actions": "ДІЇ",
+      "getStarted": "Почніть роботу",
+      "resources": "Ресурси",
+      "dangerZone": "НЕБЕЗПЕЧНА ЗОНА"
+    },
+    "items": {
+      "dashboard": "Приладова панель",
+      "logInspector": "Інспектор журналу",
+      "configureFolders": "Налаштувати папки",
+      "setSteamApiKey": "Встановити ключ Steam API",
+      "syncHonu": "Синхронізація Honu Mod Info QoL",
+      "syncLocal": "Синхронізація локальних модифікованих даних",
+      "syncWorkshop": "Синхронізація з майстернею Steam",
+      "changelog": "Журнал змін",
+      "documentation": "Документація",
+      "viewSource": "Перегляд вихідного коду",
+      "projectZomboid": "Проект Zomboid",
+      "pzWiki": "Офіційна Wiki проекту Zomboid",
+      "b41Map": "B41 Карта",
+      "b42Map": "B42 Карта",
+      "workshop": "Проект Zomboid Майстерня Steam",
+      "subreddit": "r/projectzomboid",
+      "discord": "Проект Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Неофіційне відображення PZ",
+      "honuWorkshop": "Майстерня Steam HonuInTheSea",
+      "supportKofi": "Підтримка на Ko-fi",
+      "resetApp": "Скинути додаток",
+      "resetAppTooltip": "Скинути налаштування вікна та видалити збережені дані",
+      "myMods": "Мої моди"
+    },
+    "filters": {
+      "adultLabel": "Має вміст для дорослих",
+      "adultTooltip": "Фільтруйте модифікації, у яких метадані Steam повідомляють, що maybe_inappropriate_sex відповідає дійсності.",
+      "rulesLabel": "Має правила",
+      "rulesTooltip": "Mod містить оператор require, incompatible, loadModAfter, loadModBefore у своєму файлі mod.info",
+      "missingSteamLabel": "Відсутні дані Steam",
+      "missingSteamTooltip": "Можливо, мод було позначено як приватне або видалено з Майстерні Steam",
+      "outdatedLabel": "Застарілі моди",
+      "outdatedTooltip": "Щоб отримати останню версію з Майстерні Steam, може знадобитися скасувати підписку та повторно підписатися"
+    },
+    "collections": {
+      "searchLabel": "Пошук колекцій",
+      "searchPlaceholder": "Пошук колекцій",
+      "sortLabel": "Сортувати за",
+      "periodLabel": "Протягом періоду часу",
+      "tagsLabel": "Теги",
+      "tagsPlaceholder": "Виберіть теги",
+      "sortMostPopular": "Найпопулярніший",
+      "sortMostRecent": "Останні",
+      "sortLastUpdated": "Останнє оновлення",
+      "periodToday": "Сьогодні",
+      "periodWeek": "Один тиждень",
+      "periodThirtyDays": "Тридцять днів",
+      "periodThreeMonths": "Три місяці",
+      "periodSixMonths": "Шість місяців",
+      "periodYear": "Один рік"
+    },
+    "presetsUnavailable": "Спочатку встановіть папку користувача Project Zomboid і/або визначте попередні налаштування.",
+    "steamApi": {
+      "dialogTitle": "Встановити ключ веб-API Steam",
+      "dialogIntro": "Введіть свій ключ Steam Web API. Цей ключ зберігається локально на вашій машині.",
+      "keyLabel": "Ключ веб-API Steam",
+      "needKey": "Потрібен ключ?",
+      "getKeyLink": "Отримайте ключ Steam Web API",
+      "helpButton": "Як створити ключ веб-API Steam",
+      "helpTitle": "Як створити ключ веб-API Steam",
+      "helpCardTitle": "Як зареєструвати ключ веб-API Steam",
+      "helpCardBody": "Цей посібник містить покрокову інструкцію щодо реєстрації ключа веб-API Steam. Ключ Steam Web API дозволяє програмам безпечно отримувати доступ до певних даних вашого облікового запису Steam, таких як бібліотеки ігор або статистика, якщо ви авторизуєте їх на це.",
+      "step1Title": "1. Передумови",
+      "step1Intro": "Перш ніж зареєструвати ключ Steam Web API, переконайтеся, що:",
+      "step1Bullet1": "У вас є активний обліковий запис Steam із хорошою репутацією, захищений Steam Guard (електронна пошта або мобільний автентифікатор).",
+      "step1Bullet2": "У вашому обліковому записі є принаймні одна придбана гра. Абсолютно нові або порожні облікові записи не можуть отримати ключ API.",
+      "step1Bullet3": "Ви використовуєте надійний пристрій і мережу (ніколи не реєструйте та не переглядайте свій ключ на загальнодоступному чи спільному комп’ютері).",
+      "step2Title": "2. Важливі примітки щодо безпеки",
+      "step2Intro": "Ваш ключ Steam Web API є конфіденційною інформацією. Кожен, хто має ваш ключ, може робити запити API від вашого імені. Розглядайте це як пароль:",
+      "step2Bullet1": "Ніколи не діліться своїм ключем з іншими людьми та ніколи не публікуйте його публічно (наприклад, на форумах або GitHub).",
+      "step2Bullet2": "Вставляйте свій ключ лише в інструменти або веб-сайти, яким ви повністю довіряєте.",
+      "step2Bullet3": "Якщо ви підозрюєте, що ваш ключ було розкрито, негайно відкликайте його та створіть новий.",
+      "step3Title": "3. Крок за кроком: реєстрація ключа веб-API Steam",
+      "step3_1Title": "Крок 1. Увійдіть у Steam",
+      "step3_1Bullet1": "Відкрийте веб-переглядач і перейдіть на <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Натисніть <strong>\"Увійти\"</strong> у верхньому правому куті.",
+      "step3_1Bullet3": "Введіть ім’я та пароль свого облікового запису Steam.",
+      "step3_1Bullet4": "Якщо буде запропоновано, завершіть перевірку Steam Guard.",
+      "step3_2Title": "Крок 2. Відкрийте сторінку Steam Web API Key",
+      "step3_2Bullet1": "Увійшовши в систему, відкрийте сторінку реєстрації ключа Steam Web API: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "На сторінці відобразиться короткий опис Steam Web API і форма під назвою <strong>\"Зареєструватися для отримання нового ключа Steam Web API.\"</strong>",
+      "step3_3Title": "Крок 3. Введіть доменне ім’я та погодьтеся з умовами",
+      "step3_3Intro": "На реєстраційній формі:",
+      "step3_3Bullet1": "У полі <strong>\"Доменне ім'я\"</strong> введіть домен веб-сайту або служби, які використовуватимуть ключ. <ul class=\"p-ml-3\"><li>Якщо у вас немає домену, ви можете ввести покажчик місця заповнення, наприклад <code>localhost</code>, <code>127.0.0.1</code> або <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Прочитайте Умови використання Steam Web API.",
+      "step3_3Bullet3": "Поставте прапорець, щоб підтвердити свою згоду з умовами.",
+      "step3_3Bullet4": "Натисніть кнопку <strong>\"Зареєструватися\"</strong>, щоб надіслати форму.",
+      "step3_4Title": "Крок 4. Перегляньте та скопіюйте новий ключ Steam Web API",
+      "step3_4Intro": "Після успішної реєстрації:",
+      "step3_4Bullet1": "Сторінка перезавантажується, і вгорі відображається ваш ключ Steam Web API.",
+      "step3_4Bullet2": "Ключ — це довгий рядок літер і цифр (наприклад: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Виділіть весь ключ і скопіюйте його (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Зберігайте його в безпечному місці, наприклад у менеджері паролів або зашифрованому додатку для нотаток.",
+      "step4Title": "4. Основний приклад використання вашого ключа веб-API Steam",
+      "step4Intro": "Отримавши ключ, ви можете викликати кінцеві точки Steam Web API, додавши його як параметр <code>key=</code> до URL-адреси. Наприклад, простий HTTP-запит може виглядати так (замініть <code>YOURKEYHERE</code> своїм справжнім ключем):",
+      "step4Outro": "Точні URL-адреси та параметри залежать від того, який інтерфейс Steam Web API ви використовуєте. Завжди звертайтеся до офіційної документації для кінцевих точок, які вам потрібні.",
+      "step5Title": "5. Відкликання або відновлення вашого ключа веб-API Steam",
+      "step5Intro": "Якщо вам більше не потрібен ваш ключ Steam Web API або ви вважаєте, що його було зламано, відкликайте його:",
+      "step5Bullet1": "Увійдіть у свій обліковий запис Steam, якщо ви ще не ввійшли.",
+      "step5Bullet2": "Знову відкрийте <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>.",
+      "step5Bullet3": "Натисніть кнопку <strong>«Відкликати мій ключ веб-API Steam»</strong>.",
+      "step5Bullet4": "Якщо вам знадобиться новий ключ пізніше, поверніться на ту саму сторінку та зареєструйтеся знову, виконавши описані вище дії.",
+      "step6Title": "6. Поради щодо усунення несправностей",
+      "step6Intro": "Під час спроби зареєструвати ключ ви можете побачити одну з таких проблем:",
+      "step6Bullet1": "<strong>Повідомлення:</strong> <em>\"Вам буде надано доступ до ключів Steam Web API, коли у вас будуть ігри у вашому обліковому записі Steam.\"</em> У цьому випадку ваш обліковий запис ще не відповідає мінімальним вимогам. Придбайте принаймні одну гру в Steam, дочекайтеся завершення покупки та повторіть спробу пізніше.",
+      "step6Bullet2": "<strong>Сторінка постійно просить вас увійти</strong> - переконайтеся, що у вашому веб-переглядачі ввімкнено файли cookie та JavaScript і що ви входите, використовуючи правильний обліковий запис.",
+      "step6Bullet3": "<strong>Проблеми безпеки</strong>. Якщо будь-який сторонній сайт або особа просить ваш ключ, і ви не знаєте, чому, не діліться ним. Відкликайте свій ключ і змініть пароль Steam, якщо ви вважаєте, що його було розкрито.",
+      "footerNote": "Тепер у вас є зареєстрований ключ Steam Web API і базове розуміння того, як ним безпечно керувати. Тримайте цю сторінку під рукою як довідку, коли вам потрібно буде зареєструвати, використати або відкликати свій ключ."
+    },
+    "folders": {
+      "dialogTitle": "Налаштувати папки"
+    }
+  },
+  "changelog": {
+    "title": "Журнал змін",
+    "events": {
+      "initialRelease": {
+        "title": "Перший випуск",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Перша публічна збірка Honu's Project Zomboid Hub."
+      }
+    }
+  },
+  "docs": {
+    "title": "Документація",
+    "intro": "Honu's Hub допоможе вам переглядати, перевіряти та керувати вашим локальним проектом Zomboid завдяки інтеграції з робочим столом через Tauri.",
+    "toc": {
+      "aria": "Зміст",
+      "title": "Зміст",
+      "overview": "Огляд",
+      "workflow": "робочий процес",
+      "data": "Дані, які використовує програма",
+      "features": "особливості",
+      "mediaPlayer": "Медіаплеєр",
+      "logInspector": "Інспектор журналу",
+      "folderSetup": "Налаштування папки",
+      "tauri": "Інтеграція з робочим столом (Tauri).",
+      "privacy": "Конфіденційність і зберігання",
+      "troubleshooting": "Усунення несправностей",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "Огляд",
+      "body": "Програма сканує вибраний каталог модів, отримує метадані із загальних угод про модифікацію Project Zomboid і представляє все в таблиці та зведеній інформаційній панелі."
+    },
+    "workflow": {
+      "title": "робочий процес",
+      "intro": "Дотримуйтесь цього наскрізного потоку, щоб підключити папки, синхронізувати метадані та створити вихід Honu Mod Info QoL.",
+      "step1": {
+        "title": "Папки карт",
+        "body": "Відкрийте <strong>Налаштувати папки</strong> на бічній панелі дій і встановіть свою гру Project Zomboid, майстерню та каталоги користувачів.",
+        "screenshot": "Знімок екрана: налаштування папок"
+      },
+      "step2": {
+        "title": "Створіть/введіть ключ Майстерні Steam",
+        "body": "Використовуйте <strong>Set Steam API Key</strong>, щоб вставити свій ключ, щоб програма могла отримати метадані Workshop.",
+        "screenshot": "Знімок екрана: встановити ключ Steam API"
+      },
+      "step3": {
+        "title": "Синхронізувати локальні дані мода",
+        "body": "Запустіть <strong>Синхронізувати локальні дані модів</strong>, щоб відсканувати папку Workshop і створити локальний список модів.",
+        "screenshot": "Знімок екрана: синхронізація локальних даних мод"
+      },
+      "step4": {
+        "title": "Синхронізація з Майстернею Steam",
+        "body": "Запустіть <strong>Sync With Steam Workshop</strong>, щоб отримати назви семінарів, авторів, розміри та додаткові метадані.",
+        "screenshot": "Знімок екрана: синхронізація з майстернею Steam"
+      },
+      "step5": {
+        "title": "Синхронізація Honu Mod Info QoL",
+        "body": "Використовуйте <strong>Sync Honu's Mod Info QoL</strong>, щоб створити/оновити <code>honus_miqol_db.lua</code> в папці користувача Project Zomboid.",
+        "screenshot": "Знімок екрана: Sync Honu Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Дані, які використовує програма",
+      "intro": "Програма створює список модів на основі інформації, доступної на диску.",
+      "bullet1": "<strong>Шлях до папки мод</strong> – визначений абсолютний шлях до каталогу мода.",
+      "bullet2": "<strong>Ідентифікатор мода</strong> – витягується з метаданих мода, якщо вони доступні (зазвичай з <code>mod.info</code>).",
+      "bullet3": "<strong>Назва</strong> – відображуване ім’я, отримане з метаданих і/або іменування папок.",
+      "bullet4": "<strong>Ідентифікатор майстерні (необов’язково)</strong> – якщо виявлено число, програма вмикає кнопку посилання на майстерню Steam.",
+      "bullet5": "<strong>Індикатори стану/справності</strong> – основні сигнали, такі як відсутність або неповність метаданих (якщо їх можна виявити).",
+      "outro": "Не всі моди містять повні метадані. Якщо поля відсутні, інтерфейс користувача відображатиме найкращі значення та може вимикати дії, які потребують певних даних (наприклад, посилання Steam)."
+    },
+    "features": {
+      "title": "особливості",
+      "bullet1": "<strong>Таблиця модів</strong> – містить список виявлених модів із ключовими полями (ім’я, ідентифікатор, посилання на майстерню, якщо доступне, та шлях).",
+      "bullet2": "<strong>Деталі рядка</strong> – розгорніть рядок, щоб побачити більше інформації про мод (якщо доступно).",
+      "bullet3": "<strong>Відкрити в Steam</strong> – відкриває сторінку майстерні у вашому браузері за умовчанням для модів із дійсним ідентифікатором майстерні.",
+      "bullet4": "<strong>Відкрити папку</strong> - відкриває вибрану папку мода у вашому файловому провіднику.",
+      "mediaPlayer": "<strong>Медіаплеєр</strong> - відтворюйте музичні треки Project Zomboid із бічної панелі. Див. <a routerLink=\"/documentation\" fragment=\"media-player\">Медіаплеєр</a>.",
+      "logInspectorPrefix": "<strong>Інспектор журналів</strong> – завантажуйте та фільтруйте файли журналів (наприклад, <code>console.txt</code>), щоб швидко знаходити помилки та попередження. див",
+      "logInspectorLink": "Інспектор журналу",
+      "bullet6": "<strong>Інформаційна панель</strong> – показує швидку статистику (наприклад, загальну кількість виявлених мод) та інші індикатори високого рівня."
+    },
+    "mediaPlayer": {
+      "title": "Медіаплеєр",
+      "intro": "Бічна панель містить легкий музичний плеєр, який може сканувати звукові доріжки Project Zomboid (OGG) і відтворювати їх у програмі.",
+      "bullet1": "<strong>Список відтворення</strong> – показує виявлені композиції та основні метадані (назва/виконавець/альбом, якщо доступно).",
+      "bullet2": "<strong>Відтворення</strong> - відтворення/пауза плюс попередній/наступний трек.",
+      "bullet3": "<strong>Пошук + гучність</strong> - гортайте композицію та регулюйте гучність/вимкнення звуку."
+    },
+    "logInspector": {
+      "title": "Інспектор журналу",
+      "intro": "Інспектор журналів допомагає відкривати та фільтрувати файли журналів (наприклад, <code>console.txt</code>), щоб усунути збої, проблеми із завантаженням модів і проблеми із запуском сервера.",
+      "bullet1": "<strong>Виберіть файл</strong> – знайдіть будь-який файл <code>.txt</code> або <code>.log</code> або скористайтеся шляхом за умовчанням, якщо він доступний.",
+      "bullet2": "<strong>Фільтр</strong> – виберіть рівні журналу (ПОМИЛКА/ПОПЕРЕДЖЕННЯ/ЖУРНАЛ/НАЛАШТУВАННЯ/СЛЕДУВАННЯ), установіть вікно дати/часу та обмежте максимальну кількість відображених записів.",
+      "bullet3": "<strong>Пошук</strong> – фільтруйте записи за текстом у проаналізованому повідомленні та вихідному рядку.",
+      "bullet4": "<strong>Опитування в реальному часі</strong> - необов'язково оновлюйте за таймером, щоб спостерігати за оновленням журналів під час роботи гри/сервера.",
+      "bullet5": "<strong>Очистити</strong> – скоротити вибраний файл журналу (використовуйте обережно)."
+    },
+    "folderSetup": {
+      "title": "Налаштування папки",
+      "step1": "Відкрийте сторінку <strong>Mods</strong> на лівій бічній панелі (під <em>HOME</em>).",
+      "step2": "Використовуйте <strong>Огляд папки Mods</strong> у меню <em>ACTIONS</em>, щоб вибрати каталог модів Project Zomboid (зазвичай <code>projectzomboid/mods</code>).",
+      "step3": "Після вибору програма сканує каталог і заповнює таблицю модів і інформаційну панель.",
+      "tip": "Порада: якщо ви змінюєте комп’ютер або переміщуєте каталог модів, просто перегляньте ще раз, щоб оновити збережений шлях."
+    },
+    "tauri": {
+      "title": "Інтеграція з робочим столом (Tauri).",
+      "bullet1": "<strong>Доступ до файлової системи</strong> – перегляд і сканування каталогу виконується через оболонку робочого столу.",
+      "bullet2": "<strong>Відкрити зовнішні посилання</strong> – посилання Steam Workshop відкриваються за допомогою браузера ОС за умовчанням.",
+      "bullet3": "<strong>Відкрити папки</strong> - запускає файловий провідник ОС, зосереджений на каталозі мода."
+    },
+    "privacy": {
+      "title": "Конфіденційність і зберігання",
+      "bullet1": "<strong>Локальні дані</strong> – вибраний шлях до папки mods і результати сканування можуть кешуватися локально для покращення UX."
+    },
+    "troubleshooting": {
+      "title": "Усунення несправностей",
+      "bullet1": "<strong>Після сканування модифікації не з’являються</strong> – переконайтеся, що вибрана папка є вашим фактичним каталогом модифікацій Project Zomboid і містить підтеки модифікацій.",
+      "bullet2": "<strong>Посилання Steam вимкнено</strong> - переконайтеся, що мод має дійсний числовий ідентифікатор майстерні (не всі моди засновані на майстерні).",
+      "bullet3": "<strong>Відкрити папку нічого не робить</strong> – переконайтеся, що серверна частина Tauri запущена та дозволи ОС дозволяють відкривати провідник файлів."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Чи редагує програма мої моди?",
+      "a1": "Ні. Основний робочий процес доступний лише для читання: він сканує папки та відображає метадані. Такі дії, як відкриття папок або посилань на Workshop, не змінюють файли модів.",
+      "q2": "Чому не вистачає певної інформації про мод?",
+      "a2": "Моди відрізняються за тим, наскільки послідовно вони включають метадані. Якщо такі поля, як ідентифікатор або ідентифікатор майстерні, відсутні, програма покаже, що може, і вимкне функції, які залежать від цих полів."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Назва",
+      "modId": "Ідентифікатор мода",
+      "author": "Автор",
+      "version": "Версія моду",
+      "versionMin": "Мінімальна версія гри",
+      "versionMax": "Максимальна версія гри",
+      "url": "URL",
+      "description": "Опис",
+      "tags": "Теги",
+      "noTags": "Немає тегів",
+      "packs": "Пакети",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Назва майстерні",
+      "workshopCreator": "Творець майстерні",
+      "fileSize": "Розмір файлу",
+      "timeCreated": "Час створення",
+      "timeUpdated": "Час оновлення",
+      "workshopViews": "Перегляди майстерні",
+      "workshopSubscriptions": "Підписки на майстерню",
+      "adultContent": "Має вміст для дорослих"
+    },
+    "links": {
+      "requiredMods": "Потрібні моди",
+      "loadAfter": "Завантажити мод після",
+      "loadBefore": "Завантажити мод до",
+      "incompatibleMods": "Несумісні моди",
+      "requiredBy": "Потрібно",
+      "incompatibleWith": "Несумісний із"
+    },
+    "buttons": {
+      "visitWorkshop": "Відвідайте сторінку майстерні Steam",
+      "authorWorkshop": "Сторінку майстерні Steam автора",
+      "openFolder": "Відкрийте папку модів"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Це поле доступне лише для читання та заповнюється з mod.info.",
+      "steamReadonly": "Це поле доступне лише для читання та заповнюється з Майстерні Steam.",
+      "modMissing": "Не вдалося знайти наступний мод",
+      "syncToActivate": "Синхронізувати з Майстернею Steam для активації",
+      "modFolderUnavailable": "Шлях папки моду недоступний."
+    }
+  },
+  "tags": {
+    "animals": "Тварини",
+    "audio": "Аудіо",
+    "balance": "Баланс",
+    "build_41": "Збірка 41",
+    "build_42": "Збірка 42",
+    "build_40": "Збірка 40",
+    "buildings": "Будівлі",
+    "clothing_armor": "Одяг/Обладунки",
+    "farming": "Сільське господарство",
+    "food": "Їжа",
+    "framework": "Framework",
+    "hardmode": "Hardmode",
+    "interface": "Інтерфейс",
+    "items": "Елементи",
+    "language_translation": "Мова/Переклад",
+    "literature": "Література",
+    "map": "Карта",
+    "military": "Військові",
+    "misc": "Різне",
+    "models": "Моделі",
+    "multiplayer": "Мультіплеер",
+    "pop_culture": "Поп-культура",
+    "qol": "QoL",
+    "realistic": "Реалістичний",
+    "silly_fun": "Дурний/веселий",
+    "skills": "Навички",
+    "textures": "Текстури",
+    "traits": "Риси",
+    "vehicles": "Транспортні засоби",
+    "weapons": "Зброя",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Теги",
+    "matchLabel": "Збіг",
+    "matchAny": "АБО",
+    "matchAll": "І",
+    "placeholder": "Виберіть теги"
+  },
+  "modsTable": {
+    "clearFilters": "Очистити",
+    "searchPlaceholder": "Пошук за ключовим словом",
+    "detailsTitle": "Деталі мода",
+    "columns": {
+      "name": "Назва",
+      "author": "Автор",
+      "workshopId": "Ідентифікатор майстерні",
+      "lastModified": "Дата останньої зміни"
+    },
+    "filters": {
+      "name": "Пошук за назвою",
+      "author": "Пошук за автором",
+      "workshopId": "Пошук за ідентифікатором майстерні",
+      "date": "Дата фільтра"
+    }
+  },
+  "folders": {
+    "title": "Установити необхідні папки",
+    "description": "Ці папки використовуються для сканування ваших модів і читання деталей встановлення Project Zomboid.",
+    "gameDirLabel": "Папка гри Project Zomboid",
+    "workshopDirLabel": "Папка локальних модів (майстерня Steam)",
+    "userDirLabel": "Папка користувача Project Zomboid (необов’язково)",
+    "userDirNote": "Використовується для експорту попередніх налаштувань сервера та (необов’язково) розширених цілей застосування."
+  },
+  "modsPage": {
+    "toastHelp": "Де це знайти?",
+    "workshopPrompt": {
+      "title": "Отримати дані майстерні Steam",
+      "body": "Ви хочете отримати останні метадані з майстерні Steam для своїх модів?",
+      "alwaysFetch": "Завжди отримувати автоматично без запиту"
+    },
+    "loadingLocal": "Сканування локальних даних модів...",
+    "loadingWorkshop": "Отримання даних майстерні Steam...",
+    "loading": "Завантаження даних..."
+  },
+  "onboarding": {
+    "title": "Почати",
+    "steps": {
+      "welcome": "Ласкаво просимо",
+      "folders": "Папки",
+      "steamKey": "Ключ Steam API",
+      "tips": "Поради"
+    },
+    "welcome": {
+      "title": "Ласкаво просимо до Project Zomboid Mod Manager",
+      "body": "Це швидке налаштування допоможе підключити папки, додати ключ Steam Web API та почати синхронізацію модів.",
+      "bullet1": "Виберіть папки Project Zomboid.",
+      "bullet2": "Додайте ключ Steam Web API для метаданих Workshop.",
+      "bullet3": "Завершіть налаштування та почніть керувати модами."
+    },
+    "tips": {
+      "title": "Швидкі поради",
+      "bullet1": "Ви можете оновлювати папки та ключ Steam API будь-коли з бічної панелі.",
+      "bullet2": "Спочатку запустіть «Синхронізувати локальні дані модів», перш ніж синхронізувати метадані Workshop.",
+      "bullet3": "Використовуйте фільтри модів, щоб швидко звузити список."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Помилка синхронізації Honu Mod Info QoL",
+        "missingUserDetail": "Користувальницька папка Zomboid проекту не налаштована.",
+        "successSummary": "Honu Mod Info QoL Synced",
+        "successCreatedDetail": "honus_miqol_db.lua створено.",
+        "successUpdatedDetail": "honus_miqol_db.lua оновлено.",
+        "failedDetail": "Не вдалося синхронізувати Honu Mod Info QoL."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Переміщення даних",
+        "detail": "Ваші локальні дані мода виконуються оновлено. Виконується нове сканування, щоб оновити залежності."
+      },
+      "syncInProgress": {
+        "summary": "Виконується синхронізація",
+        "detail": "Операція синхронізації вже запущена. Зачекайте, поки вона завершиться."
+      },
+      "localSyncComplete": {
+        "summary": "Локальна синхронізація модів завершена",
+        "detail": "Локальні дані модів успішно оновлено."
+      },
+      "localSyncFailed": {
+        "summary": "Помилка синхронізації локальних модів",
+        "detail": "Не вдалося синхронізувати локальні моди."
+      },
+      "invalidDirectory": {
+        "summary": "Недійсний каталог",
+        "detail": "Вибрана папка не є дійсним каталогом Project Zomboid Workshop (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Потрібен ключ Steam Web API",
+        "detail": "Будь ласка, скористайтеся «Установити ключ Steam API» у меню, а потім спробуйте синхронізувати ще раз."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Метадані майстерні не повернуто; нічого не збереглося."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop частково синхронізовано",
+        "detail": "Отримано {{received}} з {{total}} елементів майстерні. Відсутні ідентифікатори: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop Synced",
+        "detail": "Метадані майстерні успішно збережено."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API Unauthorized",
+        "detail": "Steam повернув 401 Unauthorized. Перевірте ключ веб-інтерфейсу Steam і повторіть спробу."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Не вдалося синхронізувати метадані Steam Workshop."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Попереднє ім’я вже існує",
+        "detail": "Будь ласка, виберіть інше ім’я для «{{name}}»."
+      },
+      "removeFailed": {
+        "summary": "Видалити не вдалося",
+        "missingUserDetail": "Каталог користувача Zomboid проекту не налаштовано.",
+        "missingModDetail": "Ідентифікатор мода не знайдено в mods.txt.",
+        "failedDetail": "Не вдалося видалити мод із Preset."
+      },
+      "removed": {
+        "summary": "Видалено",
+        "detailMultiple": "Вибрані моди видалено зі стилю.",
+        "detailSingle": "Mod видалено зі стилю."
+      },
+      "presetUpdated": {
+        "summary": "Оновлений стиль",
+        "detailFallback": "pz_modlist_settings.cfg не може бути оновлено.",
+        "detailFailed": "Не вдалося оновити pz_modlist_settings.cfg."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Назва попереднього налаштування вже існує",
+        "detail": "Будь ласка, виберіть іншу назву для «{{name}}»."
+      },
+      "noModsToExport": {
+        "summary": "Немає модів для експорту",
+        "detailCode": "Додайте принаймні один мод перед створенням коду.",
+        "detailPreset": "Додайте принаймні один мод перед збереженням стилю."
+      },
+      "copied": {
+        "summary": "Скопійовано",
+        "detail": "{{label}} скопійовано в буфер обміну."
+      },
+      "presetImported": {
+        "summary": "Попереднє налаштування імпортовано",
+        "detail": "Імпортовано {{count}} модів."
+      },
+      "importFailed": {
+        "summary": "Імпорт не вдалося",
+        "detail": "Не вдалося імпортувати стиль."
+      },
+      "presetSaved": {
+        "summary": "Збережений стиль",
+        "detailFallback": "pz_modlist_settings.cfg не вдалося оновити.",
+        "detailFailed": "Не вдалося оновити pz_modlist_settings.cfg."
+      },
+      "presetSaveNotice": {
+        "reordered": "Змінено порядок модів за правилами залежностей.",
+        "missingDependencies": "Відсутні залежності: {{count}}.",
+        "missingWorkshopIds": "Відсутні ідентифікатори майстерні: {{count}}.",
+        "incompatibilities": "Несумісності: {{count}}.",
+        "cycles": "Виявлено цикли: {{count}}.",
+        "conflicts": "Конфлікти файлів: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Попереднє налаштування видалено",
+        "detailFallback": "pz_modlist_settings.cfg не вдалося оновити.",
+        "detailFailed": "Не вдалося оновити pz_modlist_settings.cfg."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Не вдалося завантажити колекції. Перевірте свій ключ Steam Web API і повторіть спробу."
+      },
+      "steamUnauthorized": "Steam повернув 401 Unauthorized. Перевірте свій ключ Steam Web API.",
+      "queryFailed": "Не вдалося запитати колекції Steam Workshop.",
+      "presetNotCreated": {
+        "summary": "Набір не створено",
+        "detail": "Для цієї колекції не знайдено елементів майстерні."
+      },
+      "presetCreated": {
+        "summary": "Створено набір",
+        "detail": "Набір налаштувань збережено як «{{name}}»."
+      },
+      "presetUpdated": {
+        "summary": "Налаштування оновлено",
+        "detail": "Налаштування колекції «{{name}}» оновлено."
+      },
+      "presetRemoved": {
+        "summary": "Налаштування Видалено",
+        "detail": "Попереднє налаштування колекції видалено."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Недійсне ім’я сервера",
+        "detailMissing": "Введіть ім’я сервера.",
+        "detailInvalidChars": "Назва сервера містить недійсні символи назви файлу.",
+        "detailTrailing": "Назва сервера не може закінчуватися крапкою чи пробілом."
+      },
+      "nameExists": {
+        "summary": "Ім’я сервера вже існує",
+        "detail": "Виберіть унікальне ім’я сервера."
+      },
+      "missingUserFolder": {
+        "summary": "Відсутня папка користувача",
+        "detail": "Спочатку встановіть папку користувача Project Zomboid."
+      },
+      "createFailed": {
+        "summary": "Не вдалося створити",
+        "detail": "Не вдалося створити файли сервера."
+      },
+      "saved": {
+        "summary": "Збережено",
+        "detail": "Файли сервера оновлено."
+      },
+      "saveFailed": {
+        "summary": "Помилка збереження",
+        "detail": "Не вдалося зберегти файли сервера."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Починається з",
+    "contains": "Містить",
+    "notContains": "Не містить",
+    "endsWith": "Закінчується на",
+    "equals": "Дорівнює",
+    "notEquals": "Не дорівнює",
+    "noFilter": "Без фільтра",
+    "lt": "Менше ніж",
+    "lte": "Менше або дорівнює",
+    "gt": "Більше ніж",
+    "gte": "Більше або дорівнює",
+    "dateIs": "Дата дорівнює",
+    "dateIsNot": "Дата не дорівнює",
+    "dateBefore": "Дата до",
+    "dateAfter": "Дата після",
+    "clear": "Очистити",
+    "apply": "Застосувати",
+    "matchAll": "Збіг з усіма",
+    "matchAny": "Збіг з будь-яким",
+    "addRule": "Додати правило",
+    "removeRule": "Видалити правило"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overview",
+      "updateStatus": "Mods Update Status",
+      "topInstalled": "Top Installed Mods (by Subscriptions)",
+      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
+      "installsOverTime": "Mod Installs Over Time",
+      "largestMods": "Largest Mods (by File Size)",
+      "latestNews": "Latest Project Zomboid News",
+      "popularThisWeek": "Popular Mods This Week",
+      "latestMods": "Latest Mods",
+      "updatedMods": "Updated Mods"
+    },
+    "labels": {
+      "totalMods": "Total Mods",
+      "lastLocalSync": "Last Local Mod Sync",
+      "lastWorkshopSync": "Last Workshop Sync",
+      "subscribers": "subscribers",
+      "updated": "updated",
+      "created": "created",
+      "installedTooltip": "Installed locally",
+      "unknown": "Unknown",
+      "never": "Never"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
+      "noInstalledSubs": "No installed mods with subscription data are available.",
+      "noWorkshopUpdateInfo": "No Workshop update information is available.",
+      "noSizeData": "No mod file size data is available.",
+      "noNews": "No news items were found.",
+      "noPopularMods": "No popular mods were found.",
+      "noModsFound": "No mods were found.",
+      "noRecentUpdates": "No recently updated mods were found."
+    },
+    "fallbacks": {
+      "untitledItem": "Untitled item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods by install month",
+        "xAxis": "Month",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Outdated",
+        "upToDate": "Up to date"
+      },
+      "size": {
+        "label": "Workshop file size (bytes)",
+        "yAxis": "Size (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Log Inspector",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Types",
+      "typesPlaceholder": "Select types",
+      "maxEntries": "Max entries",
+      "from": "From",
+      "to": "To",
+      "livePolling": "Live polling",
+      "pollingEverySeconds": "Every (s)",
+      "searchMessage": "Search message",
+      "searchPlaceholder": "Search..."
+    },
+    "table": {
+      "pageReport": "Showing {first} to {last} of {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Type",
+      "message": "Message"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "OTHER"
+    },
+    "dialog": {
+      "logFilesFilter": "Log Files"
+    },
+    "errors": {
+      "noFilePath": "Set a file path to load logs.",
+      "loadFailed": "Failed to load log file.",
+      "clearFailed": "Failed to clear log file."
+    }
+  }
+}

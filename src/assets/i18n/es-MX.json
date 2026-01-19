@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "browse": "Explorar",
+    "yes": "Sí",
+    "no": "No",
+    "loadingContent": "Cargando contenido...",
+    "next": "Siguiente",
+    "back": "Atrás",
+    "finish": "Finalizar"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Idioma",
+    "languagePlaceholder": "Seleccione un idioma",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "FILTROS MODIFICADORES",
+      "modCollectionFilters": "FILTROS DE COLECCIÓN MODIFICADORES",
+      "actions": "ACCIONES",
+      "getStarted": "Comenzar",
+      "resources": "Recursos",
+      "dangerZone": "Danger Zone"
+    },
+    "items": {
+      "dashboard": "Panel de control",
+      "logInspector": "Inspector de registros",
+      "configureFolders": "Configurar carpetas",
+      "setSteamApiKey": "Establecer clave API de Steam",
+      "syncHonu": "Sincronizar la calidad de vida de la información de modificación de Honu",
+      "syncLocal": "Sincronizar datos de modificación locales",
+      "syncWorkshop": "Sincronizar con Steam Workshop",
+      "changelog": "Registro de cambios",
+      "documentation": "Documentación",
+      "viewSource": "Ver código fuente",
+      "projectZomboid": "Project Zomboid",
+      "pzWiki": "Wiki oficial de Project Zomboid",
+      "b41Map": "Mapa B41",
+      "b42Map": "Mapa B42",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Project Zomboid",
+      "moddingDiscord": "Comunidad de modificación PZ",
+      "mappingDiscord": "Mapeo PZ no oficial",
+      "honuWorkshop": "Steam Workshop de HonuInTheSea",
+      "supportKofi": "Soporte en Ko-fi",
+      "resetApp": "Restablecer aplicación",
+      "resetAppTooltip": "Restablecer configuración de ventana y eliminar datos almacenados",
+      "myMods": "Mis Mods"
+    },
+    "filters": {
+      "adultLabel": "Tiene contenido para adultos",
+      "adultTooltip": "Filtrar mods donde los metadatos de Steam informan que Maybe_inapropiado_sexo es verdadero.",
+      "rulesLabel": "Tiene reglas",
+      "rulesTooltip": "El mod contiene una declaración require, incompatible, loadModAfter, loadModBefore en su archivo mod.info",
+      "missingSteamLabel": "Faltan datos de Steam",
+      "missingSteamTooltip": "El mod puede haber sido marcado como privado o eliminado de Steam Workshop",
+      "outdatedLabel": "Mods obsoletos",
+      "outdatedTooltip": "Es posible que sea necesario cancelar la suscripción del mod y volver a suscribirlo para obtener la última versión de Steam Workshop"
+    },
+    "collections": {
+      "searchLabel": "Buscar colecciones",
+      "searchPlaceholder": "Buscar colecciones",
+      "sortLabel": "Ordenar por",
+      "periodLabel": "Por período de tiempo",
+      "tagsLabel": "Etiquetas",
+      "tagsPlaceholder": "Seleccionar etiquetas",
+      "sortMostPopular": "Más populares",
+      "sortMostRecent": "Más recientes",
+      "sortLastUpdated": "Última actualización",
+      "periodToday": "Hoy",
+      "periodWeek": "Una semana",
+      "periodThirtyDays": "Treinta días",
+      "periodThreeMonths": "Tres meses",
+      "periodSixMonths": "Seis meses",
+      "periodYear": "Un año"
+    },
+    "presetsUnavailable": "Establezca su carpeta de usuario de Project Zomboid y/o defina los ajustes preestablecidos primero.",
+    "steamApi": {
+      "dialogTitle": "Establezca la clave API web de Steam",
+      "dialogIntro": "Ingrese su clave API web de Steam. Esta clave se almacena localmente en su máquina.",
+      "keyLabel": "Clave API web de Steam",
+      "needKey": "¿Necesitas una clave?",
+      "getKeyLink": "Obtén tu clave API web de Steam",
+      "helpButton": "Cómo crear una clave API web de Steam",
+      "helpTitle": "Cómo crear una clave API web de Steam",
+      "helpCardTitle": "Cómo registrar una clave API web de Steam",
+      "helpCardBody": "Esta guía proporciona un tutorial paso a paso para registrar una clave API web de Steam. Una clave API web de Steam permite que las aplicaciones accedan de forma segura a datos específicos de su cuenta de Steam, como bibliotecas de juegos o estadísticas, cuando usted les autorice a hacerlo.",
+      "step1Title": "1. Requisitos previos",
+      "step1Intro": "Antes de poder registrar una clave API web de Steam, asegúrese de que:",
+      "step1Bullet1": "Tiene una cuenta de Steam activa y al día, protegida con Steam Guard (correo electrónico o autenticador móvil).",
+      "step1Bullet2": "Tu cuenta posee al menos un juego comprado. Las cuentas nuevas o vacías no pueden obtener una clave API.",
+      "step1Bullet3": "Estás utilizando un dispositivo y una red confiables (nunca registres ni veas tu clave en una computadora pública o compartida).",
+      "step2Title": "2. Notas de seguridad importantes",
+      "step2Intro": "Su clave API web de Steam es información confidencial. Cualquiera que tenga su clave puede realizar solicitudes de API en su nombre. Trátela como una contraseña:",
+      "step2Bullet1": "Nunca comparta su clave con otras personas y nunca la publique públicamente (por ejemplo, en foros o GitHub).",
+      "step2Bullet2": "Solo pegue su clave en herramientas o sitios web en los que confíe plenamente.",
+      "step2Bullet3": "Si sospecha que su clave ha sido expuesta, revocarla inmediatamente y generar una nueva.",
+      "step3Title": "3. Paso a paso: registrar una clave API web de Steam",
+      "step3_1Title": "Paso 1: inicie sesión en Steam",
+      "step3_1Bullet1": "Abra su navegador web y vaya a <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Haz clic en <strong>\"Iniciar sesión\"</strong> en la esquina superior derecha.",
+      "step3_1Bullet3": "Ingresa el nombre y la contraseña de tu cuenta de Steam.",
+      "step3_1Bullet4": "Si se te solicita, completa la verificación de Steam Guard.",
+      "step3_2Title": "Paso 2: abre la página de la clave API web de Steam",
+      "step3_2Bullet1": "Mientras estés conectado, abre la página de registro de la clave API web de Steam: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "La página mostrará una breve descripción de Steam Web API y un formulario titulado <strong>\"Regístrese para una nueva clave de Steam Web API\".</strong>",
+      "step3_3Title": "Paso 3: ingrese un nombre de dominio y acepte los términos",
+      "step3_3Intro": "En el formulario de registro:",
+      "step3_3Bullet1": "En el campo <strong>\"Nombre de dominio\"</strong>, ingrese el dominio del sitio web o servicio que utilizará clave. <ul class=\"p-ml-3\"><li>Si no tienes un dominio, puedes ingresar un marcador de posición como <code>localhost</code>, <code>127.0.0.1</code> o <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Lee los Términos de uso de Steam Web API.",
+      "step3_3Bullet3": "Marque la casilla de verificación para confirmar que acepta los términos.",
+      "step3_3Bullet4": "Haga clic en el botón <strong>\"Registrarse\"</strong> para enviar el formulario.",
+      "step3_4Title": "Paso 4: vea y copie su nueva clave API web de Steam",
+      "step3_4Intro": "Después de un registro exitoso:",
+      "step3_4Bullet1": "La página se recarga y muestra su clave API web de Steam cerca de la parte superior.",
+      "step3_4Bullet2": "La clave es una larga cadena de letras y números (por ejemplo: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Seleccione la clave completa y cópiela (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Guárdela en una ubicación segura, como un administrador de contraseñas o una aplicación de notas cifradas.",
+      "step4Title": "4. Ejemplo básico del uso de su clave Steam Web API",
+      "step4Intro": "Una vez que tenga una clave, puede llamar a los puntos finales de Steam Web API agregándola como un parámetro <code>key=</code> a la URL. Por ejemplo, una solicitud HTTP simple podría verse así (reemplace <code>YOURKEYHERE</code> con su clave real):",
+      "step4Outro": "Las URL y los parámetros exactos dependen de la interfaz API web de Steam que esté utilizando. Consulte siempre la documentación oficial de los puntos finales que necesita.",
+      "step5Title": "5. Revocar o regenerar su clave API web de Steam",
+      "step5Intro": "Si ya no necesita su clave API web de Steam, o cree que se ha visto comprometida, debe revocarla:",
+      "step5Bullet1": "Inicie sesión en su cuenta de Steam si aún no lo ha hecho.",
+      "step5Bullet2": "Abra <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> nuevamente.",
+      "step5Bullet3": "Haga clic en el botón etiquetado <strong>\"Revocar mi clave API web de Steam\"</strong>.",
+      "step5Bullet4": "Si necesita una nueva clave más adelante, regrese a la misma página y regístrese nuevamente siguiendo los pasos anteriores.",
+      "step6Title": "6. Consejos para solucionar problemas",
+      "step6Intro": "Es posible que veas uno de los siguientes problemas al intentar registrar una clave:",
+      "step6Bullet1": "<strong>Mensaje:</strong> <em>\"Se te otorgará acceso a las claves de Steam Web API cuando tengas juegos en tu cuenta de Steam\".</em> En este caso, tu cuenta aún no cumple con los requisitos mínimos. Compra al menos un juego en Steam, espera a que se borre la compra y vuelve a intentarlo más tarde.",
+      "step6Bullet2": "<strong>La página sigue pidiéndote que inicies sesión</strong>: asegúrate de que las cookies y JavaScript estén habilitados en tu navegador y de que estás iniciando sesión con la cuenta correcta.",
+      "step6Bullet3": "<strong>Preocupaciones de seguridad</strong>: si algún sitio o persona de terceros te solicita tu clave y no estás seguro de por qué, no la compartas. Revoca tu clave y cambia tu contraseña de Steam si crees que ha sido expuesta.",
+      "footerNote": "Ahora tienes una clave API web de Steam registrada y un conocimiento básico de cómo administrarla de forma segura. Mantenga esta página a mano como referencia cuando necesite registrar, usar o revocar su clave."
+    },
+    "folders": {
+      "dialogTitle": "Configurar carpetas"
+    }
+  },
+  "changelog": {
+    "title": "Registro de cambios",
+    "events": {
+      "initialRelease": {
+        "title": "Lanzamiento inicial",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Primera versión pública del Hub de Project Zomboid de Honu."
+      }
+    }
+  },
+  "docs": {
+    "title": "Documentación",
+    "intro": "Honu's Hub te ayuda a explorar, inspeccionar y administrar tu Project Zomboid local, con integración de escritorio a través de Tauri.",
+    "toc": {
+      "aria": "Tabla de contenido",
+      "title": "Tabla de contenido",
+      "overview": "Descripción general",
+      "workflow": "Flujo de trabajo",
+      "data": "Datos que utiliza la aplicación",
+      "features": "Características",
+      "mediaPlayer": "Reproductor multimedia",
+      "logInspector": "Inspector de registros",
+      "folderSetup": "Configuración de carpetas",
+      "tauri": "Integración de escritorio (Tauri)",
+      "privacy": "Privacidad y almacenamiento",
+      "troubleshooting": "Solución de problemas",
+      "faq": "Preguntas frecuentes"
+    },
+    "overview": {
+      "title": "Descripción general",
+      "body": "La aplicación escanea un directorio de mods elegido, deriva metadatos de las convenciones de mods comunes de Project Zomboid y presenta todo en una tabla y un panel de resumen."
+    },
+    "workflow": {
+      "title": "Flujo de trabajo",
+      "intro": "Siga este flujo de extremo a extremo para conectar sus carpetas, sincronizar metadatos y generar la salida Honu Mod Info QoL.",
+      "step1": {
+        "title": "Carpetas de mapas",
+        "body": "Abra <strong>Configurar carpetas</strong> desde las acciones de la barra lateral y configure su juego, taller y usuario de Project Zomboid. directorios.",
+        "screenshot": "Captura de pantalla: Configurar carpetas"
+      },
+      "step2": {
+        "title": "Crear/ingresar clave de Steam Workshop",
+        "body": "Utiliza <strong>Establecer clave API de Steam</strong> para pegar tu clave y que la aplicación pueda recuperar los metadatos de Workshop.",
+        "screenshot": "Captura de pantalla: Establecer clave API de Steam"
+      },
+      "step3": {
+        "title": "Sincronizar datos de mod local",
+        "body": "Ejecute <strong>Sincronizar datos de mod locales</strong> para escanear su carpeta Workshop y crear la lista de mods locales.",
+        "screenshot": "Captura de pantalla: Sincronizar datos de mod locales"
+      },
+      "step4": {
+        "title": "Sincronizar con Steam Workshop",
+        "body": "Ejecute <strong>Sincronizar con Steam Workshop</strong> para obtener títulos, autores, tamaños y metadatos adicionales del taller.",
+        "screenshot": "Captura de pantalla: Sincronizar con Steam Workshop"
+      },
+      "step5": {
+        "title": "Sincronizar la información de mod de Honu QoL",
+        "body": "Usar <strong>Sincronizar la información de mod de Honu QoL</strong> para generar/actualizar <code>honus_miqol_db.lua</code> dentro de tu carpeta de usuario de Project Zomboid.",
+        "screenshot": "Captura de pantalla: Sincronización de la información de mod de Honu QoL"
+      }
+    },
+    "data": {
+      "title": "Datos que utiliza la aplicación",
+      "intro": "La aplicación crea una lista de mods a partir de la información disponible en el disco.",
+      "bullet1": "<strong>Ruta de la carpeta del mod</strong>: ruta absoluta resuelta al directorio del mod.",
+      "bullet2": "<strong>ID del mod</strong>: extraído de los metadatos del mod cuando esté disponible (comúnmente de <code>mod.info</code>).",
+      "bullet3": "<strong>Nombre</strong>: un nombre para mostrar derivado de los metadatos y/o el nombre de la carpeta.",
+      "bullet4": "<strong>ID del taller (opcional)</strong>: si se detecta y es numérico, la aplicación habilita un enlace de Steam Workshop botón.",
+      "bullet5": "<strong>Indicadores de estado/salud</strong>: señales básicas como metadatos faltantes o incompletos (cuando sean detectables).",
+      "outro": "No todas las modificaciones contienen metadatos completos. Cuando faltan campos, la interfaz de usuario mostrará los valores de mejor esfuerzo y puede deshabilitar acciones que requieren datos específicos (por ejemplo, el enlace de Steam)."
+    },
+    "features": {
+      "title": "Características",
+      "bullet1": "<strong>Tabla de mods</strong>: enumera los mods detectados con campos clave (nombre, ID, enlace del taller cuando esté disponible y ruta).",
+      "bullet2": "<strong>Detalles de fila</strong>: expande una fila para ver más información sobre un mod (cuando esté disponible).",
+      "bullet3": "<strong>Abrir en Steam</strong>: abre la página de Workshop en su navegador predeterminado para modificaciones con una identificación de taller válida.",
+      "bullet4": "<strong>Abrir carpeta</strong>: abre la carpeta del mod seleccionado en tu explorador de archivos.",
+      "mediaPlayer": "<strong>Reproductor multimedia</strong>: reproduce pistas de música de Project Zomboid desde la barra lateral. Consulte <a routerLink=\"/documentation\" fragment=\"media-player\">Reproductor multimedia</a>.",
+      "logInspectorPrefix": "<strong>Inspector de registro</strong>: cargue y filtre archivos de registro (como <code>console.txt</code>) para encontrar rápidamente errores y advertencias. Ver",
+      "logInspectorLink": "Inspector de registro",
+      "bullet6": "<strong>Panel de control</strong>: muestra estadísticas rápidas (por ejemplo: mods totales detectados) y otros indicadores de alto nivel."
+    },
+    "mediaPlayer": {
+      "title": "Reproductor multimedia",
+      "intro": "La barra lateral incluye un reproductor de música liviano que puede buscar pistas de audio de Project Zomboid (OGG) y reproducirlas en la aplicación.",
+      "bullet1": "<strong>Lista de reproducción</strong>: muestra pistas detectadas y metadatos básicos (título/artista/álbum cuando disponible).",
+      "bullet2": "<strong>Reproducción</strong>: reproducir/pausar más la pista anterior/siguiente.",
+      "bullet3": "<strong>Buscar + volumen</strong>: desplazarse por la pista y ajustar el volumen/silenciar."
+    },
+    "logInspector": {
+      "title": "Inspector de registros",
+      "intro": "El inspector de registros lo ayuda a abrir y filtrar archivos de registro (por ejemplo, <code>console.txt</code>) para solucionar fallas, problemas de carga de mods y problemas de inicio del servidor.",
+      "bullet1": "<strong>Seleccione un archivo</strong>: busque cualquier archivo <code>.txt</code> o <code>.log</code>, o use una ruta predeterminada cuando esté disponible.",
+      "bullet2": "<strong>Filtro</strong>: elija niveles de registro (ERROR/WARN/LOG/DEBUG/TRACE), establezca una ventana de fecha/hora y limite el número máximo de entradas mostradas.",
+      "bullet3": "<strong>Buscar</strong>: filtre las entradas por texto en el mensaje analizado y la línea de fuente sin procesar.",
+      "bullet4": "<strong>Encuesta en vivo</strong>: opcionalmente, actualice con un temporizador para ver la actualización de los registros mientras el juego/servidor se está ejecutando.",
+      "bullet5": "<strong>Borrar</strong>: trunque el archivo de registro seleccionado (usar con care)."
+    },
+    "folderSetup": {
+      "title": "Configuración de carpeta",
+      "step1": "Abre la página <strong>Mods</strong> desde la barra lateral izquierda (bajo <em>INICIO</em>).",
+      "step2": "Utiliza <strong>Examinar carpeta de Mods</strong> en el menú <em>ACCIONES</em> para seleccionar tu directorio de mods de Project Zomboid (comúnmente <code>projectzomboid/mods</code>).",
+      "step3": "Después de la selección, la aplicación escanea el directorio y completa la tabla de mods y el panel de control.",
+      "tip": "Consejo: si cambia de máquina o mueve su directorio de mods, simplemente busque nuevamente para actualizar la ruta almacenada."
+    },
+    "tauri": {
+      "title": "Integración de escritorio (Tauri)",
+      "bullet1": "<strong>Acceso al sistema de archivos</strong>: la exploración y el escaneo del directorio se realizan a través del shell del escritorio.",
+      "bullet2": "<strong>Abrir enlaces externos</strong> - Los enlaces de Steam Workshop se abren usando el navegador predeterminado de su sistema operativo.",
+      "bullet3": "<strong>Abrir carpetas</strong>: inicia el explorador de archivos del sistema operativo centrado en el directorio de mods."
+    },
+    "privacy": {
+      "title": "Privacidad y almacenamiento",
+      "bullet1": "<strong>Datos locales</strong>: la ruta de la carpeta de mods seleccionada y los resultados del escaneo se pueden almacenar en caché localmente para mejorar la experiencia de usuario."
+    },
+    "troubleshooting": {
+      "title": "Solución de problemas",
+      "bullet1": "<strong>No aparecen mods después del escaneo</strong>: verifique que la carpeta seleccionada sea su directorio de mods real de Project Zomboid y que contenga subcarpetas de mods.",
+      "bullet2": "<strong>Los enlaces de Steam están deshabilitados</strong>: asegúrese de que el mod tenga una identificación numérica válida de Workshop (no todos los mods están basados ​​en Workshop).",
+      "bullet3": "<strong>Abrir la carpeta no hace nada</strong>: confirme que el backend de Tauri se esté ejecutando y que los permisos del sistema operativo permitan abrir el explorador de archivos."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "q1": "¿La aplicación edita mis mods?",
+      "a1": "No. El flujo de trabajo principal es de solo lectura: escanea carpetas y muestra metadatos. Acciones como abrir carpetas o enlaces de Workshop no modifican los archivos mod.",
+      "q2": "¿Por qué falta información para un mod?",
+      "a2": "Los mods varían en la consistencia con la que incluyen metadatos. Si faltan campos como ID o ID de taller, la aplicación mostrará lo que puede y desactivará las funciones que dependen de esos campos."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Nombre",
+      "modId": "ID del Mod",
+      "author": "Autor",
+      "version": "Versión del Mod",
+      "versionMin": "Versión mínima del juego",
+      "versionMax": "Versión máxima del juego",
+      "url": "URL",
+      "description": "Descripción",
+      "tags": "Etiquetas",
+      "noTags": "Sin etiquetas",
+      "packs": "Paquetes",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Título del taller",
+      "workshopCreator": "Creador del taller",
+      "fileSize": "Tamaño del archivo",
+      "timeCreated": "Hora de creación",
+      "timeUpdated": "Hora de actualización",
+      "workshopViews": "Vistas del taller",
+      "workshopSubscriptions": "Suscripciones al taller",
+      "adultContent": "Tiene contenido para adultos"
+    },
+    "links": {
+      "requiredMods": "Mods requeridos",
+      "loadAfter": "Cargar mod después",
+      "loadBefore": "Cargar mod antes",
+      "incompatibleMods": "Mods incompatibles",
+      "requiredBy": "Requerido por",
+      "incompatibleWith": "Incompatible con"
+    },
+    "buttons": {
+      "visitWorkshop": "Visita la página de Steam Workshop",
+      "authorWorkshop": "Página de Steam Workshop del autor",
+      "openFolder": "Abrir carpeta de mods"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Este campo es de solo lectura y se completa desde mod.info.",
+      "steamReadonly": "Este campo es de solo lectura y se completa desde Steam Workshop.",
+      "modMissing": "No se pudo encontrar el siguiente mod",
+      "syncToActivate": "Sincronizar con Steam Workshop para activar",
+      "modFolderUnavailable": "La ruta de la carpeta del mod no está disponible."
+    }
+  },
+  "tags": {
+    "animals": "Animales",
+    "audio": "Audio",
+    "balance": "Equilibrio",
+    "build_41": "Construcción 41",
+    "build_42": "Construcción 42",
+    "build_40": "Construcción 40",
+    "buildings": "Edificios",
+    "clothing_armor": "Ropa/Armadura",
+    "farming": "Agricultura",
+    "food": "Comida",
+    "framework": "Marco",
+    "hardmode": "Modo difícil",
+    "interface": "Interfaz",
+    "items": "Elementos",
+    "language_translation": "Idioma/Traducción",
+    "literature": "Literatura",
+    "map": "Mapa",
+    "military": "Militar",
+    "misc": "Varios",
+    "models": "Modelos",
+    "multiplayer": "Multijugador",
+    "pop_culture": "Cultura pop",
+    "qol": "QoL",
+    "realistic": "Realista",
+    "silly_fun": "Tonto/Divertido",
+    "skills": "Habilidades",
+    "textures": "Texturas",
+    "traits": "Rasgos",
+    "vehicles": "Vehículos",
+    "weapons": "Armas",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Etiquetas",
+    "matchLabel": "Coincidencia",
+    "matchAny": "O",
+    "matchAll": "Y",
+    "placeholder": "Seleccionar etiquetas"
+  },
+  "modsTable": {
+    "clearFilters": "Borrar",
+    "searchPlaceholder": "Buscar palabra clave",
+    "detailsTitle": "Detalles de modificación",
+    "columns": {
+      "name": "Nombre",
+      "author": "Autor",
+      "workshopId": "ID de taller",
+      "lastModified": "Fecha de última modificación"
+    },
+    "filters": {
+      "name": "Buscar por nombre",
+      "author": "Buscar por autor",
+      "workshopId": "Buscar por ID de taller",
+      "date": "Fecha de filtrado"
+    }
+  },
+  "folders": {
+    "title": "Establecer carpetas requeridas",
+    "description": "Estas carpetas se utilizan para escanear tus modificaciones y leer los detalles de instalación de Project Zomboid.",
+    "gameDirLabel": "Carpeta del juego Project Zomboid",
+    "workshopDirLabel": "Carpeta de mods locales (Steam Workshop)",
+    "userDirLabel": "Carpeta de usuario de Project Zomboid (opcional)",
+    "userDirNote": "Se utiliza para exportar ajustes preestablecidos del servidor y (opcional) objetivos de aplicación avanzada."
+  },
+  "modsPage": {
+    "toastHelp": "¿Dónde encuentro esto?",
+    "workshopPrompt": {
+      "title": "Obtener datos de Steam Workshop",
+      "body": "¿Quieres obtener los últimos metadatos de Steam Workshop para tus mods?",
+      "alwaysFetch": "Buscar siempre automáticamente sin preguntar"
+    },
+    "loadingLocal": "Escaneando datos de mods locales...",
+    "loadingWorkshop": "Obteniendo datos de Steam Workshop...",
+    "loading": "Cargando datos..."
+  },
+  "onboarding": {
+    "title": "Comenzar",
+    "steps": {
+      "welcome": "Bienvenida",
+      "folders": "Carpetas",
+      "steamKey": "Clave de la API de Steam",
+      "tips": "Consejos"
+    },
+    "welcome": {
+      "title": "Bienvenido al Administrador de Mods de Project Zomboid",
+      "body": "Esta configuración rápida te ayuda a conectar tus carpetas, añadir tu clave de la API de Steam y empezar a sincronizar mods.",
+      "bullet1": "Elige tus carpetas de Project Zomboid.",
+      "bullet2": "Añade tu clave de la API de Steam para los metadatos del Workshop.",
+      "bullet3": "Finaliza la configuración y empieza a administrar tus mods."
+    },
+    "tips": {
+      "title": "Consejos rápidos",
+      "bullet1": "Puedes actualizar las carpetas y tu clave de la API de Steam en cualquier momento desde la barra lateral.",
+      "bullet2": "Ejecuta Sincronizar datos de mods locales antes de sincronizar los metadatos del Workshop.",
+      "bullet3": "Usa los filtros de mods para acotar la lista rápidamente."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Error de sincronización de QoL de Honu Mod Info",
+        "missingUserDetail": "La carpeta de usuario de Project Zomboid no está configurada.",
+        "successSummary": "QoL de información de mod de Honu sincronizada",
+        "successCreatedDetail": "honus_miqol_db.lua creado.",
+        "successUpdatedDetail": "honus_miqol_db.lua actualizado.",
+        "failedDetail": "Error al sincronizar QoL de información de mod de Honu."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Migración de datos",
+        "detail": "Se están actualizando tus datos de mod local. Se está ejecutando un nuevo análisis para actualizar las dependencias."
+      },
+      "syncInProgress": {
+        "summary": "Sincronización en curso",
+        "detail": "Ya se está ejecutando una operación de sincronización. Espere a que se complete."
+      },
+      "localSyncComplete": {
+        "summary": "Sincronización de mod local completa",
+        "detail": "Los datos del mod local se han actualizado correctamente."
+      },
+      "localSyncFailed": {
+        "summary": "Error de sincronización del mod local",
+        "detail": "Error al sincronizar mods locales."
+      },
+      "invalidDirectory": {
+        "summary": "Directorio no válido",
+        "detail": "La carpeta seleccionada no parece ser un directorio válido de Project Zomboid Workshop (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Se requiere clave API web de Steam",
+        "detail": "Utilice \"Establecer clave API de Steam\" en el menú, luego intente sincronizar nuevamente."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "No se devolvieron metadatos del taller; no se salvó nada."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop sincronizado parcialmente",
+        "detail": "Recibido {{received}} de {{total}} artículos de taller. ID faltantes: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop sincronizado",
+        "detail": "Los metadatos de Workshop se guardaron correctamente."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API no autorizada",
+        "detail": "Steam devolvió 401 no autorizado. Verifica tu clave Steam Web API e inténtalo de nuevo."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Error al sincronizar los metadatos de Steam Workshop."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "El nombre preestablecido ya existe",
+        "detail": "Por favor, elige un nombre diferente para \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Error al eliminar",
+        "missingUserDetail": "El directorio de usuarios de Project Zomboid no está configurado.",
+        "missingModDetail": "No se encontró el ID del mod en mods.txt.",
+        "failedDetail": "Error al eliminar el mod del valor preestablecido."
+      },
+      "removed": {
+        "summary": "Eliminado",
+        "detailMultiple": "Mods seleccionados fueron eliminados del preset.",
+        "detailSingle": "Mod fue eliminado del preset."
+      },
+      "presetUpdated": {
+        "summary": "Preset actualizado",
+        "detailFallback": "pz_modlist_settings.cfg no se pudo actualizar.",
+        "detailFailed": "Error al actualizar pz_modlist_settings.cfg."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "El nombre preestablecido ya existe",
+        "detail": "Elija un nombre diferente para \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "No hay mods para exportar",
+        "detailCode": "Agregue al menos un mod antes de generar el código.",
+        "detailPreset": "Agregue al menos un mod antes de guardar un preajuste."
+      },
+      "copied": {
+        "summary": "Copiado",
+        "detail": "{{label}} copiado al portapapeles."
+      },
+      "presetImported": {
+        "summary": "Preset importado",
+        "detail": "Mods {{count}} importados."
+      },
+      "importFailed": {
+        "summary": "Importación fallida",
+        "detail": "Error al importar el preset."
+      },
+      "presetSaved": {
+        "summary": "Preset guardado",
+        "detailFallback": "pz_modlist_settings.cfg no se pudo actualizar.",
+        "detailFailed": "Error al actualizar pz_modlist_settings.cfg."
+      },
+      "presetSaveNotice": {
+        "reordered": "Mods reordenados por reglas de dependencia.",
+        "missingDependencies": "Dependencias faltantes: {{count}}.",
+        "missingWorkshopIds": "ID de taller faltantes: {{count}}.",
+        "incompatibilities": "Incompatibilidades: {{count}}.",
+        "cycles": "Ciclos detectados: {{count}}.",
+        "conflicts": "Conflictos de archivos: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "El ajuste preestablecido eliminado",
+        "detailFallback": "pz_modlist_settings.cfg no se pudo actualizar.",
+        "detailFailed": "No se pudo actualizar pz_modlist_settings.cfg."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "No se pueden cargar las colecciones. Verifique su clave API web de Steam y vuelva a intentarlo."
+      },
+      "steamUnauthorized": "Steam devolvió 401 no autorizado. Verifica tu clave Steam Web API.",
+      "queryFailed": "Error al consultar las colecciones de Steam Workshop.",
+      "presetNotCreated": {
+        "summary": "Preset no creado",
+        "detail": "No se encontraron elementos de Workshop para esta colección."
+      },
+      "presetCreated": {
+        "summary": "Preset creado",
+        "detail": "Preset de colección guardado como \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Preset actualizado",
+        "detail": "Preset de colección \"{{name}}\" actualizado."
+      },
+      "presetRemoved": {
+        "summary": "Preset eliminado",
+        "detail": "El preset de colección se ha eliminado."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Nombre de servidor no válido",
+        "detailMissing": "Ingresa un nombre del servidor.",
+        "detailInvalidChars": "El nombre del servidor contiene caracteres de nombre de archivo no válidos.",
+        "detailTrailing": "El nombre del servidor no puede terminar con un punto o espacio."
+      },
+      "nameExists": {
+        "summary": "El nombre del servidor ya existe",
+        "detail": "Elija un nombre de servidor único."
+      },
+      "missingUserFolder": {
+        "summary": "Falta carpeta de usuario",
+        "detail": "Establezca primero su carpeta de usuario de Project Zomboid."
+      },
+      "createFailed": {
+        "summary": "Creación fallida",
+        "detail": "Error al crear archivos del servidor."
+      },
+      "saved": {
+        "summary": "Guardado",
+        "detail": "Archivos del servidor actualizados."
+      },
+      "saveFailed": {
+        "summary": "Error al guardar",
+        "detail": "Error al guardar archivos del servidor."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Empieza con",
+    "contains": "Contiene",
+    "notContains": "No contiene",
+    "endsWith": "Termina con",
+    "equals": "Igual a",
+    "notEquals": "Distinto de",
+    "noFilter": "Sin filtro",
+    "lt": "Menor que",
+    "lte": "Menor o igual que",
+    "gt": "Mayor que",
+    "gte": "Mayor o igual que",
+    "dateIs": "La fecha es",
+    "dateIsNot": "La fecha no es",
+    "dateBefore": "La fecha es antes de",
+    "dateAfter": "La fecha es después de",
+    "clear": "Limpiar",
+    "apply": "Aplicar",
+    "matchAll": "Coincidir con todos",
+    "matchAny": "Coincidir con cualquiera",
+    "addRule": "Agregar regla",
+    "removeRule": "Eliminar regla"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Descripción general",
+      "updateStatus": "Estado de actualización de modificaciones",
+      "topInstalled": "Mods más instalados (por suscripciones)",
+      "lastUpdatedInstalled": "Mods instalados que se actualizaron por última vez",
+      "installsOverTime": "Instalaciones de mods con el tiempo",
+      "largestMods": "Mods más grandes (por tamaño de archivo)",
+      "latestNews": "Últimas noticias del Proyecto Zomboid",
+      "popularThisWeek": "Modificaciones populares esta semana",
+      "latestMods": "Últimas modificaciones",
+      "updatedMods": "Modificaciones actualizadas"
+    },
+    "labels": {
+      "totalMods": "Modificaciones totales",
+      "lastLocalSync": "Última sincronización de mod local",
+      "lastWorkshopSync": "Sincronización del último taller",
+      "subscribers": "suscriptores",
+      "updated": "actualizado",
+      "created": "creado",
+      "installedTooltip": "Instalado localmente",
+      "unknown": "Desconocido",
+      "never": "nunca"
+    },
+    "messages": {
+      "steamTimeout": "La API web de Steam no respondía. Inténtelo de nuevo más tarde.",
+      "noInstalledSubs": "No hay mods instalados con datos de suscripción disponibles.",
+      "noWorkshopUpdateInfo": "No hay información de actualización del taller disponible.",
+      "noSizeData": "No hay datos disponibles sobre el tamaño del archivo mod.",
+      "noNews": "No se encontraron noticias.",
+      "noPopularMods": "No se encontraron modificaciones populares.",
+      "noModsFound": "No se encontraron modificaciones.",
+      "noRecentUpdates": "No se encontraron modificaciones actualizadas recientemente."
+    },
+    "fallbacks": {
+      "untitledItem": "Artículo sin título"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods por mes de instalación",
+        "xAxis": "Mes",
+        "yAxis": "Modificaciones"
+      },
+      "status": {
+        "outdated": "Anticuado",
+        "upToDate": "actualizado"
+      },
+      "size": {
+        "label": "Tamaño del archivo del taller (bytes)",
+        "yAxis": "Tamaño (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Inspector de registros",
+    "fields": {
+      "logFile": "Archivo de registro",
+      "types": "Tipos",
+      "typesPlaceholder": "Seleccionar tipos",
+      "maxEntries": "Entradas máximas",
+      "from": "De",
+      "to": "a",
+      "livePolling": "Encuestas en vivo",
+      "pollingEverySeconds": "cada(s)",
+      "searchMessage": "mensaje de búsqueda",
+      "searchPlaceholder": "Buscar..."
+    },
+    "table": {
+      "pageReport": "Mostrando {first} a {last} de {totalRecords}",
+      "timestamp": "Marca de tiempo",
+      "type": "Tipo",
+      "message": "Mensaje"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "ADVERTENCIA",
+      "log": "REGISTRO",
+      "debug": "DEPURAR",
+      "trace": "RASTREO",
+      "other": "OTRO"
+    },
+    "dialog": {
+      "logFilesFilter": "Archivos de registro"
+    },
+    "errors": {
+      "noFilePath": "Establezca una ruta de archivo para cargar registros.",
+      "loadFailed": "No se pudo cargar el archivo de registro.",
+      "clearFailed": "No se pudo borrar el archivo de registro."
+    }
+  }
+}

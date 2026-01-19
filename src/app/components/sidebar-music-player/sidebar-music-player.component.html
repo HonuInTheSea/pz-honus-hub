@@ -1,0 +1,126 @@
+<p-card class="player-card">
+  <ng-template pTemplate="header">
+    <div class="pt-3">
+      <p class="player-title">{{ nowPlayingTitle }}</p>
+      <p class="player-subtitle">{{ nowPlayingSubtitle }}</p>
+    </div>
+  </ng-template>
+
+  <div class="pb-2">
+    <audio
+      #audio
+      preload="metadata"
+      (loadedmetadata)="onLoadedMetadata()"
+      (timeupdate)="onTimeUpdate()"
+      (ended)="onEnded()"
+      (play)="isPlaying = true"
+      (pause)="isPlaying = false"
+    ></audio>
+
+    @if (loadError) {
+      <div
+        class="mt-2 p-2 border-round"
+        style="background: color-mix(in srgb, var(--yellow-500) 12%, transparent); border: 1px solid color-mix(in srgb, var(--yellow-500) 28%, transparent); font-size: 0.8rem;"
+      >
+        <div>{{ loadError }}</div>
+        @if (debugDetails) {
+          <div class="mt-2" style="white-space: pre-wrap; font-size: 0.72rem; color: var(--text-color-secondary);">
+            {{ debugDetails }}
+          </div>
+        }
+      </div>
+    }
+
+    <div class="controls">
+      <button
+        pButton
+        type="button"
+        class="p-button-text p-button-sm"
+        icon="pi pi-step-backward"
+        (click)="prev()"
+        [disabled]="!hasTracks"
+        aria-label="Previous track"
+      ></button>
+      <button
+        pButton
+        type="button"
+        class="p-button-rounded p-button-sm"
+        [icon]="isPlaying ? 'pi pi-pause' : 'pi pi-play'"
+        (click)="togglePlay()"
+        [disabled]="!hasTracks"
+        aria-label="Play or pause"
+      ></button>
+      <button
+        pButton
+        type="button"
+        class="p-button-text p-button-sm"
+        icon="pi pi-step-forward"
+        (click)="next()"
+        [disabled]="!hasTracks"
+        aria-label="Next track"
+      ></button>
+    </div>
+
+    <div class="time-row">
+      <span>{{ formatTime(currentSeconds) }}</span>
+      <span>{{ formatTime(durationSeconds) }}</span>
+    </div>
+
+    <p-slider
+      [ngModel]="seekingSeconds"
+      (ngModelChange)="seekingSeconds = $event"
+      (onSlideStart)="onSeekStart()"
+      (onSlideEnd)="onSeekEnd()"
+      [min]="0"
+      [max]="durationSeconds || 0"
+      [step]="0.25"
+      [disabled]="!selectedTrack || !durationSeconds"
+      class="mt-2"
+    ></p-slider>
+
+    <div class="mt-3 volume-row">
+      <button
+        pButton
+        type="button"
+        class="p-button-text p-button-sm volume-toggle"
+        [icon]="volumeIcon"
+        (click)="toggleMute()"
+        aria-label="Mute or unmute"
+      ></button>
+      <p-slider
+        class="volume-slider"
+        [ngModel]="volume"
+        (ngModelChange)="setVolume($event)"
+        [min]="0"
+        [max]="100"
+        [step]="1"
+        aria-label="Volume"
+      ></p-slider>
+    </div>
+
+    <div class="playlist">
+      <p-listbox
+        [options]="tracks"
+        [(ngModel)]="selectedTrack"
+        [scrollHeight]="'14rem'"
+        [disabled]="!hasTracks"
+        [style]="{ width: '100%', display: 'block' }"
+        [emptyMessage]="'No music found in media/music'"
+      >
+        <ng-template let-track pTemplate="item">
+          <div
+            class="w-full"
+            (click)="onTrackClicked(track)"
+          >
+            <p class="track-name">
+              {{ trackDisplayName(track) }}
+            </p>
+            <p class="track-meta">
+              {{ trackDisplayMeta(track) }}
+            </p>
+          </div>
+        </ng-template>
+      </p-listbox>
+    </div>
+  </div>
+</p-card>

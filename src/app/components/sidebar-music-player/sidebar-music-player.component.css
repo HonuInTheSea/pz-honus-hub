@@ -1,0 +1,115 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.player-card {
+  border-radius: 12px;
+  overflow: hidden;
+  width: calc(100% - 20px);
+  margin: 0 10px;
+}
+
+:host ::ng-deep .player-card .p-card-header,
+:host ::ng-deep .player-card .p-card-body,
+:host ::ng-deep .player-card .p-card-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.player-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.player-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-color-secondary);
+  margin: 0.25rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.time-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-variant-numeric: tabular-nums;
+  font-size: 0.72rem;
+  color: var(--text-color-secondary);
+  margin-top: 0.4rem;
+}
+
+.volume-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+:host ::ng-deep .volume-toggle.p-button {
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.volume-slider {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.playlist {
+  margin-top: 0.65rem;
+}
+
+:host ::ng-deep .playlist .p-listbox {
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+:host ::ng-deep .playlist .p-listbox-list-wrapper {
+  width: 100%;
+}
+
+:host ::ng-deep .playlist .p-listbox-list {
+  padding: 0;
+}
+
+:host ::ng-deep .playlist .p-listbox-item {
+  border-radius: 8px;
+  padding: 0.5rem 0.5rem;
+}
+
+:host ::ng-deep .playlist .p-listbox-item.p-highlight {
+  background: color-mix(in srgb, var(--primary-color) 18%, transparent);
+  border: 1px solid color-mix(in srgb, var(--primary-color) 35%, transparent);
+}
+
+.track-name {
+  font-size: 0.82rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.track-meta {
+  font-size: 0.72rem;
+  color: var(--text-color-secondary);
+  margin: 0.15rem 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

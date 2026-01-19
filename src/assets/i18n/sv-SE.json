@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Avbryt",
+    "save": "Spara",
+    "browse": "Bläddra",
+    "yes": "Ja",
+    "no": "Inga",
+    "loadingContent": "Laddar innehåll...",
+    "next": "Nästa",
+    "back": "Tillbaka",
+    "finish": "Slutför"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Språk",
+    "languagePlaceholder": "Välj ett språk",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MOD-FILTER",
+      "modCollectionFilters": "MOD-SAMLINGSFILTER",
+      "actions": "ÅTGÄRDER",
+      "getStarted": "Kom igång",
+      "resources": "Resurser",
+      "dangerZone": "Danger Zone"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "logInspector": "Logg Inspector",
+      "configureFolders": "Konfigurera mappar",
+      "setSteamApiKey": "Ställ in Steam API-nyckel",
+      "syncHonu": "Synkronisera Honu's Mod Info QoL",
+      "syncLocal": "Synkronisera lokal moddata",
+      "syncWorkshop": "Synkronisera med Steam Workshop",
+      "changelog": "Changelog",
+      "documentation": "Dokumentation",
+      "viewSource": "Visa källa",
+      "projectZomboid": "Project Zomboid",
+      "pzWiki": "Offical Project Zomboid Wiki",
+      "b41Map": "B41 Map",
+      "b42Map": "B42 Map",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Project Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Inofficiell PZ-mappning",
+      "honuWorkshop": "HonuInTheSea's Steam Workshop",
+      "supportKofi": "Support på Ko-fi",
+      "resetApp": "Återställ applikation",
+      "resetAppTooltip": "Återställ fönsterinställningar och radera lagrad data",
+      "myMods": "Mina mods"
+    },
+    "filters": {
+      "adultLabel": "Har vuxeninnehåll",
+      "adultTooltip": "Filtermods där Steam-metadata rapporterar kanske_olämpligt_sex som sant.",
+      "rulesLabel": "Har regler",
+      "rulesTooltip": "Mod innehåller en, require,forload inMoterepatible-sats. deras mod.info-fil",
+      "missingSteamLabel": "Samnade Steam-data",
+      "missingSteamTooltip": "Mod kan ha markerats som privat eller tagits bort från Steam-verkstaden",
+      "outdatedLabel": "Föråldrade Mods",
+      "outdatedTooltip": "Mod kan behöva avslutas och prenumerera på nytt för att få den senaste versionen från Steam Workshop"
+    },
+    "collections": {
+      "searchLabel": "Sök samlingar",
+      "searchPlaceholder": "Sök samlingar",
+      "sortLabel": "Sortera efter",
+      "periodLabel": "Över tidsperiod",
+      "tagsLabel": "Taggar",
+      "tagsPlaceholder": "Välj taggar",
+      "sortMostPopular": "Mest populära",
+      "sortMostRecent": "Senast",
+      "sortLastUpdated": "Senast uppdaterad",
+      "periodToday": "Idag",
+      "periodWeek": "En vecka",
+      "periodThirtyDays": "Trettio dagar",
+      "periodThreeMonths": "Tre månader",
+      "periodSixMonths": "Sex månader",
+      "periodYear": "Ett år"
+    },
+    "presetsUnavailable": "Ställ in din Project Zomboid-användarmapp och/eller definiera förinställningar först.",
+    "steamApi": {
+      "dialogTitle": "Ställ in Steam Web API Key",
+      "dialogIntro": "Ange din Steam Web API Key. Denna nyckel lagras lokalt på din maskin.",
+      "keyLabel": "Steam Web API-nyckel",
+      "needKey": "Behöver du en nyckel?",
+      "getKeyLink": "Hämta din Steam Web API-nyckel",
+      "helpButton": "Hur skapar du en Steam Web API-nyckel",
+      "helpTitle": "Hur skapar du en Steam Web API-nyckel",
+      "helpCardTitle": "Hur registrerar du en Steam Web API-nyckel",
+      "helpCardBody": "Den här guiden ger en steg-för-steg-genomgång för att registrera en Steam Web API-nyckel. En Steam Web API Key låter applikationer säkert få åtkomst till specifik data från ditt Steam-konto, såsom spelbibliotek eller statistik, när du godkänner dem att göra det.",
+      "step1Title": "1. Förutsättningar",
+      "step1Intro": "Innan du kan registrera en Steam Web API Key, se till att:",
+      "step1Bullet1": "Du har ett aktivt Steam-konto med god status, säkrat med Steam Guard (e-post eller mobilautentisering).",
+      "step1Bullet2": "Ditt konto äger minst ett köpt spel. Helt nya eller tomma konton kan inte få en API-nyckel.",
+      "step1Bullet3": "Du använder en betrodd enhet och nätverk (registrera eller visa aldrig din nyckel på en offentlig eller delad dator).",
+      "step2Title": "2. Viktiga säkerhetsanmärkningar",
+      "step2Intro": "Din Steam Web API-nyckel är känslig information. Alla som har din nyckel kan göra API-förfrågningar å dina vägnar. Behandla det som ett lösenord:",
+      "step2Bullet1": "Dela aldrig din nyckel med andra människor, och lägg den aldrig offentligt (till exempel på forum eller GitHub).",
+      "step2Bullet2": "Klistra bara in din nyckel i verktyg eller webbplatser som du litar på till fullo.",
+      "step2Bullet3": "Om du misstänker att din nyckel har avslöjats, återkalla den omedelbart och generera en ny.",
+      "step3Title": "3. Steg-för-steg: Registrera en Steam Web API-nyckel",
+      "step3_1Title": "Steg 1 - Logga in på Steam",
+      "step3_1Bullet1": "Öppna din webbläsare och gå till <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Klicka på <strong>\"Logga in\"</strong> i det övre högra hörnet.",
+      "step3_1Bullet3": "Ange ditt Steam-kontonamn och lösenord.",
+      "step3_1Bullet4": "Om du uppmanas, slutför Steam Guard-verifieringen.",
+      "step3_2Title": "Steg 2 - Öppna Steam Web API Key-sidan",
+      "step3_2Bullet1": "När du är inloggad öppnar du registreringssidan för Steam Web API Key: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Sidan kommer att visa en kort beskrivning av Steam Web API och ett formulär med titeln <strong>\"Registrera dig för en ny Steam Web API Key.\"</strong>",
+      "step3_3Title": "Steg 3 - Ange ett domännamn och godkänn villkoren",
+      "step3_3Intro": "På anmälningsformuläret:",
+      "step3_3Bullet1": "I fältet <strong>Domännamn</strong> anger du domänen för webbplatsen eller tjänsten som ska använda nyckeln. <ul class=\"p-ml-3\"><li>Om du inte har en domän kan du ange en platshållare som <code>localhost</code>, <code>127.0.0.1</code> eller <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Läs användarvillkoren för Steam Web API.",
+      "step3_3Bullet3": "Markera kryssrutan för att bekräfta att du godkänner villkoren.",
+      "step3_3Bullet4": "Klicka på <strong>\"Registrera\"</strong>-knappen för att skicka formuläret.",
+      "step3_4Title": "Steg 4 - Visa och kopiera din nya Steam Web API-nyckel",
+      "step3_4Intro": "Efter en lyckad registrering:",
+      "step3_4Bullet1": "Sidan laddas om och visar din Steam Web API-nyckel nära toppen.",
+      "step3_4Bullet2": "Nyckeln är en lång rad med bokstäver och siffror. <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Välj hela nyckeln och kopiera den (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Lagra den på en säker plats, till exempel en lösenordshanterare eller en krypterad anteckningsapp.",
+      "step4Title": "4. Grundläggande exempel på hur du använder din Steam Web API-nyckel",
+      "step4Intro": "När du har en nyckel kan du anropa Steam Web API-slutpunkter genom att lägga till den som en <code>key=</code>-parameter till URL:en. Till exempel kan en enkel HTTP-förfrågan se ut så här (ersätt <code>YOURKEYHERE</code> med din riktiga nyckel):",
+      "step4Outro": "De exakta webbadresserna och parametrarna beror på vilket Steam Web API-gränssnitt du använder. Se alltid den officiella dokumentationen för de endpoints du behöver.",
+      "step5Title": "5. Återkalla eller återskapa din Steam Web API-nyckel",
+      "step5Intro": "Om du inte längre behöver din Steam Web API-nyckel, eller om du tror att den har äventyrats, bör du återkalla den:",
+      "step5Bullet1": "Logga in på ditt Steam-konto om du inte redan är inloggad.",
+      "step5Bullet2": "Öppna <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_opener\" target=\"_blanker\" noreferrer\">https://steamcommunity.com/dev/apikey</a> igen.",
+      "step5Bullet3": "Klicka på knappen märkt <strong>\"Återkalla min Steam Web API Key\"</strong>.",
+      "step5Bullet4": "Om du behöver en ny nyckel senare, gå tillbaka till samma sida och registrera dig igen med stegen ovan.",
+      "step6Title": "6. Felsökningstips",
+      "step6Intro": "Du kan se ett av följande problem när du försöker registrera en nyckel:",
+      "step6Bullet1": "<strong>Meddelande:</strong> <em>\"Du kommer att beviljas åtkomst till Steam Web API-nycklar när du har spel i ditt Steam-konto.\"</em> I det här fallet uppfyller ditt konto ännu inte minimikraven. Köp minst ett spel på Steam, vänta tills köpet är klart och försök igen senare.",
+      "step6Bullet2": "<strong>Sidan ber dig hela tiden att logga in</strong> - Se till att cookies och JavaScript är aktiverade i din webbläsare och att du loggar in med rätt konto.",
+      "step6Bullet3": "<strong>Säkerhetsproblem</strong> – Om någon tredje parts webbplats eller person ber om din nyckel och du är osäker på varför, dela inte den. Återkalla din nyckel och ändra ditt Steam-lösenord om du tror att det har blivit utsatt.",
+      "footerNote": "Du har nu en registrerad Steam Web API Key och en grundläggande förståelse för hur du hanterar den på ett säkert sätt. Håll den här sidan till hands som referens när du behöver registrera, använda eller återkalla din nyckel."
+    },
+    "folders": {
+      "dialogTitle": "Konfigurera mappar"
+    }
+  },
+  "changelog": {
+    "title": "Ändringslogg",
+    "events": {
+      "initialRelease": {
+        "title": "Första versionen",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Första offentliga versionen av Honu's Project Zomboid Hub."
+      }
+    }
+  },
+  "docs": {
+    "title": "Dokumentation",
+    "intro": "Honus Hub hjälper dig att bläddra, inspektera och hantera ditt lokala Project Zomboid, med skrivbordsintegration via Tauri.",
+    "toc": {
+      "aria": "Innehållsförteckning",
+      "title": "Innehållsförteckning",
+      "overview": "Översikt",
+      "workflow": "Arbetsflöde",
+      "data": "Data som appen använder",
+      "features": "Funktioner",
+      "mediaPlayer": "Mediespelare",
+      "logInspector": "Logginspektör",
+      "folderSetup": "Mappinställningar",
+      "tauri": "Integration för skrivbord (Tauri)",
+      "privacy": "Sekretess och lagring",
+      "troubleshooting": "Felsökning",
+      "faq": "Vanliga frågor"
+    },
+    "overview": {
+      "title": "Översikt",
+      "body": "Appen skannar en vald mods-katalog, hämtar metadata från vanliga Project Zomboid-modkonventioner och presenterar allt i en tabell och en sammanfattningspanel."
+    },
+    "workflow": {
+      "title": "Arbetsflöde",
+      "intro": "Följ det här flödet från början till slut för att ansluta dina mappar, synkronisera metadata och generera Honu Mod Info QoL-utgången.",
+      "step1": {
+        "title": "Open-mapparna i mapparna <strong>||Open-mapparna| åtgärder och ställ in dina Project Zomboid-spel-, verkstads- och användarkataloger.",
+        "body": "Skärmdump: Konfigurera mappar",
+        "screenshot": "Skapa/skriv in Steam Workshop-nyckel"
+      },
+      "step2": {
+        "title": "Använd <strong>Set Steam API Key</strong> för att klistra in din nyckel så att appen kan hämta Workshop-metadata.",
+        "body": "Skärmdump: Ställ in Steam API-nyckeln",
+        "screenshot": "Synkronisera lokal Steam API-nyckel"
+      },
+      "step3": {
+        "title": "",
+        "body": "Kör <strong>Synkronisera lokal moddata</strong> för att skanna din Workshop-mapp och skapa den lokala modlistan.",
+        "screenshot": "Skärmbild: Synkronisera lokal moddata"
+      },
+      "step4": {
+        "title": "Synkronisera med Steam Workshop",
+        "body": "Kör <strong>Sync With Steam Workshop</strong> för att hämta workshoptitlar, författare, storlekar och extra metadata.",
+        "screenshot": "Skärmbild: Synkronisera med Steam Workshop"
+      },
+      "step5": {
+        "title": "Synkronisera Honus Mod Info QoL",
+        "body": "Använd <strong>Sync Honu's Mod Info QoL</strong> för att generera/uppdatera <code>honus_miqol_db.lua</code> i din Project Zomboid-användarmapp.",
+        "screenshot": "Skärmbild: Sync Honu's Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Data som appen använder",
+      "intro": "Appen bygger en modlistning från information tillgänglig på disken.",
+      "bullet1": "<strong>Mod-mappsökväg</strong> - löst absolut sökväg till mod-katalogen.",
+      "bullet2": "<strong>Mod-id</strong> - extraherad från mod-metadata när tillgänglig (vanligen från <code>mod.info</code>).",
+      "bullet3": "<strong>Namn</strong> – ett visningsnamn som kommer från metadata och/eller mappnamn.",
+      "bullet4": "<strong>Workshop-id (valfritt)</strong> – om det upptäcks och är numeriskt, aktiverar appen en Steam Workshop-länkknapp.",
+      "bullet5": "<strong>Status-/hälsoindikatorer</strong> – grundläggande signaler som saknade eller ofullständiga metadata (där det går att upptäcka).",
+      "outro": "Alla moddar innehåller inte fullständig metadata. När fält saknas kommer användargränssnittet att visa bästa ansträngningsvärden och kan inaktivera åtgärder som kräver specifik data (till exempel Steam-länken)."
+    },
+    "features": {
+      "title": "Drag",
+      "bullet1": "<strong>Modstabell</strong> – listar upptäckta mods med nyckelfält (namn, id, verkstadslänk när tillgänglig och sökväg).",
+      "bullet2": "<strong>Raddetaljer</strong> - expandera en rad för att se mer information om en mod (när den är tillgänglig).",
+      "bullet3": "<strong>Öppna i Steam</strong> – öppnar Workshop-sidan i din standardwebbläsare för mods med ett giltigt verkstads-ID.",
+      "bullet4": "<strong>Öppna mapp</strong> - öppnar den valda mod-mappen i din filutforskare.",
+      "mediaPlayer": "<strong>Mediaspelare</strong> - spela upp Project Zomboid-musikspår från sidofältet. Se <a routerLink=\"/documentation\" fragment=\"media-player\">Mediespelare</a>.",
+      "logInspectorPrefix": "<strong>Logginspektör</strong> - ladda och filtrera loggfiler (som <code>console.txt</code>) för att snabbt hitta fel och varningar. Se",
+      "logInspectorLink": "Logginspektören",
+      "bullet6": "<strong>Dashboard</strong> - visar snabbstatistik (till exempel: totala mods upptäckta) och andra indikatorer på hög nivå."
+    },
+    "mediaPlayer": {
+      "title": "Mediaspelare",
+      "intro": "Sidofältet innehåller en lätt musikspelare som kan söka efter Project Zomboid-ljudspår (OGG) och spela upp dem i appen.",
+      "bullet1": "|<strong> -grundläggande titel/spellista/spellista visas</strong> tillgängligt).",
+      "bullet2": "<strong>Uppspelning</strong> - spela upp/pausa plus föregående/nästa spår.",
+      "bullet3": "<strong>Sök + volym</strong> - skrubba igenom spåret och justera volym/stäng av."
+    },
+    "logInspector": {
+      "title": "Logginspektör",
+      "intro": "Logginspektören hjälper dig att öppna och filtrera loggfiler (till exempel <code>console.txt</code>) för att felsöka krascher, modladdningsproblem och serverstartsproblem.",
+      "bullet1": "<strong>Välj en fil</strong> - bläddra till valfri <code>.txt</code>- eller <code>.log</code>-fil, eller använd en standardsökväg när den är tillgänglig.",
+      "bullet2": "<strong>Filter</strong> - välj loggnivåer (ERROR/WARN/LOG/DEBUG/TRACE), ställ in ett datum/tid-fönster och begränsa det maximala antalet poster som visas.",
+      "bullet3": "<strong>Sök</strong> - filtrera poster efter text över det tolkade meddelandet och den råa källraden.",
+      "bullet4": "<strong>Liveomröstning</strong> – uppdatera eventuellt på en timer för att se loggar uppdateras medan spelet/servern körs.",
+      "bullet5": "<strong>Rensa</strong> - trunkera den valda loggfilen (använd med försiktighet)."
+    },
+    "folderSetup": {
+      "title": "Mappinställningar",
+      "step1": "Öppna sidan <strong>Mods</strong> från det vänstra sidofältet (under <em>HEM</em>).",
+      "step2": "Använd <strong>Bläddra mods</strong> i menyn <em>ÅTGÄRDER</em> för att välja din Project Zomboid-modskatalog (vanligtvis <code>projectzomboid/mods</code>).",
+      "step3": "Efter valet skannar appen katalogen och fyller i modstabellen och instrumentpanelen.",
+      "tip": "Tips: Om du byter maskin eller flyttar din modskatalog, bläddra helt enkelt igen för att uppdatera den lagrade sökvägen."
+    },
+    "tauri": {
+      "title": "Desktop (Tauri) integration",
+      "bullet1": "<strong>Åtkomst till filsystem</strong> - katalogbläddring och skanning utförs via skrivbordsskalet.",
+      "bullet2": "<strong>Öppna externa länkar</strong> - Steam Workshop-länkar öppnas med din OS-standardwebbläsare.",
+      "bullet3": "<strong>Öppna mappar</strong> - startar OS-filutforskaren fokuserad på mod-katalogen."
+    },
+    "privacy": {
+      "title": "Sekretess & lagring",
+      "bullet1": "<strong>Lokal data</strong> – sökvägen till den valda modsmappen och skanningsresultaten kan cachelagras lokalt för att förbättra användarupplevelsen."
+    },
+    "troubleshooting": {
+      "title": "Felsökning",
+      "bullet1": "<strong>Inga mods visas efter skanning</strong> - kontrollera att den valda mappen är din faktiska Project Zomboid mods-katalog och att den innehåller mod-undermappar.",
+      "bullet2": "<strong>Steam-länkar är inaktiverade</strong> - se till att modden har ett giltigt numeriskt verkstads-ID (alla moddar är inte verkstadsbaserade).",
+      "bullet3": "<strong>Öppen mapp gör ingenting</strong> - bekräfta att Tauri-backend körs och att OS-behörigheter tillåter att filutforskaren öppnas."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Redigerar appen mina mods?",
+      "a1": "Nej. Det grundläggande arbetsflödet är skrivskyddat: det skannar mappar och visar metadata. Åtgärder som att öppna mappar eller workshoplänkar ändrar inte mod-filer.",
+      "q2": "Varför saknas viss information för en mod?",
+      "a2": "Mods varierar i hur konsekvent de inkluderar metadata. Om fält som id eller verkstads-id saknas kommer appen att visa vad den kan och inaktivera funktioner som är beroende av dessa fält."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Namn",
+      "modId": "Mod-ID",
+      "author": "Författare",
+      "version": "Modversion",
+      "versionMin": "Minsta spelversion",
+      "versionMax": "Maximal spelversion",
+      "url": "URL",
+      "description": "Beskrivning",
+      "tags": "Taggar",
+      "noTags": "Inga taggar",
+      "packs": "Förpackningar",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Workshop Titel",
+      "workshopCreator": "Workshop Creator",
+      "fileSize": "Filstorlek",
+      "timeCreated": "Tid skapad",
+      "timeUpdated": "Tid uppdaterad",
+      "workshopViews": "Workshopvisningar",
+      "workshopSubscriptions": "Workshopprenumerationer",
+      "adultContent": "Har vuxet innehåll"
+    },
+    "links": {
+      "requiredMods": "Mods som krävs",
+      "loadAfter": "Ladda in mod efter",
+      "loadBefore": "Ladda mod före",
+      "incompatibleMods": "Inkompatibla mods",
+      "requiredBy": "Krävs av",
+      "incompatibleWith": "Inkompatibelt med"
+    },
+    "buttons": {
+      "visitWorkshop": "Besök Steam Workshop-sidan",
+      "authorWorkshop": "Author's Steam Workshop-sida",
+      "openFolder": "Öppna mod-mappen"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Det här fältet är skrivskyddat och fylls i från mod.info.",
+      "steamReadonly": "Detta fält är skrivskyddat och fylls i från Steam Workshop.",
+      "modMissing": "Följande mod kunde inte hittas",
+      "syncToActivate": "Synkronisera med Steam Workshop för att aktivera",
+      "modFolderUnavailable": "Mod-mappsökvägen är inte tillgänglig."
+    }
+  },
+  "tags": {
+    "animals": "Djur",
+    "audio": "Ljud",
+    "balance": "Balans",
+    "build_41": "Bygg 41",
+    "build_42": "Bygg 42",
+    "build_40": "Bygg 40",
+    "buildings": "Byggnader",
+    "clothing_armor": "Kläder/rustning",
+    "farming": "Jordbruk",
+    "food": "Mat",
+    "framework": "Ram",
+    "hardmode": "Hårt läge",
+    "interface": "Gränssnitt",
+    "items": "Föremål",
+    "language_translation": "Språk/Översättning",
+    "literature": "Litteratur",
+    "map": "Karta",
+    "military": "Militär",
+    "misc": "Övrigt",
+    "models": "Modeller",
+    "multiplayer": "Multiplayer",
+    "pop_culture": "Popkultur",
+    "qol": "QoL",
+    "realistic": "Realistisk",
+    "silly_fun": "Silly/Fun",
+    "skills": "Färdigheter",
+    "textures": "Texturer",
+    "traits": "egenskaper",
+    "vehicles": "Fordon",
+    "weapons": "Vapen",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Taggar",
+    "matchLabel": "Match",
+    "matchAny": "ELLER",
+    "matchAll": "OCH",
+    "placeholder": "Välj taggar"
+  },
+  "modsTable": {
+    "clearFilters": "Rensa",
+    "searchPlaceholder": "Sök nyckelord",
+    "detailsTitle": "Mod detaljer",
+    "columns": {
+      "name": "Namn",
+      "author": "Författare",
+      "workshopId": "Workshop ID",
+      "lastModified": "Senast ändringsdatum"
+    },
+    "filters": {
+      "name": "Sök på namn",
+      "author": "Sök efter författare",
+      "workshopId": "Sök efter verkstads-ID",
+      "date": "Filterdatum"
+    }
+  },
+  "folders": {
+    "title": "Ange nödvändiga mappar",
+    "description": "Dessa mappar används för att skanna dina mods och läsa dina Project Zomboid-installationsdetaljer.",
+    "gameDirLabel": "Project Zomboid spelmapp.",
+    "workshopDirLabel": "Lokala mods (Steam Workshop)-mapp",
+    "userDirLabel": "Project Zomboid-användarmapp (valfritt)",
+    "userDirNote": "Används för att exportera serverförinställningar och (valfritt) avancerade appliceringsmål."
+  },
+  "modsPage": {
+    "toastHelp": "Var hittar jag detta?",
+    "workshopPrompt": {
+      "title": "Hämta Steam Workshop Data",
+      "body": "Vill du hämta den senaste metadatan från Steam Workshop för dina mods?",
+      "alwaysFetch": "Hämta alltid automatiskt utan att fråga"
+    },
+    "loadingLocal": "Skannar lokala moddata...",
+    "loadingWorkshop": "Hämtar Steam Workshop-data...",
+    "loading": "Laddar data..."
+  },
+  "onboarding": {
+    "title": "Kom igång",
+    "steps": {
+      "welcome": "Välkommen",
+      "folders": "Mappar",
+      "steamKey": "Steam API-nyckel",
+      "tips": "Tips"
+    },
+    "welcome": {
+      "title": "Välkommen till Project Zomboid Mod Manager",
+      "body": "Den här snabba inställningen hjälper dig att koppla dina mappar, lägga till din Steam Web API-nyckel och börja synkronisera moddar.",
+      "bullet1": "Välj dina Project Zomboid-mappar.",
+      "bullet2": "Lägg till din Steam Web API-nyckel för Workshop-metadata.",
+      "bullet3": "Slutför inställningen och börja hantera dina moddar."
+    },
+    "tips": {
+      "title": "Snabba tips",
+      "bullet1": "Du kan uppdatera mappar och din Steam API-nyckel när som helst från sidofältet.",
+      "bullet2": "Kör Synkronisera lokal moddata innan du synkroniserar Workshop-metadata.",
+      "bullet3": "Använd modfilter för att snabbt begränsa listan."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod Info QoL Sync misslyckades",
+        "missingUserDetail": "Project Zomboid användarmapp är inte konfigurerad.",
+        "successSummary": "Honus Mod Info QoL Synkroniserad",
+        "successCreatedDetail": "honus_miqol_db.lua skapad.",
+        "successUpdatedDetail": "honus_miqol_db.lua uppdaterad.",
+        "failedDetail": "Det gick inte att synkronisera Honu Mod Info QoL."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Datamigrering",
+        "detail": "Din lokala moddata uppdateras. En ny genomsökning körs för att uppdatera beroenden."
+      },
+      "syncInProgress": {
+        "summary": "Synkronisering pågår",
+        "detail": "En synkroniseringsåtgärd körs redan. Vänta tills det är klart."
+      },
+      "localSyncComplete": {
+        "summary": "Lokal modsynkronisering är klar",
+        "detail": "Lokal moddata har uppdaterats framgångsrikt."
+      },
+      "localSyncFailed": {
+        "summary": "Lokal modsynkronisering misslyckades",
+        "detail": "Det gick inte att synkronisera lokala mods."
+      },
+      "invalidDirectory": {
+        "summary": "Ogiltig katalog",
+        "detail": "Den valda mappen verkar inte vara en giltig Project Zomboid Workshop-katalog (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API-nyckel krävs",
+        "detail": "Använd \"Set Steam API Key\" i menyn och försök sedan synkronisera igen."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Ingen verkstadsmetadata returnerades; ingenting räddades."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop delvis synkroniserad",
+        "detail": "Fick {{received}} av {{total}} verkstadsartiklar. Saknade ID:n: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop Synkroniserad",
+        "detail": "Verkstadsmetadata har sparats."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API obehörig",
+        "detail": "Steam returnerade 401 Unauthorized. Verifiera din Steam Web API-nyckel och försök igen."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Det gick inte att synkronisera Steam Workshop-metadata."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Förinställt namn finns redan",
+        "detail": "Välj ett annat namn för \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Det gick inte att ta bort",
+        "missingUserDetail": "Project Zomboid användarkatalog är inte konfigurerad.",
+        "missingModDetail": "Mods-ID hittades inte i mods.txt.",
+        "failedDetail": "Det gick inte att ta bort moden från förinställningen."
+      },
+      "removed": {
+        "summary": "Borttagen",
+        "detailMultiple": "Valda mods togs bort från förinställningen.",
+        "detailSingle": "Mod togs bort från förinställningen."
+      },
+      "presetUpdated": {
+        "summary": "Förinställning uppdaterad",
+        "detailFallback": "pz_modlist_settings.cfg kunde inte uppdateras.",
+        "detailFailed": "Det gick inte att uppdatera pz_modlist_settings.cfg."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Det förinställda namnet finns redan",
+        "detail": "Välj ett annat namn för \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "Inga mods att exportera",
+        "detailCode": "Lägg till minst en mod innan koden genereras.",
+        "detailPreset": "Lägg till minst en mod innan du sparar en förinställning."
+      },
+      "copied": {
+        "summary": "Kopierat",
+        "detail": "{{label}} kopierad till urklipp."
+      },
+      "presetImported": {
+        "summary": "Förinställda importerade",
+        "detail": "|0__Importerade mods."
+      },
+      "importFailed": {
+        "summary": " misslyckades",
+        "detail": "Det gick inte att importera förinställningen."
+      },
+      "presetSaved": {
+        "summary": "Förinställningen sparad",
+        "detailFallback": "pz_modlist_settings.cfg kunde inte uppdateras.",
+        "detailFailed": "Det gick inte att uppdatera pz_modlist_settings.cfg."
+      },
+      "presetSaveNotice": {
+        "reordered": "Omordnade mods efter beroenderegler.",
+        "missingDependencies": "Saknade beroenden: {{count}}.",
+        "missingWorkshopIds": "|Id saknas: {{count}}.",
+        "incompatibilities": "|Id saknas. {{count}}.",
+        "cycles": "Detekterade cykler: {{count}}.",
+        "conflicts": "Filkonflikter: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Förinställning raderad",
+        "detailFallback": "pz_modlist_settings.cfg kunde inte uppdateras.",
+        "detailFailed": "Det gick inte att uppdatera pz_modlist_settings.cfg."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Det gick inte att ladda samlingar. Verifiera din Steam Web API-nyckel och försök igen."
+      },
+      "steamUnauthorized": "Steam returnerade 401 Unauthorized. Verifiera din Steam Web API-nyckel.",
+      "queryFailed": "Det gick inte att fråga Steam Workshop-samlingar.",
+      "presetNotCreated": {
+        "summary": "Förinställning ej skapad",
+        "detail": "Inga verkstadsföremål hittades för denna samling."
+      },
+      "presetCreated": {
+        "summary": "Förinställning skapad",
+        "detail": "Samlingsförinställning sparad som \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Förinställning uppdaterad",
+        "detail": "Samlingsförinställningen \"{{name}}\" har uppdaterats."
+      },
+      "presetRemoved": {
+        "summary": "Förinställning borttagen",
+        "detail": "Samlingsförinställning har tagits bort."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Ogiltigt servernamn",
+        "detailMissing": "Ange ett servernamn.",
+        "detailInvalidChars": "Servernamnet innehåller ogiltiga filnamnstecken.",
+        "detailTrailing": "Servernamnet får inte sluta med en punkt eller ett mellanslag."
+      },
+      "nameExists": {
+        "summary": "Servernamnet finns redan",
+        "detail": "Välj ett unikt servernamn."
+      },
+      "missingUserFolder": {
+        "summary": "Saknad användarmapp",
+        "detail": "Ställ in din Project Zomboid-användarmapp först."
+      },
+      "createFailed": {
+        "summary": "Skapa misslyckades",
+        "detail": "Det gick inte att skapa serverfiler."
+      },
+      "saved": {
+        "summary": "Sparade",
+        "detail": "Serverfiler uppdaterade."
+      },
+      "saveFailed": {
+        "summary": "Spara misslyckades",
+        "detail": "Det gick inte att spara serverfiler."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Börjar med",
+    "contains": "Innehåller",
+    "notContains": "Innehåller inte",
+    "endsWith": "Slutar med",
+    "equals": "Lika med",
+    "notEquals": "Inte lika med",
+    "noFilter": "Inget filter",
+    "lt": "Mindre än",
+    "lte": "Mindre än eller lika med",
+    "gt": "Större än",
+    "gte": "Större än eller lika med",
+    "dateIs": "Datum är",
+    "dateIsNot": "Datum är inte",
+    "dateBefore": "Datum är före",
+    "dateAfter": "Datum är efter",
+    "clear": "Rensa",
+    "apply": "Använd",
+    "matchAll": "Matcha alla",
+    "matchAny": "Matcha någon",
+    "addRule": "Lägg till regel",
+    "removeRule": "Ta bort regel"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overview",
+      "updateStatus": "Mods Update Status",
+      "topInstalled": "Top Installed Mods (by Subscriptions)",
+      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
+      "installsOverTime": "Mod Installs Over Time",
+      "largestMods": "Largest Mods (by File Size)",
+      "latestNews": "Latest Project Zomboid News",
+      "popularThisWeek": "Popular Mods This Week",
+      "latestMods": "Latest Mods",
+      "updatedMods": "Updated Mods"
+    },
+    "labels": {
+      "totalMods": "Total Mods",
+      "lastLocalSync": "Last Local Mod Sync",
+      "lastWorkshopSync": "Last Workshop Sync",
+      "subscribers": "subscribers",
+      "updated": "updated",
+      "created": "created",
+      "installedTooltip": "Installed locally",
+      "unknown": "Unknown",
+      "never": "Never"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
+      "noInstalledSubs": "No installed mods with subscription data are available.",
+      "noWorkshopUpdateInfo": "No Workshop update information is available.",
+      "noSizeData": "No mod file size data is available.",
+      "noNews": "No news items were found.",
+      "noPopularMods": "No popular mods were found.",
+      "noModsFound": "No mods were found.",
+      "noRecentUpdates": "No recently updated mods were found."
+    },
+    "fallbacks": {
+      "untitledItem": "Untitled item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods by install month",
+        "xAxis": "Month",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Outdated",
+        "upToDate": "Up to date"
+      },
+      "size": {
+        "label": "Workshop file size (bytes)",
+        "yAxis": "Size (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Log Inspector",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Types",
+      "typesPlaceholder": "Select types",
+      "maxEntries": "Max entries",
+      "from": "From",
+      "to": "To",
+      "livePolling": "Live polling",
+      "pollingEverySeconds": "Every (s)",
+      "searchMessage": "Search message",
+      "searchPlaceholder": "Search..."
+    },
+    "table": {
+      "pageReport": "Showing {first} to {last} of {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Type",
+      "message": "Message"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "OTHER"
+    },
+    "dialog": {
+      "logFilesFilter": "Log Files"
+    },
+    "errors": {
+      "noFilePath": "Set a file path to load logs.",
+      "loadFailed": "Failed to load log file.",
+      "clearFailed": "Failed to clear log file."
+    }
+  }
+}

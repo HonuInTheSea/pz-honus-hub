@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Cancel",
+    "browse": "Browse",
+    "yes": "Yes",
+    "no": "No",
+    "save": "Save",
+    "loadingContent": "Loading content...",
+    "next": "Next",
+    "back": "Back",
+    "finish": "Finish"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Language",
+    "languagePlaceholder": "Select a language",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MOD FILTERS",
+      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "actions": "ACTIONS",
+      "getStarted": "Get Started",
+      "resources": "Resources",
+      "dangerZone": "Danger Zone"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "logInspector": "Log Inspector",
+      "myMods": "My Mods",
+      "configureFolders": "Configure Folders",
+      "setSteamApiKey": "Set Steam API Key",
+      "syncHonu": "Sync Honu's Mod Info QoL",
+      "syncLocal": "Sync Local Mod Data",
+      "syncWorkshop": "Sync With Steam Workshop",
+      "changelog": "Changelog",
+      "documentation": "Documentation",
+      "viewSource": "View Source",
+      "projectZomboid": "Project Zomboid",
+      "pzWiki": "Offical Project Zomboid Wiki",
+      "b41Map": "B41 Map",
+      "b42Map": "B42 Map",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Project Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Unofficial PZ Mapping",
+      "honuWorkshop": "HonuInTheSea's Steam Workshop",
+      "supportKofi": "Support on Ko-fi",
+      "resetApp": "Reset Application",
+      "resetAppTooltip": "Reset window settings and delete stored data"
+    },
+    "filters": {
+      "adultLabel": "Has Adult Content",
+      "adultTooltip": "Filter mods where Steam metadata reports maybe_inappropriate_sex as true.",
+      "rulesLabel": "Has Rules",
+      "rulesTooltip": "Mod contains a require, incompatible, loadModAfter, loadModBefore statement in their mod.info file",
+      "missingSteamLabel": "Missing Steam Data",
+      "missingSteamTooltip": "Mod may have been marked as private or removed from the Steam Workshop",
+      "outdatedLabel": "Outdated Mods",
+      "outdatedTooltip": "Mod may need to be unsubscribed and resubscribed to get the latest version from the Steam Workshop"
+    },
+    "collections": {
+      "searchLabel": "Search Collections",
+      "searchPlaceholder": "Search collections",
+      "sortLabel": "Sort by",
+      "periodLabel": "Over time period",
+      "tagsLabel": "Tags",
+      "tagsPlaceholder": "Select tags",
+      "sortMostPopular": "Most Popular",
+      "sortMostRecent": "Most Recent",
+      "sortLastUpdated": "Last Updated",
+      "periodToday": "Today",
+      "periodWeek": "One Week",
+      "periodThirtyDays": "Thirty Days",
+      "periodThreeMonths": "Three Months",
+      "periodSixMonths": "Six Months",
+      "periodYear": "One Year"
+    },
+    "presetsUnavailable": "Set your Project Zomboid user folder and/or define presets first.",
+    "steamApi": {
+      "dialogTitle": "Set Steam Web API Key",
+      "dialogIntro": "Enter your Steam Web API Key. This key is stored locally on your machine.",
+      "keyLabel": "Steam Web API Key",
+      "needKey": "Need a key?",
+      "getKeyLink": "Get your Steam Web API Key",
+      "helpButton": "How to create a Steam Web API Key",
+      "helpTitle": "How to create a Steam Web API Key",
+      "helpCardTitle": "How to Register a Steam Web API Key",
+      "helpCardBody": "This guide provides a step-by-step walkthrough for registering a Steam Web API Key. A Steam Web API Key lets applications securely access specific data from your Steam account, such as game libraries or statistics, when you authorize them to do so.",
+      "step1Title": "1. Prerequisites",
+      "step1Intro": "Before you can register a Steam Web API Key, make sure that:",
+      "step1Bullet1": "You have an active Steam account in good standing, secured with Steam Guard (email or mobile authenticator).",
+      "step1Bullet2": "Your account owns at least one purchased game. Brand-new or empty accounts cannot obtain an API key.",
+      "step1Bullet3": "You are using a trusted device and network (never register or view your key on a public or shared computer).",
+      "step2Title": "2. Important Security Notes",
+      "step2Intro": "Your Steam Web API Key is sensitive information. Anyone who has your key can make API requests on your behalf. Treat it like a password:",
+      "step2Bullet1": "Never share your key with other people, and never post it publicly (for example, on forums or GitHub).",
+      "step2Bullet2": "Only paste your key into tools or websites you fully trust.",
+      "step2Bullet3": "If you suspect your key has been exposed, revoke it immediately and generate a new one.",
+      "step3Title": "3. Step-by-Step: Registering a Steam Web API Key",
+      "step3_1Title": "Step 1 - Sign in to Steam",
+      "step3_1Bullet1": "Open your web browser and go to <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Click <strong>\"Log In\"</strong> in the top-right corner.",
+      "step3_1Bullet3": "Enter your Steam account name and password.",
+      "step3_1Bullet4": "If prompted, complete Steam Guard verification.",
+      "step3_2Title": "Step 2 - Open the Steam Web API Key page",
+      "step3_2Bullet1": "While logged in, open the Steam Web API Key registration page: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "The page will display a short description of the Steam Web API and a form titled <strong>\"Register for a new Steam Web API Key.\"</strong>",
+      "step3_3Title": "Step 3 - Enter a domain name and agree to the terms",
+      "step3_3Intro": "On the registration form:",
+      "step3_3Bullet1": "In the <strong>\"Domain Name\"</strong> field, enter the domain of the website or service that will use the key. <ul class=\"p-ml-3\"><li>If you do not have a domain, you can enter a placeholder such as <code>localhost</code>, <code>127.0.0.1</code>, or <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Read the Steam Web API Terms of Use.",
+      "step3_3Bullet3": "Tick the checkbox to confirm that you agree to the terms.",
+      "step3_3Bullet4": "Click the <strong>\"Register\"</strong> button to submit the form.",
+      "step3_4Title": "Step 4 - View and copy your new Steam Web API Key",
+      "step3_4Intro": "After a successful registration:",
+      "step3_4Bullet1": "The page reloads and shows your Steam Web API Key near the top.",
+      "step3_4Bullet2": "The key is a long string of letters and numbers (for example: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Select the entire key and copy it (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Store it in a secure location, such as a password manager or an encrypted notes app.",
+      "step4Title": "4. Basic Example of Using Your Steam Web API Key",
+      "step4Intro": "Once you have a key, you can call Steam Web API endpoints by adding it as a <code>key=</code> parameter to the URL. For example, a simple HTTP request might look like this (replace <code>YOURKEYHERE</code> with your real key):",
+      "step4Outro": "The exact URLs and parameters depend on which Steam Web API interface you are using. Always consult the official documentation for the endpoints you need.",
+      "step5Title": "5. Revoking or Regenerating Your Steam Web API Key",
+      "step5Intro": "If you no longer need your Steam Web API Key, or you believe it has been compromised, you should revoke it:",
+      "step5Bullet1": "Sign in to your Steam account if you are not already logged in.",
+      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> again.",
+      "step5Bullet3": "Click the button labeled <strong>\"Revoke My Steam Web API Key\"</strong>.",
+      "step5Bullet4": "If you need a new key later, return to the same page and register again using the steps above.",
+      "step6Title": "6. Troubleshooting Tips",
+      "step6Intro": "You may see one of the following issues when trying to register a key:",
+      "step6Bullet1": "<strong>Message:</strong> <em>\"You will be granted access to Steam Web API keys when you have games in your Steam account.\"</em> In this case, your account does not yet meet the minimum requirements. Purchase at least one game on Steam, wait for the purchase to clear, and try again later.",
+      "step6Bullet2": "<strong>Page keeps asking you to sign in</strong> - Make sure cookies and JavaScript are enabled in your browser, and that you are logging in with the correct account.",
+      "step6Bullet3": "<strong>Security concerns</strong> - If any third-party site or person asks for your key and you are unsure why, do not share it. Revoke your key and change your Steam password if you think it has been exposed.",
+      "footerNote": "You now have a registered Steam Web API Key and a basic understanding of how to manage it safely. Keep this page handy as a reference when you need to register, use, or revoke your key."
+    },
+    "folders": {
+      "dialogTitle": "Configure Folders"
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "events": {
+      "initialRelease": {
+        "title": "Initial release",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "First public build of Honu's Project Zomboid Hub."
+      }
+    }
+  },
+  "tags": {
+    "animals": "Animals",
+    "audio": "Audio",
+    "balance": "Balance",
+    "build_41": "Build 41",
+    "build_42": "Build 42",
+    "build_40": "Build 40",
+    "buildings": "Buildings",
+    "clothing_armor": "Clothing/Armor",
+    "farming": "Farming",
+    "food": "Food",
+    "framework": "Framework",
+    "hardmode": "Hardmode",
+    "interface": "Interface",
+    "items": "Items",
+    "language_translation": "Language/Translation",
+    "literature": "Literature",
+    "map": "Map",
+    "military": "Military",
+    "misc": "Misc",
+    "models": "Models",
+    "multiplayer": "Multiplayer",
+    "pop_culture": "Pop Culture",
+    "qol": "QoL",
+    "realistic": "Realistic",
+    "silly_fun": "Silly/Fun",
+    "skills": "Skills",
+    "textures": "Textures",
+    "traits": "Traits",
+    "vehicles": "Vehicles",
+    "weapons": "Weapons",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Tags",
+    "matchLabel": "Match",
+    "matchAny": "OR",
+    "matchAll": "AND",
+    "placeholder": "Select tags"
+  },
+  "modsTable": {
+    "clearFilters": "Clear",
+    "searchPlaceholder": "Search keyword",
+    "detailsTitle": "Mod Details",
+    "columns": {
+      "name": "Name",
+      "author": "Author",
+      "workshopId": "Workshop ID",
+      "lastModified": "Last Modified Date"
+    },
+    "filters": {
+      "name": "Search by name",
+      "author": "Search by author",
+      "workshopId": "Search by workshop ID",
+      "date": "Filter date"
+    }
+  },
+  "modsPage": {
+    "toastHelp": "Where do I find this?",
+    "workshopPrompt": {
+      "title": "Fetch Steam Workshop Data",
+      "body": "Do you want to fetch the latest metadata from the Steam Workshop for your mods?",
+      "alwaysFetch": "Always fetch automatically without asking"
+    },
+    "loadingLocal": "Scanning Local Mod Data...",
+    "loadingWorkshop": "Fetching Steam Workshop Data...",
+    "loading": "Loading data..."
+  },
+  "folders": {
+    "title": "Set Required Folders",
+    "description": "These folders are used to scan your mods and read your Project Zomboid installation details.",
+    "gameDirLabel": "Project Zomboid game folder",
+    "workshopDirLabel": "Local mods (Steam Workshop) folder",
+    "userDirLabel": "Project Zomboid user folder (optional)",
+    "userDirNote": "Used for exporting server presets and (optional) advanced apply targets."
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Name",
+      "modId": "Mod ID",
+      "author": "Author",
+      "version": "Mod Version",
+      "versionMin": "Minimum Game Version",
+      "versionMax": "Maximum Game Version",
+      "url": "URL",
+      "description": "Description",
+      "tags": "Tags",
+      "noTags": "No tags",
+      "packs": "Packs",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Workshop Title",
+      "workshopCreator": "Workshop Creator",
+      "fileSize": "File Size",
+      "timeCreated": "Time Created",
+      "timeUpdated": "Time Updated",
+      "workshopViews": "Workshop Views",
+      "workshopSubscriptions": "Workshop Subscriptions",
+      "adultContent": "Has Adult Content"
+    },
+    "links": {
+      "requiredMods": "Required Mods",
+      "loadAfter": "Load Mod After",
+      "loadBefore": "Load Mod Before",
+      "incompatibleMods": "Incompatible Mods",
+      "requiredBy": "Required By",
+      "incompatibleWith": "Incompatible With"
+    },
+    "buttons": {
+      "visitWorkshop": "Visit Steam Workshop Page",
+      "authorWorkshop": "Author's Steam Workshop Page",
+      "openFolder": "Open mod folder"
+    },
+    "tooltips": {
+      "modInfoReadonly": "This field is read-only and populated from mod.info.",
+      "steamReadonly": "This field is read-only and populated from the Steam Workshop.",
+      "modMissing": "The following mod could not be found",
+      "syncToActivate": "Sync With Steam Workshop to Activate",
+      "modFolderUnavailable": "Mod folder path is not available."
+    }
+  },
+  "docs": {
+    "title": "Documentation",
+    "intro": "Honu's Hub helps you browse, inspect, and manage your local Project Zomboid, with desktop integration via Tauri.",
+    "toc": {
+      "aria": "Table of contents",
+      "title": "Table of contents",
+      "overview": "Overview",
+      "workflow": "Workflow",
+      "data": "Data the app uses",
+      "features": "Features",
+      "mediaPlayer": "Media player",
+      "logInspector": "Log inspector",
+      "folderSetup": "Folder setup",
+      "tauri": "Desktop (Tauri) integration",
+      "privacy": "Privacy & storage",
+      "troubleshooting": "Troubleshooting",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "Overview",
+      "body": "The app scans a chosen mods directory, derives metadata from common Project Zomboid mod conventions, and presents everything in a table and summary dashboard."
+    },
+    "workflow": {
+      "title": "Workflow",
+      "intro": "Follow this end-to-end flow to connect your folders, sync metadata, and generate the Honu Mod Info QoL output.",
+      "step1": {
+        "title": "Map folders",
+        "body": "Open <strong>Configure Folders</strong> from the sidebar actions and set your Project Zomboid game, workshop, and user directories.",
+        "screenshot": "Screenshot: Configure Folders"
+      },
+      "step2": {
+        "title": "Create/enter Steam Workshop key",
+        "body": "Use <strong>Set Steam API Key</strong> to paste your key so the app can fetch Workshop metadata.",
+        "screenshot": "Screenshot: Set Steam API Key"
+      },
+      "step3": {
+        "title": "Sync local mod data",
+        "body": "Run <strong>Sync Local Mod Data</strong> to scan your Workshop folder and build the local mod list.",
+        "screenshot": "Screenshot: Sync Local Mod Data"
+      },
+      "step4": {
+        "title": "Sync with Steam Workshop",
+        "body": "Run <strong>Sync With Steam Workshop</strong> to pull workshop titles, authors, sizes, and extra metadata.",
+        "screenshot": "Screenshot: Sync With Steam Workshop"
+      },
+      "step5": {
+        "title": "Sync Honu's Mod Info QoL",
+        "body": "Use <strong>Sync Honu's Mod Info QoL</strong> to generate/update <code>honus_miqol_db.lua</code> inside your Project Zomboid user folder.",
+        "screenshot": "Screenshot: Sync Honu's Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Data the app uses",
+      "intro": "The app builds a mod listing from information available on disk.",
+      "bullet1": "<strong>Mod folder path</strong> - resolved absolute path to the mod directory.",
+      "bullet2": "<strong>Mod id</strong> - extracted from mod metadata when available (commonly from <code>mod.info</code>).",
+      "bullet3": "<strong>Name</strong> - a display name derived from metadata and/or folder naming.",
+      "bullet4": "<strong>Workshop id (optional)</strong> - if detected and numeric, the app enables a Steam Workshop link button.",
+      "bullet5": "<strong>Status/health indicators</strong> - basic signals such as missing or incomplete metadata (where detectable).",
+      "outro": "Not all mods contain complete metadata. When fields are missing, the UI will display best-effort values and may disable actions that require specific data (for example, the Steam link)."
+    },
+    "features": {
+      "title": "Features",
+      "bullet1": "<strong>Mods table</strong> - lists detected mods with key fields (name, id, workshop link when available, and path).",
+      "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
+      "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
+      "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
+      "mediaPlayer": "<strong>Media player</strong> - play Project Zomboid music tracks from the sidebar. See <a routerLink=\"/documentation\" fragment=\"media-player\">Media player</a>.",
+      "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
+      "logInspectorLink": "Log inspector",
+      "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
+    },
+    "mediaPlayer": {
+      "title": "Media player",
+      "intro": "The sidebar includes a lightweight music player that can scan for Project Zomboid audio tracks (OGG) and play them in-app.",
+      "bullet1": "<strong>Playlist</strong> - shows detected tracks and basic metadata (title/artist/album when available).",
+      "bullet2": "<strong>Playback</strong> - play/pause plus previous/next track.",
+      "bullet3": "<strong>Seek + volume</strong> - scrub through the track and adjust volume/mute."
+    },
+    "logInspector": {
+      "title": "Log inspector",
+      "intro": "The log inspector helps you open and filter log files (for example, <code>console.txt</code>) to troubleshoot crashes, mod load problems, and server startup issues.",
+      "bullet1": "<strong>Select a file</strong> - browse to any <code>.txt</code> or <code>.log</code> file, or use a default path when available.",
+      "bullet2": "<strong>Filter</strong> - choose log levels (ERROR/WARN/LOG/DEBUG/TRACE), set a date/time window, and limit the maximum number of entries displayed.",
+      "bullet3": "<strong>Search</strong> - filter entries by text across the parsed message and the raw source line.",
+      "bullet4": "<strong>Live polling</strong> - optionally refresh on a timer to watch logs update while the game/server is running.",
+      "bullet5": "<strong>Clear</strong> - truncate the selected log file (use with care)."
+    },
+    "folderSetup": {
+      "title": "Folder setup",
+      "step1": "Open the <strong>Mods</strong> page from the left sidebar (under <em>HOME</em>).",
+      "step2": "Use <strong>Browse Mods Folder</strong> in the <em>ACTIONS</em> menu to select your Project Zomboid mods directory (commonly <code>projectzomboid/mods</code>).",
+      "step3": "After selection, the app scans the directory and populates the mods table and dashboard.",
+      "tip": "Tip: If you switch machines or move your mods directory, simply browse again to update the stored path."
+    },
+    "tauri": {
+      "title": "Desktop (Tauri) integration",
+      "bullet1": "<strong>Filesystem access</strong> - directory browsing and scanning is performed via the desktop shell.",
+      "bullet2": "<strong>Open external links</strong> - Steam Workshop links open using your OS default browser.",
+      "bullet3": "<strong>Open folders</strong> - launches the OS file explorer focused on the mod directory."
+    },
+    "privacy": {
+      "title": "Privacy & storage",
+      "bullet1": "<strong>Local data</strong> - the selected mods folder path and scan results may be cached locally to improve UX."
+    },
+    "troubleshooting": {
+      "title": "Troubleshooting",
+      "bullet1": "<strong>No mods appear after scanning</strong> - verify the selected folder is your actual Project Zomboid mods directory and that it contains mod subfolders.",
+      "bullet2": "<strong>Steam links are disabled</strong> - ensure the mod has a valid numeric workshop id (not all mods are Workshop-based).",
+      "bullet3": "<strong>Open folder does nothing</strong> - confirm the Tauri backend is running and that OS permissions allow opening the file explorer."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Does the app edit my mods?",
+      "a1": "No. The core workflow is read-only: it scans folders and displays metadata. Actions such as opening folders or Workshop links do not modify mod files.",
+      "q2": "Why is some information missing for a mod?",
+      "a2": "Mods vary in how consistently they include metadata. If fields like id or workshop id are missing, the app will show what it can and disable features that rely on those fields."
+    }
+  },
+  "onboarding": {
+    "title": "Get Started",
+    "steps": {
+      "welcome": "Welcome",
+      "folders": "Folders",
+      "steamKey": "Steam API Key",
+      "tips": "Tips"
+    },
+    "welcome": {
+      "title": "Welcome to Project Zomboid Mod Manager",
+      "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
+      "bullet1": "Choose your Project Zomboid folders.",
+      "bullet2": "Add your Steam Web API key for Workshop metadata.",
+      "bullet3": "Finish setup and start managing your mods."
+    },
+    "tips": {
+      "title": "Quick Tips",
+      "bullet1": "You can update folders and your Steam API key anytime from the sidebar.",
+      "bullet2": "Run Sync Local Mod Data before syncing Workshop metadata.",
+      "bullet3": "Use Mod Filters to narrow the list quickly."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod Info QoL Sync Failed",
+        "missingUserDetail": "Project Zomboid user folder is not configured.",
+        "successSummary": "Honu's Mod Info QoL Synced",
+        "successCreatedDetail": "honus_miqol_db.lua created.",
+        "successUpdatedDetail": "honus_miqol_db.lua updated.",
+        "failedDetail": "Failed to sync Honu Mod Info QoL."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Data Migration",
+        "detail": "Your local mod data is being updated. A new scan is running to refresh dependencies."
+      },
+      "syncInProgress": {
+        "summary": "Sync in Progress",
+        "detail": "A sync operation is already running. Please wait for it to complete."
+      },
+      "localSyncComplete": {
+        "summary": "Local Mod Sync Complete",
+        "detail": "Local mod data has been refreshed successfully."
+      },
+      "localSyncFailed": {
+        "summary": "Local Mod Sync Failed",
+        "detail": "Failed to sync local mods."
+      },
+      "invalidDirectory": {
+        "summary": "Invalid Directory",
+        "detail": "The selected folder does not appear to be a valid Project Zomboid Workshop directory (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API Key Required",
+        "detail": "Please use \"Set Steam API Key\" in the menu, then try syncing again."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "No workshop metadata was returned; nothing was saved."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop Partially Synced",
+        "detail": "Received {{received}} of {{total}} workshop items. Missing IDs: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop Synced",
+        "detail": "Workshop metadata has been saved successfully."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API Unauthorized",
+        "detail": "Steam returned 401 Unauthorized. Please verify your Steam Web API key and try again."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Failed to sync Steam Workshop metadata."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Preset name already exists",
+        "detail": "Please choose a different name for \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Remove Failed",
+        "missingUserDetail": "Project Zomboid user directory is not configured.",
+        "missingModDetail": "Mod ID was not found in mods.txt.",
+        "failedDetail": "Failed to remove mod from preset."
+      },
+      "removed": {
+        "summary": "Removed",
+        "detailMultiple": "Selected mods were removed from the preset.",
+        "detailSingle": "Mod was removed from the preset."
+      },
+      "presetUpdated": {
+        "summary": "Preset updated",
+        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
+        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Preset name already exists",
+        "detail": "Please choose a different name for \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "No mods to export",
+        "detailCode": "Add at least one mod before generating code.",
+        "detailPreset": "Add at least one mod before saving a preset."
+      },
+      "copied": {
+        "summary": "Copied",
+        "detail": "{{label}} copied to clipboard."
+      },
+      "presetImported": {
+        "summary": "Preset imported",
+        "detail": "Imported {{count}} mods."
+      },
+      "importFailed": {
+        "summary": "Import failed",
+        "detail": "Failed to import preset."
+      },
+      "presetSaved": {
+        "summary": "Preset saved",
+        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
+        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+      },
+      "presetSaveNotice": {
+        "reordered": "Reordered mods by dependency rules.",
+        "missingDependencies": "Missing dependencies: {{count}}.",
+        "missingWorkshopIds": "Missing workshop IDs: {{count}}.",
+        "incompatibilities": "Incompatibilities: {{count}}.",
+        "cycles": "Cycles detected: {{count}}.",
+        "conflicts": "File conflicts: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Preset deleted",
+        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
+        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Unable to load collections. Verify your Steam Web API key and try again."
+      },
+      "steamUnauthorized": "Steam returned 401 Unauthorized. Verify your Steam Web API key.",
+      "queryFailed": "Failed to query Steam Workshop collections.",
+      "presetNotCreated": {
+        "summary": "Preset Not Created",
+        "detail": "No workshop items were found for this collection."
+      },
+      "presetCreated": {
+        "summary": "Preset Created",
+        "detail": "Collection preset saved as \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Preset Updated",
+        "detail": "Collection preset \"{{name}}\" refreshed."
+      },
+      "presetRemoved": {
+        "summary": "Preset Removed",
+        "detail": "Collection preset has been removed."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Invalid server name",
+        "detailMissing": "Enter a server name.",
+        "detailInvalidChars": "Server name contains invalid filename characters.",
+        "detailTrailing": "Server name cannot end with a dot or space."
+      },
+      "nameExists": {
+        "summary": "Server name already exists",
+        "detail": "Choose a unique server name."
+      },
+      "missingUserFolder": {
+        "summary": "Missing user folder",
+        "detail": "Set your Project Zomboid user folder first."
+      },
+      "createFailed": {
+        "summary": "Create failed",
+        "detail": "Failed to create server files."
+      },
+      "saved": {
+        "summary": "Saved",
+        "detail": "Server files updated."
+      },
+      "saveFailed": {
+        "summary": "Save failed",
+        "detail": "Failed to save server files."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Starts with",
+    "contains": "Contains",
+    "notContains": "Not contains",
+    "endsWith": "Ends with",
+    "equals": "Equals",
+    "notEquals": "Not equals",
+    "noFilter": "No filter",
+    "lt": "Less than",
+    "lte": "Less than or equal to",
+    "gt": "Greater than",
+    "gte": "Greater than or equal to",
+    "dateIs": "Date is",
+    "dateIsNot": "Date is not",
+    "dateBefore": "Date is before",
+    "dateAfter": "Date is after",
+    "clear": "Clear",
+    "apply": "Apply",
+    "matchAll": "Match all",
+    "matchAny": "Match any",
+    "addRule": "Add rule",
+    "removeRule": "Remove rule"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overview",
+      "updateStatus": "Mods Update Status",
+      "topInstalled": "Top Installed Mods (by Subscriptions)",
+      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
+      "installsOverTime": "Mod Installs Over Time",
+      "largestMods": "Largest Mods (by File Size)",
+      "latestNews": "Latest Project Zomboid News",
+      "popularThisWeek": "Popular Mods This Week",
+      "latestMods": "Latest Mods",
+      "updatedMods": "Updated Mods"
+    },
+    "labels": {
+      "totalMods": "Total Mods",
+      "lastLocalSync": "Last Local Mod Sync",
+      "lastWorkshopSync": "Last Workshop Sync",
+      "subscribers": "subscribers",
+      "updated": "updated",
+      "created": "created",
+      "installedTooltip": "Installed locally",
+      "unknown": "Unknown",
+      "never": "Never"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
+      "noInstalledSubs": "No installed mods with subscription data are available.",
+      "noWorkshopUpdateInfo": "No Workshop update information is available.",
+      "noSizeData": "No mod file size data is available.",
+      "noNews": "No news items were found.",
+      "noPopularMods": "No popular mods were found.",
+      "noModsFound": "No mods were found.",
+      "noRecentUpdates": "No recently updated mods were found."
+    },
+    "fallbacks": {
+      "untitledItem": "Untitled item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods by install month",
+        "xAxis": "Month",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Outdated",
+        "upToDate": "Up to date"
+      },
+      "size": {
+        "label": "Workshop file size (bytes)",
+        "yAxis": "Size (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Log Inspector",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Types",
+      "typesPlaceholder": "Select types",
+      "maxEntries": "Max entries",
+      "from": "From",
+      "to": "To",
+      "livePolling": "Live polling",
+      "pollingEverySeconds": "Every (s)",
+      "searchMessage": "Search message",
+      "searchPlaceholder": "Search..."
+    },
+    "table": {
+      "pageReport": "Showing {first} to {last} of {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Type",
+      "message": "Message"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "OTHER"
+    },
+    "dialog": {
+      "logFilesFilter": "Log Files"
+    },
+    "errors": {
+      "noFilePath": "Set a file path to load logs.",
+      "loadFailed": "Failed to load log file.",
+      "clearFailed": "Failed to clear log file."
+    }
+  }
+}

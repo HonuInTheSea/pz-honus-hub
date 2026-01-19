@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "キャンセル",
+    "save": "保存",
+    "browse": "閲覧",
+    "yes": "はい",
+    "no": "いいえ",
+    "loadingContent": "コンテンツを読み込み中...",
+    "next": "次へ",
+    "back": "戻る",
+    "finish": "完了"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "言語",
+    "languagePlaceholder": "言語を選択してください",
+    "sections": {
+      "hub": "ハブ",
+      "modFilters": "MODフィルター",
+      "modCollectionFilters": "MODコレクションフィルター",
+      "actions": "アクション",
+      "getStarted": "始めましょう",
+      "resources": "リソース",
+      "dangerZone": "危険地帯"
+    },
+    "items": {
+      "dashboard": "ダッシュボード",
+      "logInspector": "ログインスペクター",
+      "configureFolders": "フォルダーの構成",
+      "setSteamApiKey": "Steam APIキーを設定する",
+      "syncHonu": "Honu の Mod 情報 QoL を同期する",
+      "syncLocal": "ローカル Mod データを同期する",
+      "syncWorkshop": "Steam ワークショップと同期する",
+      "changelog": "変更履歴",
+      "documentation": "ドキュメント",
+      "viewSource": "ソースを見る",
+      "projectZomboid": "プロジェクト・ゾンボイド",
+      "pzWiki": "公式プロジェクト Zomloid Wiki",
+      "b41Map": "B41 マップ",
+      "b42Map": "B42マップ",
+      "workshop": "プロジェクト Zomboid Steam ワークショップ",
+      "subreddit": "r/プロジェクトゾンビイド",
+      "discord": "プロジェクト・ゾンボイド",
+      "moddingDiscord": "PZ 改造コミュニティ",
+      "mappingDiscord": "非公式 PZ マッピング",
+      "honuWorkshop": "HonuInTheSea の Steam ワークショップ",
+      "supportKofi": "Ko-fi のサポート",
+      "resetApp": "アプリケーションをリセットする",
+      "resetAppTooltip": "ウィンドウ設定をリセットし、保存されたデータを削除します",
+      "myMods": "私の Mods"
+    },
+    "filters": {
+      "adultLabel": "アダルトコンテンツあり",
+      "adultTooltip": "Steam メタデータが mighty_inproper_sex を true として報告する MOD をフィルターします。",
+      "rulesLabel": "ルールあり",
+      "rulesTooltip": "Mod の mod.info ファイルに、互換性のない require ステートメント、loadModAfter ステートメント、loadModBefore ステートメントが含まれています。",
+      "missingSteamLabel": "Steam データがありません",
+      "missingSteamTooltip": "Mod がプライベートとしてマークされているか、Steam ワークショップから削除されている可能性があります",
+      "outdatedLabel": "古いMOD",
+      "outdatedTooltip": "Steam ワークショップから最新バージョンを入手するには、MOD のサブスクライブを解除して再サブスクライブする必要がある場合があります"
+    },
+    "collections": {
+      "searchLabel": "コレクションの検索",
+      "searchPlaceholder": "コレクションを検索する",
+      "sortLabel": "並べ替え",
+      "periodLabel": "時間の経過とともに",
+      "tagsLabel": "タグ",
+      "tagsPlaceholder": "タグの選択",
+      "sortMostPopular": "最も人気のある",
+      "sortMostRecent": "最新の",
+      "sortLastUpdated": "最終更新日",
+      "periodToday": "今日",
+      "periodWeek": "一週間",
+      "periodThirtyDays": "30日間",
+      "periodThreeMonths": "3ヶ月",
+      "periodSixMonths": "6ヶ月",
+      "periodYear": "1年"
+    },
+    "presetsUnavailable": "まず、Project Zomboid ユーザー フォルダーを設定するか、プリセットを定義します。",
+    "steamApi": {
+      "dialogTitle": "Steam Web APIキーを設定する",
+      "dialogIntro": "Steam Web API キーを入力します。このキーはマシン上にローカルに保存されます。",
+      "keyLabel": "Steam ウェブ API キー",
+      "needKey": "鍵が必要ですか?",
+      "getKeyLink": "Steam Web API キーを取得する",
+      "helpButton": "Steam Web APIキーの作成方法",
+      "helpTitle": "Steam Web APIキーの作成方法",
+      "helpCardTitle": "Steam Web APIキーの登録方法",
+      "helpCardBody": "このガイドでは、Steam Web API キーを登録するための段階的なチュートリアルを提供します。 Steam Web API キーを使用すると、アプリケーションがゲーム ライブラリや統計情報などの Steam アカウントの特定のデータに安全にアクセスできるようになります。",
+      "step1Title": "1. 前提条件",
+      "step1Intro": "Steam Web API キーを登録する前に、次のことを確認してください。",
+      "step1Bullet1": "Steam ガード (電子メールまたはモバイル認証システム) で保護された、良好な状態のアクティブな Steam アカウントをお持ちです。",
+      "step1Bullet2": "あなたのアカウントは少なくとも 1 つの購入済みゲームを所有しています。新しいアカウントまたは空のアカウントは API キーを取得できません。",
+      "step1Bullet3": "信頼できるデバイスとネットワークを使用しています (公共または共有のコンピューターでキーを登録したり表示したりしないでください)。",
+      "step2Title": "2. 重要なセキュリティ上の注意事項",
+      "step2Intro": "Steam Web API キーは機密情報です。あなたのキーを持っている人は誰でも、あなたの代わりに API リクエストを行うことができます。パスワードのように扱います。",
+      "step2Bullet1": "キーを他の人と共有したり、公開 (フォーラムや GitHub など) に投稿したりしないでください。",
+      "step2Bullet2": "完全に信頼できるツールまたは Web サイトにのみキーを貼り付けてください。",
+      "step2Bullet3": "キーが公開された疑いがある場合は、すぐにキーを取り消して、新しいキーを生成してください。",
+      "step3Title": "3. ステップバイステップ: Steam Web API キーの登録",
+      "step3_1Title": "ステップ 1 - Steam にサインインする",
+      "step3_1Bullet1": "Web ブラウザを開いて、<a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a> にアクセスします。",
+      "step3_1Bullet2": "右上隅にある<strong>[ログイン]</strong> をクリックします。",
+      "step3_1Bullet3": "Steam アカウント名とパスワードを入力します。",
+      "step3_1Bullet4": "プロンプトが表示されたら、Steam Guard の検証を完了します。",
+      "step3_2Title": "ステップ 2 - Steam Web API キーページを開く",
+      "step3_2Bullet1": "ログインした状態で、Steam Web API キー登録ページを開きます: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "このページには、Steam Web API の簡単な説明と<strong>「新しい Steam Web API キーの登録」</strong> というタイトルのフォームが表示されます。",
+      "step3_3Title": "ステップ 3 - ドメイン名を入力し、規約に同意します",
+      "step3_3Intro": "登録フォームで:",
+      "step3_3Bullet1": "<strong>[ドメイン名]</strong> フィールドに、キーを使用する Web サイトまたはサービスのドメインを入力します。 <ul class=\"p-ml-3\"><li>ドメインをお持ちでない場合は、<code>localhost</code>、<code>127.0.0.1</code>、または <code>example.com</code> などのプレースホルダーを入力できます。</li></ul>",
+      "step3_3Bullet2": "Steam Web API 利用規約をお読みください。",
+      "step3_3Bullet3": "チェックボックスにチェックを入れて、規約に同意することを確認します。",
+      "step3_3Bullet4": "<strong>[登録]</strong> ボタンをクリックしてフォームを送信します。",
+      "step3_4Title": "ステップ 4 - 新しい Steam Web API キーを表示してコピーします",
+      "step3_4Intro": "登録が成功したら:",
+      "step3_4Bullet1": "ページがリロードされ、上部近くに Steam Web API キーが表示されます。",
+      "step3_4Bullet2": "キーは文字と数字の長い文字列です (例: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>)。",
+      "step3_4Bullet3": "キー全体を選択してコピーします (Ctrl+C / Cmd+C)。",
+      "step3_4Bullet4": "パスワード マネージャーや暗号化されたメモ アプリなど、安全な場所に保存します。",
+      "step4Title": "4. Steam Web API キーの基本的な使用例",
+      "step4Intro": "キーを取得したら、それを <code>key=</code> パラメータとして URL に追加することで、Steam Web API エンドポイントを呼び出すことができます。たとえば、単純な HTTP リクエストは次のようになります (<code>YOURKEYHERE</code> を実際のキーに置き換えます)。",
+      "step4Outro": "正確な URL とパラメータは、使用している Steam Web API インターフェイスによって異なります。必要なエンドポイントについては、必ず公式ドキュメントを参照してください。",
+      "step5Title": "5. Steam Web API キーの取り消しまたは再生成",
+      "step5Intro": "Steam Web API キーが不要になった場合、または Steam Web API キーが侵害されたと思われる場合は、それを取り消す必要があります。",
+      "step5Bullet1": "まだログインしていない場合は、Steam アカウントにサインインします。",
+      "step5Bullet2": "<a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> を再度開きます。",
+      "step5Bullet3": "<strong>「Steam Web API キーを取り消す」</strong>というラベルの付いたボタンをクリックします。",
+      "step5Bullet4": "後で新しいキーが必要な場合は、同じページに戻り、上記の手順を使用して再度登録します。",
+      "step6Title": "6. トラブルシューティングのヒント",
+      "step6Intro": "キーを登録しようとすると、次のいずれかの問題が発生する場合があります。",
+      "step6Bullet1": "<strong>メッセージ:</strong> <em>「Steam アカウントにゲームがある場合、Steam Web API キーへのアクセスが許可されます。」</em> この場合、アカウントはまだ最小要件を満たしていません。 Steam で少なくとも 1 つのゲームを購入し、購入が完了するまで待って、後でもう一度試してください。",
+      "step6Bullet2": "<strong>ページでログインを求められ続ける</strong> - ブラウザで Cookie と JavaScript が有効になっていること、および正しいアカウントでログインしていることを確認してください。",
+      "step6Bullet3": "<strong>セキュリティ上の懸念</strong> - サードパーティのサイトまたは人物がキーを要求し、その理由が不明な場合は、キーを共有しないでください。公開されたと思われる場合は、キーを無効にし、Steam パスワードを変更してください。",
+      "footerNote": "これで、Steam Web API キーが登録され、それを安全に管理する方法の基本を理解できました。キーを登録、使用、または取り消す必要がある場合の参照として、このページを手元に置いてください。"
+    },
+    "folders": {
+      "dialogTitle": "フォルダーの構成"
+    }
+  },
+  "changelog": {
+    "title": "変更履歴",
+    "events": {
+      "initialRelease": {
+        "title": "初回リリース",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Honu's Project Zomboid Hub の最初の公開版。"
+      }
+    }
+  },
+  "docs": {
+    "title": "ドキュメント",
+    "intro": "Honu のハブは、Tauri を介したデスクトップ統合により、ローカルの Project Zomboid を参照、検査、管理するのに役立ちます。",
+    "toc": {
+      "aria": "目次",
+      "title": "目次",
+      "overview": "概要",
+      "workflow": "ワークフロー",
+      "data": "アプリが使用するデータ",
+      "features": "特徴",
+      "mediaPlayer": "メディアプレーヤー",
+      "logInspector": "ログインスペクタ",
+      "folderSetup": "フォルダーの設定",
+      "tauri": "デスクトップ (Tauri) の統合",
+      "privacy": "プライバシーと保管",
+      "troubleshooting": "トラブルシューティング",
+      "faq": "よくある質問"
+    },
+    "overview": {
+      "title": "概要",
+      "body": "このアプリは、選択した MOD ディレクトリをスキャンし、Project Zomboid の一般的な MOD 規約からメタデータを取得し、すべてを表と概要ダッシュボードに表示します。"
+    },
+    "workflow": {
+      "title": "ワークフロー",
+      "intro": "このエンドツーエンドのフローに従って、フォルダーを接続し、メタデータを同期し、Honu Mod Info QoL 出力を生成します。",
+      "step1": {
+        "title": "フォルダーのマップ",
+        "body": "サイドバーのアクションから<strong>フォルダーの構成</strong>を開き、Project Zomboid ゲーム、ワークショップ、およびユーザー ディレクトリを設定します。",
+        "screenshot": "スクリーンショット: フォルダーの構成"
+      },
+      "step2": {
+        "title": "Steamワークショップキーの作成/入力",
+        "body": "<strong>Steam API キーの設定</strong>を使用してキーを貼り付け、アプリがワークショップのメタデータを取得できるようにします。",
+        "screenshot": "スクリーンショット: Steam API キーを設定する"
+      },
+      "step3": {
+        "title": "ローカルのMODデータを同期する",
+        "body": "<strong>ローカル Mod データの同期</strong> を実行してワークショップ フォルダーをスキャンし、ローカル MOD リストを作成します。",
+        "screenshot": "スクリーンショット: ローカル Mod データの同期"
+      },
+      "step4": {
+        "title": "Steam ワークショップと同期する",
+        "body": "<strong>Steam ワークショップと同期</strong> を実行して、ワークショップのタイトル、作成者、サイズ、追加のメタデータを取得します。",
+        "screenshot": "スクリーンショット: Steam ワークショップと同期する"
+      },
+      "step5": {
+        "title": "Honu の Mod 情報 QoL を同期する",
+        "body": "<strong>Honu の Mod Info QoL を同期</strong>して、Project Zomboid ユーザー フォルダー内に <code>honus_miqol_db.lua</code> を生成/更新します。",
+        "screenshot": "スクリーンショット: Honu の Mod 情報 QoL を同期する"
+      }
+    },
+    "data": {
+      "title": "アプリが使用するデータ",
+      "intro": "アプリは、ディスク上で利用可能な情報から MOD リストを作成します。",
+      "bullet1": "<strong>Mod フォルダー パス</strong> - Mod ディレクトリへの解決された絶対パス。",
+      "bullet2": "<strong>MOD ID</strong> - 利用可能な場合は MOD メタデータから抽出されます (通常は <code>mod.info</code> から)。",
+      "bullet3": "<strong>名前</strong> - メタデータやフォルダーの名前から派生した表示名。",
+      "bullet4": "<strong>ワークショップ ID (オプション)</strong> - 数値が検出された場合、アプリは Steam ワークショップ リンク ボタンを有効にします。",
+      "bullet5": "<strong>ステータス/健全性インジケーター</strong> - 欠落または不完全なメタデータ (検出可能な場合) などの基本的なシグナル。",
+      "outro": "すべての MOD に完全なメタデータが含まれているわけではありません。フィールドが欠落している場合、UI にはベストエフォート値が表示され、特定のデータを必要とするアクション (Steam リンクなど) が無効になる場合があります。"
+    },
+    "features": {
+      "title": "特徴",
+      "bullet1": "<strong>MOD テーブル</strong> - 検出された MOD をキー フィールド (名前、ID、利用可能な場合はワークショップ リンク、パス) とともにリストします。",
+      "bullet2": "<strong>行の詳細</strong> - 行を展開すると、MOD に関する詳細情報が表示されます (利用可能な場合)。",
+      "bullet3": "<strong>Steam で開く</strong> - 有効なワークショップ ID を持つ MOD のデフォルトのブラウザでワークショップ ページが開きます。",
+      "bullet4": "<strong>フォルダーを開く</strong> - 選択した MOD フォルダーをファイル エクスプローラーで開きます。",
+      "mediaPlayer": "<strong>メディア プレーヤー</strong> - サイドバーから Project Zomboid 音楽トラックを再生します。 「<a routerLink=\"/documentation\" flaggment=\"media-player\">メディア プレーヤー</a>」を参照してください。",
+      "logInspectorPrefix": "<strong>ログ インスペクター</strong> - ログ ファイル (<code>console.txt</code> など) をロードしてフィルターし、エラーや警告をすばやく見つけます。見る",
+      "logInspectorLink": "ログインスペクタ",
+      "bullet6": "<strong>ダッシュボード</strong> - 簡単な統計情報 (例: 検出された MOD の合計) やその他の高レベルの指標が表示されます。"
+    },
+    "mediaPlayer": {
+      "title": "メディアプレーヤー",
+      "intro": "サイドバーには、Project Zomboid オーディオ トラック (OGG) をスキャンしてアプリ内で再生できる軽量の音楽プレーヤーが含まれています。",
+      "bullet1": "<strong>プレイリスト</strong> - 検出されたトラックと基本的なメタデータ (タイトル/アーティスト/アルバム (利用可能な場合)) が表示されます。",
+      "bullet2": "<strong>再生</strong> - 再生/一時停止と前/次のトラック。",
+      "bullet3": "<strong>シーク + 音量</strong> - トラックをスクラブし、音量/ミュートを調整します。"
+    },
+    "logInspector": {
+      "title": "ログインスペクタ",
+      "intro": "ログ インスペクターは、ログ ファイル (<code>console.txt</code> など) を開いてフィルターし、クラッシュ、MOD ロードの問題、サーバー起動の問題のトラブルシューティングを行うのに役立ちます。",
+      "bullet1": "<strong>ファイルを選択</strong> - 任意の <code>.txt</code> または <code>.log</code> ファイルを参照するか、使用可能な場合はデフォルトのパスを使用します。",
+      "bullet2": "<strong>フィルタ</strong> - ログ レベル (ERROR/WARN/LOG/DEBUG/TRACE) を選択し、日付/時間枠を設定し、表示されるエントリの最大数を制限します。",
+      "bullet3": "<strong>検索</strong> - 解析されたメッセージと生のソース行のテキストによってエントリをフィルタリングします。",
+      "bullet4": "<strong>ライブポーリング</strong> - オプションでタイマーで更新し、ゲーム/サーバーの実行中にログの更新を監視します。",
+      "bullet5": "<strong>クリア</strong> - 選択したログ ファイルを切り詰めます (注意して使用してください)。"
+    },
+    "folderSetup": {
+      "title": "フォルダーの設定",
+      "step1": "左側のサイドバー (<em>ホーム</em>の下) から <strong>Mods</strong> ページを開きます。",
+      "step2": "<em>アクション</em> メニューの<strong>ブラウズ Mod フォルダー</strong> を使用して、Project Zomboid mods ディレクトリ (通常は <code>projectzomboid/mods</code>) を選択します。",
+      "step3": "選択後、アプリはディレクトリをスキャンし、MOD テーブルとダッシュボードにデータを入力します。",
+      "tip": "ヒント: マシンを切り替えたり、MOD ディレクトリを移動した場合は、再度参照して、保存されているパスを更新するだけです。"
+    },
+    "tauri": {
+      "title": "デスクトップ (Tauri) の統合",
+      "bullet1": "<strong>ファイルシステム アクセス</strong> - ディレクトリの参照とスキャンはデスクトップ シェル経由で実行されます。",
+      "bullet2": "<strong>外部リンクを開く</strong> - Steam ワークショップのリンクは、OS のデフォルトのブラウザを使用して開きます。",
+      "bullet3": "<strong>フォルダーを開く</strong> - mod ディレクトリに焦点を当てた OS ファイル エクスプローラーを起動します。"
+    },
+    "privacy": {
+      "title": "プライバシーと保管",
+      "bullet1": "<strong>ローカル データ</strong> - UX を向上させるために、選択した MOD フォルダーのパスとスキャン結果がローカルにキャッシュされることがあります。"
+    },
+    "troubleshooting": {
+      "title": "トラブルシューティング",
+      "bullet1": "<strong>スキャン後に MOD が表示されない</strong> - 選択したフォルダーが実際の Project Zomboid MOD ディレクトリであり、MOD サブフォルダーが含まれていることを確認します。",
+      "bullet2": "<strong>Steam リンクが無効になっています</strong> - MOD に有効な数値のワークショップ ID があることを確認してください (すべての MOD がワークショップ ベースであるわけではありません)。",
+      "bullet3": "<strong>フォルダーを開いても何も起こりません</strong> - Tauri バックエンドが実行中であること、および OS の権限でファイル エクスプローラーを開くことが許可されていることを確認します。"
+    },
+    "faq": {
+      "title": "よくある質問",
+      "q1": "アプリは私の MOD を編集しますか?",
+      "a1": "いいえ。コア ワークフローは読み取り専用です。フォルダーをスキャンしてメタデータを表示します。フォルダーやワークショップのリンクを開くなどのアクションでは、MOD ファイルは変更されません。",
+      "q2": "MOD の一部の情報が欠落しているのはなぜですか?",
+      "a2": "MOD によってメタデータがどの程度一貫して含まれるかが異なります。 ID やワークショップ ID などのフィールドが欠落している場合、アプリは表示できるものを表示し、それらのフィールドに依存する機能を無効にします。"
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "名前",
+      "modId": "Mod ID",
+      "author": "作成者",
+      "version": "Mod バージョン",
+      "versionMin": "最小ゲーム バージョン",
+      "versionMax": "最大ゲーム バージョン",
+      "url": "URL",
+      "description": "説明",
+      "tags": "タグ",
+      "noTags": "タグなし",
+      "packs": "パック",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "ワークショップ タイトル",
+      "workshopCreator": "ワークショップ作成者",
+      "fileSize": "ファイル サイズ",
+      "timeCreated": "作成時間",
+      "timeUpdated": "更新時間",
+      "workshopViews": "ワークショップ ビュー",
+      "workshopSubscriptions": "ワークショップ サブスクリプション",
+      "adultContent": "アダルト コンテンツあり"
+    },
+    "links": {
+      "requiredMods": "必須の Mod",
+      "loadAfter": "後に Mod をロード",
+      "loadBefore": "前に Mod をロード",
+      "incompatibleMods": "互換性のない Mod",
+      "requiredBy": "必須",
+      "incompatibleWith": "互換性なし"
+    },
+    "buttons": {
+      "visitWorkshop": "Steam ワークショップ ページにアクセス",
+      "authorWorkshop": "作者の Steam ワークショップ ページ",
+      "openFolder": "MOD フォルダを開く"
+    },
+    "tooltips": {
+      "modInfoReadonly": "このフィールドは読み取り専用で、mod.info から入力されます。",
+      "steamReadonly": "このフィールドは読み取り専用で、Steam ワークショップから入力されます。",
+      "modMissing": "次の MOD が見つかりませんでした",
+      "syncToActivate": "Steam ワークショップと同期して有効化します",
+      "modFolderUnavailable": "MOD フォルダーのパスが利用できません。"
+    }
+  },
+  "tags": {
+    "animals": "動物",
+    "audio": "オーディオ",
+    "balance": "バランス",
+    "build_41": "ビルド 41",
+    "build_42": "ビルド 42",
+    "build_40": "ビルド 40",
+    "buildings": "建物",
+    "clothing_armor": "衣服/防具",
+    "farming": "農業",
+    "food": "食べ物",
+    "framework": "フレームワーク",
+    "hardmode": "ハードモード",
+    "interface": "インターフェイス",
+    "items": "アイテム",
+    "language_translation": "言語/翻訳",
+    "literature": "文学",
+    "map": "マップ",
+    "military": "軍事",
+    "misc": "その他",
+    "models": "モデル",
+    "multiplayer": "マルチプレイヤー",
+    "pop_culture": "ポップカルチャー",
+    "qol": "QoL",
+    "realistic": "リアル",
+    "silly_fun": "ばかばかしい/楽しい",
+    "skills": "スキル",
+    "textures": "テクスチャ",
+    "traits": "特性",
+    "vehicles": "乗り物",
+    "weapons": "武器",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "タグ",
+    "matchLabel": "一致",
+    "matchAny": "または",
+    "matchAll": "かつ",
+    "placeholder": "タグを選択"
+  },
+  "modsTable": {
+    "clearFilters": "クリア",
+    "searchPlaceholder": "検索キーワード",
+    "detailsTitle": "MODの詳細",
+    "columns": {
+      "name": "名前",
+      "author": "作成者",
+      "workshopId": "ワークショップ ID",
+      "lastModified": "最終更新日"
+    },
+    "filters": {
+      "name": "名前で検索",
+      "author": "作成者で検索",
+      "workshopId": "ワークショップ ID で検索",
+      "date": "日付をフィルター"
+    }
+  },
+  "folders": {
+    "title": "必要なフォルダーを設定",
+    "description": "これらのフォルダーは、MOD をスキャンし、Project Zomboid のインストール詳細を読み取るために使用されます。",
+    "gameDirLabel": "Project Zomboid ゲーム フォルダー",
+    "workshopDirLabel": "ローカル MOD (Steam ワークショップ) フォルダー",
+    "userDirLabel": "プロジェクト Zomloid ユーザー フォルダー (オプション)",
+    "userDirNote": "サーバー プリセットおよび (オプションの) 高度な適用ターゲットをエクスポートするために使用されます。"
+  },
+  "modsPage": {
+    "toastHelp": "これはどこで見つかりますか?",
+    "workshopPrompt": {
+      "title": "Steam ワークショップ データを取得します",
+      "body": "MOD の最新のメタデータを Steam ワークショップから取得しますか?",
+      "alwaysFetch": "確認せずに常に自動的に取得します"
+    },
+    "loadingLocal": "ローカル Mod データをスキャン中...",
+    "loadingWorkshop": "Steam ワークショップ データを取得中...",
+    "loading": "データをロード中..."
+  },
+  "onboarding": {
+    "title": "はじめに",
+    "steps": {
+      "welcome": "ようこそ",
+      "folders": "フォルダー",
+      "steamKey": "Steam APIキー",
+      "tips": "ヒント"
+    },
+    "welcome": {
+      "title": "Project Zomboid Mod Managerへようこそ",
+      "body": "この簡単なセットアップでフォルダーを接続し、Steam Web APIキーを追加して、MODの同期を開始できます。",
+      "bullet1": "Project Zomboidのフォルダーを選択します。",
+      "bullet2": "Workshopのメタデータ用にSteam Web APIキーを追加します。",
+      "bullet3": "セットアップを完了してMOD管理を開始します。"
+    },
+    "tips": {
+      "title": "クイックヒント",
+      "bullet1": "フォルダーとSteam APIキーはサイドバーからいつでも更新できます。",
+      "bullet2": "Workshopメタデータを同期する前にローカルMODデータの同期を実行してください。",
+      "bullet3": "MODフィルターを使って一覧をすばやく絞り込めます。"
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod 情報 QoL 同期に失敗しました",
+        "missingUserDetail": "プロジェクト Zomboid ユーザー フォルダーが設定されていません。",
+        "successSummary": "Honu の Mod 情報 QoL が同期されました",
+        "successCreatedDetail": "honus_miqol_db.lua が作成されました。",
+        "successUpdatedDetail": "honus_miqol_db.lua 更新されました。",
+        "failedDetail": "Honu Mod 情報 QoL の同期に失敗しました。"
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "データ移行",
+        "detail": "ローカル MOD データが更新されています。依存関係を更新するために新しいスキャンが実行されています。"
+      },
+      "syncInProgress": {
+        "summary": "同期が進行中",
+        "detail": "同期操作はすでに実行されています。完了するまでお待ちください。"
+      },
+      "localSyncComplete": {
+        "summary": "ローカル Mod 同期が完了しました",
+        "detail": "ローカル Mod データが正常に更新されました。"
+      },
+      "localSyncFailed": {
+        "summary": "ローカル Mod 同期に失敗しました",
+        "detail": "ローカル MOD の同期に失敗しました。"
+      },
+      "invalidDirectory": {
+        "summary": "無効なディレクトリ",
+        "detail": "選択したフォルダは有効な Project Zomboid Workshop ディレクトリ (AppID 108600) ではないようです。"
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API キーが必要です",
+        "detail": "メニューの「Steam API キーの設定」を使用してからお試しください再度同期しています。"
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "ワークショップのメタデータは返されませんでした。何も救われなかった。"
+      },
+      "workshopPartial": {
+        "summary": "Steamワークショップが一部同期されました",
+        "detail": "ワークショップアイテム {{total}} 個中 {{received}} 個を受け取りました。欠落している ID: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam ワークショップが同期されました",
+        "detail": "ワークショップのメタデータは正常に保存されました。"
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API が認証されていません",
+        "detail": "Steam は 401 Unauthorized を返しました。 Steam Web API キーを確認して、もう一度お試しください。"
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Steam ワークショップのメタデータの同期に失敗しました。"
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "プリセット名はすでに存在します",
+        "detail": "「{{name}}」には別の名前を選択してください。"
+      },
+      "removeFailed": {
+        "summary": "削除に失敗しました",
+        "missingUserDetail": "プロジェクト Zomboid ユーザー ディレクトリが設定されていません。",
+        "missingModDetail": "mods.txt に MOD ID が見つかりませんでした。",
+        "failedDetail": "プリセットから MOD を削除できませんでした。"
+      },
+      "removed": {
+        "summary": "削除されました",
+        "detailMultiple": "選択されましたMOD がプリセットから削除されました。",
+        "detailSingle": "MOD がプリセットから削除されました。"
+      },
+      "presetUpdated": {
+        "summary": "プリセットが更新されました",
+        "detailFallback": "pz_modlist_settings.cfg を更新できませんでした。",
+        "detailFailed": "pz_modlist_settings.cfg の更新に失敗しました。"
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "プリセット名はすでに存在します",
+        "detail": "「{{name}}」には別の名前を選択してください。"
+      },
+      "noModsToExport": {
+        "summary": "エクスポートする MOD はありません",
+        "detailCode": "コードを生成する前に少なくとも 1 つの MOD を追加してください。",
+        "detailPreset": "プリセットを保存する前に少なくとも 1 つの MOD を追加してください。"
+      },
+      "copied": {
+        "summary": "コピーされました",
+        "detail": "{{label}} がクリップボードにコピーされました。"
+      },
+      "presetImported": {
+        "summary": "プリセットがインポートされました",
+        "detail": "{{count}} MOD をインポートしました。"
+      },
+      "importFailed": {
+        "summary": "インポートに失敗しました",
+        "detail": "プリセットのインポートに失敗しました。"
+      },
+      "presetSaved": {
+        "summary": "プリセット保存されました",
+        "detailFallback": "pz_modlist_settings.cfg を更新できませんでした。",
+        "detailFailed": "pz_modlist_settings.cfg の更新に失敗しました。"
+      },
+      "presetSaveNotice": {
+        "reordered": "依存関係ルールによって MOD を並べ替えました。",
+        "missingDependencies": "依存関係が欠落しています: {{count}}。",
+        "missingWorkshopIds": "ワークショップ ID が欠落しています: {{count}}。",
+        "incompatibilities": "非互換性: {{count}}。",
+        "cycles": "検出されたサイクル: {{count}}。",
+        "conflicts": "ファイルの競合: {{count}}。"
+      },
+      "presetDeleted": {
+        "summary": "プリセットが削除されました",
+        "detailFallback": "pz_modlist_settings.cfg を更新できませんでした。",
+        "detailFailed": "pz_modlist_settings.cfg を更新できませんでした。"
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "コレクションをロードできません。 Steam Web API キーを確認して、もう一度お試しください。"
+      },
+      "steamUnauthorized": "Steam は 401 Unauthorized を返しました。 Steam Web API キーを確認してください。",
+      "queryFailed": "Steam ワークショップ コレクションのクエリに失敗しました。",
+      "presetNotCreated": {
+        "summary": "プリセットが作成されていません",
+        "detail": "このコレクションのワークショップ アイテムが見つかりませんでした。"
+      },
+      "presetCreated": {
+        "summary": "プリセットが作成されました",
+        "detail": "コレクション プリセットが「{{name}}」として保存されました。"
+      },
+      "presetUpdated": {
+        "summary": "プリセットが更新されました",
+        "detail": "コレクション プリセット「{{name}}」が更新されました。"
+      },
+      "presetRemoved": {
+        "summary": "プリセットが削除されました",
+        "detail": "コレクション プリセットが削除されました。"
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "無効なサーバーname",
+        "detailMissing": "サーバー名を入力してください。",
+        "detailInvalidChars": "サーバー名に無効なファイル名文字が含まれています。",
+        "detailTrailing": "サーバー名はドットまたはスペースで終わることはできません。"
+      },
+      "nameExists": {
+        "summary": "サーバー名はすでに存在します。",
+        "detail": "一意のサーバー名を選択してください。"
+      },
+      "missingUserFolder": {
+        "summary": "ユーザー フォルダーがありません",
+        "detail": "最初に Project Zomboid ユーザー フォルダーを設定してください。"
+      },
+      "createFailed": {
+        "summary": "作成に失敗しました",
+        "detail": "サーバー ファイルの作成に失敗しました。"
+      },
+      "saved": {
+        "summary": "保存されました",
+        "detail": "サーバー ファイルが更新されました。"
+      },
+      "saveFailed": {
+        "summary": "保存に失敗しました",
+        "detail": "サーバー ファイルの保存に失敗しました。"
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "で始まる",
+    "contains": "含む",
+    "notContains": "含まない",
+    "endsWith": "で終わる",
+    "equals": "等しい",
+    "notEquals": "等しくない",
+    "noFilter": "フィルターなし",
+    "lt": "より小さい",
+    "lte": "以下",
+    "gt": "より大きい",
+    "gte": "以上",
+    "dateIs": "日付が次と等しい",
+    "dateIsNot": "日付が次と等しくない",
+    "dateBefore": "日付が次より前",
+    "dateAfter": "日付が次より後",
+    "clear": "クリア",
+    "apply": "適用",
+    "matchAll": "すべて一致",
+    "matchAny": "いずれか一致",
+    "addRule": "ルールを追加",
+    "removeRule": "ルールを削除"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "概要",
+      "updateStatus": "Modの更新ステータス",
+      "topInstalled": "インストールされている上位の Mod (サブスクリプション別)",
+      "lastUpdatedInstalled": "最後に更新されたインストール済みの Mod",
+      "installsOverTime": "Mod は時間の経過とともにインストールされる",
+      "largestMods": "最大の Mod (ファイル サイズ別)",
+      "latestNews": "最新プロジェクト Zomoid ニュース",
+      "popularThisWeek": "今週人気の MOD",
+      "latestMods": "最新のMOD",
+      "updatedMods": "更新されたMOD"
+    },
+    "labels": {
+      "totalMods": "総改造数",
+      "lastLocalSync": "最後のローカル Mod 同期",
+      "lastWorkshopSync": "最後のワークショップ同期",
+      "subscribers": "購読者",
+      "updated": "更新されました",
+      "created": "作成されました",
+      "installedTooltip": "ローカルにインストール",
+      "unknown": "未知",
+      "never": "一度もない"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API が応答しませんでした。後でもう一度試してください。",
+      "noInstalledSubs": "サブスクリプション データを含むインストール済み MOD は利用できません。",
+      "noWorkshopUpdateInfo": "ワークショップの更新情報はありません。",
+      "noSizeData": "MOD ファイルのサイズ データは利用できません。",
+      "noNews": "ニュース項目は見つかりませんでした。",
+      "noPopularMods": "人気のあるMODは見つかりませんでした。",
+      "noModsFound": "MODは見つかりませんでした。",
+      "noRecentUpdates": "最近更新された MOD は見つかりませんでした。"
+    },
+    "fallbacks": {
+      "untitledItem": "無題のアイテム"
+    },
+    "charts": {
+      "installs": {
+        "label": "インストール月ごとの Mod",
+        "xAxis": "月",
+        "yAxis": "改造"
+      },
+      "status": {
+        "outdated": "時代遅れ",
+        "upToDate": "最新の"
+      },
+      "size": {
+        "label": "ワークショップのファイルサイズ (バイト)",
+        "yAxis": "サイズ (バイト)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "ログインスペクター",
+    "fields": {
+      "logFile": "ログファイル",
+      "types": "種類",
+      "typesPlaceholder": "タイプの選択",
+      "maxEntries": "最大エントリ数",
+      "from": "から",
+      "to": "に",
+      "livePolling": "ライブ投票",
+      "pollingEverySeconds": "毎(s)",
+      "searchMessage": "メッセージを検索する",
+      "searchPlaceholder": "検索..."
+    },
+    "table": {
+      "pageReport": "{totalRecords} の {first} から {last} を表示しています",
+      "timestamp": "タイムスタンプ",
+      "type": "タイプ",
+      "message": "メッセージ"
+    },
+    "levels": {
+      "error": "エラー",
+      "warn": "警告",
+      "log": "ログ",
+      "debug": "デバッグ",
+      "trace": "トレース",
+      "other": "他の"
+    },
+    "dialog": {
+      "logFilesFilter": "ログファイル"
+    },
+    "errors": {
+      "noFilePath": "ログを読み込むファイルパスを設定します。",
+      "loadFailed": "ログファイルの読み込みに失敗しました。",
+      "clearFailed": "ログファイルのクリアに失敗しました。"
+    }
+  }
+}

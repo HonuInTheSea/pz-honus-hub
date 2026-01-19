@@ -1,0 +1,71 @@
+<div class="mod-list-header">
+  <span class="p-input-icon-left">
+    <i class="pi pi-search"></i>
+    <input
+      pInputText
+      type="text"
+      placeholder="Search mods"
+      [(ngModel)]="searchTerm"
+      />
+  </span>
+</div>
+
+<div class="flex items-center justify-end">
+  <p-paginator
+    [first]="first"
+    [rows]="rows"
+    [totalRecords]="mods.length"
+    (onPageChange)="onPageChange($event)"
+    [showCurrentPageReport]="true"
+    currentPageReportTemplate="{first} - {last} of {totalRecords}"
+    [showPageLinks]="false"
+    [showFirstLastIcon]="false"
+  ></p-paginator>
+</div>
+
+<div class="mod-card-grid">
+  @for (mod of filteredMods; track mod.id) {
+    <p-card
+      (click)="modSelected.emit(mod)"
+      header="{{ mod.name }}"
+      [title]="mod.name"
+      class="mod-card"
+      >
+      @if (mod.preview_image_path) {
+        <img
+          [src]="mod.preview_image_path"
+          alt="{{ mod.name }}"
+          class="mod-preview"
+          />
+      } @else {
+        <div class="mod-preview placeholder">
+          <i class="pi pi-image"></i>
+        </div>
+      }
+      <div class="mod-meta">
+        <div>Version: {{ mod.version || 'Unknown' }}</div>
+      </div>
+    </p-card>
+  }
+</div>
+
+<div class="flex items-center justify-end">
+  <span class="mx-1 text-color">Items per page: </span>
+  <p-select
+    [options]="options"
+    optionLabel="label"
+    optionValue="value"
+    [(ngModel)]="rows"
+    (ngModelChange)="onRowsChange($event)"
+  />
+  <p-paginator
+    [first]="first"
+    [rows]="rows"
+    [totalRecords]="mods.length"
+    (onPageChange)="onPageChange($event)"
+    [showCurrentPageReport]="true"
+    currentPageReportTemplate="{first} - {last} of {totalRecords}"
+    [showPageLinks]="false"
+    [showFirstLastIcon]="false"
+  ></p-paginator>
+</div>

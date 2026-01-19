@@ -1,0 +1,166 @@
+<p-toast position="top-center"></p-toast>
+<div class="p-3">
+  <p-card header="Servers">
+    <div class="flex justify-content-between align-items-center gap-2">
+      <div class="text-color-secondary">
+        Edit server configuration files in <span style="font-family: var(--font-family-monospace, monospace)">Zomboid\\Server</span>.
+      </div>
+      <div class="flex gap-2">
+        <button pButton type="button" label="Refresh" class="p-button-text" icon="pi pi-refresh" (click)="refreshServerList()"></button>
+        <button pButton type="button" label="Create New Server" icon="pi pi-plus" (click)="openCreateDialog()"></button>
+      </div>
+    </div>
+    <div class="mt-3">
+      @if (!serverNames.length) {
+        <p class="m-0 text-color-secondary">No server files were found.</p>
+      } @else {
+        <p-select
+          [options]="serverNames"
+          [(ngModel)]="selectedServerName"
+          placeholder="Select a server"
+          class="w-full"
+          (ngModelChange)="selectServer($event)"
+        ></p-select>
+      }
+    </div>
+    @if (!selectedServerName) {
+      <div class="mt-3">
+        <div class="text-lg font-medium">Server Editor</div>
+        <p class="m-0 text-color-secondary mt-1">Select a server to begin editing.</p>
+      </div>
+    }
+  </p-card>
+
+  <div class="mt-3">
+    <div class="w-full mt-3">
+      <p-card header="Server Editor">
+        @if (selectedServerName) {
+          <div class="flex justify-content-between align-items-center gap-2 mb-3">
+            <div>
+              <div class="text-lg font-medium">{{ selectedServerName }}</div>
+              <div class="text-sm text-color-secondary">
+                {{ userDir }}\\Server\\{{ selectedServerName }}
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <button pButton type="button" label="Reload" icon="pi pi-refresh" class="p-button-text" [loading]="loadingServer" (click)="loadServerFiles()"></button>
+              <button pButton type="button" label="Save All" icon="pi pi-save" [loading]="savingServer" (click)="saveServerFiles()"></button>
+            </div>
+          </div>
+
+          <p-tabs value="ini">
+            <p-tablist>
+              <p-tab value="ini">INI</p-tab>
+              <p-tab value="sandbox">Sandbox Variables</p-tab>
+              <p-tab value="spawnpoints">Spawn Points</p-tab>
+              <p-tab value="spawnregions">Spawn Regions</p-tab>
+            </p-tablist>
+            <p-tabpanels>
+              <p-tabpanel value="ini">
+                @if (!iniLines.length) {
+                  <p class="m-0 text-color-secondary">No INI entries found.</p>
+                  } @else {
+                    <label class="text-sm text-color-secondary block w-full mb-2">Server Configuration Variables</label>
+                    <div class="flex-1 min-h-0 w-full">
+                      <p-listbox
+                        [options]="iniEntryOptions"
+                        optionLabel="label"
+                        optionValue="key"
+                        [filter]="true"
+                        filterPlaceholder="Search fields"
+                        [focusOnHover]="false"
+                        [autoOptionFocus]="false"
+                        [selectOnFocus]="true"
+                        [metaKeySelection]="false"
+                        [(ngModel)]="selectedIniKey"
+                        (onChange)="onIniEntrySelect($event.value)"
+                        (onClick)="onIniEntryClick($event)"
+                        dataKey="key"
+                      >
+                        <ng-template let-item pTemplate="item">
+                          <div
+                            class="flex align-items-center"
+                            [class.text-primary]="isIniValueChanged(item.key, getIniValueByKey(item.key))"
+                          >
+                            {{ item.label }}
+                          </div>
+                        </ng-template>
+                      </p-listbox>
+                    </div>
+                  
+                }
+              </p-tabpanel>
+              <p-tabpanel value="sandbox">
+                <textarea pTextarea rows="18" [(ngModel)]="sandboxVarsText" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+              </p-tabpanel>
+              <p-tabpanel value="spawnpoints">
+                <textarea pTextarea rows="18" [(ngModel)]="spawnpointsText" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+              </p-tabpanel>
+              <p-tabpanel value="spawnregions">
+                <textarea pTextarea rows="18" [(ngModel)]="spawnregionsText" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+              </p-tabpanel>
+            </p-tabpanels>
+          </p-tabs>
+        }
+      </p-card>
+    </div>
+  </div>
+</div>
+
+<p-dialog header="Create New Server" [(visible)]="createDialogVisible" [modal]="true" [style]="{ width: '32rem', maxWidth: '95vw' }">
+  <div class="p-fluid">
+    <label for="new-server-name">Server name</label>
+    <input id="new-server-name" type="text" pInputText [(ngModel)]="newServerName" autocomplete="off" />
+    <div class="text-sm text-color-secondary mt-2">Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua</div>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Cancel" class="p-button-text" (click)="createDialogVisible = false"></button>
+      <button pButton type="button" label="Create" icon="pi pi-check" (click)="confirmCreateServer()"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog header="Edit Server Variable" [(visible)]="editIniVisible" [modal]="true" [style]="{ width: '36rem', maxWidth: '95vw' }">
+  @if (editIniLine) {
+    <div class="p-fluid">
+      <div class="text-lg font-medium">{{ formatIniLabel(editIniLine.key) }}</div>
+      <div class="text-sm text-color-secondary">
+        {{ editIniLine.comment || 'No description available.' }}
+      </div>
+      <div class="mt-3">
+        @if (isWelcomeMessageKey(editIniLine.key)) {
+          <textarea
+            pTextarea
+            rows="5"
+            [(ngModel)]="editIniValue"
+            style="font-family: var(--font-family-monospace, monospace)"
+          ></textarea>
+      } @else if (isBooleanValue(editIniValue)) {
+        <div class="flex gap-3 align-items-center">
+          @for (opt of booleanOptions; track opt.value) {
+            <div class="flex align-items-center gap-2">
+              <p-radioButton
+                name="edit-ini-boolean"
+                [value]="opt.value"
+                [(ngModel)]="editIniValue"
+                [inputId]="'edit-ini-' + opt.value"
+              ></p-radioButton>
+              <label [for]="'edit-ini-' + opt.value">{{ opt.label }}</label>
+            </div>
+          }
+        </div>
+      } @else {
+          <input
+            pInputText
+            type="text"
+            [(ngModel)]="editIniValue"
+            style="font-family: var(--font-family-monospace, monospace)"
+          />
+        }
+      </div>
+      <div class="flex gap-2 mt-3">
+        <button pButton type="button" label="Cancel" class="p-button-text" (click)="cancelIniEdit()"></button>
+        <button pButton type="button" label="Save" icon="pi pi-save" (click)="saveIniEdit()"></button>
+      </div>
+    </div>
+  }
+</p-dialog>

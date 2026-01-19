@@ -1,0 +1,109 @@
+<ng-container *transloco="let t">
+<div class="mods-page">
+  <p-toast
+    [position]="'top-center'"
+    [life]="10000"
+    [baseZIndex]="2000"
+    [autoZIndex]="true"
+    appendTo="body"
+  >
+    <ng-template let-message pTemplate="message">
+      <div class="flex align-items-start gap-3" style="flex: 1">
+        <i [class]="'pi ' + (
+          message.severity === 'error' ? 'pi-times-circle' : 
+          message.severity === 'warn' ? 'pi-exclamation-triangle' : 
+          message.severity === 'success' ? 'pi-check-circle' : 
+          'pi-info-circle'
+        )" style="font-size: 1.5rem"></i>
+        <div class="flex flex-column">
+          @if (message.summary) {
+            <div class="font-bold">{{ message.summary }}</div>
+          }
+          <div class="{{ message.summary ? 'mt-1' : '' }}">{{ message.detail }}</div>
+          @if (message.data?.helpUrl) {
+            <button
+              pButton
+              [label]="t('modsPage.toastHelp')"
+              class="p-button-link p-0 mt-2 text-left font-medium"
+              (click)="onHelpLinkClick(message.data.helpUrl)"
+            ></button>
+          }
+        </div>
+      </div>
+    </ng-template>
+  </p-toast>
+
+  <p-dialog
+    header="{{ t('modsPage.workshopPrompt.title') }}"
+    [(visible)]="showWorkshopPrompt"
+    [modal]="true"
+    [closable]="false"
+    [draggable]="false"
+    [resizable]="false"
+  >
+    <p>
+      {{ t('modsPage.workshopPrompt.body') }}
+    </p>
+
+    <div class="mt-3 flex align-items-center gap-2">
+      <p-toggleswitch
+        [ngModel]="autoWorkshopFetch"
+        (ngModelChange)="onAutoWorkshopToggleChange($event)"
+      ></p-toggleswitch>
+      <span>{{ t('modsPage.workshopPrompt.alwaysFetch') }}</span>
+    </div>
+
+    <ng-template pTemplate="footer">
+      <button
+        pButton
+        [label]="t('common.no')"
+        class="p-button-text"
+        (click)="onWorkshopPromptCancel()"
+      ></button>
+      <button
+        pButton
+        [label]="t('common.yes')"
+        (click)="onWorkshopPromptConfirm()"
+      ></button>
+    </ng-template>
+  </p-dialog>
+
+  <div class="card">
+
+    @if (loading) {
+      <div class="mods-loading-overlay">
+        <div class="mods-loading-content">
+          <span>
+            @if (loadingSource === 'local') {
+              {{ t('modsPage.loadingLocal') }}
+            } @else if (loadingSource === 'workshop') {
+              {{ t('modsPage.loadingWorkshop') }}
+            } @else {
+              {{ t('modsPage.loading') }}
+            }
+          </span>
+          <p-progressbar
+            mode="indeterminate"
+            [style]="{ height: '4px', width: '100%', marginTop: '0.75rem' }"
+          ></p-progressbar>
+        </div>
+      </div>
+    }
+    <app-mod-table
+      [mods]="filteredMods"
+      [allMods]="mods"
+      [rows]="limit"
+      [first]="first"
+      [rowsPerPageOptions]="limitOptions"
+      (pageChange)="onTablePageChange($event)"
+      (rowExpanded)="onRowExpanded($event)"
+      (workshopClicked)="openSteamWorkshop($event)"
+      (creatorWorkshopClicked)="openCreatorWorkshop($event)"
+      (openFolderClicked)="openModFolder($event)"
+      (modUpdated)="onModUpdated($event)"
+      (searchChanged)="onSearchChanged($event)"
+    ></app-mod-table>
+  </div>
+
+</div>
+</ng-container>

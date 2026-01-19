@@ -1,0 +1,701 @@
+{
+  "common": {
+    "loadingContent": "กำลังโหลดเนื้อหา...",
+    "next": "ต่อไป",
+    "back": "กลับ",
+    "finish": "เสร็จ",
+    "cancel": "ยกเลิก",
+    "browse": "เรียกดู",
+    "yes": "ใช่",
+    "no": "เลขที่",
+    "save": "บันทึก"
+  },
+  "app": {
+    "title": "ฮับของ Honu"
+  },
+  "menu": {
+    "languageLabel": "ภาษา",
+    "languagePlaceholder": "เลือกภาษา",
+    "sections": {
+      "hub": "ฮับ",
+      "modFilters": "ตัวกรอง MOD",
+      "modCollectionFilters": "ตัวกรองคอลเลกชัน MOD",
+      "actions": "การกระทำ",
+      "getStarted": "เริ่มต้นเลย",
+      "resources": "ทรัพยากร",
+      "dangerZone": "โซนอันตราย"
+    },
+    "items": {
+      "dashboard": "แดชบอร์ด",
+      "logInspector": "ตัวตรวจสอบบันทึก",
+      "myMods": "Mods ของฉัน",
+      "configureFolders": "กำหนดค่าโฟลเดอร์",
+      "setSteamApiKey": "ตั้งค่าคีย์ Steam API",
+      "syncHonu": "ซิงค์ข้อมูล Mod ของ Honu QoL",
+      "syncLocal": "ซิงค์ข้อมูล Mod ในเครื่อง",
+      "syncWorkshop": "ซิงค์กับ Steam Workshop",
+      "changelog": "บันทึกการเปลี่ยนแปลง",
+      "documentation": "เอกสารประกอบ",
+      "viewSource": "ดูแหล่งที่มา",
+      "projectZomboid": "โปรเจ็กต์ซอมบี้",
+      "pzWiki": "โครงการอย่างเป็นทางการของ Zomboid Wiki",
+      "b41Map": "B41 แผนที่",
+      "b42Map": "แผนที่บี42",
+      "workshop": "เวิร์กชอปบน Steam ของโปรเจ็กต์ Zomboid",
+      "subreddit": "r/projectzomboid",
+      "discord": "โปรเจ็กต์ซอมบี้",
+      "moddingDiscord": "ชุมชนการดัดแปลง PZ",
+      "mappingDiscord": "การทำแผนที่ PZ อย่างไม่เป็นทางการ",
+      "honuWorkshop": "เวิร์กชอปบน Steam ของ HonuInTheSea",
+      "supportKofi": "รองรับ Ko-fi",
+      "resetApp": "รีเซ็ตแอปพลิเคชัน",
+      "resetAppTooltip": "รีเซ็ตการตั้งค่าหน้าต่างและลบข้อมูลที่เก็บไว้"
+    },
+    "filters": {
+      "adultLabel": "มีเนื้อหาสำหรับผู้ใหญ่",
+      "adultTooltip": "กรองม็อดที่ข้อมูลเมตาของ Steam รายงานว่า might_inappropriate_sex เป็นจริง",
+      "rulesLabel": "มีกฎ",
+      "rulesTooltip": "Mod มีคำสั่ง need, เข้ากันไม่ได้, loadModAfter, loadModBefore ในไฟล์ mod.info",
+      "missingSteamLabel": "ข้อมูล Steam หายไป",
+      "missingSteamTooltip": "Mod อาจถูกทำเครื่องหมายว่าเป็นส่วนตัวหรือถูกลบออกจาก Steam Workshop",
+      "outdatedLabel": "Mods ที่ล้าสมัย",
+      "outdatedTooltip": "Mod อาจจำเป็นต้องยกเลิกการสมัครและสมัครใหม่เพื่อรับเวอร์ชันล่าสุดจาก Steam Workshop"
+    },
+    "collections": {
+      "searchLabel": "ค้นหาคอลเลกชัน",
+      "searchPlaceholder": "ค้นหาคอลเลกชัน",
+      "sortLabel": "เรียงตาม",
+      "periodLabel": "เมื่อเวลาผ่านไป",
+      "tagsLabel": "แท็ก",
+      "tagsPlaceholder": "เลือกแท็ก",
+      "sortMostPopular": "ยอดนิยมที่สุด",
+      "sortMostRecent": "ล่าสุด",
+      "sortLastUpdated": "อัปเดตล่าสุด",
+      "periodToday": "วันนี้",
+      "periodWeek": "หนึ่งสัปดาห์",
+      "periodThirtyDays": "สามสิบวัน",
+      "periodThreeMonths": "สามเดือน",
+      "periodSixMonths": "หกเดือน",
+      "periodYear": "หนึ่งปี"
+    },
+    "presetsUnavailable": "ตั้งค่าโฟลเดอร์ผู้ใช้ Project Zomboid ของคุณและ/หรือกำหนดค่าล่วงหน้าก่อน",
+    "steamApi": {
+      "dialogTitle": "ตั้งค่าคีย์ Steam Web API",
+      "dialogIntro": "ป้อนรหัส Steam Web API ของคุณ รหัสนี้ถูกจัดเก็บไว้ในเครื่องของคุณ",
+      "keyLabel": "คีย์ API ของเว็บ Steam",
+      "needKey": "ต้องการกุญแจไหม?",
+      "getKeyLink": "รับรหัส Steam Web API ของคุณ",
+      "helpButton": "วิธีสร้างคีย์ Steam Web API",
+      "helpTitle": "วิธีสร้างคีย์ Steam Web API",
+      "helpCardTitle": "วิธีลงทะเบียนคีย์ Steam Web API",
+      "helpCardBody": "คู่มือนี้ให้คำแนะนำแบบทีละขั้นตอนสำหรับการลงทะเบียนคีย์ Steam Web API คีย์ Steam Web API ช่วยให้แอปพลิเคชันสามารถเข้าถึงข้อมูลเฉพาะจากบัญชี Steam ของคุณ เช่น คลังเกมหรือสถิติได้อย่างปลอดภัย เมื่อคุณอนุญาตให้แอปพลิเคชันทำเช่นนั้น",
+      "step1Title": "1. ข้อกำหนดเบื้องต้น",
+      "step1Intro": "ก่อนที่คุณจะสามารถลงทะเบียนรหัส Steam Web API ได้ โปรดตรวจสอบให้แน่ใจว่า:",
+      "step1Bullet1": "คุณมีบัญชี Steam ที่ใช้งานอยู่ในสถานะดี ปลอดภัยด้วย Steam Guard (ตัวตรวจสอบสิทธิ์อีเมลหรือมือถือ)",
+      "step1Bullet2": "บัญชีของคุณเป็นเจ้าของเกมที่ซื้ออย่างน้อยหนึ่งเกม บัญชีใหม่หรือบัญชีเปล่าไม่สามารถรับคีย์ API ได้",
+      "step1Bullet3": "คุณกำลังใช้อุปกรณ์และเครือข่ายที่เชื่อถือได้ (อย่าลงทะเบียนหรือดูกุญแจของคุณบนคอมพิวเตอร์สาธารณะหรือคอมพิวเตอร์ที่ใช้ร่วมกัน)",
+      "step2Title": "2. หมายเหตุด้านความปลอดภัยที่สำคัญ",
+      "step2Intro": "รหัส Steam Web API ของคุณเป็นข้อมูลที่ละเอียดอ่อน ใครก็ตามที่มีคีย์ของคุณสามารถสร้างคำขอ API ในนามของคุณได้ ปฏิบัติต่อมันเหมือนเป็นรหัสผ่าน:",
+      "step2Bullet1": "อย่าแชร์กุญแจของคุณกับผู้อื่น และอย่าโพสต์มันแบบสาธารณะ (เช่น บนฟอรั่มหรือ GitHub)",
+      "step2Bullet2": "วางคีย์ของคุณลงในเครื่องมือหรือเว็บไซต์ที่คุณเชื่อถืออย่างเต็มที่เท่านั้น",
+      "step2Bullet3": "หากคุณสงสัยว่าคีย์ของคุณถูกเปิดเผย ให้เพิกถอนทันทีและสร้างคีย์ใหม่",
+      "step3Title": "3. ทีละขั้นตอน: การลงทะเบียนคีย์ Steam Web API",
+      "step3_1Title": "ขั้นตอนที่ 1 - ลงชื่อเข้าใช้ Steam",
+      "step3_1Bullet1": "เปิดเว็บเบราว์เซอร์ของคุณแล้วไปที่ <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>",
+      "step3_1Bullet2": "คลิก <strong>\"เข้าสู่ระบบ\"</strong> ที่มุมขวาบน",
+      "step3_1Bullet3": "ป้อนชื่อบัญชี Steam และรหัสผ่านของคุณ",
+      "step3_1Bullet4": "หากได้รับแจ้ง ให้ทำการตรวจสอบ Steam Guard ให้เสร็จสิ้น",
+      "step3_2Title": "ขั้นตอนที่ 2 - เปิดหน้าคีย์ Steam Web API",
+      "step3_2Bullet1": "ขณะที่เข้าสู่ระบบ ให้เปิดหน้าการลงทะเบียนคีย์ Steam Web API: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "หน้านี้จะแสดงคำอธิบายสั้นๆ ของ Steam Web API และแบบฟอร์มชื่อ <strong>\"ลงทะเบียนเพื่อรับคีย์ Steam Web API ใหม่\"</strong>",
+      "step3_3Title": "ขั้นตอนที่ 3 - ป้อนชื่อโดเมนและยอมรับข้อกำหนด",
+      "step3_3Intro": "ในแบบฟอร์มลงทะเบียน:",
+      "step3_3Bullet1": "ในฟิลด์ <strong>\"ชื่อโดเมน\"</strong> ให้ป้อนโดเมนของเว็บไซต์หรือบริการที่จะใช้รหัส <ul class=\"p-ml-3\"><li>หากคุณไม่มีโดเมน คุณสามารถป้อนตัวยึดตำแหน่ง เช่น <code>localhost</code>, <code>127.0.0.1</code> หรือ <code>example.com</code>.</li>PH_449_11__",
+      "step3_3Bullet2": "อ่านข้อกำหนดการใช้งาน Steam Web API",
+      "step3_3Bullet3": "ทำเครื่องหมายที่ช่องเพื่อยืนยันว่าคุณยอมรับข้อกำหนด",
+      "step3_3Bullet4": "คลิกปุ่ม <strong>\"ลงทะเบียน\"</strong> เพื่อส่งแบบฟอร์ม",
+      "step3_4Title": "ขั้นตอนที่ 4 - ดูและคัดลอกคีย์ Steam Web API ใหม่ของคุณ",
+      "step3_4Intro": "หลังจากลงทะเบียนสำเร็จ:",
+      "step3_4Bullet1": "หน้านี้จะโหลดซ้ำและแสดงคีย์ Steam Web API ของคุณใกล้ด้านบน",
+      "step3_4Bullet2": "คีย์เป็นสตริงตัวอักษรและตัวเลขยาว (เช่น <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>)",
+      "step3_4Bullet3": "เลือกคีย์ทั้งหมดแล้วคัดลอก (Ctrl+C / Cmd+C)",
+      "step3_4Bullet4": "เก็บไว้ในตำแหน่งที่ปลอดภัย เช่น ตัวจัดการรหัสผ่านหรือแอปบันทึกที่เข้ารหัส",
+      "step4Title": "4. ตัวอย่างพื้นฐานของการใช้คีย์ Steam Web API ของคุณ",
+      "step4Intro": "เมื่อคุณมีคีย์แล้ว คุณสามารถเรียกตำแหน่งข้อมูล Steam Web API ได้โดยการเพิ่มเป็นพารามิเตอร์ <code>key=</code> ไปยัง URL ตัวอย่างเช่น คำขอ HTTP แบบธรรมดาอาจมีลักษณะเช่นนี้ (แทนที่ <code>YOURKEYHERE</code> ด้วยคีย์จริงของคุณ):",
+      "step4Outro": "URL และพารามิเตอร์ที่แน่นอนขึ้นอยู่กับอินเทอร์เฟซ Steam Web API ที่คุณใช้ ศึกษาเอกสารอย่างเป็นทางการเกี่ยวกับอุปกรณ์ปลายทางที่คุณต้องการเสมอ",
+      "step5Title": "5. การเพิกถอนหรือสร้างคีย์ Steam Web API ของคุณใหม่",
+      "step5Intro": "หากคุณไม่ต้องการคีย์ Steam Web API ของคุณอีกต่อไป หรือคุณเชื่อว่าคีย์ถูกบุกรุก คุณควรเพิกถอนคีย์นั้น:",
+      "step5Bullet1": "ลงชื่อเข้าใช้บัญชี Steam ของคุณหากคุณยังไม่ได้เข้าสู่ระบบ",
+      "step5Bullet2": "เปิด <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> อีกครั้ง",
+      "step5Bullet3": "คลิกปุ่มที่มีป้ายกำกับ <strong>\"เพิกถอนคีย์ Steam Web API ของฉัน\"</strong>",
+      "step5Bullet4": "หากคุณต้องการรหัสใหม่ในภายหลัง ให้กลับไปที่หน้าเดิมและลงทะเบียนอีกครั้งโดยใช้ขั้นตอนข้างต้น",
+      "step6Title": "6. เคล็ดลับการแก้ไขปัญหา",
+      "step6Intro": "คุณอาจพบปัญหาข้อใดข้อหนึ่งต่อไปนี้เมื่อพยายามลงทะเบียนคีย์:",
+      "step6Bullet1": "<strong>ข้อความ:</strong> <em>\"คุณจะได้รับสิทธิ์ในการเข้าถึงคีย์ Steam Web API เมื่อคุณมีเกมในบัญชี Steam ของคุณ\"</em> ในกรณีนี้ บัญชีของคุณยังไม่ตรงตามข้อกำหนดขั้นต่ำ ซื้อเกมอย่างน้อยหนึ่งเกมบน Steam รอให้เคลียร์การซื้อแล้วลองอีกครั้งในภายหลัง",
+      "step6Bullet2": "<strong>เพจขอให้คุณลงชื่อเข้าใช้อยู่เสมอ</strong> - ตรวจสอบให้แน่ใจว่าได้เปิดใช้งานคุกกี้และ JavaScript ในเบราว์เซอร์ของคุณ และคุณเข้าสู่ระบบด้วยบัญชีที่ถูกต้อง",
+      "step6Bullet3": "<strong>ข้อกังวลด้านความปลอดภัย</strong> - หากไซต์หรือบุคคลภายนอกใดขอรหัสของคุณ และคุณไม่แน่ใจว่าเพราะเหตุใด โปรดอย่าแชร์รหัสนั้น เพิกถอนรหัสของคุณและเปลี่ยนรหัสผ่าน Steam ของคุณหากคุณคิดว่ามีการเปิดเผย",
+      "footerNote": "ขณะนี้ คุณมีรหัส Steam Web API ที่ลงทะเบียนแล้ว และมีความเข้าใจพื้นฐานเกี่ยวกับวิธีการจัดการอย่างปลอดภัย เก็บหน้านี้ไว้ใช้อ้างอิงเมื่อคุณต้องการลงทะเบียน ใช้ หรือเพิกถอนรหัสของคุณ"
+    },
+    "folders": {
+      "dialogTitle": "กำหนดค่าโฟลเดอร์"
+    }
+  },
+  "changelog": {
+    "title": "บันทึกการเปลี่ยนแปลง",
+    "events": {
+      "initialRelease": {
+        "title": "การเปิดตัวครั้งแรก",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "การสร้างสาธารณะครั้งแรกของ Project Zomboid Hub ของ Honu"
+      }
+    }
+  },
+  "onboarding": {
+    "title": "เริ่มต้นเลย",
+    "steps": {
+      "welcome": "ยินดีต้อนรับ",
+      "folders": "โฟลเดอร์",
+      "steamKey": "คีย์ Steam API",
+      "tips": "เคล็ดลับ"
+    },
+    "welcome": {
+      "title": "ยินดีต้อนรับสู่ Project Zomboid Mod Manager",
+      "body": "การตั้งค่าด่วนนี้ช่วยให้คุณเชื่อมต่อโฟลเดอร์ เพิ่มคีย์ Steam Web API และเริ่มซิงค์ม็อด",
+      "bullet1": "เลือกโฟลเดอร์ Project Zomboid ของคุณ",
+      "bullet2": "เพิ่มคีย์ Steam Web API ของคุณสำหรับข้อมูลเมตาของเวิร์กชอป",
+      "bullet3": "ตั้งค่าให้เสร็จสิ้นและเริ่มจัดการม็อดของคุณ"
+    },
+    "tips": {
+      "title": "เคล็ดลับด่วน",
+      "bullet1": "คุณสามารถอัปเดตโฟลเดอร์และคีย์ Steam API ของคุณได้ตลอดเวลาจากแถบด้านข้าง",
+      "bullet2": "เรียกใช้ Sync Local Mod Data ก่อนที่จะซิงค์ข้อมูลเมตาของเวิร์กชอป",
+      "bullet3": "ใช้ Mod Filters เพื่อจำกัดรายการให้แคบลงอย่างรวดเร็ว"
+    }
+  },
+  "tags": {
+    "animals": "สัตว์",
+    "audio": "เสียง",
+    "balance": "สมดุล",
+    "build_41": "สร้าง 41",
+    "build_42": "สร้าง 42",
+    "build_40": "สร้าง 40",
+    "buildings": "อาคาร",
+    "clothing_armor": "เสื้อผ้า/ชุดเกราะ",
+    "farming": "การทำฟาร์ม",
+    "food": "อาหาร",
+    "framework": "กรอบ",
+    "hardmode": "ฮาร์ดโหมด",
+    "interface": "อินเทอร์เฟซ",
+    "items": "รายการ",
+    "language_translation": "ภาษา/การแปล",
+    "literature": "วรรณกรรม",
+    "map": "แผนที่",
+    "military": "ทหาร",
+    "misc": "เบ็ดเตล็ด",
+    "models": "โมเดล",
+    "multiplayer": "ผู้เล่นหลายคน",
+    "pop_culture": "วัฒนธรรมป๊อป",
+    "qol": "คุณภาพชีวิต",
+    "realistic": "สมจริง",
+    "silly_fun": "ไร้สาระ/สนุก",
+    "skills": "ทักษะ",
+    "textures": "พื้นผิว",
+    "traits": "ลักษณะ",
+    "vehicles": "ยานพาหนะ",
+    "weapons": "อาวุธ",
+    "wip": "วีไอพี"
+  },
+  "tagFilter": {
+    "label": "แท็ก",
+    "matchLabel": "จับคู่",
+    "matchAny": "หรือ",
+    "matchAll": "และ",
+    "placeholder": "เลือกแท็ก"
+  },
+  "modsTable": {
+    "clearFilters": "ชัดเจน",
+    "searchPlaceholder": "ค้นหาคำสำคัญ",
+    "detailsTitle": "รายละเอียดม็อด",
+    "columns": {
+      "name": "ชื่อ",
+      "author": "ผู้เขียน",
+      "workshopId": "รหัสเวิร์กชอป",
+      "lastModified": "วันที่แก้ไขล่าสุด"
+    },
+    "filters": {
+      "name": "ค้นหาตามชื่อ",
+      "author": "ค้นหาโดยผู้เขียน",
+      "workshopId": "ค้นหาตามรหัสเวิร์กชอป",
+      "date": "วันที่กรอง"
+    }
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "ภาพรวม",
+      "updateStatus": "สถานะการอัพเดต Mods",
+      "topInstalled": "Mods ที่ติดตั้งยอดนิยม (ตามการสมัครสมาชิก)",
+      "lastUpdatedInstalled": "Mods ที่ติดตั้งซึ่งได้รับการอัพเดตครั้งล่าสุด",
+      "installsOverTime": "Mod ติดตั้งอยู่ตลอดเวลา",
+      "largestMods": "Mods ที่ใหญ่ที่สุด (ตามขนาดไฟล์)",
+      "latestNews": "ข่าวโครงการ Zomboid ล่าสุด",
+      "popularThisWeek": "Mods ยอดนิยมประจำสัปดาห์นี้",
+      "latestMods": "Mods ล่าสุด",
+      "updatedMods": "อัปเดต Mods"
+    },
+    "labels": {
+      "totalMods": "Mod ทั้งหมด",
+      "lastLocalSync": "การซิงค์ Mod ในเครื่องครั้งล่าสุด",
+      "lastWorkshopSync": "การซิงค์เวิร์กชอปครั้งล่าสุด",
+      "subscribers": "สมาชิก",
+      "updated": "ปรับปรุงแล้ว",
+      "created": "สร้าง",
+      "installedTooltip": "ติดตั้งในประเทศ",
+      "unknown": "ไม่ทราบ",
+      "never": "ไม่เคย"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API ไม่ตอบสนอง โปรดลองอีกครั้งในภายหลัง",
+      "noInstalledSubs": "ไม่มีม็อดที่ติดตั้งพร้อมข้อมูลการสมัครสมาชิก",
+      "noWorkshopUpdateInfo": "ไม่มีข้อมูลอัปเดตเวิร์กชอป",
+      "noSizeData": "ไม่มีข้อมูลขนาดไฟล์ mod",
+      "noNews": "ไม่พบรายการข่าว",
+      "noPopularMods": "ไม่พบม็อดยอดนิยม",
+      "noModsFound": "ไม่พบม็อด",
+      "noRecentUpdates": "ไม่พบม็อดที่อัปเดตล่าสุด"
+    },
+    "fallbacks": {
+      "untitledItem": "รายการที่ไม่มีชื่อ"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods ตามเดือนที่ติดตั้ง",
+        "xAxis": "เดือน",
+        "yAxis": "ม็อด"
+      },
+      "status": {
+        "outdated": "ล้าสมัย",
+        "upToDate": "ถึงวันที่"
+      },
+      "size": {
+        "label": "ขนาดไฟล์เวิร์กชอป (ไบต์)",
+        "yAxis": "ขนาด (ไบต์)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "ตัวตรวจสอบบันทึก",
+    "fields": {
+      "logFile": "ไฟล์บันทึก",
+      "types": "ประเภท",
+      "typesPlaceholder": "เลือกประเภท",
+      "maxEntries": "รายการสูงสุด",
+      "from": "จาก",
+      "to": "ถึง",
+      "livePolling": "การเลือกตั้งสด",
+      "pollingEverySeconds": "ทุกๆ",
+      "searchMessage": "ข้อความค้นหา",
+      "searchPlaceholder": "ค้นหา..."
+    },
+    "table": {
+      "pageReport": "กำลังแสดง {first} ถึง {last} จาก {totalRecords}",
+      "timestamp": "การประทับเวลา",
+      "type": "พิมพ์",
+      "message": "ข้อความ"
+    },
+    "levels": {
+      "error": "ข้อผิดพลาด",
+      "warn": "เตือน",
+      "log": "บันทึก",
+      "debug": "ดีบัก",
+      "trace": "ติดตาม",
+      "other": "อื่น"
+    },
+    "dialog": {
+      "logFilesFilter": "ไฟล์บันทึก"
+    },
+    "errors": {
+      "noFilePath": "กำหนดเส้นทางไฟล์เพื่อโหลดบันทึก",
+      "loadFailed": "โหลดไฟล์บันทึกไม่สำเร็จ",
+      "clearFailed": "ไม่สามารถล้างไฟล์บันทึกได้"
+    }
+  },
+  "modsPage": {
+    "toastHelp": "ฉันจะหาสิ่งนี้ได้ที่ไหน?",
+    "workshopPrompt": {
+      "title": "ดึงข้อมูลเวิร์กชอป Steam",
+      "body": "คุณต้องการดึงข้อมูลเมตาล่าสุดจาก Steam Workshop สำหรับม็อดของคุณหรือไม่?",
+      "alwaysFetch": "ดึงข้อมูลโดยอัตโนมัติโดยไม่ต้องถาม"
+    },
+    "loadingLocal": "กำลังสแกนข้อมูล Mod ในเครื่อง...",
+    "loadingWorkshop": "กำลังดึงข้อมูลเวิร์กชอป Steam...",
+    "loading": "กำลังโหลดข้อมูล..."
+  },
+  "folders": {
+    "title": "ตั้งค่าโฟลเดอร์ที่จำเป็น",
+    "description": "โฟลเดอร์เหล่านี้ใช้เพื่อสแกนม็อดของคุณและอ่านรายละเอียดการติดตั้ง Project Zomboid ของคุณ",
+    "gameDirLabel": "โฟลเดอร์เกม Project Zomboid",
+    "workshopDirLabel": "โฟลเดอร์ Local Mods (Steam Workshop)",
+    "userDirLabel": "โฟลเดอร์ผู้ใช้ Project Zomboid (ไม่บังคับ)",
+    "userDirNote": "ใช้สำหรับส่งออกค่าที่ตั้งล่วงหน้าของเซิร์ฟเวอร์และ (ไม่บังคับ) ใช้เป้าหมายขั้นสูง"
+  },
+  "modDetails": {
+    "fields": {
+      "name": "ชื่อ",
+      "modId": "รหัสประจำตัว",
+      "author": "ผู้เขียน",
+      "version": "เวอร์ชั่นม็อด",
+      "versionMin": "เวอร์ชันเกมขั้นต่ำ",
+      "versionMax": "เวอร์ชันเกมสูงสุด",
+      "url": "URL",
+      "description": "คำอธิบาย",
+      "tags": "แท็ก",
+      "noTags": "ไม่มีแท็ก",
+      "packs": "แพ็ค",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "ชื่อเวิร์กช็อป",
+      "workshopCreator": "ผู้สร้างเวิร์กช็อป",
+      "fileSize": "ขนาดไฟล์",
+      "timeCreated": "เวลาที่สร้าง",
+      "timeUpdated": "เวลาที่อัปเดต",
+      "workshopViews": "มุมมองการประชุมเชิงปฏิบัติการ",
+      "workshopSubscriptions": "การสมัครสมาชิกเวิร์กชอป",
+      "adultContent": "มีเนื้อหาสำหรับผู้ใหญ่"
+    },
+    "links": {
+      "requiredMods": "Mods ที่จำเป็น",
+      "loadAfter": "โหลด Mod หลังจาก",
+      "loadBefore": "โหลด Mod ก่อน",
+      "incompatibleMods": "Mods ที่เข้ากันไม่ได้",
+      "requiredBy": "ต้องการโดย",
+      "incompatibleWith": "เข้ากันไม่ได้กับ"
+    },
+    "buttons": {
+      "visitWorkshop": "เยี่ยมชมหน้าเวิร์กชอป Steam",
+      "authorWorkshop": "หน้าเวิร์กชอป Steam ของผู้แต่ง",
+      "openFolder": "เปิดโฟลเดอร์ม็อด"
+    },
+    "tooltips": {
+      "modInfoReadonly": "ฟิลด์นี้เป็นแบบอ่านอย่างเดียวและเติมจาก mod.info",
+      "steamReadonly": "ฟิลด์นี้เป็นแบบอ่านอย่างเดียวและเติมจากเวิร์กชอป Steam",
+      "modMissing": "ไม่พบ mod ต่อไปนี้",
+      "syncToActivate": "ซิงค์กับ Steam Workshop เพื่อเปิดใช้งาน",
+      "modFolderUnavailable": "เส้นทางโฟลเดอร์ Mod ไม่พร้อมใช้งาน"
+    }
+  },
+  "docs": {
+    "title": "เอกสารประกอบ",
+    "intro": "Honu's Hub ช่วยให้คุณเรียกดู ตรวจสอบ และจัดการ Project Zomboid ในพื้นที่ของคุณ ด้วยการผสานรวมเดสก์ท็อปผ่าน Tauri",
+    "toc": {
+      "aria": "สารบัญ",
+      "title": "สารบัญ",
+      "overview": "ภาพรวม",
+      "workflow": "ขั้นตอนการทำงาน",
+      "data": "ข้อมูลที่แอปใช้",
+      "features": "คุณสมบัติ",
+      "mediaPlayer": "เครื่องเล่นมีเดีย",
+      "logInspector": "ตัวตรวจสอบบันทึก",
+      "folderSetup": "การตั้งค่าโฟลเดอร์",
+      "tauri": "การรวมเดสก์ท็อป (Tauri)",
+      "privacy": "ความเป็นส่วนตัวและการจัดเก็บ",
+      "troubleshooting": "การแก้ไขปัญหา",
+      "faq": "คำถามที่พบบ่อย"
+    },
+    "overview": {
+      "title": "ภาพรวม",
+      "body": "แอปจะสแกนไดเร็กทอรี mods ที่เลือก รับข้อมูลเมตาจากแบบแผน Mod ของ Project Zomboid ทั่วไป และนำเสนอทุกอย่างในตารางและแดชบอร์ดสรุป"
+    },
+    "workflow": {
+      "title": "ขั้นตอนการทำงาน",
+      "intro": "ทำตามขั้นตอนตั้งแต่ต้นทางถึงปลายทางเพื่อเชื่อมต่อโฟลเดอร์ของคุณ ซิงค์ข้อมูลเมตา และสร้างเอาต์พุต QoL ข้อมูล Honu Mod",
+      "step1": {
+        "title": "โฟลเดอร์แผนที่",
+        "body": "เปิด <strong>กำหนดค่าโฟลเดอร์</strong> จากการดำเนินการของแถบด้านข้าง และตั้งค่าเกม Project Zomboid เวิร์กชอป และไดเร็กทอรีผู้ใช้ของคุณ",
+        "screenshot": "ภาพหน้าจอ: กำหนดค่าโฟลเดอร์"
+      },
+      "step2": {
+        "title": "สร้าง/ป้อนรหัส Steam Workshop",
+        "body": "ใช้ <strong>ตั้งค่าคีย์ Steam API</strong> เพื่อวางคีย์ของคุณเพื่อให้แอปสามารถดึงข้อมูลเมตาของเวิร์กชอปได้",
+        "screenshot": "ภาพหน้าจอ: ตั้งค่าคีย์ Steam API"
+      },
+      "step3": {
+        "title": "ซิงค์ข้อมูล mod ในเครื่อง",
+        "body": "เรียกใช้ <strong>Sync Local Mod Data</strong> เพื่อสแกนโฟลเดอร์เวิร์กชอปของคุณและสร้างรายการ mod ในเครื่อง",
+        "screenshot": "ภาพหน้าจอ: ซิงค์ข้อมูล Mod ในเครื่อง"
+      },
+      "step4": {
+        "title": "ซิงค์กับ Steam Workshop",
+        "body": "เรียกใช้ <strong>ซิงค์กับ Steam Workshop</strong> เพื่อดึงชื่อเวิร์กชอป ผู้แต่ง ขนาด และข้อมูลเมตาเพิ่มเติม",
+        "screenshot": "ภาพหน้าจอ: ซิงค์กับ Steam Workshop"
+      },
+      "step5": {
+        "title": "ซิงค์ข้อมูล Mod ของ Honu QoL",
+        "body": "ใช้ <strong>Sync Honu's Mod Info QoL</strong> เพื่อสร้าง/อัปเดต <code>honus_miqol_db.lua</code> ภายในโฟลเดอร์ผู้ใช้ Project Zomboid ของคุณ",
+        "screenshot": "สกรีนช็อต: ซิงค์ข้อมูล Mod ของ Honu QoL"
+      }
+    },
+    "data": {
+      "title": "ข้อมูลที่แอปใช้",
+      "intro": "แอปสร้างรายการ mod จากข้อมูลที่มีอยู่ในดิสก์",
+      "bullet1": "<strong>เส้นทางโฟลเดอร์ Mod</strong> - แก้ไขเส้นทางสัมบูรณ์ไปยังไดเร็กทอรี mod",
+      "bullet2": "<strong>Mod id</strong> - ดึงมาจากข้อมูลเมตาของ mod เมื่อพร้อมใช้งาน (โดยทั่วไปมาจาก <code>mod.info</code>)",
+      "bullet3": "<strong>Name</strong> - ชื่อที่แสดงที่ได้มาจากข้อมูลเมตาและ/หรือการตั้งชื่อโฟลเดอร์",
+      "bullet4": "<strong>รหัสเวิร์กชอป (ไม่บังคับ)</strong> - หากตรวจพบและเป็นตัวเลข แอปจะเปิดใช้งานปุ่มลิงก์เวิร์กชอป Steam",
+      "bullet5": "<strong>ตัวบ่งชี้สถานะ/สุขภาพ</strong> - สัญญาณพื้นฐาน เช่น ข้อมูลเมตาที่ขาดหายไปหรือไม่สมบูรณ์ (หากตรวจพบได้)",
+      "outro": "ม็อดบางตัวไม่ได้มีข้อมูลเมตาที่สมบูรณ์ เมื่อฟิลด์หายไป UI จะแสดงค่าความพยายามอย่างดีที่สุด และอาจปิดใช้งานการดำเนินการที่ต้องใช้ข้อมูลเฉพาะ (เช่น Steam link)"
+    },
+    "features": {
+      "title": "คุณสมบัติ",
+      "bullet1": "<strong>ตาราง Mods</strong> - แสดงรายการ Mods ที่ตรวจพบพร้อมฟิลด์คีย์ (ชื่อ, ID, ลิงก์เวิร์กชอป หากมี และเส้นทาง)",
+      "bullet2": "<strong>รายละเอียดแถว</strong> - ขยายแถวเพื่อดูข้อมูลเพิ่มเติมเกี่ยวกับม็อด (หากมี)",
+      "bullet3": "<strong>เปิดใน Steam</strong> - เปิดหน้าเวิร์กชอปในเบราว์เซอร์เริ่มต้นของคุณสำหรับม็อดที่มีรหัสเวิร์กชอปที่ถูกต้อง",
+      "bullet4": "<strong>เปิดโฟลเดอร์</strong> - เปิดโฟลเดอร์ mod ที่เลือกใน file explorer ของคุณ",
+      "mediaPlayer": "<strong>เครื่องเล่นสื่อ</strong> - เล่นแทร็กเพลง Project Zomboid จากแถบด้านข้าง ดู <a routerLink=\"/documentation\" fragment=\"media-player\">เครื่องเล่นสื่อ</a>",
+      "logInspectorPrefix": "<strong>ตัวตรวจสอบบันทึก</strong> - โหลดและกรองไฟล์บันทึก (เช่น <code>console.txt</code>) เพื่อค้นหาข้อผิดพลาดและคำเตือนอย่างรวดเร็ว ดู",
+      "logInspectorLink": "ตัวตรวจสอบบันทึก",
+      "bullet6": "<strong>Dashboard</strong> - แสดงสถิติด่วน (เช่น: Mod ทั้งหมดที่ตรวจพบ) และตัวบ่งชี้ระดับสูงอื่นๆ"
+    },
+    "mediaPlayer": {
+      "title": "เครื่องเล่นมีเดีย",
+      "intro": "แถบด้านข้างมีเครื่องเล่นเพลงน้ำหนักเบาที่สามารถสแกนหาแทร็กเสียง Project Zomboid (OGG) และเล่นในแอปได้",
+      "bullet1": "<strong>เพลย์ลิสต์</strong> - แสดงแทร็กที่ตรวจพบและข้อมูลเมตาพื้นฐาน (ชื่อ/ศิลปิน/อัลบั้ม หากมี)",
+      "bullet2": "<strong>เล่น</strong> - เล่น/หยุดชั่วคราว พร้อมเพลงก่อนหน้า/ถัดไป",
+      "bullet3": "<strong>ค้นหา + ระดับเสียง</strong> - เลื่อนดูแทร็กและปรับระดับเสียง/ปิดเสียง"
+    },
+    "logInspector": {
+      "title": "ตัวตรวจสอบบันทึก",
+      "intro": "ตัวตรวจสอบบันทึกช่วยให้คุณเปิดและกรองไฟล์บันทึก (เช่น <code>console.txt</code>) เพื่อแก้ไขปัญหาข้อขัดข้อง ปัญหาการโหลดม็อด และปัญหาการเริ่มต้นเซิร์ฟเวอร์",
+      "bullet1": "<strong>เลือกไฟล์</strong> - เรียกดูไฟล์ <code>.txt</code> หรือ <code>.log</code> ไฟล์ใดก็ได้ หรือใช้เส้นทางเริ่มต้นเมื่อพร้อมใช้งาน",
+      "bullet2": "<strong>ตัวกรอง</strong> - เลือกระดับบันทึก (ข้อผิดพลาด/คำเตือน/บันทึก/ดีบัก/การติดตาม) ตั้งค่ากรอบวันที่/เวลา และจำกัดจำนวนรายการสูงสุดที่แสดง",
+      "bullet3": "<strong>Search</strong> - กรองรายการตามข้อความในข้อความที่แยกวิเคราะห์และบรรทัดต้นฉบับ",
+      "bullet4": "<strong>การสำรวจความคิดเห็นแบบสด</strong> - เลือกรีเฟรชตัวจับเวลาเพื่อดูการอัปเดตบันทึกในขณะที่เกม/เซิร์ฟเวอร์กำลังทำงาน",
+      "bullet5": "<strong>Clear</strong> - ตัดทอนไฟล์บันทึกที่เลือก (ใช้ด้วยความระมัดระวัง)"
+    },
+    "folderSetup": {
+      "title": "การตั้งค่าโฟลเดอร์",
+      "step1": "เปิดหน้า <strong>Mods</strong> จากแถบด้านข้างซ้าย (ใต้ <em>HOME</em>)",
+      "step2": "ใช้ <strong>เรียกดูโฟลเดอร์ Mods</strong> ในเมนู <em>ACTIONS</em> เพื่อเลือกไดเรกทอรี Mods ของ Project Zomboid ของคุณ (โดยทั่วไปคือ <code>projectzomboid/mods</code>)",
+      "step3": "หลังจากเลือกแล้ว แอปจะสแกนไดเร็กทอรีและเติมตาราง Mods และแดชบอร์ด",
+      "tip": "เคล็ดลับ: หากคุณเปลี่ยนเครื่องหรือย้ายไดเร็กทอรี mods ของคุณ เพียงเรียกดูอีกครั้งเพื่ออัปเดตเส้นทางที่เก็บไว้"
+    },
+    "tauri": {
+      "title": "การรวมเดสก์ท็อป (Tauri)",
+      "bullet1": "<strong>การเข้าถึงระบบไฟล์</strong> - การเรียกดูไดเรกทอรีและการสแกนจะดำเนินการผ่านเชลล์เดสก์ท็อป",
+      "bullet2": "<strong>เปิดลิงก์ภายนอก</strong> - ลิงก์เวิร์กชอป Steam เปิดโดยใช้เบราว์เซอร์เริ่มต้นของระบบปฏิบัติการของคุณ",
+      "bullet3": "<strong>เปิดโฟลเดอร์</strong> - เปิดตัว OS file explorer ที่เน้นไปที่ไดเร็กทอรี mod"
+    },
+    "privacy": {
+      "title": "ความเป็นส่วนตัวและการจัดเก็บ",
+      "bullet1": "<strong>ข้อมูลในเครื่อง</strong> - เส้นทางโฟลเดอร์ mods ที่เลือกและผลลัพธ์การสแกนอาจถูกแคชในเครื่องเพื่อปรับปรุง UX"
+    },
+    "troubleshooting": {
+      "title": "การแก้ไขปัญหา",
+      "bullet1": "<strong>ไม่มี mods ปรากฏขึ้นหลังจากการสแกน</strong> - ตรวจสอบโฟลเดอร์ที่เลือกว่าเป็นไดเรกทอรี Mods ของ Project Zomboid ที่แท้จริงของคุณ และโฟลเดอร์นั้นมีโฟลเดอร์ย่อยของ mod",
+      "bullet2": "<strong>ลิงก์ Steam ถูกปิดใช้งาน</strong> - ตรวจสอบให้แน่ใจว่า mod มีรหัสเวิร์กชอปที่เป็นตัวเลขที่ถูกต้อง (ไม่ใช่ mod ทั้งหมดจะอิงจากเวิร์กชอป)",
+      "bullet3": "<strong>การเปิดโฟลเดอร์ไม่ทำอะไรเลย</strong> - ยืนยันว่าแบ็กเอนด์ Tauri กำลังทำงานอยู่ และสิทธิ์ของระบบปฏิบัติการอนุญาตให้เปิด File Explorer"
+    },
+    "faq": {
+      "title": "คำถามที่พบบ่อย",
+      "q1": "แอพแก้ไขม็อดของฉันหรือไม่?",
+      "a1": "ไม่ ขั้นตอนการทำงานหลักเป็นแบบอ่านอย่างเดียว: สแกนโฟลเดอร์และแสดงข้อมูลเมตา การดำเนินการ เช่น การเปิดโฟลเดอร์หรือลิงก์เวิร์กชอป จะไม่แก้ไขไฟล์ม็อด",
+      "q2": "เหตุใดข้อมูลบางอย่างสำหรับ mod จึงหายไป?",
+      "a2": "Mods จะแตกต่างกันไปตามความสอดคล้องของข้อมูลเมตา หากไม่มีฟิลด์ เช่น ID หรือ ID เวิร์กชอป แอปจะแสดงสิ่งที่สามารถทำได้และปิดใช้งานคุณสมบัติที่ต้องอาศัยฟิลด์เหล่านั้น"
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "การซิงค์ข้อมูล Honu Mod QoL ล้มเหลว",
+        "missingUserDetail": "ไม่ได้กำหนดค่าโฟลเดอร์ผู้ใช้ Project Zomboid",
+        "successSummary": "ข้อมูล Mod ของ Honu QoL ซิงค์แล้ว",
+        "successCreatedDetail": "สร้าง honus_miqol_db.lua แล้ว",
+        "successUpdatedDetail": "อัปเดต honus_miqol_db.lua แล้ว",
+        "failedDetail": "ไม่สามารถซิงค์ข้อมูล Honu Mod QoL"
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "การย้ายข้อมูล",
+        "detail": "ข้อมูลม็อดในเครื่องของคุณกำลังได้รับการอัปเดต การสแกนใหม่กำลังทำงานเพื่อรีเฟรชการอ้างอิง"
+      },
+      "syncInProgress": {
+        "summary": "อยู่ระหว่างการซิงค์",
+        "detail": "การดำเนินการซิงค์กำลังทำงานอยู่ กรุณารอให้เสร็จสิ้น."
+      },
+      "localSyncComplete": {
+        "summary": "การซิงค์ Mod ภายในเครื่องเสร็จสมบูรณ์",
+        "detail": "ข้อมูลม็อดในเครื่องได้รับการรีเฟรชเรียบร้อยแล้ว"
+      },
+      "localSyncFailed": {
+        "summary": "การซิงค์ Mod ในเครื่องล้มเหลว",
+        "detail": "ไม่สามารถซิงค์ mods ในเครื่องได้"
+      },
+      "invalidDirectory": {
+        "summary": "ไดเรกทอรีไม่ถูกต้อง",
+        "detail": "โฟลเดอร์ที่เลือกไม่ปรากฏว่าเป็นไดเรกทอรี Project Zomboid Workshop ที่ถูกต้อง (AppID 108600)"
+      },
+      "steamApiRequired": {
+        "summary": "จำเป็นต้องมีคีย์ Steam Web API",
+        "detail": "กรุณาใช้ \"ตั้งค่าคีย์ Steam API\" ในเมนู จากนั้นลองซิงค์อีกครั้ง"
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "ไม่มีการส่งคืนข้อมูลเมตาของเวิร์กชอป ไม่มีอะไรถูกบันทึกไว้"
+      },
+      "workshopPartial": {
+        "summary": "ซิงค์ Steam Workshop บางส่วน",
+        "detail": "ได้รับ {{received}} จาก {{total}} รายการเวิร์กชอป รหัสหายไป: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "เวิร์กชอปบน Steam ซิงค์แล้ว",
+        "detail": "ข้อมูลเมตาของเวิร์กชอปได้รับการบันทึกเรียบร้อยแล้ว"
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API ไม่ได้รับอนุญาต",
+        "detail": "Steam ส่งคืน 401 ไม่ได้รับอนุญาต โปรดตรวจสอบรหัส Steam Web API ของคุณแล้วลองอีกครั้ง"
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "ไม่สามารถซิงค์ข้อมูลเมตาของเวิร์กชอป Steam ได้"
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "มีชื่อที่กำหนดไว้ล่วงหน้าแล้ว",
+        "detail": "โปรดเลือกชื่ออื่นสำหรับ \"{{name}}\""
+      },
+      "removeFailed": {
+        "summary": "ลบล้มเหลว",
+        "missingUserDetail": "ไม่ได้กำหนดค่าไดเร็กทอรีผู้ใช้ Project Zomboid",
+        "missingModDetail": "ไม่พบ Mod ID ใน mods.txt",
+        "failedDetail": "ไม่สามารถลบ mod ออกจากพรีเซ็ตได้"
+      },
+      "removed": {
+        "summary": "ลบออก",
+        "detailMultiple": "ม็อดที่เลือกถูกลบออกจากพรีเซ็ต",
+        "detailSingle": "Mod ถูกลบออกจากพรีเซ็ตแล้ว"
+      },
+      "presetUpdated": {
+        "summary": "อัปเดตที่ตั้งไว้ล่วงหน้าแล้ว",
+        "detailFallback": "pz_modlist_settings.cfg ไม่สามารถอัปเดตได้",
+        "detailFailed": "ไม่สามารถอัปเดต pz_modlist_settings.cfg"
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "มีชื่อที่กำหนดไว้ล่วงหน้าแล้ว",
+        "detail": "โปรดเลือกชื่ออื่นสำหรับ \"{{name}}\""
+      },
+      "noModsToExport": {
+        "summary": "ไม่มี mods ที่จะส่งออก",
+        "detailCode": "เพิ่มอย่างน้อยหนึ่ง mod ก่อนสร้างโค้ด",
+        "detailPreset": "เพิ่มอย่างน้อยหนึ่ง mod ก่อนที่จะบันทึกค่าที่ตั้งล่วงหน้า"
+      },
+      "copied": {
+        "summary": "คัดลอกแล้ว",
+        "detail": "{{label}} คัดลอกไปยังคลิปบอร์ดแล้ว"
+      },
+      "presetImported": {
+        "summary": "นำเข้าที่ตั้งไว้ล่วงหน้าแล้ว",
+        "detail": "นำเข้า {{count}} mods"
+      },
+      "importFailed": {
+        "summary": "การนำเข้าล้มเหลว",
+        "detail": "ไม่สามารถนำเข้าค่าที่กำหนดล่วงหน้าได้"
+      },
+      "presetSaved": {
+        "summary": "บันทึกที่ตั้งไว้ล่วงหน้าแล้ว",
+        "detailFallback": "pz_modlist_settings.cfg ไม่สามารถอัปเดตได้",
+        "detailFailed": "ไม่สามารถอัปเดต pz_modlist_settings.cfg"
+      },
+      "presetSaveNotice": {
+        "reordered": "เรียงลำดับ mods ใหม่ตามกฎการพึ่งพา",
+        "missingDependencies": "ขาดการอ้างอิง: {{count}}",
+        "missingWorkshopIds": "รหัสเวิร์กชอปหายไป: {{count}}",
+        "incompatibilities": "ความเข้ากันไม่ได้: {{count}}",
+        "cycles": "ตรวจพบรอบ: {{count}}",
+        "conflicts": "ไฟล์ขัดแย้ง: {{count}}"
+      },
+      "presetDeleted": {
+        "summary": "ลบค่าที่ตั้งล่วงหน้าแล้ว",
+        "detailFallback": "pz_modlist_settings.cfg ไม่สามารถอัปเดตได้",
+        "detailFailed": "ไม่สามารถอัปเดต pz_modlist_settings.cfg"
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "ไม่สามารถโหลดคอลเลกชันได้ ตรวจสอบคีย์ Steam Web API ของคุณแล้วลองอีกครั้ง"
+      },
+      "steamUnauthorized": "Steam ส่งคืน 401 ไม่ได้รับอนุญาต ตรวจสอบคีย์ Steam Web API ของคุณ",
+      "queryFailed": "ไม่สามารถสืบค้นคอลเลกชัน Steam Workshop",
+      "presetNotCreated": {
+        "summary": "ไม่ได้สร้างค่าที่ตั้งไว้ล่วงหน้า",
+        "detail": "ไม่พบรายการเวิร์กชอปสำหรับคอลเลกชันนี้"
+      },
+      "presetCreated": {
+        "summary": "สร้างพรีเซ็ตแล้ว",
+        "detail": "บันทึกที่ตั้งไว้ล่วงหน้าของคอลเลกชันเป็น \"{{name}}\""
+      },
+      "presetUpdated": {
+        "summary": "อัปเดตล่วงหน้าแล้ว",
+        "detail": "รีเฟรชคอลเลกชั่นที่ตั้งไว้ล่วงหน้า \"{{name}}\" แล้ว"
+      },
+      "presetRemoved": {
+        "summary": "ลบค่าที่ตั้งล่วงหน้าแล้ว",
+        "detail": "ลบการตั้งค่าล่วงหน้าของคอลเลกชันแล้ว"
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "ชื่อเซิร์ฟเวอร์ไม่ถูกต้อง",
+        "detailMissing": "ป้อนชื่อเซิร์ฟเวอร์",
+        "detailInvalidChars": "ชื่อเซิร์ฟเวอร์มีอักขระชื่อไฟล์ที่ไม่ถูกต้อง",
+        "detailTrailing": "ชื่อเซิร์ฟเวอร์ต้องไม่ลงท้ายด้วยจุดหรือช่องว่าง"
+      },
+      "nameExists": {
+        "summary": "ชื่อเซิร์ฟเวอร์มีอยู่แล้ว",
+        "detail": "เลือกชื่อเซิร์ฟเวอร์ที่ไม่ซ้ำกัน"
+      },
+      "missingUserFolder": {
+        "summary": "โฟลเดอร์ผู้ใช้หายไป",
+        "detail": "ตั้งค่าโฟลเดอร์ผู้ใช้ Project Zomboid ของคุณก่อน"
+      },
+      "createFailed": {
+        "summary": "สร้างไม่สำเร็จ",
+        "detail": "ไม่สามารถสร้างไฟล์เซิร์ฟเวอร์"
+      },
+      "saved": {
+        "summary": "บันทึกแล้ว",
+        "detail": "อัปเดตไฟล์เซิร์ฟเวอร์แล้ว"
+      },
+      "saveFailed": {
+        "summary": "บันทึกล้มเหลว",
+        "detail": "ไม่สามารถบันทึกไฟล์เซิร์ฟเวอร์"
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "เริ่มต้นด้วย",
+    "contains": "ประกอบด้วย",
+    "notContains": "ไม่มี",
+    "endsWith": "ปิดท้ายด้วย",
+    "equals": "เท่ากับ",
+    "notEquals": "ไม่เท่ากัน",
+    "noFilter": "ไม่มีตัวกรอง",
+    "lt": "น้อยกว่า",
+    "lte": "น้อยกว่าหรือเท่ากับ",
+    "gt": "มากกว่า",
+    "gte": "มากกว่าหรือเท่ากับ",
+    "dateIs": "วันที่คือ",
+    "dateIsNot": "วันที่ไม่ได้",
+    "dateBefore": "วันที่อยู่ก่อน",
+    "dateAfter": "วันที่คือหลัง",
+    "clear": "ชัดเจน",
+    "apply": "นำมาใช้",
+    "matchAll": "ตรงทั้งหมด",
+    "matchAny": "ตรงกับข้อใด",
+    "addRule": "เพิ่มกฎ",
+    "removeRule": "ลบกฎ"
+  }
+}

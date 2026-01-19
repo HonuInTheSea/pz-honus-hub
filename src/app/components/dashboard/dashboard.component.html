@@ -1,0 +1,451 @@
+<ng-container *transloco="let t">
+<div class="dashboard-grid">
+  @if (showOverview) {
+    <p-card header="{{ t('dashboard.headers.overview') }}">
+      <div class="dashboard-card-body">
+        @if (modsLoading) {
+          <div class="dashboard-loading-overlay">
+            <p-progress-spinner
+              strokeWidth="8"
+              fill="transparent"
+              animationDuration=".5s"
+              [style]="{ width: '50px', height: '50px' }"
+            />
+          </div>
+        } @else {
+          <div>{{ t('dashboard.labels.totalMods') }}: {{ formatNumber(totalMods) }}</div>
+          <div>
+            {{ t('dashboard.labels.lastLocalSync') }}:
+            {{ formatSyncDate(lastLocalSyncAt) }}
+          </div>
+          <div>
+            {{ t('dashboard.labels.lastWorkshopSync') }}:
+            {{ formatSyncDate(lastWorkshopSyncAt) }}
+          </div>
+        }
+      </div>
+    </p-card>
+  }
+
+  <p-card header="{{ t('dashboard.headers.updateStatus') }}">
+    <div class="dashboard-card-body dashboard-card-body--fill">
+      @if (modsLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        <div class="dashboard-chart-container dashboard-chart-container--fill">
+          <p-chart
+            type="doughnut"
+            [data]="updateStatusChartData"
+            [options]="updateStatusChartOptions"
+          ></p-chart>
+        </div>
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.topInstalled') }}">
+    <div class="dashboard-card-body">
+      @if (topWorkshopLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (topWorkshopTimeout) {
+          <p class="dashboard-timeout">
+            {{ t('dashboard.messages.steamTimeout') }}
+          </p>
+        } @else {
+          @if (!topInstalledWorkshopItems.length) {
+            <p>{{ t('dashboard.messages.noInstalledSubs') }}</p>
+          } @else {
+            <ul class="dashboard-list">
+              @for (item of topInstalledWorkshopItems; track item.publishedfileid) {
+                <li>
+                  <a
+                    class="dashboard-news-link"
+                    href="#"
+                    (click)="$event.preventDefault(); openInstalledItemDetails(item)"
+                  >
+                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                  </a>
+                  <span>
+                    {{ formatNumber(item.subscriptions || item.lifetime_subscriptions || 0) }}
+                    {{ t('dashboard.labels.subscribers') }}
+                  </span>
+                </li>
+              }
+            </ul>
+          }
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.lastUpdatedInstalled') }}">
+    <div class="dashboard-card-body">
+      @if (modsLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (lastUpdatedMods.length === 0) {
+          <p>{{ t('dashboard.messages.noWorkshopUpdateInfo') }}</p>
+        } @else {
+          <ul class="dashboard-list">
+            @for (mod of lastUpdatedMods; track mod.id) {
+              <li class="dashboard-clickable" (click)="openModDetails(mod)">
+                <strong>{{ mod.name }}</strong>
+                <span>
+                  {{ t('dashboard.labels.updated') }}
+                  {{ formatWorkshopDate(mod.workshop?.time_updated ?? null) }}
+                </span>
+              </li>
+            }
+          </ul>
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card
+    header="{{ t('dashboard.headers.installsOverTime') }}"
+    class="dashboard-card-wide"
+  >
+    <div class="dashboard-card-body dashboard-card-body--fill">
+      @if (modsLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        <div class="dashboard-chart-container dashboard-chart-container--fill">
+          <p-chart
+            type="line"
+            [data]="installsChartData"
+            [options]="installsChartOptions"
+          ></p-chart>
+        </div>
+      }
+    </div>
+  </p-card>
+
+  <p-card
+    header="{{ t('dashboard.headers.largestMods') }}"
+    class="dashboard-card-wide"
+  >
+    <div class="dashboard-card-body dashboard-card-body--fill">
+      @if (modsLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (largestModsBySize.length === 0) {
+          <p>{{ t('dashboard.messages.noSizeData') }}</p>
+        } @else {
+          <div class="dashboard-chart-container dashboard-chart-container--fill">
+            <p-chart
+              type="line"
+              [data]="sizeChartData"
+              [options]="sizeChartOptions"
+            ></p-chart>
+          </div>
+          <ul class="dashboard-list mt-3">
+            @for (entry of largestModsBySize; track entry.mod.id) {
+              <li class="dashboard-clickable" (click)="openModDetails(entry.mod)">
+                <strong>{{ entry.mod.name }}</strong>
+                <span> {{ formatBytes(entry.sizeBytes) }}</span>
+              </li>
+            }
+          </ul>
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.latestNews') }}">
+    <div class="dashboard-card-body">
+      @if (newsLoading) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (newsTimeout) {
+          <p class="dashboard-timeout">
+            {{ t('dashboard.messages.steamTimeout') }}
+          </p>
+        } @else {
+          @if (!newsItems.length) {
+            <p>{{ t('dashboard.messages.noNews') }}</p>
+          } @else {
+            <ul class="dashboard-list">
+              @for (item of newsItems; track item.gid) {
+                <li>
+                  <a
+                    class="dashboard-news-link"
+                    [href]="item.url"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {{ item.title }}
+                  </a>
+                </li>
+              }
+            </ul>
+          }
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.popularThisWeek') }}">
+    <div class="dashboard-card-body">
+      @if (popularWorkshopItemsThisWeekLoading && !popularWorkshopItemsThisWeek.length) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (!popularWorkshopItemsThisWeek.length) {
+          @if (popularWorkshopItemsThisWeekTimeout) {
+            <p class="dashboard-timeout">
+              {{ t('dashboard.messages.steamTimeout') }}
+            </p>
+          } @else {
+            <p>{{ t('dashboard.messages.noPopularMods') }}</p>
+          }
+        } @else {
+          <div
+            class="dashboard-scroll-list"
+            (scroll)="onPopularWorkshopItemsThisWeekScroll($event)"
+          >
+            <ul class="dashboard-list">
+              @for (item of popularWorkshopItemsThisWeek; track item.publishedfileid) {
+                <li>
+                  <span
+                    *ngIf="isWorkshopItemInstalled(item)"
+                    class="installed-indicator"
+                    pTooltip="{{ t('dashboard.labels.installedTooltip') }}"
+                    tooltipPosition="right"
+                  ></span>
+                  <a
+                    class="dashboard-news-link"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                  </a>
+                  <span>
+                    {{ formatNumber(item.subscriptions || item.lifetime_subscriptions || 0) }}
+                    {{ t('dashboard.labels.subscribers') }}
+                  </span>
+                </li>
+              }
+            </ul>
+            @if (popularWorkshopItemsThisWeekLoading && popularWorkshopItemsThisWeek.length) {
+              <div class="dashboard-scroll-loading">
+                <p-progress-spinner
+                  strokeWidth="6"
+                  fill="transparent"
+                  animationDuration=".5s"
+                  [style]="{ width: '28px', height: '28px' }"
+                />
+              </div>
+            }
+            @if (popularWorkshopItemsThisWeekTimeout) {
+              <p class="dashboard-timeout">
+                {{ t('dashboard.messages.steamTimeout') }}
+              </p>
+            }
+          </div>
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.latestMods') }}">
+    <div class="dashboard-card-body">
+      @if (latestWorkshopItemsLoading && !latestWorkshopItems.length) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (!latestWorkshopItems.length) {
+          @if (latestWorkshopTimeout) {
+            <p class="dashboard-timeout">
+              {{ t('dashboard.messages.steamTimeout') }}
+            </p>
+          } @else {
+            <p>{{ t('dashboard.messages.noModsFound') }}</p>
+          }
+        } @else {
+          <div
+            class="dashboard-scroll-list"
+            (scroll)="onLatestWorkshopScroll($event)"
+          >
+            <ul class="dashboard-list">
+              @for (item of latestWorkshopItems; track item.publishedfileid) {
+                <li>
+                  <a
+                    class="dashboard-news-link"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                  </a>
+                  <span>
+                    {{ t('dashboard.labels.created') }}
+                    {{ item.time_created ? formatWorkshopDate(item.time_created) : t('dashboard.labels.unknown') }}
+                  </span>
+                </li>
+              }
+            </ul>
+            @if (latestWorkshopItemsLoading && latestWorkshopItems.length) {
+              <div class="dashboard-scroll-loading">
+                <p-progress-spinner
+                  strokeWidth="6"
+                  fill="transparent"
+                  animationDuration=".5s"
+                  [style]="{ width: '28px', height: '28px' }"
+                />
+              </div>
+            }
+            @if (latestWorkshopTimeout) {
+              <p class="dashboard-timeout">
+                {{ t('dashboard.messages.steamTimeout') }}
+              </p>
+            }
+          </div>
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-card header="{{ t('dashboard.headers.updatedMods') }}">
+    <div class="dashboard-card-body">
+      @if (latestUpdatedWorkshopItemsLoading && !latestUpdatedWorkshopItems.length) {
+        <div class="dashboard-loading-overlay">
+          <p-progress-spinner
+            strokeWidth="8"
+            fill="transparent"
+            animationDuration=".5s"
+            [style]="{ width: '50px', height: '50px' }"
+          />
+        </div>
+      } @else {
+        @if (!latestUpdatedWorkshopItems.length) {
+          @if (latestUpdatedWorkshopTimeout) {
+            <p class="dashboard-timeout">
+              {{ t('dashboard.messages.steamTimeout') }}
+            </p>
+          } @else {
+            <p>{{ t('dashboard.messages.noRecentUpdates') }}</p>
+          }
+        } @else {
+          <div
+            class="dashboard-scroll-list"
+            (scroll)="onLatestUpdatedWorkshopScroll($event)"
+          >
+            <ul class="dashboard-list">
+              @for (item of latestUpdatedWorkshopItems; track item.publishedfileid) {
+                <li>
+                  <a
+                    class="dashboard-news-link"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                  </a>
+                  <span>
+                    {{ t('dashboard.labels.updated') }}
+                    {{ item.time_updated ? formatWorkshopDate(item.time_updated) : t('dashboard.labels.unknown') }}
+                  </span>
+                </li>
+              }
+            </ul>
+            @if (latestUpdatedWorkshopItemsLoading && latestUpdatedWorkshopItems.length) {
+              <div class="dashboard-scroll-loading">
+                <p-progress-spinner
+                  strokeWidth="6"
+                  fill="transparent"
+                  animationDuration=".5s"
+                  [style]="{ width: '28px', height: '28px' }"
+                />
+              </div>
+            }
+            @if (latestUpdatedWorkshopTimeout) {
+              <p class="dashboard-timeout">
+                {{ t('dashboard.messages.steamTimeout') }}
+              </p>
+            }
+          </div>
+        }
+      }
+    </div>
+  </p-card>
+
+  <p-dialog
+    header="{{ t('modsTable.detailsTitle') }}"
+    [(visible)]="detailsDialogVisible"
+    [modal]="true"
+    [style]="{ width: '70vw', maxWidth: '900px' }"
+    [dismissableMask]="true"
+    [closable]="true"
+  >
+    @if (selectedMod) {
+      <app-mod-details
+        [mod]="selectedMod"
+        [readonly]="true"
+        [allMods]="allModsForLinks"
+        (workshopClicked)="openSteamWorkshop($event)"
+        (creatorWorkshopClicked)="openCreatorWorkshop($event)"
+        (openFolderClicked)="openModFolder($event)"
+        (openDetails)="openModDetails($event)"
+      ></app-mod-details>
+    }
+  </p-dialog>
+</div>
+
+</ng-container>

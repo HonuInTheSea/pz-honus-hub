@@ -1,0 +1,329 @@
+<ng-container *transloco="let t">
+<p-toast position="top-center"></p-toast>
+
+<!--
+<p-accordion class="sidebar-media-accordion" [value]="null">
+  <p-accordion-panel value="media-player">
+    <p-accordion-header>MEDIA PLAYER</p-accordion-header>
+    <p-accordion-content>
+      <app-sidebar-music-player></app-sidebar-music-player>
+    </p-accordion-content>
+  </p-accordion-panel>
+</p-accordion>
+-->
+
+<ul class="layout-menu">
+  <li class="mt-2 px-3">
+    <label class="block mb-1" for="locale-select">{{ t('menu.languageLabel') }}</label>
+    <p-select inputId="locale-select" [options]="localeOptions" optionLabel="label" optionValue="value"
+      class="w-full" [ngModel]="selectedLocale" (ngModelChange)="onLocaleChange($event)">
+      <ng-template pTemplate="value" let-option>
+        @if (option) {
+        <span class="flex align-items-center">
+          <span class="locale-flag flag:{{ option.flag }}" aria-hidden="true"></span>
+          <span>{{ option.label }}</span>
+        </span>
+        } @else {
+        <span class="text-color-secondary">{{ t('menu.languagePlaceholder') }}</span>
+        }
+      </ng-template>
+      <ng-template pTemplate="item" let-option>
+        <span class="flex align-items-center">
+          <span class="locale-flag flag:{{ option.flag }}" aria-hidden="true"></span>
+          <span>{{ option.label }}</span>
+        </span>
+      </ng-template>
+    </p-select>
+  </li>
+  @for (item of model; track item; let i = $index) {
+  @if (!item.separator) {
+  <li app-menuitem [item]="item" [index]="i" [root]="true"></li>
+  @if (item.id === 'mod-filters') {
+  <!--
+            <li class="mt-3 px-3">
+              <label class="block mb-1" for="in-preset-filter">Has Preset</label>
+              <span
+                class="block"
+                [pTooltip]="inPresetTooltip"
+                tooltipPosition="right"
+                [tooltipDisabled]="!inPresetDisabled"
+              >
+                <p-multiSelect
+                  id="in-preset-filter"
+                  [options]="presetOptions"
+                  [(ngModel)]="selectedPresetIds"
+                  optionLabel="label"
+                  optionValue="value"
+                  display="chip"
+                  [filter]="true"
+                  placeholder="Select presets"
+                  class="pz-sidebar-multiselect w-full"
+                  [appendTo]="'self'"
+                  [overlayOptions]="presetOverlayOptions"
+                  panelStyleClass="pz-sidebar-multiselect-panel pz-preset-multiselect-panel"
+                  [virtualScroll]="false"
+                  scrollHeight="320px"
+                  [disabled]="inPresetDisabled"
+                  (onChange)="onPresetFilterChange()"
+                >
+                  <ng-template pTemplate="item" let-option>
+                    <span class="pz-preset-multiselect-item">{{ option?.label }}</span>
+                  </ng-template>
+                </p-multiSelect>
+              </span>
+            </li>
+            -->
+  <li class="mt-2 px-3">
+    <div class="filter-toggle-row">
+      <div class="filter-toggle-label">
+        <label class="m-0" for="has-adult-content-toggle"
+          pTooltip="{{ t('menu.filters.adultTooltip') }}" tooltipPosition="right">
+          {{ t('menu.filters.adultLabel') }}
+        </label>
+      </div>
+      <div class="filter-toggle-control">
+        <p-toggleswitch inputId="has-adult-content-toggle"
+          [ngModel]="(tagsService.hasAdultContentOnly$ | async) ?? false"
+          (ngModelChange)="onHasAdultContentToggleChange($event)" name="has-adult-content-toggle"></p-toggleswitch>
+      </div>
+    </div>
+  </li>
+  <li class="mt-2 px-3">
+    <div class="filter-toggle-row">
+      <div class="filter-toggle-label">
+        <label class="m-0" for="has-rules-toggle" pTooltip="{{ t('menu.filters.rulesTooltip') }}"
+          tooltipPosition="right">
+          {{ t('menu.filters.rulesLabel') }}
+        </label>
+      </div>
+      <div class="filter-toggle-control">
+        <p-toggleswitch inputId="has-rules-toggle" [ngModel]="(tagsService.hasRulesOnly$ | async) ?? false"
+          (ngModelChange)="onHasRulesToggleChange($event)" name="has-rules-toggle"></p-toggleswitch>
+      </div>
+    </div>
+  </li>
+  <li class="mt-2 px-3">
+    <div class="filter-toggle-row">
+      <div class="filter-toggle-label">
+        <label class="m-0" for="missing-steam-toggle" pTooltip="{{ t('menu.filters.missingSteamTooltip') }}"
+          tooltipPosition="right">
+          {{ t('menu.filters.missingSteamLabel') }}
+        </label>
+      </div>
+      <div class="filter-toggle-control">
+        <p-toggleswitch inputId="missing-steam-toggle" [ngModel]="(tagsService.missingSteamOnly$ | async) ?? false"
+          (ngModelChange)="onMissingSteamToggleChange($event)" name="missing-steam-toggle"></p-toggleswitch>
+      </div>
+    </div>
+  </li>
+  <li class="mt-2 px-3">
+    <div class="filter-toggle-row">
+      <div class="filter-toggle-label">
+        <label class="m-0" for="outdated-mods-toggle" pTooltip="{{ t('menu.filters.outdatedTooltip') }}"
+          tooltipPosition="right">
+          {{ t('menu.filters.outdatedLabel') }}
+        </label>
+      </div>
+      <div class="filter-toggle-control">
+        <p-toggleswitch inputId="outdated-mods-toggle" [ngModel]="(tagsService.outdatedOnly$ | async) ?? false"
+          (ngModelChange)="onOutdatedToggleChange($event)" name="outdated-mods-toggle"></p-toggleswitch>
+      </div>
+    </div>
+  </li>
+  <li>
+    <app-mod-tag-filter></app-mod-tag-filter>
+  </li>
+  }
+  @if (item.id === 'collection-filters') {
+  <li class="mt-3 px-3">
+    <label class="block mb-1" for="collection-search-top">{{ t('menu.collections.searchLabel') }}</label>
+    <input id="collection-search-top" pInputText type="text" class="w-full" [(ngModel)]="collectionSearchText"
+      placeholder="{{ t('menu.collections.searchPlaceholder') }}"
+      (ngModelChange)="onCollectionSearchChange($event)" />
+  </li>
+  <li class="mt-3 px-3">
+    <label class="block mb-1" for="collection-sort">{{ t('menu.collections.sortLabel') }}</label>
+    <p-select inputId="collection-sort" [options]="collectionSortOptions" optionLabel="label" optionValue="value"
+      class="w-full" [ngModel]="collectionSort" (ngModelChange)="onCollectionSortChange($event)"></p-select>
+  </li>
+  <li class="mt-3 px-3">
+    <label class="block mb-1" for="collection-period">{{ t('menu.collections.periodLabel') }}</label>
+    <p-select inputId="collection-period" [options]="collectionPeriodOptions" optionLabel="label" optionValue="value"
+      class="w-full" [disabled]="collectionSort !== 'trend'" [ngModel]="collectionPeriod"
+      (ngModelChange)="onCollectionPeriodChange($event)"></p-select>
+  </li>
+  <li class="mt-3 px-3">
+    <label class="block mb-1" for="collection-tags">{{ t('menu.collections.tagsLabel') }}</label>
+    <p-multiSelect id="collection-tags" [options]="collectionTagOptions" optionLabel="label" optionValue="value"
+      display="chip" [filter]="true" class="w-full" placeholder="{{ t('menu.collections.tagsPlaceholder') }}"
+      [appendTo]="'body'"
+      [(ngModel)]="collectionTags" (onChange)="onCollectionTagsChange($event.value)"></p-multiSelect>
+  </li>
+  }
+  } @else {
+  <li class="menu-separator"></li>
+  }
+  }
+</ul>
+
+<p-dialog header="{{ t('menu.steamApi.dialogTitle') }}" [(visible)]="steamApiKeyDialogVisible" [modal]="true"
+  [style]="{ width: '32rem' }" [breakpoints]="{ '960px': '90vw' }">
+  <div class="p-fluid">
+    <p class="text-color-secondary">{{ t('menu.steamApi.dialogIntro') }}</p>
+
+    <p class="p-mt-2">
+      <label for="steam-api-key-input">{{ t('menu.steamApi.keyLabel') }}</label>
+      <br />
+      <input id="steam-api-key-input" type="text" pInputText [(ngModel)]="steamApiKey" style="width: 100%"
+        autocomplete="off" />
+    </p>
+
+    <div class="text-sm p-mt-3">
+      <p class="p-mb-2">
+        {{ t('menu.steamApi.needKey') }}
+        <a href="https://steamcommunity.com/dev/apikey" target="_blank" rel="noopener noreferrer">
+          {{ t('menu.steamApi.getKeyLink') }}
+        </a>
+      </p>
+      <button pButton type="button" label="{{ t('menu.steamApi.helpButton') }}" icon="pi pi-file" iconPos="left"
+        class="p-button-link p-0 text-left" (click)="onOpenSteamApiHelp()"></button>
+    </div>
+  </div>
+
+  <ng-template pTemplate="footer">
+    <div class="flex justify-content-end gap-2">
+      <button pButton type="button" label="{{ t('common.cancel') }}" class="p-button-text"
+        (click)="steamApiKeyDialogVisible = false"></button>
+      <button pButton type="button" label="{{ t('common.save') }}" (click)="onSaveSteamApiKey()"></button>
+    </div>
+  </ng-template>
+</p-dialog>
+
+<p-dialog header="{{ t('menu.folders.dialogTitle') }}" [(visible)]="foldersDialogVisible" [modal]="true" [draggable]="false"
+  [dismissableMask]="true" [style]="{ width: '60rem', maxWidth: '95vw' }" [breakpoints]="{ '960px': '95vw' }">
+  @if (foldersDraft) {
+  <app-required-folders [draft]="foldersDraft" (draftChange)="foldersDraft = $event"></app-required-folders>
+  }
+
+  <ng-template pTemplate="footer">
+    <div class="flex justify-content-end gap-2">
+      <button pButton type="button" label="{{ t('common.cancel') }}" class="p-button-text"
+        (click)="foldersDialogVisible = false"></button>
+      <button pButton type="button" label="{{ t('common.save') }}" (click)="onSaveFolders()"></button>
+    </div>
+  </ng-template>
+</p-dialog>
+
+<p-dialog [(visible)]="steamApiKeyHelpDialogVisible" [modal]="true" [style]="{ width: '60rem', maxHeight: '80vh' }"
+  [breakpoints]="{ '960px': '95vw' }" [dismissableMask]="true">
+  <ng-template pTemplate="header">
+    <span>
+      <i class="pi pi-file" style="margin-right: 0.5rem"></i>
+      {{ t('menu.steamApi.helpTitle') }}
+    </span>
+  </ng-template>
+  <div class="p-fluid" style="max-height: 60vh; overflow: auto">
+    <p-card header="{{ t('menu.steamApi.helpCardTitle') }}" class="p-mb-4">
+      <p [innerHTML]="t('menu.steamApi.helpCardBody')"></p>
+    </p-card>
+
+    <p-panel header="{{ t('menu.steamApi.step1Title') }}" [toggleable]="true" class="p-mb-3">
+      <p>{{ t('menu.steamApi.step1Intro') }}</p>
+      <ul class="p-ml-3">
+        <li [innerHTML]="t('menu.steamApi.step1Bullet1')"></li>
+        <li [innerHTML]="t('menu.steamApi.step1Bullet2')"></li>
+        <li [innerHTML]="t('menu.steamApi.step1Bullet3')"></li>
+      </ul>
+    </p-panel>
+
+    <p-panel header="{{ t('menu.steamApi.step2Title') }}" [toggleable]="true" class="p-mb-3" style="margin-top: 5px">
+      <p [innerHTML]="t('menu.steamApi.step2Intro')"></p>
+      <ul class="p-ml-3">
+        <li [innerHTML]="t('menu.steamApi.step2Bullet1')"></li>
+        <li [innerHTML]="t('menu.steamApi.step2Bullet2')"></li>
+        <li [innerHTML]="t('menu.steamApi.step2Bullet3')"></li>
+      </ul>
+    </p-panel>
+
+    <p-panel header="{{ t('menu.steamApi.step3Title') }}" [toggleable]="true" class="p-mb-3"
+      style="margin-top: 5px">
+      <p-accordion>
+        <p-accordion-panel>
+          <p-accordion-header>{{ t('menu.steamApi.step3_1Title') }}</p-accordion-header>
+          <ol class="p-ml-3">
+            <li [innerHTML]="t('menu.steamApi.step3_1Bullet1')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_1Bullet2')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_1Bullet3')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_1Bullet4')"></li>
+          </ol>
+        </p-accordion-panel>
+
+        <p-accordion-panel>
+          <p-accordion-header>{{ t('menu.steamApi.step3_2Title') }}</p-accordion-header>
+          <ol class="p-ml-3">
+            <li [innerHTML]="t('menu.steamApi.step3_2Bullet1')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_2Bullet2')"></li>
+          </ol>
+        </p-accordion-panel>
+
+        <p-accordion-panel>
+          <p-accordion-header>{{ t('menu.steamApi.step3_3Title') }}</p-accordion-header>
+          <p>{{ t('menu.steamApi.step3_3Intro') }}</p>
+          <ol class="p-ml-3">
+            <li [innerHTML]="t('menu.steamApi.step3_3Bullet1')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_3Bullet2')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_3Bullet3')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_3Bullet4')"></li>
+          </ol>
+        </p-accordion-panel>
+
+        <p-accordion-panel>
+          <p-accordion-header>{{ t('menu.steamApi.step3_4Title') }}</p-accordion-header>
+          <p>{{ t('menu.steamApi.step3_4Intro') }}</p>
+          <ol class="p-ml-3">
+            <li [innerHTML]="t('menu.steamApi.step3_4Bullet1')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_4Bullet2')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_4Bullet3')"></li>
+            <li [innerHTML]="t('menu.steamApi.step3_4Bullet4')"></li>
+          </ol>
+        </p-accordion-panel>
+      </p-accordion>
+    </p-panel>
+
+    <p-panel header="{{ t('menu.steamApi.step4Title') }}" [toggleable]="true" class="p-mb-3"
+      style="margin-top: 5px">
+      <p [innerHTML]="t('menu.steamApi.step4Intro')"></p>
+      <p-card class="p-mt-2">
+        <code>
+              https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/?appid=440&amp;key=YOURKEYHERE
+            </code>
+      </p-card>
+      <p class="p-mt-2">{{ t('menu.steamApi.step4Outro') }}</p>
+    </p-panel>
+
+    <p-panel header="{{ t('menu.steamApi.step5Title') }}" [toggleable]="true" class="p-mb-3"
+      style="margin-top: 5px">
+      <p>{{ t('menu.steamApi.step5Intro') }}</p>
+      <ol class="p-ml-3">
+        <li [innerHTML]="t('menu.steamApi.step5Bullet1')"></li>
+        <li [innerHTML]="t('menu.steamApi.step5Bullet2')"></li>
+        <li [innerHTML]="t('menu.steamApi.step5Bullet3')"></li>
+        <li [innerHTML]="t('menu.steamApi.step5Bullet4')"></li>
+      </ol>
+    </p-panel>
+
+    <p-panel header="{{ t('menu.steamApi.step6Title') }}" [toggleable]="true" class="p-mb-3" style="margin-top: 5px">
+      <p>{{ t('menu.steamApi.step6Intro') }}</p>
+      <ul class="p-ml-3">
+        <li [innerHTML]="t('menu.steamApi.step6Bullet1')"></li>
+        <li [innerHTML]="t('menu.steamApi.step6Bullet2')"></li>
+        <li [innerHTML]="t('menu.steamApi.step6Bullet3')"></li>
+      </ul>
+    </p-panel>
+
+    <p-card class="p-mt-4">
+      <p>{{ t('menu.steamApi.footerNote') }}</p>
+    </p-card>
+  </div>
+</p-dialog>
+</ng-container>

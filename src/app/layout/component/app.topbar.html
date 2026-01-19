@@ -1,0 +1,22 @@
+ <div class="layout-topbar">
+        <div class="layout-topbar-logo-container">
+            <button class="layout-menu-button layout-topbar-action" (click)="layoutService.onMenuToggle()">
+                <i class="pi pi-bars"></i>
+            </button>
+            <a class="layout-topbar-logo" routerLink="/">
+                <img src="assets/logo-256.png" alt="Honu's Hub Logo" />
+                <span>{{ 'app.title' | transloco }}</span>
+            </a>
+        </div>
+
+        <div class="layout-topbar-actions">
+            @if (appUpdate.updateAvailable()) {
+                <a class="app-update-link" href="https://api.github.com/repos/HonuInTheSea/pz-honus-hub/releases/latest" target="_blank" rel="noopener noreferrer">
+                    <p-tag severity="danger" value="Application Update Detected"></p-tag>
+                </a>
+            }
+            <a class="app-version-link" routerLink="/changelog" [attr.aria-label]="'Changelog for version ' + version" [title]="'Changelog (' + version + ')'">
+                v{{ version }}
+            </a>
+        </div>
+    </div>

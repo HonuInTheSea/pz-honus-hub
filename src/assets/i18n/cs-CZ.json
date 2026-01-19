@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Zrušit",
+    "save": "Uložit",
+    "browse": "Procházet",
+    "yes": "Ano",
+    "no": "Ne",
+    "loadingContent": "Načítání obsahu...",
+    "next": "Další",
+    "back": "Zpět",
+    "finish": "Dokončit"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Jazyk",
+    "languagePlaceholder": "Vyberte jazyk",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MOD FILTRY",
+      "modCollectionFilters": "FILTRY KOLEKCE MOD",
+      "actions": "AKCE",
+      "getStarted": "Začněte",
+      "resources": "Zdroje",
+      "dangerZone": "Nebezpečná zóna"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "logInspector": "Inspektor protokolu",
+      "configureFolders": "Konfigurace složek",
+      "setSteamApiKey": "Nastavte klíč API Steam",
+      "syncHonu": "Synchronizujte Honu's Mod Info QoL",
+      "syncLocal": "Synchronizujte místní data modu",
+      "syncWorkshop": "Synchronizace se službou Steam Workshop",
+      "changelog": "Seznam změn",
+      "documentation": "Dokumentace",
+      "viewSource": "Zobrazit zdroj",
+      "projectZomboid": "Projekt Zomboid",
+      "pzWiki": "Oficiální projekt Zomboid Wiki",
+      "b41Map": "B41 Mapa",
+      "b42Map": "Mapa B42",
+      "workshop": "Projekt Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Projekt Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Neoficiální mapování PZ",
+      "honuWorkshop": "Parní dílna HonuInTheSea",
+      "supportKofi": "Podpora na Ko-fi",
+      "resetApp": "Resetovat aplikaci",
+      "resetAppTooltip": "Obnovte nastavení okna a odstraňte uložená data",
+      "myMods": "Moje mody"
+    },
+    "filters": {
+      "adultLabel": "Obsahuje obsah pro dospělé",
+      "adultTooltip": "Filtrujte mody, kde metadata Steam hlásí možná_nevhodný_sex jako pravdivé.",
+      "rulesLabel": "Má Pravidla",
+      "rulesTooltip": "Mod obsahuje v souboru mod.info příkaz required, nekompatibilní, loadModAfter, loadModBefore",
+      "missingSteamLabel": "Chybí data Steam",
+      "missingSteamTooltip": "Mod mohl být označen jako soukromý nebo odstraněn ze Steam Workshopu",
+      "outdatedLabel": "Zastaralé mody",
+      "outdatedTooltip": "Pro získání nejnovější verze ze Steam Workshop může být nutné odhlásit a znovu předplatit modul"
+    },
+    "collections": {
+      "searchLabel": "Hledat sbírky",
+      "searchPlaceholder": "Prohledejte sbírky",
+      "sortLabel": "Seřadit podle",
+      "periodLabel": "V průběhu časového období",
+      "tagsLabel": "Tagy",
+      "tagsPlaceholder": "Vyberte značky",
+      "sortMostPopular": "Nejoblíbenější",
+      "sortMostRecent": "Nejnovější",
+      "sortLastUpdated": "Poslední aktualizace",
+      "periodToday": "Dnes",
+      "periodWeek": "Jeden týden",
+      "periodThirtyDays": "Třicet dní",
+      "periodThreeMonths": "tři měsíce",
+      "periodSixMonths": "Šest měsíců",
+      "periodYear": "Jeden rok"
+    },
+    "presetsUnavailable": "Nejprve nastavte svou uživatelskou složku Project Zomboid a/nebo definujte předvolby.",
+    "steamApi": {
+      "dialogTitle": "Nastavte klíč Steam Web API Key",
+      "dialogIntro": "Zadejte svůj klíč Steam Web API Key. Tento klíč je uložen lokálně na vašem počítači.",
+      "keyLabel": "Webový klíč API služby Steam",
+      "needKey": "Potřebujete klíč?",
+      "getKeyLink": "Získejte svůj Steam Web API Key",
+      "helpButton": "Jak vytvořit klíč Steam Web API Key",
+      "helpTitle": "Jak vytvořit klíč Steam Web API Key",
+      "helpCardTitle": "Jak zaregistrovat klíč Steam Web API Key",
+      "helpCardBody": "Tato příručka poskytuje podrobný návod k registraci Steam Web API Key. Klíč Steam Web API Key umožňuje aplikacím bezpečný přístup ke konkrétním datům z vašeho účtu Steam, jako jsou knihovny her nebo statistiky, pokud jim k tomu dáte oprávnění.",
+      "step1Title": "1. Předpoklady",
+      "step1Intro": "Než budete moci zaregistrovat klíč Steam Web API Key, ujistěte se, že:",
+      "step1Bullet1": "Máte aktivní účet Steam v dobrém stavu, zabezpečený službou Steam Guard (e-mail nebo mobilní autentizátor).",
+      "step1Bullet2": "Váš účet vlastní alespoň jednu zakoupenou hru. Zcela nové nebo prázdné účty nemohou získat klíč API.",
+      "step1Bullet3": "Používáte důvěryhodné zařízení a síť (nikdy neregistrujte ani nezobrazujte svůj klíč na veřejném nebo sdíleném počítači).",
+      "step2Title": "2. Důležité bezpečnostní poznámky",
+      "step2Intro": "Váš klíč Steam Web API Key je citlivý údaj. Každý, kdo má váš klíč, může za vás zadávat požadavky API. Ber to jako heslo:",
+      "step2Bullet1": "Nikdy nesdílejte svůj klíč s jinými lidmi a nikdy jej nezveřejňujte (například na fórech nebo GitHubu).",
+      "step2Bullet2": "Vložte klíč pouze do nástrojů nebo webových stránek, kterým plně důvěřujete.",
+      "step2Bullet3": "Pokud máte podezření, že byl váš klíč odhalen, okamžitě jej zrušte a vygenerujte nový.",
+      "step3Title": "3. Krok za krokem: Registrace klíče Steam Web API Key",
+      "step3_1Title": "Krok 1 – Přihlaste se do služby Steam",
+      "step3_1Bullet1": "Otevřete webový prohlížeč a přejděte na <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Klikněte na <strong>Přihlásit se</strong> v pravém horním rohu.",
+      "step3_1Bullet3": "Zadejte název a heslo svého účtu Steam.",
+      "step3_1Bullet4": "Pokud budete vyzváni, dokončete ověření Steam Guard.",
+      "step3_2Title": "Krok 2 – Otevřete stránku Steam Web API Key",
+      "step3_2Bullet1": "Po přihlášení otevřete stránku registrace klíče Steam Web API Key: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Na stránce se zobrazí krátký popis rozhraní Steam Web API a formulář s názvem <strong>„Zaregistrujte se pro nový klíč Steam Web API Key.“</strong>",
+      "step3_3Title": "Krok 3 – Zadejte název domény a odsouhlaste podmínky",
+      "step3_3Intro": "Na registračním formuláři:",
+      "step3_3Bullet1": "Do pole <strong>Název domény</strong> zadejte doménu webu nebo služby, která bude klíč používat. <ul class=\"p-ml-3\"><li>Pokud nemáte doménu, můžete zadat zástupný symbol, například <code>localhost</code>, <code>127.0.0.1</code> nebo <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Přečtěte si podmínky použití Steam Web API.",
+      "step3_3Bullet3": "Zaškrtnutím políčka potvrďte, že souhlasíte s podmínkami.",
+      "step3_3Bullet4": "Kliknutím na tlačítko <strong>Zaregistrovat se</strong> odešlete formulář.",
+      "step3_4Title": "Krok 4 – Zobrazte a zkopírujte svůj nový klíč Steam Web API Key",
+      "step3_4Intro": "Po úspěšné registraci:",
+      "step3_4Bullet1": "Stránka se znovu načte a nahoře zobrazí váš klíč Steam Web API Key.",
+      "step3_4Bullet2": "Klíč je dlouhý řetězec písmen a čísel (například: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Vyberte celý klíč a zkopírujte jej (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Uložte jej na bezpečné místo, jako je správce hesel nebo šifrovaná aplikace pro poznámky.",
+      "step4Title": "4. Základní příklad použití vašeho klíče Steam Web API Key",
+      "step4Intro": "Jakmile budete mít klíč, můžete volat koncové body Steam Web API jeho přidáním jako parametr <code>key=</code> do adresy URL. Jednoduchý požadavek HTTP může například vypadat takto (nahraďte <code>YOURKEYHERE</code> svým skutečným klíčem):",
+      "step4Outro": "Přesné adresy URL a parametry závisí na tom, které rozhraní Steam Web API používáte. Koncové body, které potřebujete, vždy vyhledejte v oficiální dokumentaci.",
+      "step5Title": "5. Zrušení nebo obnovení vašeho klíče Steam Web API Key",
+      "step5Intro": "Pokud již váš klíč Steam Web API Key nepotřebujete nebo se domníváte, že byl kompromitován, měli byste jej odvolat:",
+      "step5Bullet1": "Pokud ještě nejste přihlášeni, přihlaste se ke svému účtu Steam.",
+      "step5Bullet2": "Otevřete znovu <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>.",
+      "step5Bullet3": "Klikněte na tlačítko označené <strong>„Revoke My Steam Web API Key“</strong>.",
+      "step5Bullet4": "Budete-li později potřebovat nový klíč, vraťte se na stejnou stránku a zaregistrujte se znovu pomocí výše uvedených kroků.",
+      "step6Title": "6. Tipy pro odstraňování problémů",
+      "step6Intro": "Při pokusu o registraci klíče se může zobrazit jeden z následujících problémů:",
+      "step6Bullet1": "<strong>Zpráva:</strong> <em>„Pokud budete mít ve svém účtu Steam hry, bude vám udělen přístup ke klíčům Web API služby Steam.“</em> V tomto případě váš účet ještě nesplňuje minimální požadavky. Kupte si alespoň jednu hru ve službě Steam, počkejte, až se nákup vymaže, a zkuste to znovu později.",
+      "step6Bullet2": "<strong>Stránka vás neustále žádá o přihlášení</strong> – Ujistěte se, že jsou ve vašem prohlížeči povoleny soubory cookie a JavaScript a že se přihlašujete pomocí správného účtu.",
+      "step6Bullet3": "<strong>Bezpečnostní obavy</strong> – Pokud vás jakýkoli web nebo osoba třetí strany požádá o váš klíč a vy si nejste jisti proč, nesdílejte jej. Pokud si myslíte, že byl prozrazen, zrušte svůj klíč a změňte heslo pro Steam.",
+      "footerNote": "Nyní máte zaregistrovaný klíč Steam Web API Key a základní znalosti o tom, jak jej bezpečně spravovat. Mějte tuto stránku po ruce jako referenci, když potřebujete zaregistrovat, použít nebo zrušit svůj klíč."
+    },
+    "folders": {
+      "dialogTitle": "Konfigurace složek"
+    }
+  },
+  "changelog": {
+    "title": "Seznam změn",
+    "events": {
+      "initialRelease": {
+        "title": "První vydání",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "První veřejná verze Honu's Project Zomboid Hub."
+      }
+    }
+  },
+  "docs": {
+    "title": "Dokumentace",
+    "intro": "Honu's Hub vám pomůže procházet, kontrolovat a spravovat váš místní Project Zomboid s integrací desktopu přes Tauri.",
+    "toc": {
+      "aria": "Obsah",
+      "title": "Obsah",
+      "overview": "Přehled",
+      "workflow": "Pracovní postup",
+      "data": "Data, která aplikace používá",
+      "features": "Vlastnosti",
+      "mediaPlayer": "Přehrávač médií",
+      "logInspector": "Log inspektor",
+      "folderSetup": "Nastavení složky",
+      "tauri": "Desktopová (Tauri) integrace",
+      "privacy": "Soukromí a úložiště",
+      "troubleshooting": "Odstraňování problémů",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "Přehled",
+      "body": "Aplikace prohledá vybraný adresář modů, odvozuje metadata z běžných konvencí modů Project Zomboid a vše prezentuje v tabulce a souhrnném řídicím panelu."
+    },
+    "workflow": {
+      "title": "Pracovní postup",
+      "intro": "Postupujte podle tohoto úplného postupu a připojte své složky, synchronizujte metadata a vygenerujte výstup Honu Mod Info QoL.",
+      "step1": {
+        "title": "Mapové složky",
+        "body": "Otevřete <strong>Konfigurovat složky</strong> z akcí na postranním panelu a nastavte svou hru Project Zomboid, dílnu a adresáře uživatelů.",
+        "screenshot": "Snímek obrazovky: Konfigurace složek"
+      },
+      "step2": {
+        "title": "Vytvořte/zadejte klíč Steam Workshop",
+        "body": "Pomocí <strong>Set Steam API Key</strong> vložte klíč, aby aplikace mohla načíst metadata Workshop.",
+        "screenshot": "Snímek obrazovky: Set Steam API Key"
+      },
+      "step3": {
+        "title": "Synchronizujte data místního modu",
+        "body": "Spusťte <strong>Sync Local Mod Data</strong>, prohledejte složku Workshop a vytvořte místní seznam modů.",
+        "screenshot": "Snímek obrazovky: Sync Local Mod Data"
+      },
+      "step4": {
+        "title": "Synchronizujte se službou Steam Workshop",
+        "body": "Spusťte <strong>Sync With Steam Workshop</strong> a stáhněte si názvy workshopů, autory, velikosti a další metadata.",
+        "screenshot": "Snímek obrazovky: Sync With Steam Workshop"
+      },
+      "step5": {
+        "title": "Synchronizujte Honu's Mod Info QoL",
+        "body": "Použijte <strong>Sync Honu's Mod Info QoL</strong> ke generování/aktualizaci <code>honus_miqol_db.lua</code> ve vaší uživatelské složce Project Zomboid.",
+        "screenshot": "Snímek obrazovky: Sync Honu's Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Data, která aplikace používá",
+      "intro": "Aplikace vytvoří seznam modů z informací dostupných na disku.",
+      "bullet1": "<strong>Cesta složky mod</strong> – vyřešená absolutní cesta k adresáři mod.",
+      "bullet2": "<strong>ID modu</strong> – extrahováno z metadat modu, jsou-li k dispozici (obvykle z <code>mod.info</code>).",
+      "bullet3": "<strong>Název</strong> – zobrazovaný název odvozený z metadat a/nebo názvu složky.",
+      "bullet4": "<strong>ID dílny (volitelné)</strong> – pokud je zjištěno a je číselné, aplikace povolí tlačítko odkazu na dílnu Steam.",
+      "bullet5": "<strong>Ukazatele stavu/zdraví</strong> – základní signály, jako jsou chybějící nebo neúplná metadata (pokud jsou zjistitelná).",
+      "outro": "Ne všechny mody obsahují kompletní metadata. Pokud pole chybí, uživatelské rozhraní zobrazí hodnoty maximálního úsilí a může zakázat akce, které vyžadují konkrétní data (například odkaz na Steam)."
+    },
+    "features": {
+      "title": "Vlastnosti",
+      "bullet1": "<strong>Tabulka modů</strong> – uvádí zjištěné mody s klíčovými poli (název, id, odkaz na dílnu, je-li k dispozici, a cestu).",
+      "bullet2": "<strong>Podrobnosti řádku</strong> – rozbalením řádku zobrazíte další informace o modu (pokud je k dispozici).",
+      "bullet3": "<strong>Otevřít ve službě Steam</strong> – otevře stránku Workshop ve vašem výchozím prohlížeči pro mody s platným ID dílny.",
+      "bullet4": "<strong>Otevřít složku</strong> – otevře vybranou složku mod v průzkumníku souborů.",
+      "mediaPlayer": "<strong>Přehrávač médií</strong> – přehrávejte hudební skladby Project Zomboid z postranního panelu. Viz <a routerLink=\"/documentation\" fragment=\"media-player\">Přehrávač médií</a>.",
+      "logInspectorPrefix": "<strong>Inspektor protokolu</strong> – načte a filtruje soubory protokolu (jako <code>console.txt</code>), abyste rychle našli chyby a varování. Vidět",
+      "logInspectorLink": "Log inspektor",
+      "bullet6": "<strong>Hlavní panel</strong> – zobrazuje rychlé statistiky (například: celkový počet zjištěných modů) a další ukazatele na vysoké úrovni."
+    },
+    "mediaPlayer": {
+      "title": "Přehrávač médií",
+      "intro": "Postranní panel obsahuje lehký hudební přehrávač, který dokáže vyhledávat zvukové stopy Project Zomboid (OGG) a přehrávat je v aplikaci.",
+      "bullet1": "<strong>Seznam skladeb</strong> – zobrazuje zjištěné skladby a základní metadata (název/interpret/album, jsou-li k dispozici).",
+      "bullet2": "<strong>Přehrávání</strong> – přehrávání/pozastavení plus předchozí/následující skladba.",
+      "bullet3": "<strong>Hledat + hlasitost</strong> – procházejte skladbu a upravte hlasitost/ztlumení."
+    },
+    "logInspector": {
+      "title": "Log inspektor",
+      "intro": "Inspektor protokolu vám pomáhá otevírat a filtrovat soubory protokolu (například <code>console.txt</code>) za účelem odstraňování problémů s pády, problémy s načítáním modu a problémy se spouštěním serveru.",
+      "bullet1": "<strong>Vyberte soubor</strong> – vyhledejte libovolný soubor <code>.txt</code> nebo <code>.log</code> nebo použijte výchozí cestu, je-li k dispozici.",
+      "bullet2": "<strong>Filtrovat</strong> – zvolte úrovně protokolu (CHYBA/WARN/LOG/LADĚNÍ/TRACE), nastavte okno data/času a omezte maximální počet zobrazených záznamů.",
+      "bullet3": "<strong>Hledat</strong> – filtrovat položky podle textu v analyzované zprávě a v nezpracovaném zdrojovém řádku.",
+      "bullet4": "<strong>Živé hlasování</strong> – volitelně obnovte časovač, abyste mohli sledovat, jak se protokoly aktualizují, zatímco hra/server běží.",
+      "bullet5": "<strong>Vymazat</strong> – zkrátí vybraný soubor protokolu (používejte opatrně)."
+    },
+    "folderSetup": {
+      "title": "Nastavení složky",
+      "step1": "Otevřete stránku <strong>Mods</strong> z levého postranního panelu (v <em>HOME</em>).",
+      "step2": "Pomocí <strong>Procházet složku modů</strong> v nabídce <em>AKCE</em> vyberte svůj adresář modů Project Zomboid (běžně <code>projectzomboid/mods</code>).",
+      "step3": "Po výběru aplikace prohledá adresář a vyplní tabulku modů a řídicí panel.",
+      "tip": "Tip: Pokud přepnete počítač nebo přesunete svůj adresář mods, jednoduše znovu projděte a aktualizujte uloženou cestu."
+    },
+    "tauri": {
+      "title": "Desktopová (Tauri) integrace",
+      "bullet1": "<strong>Přístup k systému souborů</strong> – procházení adresářů a skenování se provádí prostřednictvím prostředí pracovní plochy.",
+      "bullet2": "<strong>Otevřít externí odkazy</strong> – Odkazy na Steam Workshop se otevírají pomocí výchozího prohlížeče operačního systému.",
+      "bullet3": "<strong>Otevřít složky</strong> – spustí průzkumník souborů OS zaměřený na adresář mod."
+    },
+    "privacy": {
+      "title": "Soukromí a úložiště",
+      "bullet1": "<strong>Místní data</strong> – vybraná cesta ke složce mods a výsledky skenování mohou být lokálně uloženy do mezipaměti, aby se zlepšilo uživatelské prostředí."
+    },
+    "troubleshooting": {
+      "title": "Odstraňování problémů",
+      "bullet1": "<strong>Po skenování se neobjeví žádné mody</strong> – ověřte, že vybraná složka je vaším skutečným adresářem modů Project Zomboid a že obsahuje podsložky mod.",
+      "bullet2": "<strong>Odkazy na Steam jsou zakázány</strong> – ujistěte se, že mod má platné číselné ID dílny (ne všechny mody jsou založeny na dílně).",
+      "bullet3": "<strong>Otevřít složku nedělá nic</strong> – potvrďte, že je spuštěn backend Tauri a že oprávnění OS umožňují otevření průzkumníka souborů."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Upravuje aplikace moje mody?",
+      "a1": "Ne. Základní pracovní postup je pouze pro čtení: prohledává složky a zobrazuje metadata. Akce, jako je otevírání složek nebo odkazy na Workshop, nemění soubory mod.",
+      "q2": "Proč u modu chybí nějaké informace?",
+      "a2": "Mody se liší v tom, jak konzistentně obsahují metadata. Pokud pole jako id nebo workshop id chybí, aplikace ukáže, co umí, a deaktivuje funkce, které na těchto polích spoléhají."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Název",
+      "modId": "ID modu",
+      "author": "Autor",
+      "version": "Verze modu",
+      "versionMin": "Minimální verze hry",
+      "versionMax": "Maximální verze hry",
+      "url": "URL",
+      "description": "Popis",
+      "tags": "Značky",
+      "noTags": "Žádné štítky",
+      "packs": "Balíčky",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Název workshopu",
+      "workshopCreator": "Tvůrce workshopu",
+      "fileSize": "Velikost souboru",
+      "timeCreated": "Čas vytvoření",
+      "timeUpdated": "Aktualizovaný čas",
+      "workshopViews": "Zobrazení workshopu",
+      "workshopSubscriptions": "Odběry workshopů",
+      "adultContent": "Má obsah pro dospělé"
+    },
+    "links": {
+      "requiredMods": "Požadované modifikace",
+      "loadAfter": "Načíst mod po",
+      "loadBefore": "Načíst mod před",
+      "incompatibleMods": "Nekompatibilní modifikace",
+      "requiredBy": "Vyžadováno",
+      "incompatibleWith": "Nekompatibilní s"
+    },
+    "buttons": {
+      "visitWorkshop": "Navštivte stránku Steam Workshop",
+      "authorWorkshop": "Autor's Steam Workshop",
+      "openFolder": "Otevřít složku mod"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Toto pole je pouze pro čtení a je vyplněno z mod.info.",
+      "steamReadonly": "Toto pole je pouze pro čtení a je vyplněno ze Steam Workshop.",
+      "modMissing": "Následující mod nebyl nalezen",
+      "syncToActivate": "Aktivace synchronizací se službou Steam Workshop",
+      "modFolderUnavailable": "Cesta ke složce Mod není k dispozici."
+    }
+  },
+  "tags": {
+    "animals": "Zvířata",
+    "audio": "Zvuk",
+    "balance": "Zůstatek",
+    "build_41": "Budova 41",
+    "build_42": "Budova 42",
+    "build_40": "Budova 40",
+    "buildings": "Budovy",
+    "clothing_armor": "Oděvy/brnění",
+    "farming": "Farmařství",
+    "food": "Jídlo",
+    "framework": "Framework",
+    "hardmode": "Pevný režim",
+    "interface": "Rozhraní",
+    "items": "Položky",
+    "language_translation": "Jazyk/Překlad",
+    "literature": "Literatura",
+    "map": "Mapa",
+    "military": "Vojenské jednotky",
+    "misc": "Různé",
+    "models": "Modely",
+    "multiplayer": "Multiplayer",
+    "pop_culture": "Popová kultura",
+    "qol": "QoL",
+    "realistic": "Realistické",
+    "silly_fun": "Hloupé/zábavné",
+    "skills": "Schopnosti",
+    "textures": "Textury",
+    "traits": "Vlastnosti",
+    "vehicles": "Vozidla",
+    "weapons": "Zbraně",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Značky",
+    "matchLabel": "Shoda",
+    "matchAny": "NEBO",
+    "matchAll": "A",
+    "placeholder": "Vybrat tagy"
+  },
+  "modsTable": {
+    "clearFilters": "Vymazat",
+    "searchPlaceholder": "Vyhledat klíčové slovo",
+    "detailsTitle": "Podrobnosti modu",
+    "columns": {
+      "name": "Název",
+      "author": "Autor",
+      "workshopId": "ID dílny",
+      "lastModified": "Datum poslední úpravy"
+    },
+    "filters": {
+      "name": "Hledat podle jména",
+      "author": "Hledat podle autora",
+      "workshopId": "Hledat podle ID dílny",
+      "date": "Datum filtru"
+    }
+  },
+  "folders": {
+    "title": "Nastavit požadované složky",
+    "description": "Tyto složky se používají ke skenování vašich modů a čtení podrobností o instalaci Project Zomboid.",
+    "gameDirLabel": "Složka hry Project Zomboid",
+    "workshopDirLabel": "Místní složka mods (Steam Workshop)",
+    "userDirLabel": "Uživatelská složka Project Zomboid (volitelně)",
+    "userDirNote": "Slouží k exportu přednastavení serveru a (volitelně) pokročilých cílů použití."
+  },
+  "modsPage": {
+    "toastHelp": "Kde to najdu?",
+    "workshopPrompt": {
+      "title": "Načíst data Steam Workshop",
+      "body": "Chcete pro své mody načíst nejnovější metadata ze Steam Workshop?",
+      "alwaysFetch": "Vždy automaticky načíst bez ptaní"
+    },
+    "loadingLocal": "Skenovat místní data modů...",
+    "loadingWorkshop": "Načíst data Steam Workshop...",
+    "loading": "Načítání dat..."
+  },
+  "onboarding": {
+    "title": "Začínáme",
+    "steps": {
+      "welcome": "Vítejte",
+      "folders": "Složky",
+      "steamKey": "Klíč Steam API",
+      "tips": "Tipy"
+    },
+    "welcome": {
+      "title": "Vítejte v Project Zomboid Mod Manager",
+      "body": "Toto rychlé nastavení vám pomůže propojit složky, přidat klíč Steam Web API a začít synchronizovat mody.",
+      "bullet1": "Vyberte své složky Project Zomboid.",
+      "bullet2": "Přidejte svůj klíč Steam Web API pro metadata Workshop.",
+      "bullet3": "Dokončete nastavení a začněte spravovat mody."
+    },
+    "tips": {
+      "title": "Rychlé tipy",
+      "bullet1": "Složky a klíč Steam API můžete kdykoli aktualizovat z postranního panelu.",
+      "bullet2": "Nejprve spusťte Synchronizovat místní data modů, než synchronizujete metadata Workshop.",
+      "bullet3": "Použijte filtry modů pro rychlé zúžení seznamu."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Synchronizace informací o kvalitě Honu Mod se nezdařila",
+        "missingUserDetail": "Uživatelská složka Project Zomboid není nakonfigurována.",
+        "successSummary": "Honu's Mod Info QoL Synced",
+        "successCreatedDetail": "vytvořen honus_miqol_db.lua.",
+        "successUpdatedDetail": "honus_miqol_db.lua aktualizován.",
+        "failedDetail": "Synchronizace Honu Mod Info QoL se nezdařila."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Migrace dat",
+        "detail": "Vaše místní modová data se aktualizují. Probíhá nová kontrola pro obnovení závislostí."
+      },
+      "syncInProgress": {
+        "summary": "Probíhá synchronizace",
+        "detail": "Operace synchronizace již probíhá. Počkejte prosím na dokončení."
+      },
+      "localSyncComplete": {
+        "summary": "Synchronizace místního modu dokončena",
+        "detail": "Data místního modu byla úspěšně obnovena."
+      },
+      "localSyncFailed": {
+        "summary": "Místní synchronizace modu se nezdařila",
+        "detail": "Místní mody se nepodařilo synchronizovat."
+      },
+      "invalidDirectory": {
+        "summary": "Neplatný adresář",
+        "detail": "Zdá se, že vybraná složka není platným adresářem Project Zomboid Workshop (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Je vyžadován klíč webového rozhraní API služby Steam",
+        "detail": "Použijte prosím \"Nastavit Steam API Key\" v nabídce a zkuste synchronizaci znovu."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Nebyla vrácena žádná metadata dílny; nic se nezachránilo."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop částečně synchronizováno",
+        "detail": "Přijato {{received}} z {{total}} dílenských položek. Chybějící ID: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop Synced",
+        "detail": "Metadata workshopu byla úspěšně uložena."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API neoprávněné",
+        "detail": "Steam vrátil 401 Unauthorized. Ověřte prosím svůj klíč Steam Web API a zkuste to znovu."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Synchronizace metadat Steam Workshop se nezdařila."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Název předvolby již existuje",
+        "detail": "Zvolte prosím jiný název pro „{{name}}“."
+      },
+      "removeFailed": {
+        "summary": "Odebrání se nezdařilo",
+        "missingUserDetail": "Uživatelský adresář Project Zomboid není nakonfigurován.",
+        "missingModDetail": "ID modu nebylo v mods.txt nalezeno.",
+        "failedDetail": "Odstranění modu z předvolby se nezdařilo."
+      },
+      "removed": {
+        "summary": "Odebráno",
+        "detailMultiple": "Vybrané mody byly odstraněny z předvolby.",
+        "detailSingle": "Mod byl odstraněn z předvolby."
+      },
+      "presetUpdated": {
+        "summary": "Předvolba aktualizována",
+        "detailFallback": "pz_modlist_settings.cfg nelze aktualizovat.",
+        "detailFailed": "Aktualizace pz_modlist_settings.cfg se nezdařila."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Název předvolby již existuje",
+        "detail": "Zvolte prosím jiný název pro „{{name}}“."
+      },
+      "noModsToExport": {
+        "summary": "Žádné modifikace k exportu",
+        "detailCode": "Před vygenerováním kódu přidejte alespoň jeden mod.",
+        "detailPreset": "Před uložením předvolby přidejte alespoň jeden mod."
+      },
+      "copied": {
+        "summary": "Zkopírováno",
+        "detail": "{{label}} zkopírováno do schránky."
+      },
+      "presetImported": {
+        "summary": "Předvolba importována",
+        "detail": "Importované mody {{count}}."
+      },
+      "importFailed": {
+        "summary": "Import se nezdařil",
+        "detail": "Import předvolby se nezdařil."
+      },
+      "presetSaved": {
+        "summary": "Předvolba uložena",
+        "detailFallback": "pz_modlist_settings.cfg nelze aktualizovat.",
+        "detailFailed": "Aktualizace pz_modlist_settings.cfg se nezdařila."
+      },
+      "presetSaveNotice": {
+        "reordered": "Přeuspořádané mody podle pravidel závislosti.",
+        "missingDependencies": "Chybějící závislosti: {{count}}.",
+        "missingWorkshopIds": "Chybějící ID dílny: {{count}}.",
+        "incompatibilities": "Nekompatibility: {{count}}.",
+        "cycles": "Zjištěné cykly: {{count}}.",
+        "conflicts": "Konflikty souborů: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Předvolba smazána",
+        "detailFallback": "pz_modlist_settings.cfg nelze aktualizovat.",
+        "detailFailed": "Aktualizace pz_modlist_settings.cfg se nezdařila."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Sbírky nelze načíst. Ověřte svůj klíč Steam Web API a zkuste to znovu."
+      },
+      "steamUnauthorized": "Steam vrátil 401 Unauthorized. Ověřte svůj klíč Steam Web API.",
+      "queryFailed": "Dotaz na sbírky Steam Workshop se nezdařil.",
+      "presetNotCreated": {
+        "summary": "Předvolba nebyla vytvořena",
+        "detail": "Pro tuto kolekci nebyly nalezeny žádné dílenské předměty."
+      },
+      "presetCreated": {
+        "summary": "Předvolba vytvořena",
+        "detail": "Předvolba sbírky byla uložena jako „{{name}}“."
+      },
+      "presetUpdated": {
+        "summary": "Předvolba aktualizována",
+        "detail": "Předvolba sbírky „{{name}}“ byla obnovena."
+      },
+      "presetRemoved": {
+        "summary": "Předvolba odstraněna",
+        "detail": "Předvolba sbírky byla odstraněna."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Neplatný název serveru",
+        "detailMissing": "Zadejte název serveru.",
+        "detailInvalidChars": "Název serveru obsahuje neplatné znaky názvu souboru.",
+        "detailTrailing": "Název serveru nesmí končit tečkou ani mezerou."
+      },
+      "nameExists": {
+        "summary": "Název serveru již existuje",
+        "detail": "Vyberte jedinečný název serveru."
+      },
+      "missingUserFolder": {
+        "summary": "Chybí uživatelská složka",
+        "detail": "Nastavte nejprve svou uživatelskou složku Project Zomboid."
+      },
+      "createFailed": {
+        "summary": "Vytvoření se nezdařilo",
+        "detail": "Nepodařilo se vytvořit soubory serveru."
+      },
+      "saved": {
+        "summary": "Uložené",
+        "detail": "Soubory serveru byly aktualizovány."
+      },
+      "saveFailed": {
+        "summary": "Uložení se nezdařilo",
+        "detail": "Uložení serverových souborů se nezdařilo."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Začíná na",
+    "contains": "Obsahuje",
+    "notContains": "Neobsahuje",
+    "endsWith": "Končí na",
+    "equals": "Rovná se",
+    "notEquals": "Nerovná se",
+    "noFilter": "Bez filtru",
+    "lt": "Menší než",
+    "lte": "Menší nebo rovno",
+    "gt": "Větší než",
+    "gte": "Větší nebo rovno",
+    "dateIs": "Datum je",
+    "dateIsNot": "Datum není",
+    "dateBefore": "Datum před",
+    "dateAfter": "Datum po",
+    "clear": "Vyčistit",
+    "apply": "Použít",
+    "matchAll": "Shoda se všemi",
+    "matchAny": "Shoda s libovolným",
+    "addRule": "Přidat pravidlo",
+    "removeRule": "Odebrat pravidlo"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Přehled",
+      "updateStatus": "Stav aktualizace modů",
+      "topInstalled": "Nejlépe nainstalované mody (podle předplatného)",
+      "lastUpdatedInstalled": "Nainstalované mody, které byly naposledy aktualizovány",
+      "installsOverTime": "Mod se instaluje v průběhu času",
+      "largestMods": "Největší modifikace (podle velikosti souboru)",
+      "latestNews": "Nejnovější zprávy o projektu Zomboid",
+      "popularThisWeek": "Populární mody tento týden",
+      "latestMods": "Nejnovější mody",
+      "updatedMods": "Aktualizované mody"
+    },
+    "labels": {
+      "totalMods": "Úplné mody",
+      "lastLocalSync": "Poslední místní synchronizace modu",
+      "lastWorkshopSync": "Poslední synchronizace workshopu",
+      "subscribers": "předplatitelů",
+      "updated": "aktualizováno",
+      "created": "vytvořené",
+      "installedTooltip": "Instalováno místně",
+      "unknown": "Neznámý",
+      "never": "Nikdy"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API nereagovalo. Zkuste to znovu později.",
+      "noInstalledSubs": "Nejsou k dispozici žádné nainstalované mody s údaji o předplatném.",
+      "noWorkshopUpdateInfo": "Nejsou k dispozici žádné informace o aktualizaci workshopu.",
+      "noSizeData": "Nejsou k dispozici žádné údaje o velikosti souboru modu.",
+      "noNews": "Nebyly nalezeny žádné novinky.",
+      "noPopularMods": "Nebyly nalezeny žádné oblíbené mody.",
+      "noModsFound": "Nebyly nalezeny žádné mody.",
+      "noRecentUpdates": "Nebyly nalezeny žádné nedávno aktualizované mody."
+    },
+    "fallbacks": {
+      "untitledItem": "Položka bez názvu"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mody podle měsíce instalace",
+        "xAxis": "měsíc",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Zastaralé",
+        "upToDate": "Aktuální"
+      },
+      "size": {
+        "label": "Velikost souboru dílny (bajty)",
+        "yAxis": "Velikost (bajty)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Inspektor protokolu",
+    "fields": {
+      "logFile": "Soubor protokolu",
+      "types": "Typy",
+      "typesPlaceholder": "Vyberte typy",
+      "maxEntries": "Maximální počet záznamů",
+      "from": "Od",
+      "to": "Komu",
+      "livePolling": "Živé hlasování",
+      "pollingEverySeconds": "Každý (s)",
+      "searchMessage": "Hledat zprávu",
+      "searchPlaceholder": "Hledat..."
+    },
+    "table": {
+      "pageReport": "Zobrazuje se {first} až {last} z {totalRecords}",
+      "timestamp": "Časové razítko",
+      "type": "Typ",
+      "message": "Zpráva"
+    },
+    "levels": {
+      "error": "CHYBA",
+      "warn": "VAROVÁNÍ",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "JINÉ"
+    },
+    "dialog": {
+      "logFilesFilter": "Soubory protokolu"
+    },
+    "errors": {
+      "noFilePath": "Nastavte cestu k souboru pro načtení protokolů.",
+      "loadFailed": "Nepodařilo se načíst soubor protokolu.",
+      "clearFailed": "Vymazání souboru protokolu se nezdařilo."
+    }
+  }
+}

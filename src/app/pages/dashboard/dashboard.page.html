@@ -1,0 +1,41 @@
+<div class="card">
+  @if (!modsLoading && mods.length === 0) {
+    <p>
+      No persisted mod data was found. Visit the Mods page to scan your mod
+      folder first.
+    </p>
+  } @else {
+    <app-dashboard
+      [mods]="mods"
+      [allMods]="mods"
+      [showOverview]="true"
+      [newsItems]="newsItems"
+      [newsTimeout]="newsTimeout"
+      [topWorkshopItems]="topWorkshopItems"
+      [topWorkshopTimeout]="topWorkshopTimeout"
+      [installedWorkshopIds]="installedWorkshopIds"
+      [newWorkshopItemsSinceSync]="newWorkshopItemsSinceSync"
+      [latestWorkshopItems]="latestWorkshopItems"
+      [latestWorkshopTimeout]="latestWorkshopTimeout"
+      [latestUpdatedWorkshopItems]="latestUpdatedWorkshopItems"
+      [latestUpdatedWorkshopTimeout]="latestUpdatedWorkshopTimeout"
+      [popularWorkshopItemsThisWeek]="popularWorkshopItemsThisWeek"
+      [popularWorkshopItemsThisWeekTimeout]="popularWorkshopItemsThisWeekTimeout"
+      [lastLocalSyncAt]="lastLocalSyncAt"
+      [lastWorkshopSyncAt]="lastWorkshopSyncAt"
+      [modsLoading]="modsLoading"
+      [newsLoading]="newsLoading"
+      [topWorkshopLoading]="topWorkshopLoading"
+      [newWorkshopItemsLoading]="newWorkshopItemsLoading"
+      [latestWorkshopItemsLoading]="latestWorkshopItemsLoading"
+      [latestWorkshopItemsHasMore]="latestWorkshopItemsHasMore"
+      (loadMoreLatestWorkshopItems)="loadMoreLatestWorkshopItems()"
+      [latestUpdatedWorkshopItemsLoading]="latestUpdatedWorkshopItemsLoading"
+      [latestUpdatedWorkshopItemsHasMore]="latestUpdatedWorkshopItemsHasMore"
+      (loadMoreLatestUpdatedWorkshopItems)="loadMoreLatestUpdatedWorkshopItems()"
+      [popularWorkshopItemsThisWeekLoading]="popularWorkshopItemsThisWeekLoading"
+      [popularWorkshopItemsThisWeekHasMore]="popularWorkshopItemsThisWeekHasMore"
+      (loadMorePopularWorkshopItemsThisWeek)="loadMorePopularWorkshopItemsThisWeek()"
+    ></app-dashboard>
+  }
+</div>

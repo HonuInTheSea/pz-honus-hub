@@ -1,0 +1,77 @@
+        <ng-container>
+            @if (root && item.visible !== false) {
+                <div class="layout-menuitem-root-text">{{ item.label }}</div>
+            }
+            @if ((!item.routerLink || item.items) && item.visible !== false) {
+                <a
+                    [attr.href]="item.url"
+                    (click)="itemClick($event)"
+                    [ngClass]="item.styleClass"
+                    [attr.target]="item.target"
+                    [attr.aria-label]="item.label || item['ariaLabel']"
+                    tabindex="0"
+                    pRipple
+                    [pTooltip]="item['tooltip']"
+                    [tooltipPosition]="item['tooltipPosition'] || 'right'"
+                >
+                    @if (!item['image']) {
+                        <i [ngClass]="item.icon" class="layout-menuitem-icon"></i>
+                        <span class="layout-menuitem-text">{{ item.label }}</span>
+                    } @else {
+                        <img
+                            class="layout-menuitem-image"
+                            [src]="item['image']"
+                            [alt]="item.label || item['ariaLabel'] || ''"
+                        />
+                    }
+                    @if (item.items) {
+                        <i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
+                    }
+                </a>
+            }
+            @if (item.routerLink && !item.items && item.visible !== false) {
+                <a
+                    (click)="itemClick($event)"
+                    [ngClass]="item.styleClass"
+                    [routerLink]="item.routerLink"
+                    routerLinkActive="active-route"
+                    [routerLinkActiveOptions]="item.routerLinkActiveOptions || { paths: 'exact', queryParams: 'ignored', matrixParams: 'ignored', fragment: 'ignored' }"
+                    [fragment]="item.fragment"
+                    [queryParamsHandling]="item.queryParamsHandling"
+                    [preserveFragment]="item.preserveFragment"
+                    [skipLocationChange]="item.skipLocationChange"
+                    [replaceUrl]="item.replaceUrl"
+                    [state]="item.state"
+                    [queryParams]="item.queryParams"
+                    [attr.target]="item.target"
+                    [attr.aria-label]="item.label || item['ariaLabel']"
+                    tabindex="0"
+                    pRipple
+                    [pTooltip]="item['tooltip']"
+                    [tooltipPosition]="item['tooltipPosition'] || 'right'"
+                >
+                    @if (!item['image']) {
+                        <i [ngClass]="item.icon" class="layout-menuitem-icon"></i>
+                        <span class="layout-menuitem-text">{{ item.label }}</span>
+                    } @else {
+                        <img
+                            class="layout-menuitem-image"
+                            [src]="item['image']"
+                            [alt]="item.label || item['ariaLabel'] || ''"
+                        />
+                    }
+                    @if (item.items) {
+                        <i class="pi pi-fw pi-angle-down layout-submenu-toggler"></i>
+                    }
+                </a>
+            }
+
+            @if (item.items && item.visible !== false) {
+                <ul [@children]="submenuAnimation">
+                    @for (child of item.items; track child; let i = $index) {
+                        <li app-menuitem [item]="child" [index]="i" [parentKey]="key" [class]="child['badgeClass']"></li>
+                    }
+                </ul>
+            }
+        </ng-container>
+    

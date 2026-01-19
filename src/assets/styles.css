@@ -1,0 +1,401 @@
+/* You can add global styles to this file, and also import other style files */
+@import './tailwind.css';
+@import './layout/layout.css';
+@import 'primeicons/primeicons.css';
+@import 'country-flag-icons/3x2/flags.css';
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./icomoon.eot?s4iia8');
+    src: url('./icomoon.eot?s4iia8#iefix') format('embedded-opentype'),
+        url('./icomoon.ttf?s4iia8') format('truetype'),
+        url('./icomoon.woff?s4iia8') format('woff'),
+        url('./icomoon.svg?s4iia8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-steam:before {
+    content: "\e9000";
+}
+
+.icon-steam2:before {
+    content: "\e9001";
+}
+
+.icon-discord:before {
+    content: "\e9003";
+}
+
+.mod-poster-carousel {
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.mod-poster-carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mod-poster-image {
+    max-height: 256px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Ensure inner PrimeNG image element also scales with container */
+.mod-poster-carousel .p-image img {
+    max-height: 256px;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.mod-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.mod-name-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.author-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.author-avatar-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.author-avatar-tooltip {
+    display: block;
+    max-width: none;
+    height: auto;
+}
+
+.author-avatar-tooltip-popper .p-tooltip-text {
+    padding: 0;
+    max-width: none;
+    line-height: 0;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-label {
+    min-height: 3rem;
+    align-items: center;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-label,
+.pz-sidebar-multiselect .p-multiselect-label {
+    height: auto;
+    white-space: normal;
+    display: flex;
+    align-items: flex-start;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-label-container,
+.pz-sidebar-multiselect .p-multiselect-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    width: 100%;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-token,
+.pz-sidebar-multiselect .p-multiselect-token {
+    height: auto;
+    display: block;
+    width: 100%;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-label-container {
+    display: block;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-token,
+.pz-sidebar-multiselect .p-multiselect-token {
+    margin-bottom: 0.25rem;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-clear-icon,
+.pz-sidebar-multiselect .p-multiselect-clear-icon {
+    display: none;
+}
+
+.mod-tag-filter-multiselect .p-multiselect-token-label,
+.pz-sidebar-multiselect .p-multiselect-token-label {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.pz-loadout-multiselect-panel {
+    z-index: 12050 !important;
+}
+
+.pz-sidebar-multiselect-panel {
+    z-index: 12050 !important;
+    display: inline-block;
+    width: max-content;
+    max-width: 16rem;
+    padding-right: 0.5rem;
+}
+
+.pz-sidebar-multiselect-panel .p-multiselect-items-wrapper {
+    overflow-x: hidden;
+    width: max-content;
+    max-width: inherit;
+}
+
+.pz-sidebar-multiselect-panel .p-multiselect-item {
+    white-space: normal;
+}
+
+.pz-sidebar-multiselect-panel .p-multiselect-item-label {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.pz-sidebar-multiselect-panel .p-multiselect-item .p-checkbox-label {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+}
+
+.pz-preset-multiselect-panel .p-multiselect-item-label,
+.pz-preset-multiselect-panel .p-multiselect-item .p-checkbox-label {
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.pz-preset-multiselect-panel .p-multiselect-item {
+    align-items: flex-start;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+    height: auto;
+}
+
+.pz-preset-multiselect-item {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    line-height: 1.2;
+    display: block;
+}
+
+.pz-sidebar-multiselect {
+    width: 100%;
+}
+
+.pz-sidebar-multiselect .p-multiselect-label {
+    padding: var(--p-input-padding-y, 0.5rem) var(--p-input-padding-x, 0.75rem);
+    font-size: var(--p-font-size);
+}
+
+/* Ensure PrimeNG Image preview/lightbox content is visible */
+.p-image-mask.p-overlay-mask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    z-index: 1000;
+}
+
+.p-image-mask .p-image-toolbar {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.p-image-original {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mods-loading-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+}
+
+.mods-loading-content {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #1f2937;
+    color: #f9fafb;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.custom-tags-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.5rem;
+}
+
+.mod-expanded-row {
+    background-color: var(--surface-ground) !important;
+}
+
+/* Mod details grid: 3 → 2 → 1 columns using component breakpoints */
+.mod-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+@media (max-width: 1199px) {
+    .mod-details-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .mod-details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Vertical spacing between fields in each column */
+.mod-details-column .field + .field {
+    margin-top: 0.75rem;
+}
+
+.mod-link-chip--found.p-chip,
+.mod-link-chip--found .p-chip {
+    cursor: pointer;
+}
+
+.mod-link-chip--included-with.p-chip,
+.mod-link-chip--included-with .p-chip {
+    cursor: pointer;
+}
+
+.filter-toggle-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.filter-toggle-label,
+.filter-toggle-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-toggle-label label {
+    width: 100%;
+    text-align: left;
+}
+
+.pz-ini-listbox-wrap {
+    height: calc(100vh - 20rem);
+    max-height: calc(100vh - 20rem);
+    display: flex;
+    flex-direction: column;
+}
+
+.pz-ini-listbox-wrap .p-listbox {
+    flex: 1 1 auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.pz-ini-listbox-wrap .p-listbox-header {
+    flex: 0 0 auto;
+}
+
+.pz-ini-listbox-wrap .p-listbox-list-container {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow: auto;
+}
+
+.pz-ini-listbox-wrap .p-listbox-list {
+  height: 100%;
+}
+
+.doc-workflow {
+  display: grid;
+  gap: 1.5rem;
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.doc-figure {
+  margin: 0.75rem 0 0;
+}
+
+.doc-screenshot-placeholder {
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  padding: 1.5rem;
+}
+
+.sidebar-media-accordion {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sidebar-media-accordion .p-accordion-content {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-media-accordion .p-accordion-panel,
+.sidebar-media-accordion .p-accordion-header {
+  border-bottom: none;
+}
+
+.locale-flag {
+  margin-right: 0.5rem;
+  vertical-align: -0.1em;
+  --CountryFlagIcon-height: 1rem;
+}

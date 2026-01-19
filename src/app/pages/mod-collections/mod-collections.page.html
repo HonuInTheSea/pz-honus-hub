@@ -1,0 +1,332 @@
+<div class="mod-collections-page">
+  <p-toast
+    [position]="'top-center'"
+    [life]="10000"
+    [baseZIndex]="2000"
+    [autoZIndex]="true"
+    appendTo="body"
+  >
+    <ng-template let-message pTemplate="message">
+      <div class="flex align-items-start gap-3" style="flex: 1">
+        <i [class]="'pi ' + (
+          message.severity === 'error' ? 'pi-times-circle' :
+          message.severity === 'warn' ? 'pi-exclamation-triangle' :
+          message.severity === 'success' ? 'pi-check-circle' :
+          'pi-info-circle'
+        )" style="font-size: 1.5rem"></i>
+        <div class="flex flex-column">
+          <div class="font-bold">{{ message.summary }}</div>
+          <div class="mt-1">{{ message.detail }}</div>
+        </div>
+      </div>
+    </ng-template>
+  </p-toast>
+
+  <div class="card">
+    <div class="flex justify-between items-center flex-column sm:flex-row gap-2 mb-3">
+      <div class="flex align-items-center gap-2">
+        <button
+          pButton
+          label="Reload"
+          icon="pi pi-refresh"
+          (click)="refreshCollections()"
+          [loading]="loading"
+        ></button>
+        <span class="text-sm text-color-secondary">Sorted by last-week trend</span>
+        <span class="text-sm text-color-secondary">
+          Loaded {{ collections.length }}@if (totalRecords > 0) { / {{ totalRecords }} }
+        </span>
+      </div>
+
+    </div>
+
+    @if (loading) {
+      <p-progressbar
+        mode="indeterminate"
+        [style]="{ height: '4px', width: '100%', marginBottom: '0.75rem' }"
+      ></p-progressbar>
+    }
+
+    <p-table
+      #dt
+      [value]="pagedCollections"
+      dataKey="publishedfileid"
+      [expandedRowKeys]="expandedRows"
+      [paginator]="true"
+      [rows]="rows"
+      [rowsPerPageOptions]="rowsPerPageOptions"
+      [first]="first"
+      paginatorPosition="both"
+      [totalRecords]="totalRecords"
+      [lazy]="true"
+      [showCurrentPageReport]="true"
+      currentPageReportTemplate="{first} - {last} of {totalRecords}"
+      [rowHover]="true"
+      [showGridlines]="true"
+      [globalFilterFields]="['title', 'publishedfileid', 'short_description', 'file_description']"
+      (onRowExpand)="onRowExpand($event)"
+      (onRowCollapse)="onRowCollapse($event)"
+      (onPage)="onPage($event)"
+      (onLazyLoad)="onPage($event)"
+      (onSort)="onSort($event)"
+    >
+      <ng-template #caption>
+        <div class="flex justify-between items-center flex-column sm:flex-row">
+          <button
+            pButton
+            label="Clear"
+            icon="pi pi-filter-slash"
+            class="p-button-outlined mb-2"
+            (click)="onClearFilters(dt)"
+          ></button>
+          <p-iconfield iconPosition="left" class="ml-auto">
+            <p-inputicon>
+              <i class="pi pi-search"></i>
+            </p-inputicon>
+            <input
+              pInputText
+              type="text"
+              [(ngModel)]="searchKeyword"
+              (input)="onGlobalFilter(dt, $event)"
+              placeholder="Filter loaded results"
+            />
+          </p-iconfield>
+        </div>
+      </ng-template>
+
+      <ng-template pTemplate="header">
+        <tr>
+          <th style="width: 3rem"></th>
+          <th pSortableColumn="title">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Collection</span>
+                <p-sortIcon field="title"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="text"
+                field="title"
+                display="menu"
+                placeholder="Search by title"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="short_description">
+            <div class="flex justify-between items-center" style="max-width: 16rem;">
+              <span class="flex items-center gap-1">
+                <span>Description</span>
+                <p-sortIcon field="short_description"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="text"
+                field="short_description"
+                display="menu"
+                placeholder="Filter description"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="publishedfileid">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Workshop ID</span>
+                <p-sortIcon field="publishedfileid"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="text"
+                field="publishedfileid"
+                display="menu"
+                placeholder="Search by ID"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="num_children">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Items</span>
+                <p-sortIcon field="num_children"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="numeric"
+                field="num_children"
+                display="menu"
+                placeholder="Min items"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="subscriptions">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Subscriptions</span>
+                <p-sortIcon field="subscriptions"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="numeric"
+                field="subscriptions"
+                display="menu"
+                placeholder="Min subs"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="views">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Views</span>
+                <p-sortIcon field="views"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="numeric"
+                field="views"
+                display="menu"
+                placeholder="Min views"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th pSortableColumn="time_updated">
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">
+                <span>Last Updated</span>
+                <p-sortIcon field="time_updated"></p-sortIcon>
+              </span>
+              <p-columnFilter
+                type="date"
+                field="time_updated"
+                display="menu"
+                placeholder="Filter date"
+                matchMode="contains"
+              ></p-columnFilter>
+            </div>
+          </th>
+          <th style="width: 6rem"></th>
+        </tr>
+      </ng-template>
+
+      <ng-template pTemplate="body" let-item let-expanded="expanded">
+        <tr>
+          <td>
+            <button
+              type="button"
+              pButton
+              [pRowToggler]="item"
+              [text]="true"
+              [rounded]="true"
+              [plain]="true"
+              [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"
+            ></button>
+          </td>
+          <td>{{ item.title || 'Untitled collection' }}</td>
+          <td
+            [title]="getCollectionDescription(item)"
+            style="max-width: 16rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
+          >
+            {{ getCollectionDescriptionDisplay(item) }}
+          </td>
+          <td>{{ item.publishedfileid }}</td>
+          <td>{{ getChildrenCount(item) }}</td>
+          <td>{{ item.subscriptions ?? item.lifetime_subscriptions ?? 0 }}</td>
+          <td>{{ item.views ?? 0 }}</td>
+          <td>{{ formatDateTime(item.time_updated ?? item.time_created) }}</td>
+          <td class="text-right">
+            <p-menu
+              #menu
+              [model]="getCollectionMenuItems(item)"
+              [popup]="true"
+              [appendTo]="'body'"
+              [baseZIndex]="2000"
+            ></p-menu>
+            <button
+              pButton
+              icon="pi pi-ellipsis-v"
+              class="p-button-text"
+              (click)="menu.toggle($event)"
+              title="Collection actions"
+            ></button>
+          </td>
+        </tr>
+      </ng-template>
+
+      <ng-template #expandedrow let-item>
+        <tr class="mod-expanded-row">
+          <td [attr.colspan]="9">
+            @if (collectionMods[item.publishedfileid]?.loading) {
+              <p-progressbar mode="indeterminate"></p-progressbar>
+            } @else if (collectionMods[item.publishedfileid]?.error) {
+              <div class="text-color-secondary">
+                {{ collectionMods[item.publishedfileid]?.error }}
+              </div>
+            } @else {
+              <p-table
+                [value]="collectionMods[item.publishedfileid]?.mods ?? []"
+                dataKey="publishedfileid"
+                [showGridlines]="true"
+                [rowHover]="true"
+                [paginator]="false"
+              >
+                <ng-template pTemplate="header">
+                  <tr>
+                    <th style="width: 5rem">Preview</th>
+                    <th>Mod</th>
+                    <th>Workshop ID</th>
+                    <th>Status</th>
+                    <th>Installed</th>
+                    <th>Active</th>
+                    <th style="width: 6rem"></th>
+                  </tr>
+                </ng-template>
+                <ng-template pTemplate="body" let-mod>
+                  <tr>
+                    <td>
+                    @if (getModThumbnail(mod)) {
+                        <p-image
+                          [src]="getModThumbnail(mod)"
+                          alt="Mod preview"
+                          width="64"
+                          [preview]="true"
+                          [imageStyle]="{ height: '36px', objectFit: 'cover', borderRadius: '4px' }"
+                        ></p-image>
+                      } @else {
+                        <div
+                          style="width: 64px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 4px; background: rgba(255,255,255,0.05)"
+                        >
+                          <i class="pi pi-image"></i>
+                        </div>
+                      }
+                    </td>
+                    <td>{{ mod.title }}</td>
+                    <td>{{ mod.publishedfileid }}</td>
+                    <td>
+                      <p-tag
+                        [value]="formatStatus(mod)"
+                        [severity]="getStatusSeverity(mod)"
+                      ></p-tag>
+                    </td>
+                    <td>
+                      <p-tag
+                        [value]="mod.installed ? 'Installed' : 'Missing'"
+                        [severity]="getInstalledSeverity(mod)"
+                      ></p-tag>
+                    </td>
+                    <td>
+                      <p-tag
+                        [value]="mod.activated ? 'Active' : 'Inactive'"
+                        [severity]="getActiveSeverity(mod)"
+                      ></p-tag>
+                    </td>
+                    <td class="text-right">
+                      <button
+                        pButton
+                        icon="pi pi-external-link"
+                        class="p-button-text"
+                        (click)="openWorkshop(mod.publishedfileid)"
+                        title="Open in Steam"
+                      ></button>
+                    </td>
+                  </tr>
+                </ng-template>
+              </p-table>
+            }
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

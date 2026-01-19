@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Annuleren",
+    "save": "Opslaan",
+    "browse": "Bladeren",
+    "yes": "Ja",
+    "no": "Nee",
+    "loadingContent": "Inhoud wordt geladen...",
+    "next": "Volgende",
+    "back": "Terug",
+    "finish": "Voltooien"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Taal",
+    "languagePlaceholder": "Selecteer een taal",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MOD FILTERS",
+      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "actions": "ACTIES",
+      "getStarted": "Aan de slag",
+      "resources": "Bronnen",
+      "dangerZone": "Gevarenzone"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "logInspector": "Loginspector",
+      "configureFolders": "Mappen configureren",
+      "setSteamApiKey": "Steam API-sleutel instellen",
+      "syncHonu": "Honu's Mod-info QoL synchroniseren",
+      "syncLocal": "Lokale modgegevens synchroniseren",
+      "syncWorkshop": "Synchroniseren met Steam Workshop",
+      "changelog": "Changelog",
+      "documentation": "Documentatie",
+      "viewSource": "Bron weergeven",
+      "projectZomboid": "Project Zomboid",
+      "pzWiki": "Officiële Project Zomboid Wiki",
+      "b41Map": "B41-kaart",
+      "b42Map": "B42-kaart",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Project Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Onofficiële PZ-toewijzing",
+      "honuWorkshop": "HonuInTheSea's Steam Workshop",
+      "supportKofi": "Ondersteuning op Ko-fi",
+      "resetApp": "Toepassing opnieuw instellen",
+      "resetAppTooltip": "Vensterinstellingen opnieuw instellen en opgeslagen gegevens verwijderen",
+      "myMods": "Mijn mods"
+    },
+    "filters": {
+      "adultLabel": "Heeft inhoud voor volwassenen",
+      "adultTooltip": "Filter mods waarbij Steam-metadata misschien_ingepaste_sex als waar rapporteert.",
+      "rulesLabel": "Heeft regels",
+      "rulesTooltip": "Mod bevat een require, incompatibele, loadModAfter, loadModBefore-instructie in hun mod.info-bestand",
+      "missingSteamLabel": "Ontbrekende Steam-gegevens",
+      "missingSteamTooltip": "Mod is mogelijk gemarkeerd als privé of verwijderd uit de Steam Workshop",
+      "outdatedLabel": "Verouderde mods",
+      "outdatedTooltip": "Mod moet mogelijk worden afgemeld en opnieuw worden geabonneerd om de nieuwste versie van de Steam Workshop te krijgen"
+    },
+    "collections": {
+      "searchLabel": "Zoekcollecties",
+      "searchPlaceholder": "Zoekcollecties",
+      "sortLabel": "Sorteren op",
+      "periodLabel": "Over een bepaalde periode",
+      "tagsLabel": "Tags",
+      "tagsPlaceholder": "Selecteer tags",
+      "sortMostPopular": "Meest populair",
+      "sortMostRecent": "Meest recent",
+      "sortLastUpdated": "Laatst bijgewerkt",
+      "periodToday": "Vandaag",
+      "periodWeek": "Eén week",
+      "periodThirtyDays": "Dertig dagen",
+      "periodThreeMonths": "Drie maanden",
+      "periodSixMonths": "Zes maanden",
+      "periodYear": "Eén jaar"
+    },
+    "presetsUnavailable": "Stel eerst uw Project Zomboid-gebruikersmap in en/of definieer eerst de voorinstellingen.",
+    "steamApi": {
+      "dialogTitle": "Stel Steam Web API Key in",
+      "dialogIntro": "Voer uw Steam Web API Key in. Deze sleutel wordt lokaal op uw machine opgeslagen.",
+      "keyLabel": "Steam Web API Key",
+      "needKey": "Een sleutel nodig?",
+      "getKeyLink": "Verkrijg uw Steam Web API Key",
+      "helpButton": "Hoe maak je een Steam Web API Key aan",
+      "helpTitle": "Hoe maak je een Steam Web API Key aan",
+      "helpCardTitle": "Hoe registreer je een Steam Web API Key",
+      "helpCardBody": "Deze handleiding biedt een stap-voor-stap uitleg voor het registreren van een Steam Web API Key. Met een Steam Web API Key kunnen applicaties veilig toegang krijgen tot specifieke gegevens van uw Steam-account, zoals gamebibliotheken of statistieken, wanneer u ze daarvoor autoriseert.",
+      "step1Title": "1. Vereisten",
+      "step1Intro": "Voordat je een Steam Web API Key kunt registreren, zorg ervoor dat:",
+      "step1Bullet1": "Je een actief Steam-account met een goede reputatie hebt, beveiligd met Steam Guard (e-mail of mobiele authenticator).",
+      "step1Bullet2": "Je account is eigenaar van ten minste één gekochte game. Gloednieuwe of lege accounts kunnen geen API-sleutel verkrijgen.",
+      "step1Bullet3": "U gebruikt een vertrouwd apparaat en netwerk (registreer of bekijk uw sleutel nooit op een openbare of gedeelde computer).",
+      "step2Title": "2. Belangrijke beveiligingsopmerkingen",
+      "step2Intro": "Je Steam Web API-sleutel is gevoelige informatie. Iedereen die uw sleutel heeft, kan namens u API-verzoeken indienen. Behandel het als een wachtwoord:",
+      "step2Bullet1": "Deel uw sleutel nooit met andere mensen en plaats deze nooit openbaar (bijvoorbeeld op forums of GitHub).",
+      "step2Bullet2": "Plak uw sleutel alleen in tools of websites die u volledig vertrouwt.",
+      "step2Bullet3": "Als u vermoedt dat uw sleutel openbaar is gemaakt, trek deze dan onmiddellijk in en genereer een nieuwe.",
+      "step3Title": "3. Stap voor stap: een Steam Web API-sleutel registreren",
+      "step3_1Title": "Stap 1 - Meld u aan bij Steam",
+      "step3_1Bullet1": "Open uw webbrowser en ga naar <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Klik op <strong>\"Inloggen\"</strong> in de rechterbovenhoek.",
+      "step3_1Bullet3": "Voer je Steam-accountnaam en wachtwoord in.",
+      "step3_1Bullet4": "Voltooi de Steam Guard-verificatie als daarom wordt gevraagd.",
+      "step3_2Title": "Stap 2 - Open de Steam Web API Key-pagina",
+      "step3_2Bullet1": "Terwijl je bent ingelogd, open je de Steam Web API Key-registratiepagina: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "De pagina toont een korte beschrijving van de Steam Web API en een formulier met de titel <strong>\"Registreer voor een nieuwe Steam Web API Key.\"</strong>",
+      "step3_3Title": "Stap 3 - Voer een domeinnaam in en ga akkoord met de voorwaarden",
+      "step3_3Intro": "Op het registratieformulier:",
+      "step3_3Bullet1": "In het veld <strong>\"Domeinnaam\"</strong> voert u het domein in van de website of dienst die de sleutel. <ul class=\"p-ml-3\"><li>Als je geen domein hebt, kun je een tijdelijke aanduiding invoeren, zoals <code>localhost</code>, <code>127.0.0.1</code> of <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Lees de Steam Web API-gebruiksvoorwaarden.",
+      "step3_3Bullet3": "Vink het selectievakje aan om te bevestigen dat u akkoord gaat met de voorwaarden.",
+      "step3_3Bullet4": "Klik op de knop <strong>\"Registreren\"</strong> om het formulier te verzenden.",
+      "step3_4Title": "Stap 4 - Bekijk en kopieer uw nieuwe Steam Web API Key",
+      "step3_4Intro": "Na een succesvolle registratie:",
+      "step3_4Bullet1": "De pagina wordt opnieuw geladen en toont uw Steam Web API Key bovenaan.",
+      "step3_4Bullet2": "De sleutel is een lange reeks letters en cijfers (bijvoorbeeld: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Selecteer de volledige sleutel en kopieer deze (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Bewaar deze op een veilige locatie, zoals een wachtwoordbeheerder of een gecodeerde notitie-app.",
+      "step4Title": "4. Basisvoorbeeld van het gebruik van uw Steam Web API-sleutel",
+      "step4Intro": "Zodra u een sleutel heeft, kunt u Steam Web API-eindpunten aanroepen door deze toe te voegen als een <code>key=</code> parameter aan de URL. Een eenvoudig HTTP-verzoek kan er bijvoorbeeld als volgt uitzien (vervang <code>YOURKEYHERE</code> door uw echte sleutel):",
+      "step4Outro": "De exacte URL's en parameters zijn afhankelijk van welke Steam Web API-interface u gebruikt. Raadpleeg altijd de officiële documentatie voor de eindpunten die u nodig heeft.",
+      "step5Title": "5. Je Steam Web API-sleutel intrekken of opnieuw genereren",
+      "step5Intro": "Als je je Steam Web API-sleutel niet langer nodig hebt, of als je denkt dat deze is aangetast, moet je deze intrekken:",
+      "step5Bullet1": "Log in op je Steam-account als je nog niet bent ingelogd.",
+      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> opnieuw.",
+      "step5Bullet3": "Klik op de knop met het label <strong>\"Revoke My Steam Web API Key\"</strong>.",
+      "step5Bullet4": "Als je later een nieuwe sleutel nodig hebt, ga dan terug naar dezelfde pagina en registreer je opnieuw met behulp van de bovenstaande stappen.",
+      "step6Title": "6. Tips voor het oplossen van problemen",
+      "step6Intro": "Het kan zijn dat u een van de volgende problemen tegenkomt wanneer u een sleutel probeert te registreren:",
+      "step6Bullet1": "<strong>Bericht:</strong> <em>\"U krijgt toegang tot Steam Web API-sleutels wanneer u games in uw Steam-account heeft.\"</em> In dit geval voldoet uw account nog niet aan de minimumvereisten. Koop ten minste één game op Steam, wacht tot de aankoop is afgerond en probeer het later opnieuw.",
+      "step6Bullet2": "<strong>Pagina blijft u vragen om in te loggen</strong> - Zorg ervoor dat cookies en JavaScript zijn ingeschakeld in uw browser en dat u inlogt met het juiste account.",
+      "step6Bullet3": "<strong>Beveiligingsproblemen</strong> - Als een site of persoon van derden om uw sleutel vraagt ​​en u niet zeker weet waarom, deel deze dan niet. Trek je sleutel in en verander je Steam-wachtwoord als je denkt dat deze openbaar is gemaakt.",
+      "footerNote": "Je hebt nu een geregistreerde Steam Web API-sleutel en een basiskennis van hoe je deze veilig kunt beheren. Houd deze pagina bij de hand als referentie wanneer u uw sleutel moet registreren, gebruiken of intrekken."
+    },
+    "folders": {
+      "dialogTitle": "Mappen configureren"
+    }
+  },
+  "changelog": {
+    "title": "Wijzigingslogboek",
+    "events": {
+      "initialRelease": {
+        "title": "Eerste release",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Eerste openbare build van Honu's Project Zomboid Hub."
+      }
+    }
+  },
+  "docs": {
+    "title": "Documentatie",
+    "intro": "Honu's Hub helpt u bij het bladeren, inspecteren en beheren van uw lokale Project Zomboid, met desktopintegratie via Tauri.",
+    "toc": {
+      "aria": "Inhoudsopgave",
+      "title": "Inhoudsopgave",
+      "overview": "Overzicht",
+      "workflow": "Werkstroom",
+      "data": "Gegevens die de app gebruikt",
+      "features": "Functies",
+      "mediaPlayer": "Mediaspeler",
+      "logInspector": "Loginspector",
+      "folderSetup": "Mappen instellen",
+      "tauri": "Desktop (Tauri)-integratie",
+      "privacy": "Privacy en opslag",
+      "troubleshooting": "Problemen oplossen",
+      "faq": "Veelgestelde vragen"
+    },
+    "overview": {
+      "title": "Overzicht",
+      "body": "De app scant een gekozen mods-directory, ontleent metagegevens aan algemene Project Zomboid-modconventies en presenteert alles in een tabel en een samenvattend dashboard."
+    },
+    "workflow": {
+      "title": "Werkstroom",
+      "intro": "Volg deze end-to-end-stroom om uw mappen te verbinden, metagegevens te synchroniseren en de Honu Mod Info QoL-uitvoer te genereren.",
+      "step1": {
+        "title": "Mappen toewijzen",
+        "body": "Open <strong>Mappen configureren</strong> vanuit de zijbalkacties en stel uw Project Zomboid-spel, -workshop en -gebruiker in mappen.",
+        "screenshot": "Screenshot: Mappen configureren"
+      },
+      "step2": {
+        "title": "Steam Workshop-sleutel maken/invoeren",
+        "body": "Gebruik <strong>Steam API Key instellen</strong> om uw sleutel te plakken zodat de app Workshop-metadata kan ophalen.",
+        "screenshot": "Screenshot: Steam API Key instellen"
+      },
+      "step3": {
+        "title": "Lokale mod-gegevens synchroniseren",
+        "body": "Voer <strong>Lokale mod-gegevens synchroniseren</strong> uit om uw Workshop-map te scannen en de lokale mod-lijst samen te stellen.",
+        "screenshot": "Screenshot: Synchroniseer lokale mod-gegevens"
+      },
+      "step4": {
+        "title": "Synchroniseren met Steam Workshop",
+        "body": "Voer <strong>Sync met Steam Workshop</strong> uit om workshoptitels, auteurs, formaten en extra metagegevens op te halen.",
+        "screenshot": "Screenshot: Synchroniseren met Steam Workshop"
+      },
+      "step5": {
+        "title": "Synchroniseer Honu's Mod-info QoL",
+        "body": "Gebruik <strong>Honu's Mod-info QoL</strong> om <code>honus_miqol_db.lua</code> in uw Project Zomboid-gebruikersmap te genereren/bij te werken.",
+        "screenshot": "Screenshot: Synchroniseer Honu's Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Gegevens die de app gebruikt",
+      "intro": "De app bouwt een mod-lijst op op basis van informatie die beschikbaar is op schijf.",
+      "bullet1": "<strong>Mod-mappad</strong> - opgelost absoluut pad naar de mod-map.",
+      "bullet2": "<strong>Mod-ID</strong> - geëxtraheerd uit mod-metagegevens indien beschikbaar (meestal van <code>mod.info</code>).",
+      "bullet3": "<strong>Naam</strong> - een weergavenaam afgeleid van metagegevens en/of mapnaamgeving.",
+      "bullet4": "<strong>Workshop-ID (optioneel)</strong> - indien gedetecteerd en numeriek, schakelt de app een Steam Workshop-link in knop.",
+      "bullet5": "<strong>Status-/gezondheidsindicatoren</strong> - basissignalen zoals ontbrekende of onvolledige metadata (waar detecteerbaar).",
+      "outro": "Niet alle mods bevatten volledige metadata. Wanneer velden ontbreken, geeft de gebruikersinterface de beste-inspanningswaarden weer en kan acties worden uitgeschakeld waarvoor specifieke gegevens nodig zijn (bijvoorbeeld de Steam-link)."
+    },
+    "features": {
+      "title": "Functies",
+      "bullet1": "<strong>Mods-tabel</strong> - geeft een overzicht van gedetecteerde mods met sleutelvelden (naam, id, workshoplink indien beschikbaar, en pad).",
+      "bullet2": "<strong>Rijdetails</strong> - vouw een rij uit om meer informatie over een mod te zien (indien beschikbaar).",
+      "bullet3": "<strong>Openen in Steam</strong> - opent de workshop pagina in uw standaardbrowser voor mods met een geldig workshop-ID.",
+      "bullet4": "<strong>Map openen</strong> - opent de geselecteerde mod-map in uw bestandsverkenner.",
+      "mediaPlayer": "<strong>Mediaspeler</strong> - speel Project Zomboid-muziektracks af vanuit de zijbalk. Zie <a routerLink=\"/documentation\" fragment=\"media-player\">Mediaspeler</a>.",
+      "logInspectorPrefix": "<strong>Loginspector</strong> - laad en filter logbestanden (zoals <code>console.txt</code>) om snel fouten en waarschuwingen te vinden. Zie",
+      "logInspectorLink": "Loginspector",
+      "bullet6": "<strong>Dashboard</strong> - toont snelle statistieken (bijvoorbeeld: totaal aantal gedetecteerde mods) en andere indicatoren op hoog niveau."
+    },
+    "mediaPlayer": {
+      "title": "Mediaspeler",
+      "intro": "De zijbalk bevat een lichtgewicht muziekspeler die kan zoeken naar Project Zomboid-audiotracks (OGG) en deze in de app kan afspelen.",
+      "bullet1": "<strong>Afspeellijst</strong> - toont gedetecteerde tracks en basismetagegevens (titel/artiest/album indien beschikbaar).",
+      "bullet2": "<strong>Afspelen</strong> - afspelen/pauzeren plus vorige/volgende track.",
+      "bullet3": "<strong>Zoeken + volume</strong> - door de track bladeren en volume/dempen aanpassen."
+    },
+    "logInspector": {
+      "title": "Logboekinspecteur",
+      "intro": "De logboekinspecteur helpt u bij het openen en filteren van logbestanden (bijvoorbeeld <code>console.txt</code>) om crashes, mod-laadproblemen en problemen met het opstarten van de server op te lossen.",
+      "bullet1": "<strong>Selecteer een bestand</strong> - blader naar een <code>.txt</code>- of <code>.log</code>-bestand, of gebruik een standaardpad indien beschikbaar.",
+      "bullet2": "<strong>Filter</strong> - kies logniveaus (ERROR/WARN/LOG/DEBUG/TRACE), stel een datum/tijd-venster in en beperk het maximale aantal weergegeven vermeldingen.",
+      "bullet3": "<strong>Zoeken</strong> - filter vermeldingen op tekst in het geparseerde bericht en de onbewerkte bronregel.",
+      "bullet4": "<strong>Live polling</strong> - optioneel vernieuwen op een timer om te zien hoe logboeken worden bijgewerkt terwijl de game/server actief is.",
+      "bullet5": "<strong>Wissen</strong> - kap het geselecteerde logbestand af (gebruiken met care)."
+    },
+    "folderSetup": {
+      "title": "Mapconfiguratie",
+      "step1": "Open de pagina <strong>Mods</strong> vanuit de linkerzijbalk (onder <em>HOME</em>).",
+      "step2": "Gebruik <strong>Browse Mods Folder</strong> in het menu <em>ACTIONS</em> om uw Project Zomboid mods-map te selecteren (meestal <code>projectzomboid/mods</code>).",
+      "step3": "Na selectie scant de app de map en vult de mods-tabel en het dashboard.",
+      "tip": "Tip: Als u van machine wisselt of uw mods-map verplaatst, bladert u gewoon opnieuw om het opgeslagen pad bij te werken."
+    },
+    "tauri": {
+      "title": "Desktop (Tauri) integratie",
+      "bullet1": "<strong>Toegang tot bestandssysteem</strong> - het bladeren en scannen van mappen wordt uitgevoerd via de desktopshell.",
+      "bullet2": "<strong>Externe links openen</strong> - Steam Workshop-links worden geopend met de standaardbrowser van uw besturingssysteem.",
+      "bullet3": "<strong>Mappen openen</strong> - start de OS-bestandsverkenner gericht op de mod-map."
+    },
+    "privacy": {
+      "title": "Privacy en opslag",
+      "bullet1": "<strong>Lokale gegevens</strong> - het geselecteerde pad naar de mods-map en de scanresultaten kunnen lokaal in de cache worden opgeslagen om de UX te verbeteren."
+    },
+    "troubleshooting": {
+      "title": "Problemen oplossen",
+      "bullet1": "<strong>Er verschijnen geen mods na het scannen</strong> - controleer of de geselecteerde map uw daadwerkelijke Project Zomboid-mods-map is en of deze mod-submappen bevat.",
+      "bullet2": "<strong>Steam-links zijn uitgeschakeld</strong> - zorg ervoor dat de mod een geldige numerieke workshop-ID heeft (niet alle mods zijn Workshop-gebaseerd).",
+      "bullet3": "<strong>Map openen doet niets</strong> - controleer of de Tauri-backend actief is en of de OS-rechten het openen van de bestandsverkenner toestaan."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Bewerkt de app mijn mods?",
+      "a1": "Nee. De kernworkflow is alleen-lezen: het scant mappen en geeft metagegevens weer. Acties zoals het openen van mappen of workshoplinks wijzigen mod-bestanden niet.",
+      "q2": "Waarom ontbreekt er informatie voor een mod?",
+      "a2": "Mods variëren in hoe consistent ze metagegevens bevatten. Als velden als id of werkplaats-id ontbreken, laat de app zien wat hij kan en schakelt hij functies uit die afhankelijk zijn van die velden."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Naam",
+      "modId": "Mod-ID",
+      "author": "Auteur",
+      "version": "Mod-versie",
+      "versionMin": "Minimale spelversie",
+      "versionMax": "Maximale spelversie",
+      "url": "URL",
+      "description": "Beschrijving",
+      "tags": "Tags",
+      "noTags": "Geen tags",
+      "packs": "Packs",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Workshoptitel",
+      "workshopCreator": "Workshopmaker",
+      "fileSize": "Bestandsgrootte",
+      "timeCreated": "Aanmaaktijd",
+      "timeUpdated": "Tijd bijgewerkt",
+      "workshopViews": "Workshopweergaven",
+      "workshopSubscriptions": "Workshopabonnementen",
+      "adultContent": "Heeft inhoud voor volwassenen"
+    },
+    "links": {
+      "requiredMods": "Vereiste mods",
+      "loadAfter": "Mod na laden",
+      "loadBefore": "Mod vóór laden",
+      "incompatibleMods": "Incompatibele mods",
+      "requiredBy": "Vereist door",
+      "incompatibleWith": "Incompatibel met"
+    },
+    "buttons": {
+      "visitWorkshop": "Ga naar Steam Workshop-pagina",
+      "authorWorkshop": "Steam Workshop-pagina van auteur",
+      "openFolder": "Open mod-map"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Dit veld is alleen-lezen en wordt ingevuld vanuit mod.info.",
+      "steamReadonly": "Dit veld is alleen-lezen en ingevuld vanuit de Steam Workshop.",
+      "modMissing": "De volgende mod kan niet worden gevonden",
+      "syncToActivate": "Synchroniseren met Steam Workshop om te activeren",
+      "modFolderUnavailable": "Het pad naar de Mod-map is niet beschikbaar."
+    }
+  },
+  "tags": {
+    "animals": "Dieren",
+    "audio": "Audio",
+    "balance": "Balans",
+    "build_41": "Bouw 41",
+    "build_42": "Bouw 42",
+    "build_40": "Bouw 40",
+    "buildings": "Gebouwen",
+    "clothing_armor": "Kleding/pantser",
+    "farming": "Boerderij",
+    "food": "Eten",
+    "framework": "Framework",
+    "hardmode": "Hardmode",
+    "interface": "Interface",
+    "items": "Items",
+    "language_translation": "Taal/Vertaling",
+    "literature": "Literatuur",
+    "map": "Kaart",
+    "military": "Militair",
+    "misc": "Overige",
+    "models": "Modellen",
+    "multiplayer": "Multiplayer",
+    "pop_culture": "Popcultuur",
+    "qol": "Kwaliteit",
+    "realistic": "Realistisch",
+    "silly_fun": "Gek/Leuk",
+    "skills": "Vaardigheden",
+    "textures": "Textuur",
+    "traits": "Eigenschappen",
+    "vehicles": "Voertuigen",
+    "weapons": "Wapens",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Tags",
+    "matchLabel": "Match",
+    "matchAny": "OF",
+    "matchAll": "EN",
+    "placeholder": "Selecteer tags"
+  },
+  "modsTable": {
+    "clearFilters": "Wissen",
+    "searchPlaceholder": "Zoek trefwoord",
+    "detailsTitle": "Mod Details",
+    "columns": {
+      "name": "Naam",
+      "author": "Auteur",
+      "workshopId": "Workshop-ID",
+      "lastModified": "Datum laatst gewijzigd"
+    },
+    "filters": {
+      "name": "Zoeken op naam",
+      "author": "Zoeken op auteur",
+      "workshopId": "Zoeken op workshop-ID",
+      "date": "Datum filteren"
+    }
+  },
+  "folders": {
+    "title": "Vereiste mappen instellen",
+    "description": "Deze mappen worden gebruikt om uw mods te scannen en uw Project Zomboid-installatiegegevens te lezen.",
+    "gameDirLabel": "Project Zomboid-spelmap",
+    "workshopDirLabel": "Lokale mods-map (Steam Workshop)",
+    "userDirLabel": "Project Zomboid-gebruikersmap (optioneel)",
+    "userDirNote": "Gebruikt voor het exporteren van servervoorinstellingen en (optioneel) geavanceerde toepassingsdoelen."
+  },
+  "modsPage": {
+    "toastHelp": "Waar kan ik dit vinden?",
+    "workshopPrompt": {
+      "title": "Steam Workshop-gegevens ophalen",
+      "body": "Wil je de nieuwste metadata van de Steam Workshop voor je mods ophalen?",
+      "alwaysFetch": "Altijd automatisch ophalen zonder te vragen"
+    },
+    "loadingLocal": "Lokale mod-gegevens scannen...",
+    "loadingWorkshop": "Steam Workshop-gegevens ophalen...",
+    "loading": "Gegevens laden..."
+  },
+  "onboarding": {
+    "title": "Aan de slag",
+    "steps": {
+      "welcome": "Welkom",
+      "folders": "Mappen",
+      "steamKey": "Steam API-sleutel",
+      "tips": "Tips"
+    },
+    "welcome": {
+      "title": "Welkom bij Project Zomboid Mod Manager",
+      "body": "Deze snelle setup helpt je je mappen te koppelen, je Steam Web API-sleutel toe te voegen en te beginnen met het synchroniseren van mods.",
+      "bullet1": "Kies je Project Zomboid-mappen.",
+      "bullet2": "Voeg je Steam Web API-sleutel toe voor Workshop-metadata.",
+      "bullet3": "Rond de setup af en begin met het beheren van je mods."
+    },
+    "tips": {
+      "title": "Snelle tips",
+      "bullet1": "Je kunt mappen en je Steam API-sleutel op elk moment bijwerken via de zijbalk.",
+      "bullet2": "Voer eerst Lokale modgegevens synchroniseren uit voordat je Workshop-metadata synchroniseert.",
+      "bullet3": "Gebruik modfilters om de lijst snel te verfijnen."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Synchronisatie van Honu Mod Info QoL mislukt",
+        "missingUserDetail": "Project Zomboid-gebruikersmap is niet geconfigureerd.",
+        "successSummary": "Honu's Mod Info QoL gesynchroniseerd",
+        "successCreatedDetail": "honus_miqol_db.lua gemaakt.",
+        "successUpdatedDetail": "honus_miqol_db.lua bijgewerkt.",
+        "failedDetail": "Synchronisatie van Honu Mod Info QoL is mislukt."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Gegevensmigratie",
+        "detail": "Uw lokale mod-gegevens worden bijgewerkt. Er wordt een nieuwe scan uitgevoerd om de afhankelijkheden te vernieuwen."
+      },
+      "syncInProgress": {
+        "summary": "Synchronisatie wordt uitgevoerd",
+        "detail": "Er is al een synchronisatiebewerking actief. Wacht tot deze is voltooid."
+      },
+      "localSyncComplete": {
+        "summary": "Lokale mod-synchronisatie voltooid",
+        "detail": "Lokale mod-synchronisatie is met succes vernieuwd."
+      },
+      "localSyncFailed": {
+        "summary": "Lokale mod-synchronisatie mislukt",
+        "detail": "Kan lokale mods niet synchroniseren."
+      },
+      "invalidDirectory": {
+        "summary": "Ongeldige map",
+        "detail": "De geselecteerde map lijkt geen geldige Project Zomboid Workshop-map te zijn (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API-sleutel vereist",
+        "detail": "Gebruik \"Set Steam API Key\" in het menu en probeer het vervolgens opnieuw synchroniseren."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Er zijn geen metagegevens van de workshop geretourneerd; niets werd gered."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop gedeeltelijk gesynchroniseerd",
+        "detail": "Ontvangen {{received}} van {{total}} workshopitems. Ontbrekende ID's: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop gesynchroniseerd",
+        "detail": "Metagegevens van de workshop zijn succesvol opgeslagen."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API niet geautoriseerd",
+        "detail": "Steam heeft 401 Niet geautoriseerd geretourneerd. Controleer uw Steam Web API-sleutel en probeer het opnieuw."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Synchroniseren van Steam Workshop-metagegevens is mislukt."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "De naam van de voorinstelling bestaat al",
+        "detail": "Kies een andere naam voor \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Verwijderen mislukt",
+        "missingUserDetail": "Project Zomboid-gebruikersmap is niet geconfigureerd.",
+        "missingModDetail": "Mod-ID is niet gevonden in mods.txt.",
+        "failedDetail": "Kan de mod niet verwijderen uit de voorinstelling."
+      },
+      "removed": {
+        "summary": "Verwijderd",
+        "detailMultiple": "Geselecteerde mods zijn verwijderd uit de voorinstelling.",
+        "detailSingle": "Mod is verwijderd uit de voorinstelling."
+      },
+      "presetUpdated": {
+        "summary": "Voorinstelling bijgewerkt",
+        "detailFallback": "pz_modlist_settings.cfg kan niet worden bijgewerkt.",
+        "detailFailed": "Kan pz_modlist_settings.cfg niet bijwerken."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "De naam van de voorinstelling bestaat al",
+        "detail": "Kies een andere naam voor \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "Geen mods om te exporteren",
+        "detailCode": "Voeg ten minste één mod toe voordat u code genereert.",
+        "detailPreset": "Voeg ten minste één mod toe voordat u een voorinstelling opslaat."
+      },
+      "copied": {
+        "summary": "Gekopieerd",
+        "detail": "{{label}} gekopieerd naar het klembord."
+      },
+      "presetImported": {
+        "summary": "Voorinstelling geïmporteerd",
+        "detail": "Geïmporteerde {{count}} mods."
+      },
+      "importFailed": {
+        "summary": "Importeren mislukt",
+        "detail": "Kan voorinstelling niet importeren."
+      },
+      "presetSaved": {
+        "summary": "Voorinstelling opgeslagen",
+        "detailFallback": "pz_modlist_settings.cfg kan niet worden bijgewerkt.",
+        "detailFailed": "Kan pz_modlist_settings.cfg niet bijwerken."
+      },
+      "presetSaveNotice": {
+        "reordered": "Mods opnieuw gerangschikt op basis van afhankelijkheidsregels.",
+        "missingDependencies": "Ontbrekende afhankelijkheden: {{count}}.",
+        "missingWorkshopIds": "Ontbrekende werkplaats-ID's: {{count}}.",
+        "incompatibilities": "Incompatibiliteit: {{count}}.",
+        "cycles": "Cycles gedetecteerd: {{count}}.",
+        "conflicts": "Bestandsconflicten: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Voorinstelling verwijderd",
+        "detailFallback": "pz_modlist_settings.cfg kan niet worden bijgewerkt.",
+        "detailFailed": "Kan pz_modlist_settings.cfg niet bijwerken."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Kan collecties niet laden. Controleer uw Steam Web API-sleutel en probeer het opnieuw."
+      },
+      "steamUnauthorized": "Steam heeft 401 Ongeautoriseerd geretourneerd. Controleer uw Steam Web API-sleutel.",
+      "queryFailed": "Kan geen Steam Workshop-collecties opvragen.",
+      "presetNotCreated": {
+        "summary": "Voorinstelling niet gemaakt",
+        "detail": "Er zijn geen workshopitems gevonden voor deze collectie."
+      },
+      "presetCreated": {
+        "summary": "Voorinstelling gemaakt",
+        "detail": "Voorinstelling voor verzameling opgeslagen als \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Voorinstelling bijgewerkt",
+        "detail": "Voorinstelling voor verzameling \"{{name}}\" vernieuwd."
+      },
+      "presetRemoved": {
+        "summary": "Voorinstelling verwijderd",
+        "detail": "Voorinstelling voor verzameling is verwijderd."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Ongeldige servernaam",
+        "detailMissing": "Voer een server in naam.",
+        "detailInvalidChars": "De servernaam bevat ongeldige tekens voor de bestandsnaam.",
+        "detailTrailing": "De servernaam mag niet eindigen met een punt of een spatie."
+      },
+      "nameExists": {
+        "summary": "De servernaam bestaat al",
+        "detail": "Kies een unieke servernaam."
+      },
+      "missingUserFolder": {
+        "summary": "Ontbrekende gebruikersmap",
+        "detail": "Stel eerst uw Project Zomboid-gebruikersmap in."
+      },
+      "createFailed": {
+        "summary": "Aanmaken mislukt",
+        "detail": "Kan serverbestanden niet maken."
+      },
+      "saved": {
+        "summary": "Opgeslagen",
+        "detail": "Serverbestanden bijgewerkt."
+      },
+      "saveFailed": {
+        "summary": "Opslaan mislukt",
+        "detail": "Kan serverbestanden niet opslaan."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Begint met",
+    "contains": "Bevat",
+    "notContains": "Bevat niet",
+    "endsWith": "Eindigt met",
+    "equals": "Gelijk aan",
+    "notEquals": "Niet gelijk aan",
+    "noFilter": "Geen filter",
+    "lt": "Kleiner dan",
+    "lte": "Kleiner dan of gelijk aan",
+    "gt": "Groter dan",
+    "gte": "Groter dan of gelijk aan",
+    "dateIs": "Datum is",
+    "dateIsNot": "Datum is niet",
+    "dateBefore": "Datum is voor",
+    "dateAfter": "Datum is na",
+    "clear": "Wissen",
+    "apply": "Toepassen",
+    "matchAll": "Overeenkomen met alles",
+    "matchAny": "Overeenkomen met een van",
+    "addRule": "Regel toevoegen",
+    "removeRule": "Regel verwijderen"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overzicht",
+      "updateStatus": "Mods updatestatus",
+      "topInstalled": "Meest geïnstalleerde mods (per abonnementen)",
+      "lastUpdatedInstalled": "Geïnstalleerde mods die voor het laatst zijn bijgewerkt",
+      "installsOverTime": "Mod wordt in de loop van de tijd geïnstalleerd",
+      "largestMods": "Grootste mods (op bestandsgrootte)",
+      "latestNews": "Laatste Project Zomboid-nieuws",
+      "popularThisWeek": "Populaire mods deze week",
+      "latestMods": "Nieuwste mods",
+      "updatedMods": "Bijgewerkte mods"
+    },
+    "labels": {
+      "totalMods": "Totaal mod",
+      "lastLocalSync": "Laatste lokale mod-synchronisatie",
+      "lastWorkshopSync": "Laatste workshopsynchronisatie",
+      "subscribers": "abonnees",
+      "updated": "bijgewerkt",
+      "created": "gemaakt",
+      "installedTooltip": "Lokaal geïnstalleerd",
+      "unknown": "Onbekend",
+      "never": "Nooit"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API reageerde niet. Probeer het later opnieuw.",
+      "noInstalledSubs": "Er zijn geen geïnstalleerde mods met abonnementsgegevens beschikbaar.",
+      "noWorkshopUpdateInfo": "Er is geen workshopupdate-informatie beschikbaar.",
+      "noSizeData": "Er zijn geen gegevens over de mod-bestandsgrootte beschikbaar.",
+      "noNews": "Er zijn geen nieuwsberichten gevonden.",
+      "noPopularMods": "Er zijn geen populaire mods gevonden.",
+      "noModsFound": "Er zijn geen mods gevonden.",
+      "noRecentUpdates": "Er zijn geen recent bijgewerkte mods gevonden."
+    },
+    "fallbacks": {
+      "untitledItem": "Naamloos item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods per installatiemaand",
+        "xAxis": "Maand",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Verouderd",
+        "upToDate": "Up-to-date"
+      },
+      "size": {
+        "label": "Bestandsgrootte workshop (bytes)",
+        "yAxis": "Grootte (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Logboekinspecteur",
+    "fields": {
+      "logFile": "Logbestand",
+      "types": "Soorten",
+      "typesPlaceholder": "Selecteer soorten",
+      "maxEntries": "Maximaal aantal inzendingen",
+      "from": "Van",
+      "to": "Aan",
+      "livePolling": "Live opiniepeiling",
+      "pollingEverySeconds": "Elke (s)",
+      "searchMessage": "Zoek bericht",
+      "searchPlaceholder": "Zoeken..."
+    },
+    "table": {
+      "pageReport": "Toont {first} tot {last} van {totalRecords}",
+      "timestamp": "Tijdstempel",
+      "type": "Typ",
+      "message": "Bericht"
+    },
+    "levels": {
+      "error": "FOUT",
+      "warn": "WAARSCHUW",
+      "log": "LOGBOEK",
+      "debug": "DEBUGGEN",
+      "trace": "TRACEER",
+      "other": "ANDERE"
+    },
+    "dialog": {
+      "logFilesFilter": "Logbestanden"
+    },
+    "errors": {
+      "noFilePath": "Stel een bestandspad in om logboeken te laden.",
+      "loadFailed": "Kan het logbestand niet laden.",
+      "clearFailed": "Kan het logbestand niet wissen."
+    }
+  }
+}

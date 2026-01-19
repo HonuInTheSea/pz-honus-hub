@@ -1,0 +1,701 @@
+{
+  "common": {
+    "loadingContent": "Naglo-load ng content...",
+    "next": "Susunod",
+    "back": "Bumalik",
+    "finish": "Tapusin",
+    "cancel": "Kanselahin",
+    "browse": "Mag-browse",
+    "yes": "Oo",
+    "no": "Hindi",
+    "save": "I-save"
+  },
+  "app": {
+    "title": "Hub ni Honu"
+  },
+  "menu": {
+    "languageLabel": "Wika",
+    "languagePlaceholder": "Pumili ng wika",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MGA MOD FILTERS",
+      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "actions": "MGA PAGKILOS",
+      "getStarted": "Magsimula",
+      "resources": "Mga mapagkukunan",
+      "dangerZone": "Danger Zone"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "logInspector": "Inspektor ng Log",
+      "myMods": "Mga Mod ko",
+      "configureFolders": "I-configure ang Mga Folder",
+      "setSteamApiKey": "Itakda ang Steam API Key",
+      "syncHonu": "I-sync ang QoL ng Mod Info ng Honu",
+      "syncLocal": "I-sync ang Lokal na Data ng Mod",
+      "syncWorkshop": "I-sync Sa Steam Workshop",
+      "changelog": "Changelog",
+      "documentation": "Dokumentasyon",
+      "viewSource": "Tingnan ang Pinagmulan",
+      "projectZomboid": "Project Zomboid",
+      "pzWiki": "Opisyal na Proyekto Zomboid Wiki",
+      "b41Map": "B41 Mapa",
+      "b42Map": "B42 Mapa",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projectzomboid",
+      "discord": "Project Zomboid",
+      "moddingDiscord": "PZ Modding Community",
+      "mappingDiscord": "Hindi Opisyal na PZ Mapping",
+      "honuWorkshop": "Steam Workshop ng HonuInTheSea",
+      "supportKofi": "Suporta sa Ko-fi",
+      "resetApp": "I-reset ang Application",
+      "resetAppTooltip": "I-reset ang mga setting ng window at tanggalin ang nakaimbak na data"
+    },
+    "filters": {
+      "adultLabel": "May Pang-adultong Nilalaman",
+      "adultTooltip": "I-filter ang mga mod kung saan ang Steam metadata ay nag-uulat na maybe_inappropriate_sex bilang totoo.",
+      "rulesLabel": "May Mga Panuntunan",
+      "rulesTooltip": "Naglalaman ang mod ng require, incompatible, loadModAfter, loadModBefore na pahayag sa kanilang mod.info file",
+      "missingSteamLabel": "Nawawalang Steam Data",
+      "missingSteamTooltip": "Maaaring namarkahan ang mod bilang pribado o inalis sa Steam Workshop",
+      "outdatedLabel": "Lumang Mods",
+      "outdatedTooltip": "Maaaring kailanganin ng Mod na i-unsubscribe at muling mag-subscribe upang makuha ang pinakabagong bersyon mula sa Steam Workshop"
+    },
+    "collections": {
+      "searchLabel": "Maghanap ng Mga Koleksyon",
+      "searchPlaceholder": "Maghanap ng mga koleksyon",
+      "sortLabel": "Pagbukud-bukurin ayon sa",
+      "periodLabel": "Sa paglipas ng panahon",
+      "tagsLabel": "Mga tag",
+      "tagsPlaceholder": "Pumili ng mga tag",
+      "sortMostPopular": "Pinakasikat",
+      "sortMostRecent": "Pinakabago",
+      "sortLastUpdated": "Huling Na-update",
+      "periodToday": "Ngayong araw",
+      "periodWeek": "Isang Linggo",
+      "periodThirtyDays": "Tatlumpung Araw",
+      "periodThreeMonths": "Tatlong Buwan",
+      "periodSixMonths": "Anim na Buwan",
+      "periodYear": "Isang Taon"
+    },
+    "presetsUnavailable": "Itakda ang iyong Project Zomboid user folder at/o tukuyin muna ang mga preset.",
+    "steamApi": {
+      "dialogTitle": "Itakda ang Steam Web API Key",
+      "dialogIntro": "Ilagay ang iyong Steam Web API Key. Ang key na ito ay lokal na nakaimbak sa iyong makina.",
+      "keyLabel": "Steam Web API Key",
+      "needKey": "Kailangan mo ng susi?",
+      "getKeyLink": "Kunin ang iyong Steam Web API Key",
+      "helpButton": "Paano gumawa ng Steam Web API Key",
+      "helpTitle": "Paano gumawa ng Steam Web API Key",
+      "helpCardTitle": "Paano Magrehistro ng Steam Web API Key",
+      "helpCardBody": "Nagbibigay ang gabay na ito ng step-by-step na walkthrough para sa pagpaparehistro ng Steam Web API Key. Hinahayaan ng Steam Web API Key ang mga application na secure na ma-access ang partikular na data mula sa iyong Steam account, gaya ng mga library ng laro o istatistika, kapag pinahintulutan mo silang gawin ito.",
+      "step1Title": "1. Mga kinakailangan",
+      "step1Intro": "Bago ka makapagrehistro ng Steam Web API Key, siguraduhing:",
+      "step1Bullet1": "Mayroon kang aktibong Steam account na nasa mabuting katayuan, na sinigurado gamit ang Steam Guard (email o mobile authenticator).",
+      "step1Bullet2": "Ang iyong account ay nagmamay-ari ng hindi bababa sa isang biniling laro. Ang mga bago o walang laman na account ay hindi makakakuha ng API key.",
+      "step1Bullet3": "Gumagamit ka ng pinagkakatiwalaang device at network (huwag irehistro o tingnan ang iyong key sa isang pampubliko o nakabahaging computer).",
+      "step2Title": "2. Mahahalagang Paalala sa Seguridad",
+      "step2Intro": "Ang iyong Steam Web API Key ay sensitibong impormasyon. Ang sinumang may iyong susi ay maaaring gumawa ng mga kahilingan sa API para sa iyo. Tratuhin ito bilang isang password:",
+      "step2Bullet1": "Huwag kailanman ibahagi ang iyong susi sa ibang tao, at huwag kailanman i-post ito sa publiko (halimbawa, sa mga forum o GitHub).",
+      "step2Bullet2": "I-paste lang ang iyong susi sa mga tool o website na lubos mong pinagkakatiwalaan.",
+      "step2Bullet3": "Kung pinaghihinalaan mong nalantad ang iyong susi, agad itong bawiin at bumuo ng bago.",
+      "step3Title": "3. Hakbang-hakbang: Pagrehistro ng Steam Web API Key",
+      "step3_1Title": "Hakbang 1 - Mag-sign in sa Steam",
+      "step3_1Bullet1": "Buksan ang iyong web browser at pumunta sa <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "I-click ang <strong>\"Mag-log In\"</strong> sa kanang sulok sa itaas.",
+      "step3_1Bullet3": "Ilagay ang pangalan at password ng iyong Steam account.",
+      "step3_1Bullet4": "Kung sinenyasan, kumpletuhin ang pag-verify ng Steam Guard.",
+      "step3_2Title": "Hakbang 2 - Buksan ang pahina ng Steam Web API Key",
+      "step3_2Bullet1": "Habang naka-log in, buksan ang pahina ng pagpaparehistro ng Steam Web API Key: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Magpapakita ang page ng maikling paglalarawan ng Steam Web API at isang form na pinamagatang <strong>\"Magparehistro para sa bagong Steam Web API Key.\"</strong>",
+      "step3_3Title": "Hakbang 3 - Maglagay ng domain name at sumang-ayon sa mga tuntunin",
+      "step3_3Intro": "Sa registration form:",
+      "step3_3Bullet1": "Sa field na <strong>\"Domain Name\"</strong>, ilagay ang domain ng website o serbisyo na gagamit ng key. <ul class=\"p-ml-3\"><li>Kung wala kang domain, maaari kang maglagay ng placeholder gaya ng <code>localhost</code>, <code>127.0.0.1</code>, o <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Basahin ang Mga Tuntunin ng Paggamit ng Steam Web API.",
+      "step3_3Bullet3": "Lagyan ng check ang checkbox upang kumpirmahin na sumasang-ayon ka sa mga tuntunin.",
+      "step3_3Bullet4": "I-click ang <strong>\"Magrehistro\"</strong> na button upang isumite ang form.",
+      "step3_4Title": "Hakbang 4 - Tingnan at kopyahin ang iyong bagong Steam Web API Key",
+      "step3_4Intro": "Pagkatapos ng matagumpay na pagpaparehistro:",
+      "step3_4Bullet1": "Nagre-reload ang page at ipinapakita ang iyong Steam Web API Key malapit sa itaas.",
+      "step3_4Bullet2": "Ang susi ay isang mahabang string ng mga titik at numero (halimbawa: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Piliin ang buong key at kopyahin ito (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "I-imbak ito sa isang secure na lokasyon, tulad ng isang password manager o isang naka-encrypt na app ng mga tala.",
+      "step4Title": "4. Pangunahing Halimbawa ng Paggamit ng Iyong Steam Web API Key",
+      "step4Intro": "Kapag mayroon ka nang key, maaari mong tawagan ang Steam Web API endpoints sa pamamagitan ng pagdaragdag nito bilang <code>key=</code> parameter sa URL. Halimbawa, maaaring ganito ang hitsura ng isang simpleng kahilingan sa HTTP (palitan ang <code>YOURKEYHERE</code> ng iyong tunay na key):",
+      "step4Outro": "Ang mga eksaktong URL at parameter ay nakasalalay sa kung aling interface ng Steam Web API ang iyong ginagamit. Palaging kumunsulta sa opisyal na dokumentasyon para sa mga endpoint na kailangan mo.",
+      "step5Title": "5. Pagbawi o Pagbuo ng Iyong Steam Web API Key",
+      "step5Intro": "Kung hindi mo na kailangan ang iyong Steam Web API Key, o naniniwala kang nakompromiso ito, dapat mo itong bawiin:",
+      "step5Bullet1": "Mag-sign in sa iyong Steam account kung hindi ka pa naka-log in.",
+      "step5Bullet2": "Buksan muli ang <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>.",
+      "step5Bullet3": "I-click ang button na may label na <strong>\"Bawiin ang Aking Steam Web API Key\"</strong>.",
+      "step5Bullet4": "Kung kailangan mo ng bagong key sa ibang pagkakataon, bumalik sa parehong page at magrehistro muli gamit ang mga hakbang sa itaas.",
+      "step6Title": "6. Mga Tip sa Pag-troubleshoot",
+      "step6Intro": "Maaari mong makita ang isa sa mga sumusunod na isyu kapag sinusubukang magrehistro ng isang susi:",
+      "step6Bullet1": "<strong>Mensahe:</strong> <em>\"Mabibigyan ka ng access sa mga Steam Web API key kapag mayroon kang mga laro sa iyong Steam account.\"</em> Sa kasong ito, hindi pa nakakatugon ang iyong account sa mga minimum na kinakailangan. Bumili ng hindi bababa sa isang laro sa Steam, hintaying ma-clear ang pagbili, at subukang muli sa ibang pagkakataon.",
+      "step6Bullet2": "<strong>Palagi kang hinihiling ng page na mag-sign in</strong> - Tiyaking pinagana ang cookies at JavaScript sa iyong browser, at nagla-log in ka gamit ang tamang account.",
+      "step6Bullet3": "<strong>Mga alalahanin sa seguridad</strong> - Kung hihilingin ng sinumang third-party na site o tao ang iyong susi at hindi ka sigurado kung bakit, huwag itong ibahagi. Bawiin ang iyong susi at palitan ang iyong Steam password kung sa tingin mo ay nalantad ito.",
+      "footerNote": "Mayroon ka na ngayong nakarehistrong Steam Web API Key at isang pangunahing pag-unawa kung paano ito pangasiwaan nang ligtas. Panatilihing madaling gamitin ang page na ito bilang sanggunian kapag kailangan mong irehistro, gamitin, o bawiin ang iyong susi."
+    },
+    "folders": {
+      "dialogTitle": "I-configure ang Mga Folder"
+    }
+  },
+  "changelog": {
+    "title": "Changelog",
+    "events": {
+      "initialRelease": {
+        "title": "Paunang paglabas",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Unang pampublikong pagtatayo ng Project Zomboid Hub ni Honu."
+      }
+    }
+  },
+  "onboarding": {
+    "title": "Magsimula",
+    "steps": {
+      "welcome": "Maligayang pagdating",
+      "folders": "Mga folder",
+      "steamKey": "Steam API Key",
+      "tips": "Mga tip"
+    },
+    "welcome": {
+      "title": "Maligayang pagdating sa Project Zomboid Mod Manager",
+      "body": "Tinutulungan ka ng mabilis na setup na ito na ikonekta ang iyong mga folder, idagdag ang iyong Steam Web API key, at simulan ang pag-sync ng mga mod.",
+      "bullet1": "Piliin ang iyong mga folder ng Project Zomboid.",
+      "bullet2": "Idagdag ang iyong Steam Web API key para sa metadata ng Workshop.",
+      "bullet3": "Tapusin ang pag-setup at simulan ang pamamahala sa iyong mga mod."
+    },
+    "tips": {
+      "title": "Mga Mabilisang Tip",
+      "bullet1": "Maaari mong i-update ang mga folder at ang iyong Steam API key anumang oras mula sa sidebar.",
+      "bullet2": "Patakbuhin ang Sync Local Mod Data bago i-sync ang metadata ng Workshop.",
+      "bullet3": "Gumamit ng Mod Filters upang paliitin ang listahan nang mabilis."
+    }
+  },
+  "tags": {
+    "animals": "Mga hayop",
+    "audio": "Audio",
+    "balance": "Balanse",
+    "build_41": "Build 41",
+    "build_42": "Build 42",
+    "build_40": "Build 40",
+    "buildings": "Mga gusali",
+    "clothing_armor": "Damit/Kasuotan",
+    "farming": "Pagsasaka",
+    "food": "Pagkain",
+    "framework": "Balangkas",
+    "hardmode": "Hardmode",
+    "interface": "Interface",
+    "items": "Mga bagay",
+    "language_translation": "Wika/Pagsasalin",
+    "literature": "Panitikan",
+    "map": "Mapa",
+    "military": "Militar",
+    "misc": "Misc",
+    "models": "Mga modelo",
+    "multiplayer": "Multiplayer",
+    "pop_culture": "Kultura ng Pop",
+    "qol": "QoL",
+    "realistic": "Makatotohanan",
+    "silly_fun": "Kalokohan/Masaya",
+    "skills": "Mga kasanayan",
+    "textures": "Mga texture",
+    "traits": "Mga katangian",
+    "vehicles": "Mga sasakyan",
+    "weapons": "Mga sandata",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Mga tag",
+    "matchLabel": "tugma",
+    "matchAny": "O",
+    "matchAll": "AT",
+    "placeholder": "Pumili ng mga tag"
+  },
+  "modsTable": {
+    "clearFilters": "Maaliwalas",
+    "searchPlaceholder": "Paghahanap ng keyword",
+    "detailsTitle": "Mga Detalye ng Mod",
+    "columns": {
+      "name": "Pangalan",
+      "author": "May-akda",
+      "workshopId": "Workshop ID",
+      "lastModified": "Huling Binagong Petsa"
+    },
+    "filters": {
+      "name": "Maghanap ayon sa pangalan",
+      "author": "Maghanap ayon sa may-akda",
+      "workshopId": "Maghanap sa pamamagitan ng workshop ID",
+      "date": "Petsa ng filter"
+    }
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Pangkalahatang-ideya",
+      "updateStatus": "Katayuan ng Pag-update ng Mods",
+      "topInstalled": "Mga Nangungunang Naka-install na Mod (sa pamamagitan ng Mga Subscription)",
+      "lastUpdatedInstalled": "Mga Naka-install na Mod na Huling Na-update",
+      "installsOverTime": "Mga Pag-install ng Mod sa Paglipas ng Panahon",
+      "largestMods": "Pinakamalaking Mods (ayon sa Laki ng File)",
+      "latestNews": "Pinakabagong Project Zomboid News",
+      "popularThisWeek": "Mga Sikat na Mod Ngayong Linggo",
+      "latestMods": "Pinakabagong Mods",
+      "updatedMods": "Na-update na Mods"
+    },
+    "labels": {
+      "totalMods": "Kabuuang Mods",
+      "lastLocalSync": "Huling Lokal na Mod Sync",
+      "lastWorkshopSync": "Huling Workshop Sync",
+      "subscribers": "mga subscriber",
+      "updated": "na-update",
+      "created": "nilikha",
+      "installedTooltip": "Naka-install nang lokal",
+      "unknown": "Hindi kilala",
+      "never": "Hindi kailanman"
+    },
+    "messages": {
+      "steamTimeout": "Ang Steam Web API ay hindi tumutugon. Pakisubukang muli mamaya.",
+      "noInstalledSubs": "Walang available na mga naka-install na mod na may data ng subscription.",
+      "noWorkshopUpdateInfo": "Walang available na impormasyon sa pag-update ng Workshop.",
+      "noSizeData": "Walang magagamit na data ng laki ng file ng mod.",
+      "noNews": "Walang nakitang mga balita.",
+      "noPopularMods": "Walang nakitang sikat na mods.",
+      "noModsFound": "Walang nakitang mods.",
+      "noRecentUpdates": "Walang nakitang kamakailang na-update na mga mod."
+    },
+    "fallbacks": {
+      "untitledItem": "Walang pamagat na item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mga mod ayon sa buwan ng pag-install",
+        "xAxis": "buwan",
+        "yAxis": "Mga mod"
+      },
+      "status": {
+        "outdated": "Luma na",
+        "upToDate": "Napapanahon"
+      },
+      "size": {
+        "label": "Laki ng file ng workshop (bytes)",
+        "yAxis": "Sukat (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Inspektor ng Log",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Mga uri",
+      "typesPlaceholder": "Pumili ng mga uri",
+      "maxEntries": "Max na mga entry",
+      "from": "Mula sa",
+      "to": "Upang",
+      "livePolling": "Live na botohan",
+      "pollingEverySeconds": "Bawat (mga)",
+      "searchMessage": "Maghanap ng mensahe",
+      "searchPlaceholder": "Hanapin..."
+    },
+    "table": {
+      "pageReport": "Ipinapakita ang {first} hanggang {last} ng {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Uri",
+      "message": "Mensahe"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "BABALA",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "IBA"
+    },
+    "dialog": {
+      "logFilesFilter": "Mga Log File"
+    },
+    "errors": {
+      "noFilePath": "Magtakda ng path ng file para mag-load ng mga log.",
+      "loadFailed": "Nabigong i-load ang log file.",
+      "clearFailed": "Nabigong i-clear ang log file."
+    }
+  },
+  "modsPage": {
+    "toastHelp": "Saan ko hahanapin ito?",
+    "workshopPrompt": {
+      "title": "Kunin ang Data ng Steam Workshop",
+      "body": "Gusto mo bang kunin ang pinakabagong metadata mula sa Steam Workshop para sa iyong mga mod?",
+      "alwaysFetch": "Palaging awtomatikong kunin nang hindi nagtatanong"
+    },
+    "loadingLocal": "Ini-scan ang Lokal na Data ng Mod...",
+    "loadingWorkshop": "Kinukuha ang Data ng Steam Workshop...",
+    "loading": "Nilo-load ang data..."
+  },
+  "folders": {
+    "title": "Itakda ang Mga Kinakailangang Folder",
+    "description": "Ang mga folder na ito ay ginagamit upang i-scan ang iyong mga mod at basahin ang iyong mga detalye ng pag-install ng Project Zomboid.",
+    "gameDirLabel": "Folder ng laro ng Project Zomboid",
+    "workshopDirLabel": "Lokal na mods (Steam Workshop) na folder",
+    "userDirLabel": "Folder ng user ng Project Zomboid (opsyonal)",
+    "userDirNote": "Ginagamit para sa pag-export ng mga preset ng server at (opsyonal) advanced na paglalapat ng mga target."
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Pangalan",
+      "modId": "Mod ID",
+      "author": "May-akda",
+      "version": "Bersyon ng Mod",
+      "versionMin": "Pinakamababang Bersyon ng Laro",
+      "versionMax": "Pinakamataas na Bersyon ng Laro",
+      "url": "URL",
+      "description": "Paglalarawan",
+      "tags": "Mga tag",
+      "noTags": "Walang mga tag",
+      "packs": "Mga pakete",
+      "tiledefs": "Mga Tiledef",
+      "workshopTitle": "Pamagat ng Workshop",
+      "workshopCreator": "Tagalikha ng Workshop",
+      "fileSize": "Laki ng File",
+      "timeCreated": "Nalikha ang Oras",
+      "timeUpdated": "Na-update ang Oras",
+      "workshopViews": "Mga Pananaw sa Workshop",
+      "workshopSubscriptions": "Mga Subscription sa Workshop",
+      "adultContent": "May Pang-adultong Nilalaman"
+    },
+    "links": {
+      "requiredMods": "Mga Kinakailangang Mod",
+      "loadAfter": "Mag-load ng Mod Pagkatapos",
+      "loadBefore": "Mag-load ng Mod Bago",
+      "incompatibleMods": "Mga hindi katugmang Mods",
+      "requiredBy": "Kinakailangan Ni",
+      "incompatibleWith": "Hindi tugma Sa"
+    },
+    "buttons": {
+      "visitWorkshop": "Bisitahin ang Pahina ng Steam Workshop",
+      "authorWorkshop": "Pahina ng Steam Workshop ng May-akda",
+      "openFolder": "Buksan ang folder ng mod"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Ang field na ito ay read-only at na-populate mula sa mod.info.",
+      "steamReadonly": "Ang field na ito ay read-only at na-populate mula sa Steam Workshop.",
+      "modMissing": "Hindi mahanap ang sumusunod na mod",
+      "syncToActivate": "I-sync Sa Steam Workshop para I-activate",
+      "modFolderUnavailable": "Hindi available ang path ng mod folder."
+    }
+  },
+  "docs": {
+    "title": "Dokumentasyon",
+    "intro": "Tinutulungan ka ng Honu's Hub na mag-browse, mag-inspeksyon, at pamahalaan ang iyong lokal na Project Zomboid, na may desktop integration sa pamamagitan ng Tauri.",
+    "toc": {
+      "aria": "Talaan ng nilalaman",
+      "title": "Talaan ng nilalaman",
+      "overview": "Pangkalahatang-ideya",
+      "workflow": "Daloy ng trabaho",
+      "data": "Data na ginagamit ng app",
+      "features": "Mga tampok",
+      "mediaPlayer": "Media player",
+      "logInspector": "Inspektor ng log",
+      "folderSetup": "Pag-setup ng folder",
+      "tauri": "Pagsasama ng Desktop (Tauri).",
+      "privacy": "Privacy at storage",
+      "troubleshooting": "Pag-troubleshoot",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "Pangkalahatang-ideya",
+      "body": "Ang app ay nag-scan ng napiling direktoryo ng mods, kumukuha ng metadata mula sa mga karaniwang Project Zomboid mod convention, at ipinapakita ang lahat sa isang talahanayan at buod na dashboard."
+    },
+    "workflow": {
+      "title": "Daloy ng trabaho",
+      "intro": "Sundin itong end-to-end flow para ikonekta ang iyong mga folder, i-sync ang metadata, at buuin ang Honu Mod Info QoL output.",
+      "step1": {
+        "title": "Mga folder ng mapa",
+        "body": "Buksan ang <strong>I-configure ang Mga Folder</strong> mula sa mga aksyon sa sidebar at itakda ang iyong Project Zomboid na laro, workshop, at mga direktoryo ng user.",
+        "screenshot": "Screenshot: I-configure ang Mga Folder"
+      },
+      "step2": {
+        "title": "Lumikha/ipasok ang key ng Steam Workshop",
+        "body": "Gamitin ang <strong>Itakda ang Steam API Key</strong> para i-paste ang iyong key para makuha ng app ang metadata ng Workshop.",
+        "screenshot": "Screenshot: Itakda ang Steam API Key"
+      },
+      "step3": {
+        "title": "I-sync ang lokal na data ng mod",
+        "body": "Patakbuhin ang <strong>Sync Local Mod Data</strong> upang i-scan ang iyong Workshop folder at buuin ang listahan ng lokal na mod.",
+        "screenshot": "Screenshot: I-sync ang Lokal na Data ng Mod"
+      },
+      "step4": {
+        "title": "I-sync sa Steam Workshop",
+        "body": "Patakbuhin ang <strong>Sync With Steam Workshop</strong> upang makuha ang mga pamagat, may-akda, laki, at karagdagang metadata ng workshop.",
+        "screenshot": "Screenshot: I-sync Sa Steam Workshop"
+      },
+      "step5": {
+        "title": "I-sync ang QoL ng Mod Info ng Honu",
+        "body": "Gamitin ang <strong>Sync Honu's Mod Info QoL</strong> para bumuo/mag-update ng <code>honus_miqol_db.lua</code> sa loob ng iyong Project Zomboid user folder.",
+        "screenshot": "Screenshot: I-sync ang Mod Info QoL ni Honu"
+      }
+    },
+    "data": {
+      "title": "Data na ginagamit ng app",
+      "intro": "Bumubuo ang app ng listahan ng mod mula sa impormasyong magagamit sa disk.",
+      "bullet1": "<strong>Path ng folder ng mod</strong> - nalutas ang ganap na landas sa direktoryo ng mod.",
+      "bullet2": "<strong>Mod id</strong> - kinukuha mula sa mod metadata kapag available (karaniwang mula sa <code>mod.info</code>).",
+      "bullet3": "<strong>Name</strong> - isang display name na nagmula sa metadata at/o pagpapangalan ng folder.",
+      "bullet4": "<strong>Workshop id (opsyonal)</strong> - kung na-detect at numeric, pinapagana ng app ang button ng link ng Steam Workshop.",
+      "bullet5": "<strong>Mga tagapagpahiwatig ng katayuan/kalusugan</strong> - mga pangunahing signal tulad ng nawawala o hindi kumpletong metadata (kung saan nakikita).",
+      "outro": "Hindi lahat ng mod ay naglalaman ng kumpletong metadata. Kapag nawawala ang mga field, ipapakita ng UI ang mga halaga ng pinakamahusay na pagsisikap at maaaring hindi paganahin ang mga pagkilos na nangangailangan ng partikular na data (halimbawa, ang Steam link)."
+    },
+    "features": {
+      "title": "Mga tampok",
+      "bullet1": "<strong>Mods table</strong> - naglilista ng mga nakitang mod na may mga key field (pangalan, id, link ng workshop kapag available, at path).",
+      "bullet2": "<strong>Mga detalye ng row</strong> - palawakin ang isang row upang makakita ng higit pang impormasyon tungkol sa isang mod (kapag available).",
+      "bullet3": "<strong>Buksan sa Steam</strong> - binubuksan ang pahina ng Workshop sa iyong default na browser para sa mga mod na may wastong workshop id.",
+      "bullet4": "<strong>Buksan ang folder</strong> - binubuksan ang napiling mod folder sa iyong file explorer.",
+      "mediaPlayer": "<strong>Media player</strong> - i-play ang Project Zomboid music tracks mula sa sidebar. Tingnan ang <a routerLink=\"/documentation\" fragment=\"media-player\">Media player</a>.",
+      "logInspectorPrefix": "<strong>Log inspector</strong> - i-load at i-filter ang mga log file (tulad ng <code>console.txt</code>) upang mabilis na makahanap ng mga error at babala. Tingnan mo",
+      "logInspectorLink": "Inspektor ng log",
+      "bullet6": "<strong>Dashboard</strong> - nagpapakita ng mga mabilisang istatistika (halimbawa: kabuuang mga natukoy na mod) at iba pang mga tagapagpahiwatig ng mataas na antas."
+    },
+    "mediaPlayer": {
+      "title": "Media player",
+      "intro": "Ang sidebar ay may kasamang magaan na music player na maaaring mag-scan para sa Project Zomboid audio track (OGG) at i-play ang mga ito in-app.",
+      "bullet1": "<strong>Playlist</strong> - nagpapakita ng mga nakitang track at pangunahing metadata (pamagat/artist/album kapag available).",
+      "bullet2": "<strong>Playback</strong> - i-play/pause kasama ang nakaraan/susunod na track.",
+      "bullet3": "<strong>Seek + volume</strong> - mag-scrub sa track at ayusin ang volume/mute."
+    },
+    "logInspector": {
+      "title": "Inspektor ng log",
+      "intro": "Tinutulungan ka ng inspektor ng log na buksan at i-filter ang mga log file (halimbawa, <code>console.txt</code>) upang i-troubleshoot ang mga pag-crash, mga problema sa pag-load ng mod, at mga isyu sa pagsisimula ng server.",
+      "bullet1": "<strong>Pumili ng file</strong> - mag-browse sa alinmang <code>.txt</code> o <code>.log</code> file, o gumamit ng default na path kapag available.",
+      "bullet2": "<strong>Filter</strong> - piliin ang mga antas ng log (ERROR/WARN/LOG/DEBUG/TRACE), magtakda ng window ng petsa/oras, at limitahan ang maximum na bilang ng mga entry na ipinapakita.",
+      "bullet3": "<strong>Search</strong> - i-filter ang mga entry sa pamamagitan ng text sa na-parse na mensahe at sa raw source line.",
+      "bullet4": "<strong>Live na botohan</strong> - opsyonal na i-refresh sa isang timer upang mapanood ang pag-update ng mga log habang tumatakbo ang laro/server.",
+      "bullet5": "<strong>Clear</strong> - putulin ang napiling log file (gamitin nang may pag-iingat)."
+    },
+    "folderSetup": {
+      "title": "Pag-setup ng folder",
+      "step1": "Buksan ang pahina ng <strong>Mods</strong> mula sa kaliwang sidebar (sa ilalim ng <em>HOME</em>).",
+      "step2": "Gamitin ang <strong>Browse Mods Folder</strong> sa <em>ACTIONS</em> menu para piliin ang iyong Project Zomboid mods directory (karaniwang <code>projectzomboid/mods</code>).",
+      "step3": "Pagkatapos ng pagpili, ini-scan ng app ang direktoryo at pinupuno ang talahanayan ng mga mod at dashboard.",
+      "tip": "Tip: Kung lumipat ka ng mga makina o ililipat ang iyong direktoryo ng mods, mag-browse lang muli upang i-update ang nakaimbak na landas."
+    },
+    "tauri": {
+      "title": "Pagsasama ng Desktop (Tauri).",
+      "bullet1": "<strong>Filesystem access</strong> - isinagawa ang pagba-browse at pag-scan sa direktoryo sa pamamagitan ng desktop shell.",
+      "bullet2": "<strong>Buksan ang mga panlabas na link</strong> - Ang mga link sa Steam Workshop ay bubukas gamit ang iyong OS default na browser.",
+      "bullet3": "<strong>Buksan ang mga folder</strong> - inilulunsad ang OS file explorer na nakatuon sa direktoryo ng mod."
+    },
+    "privacy": {
+      "title": "Privacy at storage",
+      "bullet1": "<strong>Lokal na data</strong> - ang napiling mods folder path at mga resulta ng pag-scan ay maaaring lokal na i-cache upang mapabuti ang UX."
+    },
+    "troubleshooting": {
+      "title": "Pag-troubleshoot",
+      "bullet1": "<strong>Walang lumalabas na mga mod pagkatapos mag-scan</strong> - i-verify na ang napiling folder ay ang iyong aktwal na direktoryo ng Project Zomboid mods at naglalaman ito ng mga subfolder ng mod.",
+      "bullet2": "<strong>Naka-disable ang mga steam link</strong> - tiyaking ang mod ay may wastong numeric workshop id (hindi lahat ng mod ay Workshop-based).",
+      "bullet3": "<strong>Walang magagawa ang bukas na folder</strong> - kumpirmahin na gumagana ang backend ng Tauri at pinapayagan ng mga pahintulot ng OS ang pagbubukas ng file explorer."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Ini-edit ba ng app ang aking mga mod?",
+      "a1": "Hindi. Ang pangunahing daloy ng trabaho ay read-only: nag-scan ito ng mga folder at nagpapakita ng metadata. Ang mga pagkilos tulad ng pagbubukas ng mga folder o mga link sa Workshop ay hindi nagbabago ng mga mod file.",
+      "q2": "Bakit nawawala ang ilang impormasyon para sa isang mod?",
+      "a2": "Nag-iiba-iba ang mga mod sa kung gaano kapare-pareho ang mga ito sa pagsasama ng metadata. Kung nawawala ang mga field tulad ng id o workshop id, ipapakita ng app kung ano ang kaya nito at idi-disable ang mga feature na umaasa sa mga field na iyon."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Nabigo ang Honu Mod Info QoL Sync",
+        "missingUserDetail": "Hindi naka-configure ang folder ng user ng Project Zomboid.",
+        "successSummary": "Naka-sync ang Mod Info QoL ni Honu",
+        "successCreatedDetail": "nilikha ang honus_miqol_db.lua.",
+        "successUpdatedDetail": "na-update ang honus_miqol_db.lua.",
+        "failedDetail": "Nabigong i-sync ang Honu Mod Info QoL."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Paglipat ng Data",
+        "detail": "Ina-update ang iyong lokal na data ng mod. Ang isang bagong pag-scan ay tumatakbo upang i-refresh ang mga dependency."
+      },
+      "syncInProgress": {
+        "summary": "Isinasagawa ang pag-sync",
+        "detail": "Gumagana na ang isang sync operation. Pakihintay na makumpleto ito."
+      },
+      "localSyncComplete": {
+        "summary": "Kumpleto na ang Local Mod Sync",
+        "detail": "Matagumpay na na-refresh ang data ng lokal na mod."
+      },
+      "localSyncFailed": {
+        "summary": "Nabigo ang Lokal na Mod Sync",
+        "detail": "Nabigong i-sync ang mga lokal na mod."
+      },
+      "invalidDirectory": {
+        "summary": "Di-wastong Direktoryo",
+        "detail": "Ang napiling folder ay hindi lumilitaw na isang wastong direktoryo ng Project Zomboid Workshop (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Kinakailangan ang Steam Web API Key",
+        "detail": "Pakigamit ang \"Itakda ang Steam API Key\" sa menu, pagkatapos ay subukang mag-sync muli."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Walang naibalik na metadata ng workshop; walang nailigtas."
+      },
+      "workshopPartial": {
+        "summary": "Bahagyang na-sync ang Steam Workshop",
+        "detail": "Nakatanggap ng {{received}} ng {{total}} workshop item. Mga nawawalang ID: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Naka-sync ang Steam Workshop",
+        "detail": "Matagumpay na na-save ang metadata ng workshop."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API Hindi awtorisado",
+        "detail": "Ibinalik ng Steam ang 401 Hindi awtorisado. Paki-verify ang iyong Steam Web API key at subukang muli."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Nabigong i-sync ang metadata ng Steam Workshop."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Umiiral na ang preset na pangalan",
+        "detail": "Mangyaring pumili ng ibang pangalan para sa \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Nabigo ang Pag-alis",
+        "missingUserDetail": "Hindi naka-configure ang direktoryo ng user ng Project Zomboid.",
+        "missingModDetail": "Hindi nakita ang Mod ID sa mods.txt.",
+        "failedDetail": "Nabigong alisin ang mod mula sa preset."
+      },
+      "removed": {
+        "summary": "Inalis",
+        "detailMultiple": "Ang mga napiling mod ay inalis sa preset.",
+        "detailSingle": "Inalis ang mod mula sa preset."
+      },
+      "presetUpdated": {
+        "summary": "Na-update ang preset",
+        "detailFallback": "Hindi ma-update ang pz_modlist_settings.cfg.",
+        "detailFailed": "Nabigong i-update ang pz_modlist_settings.cfg."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Umiiral na ang preset na pangalan",
+        "detail": "Mangyaring pumili ng ibang pangalan para sa \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "Walang mga mod na i-export",
+        "detailCode": "Magdagdag ng kahit isang mod bago bumuo ng code.",
+        "detailPreset": "Magdagdag ng kahit isang mod bago mag-save ng preset."
+      },
+      "copied": {
+        "summary": "Kinopya",
+        "detail": "{{label}} nakopya sa clipboard."
+      },
+      "presetImported": {
+        "summary": "Preset na na-import",
+        "detail": "Nag-import ng {{count}} mods."
+      },
+      "importFailed": {
+        "summary": "Nabigo ang pag-import",
+        "detail": "Nabigong mag-import ng preset."
+      },
+      "presetSaved": {
+        "summary": "Na-save ang preset",
+        "detailFallback": "Hindi ma-update ang pz_modlist_settings.cfg.",
+        "detailFailed": "Nabigong i-update ang pz_modlist_settings.cfg."
+      },
+      "presetSaveNotice": {
+        "reordered": "Inayos muli ang mga mod ayon sa mga panuntunan sa dependency.",
+        "missingDependencies": "Mga nawawalang dependency: {{count}}.",
+        "missingWorkshopIds": "Mga nawawalang workshop ID: {{count}}.",
+        "incompatibilities": "Mga hindi pagkakatugma: {{count}}.",
+        "cycles": "Mga natukoy na cycle: {{count}}.",
+        "conflicts": "Mga salungatan sa file: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Tinanggal ang preset",
+        "detailFallback": "Hindi ma-update ang pz_modlist_settings.cfg.",
+        "detailFailed": "Nabigong i-update ang pz_modlist_settings.cfg."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Hindi ma-load ang mga koleksyon. I-verify ang iyong Steam Web API key at subukang muli."
+      },
+      "steamUnauthorized": "Ibinalik ng Steam ang 401 Hindi awtorisado. I-verify ang iyong Steam Web API key.",
+      "queryFailed": "Nabigong i-query ang mga koleksyon ng Steam Workshop.",
+      "presetNotCreated": {
+        "summary": "Hindi Nagawa ang Preset",
+        "detail": "Walang nakitang mga item sa workshop para sa koleksyong ito."
+      },
+      "presetCreated": {
+        "summary": "Nagawa ang Preset",
+        "detail": "Na-save ang preset ng koleksyon bilang \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Na-update ang Preset",
+        "detail": "Na-refresh ang preset ng koleksyon na \"{{name}}\"."
+      },
+      "presetRemoved": {
+        "summary": "Inalis ang Preset",
+        "detail": "Inalis ang preset ng koleksyon."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Di-wastong pangalan ng server",
+        "detailMissing": "Maglagay ng pangalan ng server.",
+        "detailInvalidChars": "Ang pangalan ng server ay naglalaman ng mga hindi wastong filename na character.",
+        "detailTrailing": "Ang pangalan ng server ay hindi maaaring magtapos sa isang tuldok o espasyo."
+      },
+      "nameExists": {
+        "summary": "Umiiral na ang pangalan ng server",
+        "detail": "Pumili ng natatanging pangalan ng server."
+      },
+      "missingUserFolder": {
+        "summary": "Nawawalang folder ng user",
+        "detail": "Itakda muna ang iyong Project Zomboid user folder."
+      },
+      "createFailed": {
+        "summary": "Nabigo ang paglikha",
+        "detail": "Nabigong lumikha ng mga file ng server."
+      },
+      "saved": {
+        "summary": "Nai-save",
+        "detail": "Na-update ang mga file ng server."
+      },
+      "saveFailed": {
+        "summary": "Nabigo ang pag-save",
+        "detail": "Nabigong i-save ang mga file ng server."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Nagsisimula sa",
+    "contains": "Naglalaman",
+    "notContains": "Hindi naglalaman",
+    "endsWith": "Nagtatapos sa",
+    "equals": "katumbas",
+    "notEquals": "Hindi katumbas",
+    "noFilter": "Walang filter",
+    "lt": "Mas mababa sa",
+    "lte": "Mas mababa sa o katumbas ng",
+    "gt": "Higit sa",
+    "gte": "Higit sa o katumbas ng",
+    "dateIs": "Ang petsa ay",
+    "dateIsNot": "Ang petsa ay hindi",
+    "dateBefore": "Date ay bago",
+    "dateAfter": "Ang petsa ay pagkatapos",
+    "clear": "Maaliwalas",
+    "apply": "Mag-apply",
+    "matchAll": "Tugma sa lahat",
+    "matchAny": "Itugma ang alinman",
+    "addRule": "Magdagdag ng panuntunan",
+    "removeRule": "Alisin ang panuntunan"
+  }
+}

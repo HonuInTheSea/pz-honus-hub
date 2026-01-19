@@ -1,0 +1,80 @@
+    <ng-container *transloco="let t">
+    <p-card header="{{ t('folders.title') }}">
+      <div class="p-fluid">
+        <p class="text-color-secondary">{{ t('folders.description') }}</p>
+
+        <div>
+          <label for="pz-game-dir">{{ t('folders.gameDirLabel') }}</label>
+          <div class="flex gap-2 p-mt-1">
+            <input
+              id="pz-game-dir"
+              type="text"
+              pInputText
+              [(ngModel)]="draft.pzGameDir"
+              [placeholder]="gameDirPlaceholder"
+              style="width: 100%"
+              autocomplete="off"
+              (ngModelChange)="emitChange()"
+            />
+            <button
+              pButton
+              type="button"
+              icon="pi pi-folder-open"
+              label="{{ t('common.browse') }}"
+              (click)="browseFor('pzGameDir')"
+            ></button>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem">
+          <label for="pz-workshop-dir">{{ t('folders.workshopDirLabel') }}</label>
+          <div class="flex gap-2 p-mt-1">
+            <input
+              id="pz-workshop-dir"
+              type="text"
+              pInputText
+              [(ngModel)]="draft.pzWorkshopDir"
+              [placeholder]="workshopDirPlaceholder"
+              style="width: 100%"
+              autocomplete="off"
+              (ngModelChange)="emitChange()"
+            />
+            <button
+              pButton
+              type="button"
+              icon="pi pi-folder-open"
+              label="{{ t('common.browse') }}"
+              (click)="browseFor('pzWorkshopDir')"
+            ></button>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.5rem">
+          <label for="pz-user-dir">{{ t('folders.userDirLabel') }}</label>
+          <div class="flex gap-2 p-mt-1">
+            <input
+              id="pz-user-dir"
+              type="text"
+              pInputText
+              [(ngModel)]="draft.pzUserDir"
+              [placeholder]="userDirPlaceholder"
+              style="width: 100%"
+              autocomplete="off"
+              (ngModelChange)="emitChange()"
+            />
+            <button
+              pButton
+              type="button"
+              icon="pi pi-folder-open"
+              label="{{ t('common.browse') }}"
+              (click)="browseFor('pzUserDir')"
+            ></button>
+          </div>
+          <div class="text-sm text-color-secondary p-mt-2">
+            {{ t('folders.userDirNote') }}
+          </div>
+        </div>
+
+      </div>
+    </p-card>
+    </ng-container>

@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "取消",
+    "save": "節省",
+    "browse": "瀏覽",
+    "yes": "是",
+    "no": "否",
+    "loadingContent": "正在載入內容...",
+    "next": "下一步",
+    "back": "返回",
+    "finish": "完成"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "語言",
+    "languagePlaceholder": "選擇語言",
+    "sections": {
+      "hub": "中心",
+      "modFilters": "調製濾波器",
+      "modCollectionFilters": "MOD 集合過濾器",
+      "actions": "行動",
+      "getStarted": "開始使用",
+      "resources": "資源",
+      "dangerZone": "危險區"
+    },
+    "items": {
+      "dashboard": "儀表板",
+      "logInspector": "日誌檢查器",
+      "configureFolders": "配置文件夾",
+      "setSteamApiKey": "設置 Steam API 密鑰",
+      "syncHonu": "同步 Honu 的 Mod 信息 QoL",
+      "syncLocal": "同步本地 Mod 數據",
+      "syncWorkshop": "與 Steam 創意工坊同步",
+      "changelog": "變更日誌",
+      "documentation": "文件",
+      "viewSource": "查看源代碼",
+      "projectZomboid": "殭屍計劃",
+      "pzWiki": "官方項目 Zomboid Wiki",
+      "b41Map": "B41 地圖",
+      "b42Map": "B42 地圖",
+      "workshop": "殭屍計劃 Steam 創意工坊",
+      "subreddit": "r/projectzomboid",
+      "discord": "殭屍計劃",
+      "moddingDiscord": "PZ 模組社區",
+      "mappingDiscord": "非官方 PZ 測繪",
+      "honuWorkshop": "HonuInTheSea 的 Steam 創意工坊",
+      "supportKofi": "支持 Ko-fi",
+      "resetApp": "重置申請",
+      "resetAppTooltip": "重置窗口設置並刪除存儲的數據",
+      "myMods": "我的 Mod"
+    },
+    "filters": {
+      "adultLabel": "有成人內容",
+      "adultTooltip": "過濾 Steam 元數據將 Maybe_inproper_sex 報告為 true 的模組。",
+      "rulesLabel": "有規則",
+      "rulesTooltip": "Mod 在其 mod.info 文件中包含 require、不兼容、loadModAfter、loadModBefore 語句",
+      "missingSteamLabel": "缺少 Steam 數據",
+      "missingSteamTooltip": "Mod 可能已被標記為私有或從 Steam 創意工坊中刪除",
+      "outdatedLabel": "過時的模組",
+      "outdatedTooltip": "Mod 可能需要取消訂閱並重新訂閱才能從 Steam 創意工坊獲取最新版本"
+    },
+    "collections": {
+      "searchLabel": "搜索收藏",
+      "searchPlaceholder": "搜索收藏",
+      "sortLabel": "排序方式",
+      "periodLabel": "隨著時間的推移",
+      "tagsLabel": "標籤",
+      "tagsPlaceholder": "選擇標籤",
+      "sortMostPopular": "最受歡迎",
+      "sortMostRecent": "最近的",
+      "sortLastUpdated": "最後更新",
+      "periodToday": "今天",
+      "periodWeek": "一周",
+      "periodThirtyDays": "三十天",
+      "periodThreeMonths": "三個月",
+      "periodSixMonths": "六個月",
+      "periodYear": "一年"
+    },
+    "presetsUnavailable": "首先設置 Project Zomboid 用戶文件夾和/或定義預設。",
+    "steamApi": {
+      "dialogTitle": "設置 Steam Web API 密鑰",
+      "dialogIntro": "輸入您的 Steam Web API 密鑰。該密鑰存儲在您的本地計算機上。",
+      "keyLabel": "Steam Web API 密鑰",
+      "needKey": "需要鑰匙嗎？",
+      "getKeyLink": "獲取您的 Steam Web API 密鑰",
+      "helpButton": "如何創建 Steam Web API 密鑰",
+      "helpTitle": "如何創建 Steam Web API 密鑰",
+      "helpCardTitle": "如何註冊 Steam Web API 密鑰",
+      "helpCardBody": "本指南提供了註冊 Steam Web API 密鑰的分步演練。 Steam Web API 密鑰允許應用程序在您授權的情況下安全地訪問您 Steam 帳戶中的特定數據，例如游戲庫或統計數據。",
+      "step1Title": "1. 前提條件",
+      "step1Intro": "在註冊 Steam Web API 密鑰之前，請確保：",
+      "step1Bullet1": "您擁有一個信譽良好的活躍 Steam 帳戶，並通過 Steam 令牌（電子郵件或手機驗證器）進行保護。",
+      "step1Bullet2": "您的帳戶至少擁有一款已購買的遊戲。全新或空賬戶無法獲取API key。",
+      "step1Bullet3": "您正在使用受信任的設備和網絡（切勿在公共或共享計算機上註冊或查看您的密鑰）。",
+      "step2Title": "2. 重要安全注意事項",
+      "step2Intro": "您的 Steam Web API 密鑰是敏感信息。擁有您密鑰的任何人都可以代表您發出 API 請求。將其視為密碼：",
+      "step2Bullet1": "切勿與其他人共享您的密鑰，也切勿公開發布（例如，在論壇或 GitHub 上）。",
+      "step2Bullet2": "僅將您的密鑰粘貼到您完全信任的工具或網站中。",
+      "step2Bullet3": "如果您懷疑您的密鑰已被洩露，請立即撤銷它並生成一個新密鑰。",
+      "step3Title": "3. 分步：註冊 Steam Web API 密鑰",
+      "step3_1Title": "第 1 步 - 登錄 Steam",
+      "step3_1Bullet1": "打開網絡瀏覽器並轉到 <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>。",
+      "step3_1Bullet2": "點擊右上角的<strong>“登錄”</strong>。",
+      "step3_1Bullet3": "輸入您的 Steam 帳戶名和密碼。",
+      "step3_1Bullet4": "如果出現提示，請完成 Steam Guard 驗證。",
+      "step3_2Title": "第 2 步 - 打開 Steam Web API 密鑰頁面",
+      "step3_2Bullet1": "登錄後，打開 Steam Web API 密鑰註冊頁面：<a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "該頁面將顯示 Steam Web API 的簡短描述和標題為<strong>“註冊新的 Steam Web API 密鑰”</strong>的表單。",
+      "step3_3Title": "第 3 步 - 輸入域名並同意條款",
+      "step3_3Intro": "登記表上：",
+      "step3_3Bullet1": "在<strong>“域名”</strong>字段中，輸入將使用密鑰的網站或服務的域。 <ul class=\"p-ml-3\"><li>如果您沒有域，可以輸入佔位符，例如 <code>localhost</code>、<code>127.0.0.1</code> 或 <code>example.com</code>。 </li></ul>",
+      "step3_3Bullet2": "閱讀 Steam Web API 使用條款。",
+      "step3_3Bullet3": "勾選複選框以確認您同意這些條款。",
+      "step3_3Bullet4": "點擊<strong>“註冊”</strong>按鈕提交表單。",
+      "step3_4Title": "第 4 步 - 查看並複制您的新 Steam Web API 密鑰",
+      "step3_4Intro": "註冊成功後：",
+      "step3_4Bullet1": "頁面將重新加載並在頂部附近顯示您的 Steam Web API 密鑰。",
+      "step3_4Bullet2": "密鑰是一長串字母和數字（例如：<code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>）。",
+      "step3_4Bullet3": "選擇整個密鑰並複制它（Ctrl+C / Cmd+C）。",
+      "step3_4Bullet4": "將其存儲在安全的位置，例如密碼管理器或加密的筆記應用程序。",
+      "step4Title": "4. 使用 Steam Web API 密鑰的基本示例",
+      "step4Intro": "獲得密鑰後，您可以通過將其作為 <code>key=</code> 參數添加到 URL 來調用 Steam Web API 端點。例如，一個簡單的 HTTP 請求可能如下所示（將 <code>YOURKEYHERE</code> 替換為您的真實密鑰）：",
+      "step4Outro": "確切的 URL 和參數取決於您使用的 Steam Web API 界面。請務必查閱官方文檔以了解您需要的端點。",
+      "step5Title": "5. 撤銷或重新生成您的 Steam Web API 密鑰",
+      "step5Intro": "如果您不再需要 Steam Web API 密鑰，或者您認為它已被洩露，您應該撤銷它：",
+      "step5Bullet1": "如果您尚未登錄，請登錄您的 Steam 帳戶。",
+      "step5Bullet2": "再次打開 <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>。",
+      "step5Bullet3": "點擊標記為<strong>“撤銷我的 Steam Web API 密鑰”</strong>的按鈕。",
+      "step5Bullet4": "如果您稍後需要新密鑰，請返回同一頁面並使用上述步驟重新註冊。",
+      "step6Title": "6. 故障排除技巧",
+      "step6Intro": "嘗試註冊密鑰時，您可能會遇到以下問題之一：",
+      "step6Bullet1": "<strong>消息：</strong> <em>“當您的 Steam 帳戶中有遊戲時，您將被授予訪問 Steam Web API 密鑰的權限。”</em>在這種情況下，您的帳戶尚未滿足最低要求。在 Steam 上購買至少一款遊戲，等待購買完成，稍後再試。",
+      "step6Bullet2": "<strong>頁面不斷要求您登錄</strong> - 確保您的瀏覽器中啟用了 Cookie 和 JavaScript，並且您使用正確的帳戶登錄。",
+      "step6Bullet3": "<strong>安全問題</strong> - 如果任何第三方網站或個人要求您提供密鑰並且您不確定原因，請勿分享。如果您認為您的密鑰已被洩露，請撤銷您的密鑰並更改您的 Steam 密碼。",
+      "footerNote": "您現在已經註冊了 Steam Web API 密鑰，並對如何安全管理它有了基本的了解。當您需要註冊、使用或撤銷密鑰時，請將此頁面放在手邊作為參考。"
+    },
+    "folders": {
+      "dialogTitle": "配置文件夾"
+    }
+  },
+  "changelog": {
+    "title": "變更日誌",
+    "events": {
+      "initialRelease": {
+        "title": "初始發佈",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Honu's Project Zomboid Hub 的首個公開版本。"
+      }
+    }
+  },
+  "docs": {
+    "title": "文件",
+    "intro": "Honu's Hub 可幫助您瀏覽、檢查和管理本地 Zomboid 項目，並通過 Tauri 進行桌面集成。",
+    "toc": {
+      "aria": "目錄",
+      "title": "目錄",
+      "overview": "概述",
+      "workflow": "工作流程",
+      "data": "應用程序使用的數據",
+      "features": "特徵",
+      "mediaPlayer": "媒體播放器",
+      "logInspector": "日誌檢查器",
+      "folderSetup": "文件夾設置",
+      "tauri": "桌面 (Tauri) 集成",
+      "privacy": "隱私和存儲",
+      "troubleshooting": "故障排除",
+      "faq": "常問問題"
+    },
+    "overview": {
+      "title": "概述",
+      "body": "該應用程序掃描選定的 mods 目錄，從常見的 Project Zomboid mod 約定中獲取元數據，並在表格和摘要儀表板中顯示所有內容。"
+    },
+    "workflow": {
+      "title": "工作流程",
+      "intro": "按照此端到端流程連接文件夾、同步元數據並生成 Honu Mod Info QoL 輸出。",
+      "step1": {
+        "title": "地圖文件夾",
+        "body": "從側邊欄操作中打開<strong>配置文件夾</strong>，然後設置 Project Zomboid 遊戲、創意工坊和用戶目錄。",
+        "screenshot": "屏幕截圖：配置文件夾"
+      },
+      "step2": {
+        "title": "創建/輸入 Steam 創意工坊密鑰",
+        "body": "使用<strong>設置 Steam API 密鑰</strong>粘貼您的密鑰，以便應用程序可以獲取創意工坊元數據。",
+        "screenshot": "屏幕截圖：設置 Steam API 密鑰"
+      },
+      "step3": {
+        "title": "同步本地模組數據",
+        "body": "運行<strong>同步本地模組數據</strong>來掃描您的創意工坊文件夾並構建本地模組列表。",
+        "screenshot": "屏幕截圖：同步本地 Mod 數據"
+      },
+      "step4": {
+        "title": "與 Steam 創意工坊同步",
+        "body": "運行<strong>與 Steam 創意工坊同步</strong>以獲取創意工坊標題、作者、大小和額外元數據。",
+        "screenshot": "屏幕截圖：與 Steam 創意工坊同步"
+      },
+      "step5": {
+        "title": "同步 Honu 的 Mod 信息 QoL",
+        "body": "使用<strong>Sync Honu's Mod Info QoL</strong>在您的Project Zomboid用戶文件夾中生成/更新<code>honus_miqol_db.lua</code>。",
+        "screenshot": "屏幕截圖：同步 Honu 的 Mod 信息 QoL"
+      }
+    },
+    "data": {
+      "title": "應用程序使用的數據",
+      "intro": "該應用程序根據磁盤上的可用信息構建模組列表。",
+      "bullet1": "<strong>Mod 文件夾路徑</strong> - 已解析的 mod 目錄的絕對路徑。",
+      "bullet2": "<strong>Mod id</strong> - 從可用的 mod 元數據中提取（通常來自 <code>mod.info</code>）。",
+      "bullet3": "<strong>名稱</strong> - 從元數據和/或文件夾命名派生的顯示名稱。",
+      "bullet4": "<strong>創意工坊 ID（可選）</strong> - 如果檢測到且為數字，則應用程序會啟用 Steam 創意工坊鏈接按鈕。",
+      "bullet5": "<strong>狀態/運行狀況指標</strong> - 基本信號，例如元數據缺失或不完整（可檢測到的情況）。",
+      "outro": "並非所有模組都包含完整的元數據。當字段丟失時，UI 將顯示盡力而為的值，並可能禁用需要特定數據的操作（例如，Steam 鏈接）。"
+    },
+    "features": {
+      "title": "特徵",
+      "bullet1": "<strong>模組表</strong> - 列出檢測到的模組以及關鍵字段（名稱、ID、創意工坊鏈接（如果可用）和路徑）。",
+      "bullet2": "<strong>行詳細信息</strong> - 展開行以查看有關模組的更多信息（如果有）。",
+      "bullet3": "<strong>在 Steam 中打開</strong> - 在默認瀏覽器中打開具有有效創意工坊 ID 的模組的創意工坊頁面。",
+      "bullet4": "<strong>打開文件夾</strong> - 在文件資源管理器中打開選定的模組文件夾。",
+      "mediaPlayer": "<strong>媒體播放器</strong> - 從側邊欄播放 Project Zomboid 音樂曲目。請參閱<a routerLink=\"/documentation\"fragment=\"media-player\">媒體播放器</a>。",
+      "logInspectorPrefix": "<strong>日誌檢查器</strong> - 加載和過濾日誌文件（如<code>console.txt</code>）以快速查找錯誤和警告。看",
+      "logInspectorLink": "日誌檢查器",
+      "bullet6": "<strong>儀表板</strong> - 顯示快速統計數據（例如：檢測到的模組總數）和其他高級指標。"
+    },
+    "mediaPlayer": {
+      "title": "媒體播放器",
+      "intro": "側邊欄包括一個輕量級音樂播放器，可以掃描 Project Zomboid 音軌 (OGG) 並在應用程序內播放。",
+      "bullet1": "<strong>播放列表</strong> - 顯示檢測到的曲目和基本元數據（標題/藝術家/專輯（如果可用））。",
+      "bullet2": "<strong>播放</strong> - 播放/暫停以及上一個/下一個曲目。",
+      "bullet3": "<strong>搜索 + 音量</strong> - 瀏覽曲目並調整音量/靜音。"
+    },
+    "logInspector": {
+      "title": "日誌檢查器",
+      "intro": "日誌檢查器可幫助您打開和過濾日誌文件（例如 <code>console.txt</code>），以解決崩潰、mod 加載問題和服務器啟動問題。",
+      "bullet1": "<strong>選擇文件</strong> - 瀏覽到任何 <code>.txt</code> 或 <code>.log</code> 文件，或使用默認路徑（如果可用）。",
+      "bullet2": "<strong>過濾</strong> - 選擇日誌級別（錯誤/警告/日誌/調試/跟踪），設置日期/時間窗口，並限制顯示的最大條目數。",
+      "bullet3": "<strong>搜索</strong> - 在已解析的消息和原始源代碼行中按文本過濾條目。",
+      "bullet4": "<strong>實時輪詢</strong> - 可選擇刷新計時器以在遊戲/服務器運行時觀察日誌更新。",
+      "bullet5": "<strong>清除</strong> - 截斷選定的日誌文件（謹慎使用）。"
+    },
+    "folderSetup": {
+      "title": "文件夾設置",
+      "step1": "從左側邊欄（<em>HOME</em> 下）打開<strong>Mods</strong> 頁面。",
+      "step2": "使用<em>ACTIONS</em>菜單中的<strong>瀏覽Mods文件夾</strong>來選擇您的Project Zomboid mods目錄（通常為<code>projectzomboid/mods</code>）。",
+      "step3": "選擇後，應用程序會掃描目錄並填充 mods 表和儀表板。",
+      "tip": "提示：如果您切換計算機或移動 mods 目錄，只需再次瀏覽即可更新存儲的路徑。"
+    },
+    "tauri": {
+      "title": "桌面 (Tauri) 集成",
+      "bullet1": "<strong>文件系統訪問</strong> - 通過桌面 shell 執行目錄瀏覽和掃描。",
+      "bullet2": "<strong>打開外部鏈接</strong> - Steam 創意工坊鏈接使用您的操作系統默認瀏覽器打開。",
+      "bullet3": "<strong>打開文件夾</strong> - 啟動專注於 mod 目錄的操作系統文件資源管理器。"
+    },
+    "privacy": {
+      "title": "隱私和存儲",
+      "bullet1": "<strong>本地數據</strong> - 選定的 mods 文件夾路徑和掃描結果可能會緩存在本地以改善用戶體驗。"
+    },
+    "troubleshooting": {
+      "title": "故障排除",
+      "bullet1": "<strong>掃描後沒有出現任何 mods</strong> - 驗證所選文件夾是您實際的 Project Zomboid mods 目錄並且它包含 mod 子文件夾。",
+      "bullet2": "<strong>Steam 鏈接已禁用</strong> - 確保模組具有有效的數字創意工坊 ID（並非所有模組都基於創意工坊）。",
+      "bullet3": "<strong>打開文件夾不執行任何操作</strong> - 確認 Tauri 後端正在運行並且操作系統權限允許打開文件資源管理器。"
+    },
+    "faq": {
+      "title": "常問問題",
+      "q1": "該應用程序會編輯我的模組嗎？",
+      "a1": "不會。核心工作流程是只讀的：它掃描文件夾並顯示元數據。打開文件夾或創意工坊鏈接等操作不會修改 mod 文件。",
+      "q2": "為什麼模組缺少一些信息？",
+      "a2": "模組在包含元數據的一致性方面有所不同。如果缺少 id 或 Workshop id 等字段，應用程序將顯示其功能並禁用依賴於這些字段的功能。"
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "名稱",
+      "modId": "Mod ID",
+      "author": "作者",
+      "version": "Mod 版本",
+      "versionMin": "最低遊戲版本",
+      "versionMax": "最高遊戲版本",
+      "url": "URL",
+      "description": "描述",
+      "tags": "標籤",
+      "noTags": "無標籤",
+      "packs": "包",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "研討會標題",
+      "workshopCreator": "研討會創建者",
+      "fileSize": "文件大小",
+      "timeCreated": "創建時間",
+      "timeUpdated": "更新時間",
+      "workshopViews": "研討會視圖",
+      "workshopSubscriptions": "研討會訂閱",
+      "adultContent": "包含成人內容"
+    },
+    "links": {
+      "requiredMods": "必需的模組",
+      "loadAfter": "加載模組之後",
+      "loadBefore": "加載模組之前",
+      "incompatibleMods": "不兼容的模組",
+      "requiredBy": "需要",
+      "incompatibleWith": "不兼容"
+    },
+    "buttons": {
+      "visitWorkshop": "訪問Steam創意工坊頁面",
+      "authorWorkshop": "作者的Steam創意工坊頁面",
+      "openFolder": "打開mod文件夾"
+    },
+    "tooltips": {
+      "modInfoReadonly": "此字段是只讀的，並從 mod.info 填充。",
+      "steamReadonly": "此字段是只讀的，並從 Steam 創意工坊填充。",
+      "modMissing": "找不到以下 mod",
+      "syncToActivate": "與 Steam 創意工坊同步以激活",
+      "modFolderUnavailable": "Mod 文件夾路徑不可用。"
+    }
+  },
+  "tags": {
+    "animals": "動物",
+    "audio": "音頻",
+    "balance": "平衡",
+    "build_41": "Build 41",
+    "build_42": "Build 42",
+    "build_40": "Build 40",
+    "buildings": "建築物",
+    "clothing_armor": "服裝/盔甲",
+    "farming": "農業",
+    "food": "食物",
+    "framework": "框架",
+    "hardmode": "困難模式",
+    "interface": "界面",
+    "items": "物品",
+    "language_translation": "語言/翻譯",
+    "literature": "文學",
+    "map": "地圖",
+    "military": "軍事",
+    "misc": "雜項",
+    "models": "模型",
+    "multiplayer": "多人遊戲",
+    "pop_culture": "流行文化",
+    "qol": "生活質量",
+    "realistic": "現實",
+    "silly_fun": "愚蠢/有趣",
+    "skills": "技能",
+    "textures": "紋理",
+    "traits": "特徵",
+    "vehicles": "載具",
+    "weapons": "武器",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "標籤",
+    "matchLabel": "匹配",
+    "matchAny": "或",
+    "matchAll": "且",
+    "placeholder": "選擇標籤"
+  },
+  "modsTable": {
+    "clearFilters": "清除",
+    "searchPlaceholder": "搜索關鍵字",
+    "detailsTitle": "模組詳細信息",
+    "columns": {
+      "name": "名稱",
+      "author": "作者",
+      "workshopId": "研討會 ID",
+      "lastModified": "上次修改日期"
+    },
+    "filters": {
+      "name": "按名稱搜索",
+      "author": "按作者搜索",
+      "workshopId": "按研討會 ID 搜索",
+      "date": "過濾日期"
+    }
+  },
+  "folders": {
+    "title": "設置所需文件夾",
+    "description": "這些文件夾用於掃描您的 mod 並讀取您的 Project Zomboid 安裝詳細信息。",
+    "gameDirLabel": "Project Zomboid 遊戲文件夾",
+    "workshopDirLabel": "本地 mods（Steam 創意工坊）文件夾",
+    "userDirLabel": "Project Zomboid 用戶文件夾（可選）",
+    "userDirNote": "用於導出服務器預設和（可選）高級應用目標。"
+  },
+  "modsPage": {
+    "toastHelp": "我在哪裡可以找到這個？",
+    "workshopPrompt": {
+      "title": "獲取 Steam 創意工坊數據",
+      "body": "您想從 Steam 創意工坊為您的 mod 獲取最新元數據嗎？",
+      "alwaysFetch": "始終自動獲取，無需詢問"
+    },
+    "loadingLocal": "掃描本地 Mod 數據...",
+    "loadingWorkshop": "正在獲取 Steam 創意工坊數據...",
+    "loading": "加載數據..."
+  },
+  "onboarding": {
+    "title": "開始使用",
+    "steps": {
+      "welcome": "歡迎",
+      "folders": "資料夾",
+      "steamKey": "Steam API 金鑰",
+      "tips": "提示"
+    },
+    "welcome": {
+      "title": "歡迎使用 Project Zomboid Mod Manager",
+      "body": "此快速設定可協助你連結資料夾、加入 Steam Web API 金鑰，並開始同步模組。",
+      "bullet1": "選擇你的 Project Zomboid 資料夾。",
+      "bullet2": "為 Workshop 中繼資料加入 Steam Web API 金鑰。",
+      "bullet3": "完成設定並開始管理模組。"
+    },
+    "tips": {
+      "title": "快速提示",
+      "bullet1": "你可以隨時從側邊欄更新資料夾和 Steam API 金鑰。",
+      "bullet2": "在同步 Workshop 中繼資料之前先執行同步本地模組資料。",
+      "bullet3": "使用模組篩選器快速縮小列表。"
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod 信息 QoL 同步失敗",
+        "missingUserDetail": "項目 Zomboid 用戶文件夾未配置。 ",
+        "successSummary": "Honu 的 Mod 信息 QoL 已同步",
+        "successCreatedDetail": "honus_miqol_db.lua 已創建。 ",
+        "successUpdatedDetail": "honus_miqol_db.lua 已更新。 ",
+        "failedDetail": "無法同步 Honu Mod 信息 QoL。 "
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "數據遷移",
+        "detail": "您的本地 Mod 數據正在更新。正在運行新的掃描以刷新依賴項。 "
+      },
+      "syncInProgress": {
+        "summary": "同步正在進行",
+        "detail": "同步操作已在運行。請等待其完成。 "
+      },
+      "localSyncComplete": {
+        "summary": "本地 Mod 同步完成",
+        "detail": "本地 Mod 數據已成功刷新。 "
+      },
+      "localSyncFailed": {
+        "summary": "本地 Mod 同步失敗",
+        "detail": "無法同步本地 Mod。 "
+      },
+      "invalidDirectory": {
+        "summary": "無效目錄",
+        "detail": "所選文件夾似乎不是有效的 Project Zomboid Workshop 目錄 (AppID 108600)。 "
+      },
+      "steamApiRequired": {
+        "summary": "需要 Steam Web API 密鑰",
+        "detail": "請使用菜單中的“設置 Steam API 密鑰”，然後嘗試同步再次。 "
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "沒有返回任何研討會元數據；什麼都沒有保存。"
+      },
+      "workshopPartial": {
+        "summary": "Steam 工作坊部分同步",
+        "detail": "收到 {{received}} 的 {{total}} 創意工坊物品。缺少 ID：{{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam 創意工坊已同步",
+        "detail": "創意工坊元數據已成功保存。 "
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API 未經授權",
+        "detail": "Steam 返回 401 未經授權。請驗證您的 Steam Web API 密鑰，然後重試。 "
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "無法同步 Steam 創意工坊元數據。 "
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "預設名稱已存在",
+        "detail": "請為“{{name}}”選擇不同的名稱。 "
+      },
+      "removeFailed": {
+        "summary": "刪除失敗",
+        "missingUserDetail": "未配置 Project Zomboid 用戶目錄。 ",
+        "missingModDetail": "在 mods.txt 中找不到模組 ID。 ",
+        "failedDetail": "無法從預設中刪除模組。 "
+      },
+      "removed": {
+        "summary": "已刪除",
+        "detailMultiple": "選定的模組已從預設。 ",
+        "detailSingle": "Mod 已從預設中刪除。 "
+      },
+      "presetUpdated": {
+        "summary": "預設已更新",
+        "detailFallback": "無法更新 pz_modlist_settings.cfg。 ",
+        "detailFailed": "無法更新 pz_modlist_settings.cfg。"
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "預設名稱已存在",
+        "detail": "請為“{{name}}”選擇不同的名稱。 "
+      },
+      "noModsToExport": {
+        "summary": "沒有要導出的模組",
+        "detailCode": "生成代碼之前至少添加一個模組。 ",
+        "detailPreset": "保存預設之前至少添加一個模組。 "
+      },
+      "copied": {
+        "summary": "已復制",
+        "detail": "{{label}}已復製到剪貼板。 "
+      },
+      "presetImported": {
+        "summary": "導入預設",
+        "detail": "已導入{{count}}模組。 "
+      },
+      "importFailed": {
+        "summary": "導入失敗",
+        "detail": "導入預設失敗。 "
+      },
+      "presetSaved": {
+        "summary": "預設已保存",
+        "detailFallback": "pz_modlist_settings.cfg 無法更新。 ",
+        "detailFailed": "無法更新 pz_modlist_settings.cfg。 "
+      },
+      "presetSaveNotice": {
+        "reordered": "按依賴關係規則重新排序 mod。 ",
+        "missingDependencies": "缺少依賴項：{{count}}。 ",
+        "missingWorkshopIds": "缺少創意工坊 ID：{{count}}。 ",
+        "incompatibilities": "不兼容性：{{count}}。 ",
+        "cycles": "檢測到的周期：{{count}}。 ",
+        "conflicts": "文件衝突：{{count}}。"
+      },
+      "presetDeleted": {
+        "summary": "預設已刪除",
+        "detailFallback": "pz_modlist_settings.cfg 無法更新。 ",
+        "detailFailed": "無法更新 pz_modlist_settings.cfg。 "
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "無法加載集合。驗證您的 Steam Web API 密鑰並重試。 "
+      },
+      "steamUnauthorized": "Steam 返回 401 未經授權。驗證您的 Steam Web API 密鑰。 ",
+      "queryFailed": "查詢 Steam 創意工坊集合失敗。 ",
+      "presetNotCreated": {
+        "summary": "未創建預設",
+        "detail": "未找到此集合的創意工坊項目。 "
+      },
+      "presetCreated": {
+        "summary": "已創建預設",
+        "detail": "集合預設已保存為“{{name}}”。 "
+      },
+      "presetUpdated": {
+        "summary": "預設已更新",
+        "detail": "集合預設“{{name}}”已刷新。 "
+      },
+      "presetRemoved": {
+        "summary": "預設已刪除",
+        "detail": "集合預設已被刪除。 "
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "無效的服務器名稱",
+        "detailMissing": "輸入服務器名稱。 ",
+        "detailInvalidChars": "服務器名稱包含無效的文件名字符。 ",
+        "detailTrailing": "服務器名稱不能以點或空格結尾。 "
+      },
+      "nameExists": {
+        "summary": "服務器名稱已存在",
+        "detail": "選擇唯一的服務器名稱。 "
+      },
+      "missingUserFolder": {
+        "summary": "缺少用戶文件夾",
+        "detail": "首先設置您的 Project Zomboid 用戶文件夾。 "
+      },
+      "createFailed": {
+        "summary": "創建失敗",
+        "detail": "創建服務器文件失敗。 "
+      },
+      "saved": {
+        "summary": "已保存",
+        "detail": "服務器文件已更新。 "
+      },
+      "saveFailed": {
+        "summary": "保存失敗",
+        "detail": "保存服務器文件失敗。"
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "以...開頭",
+    "contains": "包含",
+    "notContains": "不包含",
+    "endsWith": "以...結尾",
+    "equals": "等於",
+    "notEquals": "不等於",
+    "noFilter": "無篩選",
+    "lt": "小於",
+    "lte": "小於或等於",
+    "gt": "大於",
+    "gte": "大於或等於",
+    "dateIs": "日期是",
+    "dateIsNot": "日期不是",
+    "dateBefore": "日期早於",
+    "dateAfter": "日期晚於",
+    "clear": "清除",
+    "apply": "套用",
+    "matchAll": "全部符合",
+    "matchAny": "任一符合",
+    "addRule": "新增規則",
+    "removeRule": "移除規則"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overview",
+      "updateStatus": "Mods Update Status",
+      "topInstalled": "Top Installed Mods (by Subscriptions)",
+      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
+      "installsOverTime": "Mod Installs Over Time",
+      "largestMods": "Largest Mods (by File Size)",
+      "latestNews": "Latest Project Zomboid News",
+      "popularThisWeek": "Popular Mods This Week",
+      "latestMods": "Latest Mods",
+      "updatedMods": "Updated Mods"
+    },
+    "labels": {
+      "totalMods": "Total Mods",
+      "lastLocalSync": "Last Local Mod Sync",
+      "lastWorkshopSync": "Last Workshop Sync",
+      "subscribers": "subscribers",
+      "updated": "updated",
+      "created": "created",
+      "installedTooltip": "Installed locally",
+      "unknown": "Unknown",
+      "never": "Never"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
+      "noInstalledSubs": "No installed mods with subscription data are available.",
+      "noWorkshopUpdateInfo": "No Workshop update information is available.",
+      "noSizeData": "No mod file size data is available.",
+      "noNews": "No news items were found.",
+      "noPopularMods": "No popular mods were found.",
+      "noModsFound": "No mods were found.",
+      "noRecentUpdates": "No recently updated mods were found."
+    },
+    "fallbacks": {
+      "untitledItem": "Untitled item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods by install month",
+        "xAxis": "Month",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Outdated",
+        "upToDate": "Up to date"
+      },
+      "size": {
+        "label": "Workshop file size (bytes)",
+        "yAxis": "Size (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Log Inspector",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Types",
+      "typesPlaceholder": "Select types",
+      "maxEntries": "Max entries",
+      "from": "From",
+      "to": "To",
+      "livePolling": "Live polling",
+      "pollingEverySeconds": "Every (s)",
+      "searchMessage": "Search message",
+      "searchPlaceholder": "Search..."
+    },
+    "table": {
+      "pageReport": "Showing {first} to {last} of {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Type",
+      "message": "Message"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "OTHER"
+    },
+    "dialog": {
+      "logFilesFilter": "Log Files"
+    },
+    "errors": {
+      "noFilePath": "Set a file path to load logs.",
+      "loadFailed": "Failed to load log file.",
+      "clearFailed": "Failed to clear log file."
+    }
+  }
+}

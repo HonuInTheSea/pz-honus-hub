@@ -1,0 +1,51 @@
+<ng-container *transloco="let t">
+<div class="p-3">
+  <label
+    for="mod-tag-filter"
+    class="m-0"
+  >
+    {{ t('tagFilter.label') }}
+  </label>
+  <div class="mt-2 flex items-center gap-4 text-sm">
+    <span class="text-color-secondary">{{ t('tagFilter.matchLabel') }}</span>
+    <label class="flex items-center gap-2 m-0">
+      <input
+        type="radio"
+        name="mod-tag-match-mode"
+        [value]="'any'"
+        [(ngModel)]="matchMode"
+        (ngModelChange)="onMatchModeChange($event)"
+      />
+      {{ t('tagFilter.matchAny') }}
+    </label>
+    <label class="flex items-center gap-2 m-0">
+      <input
+        type="radio"
+        name="mod-tag-match-mode"
+        [value]="'all'"
+        [(ngModel)]="matchMode"
+        (ngModelChange)="onMatchModeChange($event)"
+      />
+      {{ t('tagFilter.matchAll') }}
+    </label>
+  </div>
+  <p-multiSelect
+    [options]="tagOptions"
+    [(ngModel)]="selectedValues"
+    optionLabel="label"
+    optionValue="value"
+    [filter]="true"
+    display="chip"
+    [showClear]="true"
+    [showToggleAll]="false"
+    placeholder="{{ t('tagFilter.placeholder') }}"
+    [fluid]="true"
+    [appendTo]="'self'"
+    [overlayOptions]="overlayOptions"
+    (onChange)="onSelectionChange()"
+    inputId="mod-tag-filter"
+    class="mod-tag-filter-multiselect w-full"
+  ></p-multiSelect>
+
+</div>
+</ng-container>

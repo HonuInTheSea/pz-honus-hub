@@ -1,0 +1,488 @@
+<p-toast position="top-center"></p-toast>
+<div class="p-3">
+  <p-card header="Client Presets">
+    <div class="flex justify-content-between align-items-center gap-2">
+      <div class="text-color-secondary">
+        Generate Mods= / WorkshopItems= / Map= lines, import JSON presets, or apply to a singleplayer save.
+      </div>
+      <div class="flex gap-2">
+        <input #presetImport type="file" accept=".json" class="hidden" (change)="importPresetJson($event)" />
+        <button
+          pButton
+          type="button"
+          label="Import Preset"
+          class="p-button-text"
+          icon="pi pi-download"
+          (click)="openPresetImport(presetImport)"
+        ></button>
+        <button pButton type="button" label="Refresh Mods" class="p-button-text" icon="pi pi-refresh" (click)="refreshModsFromDisk()"></button>
+        <button pButton type="button" label="New Preset" icon="pi pi-plus" (click)="openNew()"></button>
+      </div>
+    </div>
+  </p-card>
+
+  <p-card class="mt-3" header="Saved Client Presets">
+    <p-table [value]="clientLoadouts" [rows]="10" [paginator]="true" [rowsPerPageOptions]="[10,25,50]">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Name</th>
+          <th>Mods</th>
+          <th>Workshop</th>
+          <th>Modes</th>
+          <th style="width: 34rem"></th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-row>
+        <tr>
+          <td>{{ row.name }}</td>
+          <td>{{ row.modIds.length }}</td>
+          <td>{{ row.workshopIds.length }}</td>
+          <td>
+            <div class="flex flex-wrap gap-2">
+              @for (m of row.targetModes; track m) {
+                <p-tag [value]="m"></p-tag>
+              }
+            </div>
+          </td>
+          <td>
+            <div class="flex gap-2 justify-content-end">
+              <button pButton type="button" label="Edit" class="p-button-text" icon="pi pi-pencil" (click)="openEdit(row)"></button>
+              <button pButton type="button" label="Code" class="p-button-text" icon="pi pi-code" (click)="openCode(row)"></button>
+              <button pButton type="button" label="JSON" class="p-button-text" icon="pi pi-download" (click)="exportPresetJson(row)"></button>
+              <button pButton type="button" label="Apply" class="p-button-text" icon="pi pi-check" (click)="openSingleplayerApply(row)"></button>
+              <button pButton type="button" label="Delete" class="p-button-text p-button-danger" icon="pi pi-trash" (click)="deleteLoadout(row)"></button>
+            </div>
+          </td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-card>
+</div>
+
+<p-dialog header="Delete Preset" [(visible)]="deleteConfirmVisible" [modal]="true" [style]="{ width: '30rem', maxWidth: '95vw' }">
+  <div class="p-fluid">
+    <p class="mt-0">
+      Are you sure you want to delete the preset
+      <strong>{{ pendingDeleteLoadout?.name || '' }}</strong>?
+    </p>
+    <p class="text-color-secondary">This action cannot be undone.</p>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Cancel" class="p-button-text" (click)="cancelDeleteLoadout()"></button>
+      <button pButton type="button" label="Delete" icon="pi pi-trash" class="p-button-danger" (click)="confirmDeleteLoadout()"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog header="Edit Preset" [(visible)]="editorVisible" [modal]="true" [style]="{ width: '70rem', maxWidth: '95vw' }" [breakpoints]="{ '960px': '95vw' }">
+  @if (draft) {
+    <div class="p-fluid">
+      <div class="grid">
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label for="loadout-name">Name</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <input
+            id="loadout-name"
+            type="text"
+            pInputText
+            [(ngModel)]="draft.name"
+            autocomplete="off"
+            style="width: 100%"
+          />
+        </div>
+
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label for="loadout-modes">Target modes</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <p-multiSelect
+            id="loadout-modes"
+            [options]="availableModes"
+            [(ngModel)]="draft.targetModes"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Select modes"
+            display="chip"
+            [appendTo]="'body'"
+            panelStyleClass="pz-loadout-multiselect-panel"
+            class="w-full"
+          ></p-multiSelect>
+        </div>
+
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label for="loadout-desc">Description</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <textarea
+            id="loadout-desc"
+            pTextarea
+            rows="3"
+            [(ngModel)]="draft.description"
+            style="width: 100%"
+          ></textarea>
+        </div>
+
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label for="loadout-mods">Mods (modId)</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <p-multiSelect
+            id="loadout-mods"
+            [options]="modIdOptions"
+            [(ngModel)]="draft.modIds"
+            placeholder="Select mods"
+            display="chip"
+            [filter]="true"
+            [appendTo]="'body'"
+            panelStyleClass="pz-loadout-multiselect-panel"
+            class="w-full"
+          ></p-multiSelect>
+          <div class="text-sm text-color-secondary mt-2">
+            Workshop IDs auto-derive from your locally scanned Workshop mods when available. Available mods: {{ availableModOptionsCount }}. In preset: {{ draftModEntryCount }}.
+          </div>
+          @if (missingDraftModIds.length) {
+            <p-message
+              severity="warn"
+              [text]="'Missing mods: ' + missingDraftModIds.length + ' unique (' + missingDraftModEntriesCount + ' entries)'"
+              styleClass="mt-2"
+            ></p-message>
+            <div class="mt-2">
+              <button
+                pButton
+                type="button"
+                label="Remove Missing"
+                icon="pi pi-times"
+                class="p-button-text"
+                (click)="removeMissingModsAndSave()"
+              ></button>
+            </div>
+            <div
+              class="mt-2 text-sm"
+              style="max-height: 8rem; overflow: auto; font-family: var(--font-family-monospace, monospace)"
+            >
+              @for (item of missingDraftModIdCounts; track item.modId) {
+                <div>{{ item.modId }} (x{{ item.count }})</div>
+              }
+            </div>
+          }
+        </div>
+
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label for="loadout-disabled">Disabled mods</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <p-multiSelect
+            id="loadout-disabled"
+            [options]="draftModIdOptions"
+            [(ngModel)]="draft.disabledModIds"
+            optionLabel="label"
+            optionValue="value"
+            placeholder="Excluded from code generation"
+            display="chip"
+            [filter]="true"
+            [appendTo]="'body'"
+            panelStyleClass="pz-loadout-multiselect-panel"
+            class="w-full"
+          ></p-multiSelect>
+          <div class="text-sm text-color-secondary mt-2">
+            Disabled mods remain in the preset but are skipped in Mods=, WorkshopItems=, and Map= output.
+          </div>
+        </div>
+
+        <div class="col-12 md:col-3 flex align-items-center justify-content-end text-right">
+          <label>Map folders (Map=)</label>
+        </div>
+        <div class="col-12 md:col-9">
+          <div class="flex flex-column gap-2">
+            @for (entry of draft.mapEntries; track entry; let i = $index) {
+              <div class="flex flex-column md:flex-row gap-2 align-items-center">
+                <input
+                  type="text"
+                  pInputText
+                  [(ngModel)]="entry.modId"
+                  placeholder="Mod ID"
+                  class="flex-1"
+                />
+                <input
+                  type="text"
+                  pInputText
+                  [(ngModel)]="entry.mapFolder"
+                  placeholder="Map folder"
+                  class="flex-1"
+                />
+                <button
+                  pButton
+                  type="button"
+                  icon="pi pi-times"
+                  class="p-button-text p-button-danger"
+                  (click)="removeMapEntry(i)"
+                ></button>
+              </div>
+            }
+          </div>
+          <div class="flex justify-content-start mt-2">
+            <button pButton type="button" label="Add Map Folder" icon="pi pi-plus" class="p-button-text" (click)="addMapEntry()"></button>
+          </div>
+          <div class="text-sm text-color-secondary mt-2">
+            Map folders are used to generate Map= output. Match the folder names used by Project Zomboid.
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-content-between align-items-center mt-3">
+        <div class="flex gap-2">
+          <button pButton type="button" label="Analyze" icon="pi pi-search" class="p-button-secondary" [loading]="analyzing" (click)="analyze()"></button>
+          <button pButton type="button" label="Open Folder" icon="pi pi-external-link" class="p-button-text" (click)="openScannedModsFolder()"></button>
+        </div>
+        <div class="flex gap-2">
+          <button pButton type="button" label="Cancel" class="p-button-text" (click)="editorVisible = false"></button>
+          <button pButton type="button" label="Save" icon="pi pi-save" (click)="saveDraft()"></button>
+        </div>
+      </div>
+
+      @if (analysis) {
+        <div class="mt-4 text-left">
+          @if (analysis.warnings.length) {
+            @for (w of analysis.warnings; track w) {
+              <p-message severity="warn" [text]="w"></p-message>
+            }
+          }
+
+          @if (analysis.missingModIds.length || analysis.cycles.length || analysis.incompatiblePairs.length || analysis.conflicts.length) {
+            <p-message severity="info" text="Issues detected. Review below before exporting."></p-message>
+          } @else {
+            <p-message severity="success" text="No critical issues detected for this preset."></p-message>
+          }
+
+          <div class="grid mt-2">
+            <div class="col-12 md:col-6">
+              <p-card header="Resolved Order">
+                <div class="text-sm text-color-secondary">Ordered mod IDs (best-effort topological sort).</div>
+                <div class="mt-2" style="max-height: 14rem; overflow: auto; font-family: var(--font-family-monospace, monospace)">
+                  @for (id of analysis.orderedModIds; track id) {
+                    <div>{{ id }}</div>
+                  }
+                </div>
+              </p-card>
+            </div>
+            <div class="col-12 md:col-6">
+              <p-card header="Problems">
+                @if (analysis.missingModIds.length) {
+                  <div class="mb-2">
+                    <div class="font-medium mb-1">Missing dependencies</div>
+                    <div class="text-sm" style="font-family: var(--font-family-monospace, monospace)">
+                      @for (id of analysis.missingModIds; track id) {
+                        <div>{{ id }}</div>
+                      }
+                    </div>
+                  </div>
+                }
+                @if (analysis.missingWorkshopIds.length) {
+                  <div class="mb-2">
+                    <div class="font-medium mb-1">Not installed (no workshop ID)</div>
+                    <div class="text-sm" style="font-family: var(--font-family-monospace, monospace)">
+                      @for (id of analysis.missingWorkshopIds; track id) {
+                        <div>{{ id }}</div>
+                      }
+                    </div>
+                  </div>
+                }
+                @if (analysis.cycles.length) {
+                  <div class="mb-2">
+                    <div class="font-medium mb-1">Cycles</div>
+                    <div class="text-sm">
+                      @for (cycle of analysis.cycles; track cycle) {
+                        <div style="font-family: var(--font-family-monospace, monospace)">
+                          {{ cycle.join(' -> ') }}
+                        </div>
+                      }
+                    </div>
+                  </div>
+                }
+                @if (analysis.incompatiblePairs.length) {
+                  <div class="mb-2">
+                    <div class="font-medium mb-1">Incompatible</div>
+                    <div class="text-sm" style="font-family: var(--font-family-monospace, monospace)">
+                      @for (pair of analysis.incompatiblePairs; track pair.a + '|' + pair.b) {
+                        <div>{{ pair.a }} x {{ pair.b }}</div>
+                      }
+                    </div>
+                  </div>
+                }
+                @if (analysis.conflicts.length) {
+                  <div class="mb-2">
+                    <div class="font-medium mb-1">File conflicts (sample)</div>
+                    <div class="text-sm" style="max-height: 10rem; overflow: auto; font-family: var(--font-family-monospace, monospace)">
+                      @for (c of analysis.conflicts; track c.relativePath) {
+                        <div>
+                          {{ c.relativePath }}: {{ conflictModsDisplay(c) }}
+                        </div>
+                      }
+                    </div>
+                  </div>
+                }
+              </p-card>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</p-dialog>
+
+<p-dialog header="Confirm Save" [(visible)]="confirmVisible" [modal]="true" [style]="{ width: '36rem', maxWidth: '95vw' }">
+  <div class="p-fluid">
+    <p class="mt-0">{{ confirmMessage }}</p>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Cancel" class="p-button-text" (click)="cancelConfirm()"></button>
+      <button pButton type="button" label="Save" icon="pi pi-save" (click)="confirmSave()"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog header="Generated Code" [(visible)]="codeVisible" [modal]="true" [style]="{ width: '70rem', maxWidth: '95vw' }" [breakpoints]="{ '960px': '95vw' }">
+  @if (codeVisible) {
+    <div class="p-fluid">
+      <div class="grid">
+        <div class="col-12">
+          <label>Mods=</label>
+          <textarea pTextarea rows="4" [ngModel]="codeModsLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+          <div class="flex justify-content-end mt-2">
+            <button pButton type="button" label="Copy Mods" icon="pi pi-copy" class="p-button-text" (click)="copyCodeLine(codeModsLine, 'Mods=')"></button>
+          </div>
+        </div>
+        <div class="col-12">
+          <label>WorkshopItems=</label>
+          <textarea pTextarea rows="4" [ngModel]="codeWorkshopLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+          <div class="flex justify-content-end mt-2">
+            <button pButton type="button" label="Copy WorkshopItems" icon="pi pi-copy" class="p-button-text" (click)="copyCodeLine(codeWorkshopLine, 'WorkshopItems=')"></button>
+          </div>
+        </div>
+        @if (codeMapLine) {
+          <div class="col-12">
+            <label>Map=</label>
+            <textarea pTextarea rows="3" [ngModel]="codeMapLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+            <div class="flex justify-content-end mt-2">
+              <button pButton type="button" label="Copy Map" icon="pi pi-copy" class="p-button-text" (click)="copyCodeLine(codeMapLine, 'Map=')"></button>
+            </div>
+          </div>
+        }
+      </div>
+      <div class="flex justify-content-end gap-2 mt-3">
+        <button pButton type="button" label="Close" class="p-button-text" (click)="codeVisible = false"></button>
+      </div>
+    </div>
+  }
+</p-dialog>
+
+<p-dialog header="Export Server Preset" [(visible)]="exportVisible" [modal]="true" [style]="{ width: '70rem', maxWidth: '95vw' }" [breakpoints]="{ '960px': '95vw' }">
+  @if (exportVisible) {
+    <div class="p-fluid">
+      <div class="grid">
+        <div class="col-12 md:col-6">
+          <label for="export-user-dir">Zomboid user folder</label>
+          <input id="export-user-dir" type="text" pInputText [(ngModel)]="exportZomboidUserDir" autocomplete="off" />
+          <div class="text-sm text-color-secondary mt-2">
+            Typical path:
+            <span style="font-family: var(--font-family-monospace, monospace)">{{ userDirExample }}</span>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <label for="export-preset">Preset name</label>
+          <input id="export-preset" type="text" pInputText [(ngModel)]="exportPresetName" autocomplete="off" />
+          <div class="text-sm text-color-secondary mt-2">
+            Writes to: <span style="font-family: var(--font-family-monospace, monospace)">{{ exportTargetPath || (exportZomboidUserDir + '\\\\Server\\\\' + exportPresetName + '.ini') }}</span>
+          </div>
+        </div>
+        <div class="col-12">
+          <label>INI preview</label>
+          <textarea pTextarea rows="12" [ngModel]="exportPlanText" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+        </div>
+        <div class="col-12 md:col-6">
+          <label>Quick line: Mods</label>
+          <textarea pTextarea rows="4" [ngModel]="exportModsLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+        </div>
+        <div class="col-12 md:col-6">
+          <label>Quick line: WorkshopItems</label>
+          <textarea pTextarea rows="4" [ngModel]="exportWorkshopLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+        </div>
+        <div class="col-12 md:col-6">
+          <label>Quick line: Map</label>
+          <textarea pTextarea rows="4" [ngModel]="exportMapLine" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+        </div>
+        <div class="col-12">
+          <label>Preset manifest (JSON)</label>
+          <textarea pTextarea rows="6" [ngModel]="exportManifestJson" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+        </div>
+      </div>
+      <div class="flex justify-content-end gap-2 mt-3">
+        <button pButton type="button" label="Close" class="p-button-text" (click)="exportVisible = false"></button>
+        <button
+          pButton
+          type="button"
+          label="Write Preset"
+          icon="pi pi-check"
+          [loading]="exporting"
+          [disabled]="!exportingLoadout"
+          (click)="exportingLoadout && writeExport(exportingLoadout)"
+        ></button>
+      </div>
+    </div>
+  }
+</p-dialog>
+
+<p-dialog header="Apply To Singleplayer Save" [(visible)]="spVisible" [modal]="true" [style]="{ width: '70rem', maxWidth: '95vw' }" [breakpoints]="{ '960px': '95vw' }">
+  @if (spVisible) {
+    <div class="p-fluid">
+      <div class="grid">
+        <div class="col-12 md:col-6">
+          <label for="sp-user-dir">Zomboid user folder</label>
+          <input
+            id="sp-user-dir"
+            type="text"
+            pInputText
+            [(ngModel)]="spZomboidUserDir"
+            (ngModelChange)="refreshSingleplayerPlan()"
+            autocomplete="off"
+          />
+        </div>
+        <div class="col-12 md:col-6">
+          <label for="sp-save-rel">Save folder (relative to user folder)</label>
+          <div class="flex gap-2">
+            <input
+              id="sp-save-rel"
+              type="text"
+              pInputText
+              [(ngModel)]="spSaveRelPath"
+              (ngModelChange)="refreshSingleplayerPlan()"
+              autocomplete="off"
+            />
+            <button pButton type="button" label="Browse" icon="pi pi-folder-open" class="p-button-text" (click)="browseSpSaveFolder()"></button>
+          </div>
+          <div class="text-sm text-color-secondary mt-2">
+            Writes: <span style="font-family: var(--font-family-monospace, monospace)">{{ spTargetPath || '' }}</span>
+          </div>
+        </div>
+        <div class="col-12">
+          <label>map_mods.ini preview</label>
+          <textarea pTextarea rows="8" [ngModel]="spPlanText" [readonly]="true" style="font-family: var(--font-family-monospace, monospace)"></textarea>
+          <div class="text-sm text-color-secondary mt-2">
+            Creates `map_mods.ini.bak` if an existing `map_mods.ini` is present.
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-content-end gap-2 mt-3">
+        <button pButton type="button" label="Close" class="p-button-text" (click)="spVisible = false"></button>
+        <button
+          pButton
+          type="button"
+          label="Apply"
+          icon="pi pi-check"
+          [loading]="applyingSp"
+          [disabled]="!exportingLoadout"
+          (click)="exportingLoadout && applySingleplayer(exportingLoadout)"
+        ></button>
+      </div>
+    </div>
+  }
+</p-dialog>

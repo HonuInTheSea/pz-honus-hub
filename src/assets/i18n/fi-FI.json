@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "Peruuttaa",
+    "save": "Tallentaa",
+    "browse": "Selaa",
+    "yes": "Kyllä",
+    "no": "Ei",
+    "loadingContent": "Sisältöä ladataan...",
+    "next": "Seuraava",
+    "back": "Takaisin",
+    "finish": "Valmis"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Kieli",
+    "languagePlaceholder": "Valitse kieli",
+    "sections": {
+      "hub": "HUB",
+      "modFilters": "MOD-SUODATTIMET",
+      "modCollectionFilters": "MOD KERÄYKSEN SUODATIMET",
+      "actions": "TOIMENPITEET",
+      "getStarted": "Aloita",
+      "resources": "Resurssit",
+      "dangerZone": "Vaaravyöhyke"
+    },
+    "items": {
+      "dashboard": "Kojelauta",
+      "logInspector": "Tukkien tarkastaja",
+      "configureFolders": "Määritä kansiot",
+      "setSteamApiKey": "Aseta Steam API Key",
+      "syncHonu": "Synkronoi Honun Mod Info QoL",
+      "syncLocal": "Synkronoi paikalliset moditiedot",
+      "syncWorkshop": "Synkronoi Steam Workshopin kanssa",
+      "changelog": "Muutosloki",
+      "documentation": "Dokumentaatio",
+      "viewSource": "Näytä lähde",
+      "projectZomboid": "Projekti Zomboid",
+      "pzWiki": "Virallinen Project Zomboid Wiki",
+      "b41Map": "B41 kartta",
+      "b42Map": "B42 kartta",
+      "workshop": "Project Zomboid Steam Workshop",
+      "subreddit": "r/projektizomboid",
+      "discord": "Projekti Zomboid",
+      "moddingDiscord": "PZ Modding -yhteisö",
+      "mappingDiscord": "Epävirallinen PZ-kartoitus",
+      "honuWorkshop": "HonuInTheSean höyrytyöpaja",
+      "supportKofi": "Tuki Ko-fissa",
+      "resetApp": "Nollaa sovellus",
+      "resetAppTooltip": "Palauta ikkunan asetukset ja poista tallennetut tiedot",
+      "myMods": "Omat modit"
+    },
+    "filters": {
+      "adultLabel": "Sisältää aikuisille suunnattua sisältöä",
+      "adultTooltip": "Suodata modit, joissa Steamin metatiedot ilmoittavat ehkä_iappropriate_sexin todeksi.",
+      "rulesLabel": "On Säännöt",
+      "rulesTooltip": "Mod sisältää mod.info-tiedostossaan vaativan, yhteensopimattoman, loadModAfter, loadModBefore-käskyn",
+      "missingSteamLabel": "Steam-data puuttuu",
+      "missingSteamTooltip": "Mod on saatettu merkitty yksityiseksi tai poistettu Steam Workshopista",
+      "outdatedLabel": "Vanhentuneet modit",
+      "outdatedTooltip": "Modin tilaus on ehkä peruutettava ja uusittava saadaksesi uusimman version Steam Workshopista"
+    },
+    "collections": {
+      "searchLabel": "Hae kokoelmista",
+      "searchPlaceholder": "Hae kokoelmia",
+      "sortLabel": "Lajitteluperuste",
+      "periodLabel": "Ajan kuluessa",
+      "tagsLabel": "Tunnisteet",
+      "tagsPlaceholder": "Valitse tunnisteet",
+      "sortMostPopular": "Suosituin",
+      "sortMostRecent": "Viimeisin",
+      "sortLastUpdated": "Viimeksi päivitetty",
+      "periodToday": "Tänään",
+      "periodWeek": "Yksi viikko",
+      "periodThirtyDays": "Kolmekymmentä päivää",
+      "periodThreeMonths": "Kolme kuukautta",
+      "periodSixMonths": "Kuusi kuukautta",
+      "periodYear": "Yksi vuosi"
+    },
+    "presetsUnavailable": "Aseta Project Zomboid -käyttäjäkansiosi ja/tai määritä ensin esiasetukset.",
+    "steamApi": {
+      "dialogTitle": "Aseta Steam Web API Key",
+      "dialogIntro": "Anna Steam Web API -avain. Tämä avain on tallennettu paikallisesti koneellesi.",
+      "keyLabel": "Steam Web API -avain",
+      "needKey": "Tarvitsetko avaimen?",
+      "getKeyLink": "Hanki Steam Web API -avain",
+      "helpButton": "Steam Web API -avaimen luominen",
+      "helpTitle": "Steam Web API -avaimen luominen",
+      "helpCardTitle": "Kuinka rekisteröidä Steam Web API -avain",
+      "helpCardBody": "Tämä opas tarjoaa vaiheittaisen ohjeen Steam Web API -avaimen rekisteröintiin. Steam Web API Key mahdollistaa sovellusten turvallisen pääsyn tiettyihin Steam-tilisi tietoihin, kuten pelikirjastoihin tai tilastoihin, kun annat niille luvan.",
+      "step1Title": "1. Edellytykset",
+      "step1Intro": "Ennen kuin voit rekisteröidä Steam Web API -avaimen, varmista, että:",
+      "step1Bullet1": "Sinulla on hyvässä kunnossa oleva aktiivinen Steam-tili, joka on suojattu Steam Guardilla (sähköposti- tai mobiilitunnistus).",
+      "step1Bullet2": "Tililläsi on vähintään yksi ostettu peli. Upouudet tai tyhjät tilit eivät voi saada API-avainta.",
+      "step1Bullet3": "Käytät luotettavaa laitetta ja verkkoa (älä koskaan rekisteröi tai katso avaimesi julkisella tai jaetulla tietokoneella).",
+      "step2Title": "2. Tärkeitä turvallisuushuomautuksia",
+      "step2Intro": "Steam Web API -avaimesi on arkaluontoista tietoa. Kuka tahansa, jolla on avaimesi, voi tehdä API-pyyntöjä puolestasi. Käsittele sitä kuin salasanaa:",
+      "step2Bullet1": "Älä koskaan jaa avaintasi muiden ihmisten kanssa äläkä koskaan julkaise sitä julkisesti (esimerkiksi foorumeilla tai GitHubissa).",
+      "step2Bullet2": "Liitä avaimesi vain sellaisiin työkaluihin tai verkkosivustoihin, joihin luotat täysin.",
+      "step2Bullet3": "Jos epäilet, että avaimesi on paljastunut, peruuta se välittömästi ja luo uusi.",
+      "step3Title": "3. Vaihe vaiheelta: Steam Web API -avaimen rekisteröinti",
+      "step3_1Title": "Vaihe 1 – Kirjaudu Steamiin",
+      "step3_1Bullet1": "Avaa verkkoselain ja siirry osoitteeseen <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Napsauta oikeassa yläkulmassa <strong>Kirjaudu sisään</strong>.",
+      "step3_1Bullet3": "Anna Steam-tilisi nimi ja salasana.",
+      "step3_1Bullet4": "Suorita pyydettäessä Steam Guard -vahvistus.",
+      "step3_2Title": "Vaihe 2 - Avaa Steam Web API Key -sivu",
+      "step3_2Bullet1": "Kun olet kirjautunut sisään, avaa Steam Web API Key -rekisteröintisivu: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Sivulla näkyy lyhyt kuvaus Steam Web API:sta ja <strong>\"Rekisteröidy uusi Steam Web API Key\"</strong> -lomake.",
+      "step3_3Title": "Vaihe 3 - Anna verkkotunnuksen nimi ja hyväksy ehdot",
+      "step3_3Intro": "Ilmoittautumislomakkeella:",
+      "step3_3Bullet1": "Kirjoita <strong>\"Domain Name\"</strong> -kenttään avainta käyttävän verkkosivuston tai palvelun verkkotunnus. <ul class=\"p-ml-3\"><li>Jos sinulla ei ole verkkotunnusta, voit kirjoittaa paikkamerkin, kuten <code>localhost</code>, <code>127.0.0.1</code> tai <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Lue Steam Web APIn käyttöehdot.",
+      "step3_3Bullet3": "Valitse valintaruutu vahvistaaksesi, että hyväksyt ehdot.",
+      "step3_3Bullet4": "Lähetä lomake napsauttamalla <strong>Rekisteröidy</strong>-painiketta.",
+      "step3_4Title": "Vaihe 4 - Tarkastele ja kopioi uusi Steam Web API -avain",
+      "step3_4Intro": "Onnistuneen rekisteröinnin jälkeen:",
+      "step3_4Bullet1": "Sivu latautuu uudelleen ja näyttää Steam Web API -avaimesi yläosassa.",
+      "step3_4Bullet2": "Avain on pitkä merkkijono kirjaimia ja numeroita (esimerkiksi: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Valitse koko avain ja kopioi se (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Säilytä se turvallisessa paikassa, kuten salasanan hallinnassa tai salatussa muistiinpanosovelluksessa.",
+      "step4Title": "4. Perusesimerkki Steam Web API -avaimen käyttämisestä",
+      "step4Intro": "Kun sinulla on avain, voit kutsua Steam Web API -päätepisteitä lisäämällä sen URL-osoitteeseen parametrina <code>key=</code>. Esimerkiksi yksinkertainen HTTP-pyyntö voi näyttää tältä (korvaa <code>YOURKEYHERE</code> oikealla avaimellasi):",
+      "step4Outro": "Tarkat URL-osoitteet ja parametrit riippuvat käyttämästäsi Steam Web API -liittymästä. Tarkista aina tarvitsemasi päätepisteet virallisesta dokumentaatiosta.",
+      "step5Title": "5. Steam Web API -avaimen peruuttaminen tai luominen uudelleen",
+      "step5Intro": "Jos et enää tarvitse Steam Web API -avainta tai uskot, että se on vaarantunut, sinun tulee peruuttaa se:",
+      "step5Bullet1": "Kirjaudu sisään Steam-tilillesi, jos et ole jo kirjautunut sisään.",
+      "step5Bullet2": "Avaa <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> uudelleen.",
+      "step5Bullet3": "Napsauta <strong>\"Peruuta Steam Web API Key\"</strong> -painiketta.",
+      "step5Bullet4": "Jos tarvitset myöhemmin uuden avaimen, palaa samalle sivulle ja rekisteröidy uudelleen yllä olevien ohjeiden mukaisesti.",
+      "step6Title": "6. Vianmääritysvihjeitä",
+      "step6Intro": "Saatat nähdä jonkin seuraavista ongelmista yrittäessäsi rekisteröidä avainta:",
+      "step6Bullet1": "<strong>Viesti:</strong> <em>\"Sinulle myönnetään pääsy Steam Web API -avaimiin, kun Steam-tililläsi on pelejä.\"</em> Tässä tapauksessa tilisi ei vielä täytä vähimmäisvaatimuksia. Osta vähintään yksi peli Steamista, odota, että ostos on tehty, ja yritä myöhemmin uudelleen.",
+      "step6Bullet2": "<strong>Sivu pyytää jatkuvasti kirjautumaan sisään</strong> – Varmista, että evästeet ja JavaScript ovat käytössä selaimessasi ja että kirjaudut sisään oikealla tilillä.",
+      "step6Bullet3": "<strong>Turvallisuushuolet</strong> – Jos jokin kolmannen osapuolen sivusto tai henkilö pyytää avaimesi etkä ole varma miksi, älä jaa sitä. Peru avaimesi ja vaihda Steam-salasanasi, jos uskot, että se on paljastunut.",
+      "footerNote": "Sinulla on nyt rekisteröity Steam Web API -avain ja perustiedot sen turvallisesta hallinnasta. Pidä tämä sivu kätevänä viitteenä, kun sinun täytyy rekisteröidä, käyttää tai peruuttaa avaimesi."
+    },
+    "folders": {
+      "dialogTitle": "Määritä kansiot"
+    }
+  },
+  "changelog": {
+    "title": "Muutosloki",
+    "events": {
+      "initialRelease": {
+        "title": "Ensijulkaisu",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Honu's Project Zomboid Hubin ensimmäinen julkinen versio."
+      }
+    }
+  },
+  "docs": {
+    "title": "Dokumentaatio",
+    "intro": "Honu's Hub auttaa sinua selaamaan, tarkastamaan ja hallitsemaan paikallista Project Zomboidia työpöytäintegraation avulla Taurin kautta.",
+    "toc": {
+      "aria": "Sisällysluettelo",
+      "title": "Sisällysluettelo",
+      "overview": "Yleiskatsaus",
+      "workflow": "Työnkulku",
+      "data": "Sovelluksen käyttämät tiedot",
+      "features": "Ominaisuudet",
+      "mediaPlayer": "Mediasoitin",
+      "logInspector": "Lokin tarkastaja",
+      "folderSetup": "Kansion asetukset",
+      "tauri": "Desktop (Tauri) integraatio",
+      "privacy": "Yksityisyys ja tallennustila",
+      "troubleshooting": "Vianetsintä",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "Yleiskatsaus",
+      "body": "Sovellus skannaa valitun modihakemiston, johtaa metatiedot yleisistä Project Zomboid -modikonventioista ja esittää kaiken taulukossa ja yhteenvedon kojelaudassa."
+    },
+    "workflow": {
+      "title": "Työnkulku",
+      "intro": "Seuraa tätä päästä päähän -kulkua yhdistääksesi kansiosi, synkronoidaksesi metatiedot ja luodaksesi Honu Mod Info QoL -tulosteen.",
+      "step1": {
+        "title": "Karttakansiot",
+        "body": "Avaa <strong>Määritä kansiot</strong> sivupalkin toiminnoista ja aseta Project Zomboid -pelisi, työpajasi ja käyttäjähakemistosi.",
+        "screenshot": "Kuvakaappaus: Määritä kansiot"
+      },
+      "step2": {
+        "title": "Luo/kirjoita Steam Workshop -avain",
+        "body": "Liitä avain <strong>Set Steam API Key</strong> -toiminnolla, jotta sovellus voi noutaa Workshopin metatiedot.",
+        "screenshot": "Kuvakaappaus: Aseta Steam API Key"
+      },
+      "step3": {
+        "title": "Synkronoi paikalliset mod-tiedot",
+        "body": "Suorita <strong>Sync Local Mod Data</strong> tarkistaaksesi Workshop-kansiosi ja luodaksesi paikallisen modiluettelon.",
+        "screenshot": "Kuvakaappaus: Synkronoi paikalliset moditiedot"
+      },
+      "step4": {
+        "title": "Synkronoi Steam Workshopin kanssa",
+        "body": "Suorita <strong>Synkronoi Steam Workshopin kanssa</strong> saadaksesi työpajojen otsikot, kirjoittajat, koot ja ylimääräiset metatiedot.",
+        "screenshot": "Kuvakaappaus: Synkronoi Steam Workshopin kanssa"
+      },
+      "step5": {
+        "title": "Synkronoi Honun Mod Info QoL",
+        "body": "Luo/päivitä <code>honus_miqol_db.lua</code> Project Zomboid -käyttäjäkansiossasi <strong>Sync Honun Mod Info QoL:n avulla</strong>.",
+        "screenshot": "Kuvakaappaus: Synkronoi Honun Mod Info QoL"
+      }
+    },
+    "data": {
+      "title": "Sovelluksen käyttämät tiedot",
+      "intro": "Sovellus rakentaa mod-luettelon levyllä olevista tiedoista.",
+      "bullet1": "<strong>Mod-kansion polku</strong> – ratkaistu absoluuttinen polku mod-hakemistoon.",
+      "bullet2": "<strong>Mod id</strong> – poimittu modin metatiedoista, jos niitä on saatavilla (yleensä osoitteesta <code>mod.info</code>).",
+      "bullet3": "<strong>Nimi</strong> – metatiedoista ja/tai kansion nimeämisestä johdettu näyttönimi.",
+      "bullet4": "<strong>Workshop-tunnus (valinnainen)</strong> – jos se havaitaan ja se on numeerinen, sovellus ottaa käyttöön Steam Workshop -linkkipainikkeen.",
+      "bullet5": "<strong>Tila-/terveysilmaisimet</strong> – perussignaalit, kuten puuttuvat tai puutteelliset metatiedot (jos havaittavissa).",
+      "outro": "Kaikki modit eivät sisällä täydellisiä metatietoja. Kun kentät puuttuvat, käyttöliittymä näyttää parhaan mahdollisen arvot ja saattaa poistaa käytöstä tietyt tiedot vaativat toiminnot (esimerkiksi Steam-linkin)."
+    },
+    "features": {
+      "title": "Ominaisuudet",
+      "bullet1": "<strong>Moditaulukko</strong> – luettelee havaitut modit avainkentillä (nimi, tunnus, työpajalinkki, jos saatavilla, ja polku).",
+      "bullet2": "<strong>Rivin tiedot</strong> – Laajenna rivi nähdäksesi lisätietoja modista (jos saatavilla).",
+      "bullet3": "<strong>Avaa Steamissa</strong> – avaa Workshop-sivun oletusselaimessasi modeille, joilla on kelvollinen työpajatunnus.",
+      "bullet4": "<strong>Avaa kansio</strong> – avaa valitun mod-kansion tiedostojen hallinnassa.",
+      "mediaPlayer": "<strong>Mediasoitin</strong> – toista Project Zomboid -musiikkikappaleita sivupalkista. Katso <a routerLink=\"/documentation\" fragment=\"media-player\">Mediasoitin</a>.",
+      "logInspectorPrefix": "<strong>Lokin tarkastaja</strong> – lataa ja suodata lokitiedostoja (kuten <code>console.txt</code>) löytääksesi virheet ja varoitukset nopeasti. Katso",
+      "logInspectorLink": "Lokin tarkastaja",
+      "bullet6": "<strong>Hallintapaneeli</strong> – näyttää pikatilastot (esimerkiksi havaittujen modien kokonaismäärä) ja muita korkean tason indikaattoreita."
+    },
+    "mediaPlayer": {
+      "title": "Mediasoitin",
+      "intro": "Sivupalkki sisältää kevyen musiikkisoittimen, joka voi etsiä Project Zomboid -ääniraitoja (OGG) ja toistaa niitä sovelluksessa.",
+      "bullet1": "<strong>Soittolista</strong> – näyttää havaitut kappaleet ja perussisällönkuvaustiedot (nimi/artisti/albumi, jos saatavilla).",
+      "bullet2": "<strong>Toisto</strong> – toisto/tauko plus edellinen/seuraava kappale.",
+      "bullet3": "<strong>Haku + äänenvoimakkuus</strong> – selaa kappaletta ja säädä äänenvoimakkuutta/mykistä."
+    },
+    "logInspector": {
+      "title": "Lokin tarkastaja",
+      "intro": "Lokitarkistus auttaa sinua avaamaan ja suodattamaan lokitiedostoja (esimerkiksi <code>console.txt</code>) kaatumisten, mod-latausongelmien ja palvelimen käynnistysongelmien vianmääritykseen.",
+      "bullet1": "<strong>Valitse tiedosto</strong> – selaa mitä tahansa <code>.txt</code>- tai <code>.log</code>-tiedostoa tai käytä oletuspolkua, jos se on saatavilla.",
+      "bullet2": "<strong>Suodatin</strong> – valitse lokitasot (ERROR/WARN/LOG/DEBUG/TRACE), aseta päivämäärä/aikaikkuna ja rajoita näytettävien merkintöjen enimmäismäärää.",
+      "bullet3": "<strong>Haku</strong> – suodata merkinnät tekstin perusteella jäsennetyn viestin ja raakalähderivin yli.",
+      "bullet4": "<strong>Live äänestys</strong> – valinnaisesti päivitä ajastimella nähdäksesi lokien päivittymisen pelin/palvelimen ollessa käynnissä.",
+      "bullet5": "<strong>Tyhjennä</strong> – katkaise valittu lokitiedosto (käytä varoen)."
+    },
+    "folderSetup": {
+      "title": "Kansion asetukset",
+      "step1": "Avaa <strong>Modit</strong>-sivu vasemmasta sivupalkista (kohdassa <em>KOTI</em>).",
+      "step2": "Valitse <em>TOIMINNAT</em>-valikon <strong>Browse Mods Folder</strong> -toiminnolla Project Zomboid -modiointihakemistosi (yleensä <code>projectzomboid/mods</code>).",
+      "step3": "Valinnan jälkeen sovellus skannaa hakemiston ja täyttää modeemitaulukon ja kojelaudan.",
+      "tip": "Vinkki: Jos vaihdat konetta tai siirrät modihakemistoasi, selaa uudelleen tallennetun polun päivittämiseksi."
+    },
+    "tauri": {
+      "title": "Desktop (Tauri) integraatio",
+      "bullet1": "<strong>Tiedostojärjestelmän käyttöoikeus</strong> – hakemistojen selaus ja tarkistus suoritetaan työpöydän kuoren kautta.",
+      "bullet2": "<strong>Avaa ulkoiset linkit</strong> – Steam Workshop -linkit avautuvat käyttöjärjestelmän oletusselaimella.",
+      "bullet3": "<strong>Avaa kansiot</strong> – käynnistää käyttöjärjestelmän tiedostojen hallinnan, joka keskittyy mod-hakemistoon."
+    },
+    "privacy": {
+      "title": "Yksityisyys ja tallennustila",
+      "bullet1": "<strong>Paikalliset tiedot</strong> – valitun mods-kansion polku ja skannaustulokset voidaan tallentaa välimuistiin paikallisesti käyttökokemuksen parantamiseksi."
+    },
+    "troubleshooting": {
+      "title": "Vianetsintä",
+      "bullet1": "<strong>Skannauksen jälkeen ei näy modauksia</strong> – varmista, että valittu kansio on todellinen Project Zomboid -modihakemistosi ja että se sisältää mod-alikansioita.",
+      "bullet2": "<strong>Steam-linkit on poistettu käytöstä</strong> – varmista, että modilla on kelvollinen numeerinen työpajatunnus (kaikki modit eivät ole työpajapohjaisia).",
+      "bullet3": "<strong>Avaa kansio ei tee mitään</strong> – varmista, että Tauri-taustajärjestelmä on käynnissä ja että käyttöjärjestelmän käyttöoikeudet sallivat tiedostonhallinnan avaamisen."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "Muokkaako sovellus modejani?",
+      "a1": "Ei. Ydintyönkulku on vain luku -tilassa: se tarkistaa kansiot ja näyttää metatiedot. Toiminnot, kuten kansioiden avaaminen tai työpajalinkit, eivät muokkaa mod-tiedostoja.",
+      "q2": "Miksi modista puuttuu tietoja?",
+      "a2": "Modit vaihtelevat sen suhteen, kuinka johdonmukaisesti ne sisältävät metatietoja. Jos kentät, kuten id tai workshop id, puuttuvat, sovellus näyttää, mitä se voi ja poistaa käytöstä ominaisuuksia, jotka perustuvat näihin kenttiin."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Nimi",
+      "modId": "Mod ID",
+      "author": "Tekijä",
+      "version": "Mod-versio",
+      "versionMin": "Peliversion minimiversio",
+      "versionMax": "Pelin enimmäisversio",
+      "url": "URL",
+      "description": "Kuvaus",
+      "tags": "Tagit",
+      "noTags": "Ei tunnisteita",
+      "packs": "Pakkauksia",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "työpajan otsikko",
+      "workshopCreator": "työpajan luoja",
+      "fileSize": "Tiedoston koko",
+      "timeCreated": "Luomisaika",
+      "timeUpdated": "Päivitysaika",
+      "workshopViews": "Työpajanäkymät",
+      "workshopSubscriptions": "työpajatilaukset",
+      "adultContent": "Sisältää aikuisille suunnatun sisällön"
+    },
+    "links": {
+      "requiredMods": "Tarvittavat modifikaatiot",
+      "loadAfter": "Lataa modi ennen",
+      "loadBefore": "Lataa modit ennen",
+      "incompatibleMods": "Epäyhteensopivat modifikaatiot",
+      "requiredBy": "Vaadittu",
+      "incompatibleWith": "Ei yhteensopiva"
+    },
+    "buttons": {
+      "visitWorkshop": "Siirry Steam Workshopin sivulle",
+      "authorWorkshop": "Tekijän Steam Workshopin sivu",
+      "openFolder": "Avaa mod-kansio"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Tämä kenttä on vain luku -muotoinen ja täytetty osoitteesta mod.info.",
+      "steamReadonly": "Tämä kenttä on vain luku -muotoinen ja täytetty Steam Workshopista.",
+      "modMissing": "Seuraavaa moda ei löytynyt",
+      "syncToActivate": "Synkronoi Steam Workshopin kanssa aktivointia varten",
+      "modFolderUnavailable": "Mod-kansiopolku ei ole käytettävissä."
+    }
+  },
+  "tags": {
+    "animals": "Eläimet",
+    "audio": "Ääni",
+    "balance": "Balance",
+    "build_41": "Rakennus 41",
+    "build_42": "Rakennus 42",
+    "build_40": "Rakennus 40",
+    "buildings": "Rakennukset",
+    "clothing_armor": "Vaatteet/panssari",
+    "farming": "Maatalous",
+    "food": "Ruoka",
+    "framework": "Framework",
+    "hardmode": "Hardmode",
+    "interface": "Liitäntä",
+    "items": "Kohteet",
+    "language_translation": "Kieli/Käännös",
+    "literature": "Kirjallisuus",
+    "map": "Kartta",
+    "military": "Armeija",
+    "misc": "Sekalaiset",
+    "models": "Mallit",
+    "multiplayer": "Moninpeli",
+    "pop_culture": "Popkulttuuri",
+    "qol": "QoL",
+    "realistic": "Realistinen",
+    "silly_fun": "Tyhmä/hauska",
+    "skills": "Taidot",
+    "textures": "Tektuurit",
+    "traits": "Ominaisuudet",
+    "vehicles": "Ajoneuvot",
+    "weapons": "Aseet",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Tunnisteet",
+    "matchLabel": "Vastaa",
+    "matchAny": "TAI",
+    "matchAll": "JA",
+    "placeholder": "Valitse tunnisteet"
+  },
+  "modsTable": {
+    "clearFilters": "Tyhjennä",
+    "searchPlaceholder": "Hakusana",
+    "detailsTitle": "Moditiedot",
+    "columns": {
+      "name": "Nimi",
+      "author": "Tekijä",
+      "workshopId": "työpajan tunnus",
+      "lastModified": "Viimeisin muokkauspäivä"
+    },
+    "filters": {
+      "name": "Hae nimellä",
+      "author": "Hae tekijän mukaan",
+      "workshopId": "Hae työpajan tunnuksella",
+      "date": "Suodatuspäivämäärä"
+    }
+  },
+  "folders": {
+    "title": "Aseta vaaditut kansiot",
+    "description": "Näitä kansioita käytetään modien tarkistamiseen ja Project Zomboid -asennustietojen lukemiseen.",
+    "gameDirLabel": "Project Zomboid -pelikansio",
+    "workshopDirLabel": "Paikalliset modit (Steam Workshop) -kansio",
+    "userDirLabel": "Project Zomboid -käyttäjäkansio (valinnainen)",
+    "userDirNote": "Käytetään palvelimen esiasetusten ja (valinnaisten) lisäsovelluskohteiden viemiseen."
+  },
+  "modsPage": {
+    "toastHelp": "Mistä löydän tämän?",
+    "workshopPrompt": {
+      "title": "Hae Steam Workshopin tiedot",
+      "body": "Haluatko hakea uusimmat metatiedot Steam Workshopista modeillesi?",
+      "alwaysFetch": "Hae aina automaattisesti kysymättä"
+    },
+    "loadingLocal": "Skannataan paikallisia moditietoja...",
+    "loadingWorkshop": "Haetaan Steam Workshopin tietoja...",
+    "loading": "Ladataan tietoja..."
+  },
+  "onboarding": {
+    "title": "Aloita",
+    "steps": {
+      "welcome": "Tervetuloa",
+      "folders": "Kansiot",
+      "steamKey": "Steam API -avain",
+      "tips": "Vinkit"
+    },
+    "welcome": {
+      "title": "Tervetuloa Project Zomboid Mod Manageriin",
+      "body": "Tämä nopea käyttöönotto auttaa yhdistämään kansiosi, lisäämään Steam Web API -avaimen ja aloittamaan modien synkronoinnin.",
+      "bullet1": "Valitse Project Zomboid -kansiosi.",
+      "bullet2": "Lisää Steam Web API -avaimesi Workshop-metatietoja varten.",
+      "bullet3": "Viimeistele käyttöönotto ja aloita modien hallinta."
+    },
+    "tips": {
+      "title": "Pikavinkit",
+      "bullet1": "Voit päivittää kansiot ja Steam API -avaimesi milloin tahansa sivupalkista.",
+      "bullet2": "Suorita Synkronoi paikalliset moditiedot ennen Workshop-metatietojen synkronointia.",
+      "bullet3": "Käytä modisuodattimia rajataksesi listaa nopeasti."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod Info QoL Sync epäonnistui",
+        "missingUserDetail": "Project Zomboid -käyttäjäkansiota ei ole määritetty.",
+        "successSummary": "Honun Mod Info QoL synkronoitu",
+        "successCreatedDetail": "honus_miqol_db.lua luotu.",
+        "successUpdatedDetail": "honus_miqol_db.lua päivitetty.",
+        "failedDetail": "Honu Mod Info QoL:n synkronointi epäonnistui."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Tietojen siirto",
+        "detail": "Paikallisia moditietojasi päivitetään. Uusi tarkistus on käynnissä riippuvuuksien päivittämiseksi."
+      },
+      "syncInProgress": {
+        "summary": "Synkronointi käynnissä",
+        "detail": "Synkronointi on jo käynnissä. Odota sen valmistumista."
+      },
+      "localSyncComplete": {
+        "summary": "Paikallinen Mod Sync valmis",
+        "detail": "Paikalliset mod-tiedot on päivitetty onnistuneesti."
+      },
+      "localSyncFailed": {
+        "summary": "Paikallinen modin synkronointi epäonnistui",
+        "detail": "Paikallisten modien synkronointi epäonnistui."
+      },
+      "invalidDirectory": {
+        "summary": "Virheellinen hakemisto",
+        "detail": "Valittu kansio ei näytä olevan kelvollinen Project Zomboid Workshop -hakemisto (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API -avain vaaditaan",
+        "detail": "Käytä valikon kohtaa \"Set Steam API Key\" ja yritä sitten synkronoida uudelleen."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Työpajan metatietoja ei palautettu; mitään ei pelastettu."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop osittain synkronoitu",
+        "detail": "Vastaanotettu {{received}} {{total}} työpajatuotteesta. Puuttuvat tunnukset: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Workshop synkronoitu",
+        "detail": "Työpajan metatiedot on tallennettu onnistuneesti."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API luvaton",
+        "detail": "Steam palautti 401 Luvaton. Vahvista Steam Web API -avain ja yritä uudelleen."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Steam Workshopin metatietojen synkronointi epäonnistui."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Esiasetettu nimi on jo olemassa",
+        "detail": "Valitse toinen nimi kohteelle \"{{name}}\"."
+      },
+      "removeFailed": {
+        "summary": "Poistaminen epäonnistui",
+        "missingUserDetail": "Project Zomboid -käyttäjähakemistoa ei ole määritetty.",
+        "missingModDetail": "Mod ID:tä ei löytynyt mods.txt-tiedostosta.",
+        "failedDetail": "Modin poistaminen esiasetuksesta epäonnistui."
+      },
+      "removed": {
+        "summary": "Poistettu",
+        "detailMultiple": "Valitut modit poistettiin esiasetuksesta.",
+        "detailSingle": "Mod poistettiin esiasetuksesta."
+      },
+      "presetUpdated": {
+        "summary": "Esiasetus päivitetty",
+        "detailFallback": "pz_modlist_settings.cfg:tä ei voitu päivittää.",
+        "detailFailed": "pz_modlist_settings.cfg:n päivitys epäonnistui."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Esiasetettu nimi on jo olemassa",
+        "detail": "Valitse toinen nimi kohteelle \"{{name}}\"."
+      },
+      "noModsToExport": {
+        "summary": "Ei modeja viedä",
+        "detailCode": "Lisää vähintään yksi modi ennen koodin luomista.",
+        "detailPreset": "Lisää vähintään yksi modi ennen esiasetuksen tallentamista."
+      },
+      "copied": {
+        "summary": "Kopioitu",
+        "detail": "{{label}} kopioitu leikepöydälle."
+      },
+      "presetImported": {
+        "summary": "Esiasetus tuotu",
+        "detail": "Tuotu {{count}} modia."
+      },
+      "importFailed": {
+        "summary": "Tuonti epäonnistui",
+        "detail": "Esiasetuksen tuonti epäonnistui."
+      },
+      "presetSaved": {
+        "summary": "Esiasetus tallennettu",
+        "detailFallback": "pz_modlist_settings.cfg:tä ei voitu päivittää.",
+        "detailFailed": "pz_modlist_settings.cfg:n päivitys epäonnistui."
+      },
+      "presetSaveNotice": {
+        "reordered": "Uudelleenjärjestetyt modit riippuvuussääntöjen mukaan.",
+        "missingDependencies": "Puuttuvat riippuvuudet: {{count}}.",
+        "missingWorkshopIds": "Puuttuvat työpajatunnukset: {{count}}.",
+        "incompatibilities": "Yhteensopimattomuudet: {{count}}.",
+        "cycles": "Havaitut jaksot: {{count}}.",
+        "conflicts": "Tiedostoristiriidat: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Esiasetus poistettu",
+        "detailFallback": "pz_modlist_settings.cfg:tä ei voitu päivittää.",
+        "detailFailed": "pz_modlist_settings.cfg:n päivitys epäonnistui."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Kokoelmia ei voi ladata. Vahvista Steam Web API -avain ja yritä uudelleen."
+      },
+      "steamUnauthorized": "Steam palautti 401 Luvaton. Vahvista Steam Web API -avaimesi.",
+      "queryFailed": "Steam Workshop -kokoelmien kysely epäonnistui.",
+      "presetNotCreated": {
+        "summary": "Esiasetusta ei luotu",
+        "detail": "Tästä kokoelmasta ei löytynyt työpajatuotteita."
+      },
+      "presetCreated": {
+        "summary": "Esiasetus luotu",
+        "detail": "Kokoelman esiasetus tallennettu nimellä \"{{name}}\"."
+      },
+      "presetUpdated": {
+        "summary": "Esiasetus päivitetty",
+        "detail": "Kokoelman esiasetus \"{{name}}\" päivitetty."
+      },
+      "presetRemoved": {
+        "summary": "Esiasetus poistettu",
+        "detail": "Kokoelman esiasetus on poistettu."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Virheellinen palvelimen nimi",
+        "detailMissing": "Anna palvelimen nimi.",
+        "detailInvalidChars": "Palvelimen nimi sisältää virheellisiä tiedostonimimerkkejä.",
+        "detailTrailing": "Palvelimen nimi ei voi päättyä pisteeseen tai välilyöntiin."
+      },
+      "nameExists": {
+        "summary": "Palvelimen nimi on jo olemassa",
+        "detail": "Valitse yksilöllinen palvelimen nimi."
+      },
+      "missingUserFolder": {
+        "summary": "Käyttäjäkansio puuttuu",
+        "detail": "Aseta ensin Project Zomboid -käyttäjäkansio."
+      },
+      "createFailed": {
+        "summary": "Luominen epäonnistui",
+        "detail": "Palvelintiedostojen luominen epäonnistui."
+      },
+      "saved": {
+        "summary": "Tallennettu",
+        "detail": "Palvelintiedostot päivitetty."
+      },
+      "saveFailed": {
+        "summary": "Tallennus epäonnistui",
+        "detail": "Palvelintiedostojen tallennus epäonnistui."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Alkaa",
+    "contains": "Sisältää",
+    "notContains": "Ei sisällä",
+    "endsWith": "Päättyy",
+    "equals": "Yhtä suuri kuin",
+    "notEquals": "Ei yhtä suuri kuin",
+    "noFilter": "Ei suodatinta",
+    "lt": "Pienempi kuin",
+    "lte": "Pienempi tai yhtä suuri kuin",
+    "gt": "Suurempi kuin",
+    "gte": "Suurempi tai yhtä suuri kuin",
+    "dateIs": "Päivämäärä on",
+    "dateIsNot": "Päivämäärä ei ole",
+    "dateBefore": "Päivämäärä ennen",
+    "dateAfter": "Päivämäärä jälkeen",
+    "clear": "Tyhjennä",
+    "apply": "Käytä",
+    "matchAll": "Täsmää kaikkiin",
+    "matchAny": "Täsmää mihin tahansa",
+    "addRule": "Lisää sääntö",
+    "removeRule": "Poista sääntö"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Yleiskatsaus",
+      "updateStatus": "Modit-päivityksen tila",
+      "topInstalled": "Suosituimmat asennetut modit (tilausten mukaan)",
+      "lastUpdatedInstalled": "Asennetut modit, jotka päivitettiin viimeksi",
+      "installsOverTime": "Modiasennukset ajan myötä",
+      "largestMods": "Suurimmat modit (tiedoston koon mukaan)",
+      "latestNews": "Viimeisimmät Project Zomboid -uutiset",
+      "popularThisWeek": "Suositut modit tällä viikolla",
+      "latestMods": "Uusimmat modit",
+      "updatedMods": "Päivitetyt modit"
+    },
+    "labels": {
+      "totalMods": "Moditioita yhteensä",
+      "lastLocalSync": "Viimeisin paikallinen modin synkronointi",
+      "lastWorkshopSync": "Viimeinen työpajan synkronointi",
+      "subscribers": "tilaajia",
+      "updated": "päivitetty",
+      "created": "luotu",
+      "installedTooltip": "Asennettu paikallisesti",
+      "unknown": "Tuntematon",
+      "never": "Ei koskaan"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API ei vastannut. Yritä myöhemmin uudelleen.",
+      "noInstalledSubs": "Tilaustiedoilla varustettuja asennettuja modeja ei ole saatavilla.",
+      "noWorkshopUpdateInfo": "Workshop-päivitystietoja ei ole saatavilla.",
+      "noSizeData": "Mod-tiedoston kokotietoja ei ole saatavilla.",
+      "noNews": "Uutisia ei löytynyt.",
+      "noPopularMods": "Suosittuja modeja ei löytynyt.",
+      "noModsFound": "Modioita ei löytynyt.",
+      "noRecentUpdates": "Äskettäin päivitettyjä modeja ei löytynyt."
+    },
+    "fallbacks": {
+      "untitledItem": "Nimetön kohde"
+    },
+    "charts": {
+      "installs": {
+        "label": "Modit asennuskuukauden mukaan",
+        "xAxis": "Kuukausi",
+        "yAxis": "Modit"
+      },
+      "status": {
+        "outdated": "Vanhentunut",
+        "upToDate": "Ajan tasalla"
+      },
+      "size": {
+        "label": "Työpajatiedoston koko (tavuina)",
+        "yAxis": "Koko (tavua)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Tukkien tarkastaja",
+    "fields": {
+      "logFile": "Lokitiedosto",
+      "types": "Tyypit",
+      "typesPlaceholder": "Valitse tyypit",
+      "maxEntries": "Max merkintöjä",
+      "from": "From",
+      "to": "Vastaanottaja",
+      "livePolling": "Suora äänestys",
+      "pollingEverySeconds": "Joka (s)",
+      "searchMessage": "Hae viestiä",
+      "searchPlaceholder": "Haku..."
+    },
+    "table": {
+      "pageReport": "Näytetään {first} - {last} / {totalRecords}",
+      "timestamp": "Aikaleima",
+      "type": "Tyyppi",
+      "message": "Viesti"
+    },
+    "levels": {
+      "error": "VIRHE",
+      "warn": "VAROITTAA",
+      "log": "LOK",
+      "debug": "DEBUG",
+      "trace": "JÄLJITTÄÄ",
+      "other": "MUUTA"
+    },
+    "dialog": {
+      "logFilesFilter": "Lokitiedostot"
+    },
+    "errors": {
+      "noFilePath": "Aseta tiedostopolku lokien lataamista varten.",
+      "loadFailed": "Lokitiedoston lataaminen epäonnistui.",
+      "clearFailed": "Lokitiedoston tyhjennys epäonnistui."
+    }
+  }
+}

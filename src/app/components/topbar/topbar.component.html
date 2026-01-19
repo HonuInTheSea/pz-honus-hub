@@ -1,0 +1,19 @@
+<header class="topbar">
+  <div class="topbar-title">PZ Mod Manager</div>
+  <div class="topbar-actions">
+    <button
+      pButton
+      type="button"
+      class="p-button-text theme-toggle"
+      (click)="toggleTheme()"
+    >
+      <i
+        [ngClass]="{
+          pi: true,
+          'pi-moon': !layout.isDarkTheme(),
+          'pi-sun': layout.isDarkTheme()
+        }"
+      ></i>
+    </button>
+  </div>
+</header>

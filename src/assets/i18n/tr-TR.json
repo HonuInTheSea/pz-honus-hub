@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "İptal etmek",
+    "save": "Kaydetmek",
+    "browse": "Gözat",
+    "yes": "Evet",
+    "no": "Hayır",
+    "loadingContent": "İçerik yükleniyor...",
+    "next": "İleri",
+    "back": "Geri",
+    "finish": "Bitir"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "Dil",
+    "languagePlaceholder": "Bir dil seçin",
+    "sections": {
+      "hub": "MERKEZ",
+      "modFilters": "MOD FİLTRELERİ",
+      "modCollectionFilters": "MOD KOLEKSİYONU FİLTRELERİ",
+      "actions": "EYLEMLER",
+      "getStarted": "Başlayın",
+      "resources": "Kaynaklar",
+      "dangerZone": "Tehlikeli Bölge"
+    },
+    "items": {
+      "dashboard": "Kontrol Paneli",
+      "logInspector": "Günlük Denetçisi",
+      "configureFolders": "Klasörleri Yapılandır",
+      "setSteamApiKey": "Steam API Anahtarını Ayarla",
+      "syncHonu": "Honu'nun Mod Bilgisi QoL'sini senkronize edin",
+      "syncLocal": "Yerel Mod Verilerini Senkronize Et",
+      "syncWorkshop": "Steam Atölyesi ile Senkronizasyon",
+      "changelog": "Değişiklik günlüğü",
+      "documentation": "Dokümantasyon",
+      "viewSource": "Kaynağı Görüntüle",
+      "projectZomboid": "Zomboid Projesi",
+      "pzWiki": "Resmi Proje Zomboid Wiki",
+      "b41Map": "B41 Haritası",
+      "b42Map": "B42 Haritası",
+      "workshop": "Project Zomboid Steam Atölyesi",
+      "subreddit": "r/projezomboid",
+      "discord": "Zomboid Projesi",
+      "moddingDiscord": "PZ Modlama Topluluğu",
+      "mappingDiscord": "Resmi olmayan PZ Haritalaması",
+      "honuWorkshop": "HonuInTheSea'nin Steam Atölyesi",
+      "supportKofi": "Ko-fi desteği",
+      "resetApp": "Uygulamayı Sıfırla",
+      "resetAppTooltip": "Pencere ayarlarını sıfırlayın ve depolanan verileri silin",
+      "myMods": "Modlarım"
+    },
+    "filters": {
+      "adultLabel": "Yetişkinlere Uygun İçerik Var",
+      "adultTooltip": "Steam meta verilerinin belki_inuygun_cinsiyet'i doğru olarak bildirdiği modları filtreleyin.",
+      "rulesLabel": "Kuralları Var",
+      "rulesTooltip": "Mod, mod.info dosyasında zorunlu, uyumsuz, loadModAfter, loadModBefore ifadesi içeriyor",
+      "missingSteamLabel": "Eksik Steam Verileri",
+      "missingSteamTooltip": "Mod özel olarak işaretlenmiş veya Steam Atölyesinden kaldırılmış olabilir",
+      "outdatedLabel": "Eski Modlar",
+      "outdatedTooltip": "Steam Atölyesi'nden en son sürümü almak için modun aboneliğinden çıkılıp yeniden abone olunması gerekebilir"
+    },
+    "collections": {
+      "searchLabel": "Koleksiyonlarda Ara",
+      "searchPlaceholder": "Koleksiyonlarda arama yapın",
+      "sortLabel": "Göre sırala",
+      "periodLabel": "Zaman dilimi içinde",
+      "tagsLabel": "Etiketler",
+      "tagsPlaceholder": "Etiketleri seçin",
+      "sortMostPopular": "En Popüler",
+      "sortMostRecent": "En Yeni",
+      "sortLastUpdated": "Son Güncelleme",
+      "periodToday": "Bugün",
+      "periodWeek": "Bir Hafta",
+      "periodThirtyDays": "Otuz Gün",
+      "periodThreeMonths": "Üç Ay",
+      "periodSixMonths": "Altı Ay",
+      "periodYear": "Bir Yıl"
+    },
+    "presetsUnavailable": "Project Zomboid kullanıcı klasörünüzü ayarlayın ve/veya önce ön ayarları tanımlayın.",
+    "steamApi": {
+      "dialogTitle": "Steam Web API Anahtarını Ayarla",
+      "dialogIntro": "Steam Web API Anahtarınızı girin. Bu anahtar makinenizde yerel olarak saklanır.",
+      "keyLabel": "Steam Web API Anahtarı",
+      "needKey": "Bir anahtara mı ihtiyacınız var?",
+      "getKeyLink": "Steam Web API Anahtarınızı Alın",
+      "helpButton": "Steam Web API Anahtarı nasıl oluşturulur?",
+      "helpTitle": "Steam Web API Anahtarı nasıl oluşturulur?",
+      "helpCardTitle": "Steam Web API Anahtarı Nasıl Kaydedilir",
+      "helpCardBody": "Bu kılavuz, Steam Web API Anahtarını kaydettirmek için adım adım izlenecek yol sağlar. Steam Web API Anahtarı, uygulamalara izin verdiğinizde uygulamaların Steam hesabınızdaki oyun kitaplıkları veya istatistikler gibi belirli verilere güvenli bir şekilde erişmesine olanak tanır.",
+      "step1Title": "1. Önkoşullar",
+      "step1Intro": "Steam Web API Anahtarını kaydetmeden önce şunlardan emin olun:",
+      "step1Bullet1": "Steam Guard (e-posta veya mobil kimlik doğrulayıcı) ile güvence altına alınmış, iyi durumda, aktif bir Steam hesabınız var.",
+      "step1Bullet2": "Hesabınızda satın alınan en az bir oyun var. Yeni veya boş hesaplar API anahtarı alamaz.",
+      "step1Bullet3": "Güvenilir bir cihaz ve ağ kullanıyorsunuz (anahtarınızı asla halka açık veya paylaşılan bir bilgisayara kaydetmeyin veya görüntülemeyin).",
+      "step2Title": "2. Önemli Güvenlik Notları",
+      "step2Intro": "Steam Web API Anahtarınız hassas bilgilerdir. Anahtarınıza sahip olan herkes sizin adınıza API isteklerinde bulunabilir. Buna bir şifre gibi davranın:",
+      "step2Bullet1": "Anahtarınızı asla başkalarıyla paylaşmayın ve asla herkese açık olarak (örneğin forumlarda veya GitHub'da) paylaşmayın.",
+      "step2Bullet2": "Anahtarınızı yalnızca tamamen güvendiğiniz araçlara veya web sitelerine yapıştırın.",
+      "step2Bullet3": "Anahtarınızın açığa çıktığından şüpheleniyorsanız hemen iptal edin ve yeni bir anahtar oluşturun.",
+      "step3Title": "3. Adım Adım: Steam Web API Anahtarını Kaydetme",
+      "step3_1Title": "Adım 1 - Steam'de oturum açın",
+      "step3_1Bullet1": "Web tarayıcınızı açın ve <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a> adresine gidin.",
+      "step3_1Bullet2": "Sağ üst köşedeki <strong>\"Giriş Yap\"</strong>'ı tıklayın.",
+      "step3_1Bullet3": "Steam hesap adınızı ve şifrenizi girin.",
+      "step3_1Bullet4": "İstenirse Steam Guard doğrulamasını tamamlayın.",
+      "step3_2Title": "Adım 2 - Steam Web API Anahtarı sayfasını açın",
+      "step3_2Bullet1": "Oturum açtığınızda Steam Web API Anahtarı kayıt sayfasını açın: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Sayfada Steam Web API'sinin kısa bir açıklaması ve <strong>\"Yeni bir Steam Web API Anahtarı için kaydolun\"</strong> başlıklı bir form görüntülenecektir.",
+      "step3_3Title": "3. Adım - Bir alan adı girin ve şartları kabul edin",
+      "step3_3Intro": "Kayıt formunda:",
+      "step3_3Bullet1": "<strong>\"Alan Adı\"</strong> alanına, anahtarı kullanacak web sitesinin veya hizmetin alan adını girin. <ul class=\"p-ml-3\"><li>Alan adınız yoksa <code>localhost</code>, <code>127.0.0.1</code> veya <code>example.com</code> gibi bir yer tutucu girebilirsiniz.</li></ul>",
+      "step3_3Bullet2": "Steam Web API Kullanım Koşullarını okuyun.",
+      "step3_3Bullet3": "Şartları kabul ettiğinizi onaylamak için onay kutusunu işaretleyin.",
+      "step3_3Bullet4": "Formu göndermek için <strong>\"Kaydol\"</strong> düğmesini tıklayın.",
+      "step3_4Title": "Adım 4 - Yeni Steam Web API Anahtarınızı görüntüleyin ve kopyalayın",
+      "step3_4Intro": "Başarılı bir kayıttan sonra:",
+      "step3_4Bullet1": "Sayfa yeniden yüklenir ve Steam Web API Anahtarınızı üst tarafa yakın bir yerde gösterir.",
+      "step3_4Bullet2": "Anahtar, uzun bir harf ve rakam dizisidir (örneğin: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Anahtarın tamamını seçin ve kopyalayın (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Şifre yöneticisi veya şifrelenmiş notlar uygulaması gibi güvenli bir yerde saklayın.",
+      "step4Title": "4. Steam Web API Anahtarınızı Kullanmaya İlişkin Temel Örnek",
+      "step4Intro": "Bir anahtarınız olduğunda, onu URL'ye bir <code>key=</code> parametresi olarak ekleyerek Steam Web API uç noktalarını çağırabilirsiniz. Örneğin, basit bir HTTP isteği şu şekilde görünebilir (<code>YOURKEYHERE</code> değerini gerçek anahtarınızla değiştirin):",
+      "step4Outro": "Tam URL'ler ve parametreler, hangi Steam Web API arayüzünü kullandığınıza bağlıdır. İhtiyacınız olan uç noktalar için her zaman resmi belgelere bakın.",
+      "step5Title": "5. Steam Web API Anahtarınızı İptal Etme veya Yenileme",
+      "step5Intro": "Artık Steam Web API Anahtarınıza ihtiyacınız yoksa veya anahtarın ele geçirildiğini düşünüyorsanız onu iptal etmelisiniz:",
+      "step5Bullet1": "Henüz giriş yapmadıysanız Steam hesabınızda oturum açın.",
+      "step5Bullet2": "<a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>'i tekrar açın.",
+      "step5Bullet3": "<strong>\"Steam Web API Anahtarımı İptal Et\"</strong> etiketli düğmeye tıklayın.",
+      "step5Bullet4": "Daha sonra yeni bir anahtara ihtiyacınız olursa aynı sayfaya dönün ve yukarıdaki adımları kullanarak tekrar kaydolun.",
+      "step6Title": "6. Sorun Giderme İpuçları",
+      "step6Intro": "Bir anahtarı kaydetmeye çalışırken aşağıdaki sorunlardan birini görebilirsiniz:",
+      "step6Bullet1": "<strong>Mesaj:</strong> <em>\"Steam hesabınızda oyunlar olduğunda size Steam Web API anahtarlarına erişim verilecektir.\"</em> Bu durumda, hesabınız henüz minimum gereksinimleri karşılamıyor. Steam'den en az bir oyun satın alın, satın alma işleminin tamamlanmasını bekleyin ve daha sonra tekrar deneyin.",
+      "step6Bullet2": "<strong>Sayfa sizden sürekli olarak oturum açmanızı istiyor</strong> - Tarayıcınızda çerezlerin ve JavaScript'in etkinleştirildiğinden ve doğru hesapla oturum açtığınızdan emin olun.",
+      "step6Bullet3": "<strong>Güvenlik endişeleri</strong> - Herhangi bir üçüncü taraf site veya kişi anahtarınızı isterse ve bunun nedeninden emin değilseniz onu paylaşmayın. Anahtarınızın açığa çıktığını düşünüyorsanız, anahtarınızı iptal edin ve Steam şifrenizi değiştirin.",
+      "footerNote": "Artık kayıtlı bir Steam Web API Anahtarına ve onu güvenli bir şekilde nasıl yöneteceğinize dair temel bir anlayışa sahipsiniz. Anahtarınızı kaydettirmeniz, kullanmanız veya iptal etmeniz gerektiğinde bu sayfayı referans olarak el altında bulundurun."
+    },
+    "folders": {
+      "dialogTitle": "Klasörleri Yapılandır"
+    }
+  },
+  "changelog": {
+    "title": "Değişiklik günlüğü",
+    "events": {
+      "initialRelease": {
+        "title": "İlk sürüm",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Honu's Project Zomboid Hub'un ilk genel sürümü."
+      }
+    }
+  },
+  "docs": {
+    "title": "Dokümantasyon",
+    "intro": "Honu's Hub, Tauri aracılığıyla masaüstü entegrasyonuyla yerel Project Zomboid'inize göz atmanıza, incelemenize ve yönetmenize yardımcı olur.",
+    "toc": {
+      "aria": "İçindekiler",
+      "title": "İçindekiler",
+      "overview": "Genel Bakış",
+      "workflow": "İş akışı",
+      "data": "Uygulamanın kullandığı veriler",
+      "features": "Özellikler",
+      "mediaPlayer": "Medya oynatıcı",
+      "logInspector": "Günlük denetçisi",
+      "folderSetup": "Klasör kurulumu",
+      "tauri": "Masaüstü (Tauri) entegrasyonu",
+      "privacy": "Gizlilik ve depolama",
+      "troubleshooting": "Sorun giderme",
+      "faq": "SSS"
+    },
+    "overview": {
+      "title": "Genel Bakış",
+      "body": "Uygulama, seçilen bir mod dizinini tarar, ortak Project Zomboid mod sözleşmelerinden meta verileri türetir ve her şeyi bir tablo ve özet kontrol panelinde sunar."
+    },
+    "workflow": {
+      "title": "İş akışı",
+      "intro": "Klasörlerinizi bağlamak, meta verileri senkronize etmek ve Honu Mod Bilgisi QoL çıktısını oluşturmak için bu uçtan uca akışı izleyin.",
+      "step1": {
+        "title": "Klasörleri haritala",
+        "body": "Kenar çubuğu eylemlerinden <strong>Klasörleri Yapılandır</strong>'ı açın ve Project Zomboid oyununuzu, atölyenizi ve kullanıcı dizinlerinizi ayarlayın.",
+        "screenshot": "Ekran Görüntüsü: Klasörleri Yapılandır"
+      },
+      "step2": {
+        "title": "Steam Atölyesi anahtarı oluştur/gir",
+        "body": "Uygulamanın Atölye meta verilerini alabilmesi için anahtarınızı yapıştırmak üzere <strong>Steam API Anahtarını Ayarla</strong>'yı kullanın.",
+        "screenshot": "Ekran görüntüsü: Steam API Anahtarını Ayarlayın"
+      },
+      "step3": {
+        "title": "Yerel mod verilerini senkronize edin",
+        "body": "Atölye klasörünüzü taramak ve yerel mod listesini oluşturmak için <strong>Yerel Mod Verilerini Senkronize Et</strong>'i çalıştırın.",
+        "screenshot": "Ekran Görüntüsü: Yerel Mod Verilerini Eşitle"
+      },
+      "step4": {
+        "title": "Steam Atölyesi ile Senkronizasyon",
+        "body": "Atölye başlıklarını, yazarları, boyutları ve ekstra meta verileri almak için <strong>Steam Atölyesi ile Senkronizasyon</strong>'u çalıştırın.",
+        "screenshot": "Ekran Görüntüsü: Steam Atölyesi ile Senkronizasyon"
+      },
+      "step5": {
+        "title": "Honu'nun Mod Bilgisi QoL'sini senkronize edin",
+        "body": "Project Zomboid kullanıcı klasörünüzde <code>honus_miqol_db.lua</code> oluşturmak/güncellemek için <strong>Honu'nun Mod Bilgisi QoL'sini Eşitle</strong>'yi kullanın.",
+        "screenshot": "Ekran görüntüsü: Honu'nun Mod Bilgisi QoL'sini senkronize edin"
+      }
+    },
+    "data": {
+      "title": "Uygulamanın kullandığı veriler",
+      "intro": "Uygulama, diskte bulunan bilgilerden bir mod listesi oluşturur.",
+      "bullet1": "<strong>Mod klasörü yolu</strong> - mod dizinine giden mutlak yol çözümlendi.",
+      "bullet2": "<strong>Mod kimliği</strong> - mevcut olduğunda mod meta verilerinden çıkarılır (genellikle <code>mod.info</code>'dan).",
+      "bullet3": "<strong>Ad</strong> - meta verilerden ve/veya klasör adından türetilen görünen ad.",
+      "bullet4": "<strong>Atölye kimliği (isteğe bağlı)</strong> - algılanırsa ve sayısalsa uygulama, Steam Atölyesi bağlantı düğmesini etkinleştirir.",
+      "bullet5": "<strong>Durum/sağlık göstergeleri</strong> - eksik veya tamamlanmamış meta veriler (tespit edilebildiği durumlarda) gibi temel sinyaller.",
+      "outro": "Tüm modlar tam meta veriler içermez. Alanlar eksik olduğunda, kullanıcı arayüzü en iyi çaba değerlerini görüntüler ve belirli veriler gerektiren eylemleri (örneğin Steam bağlantısı) devre dışı bırakabilir."
+    },
+    "features": {
+      "title": "Özellikler",
+      "bullet1": "<strong>Modlar tablosu</strong> - algılanan modları önemli alanlarla (ad, kimlik, varsa atölye bağlantısı ve yol) listeler.",
+      "bullet2": "<strong>Satır ayrıntıları</strong> - bir mod hakkında daha fazla bilgi görmek için satırı genişletin (mevcut olduğunda).",
+      "bullet3": "<strong>Steam'de Aç</strong> - geçerli bir atölye kimliğine sahip modlar için varsayılan tarayıcınızda Atölye sayfasını açar.",
+      "bullet4": "<strong>Klasörü aç</strong> - seçilen mod klasörünü dosya gezgininizde açar.",
+      "mediaPlayer": "<strong>Medya oynatıcı</strong> - Kenar çubuğundan Project Zomboid müzik parçalarını oynatın. <a routerLink=\"/documentation\" fragment=\"media-player\">Medya oynatıcı</a>'ya bakın.",
+      "logInspectorPrefix": "<strong>Günlük denetçisi</strong> - hataları ve uyarıları hızla bulmak için günlük dosyalarını (<code>console.txt</code> gibi) yükleyin ve filtreleyin. Görmek",
+      "logInspectorLink": "Günlük denetçisi",
+      "bullet6": "<strong>Kontrol Paneli</strong> - hızlı istatistikleri (örneğin: algılanan toplam mod sayısı) ve diğer üst düzey göstergeleri gösterir."
+    },
+    "mediaPlayer": {
+      "title": "Medya oynatıcı",
+      "intro": "Kenar çubuğu, Project Zomboid ses parçalarını (OGG) tarayabilen ve bunları uygulama içinde çalabilen hafif bir müzik çalar içerir.",
+      "bullet1": "<strong>Çalma listesi</strong> - algılanan parçaları ve temel meta verileri (varsa başlık/sanatçı/albüm) gösterir.",
+      "bullet2": "<strong>Oynatma</strong> - oynatma/duraklatma artı önceki/sonraki parça.",
+      "bullet3": "<strong>Arama + ses seviyesi</strong> - parça üzerinde gezinin ve ses seviyesini/sessizi ayarlayın."
+    },
+    "logInspector": {
+      "title": "Günlük denetçisi",
+      "intro": "Günlük denetçisi, çökmeleri, mod yükleme sorunlarını ve sunucu başlatma sorunlarını gidermek için günlük dosyalarını (örneğin, <code>console.txt</code>) açmanıza ve filtrelemenize yardımcı olur.",
+      "bullet1": "<strong>Bir dosya seçin</strong> - herhangi bir <code>.txt</code> veya <code>.log</code> dosyasına göz atın veya mümkün olduğunda varsayılan yolu kullanın.",
+      "bullet2": "<strong>Filtre</strong> - günlük düzeylerini seçin (ERROR/WARN/LOG/DEBUG/TRACE), bir tarih/saat penceresi ayarlayın ve görüntülenen maksimum giriş sayısını sınırlayın.",
+      "bullet3": "<strong>Arama</strong> - ayrıştırılmış mesaj ve ham kaynak satırındaki girişleri metne göre filtreleyin.",
+      "bullet4": "<strong>Canlı oylama</strong> - oyun/sunucu çalışırken günlüklerin güncellenmesini izlemek için isteğe bağlı olarak bir zamanlayıcıyı kullanarak yenileyin.",
+      "bullet5": "<strong>Temizle</strong> - seçilen günlük dosyasını kısaltır (dikkatli kullanın)."
+    },
+    "folderSetup": {
+      "title": "Klasör kurulumu",
+      "step1": "Sol kenar çubuğundan (<em>ANA SAYFA</em> altında) <strong>Modlar</strong> sayfasını açın.",
+      "step2": "Project Zomboid mod dizininizi (genellikle <code>projectzomboid/mods</code>) seçmek için <em>EYLEMLER</em> menüsündeki <strong>Modlar Klasörüne Gözat</strong>'ı kullanın.",
+      "step3": "Seçimden sonra uygulama dizini tarar ve modlar tablosunu ve kontrol panelini doldurur.",
+      "tip": "İpucu: Makine değiştirirseniz veya modlar dizininizi taşırsanız, saklanan yolu güncellemek için tekrar göz atmanız yeterlidir."
+    },
+    "tauri": {
+      "title": "Masaüstü (Tauri) entegrasyonu",
+      "bullet1": "<strong>Dosya sistemi erişimi</strong> - dizine göz atma ve tarama, masaüstü kabuğu aracılığıyla gerçekleştirilir.",
+      "bullet2": "<strong>Harici bağlantıları aç</strong> - Steam Atölyesi bağlantıları, işletim sisteminizin varsayılan tarayıcısını kullanarak açılır.",
+      "bullet3": "<strong>Klasörleri aç</strong> - mod dizinine odaklanan işletim sistemi dosya gezginini başlatır."
+    },
+    "privacy": {
+      "title": "Gizlilik ve depolama",
+      "bullet1": "<strong>Yerel veriler</strong> - seçilen mods klasörü yolu ve tarama sonuçları, kullanıcı deneyimini geliştirmek için yerel olarak önbelleğe alınabilir."
+    },
+    "troubleshooting": {
+      "title": "Sorun giderme",
+      "bullet1": "<strong>Taramadan sonra hiçbir mod görünmüyor</strong> - seçilen klasörün gerçek Project Zomboid mod dizininiz olduğunu ve mod alt klasörleri içerdiğini doğrulayın.",
+      "bullet2": "<strong>Steam bağlantıları devre dışı bırakıldı</strong> - modun geçerli bir sayısal atölye kimliğine sahip olduğundan emin olun (tüm modlar Atölye tabanlı değildir).",
+      "bullet3": "<strong>Klasörü açmak hiçbir şey yapmaz</strong> - Tauri arka ucunun çalıştığını ve işletim sistemi izinlerinin dosya gezgininin açılmasına izin verdiğini doğrulayın."
+    },
+    "faq": {
+      "title": "SSS",
+      "q1": "Uygulama modlarımı düzenliyor mu?",
+      "a1": "Hayır. Temel iş akışı salt okunurdur: klasörleri tarar ve meta verileri görüntüler. Klasörleri veya Atölye bağlantılarını açmak gibi eylemler mod dosyalarını değiştirmez.",
+      "q2": "Bir mod için neden bazı bilgiler eksik?",
+      "a2": "Modlar, meta verileri ne kadar tutarlı bir şekilde içerdiklerine göre değişir. Kimlik veya atölye kimliği gibi alanlar eksikse uygulama neler yapabileceğini gösterecek ve bu alanlara dayalı özellikleri devre dışı bırakacaktır."
+    }
+  },
+  "modDetails": {
+    "fields": {
+      "name": "Ad",
+      "modId": "Mod Kimliği",
+      "author": "Yazar",
+      "version": "Mod Sürümü",
+      "versionMin": "Minimum Oyun Sürümü",
+      "versionMax": "Maksimum Oyun Sürümü",
+      "url": "URL",
+      "description": "Açıklama",
+      "tags": "Etiketler",
+      "noTags": "Etiket yok",
+      "packs": "Paketler",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "Atölye Başlığı",
+      "workshopCreator": "Atölye Oluşturucu",
+      "fileSize": "Dosya Boyutu",
+      "timeCreated": "Oluşturulma Zamanı",
+      "timeUpdated": "Güncellenme Zamanı",
+      "workshopViews": "Atölye Görünümleri",
+      "workshopSubscriptions": "Atölye Abonelikleri",
+      "adultContent": "Yetişkinlere Uygun İçerik Var"
+    },
+    "links": {
+      "requiredMods": "Gerekli Modlar",
+      "loadAfter": "Sonra Modu Yükle",
+      "loadBefore": "Önce Modu Yükle",
+      "incompatibleMods": "Uyumsuz Modlar",
+      "requiredBy": "Gereken",
+      "incompatibleWith": "Uyumsuz"
+    },
+    "buttons": {
+      "visitWorkshop": "Steam Atölye Sayfasını Ziyaret Et",
+      "authorWorkshop": "Yazarın Steam Atölye Sayfasını",
+      "openFolder": "Mod klasörünü aç"
+    },
+    "tooltips": {
+      "modInfoReadonly": "Bu alan salt okunurdur ve mod.info'dan doldurulur.",
+      "steamReadonly": "Bu alan salt okunurdur ve Steam Atölyesi'nden doldurulur.",
+      "modMissing": "Aşağıdaki mod bulunamadı",
+      "syncToActivate": "Etkinleştirmek için Steam Atölyesi ile Senkronizasyon",
+      "modFolderUnavailable": "Mod klasörü yolu mevcut değil."
+    }
+  },
+  "tags": {
+    "animals": "Hayvanlar",
+    "audio": "Ses",
+    "balance": "Denge",
+    "build_41": "İnşa 41",
+    "build_42": "İnşa 42",
+    "build_40": "İnşa 40",
+    "buildings": "Binalar",
+    "clothing_armor": "Giysi/Zırh",
+    "farming": "Tarım",
+    "food": "Yiyecek",
+    "framework": "Çerçeve",
+    "hardmode": "Zor Mod",
+    "interface": "Arayüz",
+    "items": "Öğeler",
+    "language_translation": "Dil/Çeviri",
+    "literature": "Edebiyat",
+    "map": "Harita",
+    "military": "Askeri",
+    "misc": "Çeşitli",
+    "models": "Modeller",
+    "multiplayer": "Çok Oyunculu",
+    "pop_culture": "Pop Kültür",
+    "qol": "QoL",
+    "realistic": "Gerçekçi",
+    "silly_fun": "Aptalca/Eğlenceli",
+    "skills": "Beceriler",
+    "textures": "Dokular",
+    "traits": "Özellikler",
+    "vehicles": "Araçlar",
+    "weapons": "Silahlar",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "Etiketler",
+    "matchLabel": "Eşleşme",
+    "matchAny": "VEYA",
+    "matchAll": "VE",
+    "placeholder": "Etiketleri seç"
+  },
+  "modsTable": {
+    "clearFilters": "Temizle",
+    "searchPlaceholder": "Arama anahtar kelimesi",
+    "detailsTitle": "Mod Ayrıntıları",
+    "columns": {
+      "name": "Ad",
+      "author": "Yazar",
+      "workshopId": "Atölye Kimliği",
+      "lastModified": "Son Değiştirilme Tarihi"
+    },
+    "filters": {
+      "name": "İsme göre ara",
+      "author": "Yazara göre ara",
+      "workshopId": "Atölye kimliğine göre ara",
+      "date": "Tarihi filtrele"
+    }
+  },
+  "folders": {
+    "title": "Gerekli Klasörleri Ayarla",
+    "description": "Bu klasörler modlarınızı taramak ve Project Zomboid kurulum ayrıntılarınızı okumak için kullanılır.",
+    "gameDirLabel": "Project Zomboid oyun klasörü",
+    "workshopDirLabel": "Yerel modlar (Steam Workshop) klasörü",
+    "userDirLabel": "Project Zomboid kullanıcı klasörü (isteğe bağlı)",
+    "userDirNote": "Sunucu ön ayarlarını ve (isteğe bağlı) gelişmiş uygulama hedeflerini dışa aktarmak için kullanılır."
+  },
+  "modsPage": {
+    "toastHelp": "Bunu nerede bulabilirim?",
+    "workshopPrompt": {
+      "title": "Steam Atölyesi Verilerini Al",
+      "body": "Modlarınız için Steam Atölyesinden en son meta verileri almak ister misiniz?",
+      "alwaysFetch": "Her zaman sormadan otomatik olarak getir"
+    },
+    "loadingLocal": "Yerel Mod Verileri Taranıyor...",
+    "loadingWorkshop": "Steam Atölyesi Verileri Alınıyor...",
+    "loading": "Veriler yükleniyor..."
+  },
+  "onboarding": {
+    "title": "Başlarken",
+    "steps": {
+      "welcome": "Hoş geldiniz",
+      "folders": "Klasörler",
+      "steamKey": "Steam API Anahtarı",
+      "tips": "İpuçları"
+    },
+    "welcome": {
+      "title": "Project Zomboid Mod Manager'a hoş geldiniz",
+      "body": "Bu hızlı kurulum, klasörlerinizi bağlamanıza, Steam Web API anahtarınızı eklemenize ve modları senkronize etmeye başlamanıza yardımcı olur.",
+      "bullet1": "Project Zomboid klasörlerinizi seçin.",
+      "bullet2": "Workshop meta verileri için Steam Web API anahtarınızı ekleyin.",
+      "bullet3": "Kurulumu tamamlayın ve modlarınızı yönetmeye başlayın."
+    },
+    "tips": {
+      "title": "Hızlı ipuçları",
+      "bullet1": "Klasörleri ve Steam API anahtarınızı yan menüden istediğiniz zaman güncelleyebilirsiniz.",
+      "bullet2": "Workshop meta verilerini senkronize etmeden önce Yerel mod verilerini senkronize et'i çalıştırın.",
+      "bullet3": "Listeyi hızlıca daraltmak için mod filtrelerini kullanın."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu Mod Bilgisi QoL Senkronizasyonu Başarısız",
+        "missingUserDetail": "Project Zomboid kullanıcı klasörü yapılandırılmadı.",
+        "successSummary": "Honu'nun Mod Bilgisi QoL Senkronize Edildi",
+        "successCreatedDetail": "honus_miqol_db.lua oluşturuldu.",
+        "successUpdatedDetail": "honus_miqol_db.lua güncellendi.",
+        "failedDetail": "Honu Mod Bilgisi QoL senkronize edilemedi."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "Veri Taşıma",
+        "detail": "Yerel mod verileriniz güncelleniyor. Bağımlılıkları yenilemek için yeni bir tarama çalışıyor."
+      },
+      "syncInProgress": {
+        "summary": "Senkronizasyon Devam Ediyor",
+        "detail": "Bir senkronizasyon işlemi zaten çalışıyor. Lütfen tamamlanmasını bekleyin."
+      },
+      "localSyncComplete": {
+        "summary": "Yerel Mod Senkronizasyonu Tamamlandı",
+        "detail": "Yerel mod verileri başarıyla yenilendi."
+      },
+      "localSyncFailed": {
+        "summary": "Yerel Mod Senkronizasyonu Başarısız",
+        "detail": "Yerel modlar senkronize edilemedi."
+      },
+      "invalidDirectory": {
+        "summary": "Geçersiz Dizin",
+        "detail": "Seçilen klasör geçerli bir Project Zomboid Workshop dizini gibi görünmüyor (AppID 108600)."
+      },
+      "steamApiRequired": {
+        "summary": "Steam Web API Anahtarı Gerekli",
+        "detail": "Lütfen menüdeki \"Steam API Anahtarını Ayarla\"yı kullanın, ardından senkronizasyonu tekrar deneyin."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "Hiçbir atölye meta verisi döndürülmedi; hiçbir şey kurtarılmadı."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop kısmen senkronize edildi",
+        "detail": "{{total}} atölye öğesinden {{received}} tanesi alındı. Eksik Kimlikler: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam Atölyesi Senkronize Edildi",
+        "detail": "Atölye meta verileri başarıyla kaydedildi."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API Yetkisiz",
+        "detail": "Steam 401 Yetkisiz olarak döndürdü. Lütfen Steam Web API anahtarınızı doğrulayın ve tekrar deneyin."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Steam Atölyesi meta verileri senkronize edilemedi."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "Ön ayar adı zaten mevcut",
+        "detail": "Lütfen \"{{name}}\" için farklı bir ad seçin."
+      },
+      "removeFailed": {
+        "summary": "Kaldırma Başarısız",
+        "missingUserDetail": "Project Zomboid kullanıcı dizini yapılandırılmadı.",
+        "missingModDetail": "Mod kimliği mods.txt'de bulunamadı.",
+        "failedDetail": "Mod ön ayardan kaldırılamadı."
+      },
+      "removed": {
+        "summary": "Kaldırıldı",
+        "detailMultiple": "Seçildi modlar ön ayardan kaldırıldı.",
+        "detailSingle": "Mod ön ayardan kaldırıldı."
+      },
+      "presetUpdated": {
+        "summary": "Ön ayar güncellendi",
+        "detailFallback": "pz_modlist_settings.cfg güncellenemedi.",
+        "detailFailed": "pz_modlist_settings.cfg güncellenemedi."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "Ön ayar adı zaten mevcut",
+        "detail": "Lütfen \"{{name}}\" için farklı bir ad seçin."
+      },
+      "noModsToExport": {
+        "summary": "Dışa aktarılacak mod yok",
+        "detailCode": "Kod oluşturmadan önce en az bir mod ekleyin.",
+        "detailPreset": "Bir ön ayarı kaydetmeden önce en az bir mod ekleyin."
+      },
+      "copied": {
+        "summary": "Kopyalandı",
+        "detail": "{{label}} panoya kopyalandı."
+      },
+      "presetImported": {
+        "summary": "Ön ayar içe aktarıldı",
+        "detail": "İçe aktarılan {{count}} modları."
+      },
+      "importFailed": {
+        "summary": "İçe aktarma başarısız oldu",
+        "detail": "İçe aktarılamadı ön ayar."
+      },
+      "presetSaved": {
+        "summary": "Ön ayar kaydedildi",
+        "detailFallback": "pz_modlist_settings.cfg güncellenemedi.",
+        "detailFailed": "pz_modlist_settings.cfg güncellenemedi."
+      },
+      "presetSaveNotice": {
+        "reordered": "Modlar bağımlılık kurallarına göre yeniden sıralandı.",
+        "missingDependencies": "Eksik bağımlılıklar: {{count}}.",
+        "missingWorkshopIds": "Eksik atölye kimlikleri: {{count}}.",
+        "incompatibilities": "Uyumsuzluklar: {{count}}.",
+        "cycles": "Döngüler algılandı: {{count}}.",
+        "conflicts": "Dosya çakışmaları: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "Ön ayar silindi",
+        "detailFallback": "pz_modlist_settings.cfg güncellenemedi.",
+        "detailFailed": "pz_modlist_settings.cfg güncellenemedi."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "Koleksiyonlar yüklenemiyor. Steam Web API anahtarınızı doğrulayın ve tekrar deneyin."
+      },
+      "steamUnauthorized": "Steam 401 Yetkisiz hatası verdi. Steam Web API anahtarınızı doğrulayın.",
+      "queryFailed": "Steam Atölyesi koleksiyonları sorgulanamadı.",
+      "presetNotCreated": {
+        "summary": "Ön Ayar Oluşturulmadı",
+        "detail": "Bu koleksiyon için hiçbir atölye öğesi bulunamadı."
+      },
+      "presetCreated": {
+        "summary": "Ön Ayar Oluşturuldu",
+        "detail": "Koleksiyon ön ayarı \"{{name}}\" olarak kaydedildi."
+      },
+      "presetUpdated": {
+        "summary": "Ön Ayar Güncellendi",
+        "detail": "Koleksiyon ön ayarı \"{{name}}\" yenilendi."
+      },
+      "presetRemoved": {
+        "summary": "Ön Ayar Kaldırıldı",
+        "detail": "Koleksiyon ön ayarı kaldırıldı."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "Geçersiz sunucu ad",
+        "detailMissing": "Bir sunucu adı girin.",
+        "detailInvalidChars": "Sunucu adı geçersiz dosya adı karakterleri içeriyor.",
+        "detailTrailing": "Sunucu adı nokta veya boşlukla bitemez."
+      },
+      "nameExists": {
+        "summary": "Sunucu adı zaten mevcut",
+        "detail": "Benzersiz bir sunucu adı seçin."
+      },
+      "missingUserFolder": {
+        "summary": "Eksik kullanıcı klasörü",
+        "detail": "Önce Project Zomboid kullanıcı klasörünüzü ayarlayın."
+      },
+      "createFailed": {
+        "summary": "Oluşturma başarısız oldu",
+        "detail": "Sunucu dosyaları oluşturulamadı."
+      },
+      "saved": {
+        "summary": "Kaydedildi",
+        "detail": "Sunucu dosyaları güncellendi."
+      },
+      "saveFailed": {
+        "summary": "Kaydetme başarısız oldu",
+        "detail": "Sunucu dosyaları kaydedilemedi."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "Şununla başlar",
+    "contains": "İçerir",
+    "notContains": "İçermez",
+    "endsWith": "Şununla biter",
+    "equals": "Eşittir",
+    "notEquals": "Eşit değil",
+    "noFilter": "Filtre yok",
+    "lt": "Küçüktür",
+    "lte": "Küçük veya eşit",
+    "gt": "Büyüktür",
+    "gte": "Büyük veya eşit",
+    "dateIs": "Tarih eşittir",
+    "dateIsNot": "Tarih eşit değil",
+    "dateBefore": "Tarih önce",
+    "dateAfter": "Tarih sonra",
+    "clear": "Temizle",
+    "apply": "Uygula",
+    "matchAll": "Tümüyle eşleş",
+    "matchAny": "Herhangi biriyle eşleş",
+    "addRule": "Kural ekle",
+    "removeRule": "Kural kaldır"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "Overview",
+      "updateStatus": "Mods Update Status",
+      "topInstalled": "Top Installed Mods (by Subscriptions)",
+      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
+      "installsOverTime": "Mod Installs Over Time",
+      "largestMods": "Largest Mods (by File Size)",
+      "latestNews": "Latest Project Zomboid News",
+      "popularThisWeek": "Popular Mods This Week",
+      "latestMods": "Latest Mods",
+      "updatedMods": "Updated Mods"
+    },
+    "labels": {
+      "totalMods": "Total Mods",
+      "lastLocalSync": "Last Local Mod Sync",
+      "lastWorkshopSync": "Last Workshop Sync",
+      "subscribers": "subscribers",
+      "updated": "updated",
+      "created": "created",
+      "installedTooltip": "Installed locally",
+      "unknown": "Unknown",
+      "never": "Never"
+    },
+    "messages": {
+      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
+      "noInstalledSubs": "No installed mods with subscription data are available.",
+      "noWorkshopUpdateInfo": "No Workshop update information is available.",
+      "noSizeData": "No mod file size data is available.",
+      "noNews": "No news items were found.",
+      "noPopularMods": "No popular mods were found.",
+      "noModsFound": "No mods were found.",
+      "noRecentUpdates": "No recently updated mods were found."
+    },
+    "fallbacks": {
+      "untitledItem": "Untitled item"
+    },
+    "charts": {
+      "installs": {
+        "label": "Mods by install month",
+        "xAxis": "Month",
+        "yAxis": "Mods"
+      },
+      "status": {
+        "outdated": "Outdated",
+        "upToDate": "Up to date"
+      },
+      "size": {
+        "label": "Workshop file size (bytes)",
+        "yAxis": "Size (bytes)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "Log Inspector",
+    "fields": {
+      "logFile": "Log file",
+      "types": "Types",
+      "typesPlaceholder": "Select types",
+      "maxEntries": "Max entries",
+      "from": "From",
+      "to": "To",
+      "livePolling": "Live polling",
+      "pollingEverySeconds": "Every (s)",
+      "searchMessage": "Search message",
+      "searchPlaceholder": "Search..."
+    },
+    "table": {
+      "pageReport": "Showing {first} to {last} of {totalRecords}",
+      "timestamp": "Timestamp",
+      "type": "Type",
+      "message": "Message"
+    },
+    "levels": {
+      "error": "ERROR",
+      "warn": "WARN",
+      "log": "LOG",
+      "debug": "DEBUG",
+      "trace": "TRACE",
+      "other": "OTHER"
+    },
+    "dialog": {
+      "logFilesFilter": "Log Files"
+    },
+    "errors": {
+      "noFilePath": "Set a file path to load logs.",
+      "loadFailed": "Failed to load log file.",
+      "clearFailed": "Failed to clear log file."
+    }
+  }
+}

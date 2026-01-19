@@ -1,0 +1,180 @@
+<ng-container *transloco="let t">
+<p-table
+  #dt
+  [value]="tableMods"
+  dataKey="id"
+  [first]="first"
+  [rows]="rows"
+  [paginator]="true"
+  paginatorPosition="both"
+  [rowsPerPageOptions]="rowsPerPageOptions"
+  [showCurrentPageReport]="true"
+  currentPageReportTemplate="{first} - {last} of {totalRecords}"
+  (onPage)="onPage($event)"
+  [rowHover]="true"
+  [showGridlines]="true"
+  [globalFilterFields]="['name', 'author_display', 'workshop_id_display', 'install_date_display']"
+  [sortField]="'name'"
+  [sortOrder]="1"
+  (onRowExpand)="onRowExpand($event)"
+>
+  <ng-template #caption>
+    <div class="flex justify-between items-center flex-column sm:flex-row">
+      <button pButton [label]="t('modsTable.clearFilters')" icon="pi pi-filter-slash" class="p-button-outlined mb-2"
+        (click)="onClearFilters(dt)"></button>
+      <p-iconfield iconPosition="left" class="ml-auto">
+        <p-inputicon>
+          <i class="pi pi-search"></i>
+        </p-inputicon>
+        <input
+          pInputText
+          type="text"
+          [(ngModel)]="searchKeyword"
+          (input)="onGlobalFilter(dt, $event)"
+          [placeholder]="t('modsTable.searchPlaceholder')"
+        />
+      </p-iconfield>
+    </div>
+  </ng-template>
+
+  <ng-template pTemplate="header">
+    <tr>
+      <th style="width: 3rem"></th>
+      <th pSortableColumn="name">
+        <div class="flex justify-between items-center">
+          <span class="flex items-center gap-1">
+            <span>{{ t('modsTable.columns.name') }}</span>
+            <p-sortIcon field="name"></p-sortIcon>
+          </span>
+          <p-columnFilter type="text" field="name" display="menu"
+            [placeholder]="t('modsTable.filters.name')"></p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="author_display">
+        <div class="flex justify-between items-center">
+          <span class="flex items-center gap-1">
+            <span>{{ t('modsTable.columns.author') }}</span>
+            <p-sortIcon field="author_display"></p-sortIcon>
+          </span>
+          <p-columnFilter type="text" field="author_display" display="menu"
+            [placeholder]="t('modsTable.filters.author')"></p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="workshop_id_display">
+        <div class="flex justify-between items-center">
+          <span class="flex items-center gap-1">
+            <span>{{ t('modsTable.columns.workshopId') }}</span>
+            <p-sortIcon field="workshop_id_display"></p-sortIcon>
+          </span>
+          <p-columnFilter
+            type="text"
+            field="workshop_id_display"
+            display="menu"
+            [placeholder]="t('modsTable.filters.workshopId')"
+          ></p-columnFilter>
+        </div>
+      </th>
+      <th pSortableColumn="install_date">
+        <div class="flex justify-between items-center">
+          <span class="flex items-center gap-1">
+            <span>{{ t('modsTable.columns.lastModified') }}</span>
+            <p-sortIcon field="install_date"></p-sortIcon>
+          </span>
+          <p-columnFilter type="date" field="install_date_display" display="menu"
+            [placeholder]="t('modsTable.filters.date')"
+            matchMode="contains"></p-columnFilter>
+        </div>
+      </th>
+    </tr>
+  </ng-template>
+
+  <ng-template pTemplate="body" let-mod let-expanded="expanded">
+    <tr>
+      <td>
+        <button
+          type="button"
+          pButton
+          [pRowToggler]="mod"
+          [text]="true"
+          [rounded]="true"
+          [plain]="true"
+          [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'"
+        ></button>
+      </td>
+      <td>
+        <div class="mod-name-cell">
+          @if (mod.icon) {
+            <img
+              [src]="posterUrl(mod.icon)"
+              alt="{{ mod.name }} icon"
+              class="mod-name-icon"
+            />
+          }
+          <span>{{ mod.name }}</span>
+        </div>
+      </td>
+      <td>
+        <div
+          class="author-cell"
+          [pTooltip]="getAuthorAvatarTooltip(mod)"
+          [escape]="false"
+          [tooltipDisabled]="!getAuthorAvatarFull(mod)"
+          [tooltipStyleClass]="'author-avatar-tooltip-popper'"
+          tooltipPosition="top"
+        >
+          @if (getAuthorAvatar(mod)) {
+            <img
+              [src]="getAuthorAvatar(mod)"
+              alt="Author avatar"
+              class="author-avatar-icon"
+              referrerpolicy="no-referrer"
+            />
+          }
+          <span>{{ mod.author_display }}</span>
+        </div>
+      </td>
+      <td>{{ mod.workshop_id_display }}</td>
+      <td>
+        {{ mod.install_date_display }}
+      </td>
+    </tr>
+  </ng-template>
+
+  <ng-template #expandedrow let-mod>
+    <tr class="mod-expanded-row">
+      <td [attr.colspan]="5">
+        <app-mod-details
+          [mod]="mod"
+          [allMods]="allModsForLinks"
+            (workshopClicked)="openWorkshop($event)"
+            (creatorWorkshopClicked)="openCreatorWorkshop($event)"
+            (openFolderClicked)="openFolder($event)"
+            (modUpdated)="onModUpdatedInternal($event)"
+            (openDetails)="openModDetails($event)"
+        ></app-mod-details>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>
+
+<p-dialog
+  header="{{ t('modsTable.detailsTitle') }}"
+  [(visible)]="detailsDialogVisible"
+  [modal]="true"
+  [style]="{ width: '70vw', maxWidth: '900px' }"
+  [dismissableMask]="true"
+  [closable]="true"
+>
+  @if (selectedMod) {
+    <app-mod-details
+      [mod]="selectedMod"
+      [readonly]="true"
+      [allMods]="allModsForLinks"
+      (workshopClicked)="openWorkshop($event)"
+      (creatorWorkshopClicked)="openCreatorWorkshop($event)"
+      (openFolderClicked)="openFolder($event)"
+      (openDetails)="openModDetails($event)"
+    ></app-mod-details>
+  }
+</p-dialog>
+</ng-container>

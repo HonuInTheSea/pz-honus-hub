@@ -1,0 +1,146 @@
+<ng-container *transloco="let t">
+    <app-configurator style="display: none"></app-configurator>
+    @if (showContentLoading) {
+      <div class="app-content-loading-overlay" role="status" aria-live="polite">
+        <p-card class="app-content-loading-card">
+          <div class="flex align-items-center gap-3">
+            <p-progressSpinner
+              ariaLabel="{{ t('common.loadingContent') }}"
+              [style]="{ width: '2.5rem', height: '2.5rem' }"
+              strokeWidth="6"
+            ></p-progressSpinner>
+            <!-- <div>Loading…</div> -->
+          </div>
+        </p-card>
+      </div>
+    }
+    <p-dialog
+      header="{{ t('onboarding.title') }}"
+      [(visible)]="onboardingVisible"
+      [modal]="true"
+      [draggable]="false"
+      [closable]="false"
+      [dismissableMask]="false"
+      [style]="{ width: '60rem', maxWidth: '95vw' }"
+      [breakpoints]="{ '960px': '95vw' }"
+    >
+      <p-stepper [(value)]="onboardingStep">
+        <p-step-list>
+          <p-step [value]="0">{{ t('onboarding.steps.welcome') }}</p-step>
+          <p-step [value]="1">{{ t('onboarding.steps.folders') }}</p-step>
+          <p-step [value]="2">{{ t('onboarding.steps.steamKey') }}</p-step>
+          <p-step [value]="3">{{ t('onboarding.steps.tips') }}</p-step>
+        </p-step-list>
+
+        <p-step-panels>
+          <p-step-panel [value]="0">
+            <ng-template pTemplate="content" let-activateCallback="activateCallback">
+            <p-card header="{{ t('onboarding.welcome.title') }}">
+              <div class="p-fluid">
+                <p class="text-color-secondary">
+                  {{ t('onboarding.welcome.body') }}
+                </p>
+                <ul class="p-mt-3">
+                  <li>{{ t('onboarding.welcome.bullet1') }}</li>
+                  <li>{{ t('onboarding.welcome.bullet2') }}</li>
+                  <li>{{ t('onboarding.welcome.bullet3') }}</li>
+                </ul>
+              </div>
+            </p-card>
+
+            <div class="flex justify-content-end gap-2 p-mt-3">
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.next') }}"
+                (click)="activateCallback(1)"
+              ></button>
+            </div>
+          </ng-template>
+          </p-step-panel>
+
+          <p-step-panel [value]="1">
+            <ng-template pTemplate="content" let-activateCallback="activateCallback">
+            <app-required-folders
+              [draft]="foldersDraft"
+              (draftChange)="foldersDraft = $event"
+            ></app-required-folders>
+
+            <div class="flex justify-content-between gap-2 p-mt-3">
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.back') }}"
+                class="p-button-text"
+                (click)="activateCallback(0)"
+              ></button>
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.next') }}"
+                (click)="activateCallback(2)"
+              ></button>
+            </div>
+          </ng-template>
+          </p-step-panel>
+
+          <p-step-panel [value]="2">
+            <ng-template pTemplate="content" let-activateCallback="activateCallback">
+            <app-steam-api-key-step
+              [(steamApiKey)]="steamApiKeyDraft"
+            ></app-steam-api-key-step>
+
+            <div class="flex justify-content-between gap-2 p-mt-3">
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.back') }}"
+                class="p-button-text"
+                (click)="activateCallback(1)"
+              ></button>
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.next') }}"
+                (click)="activateCallback(3)"
+              ></button>
+            </div>
+          </ng-template>
+          </p-step-panel>
+
+          <p-step-panel [value]="3">
+            <ng-template pTemplate="content" let-activateCallback="activateCallback">
+            <p-card header="{{ t('onboarding.tips.title') }}">
+              <ul style="list-style-type: disc; padding-left: 2rem; margin: 0">
+                <li>{{ t('onboarding.tips.bullet1') }}</li>
+                <li style="margin-top: 0.75rem">
+                  {{ t('onboarding.tips.bullet2') }}
+                </li>
+                <li style="margin-top: 0.75rem">
+                  {{ t('onboarding.tips.bullet3') }}
+                </li>
+              </ul>
+            </p-card>
+
+            <div class="flex justify-content-between gap-2 p-mt-3">
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.back') }}"
+                class="p-button-text"
+                (click)="activateCallback(2)"
+              ></button>
+              <button
+                pButton
+                type="button"
+                label="{{ t('common.finish') }}"
+                (click)="finishOnboarding()"
+              ></button>
+            </div>
+          </ng-template>
+          </p-step-panel>
+        </p-step-panels>
+      </p-stepper>
+    </p-dialog>
+    <router-outlet></router-outlet>
+</ng-container>

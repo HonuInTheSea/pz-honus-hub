@@ -1,0 +1,701 @@
+{
+  "common": {
+    "cancel": "취소",
+    "save": "구하다",
+    "browse": "찾아보기",
+    "yes": "예",
+    "no": "아니요",
+    "loadingContent": "콘텐츠 로드 중...",
+    "next": "다음",
+    "back": "뒤로",
+    "finish": "완료"
+  },
+  "app": {
+    "title": "Honu's Hub"
+  },
+  "menu": {
+    "languageLabel": "언어",
+    "languagePlaceholder": "언어를 선택하세요",
+    "sections": {
+      "hub": "바퀴통",
+      "modFilters": "모드 필터",
+      "modCollectionFilters": "모드 컬렉션 필터",
+      "actions": "행위",
+      "getStarted": "시작하기",
+      "resources": "자원",
+      "dangerZone": "위험지대"
+    },
+    "items": {
+      "dashboard": "계기반",
+      "logInspector": "로그 검사기",
+      "configureFolders": "폴더 구성",
+      "setSteamApiKey": "Steam API 키 설정",
+      "syncHonu": "Honu의 모드 정보 QoL 동기화",
+      "syncLocal": "로컬 모드 데이터 동기화",
+      "syncWorkshop": "Steam 창작마당과 동기화",
+      "changelog": "변경 내역",
+      "documentation": "선적 서류 비치",
+      "viewSource": "소스 보기",
+      "projectZomboid": "프로젝트 좀보이드",
+      "pzWiki": "공식 프로젝트 Zomboid 위키",
+      "b41Map": "B41 지도",
+      "b42Map": "B42 지도",
+      "workshop": "Project Zomboid Steam 창작마당",
+      "subreddit": "r/projectzomboid",
+      "discord": "프로젝트 좀보이드",
+      "moddingDiscord": "PZ 모딩 커뮤니티",
+      "mappingDiscord": "비공식 PZ 매핑",
+      "honuWorkshop": "HonuInTheSea의 Steam 창작마당",
+      "supportKofi": "Ko-fi 지원",
+      "resetApp": "애플리케이션 재설정",
+      "resetAppTooltip": "창 설정 재설정 및 저장된 데이터 삭제",
+      "myMods": "내 모드"
+    },
+    "filters": {
+      "adultLabel": "성인용 콘텐츠가 있음",
+      "adultTooltip": "Steam 메타데이터가 might_inproper_sex를 true로 보고하는 모드를 필터링하세요.",
+      "rulesLabel": "규칙 있음",
+      "rulesTooltip": "Mod의 mod.info 파일에 require, in Compatible, loadModAfter, loadModBefore 문이 포함되어 있습니다.",
+      "missingSteamLabel": "Steam 데이터 누락",
+      "missingSteamTooltip": "모드가 비공개로 표시되었거나 Steam 창작마당에서 제거되었을 수 있습니다.",
+      "outdatedLabel": "오래된 모드",
+      "outdatedTooltip": "Steam 창작마당에서 최신 버전을 얻으려면 모드를 구독 취소했다가 다시 구독해야 할 수도 있습니다."
+    },
+    "collections": {
+      "searchLabel": "컬렉션 검색",
+      "searchPlaceholder": "컬렉션 검색",
+      "sortLabel": "정렬 기준",
+      "periodLabel": "기간에 따라",
+      "tagsLabel": "태그",
+      "tagsPlaceholder": "태그 선택",
+      "sortMostPopular": "가장 인기있는",
+      "sortMostRecent": "가장 최근",
+      "sortLastUpdated": "마지막 업데이트",
+      "periodToday": "오늘",
+      "periodWeek": "일주일",
+      "periodThirtyDays": "30일",
+      "periodThreeMonths": "3개월",
+      "periodSixMonths": "6개월",
+      "periodYear": "1년"
+    },
+    "presetsUnavailable": "Project Zomboid 사용자 폴더를 설정하거나 사전 설정을 먼저 정의하세요.",
+    "steamApi": {
+      "dialogTitle": "Steam 웹 API 키 설정",
+      "dialogIntro": "Steam 웹 API 키를 입력하세요. 이 키는 컴퓨터에 로컬로 저장됩니다.",
+      "keyLabel": "Steam 웹 API 키",
+      "needKey": "열쇠가 필요하세요?",
+      "getKeyLink": "Steam 웹 API 키 받기",
+      "helpButton": "Steam 웹 API 키를 생성하는 방법",
+      "helpTitle": "Steam 웹 API 키를 생성하는 방법",
+      "helpCardTitle": "Steam 웹 API 키를 등록하는 방법",
+      "helpCardBody": "이 가이드는 Steam 웹 API 키 등록을 위한 단계별 안내를 제공합니다. Steam 웹 API 키를 사용하면 애플리케이션이 승인된 경우 게임 라이브러리, 통계 등 Steam 계정의 특정 데이터에 안전하게 액세스할 수 있습니다.",
+      "step1Title": "1. 전제조건",
+      "step1Intro": "Steam 웹 API 키를 등록하기 전에 다음을 확인하세요.",
+      "step1Bullet1": "귀하는 Steam Guard(이메일 또는 모바일 인증기)로 보호되는 양호한 상태의 활성 Steam 계정을 보유하고 있습니다.",
+      "step1Bullet2": "귀하의 계정에는 구매한 게임이 하나 이상 있습니다. 신규 계정이나 비어 있는 계정은 API 키를 얻을 수 없습니다.",
+      "step1Bullet3": "신뢰할 수 있는 장치와 네트워크를 사용하고 있습니다. 공용 컴퓨터나 공유 컴퓨터에서 키를 등록하거나 확인하지 마세요.",
+      "step2Title": "2. 중요 보안 참고사항",
+      "step2Intro": "귀하의 Steam 웹 API 키는 민감한 정보입니다. 귀하의 키를 가진 사람은 누구나 귀하를 대신하여 API 요청을 할 수 있습니다. 비밀번호처럼 취급하세요.",
+      "step2Bullet1": "키를 다른 사람과 공유하지 말고 공개적으로 게시하지 마세요(예: 포럼이나 GitHub).",
+      "step2Bullet2": "완전히 신뢰할 수 있는 도구나 웹사이트에만 키를 붙여넣으세요.",
+      "step2Bullet3": "키가 노출된 것으로 의심되면 즉시 키를 취소하고 새 키를 생성하세요.",
+      "step3Title": "3. 단계별: Steam 웹 API 키 등록",
+      "step3_1Title": "1단계 - Steam에 로그인",
+      "step3_1Bullet1": "웹 브라우저를 열고 <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>으로 이동하세요.",
+      "step3_1Bullet2": "오른쪽 상단에 있는 <strong>'로그인'</strong>을 클릭하세요.",
+      "step3_1Bullet3": "Steam 계정 이름과 비밀번호를 입력하세요.",
+      "step3_1Bullet4": "메시지가 나타나면 Steam Guard 확인을 완료하세요.",
+      "step3_2Title": "2단계 - Steam 웹 API 키 페이지 열기",
+      "step3_2Bullet1": "로그인한 상태에서 Steam 웹 API 키 등록 페이지를 엽니다: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "페이지에는 Steam 웹 API에 대한 간단한 설명과 <strong>\"새 Steam 웹 API 키 등록\"</strong>이라는 제목의 양식이 표시됩니다.",
+      "step3_3Title": "3단계 - 도메인 이름을 입력하고 약관에 동의합니다.",
+      "step3_3Intro": "등록 양식에서:",
+      "step3_3Bullet1": "<strong>'도메인 이름'</strong> 입력란에 키를 사용할 웹사이트 또는 서비스의 도메인을 입력합니다. <ul class=\"p-ml-3\"><li>도메인이 없는 경우 <code>localhost</code>, <code>127.0.0.1</code> 또는 <code>example.com</code>과 같은 자리 표시자를 입력할 수 있습니다.</li></ul>",
+      "step3_3Bullet2": "Steam 웹 API 이용 약관을 읽어보세요.",
+      "step3_3Bullet3": "약관에 동의함을 확인하려면 확인란을 선택하세요.",
+      "step3_3Bullet4": "양식을 제출하려면 <strong>'등록'</strong> 버튼을 클릭하세요.",
+      "step3_4Title": "4단계 - 새로운 Steam 웹 API 키 보기 및 복사",
+      "step3_4Intro": "성공적으로 등록한 후:",
+      "step3_4Bullet1": "페이지가 다시 로드되고 상단 근처에 Steam 웹 API 키가 표시됩니다.",
+      "step3_4Bullet2": "키는 문자와 숫자로 구성된 긴 문자열입니다(예: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "전체 키를 선택하고 복사합니다(Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "비밀번호 관리자나 암호화된 메모 앱 등 안전한 위치에 보관하세요.",
+      "step4Title": "4. Steam 웹 API 키 사용의 기본 예",
+      "step4Intro": "키가 있으면 이를 URL에 <code>key=</code> 매개변수로 추가하여 Steam 웹 API 엔드포인트를 호출할 수 있습니다. 예를 들어 간단한 HTTP 요청은 다음과 같습니다(<code>YOURKEYHERE</code>를 실제 키로 교체).",
+      "step4Outro": "정확한 URL과 매개변수는 사용 중인 Steam 웹 API 인터페이스에 따라 다릅니다. 필요한 엔드포인트에 대해서는 항상 공식 문서를 참조하세요.",
+      "step5Title": "5. Steam 웹 API 키 취소 또는 재생성",
+      "step5Intro": "Steam 웹 API 키가 더 이상 필요하지 않거나 손상되었다고 생각되면 취소해야 합니다.",
+      "step5Bullet1": "아직 로그인하지 않았다면 Steam 계정에 로그인하세요.",
+      "step5Bullet2": "<a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>를 다시 엽니다.",
+      "step5Bullet3": "<strong>'내 Steam 웹 API 키 취소'</strong> 버튼을 클릭하세요.",
+      "step5Bullet4": "나중에 새 키가 필요한 경우 동일한 페이지로 돌아가서 위 단계를 사용하여 다시 등록하세요.",
+      "step6Title": "6. 문제 해결 팁",
+      "step6Intro": "키를 등록하려고 할 때 다음 문제 중 하나가 나타날 수 있습니다.",
+      "step6Bullet1": "<strong>메시지:</strong> <em>\"Steam 계정에 게임이 있으면 Steam 웹 API 키에 대한 액세스 권한이 부여됩니다.\"</em> 이 경우 계정이 아직 최소 요구 사항을 충족하지 않습니다. Steam에서 게임을 하나 이상 구매하고 구매가 완료될 때까지 기다린 후 나중에 다시 시도하세요.",
+      "step6Bullet2": "<strong>페이지에서 계속 로그인하라는 메시지를 표시합니다</strong> - 브라우저에서 쿠키와 JavaScript가 활성화되어 있는지, 그리고 올바른 계정으로 로그인하고 있는지 확인하세요.",
+      "step6Bullet3": "<strong>보안 문제</strong> - 제3자 사이트나 사람이 키를 요구하는데 그 이유를 알 수 없는 경우 공유하지 마세요. 키가 노출되었다고 생각되면 키를 취소하고 Steam 비밀번호를 변경하세요.",
+      "footerNote": "이제 Steam 웹 API 키가 등록되었으며 이를 안전하게 관리하는 방법에 대한 기본적인 이해가 완료되었습니다. 키를 등록, 사용 또는 취소해야 할 때 이 페이지를 참조하여 편리하게 보관하세요."
+    },
+    "folders": {
+      "dialogTitle": "폴더 구성"
+    }
+  },
+  "changelog": {
+    "title": "변경 내역",
+    "events": {
+      "initialRelease": {
+        "title": "초기 릴리스",
+        "version": "0.4.0",
+        "date": "2026-01-17",
+        "description": "Honu's Project Zomboid Hub의 첫 공개 버전."
+      }
+    }
+  },
+  "docs": {
+    "title": "선적 서류 비치",
+    "intro": "Honu's Hub는 Tauri를 통한 데스크톱 통합을 통해 로컬 프로젝트 Zomboid를 탐색, 검사 및 관리하는 데 도움이 됩니다.",
+    "toc": {
+      "aria": "목차",
+      "title": "목차",
+      "overview": "개요",
+      "workflow": "작업 흐름",
+      "data": "앱이 사용하는 데이터",
+      "features": "특징",
+      "mediaPlayer": "미디어 플레이어",
+      "logInspector": "로그 검사기",
+      "folderSetup": "폴더 설정",
+      "tauri": "데스크탑(Tauri) 통합",
+      "privacy": "개인 정보 보호 및 저장",
+      "troubleshooting": "문제 해결",
+      "faq": "FAQ"
+    },
+    "overview": {
+      "title": "개요",
+      "body": "이 앱은 선택한 모드 디렉터리를 검색하고 일반적인 Project Zomboid 모드 규칙에서 메타데이터를 파생하며 모든 것을 테이블과 요약 대시보드에 표시합니다."
+    },
+    "workflow": {
+      "title": "작업 흐름",
+      "intro": "이 엔드투엔드 흐름을 따라 폴더를 연결하고, 메타데이터를 동기화하고, Honu Mod Info QoL 출력을 생성하세요.",
+      "step1": {
+        "title": "지도 폴더",
+        "body": "사이드바 작업에서 <strong>폴더 구성</strong>을 열고 Project Zomboid 게임, 워크샵 및 사용자 디렉터리를 설정하세요.",
+        "screenshot": "스크린샷: 폴더 구성"
+      },
+      "step2": {
+        "title": "Steam 창작마당 키 생성/입력",
+        "body": "앱이 창작마당 메타데이터를 가져올 수 있도록 <strong>Steam API 키 설정</strong>을 사용하여 키를 붙여넣으세요.",
+        "screenshot": "스크린샷: Steam API 키 설정"
+      },
+      "step3": {
+        "title": "로컬 모드 데이터 동기화",
+        "body": "<strong>로컬 모드 데이터 동기화</strong>를 실행하여 창작마당 폴더를 검색하고 로컬 모드 목록을 작성하세요.",
+        "screenshot": "스크린샷: 로컬 Mod 데이터 동기화"
+      },
+      "step4": {
+        "title": "Steam 창작마당과 동기화",
+        "body": "<strong>Steam 창작마당과 동기화</strong>를 실행하여 창작마당 제목, 작성자, 크기 및 추가 메타데이터를 가져옵니다.",
+        "screenshot": "스크린샷: Steam 창작마당과 동기화"
+      },
+      "step5": {
+        "title": "Honu의 모드 정보 QoL 동기화",
+        "body": "<strong>Sync Honu의 Mod Info QoL</strong>을 사용하여 Project Zomboid 사용자 폴더 내에서 <code>honus_miqol_db.lua</code>를 생성/업데이트하세요.",
+        "screenshot": "스크린샷: Honu의 모드 정보 QoL 동기화"
+      }
+    },
+    "data": {
+      "title": "앱이 사용하는 데이터",
+      "intro": "앱은 디스크에서 사용 가능한 정보를 바탕으로 모드 목록을 작성합니다.",
+      "bullet1": "<strong>Mod 폴더 경로</strong> - Mod 디렉토리에 대한 절대 경로를 확인했습니다.",
+      "bullet2": "<strong>모드 ID</strong> - 가능한 경우 모드 메타데이터에서 추출됩니다(일반적으로 <code>mod.info</code>에서).",
+      "bullet3": "<strong>이름</strong> - 메타데이터 및/또는 폴더 이름 지정에서 파생된 표시 이름입니다.",
+      "bullet4": "<strong>워크숍 ID(선택 사항)</strong> - 감지되고 숫자인 경우 앱에서 Steam 창작마당 링크 버튼을 활성화합니다.",
+      "bullet5": "<strong>상태/상태 표시기</strong> - 누락되거나 불완전한 메타데이터(감지 가능한 경우)와 같은 기본 신호입니다.",
+      "outro": "모든 모드에 완전한 메타데이터가 포함되어 있는 것은 아닙니다. 필드가 누락되면 UI는 최선의 값을 표시하고 특정 데이터(예: Steam 링크)가 필요한 작업을 비활성화할 수 있습니다."
+    },
+    "features": {
+      "title": "특징",
+      "bullet1": "<strong>모드 테이블</strong> - 감지된 모드를 주요 필드(이름, ID, 가능한 경우 워크숍 링크 및 경로)와 함께 나열합니다.",
+      "bullet2": "<strong>행 세부정보</strong> - 행을 확장하면 모드에 대한 자세한 정보를 볼 수 있습니다(가능한 경우).",
+      "bullet3": "<strong>Steam에서 열기</strong> - 유효한 워크샵 ID가 있는 모드에 대한 워크샵 페이지를 기본 브라우저에서 엽니다.",
+      "bullet4": "<strong>폴더 열기</strong> - 파일 탐색기에서 선택한 모드 폴더를 엽니다.",
+      "mediaPlayer": "<strong>미디어 플레이어</strong> - 사이드바에서 Project Zomboid 음악 트랙을 재생합니다. <a routerLink=\"/documentation\" 조각=\"media-player\">미디어 플레이어</a>를 참조하세요.",
+      "logInspectorPrefix": "<strong>로그 검사기</strong> - 로그 파일(예: <code>console.txt</code>)을 로드하고 필터링하여 오류와 경고를 빠르게 찾습니다. 보다",
+      "logInspectorLink": "로그 검사기",
+      "bullet6": "<strong>대시보드</strong> - 빠른 통계(예: 감지된 총 모드) 및 기타 상위 수준 지표를 표시합니다."
+    },
+    "mediaPlayer": {
+      "title": "미디어 플레이어",
+      "intro": "사이드바에는 Project Zomboid 오디오 트랙(OGG)을 검색하고 앱 내에서 재생할 수 있는 경량 음악 플레이어가 포함되어 있습니다.",
+      "bullet1": "<strong>재생목록</strong> - 감지된 트랙과 기본 메타데이터(사용 가능한 경우 제목/아티스트/앨범)를 표시합니다.",
+      "bullet2": "<strong>재생</strong> - 재생/일시 정지 및 이전/다음 트랙.",
+      "bullet3": "<strong>탐색 + 볼륨</strong> - 트랙을 탐색하고 볼륨/음소거를 조정합니다."
+    },
+    "logInspector": {
+      "title": "로그 검사기",
+      "intro": "로그 검사기를 사용하면 로그 파일(예: <code>console.txt</code>)을 열고 필터링하여 충돌, 모드 로드 문제, 서버 시작 문제를 해결할 수 있습니다.",
+      "bullet1": "<strong>파일 선택</strong> - <code>.txt</code> 또는 <code>.log</code> 파일을 찾아보거나 가능한 경우 기본 경로를 사용합니다.",
+      "bullet2": "<strong>필터</strong> - 로그 수준(ERROR/WARN/LOG/DEBUG/TRACE)을 선택하고 날짜/시간 창을 설정하고 표시되는 최대 항목 수를 제한합니다.",
+      "bullet3": "<strong>검색</strong> - 구문 분석된 메시지와 원시 소스 줄에서 텍스트를 기준으로 항목을 필터링합니다.",
+      "bullet4": "<strong>실시간 폴링</strong> - 선택적으로 타이머를 새로 고쳐 게임/서버가 실행되는 동안 로그 업데이트를 확인합니다.",
+      "bullet5": "<strong>지우기</strong> - 선택한 로그 파일을 자릅니다(주의해서 사용)."
+    },
+    "folderSetup": {
+      "title": "폴더 설정",
+      "step1": "왼쪽 사이드바(<em>HOME</em> 아래)에서 <strong>Mods</strong> 페이지를 엽니다.",
+      "step2": "<em>액션</em> 메뉴에서 <strong>모드 폴더 찾아보기</strong>를 사용하여 프로젝트 Zomboid 모드 디렉토리(일반적으로 <code>projectzomboid/mods</code>)를 선택하세요.",
+      "step3": "선택 후 앱은 디렉터리를 검색하고 mods 테이블과 대시보드를 채웁니다.",
+      "tip": "팁: 컴퓨터를 전환하거나 mods 디렉터리를 이동하는 경우 다시 찾아 저장된 경로를 업데이트하면 됩니다."
+    },
+    "tauri": {
+      "title": "데스크탑(Tauri) 통합",
+      "bullet1": "<strong>파일 시스템 액세스</strong> - 디렉터리 검색 및 검색은 데스크톱 셸을 통해 수행됩니다.",
+      "bullet2": "<strong>외부 링크 열기</strong> - Steam 창작마당 링크는 OS 기본 브라우저를 사용하여 열립니다.",
+      "bullet3": "<strong>폴더 열기</strong> - mod 디렉토리에 초점을 맞춘 OS 파일 탐색기를 시작합니다."
+    },
+    "privacy": {
+      "title": "개인 정보 보호 및 저장",
+      "bullet1": "<strong>로컬 데이터</strong> - 선택한 mods 폴더 경로와 스캔 결과가 UX 개선을 위해 로컬로 캐시될 수 있습니다."
+    },
+    "troubleshooting": {
+      "title": "문제 해결",
+      "bullet1": "<strong>스캔 후 모드가 표시되지 않음</strong> - 선택한 폴더가 실제 프로젝트 Zomboid 모드 디렉터리이고 여기에 모드 하위 폴더가 포함되어 있는지 확인하세요.",
+      "bullet2": "<strong>Steam 링크가 비활성화되었습니다</strong> - 모드에 유효한 숫자 워크샵 ID가 있는지 확인하세요(모든 모드가 워크샵 기반인 것은 아닙니다).",
+      "bullet3": "<strong>폴더 열기는 아무 작업도 수행하지 않음</strong> - Tauri 백엔드가 실행 중이고 OS 권한이 파일 탐색기 열기를 허용하는지 확인하세요."
+    },
+    "faq": {
+      "title": "FAQ",
+      "q1": "앱이 내 모드를 편집하나요?",
+      "a1": "아니요. 핵심 워크플로는 읽기 전용입니다. 즉, 폴더를 검색하고 메타데이터를 표시합니다. 폴더 열기나 창작마당 링크와 같은 작업은 모드 파일을 수정하지 않습니다.",
+      "q2": "모드에 대한 일부 정보가 누락된 이유는 무엇입니까?",
+      "a2": "모드는 메타데이터를 얼마나 일관되게 포함하는지에 따라 다릅니다. ID 또는 워크샵 ID와 같은 필드가 누락된 경우 앱은 가능한 작업을 표시하고 해당 필드에 의존하는 기능을 비활성화합니다."
+    }
+  },
+  "tags": {
+    "animals": "동물",
+    "audio": "오디오",
+    "balance": "균형",
+    "build_41": "빌드 41",
+    "build_42": "빌드 42",
+    "build_40": "빌드 40",
+    "buildings": "건물",
+    "clothing_armor": "의류/방어구",
+    "farming": "농업",
+    "food": "음식",
+    "framework": "프레임워크",
+    "hardmode": "하드모드",
+    "interface": "인터페이스",
+    "items": "항목",
+    "language_translation": "언어/번역",
+    "literature": "문학",
+    "map": "지도",
+    "military": "군사",
+    "misc": "기타",
+    "models": "모델",
+    "multiplayer": "멀티플레이어",
+    "pop_culture": "대중 문화",
+    "qol": "QoL",
+    "realistic": "현실적",
+    "silly_fun": "바보/재미",
+    "skills": "기술",
+    "textures": "텍스처",
+    "traits": "특성",
+    "vehicles": "차량",
+    "weapons": "무기",
+    "wip": "WIP"
+  },
+  "tagFilter": {
+    "label": "태그",
+    "matchLabel": "일치",
+    "matchAny": "또는",
+    "matchAll": "및",
+    "placeholder": "태그 선택"
+  },
+  "modsTable": {
+    "clearFilters": "삭제",
+    "searchPlaceholder": "검색 키워드",
+    "detailsTitle": "모드 세부정보",
+    "columns": {
+      "name": "이름",
+      "author": "저자",
+      "workshopId": "워크숍 ID",
+      "lastModified": "마지막 수정 날짜"
+    },
+    "filters": {
+      "name": "이름으로 검색",
+      "author": "작성자로 검색",
+      "workshopId": "워크숍 ID로 검색",
+      "date": "날짜 필터링"
+    }
+  },
+  "folders": {
+    "title": "필요한 폴더 설정",
+    "description": "이 폴더는 모드를 스캔하고 프로젝트 Zomboid 설치 세부 정보를 읽는 데 사용됩니다.",
+    "gameDirLabel": "Project Zomboid 게임 폴더",
+    "workshopDirLabel": "로컬 모드(Steam Workshop) 폴더",
+    "userDirLabel": "Project Zomboid 사용자 폴더(선택 사항)",
+    "userDirNote": "서버 사전 설정 및 (선택 사항) 고급 적용 대상을 내보내는 데 사용됩니다."
+  },
+  "modDetails": {
+    "fields": {
+      "name": "이름",
+      "modId": "모드 ID",
+      "author": "작성자",
+      "version": "모드 버전",
+      "versionMin": "최소 게임 버전",
+      "versionMax": "최대 게임 버전",
+      "url": "URL",
+      "description": "설명",
+      "tags": "태그",
+      "noTags": "태그 없음",
+      "packs": "팩",
+      "tiledefs": "Tiledefs",
+      "workshopTitle": "워크숍 제목",
+      "workshopCreator": "워크숍 작성자",
+      "fileSize": "파일 크기",
+      "timeCreated": "생성 시간",
+      "timeUpdated": "업데이트 시간",
+      "workshopViews": "워크샵 조회수",
+      "workshopSubscriptions": "워크샵 구독",
+      "adultContent": "성인용 콘텐츠 있음"
+    },
+    "links": {
+      "requiredMods": "필수 모드",
+      "loadAfter": "이후 모드 로드",
+      "loadBefore": "이전 모드 로드",
+      "incompatibleMods": "호환되지 않는 모드",
+      "requiredBy": "필수 기준",
+      "incompatibleWith": "호환되지 않음"
+    },
+    "buttons": {
+      "visitWorkshop": "Steam 창작마당 페이지 방문",
+      "authorWorkshop": "저자의 Steam 창작마당 페이지",
+      "openFolder": "mod 폴더 열기"
+    },
+    "tooltips": {
+      "modInfoReadonly": "이 필드는 읽기 전용이며 mod.info에서 채워집니다.",
+      "steamReadonly": "이 필드는 읽기 전용이며 Steam 창작마당에서 채워집니다.",
+      "modMissing": "다음 모드를 찾을 수 없습니다.",
+      "syncToActivate": "Steam Workshop과 동기화하여 활성화",
+      "modFolderUnavailable": "Mod 폴더 경로를 사용할 수 없습니다."
+    }
+  },
+  "modsPage": {
+    "toastHelp": "이건 어디서 찾을 수 있나요?",
+    "workshopPrompt": {
+      "title": "Steam 창작마당 데이터 가져오기",
+      "body": "Steam 창작마당에서 모드에 대한 최신 메타데이터를 가져오시겠습니까?",
+      "alwaysFetch": "묻지 않고 항상 자동으로 가져오세요"
+    },
+    "loadingLocal": "로컬 모드 데이터 스캔 중...",
+    "loadingWorkshop": "Steam 창작마당 데이터 가져오는 중...",
+    "loading": "데이터 로드 중..."
+  },
+  "onboarding": {
+    "title": "시작하기",
+    "steps": {
+      "welcome": "환영합니다",
+      "folders": "폴더",
+      "steamKey": "Steam API 키",
+      "tips": "팁"
+    },
+    "welcome": {
+      "title": "Project Zomboid Mod Manager에 오신 것을 환영합니다",
+      "body": "이 빠른 설정은 폴더를 연결하고 Steam Web API 키를 추가하여 모드 동기화를 시작하는 데 도움이 됩니다.",
+      "bullet1": "Project Zomboid 폴더를 선택하세요.",
+      "bullet2": "Workshop 메타데이터를 위해 Steam Web API 키를 추가하세요.",
+      "bullet3": "설정을 마치고 모드 관리를 시작하세요."
+    },
+    "tips": {
+      "title": "빠른 팁",
+      "bullet1": "사이드바에서 언제든지 폴더와 Steam API 키를 업데이트할 수 있습니다.",
+      "bullet2": "Workshop 메타데이터를 동기화하기 전에 로컬 모드 데이터 동기화를 실행하세요.",
+      "bullet3": "모드 필터를 사용해 목록을 빠르게 좁힐 수 있습니다."
+    }
+  },
+  "toasts": {
+    "menu": {
+      "honuSync": {
+        "failedSummary": "Honu 모드 정보 QoL 동기화 실패",
+        "missingUserDetail": "프로젝트 Zomboid 사용자 폴더가 구성되지 않았습니다.",
+        "successSummary": "Honu의 모드 정보 QoL 동기화",
+        "successCreatedDetail": "honus_miqol_db.lua가 생성되었습니다.",
+        "successUpdatedDetail": "honus_miqol_db.lua가 업데이트되었습니다.",
+        "failedDetail": "Honu 모드 정보 QoL 동기화에 실패했습니다."
+      }
+    },
+    "mods": {
+      "dataMigration": {
+        "summary": "데이터 마이그레이션",
+        "detail": "로컬 모드 데이터가 업데이트되고 있습니다. 종속성을 새로 고치기 위해 새 검사가 실행 중입니다."
+      },
+      "syncInProgress": {
+        "summary": "동기화 진행 중",
+        "detail": "동기화 작업이 이미 실행 중입니다. 완료될 때까지 기다려주세요."
+      },
+      "localSyncComplete": {
+        "summary": "로컬 모드 동기화 완료",
+        "detail": "로컬 모드 데이터가 성공적으로 새로 고쳐졌습니다."
+      },
+      "localSyncFailed": {
+        "summary": "로컬 모드 동기화 실패",
+        "detail": "로컬 모드 동기화에 실패했습니다."
+      },
+      "invalidDirectory": {
+        "summary": "잘못된 디렉터리",
+        "detail": "선택한 폴더가 유효한 Project Zomboid 창작마당 디렉터리(AppID 108600)가 아닌 것 같습니다."
+      },
+      "steamApiRequired": {
+        "summary": "Steam 웹 API 키 필요",
+        "detail": "메뉴에서 \"Steam API 키 설정\"을 사용한 다음 동기화를 시도하세요. 다시."
+      },
+      "workshopNoData": {
+        "summary": "",
+        "detail": "워크샵 메타데이터가 반환되지 않았습니다. 아무것도 저장되지 않았습니다."
+      },
+      "workshopPartial": {
+        "summary": "Steam Workshop 부분 동기화됨",
+        "detail": "작업장 아이템 {{total}}개 중 {{received}}개를 받았습니다. 누락된 ID: {{missing}}{{suffix}}"
+      },
+      "workshopSynced": {
+        "summary": "Steam 창작마당이 동기화됨",
+        "detail": " 창작마당 메타데이터가 성공적으로 저장되었습니다."
+      },
+      "workshopUnauthorized": {
+        "summary": "Steam Web API 무단",
+        "detail": "Steam에서 401 무단을 반환했습니다. Steam 웹 API 키를 확인하고 다시 시도하십시오."
+      },
+      "workshopSyncFailed": {
+        "summary": "",
+        "detail": "Steam 창작마당 메타데이터 동기화에 실패했습니다."
+      }
+    },
+    "modDetails": {
+      "presetNameExists": {
+        "summary": "사전 설정 이름이 이미 존재합니다",
+        "detail": "\"{{name}}\"에 대해 다른 이름을 선택하십시오."
+      },
+      "removeFailed": {
+        "summary": "제거 실패",
+        "missingUserDetail": "프로젝트 Zomboid 사용자 디렉터리가 구성되지 않았습니다.",
+        "missingModDetail": "Mod ID가 mods.txt에서 발견되지 않았습니다.",
+        "failedDetail": "사전 설정에서 모드를 제거하지 못했습니다."
+      },
+      "removed": {
+        "summary": "제거됨",
+        "detailMultiple": "선택한 모드가 다음에서 제거되었습니다. 사전 설정.",
+        "detailSingle": "모드가 사전 설정에서 제거되었습니다."
+      },
+      "presetUpdated": {
+        "summary": "사전 설정이 업데이트되었습니다",
+        "detailFallback": "pz_modlist_settings.cfg를 업데이트할 수 없습니다.",
+        "detailFailed": "pz_modlist_settings.cfg를 업데이트하지 못했습니다."
+      }
+    },
+    "loadouts": {
+      "presetNameExists": {
+        "summary": "사전 설정 이름이 이미 존재합니다",
+        "detail": "\"{{name}}\"에 대해 다른 이름을 선택하십시오."
+      },
+      "noModsToExport": {
+        "summary": "내보낼 모드가 없습니다",
+        "detailCode": "코드를 생성하기 전에 하나 이상의 모드를 추가하십시오.",
+        "detailPreset": "사전 설정을 저장하기 전에 하나 이상의 모드를 추가하십시오."
+      },
+      "copied": {
+        "summary": "복사됨",
+        "detail": "{{label}} 클립보드에 복사되었습니다."
+      },
+      "presetImported": {
+        "summary": "사전 설정을 가져왔습니다",
+        "detail": "가져온 {{count}} 모드."
+      },
+      "importFailed": {
+        "summary": "가져오기 실패",
+        "detail": "사전 설정을 가져오지 못했습니다."
+      },
+      "presetSaved": {
+        "summary": "사전 설정 저장됨",
+        "detailFallback": "pz_modlist_settings.cfg를 업데이트할 수 없습니다.",
+        "detailFailed": "pz_modlist_settings.cfg를 업데이트하지 못했습니다."
+      },
+      "presetSaveNotice": {
+        "reordered": "종속성 규칙에 따라 모드를 재정렬했습니다.",
+        "missingDependencies": "종속성 누락: {{count}}.",
+        "missingWorkshopIds": "워크샵 ID 누락: {{count}}.",
+        "incompatibilities": "비호환성: {{count}}.",
+        "cycles": "감지된 주기: {{count}}.",
+        "conflicts": "파일 충돌: {{count}}."
+      },
+      "presetDeleted": {
+        "summary": "사전 설정이 삭제되었습니다",
+        "detailFallback": "pz_modlist_settings.cfg를 업데이트할 수 없습니다.",
+        "detailFailed": "pz_modlist_settings.cfg를 업데이트하지 못했습니다."
+      }
+    },
+    "modCollections": {
+      "loadFailed": {
+        "summary": "",
+        "detail": "컬렉션을 로드할 수 없습니다. Steam 웹 API 키를 확인하고 다시 시도하세요."
+      },
+      "steamUnauthorized": "Steam에서 401 Unauthorized를 반환했습니다. Steam 웹 API 키를 확인하세요.",
+      "queryFailed": "Steam 창작마당 컬렉션을 쿼리하지 못했습니다.",
+      "presetNotCreated": {
+        "summary": "사전 설정이 생성되지 않음",
+        "detail": "이 컬렉션에 대한 창작마당 항목이 없습니다."
+      },
+      "presetCreated": {
+        "summary": "사전 설정이 생성됨",
+        "detail": "컬렉션 사전 설정이 \"{{name}}\"로 저장되었습니다."
+      },
+      "presetUpdated": {
+        "summary": "사전 설정 업데이트됨",
+        "detail": "컬렉션 사전 설정 \"{{name}}\"이 새로 고쳐졌습니다."
+      },
+      "presetRemoved": {
+        "summary": "사전 설정이 제거되었습니다",
+        "detail": "컬렉션 사전 설정이 제거되었습니다."
+      }
+    },
+    "server": {
+      "invalidName": {
+        "summary": "잘못된 서버 이름",
+        "detailMissing": "서버를 입력하세요 이름.",
+        "detailInvalidChars": "서버 이름에 잘못된 파일 이름 문자가 포함되어 있습니다.",
+        "detailTrailing": "서버 이름은 점이나 공백으로 끝날 수 없습니다."
+      },
+      "nameExists": {
+        "summary": "서버 이름이 이미 존재합니다.",
+        "detail": "고유한 서버 이름을 선택하세요."
+      },
+      "missingUserFolder": {
+        "summary": "사용자 폴더 누락",
+        "detail": "Project Zomboid 사용자 폴더를 먼저 설정하세요."
+      },
+      "createFailed": {
+        "summary": "생성 실패",
+        "detail": "서버 파일 생성에 실패했습니다."
+      },
+      "saved": {
+        "summary": "저장됨",
+        "detail": "서버 파일이 업데이트되었습니다."
+      },
+      "saveFailed": {
+        "summary": "저장 실패",
+        "detail": "서버 파일 저장에 실패했습니다."
+      }
+    }
+  },
+  "primeng": {
+    "startsWith": "다음으로 시작",
+    "contains": "포함",
+    "notContains": "포함하지 않음",
+    "endsWith": "다음으로 끝남",
+    "equals": "같음",
+    "notEquals": "같지 않음",
+    "noFilter": "필터 없음",
+    "lt": "보다 작음",
+    "lte": "이하",
+    "gt": "보다 큼",
+    "gte": "이상",
+    "dateIs": "날짜가 다음과 같음",
+    "dateIsNot": "날짜가 다음과 같지 않음",
+    "dateBefore": "날짜가 이전",
+    "dateAfter": "날짜가 이후",
+    "clear": "지우기",
+    "apply": "적용",
+    "matchAll": "모두 일치",
+    "matchAny": "하나라도 일치",
+    "addRule": "규칙 추가",
+    "removeRule": "규칙 제거"
+  },
+  "dashboard": {
+    "headers": {
+      "overview": "개요",
+      "updateStatus": "모드 업데이트 상태",
+      "topInstalled": "가장 많이 설치된 모드(구독 기준)",
+      "lastUpdatedInstalled": "마지막으로 업데이트된 설치된 모드",
+      "installsOverTime": "시간이 지남에 따라 Mod 설치",
+      "largestMods": "가장 큰 모드(파일 크기 기준)",
+      "latestNews": "최신 프로젝트 Zomboid 뉴스",
+      "popularThisWeek": "이번 주 인기 모드",
+      "latestMods": "최신 모드",
+      "updatedMods": "업데이트된 모드"
+    },
+    "labels": {
+      "totalMods": "총 모드",
+      "lastLocalSync": "마지막 로컬 모드 동기화",
+      "lastWorkshopSync": "마지막 워크샵 동기화",
+      "subscribers": "가입자",
+      "updated": "업데이트됨",
+      "created": "생성됨",
+      "installedTooltip": "로컬로 설치됨",
+      "unknown": "알려지지 않은",
+      "never": "절대"
+    },
+    "messages": {
+      "steamTimeout": "Steam 웹 API가 응답하지 않았습니다. 나중에 다시 시도해 주세요.",
+      "noInstalledSubs": "구독 데이터가 포함된 설치된 모드가 없습니다.",
+      "noWorkshopUpdateInfo": "워크샵 업데이트 정보가 없습니다.",
+      "noSizeData": "모드 파일 크기 데이터를 사용할 수 없습니다.",
+      "noNews": "검색된 뉴스 항목이 없습니다.",
+      "noPopularMods": "인기 있는 모드를 찾을 수 없습니다.",
+      "noModsFound": "모드가 발견되지 않았습니다.",
+      "noRecentUpdates": "최근 업데이트된 모드가 없습니다."
+    },
+    "fallbacks": {
+      "untitledItem": "제목 없는 항목"
+    },
+    "charts": {
+      "installs": {
+        "label": "설치 월별 모드",
+        "xAxis": "월",
+        "yAxis": "모드"
+      },
+      "status": {
+        "outdated": "구식",
+        "upToDate": "최신"
+      },
+      "size": {
+        "label": "워크샵 파일 크기(바이트)",
+        "yAxis": "크기(바이트)"
+      }
+    }
+  },
+  "logInspector": {
+    "title": "로그 검사기",
+    "fields": {
+      "logFile": "로그 파일",
+      "types": "유형",
+      "typesPlaceholder": "유형 선택",
+      "maxEntries": "최대 항목",
+      "from": "에서",
+      "to": "에게",
+      "livePolling": "실시간 투표",
+      "pollingEverySeconds": "매(들)",
+      "searchMessage": "메시지 검색",
+      "searchPlaceholder": "찾다..."
+    },
+    "table": {
+      "pageReport": "{totalRecords} 중 {first} ~ {last} 표시 중",
+      "timestamp": "타임스탬프",
+      "type": "유형",
+      "message": "메시지"
+    },
+    "levels": {
+      "error": "오류",
+      "warn": "경고하다",
+      "log": "통나무",
+      "debug": "디버그",
+      "trace": "추적하다",
+      "other": "다른"
+    },
+    "dialog": {
+      "logFilesFilter": "로그 파일"
+    },
+    "errors": {
+      "noFilePath": "로그를 로드할 파일 경로를 설정합니다.",
+      "loadFailed": "로그 파일을 로드하지 못했습니다.",
+      "clearFailed": "로그 파일을 지우지 못했습니다."
+    }
+  }
+}

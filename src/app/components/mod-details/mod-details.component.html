@@ -1,0 +1,436 @@
+<ng-container *transloco="let t">
+<div class="p-4">
+  @if (getPosterImages(mod).length) {
+  <div class="mod-poster-carousel">
+    <p-carousel [value]="getPosterImages(mod)" [numVisible]="1" [numScroll]="1" [circular]="true"
+      [showIndicators]="true" [showNavigators]="true" [responsiveOptions]="responsiveOptions">
+      <ng-template let-image pTemplate="item">
+        <div class="mod-poster-carousel-item">
+          <p-image [src]="image" [alt]="mod.name" class="mod-poster-image" preview [previewImageSrc]="image"
+            [appendTo]="'body'"></p-image>
+        </div>
+      </ng-template>
+    </p-carousel>
+  </div>
+  }
+  <form class="mod-details-form p-fluid">
+    <h3 class="mod-details-title">
+      {{ mod.name }}
+      @if (getRelativeFolderName(mod)) {
+      ({{ getRelativeFolderName(mod) }})
+      }
+    </h3>
+
+    <div class="mod-details-grid">
+      <div class="mod-details-column">
+        <div class="field">
+          <label class="block mb-1" [for]="'name-' + mod.id">{{ t('modDetails.fields.name') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.name" name="name-{{ mod.id }}" [id]="'name-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'mod-id-' + mod.id">{{ t('modDetails.fields.modId') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.mod_id" name="mod-id-{{ mod.id }}" [id]="'mod-id-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'author-' + mod.id">{{ t('modDetails.fields.author') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.author" name="author-{{ mod.id }}" [id]="'author-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'version-' + mod.id">{{ t('modDetails.fields.version') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.version" name="version-{{ mod.id }}" [id]="'version-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'version-min-' + mod.id">{{ t('modDetails.fields.versionMin') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.version_min" name="version-min-{{ mod.id }}" [id]="'version-min-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'version-max-' + mod.id">{{ t('modDetails.fields.versionMax') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.version_max" name="version-max-{{ mod.id }}" [id]="'version-max-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'url-' + mod.id">{{ t('modDetails.fields.url') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.url" name="url-{{ mod.id }}" [id]="'url-' + mod.id" />
+        </div>
+
+        <div class="field">
+          <label class="block mb-1" [for]="'description-' + mod.id">{{ t('modDetails.fields.description') }}</label>
+          <textarea rows="6" class="w-full p-inputtext" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.modInfoReadonly')" tooltipPosition="top"
+            [(ngModel)]="mod.description" name="description-{{ mod.id }}" [id]="'description-' + mod.id"></textarea>
+        </div>
+
+      </div>
+
+      <div class="mod-details-column">
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.tags') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (tag of getMappedTagOptions(mod); track tag.value) {
+            <p-chip [label]="tag.label" class="p-chip-outlined mod-tag-chip"
+              [class.mod-tag-chip--active]="isTagSelected(tag.value)"
+              (click)="toggleTagFilter(tag.value)"></p-chip>
+            } @empty {
+            <span class="text-sm text-color-secondary">{{ t('modDetails.fields.noTags') }}</span>
+            }
+          </div>
+        </div>
+
+        @if ((mod.packs?.length ?? 0) > 0) {
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.packs') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (pack of mod.packs ?? []; track pack) {
+            <p-chip [label]="pack" class="p-chip-outlined"></p-chip>
+            }
+          </div>
+        </div>
+        }
+
+        @if ((mod.tiledefs?.length ?? 0) > 0) {
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.tiledefs') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (tiledef of mod.tiledefs ?? []; track tiledef) {
+            <p-chip [label]="tiledef" class="p-chip-outlined"></p-chip>
+            }
+          </div>
+        </div>
+        }
+
+        @if (hasModLinkChips) {
+        <div class="field">
+          @if (hasRequiredModValues) {
+          <label class="block mb-1">{{ t('modDetails.links.requiredMods') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (chip of requiredModChips; track chip.label) {
+            @if (!chip.missing && chip.mod) {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
+              (click)="openLinkedModDetails(chip.mod)"></p-chip>
+            } @else {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--missing"
+              [pTooltip]="t('modDetails.tooltips.modMissing')" tooltipPosition="top"></p-chip>
+            }
+            }
+          </div>
+          }
+
+          @if (hasLoadAfterValues) {
+          <label class="block mb-1 mt-3">{{ t('modDetails.links.loadAfter') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (chip of loadAfterChips; track chip.label) {
+            @if (!chip.missing && chip.mod) {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
+              (click)="openLinkedModDetails(chip.mod)"></p-chip>
+            } @else {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--missing"
+              [pTooltip]="t('modDetails.tooltips.modMissing')" tooltipPosition="top"></p-chip>
+            }
+            }
+          </div>
+          }
+
+          @if (hasLoadBeforeValues) {
+          <label class="block mb-1 mt-3">{{ t('modDetails.links.loadBefore') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (chip of loadBeforeChips; track chip.label) {
+            @if (!chip.missing && chip.mod) {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
+              (click)="openLinkedModDetails(chip.mod)"></p-chip>
+            } @else {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--missing"
+              [pTooltip]="t('modDetails.tooltips.modMissing')" tooltipPosition="top"></p-chip>
+            }
+            }
+          </div>
+          }
+
+          @if (hasIncompatibleValues) {
+          <label class="block mb-1 mt-3">{{ t('modDetails.links.incompatibleMods') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (chip of incompatibleChips; track chip.label) {
+            @if (!chip.missing && chip.mod) {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
+              (click)="openLinkedModDetails(chip.mod)"></p-chip>
+            } @else {
+            <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--missing"
+              [pTooltip]="t('modDetails.tooltips.modMissing')" tooltipPosition="top"></p-chip>
+            }
+            }
+          </div>
+          }
+
+          @if (hasRequiredByValues) {
+          <label class="block mb-1 mt-3">{{ t('modDetails.links.requiredBy') }}</label>
+            <div class="required-by-container mt-1 flex flex-wrap gap-2" [class.is-scrollable]="mod.required_by && mod.required_by.length > 5">
+              @for (chip of requiredByChips; track chip.label) {
+              @if (!chip.missing && chip.mod) {
+              <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
+                (click)="openLinkedModDetails(chip.mod)"></p-chip>
+              } @else {
+              <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--missing"
+                [pTooltip]="t('modDetails.tooltips.modMissing')" tooltipPosition="top"></p-chip>
+              }
+              }
+            </div>
+          }
+
+          @if (hasIncompatibleWithMods) {
+          <label class="block mb-1 mt-3">{{ t('modDetails.links.incompatibleWith') }}</label>
+          <div class="mt-1 flex flex-wrap gap-2">
+            @for (incompatible of incompatibleWithMods; track incompatible.id) {
+            <p-chip [label]="incompatible.name" class="p-chip-outlined mod-link-chip--included-with"
+              (click)="openLinkedModDetails(incompatible)"></p-chip>
+            }
+          </div>
+          }
+        </div>
+        }
+
+        <!-- Preset UI hidden until reintroduced. -->
+        <!--
+        @if (presetRows.length) {
+        <div class="field mt-4">
+          <label class="block mb-1">Presets Containing This Mod</label>
+          <p-table [value]="presetRows" [rowHover]="true" [paginator]="false">
+            <ng-template pTemplate="header">
+              <tr>
+                <th>Preset</th>
+                <th style="width: 8rem">Actions</th>
+              </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-row>
+              <tr>
+                <td>{{ row.name }}</td>
+                <td>
+                  <button
+                    type="button"
+                    pButton
+                    class="p-button-text p-button-danger"
+                    icon="pi pi-trash"
+                    label="Delete"
+                    (click)="removeFromPreset(row)"
+                  ></button>
+                </td>
+              </tr>
+            </ng-template>
+          </p-table>
+        </div>
+        }
+
+        <div class="mt-4">
+          <div class="field">
+            <label class="block mb-1" [for]="'create-loadout-' + mod.id">Create new preset</label>
+            <div class="flex align-items-center gap-2">
+              <p-toggleswitch [inputId]="'create-loadout-' + mod.id" name="create-loadout-{{ mod.id }}"
+                [disabled]="addToLoadoutBusy" [(ngModel)]="createNewLoadout"></p-toggleswitch>
+            </div>
+          </div>
+
+          @if (createNewLoadout) {
+          <div class="field">
+            <label class="block mb-1" [for]="'new-loadout-name-' + mod.id">New preset name</label>
+            <input pInputText class="w-full" [readonly]="addToLoadoutBusy" [(ngModel)]="newLoadoutName"
+              name="new-loadout-name-{{ mod.id }}" [id]="'new-loadout-name-' + mod.id"
+              placeholder="e.g. My Favorite Mods" />
+          </div>
+          } @else {
+          <div class="field">
+            <label class="block mb-1" [for]="'existing-loadout-' + mod.id">Existing preset</label>
+            <p-select [inputId]="'existing-loadout-' + mod.id" name="existing-loadout-{{ mod.id }}" class="w-full"
+              [options]="loadoutOptions" [(ngModel)]="selectedLoadoutId" [disabled]="addToLoadoutBusy"
+              [loading]="loadoutsLoading" [filter]="true" placeholder="Select a preset" optionLabel="label"
+              optionValue="value" [appendTo]="'body'"></p-select>
+            <div class="text-sm text-color-secondary mt-2">
+              @if (!currentModId) {
+              This mod is missing a modId (from mod.info), so it can't be added to a preset.
+            } @else {
+            Mod will be added by modId: <span style="font-family: var(--font-family-monospace, monospace)">{{
+              currentModId }}</span>
+            }
+            </div>
+          </div>
+          }
+
+          <div class="flex flex-wrap align-items-center gap-2">
+            <button type="button" pButton label="Add" icon="pi pi-plus" [disabled]="!canAddToLoadout"
+              [loading]="addToLoadoutBusy" (click)="addToLoadout()"></button>
+            <button type="button" pButton class="p-button-text" icon="pi pi-refresh" label="Refresh"
+              [disabled]="addToLoadoutBusy" (click)="refreshLoadouts()"></button>
+            @if (addToLoadoutMessage) {
+            <span class="text-sm text-color-secondary">{{ addToLoadoutMessage }}</span>
+            }
+          </div>
+        </div>
+        -->
+      </div>
+
+      <div class="mod-details-column">
+        <div class="field">
+          <label class="block mb-1" [for]="'workshop-title-' + mod.id">{{ t('modDetails.fields.workshopTitle') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="mod.workshop?.title" name="workshop-title-{{ mod.id }}" [id]="'workshop-title-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'workshop-creator-' + mod.id">{{ t('modDetails.fields.workshopCreator') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="mod.workshop?.creator_name" name="workshop-creator-{{ mod.id }}"
+            [id]="'workshop-creator-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.fileSize') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="formatFileSize(mod.workshop?.file_size ?? null)" name="file-size-{{ mod.id }}"
+            [id]="'file-size-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.timeCreated') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="formatDateTime(mod.workshop?.time_created ?? null)" name="time-created-{{ mod.id }}"
+            [id]="'time-created-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1">{{ t('modDetails.fields.timeUpdated') }}</label>
+          <input pInputText class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="formatDateTime(mod.workshop?.time_updated ?? null)" name="time-updated-{{ mod.id }}"
+            [id]="'time-updated-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'workshop-views-' + mod.id">{{ t('modDetails.fields.workshopViews') }}</label>
+          <input pInputText type="number" class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="mod.workshop?.map_views ?? ''" name="workshop-views-{{ mod.id }}"
+            [id]="'workshop-views-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'workshop-subscriptions-' + mod.id">{{ t('modDetails.fields.workshopSubscriptions') }}</label>
+          <input pInputText type="number" class="w-full" [readonly]="true"
+            [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
+            [ngModel]="mod.workshop?.subscriptions ?? ''" name="workshop-subscriptions-{{ mod.id }}"
+            [id]="'workshop-subscriptions-' + mod.id" />
+        </div>
+        <div class="field">
+          <label class="block mb-1" [for]="'workshop-adult-content-' + mod.id">{{ t('modDetails.fields.adultContent') }}</label>
+          <span class="read-only-toggle" [pTooltip]="t('modDetails.tooltips.steamReadonly')"
+            tooltipPosition="top">
+            <p-toggleswitch [inputId]="'workshop-adult-content-' + mod.id" name="workshop-adult-content-{{ mod.id }}"
+              [ngModel]="mod.workshop?.maybe_inappropriate_sex ?? false"></p-toggleswitch>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-3 flex flex-wrap gap-2">
+      @if (isNumericId(mod.workshop_id)) {
+      <button type="button" pButton class="p-button-text icon-steam2" (click)="openWorkshop(mod.workshop_id)">
+        <span>{{ t('modDetails.buttons.visitWorkshop') }}</span>
+      </button>
+      }
+      <button type="button" pButton class="p-button-text icon-steam2" [disabled]="!mod.workshop?.creator_url"
+        [pTooltip]="t('modDetails.tooltips.syncToActivate')" tooltipPosition="top"
+        (click)="openCreatorWorkshop(mod.workshop?.creator_url ?? null)">
+        <span>{{ t('modDetails.buttons.authorWorkshop') }}</span>
+      </button>
+      <button type="button" pButton class="p-button-text mod-folder-link" [disabled]="!mod.mod_info_path"
+        [pTooltip]="t('modDetails.tooltips.modFolderUnavailable')" [tooltipDisabled]="!!mod.mod_info_path" tooltipPosition="top"
+        (click)="openFolder(mod)">
+        <i class="pi pi-folder-open mr-2" aria-hidden="true"></i>
+        <span>{{ t('modDetails.buttons.openFolder') }}</span>
+      </button>
+    </div>
+  </form>
+</div>
+</ng-container>
+
+<!-- Preset dialogs hidden until reintroduced. -->
+<!--
+<p-dialog header="Remove Dependencies" [(visible)]="dependencyDialogVisible" [modal]="true" [style]="{ width: '32rem', maxWidth: '95vw' }">
+  <div class="p-fluid">
+    <p class="mt-0">This mod lists dependencies. Select any additional mods to remove from this preset.</p>
+    <p-multiSelect
+      [options]="dependencyOptions"
+      [(ngModel)]="dependencySelection"
+      optionLabel="label"
+      optionValue="value"
+      placeholder="Select dependencies"
+      display="chip"
+      [appendTo]="'body'"
+      class="w-full"
+    ></p-multiSelect>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button type="button" pButton label="Cancel" class="p-button-text" (click)="cancelDependencyRemoval()"></button>
+      <button type="button" pButton label="Remove" icon="pi pi-trash" (click)="confirmDependencyRemoval()"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog header="Add Mod to Preset" [(visible)]="addDialogVisible" [modal]="true" [style]="{ width: '36rem', maxWidth: '95vw' }">
+  <div class="p-fluid">
+    @if (addDialogDependencies.length) {
+    <p class="mt-0">This mod lists dependencies. Select any additional mods to include.</p>
+    <p-multiSelect
+      [options]="addDialogDependencies"
+      [(ngModel)]="addDialogSelection"
+      (ngModelChange)="onAddDependencySelectionChange()"
+      optionLabel="label"
+      optionValue="value"
+      placeholder="Select dependencies"
+      display="chip"
+      [appendTo]="'body'"
+      class="w-full"
+    ></p-multiSelect>
+    } @else {
+    <p class="mt-0">Review the recommended load order before saving.</p>
+    }
+
+    @if (addDialogIssues.length) {
+    <div class="mt-2">
+      @for (issue of addDialogIssues; track issue) {
+      <p-message severity="warn" [text]="issue"></p-message>
+      }
+    </div>
+    }
+
+    @if (addDialogAutoAdded.length) {
+    <div class="mt-2">
+      <p-message
+        severity="info"
+        [text]="'Auto-added required dependencies: ' + addDialogAutoAdded.length"
+      ></p-message>
+    </div>
+    }
+
+    <div class="mt-3">
+      <div class="font-medium mb-1">Proposed load order</div>
+      <div style="max-height: 10rem; overflow: auto; font-family: var(--font-family-monospace, monospace)">
+        @for (id of addDialogOrder; track id) {
+        <div>{{ id }}</div>
+        }
+      </div>
+    </div>
+
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button type="button" pButton label="Cancel" class="p-button-text" (click)="cancelAddWithDependencies()"></button>
+      <button type="button" pButton label="Save" icon="pi pi-save" (click)="confirmAddWithDependencies()"></button>
+    </div>
+  </div>
+</p-dialog>
+-->
