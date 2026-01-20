@@ -182,7 +182,6 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
 
   fromLocal = '';
   toLocal = '';
-  maxEntries = 50;
   searchText = '';
 
   pollingEnabled = false;
@@ -339,7 +338,15 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
   }
 
   applyFilters(): void {
-    const allowed = new Set<LogLevel>(this.selectedLevels ?? []);
+    const selectedLevelsRaw = Array.isArray(this.selectedLevels)
+      ? this.selectedLevels
+      : this.selectedLevels
+        ? [this.selectedLevels]
+        : [];
+    const selectedLevels = selectedLevelsRaw
+      .map((level: any) => (typeof level === 'string' ? level : level?.value))
+      .filter(Boolean) as LogLevel[];
+    const allowed = new Set<LogLevel>(selectedLevels);
     const from = this.fromLocal ? new Date(this.fromLocal) : null;
     const to = this.toLocal ? new Date(this.toLocal) : null;
     const needle = (this.searchText ?? '').trim().toLowerCase();
@@ -355,9 +362,8 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
       return true;
     });
 
-    const max = Math.max(1, Math.floor(this.maxEntries || 0));
-    this.maxEntries = max;
-    this.filteredEntries = filtered.length > max ? filtered.slice(filtered.length - max) : filtered;
+    this.filteredEntries = filtered;
+    this.tableFirst = 0;
   }
 
   tagSeverity(
@@ -376,6 +382,14 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
     if (entry.level === 'ERROR') classes.push('log-row-error');
     if (this.pollingEnabled && entry.isNew) classes.push('log-row-new');
     return classes.join(' ');
+  }
+
+  onTablePage(event: { first?: number; rows?: number }): void {
+    if (typeof event?.first === 'number') this.tableFirst = event.first;
+    const rows = Number(event?.rows);
+    if (Number.isFinite(rows) && rows > 0 && rows !== this.tableRows) {
+      this.tableRows = Math.floor(rows);
+    }
   }
 
   private inputWidthForText(

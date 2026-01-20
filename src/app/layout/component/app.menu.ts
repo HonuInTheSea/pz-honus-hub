@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import type { OverlayListenerOptions, OverlayOptions } from 'primeng/api';
+import { invoke } from '@tauri-apps/api/core';
 import { AppMenuitem } from './app.menuitem';
 import { filter, take } from 'rxjs';
 import { ModTagFilterComponent } from '../../components/mod-tag-filter/mod-tag-filter.component';
@@ -181,6 +182,7 @@ export class AppMenu {
     this.isCollectionsPage = url.startsWith('/collections');
     this.updateMenuTranslations();
     void this.loadSteamApiKey();
+    void this.ensureHonuModsDbFile();
     if (this.isModsPage) {
       void this.refreshPresetFilterOptions();
     }
@@ -198,6 +200,39 @@ export class AppMenu {
     if (typeof window !== 'undefined' && this.presetsUpdatedListener) {
       window.removeEventListener('pz-presets-updated', this.presetsUpdatedListener);
       this.presetsUpdatedListener = null;
+    }
+  }
+
+  private async ensureHonuModsDbFile(): Promise<void> {
+    const storedHonu =
+      (await this.store.getItem<string>('pz_honu_mod_info_qol_dir')) ?? '';
+    const storedUser = (await this.store.getItem<string>('pz_user_dir')) ?? '';
+    const baseDir = storedHonu.trim() || this.toHonuModInfoQolDir(storedUser);
+    const trimmedBase = baseDir.trim();
+    if (!trimmedBase) {
+      return;
+    }
+
+    const filePath = `${trimmedBase.replace(/[\\/]+$/, '')}/honus_miqol_db.lua`;
+    try {
+      await invoke<string>('read_text_file', { path: filePath });
+      return;
+    } catch {
+      // File missing or unreadable; attempt to create a minimal DB file.
+    }
+
+    let mods: ModSummary[] = [];
+    try {
+      const persisted = await this.modsState.loadPersistedMods();
+      mods = persisted?.local ?? [];
+    } catch {
+      mods = [];
+    }
+
+    try {
+      await this.honuQol.ensureModsDbFile(trimmedBase, mods);
+    } catch {
+      // Ignore failures; the sync action will surface errors to the user.
     }
   }
 

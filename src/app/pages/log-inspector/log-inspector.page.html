@@ -41,19 +41,6 @@
             </div>
 
             <div class="field">
-              <label for="max-entries">{{ t('logInspector.fields.maxEntries') }}</label>
-              <input
-                id="max-entries"
-                type="number"
-                pInputText
-                [(ngModel)]="maxEntries"
-                (ngModelChange)="onFiltersChanged()"
-                min="1"
-                step="50"
-              />
-            </div>
-
-            <div class="field">
               <label for="from-time">{{ t('logInspector.fields.from') }}</label>
               <input
                 id="from-time"
@@ -133,6 +120,7 @@
         sortField="timestampMs"
         [sortOrder]="-1"
         dataKey="sourceLine"
+        (onPage)="onTablePage($event)"
       >
         <ng-template pTemplate="header">
           <tr>
