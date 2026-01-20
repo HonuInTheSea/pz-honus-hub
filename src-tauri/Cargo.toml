@@ -1,6 +1,6 @@
 [package]
 name = "pz-honus-hub"
-version = "0.4.2"
+version = "0.4.3"
 description = "Honu's Project Zomboid Hub"
 authors = ["HonuInTheSea"]
 edition = "2021"
