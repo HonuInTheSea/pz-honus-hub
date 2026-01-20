@@ -1,3 +1,5 @@
+![Honu's Hub Logo](src/assets/honusHub.png?raw=true)
+
 # Honu's Hub
 
 Desktop hub app for Project Zomboid built with Angular (frontend) and Tauri (Rust backend). It focuses on quality-of-life tooling around Workshop mods (metadata, browsing, and local state) and uses the Steam Web API for enrichment.
