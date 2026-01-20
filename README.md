@@ -103,6 +103,10 @@ Notes:
 
 - Make sure the Tauri prerequisites are installed for your OS (see link above), otherwise the bundle step will fail.
 - Code signing is recommended for distribution (platform-specific) but not required for local builds.
+- If you distribute unsigned binaries, users may need to take extra install steps depending on OS:
+  - Windows: SmartScreen may block the installer/app; use "More info" -> "Run anyway" for trusted builds.
+  - macOS: Gatekeeper may block the app; use Finder "Open" on the app, or go to System Settings -> Privacy & Security -> "Open Anyway".
+  - Linux: ensure the file is executable (e.g., `chmod +x <app>` or `chmod +x <app>.AppImage`) and allow running it from your file manager.
 
 ## Recommended IDE Setup
 

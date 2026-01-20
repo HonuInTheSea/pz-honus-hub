@@ -5,12 +5,14 @@ import packageJson from '../../../package.json';
 
 type GithubLatestReleaseResponse = Readonly<{
   tag_name?: string;
+  html_url?: string;
 }>;
 
 @Injectable({ providedIn: 'root' })
 export class AppUpdateService {
   readonly currentVersion = packageJson.version;
   readonly latestTagName = signal<string | null>(null);
+  readonly latestReleaseUrl = signal<string | null>(null);
   readonly updateAvailable = signal(false);
 
   private checked = false;
@@ -30,9 +32,11 @@ export class AppUpdateService {
       );
 
       const tagName = (response?.tag_name ?? '').trim();
+      const releaseUrl = (response?.html_url ?? '').trim();
       if (!tagName) return;
 
       this.latestTagName.set(tagName);
+      this.latestReleaseUrl.set(releaseUrl || null);
       this.updateAvailable.set(
         compareVersions(tagName, this.currentVersion) > 0,
       );
@@ -68,4 +72,3 @@ function compareVersions(a: string, b: string): number {
   if (!preA && preB) return 1;
   return 0;
 }
-

@@ -10,8 +10,8 @@
         </div>
 
         <div class="layout-topbar-actions">
-            @if (appUpdate.updateAvailable()) {
-                <a class="app-update-link" href="https://api.github.com/repos/HonuInTheSea/pz-honus-hub/releases/latest" target="_blank" rel="noopener noreferrer">
+            @if (appUpdate.updateAvailable() && appUpdate.latestReleaseUrl()) {
+                <a class="app-update-link" [attr.href]="appUpdate.latestReleaseUrl()" target="_blank" rel="noopener noreferrer">
                     <p-tag severity="danger" value="Application Update Detected"></p-tag>
                 </a>
             }
