@@ -897,6 +897,7 @@
       "createNewServer": "Create New Server",
       "copy": "Copy",
       "deleteServer": "Delete Server",
+      "createBackupOnSave": "สร้างข้อมูลสำรองเมื่อบันทึก",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
       "serverEditor": "Server Editor",
@@ -934,3 +935,4 @@
     }
   }
 }
+

@@ -23,6 +23,7 @@ import { SelectModule } from 'primeng/select';
 import { ListboxModule } from 'primeng/listbox';
 import { TooltipModule } from 'primeng/tooltip';
 import { RadioButtonModule } from 'primeng/radiobutton';
+import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { open as openDialog } from '@tauri-apps/plugin-dialog';
 import { ModsPickerDialogComponent } from '../../components/mods-picker-dialog/mods-picker-dialog.component';
 import { TauriStoreService } from '../../services/tauri-store.service';
@@ -68,6 +69,7 @@ interface IniLine {
     ListboxModule,
     TooltipModule,
     RadioButtonModule,
+    ToggleSwitchModule,
     TranslocoModule,
     ModsPickerDialogComponent,
   ],
@@ -156,6 +158,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   sandboxListboxScrollHeight = 'auto';
   activeTab = 'ini';
   serverSelectWidth = 320;
+  backupOnSave = true;
   private readonly cachedTabs = new Set<string>();
   private readonly loadedServerTabs = new Set<string>();
   private readonly iniEntryOptionsByLocale = new Map<
@@ -163,6 +166,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     Array<{ label: string; key: string }>
   >();
   private sandboxOriginalValues = new Map<string, string>();
+  private readonly backupOnSaveKey = 'pz_server_backup_on_save';
   booleanOptions: Array<{ label: string; value: string }> = [];
   editIniVisible = false;
   editIniLine: IniLine | null = null;
@@ -199,10 +203,18 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
 
   async ngOnInit(): Promise<void> {
     const storedUserDir = await this.store.getItem<string>('pz_user_dir');
+    const storedBackupOnSave =
+      await this.store.getItem<boolean>(this.backupOnSaveKey);
     this.userDir =
       (storedUserDir ?? '').trim() ||
       (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
       '';
+    if (storedBackupOnSave === null) {
+      this.backupOnSave = true;
+      void this.store.setItem(this.backupOnSaveKey, true);
+    } else {
+      this.backupOnSave = storedBackupOnSave;
+    }
     this.presets = await this.loadoutsState.load();
     await this.loadServerTabTranslations(
       this.activeTab,
@@ -430,6 +442,11 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     }
     this.closeAllDialogs();
     this.deleteDialogVisible = true;
+  }
+
+  async onBackupOnSaveChange(value: boolean): Promise<void> {
+    this.backupOnSave = value;
+    await this.store.setItem(this.backupOnSaveKey, value);
   }
 
   async exportServerFiles(): Promise<void> {
@@ -716,20 +733,8 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     const files = this.buildServerFileSet(this.selectedServerName);
     this.savingServer = true;
     try {
-      const iniPayload = this.serializeIni(this.iniLines);
-      await this.loadoutsApi.writeTextFile(files.iniPath, iniPayload);
-      await this.loadoutsApi.writeTextFile(
-        files.sandboxVarsPath,
-        this.sandboxVarsText ?? '',
-      );
-      await this.loadoutsApi.writeTextFile(
-        files.spawnpointsPath,
-        this.spawnpointsText ?? '',
-      );
-      await this.loadoutsApi.writeTextFile(
-        files.spawnregionsPath,
-        this.spawnregionsText ?? '',
-      );
+      await this.persistAllServerFiles(files);
+      await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
         summary: this.transloco.translate('toasts.server.saved.summary'),
@@ -762,12 +767,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     const files = this.buildServerFileSet(this.selectedServerName);
     this.savingIni = true;
     try {
-      await this.createServerBackups(this.selectedServerName, files);
-      const iniPayload = this.serializeIni(this.iniLines);
-      await this.loadoutsApi.writeTextFile(files.iniPath, iniPayload);
-      this.iniText = iniPayload;
-      this.iniOriginalValues = this.buildIniOriginalValues(this.iniLines);
-      this.refreshIniEntryOptions();
+      await this.persistAllServerFiles(files);
       await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
@@ -825,6 +825,35 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     }
   }
 
+  private async persistAllServerFiles(files: ServerFileSet): Promise<void> {
+    if (this.backupOnSave) {
+      await this.createServerBackups(this.selectedServerName, files);
+    }
+    const iniPayload = this.serializeIni(this.iniLines);
+    await this.loadoutsApi.writeTextFile(files.iniPath, iniPayload);
+    await this.loadoutsApi.writeTextFile(
+      files.sandboxVarsPath,
+      this.sandboxVarsText ?? '',
+    );
+    await this.loadoutsApi.writeTextFile(
+      files.spawnpointsPath,
+      this.spawnpointsText ?? '',
+    );
+    await this.loadoutsApi.writeTextFile(
+      files.spawnregionsPath,
+      this.spawnregionsText ?? '',
+    );
+    this.iniText = iniPayload;
+    this.iniOriginalValues = this.buildIniOriginalValues(this.iniLines);
+    this.refreshIniEntryOptions();
+    this.originalSandboxVarsText = this.sandboxVarsText ?? '';
+    this.sandboxOriginalValues = this.buildSandboxOriginalValues(
+      this.sandboxEntries,
+    );
+    this.originalSpawnpointsText = this.spawnpointsText ?? '';
+    this.originalSpawnregionsText = this.spawnregionsText ?? '';
+  }
+
   private buildBackupTimestamp(): string {
     const now = new Date();
     const pad = (value: number): string => String(value).padStart(2, '0');
@@ -858,14 +887,8 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     const files = this.buildServerFileSet(this.selectedServerName);
     this.savingSandbox = true;
     try {
-      await this.loadoutsApi.writeTextFile(
-        files.sandboxVarsPath,
-        this.sandboxVarsText ?? '',
-      );
-      this.originalSandboxVarsText = this.sandboxVarsText ?? '';
-      this.sandboxOriginalValues = this.buildSandboxOriginalValues(
-        this.sandboxEntries,
-      );
+      await this.persistAllServerFiles(files);
+      await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
         summary: this.transloco.translate('toasts.server.saved.summary'),
@@ -912,11 +935,8 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     const files = this.buildServerFileSet(this.selectedServerName);
     this.savingSpawnpoints = true;
     try {
-      await this.loadoutsApi.writeTextFile(
-        files.spawnpointsPath,
-        this.spawnpointsText ?? '',
-      );
-      this.originalSpawnpointsText = this.spawnpointsText ?? '';
+      await this.persistAllServerFiles(files);
+      await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
         summary: this.transloco.translate('toasts.server.saved.summary'),
@@ -956,11 +976,8 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     const files = this.buildServerFileSet(this.selectedServerName);
     this.savingSpawnregions = true;
     try {
-      await this.loadoutsApi.writeTextFile(
-        files.spawnregionsPath,
-        this.spawnregionsText ?? '',
-      );
-      this.originalSpawnregionsText = this.spawnregionsText ?? '';
+      await this.persistAllServerFiles(files);
+      await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
         summary: this.transloco.translate('toasts.server.saved.summary'),

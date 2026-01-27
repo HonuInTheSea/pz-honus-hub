@@ -898,6 +898,7 @@
       "createNewServer": "Create New Server",
       "copy": "Copy",
       "deleteServer": "Delete Server",
+      "createBackupOnSave": "Створювати резервну копію під час збереження",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
       "serverEditor": "Server Editor",
@@ -935,3 +936,4 @@
     }
   }
 }
+

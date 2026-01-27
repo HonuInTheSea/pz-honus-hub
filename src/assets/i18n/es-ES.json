@@ -735,6 +735,7 @@
       "createNewServer": "Create New Server",
       "copy": "Copy",
       "deleteServer": "Delete Server",
+      "createBackupOnSave": "Crear copia de seguridad al guardar",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
       "serverEditor": "Server Editor",
@@ -772,3 +773,4 @@
     }
   }
 }
+

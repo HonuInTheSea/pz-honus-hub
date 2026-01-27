@@ -3,12 +3,23 @@
   <p-card #serversCard [header]="'server.ui.serversHeader' | transloco">
     <div class="flex justify-content-between align-items-center gap-2">
       <div></div>
-      <div class="flex gap-2">
+      <div class="flex gap-2 align-items-center">
         <button pButton type="button" [label]="'server.ui.refresh' | transloco" class="p-button-text" icon="pi pi-refresh" (click)="refreshServerList()"></button>
         <button pButton type="button" [label]="'server.ui.createNewServer' | transloco" icon="pi pi-plus" (click)="openCreateDialog()"></button>
         <button pButton type="button" [label]="'server.ui.copy' | transloco" class="pz-copy-button" icon="pi pi-copy" [disabled]="!selectedServerName" (click)="openCopyDialog()"></button>
         <button pButton type="button" [label]="'server.ui.exportServer' | transloco" class="p-button-info" icon="pi pi-upload" [disabled]="!selectedServerName" (click)="exportServerFiles()"></button>
         <button pButton type="button" [label]="'server.ui.deleteServer' | transloco" class="p-button-danger" icon="pi pi-trash" [disabled]="!selectedServerName" (click)="openDeleteDialog()"></button>
+        <div class="server-backup-toggle flex align-items-center gap-2">
+          <label class="server-backup-toggle-label p-button-text" for="server-backup-on-save">
+            {{ 'server.ui.createBackupOnSave' | transloco }}
+          </label>
+          <p-toggleswitch
+            inputId="server-backup-on-save"
+            styleClass="p-button-text server-backup-toggle-switch"
+            [(ngModel)]="backupOnSave"
+            (ngModelChange)="onBackupOnSaveChange($event)"
+          ></p-toggleswitch>
+        </div>
       </div>
     </div>
     <div class="mt-3">

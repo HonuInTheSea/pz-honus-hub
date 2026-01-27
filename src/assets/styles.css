@@ -329,6 +329,20 @@
     text-align: left;
 }
 
+.server-backup-toggle {
+    align-items: center;
+}
+
+.server-backup-toggle-label {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.server-backup-toggle-switch {
+    align-self: center;
+}
+
 .pz-ini-listbox-wrap {
     height: calc(100vh - 20rem);
     max-height: calc(100vh - 20rem);
