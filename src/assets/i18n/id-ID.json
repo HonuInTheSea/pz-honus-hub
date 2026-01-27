@@ -143,31 +143,37 @@
     "loadingLocale": "Memuat bahasa..."
   },
   "changelog": {
-    "title": "Changelog",
+    "title": "Catatan perubahan",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Perbaikan kecil",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Jika direktori Zombie\\Server tidak ada, direktori tersebut dibuat saat membuat set file konfigurasi server baru</li><li>Menambahkan sakelar untuk membuat set cadangan file saat menyimpan konfigurasi server</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Fitur baru",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Menambahkan kemampuan untuk bekerja dengan file konfigurasi server dedicated</li><li>README.md diperbarui</li><li>Halaman dokumentasi diperbarui</li></ul>"
+        "description": "<ul><li>Menambahkan kemampuan untuk bekerja dengan file konfigurasi server khusus</li><li>README.md diperbarui</li><li>Halaman dokumentasi diperbarui</li></ul>"
       },
       "initialRelease": {
-        "title": "Initial release",
+        "title": "Rilis awal",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "First public build of Honu's Project Zomboid Hub."
+        "description": "Rilis publik pertama Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Perbaikan kecil",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Memperbarui tujuan tautan pembaruan</li><li>Memperbarui nomor versi</li><li>Memperbarui README.md</li></ul>"
+        "description": "<ul><li>Tujuan tautan pembaruan diperbarui</li><li>Nomor versi diperbarui</li><li>README.md diperbarui</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Perbaikan kecil",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Pembaruan dukungan bahasa"
+        "description": "Dukungan bahasa diperbarui"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

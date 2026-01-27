@@ -145,6 +145,12 @@
   "changelog": {
     "title": "Seznam změn",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Menší opravy",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Pokud adresář Zombie\\Server neexistuje, vytvoří se při vytváření nové sady konfiguračních souborů serveru</li><li>Přidán přepínač pro vytvoření sady záloh souborů při ukládání konfigurace serveru</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Nová funkce",
         "version": "0.5.0",
@@ -152,7 +158,7 @@
         "description": "<ul><li>Přidána možnost pracovat s konfiguračními soubory dedikovaného serveru</li><li>Aktualizován README.md</li><li>Aktualizována stránka dokumentace</li></ul>"
       },
       "initialRelease": {
-        "title": "První vydání",
+        "title": "Počáteční vydání",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "První veřejná verze Honu's Project Zomboid Hub."
@@ -161,13 +167,13 @@
         "title": "Menší opravy",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Aktualizace cíle odkazu na aktualizaci</li><li>Aktualizace čísla verze</li><li>Aktualizace README.md</li></ul>"
+        "description": "<ul><li>Aktualizováno, kam vede odkaz na aktualizaci</li><li>Aktualizováno číslo verze</li><li>Aktualizován README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Menší opravy",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Aktualizace jazykové podpory"
+        "description": "Aktualizována jazyková podpora"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

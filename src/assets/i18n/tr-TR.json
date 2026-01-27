@@ -145,29 +145,35 @@
   "changelog": {
     "title": "Değişiklik günlüğü",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Küçük düzeltmeler",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Zombie\\Server dizini yoksa, yeni bir sunucu yapılandırma dosyaları seti oluşturulurken oluşturulur</li><li>Sunucu yapılandırması kaydedilirken dosya yedekleri oluşturmak için bir aç/kapat anahtarı eklendi</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Yeni özellik",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Özel sunucu yapılandırma dosyalarıyla çalışabilme özelliği eklendi</li><li>README.md güncellendi</li><li>Dokümantasyon sayfası güncellendi</li></ul>"
+        "description": "<ul><li>Ayrılmış sunucu yapılandırma dosyalarıyla çalışma yeteneği eklendi</li><li>README.md güncellendi</li><li>Dokümantasyon sayfası güncellendi</li></ul>"
       },
       "initialRelease": {
         "title": "İlk sürüm",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Honu's Project Zomboid Hub'un ilk genel sürümü."
+        "description": "Honu's Project Zomboid Hub'ın ilk genel sürümü."
       },
       "minorFixes_0_4_1": {
         "title": "Küçük düzeltmeler",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Güncelleme bağlantısının yönlendirdiği yeri günceller</li><li>Sürüm numarasını günceller</li><li>README.md dosyasını günceller</li></ul>"
+        "description": "<ul><li>Güncelleme bağlantısının yönlendirdiği yer güncellendi</li><li>Sürüm numarası güncellendi</li><li>README.md güncellendi</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Küçük düzeltmeler",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Dil desteği güncellemesi"
+        "description": "Dil desteği güncellendi"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

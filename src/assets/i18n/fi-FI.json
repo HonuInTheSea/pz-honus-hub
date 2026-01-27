@@ -145,6 +145,12 @@
   "changelog": {
     "title": "Muutosloki",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Pienet korjaukset",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Jos Zombie\\Server-hakemistoa ei ole, se luodaan, kun luodaan uusi joukko palvelimen asetustiedostoja</li><li>Lisättiin kytkin, jolla luodaan joukko tiedostovarmuuskopioita palvelimen asetuksia tallennettaessa</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Uusi ominaisuus",
         "version": "0.5.0",
@@ -161,13 +167,13 @@
         "title": "Pienet korjaukset",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Päivittää, minne päivityslinkki ohjaa</li><li>Päivittää versionumeron</li><li>Päivittää README.md</li></ul>"
+        "description": "<ul><li>Päivityslinkin kohde päivitetty</li><li>Versionumero päivitetty</li><li>README.md päivitetty</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Pienet korjaukset",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Päivitetään kielituki"
+        "description": "Kielituki päivitetty"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

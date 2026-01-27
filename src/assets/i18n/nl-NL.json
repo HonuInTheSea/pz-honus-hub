@@ -145,6 +145,12 @@
   "changelog": {
     "title": "Wijzigingslogboek",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Kleine fixes",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Als de map Zombie\\Server niet bestaat, wordt deze aangemaakt bij het maken van een nieuwe set serverconfiguratiebestanden</li><li>Schakelaar toegevoegd om bij het opslaan van de serverconfiguratie een set back-upbestanden te maken</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Nieuwe functie",
         "version": "0.5.0",
@@ -155,19 +161,19 @@
         "title": "Eerste release",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Eerste openbare build van Honu's Project Zomboid Hub."
+        "description": "Eerste publieke versie van Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Kleine fixes",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Werkt bij waar de update-link naartoe verwijst</li><li>Werkt het versienummer bij</li><li>Werkt README.md bij</li></ul>"
+        "description": "<ul><li>Doel van de update-link bijgewerkt</li><li>Versienummer bijgewerkt</li><li>README.md bijgewerkt</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Kleine fixes",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Bijwerken van taalondersteuning"
+        "description": "Taalondersteuning bijgewerkt"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

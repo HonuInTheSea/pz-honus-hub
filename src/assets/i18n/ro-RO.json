@@ -143,31 +143,37 @@
     "loadingLocale": "Se încarcă limba..."
   },
   "changelog": {
-    "title": "Changelog",
+    "title": "Jurnal de modificări",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Remedieri minore",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Dacă directorul Zombie\\Server nu există, este creat la generarea unui nou set de fișiere de configurare a serverului</li><li>Adăugat un comutator pentru a crea un set de copii de siguranță ale fișierelor la salvarea configurației serverului</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Funcționalitate nouă",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>A fost adăugată posibilitatea de a lucra cu fișierele de configurare ale serverului dedicat</li><li>README.md actualizat</li><li>Pagina de documentație actualizată</li></ul>"
+        "description": "<ul><li>S-a adăugat posibilitatea de a lucra cu fișierele de configurare ale serverului dedicat</li><li>README.md actualizat</li><li>Pagina de documentație actualizată</li></ul>"
       },
       "initialRelease": {
-        "title": "Initial release",
+        "title": "Lansare inițială",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "First public build of Honu's Project Zomboid Hub."
+        "description": "Prima versiune publică a Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Remedieri minore",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Actualizează destinația linkului de actualizare</li><li>Actualizează numărul versiunii</li><li>Actualizează README.md</li></ul>"
+        "description": "<ul><li>Actualizat destinația linkului de actualizare</li><li>Actualizat numărul versiunii</li><li>README.md actualizat</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Remedieri minore",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Actualizare suport lingvistic"
+        "description": "Suportul pentru limbi a fost actualizat"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

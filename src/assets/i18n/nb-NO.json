@@ -145,11 +145,17 @@
   "changelog": {
     "title": "Endringslogg",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Mindre rettelser",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Hvis mappen Zombie\\Server ikke finnes, opprettes den når et nytt sett med serverkonfigurasjonsfiler opprettes</li><li>La til en bryter for å opprette et sett med filbackup ved lagring av serverkonfigurasjonen</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Ny funksjon",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>La til muligheten til å arbeide med konfigurasjonsfilene for den dedikerte serveren</li><li>README.md oppdatert</li><li>Dokumentasjonssiden oppdatert</li></ul>"
+        "description": "<ul><li>La til muligheten til å jobbe med konfigurasjonsfilene for den dedikerte serveren</li><li>Oppdaterte README.md</li><li>Oppdaterte dokumentasjonssiden</li></ul>"
       },
       "initialRelease": {
         "title": "Første utgivelse",
@@ -158,16 +164,16 @@
         "description": "Første offentlige versjon av Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
-        "title": "Mindre feilrettinger",
+        "title": "Mindre rettelser",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Oppdaterer hvor oppdateringslenken peker</li><li>Oppdaterer versjonsnummeret</li><li>Oppdaterer README.md</li></ul>"
+        "description": "<ul><li>Oppdaterte hvor oppdateringslenken peker</li><li>Oppdaterte versjonsnummeret</li><li>Oppdaterte README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
-        "title": "Mindre feilrettinger",
+        "title": "Mindre rettelser",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Oppdaterer språkstøtte"
+        "description": "Oppdatert språkstøtte"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

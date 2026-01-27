@@ -145,29 +145,35 @@
   "changelog": {
     "title": "Änderungsprotokoll",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Kleinere Korrekturen",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Falls das Verzeichnis Zombie\\Server nicht existiert, wird es beim Erstellen eines neuen Satzes von Server-Konfigurationsdateien angelegt</li><li>Schalter zum Erstellen eines Satzes von Dateisicherungen beim Speichern der Server-Konfiguration hinzugefügt</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Neue Funktion",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Funktion zum Arbeiten mit den Konfigurationsdateien des dedizierten Servers hinzugefügt</li><li>README.md aktualisiert</li><li>Dokumentationsseite aktualisiert</li></ul>"
+        "description": "<ul><li>Möglichkeit hinzugefügt, mit den Konfigurationsdateien des Dedicated Servers zu arbeiten</li><li>README.md aktualisiert</li><li>Dokumentationsseite aktualisiert</li></ul>"
       },
       "initialRelease": {
         "title": "Erstveröffentlichung",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Erster öffentlicher Build von Honu's Project Zomboid Hub."
+        "description": "Erste öffentliche Version von Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Kleinere Korrekturen",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Aktualisiert, wohin der Update-Link führt</li><li>Aktualisiert die Versionsnummer</li><li>Aktualisiert die README.md</li></ul>"
+        "description": "<ul><li>Ziel des Update-Links aktualisiert</li><li>Versionsnummer aktualisiert</li><li>README.md aktualisiert</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Kleinere Korrekturen",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Aktualisierung der Sprachunterstützung"
+        "description": "Sprachunterstützung aktualisiert"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

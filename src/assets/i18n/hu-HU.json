@@ -143,8 +143,14 @@
     "loadingLocale": "Nyelv betöltése..."
   },
   "changelog": {
-    "title": "Changelog",
+    "title": "Változásnapló",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Kisebb javítások",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Ha a Zombie\\Server könyvtár nem létezik, létrejön új szerverkonfigurációs fájlok létrehozásakor</li><li>Kapcsoló hozzáadva a fájlmentések készítéséhez a szerverkonfiguráció mentésekor</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Új funkció",
         "version": "0.5.0",
@@ -152,22 +158,22 @@
         "description": "<ul><li>Hozzáadva a dedikált szerver konfigurációs fájljaival való munka lehetősége</li><li>README.md frissítve</li><li>Dokumentációs oldal frissítve</li></ul>"
       },
       "initialRelease": {
-        "title": "Initial release",
+        "title": "Kezdeti kiadás",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "First public build of Honu's Project Zomboid Hub."
+        "description": "A Honu's Project Zomboid Hub első nyilvános kiadása."
       },
       "minorFixes_0_4_1": {
         "title": "Kisebb javítások",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Frissíti, hova mutat a frissítési hivatkozás</li><li>Frissíti a verziószámot</li><li>Frissíti a README.md-t</li></ul>"
+        "description": "<ul><li>Frissítve, hová mutat a frissítési hivatkozás</li><li>Verziószám frissítve</li><li>README.md frissítve</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Kisebb javítások",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Nyelvi támogatás frissítése"
+        "description": "Nyelvi támogatás frissítve"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

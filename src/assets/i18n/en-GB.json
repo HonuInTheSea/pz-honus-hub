@@ -145,6 +145,12 @@
   "changelog": {
     "title": "Changelog",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Minor fixes",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>If the Zombie\\Server directory does not exist, create it when creating a new set of server configuration files</li><li>Added a toggle switch for creating a set of file backups on saving the server configuration</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "New Feature",
         "version": "0.5.0",
@@ -370,7 +376,7 @@
       "bullet1": "<strong>Playlist</strong> - shows detected tracks and basic metadata (title/artist/album when available).",
       "bullet2": "<strong>Playback</strong> - play/pause plus previous/next track.",
       "bullet3": "<strong>Seek + volume</strong> - scrub through the track and adjust volume/mute."
-    },
+    },
     "server": {
       "title": "Server Management",
       "intro": "Use the Servers page to manage local Project Zomboid server files.",
@@ -773,4 +779,3 @@
     }
   }
 }
-

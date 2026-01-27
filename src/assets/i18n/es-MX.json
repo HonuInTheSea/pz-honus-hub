@@ -145,29 +145,35 @@
   "changelog": {
     "title": "Registro de cambios",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Correcciones menores",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Si no existe el directorio Zombie\\Server, se crea al generar un nuevo conjunto de archivos de configuración del servidor</li><li>Se añadió un interruptor para crear un conjunto de copias de seguridad de archivos al guardar la configuración del servidor</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Nueva función",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Se agregó la capacidad de trabajar con los archivos de configuración del servidor dedicado</li><li>Se actualizó README.md</li><li>Se actualizó la página de documentación</li></ul>"
+        "description": "<ul><li>Se añadió la capacidad de trabajar con los archivos de configuración del servidor dedicado</li><li>Se actualizó README.md</li><li>Se actualizó la página de documentación</li></ul>"
       },
       "initialRelease": {
         "title": "Lanzamiento inicial",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Primera versión pública del Hub de Project Zomboid de Honu."
+        "description": "Primera versión pública de Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Correcciones menores",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Actualiza a dónde dirige el enlace de actualización</li><li>Actualiza el número de versión</li><li>Actualiza el README.md</li></ul>"
+        "description": "<ul><li>Se actualizó el destino del enlace de actualización</li><li>Se actualizó el número de versión</li><li>Se actualizó README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Correcciones menores",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Actualización del soporte de idiomas"
+        "description": "Actualizado el soporte de idiomas"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

@@ -145,11 +145,17 @@
   "changelog": {
     "title": "Ændringslog",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Mindre rettelser",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Hvis mappen Zombie\\Server ikke findes, oprettes den, når der oprettes et nyt sæt serverkonfigurationsfiler</li><li>Tilføjede en skifteknap til at oprette et sæt filbackups ved lagring af serverkonfigurationen</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Ny funktion",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Tilføjet mulighed for at arbejde med konfigurationsfilerne til den dedikerede server</li><li>README.md opdateret</li><li>Dokumentationssiden opdateret</li></ul>"
+        "description": "<ul><li>Tilføjede mulighed for at arbejde med konfigurationsfilerne til den dedikerede server</li><li>Opdaterede README.md</li><li>Opdaterede dokumentationssiden</li></ul>"
       },
       "initialRelease": {
         "title": "Første udgivelse",
@@ -161,13 +167,13 @@
         "title": "Mindre rettelser",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Opdater hvor opdateringslinket leder hen</li><li>Opdater versionsnummeret</li><li>Opdater README.md</li></ul>"
+        "description": "<ul><li>Opdaterede hvor opdateringslinket fører hen</li><li>Opdaterede versionsnummeret</li><li>Opdaterede README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Mindre rettelser",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Opdatering af sprogunderstøttelse"
+        "description": "Opdateret sprogunderstøttelse"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

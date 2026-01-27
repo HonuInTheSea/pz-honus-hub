@@ -145,11 +145,17 @@
   "changelog": {
     "title": "变更日志",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "小幅修复",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>如果 Zombie\\Server 目录不存在，在创建新的服务器配置文件集时会创建该目录</li><li>新增了在保存服务器配置时创建文件备份集的开关</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "新功能",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>新增处理专用服务器配置文件的能力</li><li>已更新 README.md</li><li>已更新文档页面</li></ul>"
+        "description": "<ul><li>新增了对专用服务器配置文件的支持</li><li>更新了 README.md</li><li>更新了文档页面</li></ul>"
       },
       "initialRelease": {
         "title": "初始发布",
@@ -158,16 +164,16 @@
         "description": "Honu's Project Zomboid Hub 的首个公开版本。"
       },
       "minorFixes_0_4_1": {
-        "title": "小修复",
+        "title": "小幅修复",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>更新更新链接的跳转位置</li><li>更新版本号</li><li>更新 README.md</li></ul>"
+        "description": "<ul><li>更新了更新链接的指向</li><li>更新了版本号</li><li>更新了 README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
-        "title": "小修复",
+        "title": "小幅修复",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "更新语言支持"
+        "description": "更新了语言支持"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

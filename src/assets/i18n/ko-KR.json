@@ -145,29 +145,35 @@
   "changelog": {
     "title": "변경 내역",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "사소한 수정",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Zombie\\Server 디렉터리가 존재하지 않으면 새 서버 구성 파일 세트를 생성할 때 생성합니다</li><li>서버 구성을 저장할 때 파일 백업 세트를 만들도록 토글 스위치를 추가했습니다</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "새 기능",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>전용 서버 구성 파일을 다룰 수 있는 기능 추가</li><li>README.md 업데이트</li><li>문서 페이지 업데이트</li></ul>"
+        "description": "<ul><li>전용 서버 구성 파일을 다룰 수 있는 기능을 추가했습니다</li><li>README.md를 업데이트했습니다</li><li>문서 페이지를 업데이트했습니다</li></ul>"
       },
       "initialRelease": {
         "title": "초기 릴리스",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Honu's Project Zomboid Hub의 첫 공개 버전."
+        "description": "Honu's Project Zomboid Hub의 첫 공개 버전입니다."
       },
       "minorFixes_0_4_1": {
         "title": "사소한 수정",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>업데이트 링크의 이동 위치 업데이트</li><li>버전 번호 업데이트</li><li>README.md 업데이트</li></ul>"
+        "description": "<ul><li>업데이트 링크가 이동하는 위치를 업데이트했습니다</li><li>버전 번호를 업데이트했습니다</li><li>README.md를 업데이트했습니다</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "사소한 수정",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "언어 지원 업데이트"
+        "description": "언어 지원을 업데이트했습니다"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

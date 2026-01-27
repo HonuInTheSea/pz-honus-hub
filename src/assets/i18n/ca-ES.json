@@ -143,31 +143,37 @@
     "loadingLocale": "S'està carregant l'idioma..."
   },
   "changelog": {
-    "title": "Changelog",
+    "title": "Registre de canvis",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Correccions menors",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Si el directori Zombie\\Server no existeix, es crea en crear un nou conjunt de fitxers de configuració del servidor</li><li>S'ha afegit un interruptor per crear un conjunt de còpies de seguretat de fitxers en desar la configuració del servidor</li></ul>"
+      },
       "newFeature_0_5_0": {
-        "title": "Nova funció",
+        "title": "Funció nova",
         "version": "0.5.0",
         "date": "2026-01-26",
         "description": "<ul><li>S'ha afegit la possibilitat de treballar amb els fitxers de configuració del servidor dedicat</li><li>S'ha actualitzat README.md</li><li>S'ha actualitzat la pàgina de documentació</li></ul>"
       },
       "initialRelease": {
-        "title": "Initial release",
+        "title": "Llançament inicial",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "First public build of Honu's Project Zomboid Hub."
+        "description": "Primera versió pública de Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Correccions menors",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Actualitza on dirigeix l'enllaç d'actualització</li><li>Actualitza el número de versió</li><li>Actualitza el README.md</li></ul>"
+        "description": "<ul><li>S'ha actualitzat la destinació de l'enllaç d'actualització</li><li>S'ha actualitzat el número de versió</li><li>S'ha actualitzat README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Correccions menors",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Actualització del suport d'idiomes"
+        "description": "S'ha actualitzat el suport d'idiomes"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

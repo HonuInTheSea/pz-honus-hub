@@ -24,6 +24,14 @@ type ChangelogEvent = Readonly<{
 export class ChangelogPageComponent {
   readonly events: ChangelogEvent[] = [
     {
+      statusKey: 'changelog.events.minorFixes_0_5_1.title',
+      versionKey: 'changelog.events.minorFixes_0_5_1.version',
+      dateKey: 'changelog.events.minorFixes_0_5_1.date',
+      icon: 'pi pi-wrench',
+      color: 'var(--blue-500)',
+      descriptionKey: 'changelog.events.minorFixes_0_5_1.description',
+    },
+    {
       statusKey: 'changelog.events.newFeature_0_5_0.title',
       versionKey: 'changelog.events.newFeature_0_5_0.version',
       dateKey: 'changelog.events.newFeature_0_5_0.date',

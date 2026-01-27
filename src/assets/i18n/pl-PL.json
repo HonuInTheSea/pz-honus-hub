@@ -145,11 +145,17 @@
   "changelog": {
     "title": "Dziennik zmian",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Drobne poprawki",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Jeśli katalog Zombie\\Server nie istnieje, jest tworzony podczas tworzenia nowego zestawu plików konfiguracyjnych serwera</li><li>Dodano przełącznik do tworzenia zestawu kopii zapasowych plików podczas zapisywania konfiguracji serwera</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Nowa funkcja",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Dodano możliwość pracy z plikami konfiguracyjnymi serwera dedykowanego</li><li>Zaktualizowano README.md</li><li>Zaktualizowano stronę dokumentacji</li></ul>"
+        "description": "<ul><li>Dodano możliwość pracy z plikami konfiguracyjnymi dedykowanego serwera</li><li>Zaktualizowano README.md</li><li>Zaktualizowano stronę dokumentacji</li></ul>"
       },
       "initialRelease": {
         "title": "Pierwsze wydanie",
@@ -161,13 +167,13 @@
         "title": "Drobne poprawki",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Zaktualizowano miejsce docelowe linku aktualizacji</li><li>Zaktualizowano numer wersji</li><li>Zaktualizowano README.md</li></ul>"
+        "description": "<ul><li>Zaktualizowano docelowy adres linku aktualizacji</li><li>Zaktualizowano numer wersji</li><li>Zaktualizowano README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Drobne poprawki",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Aktualizacja obsługi języków"
+        "description": "Zaktualizowano obsługę języków"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-

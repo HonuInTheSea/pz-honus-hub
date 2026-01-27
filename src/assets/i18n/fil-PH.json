@@ -143,8 +143,14 @@
     "loadingLocale": "Nilo-load ang wika..."
   },
   "changelog": {
-    "title": "Changelog",
+    "title": "Talaan ng mga pagbabago",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Maliliit na pag-aayos",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Kung hindi umiiral ang direktoryong Zombie\\Server, gagawin ito kapag gumagawa ng bagong set ng mga file ng configuration ng server</li><li>Idinagdag ang toggle switch para gumawa ng set ng mga backup file kapag sine-save ang configuration ng server</li></ul>"
+      },
       "newFeature_0_5_0": {
         "title": "Bagong tampok",
         "version": "0.5.0",
@@ -152,22 +158,22 @@
         "description": "<ul><li>Idinagdag ang kakayahang magtrabaho sa mga configuration file ng dedicated server</li><li>In-update ang README.md</li><li>In-update ang pahina ng dokumentasyon</li></ul>"
       },
       "initialRelease": {
-        "title": "Paunang paglabas",
+        "title": "Unang paglabas",
         "version": "0.4.0",
         "date": "2026-01-17",
-        "description": "Unang pampublikong pagtatayo ng Project Zomboid Hub ni Honu."
+        "description": "Unang pampublikong build ng Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
         "title": "Maliliit na pag-aayos",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Ina-update kung saan tumuturo ang update link</li><li>Ina-update ang numero ng bersyon</li><li>Ina-update ang README.md</li></ul>"
+        "description": "<ul><li>In-update ang destinasyon ng link ng update</li><li>In-update ang numero ng bersyon</li><li>In-update ang README.md</li></ul>"
       },
       "minorFixes_0_4_3": {
         "title": "Maliliit na pag-aayos",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Ina-update ang suporta sa wika"
+        "description": "In-update ang suporta sa wika"
       }
     }
   },
@@ -773,4 +779,3 @@
     }
   }
 }
-

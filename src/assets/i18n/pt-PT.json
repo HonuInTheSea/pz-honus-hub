@@ -143,13 +143,19 @@
     "loadingLocale": "Carregando idioma..."
   },
   "changelog": {
-    "title": "Registo de alterações",
+    "title": "Registro de alterações",
     "events": {
+      "minorFixes_0_5_1": {
+        "title": "Correções menores",
+        "version": "0.5.1",
+        "date": "2026-01-27",
+        "description": "<ul><li>Se o diretório Zombie\\Server não existir, ele será criado ao gerar um novo conjunto de arquivos de configuração do servidor</li><li>Adicionado um botão de alternância para criar um conjunto de backups dos arquivos ao salvar a configuração do servidor</li></ul>"
+      },
       "newFeature_0_5_0": {
-        "title": "Nova funcionalidade",
+        "title": "Novo recurso",
         "version": "0.5.0",
         "date": "2026-01-26",
-        "description": "<ul><li>Adicionada a capacidade de trabalhar com os ficheiros de configuração do servidor dedicado</li><li>README.md atualizado</li><li>Página de documentação atualizada</li></ul>"
+        "description": "<ul><li>Adicionada a capacidade de trabalhar com os arquivos de configuração do servidor dedicado</li><li>README.md atualizado</li><li>Página de documentação atualizada</li></ul>"
       },
       "initialRelease": {
         "title": "Lançamento inicial",
@@ -158,16 +164,16 @@
         "description": "Primeira versão pública do Honu's Project Zomboid Hub."
       },
       "minorFixes_0_4_1": {
-        "title": "Pequenas correções",
+        "title": "Correções menores",
         "version": "0.4.1",
         "date": "2026-01-19",
-        "description": "<ul><li>Atualiza para onde o link de atualização direciona</li><li>Atualiza o número da versão</li><li>Atualiza o README.md</li></ul>"
+        "description": "<ul><li>Atualizado o destino do link de atualização</li><li>Atualizado o número da versão</li><li>README.md atualizado</li></ul>"
       },
       "minorFixes_0_4_3": {
-        "title": "Pequenas correções",
+        "title": "Correções menores",
         "version": "0.4.3",
         "date": "2026-01-19",
-        "description": "Atualização do suporte a idiomas"
+        "description": "Suporte a idiomas atualizado"
       }
     }
   },
@@ -936,4 +942,3 @@
     }
   }
 }
-
