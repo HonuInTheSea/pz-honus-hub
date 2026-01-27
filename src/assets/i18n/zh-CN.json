@@ -49,7 +49,8 @@
       "supportKofi": "支持 Ko-fi",
       "resetApp": "重置申请",
       "resetAppTooltip": "重置窗口设置并删除存储的数据",
-      "myMods": "我的 Mod"
+      "myMods": "我的 Mod",
+      "server": "服务器"
     },
     "filters": {
       "adultLabel": "有成人内容",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "配置文件夹"
-    }
+    },
+    "loadingLocale": "正在加载语言..."
   },
   "changelog": {
     "title": "变更日志",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "新功能",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>新增处理专用服务器配置文件的能力</li><li>已更新 README.md</li><li>已更新文档页面</li></ul>"
+      },
       "initialRelease": {
         "title": "初始发布",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Honu's Project Zomboid Hub 的首个公开版本。"
+      },
+      "minorFixes_0_4_1": {
+        "title": "小修复",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>更新更新链接的跳转位置</li><li>更新版本号</li><li>更新 README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "小修复",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "更新语言支持"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "工作流程",
       "data": "应用程序使用的数据",
       "features": "特征",
+      "server": "服务器管理",
       "mediaPlayer": "媒体播放器",
       "logInspector": "日志检查器",
       "folderSetup": "文件夹设置",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>播放列表</strong> - 显示检测到的曲目和基本元数据（标题/艺术家/专辑（如果可用））。",
       "bullet2": "<strong>播放</strong> - 播放/暂停以及上一个/下一个曲目。",
       "bullet3": "<strong>搜索 + 音量</strong> - 浏览曲目并调整音量/静音。"
+    },
+    "server": {
+      "title": "服务器管理",
+      "intro": "使用“服务器”页面管理 Project Zomboid 的本地服务器文件。",
+      "bullet1": "<strong>创建</strong>新服务器以生成默认的 .ini、_SandboxVars.lua、_spawnpoints.lua 和 _spawnregions.lua 文件。",
+      "bullet2": "<strong>复制</strong>现有服务器以使用新名称复制其文件。",
+      "bullet3": "<strong>编辑</strong> INI 和 Sandbox 变量，并在应用内直接更新 spawnpoints/spawnregions。"
     },
     "logInspector": {
       "title": "日志检查器",
@@ -561,11 +589,13 @@
         "summary": "无效的服务器名称",
         "detailMissing": "输入服务器名称。",
         "detailInvalidChars": "服务器名称包含无效的文件名字符。",
-        "detailTrailing": "服务器名称不能以点或空格结尾。"
+        "detailTrailing": "服务器名称不能以点或空格结尾。",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "服务器名称已存在",
-        "detail": "选择唯一的服务器名称。"
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "缺少用户文件夹",
@@ -696,6 +726,212 @@
       "noFilePath": "Set a file path to load logs.",
       "loadFailed": "Failed to load log file.",
       "clearFailed": "Failed to clear log file."
+    }
+  },
+  "server": {
+    "ini": {
+      "PVP": "PVP",
+      "PVPLogToolChat": "PVP Log Tool Chat",
+      "PVPLogToolFile": "PVP Log Tool File",
+      "PauseEmpty": "Pause Empty",
+      "GlobalChat": "Global Chat",
+      "Open": "Open",
+      "ServerWelcomeMessage": "Server Welcome Message",
+      "ServerImageLoginScreen": "Server Image Login Screen",
+      "ServerImageLoadingScreen": "Server Image Loading Screen",
+      "ServerImageIcon": "Server Image Icon",
+      "AutoCreateUserInWhiteList": "Auto Create User In White List",
+      "DisplayUserName": "Display User Name",
+      "ShowFirstAndLastName": "Show First And Last Name",
+      "SpawnPoint": "Spawn Point",
+      "SafetySystem": "Safety System",
+      "ShowSafety": "Show Safety",
+      "SafetyToggleTimer": "Safety Toggle Timer",
+      "SafetyCooldownTimer": "Safety Cooldown Timer",
+      "SafetyDisconnectDelay": "Safety Disconnect Delay",
+      "SpawnItems": "Spawn Items",
+      "DefaultPort": "Default Port",
+      "UDPPort": "UDP Port",
+      "ResetID": "Reset ID",
+      "Mods": "Mods",
+      "Map": "Map",
+      "DoLuaChecksum": "Do Lua Checksum",
+      "Public": "Public",
+      "PublicName": "Public Name",
+      "PublicDescription": "Public Description",
+      "MaxPlayers": "Max Players",
+      "PingLimit": "Ping Limit",
+      "SafehousePreventsLootRespawn": "Safehouse Prevents Loot Respawn",
+      "DropOffWhiteListAfterDeath": "Drop Off White List After Death",
+      "NoFire": "No Fire",
+      "AnnounceDeath": "Announce Death",
+      "SaveWorldEveryMinutes": "Save World Every Minutes",
+      "PlayerSafehouse": "Player Safehouse",
+      "AdminSafehouse": "Admin Safehouse",
+      "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+      "SafehouseAllowFire": "Safehouse Allow Fire",
+      "SafehouseAllowLoot": "Safehouse Allow Loot",
+      "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+      "SafehouseDaySurvivedToClaim": "Safehouse Day Survived To Claim",
+      "SafeHouseRemovalTime": "Safe House Removal Time",
+      "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+      "MaxSafezoneSize": "Max Safezone Size",
+      "AllowDestructionBySledgehammer": "Allow Destruction By Sledgehammer",
+      "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+      "WarStartDelay": "War Start Delay",
+      "WarDuration": "War Duration",
+      "WarSafehouseHitPoints": "War Safehouse Hit Points",
+      "ServerPlayerID": "Server Player ID",
+      "RCONPort": "RCON Port",
+      "RCONPassword": "RCON Password",
+      "DiscordEnable": "Discord Enable",
+      "DiscordToken": "Discord Token",
+      "DiscordChannel": "Discord Channel",
+      "DiscordChannelID": "Discord Channel ID",
+      "WebhookAddress": "Webhook Address",
+      "Password": "Password",
+      "MaxAccountsPerUser": "Max Accounts Per User",
+      "AllowCoop": "Allow Coop",
+      "SleepAllowed": "Sleep Allowed",
+      "SleepNeeded": "Sleep Needed",
+      "KnockedDownAllowed": "Knocked Down Allowed",
+      "SneakModeHideFromOtherPlayers": "Sneak Mode Hide From Other Players",
+      "WorkshopItems": "Workshop Items",
+      "SteamScoreboard": "Steam Scoreboard",
+      "SteamVAC": "Steam VAC",
+      "UPnP": "UPnP",
+      "VoiceEnable": "Voice Enable",
+      "VoiceMinDistance": "Voice Min Distance",
+      "VoiceMaxDistance": "Voice Max Distance",
+      "Voice3D": "Voice 3D",
+      "SpeedLimit": "Speed Limit",
+      "LoginQueueConnectTimeout": "Login Queue Connect Timeout",
+      "server_browser_announced_ip": "Server browser announced ip",
+      "PlayerRespawnWithSelf": "Player Respawn With Self",
+      "PlayerRespawnWithOther": "Player Respawn With Other",
+      "FastForwardMultiplier": "Fast Forward Multiplier",
+      "DisableSafehouseWhenPlayerConnected": "Disable Safehouse When Player Connected",
+      "Faction": "Faction",
+      "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
+      "FactionPlayersRequiredForTag": "Faction Players Required For Tag",
+      "DisableRadioStaff": "Disable Radio Staff",
+      "DisableRadioAdmin": "Disable Radio Admin",
+      "DisableRadioGM": "Disable Radio GM",
+      "DisableRadioOverseer": "Disable Radio Overseer",
+      "DisableRadioModerator": "Disable Radio Moderator",
+      "DisableRadioInvisible": "Disable Radio Invisible",
+      "ClientCommandFilter": "Client Command Filter",
+      "ClientActionLogs": "Client Action Logs",
+      "PerkLogs": "Perk Logs",
+      "ItemNumbersLimitPerContainer": "Item Numbers Limit Per Container",
+      "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+      "AllowNonAsciiUsername": "Allow Non Ascii Username",
+      "RemovePlayerCorpsesOnCorpseRemoval": "Remove Player Corpses On Corpse Removal",
+      "TrashDeleteAll": "Trash Delete All",
+      "PVPMeleeWhileHitReaction": "PVP Melee While Hit Reaction",
+      "MouseOverToSeeDisplayName": "Mouse Over To See Display Name",
+      "HidePlayersBehindYou": "Hide Players Behind You",
+      "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+      "PVPFirearmDamageModifier": "PVP Firearm Damage Modifier",
+      "CarEngineAttractionModifier": "Car Engine Attraction Modifier",
+      "PlayerBumpPlayer": "Player Bump Player",
+      "MapRemotePlayerVisibility": "Map Remote Player Visibility",
+      "BackupsCount": "Backups Count",
+      "BackupsOnStart": "Backups On Start",
+      "BackupsPeriod": "Backups Period",
+      "DisableVehicleTowing": "Disable Vehicle Towing",
+      "DisableTrailerTowing": "Disable Trailer Towing",
+      "DisableBurntTowing": "Disable Burnt Towing",
+      "BadWordListFile": "Bad Word List File",
+      "GoodWordListFile": "Good Word List File",
+      "BadWordPolicy": "Bad Word Policy",
+      "BadWordReplacement": "Bad Word Replacement",
+      "AntiCheatSafety": "Anti Cheat Safety",
+      "AntiCheatMovement": "Anti Cheat Movement",
+      "AntiCheatHit": "Anti Cheat Hit",
+      "AntiCheatPacket": "Anti Cheat Packet",
+      "AntiCheatPermission": "Anti Cheat Permission",
+      "AntiCheatXP": "Anti Cheat XP",
+      "AntiCheatFire": "Anti Cheat Fire",
+      "AntiCheatSafeHouse": "Anti Cheat Safe House",
+      "AntiCheatRecipe": "Anti Cheat Recipe",
+      "AntiCheatPlayer": "Anti Cheat Player",
+      "AntiCheatChecksum": "Anti Cheat Checksum",
+      "AntiCheatItem": "Anti Cheat Item",
+      "AntiCheatServerCustomization": "Anti Cheat Server Customization",
+      "MultiplayerStatisticsPeriod": "Multiplayer Statistics Period",
+      "DisableScoreboard": "Disable Scoreboard",
+      "HideAdminsInPlayerList": "Hide Admins In Player List",
+      "Seed": "Seed",
+      "ChatMessageCharacterLimit": "Chat Message Character Limit",
+      "ChatMessageSlowModeTime": "Chat Message Slow Mode Time",
+      "comments": {
+        "ServerImageLoginScreen": [
+          "服务器登录屏幕上显示的图像路径。"
+        ],
+        "ServerImageLoadingScreen": [
+          "服务器加载屏幕上显示的图像路径。"
+        ],
+        "ServerImageIcon": [
+          "用作服务器图标的图像路径。"
+        ],
+        "SneakModeHideFromOtherPlayers": [
+          "启用后，潜行模式的玩家会对其他玩家隐藏。"
+        ],
+        "AnnounceAnimalDeath": [
+          "启用后，每当动物死亡时，会在聊天中显示全局消息。"
+        ],
+        "AntiCheatMovement": [
+          "禁用移动反作弊保护。"
+        ],
+        "AntiCheatPlayer": [
+          "禁用玩家反作弊保护。"
+        ],
+        "AntiCheatServerCustomization": [
+          "禁用服务器自定义反作弊保护。"
+        ]
+      }
+    },
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "取消",
+      "create": "Create",
+      "editServerVariableTitle": "编辑服务器变量",
+      "editSandboxVariableTitle": "编辑沙箱变量",
+      "noDescription": "No description available.",
+      "save": "节省",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "真的",
+      "falseLabel": "错误的",
+      "exportServer": "导出"
     }
   }
 }

@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "聚乙烯吡咯烷酮",
+    "PVPLogToolChat": "PVP 日誌工具聊天",
+    "PVPLogToolFile": "PVP 日誌工具文件",
+    "PauseEmpty": "暫停空",
+    "GlobalChat": "全球聊天",
+    "Open": "打開",
+    "ServerWelcomeMessage": "服務器歡迎信息",
+    "ServerImageLoginScreen": "服務器映像登錄屏幕",
+    "ServerImageLoadingScreen": "服務器圖像加載屏幕",
+    "ServerImageIcon": "服務器圖像圖標",
+    "AutoCreateUserInWhiteList": "自動創建白名單用戶",
+    "DisplayUserName": "顯示用戶名",
+    "ShowFirstAndLastName": "顯示名字和姓氏",
+    "SpawnPoint": "生成點",
+    "SafetySystem": "安全系統",
+    "ShowSafety": "展會安全",
+    "SafetyToggleTimer": "安全切換定時器",
+    "SafetyCooldownTimer": "安全冷卻計時器",
+    "SafetyDisconnectDelay": "安全斷開延遲",
+    "SpawnItems": "生成物品",
+    "DefaultPort": "默認端口",
+    "UDPPort": "UDP端口",
+    "ResetID": "重置ID",
+    "Mods": "模組",
+    "Map": "地圖",
+    "DoLuaChecksum": "Lua 校驗和",
+    "Public": "民眾",
+    "PublicName": "公眾名稱",
+    "PublicDescription": "公開描述",
+    "MaxPlayers": "最大玩家數",
+    "PingLimit": "Ping 限制",
+    "SafehousePreventsLootRespawn": "安全屋防止戰利品重生",
+    "DropOffWhiteListAfterDeath": "死後刪除白名單",
+    "NoFire": "沒有火",
+    "AnnounceDeath": "宣布死亡",
+    "SaveWorldEveryMinutes": "分分鐘拯救世界",
+    "PlayerSafehouse": "玩家安全屋",
+    "AdminSafehouse": "管理員安全屋",
+    "SafehouseAllowTrepass": "安全屋允許侵入",
+    "SafehouseAllowFire": "安全屋允許火災",
+    "SafehouseAllowLoot": "安全屋允許搶劫",
+    "SafehouseAllowRespawn": "安全屋允許重生",
+    "SafehouseDaySurvivedToClaim": "安全屋日倖存並領取",
+    "SafeHouseRemovalTime": "安全屋移除時間",
+    "SafehouseAllowNonResidential": "安全屋允許非住宅",
+    "MaxSafezoneSize": "最大安全區大小",
+    "AllowDestructionBySledgehammer": "允許大錘破壞",
+    "SledgehammerOnlyInSafehouse": "大錘只在安全屋裡",
+    "WarStartDelay": "戰爭開始延遲",
+    "WarDuration": "戰爭持續時間",
+    "WarSafehouseHitPoints": "戰爭安全屋生命值",
+    "ServerPlayerID": "服務器玩家ID",
+    "RCONPort": "RCON端口",
+    "RCONPassword": "密碼",
+    "DiscordEnable": "不和諧啟用",
+    "DiscordToken": "不和諧代幣",
+    "DiscordChannel": "不和諧頻道",
+    "DiscordChannelID": "不和諧頻道 ID",
+    "WebhookAddress": "網絡鉤子地址",
+    "Password": "密碼",
+    "MaxAccountsPerUser": "每個用戶的最大帳戶數",
+    "AllowCoop": "允許合作",
+    "SleepAllowed": "允許睡眠",
+    "SleepNeeded": "需要睡眠",
+    "KnockedDownAllowed": "允許被擊倒",
+    "SneakModeHideFromOtherPlayers": "潛行模式對其他玩家隱藏",
+    "WorkshopItems": "創意工坊物品",
+    "SteamScoreboard": "蒸汽記分牌",
+    "SteamVAC": "蒸汽真空吸塵器",
+    "UPnP": "通用即插即用",
+    "VoiceEnable": "語音啟用",
+    "VoiceMinDistance": "語音最小距離",
+    "VoiceMaxDistance": "語音最大距離",
+    "Voice3D": "語音3D",
+    "SpeedLimit": "速度極限",
+    "LoginQueueConnectTimeout": "登錄隊列連接超時",
+    "server_browser_announced_ip": "服務器瀏覽器公佈ip",
+    "PlayerRespawnWithSelf": "玩家與自己重生",
+    "PlayerRespawnWithOther": "玩家與其他人重生",
+    "FastForwardMultiplier": "快進乘數",
+    "DisableSafehouseWhenPlayerConnected": "當玩家連接時禁用安全屋",
+    "Faction": "派",
+    "FactionDaySurvivedToCreate": "派係日倖存創造",
+    "FactionPlayersRequiredForTag": "標籤所需的派系玩家",
+    "DisableRadioStaff": "禁用無線電工作人員",
+    "DisableRadioAdmin": "禁用無線電管理",
+    "DisableRadioGM": "禁用無線電 GM",
+    "DisableRadioOverseer": "禁用無線電監督者",
+    "DisableRadioModerator": "禁用無線電主持人",
+    "DisableRadioInvisible": "禁用無線電隱形",
+    "ClientCommandFilter": "客戶端命令過濾器",
+    "ClientActionLogs": "客戶端操作日誌",
+    "PerkLogs": "福利日誌",
+    "ItemNumbersLimitPerContainer": "每個集裝箱的物品數量限制",
+    "BloodSplatLifespanDays": "血濺壽命天數",
+    "AllowNonAsciiUsername": "允許非 Ascii 用戶名",
+    "RemovePlayerCorpsesOnCorpseRemoval": "移除屍體時移除玩家屍體",
+    "TrashDeleteAll": "垃圾箱全部刪除",
+    "PVPMeleeWhileHitReaction": "PVP 近戰攻擊時的反應",
+    "MouseOverToSeeDisplayName": "將鼠標懸停即可查看顯示名稱",
+    "HidePlayersBehindYou": "將玩家隱藏在你身後",
+    "PVPMeleeDamageModifier": "PVP 近戰傷害調​​整",
+    "PVPFirearmDamageModifier": "PVP 槍械傷害修正",
+    "CarEngineAttractionModifier": "汽車引擎吸引力修改器",
+    "PlayerBumpPlayer": "玩家碰撞玩家",
+    "MapRemotePlayerVisibility": "地圖遠程玩家可見性",
+    "BackupsCount": "備份計數",
+    "BackupsOnStart": "啟動時備份",
+    "BackupsPeriod": "備份期間",
+    "DisableVehicleTowing": "禁用車輛牽引",
+    "DisableTrailerTowing": "禁用拖車牽引",
+    "DisableBurntTowing": "禁用燒毀牽引",
+    "BadWordListFile": "壞詞列表文件",
+    "GoodWordListFile": "好詞列表文件",
+    "BadWordPolicy": "壞話政策",
+    "BadWordReplacement": "壞詞替換",
+    "AntiCheatSafety": "防作弊安全",
+    "AntiCheatMovement": "反作弊運動",
+    "AntiCheatHit": "反作弊打擊",
+    "AntiCheatPacket": "反作弊包",
+    "AntiCheatPermission": "反作弊權限",
+    "AntiCheatXP": "反作弊 XP",
+    "AntiCheatFire": "反作弊火",
+    "AntiCheatSafeHouse": "反作弊安全屋",
+    "AntiCheatRecipe": "反作弊食譜",
+    "AntiCheatPlayer": "反作弊玩家",
+    "AntiCheatChecksum": "反作弊校驗和",
+    "AntiCheatItem": "反作弊物品",
+    "AntiCheatServerCustomization": "反作弊服務器定制",
+    "MultiplayerStatisticsPeriod": "多人遊戲統計期",
+    "DisableScoreboard": "禁用記分板",
+    "HideAdminsInPlayerList": "在玩家列表中隱藏管理員",
+    "Seed": "種子",
+    "ChatMessageCharacterLimit": "聊天消息字符限制",
+    "ChatMessageSlowModeTime": "聊天消息慢速模式時間",
+    "comments": {
+"PVP": [
+        "玩家可以傷害或擊殺其它玩家"
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "沒有玩家在線上時暫停遊戲時間流動"
+      ],
+      "GlobalChat": [
+        "切換全域聊天開關."
+      ],
+      "Open": [
+        "客戶端就算沒有在白名單上的帳號也可加入. 若為 false, 管理員必須手動建立使用者名稱 / 密碼組合"
+      ],
+      "ServerWelcomeMessage": [
+        "聊天面板第一個顯示的歡迎訊息. 這會在玩家加入後馬上顯示. 你可以使用 RGB 色碼來改變歡迎訊息的顏色. 你也可以使用 <LINE> 來換行. 使用: <RGB:1,0,0> 此訊息將會顯示成紅色!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "啟用後，潛行模式的玩家會對其他玩家隱藏。"
+      ],
+      "ServerImageLoadingScreen": [
+        "伺服器載入畫面上顯示的圖像路徑。"
+      ],
+      "ServerImageIcon": [
+        "用作伺服器圖示的圖像路徑。"
+      ],
+      "ServerImageLoginScreen": [
+        "伺服器登入畫面上顯示的圖像路徑。"
+      ],
+      "AutoCreateUserInWhiteList": [
+        "當玩家加入時將未知的使用者名稱加入白名單. 客戶端加入時將提供自己的使用者名稱 / 密碼. (用於 Open=true 的伺服器)"
+      ],
+      "DisplayUserName": [
+        "於玩家頭上顯示使用者名稱."
+      ],
+      "ShowFirstAndLastName": [
+        "在玩家頭上顯示角色姓名."
+      ],
+      "SpawnPoint": [
+        "強制所有新玩家於此 x,y,z 世界座標出生. 使用 map.projectzomboid.com 尋找座標. (設為 0,0,0 時忽略)"
+      ],
+      "SafetySystem": [
+        "玩家可以自行進入或離開 PVP 模式. 玩家只有在其中一人開啟 PVP 模式時才可以傷害彼此. PVP 模式狀態於畫面左方骷顱圖示顯示. 當 SafetySystem=false 時, 玩家可以在 PVP 開啟的狀況下隨時傷害其他玩家."
+      ],
+      "ShowSafety": [
+        "於開啟 PVP 模式的玩家頭上顯示骷髏頭圖示"
+      ],
+      "SafetyToggleTimer": [
+        "玩家進入或離開 PVP 模式所需的時間"
+      ],
+      "SafetyCooldownTimer": [
+        "玩家可再次進入或離開 PVP 模式的延遲時間"
+      ],
+      "SpawnItems": [
+        "新玩家出生時帶有的物品種類.",
+        "使用逗號區分多數物品種類.",
+        "範例: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "玩家資料的預設起始連接埠. 若為 UDP, 此連接埠將為使用的兩個連接埠之一."
+      ],
+      "ResetID": [
+        "重置 ID 決定伺服器是否已經過軟重置. 若此號碼與客戶端不符, 客戶端必須建立新角色. 與 PlayerServerID 一起使用. 強烈建議備份這些 ID"
+      ],
+      "Mods": [
+        "在此輸入模組載入 ID. 可以在 \\Steam\\steamapps\\workshop\\modID\\mods\\模組名稱\\info.txt 內找到"
+      ],
+      "DoLuaChecksum": [
+        "踢出與伺服器檔案不符的客戶端."
+      ],
+      "Public": [
+        "於遊戲內瀏覽器顯示伺服器. (注意: Steam 伺服器總是會顯示於 Steam 伺服器瀏覽器中)"
+      ],
+      "PublicName": [
+        "於遊戲內或 Steam 伺服器瀏覽器顯示的伺服器名稱"
+      ],
+      "PublicDescription": [
+        "於遊戲內伺服器瀏覽器顯示的敘述. 輸入",
+        "可以換行"
+      ],
+      "MaxPlayers": [
+        "伺服器線上玩家的數量限制. 不包含管理員. <br>警告: 若伺服器同時有超過 32 名玩家在線上, 可能會造成地圖串流效能不佳或者是發生同步問題."
+      ],
+      "PingLimit": [
+        "伺服器踢出玩家的延遲限制, 毫秒為單位. (設為 0 來停用)"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "物品不會在玩家聲稱為安全屋的建築物中重生"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "玩家死亡後從白名單移除帳號. 防止玩家死亡後建立新角色"
+      ],
+      "NoFire": [
+        "停用所有形式的火焰 - 除了營火以外"
+      ],
+      "AnnounceDeath": [
+        "若選取, 每次玩家死亡時將在聊天視窗內顯示全域訊息"
+      ],
+      "AnnounceAnimalDeath": [
+        "啟用後，每當動物死亡時，會在聊天中顯示全域訊息。"
+      ],
+      "SaveWorldEveryMinutes": [
+        "已載入的地圖部分將於此真實世界分鐘數經過後儲存. (地圖通常於客戶端離開已載入區域後儲存)"
+      ],
+      "PlayerSafehouse": [
+        "管理員與玩家都可以設定安全屋"
+      ],
+      "AdminSafehouse": [
+        "只有管理員可以設定安全屋"
+      ],
+      "SafehouseAllowTrepass": [
+        "允許非成員未經邀請進入安全屋"
+      ],
+      "SafehouseAllowFire": [
+        "允許火焰傷害安全屋"
+      ],
+      "SafehouseAllowLoot": [
+        "允許非成員從安全屋內拿取物品"
+      ],
+      "SafehouseAllowRespawn": [
+        "玩家於死前所屬安全屋內重生"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "玩家必須生存此遊戲天數後才允許設定安全屋"
+      ],
+      "SafeHouseRemovalTime": [
+        "玩家若經過此真實世界小時數沒有造訪安全屋, 將會被從安全屋移除"
+      ],
+      "SafehouseAllowNonResidential": [
+        "管理玩家是否可以將非民用住宅的建築設為安全屋."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "允許玩家使用大鎚破壞世界物件"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "只允許玩家摧毀他們安全屋內的世界物件 (需要 AllowDestructionBySledgehammer 為 true) ."
+      ],
+      "WarStartDelay": [
+        "戰爭開始前的時間（以秒為單位）。"
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID 決定角色是來自其它伺服器, 或單人遊戲. 此數值可被軟重置改變. 若此號碼與客戶端相符, 客戶端必須建立新角色. 與 ResetID 一起使用. 強烈建議備份這些 ID"
+      ],
+      "RCONPort": [
+        "RCON (遠端主機) 的連接埠"
+      ],
+      "RCONPassword": [
+        "RCON 密碼 (建議強度高的密碼)"
+      ],
+      "DiscordEnable": [
+        "與一個 Discord 頻道進行全域文字聊天連動"
+      ],
+      "DiscordToken": [
+        "Discord 機器人存取 token"
+      ],
+      "DiscordChannel": [
+        "Discord 頻道名稱. (若有困難, 試著使用 Discord 頻道 ID 選項)"
+      ],
+      "DiscordChannelID": [
+        "Discord 頻道 ID. (若使用 Discord 頻道名稱選項有困難時, 用此選項)"
+      ],
+      "WebhookAddress": [
+        "Slack 傳入 Webhook URL"
+      ],
+      "Password": [
+        "客戶端必須知道此密碼才能加入伺服器. (若用主持按鈕主持伺服器時忽略)"
+      ],
+      "MaxAccountsPerUser": [
+        "限制單個 Steam 使用者能創立的不同帳號數. 若使用主持按鈕時忽略."
+      ],
+      "AllowCoop": [
+        "允許合作 / 畫面分割玩家"
+      ],
+      "SleepAllowed": [
+        "玩家可於疲憊時選擇睡覺, 但他們不一定得睡覺"
+      ],
+      "SleepNeeded": [
+        "玩家會感覺疲憊並且需要睡覺. (若 SleepAllowed 則忽略"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "列出伺服器要下載的工作坊模組 ID. 使用分號區隔每個項目. 範例: WorkshopItems"
+      ],
+      "SteamScoreboard": [
+        "在玩家列表中顯示 Steam 用戶名稱和頭像。 可以為 true (所有權可見) , false (無人可見) , 或 admin (只有管理員可見)"
+      ],
+      "SteamVAC": [
+        "啟用 Steam VAC 系統"
+      ],
+      "UPnP": [
+        "嘗試設定一個 UPnP 網路接口來自動設定通訊埠轉發規則. 若失敗, 伺服器則會使用預設連接埠"
+      ],
+      "VoiceEnable": [
+        "若選取將啟用 VOIP"
+      ],
+      "VoiceMinDistance": [
+        "能聽見 VOIP 聲音的最短網格距離. 預設為 10"
+      ],
+      "VoiceMaxDistance": [
+        "能聽見 VOIP 聲音的最遠網格距離. 預設為 300"
+      ],
+      "Voice3D": [
+        "切換 VOIP 方位性音效"
+      ],
+      "server_browser_announced_ip": [
+        "設置伺服器廣播的 IP. 用於具有多個 IP 位址的網路設置, 像是伺服器農場"
+      ],
+      "PlayerRespawnWithSelf": [
+        "玩家可以重生他們死亡位置的座標上"
+      ],
+      "PlayerRespawnWithOther": [
+        "玩家可以重生在分割螢幕 / 遠端遊玩的另一個玩家的位置."
+      ],
+      "FastForwardMultiplier": [
+        "管理玩家睡覺時時間進行的速度. 指定數值為時間速度的倍數."
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "當安全屋成員連線時, 安全屋將表現得像一般房屋 (離線時則安全)"
+      ],
+      "Faction": [
+        "為 true 時允許玩家創立陣營"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "你必須生存此指定遊戲內天數後才能創立陣營"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "陣營需要多少成員, 擁有者才能建立特殊標籤"
+      ],
+      "DisableRadioStaff": [
+        "停用來自擁有存取等級的玩家的無線電通訊"
+      ],
+      "DisableRadioAdmin": [
+        "停用來自擁有 'admin' 存取等級玩家的無線電通訊"
+      ],
+      "DisableRadioGM": [
+        "停用來自擁有 'gm' 存取等級玩家的無線電通訊"
+      ],
+      "DisableRadioOverseer": [
+        "停用來自擁有 'overseer' 存取等級玩家的無線電通訊"
+      ],
+      "DisableRadioModerator": [
+        "停用來自擁有 'moderator' 存取等級玩家的無線電通訊"
+      ],
+      "DisableRadioInvisible": [
+        "停用來自隱形玩家的無線電通訊"
+      ],
+      "ClientCommandFilter": [
+        "使用分號區隔項目的清單, 將不會被寫入伺服器紀錄 cmd.txt. 舉例來說:",
+        "-vehicle. 輸入 * 代表不會寫入任何車輛指令. 輸入:",
+        "+vehicle.installPart 代表將會寫入該特定指令."
+      ],
+      "ClientActionLogs": [
+        "會被記錄至 ClientActionLogs.txt 伺服器紀錄的動作, 用分號分隔."
+      ],
+      "PerkLogs": [
+        "在 PerkLog.txt 伺服器記錄內追蹤玩家特長等級的變化"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "可放入容器內的物品最大數量限制. 若為零則無限制. (請注意: 這包含像是釘子那樣的堆疊物品. 若限制為 50, 代表只能存放 50 個釘子. )"
+      ],
+      "BloodSplatLifespanDays": [
+        "移除舊血跡前所需經過天數. <br>移除動作將於地圖區塊被載入時執行. <br>若為零則代表血跡永遠不會消失"
+      ],
+      "AllowNonAsciiUsername": [
+        "允許使用者名稱內包含非 ASCII (西里爾字母等...) 字元"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "若啟用, 當 HoursForCorpseRemoval 觸發時, 也會移除地面上的玩家屍體."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "若為 true, 玩家再被另一名玩家擊中後仍可再次攻擊."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "若為 true, 必須將游標移動到玩家上才能看見他們的顯示名稱."
+      ],
+      "HidePlayersBehindYou": [
+        "若為 true, 自動隱藏你不能看見的玩家 (像殭屍一樣) ."
+      ],
+      "PVPMeleeDamageModifier": [
+        "PVP 近戰傷害倍率."
+      ],
+      "PVPFirearmDamageModifier": [
+        "PVP 遠程攻擊的傷害倍率."
+      ],
+      "CarEngineAttractionModifier": [
+        "調整車輛吸引殭屍的距離. (較低的數值可以幫助緩解延遲. )"
+      ],
+      "PlayerBumpPlayer": [
+        "管理玩家跑過其他玩家時是否會撞到 (並撞倒) 他們."
+      ],
+      "MapRemotePlayerVisibility": [
+        "控制遊戲內地圖是否顯示其他遠端玩家.",
+        "1=隱藏 2=好友 3=所有人"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "包含要禁止的單詞列表的文件路徑。每個單詞必須單獨占一行"
+      ],
+      "GoodWordListFile": [
+        "包含應允許的單詞列表的文件路徑，即使它們包含不良單詞。每個單詞應該單獨占一行。"
+      ],
+      "BadWordPolicy": [
+        "如何處理聊天中髒話的發送者：1 - 禁止，2 - 踢出，3 - 在數據庫中記錄違規行為，4 - 靜音"
+      ],
+      "BadWordReplacement": [
+        "將替換壞詞的符號或文本片段"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "停用移動反作弊保護。"
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "停用玩家反作弊保護。"
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "禁用項目檢查反作弊保護。"
+      ],
+      "AntiCheatServerCustomization": [
+        "停用伺服器自訂反作弊保護。"
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "設置多人遊戲更新周期（以秒為單位）。如果值為 0，則禁用統計。"
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "在玩家列表中隱藏管理員。"
+      ],
+      "Seed": [
+        "用於生成世界的世界生成種子。 <br>如果您想更改此設置，請輸入新值並刪除保存目錄中的map_worldgen.bin。"
+      ],
+      "SpeedLimit": [
+        "車輛限速。"
+      ],
+      "BackupsCount": [
+        "最小值: 1 最大值: 300 預設值: 5"
+      ],
+      "BackupsPeriod": [
+        "最小值: 0 最大值: 1500 預設值: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "最小值: 64 最大值: 1024 預設值: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "最小值: 1 最大值: 30 預設值: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "最小值: 20 最大值: 1200 預設值: 60"
+      ],
+      "Map": [
+        "輸入位於 \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\ 中的模組資料夾名稱"
+      ],
+      "MaxSafezoneSize": [
+        "最小值: 0 最大值: 2147483647 預設值: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "最小值: 0 最大值: 60 預設值: 60"
+      ],
+      "TrashDeleteAll": [
+        "啟用後，玩家可以在垃圾桶上使用「全部刪除」按鈕。"
+      ],
+      "UDPPort": [
+        "最小值: 0 最大值: 65535 預設值: 16262"
+      ]
+    }
+  }
+}
+
+

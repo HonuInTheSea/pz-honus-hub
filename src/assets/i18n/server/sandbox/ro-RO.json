@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombi",
+  "Distribution": "Distribuție",
+  "ZombieVoronoiNoise": "Zgomot Voronoi pentru zombi",
+  "ZombieRespawn": "Respawn zombi",
+  "ZombieMigrate": "Migrație zombi",
+  "DayLength": "Durata zilei",
+  "StartMonth": "Luna de start",
+  "StartDay": "Ziua de start",
+  "StartTime": "Ora de start",
+  "DayNightCycle": "Ciclul zi/noapte",
+  "ClimateCycle": "Ciclul climatic",
+  "FogCycle": "Ciclul ceții",
+  "WaterShut": "Oprire apă",
+  "ElecShut": "Oprire electricitate",
+  "AlarmDecay": "Degradarea alarmelor",
+  "WaterShutModifier": "Modificator oprire apă",
+  "ElecShutModifier": "Modificator oprire electricitate",
+  "AlarmDecayModifier": "Modificator degradare alarme",
+  "FoodLootNew": "Pradă de mâncare (nou)",
+  "LiteratureLootNew": "Pradă literatură (nou)",
+  "MedicalLootNew": "Pradă medicală (nou)",
+  "SurvivalGearsLootNew": "Pradă echipament supraviețuire (nou)",
+  "CannedFoodLootNew": "Pradă conserve (nou)",
+  "WeaponLootNew": "Pradă arme (nou)",
+  "RangedWeaponLootNew": "Pradă arme la distanță (nou)",
+  "AmmoLootNew": "Pradă muniție (nou)",
+  "MechanicsLootNew": "Pradă mecanică (nou)",
+  "OtherLootNew": "Altă pradă (nou)",
+  "ClothingLootNew": "Pradă haine (nou)",
+  "ContainerLootNew": "Pradă recipiente (nou)",
+  "KeyLootNew": "Pradă chei (nou)",
+  "MediaLootNew": "Pradă media (nou)",
+  "MementoLootNew": "Pradă suveniruri (nou)",
+  "CookwareLootNew": "Pradă ustensile de bucătărie (nou)",
+  "MaterialLootNew": "Pradă materiale (nou)",
+  "FarmingLootNew": "Pradă agricultură (nou)",
+  "ToolLootNew": "Pradă unelte (nou)",
+  "RollsMultiplier": "Multiplicator de aruncări",
+  "LootItemRemovalList": "Listă eliminare pradă",
+  "RemoveStoryLoot": "Elimină prada de poveste",
+  "RemoveZombieLoot": "Elimină prada de la zombi",
+  "ZombiePopLootEffect": "Efect pradă din populația de zombi",
+  "InsaneLootFactor": "Factor pradă nebun",
+  "ExtremeLootFactor": "Factor pradă extrem",
+  "RareLootFactor": "Factor pradă rar",
+  "NormalLootFactor": "Factor pradă normal",
+  "CommonLootFactor": "Factor pradă comun",
+  "AbundantLootFactor": "Factor pradă abundent",
+  "Temperature": "Temperatură",
+  "Rain": "Ploaie",
+  "ErosionSpeed": "Viteză eroziune",
+  "ErosionDays": "Zile de eroziune",
+  "Farming": "Agricultură",
+  "CompostTime": "Timp de compostare",
+  "StatsDecrease": "Scădere statistici",
+  "NatureAbundance": "Abundența naturii",
+  "Alarm": "Alarmă",
+  "LockedHouses": "Case încuiate",
+  "StarterKit": "Kit de început",
+  "Nutrition": "Nutriție",
+  "FoodRotSpeed": "Viteză de putrezire a alimentelor",
+  "FridgeFactor": "Factor frigider",
+  "SeenHoursPreventLootRespawn": "Orele văzute previn respawn-ul prăzii",
+  "HoursForLootRespawn": "Ore până la respawn-ul prăzii",
+  "MaxItemsForLootRespawn": "Max. obiecte pentru respawn-ul prăzii",
+  "ConstructionPreventsLootRespawn": "Construcția previne respawn-ul prăzii",
+  "WorldItemRemovalList": "Listă eliminare obiecte din lume",
+  "HoursForWorldItemRemoval": "Ore până la eliminarea obiectelor din lume",
+  "ItemRemovalListBlacklistToggle": "Comutator listă neagră eliminare obiecte",
+  "TimeSinceApo": "Timp de la apocalipsă",
+  "PlantResilience": "Rezistența plantelor",
+  "PlantAbundance": "Abundența plantelor",
+  "EndRegen": "Regenerare rezistență",
+  "Helicopter": "Elicopter",
+  "MetaEvent": "Eveniment meta",
+  "SleepingEvent": "Eveniment în somn",
+  "GeneratorFuelConsumption": "Consum de combustibil al generatorului",
+  "GeneratorSpawning": "Apariție generator",
+  "AnnotatedMapChance": "Șansă pentru hartă adnotată",
+  "CharacterFreePoints": "Puncte gratuite de caracter",
+  "ConstructionBonusPoints": "Puncte bonus de construcție",
+  "NightDarkness": "Întuneric nocturn",
+  "NightLength": "Durata nopții",
+  "BoneFracture": "Fractură osoasă",
+  "InjurySeverity": "Severitatea rănilor",
+  "HoursForCorpseRemoval": "Ore până la eliminarea cadavrelor",
+  "DecayingCorpseHealthImpact": "Impact asupra sănătății al cadavrelor în descompunere",
+  "ZombieHealthImpact": "Impact asupra sănătății al zombi-lor",
+  "BloodLevel": "Nivel de sânge",
+  "ClothingDegradation": "Degradarea hainelor",
+  "FireSpread": "Răspândirea focului",
+  "DaysForRottenFoodRemoval": "Zile până la eliminarea alimentelor stricate",
+  "AllowExteriorGenerator": "Permite generator exterior",
+  "MaxFogIntensity": "Intensitate maximă a ceții",
+  "MaxRainFxIntensity": "Intensitate maximă a efectelor de ploaie",
+  "EnableSnowOnGround": "Activează zăpada pe sol",
+  "AttackBlockMovements": "Atacul blochează mișcările",
+  "SurvivorHouseChance": "Șansă de casă a supraviețuitorilor",
+  "VehicleStoryChance": "Șansă pentru povești despre vehicule",
+  "ZoneStoryChance": "Șansă pentru povești de zonă",
+  "AllClothesUnlocked": "Toate hainele deblocate",
+  "EnableTaintedWaterText": "Activează textul pentru apă contaminată",
+  "EnableVehicles": "Activează vehiculele",
+  "CarSpawnRate": "Rată de apariție a mașinilor",
+  "ZombieAttractionMultiplier": "Multiplicator de atracție a zombi-lor",
+  "VehicleEasyUse": "Utilizare ușoară a vehiculelor",
+  "InitialGas": "Benzină inițială",
+  "FuelStationGasInfinite": "Benzină infinită la benzinării",
+  "FuelStationGasMin": "Benzină minimă la benzinării",
+  "FuelStationGasMax": "Benzină maximă la benzinării",
+  "FuelStationGasEmptyChance": "Șansă de benzinărie goală",
+  "LockedCar": "Mașină încuiată",
+  "CarGasConsumption": "Consum de benzină al mașinii",
+  "CarGeneralCondition": "Stare generală a mașinii",
+  "CarDamageOnImpact": "Deteriorare mașină la impact",
+  "DamageToPlayerFromHitByACar": "Daune jucătorului de la mașină",
+  "TrafficJam": "Ambuteiaj",
+  "CarAlarm": "Alarmă mașină",
+  "PlayerDamageFromCrash": "Daune jucătorului la accident",
+  "SirenShutoffHours": "Ore până la oprirea sirenei",
+  "ChanceHasGas": "Șansă de a avea benzină",
+  "RecentlySurvivorVehicles": "Vehicule recente ale supraviețuitorilor",
+  "MultiHitZombies": "Lovitură multiplă la zombi",
+  "RearVulnerability": "Vulnerabilitate din spate",
+  "SirenEffectsZombies": "Sirena afectează zombi",
+  "AnimalStatsModifier": "Modificator de statistici animale",
+  "AnimalMetaStatsModifier": "Modificator de meta-statistici animale",
+  "AnimalPregnancyTime": "Timp de gestație animal",
+  "AnimalAgeModifier": "Modificator de vârstă animal",
+  "AnimalMilkIncModifier": "Modificator de creștere a laptelui",
+  "AnimalWoolIncModifier": "Modificator de creștere a lânii",
+  "AnimalRanchChance": "Șansă de fermă de animale",
+  "AnimalGrassRegrowTime": "Timp de regenerare a ierbii",
+  "AnimalMetaPredator": "Prădător meta animal",
+  "AnimalMatingSeason": "Sezon de împerechere",
+  "AnimalEggHatch": "Eclozare ouă",
+  "AnimalSoundAttractZombies": "Sunetele animalelor atrag zombi",
+  "AnimalTrackChance": "Șansă de urme animale",
+  "AnimalPathChance": "Șansă de potecă animală",
+  "MaximumRatIndex": "Indice maxim de șobolani",
+  "DaysUntilMaximumRatIndex": "Zile până la indicele maxim de șobolani",
+  "MetaKnowledge": "Cunoaștere meta",
+  "SeeNotLearntRecipe": "Vezi rețete neînvățate",
+  "MaximumLootedBuildingRooms": "Maxim camere jefuite",
+  "EnablePoisoning": "Activează otrăvirea",
+  "MaggotSpawn": "Apariție larve",
+  "LightBulbLifespan": "Durata de viață a becurilor",
+  "FishAbundance": "Abundența peștilor",
+  "LevelForMediaXPCutoff": "Nivel pentru oprirea XP la media",
+  "LevelForDismantleXPCutoff": "Nivel pentru oprirea XP la demontare",
+  "BloodSplatLifespanDays": "Zile de durată a stropilor de sânge",
+  "LiteratureCooldown": "Timp de răcire literatură",
+  "NegativeTraitsPenalty": "Pedeapsă pentru trăsături negative",
+  "MinutesPerPage": "Minute per pagină",
+  "KillInsideCrops": "Ucide culturile din interior",
+  "PlantGrowingSeasons": "Creșterea sezonieră a plantelor",
+  "PlaceDirtAboveground": "Plasează pământ deasupra solului",
+  "FarmingSpeedNew": "Viteză agricultură (nouă)",
+  "FarmingAmountNew": "Cantitate agricultură (nouă)",
+  "MaximumLooted": "Jefuire maximă",
+  "DaysUntilMaximumLooted": "Zile până la jefuire maximă",
+  "RuralLooted": "Jefuire rurală",
+  "MaximumDiminishedLoot": "Jefuire maxim diminuată",
+  "DaysUntilMaximumDiminishedLoot": "Zile până la jefuire maxim diminuată",
+  "MuscleStrainFactor": "Factor de tensiune musculară",
+  "DiscomfortFactor": "Factor de disconfort",
+  "WoundInfectionFactor": "Factor de infecție a rănilor",
+  "NoBlackClothes": "Fără haine negre",
+  "EasyClimbing": "Cățărare ușoară",
+  "MaximumFireFuelHours": "Ore maxime de combustibil pentru foc",
+  "FirearmUseDamageChance": "Șansă de daune la folosirea armelor de foc",
+  "FirearmNoiseMultiplier": "Multiplicator de zgomot pentru arme de foc",
+  "FirearmJamMultiplier": "Multiplicator de blocare pentru arme de foc",
+  "FirearmMoodleMultiplier": "Multiplicator de stare pentru arme de foc",
+  "FirearmWeatherMultiplier": "Multiplicator de vreme pentru arme de foc",
+  "FirearmHeadGearEffect": "Efectul echipamentului de cap pentru arme de foc",
+  "ClayLakeChance": "Șansă de argilă la lacuri",
+  "ClayRiverChance": "Șansă de argilă la râuri",
+  "GeneratorTileRange": "Rază de acoperire a generatorului",
+  "GeneratorVerticalPowerRange": "Rază verticală de putere a generatorului",
+  "Basement": "Subsol",
+  "SpawnFrequency": "Frecvență de apariție",
+  "Map": "Hartă",
+  "AllowMiniMap": "Permite minimapă",
+  "AllowWorldMap": "Permite harta lumii",
+  "MapAllKnown": "Hartă complet cunoscută",
+  "MapNeedsLight": "Harta are nevoie de lumină",
+  "ZombieLore": "Cunoștințe despre zombi",
+  "Speed": "Viteză",
+  "SprinterPercentage": "Procent sprinteri",
+  "Strength": "Forță",
+  "Toughness": "Rezistență",
+  "Transmission": "Transmitere",
+  "Mortality": "Mortalitate",
+  "Reanimate": "Reanimare",
+  "Cognition": "Cogniție",
+  "CrawlUnderVehicle": "Târâre sub vehicule",
+  "Memory": "Memorie",
+  "Sight": "Vedere",
+  "Hearing": "Auz",
+  "SpottedLogic": "Logică de detectare",
+  "ThumpNoChasing": "Lovire fără urmărire",
+  "ThumpOnConstruction": "Lovire pe construcții",
+  "ActiveOnly": "Doar activ",
+  "TriggerHouseAlarm": "Declanșează alarma casei",
+  "ZombiesDragDown": "Zombi trag în jos",
+  "ZombiesCrawlersDragDown": "Zombi târâtori trag în jos",
+  "ZombiesFenceLunge": "Zombi sar gardurile",
+  "ZombiesArmorFactor": "Factor de armură al zombi-lor",
+  "ZombiesMaxDefense": "Apărare maximă a zombi-lor",
+  "ChanceOfAttachedWeapon": "Șansă de armă atașată",
+  "ZombiesFallDamage": "Daune de cădere ale zombi-lor",
+  "DisableFakeDead": "Dezactivează morții falși",
+  "PlayerSpawnZombieRemoval": "Elimină zombi la spawn",
+  "FenceThumpersRequired": "Zombi necesari pentru a deteriora gardul",
+  "FenceDamageMultiplier": "Multiplicator de daune pentru gard",
+  "ZombieConfig": "Configurație zombi",
+  "PopulationMultiplier": "Multiplicator populație",
+  "PopulationStartMultiplier": "Multiplicator populație inițială",
+  "PopulationPeakMultiplier": "Multiplicator vârf populație",
+  "PopulationPeakDay": "Ziua vârfului populației",
+  "RespawnHours": "Ore respawn",
+  "RespawnUnseenHours": "Ore nevăzute pentru respawn",
+  "RespawnMultiplier": "Multiplicator respawn",
+  "RedistributeHours": "Ore de redistribuire",
+  "FollowSoundDistance": "Distanța de urmărire a sunetului",
+  "RallyGroupSize": "Dimensiune grup",
+  "RallyGroupSizeVariance": "Variație dimensiune grup",
+  "RallyTravelDistance": "Distanța de deplasare a grupului",
+  "RallyGroupSeparation": "Separarea grupului",
+  "RallyGroupRadius": "Raza grupului",
+  "ZombiesCountBeforeDelete": "Zombi înainte de ștergere",
+  "MultiplierConfig": "Configurație multiplicatori",
+  "Global": "Global",
+  "GlobalToggle": "Comutare globală",
+  "Fitness": "Fitness",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Pas ușor",
+  "Nimble": "Agil",
+  "Sneak": "Furișare",
+  "Axe": "Topor",
+  "Blunt": "Contondent",
+  "SmallBlunt": "Contondent mic",
+  "LongBlade": "Lama lungă",
+  "SmallBlade": "Lama scurtă",
+  "Spear": "Suliță",
+  "Maintenance": "Întreținere",
+  "Woodwork": "Tâmplărie",
+  "Cooking": "Gătit",
+  "Doctor": "Medicină",
+  "Electricity": "Electricitate",
+  "MetalWelding": "Sudură metal",
+  "Mechanics": "Mecanică",
+  "Tailoring": "Croitorie",
+  "Aiming": "Țintire",
+  "Reloading": "Reîncărcare",
+  "Fishing": "Pescuit",
+  "Trapping": "Prindere",
+  "PlantScavenging": "Culegere de plante",
+  "FlintKnapping": "Cioplire de cremene",
+  "Masonry": "Zidărie",
+  "Pottery": "Olărit",
+  "Carving": "Sculptură",
+  "Husbandry": "Creșterea animalelor",
+  "Tracking": "Urmărire",
+  "Blacksmith": "Fierărie",
+  "Butchering": "Măcelărie",
+  "Glassmaking": "Sticlărie",
+  "comments": {
+    "Zombies": [
+      "Această setare schimbă opțiunea avansată \\Multiplicator al Populației\\. Implicit = Normal",
+      "1 = Incredibil de Mulți",
+      "2 = Foarte Mulți",
+      "3 = Mulți",
+      "4 = Normal",
+      "5 = Puțini",
+      "6 = Nici unul"
+    ],
+    "Distribution": [
+      "Cum sunt distribuiți zombii pe hartă. ",
+      "1 = Concentrați pe Așezările Urbane",
+      "2 = Uniform"
+    ],
+    "ZombieVoronoiNoise": [
+      "Controlează dacă se aplică o anumită randomizare distribuției zombi."
+    ],
+    "ZombieRespawn": [
+      "Cât de des se adaugă noi zombi în lume. ",
+      "1 = Mulți",
+      "2 = Normal",
+      "3 = Puțini",
+      "4 = Nici unul"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Implicit = 2 Ore",
+      "1 = 15 Minute",
+      "2 = 30 Minute",
+      "3 = 1 Ore",
+      "4 = 2 Ore",
+      "5 = 3 Ore",
+      "6 = 4 Ore",
+      "7 = 5 Ore",
+      "8 = 6 Ore",
+      "9 = 7 Ore",
+      "10 = 8 Ore",
+      "11 = 9 Ore",
+      "12 = 10 Ore",
+      "13 = 11 Ore",
+      "14 = 12 Ore",
+      "15 = 13 Ore",
+      "16 = 14 Ore",
+      "17 = 15 Ore",
+      "18 = 16 Ore",
+      "19 = 17 Ore",
+      "20 = 18 Ore",
+      "21 = 19 Ore",
+      "22 = 20 Ore",
+      "23 = 21 Ore",
+      "24 = 22 Ore",
+      "25 = 23 Ore",
+      "26 = Timp Real",
+      "27 = în timp real"
+    ],
+    "StartMonth": [
+      "Luna în care începe jocul. ",
+      "1 = Ianuarie",
+      "2 = Februarie",
+      "3 = Martie",
+      "4 = Aprilie",
+      "5 = Mai",
+      "6 = Iunie",
+      "7 = Iulie",
+      "8 = August",
+      "9 = Septembrie",
+      "10 = Octombrie",
+      "11 = Noiembrie",
+      "12 = Decembrie"
+    ],
+    "StartDay": [
+      "Ziua lunii în care încep jocurile."
+    ],
+    "StartTime": [
+      "Ora din zi în care începe jocul. ",
+      "1 = 07:00",
+      "2 = 09:00",
+      "3 = 12:00",
+      "4 = 14:00",
+      "5 = 19:00",
+      "6 = 21:00",
+      "7 = 24:00",
+      "8 = 02:00",
+      "9 = 05:00"
+    ],
+    "DayNightCycle": [
+      "Indiferent dacă ora din zi se schimbă în mod natural, fie că este întotdeauna zi/noapte. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Indiferent dacă vremea se schimbă sau rămâne într-o singură stare. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Indiferent dacă ceața apare în mod natural, nu apare niciodată sau este întotdeauna prezentă. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Cât timp după data de începere implicită (9 iulie 1993) corpurile sanitare (de ex. chiuvete) încetează să mai fie surse infinite de apă. ",
+      "1 = Instant",
+      "2 = 0-30 Zile",
+      "3 = 0-2 Luni",
+      "4 = 0-6 Luni",
+      "5 = 0-1 An",
+      "6 = 0-5 Ani",
+      "7 = 2-6 Luni",
+      "8 = 6-12 Luni",
+      "9 = Disabled"
+    ],
+    "ElecShut": [
+      "Cât timp după data implicită de începere (9 iulie 1993) se oprește definitiv electricitatea din lume. ",
+      "1 = Instant",
+      "2 = 0-30 Zile",
+      "3 = 0-2 Luni",
+      "4 = 0-6 Luni",
+      "5 = 0-1 An",
+      "6 = 0-5 Ani",
+      "7 = 2-6 Luni",
+      "8 = 6-12 Luni",
+      "9 = Disabled"
+    ],
+    "AlarmDecay": [
+      "Cât timp pot dura bateriile de alarmă după oprirea alimentării. ",
+      "1 = Instant",
+      "2 = 0-30 Zile",
+      "3 = 0-2 Luni",
+      "4 = 0-6 Luni",
+      "5 = 0-1 An",
+      "6 = 0-5 Ani"
+    ],
+    "WaterShutModifier": [
+      "Cât timp după data de începere implicită (9 iulie 1993) corpurile sanitare (de ex. chiuvete) încetează să mai fie surse infinite de apă. "
+    ],
+    "ElecShutModifier": [
+      "Cât timp după data implicită de începere (9 iulie 1993) se oprește definitiv electricitatea din lume. "
+    ],
+    "AlarmDecayModifier": [
+      "Cât timp pot dura bateriile de alarmă după oprirea alimentării. "
+    ],
+    "FoodLootNew": [
+      "Orice aliment care se poate strica sau se poate strica. "
+    ],
+    "LiteratureLootNew": [
+      "Toate articolele care pot fi citite, includ pliante Min: 0,00 Max: 4,00 Implicit: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Medicamente, bandaje și instrumente de prim ajutor. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Implicit: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Conserve și alimente uscate, băuturi. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Implicit: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Max: 4.00 Implicit: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Muniție liberă, cutii și reviste. "
+    ],
+    "MechanicsLootNew": [
+      "Piesele vehiculului și instrumentele necesare pentru a le instala. "
+    ],
+    "OtherLootNew": [
+      "Orice altceva. "
+    ],
+    "ClothingLootNew": [
+      "Toate articolele purtabile care nu sunt containere. "
+    ],
+    "ContainerLootNew": [
+      "Rucsacuri și alte containere purtabile/echipabile, de ex. "
+    ],
+    "KeyLootNew": [
+      "Chei pentru clădiri/mașini, brelocuri și încuietori. "
+    ],
+    "MediaLootNew": [
+      "Casete VHS și CD-uri. "
+    ],
+    "MementoLootNew": [
+      "Articole Spiffo, plusuri și alte obiecte de suvenir de colecție, de ex. "
+    ],
+    "CookwareLootNew": [
+      "Articole care sunt folosite la gătit, inclusiv cele (de exemplu, cuțite) care pot fi arme. "
+    ],
+    "MaterialLootNew": [
+      "Obiecte și arme care sunt folosite ca ingrediente pentru fabricare sau construcție. "
+    ],
+    "FarmingLootNew": [
+      "Articole și arme care sunt folosite atât în ​​agricultura animală, cât și în agricultura vegetală, cum ar fi semințe, mistrie sau lopeți. "
+    ],
+    "ToolLootNew": [
+      "Obiecte și arme care sunt unelte, dar care nu se încadrează în alte categorii, cum ar fi Mecanica sau Agricultură. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Este recomandat să NU schimbați acest lucru. "
+    ],
+    "LootItemRemovalList": [
+      "O listă de tipuri de articole, separate prin virgulă, care nu vor apărea ca pradă obișnuită."
+    ],
+    "RemoveStoryLoot": [
+      "Dacă este activat, articolele din Lista de eliminare a obiectelor de pradă sau care au raritatea setată la „Niciuna”, nu vor apărea în poveștile lumii aleatorii."
+    ],
+    "RemoveZombieLoot": [
+      "Dacă sunt activate, articolele din Lista de eliminare a obiectelor de pradă sau care au raritatea setată la „Niciuna”, nu vor apărea purtate de zombi sau atașate acestora."
+    ],
+    "ZombiePopLootEffect": [
+      "Dacă este mai mare de 0, generația de pradă crește în raport cu numărul de zombi din apropiere, efectul fiind înmulțit cu acest număr. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Implicit: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Implicit: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Implicit: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Implicit: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Implicit: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Implicit: 3.00"
+    ],
+    "Temperature": [
+      "Temperatura globală. ",
+      "1 = Foarte Rece",
+      "2 = Rece",
+      "3 = Normal",
+      "4 = Cald",
+      "5 = Foarte Cald"
+    ],
+    "Rain": [
+      "Cât de des plouă. ",
+      "1 = Foarte Uscat",
+      "2 = Uscat",
+      "3 = Normal",
+      "4 = Ploios",
+      "5 = Foarte Ploios"
+    ],
+    "ErosionSpeed": [
+      "Numărul de zile până când sistemul de eroziune (care adaugă viță de vie, iarbă lungă, copaci noi etc.) va atinge o creștere de 100%. ",
+      "1 = Foarte rapid (20 de zile)",
+      "2 = rapid (50 de zile)",
+      "3 = Normal (100 de zile)",
+      "4 = Lent (200 de zile)",
+      "5 = Foarte lent (500 de zile)"
+    ],
+    "ErosionDays": [
+      "Pentru o viteză de eroziune personalizată. "
+    ],
+    "Farming": [
+      "Rata la care abilitatea Agricultură crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "CompostTime": [
+      "Cât timp durează până se descompune alimentele într-un compostator. ",
+      "1 = 1 Săptămână",
+      "2 = 2 Săptămâni",
+      "3 = 3 Săptămâni",
+      "4 = 4 Săptămâni",
+      "5 = 6 Săptămâni",
+      "6 = 8 Săptămâni",
+      "7 = 10 Săptămâni",
+      "8 = 12 Săptămâni"
+    ],
+    "StatsDecrease": [
+      "Cât de repede vor scădea foamea, setea și oboseala jucătorului. ",
+      "1 = Foarte Rapid",
+      "2 = Rapid",
+      "3 = Normal",
+      "4 = Lent",
+      "5 = Foarte Lent"
+    ],
+    "NatureAbundance": [
+      "Afectează dificultatea pescuitului/adunatului din tufișuri. Implicit = Normal",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "Alarm": [
+      "Cât de probabil este jucătorul să activeze o alarmă de casă atunci când intră într-o casă nouă. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "LockedHouses": [
+      "Setează cât de des ușile și ferestrele caselor vor fi închise. Implicit = Foarte Des",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "StarterKit": [
+      "Apare cu chipsuri, o sticlă de apă, un rucsac mic, o bâtă de baseball și un ciocan."
+    ],
+    "Nutrition": [
+      "Valoarea nutritivă a alimentelor afectează starea jucătorului. "
+    ],
+    "FoodRotSpeed": [
+      "Setează cât de des mâncarea se va strica înauntrul și în afara frigiderului. Implicit = Normal",
+      "1 = Foarte Rapid",
+      "2 = Rapid",
+      "3 = Normal",
+      "4 = Lent",
+      "5 = Foarte Lent"
+    ],
+    "FridgeFactor": [
+      "Setează cât de eficient este frigiderul. Implicit = Normal",
+      "1 = Foarte Puțin",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Când este mai mare de 0, prada nu va reapare în zonele care au fost vizitate în acest număr de ore în joc. "
+    ],
+    "HoursForLootRespawn": [
+      "Când este mai mare de 0, după X ore, toate containerele din orașe și parcurile de rulote din lume vor reapari prada. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Containerele cu un număr de articole mai mare sau egal cu această setare nu vor reapare. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Obiectele nu vor reapare în clădirile pe care jucătorii le-au baricadat sau construite."
+    ],
+    "WorldItemRemovalList": [
+      "O listă de tipuri de articole, separate prin virgulă, care vor fi eliminate după orele HoursForWorldItemRemoval."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Numărul de ore de când un articol a fost aruncat pe pământ înainte de a fi îndepărtat.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Dacă este adevărat, orice elemente *nu* din WorldItemRemovalList vor fi eliminate."
+    ],
+    "TimeSinceApo": [
+      "Cât timp după sfârșitul lumii să înceapă. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Influențează cât de multă apă vor pierde plantele pe zi și abilitatea lor de a evita boli. Implicit = Normal",
+      "1 = Foarte Mulți",
+      "2 = Mulți",
+      "3 = Normal",
+      "4 = Puțini",
+      "5 = Foarte Puțin"
+    ],
+    "PlantAbundance": [
+      "Influențează câte de multe roade poate avea o plantă. Implicit = Normal",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "EndRegen": [
+      "Recuperarea după oboseala după efectuarea acțiunilor. ",
+      "1 = Foarte Rapid",
+      "2 = Rapid",
+      "3 = Normal",
+      "4 = Lent",
+      "5 = Foarte Lent"
+    ],
+    "Helicopter": [
+      "Cât de repede trec elicopterele peste zona evenimentului. Implicit = Odată",
+      "1 = Niciodată",
+      "2 = Odată",
+      "3 = Câteodată",
+      "4 = Des"
+    ],
+    "MetaEvent": [
+      "Cât de des vor fi atrași zombi din evenimentele meta, precum împușcăturile din depărtare. Implicit = Câteodată",
+      "1 = Niciodată",
+      "2 = Câteodată",
+      "3 = Des"
+    ],
+    "SleepingEvent": [
+      "Guvernează evenimentele nocturne meta din timpul somnului jucătorului. Implicit = Niciodată",
+      "1 = Niciodată",
+      "2 = Câteodată",
+      "3 = Des"
+    ],
+    "GeneratorFuelConsumption": [
+      "Influențează cât de mult combustibil e consumat de către generatoare. Un generator care nu are nevoie de combustibil trebuie setat la 0.0. Min: 0.00 Max: 100.00 Implicit: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Crește/descrește frecvența generatoarelor electrice de pe hartă. Implicit = Rar",
+      "1 = Extrem de Rar",
+      "2 = Rare",
+      "3 = Extrem de Rar",
+      "4 = Rar",
+      "5 = Normal",
+      "6 = Common",
+      "7 = Abundant"
+    ],
+    "AnnotatedMapChance": [
+      "Impactul asupra frecvenței cu care o hartă jefuită va avea adnotări marcate pe ea de un supraviețuitor decedat. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "CharacterFreePoints": [
+      "Adds free points during character creation. Min: -100 Max: 100 Implicit: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Oferă construcțiilor construite de jucători puncte de lovitură suplimentare, astfel încât acestea să fie mai rezistente la daune zombie. ",
+      "1 = Foarte Puțin",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți"
+    ],
+    "NightDarkness": [
+      "Nivelul luminii ambientale pe timp de noapte. ",
+      "1 = Întuneric Beznă",
+      "2 = Întuneric",
+      "3 = Normal",
+      "4 = Luminos"
+    ],
+    "NightLength": [
+      "Timpul de la amurg până în zori. ",
+      "1 = Întotdeauna noaptea",
+      "2 = Long",
+      "3 = Normal",
+      "4 = Short",
+      "5 = Întotdeauna Ziua"
+    ],
+    "BoneFracture": [
+      "Dacă supraviețuitorii pot primi membre rupte din cauza impactului, daune zombie, căderi etc."
+    ],
+    "InjurySeverity": [
+      "Impactul pe care le au rănile asupra corpului tău și timpul lor de vindecare. ",
+      "1 = Puțini",
+      "2 = Normal",
+      "3 = Mulți"
+    ],
+    "HoursForCorpseRemoval": [
+      "Cât timp, în ore, până când cadavrele zombie morți vor dispărea din lume.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Impactul pe care corpurile în descompunere din apropiere îl au asupra sănătății și emoțiilor jucătorului. ",
+      "1 = Nici unul",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Incredibil de Mulți"
+    ],
+    "ZombieHealthImpact": [
+      "Dacă zombii „vii” din apropiere au același impact asupra sănătății și emoțiilor jucătorului."
+    ],
+    "BloodLevel": [
+      "Cât de mult sânge este pulverizat pe podele și pereți de răni. ",
+      "1 = Nici unul",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mult"
+    ],
+    "ClothingDegradation": [
+      "Cât de repede se degradează hainele, devin murdare și însângerate. ",
+      "1 = Disabled",
+      "2 = Lent",
+      "3 = Normal",
+      "4 = Rapid"
+    ],
+    "FireSpread": [
+      "Dacă incendiile se răspândesc la pornire."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Numărul de zile în joc înainte ca alimentele putrede să fie eliminate de pe hartă.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Dacă sunt activate, generatoarele vor funcționa pe plăci exterioare.  "
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Implicit = Normal",
+      "1 = Normal",
+      "2 = Moderat",
+      "3 = Puțini",
+      "4 = Nici unul"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Implicit = Normal",
+      "1 = Normal",
+      "2 = Moderat",
+      "3 = Puțini"
+    ],
+    "EnableSnowOnGround": [
+      "Dacă zăpada se va acumula pe sol.  "
+    ],
+    "AttackBlockMovements": [
+      "Dacă atacul corp la corp te încetinește."
+    ],
+    "SurvivorHouseChance": [
+      "Șansa de a găsi clădiri aleatorii pe hartă (de exemplu, case arse, cele care conțin pradă sau cadavre). ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna încearcă"
+    ],
+    "VehicleStoryChance": [
+      "Șansa de apariție a poveștilor rutiere (de exemplu, blocaje ale poliției). ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna încearcă"
+    ],
+    "ZoneStoryChance": [
+      "Șansa apariției poveștilor specifice zonelor de hartă (de ex. un camping într-o pădure). ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna încearcă"
+    ],
+    "AllClothesUnlocked": [
+      "Vă permite să alegeți din fiecare piesă vestimentară din joc atunci când vă personalizați personajul"
+    ],
+    "EnableTaintedWaterText": [
+      "Dacă apa contaminată va afișa un avertisment care o marchează ca atare."
+    ],
+    "EnableVehicles": [
+      "Dacă vehiculele vor apărea."
+    ],
+    "CarSpawnRate": [
+      "Cât de des pot fi descoperite vehiculele pe hartă. ",
+      "1 = Nici unul",
+      "2 = Foarte Puțin",
+      "3 = Puțini",
+      "4 = Normal",
+      "5 = Mulți"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Folosește asta pentru a multiplica sau a reduce volumul motoarelor. Min: 0.00 Max: 100.00 Implicit: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Dacă setarea e activată, mașinile vor fi deschise, cu rezervolul plin și zgomot al motorului mic."
+    ],
+    "InitialGas": [
+      "Guvernează cât de plin poate fi rezervorul într-o mașină descoperită. Implicit = Puțini",
+      "1 = Foarte Puțin",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți",
+      "6 = Plin"
+    ],
+    "FuelStationGasInfinite": [
+      "Dacă este activată, pompele de benzină nu vor rămâne niciodată fără combustibil"
+    ],
+    "FuelStationGasMin": [
+      "Cantitatea minimă de benzină care poate apărea în pompele de benzină. "
+    ],
+    "FuelStationGasMax": [
+      "Cantitatea maximă de benzină care poate apărea în pompele de benzină. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Șansa, ca procent, ca pompele individuale de benzină să nu aibă inițial combustibil. "
+    ],
+    "LockedCar": [
+      "Cât de probabil vor fi blocate mașinile Implicit = Rar",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "CarGasConsumption": [
+      "Cât de avida de gaze sunt vehiculele. "
+    ],
+    "CarGeneralCondition": [
+      "În ce condiții mașina nouă se va spawna. Implicit = Puțini",
+      "1 = Foarte Puțin",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți"
+    ],
+    "CarDamageOnImpact": [
+      "Guvernează cantitatea de daune produse vehiculelor în accident. Implicit = Normal",
+      "1 = Foarte Puțin",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Daunele primite de jucător în urma izbucnirii în el. ",
+      "1 = Nici unul",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți",
+      "5 = Foarte Mulți"
+    ],
+    "TrafficJam": [
+      "Dacă pe drumurile principale vor apărea ambuteiaje constând din mașini dărâmate."
+    ],
+    "CarAlarm": [
+      "Cât de des au alarme active vehiculele descoperite. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "PlayerDamageFromCrash": [
+      "Activează sau dezactivează rănirea jucătorilor în accidente auto."
+    ],
+    "SirenShutoffHours": [
+      "Numbărul de ore până sunetul sirenelor se oprește.\n0.0 înseamnă că se oprește atunci când bateria e moartă. Min: 0.00 Max: 168.00 Implicit: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Șansa ca vehiculele găsite să conțină benzină în rezervor. Implicit = Puțini",
+      "1 = Puțini",
+      "2 = Normal",
+      "3 = Mulți"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Dacă un jucător poate descoperi o mașină care a fost îngrijită după ce s-a lovit infecția cu Knox. ",
+      "1 = Nici unul",
+      "2 = Puțini",
+      "3 = Normal",
+      "4 = Mulți"
+    ],
+    "MultiHitZombies": [
+      "Dacă anumite arme corp la corp vor putea lovi mai mulți zombi dintr-o lovitură."
+    ],
+    "RearVulnerability": [
+      "Șansa de a fi mușcat atunci când un zombi te atacă de la spate. Implicit = Mulți",
+      "1 = Puțini",
+      "2 = Medium",
+      "3 = Mulți"
+    ],
+    "SirenEffectsZombies": [
+      "Dacă zombi se vor îndrepta către sunetul sirenelor vehiculelor."
+    ],
+    "AnimalStatsModifier": [
+      "Viteza cu care statisticile animalelor (foame, sete etc.) se reduc. ",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Viteza cu care statisticile animalelor (foame, sete etc.) se reduc în meta. ",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalPregnancyTime": [
+      "Cât timp vor rămâne animalele însărcinate înainte de a naște. ",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalAgeModifier": [
+      "Viteza cu care animalele îmbătrânesc. ",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalMilkIncModifier": [
+      "Implicit = Rapid",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalWoolIncModifier": [
+      "Implicit = Rapid",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalRanchChance": [
+      "Șansa de a găsi animale în fermă. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Numărul de ore în care iarba va crește după ce a fost mâncată de un animal sau tăiată de jucător. "
+    ],
+    "AnimalMetaPredator": [
+      "Dacă o vulpe meta (adică nu este chiar vizibilă în joc) vă poate ataca puii dacă ușa colibei este lăsată deschisă noaptea."
+    ],
+    "AnimalMatingSeason": [
+      "Dacă animalele cu un sezon de împerechere îl vor respecta.  "
+    ],
+    "AnimalEggHatch": [
+      "Cu cât timp înainte ca puii de animale să iasă din ouă. ",
+      "1 = Ultra Fast",
+      "2 = Foarte Rapid",
+      "3 = Rapid",
+      "4 = Normal",
+      "5 = Lent",
+      "6 = Foarte Lent"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Dacă este adevărat, apelurile animalelor vor atrage zombi din apropiere."
+    ],
+    "AnimalTrackChance": [
+      "Șansa ca animalele să lase urme. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "AnimalPathChance": [
+      "Șansa de a crea o cale pentru ca animalele să fie vânate. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des"
+    ],
+    "MaximumRatIndex": [
+      "Frecvența și intensitatea de ex. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Cât timp durează până la atingerea indicelui maxim de paraziți. "
+    ],
+    "MetaKnowledge": [
+      "Dacă o bucată de conținut media nu a fost văzută sau citită complet, această setare determină dacă este afișată complet, afișată ca „???” sau ascuns complet. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Dacă este adevărat, vei putea vedea orice rețetă care se poate face cu o stație, chiar dacă nu le-ai învățat încă."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Dacă o clădire are mai mult decât această cantitate de camere, nu va fi jefuită. "
+    ],
+    "EnablePoisoning": [
+      "Dacă în alimente se poate adăuga otravă. ",
+      "1 = Adevărat",
+      "2 = Fals",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Dacă/când virmele pot apărea în cadavre. ",
+      "1 = În și în jurul corpului",
+      "2 = In Bodies Only",
+      "3 = Niciodată"
+    ],
+    "LightBulbLifespan": [
+      "Cu cât valoarea este mai mare, cu atât țin mai mult becurile înainte de a se sparge.  "
+    ],
+    "FishAbundance": [
+      "Abundența peștilor în râuri și lacuri. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Când o abilitate este la acest nivel sau mai sus, televiziunea/VHS/alte media nu va oferi XP pentru aceasta. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Când o abilitate este la acest nivel sau mai sus, casarea mobilierului nu oferă XP pentru abilitate relevantă. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Numărul de zile înainte ca vechile stropi de sânge să fie îndepărtate. "
+    ],
+    "LiteratureCooldown": [
+      "Numărul de zile înainte de a putea beneficia de citirea articolelor de literatură citite anterior. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Dacă există randamente descrescătoare ale punctelor de trăsătură bonus oferite din selectarea mai multor trăsături negative. ",
+      "1 = Nici unul",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 punct penalizare pentru fiecare trăsătură negativă selectată după prima"
+    ],
+    "MinutesPerPage": [
+      "Numărul de minute în joc necesare pentru a citi o pagină dintr-o carte de abilități. "
+    ],
+    "KillInsideCrops": [
+      "Când sunt activate, culturile și ierburile cultivate în interiorul clădirilor vor muri. "
+    ],
+    "PlantGrowingSeasons": [
+      "Când este activată, creșterea plantelor este afectată de anotimpuri."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Este recomandat să NU schimbați acest lucru. "
+    ],
+    "FarmingSpeedNew": [
+      "Viteza de creștere a plantelor. "
+    ],
+    "FarmingAmountNew": [
+      "Abundența culturilor recoltate. "
+    ],
+    "MaximumLooted": [
+      "Șansa ca orice clădire să fie deja jefuită atunci când este găsită. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Cât timp durează până se atinge șansa maximă de construcție jefuită. "
+    ],
+    "RuralLooted": [
+      "Șansa ca orice clădire rurală să fie deja jefuită atunci când este găsită. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Prada maximă care nu va apărea atunci când este atins prada maximă diminuată. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Cât timp durează până se atinge Procentajul maxim de pradă redus. "
+    ],
+    "MuscleStrainFactor": [
+      "Funcționează ca un multiplicator atunci când se aplică încordare musculară de la armele balansate sau transportul de sarcini grele. "
+    ],
+    "DiscomfortFactor": [
+      "Funcționează ca un multiplicator atunci când se aplică disconfort de la articolele uzate. "
+    ],
+    "WoundInfectionFactor": [
+      "Dacă daune mai mari de zero pot fi luate de la infecții grave ale rănilor. "
+    ],
+    "NoBlackClothes": [
+      "Dacă hainele adevărate cu nuanțe randomizate nu vor fi atât de întunecate încât să fie practic negre."
+    ],
+    "EasyClimbing": [
+      "Dezactivează șansele de eșec atunci când urcăm frânghii sau peste pereți."
+    ],
+    "MaximumFireFuelHours": [
+      "Orele maxime de combustibil care pot fi plasate într-un foc de tabără, sobă cu lemne etc. Min: 1 Max: 168 Implicit: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Înlocuiește mecanica șansă de lovire cu calcule șansa de a daune.  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "Un multiplicator pentru distanța la care zombii pot auzi împușcături. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplicator pentru șansa de blocare a armelor de foc. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplicator pentru efectele Moodle asupra șanselor de lovire. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplicator pentru efectele vremii (vânt, ploaie și ceață) la șansa de lovire. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Activați pentru a avea articole pentru acoperirea capului precum măștile de sudură afectează șansa de lovire"
+    ],
+    "ClayLakeChance": [
+      "Șansa de a transforma o podea de pământ într-o podea de lut. "
+    ],
+    "ClayRiverChance": [
+      "Șansa de a transforma o podea de pământ într-o podea de lut. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Implicit: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Câte niveluri atât deasupra cât și sub un generator poate furniza electricitate. "
+    ],
+    "SpawnFrequency": [
+      "Cât de des apar subsolurile în locații aleatorii. ",
+      "1 = Niciodată",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna"
+    ],
+    "AllowMiniMap": [
+      "Dacă este activată, va fi disponibilă o fereastră de mini-hartă."
+    ],
+    "AllowWorldMap": [
+      "Dacă este activată, harta lumii poate fi accesată."
+    ],
+    "MapAllKnown": [
+      "Dacă este activată, harta lumii va fi completată complet la începerea jocului."
+    ],
+    "MapNeedsLight": [
+      "Dacă este activată, hărțile nu pot fi citite decât dacă există o sursă de lumină disponibilă."
+    ],
+    "Speed": [
+      "Cât de repede se mișcă zombii. ",
+      "1 = Sprinters",
+      "2 = Fast Shamblers",
+      "3 = Shamblers",
+      "4 = Aleator"
+    ],
+    "SprinterPercentage": [
+      "Dacă Viteza aleatorie este activată, aceasta controlează ce procent de zombi sunt Sprinteri. "
+    ],
+    "Strength": [
+      "Rata la care abilitatea Forță crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Toughness": [
+      "Dificultatea de a ucide un zombi. ",
+      "1 = Tough",
+      "2 = Normal",
+      "3 = Fragile",
+      "4 = Aleator"
+    ],
+    "Transmission": [
+      "Cum se răspândește virusul Knox. ",
+      "1 = Sânge și Salivă",
+      "2 = Saliva Only",
+      "3 = Everyone's Infected",
+      "4 = Nici unul"
+    ],
+    "Mortality": [
+      "Cât de repede își face efectul infecția. ",
+      "1 = Instant",
+      "2 = 0-30 Secunde",
+      "3 = 0-1 Minute",
+      "4 = 0-12 Ore",
+      "5 = 2-3 Zile",
+      "6 = 1-2 Săptămâni",
+      "7 = Niciodată"
+    ],
+    "Reanimate": [
+      "Cât de repede se ridică cadavrele infectate ca zombi. ",
+      "1 = Instant",
+      "2 = 0-30 Secunde",
+      "3 = 0-1 Minute",
+      "4 = 0-12 Ore",
+      "5 = 2-3 Zile",
+      "6 = 1-2 Săptămâni"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Implicit = Navigare de Bază",
+      "1 = Navigați și utilizați uși",
+      "2 = Navigare",
+      "3 = Navigare de Bază",
+      "4 = Aleator"
+    ],
+    "CrawlUnderVehicle": [
+      "Cât de des se pot târî zombii sub vehiculele parcate. ",
+      "1 = Crawlers Only",
+      "2 = Extrem de Rar",
+      "3 = Rar",
+      "4 = Câteodată",
+      "5 = Des",
+      "6 = Foarte Des",
+      "7 = Întotdeauna"
+    ],
+    "Memory": [
+      "Cât timp își amintesc zombii de un jucător după ce i-au văzut sau auzit. ",
+      "1 = Long",
+      "2 = Normal",
+      "3 = Short",
+      "4 = Nici unul",
+      "5 = Aleator",
+      "6 = Aleatoriu între Normal și Nici unul"
+    ],
+    "Sight": [
+      "Raza de viziune zombie. ",
+      "1 = Eagle",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Aleator",
+      "5 = Aleatoriu între Normal și Slab"
+    ],
+    "Hearing": [
+      "Raza de auz zombie. ",
+      "1 = Pinpoint",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Aleator",
+      "5 = Aleatoriu între Normal și Slab"
+    ],
+    "SpottedLogic": [
+      "Activează noua mecanică stealth avansată, care vă permite să vă ascundeți de zombi în spatele mașinilor, ținând cont de trăsăturile și vremea și multe altele."
+    ],
+    "ThumpNoChasing": [
+      "Dacă zombii care nu au văzut/auzit, jucătorul poate ataca uși și construcții în timp ce roaming."
+    ],
+    "ThumpOnConstruction": [
+      "Dacă zombii pot distruge construcțiile și apărările jucătorilor."
+    ],
+    "ActiveOnly": [
+      "Indiferent dacă zombii sunt mai „activi” ziua sau noaptea.  ",
+      "1 = Both",
+      "2 = Night",
+      "3 = Day"
+    ],
+    "TriggerHouseAlarm": [
+      "Dacă zombii declanșează alarmele casei atunci când sparg ferestre sau uși."
+    ],
+    "ZombiesDragDown": [
+      "Dacă mai mulți zombi atacatori te pot trage în jos și te pot ucide.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Dacă zombii cu crawler alături de un jucător contribuie la șansa de a fi târâți și uciși de un grup de zombi."
+    ],
+    "ZombiesFenceLunge": [
+      "Dacă zombii au șansa să se arunce asupra ta după ce s-au cățărat peste un gard sau printr-o fereastră dacă ești prea aproape."
+    ],
+    "ZombiesArmorFactor": [
+      "Servește ca multiplicator atunci când se determină eficiența armurii purtate de zombi. "
+    ],
+    "ZombiesMaxDefense": [
+      "Procentul maxim de apărare pe care orice îmbrăcăminte de protecție purtată îl poate oferi unui zombi. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Procentul de șansă de a avea o armă atașată la întâmplare. "
+    ],
+    "ZombiesFallDamage": [
+      "Câte daune suferă zombii când cad de la înălțime. "
+    ],
+    "DisableFakeDead": [
+      "Dacă unii zombi cu aspect mort se vor reanima și vor ataca jucătorul. ",
+      "1 = Zombi din lume",
+      "2 = Lumea și zombi de luptă",
+      "3 = Niciodată"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombii nu vor apărea acolo unde apar jucătorii. ",
+      "1 = În interiorul clădirii și în jurul acesteia",
+      "2 = În interiorul clădirii",
+      "3 = În interiorul camerei",
+      "4 = Zombii pot apărea oriunde"
+    ],
+    "FenceThumpersRequired": [
+      "Câți zombi e nevoie pentru a deteriora un gard înalt. "
+    ],
+    "FenceDamageMultiplier": [
+      "Cât de repede strică zombii gardurile înalte. "
+    ],
+    "PopulationMultiplier": [
+      "Setați de opțiunea de populație „Zombie Count” sau de un număr personalizat aici. "
+    ],
+    "PopulationStartMultiplier": [
+      "Un multiplicator pentru populația de zombi dorită la începutul jocului. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Un multiplicator pentru populația de zombi dorită în ziua de vârf. "
+    ],
+    "PopulationPeakDay": [
+      "Ziua în care populația atinge apogeul. "
+    ],
+    "RespawnHours": [
+      "Numărul de ore care trebuie să treacă înainte ca zombii să reapare într-o celulă. "
+    ],
+    "RespawnUnseenHours": [
+      "Numărul de ore în care o bucată trebuie să fie nevăzută înainte ca zombii să poată renaște în ea. "
+    ],
+    "RespawnMultiplier": [
+      "Fracțiunea din populația dorită a unei celule care poate renaște la fiecare RespawnHours. "
+    ],
+    "RedistributeHours": [
+      "Numărul de ore care trebuie să treacă înainte ca zombii să migreze în părțile goale ale aceleiași celule. "
+    ],
+    "FollowSoundDistance": [
+      "Distanța pe care un zombie va încerca să o parcurgă până la ultimul sunet pe care l-a auzit. "
+    ],
+    "RallyGroupSize": [
+      "Dimensiunea grupurilor de zombi reali formează atunci când sunt inactivi. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Suma, ca procent, pe care grupurile de zombi poate varia ca dimensiune față de valoarea implicită (atât mai mare, cât și mai mică).   "
+    ],
+    "RallyTravelDistance": [
+      "Distanța parcursă de zombi reali pentru a forma grupuri atunci când sunt inactivi. "
+    ],
+    "RallyGroupSeparation": [
+      "Distanța dintre grupurile de zombi. "
+    ],
+    "RallyGroupRadius": [
+      "Cât de apropiați stau membrii unui grup de zombi de „liderul” grupului. "
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Implicit: 300"
+    ],
+    "Global": [
+      "Rata cu care toate competențele cresc la nivel. "
+    ],
+    "GlobalToggle": [
+      "Când este activată, toate abilitățile vor folosi Multiplicatorul global."
+    ],
+    "Fitness": [
+      "Rata la care abilitatea Fitness crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Sprinting": [
+      "Rata la care abilitatea Sprint crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Lightfoot": [
+      "Rata la care abilitatea Pas ușor crește în nivel. "
+    ],
+    "Nimble": [
+      "Rata la care abilitatea Agil crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Sneak": [
+      "Rata la care abilitatea Furișare crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Axe": [
+      "Rata la care abilitatea Topor crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Blunt": [
+      "Rata la care abilitatea Contondent crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "SmallBlunt": [
+      "Rata la care abilitatea Contondent mic crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "LongBlade": [
+      "Rata la care abilitatea Lama lungă crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "SmallBlade": [
+      "Rata la care abilitatea Lama scurtă crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Spear": [
+      "Rata la care abilitatea Suliță crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Maintenance": [
+      "Rata la care abilitatea Întreținere crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Woodwork": [
+      "Rata la care abilitatea Tâmplărie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Cooking": [
+      "Rata la care abilitatea Gătit crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Doctor": [
+      "Rata la care abilitatea Medicină crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Electricity": [
+      "Rata la care abilitatea Electricitate crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "MetalWelding": [
+      "Rata la care abilitatea Sudură metal crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Mechanics": [
+      "Rata la care abilitatea Mecanică crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Tailoring": [
+      "Rata la care abilitatea Croitorie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Aiming": [
+      "Rata la care abilitatea Țintire crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Reloading": [
+      "Rata la care abilitatea Reîncărcare crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Fishing": [
+      "Rata la care abilitatea Pescuit crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Trapping": [
+      "Rata la care abilitatea Prindere crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "PlantScavenging": [
+      "Rata la care abilitatea Culegere de plante crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "FlintKnapping": [
+      "Rata la care abilitatea Cioplire de cremene crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Masonry": [
+      "Rata la care abilitatea Zidărie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Pottery": [
+      "Rata la care abilitatea Olărit crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Carving": [
+      "Rata la care abilitatea Sculptură crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Husbandry": [
+      "Rata la care abilitatea Creșterea animalelor crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Tracking": [
+      "Rata la care abilitatea Urmărire crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Blacksmith": [
+      "Rata la care abilitatea Fierărie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Butchering": [
+      "Rata la care abilitatea Măcelărie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ],
+    "Glassmaking": [
+      "Rata la care abilitatea Sticlărie crește în nivel. Min: 0.00 Max: 1000.00 Implicit: 1.00"
+    ]
+  }
+}
+
+

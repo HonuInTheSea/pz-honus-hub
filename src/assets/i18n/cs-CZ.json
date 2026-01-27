@@ -49,7 +49,8 @@
       "supportKofi": "Podpora na Ko-fi",
       "resetApp": "Resetovat aplikaci",
       "resetAppTooltip": "Obnovte nastavení okna a odstraňte uložená data",
-      "myMods": "Moje mody"
+      "myMods": "Moje mody",
+      "server": "Server"
     },
     "filters": {
       "adultLabel": "Obsahuje obsah pro dospělé",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Konfigurace složek"
-    }
+    },
+    "loadingLocale": "Načítání jazyka..."
   },
   "changelog": {
     "title": "Seznam změn",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Nová funkce",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Přidána možnost pracovat s konfiguračními soubory dedikovaného serveru</li><li>Aktualizován README.md</li><li>Aktualizována stránka dokumentace</li></ul>"
+      },
       "initialRelease": {
         "title": "První vydání",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "První veřejná verze Honu's Project Zomboid Hub."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Menší opravy",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Aktualizace cíle odkazu na aktualizaci</li><li>Aktualizace čísla verze</li><li>Aktualizace README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Menší opravy",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Aktualizace jazykové podpory"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "Pracovní postup",
       "data": "Data, která aplikace používá",
       "features": "Vlastnosti",
+      "server": "Správa serveru",
       "mediaPlayer": "Přehrávač médií",
       "logInspector": "Log inspektor",
       "folderSetup": "Nastavení složky",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Seznam skladeb</strong> – zobrazuje zjištěné skladby a základní metadata (název/interpret/album, jsou-li k dispozici).",
       "bullet2": "<strong>Přehrávání</strong> – přehrávání/pozastavení plus předchozí/následující skladba.",
       "bullet3": "<strong>Hledat + hlasitost</strong> – procházejte skladbu a upravte hlasitost/ztlumení."
+    },
+    "server": {
+      "title": "Správa serveru",
+      "intro": "Použijte stránku Servery ke správě místních souborů serveru Project Zomboid.",
+      "bullet1": "<strong>Vytvořte</strong> nový server pro vygenerování výchozích souborů .ini, _SandboxVars.lua, _spawnpoints.lua a _spawnregions.lua.",
+      "bullet2": "<strong>Kopírujte</strong> existující server a duplikujte jeho soubory pod novým názvem.",
+      "bullet3": "<strong>Upravujte</strong> proměnné INI a Sandbox a aktualizujte spawnpoints/spawnregions přímo v aplikaci."
     },
     "logInspector": {
       "title": "Log inspektor",
@@ -561,11 +589,13 @@
         "summary": "Neplatný název serveru",
         "detailMissing": "Zadejte název serveru.",
         "detailInvalidChars": "Název serveru obsahuje neplatné znaky názvu souboru.",
-        "detailTrailing": "Název serveru nesmí končit tečkou ani mezerou."
+        "detailTrailing": "Název serveru nesmí končit tečkou ani mezerou.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Název serveru již existuje",
-        "detail": "Vyberte jedinečný název serveru."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Chybí uživatelská složka",
@@ -696,6 +726,49 @@
       "noFilePath": "Nastavte cestu k souboru pro načtení protokolů.",
       "loadFailed": "Nepodařilo se načíst soubor protokolu.",
       "clearFailed": "Vymazání souboru protokolu se nezdařilo."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Zrušit",
+      "create": "Create",
+      "editServerVariableTitle": "Upravit proměnnou serveru",
+      "editSandboxVariableTitle": "Upravit proměnnou sandboxu",
+      "noDescription": "No description available.",
+      "save": "Uložit",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "Věrný",
+      "falseLabel": "Falešný",
+      "exportServer": "Exportovat"
     }
   }
 }

@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombier",
+  "Distribution": "Fördelning",
+  "ZombieVoronoiNoise": "Zombie-Voronoi-brus",
+  "ZombieRespawn": "Zombie-återspawn",
+  "ZombieMigrate": "Zombie-migration",
+  "DayLength": "Daglängd",
+  "StartMonth": "Startmånad",
+  "StartDay": "Startdag",
+  "StartTime": "Starttid",
+  "DayNightCycle": "Dygnscykel",
+  "ClimateCycle": "Klimatcykel",
+  "FogCycle": "Dimcykel",
+  "WaterShut": "Vattenavstängning",
+  "ElecShut": "Strömavstängning",
+  "AlarmDecay": "Alarmnedbrytning",
+  "WaterShutModifier": "Modifikator för vattenavstängning",
+  "ElecShutModifier": "Modifikator för strömavstängning",
+  "AlarmDecayModifier": "Modifikator för alarmnedbrytning",
+  "FoodLootNew": "Matplundring (ny)",
+  "LiteratureLootNew": "Litteraturplundring (ny)",
+  "MedicalLootNew": "Medicinsk plundring (ny)",
+  "SurvivalGearsLootNew": "Överlevnadsutrustning-plundring (ny)",
+  "CannedFoodLootNew": "Konservmatplundring (ny)",
+  "WeaponLootNew": "Vapenplundring (ny)",
+  "RangedWeaponLootNew": "Distansvapenplundring (ny)",
+  "AmmoLootNew": "Ammunitionsplundring (ny)",
+  "MechanicsLootNew": "Mekanisk plundring (ny)",
+  "OtherLootNew": "Övrig plundring (ny)",
+  "ClothingLootNew": "Klädplundring (ny)",
+  "ContainerLootNew": "Behållarplundring (ny)",
+  "KeyLootNew": "Nyckelplundring (ny)",
+  "MediaLootNew": "Mediaplundring (ny)",
+  "MementoLootNew": "Minnesplundring (ny)",
+  "CookwareLootNew": "Köksredskapsplundring (ny)",
+  "MaterialLootNew": "Materialplundring (ny)",
+  "FarmingLootNew": "Jordbruksplundring (ny)",
+  "ToolLootNew": "Verktygsplundring (ny)",
+  "RollsMultiplier": "Tärningsmultiplikator",
+  "LootItemRemovalList": "Borttagningslista för plundring",
+  "RemoveStoryLoot": "Ta bort berättelseplundring",
+  "RemoveZombieLoot": "Ta bort zombieplundring",
+  "ZombiePopLootEffect": "Plundringseffekt av zombiepopulation",
+  "InsaneLootFactor": "Plundringsfaktor galen",
+  "ExtremeLootFactor": "Plundringsfaktor extrem",
+  "RareLootFactor": "Plundringsfaktor sällsynt",
+  "NormalLootFactor": "Plundringsfaktor normal",
+  "CommonLootFactor": "Plundringsfaktor vanlig",
+  "AbundantLootFactor": "Plundringsfaktor riklig",
+  "Temperature": "Temperatur",
+  "Rain": "Regn",
+  "ErosionSpeed": "Erosionshastighet",
+  "ErosionDays": "Erosionsdagar",
+  "Farming": "Jordbruk",
+  "CompostTime": "Komposttid",
+  "StatsDecrease": "Statistikminskning",
+  "NatureAbundance": "Naturens överflöd",
+  "Alarm": "Alarm",
+  "LockedHouses": "Låsta hus",
+  "StarterKit": "Startkit",
+  "Nutrition": "Näring",
+  "FoodRotSpeed": "Matens förruttningshastighet",
+  "FridgeFactor": "Kylskåpsfaktor",
+  "SeenHoursPreventLootRespawn": "Sedda timmar förhindrar plundringsrespawn",
+  "HoursForLootRespawn": "Timmar till plundringsrespawn",
+  "MaxItemsForLootRespawn": "Max föremål för plundringsrespawn",
+  "ConstructionPreventsLootRespawn": "Bygge förhindrar plundringsrespawn",
+  "WorldItemRemovalList": "Borttagningslista för världsföremål",
+  "HoursForWorldItemRemoval": "Timmar till borttagning av världsföremål",
+  "ItemRemovalListBlacklistToggle": "Växla svartlista för borttagning av föremål",
+  "TimeSinceApo": "Tid sedan apokalyps",
+  "PlantResilience": "Växternas motståndskraft",
+  "PlantAbundance": "Växtöverflöd",
+  "EndRegen": "Uthållighetsåterhämtning",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta-händelse",
+  "SleepingEvent": "Sömnhändelse",
+  "GeneratorFuelConsumption": "Generatorns bränsleförbrukning",
+  "GeneratorSpawning": "Generator-spawn",
+  "AnnotatedMapChance": "Chans för annoterad karta",
+  "CharacterFreePoints": "Fria karaktärspoäng",
+  "ConstructionBonusPoints": "Byggbonuspoäng",
+  "NightDarkness": "Nattens mörker",
+  "NightLength": "Nattlängd",
+  "BoneFracture": "Benbrott",
+  "InjurySeverity": "Skadans allvarlighetsgrad",
+  "HoursForCorpseRemoval": "Timmar till borttagning av lik",
+  "DecayingCorpseHealthImpact": "Hälsopåverkan av förruttnande lik",
+  "ZombieHealthImpact": "Hälsopåverkan från zombier",
+  "BloodLevel": "Blodnivå",
+  "ClothingDegradation": "Klädnedbrytning",
+  "FireSpread": "Brandspridning",
+  "DaysForRottenFoodRemoval": "Dagar till borttagning av rutten mat",
+  "AllowExteriorGenerator": "Tillåt generator utomhus",
+  "MaxFogIntensity": "Maximal dimintensitet",
+  "MaxRainFxIntensity": "Maximal regneffektintensitet",
+  "EnableSnowOnGround": "Aktivera snö på marken",
+  "AttackBlockMovements": "Attack blockerar rörelser",
+  "SurvivorHouseChance": "Chans för överlevandehus",
+  "VehicleStoryChance": "Chans för fordonsberättelser",
+  "ZoneStoryChance": "Chans för zonberättelser",
+  "AllClothesUnlocked": "Alla kläder upplåsta",
+  "EnableTaintedWaterText": "Aktivera text för förorenat vatten",
+  "EnableVehicles": "Aktivera fordon",
+  "CarSpawnRate": "Fordons-spawnfrekvens",
+  "ZombieAttractionMultiplier": "Zombie-attraktionsmultiplikator",
+  "VehicleEasyUse": "Enkel fordonsanvändning",
+  "InitialGas": "Startbensin",
+  "FuelStationGasInfinite": "Oändlig bensin på bensinstationer",
+  "FuelStationGasMin": "Minsta bensin på bensinstationer",
+  "FuelStationGasMax": "Högsta bensin på bensinstationer",
+  "FuelStationGasEmptyChance": "Chans att bensinstation är tom",
+  "LockedCar": "Låst bil",
+  "CarGasConsumption": "Bilens bränsleförbrukning",
+  "CarGeneralCondition": "Bilens allmänna skick",
+  "CarDamageOnImpact": "Bilskada vid kollision",
+  "DamageToPlayerFromHitByACar": "Skada på spelaren av bil",
+  "TrafficJam": "Trafikstockning",
+  "CarAlarm": "Bilalarm",
+  "PlayerDamageFromCrash": "Skada på spelaren vid krasch",
+  "SirenShutoffHours": "Timmar till siren stängs av",
+  "ChanceHasGas": "Chans att ha bensin",
+  "RecentlySurvivorVehicles": "Nyligen överlevnadsfordon",
+  "MultiHitZombies": "Flerträff på zombier",
+  "RearVulnerability": "Sårbarhet bakifrån",
+  "SirenEffectsZombies": "Sirenen påverkar zombier",
+  "AnimalStatsModifier": "Modifierare för djurstatistik",
+  "AnimalMetaStatsModifier": "Modifierare för djurmeta-statistik",
+  "AnimalPregnancyTime": "Dräktighetstid för djur",
+  "AnimalAgeModifier": "Åldersmodifierare för djur",
+  "AnimalMilkIncModifier": "Modifierare för ökad mjölk",
+  "AnimalWoolIncModifier": "Modifierare för ökad ull",
+  "AnimalRanchChance": "Chans för djur-ranch",
+  "AnimalGrassRegrowTime": "Tid för gräsets återväxt",
+  "AnimalMetaPredator": "Meta-rovdjur för djur",
+  "AnimalMatingSeason": "Parningssäsong",
+  "AnimalEggHatch": "Äggkläckning",
+  "AnimalSoundAttractZombies": "Djurens ljud lockar zombier",
+  "AnimalTrackChance": "Chans för djurspår",
+  "AnimalPathChance": "Chans för djurstig",
+  "MaximumRatIndex": "Maximalt råttindex",
+  "DaysUntilMaximumRatIndex": "Dagar till maximalt råttindex",
+  "MetaKnowledge": "Meta-kunskap",
+  "SeeNotLearntRecipe": "Se ej inlärda recept",
+  "MaximumLootedBuildingRooms": "Maximalt plundrade byggnadsrum",
+  "EnablePoisoning": "Aktivera förgiftning",
+  "MaggotSpawn": "Maskspawn",
+  "LightBulbLifespan": "Livslängd för glödlampor",
+  "FishAbundance": "Fisköverflöd",
+  "LevelForMediaXPCutoff": "Nivå för XP-stopp vid media",
+  "LevelForDismantleXPCutoff": "Nivå för XP-stopp vid demontering",
+  "BloodSplatLifespanDays": "Dagar för blodstänks livslängd",
+  "LiteratureCooldown": "Nedkylning av litteratur",
+  "NegativeTraitsPenalty": "Straff för negativa egenskaper",
+  "MinutesPerPage": "Minuter per sida",
+  "KillInsideCrops": "Döda grödor inomhus",
+  "PlantGrowingSeasons": "Säsongsbunden växttillväxt",
+  "PlaceDirtAboveground": "Placera jord ovan jord",
+  "FarmingSpeedNew": "Jordbrukshastighet (ny)",
+  "FarmingAmountNew": "Jordbruksmängd (ny)",
+  "MaximumLooted": "Maximal plundring",
+  "DaysUntilMaximumLooted": "Dagar till maximal plundring",
+  "RuralLooted": "Landsbygdsplundring",
+  "MaximumDiminishedLoot": "Maximalt minskad plundring",
+  "DaysUntilMaximumDiminishedLoot": "Dagar till maximalt minskad plundring",
+  "MuscleStrainFactor": "Muskelbelastningsfaktor",
+  "DiscomfortFactor": "Obehagsfaktor",
+  "WoundInfectionFactor": "Sårinfektionsfaktor",
+  "NoBlackClothes": "Inga svarta kläder",
+  "EasyClimbing": "Enkel klättring",
+  "MaximumFireFuelHours": "Max timmar bränsle för eld",
+  "FirearmUseDamageChance": "Skadechans vid användning av skjutvapen",
+  "FirearmNoiseMultiplier": "Ljudmultiplikator för skjutvapen",
+  "FirearmJamMultiplier": "Jammingmultiplikator för skjutvapen",
+  "FirearmMoodleMultiplier": "Moodle-multiplikator för skjutvapen",
+  "FirearmWeatherMultiplier": "Vädermultiplikator för skjutvapen",
+  "FirearmHeadGearEffect": "Huvudbonadseffekt för skjutvapen",
+  "ClayLakeChance": "Chans för lera i sjöar",
+  "ClayRiverChance": "Chans för lera i floder",
+  "GeneratorTileRange": "Generatorns ruträckvidd",
+  "GeneratorVerticalPowerRange": "Generatorns vertikala räckvidd",
+  "Basement": "Källare",
+  "SpawnFrequency": "Spawnfrekvens",
+  "Map": "Karta",
+  "AllowMiniMap": "Tillåt minimap",
+  "AllowWorldMap": "Tillåt världskarta",
+  "MapAllKnown": "Karta helt känd",
+  "MapNeedsLight": "Karta kräver ljus",
+  "ZombieLore": "Zombie-lore",
+  "Speed": "Hastighet",
+  "SprinterPercentage": "Sprinterprocent",
+  "Strength": "Styrka",
+  "Toughness": "Tålighet",
+  "Transmission": "Smitta",
+  "Mortality": "Dödlighet",
+  "Reanimate": "Återuppståndelse",
+  "Cognition": "Kognition",
+  "CrawlUnderVehicle": "Krypa under fordon",
+  "Memory": "Minne",
+  "Sight": "Syn",
+  "Hearing": "Hörsel",
+  "SpottedLogic": "Upptäcktslogik",
+  "ThumpNoChasing": "Dunka utan jakt",
+  "ThumpOnConstruction": "Dunka på konstruktioner",
+  "ActiveOnly": "Endast aktiv",
+  "TriggerHouseAlarm": "Utlös huslarm",
+  "ZombiesDragDown": "Zombier drar ner",
+  "ZombiesCrawlersDragDown": "Krypzombier drar ner",
+  "ZombiesFenceLunge": "Zombier hoppar över stängsel",
+  "ZombiesArmorFactor": "Zombiernas rustningsfaktor",
+  "ZombiesMaxDefense": "Zombiernas maxförsvar",
+  "ChanceOfAttachedWeapon": "Chans för fastsatt vapen",
+  "ZombiesFallDamage": "Zombiernas fallskada",
+  "DisableFakeDead": "Inaktivera falska döda",
+  "PlayerSpawnZombieRemoval": "Ta bort zombier vid spawn",
+  "FenceThumpersRequired": "Zombier krävs för att skada stängsel",
+  "FenceDamageMultiplier": "Skademultiplikator för stängsel",
+  "ZombieConfig": "Zombie-konfiguration",
+  "PopulationMultiplier": "Populationsmultiplikator",
+  "PopulationStartMultiplier": "Startpopulationsmultiplikator",
+  "PopulationPeakMultiplier": "Populationspiks-multiplikator",
+  "PopulationPeakDay": "Dag för populationspiken",
+  "RespawnHours": "Respawn-timmar",
+  "RespawnUnseenHours": "Osete timmar för respawn",
+  "RespawnMultiplier": "Respawn-multiplikator",
+  "RedistributeHours": "Omdistribuerings-timmar",
+  "FollowSoundDistance": "Avstånd att följa ljud",
+  "RallyGroupSize": "Gruppstorlek",
+  "RallyGroupSizeVariance": "Varians för gruppstorlek",
+  "RallyTravelDistance": "Gruppens reseavstånd",
+  "RallyGroupSeparation": "Gruppseparation",
+  "RallyGroupRadius": "Gruppens radie",
+  "ZombiesCountBeforeDelete": "Zombier innan borttagning",
+  "MultiplierConfig": "Multiplikatorkonfiguration",
+  "Global": "Global",
+  "GlobalToggle": "Växla global",
+  "Fitness": "Kondition",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Lättfotad",
+  "Nimble": "Smidig",
+  "Sneak": "Smyg",
+  "Axe": "Yxa",
+  "Blunt": "Trubbig",
+  "SmallBlunt": "Liten trubbig",
+  "LongBlade": "Långt blad",
+  "SmallBlade": "Kort blad",
+  "Spear": "Spjut",
+  "Maintenance": "Underhåll",
+  "Woodwork": "Träarbete",
+  "Cooking": "Matlagning",
+  "Doctor": "Medicin",
+  "Electricity": "Elektricitet",
+  "MetalWelding": "Metallsvetsning",
+  "Mechanics": "Mekanik",
+  "Tailoring": "Sömnad",
+  "Aiming": "Sikta",
+  "Reloading": "Omladdning",
+  "Fishing": "Fiske",
+  "Trapping": "Fångst",
+  "PlantScavenging": "Växtinsamling",
+  "FlintKnapping": "Flintknackning",
+  "Masonry": "Murning",
+  "Pottery": "Keramik",
+  "Carving": "Täljning",
+  "Husbandry": "Djurhållning",
+  "Tracking": "Spårning",
+  "Blacksmith": "Smed",
+  "Butchering": "Slakt",
+  "Glassmaking": "Glasblåsning",
+  "comments": {
+    "Zombies": [
+      "Om du ändrar detta ställs också i \"Befolkningsmultiplikator\" i avancerade zombiealternativ.",
+      "1 = Galen",
+      "2 = Mycket hög",
+      "3 = Hög",
+      "4 = Normal",
+      "5 = Låg",
+      "6 = Ingen"
+    ],
+    "Distribution": [
+      "Hur zombies är fördelade över kartan.",
+      "1 = Urban Fokuserad",
+      "2 = Uniform"
+    ],
+    "ZombieVoronoiNoise": [
+      "Styr om någon randomisering tillämpas på zombiedistribution."
+    ],
+    "ZombieRespawn": [
+      "Hur ofta nya zombies läggs till i världen.",
+      "1 = Hög",
+      "2 = Normal",
+      "3 = Låg",
+      "4 = Ingen"
+    ],
+    "ZombieMigrate": [
+      "Zombie tillåts migrera till tomma celler."
+    ],
+    "DayLength": [
+      "Standard = 1 timme, 30 minuter",
+      "1 = 15 minuter",
+      "2 = 30 minuter",
+      "3 = 1 timme",
+      "4 = 1 timme, 30 minuter",
+      "5 = 2 timmar",
+      "6 = 3 timmar",
+      "7 = 4 timmar",
+      "8 = 5 timmar",
+      "9 = 6 timmar",
+      "10 = 7 timmar",
+      "11 = 8 timmar",
+      "12 = 9 timmar",
+      "13 = 10 timmar",
+      "14 = 11 timmar",
+      "15 = 12 timmar",
+      "16 = 13 timmar",
+      "17 = 14 timmar",
+      "18 = 15 timmar",
+      "19 = 16 timmar",
+      "20 = 17 timmar",
+      "21 = 18 timmar",
+      "22 = 19 timmar",
+      "23 = 20 timmar",
+      "24 = 21 timmar",
+      "25 = 22 timmar",
+      "26 = 23 timmar",
+      "27 = Realtid"
+    ],
+    "StartMonth": [
+      "Månad då spelet startar.",
+      "1 = januari",
+      "2 = februari",
+      "3 = mars",
+      "4 = april",
+      "5 = maj",
+      "6 = juni",
+      "7 = juli",
+      "8 = augusti",
+      "9 = september",
+      "10 = oktober",
+      "11 = november",
+      "12 = december"
+    ],
+    "StartDay": [
+      "Dag i månaden då spela startar."
+    ],
+    "StartTime": [
+      "Timme på dagen då spelet börjar.",
+      "1 = 07.00",
+      "2 = 9 AM",
+      "3 = 12.00",
+      "4 = 14.00",
+      "5 = 17.00",
+      "6 = 21.00",
+      "7 = 12.00",
+      "8 = 02:00",
+      "9 = 5 AM"
+    ],
+    "DayNightCycle": [
+      "Oavsett om tiden på dygnet ändras naturligt, eller om det alltid är dag/natt.",
+      "1 = Normal",
+      "2 = Oändlig dag",
+      "3 = Ändlös natt"
+    ],
+    "ClimateCycle": [
+      "Oavsett om vädret förändras eller förblir i ett enda tillstånd.",
+      "1 = Normal",
+      "2 = Inget väder",
+      "3 = Oändligt regn",
+      "4 = Endless Storm",
+      "5 = Oändlig snö",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Oavsett om dimma uppstår naturligt, aldrig förekommer eller alltid är närvarande.",
+      "1 = Normal",
+      "2 = Ingen dimma",
+      "3 = Ändlös dimma"
+    ],
+    "WaterShut": [
+      "Hur lång tid efter det förinställda startdatumet (9 juli 1993) slutar VVS-armaturer (t.ex. handfat) att vara oändliga vattenkällor.",
+      "1 = Omedelbar",
+      "2 = 0-30 dagar",
+      "3 = 0-2 månader",
+      "4 = 0-6 månader",
+      "5 = 0-1 år",
+      "6 = 0-5 år",
+      "7 = 2-6 månader",
+      "8 = 6-12 månader",
+      "9 = Inaktiverad"
+    ],
+    "ElecShut": [
+      "Hur lång tid efter standardstartdatumet (9 juli 1993) som världens elektricitet stängs av för gott.",
+      "1 = Omedelbar",
+      "2 = 0-30 dagar",
+      "3 = 0-2 månader",
+      "4 = 0-6 månader",
+      "5 = 0-1 år",
+      "6 = 0-5 år",
+      "7 = 2-6 månader",
+      "8 = 6-12 månader",
+      "9 = Inaktiverad"
+    ],
+    "AlarmDecay": [
+      "Hur länge larmbatterier kan hålla efter att strömmen stängts av.",
+      "1 = Omedelbar",
+      "2 = 0-30 dagar",
+      "3 = 0-2 månader",
+      "4 = 0-6 månader",
+      "5 = 0-1 år",
+      "6 = 0-5 år"
+    ],
+    "WaterShutModifier": [
+      "Hur lång tid efter det förinställda startdatumet (9 juli 1993) slutar VVS-armaturer (t.ex. handfat) att vara oändliga vattenkällor. Min: -1 Max: 2147483647 Standard: 14"
+    ],
+    "ElecShutModifier": [
+      "Hur lång tid efter standardstartdatumet (9 juli 1993) som världens elektricitet stängs av för gott. Min: -1 Max: 2147483647 Standard: 14"
+    ],
+    "AlarmDecayModifier": [
+      "Hur länge larmbatterier kan hålla efter att strömmen stängts av. Min: -1 Max: 2147483647 Standard: 14"
+    ],
+    "FoodLootNew": [
+      "All mat som kan ruttna eller förstöras. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "LiteratureLootNew": [
+      "Alla föremål som kan läsas, inklusive löpsedlar Min: 0,00 Max: 4,00 Standard: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Medicin, bandage och första hjälpen-verktyg. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "SurvivalGearsLootNew": [
+      "Fiskespön, tält, campingutrustning etc. Min: 0,00 Max: 4,00 Standard: 0,60"
+    ],
+    "CannedFoodLootNew": [
+      "Konserverad och torkad mat, drycker. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "WeaponLootNew": [
+      "Vapen som inte är verktyg i andra kategorier. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Inkluderar även vapenfästen. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Lös ammunition, lådor och tidningar. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "MechanicsLootNew": [
+      "Fordonsdelar och de verktyg som behövs för att installera dem. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "OtherLootNew": [
+      "Allt annat. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "ClothingLootNew": [
+      "Alla bärbara föremål som inte är behållare. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "ContainerLootNew": [
+      "Ryggsäckar och andra bärbara/utrustade behållare, t.ex. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "KeyLootNew": [
+      "Nycklar för byggnader/bilar, nyckelringar och lås. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "MediaLootNew": [
+      "VHS-band och CD-skivor. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "MementoLootNew": [
+      "Spiffo-föremål, plyschar och andra samlarföremål, t.ex. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "CookwareLootNew": [
+      "Föremål som används i matlagning, inklusive sådana (t.ex. knivar) som kan vara vapen. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "MaterialLootNew": [
+      "Föremål och vapen som används som ingredienser för att tillverka eller bygga. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "FarmingLootNew": [
+      "Föremål och vapen som används i både djur- och växtodling, såsom frön, murslev eller spadar. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "ToolLootNew": [
+      "Föremål och vapen som är verktyg men som inte passar i andra kategorier som mekanik eller jordbruk. Min: 0.00 Max: 4.00 Standard: 0.60"
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Det rekommenderas att du inte ändrar detta. Min: 0.10 Max: 100.00 Standard: 1.00"
+    ],
+    "LootItemRemovalList": [
+      "En kommaseparerad lista över objekttyper som inte kommer att skapas som vanligt byte."
+    ],
+    "RemoveStoryLoot": [
+      "Om det är aktiverat kommer objekt på borttagningslistan för byteobjekt, eller som har sin sällsynthet inställd på 'Ingen', inte skapas i randomiserade världsberättelser."
+    ],
+    "RemoveZombieLoot": [
+      "Om det är aktiverat kommer inte föremål på listan för borttagning av byteföremål, eller som har sin sällsynthet inställd på 'Ingen', att skapas som bärs av eller kopplas till zombies."
+    ],
+    "ZombiePopLootEffect": [
+      "Om det är större än 0, ökas genom förhållandet till antalet närliggande zombies, med effekten multiplicerad med detta antal. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0,00 Max: 0,20 Standard: 0,05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0,05 Max: 0,60 Standard: 0,20"
+    ],
+    "RareLootFactor": [
+      "Min: 0,20 Max: 1,00 Standard: 0,60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0,60 Max: 2,00 Standard: 1,00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1,00 Max: 3,00 Standard: 2,00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2,00 Max: 4,00 Standard: 3,00"
+    ],
+    "Temperature": [
+      "Den globala temperaturen.",
+      "1 = Mycket kallt",
+      "2 = Kallt",
+      "3 = Normal",
+      "4 = Varmt",
+      "5 = Mycket varmt"
+    ],
+    "Rain": [
+      "Hur ofta det regnar.",
+      "1 = Mycket torr",
+      "2 = Torr",
+      "3 = Normal",
+      "4 = Regnigt",
+      "5 = Mycket regnigt"
+    ],
+    "ErosionSpeed": [
+      "Antal dagar tills erosionssystemet (som lägger till vinstockar, långt gräs, nya träd etc. till världen) kommer att nå 100% tillväxt.",
+      "1 = Mycket snabbt (20 dagar)",
+      "2 = Snabb (50 dagar)",
+      "3 = Normal (100 dagar)",
+      "4 = Långsam (200 dagar)",
+      "5 = Mycket långsam (500 dagar)"
+    ],
+    "ErosionDays": [
+      "För en anpassad erosionshastighet. Min: -1 Max: 36500 Standard: 0"
+    ],
+    "Farming": [
+      "Hastighet med vilken färdighet Jordbruket ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "CompostTime": [
+      "Hur lång tid det tar för att bryta ner i en kompost.",
+      "1 = 1 vecka",
+      "2 = 2 veckor",
+      "3 = 3 veckor",
+      "4 = 4 veckor",
+      "5 = 6 veckor",
+      "6 = 8 veckor",
+      "7 = 10 veckor",
+      "8 = 12 veckor"
+    ],
+    "StatsDecrease": [
+      "Hur snabbt kommer spelarens hunger, törst och trötthet att minska.",
+      "1 = Mycket snabb",
+      "2 = Snabbt",
+      "3 = Normal",
+      "4 = Långsam",
+      "5 = Mycket långsam"
+    ],
+    "NatureAbundance": [
+      "Överflöd av föremål som finns i Foraging-läge.",
+      "1 = Mycket dålig",
+      "2 = Dålig",
+      "3 = Normal",
+      "4 = Rikligt",
+      "5 = Mycket rikligt"
+    ],
+    "Alarm": [
+      "Hur sannolikt är det att aktivera ett huslarm när han bryter sig in i ett nytt hus.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "LockedHouses": [
+      "Hur ofta dörrar till hem och byggnader kommer att låsas när de upptäcks.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "StarterKit": [
+      "Spawn med chips, en vattenflaska, en liten ryggsäck, ett basebollträ och en hammare."
+    ],
+    "Nutrition": [
+      "Matens näringsvärde påverkar spelarens tillstånd."
+    ],
+    "FoodRotSpeed": [
+      "Hur snabbt den maten förstörs, i eller utanför ett kylskåp.",
+      "1 = Mycket snabb",
+      "2 = Snabbt",
+      "3 = Normal",
+      "4 = Långsam",
+      "5 = Mycket långsam"
+    ],
+    "FridgeFactor": [
+      "Hur effektivt ett kylskåp kommer att vara för att maten fräsch längre.",
+      "1 = Mycket låg",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög",
+      "6 = Inget förfall"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "När det är större än 0, kommer inte att plundra att återuppstå i zoner som har besökts inom detta antal timmar i spelet. Min: 0 Max: 2147483647 Standard: 0"
+    ],
+    "HoursForLootRespawn": [
+      "När den är högre än 0, efter X timmar, kommer alla containrar i städer och trailerparker i världen att återuppstå byte. Min: 0 Max: 2147483647 Standard: 0"
+    ],
+    "MaxItemsForLootRespawn": [
+      "Behållare med ett antal föremål som är större eller lika med den här inställningen kommer inte att återupptas. Min: 0 Max: 2147483647 Standard: 5"
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Föremål kommer inte att återuppstå i byggnader som spelare har barrikaderat eller byggt in."
+    ],
+    "WorldItemRemovalList": [
+      "En kommaseparerad lista över objekttyper som kommer att tas bort efter timmar för borttagning av HoursForWorldItemItem."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Antal timmar sedan ett föremål tappades på marken innan det tas bort. Min: 0.00 Max: 2147483647.00 Standard: 24.00"
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Om sant, kommer alla objekt *inte* i WorldItemRemovalList att tas bort."
+    ],
+    "TimeSinceApo": [
+      "Hur lång tid efter världens ände att börja.",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Hur mycket vatten växter kommer att förlora per dag, och deras förmåga att undvika sjukdomar.",
+      "1 = Mycket hög",
+      "2 = Hög",
+      "3 = Normal",
+      "4 = Låg",
+      "5 = Mycket låg"
+    ],
+    "PlantAbundance": [
+      "Utbytet av växter vid skörd.",
+      "1 = Mycket dålig",
+      "2 = Dålig",
+      "3 = Normal",
+      "4 = Rikligt",
+      "5 = Mycket rikligt"
+    ],
+    "EndRegen": [
+      "Återhämtning från att vara trött efter att ha utfört åtgärder.",
+      "1 = Mycket snabb",
+      "2 = Snabbt",
+      "3 = Normal",
+      "4 = Långsam",
+      "5 = Mycket långsam"
+    ],
+    "Helicopter": [
+      "Hur regelbundet och helikopter passerar över Event Zone.",
+      "1 = Aldrig",
+      "2 = En gång",
+      "3 = Ibland",
+      "4 = Ofta"
+    ],
+    "MetaEvent": [
+      "Hur ofta kommer zombie-attraherande metagame-händelser som värre skott att inträffa.",
+      "1 = Aldrig",
+      "2 = Ibland",
+      "3 = Ofta"
+    ],
+    "SleepingEvent": [
+      "Hur ofta inträffar händelser under spelarens sömn, som mardrömmar.",
+      "1 = Aldrig",
+      "2 = Ibland",
+      "3 = Ofta"
+    ],
+    "GeneratorFuelConsumption": [
+      "Hur mycket bränsle förbrukas av generatorer per timme i spelet. "
+    ],
+    "GeneratorSpawning": [
+      "Chansen att elektriska generatorer leker på kartan.",
+      "1 = Ingen (rekommenderas inte)",
+      "2 = Vansinnigt sällsynt",
+      "3 = Extremt sällsynt",
+      "4 = Sällsynt",
+      "5 = Normal",
+      "6 = Vanligt",
+      "7 = Rikligt"
+    ],
+    "AnnotatedMapChance": [
+      "Hur ofta en plundrad karta kommer att ha anteckningar på sig, skrivna av en avliden överlevande.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "CharacterFreePoints": [
+      "Lägger till gratispoäng under karaktärsskapandet. Min: -100 Max: 100 Standard: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Ger spelarbyggda konstruktioner extra träffpoäng så att de är mer motståndskraftiga mot zombieskador.",
+      "1 = Mycket låg",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög"
+    ],
+    "NightDarkness": [
+      "Nivån på omgivande belysning på natten.",
+      "1 = kolsvart",
+      "2 = Mörkt",
+      "3 = Normal",
+      "4 = Ljus"
+    ],
+    "NightLength": [
+      "Tiden från skymning till gryning.",
+      "1 = Alltid natt",
+      "2 = lång",
+      "3 = Normal",
+      "4 = Kort",
+      "5 = Alltid dag"
+    ],
+    "BoneFracture": [
+      "Om överlevande kan få brutna lemmar från stötar, zombieskador, fall mm."
+    ],
+    "InjurySeverity": [
+      "Den påverkan som skador har på din kropp och deras läkningstid.",
+      "1 = Låg",
+      "2 = Normal",
+      "3 = Hög"
+    ],
+    "HoursForCorpseRemoval": [
+      "Hur lång tid, i timmar, innan döda zombiekroppar försvinner från världen. Min: -1.00 Max: 2147483647.00 Standard: 216.00"
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Den inverkan som närliggande ruttnande kroppar har på spelarens hälsa och känslor.",
+      "1 = Ingen",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Galen"
+    ],
+    "ZombieHealthImpact": [
+      "Huruvida \"levande\" zombies i närheten har samma inverkan på spelarens hälsa och känslor."
+    ],
+    "BloodLevel": [
+      "Hur mycket blod som sprayas på golv och väggar av skador.",
+      "1 = Ingen",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "Hur snabbt kläder försämras, blir smutsiga och blodiga.",
+      "1 = Inaktiverad",
+      "2 = Långsam",
+      "3 = Normal",
+      "4 = Snabbt"
+    ],
+    "FireSpread": [
+      "Om bränder spred sig när de startade."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Antalet dagar i spelet innan ruttet mat tas bort från kartan. Min: -1 Max: 2147483647 Standard: -1"
+    ],
+    "AllowExteriorGenerator": [
+      "Om det är aktiverat kommer generatorer att fungera på exteriöra plattor."
+    ],
+    "MaxFogIntensity": [
+      "Maximal intensitet av dimma.",
+      "1 = Normal",
+      "2 = Måttlig",
+      "3 = Låg",
+      "4 = Ingen"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximal intensitet av regn.",
+      "1 = Normal",
+      "2 = Måttlig",
+      "3 = Låg"
+    ],
+    "EnableSnowOnGround": [
+      "Om snö kommer att samlas på marken."
+    ],
+    "AttackBlockMovements": [
+      "Om närstridsattacker saktar ner dig."
+    ],
+    "SurvivorHouseChance": [
+      "Chansen att hitta randomiserade byggnader på kartan (t.ex. utbrända hus, sådana som innehåller bytesförråd eller döda kroppar).",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Försöker alltid"
+    ],
+    "VehicleStoryChance": [
+      "Risken för att väghistorier (t.ex. polisvägspärrar) leker.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Försöker alltid"
+    ],
+    "ZoneStoryChance": [
+      "Chansen att berättelser som är specifika för kartzoner (t.ex. en campingplats i en skog) leker.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Försöker alltid"
+    ],
+    "AllClothesUnlocked": [
+      "Låter dig välja från varje klädesplagg i spelet när du anpassar din karaktär"
+    ],
+    "EnableTaintedWaterText": [
+      "Om förorenat vatten kommer att visa en varning som markerar det som sådant."
+    ],
+    "EnableVehicles": [
+      "Om fordonet kommer att leka."
+    ],
+    "CarSpawnRate": [
+      "Hur ofta fordonet kan upptäckas på kartan.",
+      "1 = Ingen",
+      "2 = Mycket låg",
+      "3 = Låg",
+      "4 = Normal",
+      "5 = Hög"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Generell motorljudstyrka för zombies. "
+    ],
+    "VehicleEasyUse": [
+      "Oavsett om att hitta fordonet är låsta, behöver nycklar för att starta etc."
+    ],
+    "InitialGas": [
+      "Hur full bensintanken på upptäckta fordonet kommer att vara.",
+      "1 = Mycket låg",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög",
+      "6 = Full"
+    ],
+    "FuelStationGasInfinite": [
+      "Om den är aktiverad kommer bensinpumparna aldrig att få slut på bränsle"
+    ],
+    "FuelStationGasMin": [
+      "Minsta mängd bensin som kan leka i bensinpumpar. Min: 0.00 Max: 1.00 Standard: 0.00"
+    ],
+    "FuelStationGasMax": [
+      "Den maximala mängden bensin som kan leka i bensinpumpar. Min: 0.00 Max: 1.00 Standard: 0.70"
+    ],
+    "FuelStationGasEmptyChance": [
+      "Chansen, i procent, att enskilda bensinpumpar initialt saknar bränsle. Min: 0 Max: 100 Standard: 20"
+    ],
+    "LockedCar": [
+      "Hur sannolikt kommer bilar att låsas Standard = Sällsynt",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "CarGasConsumption": [
+      "Hur bensinsugna fordon är. Min: 0.00 Max: 100.00 Standard: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "Allmänt skick upptäckta fordon kommer att vara i. ",
+      "1 = Mycket låg",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög"
+    ],
+    "CarDamageOnImpact": [
+      "Skadevolymen på fordon som kraschade.",
+      "1 = Mycket låg",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Skador som spelaren fått från att ha kraschat in i.",
+      "1 = Ingen",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög",
+      "5 = Mycket hög"
+    ],
+    "TrafficJam": [
+      "Om trafikstockningar bestående av havererade bilar kommer att dyka upp på huvudvägarna."
+    ],
+    "CarAlarm": [
+      "Hur ofta upptäckta fordon har aktiva larm.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "PlayerDamageFromCrash": [
+      "Om spelaren kan bli skadad av att ha varit med om en bilolycka."
+    ],
+    "SirenShutoffHours": [
+      "Hur många timmar i spelet innan en gråtande siren stängs av. Min: 0.00 Max: 168.00 Standard: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Chansen att hitta ett fordon med gas i tanken.",
+      "1 = Låg",
+      "2 = Normal",
+      "3 = Hög"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Om en spelare kan upptäcka en bil som har vårdats efter att Knox-infektionen slog till.",
+      "1 = Ingen",
+      "2 = Låg",
+      "3 = Normal",
+      "4 = Hög"
+    ],
+    "MultiHitZombies": [
+      "Om vissa närstridsvapen kommer att kunna slå flera zombies i en träff."
+    ],
+    "RearVulnerability": [
+      "Risk att bli biten när en zombie attackerar bakifrån.",
+      "1 = Låg",
+      "2 = Medium",
+      "3 = Hög"
+    ],
+    "SirenEffectsZombies": [
+      "Om zombies kommer att gå mot ljudet av sirener."
+    ],
+    "AnimalStatsModifier": [
+      "Hastighet med vilken djurstatistik (hunger, törst etc.) minskar.",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Hastigheten med vilken djurstatistiken (hunger, törst etc.) minskar under meta.",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalPregnancyTime": [
+      "Hur länge djur kommer att vara dräktiga innan de föder.",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalAgeModifier": [
+      "Hastighet med vilken djur åldras.",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalMilkIncModifier": [
+      "Standard = Snabb",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalWoolIncModifier": [
+      "Standard = Snabb",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalRanchChance": [
+      "Chansen att hitta djur på gården.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Alltid"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Antalet timmar gräs kommer att växa igen efter att ha blivit uppsatta av ett djur eller klippt av spelaren. Min: 1 Max: 9999 Standard: 240"
+    ],
+    "AnimalMetaPredator": [
+      "Om en meta (dvs. faktiskt inte är synlig i spelet) kan attackera dina kycklingar om hyddans dörr lämnas öppen på natten."
+    ],
+    "AnimalMatingSeason": [
+      "Om djur med parningssäsong kommer att respektera det."
+    ],
+    "AnimalEggHatch": [
+      "Hur lång tid innan djuren kläcks från ägg.",
+      "1 = Ultrasnabb",
+      "2 = Mycket snabb",
+      "3 = Snabbt",
+      "4 = Normal",
+      "5 = Långsam",
+      "6 = Mycket långsam"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Om det är sant kommer djursamtal att locka till sig zombies i närheten."
+    ],
+    "AnimalTrackChance": [
+      "Chansen att djur lämnar spår.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "AnimalPathChance": [
+      "Chansen att skapa en väg för djur att jagas.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta"
+    ],
+    "MaximumRatIndex": [
+      "Frekvensen och intensiteten av t.ex. Min: 0 Max: 50 Standard: 25"
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Hur lång tid det tar för maximal skadedjursindex att nås. Min: 0 Max: 365 Standard: 90"
+    ],
+    "MetaKnowledge": [
+      "Om en del av media inte har setts eller lästs till fullo, avgör den här inställningen om den ska visa helt, visa som \"???\" ",
+      "1 = Helt avslöjad",
+      "2 = Visum som ???",
+      "3 = Helt dolt"
+    ],
+    "SeeNotLearntRecipe": [
+      "Om det är sant kommer du att kunna se alla recept som kan göras med en station, även om du inte har lärt dig dem ännu."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Om en byggnad har fler än detta antal rum kommer den inte att plundras. Min: 0 Max: 200 Standard: 50"
+    ],
+    "EnablePoisoning": [
+      "Om present kan tillsättas mat.",
+      "1 = Sant",
+      "2 = Falskt",
+      "3 = Endast blekmedelsförgiftning är inaktiverad"
+    ],
+    "MaggotSpawn": [
+      "Om/när maggots kan leka i lik.",
+      "1 = I och runt kroppar",
+      "2 = Endast i kroppar",
+      "3 = Aldrig"
+    ],
+    "LightBulbLifespan": [
+      "Ju högre värde, desto längre håller glödlamporna innan de går sönder. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "FishAbundance": [
+      "Överflöd av fisk i floder och sjöar.",
+      "1 = Mycket dålig",
+      "2 = Dålig",
+      "3 = Normal",
+      "4 = Rikligt",
+      "5 = Mycket rikligt"
+    ],
+    "LevelForMediaXPCutoff": [
+      "När en färdighet är på denna nivå eller högre, kommer inte tv/VHS/annan media att tillhandahålla XP för den. Min: 0 Max: 10 Standard: 3"
+    ],
+    "LevelForDismantleXPCutoff": [
+      "När en färdighet är på denna nivå eller högre, ger skrotning av möbler inte XP för den relevanta färdigheten. Min: 0 Max: 10 Standard: 0"
+    ],
+    "BloodSplatLifespanDays": [
+      "Antal dagar innan gamla blodfläckar tas bort. Min: 0 Max: 365 Standard: 0"
+    ],
+    "LiteratureCooldown": [
+      "Antal dagar innan man kan ha nytta av att läsa tidigare lästa litteraturföremål. Min: 1 Max: 365 Standard: 90"
+    ],
+    "NegativeTraitsPenalty": [
+      "Om det finns minskande avkastning på bonusegenskapspoäng från att välja flera negativa egenskaper.",
+      "1 = Ingen",
+      "2 = 1 poängs straff för varje 3 valda negativa egenskaper",
+      "3 = 1 poängs straff för varje 2 valda negativa egenskaper",
+      "4 = 1 poäng straff för varje negativ egenskap som väljs efter den första"
+    ],
+    "MinutesPerPage": [
+      "Antalet minuter i spelet som det tar att läsa en sida i en färdighetsbok. Min: 0.00 Max: 60.00 Standard: 2.00"
+    ],
+    "KillInsideCrops": [
+      "När det är aktiverat kommer grödor och örter som odlas inuti byggnader att dö."
+    ],
+    "PlantGrowingSeasons": [
+      "När den är aktiverad påverkans växternas tillväxt av årstiderna."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Det rekommenderas att du inte ändrar detta."
+    ],
+    "FarmingSpeedNew": [
+      "Växtens tillväxthastighet. Min: 0.10 Max: 100.00 Standard: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "Överflöd av skördade grödor. Min: 0.10 Max: 10.00 Standard: 1.00"
+    ],
+    "MaximumLooted": [
+      "Chansen att någon byggnad redan kommer att plundras när den hittas. Min: 0 Max: 200 Standard: 50"
+    ],
+    "DaysUntilMaximumLooted": [
+      "Hur lång tid det tar för maximal plundrad byggnadschans att nås. Min: 0 Max: 3650 Standard: 90"
+    ],
+    "RuralLooted": [
+      "Chansen att någon lantlig byggnad redan kommer att plundras när den hittas. Min: 0.00 Max: 2.00 Standard: 0.50"
+    ],
+    "MaximumDiminishedLoot": [
+      "Det maximala bytet som inte kommer att leka när dagar tills maximalt minskat byte uppnås. Min: 0 Max: 100 Standard: 0"
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Hur lång tid det tar för maximalt minskad byteprocent att nås. Min: 0 Max: 3650 Standard: 3650"
+    ],
+    "MuscleStrainFactor": [
+      "Fungerar som en multiplikator när du utsätter muskelansträngning från svängande vapen eller bär tunga laster. Min: 0.00 Max: 10.00 Standard: 1.00"
+    ],
+    "DiscomfortFactor": [
+      "Fungerar som en multiplikator vid applicering av obehag från slitna föremål. Min: 0.00 Max: 10.00 Standard: 1.00"
+    ],
+    "WoundInfectionFactor": [
+      "Om större än noll kan skada tas från allvarliga sårinfektioner. Min: 0.00 Max: 10.00 Standard: 0.00"
+    ],
+    "NoBlackClothes": [
+      "Om äkta kläder med randomiserade nyanser inte kommer att vara så mörka att de är nästan svarta."
+    ],
+    "EasyClimbing": [
+      "Inaktiverar risken att misslyckas när du klättrar i rep eller över väggar."
+    ],
+    "MaximumFireFuelHours": [
+      "Maximalt antal bränsletimmar som kan placeras i en lägereld, vedspis etc. Min: 1 Max: 168 Standard: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Ersätter Chance-To-Hit-mekanik med Chance-To-Damage-beräkningar."
+    ],
+    "FirearmNoiseMultiplier": [
+      "En multiplikator för det avstånd på vilket zombies kan höra skott. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplikator för risk för störning av skjutvapen. Min: 0.00 Max: 10.00 Standard: 0.00"
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplikator för Moodle-effekter på träffchans. Min: 0.00 Max: 10.00 Standard: 1.00"
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplikator för effekterna av väder (vind, regn och dimma) på träffchans. Min: 0.00 Max: 10.00 Standard: 1.00"
+    ],
+    "FirearmHeadGearEffect": [
+      "Aktivera att ha huvudbonader som svetsmasker påverkar träffchans"
+    ],
+    "ClayLakeChance": [
+      "Chans att förvandla ett smutsgolv till ett lergolv. Min: 0.00 Max: 1.00 Standard: 0.05"
+    ],
+    "ClayRiverChance": [
+      "Chans att förvandla ett smutsgolv till ett lergolv. Min: 0.00 Max: 1.00 Standard: 0.05"
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Standard: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Hur många nivåer både över och under en generator kan förse med el. Min: 1 Max: 15 Standard: 3"
+    ],
+    "SpawnFrequency": [
+      "Hur ofta källare uppstår på slumpmässiga platser.",
+      "1 = Aldrig",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Alltid"
+    ],
+    "AllowMiniMap": [
+      "Om det är aktiverat kommer ett minikartafönster att vara tillgängligt."
+    ],
+    "AllowWorldMap": [
+      "Om det är aktiverat kan världskartan nås."
+    ],
+    "MapAllKnown": [
+      "Om det är aktiverat kommer världskartan att fyllas i helt när spelet startas."
+    ],
+    "MapNeedsLight": [
+      "Om det är aktiverat kan kartor inte läsas om det inte finns en ljuskälla tillgänglig."
+    ],
+    "Speed": [
+      "Hur snabbt zombies rör sig.",
+      "1 = Sprinters",
+      "2 = Snabba Shambles",
+      "3 = Slumpar",
+      "4 = Slumpmässigt"
+    ],
+    "SprinterPercentage": [
+      "Om Random Speed ​​​​​är att aktivera denna stor procentandel av zombies som är Sprinters. "
+    ],
+    "Strength": [
+      "Hastighet med vilken färdighet Styrka ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Toughness": [
+      "Svårigheten att döda en zombie.",
+      "1 = Tufft",
+      "2 = Normal",
+      "3 = Bräcklig",
+      "4 = Slumpmässigt"
+    ],
+    "Transmission": [
+      "Hur Knox-viruset sprider sig.",
+      "1 = Blod och saliv",
+      "2 = Endast saliv",
+      "3 = Alla är smittade",
+      "4 = Ingen"
+    ],
+    "Mortality": [
+      "Hur snabbt infektionen slår igenom.",
+      "1 = Omedelbar",
+      "2 = 0-30 sekunder",
+      "3 = 0-1 minuter",
+      "4 = 0-12 timmar",
+      "5 = 2-3 dagar",
+      "6 = 1-2 veckor",
+      "7 = Aldrig"
+    ],
+    "Reanimate": [
+      "Hur snabbt infekterade som reser sig som zombies.",
+      "1 = Omedelbar",
+      "2 = 0-30 sekunder",
+      "3 = 0-1 minuter",
+      "4 = 0-12 timmar",
+      "5 = 2-3 dagar",
+      "6 = 1-2 veckor"
+    ],
+    "Cognition": [
+      "Zombie intelligens.",
+      "1 = Navigera och användbar dörrar",
+      "2 = Navigera",
+      "3 = Grundläggande navigering",
+      "4 = Slumpmässigt"
+    ],
+    "CrawlUnderVehicle": [
+      "Hur ofta kan zombies krypa under parkerade fordon.",
+      "1 = Endast sökrobotar",
+      "2 = Extremt sällsynt",
+      "3 = Sällsynt",
+      "4 = Ibland",
+      "5 = Ofta",
+      "6 = Mycket ofta",
+      "7 = Alltid"
+    ],
+    "Memory": [
+      "Hur länge zombies kommer ihåg en spelare efter att ha satt eller hört dem.",
+      "1 = lång",
+      "2 = Normal",
+      "3 = Kort",
+      "4 = Ingen",
+      "5 = Slumpmässigt",
+      "6 = Slumpmässigt mellan Normal och Ingen"
+    ],
+    "Sight": [
+      "Zombie vision radie.",
+      "1 = Örn",
+      "2 = Normal",
+      "3 = Dålig",
+      "4 = Slumpmässigt",
+      "5 = Slumpmässigt mellan Normal och Dålig"
+    ],
+    "Hearing": [
+      "Zombies hörradie.",
+      "1 = Pinpoint",
+      "2 = Normal",
+      "3 = Dålig",
+      "4 = Slumpmässigt",
+      "5 = Slumpmässigt mellan Normal och Dålig"
+    ],
+    "SpottedLogic": [
+      "Aktiverar den nya avancerade smygmekaniken, som låter dig gömma dig för zombies bakom bilar, tar hänsyn till egenskaper och väder och mycket mer."
+    ],
+    "ThumpNoChasing": [
+      "Om zombies som inte har sett/hört spelaren kan attackera dörrar och konstruktioner under roaming."
+    ],
+    "ThumpOnConstruction": [
+      "Om zombies kan förstöra spelarkonstruktioner och försvar."
+    ],
+    "ActiveOnly": [
+      "Om zombies är mer \"aktiva\" under dagen eller natten.",
+      "1 = Båda",
+      "2 = Natt",
+      "3 = Dag"
+    ],
+    "TriggerHouseAlarm": [
+      "Om zombies utlöser huslarm när de bryter i genom fönster eller dörrar."
+    ],
+    "ZombiesDragDown": [
+      "Om flera attackerande zombies kan dra ner dig och döda dig."
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Om crawler-zombies bredvid en spelare bidrar till chansen att dras ner och dödas av en grupp zombies."
+    ],
+    "ZombiesFenceLunge": [
+      "Om zombies har en chans att göra ett utfall mot dig efter att ha klättrat över ett staket eller genom ett fönster om du är för nära."
+    ],
+    "ZombiesArmorFactor": [
+      "Fungerar som en multiplikator när man bestämmer effektiviteten hos pansar som bärs av zombies. "
+    ],
+    "ZombiesMaxDefense": [
+      "Den maximala försvarsprocenten som alla bärbara skyddssplagg kan ge en zombie. Min: 0 Max: 100 Standard: 85"
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Procentuell chans att ha ett slumpmässigt fäst vapen. Min: 0 Max: 100 Standard: 6"
+    ],
+    "ZombiesFallDamage": [
+      "Hur mycket skada tar zombies när de faller från höjd. "
+    ],
+    "DisableFakeDead": [
+      "Om några döda zombies kommer att återupplivas och attackera spelaren.",
+      "1 = World Zombies",
+      "2 = Världen och bekämpa zombies",
+      "3 = Aldrig"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombies kommer inte att leka där spelare spawnar.",
+      "1 = Inuti byggnaden och runt den",
+      "2 = Inne i byggnaden",
+      "3 = Inne i rummet",
+      "4 = Zombies kan leka var som helst"
+    ],
+    "FenceThumpersRequired": [
+      "Hur många zombies krävs för att skada ett högt staket. "
+    ],
+    "FenceDamageMultiplier": [
+      "Hur snabbt skadar zombies höga staket. "
+    ],
+    "PopulationMultiplier": [
+      "Ställs i av \"Zombie Count\"-populationsalternativet, eller av ett anpassat nummer här. Min: 0.00 Max: 4.00 Standard: 0.65"
+    ],
+    "PopulationStartMultiplier": [
+      "En multiplikator för den önskade zombiepopulationen i början av spelet. Min: 0.00 Max: 4.00 Standard: 1.00"
+    ],
+    "PopulationPeakMultiplier": [
+      "En multiplikator för den önskade zombiepopulationen på toppdagen. Min: 0.00 Max: 4.00 Standard: 1.50"
+    ],
+    "PopulationPeakDay": [
+      "Dagen då befolkningen når sin topp. Min: 1 Max: 365 Standard: 28"
+    ],
+    "RespawnHours": [
+      "Antalet timmar som måste gå innan zombies kan återuppstå i en cell. "
+    ],
+    "RespawnUnseenHours": [
+      "Antalet timmar som en bit måste vara osynliga innan zombies kan återuppstå i den. "
+    ],
+    "RespawnMultiplier": [
+      "Den del av en cell önskad befolkning som kan återuppstå varje RespawnHours. Min: 0.00 Max: 1.00 Standard: 0.10"
+    ],
+    "RedistributeHours": [
+      "Antalet timmar som måste gå innan zombies migrar till tomma delar av samma cell. "
+    ],
+    "FollowSoundDistance": [
+      "Avståndet en zombie kommer att försöka gå mot det sista ljudet den hörde. Min: 10 Max: 1000 Standard: 100"
+    ],
+    "RallyGroupSize": [
+      "Storleken på grupper som riktiga zombies bildas när de är inaktiva. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Mängden, i procent, som zombiegrupper kan variera i storlek från standard (både större och mindre). Min: 0 Max: 100 Standard: 50"
+    ],
+    "RallyTravelDistance": [
+      "Avståndet som verkliga zombies reser för att bilda grupper när de är inaktiva. "
+    ],
+    "RallyGroupSeparation": [
+      "Avståndet mellan zombiegrupper. Min: 5 Max: 25 Standard: 15"
+    ],
+    "RallyGroupRadius": [
+      "Hur nära medlemmar i en zombiegrupp håller sig till gruppens \"ledare\". Min: 1 Max: 10 Standard: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Standard: 300"
+    ],
+    "Global": [
+      "Den takt med vilken alla färdigheter stiger. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "GlobalToggle": [
+      "När det är aktiverat kommer alla färdigheter att använda Global Multiplier."
+    ],
+    "Fitness": [
+      "Hastighet med vilken färdigheten Konditionen ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Sprinting": [
+      "Hastighet med vilken färdighet Sprint ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Lightfoot": [
+      "Hastighet med vilken färdigheten Lättfotad ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Nimble": [
+      "Hastighet med vilken färdighet Smidig ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Sneak": [
+      "Hastighet med vilken färdighet Smyg ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Axe": [
+      "Hastighet med vilken färdighet Yxa ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Blunt": [
+      "Hastighet med vilken färdighet Trubbig ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "SmallBlunt": [
+      "Hastighet med vilken färdigheten Liten trubbig ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "LongBlade": [
+      "Hastighet med vilken färdighet Långt blad ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "SmallBlade": [
+      "Hastighet med vilken färdigheten Kort blad ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Spear": [
+      "Hastighet med vilken färdighet Spjut ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Maintenance": [
+      "Hastighet med vilken färdighet Underhåll ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Woodwork": [
+      "Hastighet med vilken färdighet Träarbetet ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Cooking": [
+      "Hastighet med vilken färdighet Matlagning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Doctor": [
+      "Hastighet med vilken färdigheten Medicin ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Electricity": [
+      "Hastighet med vilken färdighet Elektricitet ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "MetalWelding": [
+      "Hastighet med vilken färdigheten Metallsvetsning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Mechanics": [
+      "Hastighet med vilken färdighet Mekanik ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Tailoring": [
+      "Hastighet med vilken färdighet Sömnad ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Aiming": [
+      "Hastighet med vilken färdighet Sikta ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Reloading": [
+      "Hastighet med vilken färdighet Omladdning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Fishing": [
+      "Hastighet med vilken färdighet Fiske ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Trapping": [
+      "Hastighet med vilken färdighet Fångst ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "PlantScavenging": [
+      "Hastighet med vilken färdighet Växtinsamlingen ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "FlintKnapping": [
+      "Hastighet med vilken färdigheten Flintknackning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Masonry": [
+      "Hastighet med vilken färdighet Murning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Pottery": [
+      "Hastighet med vilken färdighet Keramik ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Carving": [
+      "Hastighet med vilken färdighet Täljning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Husbandry": [
+      "Hastighet med vilken färdighet Djurhållning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Tracking": [
+      "Hastighet med vilken färdighet Spårning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Blacksmith": [
+      "Hastighet med vilken färdighet Smed ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Butchering": [
+      "Hastighet med vilken färdighet Slakt ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ],
+    "Glassmaking": [
+      "Hastighet med vilken färdigheten Glasblåsning ökar i nivå. Min: 0.00 Max: 1000.00 Standard: 1.00"
+    ]
+  }
+}
+
+

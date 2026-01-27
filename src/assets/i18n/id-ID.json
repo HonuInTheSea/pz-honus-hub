@@ -49,7 +49,8 @@
       "honuWorkshop": "HonuInTheSea's Steam Workshop",
       "supportKofi": "Support on Ko-fi",
       "resetApp": "Reset Application",
-      "resetAppTooltip": "Reset window settings and delete stored data"
+      "resetAppTooltip": "Reset window settings and delete stored data",
+      "server": "pelayan"
     },
     "filters": {
       "adultLabel": "Has Adult Content",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Configure Folders"
-    }
+    },
+    "loadingLocale": "Memuat bahasa..."
   },
   "changelog": {
     "title": "Changelog",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Fitur baru",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Menambahkan kemampuan untuk bekerja dengan file konfigurasi server dedicated</li><li>README.md diperbarui</li><li>Halaman dokumentasi diperbarui</li></ul>"
+      },
       "initialRelease": {
         "title": "Initial release",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "First public build of Honu's Project Zomboid Hub."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Perbaikan kecil",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Memperbarui tujuan tautan pembaruan</li><li>Memperbarui nomor versi</li><li>Memperbarui README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Perbaikan kecil",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Pembaruan dukungan bahasa"
       }
     }
   },
@@ -303,6 +323,7 @@
       "workflow": "Workflow",
       "data": "Data the app uses",
       "features": "Features",
+      "server": "Manajemen Server",
       "mediaPlayer": "Media player",
       "logInspector": "Log inspector",
       "folderSetup": "Folder setup",
@@ -371,6 +392,13 @@
       "bullet1": "<strong>Playlist</strong> - shows detected tracks and basic metadata (title/artist/album when available).",
       "bullet2": "<strong>Playback</strong> - play/pause plus previous/next track.",
       "bullet3": "<strong>Seek + volume</strong> - scrub through the track and adjust volume/mute."
+    },
+    "server": {
+      "title": "Manajemen Server",
+      "intro": "Gunakan halaman Server untuk mengelola file server lokal Project Zomboid.",
+      "bullet1": "<strong>Buat</strong> server baru untuk menghasilkan file default .ini, _SandboxVars.lua, _spawnpoints.lua, dan _spawnregions.lua.",
+      "bullet2": "<strong>Salin</strong> server yang ada untuk menggandakan file-nya dengan nama baru.",
+      "bullet3": "<strong>Edit</strong> variabel INI dan Sandbox, serta perbarui spawnpoints/spawnregions langsung di aplikasi."
     },
     "logInspector": {
       "title": "Log inspector",
@@ -561,11 +589,13 @@
         "summary": "Invalid server name",
         "detailMissing": "Enter a server name.",
         "detailInvalidChars": "Server name contains invalid filename characters.",
-        "detailTrailing": "Server name cannot end with a dot or space."
+        "detailTrailing": "Server name cannot end with a dot or space.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Server name already exists",
-        "detail": "Choose a unique server name."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Missing user folder",
@@ -696,6 +726,49 @@
       "noFilePath": "Tetapkan jalur file untuk memuat log.",
       "loadFailed": "Gagal memuat file log.",
       "clearFailed": "Gagal menghapus file log."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Cancel",
+      "create": "Create",
+      "editServerVariableTitle": "Edit Variabel Server",
+      "editSandboxVariableTitle": "Edit Variabel Kotak Pasir",
+      "noDescription": "No description available.",
+      "save": "Save",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "BENAR",
+      "falseLabel": "PALSU",
+      "exportServer": "Ekspor"
     }
   }
 }

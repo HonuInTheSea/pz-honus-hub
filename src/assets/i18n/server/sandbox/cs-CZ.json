@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombie",
+  "Distribution": "Rozložení",
+  "ZombieVoronoiNoise": "Voronoi šum zombie",
+  "ZombieRespawn": "Respawn zombie",
+  "ZombieMigrate": "Migrace zombie",
+  "DayLength": "Délka dne",
+  "StartMonth": "Počáteční měsíc",
+  "StartDay": "Počáteční den",
+  "StartTime": "Počáteční čas",
+  "DayNightCycle": "Cyklus dne/noci",
+  "ClimateCycle": "Klimatický cyklus",
+  "FogCycle": "Cyklus mlhy",
+  "WaterShut": "Vypnutí vody",
+  "ElecShut": "Vypnutí elektřiny",
+  "AlarmDecay": "Opotřebení alarmů",
+  "WaterShutModifier": "Modifikátor vypnutí vody",
+  "ElecShutModifier": "Modifikátor vypnutí elektřiny",
+  "AlarmDecayModifier": "Modifikátor opotřebení alarmů",
+  "FoodLootNew": "Kořist z jídla (nové)",
+  "LiteratureLootNew": "Kořist z literatury (nové)",
+  "MedicalLootNew": "Zdravotní kořist (nové)",
+  "SurvivalGearsLootNew": "Kořist z vybavení přežití (nové)",
+  "CannedFoodLootNew": "Kořist z konzerv (nové)",
+  "WeaponLootNew": "Kořist ze zbraní (nové)",
+  "RangedWeaponLootNew": "Kořist z dálkových zbraní (nové)",
+  "AmmoLootNew": "Kořist z munice (nové)",
+  "MechanicsLootNew": "Kořist z mechaniky (nové)",
+  "OtherLootNew": "Jiná kořist (nové)",
+  "ClothingLootNew": "Kořist z oblečení (nové)",
+  "ContainerLootNew": "Kořist z kontejnerů (nové)",
+  "KeyLootNew": "Kořist z klíčů (nové)",
+  "MediaLootNew": "Kořist z médií (nové)",
+  "MementoLootNew": "Kořist z památek (nové)",
+  "CookwareLootNew": "Kořist z kuchyňských potřeb (nové)",
+  "MaterialLootNew": "Kořist z materiálů (nové)",
+  "FarmingLootNew": "Kořist ze zemědělství (nové)",
+  "ToolLootNew": "Kořist z nástrojů (nové)",
+  "RollsMultiplier": "Násobitel hodů",
+  "LootItemRemovalList": "Seznam odstranění kořisti",
+  "RemoveStoryLoot": "Odstranit příběhovou kořist",
+  "RemoveZombieLoot": "Odstranit kořist z zombie",
+  "ZombiePopLootEffect": "Efekt kořisti z populace zombie",
+  "InsaneLootFactor": "Faktor kořisti: šílený",
+  "ExtremeLootFactor": "Faktor kořisti: extrémní",
+  "RareLootFactor": "Faktor kořisti: vzácný",
+  "NormalLootFactor": "Faktor kořisti: normální",
+  "CommonLootFactor": "Faktor kořisti: běžný",
+  "AbundantLootFactor": "Faktor kořisti: hojný",
+  "Temperature": "Teplota",
+  "Rain": "Déšť",
+  "ErosionSpeed": "Rychlost eroze",
+  "ErosionDays": "Dny eroze",
+  "Farming": "Zemědělství",
+  "CompostTime": "Doba kompostování",
+  "StatsDecrease": "Snížení statistik",
+  "NatureAbundance": "Hojnost přírody",
+  "Alarm": "Alarm",
+  "LockedHouses": "Zamčené domy",
+  "StarterKit": "Startovní sada",
+  "Nutrition": "Výživa",
+  "FoodRotSpeed": "Rychlost kažení jídla",
+  "FridgeFactor": "Faktor lednice",
+  "SeenHoursPreventLootRespawn": "Viděné hodiny brání respawnu kořisti",
+  "HoursForLootRespawn": "Hodiny do respawnu kořisti",
+  "MaxItemsForLootRespawn": "Max. položek pro respawn kořisti",
+  "ConstructionPreventsLootRespawn": "Stavby brání respawnu kořisti",
+  "WorldItemRemovalList": "Seznam odstranění předmětů světa",
+  "HoursForWorldItemRemoval": "Hodiny do odstranění předmětů světa",
+  "ItemRemovalListBlacklistToggle": "Přepínač černé listiny odstranění předmětů",
+  "TimeSinceApo": "Čas od apokalypsy",
+  "PlantResilience": "Odolnost rostlin",
+  "PlantAbundance": "Hojnost rostlin",
+  "EndRegen": "Regenerace výdrže",
+  "Helicopter": "Helikoptéra",
+  "MetaEvent": "Meta-událost",
+  "SleepingEvent": "Událost během spánku",
+  "GeneratorFuelConsumption": "Spotřeba paliva generátoru",
+  "GeneratorSpawning": "Spawn generátoru",
+  "AnnotatedMapChance": "Šance na anotovanou mapu",
+  "CharacterFreePoints": "Volné body postavy",
+  "ConstructionBonusPoints": "Bonusové body stavby",
+  "NightDarkness": "Noční tma",
+  "NightLength": "Délka noci",
+  "BoneFracture": "Zlomenina kosti",
+  "InjurySeverity": "Závažnost zranění",
+  "HoursForCorpseRemoval": "Hodiny do odstranění těl",
+  "DecayingCorpseHealthImpact": "Dopad rozkládajících se těl na zdraví",
+  "ZombieHealthImpact": "Dopad zombie na zdraví",
+  "BloodLevel": "Úroveň krve",
+  "ClothingDegradation": "Opotřebení oblečení",
+  "FireSpread": "Šíření ohně",
+  "DaysForRottenFoodRemoval": "Dny do odstranění zkaženého jídla",
+  "AllowExteriorGenerator": "Povolit venkovní generátor",
+  "MaxFogIntensity": "Maximální intenzita mlhy",
+  "MaxRainFxIntensity": "Maximální intenzita efektů deště",
+  "EnableSnowOnGround": "Povolit sníh na zemi",
+  "AttackBlockMovements": "Útok blokuje pohyb",
+  "SurvivorHouseChance": "Šance na dům přeživšího",
+  "VehicleStoryChance": "Šance na příběhy vozidel",
+  "ZoneStoryChance": "Šance na příběhy zón",
+  "AllClothesUnlocked": "Všechny obleky odemčené",
+  "EnableTaintedWaterText": "Povolit text kontaminované vody",
+  "EnableVehicles": "Povolit vozidla",
+  "CarSpawnRate": "Míra spawnu aut",
+  "ZombieAttractionMultiplier": "Násobitel přitahování zombie",
+  "VehicleEasyUse": "Snadné použití vozidel",
+  "InitialGas": "Počáteční benzín",
+  "FuelStationGasInfinite": "Nekonečný benzín na čerpacích stanicích",
+  "FuelStationGasMin": "Min. benzín na čerpacích stanicích",
+  "FuelStationGasMax": "Max. benzín na čerpacích stanicích",
+  "FuelStationGasEmptyChance": "Šance na prázdnou čerpací stanici",
+  "LockedCar": "Zamčené auto",
+  "CarGasConsumption": "Spotřeba benzínu auta",
+  "CarGeneralCondition": "Obecný stav auta",
+  "CarDamageOnImpact": "Poškození auta při nárazu",
+  "DamageToPlayerFromHitByACar": "Poškození hráče po nárazu auta",
+  "TrafficJam": "Dopravní zácpa",
+  "CarAlarm": "Autoalarm",
+  "PlayerDamageFromCrash": "Poškození hráče při nehodě",
+  "SirenShutoffHours": "Hodiny do vypnutí sirény",
+  "ChanceHasGas": "Šance na benzín",
+  "RecentlySurvivorVehicles": "Nedávná vozidla přeživších",
+  "MultiHitZombies": "Víceúdery na zombie",
+  "RearVulnerability": "Zranitelnost zezadu",
+  "SirenEffectsZombies": "Siréna ovlivňuje zombie",
+  "AnimalStatsModifier": "Modifikátor statistik zvířat",
+  "AnimalMetaStatsModifier": "Modifikátor meta-statistik zvířat",
+  "AnimalPregnancyTime": "Doba březosti zvířat",
+  "AnimalAgeModifier": "Modifikátor věku zvířat",
+  "AnimalMilkIncModifier": "Modifikátor zvýšení mléka",
+  "AnimalWoolIncModifier": "Modifikátor zvýšení vlny",
+  "AnimalRanchChance": "Šance na zvířecí ranč",
+  "AnimalGrassRegrowTime": "Doba opětovného růstu trávy",
+  "AnimalMetaPredator": "Meta predátor zvířat",
+  "AnimalMatingSeason": "Období páření",
+  "AnimalEggHatch": "Líhnutí vajec",
+  "AnimalSoundAttractZombies": "Zvuky zvířat přitahují zombie",
+  "AnimalTrackChance": "Šance na stopy zvířat",
+  "AnimalPathChance": "Šance na zvířecí stezku",
+  "MaximumRatIndex": "Maximální index krys",
+  "DaysUntilMaximumRatIndex": "Dny do maximálního indexu krys",
+  "MetaKnowledge": "Meta znalosti",
+  "SeeNotLearntRecipe": "Zobrazit nenaučené recepty",
+  "MaximumLootedBuildingRooms": "Maximálně vypleněné místnosti",
+  "EnablePoisoning": "Povolit otravu",
+  "MaggotSpawn": "Spawn larev",
+  "LightBulbLifespan": "Životnost žárovek",
+  "FishAbundance": "Hojnost ryb",
+  "LevelForMediaXPCutoff": "Úroveň pro zastavení XP z médií",
+  "LevelForDismantleXPCutoff": "Úroveň pro zastavení XP z demontáže",
+  "BloodSplatLifespanDays": "Dny trvání krvavých skvrn",
+  "LiteratureCooldown": "Cooldown literatury",
+  "NegativeTraitsPenalty": "Trest za negativní vlastnosti",
+  "MinutesPerPage": "Minuty na stránku",
+  "KillInsideCrops": "Zabít plodiny uvnitř",
+  "PlantGrowingSeasons": "Sezónní růst rostlin",
+  "PlaceDirtAboveground": "Umístit zeminu nad zem",
+  "FarmingSpeedNew": "Rychlost zemědělství (nová)",
+  "FarmingAmountNew": "Množství zemědělství (nové)",
+  "MaximumLooted": "Maximální kořist",
+  "DaysUntilMaximumLooted": "Dny do maximální kořisti",
+  "RuralLooted": "Venkovská kořist",
+  "MaximumDiminishedLoot": "Maximálně snížená kořist",
+  "DaysUntilMaximumDiminishedLoot": "Dny do maximálně snížené kořisti",
+  "MuscleStrainFactor": "Faktor svalového přetížení",
+  "DiscomfortFactor": "Faktor nepohodlí",
+  "WoundInfectionFactor": "Faktor infekce rány",
+  "NoBlackClothes": "Žádné černé oblečení",
+  "EasyClimbing": "Snadné lezení",
+  "MaximumFireFuelHours": "Max. hodiny paliva pro oheň",
+  "FirearmUseDamageChance": "Šance na poškození při použití střelné zbraně",
+  "FirearmNoiseMultiplier": "Násobitel hluku střelných zbraní",
+  "FirearmJamMultiplier": "Násobitel zaseknutí střelných zbraní",
+  "FirearmMoodleMultiplier": "Moodle násobitel pro střelné zbraně",
+  "FirearmWeatherMultiplier": "Násobitel počasí pro střelné zbraně",
+  "FirearmHeadGearEffect": "Efekt pokrývky hlavy pro střelné zbraně",
+  "ClayLakeChance": "Šance na hlínu u jezer",
+  "ClayRiverChance": "Šance na hlínu u řek",
+  "GeneratorTileRange": "Dosah dlaždic generátoru",
+  "GeneratorVerticalPowerRange": "Vertikální dosah generátoru",
+  "Basement": "Sklep",
+  "SpawnFrequency": "Frekvence spawnu",
+  "Map": "Mapa",
+  "AllowMiniMap": "Povolit minimapu",
+  "AllowWorldMap": "Povolit mapu světa",
+  "MapAllKnown": "Mapa úplně známá",
+  "MapNeedsLight": "Mapa potřebuje světlo",
+  "ZombieLore": "Zombie znalosti",
+  "Speed": "Rychlost",
+  "SprinterPercentage": "Procento sprinterů",
+  "Strength": "Síla",
+  "Toughness": "Odolnost",
+  "Transmission": "Přenos",
+  "Mortality": "Úmrtnost",
+  "Reanimate": "Znovuoživení",
+  "Cognition": "Kognice",
+  "CrawlUnderVehicle": "Plazit se pod vozidly",
+  "Memory": "Paměť",
+  "Sight": "Zrak",
+  "Hearing": "Sluch",
+  "SpottedLogic": "Logika detekce",
+  "ThumpNoChasing": "Bouchat bez pronásledování",
+  "ThumpOnConstruction": "Bouchat do konstrukcí",
+  "ActiveOnly": "Pouze aktivní",
+  "TriggerHouseAlarm": "Spustit alarm domu",
+  "ZombiesDragDown": "Zombie stahují dolů",
+  "ZombiesCrawlersDragDown": "Lezoucí zombie stahují dolů",
+  "ZombiesFenceLunge": "Zombie skáčou přes ploty",
+  "ZombiesArmorFactor": "Faktor brnění zombie",
+  "ZombiesMaxDefense": "Maximální obrana zombie",
+  "ChanceOfAttachedWeapon": "Šance na připevněnou zbraň",
+  "ZombiesFallDamage": "Poškození pádem zombie",
+  "DisableFakeDead": "Zakázat falešně mrtvé",
+  "PlayerSpawnZombieRemoval": "Odstranit zombie při spawnu",
+  "FenceThumpersRequired": "Zombie potřební k poškození plotu",
+  "FenceDamageMultiplier": "Násobitel poškození plotu",
+  "ZombieConfig": "Konfigurace zombie",
+  "PopulationMultiplier": "Násobitel populace",
+  "PopulationStartMultiplier": "Násobitel počáteční populace",
+  "PopulationPeakMultiplier": "Násobitel vrcholu populace",
+  "PopulationPeakDay": "Den vrcholu populace",
+  "RespawnHours": "Hodiny respawnu",
+  "RespawnUnseenHours": "Hodiny bez vidění pro respawn",
+  "RespawnMultiplier": "Násobitel respawnu",
+  "RedistributeHours": "Hodiny redistribuce",
+  "FollowSoundDistance": "Vzdálenost sledování zvuku",
+  "RallyGroupSize": "Velikost skupiny",
+  "RallyGroupSizeVariance": "Variabilita velikosti skupiny",
+  "RallyTravelDistance": "Vzdálenost putování skupiny",
+  "RallyGroupSeparation": "Oddělení skupiny",
+  "RallyGroupRadius": "Poloměr skupiny",
+  "ZombiesCountBeforeDelete": "Zombie před smazáním",
+  "MultiplierConfig": "Konfigurace násobitelů",
+  "Global": "Globální",
+  "GlobalToggle": "Přepínač globální",
+  "Fitness": "Kondice",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Lehký krok",
+  "Nimble": "Hbitost",
+  "Sneak": "Plížení",
+  "Axe": "Sekera",
+  "Blunt": "Tupý",
+  "SmallBlunt": "Krátký tupý",
+  "LongBlade": "Dlouhá čepel",
+  "SmallBlade": "Krátká čepel",
+  "Spear": "Kopí",
+  "Maintenance": "Údržba",
+  "Woodwork": "Tesařství",
+  "Cooking": "Vaření",
+  "Doctor": "Medicína",
+  "Electricity": "Elektřina",
+  "MetalWelding": "Svařování kovu",
+  "Mechanics": "Mechanika",
+  "Tailoring": "Krejčovství",
+  "Aiming": "Míření",
+  "Reloading": "Přebití",
+  "Fishing": "Rybaření",
+  "Trapping": "Pastí",
+  "PlantScavenging": "Sbírání rostlin",
+  "FlintKnapping": "Tvarování křemene",
+  "Masonry": "Zednictví",
+  "Pottery": "Hrnčířství",
+  "Carving": "Řezbářství",
+  "Husbandry": "Chov",
+  "Tracking": "Stopování",
+  "Blacksmith": "Kovářství",
+  "Butchering": "Řeznictví",
+  "Glassmaking": "Sklářství",
+  "comments": {
+    "Zombies": [
+      "Zm�na tohoto nastaven� nastav� pokro�ilou mo�nost \\popula�n�ho n�sobitele\\. Výchozí = St�edn�",
+      "1 = ��len�",
+      "2 = Velmi Vysok�",
+      "3 = Vysok�",
+      "4 = St�edn�",
+      "5 = N�zk�",
+      "6 = ��dn�"
+    ],
+    "Distribution": [
+      "Jak jsou zombie rozmístěny po mapě. ",
+      "1 = M�stsk� zam��en�",
+      "2 = Jednotn�"
+    ],
+    "ZombieVoronoiNoise": [
+      "Řídí, zda se na distribuci zombie použije nějaká náhodnost."
+    ],
+    "ZombieRespawn": [
+      "Ur�uje jak �asto jsou nov� zombie p�id�v�ni do sv�ta. Výchozí = St�edn�",
+      "1 = Vysok�",
+      "2 = St�edn�",
+      "3 = N�zk�",
+      "4 = ��dn�"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Výchozí = 2 hodiny",
+      "1 = 15 minut",
+      "2 = 30 minut",
+      "3 = 1 hodina",
+      "4 = 2 hodiny",
+      "5 = 3 hodiny",
+      "6 = 4 hodiny",
+      "7 = 5 hodin",
+      "8 = 6 hodin",
+      "9 = 7 hodin",
+      "10 = 8 hodin",
+      "11 = 9 hodin",
+      "12 = 10 hodin",
+      "13 = 11 hodin",
+      "14 = 12 hodin",
+      "15 = 13 hodin",
+      "16 = 14 hodin",
+      "17 = 15 hodin",
+      "18 = 16 hodin",
+      "19 = 17 hodin",
+      "20 = 18 hodin",
+      "21 = 19 hodin",
+      "22 = 20 hodin",
+      "23 = 21 hodin",
+      "24 = 22 hodin",
+      "25 = 23 hodin",
+      "26 = Re�ln� �as",
+      "27 = v reálném čase"
+    ],
+    "StartMonth": [
+      "Měsíc, ve kterém hra začíná. ",
+      "1 = Leden",
+      "2 = �nor",
+      "3 = B�ezen",
+      "4 = Duben",
+      "5 = Kv�ten",
+      "6 = �erven",
+      "7 = �ervenec",
+      "8 = Srpen",
+      "9 = Z���",
+      "10 = ��jen",
+      "11 = Listopad",
+      "12 = Prosinec"
+    ],
+    "StartDay": [
+      "Den v měsíci, ve kterém hry začínají."
+    ],
+    "StartTime": [
+      "Hodina dne, ve které hra začíná. ",
+      "1 = 7:00",
+      "2 = 09:00",
+      "3 = 12:00",
+      "4 = 14:00",
+      "5 = 17:00",
+      "6 = 21:00",
+      "7 = 00:00",
+      "8 = 02:00",
+      "9 = 05:00"
+    ],
+    "DayNightCycle": [
+      "Ať už se denní doba mění přirozeně, nebo je to vždy den/noc. ",
+      "1 = St�edn�",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Zda se počasí změní nebo zůstane v jednom stavu. ",
+      "1 = St�edn�",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Zda se mlha vyskytuje přirozeně, nikdy se nevyskytuje nebo je vždy přítomná. ",
+      "1 = St�edn�",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Jak dlouho po výchozím datu zahájení (9. července 1993) přestanou být vodovodní armatury (např. dřezy) nekonečnými zdroji vody. ",
+      "1 = Okam�it�",
+      "2 = 0-30 dn�",
+      "3 = 0-2 m�s�ce",
+      "4 = 0-6 m�s�c�",
+      "5 = 0-1 rok",
+      "6 = 0-5 let",
+      "7 = 2-6 m�s�c�",
+      "8 = 6-12 m�s�c�",
+      "9 = Vypnut�"
+    ],
+    "ElecShut": [
+      "Za jak dlouho po výchozím datu zahájení (9. července 1993) se světová elektřina nadobro vypne. ",
+      "1 = Okam�it�",
+      "2 = 0-30 dn�",
+      "3 = 0-2 m�s�ce",
+      "4 = 0-6 m�s�c�",
+      "5 = 0-1 rok",
+      "6 = 0-5 let",
+      "7 = 2-6 m�s�c�",
+      "8 = 6-12 m�s�c�",
+      "9 = Vypnut�"
+    ],
+    "AlarmDecay": [
+      "Jak dlouho vydrží baterie alarmu po vypnutí napájení. ",
+      "1 = Okam�it�",
+      "2 = 0-30 dn�",
+      "3 = 0-2 m�s�ce",
+      "4 = 0-6 m�s�c�",
+      "5 = 0-1 rok",
+      "6 = 0-5 let"
+    ],
+    "WaterShutModifier": [
+      "Jak dlouho po výchozím datu zahájení (9. července 1993) přestanou být vodovodní armatury (např. dřezy) nekonečnými zdroji vody. "
+    ],
+    "ElecShutModifier": [
+      "Za jak dlouho po výchozím datu zahájení (9. července 1993) se světová elektřina nadobro vypne. "
+    ],
+    "AlarmDecayModifier": [
+      "Jak dlouho vydrží baterie alarmu po vypnutí napájení. "
+    ],
+    "FoodLootNew": [
+      "Jakékoli jídlo, které může hnít nebo se kazit. "
+    ],
+    "LiteratureLootNew": [
+      "Všechny položky, které lze číst, včetně letáků Min: 0,00 Max: 4,00 Výchozí: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Léky, obvazy a nástroje první pomoci. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Výchozí: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Konzervované a sušené potraviny, nápoje. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Výchozí: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Max: 4.00 Výchozí: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Volná munice, krabice a zásobníky. "
+    ],
+    "MechanicsLootNew": [
+      "Části vozidla a nástroje potřebné k jejich instalaci. "
+    ],
+    "OtherLootNew": [
+      "V�echno ostatn�. Tak� ovliv�uje hled�n� potravy pro v�echny p�edm�ty v z�n�ch m�sta/silnice. Min: 0.00 Max: 4.00 Výchozí: 0.60"
+    ],
+    "ClothingLootNew": [
+      "Všechny nositelné předměty, které nejsou kontejnery. "
+    ],
+    "ContainerLootNew": [
+      "Batohy a další nositelné/vybavitelné nádoby, např. "
+    ],
+    "KeyLootNew": [
+      "Klíče od budov/auta, kroužky na klíče a zámky. "
+    ],
+    "MediaLootNew": [
+      "VHS kazety a CD. "
+    ],
+    "MementoLootNew": [
+      "Spiffo předměty, plyšáci a další sběratelské upomínkové předměty, např. "
+    ],
+    "CookwareLootNew": [
+      "Předměty, které se používají při vaření, včetně těch (např. nože), které mohou být zbraněmi. "
+    ],
+    "MaterialLootNew": [
+      "Předměty a zbraně, které se používají jako ingredience pro výrobu nebo stavbu. "
+    ],
+    "FarmingLootNew": [
+      "Předměty a zbraně, které se používají v živočišném i rostlinném zemědělství, jako jsou semena, lopatky nebo lopaty. "
+    ],
+    "ToolLootNew": [
+      "Předměty a zbraně, které jsou Nástroje, ale nehodí se do jiných kategorií, jako je Mechanika nebo Zemědělství. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Doporučujeme toto NEMĚNIT. "
+    ],
+    "LootItemRemovalList": [
+      "Čárkami oddělený seznam typů předmětů, které nevzniknou jako běžná kořist."
+    ],
+    "RemoveStoryLoot": [
+      "Pokud je povoleno, položky na seznamu Loot Item Removal List nebo ty, které mají svou raritu nastavenou na 'None', se nebudou objevovat v náhodných světových příbězích."
+    ],
+    "RemoveZombieLoot": [
+      "Pokud je povoleno, položky na seznamu Loot Item Removal List nebo ty, které mají svou raritu nastavenou na 'Žádná', se nebudou vynořovat zombiemi nebo k nim připojeny."
+    ],
+    "ZombiePopLootEffect": [
+      "Pokud je větší než 0, počet kořisti se zvýší vzhledem k počtu blízkých zombie, přičemž účinek se tímto číslem vynásobí. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Výchozí: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Výchozí: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Výchozí: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Výchozí: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Výchozí: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Výchozí: 3.00"
+    ],
+    "Temperature": [
+      "��d� glob�ln� teplotu. Výchozí = St�edn�",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi vysok�"
+    ],
+    "Rain": [
+      "��d�, jak �asto pr��. Výchozí = St�edn�",
+      "1 = Minim�ln� sr�ky",
+      "2 = Sucho",
+      "3 = St�edn�",
+      "4 = De�tivo",
+      "5 = Velmi de�tivo"
+    ],
+    "ErosionSpeed": [
+      "Počet dní, než erozní systém (který přidává do světa vinnou révu, vysokou trávu, nové stromy atd.) dosáhne 100% růstu. ",
+      "1 = Velmi rychle (20 dn�)",
+      "2 = Rychle (50 dn�)",
+      "3 = Norm�ln� (100 dn�)",
+      "4 = Pomalu (200 dn�)",
+      "5 = Velmi pomalu (500 dn�)"
+    ],
+    "ErosionDays": [
+      "Pro vlastní rychlost eroze. "
+    ],
+    "Farming": [
+      "Rychlost, jakou se dovednost Zemědělství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "CompostTime": [
+      "��d� dobu, za kterou se potraviny v kompost�ru rozlo��. Výchozí = 2 T�dny",
+      "1 = 1 T�den",
+      "2 = 2 T�dny",
+      "3 = 3 T�dny",
+      "4 = 4 T�dny",
+      "5 = 6 T�dn�",
+      "6 = 8 T�dn�",
+      "7 = 10 T�dn�",
+      "8 = 12 T�dn�"
+    ],
+    "StatsDecrease": [
+      "Ur�uje jak rychle se sni�uje hlad, ��ze� a �nava postavy. Výchozí = St�edn�",
+      "1 = Velmi rychle",
+      "2 = Rychle",
+      "3 = St�edn�",
+      "4 = Pomalu",
+      "5 = Velmi pomalu"
+    ],
+    "NatureAbundance": [
+      "Ovliv�uje mno�stv� ryb a z�sob na kter� lze narazit Výchozí = St�edn�",
+      "1 = Velmi chud�",
+      "2 = Chud�",
+      "3 = St�edn�",
+      "4 = Hojn�",
+      "5 = Velmi hojn�"
+    ],
+    "Alarm": [
+      "Jaká je pravděpodobnost, že hráč aktivuje domácí alarm, když se vloupe do nového domu. ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "LockedHouses": [
+      "Ur�uje pravd�podobnost zam�en�ch domovn�ch dve�� �i oken. Výchozí = Velmi �asto",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "StarterKit": [
+      "Za�ni s batohem, chipsy, lahv� vody, baseballovou p�lkou a kladivem"
+    ],
+    "Nutrition": [
+      "Nutri�n� hodnoty j�dla, kter� ovliv�uj� stav hr��e."
+    ],
+    "FoodRotSpeed": [
+      "Ur�uje jak rychle se zkaz� j�dlo v/nebo mimo lednici. Výchozí = St�edn�",
+      "1 = Velmi rychle",
+      "2 = Rychle",
+      "3 = St�edn�",
+      "4 = Pomalu",
+      "5 = Velmi pomalu"
+    ],
+    "FridgeFactor": [
+      "Ur�uje jak ��inn� bude lednice. Výchozí = St�edn�",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Pokud je >0, ko�ist se nebude obnovovat v z�n�ch, kter� byly nav�t�veny b�hem tohoto po�tu hodin. Min: 0 Max: 2147483647 Výchozí: 0"
+    ],
+    "HoursForLootRespawn": [
+      "Když je vyšší než 0, po X hodinách se všechny kontejnery ve městech a přívěsových parkovištích na světě znovu objeví kořist. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Kontejnery s počtem položek vyšším nebo rovným tomuto nastavení se neobnoví. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Předměty se neobnoví v budovách, které hráči zabarikádovali nebo vestavěli."
+    ],
+    "WorldItemRemovalList": [
+      "��rkami odd�len� seznam typ� p�edm�t�, kter� budou odstran�ny po po�tu hodin uveden�ch v nastaven� hodin pro seznam odstra�ovan�ch p�edm�t�."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Počet hodin od pádu předmětu na zem, než byl odstraněn.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Pokud je zapnut�, p�edm�ty, kter� *nejsou* v seznamu odstra�ovan�ch p�edm�t� budou odstran�ny."
+    ],
+    "TimeSinceApo": [
+      "Jak dlouho po konci světa začít. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Ovliv�uje, kolik rostlina ztrat� vody b�hem dne a jej� schopnost vyhnout se chorob�m. Výchozí = St�edn�",
+      "1 = Velmi Vysok�",
+      "2 = Vysok�",
+      "3 = St�edn�",
+      "4 = N�zk�",
+      "5 = Velmi n�zk�"
+    ],
+    "PlantAbundance": [
+      "Ovliv�uje velikost �rody. Výchozí = St�edn�",
+      "1 = Velmi chud�",
+      "2 = Chud�",
+      "3 = St�edn�",
+      "4 = Hojn�",
+      "5 = Velmi hojn�"
+    ],
+    "EndRegen": [
+      "Zotaven� z �navy p�i prov�d�n� �innost� Výchozí = St�edn�",
+      "1 = Velmi rychle",
+      "2 = Rychle",
+      "3 = St�edn�",
+      "4 = Pomalu",
+      "5 = Velmi pomalu"
+    ],
+    "Helicopter": [
+      "Jak �asto se objev� vrtuln�k sleduj�c� tv�j pohyb. Výchozí = Jednou",
+      "1 = Nikdy",
+      "2 = Jednou",
+      "3 = Ob�as",
+      "4 = �asto"
+    ],
+    "MetaEvent": [
+      "Jak �asto se objev� meta-hern� ud�losti, l�kaj�c� zombie k va�� osob� Výchozí = Ob�as",
+      "1 = Nikdy",
+      "2 = Ob�as",
+      "3 = �asto"
+    ],
+    "SleepingEvent": [
+      "��d� meta-hern� ud�losti, b�hem sp�nku. Výchozí = Nikdy",
+      "1 = Nikdy",
+      "2 = Ob�as",
+      "3 = �asto"
+    ],
+    "GeneratorFuelConsumption": [
+      "Kolik paliva gener�tor za hodinu spot�ebuje. Min: 0.00 Max: 100.00 Výchozí: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Zv���/sn�� �anci vzniku elektrick�ch gener�tor� na map�. Výchozí = Vz�cn�",
+      "1 = ��dn� (nedoporu�uje se)",
+      "2 = ��len� vz�cn�",
+      "3 = Velmi vz�cn�",
+      "4 = Vz�cn�",
+      "5 = St�edn�",
+      "6 = B�n�",
+      "7 = Hojn�"
+    ],
+    "AnnotatedMapChance": [
+      "Ovliv�uje pravd�podobnost v�skytu zna�ek na map�, kter� vytvo�il zesnul� p�e�iv��. Výchozí = Ob�as",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "CharacterFreePoints": [
+      "P�id�v� body nav�c p�i tvorb� postavy. Min: -100 Max: 100 Výchozí: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Dává hráčům vytvořeným konstrukcím extra životy, takže jsou odolnější vůči poškození zombie. ",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�"
+    ],
+    "NightDarkness": [
+      "��d� okoln� osv�tlen� v noci. Výchozí = St�edn�",
+      "1 = �erno�ern� tma",
+      "2 = Temn�",
+      "3 = St�edn�",
+      "4 = Sv�tlej��"
+    ],
+    "NightLength": [
+      "��d� �as mezi soumrakem a �svitem. Výchozí = St�edn�",
+      "1 = Nekone�n� noc",
+      "2 = Dlouh�",
+      "3 = St�edn�",
+      "4 = Kr�tk�",
+      "5 = Nekone�n� den"
+    ],
+    "BoneFracture": [
+      "Povol� nebo zak�e zlomeniny kon�etin, kdy� je p�e�iv�� zran�n n�razy, �toky zombie a p�dy."
+    ],
+    "InjurySeverity": [
+      "Zv��� nebo sn�� vliv zran�n� na tv� t�lo a tak� d�lku trv�n� l��by. Výchozí = St�edn�",
+      "1 = N�zk�",
+      "2 = St�edn�",
+      "3 = Vysok�"
+    ],
+    "HoursForCorpseRemoval": [
+      "Jak dlouho, v hodinách, než mrtvá těla zombie zmizí ze světa.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Vliv nejbli���ch rozkl�daj�c�ch se t�l na zdrav� a emoce postavy hr��e. Výchozí = St�edn�",
+      "1 = ��dn�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = ��len�"
+    ],
+    "ZombieHealthImpact": [
+      "Zda blízké „živé“ zombie mají stejný dopad na hráčovo zdraví a emoce."
+    ],
+    "BloodLevel": [
+      "Mno�stv� krve rozst��knut� po podlaze a st�n�ch. Výchozí = St�edn�",
+      "1 = ��dn�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi brut�ln�"
+    ],
+    "ClothingDegradation": [
+      "Ovliv�uje rychlost po�kozov�n� oble�en�, za�pin�n� okol�m a krv�. Výchozí = St�edn�",
+      "1 = Vypnut�",
+      "2 = Pomalu",
+      "3 = St�edn�",
+      "4 = Rychle"
+    ],
+    "FireSpread": [
+      "Pokud se požáry při zakládání rozšířily."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Počet dní ve hře, než bude z mapy odstraněno shnilé jídlo.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Pokud je povoleno, generátory budou fungovat na vnějších dlaždicích.  "
+    ],
+    "MaxFogIntensity": [
+      "Ovl�d� maxim�ln� intenzitu mlhy. Výchozí = St�edn�",
+      "1 = St�edn�",
+      "2 = St�edn�",
+      "3 = N�zk�",
+      "4 = ��dn�"
+    ],
+    "MaxRainFxIntensity": [
+      "��d� maxim�ln� intenzitu de�t�. Výchozí = St�edn�",
+      "1 = St�edn�",
+      "2 = St�edn�",
+      "3 = N�zk�"
+    ],
+    "EnableSnowOnGround": [
+      "Pokud se na zemi bude hromadit sníh.  "
+    ],
+    "AttackBlockMovements": [
+      "Vypni, aby jsi mohl chodit bez p�ek�ek, kdy� �to�� na bl�zko."
+    ],
+    "SurvivorHouseChance": [
+      "Šance na nalezení náhodně vybraných budov na mapě (např. vyhořelé domy, domy obsahující kořist nebo mrtvá těla). ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = Vždy se snaží"
+    ],
+    "VehicleStoryChance": [
+      "Možnost vzniku silničních příběhů (např. policejních zátarasů). ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = Vždy se snaží"
+    ],
+    "ZoneStoryChance": [
+      "Možnost vzniku příběhů specifických pro zóny mapy (např. kemp v lese). ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = Vždy se snaží"
+    ],
+    "AllClothesUnlocked": [
+      "Umožňuje vám vybrat si z každého kusu oblečení ve hře při přizpůsobení vaší postavy"
+    ],
+    "EnableTaintedWaterText": [
+      "pokud je deaktivov�na, nebude m�t zne�i�t�n� voda varov�n�, kter� ji jako takovou ozna��"
+    ],
+    "EnableVehicles": [
+      "Umo��uje objeven� vozidel na map�."
+    ],
+    "CarSpawnRate": [
+      "��d�, jak �asto se auta objevuj� na map�. Výchozí = N�zk�",
+      "1 = ��dn�",
+      "2 = Velmi n�zk�",
+      "3 = N�zk�",
+      "4 = St�edn�",
+      "5 = Vysok�"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Pou�ij toto k zv��en� nebo sn�en� obecn� hlasitosti motoru. Min: 0.00 Max: 100.00 Výchozí: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Ovl�d�, zda jsou vozidla zam�en�, pot�ebuj� k nastartov�n� kl��ky, atd."
+    ],
+    "InitialGas": [
+      "Ur�uje jak pln� budou palivov� n�dr�e v autech. Výchozí = N�zk�",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�",
+      "6 = Pln� n�dr�"
+    ],
+    "FuelStationGasInfinite": [
+      "Pokud je povoleno, benzínovým čerpadlům nikdy nedojde palivo"
+    ],
+    "FuelStationGasMin": [
+      "Minimální množství benzínu, které se může objevit v benzinových pumpách. "
+    ],
+    "FuelStationGasMax": [
+      "Maximální množství benzínu, které se může objevit v benzínových pumpách. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Šance v procentech, že jednotlivá benzinová čerpadla zpočátku nebudou mít žádné palivo. "
+    ],
+    "LockedCar": [
+      "Jak pravděpodobně budou auta uzamčena Výchozí = Vz�cn�",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "CarGasConsumption": [
+      "Jak moc vozidla spot�ebov�vaj� palivo. Min: 0.00 Max: 100.00 Výchozí: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "Ur�uje pr�m�rn� stav vozidel co se ve sv�te vystkytuj�. Výchozí = N�zk�",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�"
+    ],
+    "CarDamageOnImpact": [
+      "Ur�uje velikost po�kozen� vozidl�m, kter� naraz�. Výchozí = St�edn�",
+      "1 = Velmi n�zk�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Po�kozen�, kter� utrp� hr�� p�i sr�ce s vozidlem. Výchozí = ��dn�",
+      "1 = ��dn�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�",
+      "5 = Velmi Vysok�"
+    ],
+    "TrafficJam": [
+      "Pokud se na hlavních silnicích objeví dopravní zácpy sestávající z nabouraných aut."
+    ],
+    "CarAlarm": [
+      "Jak �asto se objev� auta s alarmem. Výchozí = Velmi vz�cn�",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "PlayerDamageFromCrash": [
+      "Povolit nebo zak�zat zran�n� hr��e p�i sr�ce s vozidlem."
+    ],
+    "SirenShutoffHours": [
+      "Po�et hodin ne� p�estane kv�let auto-sir�na.\n0.0 Znamen�, �e bude hr�t, dokud se nevybije baterie. Min: 0.00 Max: 168.00 Výchozí: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Ur�uje �anci na nalezen� vozidel s palivem v palivov� n�dr�i. Výchozí = N�zk�",
+      "1 = N�zk�",
+      "2 = St�edn�",
+      "3 = Vysok�"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Zda hráč může objevit auto, o které bylo pečováno poté, co udeřila infekce Knox. ",
+      "1 = ��dn�",
+      "2 = N�zk�",
+      "3 = St�edn�",
+      "4 = Vysok�"
+    ],
+    "MultiHitZombies": [
+      "Pokud je povoleno, jist� zbran� na bl�zko mohou ude�it n�kolik zombi� v jednom �deru."
+    ],
+    "RearVulnerability": [
+      "�ance na pokous�n�, pokud zombie za�to�� zezadu. Výchozí = Vysok�",
+      "1 = N�zk�",
+      "2 = St�edn�",
+      "3 = Vysok�"
+    ],
+    "SirenEffectsZombies": [
+      "Pokud se zombie vydají za zvukem sirén vozidel."
+    ],
+    "AnimalStatsModifier": [
+      "Rychlost, s jakou se statistiky zvířat (hlad, žízeň atd.) snižují. ",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Rychlost, s jakou se statistiky zvířat (hlad, žízeň atd.) snižují v meta. ",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalPregnancyTime": [
+      "Jak dlouho budou zvířata březí před porodem. ",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalAgeModifier": [
+      "Rychlost, jakou zvířata stárnou. ",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalMilkIncModifier": [
+      "Výchozí = Rychle",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalWoolIncModifier": [
+      "Výchozí = Rychle",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalRanchChance": [
+      "Šance najít zvířata na farmě. ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = V�dy"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Počet hodin, po které tráva znovu naroste poté, co ji sežere zvíře nebo hráč poseká. "
+    ],
+    "AnimalMetaPredator": [
+      "Pokud meta (tj. není ve hře ve skutečnosti viditelná) liška může zaútočit na vaše kuřata, pokud jsou dveře boudy v noci otevřené."
+    ],
+    "AnimalMatingSeason": [
+      "Pokud to budou respektovat zvířata s obdobím páření.  "
+    ],
+    "AnimalEggHatch": [
+      "Za jak dlouho se z vajíček vylíhnou mláďata zvířat. ",
+      "1 = Ultra Fast",
+      "2 = Velmi rychle",
+      "3 = Rychle",
+      "4 = St�edn�",
+      "5 = Pomalu",
+      "6 = Velmi pomalu"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Pokud je to pravda, zvířecí volání přilákají blízké zombie."
+    ],
+    "AnimalTrackChance": [
+      "Možnost, že zvířata zanechají stopy. ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "AnimalPathChance": [
+      "Šance vytvořit cestu pro zvířata, která mají být lovena. ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto"
+    ],
+    "MaximumRatIndex": [
+      "Frekvence a intenzita např. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Jak dlouho trvá dosažení indexu Maximum Vermin Index. "
+    ],
+    "MetaKnowledge": [
+      "Pokud část média nebyla zcela zobrazena nebo přečtena, toto nastavení určuje, zda bude zobrazeno zcela, zobrazeno jako „???“ nebo zcela skryto. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Pokud je to pravda, budete moci vidět všechny recepty, které lze se stanicí udělat, i když jste se je ještě nenaučili."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Pokud má budova více než tento počet místností, nebude vyrabována. "
+    ],
+    "EnablePoisoning": [
+      "Rozhoduje, pokud je povolena otrava j�dlem. Výchozí = Zapnut",
+      "1 = Zapnut",
+      "2 = Vypnuto",
+      "3 = Deaktivov�na je pouze otrava b�lidlem"
+    ],
+    "MaggotSpawn": [
+      "Jestli/kdy se červi mohou plodit v mrtvolách. ",
+      "1 = V t�lech a kolem nich",
+      "2 = Pouze v t�lech",
+      "3 = Nikdy"
+    ],
+    "LightBulbLifespan": [
+      "Čím vyšší hodnota, tím déle žárovky vydrží, než se rozbijí.  "
+    ],
+    "FishAbundance": [
+      "Hojnost ryb v řekách a jezerech. ",
+      "1 = Velmi chud�",
+      "2 = Chud�",
+      "3 = St�edn�",
+      "4 = Hojn�",
+      "5 = Velmi hojn�"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Když je dovednost na této nebo vyšší úrovni, televize/VHS/jiná média pro ni neposkytnou XP. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Když je dovednost na této nebo vyšší úrovni, sešrotování nábytku neposkytuje zkušenosti pro příslušnou dovednost. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Počet dní před odstraněním starých krevních skvrn. "
+    ],
+    "LiteratureCooldown": [
+      "Počet dní před tím, než člověk může těžit ze čtení dříve přečtených položek literatury. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Pokud se snižuje návratnost bodů bonusových vlastností, které jsou poskytovány výběrem více negativních vlastností. ",
+      "1 = ��dn�",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = penalizace 1 bod za každou negativní vlastnost vybranou po první"
+    ],
+    "MinutesPerPage": [
+      "Počet minut ve hře, které trvá přečtení jedné stránky knihy dovedností. "
+    ],
+    "KillInsideCrops": [
+      "Je-li povoleno, plodiny a byliny pěstované uvnitř budov zemřou. "
+    ],
+    "PlantGrowingSeasons": [
+      "Je-li povoleno, je růst rostlin ovlivněn ročními obdobími."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Doporučujeme toto NEMĚNIT. "
+    ],
+    "FarmingSpeedNew": [
+      "��d� rychlost r�stu rostlin. Min: 0.10 Max: 100.00 Výchozí: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "Hojnost sklizených plodin. "
+    ],
+    "MaximumLooted": [
+      "Šance, že jakákoli budova bude již při nálezu vyrabována. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Jak dlouho trvá dosažení maximální šance na vykradení budovy. "
+    ],
+    "RuralLooted": [
+      "Šance, že jakákoli venkovská stavba bude již při nálezu vyrabována. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Maximální kořist, která se nevytvoří, když je dosažena kořist Days Until Maximum Diminished Loot."
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Jak dlouho trvá dosažení maximálního procenta snížené kořisti. "
+    ],
+    "MuscleStrainFactor": [
+      "Funguje jako multiplikátor při namáhání svalů z houpacích zbraní nebo nošení těžkých břemen. "
+    ],
+    "DiscomfortFactor": [
+      "Funguje jako multiplikátor při aplikaci nepohodlí z opotřebovaných věcí. "
+    ],
+    "WoundInfectionFactor": [
+      "Pokud je větší než nula poškození, může dojít k vážným infekcím rány. "
+    ],
+    "NoBlackClothes": [
+      "Pokud skutečné oblečení s náhodnými odstíny nebude tak tmavé, aby bylo prakticky černé."
+    ],
+    "EasyClimbing": [
+      "Deaktivuje možnost selhání při lezení po lanech nebo přes stěny."
+    ],
+    "MaximumFireFuelHours": [
+      "Maximální počet hodin paliva, které lze umístit na táborák, kamna na dřevo atd. Min: 1 Max: 168 Výchozí: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Nahrazuje mechaniku Chance-To-Hit výpočty Chance-To-Damage."
+    ],
+    "FirearmNoiseMultiplier": [
+      "Multiplikátor vzdálenosti, na kterou zombie slyší výstřely. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplikátor pro možnost uvíznutí střelné zbraně. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplikátor pro účinky Moodle na šanci na zásah. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplikátor pro vlivy počasí (vítr, déšť a mlha) na šanci na zásah. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Povolte, aby pokrývky hlavy jako svářečské masky ovlivňovaly šanci na zásah"
+    ],
+    "ClayLakeChance": [
+      "Šance proměnit špinavou podlahu v hliněnou podlahu. "
+    ],
+    "ClayRiverChance": [
+      "Šance proměnit špinavou podlahu v hliněnou podlahu. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Výchozí: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Kolik úrovní nad a pod generátorem může poskytnout elektřinu. "
+    ],
+    "SpawnFrequency": [
+      "Jak často se sklepy objevují na náhodných místech. ",
+      "1 = Nikdy",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = V�dy"
+    ],
+    "AllowMiniMap": [
+      "Pokud je povoleno, bude k dispozici okno s minimapou."
+    ],
+    "AllowWorldMap": [
+      "Pokud je povoleno, lze přistupovat k mapě světa."
+    ],
+    "MapAllKnown": [
+      "Pokud je povoleno, mapa světa bude při spuštění hry zcela vyplněna."
+    ],
+    "MapNeedsLight": [
+      "Pokud je povoleno, mapy nelze číst, pokud není k dispozici zdroj světla."
+    ],
+    "Speed": [
+      "Ovl�d� rychlost pohybu zombie. Výchozí = N�hodn�",
+      "1 = Sprinters",
+      "2 = Fast Shamblers",
+      "3 = Shamblers",
+      "4 = N�hodn�"
+    ],
+    "SprinterPercentage": [
+      "Pokud je povolena náhodná rychlost, určuje, jaké procento zombie jsou sprinteři. "
+    ],
+    "Strength": [
+      "Rychlost, jakou se dovednost Síla zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Toughness": [
+      "��d� obt�nost zab�jen� zombie. Výchozí = N�hodn�",
+      "1 = Odoln�",
+      "2 = St�edn�",
+      "3 = K�ehc�",
+      "4 = N�hodn�"
+    ],
+    "Transmission": [
+      "Ovl�d� zp�sob ���en� zombie viru. Výchozí = Krev + sliny",
+      "1 = Krev + sliny",
+      "2 = Pouze sliny",
+      "3 = V�ichni jsou naka�en�",
+      "4 = ��dn�"
+    ],
+    "Mortality": [
+      "��d�, jak rychle se infekce projev�. Výchozí = 2-3 dny",
+      "1 = Okam�it�",
+      "2 = 0-30 sekund",
+      "3 = 0-1 minut",
+      "4 = 0-12 hodin",
+      "5 = 2-3 dny",
+      "6 = 1-2 t�dny",
+      "7 = Nikdy"
+    ],
+    "Reanimate": [
+      "Ovl�d�, jak rychle mrtvoly povstanou jako zombie. Výchozí = 0-1 minut",
+      "1 = Okam�it�",
+      "2 = 0-30 sekund",
+      "3 = 0-1 minut",
+      "4 = 0-12 hodin",
+      "5 = 2-3 dny",
+      "6 = 1-2 t�dny"
+    ],
+    "Cognition": [
+      "��d� inteligenci zombie. Výchozí = Z�kladn� navigace",
+      "1 = Navigov�n� + pou��v�n� dve��",
+      "2 = Navigace",
+      "3 = Z�kladn� navigace",
+      "4 = N�hodn�"
+    ],
+    "CrawlUnderVehicle": [
+      "Ovl�d�, kter� zombie mohou prol�zat pod vozidly. Výchozí = �asto",
+      "1 = Pouze lezci",
+      "2 = Velmi vz�cn�",
+      "3 = Vz�cn�",
+      "4 = Ob�as",
+      "5 = �asto",
+      "6 = Velmi �asto",
+      "7 = V�dy"
+    ],
+    "Memory": [
+      "��d�, jak dlouho si zombie pamatuj� hr��e pot�, co je vid�li nebo sly�eli. Výchozí = St�edn�",
+      "1 = Dlouh�",
+      "2 = St�edn�",
+      "3 = Kr�tk�",
+      "4 = ��dn�",
+      "5 = N�hodn�",
+      "6 = Náhodné mezi normální a žádné"
+    ],
+    "Sight": [
+      "��d� polom�r zorn�ho pole zombie. ",
+      "1 = Orl�",
+      "2 = St�edn�",
+      "3 = Chud�",
+      "4 = N�hodn�",
+      "5 = náhodně mezi normální a špatnou"
+    ],
+    "Hearing": [
+      "��d� polom�r sluchu zombie. ",
+      "1 = �pi�kov�",
+      "2 = St�edn�",
+      "3 = Chud�",
+      "4 = N�hodn�",
+      "5 = náhodně mezi normální a špatnou"
+    ],
+    "SpottedLogic": [
+      "Aktivuje novou pokročilou stealth mechaniku, která vám umožní schovat se před zombiemi za auty, zohlední vlastnosti a počasí a mnoho dalšího."
+    ],
+    "ThumpNoChasing": [
+      "Zombie, kter� nevid�ly �i nesly�ely hr��e, mohou �to�it na dve�e a konstrukce b�hem potulov�n�."
+    ],
+    "ThumpOnConstruction": [
+      "Ovliv�uje, zda-li zombie mohou ni�it konstrukce a ochrann� prvky hr��e."
+    ],
+    "ActiveOnly": [
+      "Zda jsou zombie více „aktivní“ ve dne nebo v noci.  ",
+      "1 = Oboj�",
+      "2 = Noc",
+      "3 = Den"
+    ],
+    "TriggerHouseAlarm": [
+      "Povol� zombi�m zapnout domovn� alarm, kdy� rozbij� sklo nebo dve�e."
+    ],
+    "ZombiesDragDown": [
+      "Pokud vás více útočících zombie může stáhnout dolů a zabít.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Pokud pásové zombie vedle hráče přispívají k šanci, že budou staženi dolů a zabiti skupinou zombie."
+    ],
+    "ZombiesFenceLunge": [
+      "Pokud mají zombie šanci vrhnout se na vás poté, co přelezou plot nebo přes okno, pokud jste příliš blízko."
+    ],
+    "ZombiesArmorFactor": [
+      "Slouží jako násobitel při určování účinnosti brnění, které nosí zombie. "
+    ],
+    "ZombiesMaxDefense": [
+      "Maximální procento obrany, které může zombie poskytnout jakýkoli nošený ochranný oděv. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Procentuální šance mít náhodně připojenou zbraň. "
+    ],
+    "ZombiesFallDamage": [
+      "Kolik poškození utrpí zombie při pádu z výšky. "
+    ],
+    "DisableFakeDead": [
+      "Zda se někteří mrtvě vypadající zombie oživí a zaútočí na hráče. ",
+      "1 = N�kter� zombie na sv�t� budou p�edst�rat, �e jsou mrtv�",
+      "2 = N�kte�� zombie ve sv�t�, stejn� jako n�kte��, kter� �zabijete�, mohou p�edst�rat, �e jsou mrtv�",
+      "3 = Nikdy"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombie se nevytvoří tam, kde se objeví hráči. ",
+      "1 = Uvnitř budovy a kolem ní",
+      "2 = Uvnitř budovy",
+      "3 = Uvnitř místnosti",
+      "4 = Zombie se mohou objevit kdekoli"
+    ],
+    "FenceThumpersRequired": [
+      "Kolik zombie je potřeba k poškození vysokého plotu. "
+    ],
+    "FenceDamageMultiplier": [
+      "Jak rychle zombie poškodí vysoké ploty. "
+    ],
+    "PopulationMultiplier": [
+      "Nastavuje se volbou populace \"Počet zombie\" nebo zde vlastním číslem. "
+    ],
+    "PopulationStartMultiplier": [
+      "Multiplikátor pro požadovanou populaci zombie na začátku hry. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Multiplikátor pro požadovanou populaci zombie ve špičce dne. "
+    ],
+    "PopulationPeakDay": [
+      "Den, kdy populace dos�hne sv�ho vrcholu. Min: 1 Max: 365 Výchozí: 28"
+    ],
+    "RespawnHours": [
+      "Počet hodin, které musí uplynout, než se zombie mohou znovu objevit v buňce. "
+    ],
+    "RespawnUnseenHours": [
+      "Po�et hodin, p�i kter�m nesm� b�t sektor vid�n, aby se v n�m mohli zombie obnovit. Min: 0.00 Max: 8760.00 Výchozí: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "��st vybran� populace v dan� lokalit� se m��e obnovit b�hem �asu respawnu. Min: 0.00 Max: 1.00 Výchozí: 0.10"
+    ],
+    "RedistributeHours": [
+      "Počet hodin, které musí uplynout, než zombie migrují do prázdných částí stejné buňky. "
+    ],
+    "FollowSoundDistance": [
+      "Vzd�lenost, po kterou se zombie pokus� uj�t, ve sm�ru posledn�ho zvuku, kter� sly�ela. Min: 10 Max: 1000 Výchozí: 100"
+    ],
+    "RallyGroupSize": [
+      "Velikost skupin tvoří skutečné zombie, když jsou nečinné. "
+    ],
+    "RallyGroupSizeVariance": [
+      "V procentech se může velikost skupin zombie lišit od výchozí hodnoty (větší i menší).   "
+    ],
+    "RallyTravelDistance": [
+      "Vzd�lenost, kterou re�ln� zombie ujdou, aby mohly utv��et skupiny. Min: 5 Max: 50 Výchozí: 20"
+    ],
+    "RallyGroupSeparation": [
+      "Vzd�lenost mezi skupinami zombi�. Min: 5 Max: 25 Výchozí: 15"
+    ],
+    "RallyGroupRadius": [
+      "Jak daleko mohou st�t �lenov� skupiny od sv�ho velitele. Min: 1 Max: 10 Výchozí: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Výchozí: 300"
+    ],
+    "Global": [
+      "Rychlost, kterou se všechny dovednosti zvyšují. "
+    ],
+    "GlobalToggle": [
+      "Pokud je povoleno, všechny dovednosti budou používat globální multiplikátor."
+    ],
+    "Fitness": [
+      "Rychlost, jakou se dovednost Kondice zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Sprinting": [
+      "Rychlost, jakou se dovednost Sprint zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Lightfoot": [
+      "Rychlost, jakou se dovednost Lehký krok zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Nimble": [
+      "Rychlost, jakou se dovednost Hbitost zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Sneak": [
+      "Rychlost, jakou se dovednost Plížení zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Axe": [
+      "Rychlost, jakou se dovednost Sekera zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Blunt": [
+      "Rychlost, jakou se dovednost Tupý zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "SmallBlunt": [
+      "Rychlost, jakou se dovednost Krátký tupý zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "LongBlade": [
+      "Rychlost, jakou se dovednost Dlouhá čepel zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "SmallBlade": [
+      "Rychlost, jakou se dovednost Krátká čepel zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Spear": [
+      "Rychlost, jakou se dovednost Kopí zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Maintenance": [
+      "Rychlost, jakou se dovednost Údržba zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Woodwork": [
+      "Rychlost, jakou se dovednost Tesařství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Cooking": [
+      "Rychlost, jakou se dovednost Vaření zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Doctor": [
+      "Rychlost, jakou se dovednost Medicína zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Electricity": [
+      "Rychlost, jakou se dovednost Elektřina zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "MetalWelding": [
+      "Rychlost, jakou se dovednost Svařování kovu zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Mechanics": [
+      "Rychlost, jakou se dovednost Mechanika zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Tailoring": [
+      "Rychlost, jakou se dovednost Krejčovství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Aiming": [
+      "Rychlost, jakou se dovednost Míření zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Reloading": [
+      "Rychlost, jakou se dovednost Přebití zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Fishing": [
+      "Rychlost, jakou se dovednost Rybaření zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Trapping": [
+      "Rychlost, jakou se dovednost Pastí zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "PlantScavenging": [
+      "Rychlost, jakou se dovednost Sbírání rostlin zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "FlintKnapping": [
+      "Rychlost, jakou se dovednost Tvarování křemene zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Masonry": [
+      "Rychlost, jakou se dovednost Zednictví zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Pottery": [
+      "Rychlost, jakou se dovednost Hrnčířství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Carving": [
+      "Rychlost, jakou se dovednost Řezbářství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Husbandry": [
+      "Rychlost, jakou se dovednost Chov zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Tracking": [
+      "Rychlost, jakou se dovednost Stopování zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Blacksmith": [
+      "Rychlost, jakou se dovednost Kovářství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Butchering": [
+      "Rychlost, jakou se dovednost Řeznictví zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ],
+    "Glassmaking": [
+      "Rychlost, jakou se dovednost Sklářství zvyšuje. Min: 0.00 Max: 1000.00 Výchozí: 1.00"
+    ]
+  }
+}
+
+

@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombik",
+  "Distribution": "Eloszlás",
+  "ZombieVoronoiNoise": "Zombi Voronoi-zaj",
+  "ZombieRespawn": "Zombi újraéledés",
+  "ZombieMigrate": "Zombi migráció",
+  "DayLength": "Nap hossza",
+  "StartMonth": "Kezdő hónap",
+  "StartDay": "Kezdő nap",
+  "StartTime": "Kezdő idő",
+  "DayNightCycle": "Nappal/éjszaka ciklus",
+  "ClimateCycle": "Klímaciklus",
+  "FogCycle": "Ködciklus",
+  "WaterShut": "Víz elzárása",
+  "ElecShut": "Áramkimaradás",
+  "AlarmDecay": "Riasztó elhasználódás",
+  "WaterShutModifier": "Víz elzárás módosító",
+  "ElecShutModifier": "Áramkimaradás módosító",
+  "AlarmDecayModifier": "Riasztó elhasználódás módosító",
+  "FoodLootNew": "Étel zsákmány (új)",
+  "LiteratureLootNew": "Irodalom zsákmány (új)",
+  "MedicalLootNew": "Orvosi zsákmány (új)",
+  "SurvivalGearsLootNew": "Túlélő felszerelés zsákmány (új)",
+  "CannedFoodLootNew": "Konzerv zsákmány (új)",
+  "WeaponLootNew": "Fegyver zsákmány (új)",
+  "RangedWeaponLootNew": "Távolsági fegyver zsákmány (új)",
+  "AmmoLootNew": "Lőszer zsákmány (új)",
+  "MechanicsLootNew": "Mechanika zsákmány (új)",
+  "OtherLootNew": "Egyéb zsákmány (új)",
+  "ClothingLootNew": "Ruházat zsákmány (új)",
+  "ContainerLootNew": "Konténer zsákmány (új)",
+  "KeyLootNew": "Kulcs zsákmány (új)",
+  "MediaLootNew": "Média zsákmány (új)",
+  "MementoLootNew": "Emléktárgy zsákmány (új)",
+  "CookwareLootNew": "Konyhai eszköz zsákmány (új)",
+  "MaterialLootNew": "Anyag zsákmány (új)",
+  "FarmingLootNew": "Mezőgazdasági zsákmány (új)",
+  "ToolLootNew": "Eszköz zsákmány (új)",
+  "RollsMultiplier": "Dobások szorzója",
+  "LootItemRemovalList": "Zsákmány eltávolítási lista",
+  "RemoveStoryLoot": "Történeti zsákmány eltávolítása",
+  "RemoveZombieLoot": "Zombi zsákmány eltávolítása",
+  "ZombiePopLootEffect": "Zsákmány hatás zombi populációból",
+  "InsaneLootFactor": "Zsákmány faktor: őrült",
+  "ExtremeLootFactor": "Zsákmány faktor: extrém",
+  "RareLootFactor": "Zsákmány faktor: ritka",
+  "NormalLootFactor": "Zsákmány faktor: normál",
+  "CommonLootFactor": "Zsákmány faktor: gyakori",
+  "AbundantLootFactor": "Zsákmány faktor: bőséges",
+  "Temperature": "Hőmérséklet",
+  "Rain": "Eső",
+  "ErosionSpeed": "Erózió sebesség",
+  "ErosionDays": "Erózió napok",
+  "Farming": "Mezőgazdaság",
+  "CompostTime": "Komposztálási idő",
+  "StatsDecrease": "Statisztika csökkenés",
+  "NatureAbundance": "Természet bősége",
+  "Alarm": "Riasztó",
+  "LockedHouses": "Zárt házak",
+  "StarterKit": "Kezdőcsomag",
+  "Nutrition": "Táplálkozás",
+  "FoodRotSpeed": "Étel rothadási sebesség",
+  "FridgeFactor": "Hűtőfaktor",
+  "SeenHoursPreventLootRespawn": "Látott órák meggátolják a zsákmány újraéledést",
+  "HoursForLootRespawn": "Órák a zsákmány újraéledéséig",
+  "MaxItemsForLootRespawn": "Max. tárgy a zsákmány újraéledéshez",
+  "ConstructionPreventsLootRespawn": "Építkezés meggátolja a zsákmány újraéledést",
+  "WorldItemRemovalList": "Világ tárgy eltávolítási lista",
+  "HoursForWorldItemRemoval": "Órák a világ tárgyak eltávolításáig",
+  "ItemRemovalListBlacklistToggle": "Tárgy eltávolítási feketelista kapcsoló",
+  "TimeSinceApo": "Idő az apokalipszis óta",
+  "PlantResilience": "Növény ellenállás",
+  "PlantAbundance": "Növény bőség",
+  "EndRegen": "Állóképesség regeneráció",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta esemény",
+  "SleepingEvent": "Alvási esemény",
+  "GeneratorFuelConsumption": "Generátor üzemanyag-fogyasztás",
+  "GeneratorSpawning": "Generátor megjelenés",
+  "AnnotatedMapChance": "Megjegyzett térkép esély",
+  "CharacterFreePoints": "Ingyenes karakterpontok",
+  "ConstructionBonusPoints": "Építési bónuszpontok",
+  "NightDarkness": "Éjszakai sötétség",
+  "NightLength": "Éjszaka hossza",
+  "BoneFracture": "Csonttörés",
+  "InjurySeverity": "Sérülés súlyosság",
+  "HoursForCorpseRemoval": "Órák a holttestek eltávolításáig",
+  "DecayingCorpseHealthImpact": "Egészségre gyakorolt hatás a bomló holttestek miatt",
+  "ZombieHealthImpact": "Zombik egészség hatása",
+  "BloodLevel": "Vérszint",
+  "ClothingDegradation": "Ruházat romlása",
+  "FireSpread": "Tűz terjedése",
+  "DaysForRottenFoodRemoval": "Napok a romlott ételek eltávolításáig",
+  "AllowExteriorGenerator": "Külső generátor engedélyezése",
+  "MaxFogIntensity": "Maximális köd intenzitás",
+  "MaxRainFxIntensity": "Maximális eső effekt intenzitás",
+  "EnableSnowOnGround": "Hó engedélyezése a talajon",
+  "AttackBlockMovements": "Támadás blokkolja a mozgást",
+  "SurvivorHouseChance": "Túlélő ház esély",
+  "VehicleStoryChance": "Járműtörténetek esélye",
+  "ZoneStoryChance": "Zónatörténetek esélye",
+  "AllClothesUnlocked": "Minden ruha feloldva",
+  "EnableTaintedWaterText": "Szennyezett víz szöveg engedélyezése",
+  "EnableVehicles": "Járművek engedélyezése",
+  "CarSpawnRate": "Autók megjelenési aránya",
+  "ZombieAttractionMultiplier": "Zombi vonzás szorzó",
+  "VehicleEasyUse": "Jármű könnyű használata",
+  "InitialGas": "Kezdő benzin",
+  "FuelStationGasInfinite": "Végtelen benzin a benzinkutaknál",
+  "FuelStationGasMin": "Min. benzin a benzinkutaknál",
+  "FuelStationGasMax": "Max. benzin a benzinkutaknál",
+  "FuelStationGasEmptyChance": "Üres benzinkút esélye",
+  "LockedCar": "Zárt autó",
+  "CarGasConsumption": "Autó üzemanyag-fogyasztás",
+  "CarGeneralCondition": "Autó általános állapota",
+  "CarDamageOnImpact": "Autó sérülése ütközéskor",
+  "DamageToPlayerFromHitByACar": "Játékos sérülése autó ütközéstől",
+  "TrafficJam": "Közlekedési dugó",
+  "CarAlarm": "Autóriasztó",
+  "PlayerDamageFromCrash": "Játékos sérülése balesetből",
+  "SirenShutoffHours": "Sziréna kikapcsolásáig órák",
+  "ChanceHasGas": "Benzin esélye",
+  "RecentlySurvivorVehicles": "Legutóbbi túlélő járművek",
+  "MultiHitZombies": "Többszörös ütés zombikra",
+  "RearVulnerability": "Hátsó sérülékenység",
+  "SirenEffectsZombies": "Sziréna hatása zombikra",
+  "AnimalStatsModifier": "Állat statisztika módosító",
+  "AnimalMetaStatsModifier": "Állat meta-statisztika módosító",
+  "AnimalPregnancyTime": "Állat vemhességi idő",
+  "AnimalAgeModifier": "Állat életkor módosító",
+  "AnimalMilkIncModifier": "Tej növekedés módosító",
+  "AnimalWoolIncModifier": "Gyapjú növekedés módosító",
+  "AnimalRanchChance": "Állat ranch esély",
+  "AnimalGrassRegrowTime": "Fű újranövés ideje",
+  "AnimalMetaPredator": "Állat meta ragadozó",
+  "AnimalMatingSeason": "Párosodási szezon",
+  "AnimalEggHatch": "Tojás kikelés",
+  "AnimalSoundAttractZombies": "Állathangok vonzzák a zombikat",
+  "AnimalTrackChance": "Állatnyom esély",
+  "AnimalPathChance": "Állatösvény esély",
+  "MaximumRatIndex": "Maximális patkány index",
+  "DaysUntilMaximumRatIndex": "Napok a maximális patkány indexig",
+  "MetaKnowledge": "Meta tudás",
+  "SeeNotLearntRecipe": "Nem tanult receptek megtekintése",
+  "MaximumLootedBuildingRooms": "Maximálisan kifosztott szobák",
+  "EnablePoisoning": "Mérgezés engedélyezése",
+  "MaggotSpawn": "Lárva megjelenés",
+  "LightBulbLifespan": "Izzók élettartama",
+  "FishAbundance": "Halak bősége",
+  "LevelForMediaXPCutoff": "Szint az XP letiltásához médiáknál",
+  "LevelForDismantleXPCutoff": "Szint az XP letiltásához szétszerelésnél",
+  "BloodSplatLifespanDays": "Vérfröccsenések élettartama napokban",
+  "LiteratureCooldown": "Irodalom újratöltés",
+  "NegativeTraitsPenalty": "Negatív tulajdonságok büntetése",
+  "MinutesPerPage": "Perc oldalanként",
+  "KillInsideCrops": "Beltéri növények elpusztítása",
+  "PlantGrowingSeasons": "Szezonális növénynövekedés",
+  "PlaceDirtAboveground": "Föld elhelyezése a talaj fölé",
+  "FarmingSpeedNew": "Mezőgazdasági sebesség (új)",
+  "FarmingAmountNew": "Mezőgazdasági mennyiség (új)",
+  "MaximumLooted": "Maximális zsákmány",
+  "DaysUntilMaximumLooted": "Napok a maximális zsákmányig",
+  "RuralLooted": "Vidéki zsákmány",
+  "MaximumDiminishedLoot": "Maximálisan csökkentett zsákmány",
+  "DaysUntilMaximumDiminishedLoot": "Napok a maximálisan csökkentett zsákmányig",
+  "MuscleStrainFactor": "Izomterhelési faktor",
+  "DiscomfortFactor": "Kellemetlenségi faktor",
+  "WoundInfectionFactor": "Sebfertőzés faktor",
+  "NoBlackClothes": "Nincsenek fekete ruhák",
+  "EasyClimbing": "Könnyű mászás",
+  "MaximumFireFuelHours": "Max. órák tüzelőanyaghoz",
+  "FirearmUseDamageChance": "Sebzés esély lőfegyver használatakor",
+  "FirearmNoiseMultiplier": "Lőfegyver zaj szorzó",
+  "FirearmJamMultiplier": "Lőfegyver elakadás szorzó",
+  "FirearmMoodleMultiplier": "Lőfegyver hangulat szorzó",
+  "FirearmWeatherMultiplier": "Lőfegyver időjárás szorzó",
+  "FirearmHeadGearEffect": "Fejfedő hatás lőfegyvereknél",
+  "ClayLakeChance": "Agyag esély tavaknál",
+  "ClayRiverChance": "Agyag esély folyóknál",
+  "GeneratorTileRange": "Generátor csempehatótáv",
+  "GeneratorVerticalPowerRange": "Generátor függőleges hatótáv",
+  "Basement": "Pince",
+  "SpawnFrequency": "Megjelenési gyakoriság",
+  "Map": "Térkép",
+  "AllowMiniMap": "Minimap engedélyezése",
+  "AllowWorldMap": "Világtérkép engedélyezése",
+  "MapAllKnown": "Térkép teljesen ismert",
+  "MapNeedsLight": "A térképnek fényre van szüksége",
+  "ZombieLore": "Zombi ismeret",
+  "Speed": "Sebesség",
+  "SprinterPercentage": "Sprinter százalék",
+  "Strength": "Erő",
+  "Toughness": "Ellenállás",
+  "Transmission": "Fertőzés",
+  "Mortality": "Halálozás",
+  "Reanimate": "Újraélesztés",
+  "Cognition": "Kogníció",
+  "CrawlUnderVehicle": "Kúszás járművek alatt",
+  "Memory": "Memória",
+  "Sight": "Látás",
+  "Hearing": "Hallás",
+  "SpottedLogic": "Felfedezési logika",
+  "ThumpNoChasing": "Döngetés üldözés nélkül",
+  "ThumpOnConstruction": "Döngetés építményekre",
+  "ActiveOnly": "Csak aktív",
+  "TriggerHouseAlarm": "Házriasztó indítása",
+  "ZombiesDragDown": "Zombik lehúznak",
+  "ZombiesCrawlersDragDown": "Kúszó zombik lehúznak",
+  "ZombiesFenceLunge": "Zombik átugorják a kerítést",
+  "ZombiesArmorFactor": "Zombi páncélfaktor",
+  "ZombiesMaxDefense": "Zombi max. védelem",
+  "ChanceOfAttachedWeapon": "Esély csatolt fegyverre",
+  "ZombiesFallDamage": "Zombi zuhanási sebzés",
+  "DisableFakeDead": "Ál-halottak letiltása",
+  "PlayerSpawnZombieRemoval": "Zombik eltávolítása a spawnnál",
+  "FenceThumpersRequired": "Zombik szükségesek a kerítés károsításához",
+  "FenceDamageMultiplier": "Kerítés sebzés szorzó",
+  "ZombieConfig": "Zombi konfiguráció",
+  "PopulationMultiplier": "Populáció szorzó",
+  "PopulationStartMultiplier": "Kezdő populáció szorzó",
+  "PopulationPeakMultiplier": "Populáció csúcs szorzó",
+  "PopulationPeakDay": "Populáció csúcs napja",
+  "RespawnHours": "Respawn órák",
+  "RespawnUnseenHours": "Nem látott órák respawnhoz",
+  "RespawnMultiplier": "Respawn szorzó",
+  "RedistributeHours": "Újraelosztási órák",
+  "FollowSoundDistance": "Hang követési távolság",
+  "RallyGroupSize": "Csoport méret",
+  "RallyGroupSizeVariance": "Csoport méret variancia",
+  "RallyTravelDistance": "Csoport utazási távolság",
+  "RallyGroupSeparation": "Csoport szétválás",
+  "RallyGroupRadius": "Csoport sugár",
+  "ZombiesCountBeforeDelete": "Zombik törlés előtt",
+  "MultiplierConfig": "Szorzó konfiguráció",
+  "Global": "Globális",
+  "GlobalToggle": "Globális kapcsoló",
+  "Fitness": "Állóképesség",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Könnyű lépés",
+  "Nimble": "Fürgeség",
+  "Sneak": "Lopakodás",
+  "Axe": "Balta",
+  "Blunt": "Tompa",
+  "SmallBlunt": "Rövid tompa",
+  "LongBlade": "Hosszú penge",
+  "SmallBlade": "Rövid penge",
+  "Spear": "Lándzsa",
+  "Maintenance": "Karbantartás",
+  "Woodwork": "Ácsmesterség",
+  "Cooking": "Főzés",
+  "Doctor": "Orvoslás",
+  "Electricity": "Villamosság",
+  "MetalWelding": "Fémhegesztés",
+  "Mechanics": "Mechanika",
+  "Tailoring": "Szabás-varrás",
+  "Aiming": "Célzás",
+  "Reloading": "Újratöltés",
+  "Fishing": "Horgászat",
+  "Trapping": "Csapdázás",
+  "PlantScavenging": "Növénygyűjtés",
+  "FlintKnapping": "Kovakő megmunkálás",
+  "Masonry": "Kőművesség",
+  "Pottery": "Kerámia",
+  "Carving": "Faragás",
+  "Husbandry": "Állattenyésztés",
+  "Tracking": "Nyomkövetés",
+  "Blacksmith": "Kovács",
+  "Butchering": "Henteskedés",
+  "Glassmaking": "Üvegművesség",
+  "comments": {
+    "Zombies": [
+      "Ennek a megváltoztatása beállítja a Haladó Zombi Beállítás \"Népességszorzó\" beállítását. Alapértelmezett = Közepes",
+      "1 = Őrült",
+      "2 = Nagyon magas",
+      "3 = Magas",
+      "4 = Közepes",
+      "5 = Alacsony",
+      "6 = Nincs"
+    ],
+    "Distribution": [
+      "Hogyan oszlanak meg a zombik a térképen. ",
+      "1 = Városra összpontosított",
+      "2 = Egyenletes"
+    ],
+    "ZombieVoronoiNoise": [
+      "Azt szabályozza, hogy alkalmazzanak-e valamilyen véletlenszerűséget a zombielosztásra."
+    ],
+    "ZombieRespawn": [
+      "Milyen gyakran kap új zombikat a világ. Alapértelmezett = Közepes",
+      "1 = Magas",
+      "2 = Közepes",
+      "3 = Alacsony",
+      "4 = Nincs"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Alapértelmezett = 1 óra, 30 perc",
+      "1 = 15 perc",
+      "2 = 30 perc",
+      "3 = 1 óra",
+      "4 = 1 óra 30 perc",
+      "5 = 2 óra",
+      "6 = 3 óra",
+      "7 = 4 óra",
+      "8 = 5 óra",
+      "9 = 6 óra",
+      "10 = 7 óra",
+      "11 = 8 óra",
+      "12 = 9 óra",
+      "13 = 10 óra",
+      "14 = 11 óra",
+      "15 = 12 óra",
+      "16 = 13 óra",
+      "17 = 14 óra",
+      "18 = 15 óra",
+      "19 = 16 óra",
+      "20 = 17 óra",
+      "21 = 18 óra",
+      "22 = 19 óra",
+      "23 = 20 óra",
+      "24 = 21 óra",
+      "25 = 22 óra",
+      "26 = 23 óra",
+      "27 = Valós idő"
+    ],
+    "StartMonth": [
+      "A játék kezdetének hónapja. ",
+      "1 = Január",
+      "2 = Február",
+      "3 = Március",
+      "4 = Április",
+      "5 = Május",
+      "6 = Június",
+      "7 = Július",
+      "8 = Augusztus",
+      "9 = Szeptember",
+      "10 = Október",
+      "11 = November",
+      "12 = December"
+    ],
+    "StartDay": [
+      "A hónap napja, amikor a játékok kezdődnek."
+    ],
+    "StartTime": [
+      "A nap órája, amikor a játék kezdődik. ",
+      "1 = 7 óra",
+      "2 = 9 óra",
+      "3 = 12 óra",
+      "4 = 14 óra",
+      "5 = 17 óra",
+      "6 = 21 óra",
+      "7 = 24 óra",
+      "8 = 2 óra",
+      "9 = 5 óra"
+    ],
+    "DayNightCycle": [
+      "Akár természetesen változik a napszak, akár mindig nappal/éjszaka. ",
+      "1 = Közepes",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Függetlenül attól, hogy az időjárás változik, vagy egyetlen állapotban marad. ",
+      "1 = Közepes",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Függetlenül attól, hogy a köd természetesen előfordul-e, soha nem fordul elő, vagy mindig jelen van. ",
+      "1 = Közepes",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Az alapértelmezett kezdési dátum (1993. július 9.) után mennyi idővel szűnnek meg a vízvezeték-szerelvények (pl. mosogatók) végtelen vízforrásnak lenni. ",
+      "1 = Azonnal",
+      "2 = 0-30 nap",
+      "3 = 0-2 hónap",
+      "4 = 0-6 hónap",
+      "5 = 0-1 év",
+      "6 = 0-5 év",
+      "7 = 2-6 hónap",
+      "8 = 6-12 hónap",
+      "9 = Letiltva"
+    ],
+    "ElecShut": [
+      "Az alapértelmezett kezdési dátum (1993. július 9.) után mennyi idő múlva kapcsol le végleg a világ elektromos árama. ",
+      "1 = Azonnal",
+      "2 = 0-30 nap",
+      "3 = 0-2 hónap",
+      "4 = 0-6 hónap",
+      "5 = 0-1 év",
+      "6 = 0-5 év",
+      "7 = 2-6 hónap",
+      "8 = 6-12 hónap",
+      "9 = Letiltva"
+    ],
+    "AlarmDecay": [
+      "Mennyi ideig bírják a riasztóelemek az áramellátás kikapcsolása után. ",
+      "1 = Azonnal",
+      "2 = 0-30 nap",
+      "3 = 0-2 hónap",
+      "4 = 0-6 hónap",
+      "5 = 0-1 év",
+      "6 = 0-5 év"
+    ],
+    "WaterShutModifier": [
+      "Az alapértelmezett kezdési dátum (1993. július 9.) után mennyi idővel szűnnek meg a vízvezeték-szerelvények (pl. mosogatók) végtelen vízforrásnak lenni. "
+    ],
+    "ElecShutModifier": [
+      "Az alapértelmezett kezdési dátum (1993. július 9.) után mennyi idő múlva kapcsol le végleg a világ elektromos árama. "
+    ],
+    "AlarmDecayModifier": [
+      "Mennyi ideig bírják a riasztóelemek az áramellátás kikapcsolása után. "
+    ],
+    "FoodLootNew": [
+      "Bármilyen étel, amely megromolhat vagy megromolhat. "
+    ],
+    "LiteratureLootNew": [
+      "Minden olvasható tétel, szórólapokkal együtt Min: 0,00 Max: 4,00 Alapértelmezett: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Gyógyszer, kötszerek és elsősegélynyújtó eszközök. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Alapértelmezett: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Konzerv és szárított élelmiszerek, italok. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Alapértelmezett: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Max: 4.00 Alapértelmezett: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Laza lőszer, dobozok és magazinok. "
+    ],
+    "MechanicsLootNew": [
+      "Járműalkatrészek és a beszerelésükhöz szükséges szerszámok. "
+    ],
+    "OtherLootNew": [
+      "Minden más. Hatással van a begyűjthető összes tételére is a Városi/Úti zónáiban. Min: 0.00 Max: 4.00 Alapértelmezett: 0.60"
+    ],
+    "ClothingLootNew": [
+      "Minden hordható tárgy, amely nem konténer. "
+    ],
+    "ContainerLootNew": [
+      "Hátizsákok és egyéb hordható/felszerelhető tárolók, pl. "
+    ],
+    "KeyLootNew": [
+      "Kulcsok épületekhez/autókhoz, kulcstartók és zárak. "
+    ],
+    "MediaLootNew": [
+      "VHS kazetták és CD-k. "
+    ],
+    "MementoLootNew": [
+      "Spiffo tárgyak, plüssök és egyéb gyűjthető emléktárgyak, pl. "
+    ],
+    "CookwareLootNew": [
+      "Főzéshez használt tárgyak, beleértve azokat is (pl. kések), amelyek fegyverek lehetnek. "
+    ],
+    "MaterialLootNew": [
+      "Olyan tárgyak és fegyverek, amelyeket alkotóelemként vagy építkezéshez használnak. "
+    ],
+    "FarmingLootNew": [
+      "Állat- és növénytermesztésben egyaránt használt tárgyak és fegyverek, például magok, simítók vagy lapátok. "
+    ],
+    "ToolLootNew": [
+      "Olyan tárgyak és fegyverek, amelyek eszközök, de nem illenek más kategóriákba, mint például a mechanika vagy a gazdálkodás. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Javasoljuk, hogy NE módosítsa ezt. "
+    ],
+    "LootItemRemovalList": [
+      "Vesszővel elválasztott lista azokról az elemtípusokról, amelyek nem fognak közönséges zsákmányként megjelenni."
+    ],
+    "RemoveStoryLoot": [
+      "Ha engedélyezve van, a Loot Item Removal List listán szereplő elemek, vagy amelyek ritkasága 'Nincs' értékre van állítva, nem jelennek meg véletlenszerű világtörténetekben."
+    ],
+    "RemoveZombieLoot": [
+      "Ha engedélyezve van, a Loot Item Removal List listán szereplő elemek, vagy amelyek ritkasága 'Nincs' értékre van állítva, nem fognak megjelenni zombik által viselve vagy hozzájuk kötve."
+    ],
+    "ZombiePopLootEffect": [
+      "Ha nagyobb, mint 0, a zsákmány spawnja megnő a közelben lévő zombik számához képest, és a hatás megszorozódik ezzel a számmal. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Alapértelmezett: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Alapértelmezett: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Alapértelmezett: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Alapértelmezett: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Alapértelmezett: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Alapértelmezett: 3.00"
+    ],
+    "Temperature": [
+      "Szabályozza a globális hőmérsékletet. Alapértelmezett = Közepes",
+      "1 = Nagyon hideg",
+      "2 = Hideg",
+      "3 = Közepes",
+      "4 = Meleg",
+      "5 = Nagyon meleg"
+    ],
+    "Rain": [
+      "Szabályozza, hogy milyen gyakran esik az eső. Alapértelmezett = Közepes",
+      "1 = Nagy szárazság",
+      "2 = Szárazság",
+      "3 = Közepes",
+      "4 = Esős",
+      "5 = Nagyon esős"
+    ],
+    "ErosionSpeed": [
+      "A napok száma, amíg az eróziós rendszer (amely szőlővel, hosszú fűvel, új fákkal stb. ad a világot) eléri a 100%-os növekedést. ",
+      "1 = Nagyon gyors (20 nap)",
+      "2 = Gyors (50 nap)",
+      "3 = Normál (100 nap)",
+      "4 = Lassú (200 nap)",
+      "5 = Nagyon lassú (500 nap)"
+    ],
+    "ErosionDays": [
+      "Egyedi eróziós sebességhez. "
+    ],
+    "Farming": [
+      "A Mezőgazdaság képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "CompostTime": [
+      "Szabályozza azt az időt, ami az ételek lebomlásához kell a Trágyázóban. Alapértelmezett = 2 hét",
+      "1 = 1 hét",
+      "2 = 2 hét",
+      "3 = 3 hét",
+      "4 = 4 hét",
+      "5 = 6 hét",
+      "6 = 8 hét",
+      "7 = 10 hét",
+      "8 = 12 hét"
+    ],
+    "StatsDecrease": [
+      "Milyen gyorsan lesz a karakter éhes, szomjas és fáradt. Alapértelmezett = Közepes",
+      "1 = Nagyon gyorsan",
+      "2 = Gyorsan",
+      "3 = Közepes",
+      "4 = Lassan",
+      "5 = Nagyon lassan"
+    ],
+    "NatureAbundance": [
+      "Szabályozza a halászat és gyűjtögetés eredményességét. Alapértelmezett = Közepes",
+      "1 = Nagyon szegényes",
+      "2 = Szegényes",
+      "3 = Közepes",
+      "4 = Bőséges",
+      "5 = Nagyon bőséges"
+    ],
+    "Alarm": [
+      "Mennyire valószínű, hogy a játékos aktiválja a házriasztót, amikor betör egy új házba. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "LockedHouses": [
+      "Milyen gyakorisággal lesznek bezárva a felfedezett házak és épületek. Alapértelmezett = Nagyon gyakran",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "StarterKit": [
+      "Kezdés Chipsszel, Vizes Palackkal, Iskolatáskával, Baseball Ütővel és Kalapáccsal."
+    ],
+    "Nutrition": [
+      "Az ételek tápértéke befolyásolja a játékos állapotát."
+    ],
+    "FoodRotSpeed": [
+      "Meghatározza, hogy az élelmiszerek milyen gyorsan romlanak meg a hűtőben, vagy azon kívül. Alapértelmezett = Közepes",
+      "1 = Nagyon gyorsan",
+      "2 = Gyorsan",
+      "3 = Közepes",
+      "4 = Lassan",
+      "5 = Nagyon lassan"
+    ],
+    "FridgeFactor": [
+      "Meghatározza, mennyire lesz hatékony a hűtés. Alapértelmezett = Közepes",
+      "1 = Nagyon alacsony",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Ha > 0, a zsákmány nem fog újra megjelenni ennyi játékbeli órán belül abban a zónában, amelyeket meglátogattak. Min: 0 Max: 2147483647 Alapértelmezett: 0"
+    ],
+    "HoursForLootRespawn": [
+      "Ha ez nagyobb, mint 0, X óra elteltével a világ városaiban és lakókocsi-parkjaiban lévő összes konténer újra zsákmányt fog hozni. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Azok a tárolók, amelyek elemeinek száma nagyobb vagy egyenlő ezzel a beállítással, nem jelennek meg újra. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "A tárgyak nem jelennek meg újra olyan épületekben, amelyeket a játékosok elbarikádoztak vagy beépítettek."
+    ],
+    "WorldItemRemovalList": [
+      "A HoursForWorldItemRemoval óra lejárta után eltávolított elemtípusok vesszővel elválasztott listája."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Órák száma azóta, hogy egy elemet a földre ejtettek az eltávolítás előtt.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Ha igaz, a WorldItemRemovalList *nem* elemei el lesznek távolítva."
+    ],
+    "TimeSinceApo": [
+      "Mennyi idő múlva kezdődik a világvége. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Befolyásolja, hogy a növény mennyi vizet veszít naponta és mennyire ellenálló a betegségekkel szemben. Alapértelmezett = Közepes",
+      "1 = Nagyon magas",
+      "2 = Magas",
+      "3 = Közepes",
+      "4 = Alacsony",
+      "5 = Nagyon alacsony"
+    ],
+    "PlantAbundance": [
+      "Szabályozza a növények termését, amikor leszedik. Alapértelmezett = Közepes",
+      "1 = Nagyon szegényes",
+      "2 = Szegényes",
+      "3 = Közepes",
+      "4 = Bőséges",
+      "5 = Nagyon bőséges"
+    ],
+    "EndRegen": [
+      "A műveletek végrehajtása utáni fáradásból való helyreállás. Alapértelmezett = Közepes",
+      "1 = Nagyon gyorsan",
+      "2 = Gyorsan",
+      "3 = Közepes",
+      "4 = Lassan",
+      "5 = Nagyon lassan"
+    ],
+    "Helicopter": [
+      "Milyen rendszerességgel haladnak el helikopterek az eseményzónában? Alapértelmezett = Egyszer",
+      "1 = Soha",
+      "2 = Egyszer",
+      "3 = Néha",
+      "4 = Gyakran"
+    ],
+    "MetaEvent": [
+      "Milyen gyakran forduljon elő zombivonzó véletlen esemény, például távoli puskalövés. Alapértelmezett = Néha",
+      "1 = Soha",
+      "2 = Néha",
+      "3 = Gyakran"
+    ],
+    "SleepingEvent": [
+      "Szabályozza az éjszakai időtartam alatti véletlen eseményeket, miközben a játékos alszik. Alapértelmezett = Soha",
+      "1 = Soha",
+      "2 = Néha",
+      "3 = Gyakran"
+    ],
+    "GeneratorFuelConsumption": [
+      "Mennyi üzemanyagot használ el játékbeli óránként. Min: 0.00 Max: 100.00 Alapértelmezett: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Növeli, vagy csökkenti az elektromos generátorok megjelenésének esélyét a térképen. Alapértelmezett = Ritkán",
+      "1 = Nincs (nem ajánlott)",
+      "2 = Hihetetlenül ritka",
+      "3 = Nagyon ritkán",
+      "4 = Ritkán",
+      "5 = Közepes",
+      "6 = Átlagos",
+      "7 = Bőséges"
+    ],
+    "AnnotatedMapChance": [
+      "Befolyásolja, hogy egy talált térképen milyen eséllyel lesznek halott túlélő által írt jegyzetek. Alapértelmezett = Néha",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "CharacterFreePoints": [
+      "Szabad pontokat ad a karakter létrehozásához. Min: -100 Max: 100 Alapértelmezett: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "A játékosok által épített konstrukcióknak extra elütési pontokat adnak, így jobban ellenállnak a zombik okozta sérüléseknek. ",
+      "1 = Nagyon alacsony",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas"
+    ],
+    "NightDarkness": [
+      "Szabályozza a környezet világosságát éjszaka. Alapértelmezett = Közepes",
+      "1 = Koromsötét",
+      "2 = Sötét",
+      "3 = Közepes",
+      "4 = Világos"
+    ],
+    "NightLength": [
+      "Szabályozza az alkonyattól pirkadatig tartó időt. Alapértelmezett = Közepes",
+      "1 = Mindig Éjszaka",
+      "2 = Hosszútávú",
+      "3 = Közepes",
+      "4 = Rövidtávú",
+      "5 = Mindig Nappal"
+    ],
+    "BoneFracture": [
+      "Engedélyezi, vagy letiltja a törött végtagokat, amikor a túlélők sérüléseket szereznek ütések, Zombi sebzése és esések miatt."
+    ],
+    "InjurySeverity": [
+      "Növeli, vagy csökkenti a sérülések szervezetre gyakorolt hatását és a test gyógyulási idejét. Alapértelmezett = Közepes",
+      "1 = Alacsony",
+      "2 = Közepes",
+      "3 = Magas"
+    ],
+    "HoursForCorpseRemoval": [
+      "Mennyi idő múlva, órákban, amíg a zombi holttestek eltűnnek a világból.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Szabályozza a közeli rothadó testek hatását a játékos egészségére és érzelmeire. Alapértelmezett = Közepes",
+      "1 = Nincs",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Őrült"
+    ],
+    "ZombieHealthImpact": [
+      "A közelben lévő \"élő\" zombik ugyanolyan hatással vannak-e a játékos egészségére és érzelmeire."
+    ],
+    "BloodLevel": [
+      "Mennyi vér fröccsen a padlóra és a falakra. Alapértelmezett = Közepes",
+      "1 = Nincs",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon Magas"
+    ],
+    "ClothingDegradation": [
+      "Szabályozza, hogy a ruházat milyen gyorsan használódjon el, koszolódjon és legyen véres. Alapértelmezett = Közepes",
+      "1 = Letiltva",
+      "2 = Lassan",
+      "3 = Közepes",
+      "4 = Gyorsan"
+    ],
+    "FireSpread": [
+      "Ha a tűz az indításkor továbbterjed."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "A játékon belüli napok száma, mielőtt a romlott ételt eltávolították a térképről.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Ha engedélyezve van, a generátorok a külső csempéken működnek.  "
+    ],
+    "MaxFogIntensity": [
+      "Szabályozza a köd maximális erősségét. Alapértelmezett = Közepes",
+      "1 = Közepes",
+      "2 = Mérsékelt",
+      "3 = Alacsony",
+      "4 = Nincs"
+    ],
+    "MaxRainFxIntensity": [
+      "Szabályozza az eső maximális erősségét. Alapértelmezett = Közepes",
+      "1 = Közepes",
+      "2 = Mérsékelt",
+      "3 = Alacsony"
+    ],
+    "EnableSnowOnGround": [
+      "Ha a hó felhalmozódik a földön.  "
+    ],
+    "AttackBlockMovements": [
+      "Megakadályozza a szabad mozgást közelharci támadás esetén."
+    ],
+    "SurvivorHouseChance": [
+      "Véletlenszerű épületek megtalálásának esélye a térképen (pl. kiégett házak, zsákmányt rejtettek vagy holttestek). ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig próbálkozik"
+    ],
+    "VehicleStoryChance": [
+      "Úttörténetek (pl. rendőri útlezárások) megjelenésének esélye. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig próbálkozik"
+    ],
+    "ZoneStoryChance": [
+      "A térképi zónákra jellemző történetek (pl. kemping erdőben) ívási esélye. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig próbálkozik"
+    ],
+    "AllClothesUnlocked": [
+      "Lehetővé teszi, hogy a játék minden ruhadarabjából válassz a karaktered testreszabásakor"
+    ],
+    "EnableTaintedWaterText": [
+      "Ha tiltva van, Szennyezett Víz esetén nem lesz figyelmeztetés"
+    ],
+    "EnableVehicles": [
+      "Járművek megjelenésének engedélyezése."
+    ],
+    "CarSpawnRate": [
+      "Szabályozza, milyen gyakorisággal fedezhetők fel autók a térképen. Alapértelmezett = Alacsony",
+      "1 = Nincs",
+      "2 = Nagyon alacsony",
+      "3 = Alacsony",
+      "4 = Közepes",
+      "5 = Magas"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Használd ezt a motor hangjának növeléséhez, vagy csökkentéséhez. Min: 0.00 Max: 100.00 Alapértelmezett: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Szabályozza, hogy az autók be vannak-e zárva, kell-e kulcs az indításhoz, stb."
+    ],
+    "InitialGas": [
+      "Szabályozza, hogy a felfedezett autókban mennyire lesznek tele az üzemanyagtartályok. Alapértelmezett = Alacsony",
+      "1 = Nagyon alacsony",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas",
+      "6 = Teli"
+    ],
+    "FuelStationGasInfinite": [
+      "Ha engedélyezve van, a gázszivattyúkból soha nem fogy ki az üzemanyag"
+    ],
+    "FuelStationGasMin": [
+      "Az a minimális benzinmennyiség, amely a benzinszivattyúkban képződhet. "
+    ],
+    "FuelStationGasMax": [
+      "A benzin maximális mennyisége, amely a benzinszivattyúkban költhet. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Annak százalékos esélye, hogy az egyes gázszivattyúkban kezdetben nem lesz üzemanyag. "
+    ],
+    "LockedCar": [
+      "Mennyire valószínű, hogy az autókat bezárják Alapértelmezett = Ritkán",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "CarGasConsumption": [
+      "Milyen üzemanyag-fogyasztásúak a járművek a térképen. Min: 0.00 Max: 100.00 Alapértelmezett: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "Milyen alapállapotúak lesznek a felfedezett autók a térképen. Alapértelmezett = Alacsony",
+      "1 = Nagyon alacsony",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas"
+    ],
+    "CarDamageOnImpact": [
+      "Szabályozza a kapott sérülés mértékét a járművek ütközése során. Alapértelmezett = Közepes",
+      "1 = Nagyon alacsony",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Sérülés, amit a játékos az autóban kapott egy ütközéskor. Alapértelmezett = Nincs",
+      "1 = Nincs",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas",
+      "5 = Nagyon magas"
+    ],
+    "TrafficJam": [
+      "Ha a főutakon összetört autókból álló torlódások jelennek meg."
+    ],
+    "CarAlarm": [
+      "A felfedezett járművek milyen gyakran lesznek beriasztva. Alapértelmezett = Nagyon ritkán",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "PlayerDamageFromCrash": [
+      "Engedélyezi, vagy letiltja a játékos sérülését, amikor a jármű ütközik."
+    ],
+    "SirenShutoffHours": [
+      "Mennyi játékbeli óra telik el, mielőtt egy riasztó szirénája kikapcsol. Min: 0.00 Max: 168.00 Alapértelmezett: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Szabályozza annak az esélyét, hogy a megtalált autók üzemanyagtartályban van-e üzemanyag. Alapértelmezett = Alacsony",
+      "1 = Alacsony",
+      "2 = Közepes",
+      "3 = Magas"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Hogy egy játékos felfedezhet-e egy autót, amelyet a Knox-fertőzés után ápoltak. ",
+      "1 = Nincs",
+      "2 = Alacsony",
+      "3 = Közepes",
+      "4 = Magas"
+    ],
+    "MultiHitZombies": [
+      "Ha engedélyezve van, néhány közelharci fegyver képes több zombit egyszerre sebezni."
+    ],
+    "RearVulnerability": [
+      "Esély a megharapásra, amikor egy Zombi hátulról támad. Alapértelmezett = Magas",
+      "1 = Alacsony",
+      "2 = Közepes",
+      "3 = Magas"
+    ],
+    "SirenEffectsZombies": [
+      "Ha a zombik a jármű szirénáinak hangja felé indulnak."
+    ],
+    "AnimalStatsModifier": [
+      "Sebesség, amellyel az állatok statisztikái (éhség, szomjúság stb.) csökkennek. ",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Sebesség, amellyel az állatok statisztikái (éhség, szomjúság stb.) csökkennek a metában. ",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalPregnancyTime": [
+      "Mennyi ideig lesznek vemhesek az állatok a szülés előtt. ",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalAgeModifier": [
+      "Az állatok öregedésének sebessége. ",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalMilkIncModifier": [
+      "Alapértelmezett = Gyorsan",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalWoolIncModifier": [
+      "Alapértelmezett = Gyorsan",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalRanchChance": [
+      "Állatok megtalálásának esélye a farmon. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Azon órák száma, amíg a fű visszanő, miután egy állat megette vagy a játékos levágta. "
+    ],
+    "AnimalMetaPredator": [
+      "Ha egy meta (azaz valójában nem látható a játékban) róka megtámadhatja a csirkéket, ha a kunyhó ajtaja éjjel nyitva marad."
+    ],
+    "AnimalMatingSeason": [
+      "Ha a párzási időszakkal rendelkező állatok tiszteletben tartják.  "
+    ],
+    "AnimalEggHatch": [
+      "Mennyi idő múlva kelnek ki az állatok a tojásokból. ",
+      "1 = Ultra Fast",
+      "2 = Nagyon gyorsan",
+      "3 = Gyorsan",
+      "4 = Közepes",
+      "5 = Lassan",
+      "6 = Nagyon lassan"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Ha igaz, az állati hívások vonzzák a közeli zombikat."
+    ],
+    "AnimalTrackChance": [
+      "Az állatok nyomot hagyásának esélye. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "AnimalPathChance": [
+      "Lehetőséget teremteni egy ösvény kialakítására a vadászható állatok számára. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran"
+    ],
+    "MaximumRatIndex": [
+      "A gyakorisága és intenzitása pl. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Mennyi idő alatt éri el a Maximális kártevőindexet. "
+    ],
+    "MetaKnowledge": [
+      "Ha egy adathordozót még nem látott vagy olvasott el teljesen, ez a beállítás határozza meg, hogy teljesen, \"???\"-ként jelenjen-e meg, vagy teljesen el van rejtve. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Ha ez igaz, akkor minden olyan receptet láthat, amelyet egy állomással el lehet készíteni, még akkor is, ha még nem tanulta meg őket."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Ha egy épületben ennél több szoba van, akkor nem rabolják ki. "
+    ],
+    "EnablePoisoning": [
+      "Szabályozza, hogy az ételmérgezés engedélyezve van. Alapértelmezett = Igen",
+      "1 = Igen",
+      "2 = Nem",
+      "3 = Csak a Fehérítő-mérgezés van tiltva"
+    ],
+    "MaggotSpawn": [
+      "Ha/amikor a kukacok holttestekbe költhetnek. ",
+      "1 = Testben és körülötte",
+      "2 = Csak a testben",
+      "3 = Soha"
+    ],
+    "LightBulbLifespan": [
+      "Minél magasabb az érték, annál hosszabb ideig tartanak az izzók, mielőtt eltörnek.  "
+    ],
+    "FishAbundance": [
+      "A halak bősége a folyókban és tavakban. ",
+      "1 = Nagyon szegényes",
+      "2 = Szegényes",
+      "3 = Közepes",
+      "4 = Bőséges",
+      "5 = Nagyon bőséges"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Ha egy készség ezen vagy magasabb szinten van, a televízió/VHS/egyéb média nem biztosít XP-t. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Ha egy képesség ezen vagy magasabb szinten van, a bútorok selejtezése nem ad XP-t a megfelelő képességhez. "
+    ],
+    "BloodSplatLifespanDays": [
+      "A régi vérfoltok eltávolítása előtt eltelt napok száma. "
+    ],
+    "LiteratureCooldown": [
+      "A napok száma, amíg valaki hasznot húzhat a korábban olvasott irodalmi tételek olvasásából. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Ha a több negatív tulajdonság kiválasztásából származó bónuszpontok hozama csökken. ",
+      "1 = Nincs",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 pont büntetés az első után kiválasztott minden negatív tulajdonságért"
+    ],
+    "MinutesPerPage": [
+      "A játékon belüli percek száma, amennyi egy ügyességi könyv egy oldalának elolvasásához szükséges. "
+    ],
+    "KillInsideCrops": [
+      "Ha engedélyezve van, az épületekben termesztett növények és gyógynövények elhalnak. "
+    ],
+    "PlantGrowingSeasons": [
+      "Ha engedélyezve van, a növények növekedését az évszakok befolyásolják."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Javasoljuk, hogy NE módosítsa ezt. "
+    ],
+    "FarmingSpeedNew": [
+      "Szabályozza a növények növekedésének gyorsaságát. Min: 0.10 Max: 100.00 Alapértelmezett: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "A betakarított termények bősége. "
+    ],
+    "MaximumLooted": [
+      "Annak az esélye, hogy bármelyik épületet már kifosztották, amikor megtalálják. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Mennyi időbe telik a Maximum Kifosztott Építési Esély elérése. "
+    ],
+    "RuralLooted": [
+      "Annak az esélye, hogy bármelyik vidéki épületet már kifosztják, amikor megtalálják. "
+    ],
+    "MaximumDiminishedLoot": [
+      "A maximális zsákmány, amely nem fog megjelenni, ha eléri a Napok maximális csökkentett zsákmányáig terjedő számát. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Mennyi ideig tart a maximális csökkentett zsákmányszázalék elérése. "
+    ],
+    "MuscleStrainFactor": [
+      "Multiplikátorként funkcionál a lengő fegyverek okozta izomfeszültség vagy nehéz teherhordás során. "
+    ],
+    "DiscomfortFactor": [
+      "Multiplikátorként funkcionál a kopott tárgyak okozta kényelmetlenség kifejtésekor. "
+    ],
+    "WoundInfectionFactor": [
+      "Ha nullánál nagyobb, akkor súlyos sebfertőzések okozzák a károsodást. "
+    ],
+    "NoBlackClothes": [
+      "Ha az igazi ruha véletlenszerű árnyalatokkal nem lesz olyan sötét, hogy gyakorlatilag fekete legyen."
+    ],
+    "EasyClimbing": [
+      "Letiltja a meghibásodás lehetőségét, amikor kötélen vagy falon mászik."
+    ],
+    "MaximumFireFuelHours": [
+      "Tábortűzbe, fatüzelésű kályhába stb. elhelyezhető üzemanyag maximális óraszáma. Min.: 1 Max.: 168 Alapértelmezett: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Lecseréli a Chance-To-Hit mechanikát a Chance-To-Damage számításokra."
+    ],
+    "FirearmNoiseMultiplier": [
+      "A zombik lövéseket halló távolságának szorzója. "
+    ],
+    "FirearmJamMultiplier": [
+      "Szorzó a lőfegyver elakadásának esélyére. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Szorzó a Moodle effektusokhoz a találati esélyre. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Az időjárás (szél, eső és köd) találati esélyre gyakorolt ​​hatásának szorzója. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Engedélyezze, hogy a fejfedők, például a hegesztőmaszkok befolyásolják a találati esélyt"
+    ],
+    "ClayLakeChance": [
+      "Lehetőség, hogy a földpadlót agyagpadlóvá változtassa. "
+    ],
+    "ClayRiverChance": [
+      "Lehetőség, hogy a földpadlót agyagpadlóvá változtassa. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Alapértelmezett: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Egy generátor felett és alatt hány szintet tud árammal ellátni. "
+    ],
+    "SpawnFrequency": [
+      "Milyen gyakran keletkeznek pincék véletlenszerű helyeken. ",
+      "1 = Soha",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig"
+    ],
+    "AllowMiniMap": [
+      "Ha engedélyezve van, egy mini-térkép ablak áll rendelkezésre."
+    ],
+    "AllowWorldMap": [
+      "Ha engedélyezve van, a világtérkép elérhető."
+    ],
+    "MapAllKnown": [
+      "Ha engedélyezve van, a világtérkép teljesen kitöltődik a játék indításakor."
+    ],
+    "MapNeedsLight": [
+      "Ha engedélyezve van, a térképek nem olvashatók, hacsak nem áll rendelkezésre fényforrás."
+    ],
+    "Speed": [
+      "Szabályozza a Zombik mozgási sebességét. Alapértelmezett = Véletlenszerű",
+      "1 = Gyors járó",
+      "2 = Gyorsan csoszogó",
+      "3 = Csoszogó",
+      "4 = Véletlenszerű"
+    ],
+    "SprinterPercentage": [
+      "Ha a Random Speed ​​​​be van kapcsolva, ez szabályozza, hogy a zombik hány százaléka legyen sprinter."
+    ],
+    "Strength": [
+      "A Erő képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Toughness": [
+      "Szabályozza a zombi megölésének nehézségét. Alapértelmezett = Véletlenszerű",
+      "1 = Kitartó",
+      "2 = Közepes",
+      "3 = Gyenge",
+      "4 = Véletlenszerű"
+    ],
+    "Transmission": [
+      "Szabályozza, hogyan terjed a zombi vírus. Alapértelmezett = Vér és nyál",
+      "1 = Vér és nyál",
+      "2 = Csak nyál",
+      "3 = Mindenki fertőzött",
+      "4 = Nincs"
+    ],
+    "Mortality": [
+      "Szabályozza, milyen gyorsan hat a fertőzés. Alapértelmezett = 2-3 nap",
+      "1 = Azonnal",
+      "2 = 0-30 másodperc",
+      "3 = 0-1 perc",
+      "4 = 0-12 óra",
+      "5 = 2-3 nap",
+      "6 = 1-2 hét",
+      "7 = Soha"
+    ],
+    "Reanimate": [
+      "Szabályozza, hogy milyen gyorsan éledjenek fel a holttestek zombiként. Alapértelmezett = 0-1 perc",
+      "1 = Azonnal",
+      "2 = 0-30 másodperc",
+      "3 = 0-1 perc",
+      "4 = 0-12 óra",
+      "5 = 2-3 nap",
+      "6 = 1-2 hét"
+    ],
+    "Cognition": [
+      "Szabályozza a zombik intelligenciáját. Alapértelmezett = Alapvető tájékozódás",
+      "1 = Tájékozódás és Ajtó használat",
+      "2 = Tájékozódás",
+      "3 = Alapvető tájékozódás",
+      "4 = Véletlenszerű"
+    ],
+    "CrawlUnderVehicle": [
+      "Szabályozza, hogy a zombik milyen gyakran tudnak kúszni a járművek alatt. Alapértelmezett = Gyakran",
+      "1 = Csak kúszók",
+      "2 = Nagyon ritkán",
+      "3 = Ritkán",
+      "4 = Néha",
+      "5 = Gyakran",
+      "6 = Nagyon gyakran",
+      "7 = Mindig"
+    ],
+    "Memory": [
+      "Szabályozza, hogy a zombik mennyi ideig emlékeznek a játékosokra, miután meglátták, vagy meghallották őket. Alapértelmezett = Közepes",
+      "1 = Hosszútávú",
+      "2 = Közepes",
+      "3 = Rövidtávú",
+      "4 = Nincs",
+      "5 = Véletlenszerű",
+      "6 = Véletlen a Normál és a Nincs között"
+    ],
+    "Sight": [
+      "Szabályozza a zombik látósugarát Alapértelmezett = Random between Normal and Poor",
+      "1 = Jó",
+      "2 = Közepes",
+      "3 = Szegényes",
+      "4 = Véletlenszerű",
+      "5 = Véletlen a normál és a gyenge között"
+    ],
+    "Hearing": [
+      "Szabályozza a zombik hallásának hatósugarát. ",
+      "1 = Kifinomult",
+      "2 = Közepes",
+      "3 = Szegényes",
+      "4 = Véletlenszerű",
+      "5 = Véletlen a normál és a gyenge között"
+    ],
+    "SpottedLogic": [
+      "Aktiválja az új, fejlett lopakodó mechanikát, amely lehetővé teszi, hogy elrejtőzzön a zombik elől az autók mögött, figyelembe veszi a tulajdonságokat és az időjárást, és még sok minden mást."
+    ],
+    "ThumpNoChasing": [
+      "Zombik, akik nem láttak, vagy hallottak játékosokat, támadhatják az ajtókat és az építményeket kóborlás közben is."
+    ],
+    "ThumpOnConstruction": [
+      "Szabályozza, hogy a zombik le tudják-e rombolni, vagy sem a játékosok építményeit és védelmeit."
+    ],
+    "ActiveOnly": [
+      "Függetlenül attól, hogy a zombik nappal vagy éjszaka \"aktívabbak\".  ",
+      "1 = Mindig",
+      "2 = Éjszaka",
+      "3 = Nappal"
+    ],
+    "TriggerHouseAlarm": [
+      "Lehetővé teszi, hogy a zombik aktiválják a lakásriasztót, miközben betörnek az épületbe."
+    ],
+    "ZombiesDragDown": [
+      "Ha több támadó zombi lehúzhat és megölhet.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Ha egy játékos mellett lánctalpas zombik állnak, hozzájárulnak ahhoz, hogy egy zombicsoport lerántsa és megölje őket."
+    ],
+    "ZombiesFenceLunge": [
+      "Ha a zombiknak esélyük van rád ugrani, miután átmásztak egy kerítésen vagy egy ablakon, ha túl közel vagy."
+    ],
+    "ZombiesArmorFactor": [
+      "Szorzóként szolgál a zombik által viselt páncélok hatékonyságának meghatározásakor. "
+    ],
+    "ZombiesMaxDefense": [
+      "A maximális védelmi százalék, amelyet bármilyen viselt védőruha nyújthat egy zombi számára. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Százalékos esélye annak, hogy véletlenszerűen csatlakoztatott fegyverrel rendelkezzen. "
+    ],
+    "ZombiesFallDamage": [
+      "Mekkora kárt okoznak a zombik, amikor leesnek a magasból. "
+    ],
+    "DisableFakeDead": [
+      "Hogy néhány halottnak tűnő zombi újraéled-e és megtámadja-e a játékost. ",
+      "1 = Néhány zombi a világban halottnak fogja magát tettetni",
+      "2 = Néhány zombi, valamint néhány, akiket 'megölsz', halottnak fogja magát tettetni",
+      "3 = Soha"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "A zombik nem ott születnek, ahol a játékosok. ",
+      "1 = Az épületen belül és körülötte",
+      "2 = Az épületen belül",
+      "3 = A szobában belül",
+      "4 = A zombik bárhol megjelenhetnek"
+    ],
+    "FenceThumpersRequired": [
+      "Hány zombi kell egy magas kerítés megrongálódásához. "
+    ],
+    "FenceDamageMultiplier": [
+      "Milyen gyorsan károsítják a zombik a magas kerítéseket. "
+    ],
+    "PopulationMultiplier": [
+      "Állítsa be a \"Zombiszám\" népesség opcióval, vagy itt egy egyéni számmal. "
+    ],
+    "PopulationStartMultiplier": [
+      "A kívánt zombi populáció szorzója a játék elején. "
+    ],
+    "PopulationPeakMultiplier": [
+      "A kívánt zombi populáció szorzója a csúcsnapon. "
+    ],
+    "PopulationPeakDay": [
+      "Az a nap, amikor a népesség eléri a csúcspontját. Min: 1 Max: 365 Alapértelmezett: 28"
+    ],
+    "RespawnHours": [
+      "Az órák száma, amennyinek el kell telnie ahhoz, hogy a zombik újra megjelenhessenek egy cellában. "
+    ],
+    "RespawnUnseenHours": [
+      "Azon órák száma, ameddig egy térképrésznek láthatatlannak kell lennie, mielőtt a zombik újra megjelenhetnek benne. Min: 0.00 Max: 8760.00 Alapértelmezett: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "Egy cella kívánt Népességének töredéke, amely visszakerülhet minden Visszakerülésig eltelt órában. Min: 0.00 Max: 1.00 Alapértelmezett: 0.10"
+    ],
+    "RedistributeHours": [
+      "Az órák száma, amennyinek el kell telnie, mielőtt a zombik ugyanannak a cellának az üres részeire vándorolnak. "
+    ],
+    "FollowSoundDistance": [
+      "Az a távolság, amit egy zombi megpróbál lesétálni az utolsó hang felé, amit hallott. Min: 10 Max: 1000 Alapértelmezett: 100"
+    ],
+    "RallyGroupSize": [
+      "A csoportok mérete valódi zombik tétlenül alakulnak ki. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Az az összeg, százalékban kifejezve, hogy a zombi csoportok mérete eltérhet az alapértelmezetttől (nagyobb és kisebb).   "
+    ],
+    "RallyTravelDistance": [
+      "A tényleges távolság, amit a zombik megtesznek ahhoz, hogy csoportokat alkossanak tétlenül. Min: 5 Max: 50 Alapértelmezett: 20"
+    ],
+    "RallyGroupSeparation": [
+      "A zombi csoportok közötti távolság. Min: 5 Max: 25 Alapértelmezett: 15"
+    ],
+    "RallyGroupRadius": [
+      "Egy csoport tagjai milyen közel maradnak a csoport vezetőjéhez. Min: 1 Max: 10 Alapértelmezett: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Alapértelmezett: 300"
+    ],
+    "Global": [
+      "Az az arány, amellyel az összes készség szintje emelkedik. "
+    ],
+    "GlobalToggle": [
+      "Ha engedélyezve van, minden készség a Globális szorzót fogja használni."
+    ],
+    "Fitness": [
+      "A Állóképesség képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Sprinting": [
+      "A Sprint képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Lightfoot": [
+      "A Könnyű lépés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Nimble": [
+      "A Fürgeség képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Sneak": [
+      "A Lopakodás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Axe": [
+      "A Balta képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Blunt": [
+      "A Tompa képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "SmallBlunt": [
+      "A Rövid tompa képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "LongBlade": [
+      "A Hosszú penge képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "SmallBlade": [
+      "A Rövid penge képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Spear": [
+      "A Lándzsa képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Maintenance": [
+      "A Karbantartás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Woodwork": [
+      "A Ácsmesterség képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Cooking": [
+      "A Főzés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Doctor": [
+      "A Orvoslás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Electricity": [
+      "A Villamosság képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "MetalWelding": [
+      "A Fémhegesztés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Mechanics": [
+      "A Mechanika képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Tailoring": [
+      "A Szabás-varrás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Aiming": [
+      "A Célzás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Reloading": [
+      "A Újratöltés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Fishing": [
+      "A Horgászat képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Trapping": [
+      "A Csapdázás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "PlantScavenging": [
+      "A Növénygyűjtés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "FlintKnapping": [
+      "A Kovakő megmunkálás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Masonry": [
+      "A Kőművesség képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Pottery": [
+      "A Kerámia képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Carving": [
+      "A Faragás képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Husbandry": [
+      "A Állattenyésztés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Tracking": [
+      "A Nyomkövetés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Blacksmith": [
+      "A Kovács képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Butchering": [
+      "A Henteskedés képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ],
+    "Glassmaking": [
+      "A Üvegművesség képesség szintlépésének sebessége. Min: 0.00 Max: 1000.00 Alapértelmezett: 1.00"
+    ]
+  }
+}
+
+

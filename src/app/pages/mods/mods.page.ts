@@ -71,6 +71,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   private presetFilterModIds: Set<string> = new Set<string>();
   private readonly presetFilterKey = 'pz_filter_in_preset_ids';
   private currentLocale = 'en-US';
+  private emptyScanAttempted = false;
 
   constructor(
     private readonly modService: ModService,
@@ -143,6 +144,17 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
         // to the newer full `mod.info` inventory scan.
         if (persisted.schemaVersion < 3 && this.modsActions.folderPath) {
           await this.untilDestroyed(this.scan());
+        }
+
+        // If we have a saved folder but an empty cache, force a rescan once.
+        if (
+          !this.mods.length &&
+          this.modsActions.folderPath &&
+          onboardingCompleted &&
+          !this.emptyScanAttempted
+        ) {
+          this.emptyScanAttempted = true;
+          await this.untilDestroyed(this.scan(true));
         }
       } else {
         // No persisted state yet; attempt an initial local scan (if a folder

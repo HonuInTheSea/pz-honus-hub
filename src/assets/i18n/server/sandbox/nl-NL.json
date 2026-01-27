@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombies",
+  "Distribution": "Verdeling",
+  "ZombieVoronoiNoise": "Zombie Voronoi-ruis",
+  "ZombieRespawn": "Zombie her-spawn",
+  "ZombieMigrate": "Zombie migratie",
+  "DayLength": "Daglengte",
+  "StartMonth": "Startmaand",
+  "StartDay": "Startdag",
+  "StartTime": "Starttijd",
+  "DayNightCycle": "Dag/nacht-cyclus",
+  "ClimateCycle": "Klimaatcyclus",
+  "FogCycle": "Mistcyclus",
+  "WaterShut": "Wateruitval",
+  "ElecShut": "Stroomuitval",
+  "AlarmDecay": "Alarmverval",
+  "WaterShutModifier": "Modificator wateruitval",
+  "ElecShutModifier": "Modificator stroomuitval",
+  "AlarmDecayModifier": "Modificator alarmverval",
+  "FoodLootNew": "Voedselbuit (nieuw)",
+  "LiteratureLootNew": "Lectuurbuit (nieuw)",
+  "MedicalLootNew": "Medische buit (nieuw)",
+  "SurvivalGearsLootNew": "Overlevingsuitrusting-buit (nieuw)",
+  "CannedFoodLootNew": "Ingeblikt voedselbuit (nieuw)",
+  "WeaponLootNew": "Wapenbuit (nieuw)",
+  "RangedWeaponLootNew": "Afstands-wapenbuit (nieuw)",
+  "AmmoLootNew": "Munitiebuit (nieuw)",
+  "MechanicsLootNew": "Mechanica-buit (nieuw)",
+  "OtherLootNew": "Overige buit (nieuw)",
+  "ClothingLootNew": "Kledingbuit (nieuw)",
+  "ContainerLootNew": "Containerbuit (nieuw)",
+  "KeyLootNew": "Sleutelbuit (nieuw)",
+  "MediaLootNew": "Mediabuit (nieuw)",
+  "MementoLootNew": "Souvenirbuit (nieuw)",
+  "CookwareLootNew": "Keukengerei-buit (nieuw)",
+  "MaterialLootNew": "Materiaalbuit (nieuw)",
+  "FarmingLootNew": "Landbouwbuit (nieuw)",
+  "ToolLootNew": "Gereedschapsbuit (nieuw)",
+  "RollsMultiplier": "Worp-multiplicator",
+  "LootItemRemovalList": "Buitverwijderingslijst",
+  "RemoveStoryLoot": "Verwijder verhaalbuit",
+  "RemoveZombieLoot": "Verwijder zombiebuit",
+  "ZombiePopLootEffect": "Buiteffect door zombiepopulatie",
+  "InsaneLootFactor": "Buitfactor waanzinnig",
+  "ExtremeLootFactor": "Buitfactor extreem",
+  "RareLootFactor": "Buitfactor zeldzaam",
+  "NormalLootFactor": "Buitfactor normaal",
+  "CommonLootFactor": "Buitfactor gewoon",
+  "AbundantLootFactor": "Buitfactor overvloedig",
+  "Temperature": "Temperatuur",
+  "Rain": "Regen",
+  "ErosionSpeed": "Erosiesnelheid",
+  "ErosionDays": "Erosiedagen",
+  "Farming": "Landbouw",
+  "CompostTime": "Composttijd",
+  "StatsDecrease": "Statistiekafname",
+  "NatureAbundance": "Natuurovervloed",
+  "Alarm": "Alarm",
+  "LockedHouses": "Vergrendelde huizen",
+  "StarterKit": "Startpakket",
+  "Nutrition": "Voeding",
+  "FoodRotSpeed": "Voedselbederfsnelheid",
+  "FridgeFactor": "Koelkastfactor",
+  "SeenHoursPreventLootRespawn": "Geziene uren voorkomen buitrespawn",
+  "HoursForLootRespawn": "Uren voor buitrespawn",
+  "MaxItemsForLootRespawn": "Max. items voor buitrespawn",
+  "ConstructionPreventsLootRespawn": "Bouw voorkomt buitrespawn",
+  "WorldItemRemovalList": "Verwijderlijst werelditems",
+  "HoursForWorldItemRemoval": "Uren tot verwijderen werelditems",
+  "ItemRemovalListBlacklistToggle": "Blacklist-schakelaar voor itemverwijdering",
+  "TimeSinceApo": "Tijd sinds apocalyps",
+  "PlantResilience": "Plantweerstand",
+  "PlantAbundance": "Plantenovervloed",
+  "EndRegen": "Stamina-regeneratie",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta-evenement",
+  "SleepingEvent": "Slaapgebeurtenis",
+  "GeneratorFuelConsumption": "Brandstofverbruik generator",
+  "GeneratorSpawning": "Generator-spawn",
+  "AnnotatedMapChance": "Kans op geannoteerde kaart",
+  "CharacterFreePoints": "Gratis karakterpunten",
+  "ConstructionBonusPoints": "Bouw-bonuspunt",
+  "NightDarkness": "Nachtdonkerte",
+  "NightLength": "Nachtduur",
+  "BoneFracture": "Botbreuk",
+  "InjurySeverity": "Ernst van verwonding",
+  "HoursForCorpseRemoval": "Uren tot verwijderen lijken",
+  "DecayingCorpseHealthImpact": "Gezondheidsimpact door ontbindende lichamen",
+  "ZombieHealthImpact": "Gezondheidsimpact door zombies",
+  "BloodLevel": "Bloedniveau",
+  "ClothingDegradation": "Kledingdegradatie",
+  "FireSpread": "Vuurbereiding",
+  "DaysForRottenFoodRemoval": "Dagen tot verwijderen bedorven voedsel",
+  "AllowExteriorGenerator": "Buitengenerator toestaan",
+  "MaxFogIntensity": "Maximale mistintensiteit",
+  "MaxRainFxIntensity": "Maximale regen-effectintensiteit",
+  "EnableSnowOnGround": "Sneeuw op de grond inschakelen",
+  "AttackBlockMovements": "Aanval blokkeert bewegingen",
+  "SurvivorHouseChance": "Kans op overlevendenhuis",
+  "VehicleStoryChance": "Kans op voertuigverhalen",
+  "ZoneStoryChance": "Kans op zoneverhalen",
+  "AllClothesUnlocked": "Alle kleding ontgrendeld",
+  "EnableTaintedWaterText": "Tekst voor besmet water inschakelen",
+  "EnableVehicles": "Voertuigen inschakelen",
+  "CarSpawnRate": "Voertuig-spawnrate",
+  "ZombieAttractionMultiplier": "Zombie-aantrekkingsmultiplier",
+  "VehicleEasyUse": "Eenvoudig voertuiggebruik",
+  "InitialGas": "Beginbenzine",
+  "FuelStationGasInfinite": "Onbeperkte benzine bij tankstations",
+  "FuelStationGasMin": "Min. benzine bij tankstations",
+  "FuelStationGasMax": "Max. benzine bij tankstations",
+  "FuelStationGasEmptyChance": "Kans op leeg tankstation",
+  "LockedCar": "Vergrendelde auto",
+  "CarGasConsumption": "Benzineverbruik auto",
+  "CarGeneralCondition": "Algemene staat van de auto",
+  "CarDamageOnImpact": "Autoschade bij impact",
+  "DamageToPlayerFromHitByACar": "Schade aan speler door auto",
+  "TrafficJam": "Verkeersopstopping",
+  "CarAlarm": "Autoalarm",
+  "PlayerDamageFromCrash": "Schade aan speler door crash",
+  "SirenShutoffHours": "Uren tot sirene uit",
+  "ChanceHasGas": "Kans op benzine",
+  "RecentlySurvivorVehicles": "Recent gebruikte overlevendenvoertuigen",
+  "MultiHitZombies": "Meerslag op zombies",
+  "RearVulnerability": "Kwetsbaarheid van achteren",
+  "SirenEffectsZombies": "Sirene beïnvloedt zombies",
+  "AnimalStatsModifier": "Modificator dierstatistieken",
+  "AnimalMetaStatsModifier": "Modificator meta-statistieken van dieren",
+  "AnimalPregnancyTime": "Draagtijd van dieren",
+  "AnimalAgeModifier": "Modificator dierleeftijd",
+  "AnimalMilkIncModifier": "Modificator melktoename",
+  "AnimalWoolIncModifier": "Modificator woltoename",
+  "AnimalRanchChance": "Kans op dierenranch",
+  "AnimalGrassRegrowTime": "Tijd tot gras teruggroei",
+  "AnimalMetaPredator": "Meta-roofdier van dieren",
+  "AnimalMatingSeason": "Paartijd",
+  "AnimalEggHatch": "Eieren uitkomen",
+  "AnimalSoundAttractZombies": "Dierengeluiden trekken zombies aan",
+  "AnimalTrackChance": "Kans op dierensporen",
+  "AnimalPathChance": "Kans op dierenpad",
+  "MaximumRatIndex": "Maximale rattenindex",
+  "DaysUntilMaximumRatIndex": "Dagen tot maximale rattenindex",
+  "MetaKnowledge": "Meta-kennis",
+  "SeeNotLearntRecipe": "Niet-geleerde recepten zien",
+  "MaximumLootedBuildingRooms": "Max. geplunderde kamers",
+  "EnablePoisoning": "Vergiftiging inschakelen",
+  "MaggotSpawn": "Maden-spawn",
+  "LightBulbLifespan": "Levensduur van gloeilampen",
+  "FishAbundance": "Visovervloed",
+  "LevelForMediaXPCutoff": "Niveau voor XP-stop voor media",
+  "LevelForDismantleXPCutoff": "Niveau voor XP-stop bij demonteren",
+  "BloodSplatLifespanDays": "Dagen levensduur bloedspatten",
+  "LiteratureCooldown": "Literatuur-afkoeltijd",
+  "NegativeTraitsPenalty": "Straf voor negatieve eigenschappen",
+  "MinutesPerPage": "Minuten per pagina",
+  "KillInsideCrops": "Gewassen binnen doden",
+  "PlantGrowingSeasons": "Seizoensgroei van planten",
+  "PlaceDirtAboveground": "Aarde boven de grond plaatsen",
+  "FarmingSpeedNew": "Landbouwsnelheid (nieuw)",
+  "FarmingAmountNew": "Landbouwhoeveelheid (nieuw)",
+  "MaximumLooted": "Maximale buit",
+  "DaysUntilMaximumLooted": "Dagen tot maximale buit",
+  "RuralLooted": "Landelijke buit",
+  "MaximumDiminishedLoot": "Maximaal verminderde buit",
+  "DaysUntilMaximumDiminishedLoot": "Dagen tot maximaal verminderde buit",
+  "MuscleStrainFactor": "Spierbelastingfactor",
+  "DiscomfortFactor": "Ongemaksfactor",
+  "WoundInfectionFactor": "Wondinfectiefactor",
+  "NoBlackClothes": "Geen zwarte kleding",
+  "EasyClimbing": "Makkelijk klimmen",
+  "MaximumFireFuelHours": "Max. uren brandstof voor vuur",
+  "FirearmUseDamageChance": "Kans op schade bij vuurwapengebruik",
+  "FirearmNoiseMultiplier": "Geluidmultiplier vuurwapens",
+  "FirearmJamMultiplier": "Jammer-multiplier vuurwapens",
+  "FirearmMoodleMultiplier": "Moodle-multiplier vuurwapens",
+  "FirearmWeatherMultiplier": "Weer-multiplier vuurwapens",
+  "FirearmHeadGearEffect": "Effect van hoofdbescherming op vuurwapens",
+  "ClayLakeChance": "Kans op klei bij meren",
+  "ClayRiverChance": "Kans op klei bij rivieren",
+  "GeneratorTileRange": "Tegelbereik van generator",
+  "GeneratorVerticalPowerRange": "Verticaal bereik van generator",
+  "Basement": "Kelder",
+  "SpawnFrequency": "Spawnfrequentie",
+  "Map": "Kaart",
+  "AllowMiniMap": "Minikaart toestaan",
+  "AllowWorldMap": "Wereldkaart toestaan",
+  "MapAllKnown": "Kaart volledig bekend",
+  "MapNeedsLight": "Kaart heeft licht nodig",
+  "ZombieLore": "Zombie-lore",
+  "Speed": "Snelheid",
+  "SprinterPercentage": "Sprinterpercentage",
+  "Strength": "Kracht",
+  "Toughness": "Taaiheid",
+  "Transmission": "Overdracht",
+  "Mortality": "Sterfte",
+  "Reanimate": "Reanimatie",
+  "Cognition": "Cognitie",
+  "CrawlUnderVehicle": "Onder voertuigen kruipen",
+  "Memory": "Geheugen",
+  "Sight": "Zicht",
+  "Hearing": "Gehoor",
+  "SpottedLogic": "Detectielogica",
+  "ThumpNoChasing": "Bonken zonder achtervolging",
+  "ThumpOnConstruction": "Bonken op constructies",
+  "ActiveOnly": "Alleen actief",
+  "TriggerHouseAlarm": "Huisalarm activeren",
+  "ZombiesDragDown": "Zombies sleuren naar beneden",
+  "ZombiesCrawlersDragDown": "Kruipende zombies sleuren naar beneden",
+  "ZombiesFenceLunge": "Zombies springen over hekken",
+  "ZombiesArmorFactor": "Pantserfactor van zombies",
+  "ZombiesMaxDefense": "Maximale zombieverdediging",
+  "ChanceOfAttachedWeapon": "Kans op aangehecht wapen",
+  "ZombiesFallDamage": "Valkschade van zombies",
+  "DisableFakeDead": "Schakel nep-doden uit",
+  "PlayerSpawnZombieRemoval": "Zombies bij spawn verwijderen",
+  "FenceThumpersRequired": "Zombies nodig om hek te beschadigen",
+  "FenceDamageMultiplier": "Schademultiplier hek",
+  "ZombieConfig": "Zombieconfiguratie",
+  "PopulationMultiplier": "Populatiemultiplier",
+  "PopulationStartMultiplier": "Startpopulatiemultiplier",
+  "PopulationPeakMultiplier": "Populatiepiek-multiplier",
+  "PopulationPeakDay": "Dag van populatiepiek",
+  "RespawnHours": "Respawn-uren",
+  "RespawnUnseenHours": "Uren ongezien voor respawn",
+  "RespawnMultiplier": "Respawn-multiplier",
+  "RedistributeHours": "Herverdeeluren",
+  "FollowSoundDistance": "Afstand geluid volgen",
+  "RallyGroupSize": "Groepsgrootte",
+  "RallyGroupSizeVariance": "Variatie groepsgrootte",
+  "RallyTravelDistance": "Reisafstand groep",
+  "RallyGroupSeparation": "Groepsscheiding",
+  "RallyGroupRadius": "Groepsradius",
+  "ZombiesCountBeforeDelete": "Zombies voor verwijderen",
+  "MultiplierConfig": "Multiplicatorconfiguratie",
+  "Global": "Globaal",
+  "GlobalToggle": "Globaal schakelen",
+  "Fitness": "Fitheid",
+  "Sprinting": "Sprinten",
+  "Lightfoot": "Lichtvoetig",
+  "Nimble": "Behendig",
+  "Sneak": "Sluipen",
+  "Axe": "Bijl",
+  "Blunt": "Stomp",
+  "SmallBlunt": "Korte stomp",
+  "LongBlade": "Lange lemmet",
+  "SmallBlade": "Korte lemmet",
+  "Spear": "Speer",
+  "Maintenance": "Onderhoud",
+  "Woodwork": "Timmerwerk",
+  "Cooking": "Koken",
+  "Doctor": "Geneeskunde",
+  "Electricity": "Elektriciteit",
+  "MetalWelding": "Metaallassen",
+  "Mechanics": "Mechanica",
+  "Tailoring": "Kleermakerij",
+  "Aiming": "Richten",
+  "Reloading": "Herladen",
+  "Fishing": "Vissen",
+  "Trapping": "Vallen zetten",
+  "PlantScavenging": "Planten verzamelen",
+  "FlintKnapping": "Vuursteen bewerken",
+  "Masonry": "Metselwerk",
+  "Pottery": "Pottenbakken",
+  "Carving": "Snijwerk",
+  "Husbandry": "Veeteelt",
+  "Tracking": "Opsporen",
+  "Blacksmith": "Smeden",
+  "Butchering": "Slachten",
+  "Glassmaking": "Glasbewerking",
+  "comments": {
+    "Zombies": [
+      "Dit past de optie \\Population Multiplier\\ aan. ",
+      "1 = Krankzinnig",
+      "2 = Veel",
+      "3 = Normaal",
+      "4 = Weinig",
+      "5 = Geen",
+      "6 = Geen"
+    ],
+    "Distribution": [
+      "Hoe zombies over de kaart worden verdeeld. ",
+      "1 = Gefocust op stedelijk gebied",
+      "2 = Gelijkmatig"
+    ],
+    "ZombieVoronoiNoise": [
+      "Bepaalt of er enige willekeurige verdeling wordt toegepast op de zombiedistributie."
+    ],
+    "ZombieRespawn": [
+      "Een zone moet niet bezocht worden voor de geselecteerde tijd om zombies te laten respawnen. ",
+      "1 = Normaal",
+      "2 = Weinig",
+      "3 = Geen",
+      "4 = Geen"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Standaard = 1 uur, 30 minuten",
+      "1 = 15 minuten",
+      "2 = 30 minuten",
+      "3 = 1 uur",
+      "4 = 1 uur, 30 minuten",
+      "5 = 2 uren",
+      "6 = 3 uren",
+      "7 = 4 uren",
+      "8 = 5 uren",
+      "9 = 6 uren",
+      "10 = 7 uren",
+      "11 = 8 uren",
+      "12 = 9 uren",
+      "13 = 10 uren",
+      "14 = 11 uren",
+      "15 = 12 uren",
+      "16 = 13 uren",
+      "17 = 14 uren",
+      "18 = 15 uren",
+      "19 = 16 uren",
+      "20 = 17 uren",
+      "21 = 18 uren",
+      "22 = 19 uren",
+      "23 = 20 uren",
+      "24 = 21 uren",
+      "25 = 22 uren",
+      "26 = 23 uren",
+      "27 = Realtime"
+    ],
+    "StartMonth": [
+      "Maand waarin het spel begint. ",
+      "1 = Januari",
+      "2 = Februari",
+      "3 = Maart",
+      "4 = April",
+      "5 = Mei",
+      "6 = Juni",
+      "7 = Juli",
+      "8 = Augustus",
+      "9 = September",
+      "10 = Oktober",
+      "11 = November",
+      "12 = December"
+    ],
+    "StartDay": [
+      "Dag van de maand waarin de spelen beginnen."
+    ],
+    "StartTime": [
+      "Uur van de dag waarop het spel begint. ",
+      "1 = 7:00",
+      "2 = 9:00",
+      "3 = 12:00",
+      "4 = 14:00",
+      "5 = 17:00",
+      "6 = 21:00",
+      "7 = 0:00",
+      "8 = 2:00",
+      "9 = 5:00"
+    ],
+    "DayNightCycle": [
+      "Of het tijdstip van de dag op natuurlijke wijze verandert, of dat het altijd dag/nacht is. ",
+      "1 = Weinig",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Of het weer nu verandert of in één staat blijft. ",
+      "1 = Weinig",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Of mist van nature voorkomt, nooit voorkomt of altijd aanwezig is. ",
+      "1 = Weinig",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Hoe lang na de standaard startdatum (9 juli 1993) zullen sanitaire voorzieningen (bijv. gootstenen) niet langer oneindige bronnen van water zijn. ",
+      "1 = Direct",
+      "2 = 0-30 dagen",
+      "3 = 0-2 maanden",
+      "4 = 0-6 maanden",
+      "5 = 0-1 jaar",
+      "6 = 0-5 jaren",
+      "7 = 2-6 maanden",
+      "8 = 6-12 maanden",
+      "9 = Uit"
+    ],
+    "ElecShut": [
+      "Hoe lang na de standaard startdatum (9 juli 1993) duurt het voordat de elektriciteit in de wereld voorgoed wordt uitgeschakeld. ",
+      "1 = Direct",
+      "2 = 0-30 dagen",
+      "3 = 0-2 maanden",
+      "4 = 0-6 maanden",
+      "5 = 0-1 jaar",
+      "6 = 0-5 jaren",
+      "7 = 2-6 maanden",
+      "8 = 6-12 maanden",
+      "9 = Uit"
+    ],
+    "AlarmDecay": [
+      "Hoe lang de alarmbatterijen meegaan nadat de stroom is uitgeschakeld. ",
+      "1 = Direct",
+      "2 = 0-30 dagen",
+      "3 = 0-2 maanden",
+      "4 = 0-6 maanden",
+      "5 = 0-1 jaar",
+      "6 = 0-5 jaren"
+    ],
+    "WaterShutModifier": [
+      "Hoe lang na de standaard startdatum (9 juli 1993) zullen sanitaire voorzieningen (bijv. gootstenen) niet langer oneindige bronnen van water zijn. "
+    ],
+    "ElecShutModifier": [
+      "Hoe lang na de standaard startdatum (9 juli 1993) duurt het voordat de elektriciteit in de wereld voorgoed wordt uitgeschakeld. "
+    ],
+    "AlarmDecayModifier": [
+      "Hoe lang de alarmbatterijen meegaan nadat de stroom is uitgeschakeld. "
+    ],
+    "FoodLootNew": [
+      "Al het voedsel dat kan rotten of bederven. "
+    ],
+    "LiteratureLootNew": [
+      "Alle artikelen die gelezen kunnen worden, inclusief flyers Min: 0,00 Max: 4,00 Standaard: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Medicijnen, verbandmiddelen en EHBO-instrumenten. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Standaard: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Ingeblikt en gedroogd voedsel, dranken. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Standaard: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Max: 4.00 Standaard: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Losse munitie, dozen en tijdschriften. "
+    ],
+    "MechanicsLootNew": [
+      "Voertuigonderdelen en het gereedschap dat nodig is om deze te installeren. "
+    ],
+    "OtherLootNew": [
+      "Al het andere. "
+    ],
+    "ClothingLootNew": [
+      "Alle draagbare items die geen containers zijn. "
+    ],
+    "ContainerLootNew": [
+      "Rugzakken en andere draagbare/uitrustbare containers, bijv. "
+    ],
+    "KeyLootNew": [
+      "Sleutels voor gebouwen/auto's, sleutelhangers en sloten. "
+    ],
+    "MediaLootNew": [
+      "VHS-banden en cd's. "
+    ],
+    "MementoLootNew": [
+      "Spiffo-items, knuffels en andere verzamelbare souvenirs, bijvoorbeeld. "
+    ],
+    "CookwareLootNew": [
+      "Voorwerpen die bij het koken worden gebruikt, inclusief voorwerpen (bijv. messen) die wapens kunnen zijn. "
+    ],
+    "MaterialLootNew": [
+      "Voorwerpen en wapens die worden gebruikt als ingrediënten voor knutselen of bouwen. "
+    ],
+    "FarmingLootNew": [
+      "Voorwerpen en wapens die worden gebruikt in zowel de dierlijke als de plantaardige landbouw, zoals zaden, troffels of schoppen. "
+    ],
+    "ToolLootNew": [
+      "Voorwerpen en wapens die Gereedschap zijn, maar niet in andere categorieën passen, zoals Mechanica of Landbouw. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Het wordt aanbevolen dit NIET te wijzigen. "
+    ],
+    "LootItemRemovalList": [
+      "Een door komma's gescheiden lijst met itemtypen die niet als gewone buit verschijnen."
+    ],
+    "RemoveStoryLoot": [
+      "Indien ingeschakeld, zullen items op de buititemverwijderingslijst, of waarvan de zeldzaamheid is ingesteld op 'Geen', niet verschijnen in willekeurige wereldverhalen."
+    ],
+    "RemoveZombieLoot": [
+      "Indien ingeschakeld, zullen items op de buititemverwijderingslijst, of waarvan de zeldzaamheid is ingesteld op 'Geen', niet worden gedragen door of gehecht aan zombies."
+    ],
+    "ZombiePopLootEffect": [
+      "Als deze groter is dan 0, wordt de hoeveelheid buit verhoogd in verhouding tot het aantal nabijgelegen zombies, waarbij het effect met dit aantal wordt vermenigvuldigd. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Standaard: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Standaard: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Standaard: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Standaard: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Standaard: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Standaard: 3.00"
+    ],
+    "Temperature": [
+      "De mondiale temperatuur. ",
+      "1 = Erg koud",
+      "2 = Koud",
+      "3 = Weinig",
+      "4 = Warm",
+      "5 = Erg warm"
+    ],
+    "Rain": [
+      "Hoe vaak het regent. ",
+      "1 = Erg droog",
+      "2 = Droog",
+      "3 = Weinig",
+      "4 = Regenachtig",
+      "5 = Erg regenachtig"
+    ],
+    "ErosionSpeed": [
+      "Aantal dagen voordat het erosiesysteem (dat wijnstokken, lang gras, nieuwe bomen etc. aan de wereld toevoegt) een groei van 100% zal bereiken. ",
+      "1 = Erg snel (20 dagen)",
+      "2 = Snel (50 dagen)",
+      "3 = Normaal (100 dagen)",
+      "4 = Langzaam (200 dagen)",
+      "5 = Erg langzaam (500 dagen)"
+    ],
+    "ErosionDays": [
+      "Voor een aangepaste erosiesnelheid. "
+    ],
+    "Farming": [
+      "Snelheid waarmee de vaardigheid Landbouw in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "CompostTime": [
+      "Hoe lang het duurt voordat voedsel is afgebroken in een composteerder. ",
+      "1 = 1 Week",
+      "2 = 2 Weken",
+      "3 = 3 Weken",
+      "4 = 4 Weken",
+      "5 = 6 Weken",
+      "6 = 8 Weken",
+      "7 = 10 Weken",
+      "8 = 12 Weken"
+    ],
+    "StatsDecrease": [
+      "Hoe snel honger, dorst en vermoeidheid vermindert. Standaard = Weinig",
+      "1 = Erg Snel",
+      "2 = Snel",
+      "3 = Weinig",
+      "4 = Sloom",
+      "5 = Erg Sloom"
+    ],
+    "NatureAbundance": [
+      "Heeft invloed op de moeilijkheidsgraad van vissen/zoeken. Standaard = Weinig",
+      "1 = Erg slecht",
+      "2 = Slecht",
+      "3 = Weinig",
+      "4 = Overvloedig",
+      "5 = Erg overvloedig"
+    ],
+    "Alarm": [
+      "Hoe waarschijnlijk het is dat de speler een huisalarm activeert wanneer hij in een nieuw huis inbreekt. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "LockedHouses": [
+      "Geef aan hoe vaak de deuren/ramen van huizen opslot zitten. Standaard = Erg Soms",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "StarterKit": [
+      "Begin met een rugzak en een aantal handige gereedschappen."
+    ],
+    "Nutrition": [
+      "Voedingswaarde van eten heeft effect op je karakter ."
+    ],
+    "FoodRotSpeed": [
+      "Geef aan hoe snel het voedsel verrot in en buiten de koelkast. Standaard = Weinig",
+      "1 = Erg Snel",
+      "2 = Snel",
+      "3 = Weinig",
+      "4 = Sloom",
+      "5 = Erg Sloom"
+    ],
+    "FridgeFactor": [
+      "Geef aan hoe effectief een koelkast is. Standaard = Weinig",
+      "1 = Erg laag",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Wanneer > 0, zal de buit niet respawnen in de zones die bezocht worden binnen dit aantal aan uren. "
+    ],
+    "HoursForLootRespawn": [
+      "Wanneer deze groter is dan 0, zullen na X uur alle containers in steden en caravanparken in de wereld buit respawnen. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Containers met een aantal items groter of gelijk aan deze instelling zullen niet respawnen. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Voorwerpen zullen niet respawnen in gebouwen die spelers hebben gebarricadeerd of ingebouwd."
+    ],
+    "WorldItemRemovalList": [
+      "Een door komma's gescheiden lijst met itemtypen die na HoursForWorldItemRemoval-uren worden verwijderd."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Aantal uren sinds een item op de grond is gevallen voordat het wordt verwijderd.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Indien waar, worden alle items *niet* in WorldItemRemovalList verwijderd."
+    ],
+    "TimeSinceApo": [
+      "Hoe lang na het einde van de wereld om te beginnen. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Beïnvloed hoeveel water de plant elke dag verliest en de kans op ziektes. Standaard = Weinig",
+      "1 = Veel",
+      "2 = Normaal",
+      "3 = Weinig",
+      "4 = Geen",
+      "5 = Erg laag"
+    ],
+    "PlantAbundance": [
+      "Beïnvloed hoeveel groenten er aan een plant groeien. Standaard = Weinig",
+      "1 = Erg slecht",
+      "2 = Slecht",
+      "3 = Weinig",
+      "4 = Overvloedig",
+      "5 = Erg overvloedig"
+    ],
+    "EndRegen": [
+      "Herstel van vermoeidheid na het uitvoeren van handelingen. ",
+      "1 = Erg Snel",
+      "2 = Snel",
+      "3 = Weinig",
+      "4 = Sloom",
+      "5 = Erg Sloom"
+    ],
+    "Helicopter": [
+      "Hoe vaak helikopters overvliegen. Standaard = Eenmalig",
+      "1 = Nooit",
+      "2 = Eenmalig",
+      "3 = Soms",
+      "4 = Soms"
+    ],
+    "MetaEvent": [
+      "Hoe vaak zombie-aantrekkende gebeurtenissen plaatsvinden, zoals schoten en overvliegende helikopters. Standaard = Soms",
+      "1 = Nooit",
+      "2 = Soms",
+      "3 = Soms"
+    ],
+    "SleepingEvent": [
+      "Besturen evenementen gedurende de nachtrust van de speler. Standaard = Nooit",
+      "1 = Nooit",
+      "2 = Soms",
+      "3 = Soms"
+    ],
+    "GeneratorFuelConsumption": [
+      "Heeft invloed op hoeveel brandstof een generator gebruikt. Als het geen brandstof nodig heeft, zet je het op 0.0 Min: 0.00 Max: 100.00 Standaard: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Vermeerder/verminder de kans dat een aggregaat op de map spawnt. Standaard = Zeldzaam",
+      "1 = Extreem Zeldzaam",
+      "2 = Zeldzaam",
+      "3 = Extreem Zeldzaam",
+      "4 = Zeldzaam",
+      "5 = Weinig",
+      "6 = Gewoon",
+      "7 = Overvloedig"
+    ],
+    "AnnotatedMapChance": [
+      "Bepaalt hoe vaak je betekende kaarten van gevallen overledenen vindt. Standaard = Soms",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "CharacterFreePoints": [
+      "Voegt gratis punten toe bij het maken van je karakter. Min: -100 Max: 100 Standaard: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Geeft door spelers gebouwde constructies extra hitpoints, zodat ze beter bestand zijn tegen zombieschade. ",
+      "1 = Erg laag",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel"
+    ],
+    "NightDarkness": [
+      "Het niveau van de omgevingsverlichting 's nachts. ",
+      "1 = Pikdonker",
+      "2 = Donker",
+      "3 = Weinig",
+      "4 = Helder"
+    ],
+    "NightLength": [
+      "De tijd van zonsondergang tot zonsopgang. ",
+      "1 = Altijd nacht",
+      "2 = Lang",
+      "3 = Weinig",
+      "4 = Kort",
+      "5 = Altijd dag"
+    ],
+    "BoneFracture": [
+      "Schakelt het breken van botten in/uit."
+    ],
+    "InjurySeverity": [
+      "Bepaalt hoeveel invloed verwondingen op je lichaam hebben, en hoe lang het duurt voordat zij genezen. Standaard = Weinig",
+      "1 = Geen",
+      "2 = Weinig",
+      "3 = Normaal"
+    ],
+    "HoursForCorpseRemoval": [
+      "Hoe lang, in uren, voordat dode zombielichamen van de wereld verdwijnen.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Bepaalt de hoeveelheid invloed lijken hebben op de emotie en gezondheid van je karakter. Standaard = Weinig",
+      "1 = Geen",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Krankzinnig"
+    ],
+    "ZombieHealthImpact": [
+      "Of nabijgelegen \"levende\" zombies dezelfde impact hebben op de gezondheid en emoties van de speler."
+    ],
+    "BloodLevel": [
+      "Hoeveel bloed wordt er door verwondingen op vloeren en muren gespoten. ",
+      "1 = Geen",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Ultra viezigheid"
+    ],
+    "ClothingDegradation": [
+      "Bepaalt hoe lang het duurt voordat kleding vuil raakt, of bebloed. (kan uitgeschakeld worden) Standaard = Weinig",
+      "1 = Uit",
+      "2 = Sloom",
+      "3 = Weinig",
+      "4 = Snel"
+    ],
+    "FireSpread": [
+      "Als de brand zich verspreidt bij het ontstaan."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Aantal in-game dagen voordat bedorven voedsel van de kaart wordt verwijderd.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Indien ingeschakeld, werken generatoren op buitentegels.  "
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Standaard = Weinig",
+      "1 = Weinig",
+      "2 = Matig",
+      "3 = Geen",
+      "4 = Geen"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Standaard = Weinig",
+      "1 = Weinig",
+      "2 = Matig",
+      "3 = Geen"
+    ],
+    "EnableSnowOnGround": [
+      "Als er zich sneeuw op de grond zal ophopen.  "
+    ],
+    "AttackBlockMovements": [
+      "Schakel deze optie uit om ongehinderd te lopen tijdens melee aanvallen."
+    ],
+    "SurvivorHouseChance": [
+      "De kans om willekeurige gebouwen op de kaart te vinden (bijvoorbeeld uitgebrande huizen, huizen met buitvoorraden of dode lichamen). ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Probeert het altijd"
+    ],
+    "VehicleStoryChance": [
+      "De kans dat er road stories (bijvoorbeeld wegversperringen van de politie) ontstaan. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Probeert het altijd"
+    ],
+    "ZoneStoryChance": [
+      "De kans dat verhalen die specifiek zijn voor kaartzones (bijvoorbeeld een camping in een bos) spawnen. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Probeert het altijd"
+    ],
+    "AllClothesUnlocked": [
+      "Hiermee kun je uit elk kledingstuk in het spel kiezen wanneer je je personage aanpast"
+    ],
+    "EnableTaintedWaterText": [
+      "Als het water besmet is, wordt er een waarschuwing weergegeven die dit als zodanig markeert."
+    ],
+    "EnableVehicles": [
+      "Als voertuigen zullen spawnen."
+    ],
+    "CarSpawnRate": [
+      "Hoe vaak voertuigen op de kaart kunnen worden ontdekt. ",
+      "1 = Geen",
+      "2 = Erg laag",
+      "3 = Geen",
+      "4 = Weinig",
+      "5 = Normaal"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Gebruik dit om het geluid van de motor te vermeerderen of te verminderen Min: 0.00 Max: 100.00 Standaard: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Wanneer true, alle voertuigen zijn open met maximale benzine en minimale motor luidheid."
+    ],
+    "InitialGas": [
+      "Bepaalt hoe vol een gastank is in een auto. Standaard = Geen",
+      "1 = Erg laag",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel",
+      "6 = Vol"
+    ],
+    "FuelStationGasInfinite": [
+      "Indien ingeschakeld, zullen benzinepompen nooit zonder brandstof komen te zitten"
+    ],
+    "FuelStationGasMin": [
+      "De minimale hoeveelheid benzine die in benzinepompen kan spawnen. "
+    ],
+    "FuelStationGasMax": [
+      "De maximale hoeveelheid benzine die in benzinepompen kan spawnen. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "De kans, uitgedrukt in procenten, dat individuele benzinepompen aanvankelijk geen brandstof meer hebben. "
+    ],
+    "LockedCar": [
+      "Hoe waarschijnlijk is het dat auto’s op slot gaan Standaard = Zeldzaam",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "CarGasConsumption": [
+      "Hoe benzine-hongerige voertuigen zijn. "
+    ],
+    "CarGeneralCondition": [
+      "De conditie waarin een auto zal spawnen. Standaard = Geen",
+      "1 = Erg laag",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel"
+    ],
+    "CarDamageOnImpact": [
+      "Bepaalt het aantal schade dat een auto krijg na een crash. Standaard = Weinig",
+      "1 = Erg laag",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Schade verkregen voor de speler door middel van een auto botsing. Standaard = Geen",
+      "1 = Geen",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal",
+      "5 = Veel"
+    ],
+    "TrafficJam": [
+      "Als er files op de hoofdwegen ontstaan, bestaande uit vernielde auto's."
+    ],
+    "CarAlarm": [
+      "Hoe vaak ontdekte voertuigen actieve alarmen hebben. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "PlayerDamageFromCrash": [
+      "In- of uitschakelen speler schade doormiddel van auto ongeluk."
+    ],
+    "SirenShutoffHours": [
+      "Aantal uren voordat een sirene stopt met spelen.\n0.0 betekent speel tot de batterij leeg is. Min: 0.00 Max: 168.00 Standaard: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Bepaalt de kans voor het vinden van een voertuig met benzine. Standaard = Geen",
+      "1 = Geen",
+      "2 = Weinig",
+      "3 = Normaal"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Of een speler een auto kan ontdekken die is onderhouden nadat de Knox-infectie toesloeg. ",
+      "1 = Geen",
+      "2 = Geen",
+      "3 = Weinig",
+      "4 = Normaal"
+    ],
+    "MultiHitZombies": [
+      "Melee wapens kunnen meerdere zombies raken als deze optie geselecteerd is."
+    ],
+    "RearVulnerability": [
+      "Kans op een zombie beet wanneer deze van achteren aanvalt. Standaard = Normaal",
+      "1 = Geen",
+      "2 = Medium",
+      "3 = Normaal"
+    ],
+    "SirenEffectsZombies": [
+      "Als zombies richting het geluid van voertuigsirenes gaan."
+    ],
+    "AnimalStatsModifier": [
+      "Snelheid waarmee de statistieken van dieren (honger, dorst etc.) afnemen. ",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Snelheid waarmee de statistieken van dieren (honger, dorst enz.) afnemen in meta. ",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalPregnancyTime": [
+      "Hoe lang zullen dieren drachtig zijn voordat ze gaan bevallen. ",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalAgeModifier": [
+      "Snelheid waarmee dieren ouder worden. ",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalMilkIncModifier": [
+      "Standaard = Snel",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalWoolIncModifier": [
+      "Standaard = Snel",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalRanchChance": [
+      "De kans om dieren op de boerderij te vinden. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Altijd"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Het aantal uren dat het gras teruggroeit nadat het door een dier is opgegeten of door de speler is afgesneden. "
+    ],
+    "AnimalMetaPredator": [
+      "Als een metavos (dat wil zeggen: niet echt zichtbaar in het spel) uw kippen kan aanvallen als de deur van het hok 's nachts open blijft staan."
+    ],
+    "AnimalMatingSeason": [
+      "Als dieren met een paarseizoen dit respecteren.  "
+    ],
+    "AnimalEggHatch": [
+      "Hoe lang duurt het voordat babydieren uit de eieren komen? ",
+      "1 = Ultra Fast",
+      "2 = Erg Snel",
+      "3 = Snel",
+      "4 = Weinig",
+      "5 = Sloom",
+      "6 = Erg Sloom"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Als dit waar is, zullen dierenoproepen nabijgelegen zombies aantrekken."
+    ],
+    "AnimalTrackChance": [
+      "De kans dat dieren sporen achterlaten. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "AnimalPathChance": [
+      "De kans om een ​​pad te creëren waar op dieren kan worden gejaagd. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms"
+    ],
+    "MaximumRatIndex": [
+      "De frequentie en intensiteit van bijv. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Hoe lang het duurt voordat de Maximale Ongedierte Index wordt bereikt. "
+    ],
+    "MetaKnowledge": [
+      "Als een stukje media niet volledig is gezien of gelezen, bepaalt deze instelling of het volledig wordt weergegeven, weergegeven als \"???\", of volledig verborgen is. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Als dit waar is, kun je alle recepten zien die je met een station kunt maken, zelfs als je ze nog niet hebt geleerd."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Als een gebouw meer dan dit aantal kamers heeft, wordt het niet geplunderd. "
+    ],
+    "EnablePoisoning": [
+      "Als gif aan voedsel kan worden toegevoegd. ",
+      "1 = Aan",
+      "2 = Uit",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Als/wanneer maden in lijken kunnen spawnen. ",
+      "1 = In en rond lichamen",
+      "2 = In Bodies Only",
+      "3 = Nooit"
+    ],
+    "LightBulbLifespan": [
+      "Hoe hoger de waarde, hoe langer de gloeilampen meegaan voordat ze kapot gaan.  "
+    ],
+    "FishAbundance": [
+      "De overvloed aan vis in rivieren en meren. ",
+      "1 = Erg slecht",
+      "2 = Slecht",
+      "3 = Weinig",
+      "4 = Overvloedig",
+      "5 = Erg overvloedig"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Als een vaardigheid op dit niveau of hoger ligt, bieden televisie/VHS/andere media er geen XP voor. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Als een vaardigheid op dit niveau of hoger ligt, levert het slopen van meubilair geen XP op voor de betreffende vaardigheid. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Aantal dagen voordat oude bloedspatten worden verwijderd. "
+    ],
+    "LiteratureCooldown": [
+      "Aantal dagen voordat men voordeel kan halen uit het lezen van eerder gelezen literatuuritems. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Als er een afnemend rendement is op de bonuseigenschapspunten die worden verkregen door het selecteren van meerdere negatieve eigenschappen. ",
+      "1 = Geen",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 strafpunt voor elke negatieve eigenschap die na de eerste wordt geselecteerd"
+    ],
+    "MinutesPerPage": [
+      "Het aantal in-game minuten dat nodig is om één pagina van een vaardighedenboek te lezen. "
+    ],
+    "KillInsideCrops": [
+      "Wanneer ingeschakeld, zullen gewassen en kruiden die in gebouwen worden geteeld, sterven. "
+    ],
+    "PlantGrowingSeasons": [
+      "Indien ingeschakeld, wordt de groei van planten beïnvloed door seizoenen."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Het wordt aanbevolen dit NIET te wijzigen. "
+    ],
+    "FarmingSpeedNew": [
+      "De snelheid van plantengroei. "
+    ],
+    "FarmingAmountNew": [
+      "De overvloed aan geoogste gewassen. "
+    ],
+    "MaximumLooted": [
+      "De kans dat een gebouw al wordt geplunderd als het wordt gevonden. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Hoe lang het duurt voordat de maximale kans op geroofde gebouwen wordt bereikt. "
+    ],
+    "RuralLooted": [
+      "De kans dat elk landelijk gebouw al wordt geplunderd als het wordt gevonden. "
+    ],
+    "MaximumDiminishedLoot": [
+      "De maximale buit die niet zal spawnen wanneer het aantal dagen tot de maximale verminderde buit is bereikt. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Hoe lang het duurt voordat het maximale verminderde buitpercentage wordt bereikt. "
+    ],
+    "MuscleStrainFactor": [
+      "Functioneert als een vermenigvuldiger bij het uitoefenen van spierspanning door zwaaiende wapens of het dragen van zware lasten. "
+    ],
+    "DiscomfortFactor": [
+      "Functioneert als een vermenigvuldiger bij het toepassen van ongemak door versleten items. "
+    ],
+    "WoundInfectionFactor": [
+      "Als er meer dan nul schade kan worden veroorzaakt door ernstige wondinfecties. "
+    ],
+    "NoBlackClothes": [
+      "Als echte kleding met willekeurige tinten niet zo donker zal zijn dat het vrijwel zwart is."
+    ],
+    "EasyClimbing": [
+      "Schakelt de faalkansen uit bij het beklimmen van staalkabels of over muren."
+    ],
+    "MaximumFireFuelHours": [
+      "Het maximale aantal uren brandstof dat in een kampvuur, houtkachel etc. geplaatst kan worden. Min: 1 Max: 168 Standaard: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Vervangt het Chance-To-Hit-mechanisme door Chance-To-Damage-berekeningen.  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "Een vermenigvuldiger voor de afstand waarop zombies geweerschoten kunnen horen. "
+    ],
+    "FirearmJamMultiplier": [
+      "Vermenigvuldiger voor de kans op vastlopen van vuurwapens. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Vermenigvuldiger voor Moodle-effecten op de trefferkans. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplier voor de effecten van het weer (wind, regen en mist) op de trefferkans. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Zorg ervoor dat hoofddeksels, zoals lasmaskers, de kans op een treffer beïnvloeden"
+    ],
+    "ClayLakeChance": [
+      "Kans om van een onverharde vloer een kleivloer te maken. "
+    ],
+    "ClayRiverChance": [
+      "Kans om van een onverharde vloer een kleivloer te maken. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Standaard: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Hoeveel niveaus zowel boven als onder een generator kan deze van elektriciteit voorzien. "
+    ],
+    "SpawnFrequency": [
+      "Hoe vaak kelders op willekeurige locaties verschijnen. ",
+      "1 = Nooit",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Altijd"
+    ],
+    "AllowMiniMap": [
+      "Indien ingeschakeld, zal een minikaartvenster beschikbaar zijn."
+    ],
+    "AllowWorldMap": [
+      "Indien ingeschakeld, is de wereldkaart toegankelijk."
+    ],
+    "MapAllKnown": [
+      "Indien ingeschakeld, wordt de wereldkaart volledig ingevuld bij het starten van het spel."
+    ],
+    "MapNeedsLight": [
+      "Indien ingeschakeld, kunnen kaarten niet worden gelezen tenzij er een lichtbron beschikbaar is."
+    ],
+    "Speed": [
+      "Hoe snel zombies bewegen. ",
+      "1 = Sprinters",
+      "2 = Snelle schuifelaars",
+      "3 = Schuifelaars",
+      "4 = Willekeurig"
+    ],
+    "SprinterPercentage": [
+      "Als Willekeurige snelheid is ingeschakeld, bepaalt dit welk percentage zombies sprinters zijn. "
+    ],
+    "Strength": [
+      "Snelheid waarmee de vaardigheid Kracht in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Toughness": [
+      "De moeilijkheid van het doden van een zombie. ",
+      "1 = Sterk",
+      "2 = Weinig",
+      "3 = Breekbaar",
+      "4 = Willekeurig"
+    ],
+    "Transmission": [
+      "Hoe het Knox-virus zich verspreidt. ",
+      "1 = Bloed + slijm",
+      "2 = Iedereen is geïnfecteerd",
+      "3 = Geen",
+      "4 = Geen"
+    ],
+    "Mortality": [
+      "Hoe snel de infectie in werking treedt. ",
+      "1 = Direct",
+      "2 = 0-30 seconden",
+      "3 = 0-1 minuten",
+      "4 = 0-12 uren",
+      "5 = 2-3 dagen",
+      "6 = 1-2 weken",
+      "7 = Nooit"
+    ],
+    "Reanimate": [
+      "Hoe snel geïnfecteerde lijken opstaan ​​als zombies. ",
+      "1 = Direct",
+      "2 = 0-30 seconden",
+      "3 = 0-1 minuten",
+      "4 = 0-12 uren",
+      "5 = 2-3 dagen",
+      "6 = 1-2 weken"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Standaard = Basis navigatie",
+      "1 = Navigeren + deuren gebruiken",
+      "2 = Navigeren",
+      "3 = Basis navigatie",
+      "4 = Willekeurig"
+    ],
+    "CrawlUnderVehicle": [
+      "Hoe vaak zombies onder geparkeerde voertuigen kunnen kruipen. ",
+      "1 = Crawlers Only",
+      "2 = Extreem Zeldzaam",
+      "3 = Zeldzaam",
+      "4 = Soms",
+      "5 = Soms",
+      "6 = Erg Soms",
+      "7 = Altijd"
+    ],
+    "Memory": [
+      "Hoe lang zombies zich een speler herinneren nadat ze hem hebben gezien of gehoord. ",
+      "1 = Lang",
+      "2 = Weinig",
+      "3 = Kort",
+      "4 = Geen",
+      "5 = Willekeurig",
+      "6 = Willekeurig tussen Normaal en Geen"
+    ],
+    "Sight": [
+      "Zombiezichtradius. ",
+      "1 = Arend",
+      "2 = Weinig",
+      "3 = Slecht",
+      "4 = Willekeurig",
+      "5 = Willekeurig tussen normaal en slecht"
+    ],
+    "Hearing": [
+      "Zombie gehoorradius. ",
+      "1 = Scherp",
+      "2 = Weinig",
+      "3 = Slecht",
+      "4 = Willekeurig",
+      "5 = Willekeurig tussen normaal en slecht"
+    ],
+    "SpottedLogic": [
+      "Activeert de nieuwe geavanceerde stealth-mechanica, waarmee je je kunt verstoppen voor zombies achter auto's, waarbij rekening wordt gehouden met eigenschappen en het weer, en nog veel meer."
+    ],
+    "ThumpNoChasing": [
+      "Zombies die de speler niet kunnen hebben deuren, ramen en verdedigingswerken aanvallend tijdens het dolen."
+    ],
+    "ThumpOnConstruction": [
+      "Bepaald aantal zombies, de verdedigingswerken van mensen aanvallen."
+    ],
+    "ActiveOnly": [
+      "Of zombies overdag of 's nachts \"actiever\" zijn.  ",
+      "1 = Beide",
+      "2 = Des nachts ",
+      "3 = Overdag"
+    ],
+    "TriggerHouseAlarm": [
+      "Staat het triggeren van huisalarmen door zombies toe wanneer deze deur de ruiten breekt."
+    ],
+    "ZombiesDragDown": [
+      "Als meerdere aanvallende zombies je naar beneden kunnen slepen en je kunnen doden.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Als kruipende zombies naast een speler bijdragen aan de kans om door een groep zombies naar beneden te worden gesleept en gedood."
+    ],
+    "ZombiesFenceLunge": [
+      "Als zombies de kans krijgen om op je af te komen nadat ze over een hek of door een raam zijn geklommen als je te dichtbij bent."
+    ],
+    "ZombiesArmorFactor": [
+      "Dient als vermenigvuldiger bij het bepalen van de effectiviteit van het pantser dat door zombies wordt gedragen. "
+    ],
+    "ZombiesMaxDefense": [
+      "Het maximale verdedigingspercentage dat gedragen beschermende kleding aan een zombie kan bieden. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Percentage kans op een willekeurig bijgevoegd wapen. "
+    ],
+    "ZombiesFallDamage": [
+      "Hoeveel schade zombies oplopen als ze van hoogte vallen. "
+    ],
+    "DisableFakeDead": [
+      "Of sommige dood uitziende zombies zullen reanimeren en de speler zullen aanvallen. ",
+      "1 = Wereldzombies",
+      "2 = Wereld- en gevechtszombies",
+      "3 = Nooit"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombies zullen niet spawnen waar spelers spawnen. ",
+      "1 = Binnen en rondom het gebouw",
+      "2 = Binnen in het gebouw",
+      "3 = In de kamer",
+      "4 = Zombies kunnen overal spawnen"
+    ],
+    "FenceThumpersRequired": [
+      "Hoeveel zombies zijn er nodig om een ​​hoog hek te beschadigen? "
+    ],
+    "FenceDamageMultiplier": [
+      "Hoe snel zombies hoge hekken beschadigen. "
+    ],
+    "PopulationMultiplier": [
+      "Ingesteld met de populatieoptie \"Zombie Count\", of met een aangepast nummer hier. "
+    ],
+    "PopulationStartMultiplier": [
+      "Een vermenigvuldiger voor de gewenste zombiepopulatie aan het begin van het spel. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Een vermenigvuldiger voor de gewenste zombiepopulatie op de piekdag. "
+    ],
+    "PopulationPeakDay": [
+      "De dag waarop de populatie haar piek bereikt. Min: 1 Max: 365 Standaard: 28"
+    ],
+    "RespawnHours": [
+      "Het aantal uren dat moet verstrijken voordat zombies in een cel kunnen respawnen. "
+    ],
+    "RespawnUnseenHours": [
+      "Het aantal uren dat verstreken moet zijn voordat zombies in een onzichtbaar gebied respawnen. "
+    ],
+    "RespawnMultiplier": [
+      "Het deel van een cels gewenste populatie die kan respawnen na iedere ingestelde respawntijd. Min: 0.00 Max: 1.00 Standaard: 0.10"
+    ],
+    "RedistributeHours": [
+      "Het aantal uren dat moet verstrijken voordat zombies naar lege delen van dezelfde cel migreren. "
+    ],
+    "FollowSoundDistance": [
+      "De afstand die een virtuele zombie zal afleggen bij een gehoord geluid. Min: 10 Max: 1000 Standaard: 100"
+    ],
+    "RallyGroupSize": [
+      "De grootte van groepen die echte zombies vormen als ze niet actief zijn. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Het percentage dat zombiegroepen in grootte kunnen variëren van de standaardwaarde (zowel groter als kleiner).   "
+    ],
+    "RallyTravelDistance": [
+      "De afstand die zombiegroepen afleggen wanneer zij aan het dolen zijn. Min: 5 Max: 50 Standaard: 20"
+    ],
+    "RallyGroupSeparation": [
+      "De afstand tussen zombiegroepen. Min: 5 Max: 25 Standaard: 15"
+    ],
+    "RallyGroupRadius": [
+      "Hoe dichtbij de groep bij haar leider staat. Min: 1 Max: 10 Standaard: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Standaard: 300"
+    ],
+    "Global": [
+      "De snelheid waarmee alle vaardigheden op een hoger niveau komen. "
+    ],
+    "GlobalToggle": [
+      "Indien ingeschakeld, gebruiken alle vaardigheden de Global Multiplier."
+    ],
+    "Fitness": [
+      "Snelheid waarmee de vaardigheid Fitheid in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Sprinting": [
+      "Snelheid waarmee de vaardigheid Sprinten in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Lightfoot": [
+      "Snelheid waarmee de vaardigheid Lichtvoetig in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Nimble": [
+      "Snelheid waarmee de vaardigheid Behendig in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Sneak": [
+      "Snelheid waarmee de vaardigheid Sluipen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Axe": [
+      "Snelheid waarmee de vaardigheid Bijl in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Blunt": [
+      "Snelheid waarmee de vaardigheid Stomp in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "SmallBlunt": [
+      "Snelheid waarmee de vaardigheid Korte stomp in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "LongBlade": [
+      "Snelheid waarmee de vaardigheid Lange lemmet in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "SmallBlade": [
+      "Snelheid waarmee de vaardigheid Korte lemmet in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Spear": [
+      "Snelheid waarmee de vaardigheid Speer in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Maintenance": [
+      "Snelheid waarmee de vaardigheid Onderhoud in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Woodwork": [
+      "Snelheid waarmee de vaardigheid Timmerwerk in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Cooking": [
+      "Snelheid waarmee de vaardigheid Koken in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Doctor": [
+      "Snelheid waarmee de vaardigheid Geneeskunde in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Electricity": [
+      "Snelheid waarmee de vaardigheid Elektriciteit in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "MetalWelding": [
+      "Snelheid waarmee de vaardigheid Metaallassen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Mechanics": [
+      "Snelheid waarmee de vaardigheid Mechanica in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Tailoring": [
+      "Snelheid waarmee de vaardigheid Kleermakerij in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Aiming": [
+      "Snelheid waarmee de vaardigheid Richten in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Reloading": [
+      "Snelheid waarmee de vaardigheid Herladen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Fishing": [
+      "Snelheid waarmee de vaardigheid Vissen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Trapping": [
+      "Snelheid waarmee de vaardigheid Vallen zetten in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "PlantScavenging": [
+      "Snelheid waarmee de vaardigheid Planten verzamelen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "FlintKnapping": [
+      "Snelheid waarmee de vaardigheid Vuursteen bewerken in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Masonry": [
+      "Snelheid waarmee de vaardigheid Metselwerk in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Pottery": [
+      "Snelheid waarmee de vaardigheid Pottenbakken in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Carving": [
+      "Snelheid waarmee de vaardigheid Snijwerk in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Husbandry": [
+      "Snelheid waarmee de vaardigheid Veeteelt in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Tracking": [
+      "Snelheid waarmee de vaardigheid Opsporen in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Blacksmith": [
+      "Snelheid waarmee de vaardigheid Smeden in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Butchering": [
+      "Snelheid waarmee de vaardigheid Slachten in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ],
+    "Glassmaking": [
+      "Snelheid waarmee de vaardigheid Glasbewerking in niveau stijgt. Min: 0.00 Max: 1000.00 Standaard: 1.00"
+    ]
+  }
+}
+
+

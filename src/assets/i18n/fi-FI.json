@@ -49,7 +49,8 @@
       "supportKofi": "Tuki Ko-fissa",
       "resetApp": "Nollaa sovellus",
       "resetAppTooltip": "Palauta ikkunan asetukset ja poista tallennetut tiedot",
-      "myMods": "Omat modit"
+      "myMods": "Omat modit",
+      "server": "Palvelin"
     },
     "filters": {
       "adultLabel": "Sisältää aikuisille suunnattua sisältöä",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Määritä kansiot"
-    }
+    },
+    "loadingLocale": "Ladataan kieltä..."
   },
   "changelog": {
     "title": "Muutosloki",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Uusi ominaisuus",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Lisättiin mahdollisuus työskennellä dedikoidun palvelimen asetustiedostojen kanssa</li><li>README.md päivitetty</li><li>Dokumentaatiosivu päivitetty</li></ul>"
+      },
       "initialRelease": {
         "title": "Ensijulkaisu",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Honu's Project Zomboid Hubin ensimmäinen julkinen versio."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Pienet korjaukset",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Päivittää, minne päivityslinkki ohjaa</li><li>Päivittää versionumeron</li><li>Päivittää README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Pienet korjaukset",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Päivitetään kielituki"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "Työnkulku",
       "data": "Sovelluksen käyttämät tiedot",
       "features": "Ominaisuudet",
+      "server": "Palvelinhallinta",
       "mediaPlayer": "Mediasoitin",
       "logInspector": "Lokin tarkastaja",
       "folderSetup": "Kansion asetukset",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Soittolista</strong> – näyttää havaitut kappaleet ja perussisällönkuvaustiedot (nimi/artisti/albumi, jos saatavilla).",
       "bullet2": "<strong>Toisto</strong> – toisto/tauko plus edellinen/seuraava kappale.",
       "bullet3": "<strong>Haku + äänenvoimakkuus</strong> – selaa kappaletta ja säädä äänenvoimakkuutta/mykistä."
+    },
+    "server": {
+      "title": "Palvelinhallinta",
+      "intro": "Käytä Palvelimet-sivua Project Zomboidin paikallisten palvelintiedostojen hallintaan.",
+      "bullet1": "<strong>Luo</strong> uusi palvelin, jotta oletustiedostot .ini, _SandboxVars.lua, _spawnpoints.lua ja _spawnregions.lua luodaan.",
+      "bullet2": "<strong>Kopioi</strong> olemassa oleva palvelin, jotta sen tiedostot voidaan kopioida uudella nimellä.",
+      "bullet3": "<strong>Muokkaa</strong> INI- ja Sandbox-muuttujia ja päivitä spawnpoints/spawnregions suoraan sovelluksessa."
     },
     "logInspector": {
       "title": "Lokin tarkastaja",
@@ -561,11 +589,13 @@
         "summary": "Virheellinen palvelimen nimi",
         "detailMissing": "Anna palvelimen nimi.",
         "detailInvalidChars": "Palvelimen nimi sisältää virheellisiä tiedostonimimerkkejä.",
-        "detailTrailing": "Palvelimen nimi ei voi päättyä pisteeseen tai välilyöntiin."
+        "detailTrailing": "Palvelimen nimi ei voi päättyä pisteeseen tai välilyöntiin.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Palvelimen nimi on jo olemassa",
-        "detail": "Valitse yksilöllinen palvelimen nimi."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Käyttäjäkansio puuttuu",
@@ -696,6 +726,49 @@
       "noFilePath": "Aseta tiedostopolku lokien lataamista varten.",
       "loadFailed": "Lokitiedoston lataaminen epäonnistui.",
       "clearFailed": "Lokitiedoston tyhjennys epäonnistui."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Peruuttaa",
+      "create": "Create",
+      "editServerVariableTitle": "Muokkaa palvelinmuuttujaa",
+      "editSandboxVariableTitle": "Muokkaa hiekkalaatikkomuuttujaa",
+      "noDescription": "No description available.",
+      "save": "Tallentaa",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "Totta",
+      "falseLabel": "Väärä",
+      "exportServer": "Vie"
     }
   }
 }

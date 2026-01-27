@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "Bate-papo com ferramenta de registro PVP",
+    "PVPLogToolFile": "Arquivo de ferramenta de log PVP",
+    "PauseEmpty": "Pausa vazia",
+    "GlobalChat": "Bate-papo global",
+    "Open": "Abrir",
+    "ServerWelcomeMessage": "Mensagem de boas-vindas do servidor",
+    "ServerImageLoginScreen": "Tela de login da imagem do servidor",
+    "ServerImageLoadingScreen": "Tela de carregamento de imagem do servidor",
+    "ServerImageIcon": "Ícone de imagem do servidor",
+    "AutoCreateUserInWhiteList": "Criação automática de usuário na lista branca",
+    "DisplayUserName": "Exibir nome de usuário",
+    "ShowFirstAndLastName": "Mostrar nome e sobrenome",
+    "SpawnPoint": "Ponto de desova",
+    "SafetySystem": "Sistema de segurança",
+    "ShowSafety": "Mostrar segurança",
+    "SafetyToggleTimer": "Temporizador de alternância de segurança",
+    "SafetyCooldownTimer": "Temporizador de resfriamento de segurança",
+    "SafetyDisconnectDelay": "Atraso de desconexão de segurança",
+    "SpawnItems": "Gerar itens",
+    "DefaultPort": "Porta padrão",
+    "UDPPort": "Porta UDP",
+    "ResetID": "Redefinir ID",
+    "Mods": "Modificações",
+    "Map": "Mapa",
+    "DoLuaChecksum": "Faça a soma de verificação da Lua",
+    "Public": "Público",
+    "PublicName": "Nome Público",
+    "PublicDescription": "Descrição Pública",
+    "MaxPlayers": "Máximo de jogadores",
+    "PingLimit": "Limite de ping",
+    "SafehousePreventsLootRespawn": "Safehouse impede o reaparecimento do saque",
+    "DropOffWhiteListAfterDeath": "Deixar a lista branca após a morte",
+    "NoFire": "Sem fogo",
+    "AnnounceDeath": "Anuncie a morte",
+    "SaveWorldEveryMinutes": "Salve o mundo a cada minuto",
+    "PlayerSafehouse": "Casa segura do jogador",
+    "AdminSafehouse": "Casa segura do administrador",
+    "SafehouseAllowTrepass": "Safehouse permite invasão",
+    "SafehouseAllowFire": "Casa segura permite incêndio",
+    "SafehouseAllowLoot": "Safehouse permite saque",
+    "SafehouseAllowRespawn": "Safehouse permite respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day sobreviveu para reivindicar",
+    "SafeHouseRemovalTime": "Tempo de remoção da casa segura",
+    "SafehouseAllowNonResidential": "Safehouse permite não residencial",
+    "MaxSafezoneSize": "Tamanho máximo da zona segura",
+    "AllowDestructionBySledgehammer": "Permitir destruição por marreta",
+    "SledgehammerOnlyInSafehouse": "Marreta apenas em Safehouse",
+    "WarStartDelay": "Atraso no início da guerra",
+    "WarDuration": "Duração da Guerra",
+    "WarSafehouseHitPoints": "Pontos de vida do esconderijo de guerra",
+    "ServerPlayerID": "ID do jogador do servidor",
+    "RCONPort": "Porta RCON",
+    "RCONPassword": "Senha RCON",
+    "DiscordEnable": "Habilitar discórdia",
+    "DiscordToken": "Token de discórdia",
+    "DiscordChannel": "Canal de discórdia",
+    "DiscordChannelID": "ID do canal de discórdia",
+    "WebhookAddress": "Endereço do webhook",
+    "Password": "Senha",
+    "MaxAccountsPerUser": "Máximo de contas por usuário",
+    "AllowCoop": "Permitir Cooperação",
+    "SleepAllowed": "Sono permitido",
+    "SleepNeeded": "Sono necessário",
+    "KnockedDownAllowed": "Derrubado permitido",
+    "SneakModeHideFromOtherPlayers": "Modo furtivo, ocultado de outros jogadores",
+    "WorkshopItems": "Itens da oficina",
+    "SteamScoreboard": "Placar do Steam",
+    "SteamVAC": "Vapor VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Habilitar voz",
+    "VoiceMinDistance": "Distância mínima de voz",
+    "VoiceMaxDistance": "Distância máxima de voz",
+    "Voice3D": "Voz 3D",
+    "SpeedLimit": "limite de velocidade",
+    "LoginQueueConnectTimeout": "Tempo limite de conexão da fila de login",
+    "server_browser_announced_ip": "Navegador do servidor anunciou ip",
+    "PlayerRespawnWithSelf": "O jogador reaparece sozinho",
+    "PlayerRespawnWithOther": "O jogador reaparece com outro",
+    "FastForwardMultiplier": "Multiplicador de avanço rápido",
+    "DisableSafehouseWhenPlayerConnected": "Desativar Safehouse quando o jogador estiver conectado",
+    "Faction": "Facção",
+    "FactionDaySurvivedToCreate": "O Dia da Facção Sobreviveu para Criar",
+    "FactionPlayersRequiredForTag": "Jogadores de facção necessários para tag",
+    "DisableRadioStaff": "Desativar equipe de rádio",
+    "DisableRadioAdmin": "Desativar administrador de rádio",
+    "DisableRadioGM": "Desativar Rádio GM",
+    "DisableRadioOverseer": "Desativar Supervisor de Rádio",
+    "DisableRadioModerator": "Desativar moderador de rádio",
+    "DisableRadioInvisible": "Desativar rádio invisível",
+    "ClientCommandFilter": "Filtro de comando do cliente",
+    "ClientActionLogs": "Logs de ações do cliente",
+    "PerkLogs": "Registros de benefícios",
+    "ItemNumbersLimitPerContainer": "Limite de números de itens por contêiner",
+    "BloodSplatLifespanDays": "Dias de vida útil de respingos de sangue",
+    "AllowNonAsciiUsername": "Permitir nome de usuário não Ascii",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Remover cadáveres de jogadores na remoção de cadáveres",
+    "TrashDeleteAll": "Lixeira Excluir tudo",
+    "PVPMeleeWhileHitReaction": "Corpo a corpo PVP durante reação de golpe",
+    "MouseOverToSeeDisplayName": "Passe o mouse para ver o nome de exibição",
+    "HidePlayersBehindYou": "Esconda os jogadores atrás de você",
+    "PVPMeleeDamageModifier": "Modificador de dano corpo a corpo PVP",
+    "PVPFirearmDamageModifier": "Modificador de dano de arma de fogo PVP",
+    "CarEngineAttractionModifier": "Modificador de atração de motor de carro",
+    "PlayerBumpPlayer": "Jogador",
+    "MapRemotePlayerVisibility": "Visibilidade do jogador remoto no mapa",
+    "BackupsCount": "Contagem de backups",
+    "BackupsOnStart": "Backups no início",
+    "BackupsPeriod": "Período de backups",
+    "DisableVehicleTowing": "Desativar reboque de veículos",
+    "DisableTrailerTowing": "Desativar reboque de trailer",
+    "DisableBurntTowing": "Desativar reboque queimado",
+    "BadWordListFile": "Arquivo de lista de palavrões",
+    "GoodWordListFile": "Arquivo de lista de boas palavras",
+    "BadWordPolicy": "Política de palavrões",
+    "BadWordReplacement": "Substituição de palavrões",
+    "AntiCheatSafety": "Segurança anti-fraude",
+    "AntiCheatMovement": "Movimento Anti-Cheat",
+    "AntiCheatHit": "Golpe anti-fraude",
+    "AntiCheatPacket": "Pacote antifraude",
+    "AntiCheatPermission": "Permissão anti-fraude",
+    "AntiCheatXP": "Anti-fraude XP",
+    "AntiCheatFire": "Fogo anti-fraude",
+    "AntiCheatSafeHouse": "Casa segura anti-fraude",
+    "AntiCheatRecipe": "Receita anti-fraude",
+    "AntiCheatPlayer": "Jogador anti-fraude",
+    "AntiCheatChecksum": "Soma de verificação anti-fraude",
+    "AntiCheatItem": "Item anti-fraude",
+    "AntiCheatServerCustomization": "Personalização de servidor anti-cheat",
+    "MultiplayerStatisticsPeriod": "Período de estatísticas multijogador",
+    "DisableScoreboard": "Desativar placar",
+    "HideAdminsInPlayerList": "Ocultar administradores na lista de jogadores",
+    "Seed": "Semente",
+    "ChatMessageCharacterLimit": "Limite de caracteres de mensagens de bate-papo",
+    "ChatMessageSlowModeTime": "Tempo do modo lento da mensagem de bate-papo",
+    "comments": {
+"PVP": [
+        "Os jogadores podem ferir e matar outros jogadores"
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "O tempo do jogo é parado quando não há jogadores online"
+      ],
+      "GlobalChat": [
+        "Ativa ou desativa o bate-papo global."
+      ],
+      "Open": [
+        "Os jogadores podem participar sem já ter uma conta na lista de permissões. Se definido como falso, os administradores devem criar manualmente combos de nome de usuário/senha."
+      ],
+      "ServerWelcomeMessage": [
+        "A primeira mensagem de boas-vindas visível no painel de bate-papo. Isso será exibido imediatamente após o login do jogador. Você pode usar cores RGB para alterar a cor da mensagem de boas-vindas. Você também pode usar <LINE> para criar linhas separadas em seu texto. Use: <RGB:1,0,0> Esta mensagem aparecerá em vermelho!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Se ativado, jogadores em modo furtivo ficam ocultos para outros jogadores."
+      ],
+      "ServerImageLoadingScreen": [
+        "Caminho da imagem exibida na tela de carregamento do servidor."
+      ],
+      "ServerImageIcon": [
+        "Caminho da imagem usada como ícone do servidor."
+      ],
+      "ServerImageLoginScreen": [
+        "Caminho da imagem exibida na tela de login do servidor."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Adicione nomes de usuário desconhecidos à lista de permissões quando os jogadores entrarem. Os jogadores fornecerão seu próprio nome de usuário/senha ao ingressar. (Isto é para servidores Open=true)"
+      ],
+      "DisplayUserName": [
+        "Exibe nomes de usuário acima da cabeça do jogador no jogo."
+      ],
+      "ShowFirstAndLastName": [
+        "Exibe o nome e sobrenome acima da cabeça do jogador."
+      ],
+      "SpawnPoint": [
+        "Força cada novo jogador a aparecer nas coordenadas de mapa X,Y,Z. Encontre as coordenadas desejadas em map.projectzomboid.com. (Ignorado quando 0,0,0)"
+      ],
+      "SafetySystem": [
+        "Os jogadores podem entrar e sair do PVP individualmente. Um jogador só pode machucar outro, quando pelo menos um deles estiver no modo PVP - representado pela caveira à esquerda da tela. Quando SafetySystem=false, os jogadores podem se machucar a qualquer momento se o PVP estiver ativado."
+      ],
+      "ShowSafety": [
+        "Exibe um ícone de caveira sobre a cabeça dos jogadores que entraram no modo PVP"
+      ],
+      "SafetyToggleTimer": [
+        "O tempo que leva para um jogador entrar e sair do modo PVP"
+      ],
+      "SafetyCooldownTimer": [
+        "O atraso antes que um jogador possa entrar ou sair do modo PVP novamente, tendo feito isso recentemente"
+      ],
+      "SpawnItems": [
+        "Tipos de itens com os quais novos jogadores aparecem.",
+        "Separe vários tipos de itens com vírgulas.",
+        "Exemplo: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Porta inicial padrão para dados do jogador. Se for UDP, esta é uma das duas portas usadas."
+      ],
+      "ResetID": [
+        "ResetID determina se o servidor passou por uma reinicialização por software. Se este número corresponder ao jogador, o jogador deve criar um novo personagem. Usado em conjunto com PlayerServerID. É altamente recomendável que você faça backup desses IDs em algum lugar"
+      ],
+      "Mods": [
+        "Digite o ID de carregamento do mod aqui. Ele pode ser encontrado em \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Expulsa jogadores em que os arquivos do jogo não correspondem com os do servidor"
+      ],
+      "Public": [
+        "Mostra o servidor no navegador do jogo. (Nota: os servidores habilitados para Steam estão sempre visíveis no navegador do servidor Steam)"
+      ],
+      "PublicName": [
+        "Nome do servidor exibido no navegador do jogo e, se aplicável, no navegador Steam"
+      ],
+      "PublicDescription": [
+        "Descrição exibida no navegador do servidor público do jogo. Digitar",
+        "criará uma nova linha na sua descrição"
+      ],
+      "MaxPlayers": [
+        "Número máximo de jogadores que podem estar no servidor ao mesmo tempo. Isso exclui os administradores.<br>AVISO: a contagem de jogadores do servidor acima de 32 resultará potencialmente, de forma negativa, no fluxo e dessincronização de mapas. Por favor, avance com cuidado."
+      ],
+      "PingLimit": [
+        "Limite de ping, em milissegundos, antes que um jogador seja expulso do servidor. (Definir como 0 para desabilitar)"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Os itens não reaparecerão em edifícios que os jogadores reivindicaram como esconderijo"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Remove as contas de jogadores da lista de permissões após a morte. Isso impede que os jogadores criem um novo personagem após a morte em servidores Open=false"
+      ],
+      "NoFire": [
+        "Todas as formas de fogo são desativadas - exceto fogueiras"
+      ],
+      "AnnounceDeath": [
+        "Se marcado, toda vez que um jogador morrer, uma mensagem global será exibida no chat"
+      ],
+      "AnnounceAnimalDeath": [
+        "Se ativado, sempre que um animal morrer, uma mensagem global será exibida no chat."
+      ],
+      "SaveWorldEveryMinutes": [
+        "As partes carregadas do mapa são salvas após esse número definido de minutos do mundo real. (O mapa geralmente é salvo somente depois que os jogadores saem de uma área carregada)"
+      ],
+      "PlayerSafehouse": [
+        "Tanto administradores quanto jogadores podem reivindicar bases"
+      ],
+      "AdminSafehouse": [
+        "Apenas administradores podem reivindicar bases"
+      ],
+      "SafehouseAllowTrepass": [
+        "Permite que não membros entrem em uma base sem serem convidados"
+      ],
+      "SafehouseAllowFire": [
+        "Permite que o fogo danifique bases"
+      ],
+      "SafehouseAllowLoot": [
+        "Permite que não membros peguem itens de bases"
+      ],
+      "SafehouseAllowRespawn": [
+        "Os jogadores vão reaparecer em uma base do qual eram membros antes de morrer"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Os jogadores devem ter sobrevivido a esse número de dias no jogo antes de poderem reivindicar uma base"
+      ],
+      "SafeHouseRemovalTime": [
+        "Os jogadores são removidos automaticamente de uma base que não visitaram por tantas horas do mundo real"
+      ],
+      "SafehouseAllowNonResidential": [
+        "Controla se os jogadores podem reivindicar edifícios não residenciais."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Permite que os jogadores destruam objetos do mundo com marretas"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Permite que os jogadores destruam objetos do mundo apenas em sua base (exigir que AllowDestructionBySledgehammer seja verdadeiro)."
+      ],
+      "WarStartDelay": [
+        "Tempo em segundos antes do início da guerra."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID determina se um personagem é de outro servidor ou single player. Este valor pode ser alterado por soft resets. Se este número corresponder ao jogador, o jogador deve criar um novo personagem. Isso é usado em conjunto com ResetID. É altamente recomendável que você faça backup desses IDs em algum lugar"
+      ],
+      "RCONPort": [
+        "A porta para o RCON (Console Remoto)"
+      ],
+      "RCONPassword": [
+        "Senha RCON (Escolha uma senha forte)"
+      ],
+      "DiscordEnable": [
+        "Permite a integração global de bate-papo por texto com um canal Discord"
+      ],
+      "DiscordToken": [
+        "Token de acesso do bot do Discord"
+      ],
+      "DiscordChannel": [
+        "O nome do canal Discord. (Tente a opção de ID de canal separado se tiver problemas)"
+      ],
+      "DiscordChannelID": [
+        "O ID do canal Discord. (Use se tiver problemas com a opção de nome do canal Discord)"
+      ],
+      "WebhookAddress": [
+        "O URL do webhook de entrada do Slack"
+      ],
+      "Password": [
+        "Os jogadores devem saber essa senha para ingressar no servidor. (Ignorado ao hospedar um servidor através do botão Host)"
+      ],
+      "MaxAccountsPerUser": [
+        "Limita o número de contas diferentes que um único usuário Steam pode criar neste servidor. Ignorado ao usar o botão Hosts."
+      ],
+      "AllowCoop": [
+        "Permite modo cooperativo/tela dividida"
+      ],
+      "SleepAllowed": [
+        "Os jogadores podem dormir quando seu sobrevivente fica cansado, mas eles NÃO PRECISAM dormir"
+      ],
+      "SleepNeeded": [
+        "Os jogadores se cansam e precisam dormir. (Ignorado se SleepAllowed=false)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Liste os IDs de Mods do Workshop para o servidor baixar. Cada um deve ser separado por um ponto e vírgula. Exemplo: WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Mostrar nomes de usuário e avatares do Steam na lista de jogadores. Pode ser verdadeiro (visível para todos), falso (visível para ninguém) ou admin (visível apenas para administradores)"
+      ],
+      "SteamVAC": [
+        "Ative o sistema Steam VAC"
+      ],
+      "UPnP": [
+        "Tente configurar um gateway de internet habilitado para UPnP para configurar automaticamente as regras de encaminhamento de porta. O servidor retornará às portas padrão se isso falhar"
+      ],
+      "VoiceEnable": [
+        "VOIP é ativado quando marcado"
+      ],
+      "VoiceMinDistance": [
+        "A distância mínima do bloco em que os sons do VOIP podem ser ouvidos. O padrão é 10"
+      ],
+      "VoiceMaxDistance": [
+        "A distância máxima do bloco em que os sons do VOIP podem ser ouvidos. O padrão é 300"
+      ],
+      "Voice3D": [
+        "Ativar áudio direcional para VOIP"
+      ],
+      "server_browser_announced_ip": [
+        "Defina o IP do qual o servidor é transmitido. Isso é para configurações de rede com vários endereços IP, como grupos de servidores"
+      ],
+      "PlayerRespawnWithSelf": [
+        "Os jogadores podem renascer no jogo nas coordenadas onde morreram"
+      ],
+      "PlayerRespawnWithOther": [
+        "Os jogadores podem renascer no jogo em uma tela dividida / localização do jogador do Remote Play"
+      ],
+      "FastForwardMultiplier": [
+        "Controla a rapidez com que o tempo passa enquanto os jogadores dormem. Esse valor multiplica a velocidade do tempo que passa durante o sono."
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "A base age como uma casa normal se um membro dela estiver conectado (tão seguro quando os jogadores estão offline)"
+      ],
+      "Faction": [
+        "Os jogadores podem criar facções quando verdadeiro"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Os jogadores devem sobreviver a esse número de dias no jogo antes de serem autorizados a criar uma facção"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Número de jogadores necessários como membros da facção antes que o proprietário da facção possa criar uma tag de grupo"
+      ],
+      "DisableRadioStaff": [
+        "Desativa as transmissões de rádio de jogadores com nível de acesso"
+      ],
+      "DisableRadioAdmin": [
+        "Desativa as transmissões de rádio de jogadores com nível de acesso 'admin'"
+      ],
+      "DisableRadioGM": [
+        "Desativa as transmissões de rádio de jogadores com nível de acesso 'gm'"
+      ],
+      "DisableRadioOverseer": [
+        "Desativa as transmissões de rádio de jogadores com nível de acesso 'supervisor'"
+      ],
+      "DisableRadioModerator": [
+        "Desativa as transmissões de rádio de jogadores com nível de acesso 'moderador'"
+      ],
+      "DisableRadioInvisible": [
+        "Desativa as transmissões de rádio de jogadores invisíveis"
+      ],
+      "ClientCommandFilter": [
+        "Lista de comandos separados por ponto e vírgula que não serão gravados no log do servidor cmd.txt. Por exemplo:",
+        "-veículo. Inserir * significa NÃO escrever nenhum comando de veículo. Inserindo:",
+        "+vehicle.installPart significa que ESCREVA esse comando"
+      ],
+      "ClientActionLogs": [
+        "Lista de ações separadas por ponto e vírgula que serão gravadas no log do servidor ClientActionLogs.txt"
+      ],
+      "PerkLogs": [
+        "Acompanha as alterações nos níveis de vantagens do jogador no log do servidor PerkLog.txt"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Número máximo de itens que podem ser colocados em um recipiente. Zero significa que não há limite. (OBSERVAÇÃO: Isso inclui itens pequenos individuais, como pregos. Um limite de 50 significa que apenas 50 pregos podem ser armazenados.)"
+      ],
+      "BloodSplatLifespanDays": [
+        "Número de dias antes que os respingos de sangue antigos sejam removidos.<br>A remoção acontece quando partes do mapa são carregados.<br>Zero significa que eles nunca desaparecerão"
+      ],
+      "AllowNonAsciiUsername": [
+        "Permite o uso de caracteres não ASCII (cirílico etc) em nomes de usuário"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Se ativado, quando o HoursForCorpseRemoval for acionado, ele também removerá os cadáveres do jogador do chão"
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Se verdadeiro, o jogador pode bater novamente quando atingido por outro jogador"
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Se verdadeiro, os jogadores terão que passar o mouse sobre alguém para ver seu nome de exibição"
+      ],
+      "HidePlayersBehindYou": [
+        "Se verdadeiro, omite automaticamente o jogador que você não pode ver (como zumbis)"
+      ],
+      "PVPMeleeDamageModifier": [
+        "Adiciona dano para ataques corpo a corpo PVP"
+      ],
+      "PVPFirearmDamageModifier": [
+        "Adiciona dano para ataques à distância PVP"
+      ],
+      "CarEngineAttractionModifier": [
+        "Modifica o alcance da atração de zumbis para carros (valores mais baixos podem ajudar com lags)"
+      ],
+      "PlayerBumpPlayer": [
+        "Controla se os jogadores esbarram (e derrubam) outros jogadores ao passar por eles."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Controla a exibição de jogadores remotos no mapa do jogo.",
+        "1 = Oculto 2 = Amigos 3 = Todos"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Caminho para o arquivo com a lista de palavras a serem proibidas. "
+      ],
+      "GoodWordListFile": [
+        "Caminho para o arquivo com a lista de palavras que devem ser permitidas, mesmo que contenham palavrões. "
+      ],
+      "BadWordPolicy": [
+        "O que fazer com o remetente de um palavrão no chat: 1 - banir, 2 - expulsar, 3 - registrar a violação no banco de dados, 4 - silenciar"
+      ],
+      "BadWordReplacement": [
+        "O símbolo ou pedaço de texto que substituirá o palavrão"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Desativa a proteção antitrapa de movimento."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Desativa a proteção antitrapa de jogadores."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Desativa a proteção anti-cheat das verificações de itens."
+      ],
+      "AntiCheatServerCustomization": [
+        "Desativa a proteção antitrapa de personalização do servidor."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Define o período de atualização multijogador em segundos. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Oculta administradores na lista de jogadores."
+      ],
+      "Seed": [
+        "A semente worldgen usada para gerar o mundo.<br>Se você quiser alterar isso, coloque um novo valor e exclua map_worldgen.bin em seu diretório de salvamento."
+      ],
+      "SpeedLimit": [
+        "Limite de velocidade do veículo."
+      ],
+      "BackupsCount": [
+        "Mín: 1 Máx: 300 Padrão: 5"
+      ],
+      "BackupsPeriod": [
+        "Mín: 0 Máx: 1500 Padrão: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Mín: 64 Máx: 1024 Padrão: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Mín: 1 Máx: 30 Padrão: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Mín: 20 Máx: 1200 Padrão: 60"
+      ],
+      "Map": [
+        "Insira o nome da pasta do mod encontrado em \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Mín: 0 Máx: 2147483647 Padrão: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Mín: 0 Máx: 60 Padrão: 60"
+      ],
+      "TrashDeleteAll": [
+        "Se ativado, o jogador pode usar o botão \\"excluir tudo\\" nas lixeiras."
+      ],
+      "UDPPort": [
+        "Mín: 0 Máx: 65535 Padrão: 16262"
+      ]
+    }
+  }
+}
+
+

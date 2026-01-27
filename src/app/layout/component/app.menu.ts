@@ -35,6 +35,7 @@ import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { PzDefaultPathsService } from '../../services/pz-default-paths.service';
 import { SelectModule } from 'primeng/select';
+import { ProgressBarModule } from 'primeng/progressbar';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import {
   ModCollectionFiltersService,
@@ -63,6 +64,7 @@ import { LOCALE_OPTIONS } from '../../i18n/locales';
     ImageModule,
     MultiSelectModule,
     SelectModule,
+    ProgressBarModule,
     TooltipModule,
     ToastModule,
     RequiredFoldersComponent,
@@ -115,6 +117,7 @@ export class AppMenu {
   ];
   localeOptions = LOCALE_OPTIONS;
   selectedLocale = 'en-US';
+  localeLoading = false;
   private readonly loadedTranslations = new Set<string>();
 
   constructor(
@@ -167,6 +170,12 @@ export class AppMenu {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe((locale) => {
         this.selectedLocale = locale;
+      });
+
+    this.localization.localeLoading$
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe((loading) => {
+        this.localeLoading = loading;
       });
 
     this.transloco.langChanges$
@@ -273,7 +282,7 @@ export class AppMenu {
   }
 
   onLocaleChange(value: string): void {
-    this.localization.setLocale(value);
+    void this.localization.setLocale(value);
   }
 
 
@@ -568,7 +577,11 @@ export class AppMenu {
             icon: 'pi pi-fw pi-table',
             routerLink: ['/'],
           },
-          // { label: 'Server', icon: 'pi pi-fw pi-server', routerLink: ['/server'] },
+          {
+            label: this.transloco.translate('menu.items.server'),
+            icon: 'pi pi-fw pi-server',
+            routerLink: ['/server'],
+          },
         ],
       },
       ...(this.isModsPage

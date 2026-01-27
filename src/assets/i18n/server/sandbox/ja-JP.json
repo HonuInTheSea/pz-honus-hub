@@ -1,0 +1,1521 @@
+{
+  "Zombies": "ゾンビ",
+  "Distribution": "分布",
+  "ZombieVoronoiNoise": "ゾンビのボロノイノイズ",
+  "ZombieRespawn": "ゾンビの再出現",
+  "ZombieMigrate": "ゾンビの移動",
+  "DayLength": "昼の長さ",
+  "StartMonth": "開始月",
+  "StartDay": "開始日",
+  "StartTime": "開始時刻",
+  "DayNightCycle": "昼夜サイクル",
+  "ClimateCycle": "気候サイクル",
+  "FogCycle": "霧サイクル",
+  "WaterShut": "断水",
+  "ElecShut": "停電",
+  "AlarmDecay": "警報減衰",
+  "WaterShutModifier": "断水倍率",
+  "ElecShutModifier": "停電倍率",
+  "AlarmDecayModifier": "警報減衰倍率",
+  "FoodLootNew": "新しい食料ルート",
+  "LiteratureLootNew": "新しい書籍ルート",
+  "MedicalLootNew": "新しい医療ルート",
+  "SurvivalGearsLootNew": "新しいサバイバル装備ルート",
+  "CannedFoodLootNew": "新しい缶詰食料ルート",
+  "WeaponLootNew": "新しい武器ルート",
+  "RangedWeaponLootNew": "新しい遠距離武器ルート",
+  "AmmoLootNew": "新しい弾薬ルート",
+  "MechanicsLootNew": "新しい整備ルート",
+  "OtherLootNew": "新しいその他ルート",
+  "ClothingLootNew": "新しい衣類ルート",
+  "ContainerLootNew": "新しいコンテナルート",
+  "KeyLootNew": "新しい鍵ルート",
+  "MediaLootNew": "新しいメディアルート",
+  "MementoLootNew": "新しい記念品ルート",
+  "CookwareLootNew": "新しい調理器具ルート",
+  "MaterialLootNew": "新しい素材ルート",
+  "FarmingLootNew": "新しい農業ルート",
+  "ToolLootNew": "新しい工具ルート",
+  "RollsMultiplier": "ロール倍率",
+  "LootItemRemovalList": "ルートアイテム削除リスト",
+  "RemoveStoryLoot": "ストーリー戦利品を削除",
+  "RemoveZombieLoot": "ゾンビ戦利品を削除",
+  "ZombiePopLootEffect": "ゾンビ人口ルート効果",
+  "InsaneLootFactor": "狂気のルート係数",
+  "ExtremeLootFactor": "極端なルート係数",
+  "RareLootFactor": "レアなルート係数",
+  "NormalLootFactor": "通常のルート係数",
+  "CommonLootFactor": "一般的なルート係数",
+  "AbundantLootFactor": "豊富なルート係数",
+  "Temperature": "気温",
+  "Rain": "雨",
+  "ErosionSpeed": "侵食速度",
+  "ErosionDays": "侵食日数",
+  "Farming": "農業",
+  "CompostTime": "堆肥時間",
+  "StatsDecrease": "能力低下",
+  "NatureAbundance": "自然の豊かさ",
+  "Alarm": "警報",
+  "LockedHouses": "施錠された家",
+  "StarterKit": "スターターキット",
+  "Nutrition": "栄養",
+  "FoodRotSpeed": "食料腐敗速度",
+  "FridgeFactor": "冷蔵庫係数",
+  "SeenHoursPreventLootRespawn": "視認時間がルート再出現を防ぐ",
+  "HoursForLootRespawn": "ルート再出現時間",
+  "MaxItemsForLootRespawn": "ルート再出現の最大アイテム数",
+  "ConstructionPreventsLootRespawn": "建築でルート再出現を防止",
+  "WorldItemRemovalList": "ワールドアイテム削除リスト",
+  "HoursForWorldItemRemoval": "ワールドアイテム削除時間",
+  "ItemRemovalListBlacklistToggle": "アイテム削除リストのブラックリスト切替",
+  "TimeSinceApo": "終末からの時間",
+  "PlantResilience": "植物の耐性",
+  "PlantAbundance": "植物の豊富さ",
+  "EndRegen": "スタミナ回復",
+  "Helicopter": "ヘリコプター",
+  "MetaEvent": "メタイベント",
+  "SleepingEvent": "睡眠イベント",
+  "GeneratorFuelConsumption": "発電機燃料消費",
+  "GeneratorSpawning": "発電機出現",
+  "AnnotatedMapChance": "注釈付き地図の確率",
+  "CharacterFreePoints": "キャラクター無料ポイント",
+  "ConstructionBonusPoints": "建築ボーナスポイント",
+  "NightDarkness": "夜の暗さ",
+  "NightLength": "夜の長さ",
+  "BoneFracture": "骨折",
+  "InjurySeverity": "負傷の重さ",
+  "HoursForCorpseRemoval": "死体除去時間",
+  "DecayingCorpseHealthImpact": "腐敗死体の健康影響",
+  "ZombieHealthImpact": "ゾンビの健康影響",
+  "BloodLevel": "血液量",
+  "ClothingDegradation": "衣類劣化",
+  "FireSpread": "火の広がり",
+  "DaysForRottenFoodRemoval": "腐った食料除去日数",
+  "AllowExteriorGenerator": "屋外発電機を許可",
+  "MaxFogIntensity": "最大霧濃度",
+  "MaxRainFxIntensity": "最大雨エフェクト強度",
+  "EnableSnowOnGround": "地面の雪を有効化",
+  "AttackBlockMovements": "攻撃で移動をブロック",
+  "SurvivorHouseChance": "生存者の家の確率",
+  "VehicleStoryChance": "車両ストーリー確率",
+  "ZoneStoryChance": "ゾーンストーリー確率",
+  "AllClothesUnlocked": "全衣類解放",
+  "EnableTaintedWaterText": "汚染水テキストを有効化",
+  "EnableVehicles": "車両を有効化",
+  "CarSpawnRate": "車両出現率",
+  "ZombieAttractionMultiplier": "ゾンビ引き寄せ倍率",
+  "VehicleEasyUse": "車両簡単使用",
+  "InitialGas": "初期ガソリン",
+  "FuelStationGasInfinite": "給油所ガソリン無限",
+  "FuelStationGasMin": "給油所ガソリン最小",
+  "FuelStationGasMax": "給油所ガソリン最大",
+  "FuelStationGasEmptyChance": "給油所空の確率",
+  "LockedCar": "施錠された車",
+  "CarGasConsumption": "車の燃料消費",
+  "CarGeneralCondition": "車の全体状態",
+  "CarDamageOnImpact": "衝突時の車の損傷",
+  "DamageToPlayerFromHitByACar": "車に轢かれたときのプレイヤー被害",
+  "TrafficJam": "交通渋滞",
+  "CarAlarm": "車の警報",
+  "PlayerDamageFromCrash": "衝突によるプレイヤー被害",
+  "SirenShutoffHours": "サイレン停止時間",
+  "ChanceHasGas": "燃料あり確率",
+  "RecentlySurvivorVehicles": "最近の生存者車両",
+  "MultiHitZombies": "多段ヒットゾンビ",
+  "RearVulnerability": "背後の脆弱性",
+  "SirenEffectsZombies": "サイレンがゾンビに影響",
+  "AnimalStatsModifier": "動物ステータス倍率",
+  "AnimalMetaStatsModifier": "動物メタステータス倍率",
+  "AnimalPregnancyTime": "動物妊娠時間",
+  "AnimalAgeModifier": "動物年齢倍率",
+  "AnimalMilkIncModifier": "動物乳量増加倍率",
+  "AnimalWoolIncModifier": "動物羊毛増加倍率",
+  "AnimalRanchChance": "動物牧場確率",
+  "AnimalGrassRegrowTime": "動物草再生時間",
+  "AnimalMetaPredator": "動物メタ捕食者",
+  "AnimalMatingSeason": "動物交配期",
+  "AnimalEggHatch": "動物卵孵化",
+  "AnimalSoundAttractZombies": "動物の音がゾンビを引き寄せる",
+  "AnimalTrackChance": "動物の足跡確率",
+  "AnimalPathChance": "動物の道確率",
+  "MaximumRatIndex": "最大ネズミ指数",
+  "DaysUntilMaximumRatIndex": "最大ネズミ指数までの日数",
+  "MetaKnowledge": "メタ知識",
+  "SeeNotLearntRecipe": "未習得レシピを表示",
+  "MaximumLootedBuildingRooms": "最大略奪済み建物部屋数",
+  "EnablePoisoning": "毒を有効化",
+  "MaggotSpawn": "ウジ発生",
+  "LightBulbLifespan": "電球寿命",
+  "FishAbundance": "魚の豊富さ",
+  "LevelForMediaXPCutoff": "メディアXPカットオフレベル",
+  "LevelForDismantleXPCutoff": "解体XPカットオフレベル",
+  "BloodSplatLifespanDays": "血痕寿命日数",
+  "LiteratureCooldown": "書籍クールダウン",
+  "NegativeTraitsPenalty": "負の特性ペナルティ",
+  "MinutesPerPage": "1ページあたりの分",
+  "KillInsideCrops": "作物内でのキル",
+  "PlantGrowingSeasons": "植物の成長季節",
+  "PlaceDirtAboveground": "地表に土を置く",
+  "FarmingSpeedNew": "新しい農業速度",
+  "FarmingAmountNew": "新しい農業量",
+  "MaximumLooted": "最大略奪量",
+  "DaysUntilMaximumLooted": "最大略奪量までの日数",
+  "RuralLooted": "田舎の略奪量",
+  "MaximumDiminishedLoot": "最大減少ルート",
+  "DaysUntilMaximumDiminishedLoot": "最大減少ルートまでの日数",
+  "MuscleStrainFactor": "筋肉負荷係数",
+  "DiscomfortFactor": "不快係数",
+  "WoundInfectionFactor": "傷感染係数",
+  "NoBlackClothes": "黒い服なし",
+  "EasyClimbing": "簡単な登攀",
+  "MaximumFireFuelHours": "最大火燃料時間",
+  "FirearmUseDamageChance": "銃器使用損傷確率",
+  "FirearmNoiseMultiplier": "銃器騒音倍率",
+  "FirearmJamMultiplier": "銃器ジャム倍率",
+  "FirearmMoodleMultiplier": "銃器ムードル倍率",
+  "FirearmWeatherMultiplier": "銃器天候倍率",
+  "FirearmHeadGearEffect": "銃器頭部装備効果",
+  "ClayLakeChance": "粘土湖確率",
+  "ClayRiverChance": "粘土川確率",
+  "GeneratorTileRange": "発電機タイル範囲",
+  "GeneratorVerticalPowerRange": "発電機垂直電力範囲",
+  "Basement": "地下室",
+  "SpawnFrequency": "出現頻度",
+  "Map": "地図",
+  "AllowMiniMap": "ミニマップ許可",
+  "AllowWorldMap": "ワールドマップ許可",
+  "MapAllKnown": "地図をすべて既知にする",
+  "MapNeedsLight": "地図には光が必要",
+  "ZombieLore": "ゾンビ設定",
+  "Speed": "速度",
+  "SprinterPercentage": "スプリンター割合",
+  "Strength": "筋力",
+  "Toughness": "頑丈さ",
+  "Transmission": "感染伝播",
+  "Mortality": "致死率",
+  "Reanimate": "再アニメーション",
+  "Cognition": "認知",
+  "CrawlUnderVehicle": "車両の下を這う",
+  "Memory": "記憶",
+  "Sight": "視力",
+  "Hearing": "聴力",
+  "SpottedLogic": "発見ロジック",
+  "ThumpNoChasing": "追跡なし叩き",
+  "ThumpOnConstruction": "建築物を叩く",
+  "ActiveOnly": "アクティブのみ",
+  "TriggerHouseAlarm": "家屋警報を作動",
+  "ZombiesDragDown": "ゾンビが引きずり倒す",
+  "ZombiesCrawlersDragDown": "這うゾンビが引きずり倒す",
+  "ZombiesFenceLunge": "ゾンビのフェンス飛びかかり",
+  "ZombiesArmorFactor": "ゾンビ装甲係数",
+  "ZombiesMaxDefense": "ゾンビ最大防御",
+  "ChanceOfAttachedWeapon": "付属武器確率",
+  "ZombiesFallDamage": "ゾンビ落下ダメージ",
+  "DisableFakeDead": "偽死を無効化",
+  "PlayerSpawnZombieRemoval": "プレイヤー出現時ゾンビ除去",
+  "FenceThumpersRequired": "フェンス叩き必要",
+  "FenceDamageMultiplier": "フェンスダメージ倍率",
+  "ZombieConfig": "ゾンビ設定",
+  "PopulationMultiplier": "人口倍率",
+  "PopulationStartMultiplier": "人口開始倍率",
+  "PopulationPeakMultiplier": "人口ピーク倍率",
+  "PopulationPeakDay": "人口ピーク日",
+  "RespawnHours": "リスポーン時間",
+  "RespawnUnseenHours": "未視認リスポーン時間",
+  "RespawnMultiplier": "リスポーン倍率",
+  "RedistributeHours": "再分配時間",
+  "FollowSoundDistance": "音追従距離",
+  "RallyGroupSize": "集結グループサイズ",
+  "RallyGroupSizeVariance": "集結グループサイズ分散",
+  "RallyTravelDistance": "集結移動距離",
+  "RallyGroupSeparation": "集結グループ分離",
+  "RallyGroupRadius": "集結グループ半径",
+  "ZombiesCountBeforeDelete": "削除前ゾンビ数",
+  "MultiplierConfig": "倍率設定",
+  "Global": "グローバル",
+  "GlobalToggle": "グローバル切替",
+  "Fitness": "フィットネス",
+  "Sprinting": "スプリント",
+  "Lightfoot": "軽足",
+  "Nimble": "俊敏",
+  "Sneak": "スニーク",
+  "Axe": "斧",
+  "Blunt": "鈍器",
+  "SmallBlunt": "小型鈍器",
+  "LongBlade": "長い刃",
+  "SmallBlade": "短い刃",
+  "Spear": "槍",
+  "Maintenance": "メンテナンス",
+  "Woodwork": "木工",
+  "Cooking": "料理",
+  "Doctor": "医療",
+  "Electricity": "電気",
+  "MetalWelding": "金属溶接",
+  "Mechanics": "機械",
+  "Tailoring": "裁縫",
+  "Aiming": "照準",
+  "Reloading": "リロード",
+  "Fishing": "釣り",
+  "Trapping": "罠",
+  "PlantScavenging": "植物採取",
+  "FlintKnapping": "火打ち石加工",
+  "Masonry": "石工",
+  "Pottery": "陶芸",
+  "Carving": "彫刻",
+  "Husbandry": "畜産",
+  "Tracking": "追跡",
+  "Blacksmith": "鍛冶",
+  "Butchering": "解体",
+  "Glassmaking": "ガラス製作",
+  "comments": {
+    "Zombies": [
+      "ゾンビの個体数を細かく調整したい場合は「高度なゾンビのオプション」で調整してください。 既定 = 普通",
+      "1 = 狂気",
+      "2 = 非常に多い",
+      "3 = 多い",
+      "4 = 普通",
+      "5 = 少ない",
+      "6 = 無し"
+    ],
+    "Distribution": [
+      "ゾンビがマップ全体にどのように分布しているか。 ",
+      "1 = 都市集中型",
+      "2 = 均等配置型"
+    ],
+    "ZombieVoronoiNoise": [
+      "ゾンビの分布にランダム化を適用するかどうかを制御します。"
+    ],
+    "ZombieRespawn": [
+      "定期的に地域のゾンビを再配置させるための設定です。 既定 = 普通",
+      "1 = 多い",
+      "2 = 普通",
+      "3 = 少ない",
+      "4 = 無し"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "デフォルト = 1 時間 30 分",
+      "1 = 15 分",
+      "2 = 30 分",
+      "3 = 1 時間",
+      "4 = 1 時間、30 分",
+      "5 = 2 時間",
+      "6 = 3 時間",
+      "7 = 4 時間",
+      "8 = 5 時間",
+      "9 = 6 時間",
+      "10 = 7 時間",
+      "11 = 8 時間",
+      "12 = 9 時間",
+      "13 = 10 時間",
+      "14 = 11 時間",
+      "15 = 12 時間",
+      "16 = 13 時間",
+      "17 = 14 時間",
+      "18 = 15 時間",
+      "19 = 16 時間",
+      "20 = 17 時間",
+      "21 = 18 時間",
+      "22 = 19 時間",
+      "23 = 20 時間",
+      "24 = 21 時間",
+      "25 = 22 時間",
+      "26 = 23 時間",
+      "27 = リアルタイム"
+    ],
+    "StartMonth": [
+      "ゲームが開始される月。 ",
+      "1 = 1",
+      "2 = 2",
+      "3 = 3",
+      "4 = 4",
+      "5 = 5",
+      "6 = 6",
+      "7 = 7",
+      "8 = 8",
+      "9 = 9",
+      "10 = 10",
+      "11 = 11",
+      "12 = 12"
+    ],
+    "StartDay": [
+      "ゲームが開始される月の日。"
+    ],
+    "StartTime": [
+      "ゲームが開始される時刻。 ",
+      "1 = 午前 7 時",
+      "2 = 午前 9 時",
+      "3 = 午前 12 時",
+      "4 = 午後 14 時",
+      "5 = 午後 17 時",
+      "6 = 午後 21 時",
+      "7 = 午後 24 時",
+      "8 = 午前 2 時",
+      "9 = 午前 5 時"
+    ],
+    "DayNightCycle": [
+      "一日の時間が自然に変化するのか、それとも常に昼/夜なのか。 ",
+      "1 = 普通",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "天気が変化するか、単一の状態に留まるか。 ",
+      "1 = 普通",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "霧は自然に発生するのか、まったく発生しないのか、それとも常に存在するのか。 ",
+      "1 = 普通",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "デフォルトの開始日 (1993 年 7 月 9 日) からどれくらいの期間で、配管設備 (シンクなど) が無限の水源でなくなるか。 ",
+      "1 = 停止状態",
+      "2 = 0 - 30 日",
+      "3 = 0 - 2 ヶ月",
+      "4 = 0 - 6 ヶ月",
+      "5 = 0 - 1 年",
+      "6 = 0 - 5 年",
+      "7 = 2 - 6 ヶ月",
+      "8 = 6 - 12 ヶ月",
+      "9 = 無効"
+    ],
+    "ElecShut": [
+      "デフォルトの開始日 (1993 年 7 月 9 日) からどれくらいの時間が経過すると、世界の電力が永久に停止します。 ",
+      "1 = 停止状態",
+      "2 = 0 - 30 日",
+      "3 = 0 - 2 ヶ月",
+      "4 = 0 - 6 ヶ月",
+      "5 = 0 - 1 年",
+      "6 = 0 - 5 年",
+      "7 = 2 - 6 ヶ月",
+      "8 = 6 - 12 ヶ月",
+      "9 = 無効"
+    ],
+    "AlarmDecay": [
+      "電源が切れた後、警報器の電池がどれくらい持続するか。 ",
+      "1 = 停止状態",
+      "2 = 0 - 30 日",
+      "3 = 0 - 2 ヶ月",
+      "4 = 0 - 6 ヶ月",
+      "5 = 0 - 1 年",
+      "6 = 0 - 5 年"
+    ],
+    "WaterShutModifier": [
+      "デフォルトの開始日 (1993 年 7 月 9 日) からどれくらいの期間で、配管設備 (シンクなど) が無限の水源でなくなるか。 "
+    ],
+    "ElecShutModifier": [
+      "デフォルトの開始日 (1993 年 7 月 9 日) からどれくらいの時間が経過すると、世界の電力が永久に停止します。 "
+    ],
+    "AlarmDecayModifier": [
+      "電源が切れた後、警報器の電池がどれくらい持続するか。 "
+    ],
+    "FoodLootNew": [
+      "腐ったり腐ったりする可能性のある食べ物。 "
+    ],
+    "LiteratureLootNew": [
+      "チラシを含む閲覧可能なすべてのアイテム 最小: 0.00 最大: 4.00 既定: 0.60"
+    ],
+    "MedicalLootNew": [
+      "薬、包帯、応急処置具。 "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. 最小: 0.00 最大: 4.00 既定: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "缶詰、乾物、飲料。 "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. 最小: 0.00 最大: 4.00 既定: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. 最小: 0.00 最大: 4.00 既定: 0.60"
+    ],
+    "AmmoLootNew": [
+      "バラバラの弾薬、箱、雑誌。 "
+    ],
+    "MechanicsLootNew": [
+      "車両部品とその取り付けに必要な工具。 "
+    ],
+    "OtherLootNew": [
+      "その他すべて。"
+    ],
+    "ClothingLootNew": [
+      "コンテナではないすべてのウェアラブルアイテム。 "
+    ],
+    "ContainerLootNew": [
+      "バックパックおよびその他のウェアラブル/装備可能なコンテナ。"
+    ],
+    "KeyLootNew": [
+      "建物や車の鍵、キーホルダー、錠前など。 "
+    ],
+    "MediaLootNew": [
+      "VHSテープとCD。 "
+    ],
+    "MementoLootNew": [
+      "Spiffo アイテム、ぬいぐるみ、その他の収集記念アイテム。"
+    ],
+    "CookwareLootNew": [
+      "武器となる可能性のあるもの（ナイフなど）を含む、調理に使用されるアイテム。"
+    ],
+    "MaterialLootNew": [
+      "クラフトや建築の材料として使用されるアイテムや武器。"
+    ],
+    "FarmingLootNew": [
+      "種子、こて、シャベルなど、動植物の農業の両方で使用されるアイテムや武器。 "
+    ],
+    "ToolLootNew": [
+      "ツールではあるが、機械学や農業などの他のカテゴリに当てはまらないアイテムや武器。 "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] これは変更しないことをお勧めします。 "
+    ],
+    "LootItemRemovalList": [
+      "通常の戦利品としてスポーンしないアイテムタイプのカンマ区切りのリスト。"
+    ],
+    "RemoveStoryLoot": [
+      "有効にすると、戦利品アイテム削除リストにあるアイテム、またはレア度が「なし」に設定されているアイテムは、ランダム化されたワールド ストーリーに出現しなくなります。"
+    ],
+    "RemoveZombieLoot": [
+      "有効にすると、戦利品アイテム削除リストにあるアイテム、またはレア度が「なし」に設定されているアイテムは、ゾンビが着用したり、ゾンビに取り付けられたりして出現しなくなります。"
+    ],
+    "ZombiePopLootEffect": [
+      "0 より大きい場合、戦利品のスポーンは近くのゾンビの数に比例して増加し、効果はこの数値で乗算されます。 "
+    ],
+    "InsaneLootFactor": [
+      "最小: 0.00 最大: 0.20 既定: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "最小: 0.05 最大: 0.60 既定: 0.20"
+    ],
+    "RareLootFactor": [
+      "最小: 0.20 最大: 1.00 既定: 0.60"
+    ],
+    "NormalLootFactor": [
+      "最小: 0.60 最大: 2.00 既定: 1.00"
+    ],
+    "CommonLootFactor": [
+      "最小: 1.00 最大: 3.00 既定: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "最小: 2.00 最大: 4.00 既定: 3.00"
+    ],
+    "Temperature": [
+      "地球の気温の設定です。 既定 = 普通",
+      "1 = 寒冷",
+      "2 = 寒い",
+      "3 = 普通",
+      "4 = 暖かい",
+      "5 = 猛暑"
+    ],
+    "Rain": [
+      "雨が降る頻度の設定です。 既定 = 普通",
+      "1 = 乾燥",
+      "2 = 乾燥ぎみ",
+      "3 = 普通",
+      "4 = 雨が多い",
+      "5 = 多雨"
+    ],
+    "ErosionSpeed": [
+      "浸食システム (つる、長い草、新しい木などをワールドに追加します) が 100% の成長に達するまでの日数。 ",
+      "1 = とても早い (20日)",
+      "2 = 早い (50日)",
+      "3 = 普通 (100日)",
+      "4 = 遅い (200日)",
+      "5 = とても遅い (500日)"
+    ],
+    "ErosionDays": [
+      "カスタムの侵食速度の場合。"
+    ],
+    "Farming": [
+      "農業 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "CompostTime": [
+      "コンポスターの中の食料が分解されるまでの時間の設定です。 既定 = 2 週間",
+      "1 = 1 週間",
+      "2 = 2 週間",
+      "3 = 3 週間",
+      "4 = 4 週間",
+      "5 = 6 週間",
+      "6 = 8 週間",
+      "7 = 10 週間",
+      "8 = 12 週間"
+    ],
+    "StatsDecrease": [
+      "キャラクターの飢え、渇き、疲労度の速度設定をします。 既定 = 普通",
+      "1 = とても速い",
+      "2 = 速い",
+      "3 = 普通",
+      "4 = 遅い",
+      "5 = とても遅い"
+    ],
+    "NatureAbundance": [
+      "釣り、採集などの天然資源量の設定です。 既定 = 普通",
+      "1 = 物凄く少ない",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 豊富",
+      "5 = 物凄く豊富"
+    ],
+    "Alarm": [
+      "プレイヤーが新しい家に侵入するときに住宅警報器を作動させる可能性。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "LockedHouses": [
+      "住宅のドア、窓が施錠されている頻度の設定です。 既定 = とても多い",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "StarterKit": [
+      "スナック菓子、水、スクールバッグ、野球バット、金づちを所持した状態でゲームが開始されます。"
+    ],
+    "Nutrition": [
+      "食料品の栄養価は、キャラクターの健康状態に影響を及ぼします。"
+    ],
+    "FoodRotSpeed": [
+      "冷蔵庫の中外での食料の腐敗の速さの設定です。 既定 = 普通",
+      "1 = とても速い",
+      "2 = 速い",
+      "3 = 普通",
+      "4 = 遅い",
+      "5 = とても遅い"
+    ],
+    "FridgeFactor": [
+      "食料を冷蔵庫で保管した場合の腐敗速度の設定です。 既定 = 普通",
+      "1 = とても速い",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "設定値が「0」の場合は、この時間内に訪れた地域には戦利品は再配置されません。 最小: 0 最大: 2147483647 既定: 0"
+    ],
+    "HoursForLootRespawn": [
+      "0 より大きい場合、X 時間後に、世界中の町やトレーラーパークのすべてのコンテナが戦利品をリスポーンします。"
+    ],
+    "MaxItemsForLootRespawn": [
+      "この設定以上のアイテム数を含むコンテナは再生成されません。 "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "プレイヤーがバリケードを築いたり建てたりした建物内ではアイテムはリスポーンしません。"
+    ],
+    "WorldItemRemovalList": [
+      "「削除リストの時間」後に削除されるアイテムの種類をカンマ区切りで指定します。"
+    ],
+    "HoursForWorldItemRemoval": [
+      "アイテムが地面に落ちてから削除されるまでの時間数。  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "有効にすると、戦利品の削除リストに「無い」戦利品が削除されます。"
+    ],
+    "TimeSinceApo": [
+      "世界の終わりからどれくらい経ってから始まりますか。",
+      "1 = 黙示録の直後",
+      "2 = 黙示録から1ヶ月後",
+      "3 = 黙示録から2ヶ月後",
+      "4 = 黙示録から3ヶ月後",
+      "5 = 黙示録から4ヶ月後",
+      "6 = 黙示録から5ヶ月後",
+      "7 = 黙示録から6ヶ月後",
+      "8 = 黙示録から7ヶ月後",
+      "9 = 黙示録から8ヶ月後",
+      "10 = 黙示録から9ヶ月後",
+      "11 = 黙示録から10ヶ月後",
+      "12 = 黙示録から11ヶ月後",
+      "13 = 黙示録から1年後"
+    ],
+    "PlantResilience": [
+      "1日に失われる水分の量や、病気を回避する能力に影響します。 既定 = 普通",
+      "1 = 非常に多い",
+      "2 = 多い",
+      "3 = 普通",
+      "4 = 少ない",
+      "5 = とても速い"
+    ],
+    "PlantAbundance": [
+      "農作物の収穫量の設定です。 既定 = 普通",
+      "1 = 物凄く少ない",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 豊富",
+      "5 = 物凄く豊富"
+    ],
+    "EndRegen": [
+      "行動に疲労からの回復の設定です。 既定 = 普通",
+      "1 = とても速い",
+      "2 = 速い",
+      "3 = 普通",
+      "4 = 遅い",
+      "5 = とても遅い"
+    ],
+    "Helicopter": [
+      "ヘリコプターの飛来頻度の設定です。 既定 = 1度だけ発生",
+      "1 = 無効",
+      "2 = 1度だけ発生",
+      "3 = 普通",
+      "4 = 少し多い"
+    ],
+    "MetaEvent": [
+      "飛行機、発砲音、悲鳴、遠くから聞こえる環境音などのメタイベント発生頻度の設定です。 既定 = 普通",
+      "1 = 無効",
+      "2 = 普通",
+      "3 = 少し多い"
+    ],
+    "SleepingEvent": [
+      "キャラクターが睡眠を摂っている間に起こるイベント発生頻度の設定です。 既定 = 無効",
+      "1 = 無効",
+      "2 = 普通",
+      "3 = 少し多い"
+    ],
+    "GeneratorFuelConsumption": [
+      "発電機の燃料消費率の設定です。「0.0」で燃料を消費しません。 最小: 0.00 最大: 100.00 既定: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "発電機が出現する割合の設定です。 既定 = あまり無い",
+      "1 = 無し",
+      "2 = 正気とは思えないほど希少",
+      "3 = めったに無い",
+      "4 = あまり無い",
+      "5 = 普通",
+      "6 = 日常的",
+      "7 = 豊富"
+    ],
+    "AnnotatedMapChance": [
+      "地図（メモが書かれた）には、生存者が書き残した 秘密の隠れ家やアイテムの隠し場所が書いてあります。 既定 = 普通",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "CharacterFreePoints": [
+      "キャラクターの特性ポイントを任意で増やすことができます。 最小: -100 最大: 100 既定: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "プレイヤーが構築した建造物に追加のヒット ポイントを与え、ゾンビのダメージに対する耐性を高めます。 ",
+      "1 = とても速い",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い"
+    ],
+    "NightDarkness": [
+      "夜間の環境光の設定です。 既定 = 普通",
+      "1 = 暗黒",
+      "2 = 暗い",
+      "3 = 普通",
+      "4 = 明るい"
+    ],
+    "NightLength": [
+      "夕暮れから夜明けまでの時間の設定です。 既定 = 普通",
+      "1 = 極夜",
+      "2 = 長い",
+      "3 = 普通",
+      "4 = 短い",
+      "5 = 白夜"
+    ],
+    "BoneFracture": [
+      "手足を骨折で負傷した際に手足を使えないように設定です。"
+    ],
+    "InjurySeverity": [
+      "キャラクターに及ぼす損傷に対する影響と治癒能力の設定です。 既定 = 普通",
+      "1 = 少ない",
+      "2 = 普通",
+      "3 = 多い"
+    ],
+    "HoursForCorpseRemoval": [
+      "ゾンビの死体が世界から消えるまでの時間、何時間。  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "死体がキャラクターに及ぼす病気や悲しさを誘発させる健康被害の影響の設定です。 既定 = 普通",
+      "1 = 無し",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 狂気"
+    ],
+    "ZombieHealthImpact": [
+      "近くの「生きている」ゾンビがプレイヤーの健康と感情に同じ影響を与えるかどうか。"
+    ],
+    "BloodLevel": [
+      "床や壁に飛び散る血の量の設定です。 既定 = 普通",
+      "1 = 無し",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = ウルトラゴア"
+    ],
+    "ClothingDegradation": [
+      "どの程度の速さで被服が劣化し、汚れ、血液の影響がでるか設定です。 既定 = 普通",
+      "1 = 無効",
+      "2 = 遅い",
+      "3 = 普通",
+      "4 = 速い"
+    ],
+    "FireSpread": [
+      "火災が発生したときに延焼した場合。"
+    ],
+    "DaysForRottenFoodRemoval": [
+      "腐った食べ物がマップから削除されるまでのゲーム内の日数。  "
+    ],
+    "AllowExteriorGenerator": [
+      "有効にすると、ジェネレーターは外側のタイルで動作します。  "
+    ],
+    "MaxFogIntensity": [
+      "霧の強さの最大値の設定です。 既定 = 普通",
+      "1 = 普通",
+      "2 = 適度",
+      "3 = 少ない",
+      "4 = 無し"
+    ],
+    "MaxRainFxIntensity": [
+      "雨の強さの最大値の設定です。 既定 = 普通",
+      "1 = 普通",
+      "2 = 適度",
+      "3 = 少ない"
+    ],
+    "EnableSnowOnGround": [
+      "地面に雪が積もる場合。  "
+    ],
+    "AttackBlockMovements": [
+      "近接攻撃中でも不自由なく歩くことができます。"
+    ],
+    "SurvivorHouseChance": [
+      "マップ上でランダム化された建物を見つける確率 (例: 焼け落ちた家、戦利品の隠し場所や死体がある家)。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に試す"
+    ],
+    "VehicleStoryChance": [
+      "道路に関するストーリー (例: 警察のバリケード) が発生する可能性。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に試す"
+    ],
+    "ZoneStoryChance": [
+      "マップゾーン（森の中のキャンプ場など）に特有のストーリーが出現する可能性。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に試す"
+    ],
+    "AllClothesUnlocked": [
+      "キャラクターをカスタマイズするときに、ゲーム内のすべての衣服から選択できます"
+    ],
+    "EnableTaintedWaterText": [
+      "無効にすると、汚染された水であることを示す警告が表示されなくなります"
+    ],
+    "EnableVehicles": [
+      "車両の生成の設定です。"
+    ],
+    "CarSpawnRate": [
+      "マップ上で車両が発見される頻度の設定です。 既定 = 少ない",
+      "1 = 無し",
+      "2 = とても速い",
+      "3 = 少ない",
+      "4 = 普通",
+      "5 = 多い"
+    ],
+    "ZombieAttractionMultiplier": [
+      "ゾンビの反応に影響を与えるエンジン音量の増減の設定です。 最小: 0.00 最大: 100.00 既定: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "有効にすると、すべての車両の鍵が開けられ、燃料は満タンでエンジン音が低くなります。"
+    ],
+    "InitialGas": [
+      "発見された車両にどれくらいの燃料があるのか設定です。 既定 = 少ない",
+      "1 = とても速い",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い",
+      "6 = 満タン"
+    ],
+    "FuelStationGasInfinite": [
+      "有効にすると、ガスポンプの燃料がなくなることはありません"
+    ],
+    "FuelStationGasMin": [
+      "ガスポンプでスポーンできるガソリンの最小量。"
+    ],
+    "FuelStationGasMax": [
+      "ガスポンプでスポーンできるガソリンの最大量。"
+    ],
+    "FuelStationGasEmptyChance": [
+      "個々のガスポンプに最初に燃料がない可能性 (パーセンテージ)。 "
+    ],
+    "LockedCar": [
+      "車がロックされる確率 デフォルト = あまり無い",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "CarGasConsumption": [
+      "マップ上の車両がどれだけ燃料を消費しているかの設定です。 最小: 0.00 最大: 100.00 既定: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "車両の状態(善し悪し)を生成する割合の設定です。 既定 = 少ない",
+      "1 = とても速い",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い"
+    ],
+    "CarDamageOnImpact": [
+      "車両が損傷する際に受ける車体へのダメージ量の設定です。 既定 = 普通",
+      "1 = とても速い",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "車両がプレーヤーに衝突した際に与えるダメージ量の設定です。 既定 = 無し",
+      "1 = 無し",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い",
+      "5 = 非常に多い"
+    ],
+    "TrafficJam": [
+      "幹線道路で大破した車による渋滞が発生する場合。"
+    ],
+    "CarAlarm": [
+      "アラーム付きの車が発見される頻度の設定です。 既定 = めったに無い",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "PlayerDamageFromCrash": [
+      "車両事故でプレーヤー受けるダメージを有効または無効にします。"
+    ],
+    "SirenShutoffHours": [
+      "車両のサイレン音が停止するまでの時間の設定です。\n「0」に設定した場合は車両のバッテリが無くなるまで鳴り続けます。 最小: 0.00 最大: 168.00 既定: 0.00"
+    ],
+    "ChanceHasGas": [
+      "車両の燃料タンク内に燃料を見つける割合の設定です。 既定 = 少ない",
+      "1 = 少ない",
+      "2 = 普通",
+      "3 = 多い"
+    ],
+    "RecentlySurvivorVehicles": [
+      "プレイヤーは、ノックス感染が発生した後、大切に保管されてきた車を発見できるかどうか。 ",
+      "1 = 無し",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 多い"
+    ],
+    "MultiHitZombies": [
+      "近接武器の複数攻撃を有効にすると、1回の攻撃で複数のゾンビを倒すことができます。"
+    ],
+    "RearVulnerability": [
+      "背後からゾンビに攻撃された時に噛まれる可能性の設定です。 既定 = 多い",
+      "1 = 少ない",
+      "2 = 普通",
+      "3 = 多い"
+    ],
+    "SirenEffectsZombies": [
+      "ゾンビが車のサイレンの音に向かって向かってくる場合。"
+    ],
+    "AnimalStatsModifier": [
+      "動物のステータス（空腹、喉の渇きなど）が減少する速度。 ",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalMetaStatsModifier": [
+      "メタ状態中に動物のステータス（空腹、喉の渇きなど）が減少する速度。 ",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalPregnancyTime": [
+      "動物が出産するまでの妊娠期間。 ",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalAgeModifier": [
+      "動物が老化する速度。 ",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalMilkIncModifier": [
+      "既定 = 速い",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalWoolIncModifier": [
+      "既定 = 速い",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalRanchChance": [
+      "農場で動物を見つけるチャンス。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に"
+    ],
+    "AnimalGrassRegrowTime": [
+      "動物に食べられた後、またはプレイヤーが草を刈った後に草が再生する時間数。 "
+    ],
+    "AnimalMetaPredator": [
+      "メタ（つまり、実際にはゲーム内で表示されない）キツネが、小屋のドアが夜に開いたままになっている場合、ニワトリを攻撃する可能性があります。"
+    ],
+    "AnimalMatingSeason": [
+      "発情期のある動物ならそれを尊重してくれるでしょう。  "
+    ],
+    "AnimalEggHatch": [
+      "動物の赤ちゃんが卵から孵化するまでの期間。 ",
+      "1 = Ultra Fast",
+      "2 = とても速い",
+      "3 = 速い",
+      "4 = 普通",
+      "5 = 遅い",
+      "6 = とても遅い"
+    ],
+    "AnimalSoundAttractZombies": [
+      "true の場合、動物の鳴き声が近くのゾンビを引き寄せます。"
+    ],
+    "AnimalTrackChance": [
+      "動物が足跡を残す可能性。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "AnimalPathChance": [
+      "動物が狩られる道を作るチャンス。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い"
+    ],
+    "MaximumRatIndex": [
+      "例の周波数と強度。"
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "最大害虫指数に達するまでにかかる時間。 "
+    ],
+    "MetaKnowledge": [
+      "メディアが完全に表示または読み取られていない場合、この設定により、メディアが完全に表示されるか、「???」として表示されるか、完全に非表示になるかが決まります。 ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "true の場合、まだ学習していない場合でも、ステーションで実行できるレシピを確認できるようになります。"
+    ],
+    "MaximumLootedBuildingRooms": [
+      "建物にこの数を超える部屋がある場合、略奪されません。 "
+    ],
+    "EnablePoisoning": [
+      "有毒の食料の有効を設定します 既定 = 有効",
+      "1 = 有効",
+      "2 = 無効",
+      "3 = 漂白剤の中毒のみ無効"
+    ],
+    "MaggotSpawn": [
+      "死体にウジ虫が湧くかどうか、いつ湧くか。 ",
+      "1 = 死体とその周辺",
+      "2 = 死体のみ",
+      "3 = 無効"
+    ],
+    "LightBulbLifespan": [
+      "値が大きいほど、電球が壊れるまでの寿命が長くなります。  "
+    ],
+    "FishAbundance": [
+      "川や湖には魚がたくさんいる。 ",
+      "1 = 物凄く少ない",
+      "2 = 少ない",
+      "3 = 普通",
+      "4 = 豊富",
+      "5 = 物凄く豊富"
+    ],
+    "LevelForMediaXPCutoff": [
+      "スキルがこのレベル以上の場合、テレビ/VHS/その他のメディアはそのスキルに XP を提供しません。 "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "スキルがこのレベル以上の場合、家具をスクラップしても関連するスキルの XP は得られません。"
+    ],
+    "BloodSplatLifespanDays": [
+      "古い血しぶきが除去されるまでの日数。"
+    ],
+    "LiteratureCooldown": [
+      "以前に読んだ文献アイテムを読んで恩恵を受けることができるようになるまでの日数。 "
+    ],
+    "NegativeTraitsPenalty": [
+      "複数のマイナス特性を選択することで得られるボーナス特性ポイントの収益が減少する場合。 ",
+      "1 = 無し",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 最初の特性の後に選択されたすべてのマイナス特性に対して 1 ポイントのペナルティ"
+    ],
+    "MinutesPerPage": [
+      "スキルブックの 1 ページを読むのにかかるゲーム内時間 (分)。 "
+    ],
+    "KillInsideCrops": [
+      "有効にすると、建物内で栽培されている作物やハーブが枯れてしまいます。"
+    ],
+    "PlantGrowingSeasons": [
+      "有効にすると、植物の成長は季節の影響を受けます。"
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] これは変更しないことをお勧めします。"
+    ],
+    "FarmingSpeedNew": [
+      "植物の成長速度の設定です。 最小: 0.10 最大: 100.00 既定: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "収穫された農作物の豊かさ。 "
+    ],
+    "MaximumLooted": [
+      "建物が発見された時点ですでに略奪されている可能性があります。"
+    ],
+    "DaysUntilMaximumLooted": [
+      "略奪された建物の最大チャンスに達するまでにかかる時間。 "
+    ],
+    "RuralLooted": [
+      "田舎の建物は発見された時点ですでに略奪されている可能性があります。"
+    ],
+    "MaximumDiminishedLoot": [
+      "最大戦利品減少までの日数に達した場合に出現しない最大戦利品。"
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "最大減少戦利品パーセンテージに到達するまでにかかる時間。 "
+    ],
+    "MuscleStrainFactor": [
+      "武器を振り回したり、重い荷物を運んだりすることで筋肉に負担がかかるときに、倍率として機能します。 "
+    ],
+    "DiscomfortFactor": [
+      "着用アイテムによる不快感を与える際の倍率として機能します。 "
+    ],
+    "WoundInfectionFactor": [
+      "ダメージがゼロより大きい場合は、重傷の感染症から受ける可能性があります。 "
+    ],
+    "NoBlackClothes": [
+      "ランダムな色合いの本物の服であれば、実質的に黒になるほど暗くはなりません。"
+    ],
+    "EasyClimbing": [
+      "シートロープや壁を登る際の失敗の可能性を無効にします。"
+    ],
+    "MaximumFireFuelHours": [
+      "キャンプファイヤーや薪ストーブなどに入れることができる燃料の最大時間 最小: 1 最大: 168 既定: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Chance-To-Hit メカニズムを Chance-To-Damage の計算に置き換えます。"
+    ],
+    "FirearmNoiseMultiplier": [
+      "ゾンビが銃声を聞くことができる距離の乗数。 "
+    ],
+    "FirearmJamMultiplier": [
+      "銃器妨害の可能性の乗数。 "
+    ],
+    "FirearmMoodleMultiplier": [
+      "ヒット確率に対する Moodle 効果の乗数。 "
+    ],
+    "FirearmWeatherMultiplier": [
+      "ヒット確率に対する天候 (風、雨、霧) の影響の乗数。 "
+    ],
+    "FirearmHeadGearEffect": [
+      "溶接マスクのようなヘッドギアがヒット確率に影響を与えるようにする"
+    ],
+    "ClayLakeChance": [
+      "土の床を粘土の床に変えるチャンス。"
+    ],
+    "ClayRiverChance": [
+      "土の床を粘土の床に変えるチャンス。"
+    ],
+    "GeneratorTileRange": [
+      "最小: 1 最大: 100 既定: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "発電機の上と下の両方で何階まで電力を供給できるか。 "
+    ],
+    "SpawnFrequency": [
+      "地下室がランダムな場所に出現する頻度。 ",
+      "1 = 無効",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に"
+    ],
+    "AllowMiniMap": [
+      "有効にすると、ミニマップ ウィンドウが利用可能になります。"
+    ],
+    "AllowWorldMap": [
+      "有効にすると、世界地図にアクセスできます。"
+    ],
+    "MapAllKnown": [
+      "有効にすると、ゲームの開始時にワールドマップが完全に塗りつぶされます。"
+    ],
+    "MapNeedsLight": [
+      "有効にすると、光源がない限り地図を読み取ることができません。"
+    ],
+    "Speed": [
+      "ゾンビの移動速度の設定です。 既定 = ランダム",
+      "1 = 短距離走者",
+      "2 = 早歩き",
+      "3 = ゆっくり歩く",
+      "4 = ランダム"
+    ],
+    "SprinterPercentage": [
+      "ランダム スピードが有効な場合、ゾンビの何パーセントがスプリンターであるかを制御します。"
+    ],
+    "Strength": [
+      "筋力 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Toughness": [
+      "ゾンビを殺す難易度の設定です。 既定 = ランダム",
+      "1 = 丈夫",
+      "2 = 普通",
+      "3 = 脆い",
+      "4 = ランダム"
+    ],
+    "Transmission": [
+      "ゾンビウイルスの感染経路の設定です。 既定 = 血液 + 唾液",
+      "1 = 血液 + 唾液",
+      "2 = 唾液のみ",
+      "3 = 全人口感染済み",
+      "4 = 無し"
+    ],
+    "Mortality": [
+      "感染症が発症するまでの時間の設定です。 既定 = 数日",
+      "1 = 停止状態",
+      "2 = 数秒",
+      "3 = 数分",
+      "4 = 数時間",
+      "5 = 数日",
+      "6 = 数週間",
+      "7 = 無効"
+    ],
+    "Reanimate": [
+      "死体がゾンビとして蘇生する速度の設定です。 既定 = 数分",
+      "1 = 停止状態",
+      "2 = 数秒",
+      "3 = 数分",
+      "4 = 数時間",
+      "5 = 数日",
+      "6 = 数週間"
+    ],
+    "Cognition": [
+      "ゾンビの知能の設定です。 既定 = 初歩的な追跡",
+      "1 = 追跡 + ドアの使用",
+      "2 = 追跡",
+      "3 = 初歩的な追跡",
+      "4 = ランダム"
+    ],
+    "CrawlUnderVehicle": [
+      "ゾンビが車両の下に潜り込むかの設定です。 既定 = 少し多い",
+      "1 = 無い",
+      "2 = めったに無い",
+      "3 = あまり無い",
+      "4 = 普通",
+      "5 = 少し多い",
+      "6 = とても多い",
+      "7 = 常に"
+    ],
+    "Memory": [
+      "ゾンビがプレイヤーを見聞きしたことを記憶している時間の設定です。 既定 = 普通",
+      "1 = 長い",
+      "2 = 普通",
+      "3 = 短い",
+      "4 = 無し",
+      "5 = ランダム",
+      "6 = 通常となしの間でランダム"
+    ],
+    "Sight": [
+      "デフォルト = Normal と Poor の間でランダム",
+      "1 = 鷹の目",
+      "2 = 普通",
+      "3 = 少ない",
+      "4 = ランダム",
+      "5 = 正常と不良の間でランダム"
+    ],
+    "Hearing": [
+      "デフォルト = Normal と Poor の間でランダム",
+      "1 = 微弱音に反応",
+      "2 = 普通",
+      "3 = 少ない",
+      "4 = ランダム",
+      "5 = 正常と不良の間でランダム"
+    ],
+    "SpottedLogic": [
+      "新しい高度なステルス メカニズムを有効にすると、車の後ろのゾンビから隠れたり、特性や天候などを考慮したりできるようになります。"
+    ],
+    "ThumpNoChasing": [
+      "ゾンビが徘徊する際に、プレイヤーの姿や音が無くても建築物やドアなど破壊するか設定です。"
+    ],
+    "ThumpOnConstruction": [
+      "プレイヤーが作成した建築物やバリケードをゾンビが破壊するかどうか設定です。"
+    ],
+    "ActiveOnly": [
+      "ゾンビが昼と夜どちらにより「活動的」であるか。  ",
+      "1 = 昼夜関係無く行動",
+      "2 = 夜間に行動",
+      "3 = 昼間に行動"
+    ],
+    "TriggerHouseAlarm": [
+      "ゾンビが窓やドアを突破した際に住宅防犯アラームが動作します。"
+    ],
+    "ZombiesDragDown": [
+      "複数のゾンビが攻撃してきた場合、引きずり込まれて殺される可能性があります。  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "プレイヤーの横にクローラーゾンビがいると、ゾンビのグループに引きずり込まれて殺される可能性があります。"
+    ],
+    "ZombiesFenceLunge": [
+      "ゾンビがフェンスを乗り越えた後、または近づきすぎると窓から突進してくる可能性がある場合。"
+    ],
+    "ZombiesArmorFactor": [
+      "ゾンビが着用する鎧の有効性を決定する際の乗数として機能します。 "
+    ],
+    "ZombiesMaxDefense": [
+      "着用した防護服がゾンビに提供できる最大防御率。 "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "ランダムな付属武器を持つ確率。 "
+    ],
+    "ZombiesFallDamage": [
+      "高所から落下したときにゾンビが受けるダメージ。 "
+    ],
+    "DisableFakeDead": [
+      "死んだように見えるゾンビが復活してプレイヤーを攻撃するかどうか。 ",
+      "1 = 世の中には死んだふりをするゾンビもいます",
+      "2 = 世の中には「殺した」一部のゾンビが、死んだふりをすることもあります",
+      "3 = 無効"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "プレイヤーがスポーンする場所にはゾンビはスポーンしません。 ",
+      "1 = 建物内およびその周囲",
+      "2 = 建物内",
+      "3 = 部屋の中",
+      "4 = ゾンビはどこにでもスポーンできます"
+    ],
+    "FenceThumpersRequired": [
+      "高い柵にダメージを与えるのに必要なゾンビの数。 "
+    ],
+    "FenceDamageMultiplier": [
+      "ゾンビが高い柵をいかに早く破壊するか。 "
+    ],
+    "PopulationMultiplier": [
+      "「ゾンビ数」人口オプション、またはここでのカスタム数値によって設定します。"
+    ],
+    "PopulationStartMultiplier": [
+      "ゲーム開始時に希望するゾンビ数の乗数。"
+    ],
+    "PopulationPeakMultiplier": [
+      "ピーク日に望ましいゾンビ数の乗数。"
+    ],
+    "PopulationPeakDay": [
+      "ゾンビの数がピークに達するまでの日数です。 最小: 1 最大: 365 既定: 28"
+    ],
+    "RespawnHours": [
+      "ゾンビがセル内に再出現するまでに経過しなければならない時間数。 "
+    ],
+    "RespawnUnseenHours": [
+      "ゾンビがリスポーンする前に集団が見えていてはいけない時間です。 最小: 0.00 最大: 8760.00 既定: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "リスポーン時間ごとに復活するセル上の希望に応じたゾンビの割合です。 最小: 0.00 最大: 1.00 既定: 0.10"
+    ],
+    "RedistributeHours": [
+      "ゾンビが同じセルの空いている部分に移動するまでに経過しなければならない時間数。 "
+    ],
+    "FollowSoundDistance": [
+      "ゾンビが最後に音の聞こえた地点に歩いて行こうとする距離です。 最小: 10 最大: 1000 既定: 100"
+    ],
+    "RallyGroupSize": [
+      "実際のゾンビがアイドル状態のときに形成するグループのサイズ。 "
+    ],
+    "RallyGroupSizeVariance": [
+      "ゾンビ グループのサイズがデフォルトから変化する可能性がある割合 (パーセンテージ)。   "
+    ],
+    "RallyTravelDistance": [
+      "通常時にゾンビが集団を形成しようと移動する距離です。 最小: 5 最大: 50 既定: 20"
+    ],
+    "RallyGroupSeparation": [
+      "ゾンビ集団同士の距離です。 最小: 5 最大: 25 既定: 15"
+    ],
+    "RallyGroupRadius": [
+      "ゾンビ集団のリーダーとメンバーとの距離の設定です。 最小: 1 最大: 10 既定: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "最小: 10 最大: 500 既定: 300"
+    ],
+    "Global": [
+      "すべてのスキルがレベルアップする速度。 "
+    ],
+    "GlobalToggle": [
+      "有効にすると、すべてのスキルでグローバル乗数が使用されます。"
+    ],
+    "Fitness": [
+      "フィットネス スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Sprinting": [
+      "スプリント スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Lightfoot": [
+      "軽足 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Nimble": [
+      "俊敏 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Sneak": [
+      "スニーク スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Axe": [
+      "斧 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Blunt": [
+      "鈍器 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "SmallBlunt": [
+      "小型鈍器 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "LongBlade": [
+      "長い刃 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "SmallBlade": [
+      "短い刃 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Spear": [
+      "槍 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Maintenance": [
+      "メンテナンス スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Woodwork": [
+      "木工 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Cooking": [
+      "料理 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Doctor": [
+      "医療 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Electricity": [
+      "電気 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "MetalWelding": [
+      "金属溶接 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Mechanics": [
+      "機械 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Tailoring": [
+      "裁縫 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Aiming": [
+      "照準 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Reloading": [
+      "リロード スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Fishing": [
+      "釣り スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Trapping": [
+      "罠 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "PlantScavenging": [
+      "植物採取 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "FlintKnapping": [
+      "火打ち石加工 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Masonry": [
+      "石工 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Pottery": [
+      "陶芸 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Carving": [
+      "彫刻 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Husbandry": [
+      "畜産 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Tracking": [
+      "追跡 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Blacksmith": [
+      "鍛冶 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Butchering": [
+      "解体 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ],
+    "Glassmaking": [
+      "ガラス製作 スキルのレベルが上がる速度。 最小: 0.00 最大: 1000.00 既定: 1.00"
+    ]
+  }
+}
+
+

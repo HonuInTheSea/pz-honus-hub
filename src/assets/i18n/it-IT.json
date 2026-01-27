@@ -49,7 +49,8 @@
       "supportKofi": "Supporto su Ko-fi",
       "resetApp": "Ripristina applicazione",
       "resetAppTooltip": "Ripristina le impostazioni della finestra ed elimina i dati memorizzati",
-      "myMods": "I miei mod"
+      "myMods": "I miei mod",
+      "server": "Server"
     },
     "filters": {
       "adultLabel": "Ha contenuti per adulti",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Configura cartelle"
-    }
+    },
+    "loadingLocale": "Caricamento lingua..."
   },
   "changelog": {
     "title": "Registro modifiche",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Nuova funzionalità",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Aggiunta la possibilità di lavorare con i file di configurazione del server dedicato</li><li>README.md aggiornato</li><li>Pagina della documentazione aggiornata</li></ul>"
+      },
       "initialRelease": {
         "title": "Versione iniziale",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Prima build pubblica di Honu's Project Zomboid Hub."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Correzioni minori",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Aggiorna la destinazione del link di aggiornamento</li><li>Aggiorna il numero di versione</li><li>Aggiorna il README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Correzioni minori",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Aggiornamento del supporto linguistico"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "Flusso di lavoro",
       "data": "Dati utilizzati dall'app",
       "features": "Funzioni",
+      "server": "Gestione server",
       "mediaPlayer": "Lettore multimediale",
       "logInspector": "Controllo registro",
       "folderSetup": "Configurazione cartella",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Playlist</strong>: mostra le tracce rilevate e i metadati di base (titolo/artista/album quando disponibile).",
       "bullet2": "<strong>Riproduzione</strong>: riproduci/metti in pausa più la traccia precedente/successiva.",
       "bullet3": "<strong>Ricerca + volume</strong>: scorri la traccia e regola il volume/disattiva."
+    },
+    "server": {
+      "title": "Gestione server",
+      "intro": "Usa la pagina Server per gestire i file locali del server di Project Zomboid.",
+      "bullet1": "<strong>Crea</strong> un nuovo server per generare i file predefiniti .ini, _SandboxVars.lua, _spawnpoints.lua e _spawnregions.lua.",
+      "bullet2": "<strong>Copia</strong> un server esistente per duplicarne i file con un nuovo nome.",
+      "bullet3": "<strong>Modifica</strong> le variabili INI e Sandbox e aggiorna spawnpoints/spawnregions direttamente nell'app."
     },
     "logInspector": {
       "title": "Ispettore registro",
@@ -561,11 +589,13 @@
         "summary": "Server non valido nome",
         "detailMissing": "Immetti un nome server.",
         "detailInvalidChars": "Il nome server contiene caratteri di nome file non validi.",
-        "detailTrailing": "Il nome server non può terminare con un punto o uno spazio."
+        "detailTrailing": "Il nome server non può terminare con un punto o uno spazio.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Il nome server esiste già",
-        "detail": "Scegli un nome server univoco."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Cartella utente mancante",
@@ -696,6 +726,49 @@
       "noFilePath": "Imposta un percorso file per caricare i log.",
       "loadFailed": "Impossibile caricare il file di registro.",
       "clearFailed": "Impossibile cancellare il file di registro."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Annulla",
+      "create": "Create",
+      "editServerVariableTitle": "Modifica variabile server",
+      "editSandboxVariableTitle": "Modifica variabile sandbox",
+      "noDescription": "No description available.",
+      "save": "Salva",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "VERO",
+      "falseLabel": "Falso",
+      "exportServer": "Esporta"
     }
   }
 }

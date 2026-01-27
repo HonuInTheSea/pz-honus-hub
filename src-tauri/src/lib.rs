@@ -882,6 +882,18 @@ pub fn write_text_file(path: String, content: String) -> Result<(), String> {
 }
 
 #[tauri::command]
+pub fn copy_file(source: String, target: String) -> Result<(), String> {
+    if source.trim().is_empty() || target.trim().is_empty() {
+        return Err("Source or target path is empty.".to_string());
+    }
+    if let Some(parent) = Path::new(&target).parent() {
+        ensure_parent_dir(parent)?;
+    }
+    fs::copy(&source, &target).map_err(|e| e.to_string())?;
+    Ok(())
+}
+
+#[tauri::command]
 pub fn list_server_names(user_dir: String) -> Result<Vec<String>, String> {
     let base = Path::new(&user_dir).join("Server");
     let entries = fs::read_dir(&base).map_err(|e| e.to_string())?;
@@ -904,6 +916,27 @@ pub fn list_server_names(user_dir: String) -> Result<Vec<String>, String> {
     names.sort_by(|a, b| a.to_lowercase().cmp(&b.to_lowercase()));
     names.dedup_by(|a, b| a.eq_ignore_ascii_case(b));
     Ok(names)
+}
+
+#[tauri::command]
+pub fn delete_server_files(user_dir: String, server_name: String) -> Result<(), String> {
+    let base = Path::new(&user_dir).join("Server");
+    let trimmed = server_name.trim();
+    if trimmed.is_empty() {
+        return Err("Server name is empty.".to_string());
+    }
+    let files = vec![
+        base.join(format!("{}.ini", trimmed)),
+        base.join(format!("{}_SandboxVars.lua", trimmed)),
+        base.join(format!("{}_spawnregions.lua", trimmed)),
+        base.join(format!("{}_spawnpoints.lua", trimmed)),
+    ];
+    for path in files {
+        if path.exists() {
+            fs::remove_file(&path).map_err(|e| e.to_string())?;
+        }
+    }
+    Ok(())
 }
 
 #[tauri::command]
@@ -1963,9 +1996,11 @@ pub fn run() {
             backup_file,
             read_text_file,
             write_text_file,
+            copy_file,
             truncate_text_file,
             get_default_zomboid_user_dir,
             list_server_names,
+            delete_server_files,
             list_save_mods_files,
             analyze_mod_loadout,
             plan_server_preset,

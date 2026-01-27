@@ -1,0 +1,553 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP-logtoolchat",
+    "PVPLogToolFile": "PVP-logtoolbestand",
+    "PauseEmpty": "Pauze Leeg",
+    "GlobalChat": "Wereldwijde chat",
+    "Open": "Openen",
+    "ServerWelcomeMessage": "Welkomstbericht van de server",
+    "ServerImageLoginScreen": "Inlogscherm voor serverafbeelding",
+    "ServerImageLoadingScreen": "Scherm voor het laden van serverafbeeldingen",
+    "ServerImageIcon": "Serverbeeldpictogram",
+    "AutoCreateUserInWhiteList": "Automatisch gebruiker aanmaken in witte lijst",
+    "DisplayUserName": "Gebruikersnaam weergeven",
+    "ShowFirstAndLastName": "Toon voor- en achternaam",
+    "SpawnPoint": "Spawn-punt",
+    "SafetySystem": "Veiligheidssysteem",
+    "ShowSafety": "Toon veiligheid",
+    "SafetyToggleTimer": "Veiligheidsschakeltimer",
+    "SafetyCooldownTimer": "Veiligheidsafkoeltimer",
+    "SafetyDisconnectDelay": "Vertraging veiligheidsuitschakeling",
+    "SpawnItems": "Spawn-items",
+    "DefaultPort": "Standaardpoort",
+    "UDPPort": "UDP-poort",
+    "ResetID": "ID opnieuw instellen",
+    "Mods": "Mods",
+    "Map": "Kaart",
+    "DoLuaChecksum": "Doe Lua-checksum",
+    "Public": "Openbaar",
+    "PublicName": "Publieke naam",
+    "PublicDescription": "Openbare beschrijving",
+    "MaxPlayers": "Maximaal aantal spelers",
+    "PingLimit": "Pinglimiet",
+    "SafehousePreventsLootRespawn": "Safehouse voorkomt buit-respawn",
+    "DropOffWhiteListAfterDeath": "Zet de witte lijst af na overlijden",
+    "NoFire": "Geen vuur",
+    "AnnounceDeath": "Kondig de dood aan",
+    "SaveWorldEveryMinutes": "Red de wereld elke minuut",
+    "PlayerSafehouse": "Speler Safehouse",
+    "AdminSafehouse": "Beheerder Safehouse",
+    "SafehouseAllowTrepass": "Safehouse staat overtreding toe",
+    "SafehouseAllowFire": "Safehouse Sta brand toe",
+    "SafehouseAllowLoot": "Safehouse laat buit toe",
+    "SafehouseAllowRespawn": "Safehouse Respawn toestaan",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day overleefd om te claimen",
+    "SafeHouseRemovalTime": "Tijd voor veilige huisverhuizing",
+    "SafehouseAllowNonResidential": "Safehouse Toestaan ​​niet-residentieel",
+    "MaxSafezoneSize": "Maximale grootte van veilige zone",
+    "AllowDestructionBySledgehammer": "Laat vernietiging door voorhamer toe",
+    "SledgehammerOnlyInSafehouse": "Voorhamer alleen in Safehouse",
+    "WarStartDelay": "Uitstel van het begin van de oorlog",
+    "WarDuration": "Oorlogsduur",
+    "WarSafehouseHitPoints": "Hitpoints voor oorlogssafehouses",
+    "ServerPlayerID": "Serverspeler-ID",
+    "RCONPort": "RCON-poort",
+    "RCONPassword": "RCON-wachtwoord",
+    "DiscordEnable": "Onenigheid inschakelen",
+    "DiscordToken": "Onenigheidsfiche",
+    "DiscordChannel": "Discord-kanaal",
+    "DiscordChannelID": "Discord-kanaal-ID",
+    "WebhookAddress": "Webhook-adres",
+    "Password": "Wachtwoord",
+    "MaxAccountsPerUser": "Max. accounts per gebruiker",
+    "AllowCoop": "Laat Coöp toe",
+    "SleepAllowed": "Slapen toegestaan",
+    "SleepNeeded": "Slaap nodig",
+    "KnockedDownAllowed": "Neergeslagen toegestaan",
+    "SneakModeHideFromOtherPlayers": "Sneak-modus verbergen voor andere spelers",
+    "WorkshopItems": "Workshop-items",
+    "SteamScoreboard": "Stoomscorebord",
+    "SteamVAC": "Stoom VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Stem inschakelen",
+    "VoiceMinDistance": "Stemmin. afstand",
+    "VoiceMaxDistance": "Stem maximale afstand",
+    "Voice3D": "Stem 3D",
+    "SpeedLimit": "Snelheidslimiet",
+    "LoginQueueConnectTimeout": "Time-out voor verbindingswachtrij",
+    "server_browser_announced_ip": "Serverbrowser aangekondigd ip",
+    "PlayerRespawnWithSelf": "Speler respawn met zichzelf",
+    "PlayerRespawnWithOther": "Speler respawn met andere",
+    "FastForwardMultiplier": "Snel vooruit vermenigvuldiger",
+    "DisableSafehouseWhenPlayerConnected": "Schakel Safehouse uit wanneer speler verbonden is",
+    "Faction": "Factie",
+    "FactionDaySurvivedToCreate": "Factiedag overleefd om te creëren",
+    "FactionPlayersRequiredForTag": "Factiespelers vereist voor tag",
+    "DisableRadioStaff": "Schakel radiopersoneel uit",
+    "DisableRadioAdmin": "Schakel Radiobeheer uit",
+    "DisableRadioGM": "Schakel Radio GM uit",
+    "DisableRadioOverseer": "Schakel Radio-toezichthouder uit",
+    "DisableRadioModerator": "Schakel Radiomoderator uit",
+    "DisableRadioInvisible": "Schakel Radio onzichtbaar uit",
+    "ClientCommandFilter": "Clientopdrachtfilter",
+    "ClientActionLogs": "Logboeken van klantacties",
+    "PerkLogs": "Perk-logboeken",
+    "ItemNumbersLimitPerContainer": "Limiet artikelnummers per container",
+    "BloodSplatLifespanDays": "Dagen van de levensduur van bloedspatten",
+    "AllowNonAsciiUsername": "Niet-Ascii-gebruikersnaam toestaan",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Verwijder de lijken van de speler bij het verwijderen van lijken",
+    "TrashDeleteAll": "Prullenbak Alles verwijderen",
+    "PVPMeleeWhileHitReaction": "PVP-melee tijdens trefferreactie",
+    "MouseOverToSeeDisplayName": "Beweeg de muis over om de weergavenaam te zien",
+    "HidePlayersBehindYou": "Verberg spelers achter je",
+    "PVPMeleeDamageModifier": "PVP Melee-schademodificatie",
+    "PVPFirearmDamageModifier": "PVP vuurwapenschademodificatie",
+    "CarEngineAttractionModifier": "Aantrekkingsmodificator voor automotoren",
+    "PlayerBumpPlayer": "Speler Bump-speler",
+    "MapRemotePlayerVisibility": "Breng de zichtbaarheid van externe spelers in kaart",
+    "BackupsCount": "Back-ups tellen",
+    "BackupsOnStart": "Back-ups bij starten",
+    "BackupsPeriod": "Back-ups Periode",
+    "DisableVehicleTowing": "Schakel het slepen van voertuigen uit",
+    "DisableTrailerTowing": "Schakel het trekken van aanhangwagens uit",
+    "DisableBurntTowing": "Schakel verbrand slepen uit",
+    "BadWordListFile": "Slechte woordenlijstbestand",
+    "GoodWordListFile": "Goed woordenlijstbestand",
+    "BadWordPolicy": "Slecht woordbeleid",
+    "BadWordReplacement": "Vervanging van slechte woorden",
+    "AntiCheatSafety": "Anti-cheat-veiligheid",
+    "AntiCheatMovement": "Anti-cheat-beweging",
+    "AntiCheatHit": "Anti-cheat-hit",
+    "AntiCheatPacket": "Anti-cheatpakket",
+    "AntiCheatPermission": "Toestemming tegen cheaten",
+    "AntiCheatXP": "Anti-cheat XP",
+    "AntiCheatFire": "Anti-cheatfire",
+    "AntiCheatSafeHouse": "Veilig huis tegen bedrog",
+    "AntiCheatRecipe": "Anti-cheat recept",
+    "AntiCheatPlayer": "Anti-cheat-speler",
+    "AntiCheatChecksum": "Controlesom tegen cheaten",
+    "AntiCheatItem": "Anti-cheat-item",
+    "AntiCheatServerCustomization": "Aanpassing van anti-cheatservers",
+    "MultiplayerStatisticsPeriod": "Periode met statistieken voor meerdere spelers",
+    "DisableScoreboard": "Scorebord uitschakelen",
+    "HideAdminsInPlayerList": "Beheerders verbergen in spelerslijst",
+    "Seed": "Zaad",
+    "ChatMessageCharacterLimit": "Karakterlimiet voor chatberichten",
+    "ChatMessageSlowModeTime": "Chatbericht Langzame modustijd",
+    "comments": {
+"PVP": [
+        "Spelers kunnen andere spelers beschadigen en doden."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Game tijd stopt als er geen spelers online zijn"
+      ],
+      "GlobalChat": [
+        "Zet de globale chat aan of uit."
+      ],
+      "Open": [
+        "Spelers kunnen nu mee spelen zonder een account op de whitelist. Wanneer dit uitstaat: admins moeten handmatig gebruikersnamen en wachtwoorden maken."
+      ],
+      "ServerWelcomeMessage": [
+        "Het eerste bericht dat in de chat verschijnt; wordt getoond wanneer een speler inlogt."
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Als dit is ingeschakeld, worden spelers in sluipmodus verborgen voor andere spelers."
+      ],
+      "ServerImageLoadingScreen": [
+        "Pad naar de afbeelding die wordt weergegeven op het laadscherm van de server."
+      ],
+      "ServerImageIcon": [
+        "Pad naar de afbeelding die als serverpictogram wordt gebruikt."
+      ],
+      "ServerImageLoginScreen": [
+        "Pad naar de afbeelding die wordt weergegeven op het aanmeldscherm van de server."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Voegt onbekende spelers toe aan de whitelist. Spelers voegen zelf hun naam en wachtwoord in."
+      ],
+      "DisplayUserName": [
+        "Toont de gebruikersnaam van spelers boven hun hoofden."
+      ],
+      "ShowFirstAndLastName": [
+        "Display first & last name above player's heads."
+      ],
+      "SpawnPoint": [
+        "Dwingt iedere speler bij deze coï¿½rdinaten te spawnen. De coï¿½rdinaten staan op map.projectzomboid.com. Genegeerd bij 0,0,0."
+      ],
+      "SafetySystem": [
+        "Spelers kunnen zelf PVP-modus aan of uit zetten.  Spelers kunnen elkaar verwonden wanneer zij beiden in PVP-modus zitten (Gekruisde bijlen zijn dan rood)."
+      ],
+      "ShowSafety": [
+        "Toont een schedel boven het hoofd van een speler die in PVP-modus zit."
+      ],
+      "SafetyToggleTimer": [
+        "De tijd die het kost voor een speler om in en uit PVP-modus te gaan."
+      ],
+      "SafetyCooldownTimer": [
+        "De tijd die het duurt voordat een speler zich weer in/uit PVP-modus kan halen."
+      ],
+      "SpawnItems": [
+        "Items waarmee spelers spawnen.",
+        "Scheidt meerdere items met komma's.",
+        "bvb. Base.Axe,Base.BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Startpoort voor spelerdata. "
+      ],
+      "ResetID": [
+        "Stelt vast of de server een soft reset is ondergaan. Als dit nummer overeenkomt met dat van de speler, zal hij/zij een nieuw karakter moet maken."
+      ],
+      "Mods": [
+        "Voeg hier het mod laad ID. Het kan gevonden worden in \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Zet spelers uit die bestanden hebben die niet overkomen met de server."
+      ],
+      "Public": [
+        "Server tonen bij het in-game browser."
+      ],
+      "PublicName": [
+        "Naam van de server wordt getoond zowel in-game als in het Steam browser"
+      ],
+      "PublicDescription": [
+        "De beschrijving wordt in het in-game browser getoond."
+      ],
+      "MaxPlayers": [
+        "Maximale aantal spelers die teglijkertijd op de server kunnen zijn, admins niet meegerekend. Steam staat maximaal 126 spelers toe."
+      ],
+      "PingLimit": [
+        "Ping limiet in milliseconden voordat iemand uit de server gezet wordt. Stel het in op 0 om het uit te schakelen"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Voorwerpen zullen niet respawnen in gebouwen die spelers als safehouse hebben geclaimd"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Verwijdert spelers die sterven. Voorkomt dat wanneer spelers overlijden, zij een nieuw karakter kunnen maken."
+      ],
+      "NoFire": [
+        "Alle vormen van vuur staan uit, behalve kampvuren."
+      ],
+      "AnnounceDeath": [
+        "Wanneer het aanstaat wordt iedere keer wanneer iemand sterft een bericht in de chat getoond."
+      ],
+      "AnnounceAnimalDeath": [
+        "Als dit is ingeschakeld, wordt telkens wanneer een dier sterft een globaal bericht in de chat weergegeven."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Geladen delen van de kaart worden opgeslagen na zoveel echte minuten."
+      ],
+      "PlayerSafehouse": [
+        "Admins en spelers mogen schuilplaatsen opeisen."
+      ],
+      "AdminSafehouse": [
+        "Alleen admins mogen schuilplaatsen opeisen."
+      ],
+      "SafehouseAllowTrepass": [
+        "Staat toe dat niet-leden schuilplaatsen binnen kunnen treden zonder uitnodiging."
+      ],
+      "SafehouseAllowFire": [
+        "Staat toe dat vuur schuilplaatsen beschadigt."
+      ],
+      "SafehouseAllowLoot": [
+        "Staat toe dat niet-leden items uit schuilplaatsen kunnen pakken."
+      ],
+      "SafehouseAllowRespawn": [
+        "Spelers spawnen in een schuilplaats waar zij bij zaten voor hun dood."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Spelers moeten zoveel dagen overleven voordat ze schuilplaatsen kunnen opeisen."
+      ],
+      "SafeHouseRemovalTime": [
+        "Spelers worden automatisch verwijderd uit een safehouse dat ze al zoveel uren in de echte wereld niet hebben bezocht."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Bepaalt of spelers niet-residentiële gebouwen kunnen claimen."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Staat toe dat spelers met mokers wereld objecten slopen."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Sta spelers toe om wereldobjecten alleen in hun safehouse te vernietigen (vereist dat AllowDestructionBySledgehammer op true staat)."
+      ],
+      "WarStartDelay": [
+        "Tijd in seconden voordat de oorlog begint."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "Stelt vast of de speler uit een andere server of single player wereld komt. Deze waarde kan aangepast worden bij soft resets."
+      ],
+      "RCONPort": [
+        "De RCON-poort"
+      ],
+      "RCONPassword": [
+        "RCON wachtwoord"
+      ],
+      "DiscordEnable": [
+        "Schakel integratie met Discord in"
+      ],
+      "DiscordToken": [
+        "Discord bot access token"
+      ],
+      "DiscordChannel": [
+        "Discord kanaal naam. Als dit problemen geeft, gebruik dan in plaats daarvan het kanaal-ID"
+      ],
+      "DiscordChannelID": [
+        "Discord-kanaal-ID. Niet verplicht. Gebruik in geval problemen met kanaalnaam"
+      ],
+      "WebhookAddress": [
+        "De Slack-URL voor binnenkomende webhook"
+      ],
+      "Password": [
+        "Spelers moeten het wachtwoord kennen om mee te spelen. Wordt genegeerd wanneer je de server host."
+      ],
+      "MaxAccountsPerUser": [
+        "Het aantal accounts dat gemaakt kan worden per Steam-gebruiker."
+      ],
+      "AllowCoop": [
+        "Sta coöp-/splitscreen-spelers toe"
+      ],
+      "SleepAllowed": [
+        "Spelers kunnen slapen wanneer zij moe zijn."
+      ],
+      "SleepNeeded": [
+        "Spelers worden moe, en hebben slaap nodig."
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Lijst van Workshop Mod IDs voor de server om te downloaden. Gescheiden door een puntkomma. Voorbeeld WorkshopItems"
+      ],
+      "SteamScoreboard": [
+        "Tonen Steam namen en profielfoto's in de speler lijst. Het kan aan (zichtbaar voor iedereen), uit (zichtbaar voor niemand), of op adminmodus staan (alleen voor admins zichtbaar)."
+      ],
+      "SteamVAC": [
+        "Sta het Steam VAC systeem toe."
+      ],
+      "UPnP": [
+        "Probeer een UPnP-compatibele internetgateway te configureren om automatisch port forwarding-regels in te stellen. "
+      ],
+      "VoiceEnable": [
+        "Wanneer aan, staat VOP ingeschakeld."
+      ],
+      "VoiceMinDistance": [
+        "De minimale afstand in tiles waarin VOIP geluiden gehoord kunnen worden"
+      ],
+      "VoiceMaxDistance": [
+        "De maximale afstand in tiles waarin VOIP geluiden gehoord kunnen worden"
+      ],
+      "Voice3D": [
+        "Omgevingsgerichte audio voor VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Stel het IP-adres in waarvoor de server wordt uitgezonden. "
+      ],
+      "PlayerRespawnWithSelf": [
+        "Spelers respawnen waar zij gestorven zijn."
+      ],
+      "PlayerRespawnWithOther": [
+        "Spelers kunnen in-game respawnen bij hun split-screen maatje."
+      ],
+      "FastForwardMultiplier": [
+        "Hoe snel gaat de tijd wanneer iedereen slaapt?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Zorgt ervoor dat een schuilplaats zich als een normaal huis gedraagt wanneer een lid van de schuilplaats met de server verbonden is."
+      ],
+      "Faction": [
+        "Wanneer ingeschakeld, wordt het toegelaten voor spelers om groepen en facties te maken."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Je moet X dagen overleven voordat je een factie kan opzetten."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Hoeveel spelers in een factie of groep moeten zitten voordat de leider een speciale tag kan inschakelen."
+      ],
+      "DisableRadioStaff": [
+        "Schakelt radio-uitzendingen van spelers met elk toegangsniveau uit."
+      ],
+      "DisableRadioAdmin": [
+        "Schakelt radio-uitzendingen van spelers met een 'admin'-rank uit."
+      ],
+      "DisableRadioGM": [
+        "Schakelt radio-uitzendingen van spelers met een 'gm'-rank uit."
+      ],
+      "DisableRadioOverseer": [
+        "Schakelt radio-uitzendingen van spelers met een 'overseer'-rank uit."
+      ],
+      "DisableRadioModerator": [
+        "Schakelt radio-uitzendingen van spelers met een 'moderator'-rank uit."
+      ],
+      "DisableRadioInvisible": [
+        "Schakelt radio-uitzendingen van onzichtbare spelers uit."
+      ],
+      "ClientCommandFilter": [
+        "Door puntkomma's gescheiden lijst met opdrachten die niet naar het cmd.txt-serverlogboek worden geschreven.",
+        "-voertuig. * Betekent geen voertuigopdracht schrijven.",
+        "+voertuig.installPart betekent schrijfopdracht."
+      ],
+      "ClientActionLogs": [
+        "Door puntkomma's gescheiden lijst met acties die naar het ClientActionLogs.txt-serverlogboek worden geschreven."
+      ],
+      "PerkLogs": [
+        "Track changes in player perk levels in PerkLog.txt server log"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Maximaal aantal items dat in een container kan worden geplaatst. "
+      ],
+      "BloodSplatLifespanDays": [
+        "Aantal dagen voordat oude bloedspatten worden verwijderd. <br> Verwijdering gebeurt wanneer map chunks worden geladen. <br> Nul betekent nooit verwijderen."
+      ],
+      "AllowNonAsciiUsername": [
+        "Sta het gebruik van non-Ascii (cyrillische ...) tekens in de gebruikersnaam toe"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Indien true zal HoursForCorpseRemoval triggers ook speler lijken verwijderen."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Als dit waar is, kan de speler opnieuw slaan als hij door een andere speler wordt geraakt."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Als dit waar is, moeten spelers met de muis over iemand heen bewegen om hun weergavenaam te zien."
+      ],
+      "HidePlayersBehindYou": [
+        "Indien waar, verberg dan automatisch de speler die je niet kunt zien (zoals zombies)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Schadevermenigvuldiger voor PVP-melee-aanvallen."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Schadevermenigvuldiger voor PVP-afstandsaanvallen."
+      ],
+      "CarEngineAttractionModifier": [
+        "Wijzig het bereik van de aantrekkingskracht van zombies op auto's. "
+      ],
+      "PlayerBumpPlayer": [
+        "Bepaalt of spelers andere spelers tegen het lijf lopen (en omverwerpen) als ze er doorheen rennen."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Regelt de weergave van externe spelers op de in-game kaart.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Pad naar het bestand met de lijst met te verbieden woorden. "
+      ],
+      "GoodWordListFile": [
+        "Pad naar het bestand met de lijst met woorden die moeten worden toegestaan, zelfs als ze slechte woorden bevatten. "
+      ],
+      "BadWordPolicy": [
+        "Wat te doen met de afzender van een slecht woord in de chat: 1 - ban, 2 - kick, 3 - noteer de overtreding in de database, 4 - mute"
+      ],
+      "BadWordReplacement": [
+        "Het symbool of stuk tekst dat het slechte woord zal vervangen"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Schakelt de anti-cheatbeveiliging voor beweging uit."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Schakelt de anti-cheatbeveiliging voor spelers uit."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Schakelt de anti-cheat-bescherming van itemcontroles uit."
+      ],
+      "AntiCheatServerCustomization": [
+        "Schakelt de anti-cheatbeveiliging voor serveraanpassing uit."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Stelt de multiplayer-updateperiode in seconden in. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Verbergt beheerders in de spelerslijst."
+      ],
+      "Seed": [
+        "Het worldgen-zaad dat werd gebruikt om de wereld te genereren.<br>Als je dit wilt wijzigen, plaats dan een nieuwe waarde in en verwijder map_worldgen.bin in je opslagmap."
+      ],
+      "SpeedLimit": [
+        "Snelheidslimiet voor voertuigen."
+      ],
+      "BackupsCount": [
+        "Min: 1 Max: 300 Standaard: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Max: 1500 Standaard: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Max: 1024 Standaard: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Max: 30 Standaard: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Max: 1200 Standaard: 60"
+      ],
+      "Map": [
+        "Voer de mapnaam in van de mod die te vinden is in \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Max: 2147483647 Standaard: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Max: 60 Standaard: 60"
+      ],
+      "TrashDeleteAll": [
+        "Als dit is ingeschakeld, kan de speler de knop \\"alles verwijderen\\" op prullenbakken gebruiken."
+      ],
+      "UDPPort": [
+        "Min: 0 Max: 65535 Standaard: 16262"
+      ]
+    }
+  }
+}
+
+

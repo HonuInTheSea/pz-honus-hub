@@ -49,7 +49,8 @@
       "supportKofi": "Ko-fi のサポート",
       "resetApp": "アプリケーションをリセットする",
       "resetAppTooltip": "ウィンドウ設定をリセットし、保存されたデータを削除します",
-      "myMods": "私の Mods"
+      "myMods": "私の Mods",
+      "server": "サーバ"
     },
     "filters": {
       "adultLabel": "アダルトコンテンツあり",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "フォルダーの構成"
-    }
+    },
+    "loadingLocale": "言語を読み込んでいます..."
   },
   "changelog": {
     "title": "変更履歴",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "新機能",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>専用サーバー設定ファイルを扱えるように追加</li><li>README.md を更新</li><li>ドキュメントページを更新</li></ul>"
+      },
       "initialRelease": {
         "title": "初回リリース",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Honu's Project Zomboid Hub の最初の公開版。"
+      },
+      "minorFixes_0_4_1": {
+        "title": "軽微な修正",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>更新リンクの遷移先を更新</li><li>バージョン番号を更新</li><li>README.md を更新</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "軽微な修正",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "言語サポートの更新"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "ワークフロー",
       "data": "アプリが使用するデータ",
       "features": "特徴",
+      "server": "サーバー管理",
       "mediaPlayer": "メディアプレーヤー",
       "logInspector": "ログインスペクタ",
       "folderSetup": "フォルダーの設定",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>プレイリスト</strong> - 検出されたトラックと基本的なメタデータ (タイトル/アーティスト/アルバム (利用可能な場合)) が表示されます。",
       "bullet2": "<strong>再生</strong> - 再生/一時停止と前/次のトラック。",
       "bullet3": "<strong>シーク + 音量</strong> - トラックをスクラブし、音量/ミュートを調整します。"
+    },
+    "server": {
+      "title": "サーバー管理",
+      "intro": "サーバー画面を使って Project Zomboid のローカルサーバーファイルを管理します。",
+      "bullet1": "<strong>作成</strong>：新しいサーバーを作成し、既定の .ini、_SandboxVars.lua、_spawnpoints.lua、_spawnregions.lua を生成します。",
+      "bullet2": "<strong>コピー</strong>：既存のサーバーを新しい名前で複製します。",
+      "bullet3": "<strong>編集</strong>：INI と Sandbox 変数を編集し、spawnpoints/spawnregions をアプリ内で更新します。"
     },
     "logInspector": {
       "title": "ログインスペクタ",
@@ -561,11 +589,13 @@
         "summary": "無効なサーバーname",
         "detailMissing": "サーバー名を入力してください。",
         "detailInvalidChars": "サーバー名に無効なファイル名文字が含まれています。",
-        "detailTrailing": "サーバー名はドットまたはスペースで終わることはできません。"
+        "detailTrailing": "サーバー名はドットまたはスペースで終わることはできません。",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "サーバー名はすでに存在します。",
-        "detail": "一意のサーバー名を選択してください。"
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "ユーザー フォルダーがありません",
@@ -696,6 +726,49 @@
       "noFilePath": "ログを読み込むファイルパスを設定します。",
       "loadFailed": "ログファイルの読み込みに失敗しました。",
       "clearFailed": "ログファイルのクリアに失敗しました。"
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "キャンセル",
+      "create": "Create",
+      "editServerVariableTitle": "サーバー変数の編集",
+      "editSandboxVariableTitle": "サンドボックス変数の編集",
+      "noDescription": "No description available.",
+      "save": "保存",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "真実",
+      "falseLabel": "間違い",
+      "exportServer": "エクスポート"
     }
   }
 }

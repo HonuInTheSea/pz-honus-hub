@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolFile": "Soubor nástroje PVP Log Tool",
+    "PauseEmpty": "Pauza Prázdná",
+    "GlobalChat": "Globální chat",
+    "Open": "Otevřít",
+    "ServerWelcomeMessage": "Uvítací zpráva serveru",
+    "ServerImageLoginScreen": "Obrazovka přihlášení k obrázku serveru",
+    "ServerImageLoadingScreen": "Obrazovka načítání obrázku serveru",
+    "ServerImageIcon": "Ikona Obrázek serveru",
+    "AutoCreateUserInWhiteList": "Automatické vytvoření uživatele v bílé listině",
+    "DisplayUserName": "Zobrazit uživatelské jméno",
+    "ShowFirstAndLastName": "Zobrazit jméno a příjmení",
+    "SpawnPoint": "Spawn Point",
+    "SafetySystem": "Bezpečnostní systém",
+    "ShowSafety": "Ukaž bezpečnost",
+    "SafetyToggleTimer": "Bezpečnostní přepínací časovač",
+    "SafetyCooldownTimer": "Bezpečnostní časovač chlazení",
+    "SafetyDisconnectDelay": "Zpoždění bezpečnostního odpojení",
+    "SpawnItems": "Spawn položky",
+    "DefaultPort": "Výchozí port",
+    "UDPPort": "Port UDP",
+    "ResetID": "Resetovat ID",
+    "Mods": "Mods",
+    "Map": "Mapa",
+    "DoLuaChecksum": "Proveďte kontrolní součet Lua",
+    "Public": "Veřejné",
+    "PublicName": "Veřejné jméno",
+    "PublicDescription": "Veřejný popis",
+    "MaxPlayers": "Maximální počet hráčů",
+    "PingLimit": "Ping Limit",
+    "SafehousePreventsLootRespawn": "Safehouse zabraňuje opětovnému spawnování kořisti",
+    "DropOffWhiteListAfterDeath": "Po smrti vyhoďte Bílou listinu",
+    "NoFire": "Žádný oheň",
+    "AnnounceDeath": "Oznámit Smrt",
+    "SaveWorldEveryMinutes": "Zachraňte svět každou minutu",
+    "PlayerSafehouse": "Player Safehouse",
+    "AdminSafehouse": "Admin Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Povolit Trepass",
+    "SafehouseAllowFire": "Safehouse Allow Fire",
+    "SafehouseAllowLoot": "Safehouse Allow Loot",
+    "SafehouseAllowRespawn": "Safehouse Povolit Respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day Survival k reklamaci",
+    "SafeHouseRemovalTime": "Čas bezpečného odstranění domu",
+    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "MaxSafezoneSize": "Maximální velikost bezpečnostní zóny",
+    "AllowDestructionBySledgehammer": "Povolit zničení Sledgehammer",
+    "SledgehammerOnlyInSafehouse": "Perlík Pouze V Safehouse",
+    "WarStartDelay": "Odložení začátku války",
+    "WarDuration": "Doba trvání války",
+    "WarSafehouseHitPoints": "Životní body válečného trezoru",
+    "ServerPlayerID": "ID přehrávače serveru",
+    "RCONPort": "Port RCON",
+    "RCONPassword": "Heslo RCON",
+    "DiscordEnable": "Discord Povolit",
+    "DiscordToken": "Discord Token",
+    "DiscordChannel": "Discord Channel",
+    "DiscordChannelID": "ID kanálu Discord",
+    "WebhookAddress": "Adresa webhooku",
+    "Password": "Heslo",
+    "MaxAccountsPerUser": "Maximální počet účtů na uživatele",
+    "AllowCoop": "Povolit Coop",
+    "SleepAllowed": "Spánek povolen",
+    "SleepNeeded": "Spánek Potřebný",
+    "KnockedDownAllowed": "Knock Down povoleno",
+    "SneakModeHideFromOtherPlayers": "Sneak Mode Skrýt se před ostatními hráči",
+    "WorkshopItems": "Workshop položky",
+    "SteamScoreboard": "Scoreboard Steam",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Povolit hlas",
+    "VoiceMinDistance": "Hlasová min. vzdálenost",
+    "VoiceMaxDistance": "Maximální vzdálenost hlasu",
+    "Voice3D": "Hlas 3D",
+    "SpeedLimit": "Rychlostní limit",
+    "LoginQueueConnectTimeout": "Časový limit připojení fronty přihlášení",
+    "server_browser_announced_ip": "Serverový prohlížeč oznámil ip",
+    "PlayerRespawnWithSelf": "Hráč se znovu objeví",
+    "PlayerRespawnWithOther": "Hráč se znovu objeví s ostatními",
+    "FastForwardMultiplier": "Rychlý multiplikátor",
+    "DisableSafehouseWhenPlayerConnected": "Zakázat Safehouse, když je přehrávač připojen",
+    "Faction": "Frakce",
+    "FactionDaySurvivedToCreate": "Den frakce přežil k vytvoření",
+    "FactionPlayersRequiredForTag": "Pro štítek jsou vyžadováni hráči frakce",
+    "DisableRadioStaff": "Deaktivujte personál rádia",
+    "DisableRadioAdmin": "Zakázat Správce rádia",
+    "DisableRadioGM": "Zakázat rádio GM",
+    "DisableRadioOverseer": "Zakázat rádiového dozorce",
+    "DisableRadioModerator": "Zakázat moderátora rádia",
+    "DisableRadioInvisible": "Zakázat Radio Invisible",
+    "ClientCommandFilter": "Filtr příkazů klienta",
+    "ClientActionLogs": "Protokoly akcí klienta",
+    "PerkLogs": "Perk Logs",
+    "ItemNumbersLimitPerContainer": "Limit počtu položek na kontejner",
+    "BloodSplatLifespanDays": "Dny životnosti Blood Splat",
+    "AllowNonAsciiUsername": "Povolit uživatelské jméno bez Ascii",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Remove Player Corpses On Corpse Removal",
+    "TrashDeleteAll": "Koš Smazat vše",
+    "PVPMeleeWhileHitReaction": "PVP Melee While Hit Reaction",
+    "MouseOverToSeeDisplayName": "Přejetím myší zobrazíte zobrazované jméno",
+    "HidePlayersBehindYou": "Skryjte hráče za sebou",
+    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPFirearmDamageModifier": "PVP modifikátor poškození střelné zbraně",
+    "CarEngineAttractionModifier": "Modifikátor přitažlivosti motoru automobilu",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Viditelnost vzdáleného přehrávače mapy",
+    "BackupsCount": "Počet záloh",
+    "BackupsOnStart": "Zálohy při spuštění",
+    "BackupsPeriod": "Období zálohování",
+    "DisableVehicleTowing": "Zakázat tažení vozidla",
+    "DisableTrailerTowing": "Zakázat tažení přívěsu",
+    "DisableBurntTowing": "Deaktivujte Burnt Tažení",
+    "BadWordListFile": "Soubor seznamu chybných slov",
+    "GoodWordListFile": "Dobrý soubor seznamu slov",
+    "BadWordPolicy": "Zásady špatného slova",
+    "BadWordReplacement": "Náhrada špatných slov",
+    "AntiCheatSafety": "Bezpečnost proti cheatům",
+    "AntiCheatMovement": "Hnutí proti cheatům",
+    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatPacket": "Balíček Anti Cheat",
+    "AntiCheatPermission": "Anti Cheat povolení",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatRecipe": "Recept proti cheatům",
+    "AntiCheatPlayer": "Anti Cheat Player",
+    "AntiCheatChecksum": "Kontrolní součet Anti Cheat",
+    "AntiCheatItem": "Položka proti cheatům",
+    "AntiCheatServerCustomization": "Anti Cheat Server přizpůsobení",
+    "MultiplayerStatisticsPeriod": "Období statistik pro více hráčů",
+    "DisableScoreboard": "Zakázat výsledkovou tabulku",
+    "HideAdminsInPlayerList": "Skrýt správce v seznamu hráčů",
+    "Seed": "Semeno",
+    "ChatMessageCharacterLimit": "Omezení počtu znaků chatové zprávy",
+    "ChatMessageSlowModeTime": "Doba pomalého režimu chatové zprávy",
+    "comments": {
+"PVP": [
+        "Hr��i mohou ubl�it ostatn�m hr���m."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "�as hern�ho sv�ta se zastav�, pokud na serveru nejsou ��dn� hr��i."
+      ],
+      "GlobalChat": [
+        "P�ep�n� glob�ln� chat na zap. a vyp."
+      ],
+      "Open": [
+        "Klienti se mohou p�ipojit, ani� by m�li ��et v seznamu povolen�ch/whitelistu."
+      ],
+      "ServerWelcomeMessage": [
+        "Prvn� zpr�va, kter� je viditeln� v nab�dce chatu; zobrazuje se okam�it� po p�ihl�en� hr��e."
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Pokud je zapnuto, hráči v režimu plížení jsou skryti před ostatními hráči."
+      ],
+      "ServerImageLoadingScreen": [
+        "Cesta k obrázku zobrazenému na načítací obrazovce serveru."
+      ],
+      "ServerImageIcon": [
+        "Cesta k obrázku použitému jako ikona serveru."
+      ],
+      "ServerImageLoginScreen": [
+        "Cesta k obrázku zobrazenému na přihlašovací obrazovce serveru."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "P�id�vat nezn�m� u�iv. jm�na do whitelistu (seznam povolen�ch), kdy� se hr��i p�ipoj�.  Pro Open"
+      ],
+      "DisplayUserName": [
+        "Zobrazovat u�iv. jm�na nad hlavami hr��� ve h�e."
+      ],
+      "ShowFirstAndLastName": [
+        "Zobrazen� jm�na a p��jmen� nad hlavami hr��� m�sto u�ivatelsk�ho jm�na."
+      ],
+      "SpawnPoint": [
+        "Vynut� spawn ka�d�ho nov�ho hr��e na t�chto x,y,z koordin�tech sv�ta.  Ignorov�no, kdy� 0,0,0."
+      ],
+      "SafetySystem": [
+        "Hr��i mohou libovoln� vstoupit a opustit PVP re�im.  Hr�� m��e ubl�it dal��mu hr��i pouze tehdy, pokud jsou oba v PVP re�imu.  P�i nastaven� SafetySystem"
+      ],
+      "ShowSafety": [
+        "Zobrazovat ikonu lebky nad hlavami hr���, kte�� jsou v PVP re�imu."
+      ],
+      "SafetyToggleTimer": [
+        "Za jak dlouho bude hr�� moci vstoupit nebo opustit PVP re�im."
+      ],
+      "SafetyCooldownTimer": [
+        "Prodleva, b�hem kter� nebude moci hr�� znovu vstoupit nebo opustit PVP re�im pot�, co tak ji� posledn� ud�lal."
+      ],
+      "SpawnItems": [
+        "Druhy p�edm�t�, se kter�mi se nov� hr�� spawne.",
+        "Pro p�id�n� v�ce p�edm�t� je nutn� je odd�lovat ��rkou.",
+        "nap�. Base.Axe,Base.BigHikingBag"
+      ],
+      "DefaultPort": [
+        "UDP port klienti pou��vaj�, kdy� se p�ipojuj� na server."
+      ],
+      "ResetID": [
+        "Toto ��slo se zm�n� po �pln�m restartu. Zm�na tohoto ��sla zp�sob�, �e ulo�en� pozice budou smaz�ny (n� v�ak soubory hr��� klienta)."
+      ],
+      "Mods": [
+        "Zadej zde nahr�vac� ID m�du. To lze nal�zt zde \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Vykopnout klienty, jejich� hern� soubory nejsou toto�n� s t�mi serverov�mi."
+      ],
+      "Public": [
+        "Zve�ejni server v hern� prohl�e�i server� (a mo�n� i ve Steam prohl�e�i server�)."
+      ],
+      "PublicName": [
+        "Zobrazen� v hern�m prohl�e�i server� (a mo�n� i ve Steam prohl�e�i server�)."
+      ],
+      "PublicDescription": [
+        "Zobrazen� v hern�m prohl�e�i server�."
+      ],
+      "MaxPlayers": [
+        "Maxim�ln� po�et hr���, kte�� mohou b�t sou�asn� na jednom serveru, mimo admin�. Steam povoluje maxim�ln� po�et 126 hr���."
+      ],
+      "PingLimit": [
+        "Omezen� odezvy hr��e v milisekund�ch, p�ed vykopnut�m ze serveru. Nastav na 0 pro zru�en�"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Předměty se neobnoví v budovách, které si hráči nárokovali jako úkryt"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Odstranit hr���v ��et z whitelistu (seznam povolen�ch), po jeho smrti.  Znemo��uje vytvo�en� nov� postavy po smrti ve h�e."
+      ],
+      "NoFire": [
+        "V�echny formy ohn� jsou vypnuty, krom� pro ohni�t�."
+      ],
+      "AnnounceDeath": [
+        "Pokud 'true', tak ka�d� �mrt� hr��e se bude zobrazovat v chatu."
+      ],
+      "AnnounceAnimalDeath": [
+        "Pokud je zapnuto, pokaždé když zvíře zemře, zobrazí se v chatu globální zpráva."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Nahran� ��sti mapy jsou ulo�eny pot�, co uplyne t�chto n�kolik re�ln�ch minut.  Mapa je v�t�inou ulo�ena tehdy, kdy� klienti opust� na�tenou oblast."
+      ],
+      "PlayerSafehouse": [
+        "Ne-admini si mohou n�rokovat �kryty."
+      ],
+      "AdminSafehouse": [
+        "Admini si mohou n�rokovat �kryty."
+      ],
+      "SafehouseAllowTrepass": [
+        "Povolit ne-�len�m vstoupit do �krytu."
+      ],
+      "SafehouseAllowFire": [
+        "Povolit po�kozov�n� �kryt� ohn�m."
+      ],
+      "SafehouseAllowLoot": [
+        "Povolit ne-�len�m br�t v�ci z �kryt�."
+      ],
+      "SafehouseAllowRespawn": [
+        "Hr��i se objev� v �krytu, ve kter�m byli �lenem, ne� zem�eli."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Hr��i mus� p�e��t tento po�et hern� dn�, aby si mohli n�rokovat �kryt."
+      ],
+      "SafeHouseRemovalTime": [
+        "Hr��i jsou automaticky odstran�ni z �krytu, kter� nenav�t�vili po tento po�et re�ln�ch hodiny."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Ur�uje, zda si hr��i mohou n�rokovat nebytov� budovy."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Povolit hr���m zni�it objekty hern�ho sv�ta s pomoc� perl�k�."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Umo�nit hr���m ni�it objekty pouze v jejich �krytu (vy�aduje hodnotu AllowDestructionBySledgehammer true)."
+      ],
+      "WarStartDelay": [
+        "Čas v sekundách před začátkem války."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "Zapsan� v souborech klienta hr��e, tak�e klient nem��e pou��vat soubory ze singleplayeru nebo jin�ch server�."
+      ],
+      "RCONPort": [
+        "Port pro RCON"
+      ],
+      "RCONPassword": [
+        "RCON heslo"
+      ],
+      "DiscordEnable": [
+        "mo��uje glob�ln� integraci textov�ho chatu s kan�lem Discord"
+      ],
+      "DiscordToken": [
+        "Discord p��stupov� token robota"
+      ],
+      "DiscordChannel": [
+        "N�zev kan�lu Discord. (Pokud m�te pot�e, vyzkou�ejte mo�nost samostatn�ho ID kan�lu)"
+      ],
+      "DiscordChannelID": [
+        "ID kan�lu Discord. (Pou�ijte, pokud m�te pot�e s volbou n�zvu kan�lu Discord)"
+      ],
+      "WebhookAddress": [
+        "Adresa URL příchozího webhooku Slack"
+      ],
+      "Password": [
+        "Klienti musej� zn�t toto heslo, pro p�ipojen� na server. Ignorov�no p�i zakl�d�n� Steam serveru."
+      ],
+      "MaxAccountsPerUser": [
+        "Omez� po�et mo�n�ch ��tu, kter� jeden u�ivatel Steamu m��e vytvo�it na tomto serveru. Je ignorov�no p�i zakl�d�n� Steam serveru."
+      ],
+      "AllowCoop": [
+        "Povolit co-op/splitscreen hráče"
+      ],
+      "SleepAllowed": [
+        "Hr��i mohou libovoln� sp�t."
+      ],
+      "SleepNeeded": [
+        "Hr��i se unavuj� a pot�ebuj� sp�nek.  Ignorovan�, pokud SleepAllowed"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Vypište Workshop Mod ID pro server ke stažení. "
+      ],
+      "SteamScoreboard": [
+        "Zobrazit p�ezd�vky a avatary ze Steamu v seznamu hr���.",
+        "M��e b�t true, false, nebo admin."
+      ],
+      "SteamVAC": [
+        "Povolit Steam VAC syst�m."
+      ],
+      "UPnP": [
+        "Pokus o nastaven� povolen�ho UPnP internetov�ho p��stupu k automatick�mu nastaven� pravidel port forwardingu."
+      ],
+      "VoiceEnable": [
+        "Pokud 'true', tak je povolena hlasov� komunikace (VOP)."
+      ],
+      "VoiceMinDistance": [
+        "Minim�ln� vzd�lenost, od kter� je mo�n� sly�et hlasovou komunikaci (VOIP)"
+      ],
+      "VoiceMaxDistance": [
+        "Maxim�ln� vzd�lenost, do kter� je mo�n� sly�et hlasovou komunikaci (VOIP)"
+      ],
+      "Voice3D": [
+        "Sm�rov� zvuk pro VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Nastav IP, pro kterou server vys�l�. Ur�en� pro s�ov� konfigurace s v�ce IP adresami, jako jsou nap�. serverov� farmy"
+      ],
+      "PlayerRespawnWithSelf": [
+        "Hr��i se mohou respawnovat ve h�e, kde p��mo zem�eli."
+      ],
+      "PlayerRespawnWithOther": [
+        "Hr��i se mohou respawnovat ve h�e v m�st� hr��e ve splitscreenu."
+      ],
+      "FastForwardMultiplier": [
+        "Jak rychle �as plyne, kdy� v�ichni sp�?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "�kryty hr��� se budou chovat jako oby�ejn� domy, pokud je jeho tv�rce p�ipojen� na serveru."
+      ],
+      "Faction": [
+        "Pokud 'true', povol� hr���m vytv��et frakce."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Mus� p�e��t X dn�, ne� bude� moci zalo�it frakci."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Kolik hr��� je pot�eba, ne� bude moci zakladatel frakce vytvo�it speci�ln� zna�ku."
+      ],
+      "DisableRadioStaff": [
+        "Zak�e r�diov� vys�l�n� hr��� se v�emi �rovn�mi p��stupu."
+      ],
+      "DisableRadioAdmin": [
+        "Zak�zan� r�diov� p�enosy od hr��� s �rovn� p��stupu �admin�."
+      ],
+      "DisableRadioGM": [
+        "Zak�zan� r�diov� p�enosy od hr��� s �rovn� p��stupu 'gm'"
+      ],
+      "DisableRadioOverseer": [
+        "Zak�zan� r�diov� p�enosy od hr��� s �rovn� p��stupu �dozorce�."
+      ],
+      "DisableRadioModerator": [
+        "Zak�zan� r�diov� p�enosy od hr��� s �rovn� p��stupu �moder�tor�."
+      ],
+      "DisableRadioInvisible": [
+        "Vypnut� r�diov� p�enosy od neviditeln�ch hr���"
+      ],
+      "ClientCommandFilter": [
+        "Seznam p��kaz� odd�len�ch st�edn�kem, kter� nebudou zaps�ny do protokolu serveru cmd.txt. Nap��klad:",
+        "-vozidlo. Zad�n� * znamen�, �e NEP͊E ��dn� p��kaz vozidla. Zad�n�:",
+        "+vehicle.installPart znamen�, �e tento p��kaz zapi�te"
+      ],
+      "ClientActionLogs": [
+        "Seznam akc� odd�len�ch st�edn�kem, kter� budou zaps�ny do protokolu serveru ClientActionLogs.txt."
+      ],
+      "PerkLogs": [
+        "Sledujte zm�ny �rovn� hr��sk�ch perk� v protokolu serveru PerkLog.txt"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Maximální počet položek, které lze umístit do kontejneru.  "
+      ],
+      "BloodSplatLifespanDays": [
+        "Po�et dn� p�ed t�m ne� jsou c�kance krve odstran�ny.<br>Odstran�n� nastane ve chv�li, kdy� jsou znovu na�teny chunky mapy.<br>Nula znamen� neodstra�ovat."
+      ],
+      "AllowNonAsciiUsername": [
+        "Povolit pou��v�n� jin�ch znak� ne� ASCII (cyrilice atd.) v u�ivatelsk�ch jm�nech."
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Pokud je povoleno, p�i spu�t�n� funkce HoursForCorpseRemoval dojde tak� k odstran�n� mrtvol hr���."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Kdy� je povoleno, m��e hr�� znovu prov�st �tok, kdy� ho ude�� jin� hr��."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Pokud ano, hr��i budou muset my�� najet na hr��e, aby vid�li jeho jm�no."
+      ],
+      "HidePlayersBehindYou": [
+        "Pokud ano, automaticy schov� hr��e, kter� nem��ete vid�t (stejn� jako zombie)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "N�sobitel po�kozen� pro PVP �toky na bl�zko."
+      ],
+      "PVPFirearmDamageModifier": [
+        "N�sobitel po�kozen� pro �toky na d�lku PVP."
+      ],
+      "CarEngineAttractionModifier": [
+        "Upravte vzd�lenost, p�i kter�m auta p�itahuj� zombie, ni��� hodnoty mohou pomoci zlep�it v�kon serveru"
+      ],
+      "PlayerBumpPlayer": [
+        "Hr��i mohou postr�it jin� hr��e, kdy� b�� skrz n�."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Ovládá zobrazení vzdálených hráčů na mapě ve hře.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Cesta k souboru se seznamem slov, která mají být zakázána. "
+      ],
+      "GoodWordListFile": [
+        "Cesta k souboru se seznamem slov, která by měla být povolena, i když obsahují špatné slovo. "
+      ],
+      "BadWordPolicy": [
+        "Co dělat s odesílatelem špatného slova v chatu: 1 - ban, 2 - kop, 3 - záznam porušení do databáze, 4 - ztlumení"
+      ],
+      "BadWordReplacement": [
+        "Symbol nebo část textu, která nahradí špatné slovo"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Vypne ochranu proti podvádění pohybu."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Vypne ochranu proti podvádění pro hráče."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Vypne kontrolu položek anti-cheat ochranu."
+      ],
+      "AntiCheatServerCustomization": [
+        "Vypne ochranu proti podvádění u přizpůsobení serveru."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Nastavuje periodu aktualizace pro více hráčů v sekundách. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Skryje administrátory v seznamu hráčů."
+      ],
+      "Seed": [
+        "Semeno worldgen použité ke generování světa.<br>Pokud to chcete změnit, vložte novou hodnotu a smažte map_worldgen.bin v adresáři uložení."
+      ],
+      "SpeedLimit": [
+        "Omezení rychlosti vozidla."
+      ],
+      "BackupsCount": [
+        "Min: 1 Max: 300 Výchozí: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Max: 1500 Výchozí: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Max: 1024 Výchozí: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Max: 30 Výchozí: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Max: 1200 Výchozí: 60"
+      ],
+      "Map": [
+        "Zadejte název složky modu umístěné v \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Max: 2147483647 Výchozí: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Max: 60 Výchozí: 60"
+      ],
+      "TrashDeleteAll": [
+        "Pokud je zapnuto, hráč může používat tlačítko \\"smazat vše\\" na koších."
+      ],
+      "UDPPort": [
+        "Min: 0 Max: 65535 Výchozí: 16262"
+      ]
+    }
+  }
+}
+
+

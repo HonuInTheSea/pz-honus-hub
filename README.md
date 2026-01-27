@@ -4,6 +4,11 @@
 
 Desktop hub app for Project Zomboid built with Angular (frontend) and Tauri (Rust backend). It focuses on quality-of-life tooling around Workshop mods (metadata, browsing, and local state) and uses the Steam Web API for enrichment.
 
+## Features
+
+- Mod metadata browsing, filtering, and Workshop enrichment
+- Server management: create, copy, edit INI/Sandbox variables, manage spawn files, and export server configs
+
 ## Tech Stack
 
 - Frontend: Angular + PrimeNG + TailwindCSS

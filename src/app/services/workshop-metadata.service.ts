@@ -1013,6 +1013,128 @@ export class WorkshopMetadataService {
     return Number.isFinite(total) ? total : null;
   }
 
+  async queryModsBySearchText(
+    searchText: string,
+    numperpage = 5,
+  ): Promise<WorkshopQueryResult | null> {
+    if (!this.isTauri()) {
+      return null;
+    }
+
+    const apiKey = await this.loadApiKey();
+    if (!apiKey) {
+      return null;
+    }
+
+    const trimmed = (searchText ?? '').trim();
+    if (!trimmed) {
+      return null;
+    }
+
+    const params: Record<string, string> = {
+      key: apiKey,
+      appid: '108600',
+      return_short_description: 'true',
+      query_type: '12',
+      search_text: trimmed,
+      filetype: '0',
+      numperpage: String(numperpage),
+      page: '1',
+    };
+
+    const query = new URLSearchParams(params).toString();
+    const url = `${this.queryFilesEndpoint}?${query}`;
+
+    let response;
+    try {
+      response = await this.fetchWithTimeout(
+        url,
+        { method: 'GET' },
+        'QueryFiles',
+      );
+    } catch (err) {
+      if (this.isTimeoutError(err)) {
+        throw err;
+      }
+      throw this.buildFetchError(err, 'QueryFiles', {
+        method: 'GET',
+        url,
+      });
+    }
+    if (response.status === 401) {
+      throw new Error('STEAM_API_UNAUTHORIZED');
+    }
+    if (!response.ok) {
+      throw await this.buildApiError(response, 'QueryFiles', {
+        method: 'GET',
+        url,
+      });
+    }
+
+    const data: any = await response.json();
+    const resp = data?.response;
+    if (!resp || !Array.isArray(resp.publishedfiledetails)) {
+      return null;
+    }
+
+    const items: WorkshopQueryItem[] = resp.publishedfiledetails.map(
+      (item: any) => ({
+        publishedfileid: String(item.publishedfileid ?? ''),
+        title: item.title,
+        short_description:
+          typeof item.short_description === 'string'
+            ? item.short_description
+            : undefined,
+        file_size:
+          typeof item.file_size === 'number'
+            ? item.file_size
+            : Number(item.file_size) || undefined,
+        subscriptions:
+          typeof item.subscriptions === 'number'
+            ? item.subscriptions
+            : Number(item.subscriptions) || undefined,
+        lifetime_subscriptions:
+          typeof item.lifetime_subscriptions === 'number'
+            ? item.lifetime_subscriptions
+            : Number(item.lifetime_subscriptions) || undefined,
+        favorited:
+          typeof item.favorited === 'number'
+            ? item.favorited
+            : Number(item.favorited) || undefined,
+        lifetime_favorited:
+          typeof item.lifetime_favorited === 'number'
+            ? item.lifetime_favorited
+            : Number(item.lifetime_favorited) || undefined,
+        views:
+          typeof item.views === 'number'
+            ? item.views
+            : Number(item.views) || undefined,
+        lifetime_playtime:
+          typeof item.lifetime_playtime === 'number'
+            ? item.lifetime_playtime
+            : Number(item.lifetime_playtime) || undefined,
+        lifetime_playtime_sessions:
+          typeof item.lifetime_playtime_sessions === 'number'
+            ? item.lifetime_playtime_sessions
+            : Number(item.lifetime_playtime_sessions) || undefined,
+        time_created:
+          typeof item.time_created === 'number'
+            ? item.time_created
+            : Number(item.time_created) || undefined,
+        time_updated:
+          typeof item.time_updated === 'number'
+            ? item.time_updated
+            : Number(item.time_updated) || undefined,
+        tags: Array.isArray(item.tags) ? item.tags : undefined,
+      }),
+    );
+
+    return {
+      total: Number(resp.total ?? items.length) || items.length,
+      items,
+    };
+  }
+
   /**
    * Fetch the latest created Project Zomboid Workshop items.
    * Uses QueryFiles ranked by publication date and ready-to-use items,

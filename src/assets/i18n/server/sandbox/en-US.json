@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombies",
+  "Distribution": "Distribution",
+  "ZombieVoronoiNoise": "Zombie Voronoi Noise",
+  "ZombieRespawn": "Zombie Respawn",
+  "ZombieMigrate": "Zombie Migrate",
+  "DayLength": "Day Length",
+  "StartMonth": "Start Month",
+  "StartDay": "Start Day",
+  "StartTime": "Start Time",
+  "DayNightCycle": "Day Night Cycle",
+  "ClimateCycle": "Climate Cycle",
+  "FogCycle": "Fog Cycle",
+  "WaterShut": "Water Shut",
+  "ElecShut": "Elec Shut",
+  "AlarmDecay": "Alarm Decay",
+  "WaterShutModifier": "Water Shut Modifier",
+  "ElecShutModifier": "Elec Shut Modifier",
+  "AlarmDecayModifier": "Alarm Decay Modifier",
+  "FoodLootNew": "Food Loot New",
+  "LiteratureLootNew": "Literature Loot New",
+  "MedicalLootNew": "Medical Loot New",
+  "SurvivalGearsLootNew": "Survival Gears Loot New",
+  "CannedFoodLootNew": "Canned Food Loot New",
+  "WeaponLootNew": "Weapon Loot New",
+  "RangedWeaponLootNew": "Ranged Weapon Loot New",
+  "AmmoLootNew": "Ammo Loot New",
+  "MechanicsLootNew": "Mechanics Loot New",
+  "OtherLootNew": "Other Loot New",
+  "ClothingLootNew": "Clothing Loot New",
+  "ContainerLootNew": "Container Loot New",
+  "KeyLootNew": "Key Loot New",
+  "MediaLootNew": "Media Loot New",
+  "MementoLootNew": "Memento Loot New",
+  "CookwareLootNew": "Cookware Loot New",
+  "MaterialLootNew": "Material Loot New",
+  "FarmingLootNew": "Farming Loot New",
+  "ToolLootNew": "Tool Loot New",
+  "RollsMultiplier": "Rolls Multiplier",
+  "LootItemRemovalList": "Loot Item Removal List",
+  "RemoveStoryLoot": "Remove Story Loot",
+  "RemoveZombieLoot": "Remove Zombie Loot",
+  "ZombiePopLootEffect": "Zombie Pop Loot Effect",
+  "InsaneLootFactor": "Insane Loot Factor",
+  "ExtremeLootFactor": "Extreme Loot Factor",
+  "RareLootFactor": "Rare Loot Factor",
+  "NormalLootFactor": "Normal Loot Factor",
+  "CommonLootFactor": "Common Loot Factor",
+  "AbundantLootFactor": "Abundant Loot Factor",
+  "Temperature": "Temperature",
+  "Rain": "Rain",
+  "ErosionSpeed": "Erosion Speed",
+  "ErosionDays": "Erosion Days",
+  "Farming": "Farming",
+  "CompostTime": "Compost Time",
+  "StatsDecrease": "Stats Decrease",
+  "NatureAbundance": "Nature Abundance",
+  "Alarm": "Alarm",
+  "LockedHouses": "Locked Houses",
+  "StarterKit": "Starter Kit",
+  "Nutrition": "Nutrition",
+  "FoodRotSpeed": "Food Rot Speed",
+  "FridgeFactor": "Fridge Factor",
+  "SeenHoursPreventLootRespawn": "Seen Hours Prevent Loot Respawn",
+  "HoursForLootRespawn": "Hours For Loot Respawn",
+  "MaxItemsForLootRespawn": "Max Items For Loot Respawn",
+  "ConstructionPreventsLootRespawn": "Construction Prevents Loot Respawn",
+  "WorldItemRemovalList": "World Item Removal List",
+  "HoursForWorldItemRemoval": "Hours For World Item Removal",
+  "ItemRemovalListBlacklistToggle": "Item Removal List Blacklist Toggle",
+  "TimeSinceApo": "Time Since Apo",
+  "PlantResilience": "Plant Resilience",
+  "PlantAbundance": "Plant Abundance",
+  "EndRegen": "End Regen",
+  "Helicopter": "Helicopter",
+  "MetaEvent": "Meta Event",
+  "SleepingEvent": "Sleeping Event",
+  "GeneratorFuelConsumption": "Generator Fuel Consumption",
+  "GeneratorSpawning": "Generator Spawning",
+  "AnnotatedMapChance": "Annotated Map Chance",
+  "CharacterFreePoints": "Character Free Points",
+  "ConstructionBonusPoints": "Construction Bonus Points",
+  "NightDarkness": "Night Darkness",
+  "NightLength": "Night Length",
+  "BoneFracture": "Bone Fracture",
+  "InjurySeverity": "Injury Severity",
+  "HoursForCorpseRemoval": "Hours For Corpse Removal",
+  "DecayingCorpseHealthImpact": "Decaying Corpse Health Impact",
+  "ZombieHealthImpact": "Zombie Health Impact",
+  "BloodLevel": "Blood Level",
+  "ClothingDegradation": "Clothing Degradation",
+  "FireSpread": "Fire Spread",
+  "DaysForRottenFoodRemoval": "Days For Rotten Food Removal",
+  "AllowExteriorGenerator": "Allow Exterior Generator",
+  "MaxFogIntensity": "Max Fog Intensity",
+  "MaxRainFxIntensity": "Max Rain Fx Intensity",
+  "EnableSnowOnGround": "Enable Snow On Ground",
+  "AttackBlockMovements": "Attack Block Movements",
+  "SurvivorHouseChance": "Survivor House Chance",
+  "VehicleStoryChance": "Vehicle Story Chance",
+  "ZoneStoryChance": "Zone Story Chance",
+  "AllClothesUnlocked": "All Clothes Unlocked",
+  "EnableTaintedWaterText": "Enable Tainted Water Text",
+  "EnableVehicles": "Enable Vehicles",
+  "CarSpawnRate": "Car Spawn Rate",
+  "ZombieAttractionMultiplier": "Zombie Attraction Multiplier",
+  "VehicleEasyUse": "Vehicle Easy Use",
+  "InitialGas": "Initial Gas",
+  "FuelStationGasInfinite": "Fuel Station Gas Infinite",
+  "FuelStationGasMin": "Fuel Station Gas Min",
+  "FuelStationGasMax": "Fuel Station Gas Max",
+  "FuelStationGasEmptyChance": "Fuel Station Gas Empty Chance",
+  "LockedCar": "Locked Car",
+  "CarGasConsumption": "Car Gas Consumption",
+  "CarGeneralCondition": "Car General Condition",
+  "CarDamageOnImpact": "Car Damage On Impact",
+  "DamageToPlayerFromHitByACar": "Damage To Player From Hit By ACar",
+  "TrafficJam": "Traffic Jam",
+  "CarAlarm": "Car Alarm",
+  "PlayerDamageFromCrash": "Player Damage From Crash",
+  "SirenShutoffHours": "Siren Shutoff Hours",
+  "ChanceHasGas": "Chance Has Gas",
+  "RecentlySurvivorVehicles": "Recently Survivor Vehicles",
+  "MultiHitZombies": "Multi Hit Zombies",
+  "RearVulnerability": "Rear Vulnerability",
+  "SirenEffectsZombies": "Siren Effects Zombies",
+  "AnimalStatsModifier": "Animal Stats Modifier",
+  "AnimalMetaStatsModifier": "Animal Meta Stats Modifier",
+  "AnimalPregnancyTime": "Animal Pregnancy Time",
+  "AnimalAgeModifier": "Animal Age Modifier",
+  "AnimalMilkIncModifier": "Animal Milk Inc Modifier",
+  "AnimalWoolIncModifier": "Animal Wool Inc Modifier",
+  "AnimalRanchChance": "Animal Ranch Chance",
+  "AnimalGrassRegrowTime": "Animal Grass Regrow Time",
+  "AnimalMetaPredator": "Animal Meta Predator",
+  "AnimalMatingSeason": "Animal Mating Season",
+  "AnimalEggHatch": "Animal Egg Hatch",
+  "AnimalSoundAttractZombies": "Animal Sound Attract Zombies",
+  "AnimalTrackChance": "Animal Track Chance",
+  "AnimalPathChance": "Animal Path Chance",
+  "MaximumRatIndex": "Maximum Rat Index",
+  "DaysUntilMaximumRatIndex": "Days Until Maximum Rat Index",
+  "MetaKnowledge": "Meta Knowledge",
+  "SeeNotLearntRecipe": "See Not Learnt Recipe",
+  "MaximumLootedBuildingRooms": "Maximum Looted Building Rooms",
+  "EnablePoisoning": "Enable Poisoning",
+  "MaggotSpawn": "Maggot Spawn",
+  "LightBulbLifespan": "Light Bulb Lifespan",
+  "FishAbundance": "Fish Abundance",
+  "LevelForMediaXPCutoff": "Level For Media XPCutoff",
+  "LevelForDismantleXPCutoff": "Level For Dismantle XPCutoff",
+  "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+  "LiteratureCooldown": "Literature Cooldown",
+  "NegativeTraitsPenalty": "Negative Traits Penalty",
+  "MinutesPerPage": "Minutes Per Page",
+  "KillInsideCrops": "Kill Inside Crops",
+  "PlantGrowingSeasons": "Plant Growing Seasons",
+  "PlaceDirtAboveground": "Place Dirt Aboveground",
+  "FarmingSpeedNew": "Farming Speed New",
+  "FarmingAmountNew": "Farming Amount New",
+  "MaximumLooted": "Maximum Looted",
+  "DaysUntilMaximumLooted": "Days Until Maximum Looted",
+  "RuralLooted": "Rural Looted",
+  "MaximumDiminishedLoot": "Maximum Diminished Loot",
+  "DaysUntilMaximumDiminishedLoot": "Days Until Maximum Diminished Loot",
+  "MuscleStrainFactor": "Muscle Strain Factor",
+  "DiscomfortFactor": "Discomfort Factor",
+  "WoundInfectionFactor": "Wound Infection Factor",
+  "NoBlackClothes": "No Black Clothes",
+  "EasyClimbing": "Easy Climbing",
+  "MaximumFireFuelHours": "Maximum Fire Fuel Hours",
+  "FirearmUseDamageChance": "Firearm Use Damage Chance",
+  "FirearmNoiseMultiplier": "Firearm Noise Multiplier",
+  "FirearmJamMultiplier": "Firearm Jam Multiplier",
+  "FirearmMoodleMultiplier": "Firearm Moodle Multiplier",
+  "FirearmWeatherMultiplier": "Firearm Weather Multiplier",
+  "FirearmHeadGearEffect": "Firearm Head Gear Effect",
+  "ClayLakeChance": "Clay Lake Chance",
+  "ClayRiverChance": "Clay River Chance",
+  "GeneratorTileRange": "Generator Tile Range",
+  "GeneratorVerticalPowerRange": "Generator Vertical Power Range",
+  "Basement": "Basement",
+  "SpawnFrequency": "Spawn Frequency",
+  "Map": "Map",
+  "AllowMiniMap": "Allow Mini Map",
+  "AllowWorldMap": "Allow World Map",
+  "MapAllKnown": "Map All Known",
+  "MapNeedsLight": "Map Needs Light",
+  "ZombieLore": "Zombie Lore",
+  "Speed": "Speed",
+  "SprinterPercentage": "Sprinter Percentage",
+  "Strength": "Strength",
+  "Toughness": "Toughness",
+  "Transmission": "Transmission",
+  "Mortality": "Mortality",
+  "Reanimate": "Reanimate",
+  "Cognition": "Cognition",
+  "CrawlUnderVehicle": "Crawl Under Vehicle",
+  "Memory": "Memory",
+  "Sight": "Sight",
+  "Hearing": "Hearing",
+  "SpottedLogic": "Spotted Logic",
+  "ThumpNoChasing": "Thump No Chasing",
+  "ThumpOnConstruction": "Thump On Construction",
+  "ActiveOnly": "Active Only",
+  "TriggerHouseAlarm": "Trigger House Alarm",
+  "ZombiesDragDown": "Zombies Drag Down",
+  "ZombiesCrawlersDragDown": "Zombies Crawlers Drag Down",
+  "ZombiesFenceLunge": "Zombies Fence Lunge",
+  "ZombiesArmorFactor": "Zombies Armor Factor",
+  "ZombiesMaxDefense": "Zombies Max Defense",
+  "ChanceOfAttachedWeapon": "Chance Of Attached Weapon",
+  "ZombiesFallDamage": "Zombies Fall Damage",
+  "DisableFakeDead": "Disable Fake Dead",
+  "PlayerSpawnZombieRemoval": "Player Spawn Zombie Removal",
+  "FenceThumpersRequired": "Fence Thumpers Required",
+  "FenceDamageMultiplier": "Fence Damage Multiplier",
+  "ZombieConfig": "Zombie Config",
+  "PopulationMultiplier": "Population Multiplier",
+  "PopulationStartMultiplier": "Population Start Multiplier",
+  "PopulationPeakMultiplier": "Population Peak Multiplier",
+  "PopulationPeakDay": "Population Peak Day",
+  "RespawnHours": "Respawn Hours",
+  "RespawnUnseenHours": "Respawn Unseen Hours",
+  "RespawnMultiplier": "Respawn Multiplier",
+  "RedistributeHours": "Redistribute Hours",
+  "FollowSoundDistance": "Follow Sound Distance",
+  "RallyGroupSize": "Rally Group Size",
+  "RallyGroupSizeVariance": "Rally Group Size Variance",
+  "RallyTravelDistance": "Rally Travel Distance",
+  "RallyGroupSeparation": "Rally Group Separation",
+  "RallyGroupRadius": "Rally Group Radius",
+  "ZombiesCountBeforeDelete": "Zombies Count Before Delete",
+  "MultiplierConfig": "Multiplier Config",
+  "Global": "Global",
+  "GlobalToggle": "Global Toggle",
+  "Fitness": "Fitness",
+  "Sprinting": "Sprinting",
+  "Lightfoot": "Lightfoot",
+  "Nimble": "Nimble",
+  "Sneak": "Sneak",
+  "Axe": "Axe",
+  "Blunt": "Blunt",
+  "SmallBlunt": "Small Blunt",
+  "LongBlade": "Long Blade",
+  "SmallBlade": "Small Blade",
+  "Spear": "Spear",
+  "Maintenance": "Maintenance",
+  "Woodwork": "Woodwork",
+  "Cooking": "Cooking",
+  "Doctor": "Doctor",
+  "Electricity": "Electricity",
+  "MetalWelding": "Metal Welding",
+  "Mechanics": "Mechanics",
+  "Tailoring": "Tailoring",
+  "Aiming": "Aiming",
+  "Reloading": "Reloading",
+  "Fishing": "Fishing",
+  "Trapping": "Trapping",
+  "PlantScavenging": "Plant Scavenging",
+  "FlintKnapping": "Flint Knapping",
+  "Masonry": "Masonry",
+  "Pottery": "Pottery",
+  "Carving": "Carving",
+  "Husbandry": "Husbandry",
+  "Tracking": "Tracking",
+  "Blacksmith": "Blacksmith",
+  "Butchering": "Butchering",
+  "Glassmaking": "Glassmaking",
+  "comments": {
+    "Zombies": [
+      "Changing this also sets the \"Population Multiplier\" in Advanced Zombie Options. Default = Normal",
+      "1 = Insane",
+      "2 = Very High",
+      "3 = High",
+      "4 = Normal",
+      "5 = Low",
+      "6 = None"
+    ],
+    "Distribution": [
+      "How zombies are distributed across the map. Default = Urban Focused",
+      "1 = Urban Focused",
+      "2 = Uniform"
+    ],
+    "ZombieVoronoiNoise": [
+      "Controls whether some randomization is applied to zombie distribution."
+    ],
+    "ZombieRespawn": [
+      "How frequently new zombies are added to the world. Default = Normal",
+      "1 = High",
+      "2 = Normal",
+      "3 = Low",
+      "4 = None"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Default = 1 Hour, 30 Minutes",
+      "1 = 15 Minutes",
+      "2 = 30 Minutes",
+      "3 = 1 Hour",
+      "4 = 1 Hour, 30 Minutes",
+      "5 = 2 Hours",
+      "6 = 3 Hours",
+      "7 = 4 Hours",
+      "8 = 5 Hours",
+      "9 = 6 Hours",
+      "10 = 7 Hours",
+      "11 = 8 Hours",
+      "12 = 9 Hours",
+      "13 = 10 Hours",
+      "14 = 11 Hours",
+      "15 = 12 Hours",
+      "16 = 13 Hours",
+      "17 = 14 Hours",
+      "18 = 15 Hours",
+      "19 = 16 Hours",
+      "20 = 17 Hours",
+      "21 = 18 Hours",
+      "22 = 19 Hours",
+      "23 = 20 Hours",
+      "24 = 21 Hours",
+      "25 = 22 Hours",
+      "26 = 23 Hours",
+      "27 = Real-time"
+    ],
+    "StartMonth": [
+      "Month in which the game starts. Default = July",
+      "1 = January",
+      "2 = February",
+      "3 = March",
+      "4 = April",
+      "5 = May",
+      "6 = June",
+      "7 = July",
+      "8 = August",
+      "9 = September",
+      "10 = October",
+      "11 = November",
+      "12 = December"
+    ],
+    "StartDay": [
+      "Day of the month in which the games starts."
+    ],
+    "StartTime": [
+      "Hour of the day in which the game starts. Default = 9 AM",
+      "1 = 7 AM",
+      "2 = 9 AM",
+      "3 = 12 PM",
+      "4 = 2 PM",
+      "5 = 5 PM",
+      "6 = 9 PM",
+      "7 = 12 AM",
+      "8 = 2 AM",
+      "9 = 5 AM"
+    ],
+    "DayNightCycle": [
+      "Whether the time of day changes naturally, or it's always day/night. Default = Normal",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Whether weather changes or remains at a single state. Default = Normal",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Whether fog occurs naturally, never occurs, or is always present. Default = Normal",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Default = 0-30 Days",
+      "1 = Instant",
+      "2 = 0-30 Days",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "ElecShut": [
+      "How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Default = 0-30 Days",
+      "1 = Instant",
+      "2 = 0-30 Days",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "AlarmDecay": [
+      "How long alarm batteries can last for after the power shuts off. Default = 0-30 Days",
+      "1 = Instant",
+      "2 = 0-30 Days",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years"
+    ],
+    "WaterShutModifier": [
+      "How long after the default start date (July 9, 1993) that plumbing fixtures (eg. sinks) stop being infinite sources of water. Min: -1 Max: 2147483647 Default: 14"
+    ],
+    "ElecShutModifier": [
+      "How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Min: -1 Max: 2147483647 Default: 14"
+    ],
+    "AlarmDecayModifier": [
+      "How long alarm batteries can last for after the power shuts off. Min: -1 Max: 2147483647 Default: 14"
+    ],
+    "FoodLootNew": [
+      "Any food that can rot or spoil. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "LiteratureLootNew": [
+      "All items that can be read, includes fliers Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MedicalLootNew": [
+      "Medicine, bandages and first aid tools. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Canned and dried food, beverages. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Loose ammo, boxes and magazines. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MechanicsLootNew": [
+      "Vehicle parts and the tools needed to install them. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "OtherLootNew": [
+      "Everything else. Also affects foraging for all items in Town/Road zones. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "ClothingLootNew": [
+      "All wearable items that are not containers. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "ContainerLootNew": [
+      "Backpacks and other wearable/equippable containers, eg. cases. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "KeyLootNew": [
+      "Keys for buildings/cars, key rings, and locks. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MediaLootNew": [
+      "VHS tapes and CDs. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MementoLootNew": [
+      "Spiffo items, plushies, and other collectible keepsake items eg. Photos. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "CookwareLootNew": [
+      "Items that are used in cooking, including those (eg. knives) which can be weapons. Does not include food. Includes both usable and unusable items. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MaterialLootNew": [
+      "Items and weapons that are used as ingredients for crafting or building. This is a general category that does not include items belonging to other categories such as Cookware or Medical. Does not include Tools. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "FarmingLootNew": [
+      "Items and weapons which are used in both animal and plant agriculture, such as Seeds, Trowels, or Shovels. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "ToolLootNew": [
+      "Items and weapons which are Tools but don't fit in other categories such as Mechanics or Farming. Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] It is recommended that you DO NOT change this. [!] <RGB:1,1,1>   Can be used to adjust the number of rolls made on loot tables when spawning loot. Will not reduce the number of rolls below 1. Can negatively affect performance if set to high values. It is highly recommended that this not be changed. Min: 0.10 Max: 100.00 Default: 1.00"
+    ],
+    "LootItemRemovalList": [
+      "A comma-separated list of item types that won't spawn as ordinary loot."
+    ],
+    "RemoveStoryLoot": [
+      "If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn in randomised world stories."
+    ],
+    "RemoveZombieLoot": [
+      "If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies."
+    ],
+    "ZombiePopLootEffect": [
+      "If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Min: 0 Max: 20 Default: 10"
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Default: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Default: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Default: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Default: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Default: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Default: 3.00"
+    ],
+    "Temperature": [
+      "The global temperature. Default = Normal",
+      "1 = Very Cold",
+      "2 = Cold",
+      "3 = Normal",
+      "4 = Hot",
+      "5 = Very Hot"
+    ],
+    "Rain": [
+      "How often it rains. Default = Normal",
+      "1 = Very Dry",
+      "2 = Dry",
+      "3 = Normal",
+      "4 = Rainy",
+      "5 = Very Rainy"
+    ],
+    "ErosionSpeed": [
+      "Number of days until the erosion system (which adds vines, long grass, new trees etc. to the world) will reach 100% growth. Default = Normal (100 Days)",
+      "1 = Very Fast (20 Days)",
+      "2 = Fast (50 Days)",
+      "3 = Normal (100 Days)",
+      "4 = Slow (200 Days)",
+      "5 = Very Slow (500 Days)"
+    ],
+    "ErosionDays": [
+      "For a custom Erosion Speed. Zero means use the Erosion Speed option. Maximum is 36,500 days (approximately 100 years). Min: -1 Max: 36500 Default: 0"
+    ],
+    "Farming": [
+      "Rate at which Farming skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "CompostTime": [
+      "How long it takes for food to break down in a composter. Default = 2 Weeks",
+      "1 = 1 Week",
+      "2 = 2 Weeks",
+      "3 = 3 Weeks",
+      "4 = 4 Weeks",
+      "5 = 6 Weeks",
+      "6 = 8 Weeks",
+      "7 = 10 Weeks",
+      "8 = 12 Weeks"
+    ],
+    "StatsDecrease": [
+      "How fast the player's hunger, thirst, and fatigue will decrease. Default = Normal",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "NatureAbundance": [
+      "The abundance of items found in Foraging mode. Default = Normal",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "Alarm": [
+      "How likely the player is to activate a house alarm when breaking into a new house. Default = Sometimes",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "LockedHouses": [
+      "How frequently the doors of homes and buildings will be locked when discovered. Default = Very Often",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "StarterKit": [
+      "Spawn with Chips, a Water Bottle, a Small Backpack, a Baseball Bat, and a Hammer."
+    ],
+    "Nutrition": [
+      "Nutritional value of food affects the player's condition. Turning this off will stop the player gaining or losing weight."
+    ],
+    "FoodRotSpeed": [
+      "How fast that food will spoil, inside or outside of a fridge. Default = Normal",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "FridgeFactor": [
+      "How effective a fridge will be at keeping food fresh for longer. Default = Normal",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "When greater than 0, loot will not respawn in zones that have been visited within this number of in-game hours. Min: 0 Max: 2147483647 Default: 0"
+    ],
+    "HoursForLootRespawn": [
+      "When greater than 0, after X hours, all containers in towns and trailer parks in the world will respawn loot. To spawn loot a container must have been looted at least once. Loot respawn is not impacted by visibility or subsequent looting. Min: 0 Max: 2147483647 Default: 0"
+    ],
+    "MaxItemsForLootRespawn": [
+      "Containers with a number of items greater, or equal to, this setting will not respawn. Min: 0 Max: 2147483647 Default: 5"
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Items will not respawn in buildings that players have barricaded or built in."
+    ],
+    "WorldItemRemovalList": [
+      "A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.   Zero means items are not removed. Min: 0.00 Max: 2147483647.00 Default: 24.00"
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "If true, any items *not* in WorldItemRemovalList will be removed."
+    ],
+    "TimeSinceApo": [
+      "How long after the end of the world to begin. This will affect starting world erosion and food spoilage. Does not affect the starting date. Default = 0",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "How much water plants will lose per day, and their ability to avoid disease. Default = Normal",
+      "1 = Very High",
+      "2 = High",
+      "3 = Normal",
+      "4 = Low",
+      "5 = Very Low"
+    ],
+    "PlantAbundance": [
+      "The yield of plants when harvested. Default = Normal",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "EndRegen": [
+      "Recovery from being tired after performing actions. Default = Normal",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "Helicopter": [
+      "How regularly a helicopter passes over the Event Zone. Default = Once",
+      "1 = Never",
+      "2 = Once",
+      "3 = Sometimes",
+      "4 = Often"
+    ],
+    "MetaEvent": [
+      "How often zombie-attracting metagame events like distant gunshots will occur. Default = Sometimes",
+      "1 = Never",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "SleepingEvent": [
+      "How often events during the player's sleep, like nightmares, occur. Default = Never",
+      "1 = Never",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "GeneratorFuelConsumption": [
+      "How much fuel is consumed by generators per in-game hour. Min: 0.00 Max: 100.00 Default: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "The chance of electrical generators spawning on the map. Default = Rare",
+      "1 = None (not recommended)",
+      "2 = Insanely Rare",
+      "3 = Extremely Rare",
+      "4 = Rare",
+      "5 = Normal",
+      "6 = Common",
+      "7 = Abundant"
+    ],
+    "AnnotatedMapChance": [
+      "How often a looted map will have notes on it, written by a deceased survivor. Default = Sometimes",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CharacterFreePoints": [
+      "Adds free points during character creation. Min: -100 Max: 100 Default: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Gives player-built constructions extra hit points so they are  more resistant to zombie damage. Default = Normal",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "NightDarkness": [
+      "The level of ambient lighting at night. Default = Normal",
+      "1 = Pitch Black",
+      "2 = Dark",
+      "3 = Normal",
+      "4 = Bright"
+    ],
+    "NightLength": [
+      "The time from dusk to dawn. Default = Normal",
+      "1 = Always Night",
+      "2 = Long",
+      "3 = Normal",
+      "4 = Short",
+      "5 = Always Day"
+    ],
+    "BoneFracture": [
+      "If survivors can get broken limbs from impacts, zombie damage, falls etc."
+    ],
+    "InjurySeverity": [
+      "The impact that injuries have on your body, and their healing time. Default = Normal",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "HoursForCorpseRemoval": [
+      "How long, in hours, before dead zombie bodies disappear from the world.  If 0, maggots will not spawn on corpses. Min: -1.00 Max: 2147483647.00 Default: 216.00"
+    ],
+    "DecayingCorpseHealthImpact": [
+      "The impact that nearby decaying bodies has on the player's health and emotions. Default = Normal",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Insane"
+    ],
+    "ZombieHealthImpact": [
+      "Whether nearby \"living\" zombies have the same impact on the player's health and emotions."
+    ],
+    "BloodLevel": [
+      "How much blood is sprayed on floors and walls by injuries. Default = Normal",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "How quickly clothing degrades, becomes dirty, and bloodied. Default = Normal",
+      "1 = Disabled",
+      "2 = Slow",
+      "3 = Normal",
+      "4 = Fast"
+    ],
+    "FireSpread": [
+      "If fires spread when started."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Number of in-game days before rotten food is removed from the map.  -1 means rotten food is never removed. Min: -1 Max: 2147483647 Default: -1"
+    ],
+    "AllowExteriorGenerator": [
+      "If enabled, generators will work on exterior tiles.  This will allow, for example, the powering of gas pumps."
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Default = Normal",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low",
+      "4 = None"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Default = Normal",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low"
+    ],
+    "EnableSnowOnGround": [
+      "If snow will accumulate on the ground.  If disabled, snow will still show on vegetation and rooftops."
+    ],
+    "AttackBlockMovements": [
+      "If melee attacking slows you down."
+    ],
+    "SurvivorHouseChance": [
+      "The chance of finding randomized buildings on the map (eg. burnt out houses,  ones containing loot stashes or dead bodies). Default = Rare",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always Tries"
+    ],
+    "VehicleStoryChance": [
+      "The chance of road stories (eg. police roadblocks) spawning. Default = Rare",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always Tries"
+    ],
+    "ZoneStoryChance": [
+      "The chance of stories specific to map zones (eg. a campsite in a forest) spawning. Default = Rare",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always Tries"
+    ],
+    "AllClothesUnlocked": [
+      "Allows you to select from every piece of clothing in the game when customizing your character"
+    ],
+    "EnableTaintedWaterText": [
+      "If tainted water will show a warning marking it as such."
+    ],
+    "EnableVehicles": [
+      "If vehicles will spawn."
+    ],
+    "CarSpawnRate": [
+      "How frequently vehicles can be discovered on the map. Default = Low",
+      "1 = None",
+      "2 = Very Low",
+      "3 = Low",
+      "4 = Normal",
+      "5 = High"
+    ],
+    "ZombieAttractionMultiplier": [
+      "General engine loudness to zombies. Min: 0.00 Max: 100.00 Default: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Whether found vehicles are locked, need keys to start etc."
+    ],
+    "InitialGas": [
+      "How full the gas tank of discovered vehicles will be. Default = Low",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = Full"
+    ],
+    "FuelStationGasInfinite": [
+      "If enabled, gas pumps will never run out of fuel"
+    ],
+    "FuelStationGasMin": [
+      "The minimum amount of gasoline that can spawn in gas pumps. Check the \"Advanced\" box below to use a custom amount. Min: 0.00 Max: 1.00 Default: 0.00"
+    ],
+    "FuelStationGasMax": [
+      "The maximum amount of gasoline that can spawn in gas pumps. Check the \"Advanced\" box below to use a custom amount. Min: 0.00 Max: 1.00 Default: 0.70"
+    ],
+    "FuelStationGasEmptyChance": [
+      "The chance, as a percentage, that individual gas pumps will initially have no fuel. Min: 0 Max: 100 Default: 20"
+    ],
+    "LockedCar": [
+      "How likely cars will be locked Default = Rare",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CarGasConsumption": [
+      "How gas-hungry vehicles are. Min: 0.00 Max: 100.00 Default: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "General condition discovered vehicles will be in. Default = Low",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "CarDamageOnImpact": [
+      "The amount of damage dealt to vehicles that crash. Default = Normal",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Damage received by the player from being crashed into. Default = None",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "TrafficJam": [
+      "If traffic jams consisting of wrecked cars  will appear on main roads."
+    ],
+    "CarAlarm": [
+      "How frequently discovered vehicles have active alarms. Default = Extremely Rare",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "PlayerDamageFromCrash": [
+      "If the player can get injured from being in a car accident."
+    ],
+    "SirenShutoffHours": [
+      "How many in-game hours before a wailing siren shuts off. Min: 0.00 Max: 168.00 Default: 0.00"
+    ],
+    "ChanceHasGas": [
+      "The chance of finding a vehicle with gas in its tank. Default = Low",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Whether a player can discover a car that has been cared for  after the Knox infection struck. Default = Low",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High"
+    ],
+    "MultiHitZombies": [
+      "If certain melee weapons will be able to strike multiple zombies in one hit."
+    ],
+    "RearVulnerability": [
+      "Chance of being bitten when a zombie attacks from behind. Default = High",
+      "1 = Low",
+      "2 = Medium",
+      "3 = High"
+    ],
+    "SirenEffectsZombies": [
+      "If zombies will head towards the sound of vehicle sirens."
+    ],
+    "AnimalStatsModifier": [
+      "Speed at which animals stats (hunger, thirst etc.) reduce. Default = Normal",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Speed at which animals stats (hunger, thirst etc.) reduce while in meta. Default = Normal",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalPregnancyTime": [
+      "How long animals will be pregnant for before giving birth. Default = Very Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalAgeModifier": [
+      "Speed at which animals age. Default = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMilkIncModifier": [
+      "Default = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalWoolIncModifier": [
+      "Default = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalRanchChance": [
+      "The chance of finding animals in farm. Default = Always",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always"
+    ],
+    "AnimalGrassRegrowTime": [
+      "The number of hours grass will regrow after being  eaten by an animal or cut by the player. Min: 1 Max: 9999 Default: 240"
+    ],
+    "AnimalMetaPredator": [
+      "If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night."
+    ],
+    "AnimalMatingSeason": [
+      "If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round."
+    ],
+    "AnimalEggHatch": [
+      "How long before baby animals will hatch from eggs. Default = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalSoundAttractZombies": [
+      "If true, animal calls will attract nearby zombies."
+    ],
+    "AnimalTrackChance": [
+      "The chance of animals leaving tracks. Default = Sometimes",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "AnimalPathChance": [
+      "The chance of creating a path for animals to be hunted. Default = Sometimes",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "MaximumRatIndex": [
+      "The frequency and intensity of eg. rats in infested buildings. Min: 0 Max: 50 Default: 25"
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "How long it takes for the Maximum Vermin Index to be reached. Min: 0 Max: 365 Default: 90"
+    ],
+    "MetaKnowledge": [
+      "If a piece of media hasn't been fully seen or read, this setting determines whether it's displayed fully, displayed as \"???\", or hidden completely. Default = Completely hidden",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "If true, you will be able to see any recipes that can be done with a station, even if you haven't learnt them yet."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "If a building has more than this amount of rooms it will not be looted. Min: 0 Max: 200 Default: 50"
+    ],
+    "EnablePoisoning": [
+      "If poison can be added to food. Default = True",
+      "1 = True",
+      "2 = False",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "If/when maggots can spawn in corpses. Default = In and Around Bodies",
+      "1 = In and Around Bodies",
+      "2 = In Bodies Only",
+      "3 = Never"
+    ],
+    "LightBulbLifespan": [
+      "The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "FishAbundance": [
+      "The abundance of fish in rivers and lakes. Default = Normal",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "LevelForMediaXPCutoff": [
+      "When a skill is at this level or above, television/VHS/other media  will not provide XP for it. Min: 0 Max: 10 Default: 3"
+    ],
+    "LevelForDismantleXPCutoff": [
+      "When a skill is at this level or above, scrapping furniture does not provide XP for the relevant skill. Does not apply to Electrical. Min: 0 Max: 10 Default: 0"
+    ],
+    "BloodSplatLifespanDays": [
+      "Number of days before old blood splats are removed. Removal happens when map chunks are loaded. 0 means they will never disappear. Min: 0 Max: 365 Default: 0"
+    ],
+    "LiteratureCooldown": [
+      "Number of days before one can benefit from reading previously read literature items. Min: 1 Max: 365 Default: 90"
+    ],
+    "NegativeTraitsPenalty": [
+      "If there are diminishing returns on bonus trait points provided from selecting multiple negative traits. Default = None",
+      "1 = None",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 point penalty for every negative trait selected after the first"
+    ],
+    "MinutesPerPage": [
+      "The number of in-game minutes it takes to read one page of a skill book. Min: 0.00 Max: 60.00 Default: 2.00"
+    ],
+    "KillInsideCrops": [
+      "When enabled, crops and herbs grown inside buildings will die. Does not affect houseplants."
+    ],
+    "PlantGrowingSeasons": [
+      "When enabled, the growth of plants is affected by seasons."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] It is recommended that you DO NOT change this. Changing this can result in performance issues. [!] <RGB:1,1,1>   When enabled, dirt can be placed, and farming performed on other than the ground level."
+    ],
+    "FarmingSpeedNew": [
+      "The speed of plant growth. Min: 0.10 Max: 100.00 Default: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "The abundance of harvested crops. Min: 0.10 Max: 10.00 Default: 1.00"
+    ],
+    "MaximumLooted": [
+      "The chance that any building will already be looted when found. Check the \"Advanced\" box below to use a custom number. Min: 0 Max: 200 Default: 50"
+    ],
+    "DaysUntilMaximumLooted": [
+      "How long it takes for Maximum Looted Building Chance to be reached. Min: 0 Max: 3650 Default: 90"
+    ],
+    "RuralLooted": [
+      "The chance that any rural building will already be looted when found. Check the \"Advanced\" box below to use a custom number. Min: 0.00 Max: 2.00 Default: 0.50"
+    ],
+    "MaximumDiminishedLoot": [
+      "The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the \"Advanced\" box below to use an exact percentage. Min: 0 Max: 100 Default: 0"
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "How long it takes for Maximum Diminished Loot Percentage to be reached. Min: 0 Max: 3650 Default: 3650"
+    ],
+    "MuscleStrainFactor": [
+      "Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Min: 0.00 Max: 10.00 Default: 1.00"
+    ],
+    "DiscomfortFactor": [
+      "Functions as a multiplier when applying discomfort from worn items. Min: 0.00 Max: 10.00 Default: 1.00"
+    ],
+    "WoundInfectionFactor": [
+      "If greater than zero damage can be taken from serious wound infections. Min: 0.00 Max: 10.00 Default: 0.00"
+    ],
+    "NoBlackClothes": [
+      "If true clothing with randomized tints will not be so dark to be virtually black."
+    ],
+    "EasyClimbing": [
+      "Disables the failure chances when climbing sheet ropes or over walls."
+    ],
+    "MaximumFireFuelHours": [
+      "The maximum hours of fuel that can be placed in a campfire, wood stove etc. Min: 1 Max: 168 Default: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Replaces Chance-To-Hit mechanics with Chance-To-Damage calculations.  This mode prioritizes player aiming."
+    ],
+    "FirearmNoiseMultiplier": [
+      "A multiplier for the distance at which zombies can hear gunshots. Min: 0.20 Max: 2.00 Default: 1.00"
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplier for firearm jamming chance. 0 disables jamming. Min: 0.00 Max: 10.00 Default: 0.00"
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplier for Moodle effects on hit chance. 0 disables Moodle penalty. Min: 0.00 Max: 10.00 Default: 1.00"
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplier for the effects of weather (wind, rain and fog) on hit chance. 0 disables weather effect. Min: 0.00 Max: 10.00 Default: 1.00"
+    ],
+    "FirearmHeadGearEffect": [
+      "Enable to have headgear like welding masks affect hit chance"
+    ],
+    "ClayLakeChance": [
+      "Chance to turn a dirt floor into a clay floor. Applies to lakes. Min: 0.00 Max: 1.00 Default: 0.05"
+    ],
+    "ClayRiverChance": [
+      "Chance to turn a dirt floor into a clay floor. Applies to rivers. Min: 0.00 Max: 1.00 Default: 0.05"
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Default: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "How many levels both above and below a generator it can provide with electricity. Min: 1 Max: 15 Default: 3"
+    ],
+    "SpawnFrequency": [
+      "How frequently basements spawn at random locations. Default = Sometimes",
+      "1 = Never",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always"
+    ],
+    "AllowMiniMap": [
+      "If enabled, a mini-map window will be available."
+    ],
+    "AllowWorldMap": [
+      "If enabled, the world map can be accessed."
+    ],
+    "MapAllKnown": [
+      "If enabled, the world map will be completely filled in on starting the game."
+    ],
+    "MapNeedsLight": [
+      "If enabled, maps can't be read unless there's a source of light available."
+    ],
+    "Speed": [
+      "How fast zombies move. Default = Random",
+      "1 = Sprinters",
+      "2 = Fast Shamblers",
+      "3 = Shamblers",
+      "4 = Random"
+    ],
+    "SprinterPercentage": [
+      "If Random Speed is enabled, this controls what percentage of zombies are Sprinters. Check the \"Advanced\" box below to use a custom percentage. Min: 0 Max: 100 Default: 0"
+    ],
+    "Strength": [
+      "Rate at which Strength skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Toughness": [
+      "The difficulty of killing a zombie. Default = Random",
+      "1 = Tough",
+      "2 = Normal",
+      "3 = Fragile",
+      "4 = Random"
+    ],
+    "Transmission": [
+      "How the Knox Virus spreads. Default = Blood and Saliva",
+      "1 = Blood and Saliva",
+      "2 = Saliva Only",
+      "3 = Everyone's Infected",
+      "4 = None"
+    ],
+    "Mortality": [
+      "How quickly the infection takes effect. Default = 2-3 Days",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 Minutes",
+      "4 = 0-12 Hours",
+      "5 = 2-3 Days",
+      "6 = 1-2 Weeks",
+      "7 = Never"
+    ],
+    "Reanimate": [
+      "How quickly infected corpses rise as zombies. Default = 0-1 Minutes",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 Minutes",
+      "4 = 0-12 Hours",
+      "5 = 2-3 Days",
+      "6 = 1-2 Weeks"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Default = Basic Navigation",
+      "1 = Navigate and Use Doors",
+      "2 = Navigate",
+      "3 = Basic Navigation",
+      "4 = Random"
+    ],
+    "CrawlUnderVehicle": [
+      "How often zombies can crawl under parked vehicles. Default = Often",
+      "1 = Crawlers Only",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Always"
+    ],
+    "Memory": [
+      "How long zombies remember a player after seeing or hearing them. Default = Normal",
+      "1 = Long",
+      "2 = Normal",
+      "3 = Short",
+      "4 = None",
+      "5 = Random",
+      "6 = Random between Normal and None"
+    ],
+    "Sight": [
+      "Zombie vision radius. Default = Random between Normal and Poor",
+      "1 = Eagle",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Random between Normal and Poor"
+    ],
+    "Hearing": [
+      "Zombie hearing radius. Default = Random between Normal and Poor",
+      "1 = Pinpoint",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Random between Normal and Poor"
+    ],
+    "SpottedLogic": [
+      "Activates the new advanced stealth mechanics, which allows you to hide from zombies behind cars, takes traits and weather into account, and much more."
+    ],
+    "ThumpNoChasing": [
+      "If zombies that have not seen/heard player can attack doors and constructions while roaming."
+    ],
+    "ThumpOnConstruction": [
+      "If zombies can destroy player constructions and defenses."
+    ],
+    "ActiveOnly": [
+      "Whether zombies are more \"active\" during the day or night.  \"Active\" zombies will use the speed set in the \"Speed\" setting.  \"Inactive\" zombies will be slower, and tend not to give chase. Default = Both",
+      "1 = Both",
+      "2 = Night",
+      "3 = Day"
+    ],
+    "TriggerHouseAlarm": [
+      "If zombies trigger house alarms when breaking through windows or doors."
+    ],
+    "ZombiesDragDown": [
+      "If multiple attacking zombies can drag you down and kill you.  Dependent on zombie strength."
+    ],
+    "ZombiesCrawlersDragDown": [
+      "If crawler zombies beside a player contribute to the chance of being dragged down and killed by a group of zombies."
+    ],
+    "ZombiesFenceLunge": [
+      "If zombies have a chance to lunge at you after climbing over a fence or through a window if you're too close."
+    ],
+    "ZombiesArmorFactor": [
+      "Serves as a multiplier when determining the effectiveness of armor worn by zombies. Min: 0.00 Max: 100.00 Default: 2.00"
+    ],
+    "ZombiesMaxDefense": [
+      "The maximum defense percentage that any worn protective garments can provide to a zombie. Min: 0 Max: 100 Default: 85"
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Percentage chance of having a random attached weapon. Min: 0 Max: 100 Default: 6"
+    ],
+    "ZombiesFallDamage": [
+      "How much damage zombies take when falling from height. Min: 0.00 Max: 100.00 Default: 1.00"
+    ],
+    "DisableFakeDead": [
+      "Whether some dead-looking zombies will reanimate and attack the player. Default = World Zombies",
+      "1 = World Zombies",
+      "2 = World and Combat Zombies",
+      "3 = Never"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombies will not spawn where players spawn. Default = Inside the building and around it",
+      "1 = Inside the building and around it",
+      "2 = Inside the building",
+      "3 = Inside the room",
+      "4 = Zombies can spawn anywhere"
+    ],
+    "FenceThumpersRequired": [
+      "How many zombies it takes to damage a tall fence. Min: -1 Max: 100 Default: 50"
+    ],
+    "FenceDamageMultiplier": [
+      "How quickly zombies damage tall fences. Min: 0.01 Max: 100.00 Default: 1.00"
+    ],
+    "PopulationMultiplier": [
+      "Set by the \"Zombie Count\" population option, or by a custom number here. Insane = 2.5, Very High = 1.6, High = 1.2, Normal = 0.65, Low = 0.15, None = 0.0. Min: 0.00 Max: 4.00 Default: 0.65"
+    ],
+    "PopulationStartMultiplier": [
+      "A multiplier for the desired zombie population at the start of the game. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0.00 Max: 4.00 Default: 1.00"
+    ],
+    "PopulationPeakMultiplier": [
+      "A multiplier for the desired zombie population on the peak day. Insane = 3.0, Very High = 2.0, High = 1.5, Normal = 1.0, Low = 0.5, None = 0.0. Min: 0.00 Max: 4.00 Default: 1.50"
+    ],
+    "PopulationPeakDay": [
+      "The day when the population reaches its peak. Min: 1 Max: 365 Default: 28"
+    ],
+    "RespawnHours": [
+      "The number of hours that must pass before zombies may respawn in a cell. If 0, spawning is disabled. Min: 0.00 Max: 8760.00 Default: 72.00"
+    ],
+    "RespawnUnseenHours": [
+      "The number of hours that a chunk must be unseen before zombies may respawn in it. Min: 0.00 Max: 8760.00 Default: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "The fraction of a cell's desired population that may respawn every RespawnHours. Min: 0.00 Max: 1.00 Default: 0.10"
+    ],
+    "RedistributeHours": [
+      "The number of hours that must pass before zombies migrate  to empty parts of the same cell. If 0, migration is disabled. Min: 0.00 Max: 8760.00 Default: 12.00"
+    ],
+    "FollowSoundDistance": [
+      "The distance a zombie will try to walk towards the last sound it heard. Min: 10 Max: 1000 Default: 100"
+    ],
+    "RallyGroupSize": [
+      "The size of groups real zombies form when idle. 0 means zombies don't form groups. Groups don't form inside buildings or forest zones. Min: 0 Max: 1000 Default: 20"
+    ],
+    "RallyGroupSizeVariance": [
+      "The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Min: 0 Max: 100 Default: 50"
+    ],
+    "RallyTravelDistance": [
+      "The distance real zombies travel to form groups when idle. Min: 5 Max: 50 Default: 20"
+    ],
+    "RallyGroupSeparation": [
+      "The distance between zombie groups. Min: 5 Max: 25 Default: 15"
+    ],
+    "RallyGroupRadius": [
+      "How close members of a zombie group stay to the group's \"leader\". Min: 1 Max: 10 Default: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Default: 300"
+    ],
+    "Global": [
+      "The rate at which all skills level up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "GlobalToggle": [
+      "When enabled, all skills will use the Global Multiplier."
+    ],
+    "Fitness": [
+      "Rate at which Fitness skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Sprinting": [
+      "Rate at which Sprinting skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Lightfoot": [
+      "Rate at which Lightfoot skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Nimble": [
+      "Rate at which Nimble skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Sneak": [
+      "Rate at which Sneak skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Axe": [
+      "Rate at which Axe skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Blunt": [
+      "Rate at which Blunt skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "SmallBlunt": [
+      "Rate at which Small Blunt skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "LongBlade": [
+      "Rate at which Long Blade skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "SmallBlade": [
+      "Rate at which Small Blade skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Spear": [
+      "Rate at which Spear skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Maintenance": [
+      "Rate at which Maintenance skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Woodwork": [
+      "Rate at which Woodwork skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Cooking": [
+      "Rate at which Cooking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Doctor": [
+      "Rate at which Doctor skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Electricity": [
+      "Rate at which Electricity skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "MetalWelding": [
+      "Rate at which Metal Welding skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Mechanics": [
+      "Rate at which Mechanics skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Tailoring": [
+      "Rate at which Tailoring skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Aiming": [
+      "Rate at which Aiming skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Reloading": [
+      "Rate at which Reloading skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Fishing": [
+      "Rate at which Fishing skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Trapping": [
+      "Rate at which Trapping skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "PlantScavenging": [
+      "Rate at which Plant Scavenging skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "FlintKnapping": [
+      "Rate at which Flint Knapping skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Masonry": [
+      "Rate at which Masonry skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Pottery": [
+      "Rate at which Pottery skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Carving": [
+      "Rate at which Carving skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Husbandry": [
+      "Rate at which Husbandry skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Tracking": [
+      "Rate at which Tracking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Blacksmith": [
+      "Rate at which Blacksmith skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Butchering": [
+      "Rate at which Butchering skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ],
+    "Glassmaking": [
+      "Rate at which Glassmaking skill levels up. Min: 0.00 Max: 1000.00 Default: 1.00"
+    ]
+  }
+}
+
+

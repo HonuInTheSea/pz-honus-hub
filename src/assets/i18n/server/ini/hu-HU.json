@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolFile": "PVP naplóeszköz fájl",
+    "PauseEmpty": "Szünet Üres",
+    "GlobalChat": "Globális csevegés",
+    "Open": "Nyitott",
+    "ServerWelcomeMessage": "Szerver üdvözlő üzenete",
+    "ServerImageLoginScreen": "Szerverkép bejelentkezési képernyő",
+    "ServerImageLoadingScreen": "Szerver képbetöltési képernyő",
+    "ServerImageIcon": "Szerver kép ikon",
+    "AutoCreateUserInWhiteList": "Felhasználó automatikus létrehozása a fehér listán",
+    "DisplayUserName": "Felhasználónév megjelenítése",
+    "ShowFirstAndLastName": "Utó- és vezetéknév megjelenítése",
+    "SpawnPoint": "Spawn Point",
+    "SafetySystem": "Biztonsági rendszer",
+    "ShowSafety": "Mutasd a Biztonságot",
+    "SafetyToggleTimer": "Biztonsági kapcsoló időzítő",
+    "SafetyCooldownTimer": "Biztonsági lehűlési időzítő",
+    "SafetyDisconnectDelay": "Biztonsági lekapcsolási késleltetés",
+    "SpawnItems": "Spawn elemek",
+    "DefaultPort": "Alapértelmezett port",
+    "UDPPort": "UDP port",
+    "ResetID": "Az azonosító visszaállítása",
+    "Mods": "Mods",
+    "Map": "Térkép",
+    "DoLuaChecksum": "Csinálj Lua ellenőrző összeget",
+    "Public": "Nyilvános",
+    "PublicName": "Nyilvános név",
+    "PublicDescription": "Nyilvános leírás",
+    "MaxPlayers": "Max játékosok",
+    "PingLimit": "Ping limit",
+    "SafehousePreventsLootRespawn": "A Safehouse megakadályozza a zsákmány újraélesztését",
+    "DropOffWhiteListAfterDeath": "Drop off White List a halál után",
+    "NoFire": "Nincs Tűz",
+    "AnnounceDeath": "Hirdesse a Halált",
+    "SaveWorldEveryMinutes": "Mentse meg a világot minden percben",
+    "PlayerSafehouse": "Player Safehouse",
+    "AdminSafehouse": "Admin Safehouse",
+    "SafehouseAllowTrepass": "A Safehouse Trepass engedélyezése",
+    "SafehouseAllowFire": "Safehouse Engedélyezze a tüzet",
+    "SafehouseAllowLoot": "Safehouse Engedélyezze a zsákmányt",
+    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseDaySurvivedToClaim": "A Safehouse Day túlélte az igényt",
+    "SafeHouseRemovalTime": "Biztonságos házeltávolítási idő",
+    "SafehouseAllowNonResidential": "Safehouse Engedélyezi nem lakossági",
+    "MaxSafezoneSize": "Max Safezone méret",
+    "AllowDestructionBySledgehammer": "Engedélyezze a kalapáccsal való megsemmisítést",
+    "SledgehammerOnlyInSafehouse": "Kalapács Csak biztonságos házban",
+    "WarStartDelay": "A háború kezdetének késleltetése",
+    "WarDuration": "A háború időtartama",
+    "WarSafehouseHitPoints": "War Safehouse találati pontok",
+    "ServerPlayerID": "Szerver Player ID",
+    "RCONPort": "RCON port",
+    "RCONPassword": "RCON jelszó",
+    "DiscordEnable": "Discord engedélyezése",
+    "DiscordToken": "Discord Token",
+    "DiscordChannel": "Discord csatorna",
+    "DiscordChannelID": "Discord csatornaazonosító",
+    "WebhookAddress": "Webhook címe",
+    "Password": "Jelszó",
+    "MaxAccountsPerUser": "Max fiókok felhasználónként",
+    "AllowCoop": "Coop engedélyezése",
+    "SleepAllowed": "Alvás megengedett",
+    "SleepNeeded": "Alvás szükséges",
+    "KnockedDownAllowed": "Leütve engedélyezett",
+    "SneakModeHideFromOtherPlayers": "Sneak Mode Elrejtés a többi játékos elől",
+    "WorkshopItems": "Workshop elemek",
+    "SteamScoreboard": "Steam eredménytábla",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Hang engedélyezése",
+    "VoiceMinDistance": "Hang minimális távolsága",
+    "VoiceMaxDistance": "Voice Max távolság",
+    "Voice3D": "Hang 3D",
+    "SpeedLimit": "Sebességhatár",
+    "LoginQueueConnectTimeout": "Bejelentkezési sor csatlakozási időkorlát",
+    "server_browser_announced_ip": "Szerverböngésző bejelentette ip",
+    "PlayerRespawnWithSelf": "Player Respawn With Self",
+    "PlayerRespawnWithOther": "Player Respawn With Other",
+    "FastForwardMultiplier": "Gyors előre szorzó",
+    "DisableSafehouseWhenPlayerConnected": "A Safehouse letiltása a lejátszó csatlakoztatásakor",
+    "Faction": "Frakció",
+    "FactionDaySurvivedToCreate": "A frakciónap túlélte a létrehozását",
+    "FactionPlayersRequiredForTag": "Frakciójátékosok szükségesek a címkéhez",
+    "DisableRadioStaff": "Radio Staff letiltása",
+    "DisableRadioAdmin": "Radio Admin letiltása",
+    "DisableRadioGM": "Radio GM letiltása",
+    "DisableRadioOverseer": "A Radio Overseer letiltása",
+    "DisableRadioModerator": "A rádiómoderátor letiltása",
+    "DisableRadioInvisible": "A Láthatatlan rádió kikapcsolása",
+    "ClientCommandFilter": "Kliens parancsszűrő",
+    "ClientActionLogs": "Ügyfélműveleti naplók",
+    "PerkLogs": "Perk naplók",
+    "ItemNumbersLimitPerContainer": "Cikkszám korlát tartályonként",
+    "BloodSplatLifespanDays": "Vérfolt élettartamú napok",
+    "AllowNonAsciiUsername": "Nem Ascii felhasználónév engedélyezése",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Távolítsa el a játékos holttesteit a holttest eltávolításakor",
+    "TrashDeleteAll": "Kuka Összes törlése",
+    "PVPMeleeWhileHitReaction": "PVP Közelharc Hit Reaction közben",
+    "MouseOverToSeeDisplayName": "Vigye az egeret a megjelenített név megtekintéséhez",
+    "HidePlayersBehindYou": "Játékosok elrejtése mögötted",
+    "PVPMeleeDamageModifier": "PVP közelharci sebzésmódosító",
+    "PVPFirearmDamageModifier": "PVP lőfegyver sérülés módosító",
+    "CarEngineAttractionModifier": "Autómotor vonzásmódosító",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Térkép távoli lejátszó láthatósága",
+    "BackupsCount": "Biztonsági másolatok száma",
+    "BackupsOnStart": "Biztonsági mentések induláskor",
+    "BackupsPeriod": "Biztonsági mentési időszak",
+    "DisableVehicleTowing": "A jármű vontatásának letiltása",
+    "DisableTrailerTowing": "Utánfutó vontatás letiltása",
+    "DisableBurntTowing": "Leégett vontatás letiltása",
+    "BadWordListFile": "Rossz szólista fájl",
+    "GoodWordListFile": "Jó szólista fájl",
+    "BadWordPolicy": "Rossz szópolitika",
+    "BadWordReplacement": "Rossz szócsere",
+    "AntiCheatSafety": "Csalás elleni biztonság",
+    "AntiCheatMovement": "Csalás elleni mozgalom",
+    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatPacket": "Anti Cheat Packet",
+    "AntiCheatPermission": "Csalás elleni engedély",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatRecipe": "Csalás elleni recept",
+    "AntiCheatPlayer": "Anti Cheat Player",
+    "AntiCheatChecksum": "Csalás elleni ellenőrző összeg",
+    "AntiCheatItem": "Anti Cheat elem",
+    "AntiCheatServerCustomization": "Anti Cheat Server testreszabása",
+    "MultiplayerStatisticsPeriod": "Többjátékos statisztikai időszak",
+    "DisableScoreboard": "Eredménytábla letiltása",
+    "HideAdminsInPlayerList": "Adminisztrátorok elrejtése a lejátszólistában",
+    "Seed": "Mag",
+    "ChatMessageCharacterLimit": "Csevegőüzenet Karakterkorlát",
+    "ChatMessageSlowModeTime": "Chat Üzenet Lassú üzemmód ideje",
+    "comments": {
+"PVP": [
+        "A játékosok árthatnak és megölhetnek más játékosokat."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "A játékidő leáll, ha nincs online játékos."
+      ],
+      "GlobalChat": [
+        "Be- vagy kikapcsolja a globális csevegést."
+      ],
+      "Open": [
+        "A kliensek anélkül csatlakozhatnak, hogy már szerepelne fiókjuk az engedélylistán. Ha a beállítás hamis, a rendszergazdáknak manuálisan kell létrehozniuk a felhasználónév/jelszó kombinációt."
+      ],
+      "ServerWelcomeMessage": [
+        "Az első üdvözlő üzenet látható a chat panelben. Ez fog megjelenni, miután a játékos bejelentkezik. RGB színeket használva megváltoztathatod az üdvözlő üzenet színét. Használhatsz <LINE> tagot, hogy külön sorokat hozz létre a szövegen belül. Használata: <RGB:1,0,0> Ez az üzenet pirosan fog megjelenni!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Ha engedélyezett, a lopakodó módban lévő játékosok rejtve maradnak a többi játékos elől."
+      ],
+      "ServerImageLoadingScreen": [
+        "A kiszolgáló betöltési képernyőjén megjelenő kép elérési útja."
+      ],
+      "ServerImageIcon": [
+        "A kiszolgáló ikonjához használt kép elérési útja."
+      ],
+      "ServerImageLoginScreen": [
+        "A kiszolgáló bejelentkezési képernyőjén megjelenő kép elérési útja."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Ismeretlen felhasználóneveket adhatsz hozzá az engedélylistához, amikor a játékosok csatlakoznak. A kliensek a csatlakozáskor megadják saját felhasználónevüket/jelszavukat. (Ez Open=true Szerverekhez van.)"
+      ],
+      "DisplayUserName": [
+        "Megjeleníti a felhasználónevet a játékos feje felett a játékban."
+      ],
+      "ShowFirstAndLastName": [
+        "Megjeleníti a Utó- és Vezetéknevet a játékos feje felett."
+      ],
+      "SpawnPoint": [
+        "Kényszeríts minden új játékost, hogy ezen a beállított x, y, z világkoordinátán éledjen. Keresd meg a koordinátákat a map.projectzomboid.com oldalon. (Figyelmen kívül hagyja, ha a koordináták 0,0,0)"
+      ],
+      "SafetySystem": [
+        "A játékosok egyéni alapon beléphetnek és elhagyhatják a PVP-t. Egy játékos csak akkor bánthat egy másik játékost, ha legalább az egyikük PVP módban van, ahogy azt a nem eltakart koponya és keresztezett csontok is mutatja a képernyő bal oldalán. Amikor a SafetySystem=false, a játékosok bármikor szabadon bánthatják egymást, ha a PVP engedélyezve van."
+      ],
+      "ShowSafety": [
+        "Megjelenik egy Koponya ikon azoknak a játékosoknak a feje felett, akik PVP módba léptek."
+      ],
+      "SafetyToggleTimer": [
+        "Az az idő, ami alatt egy játékos belép a PVP módba és elhagyja azt."
+      ],
+      "SafetyCooldownTimer": [
+        "Az a késleltetés, mielőtt egy játékos ismét beléphet, vagy elhagyhatja a PVP módot, miután nemrég megtette."
+      ],
+      "SpawnItems": [
+        "Tétel típusok, amikkel az új játékosok felélednek.",
+        "Több elemet vesszővel kell elválasztani.",
+        "Például.: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Alapértelmezett Kezdő port a játékos adatokhoz. Ha UDP, akkor ez a két használt port egyike."
+      ],
+      "ResetID": [
+        "A visszaállítási azonosító határozza meg, hogy a kiszolgáló átesett-e finom-újraindításon. Ha ez a szám megegyezik a klienssel, a kliensnek új karaktert kell létrehoznia. A PlayerServerID-vel együtt használatos. Erősen javasolt, hogy készíts biztonsági másolatot valahová ezekről az azonosítókról."
+      ],
+      "Mods": [
+        "Itt adhatod meg a mód betöltési azonosítót. Megtalálható itt: \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Rúgd ki azokat az ügyfeleket, akiknek a játékfájljai nem egyeznek a kiszolgálóéval."
+      ],
+      "Public": [
+        "A kiszolgáló megjelenítése a játékon belüli böngészőben. (Megjegyzés: a Steam-kompatibilis szerverek mindig láthatók a Steam szerver böngészőjében)"
+      ],
+      "PublicName": [
+        "A szerver neve a játékon belüli böngészőben és, ha alkalmazható, Steam böngészőben."
+      ],
+      "PublicDescription": [
+        "A játékon belüli nyilvános szerverböngészőben megjelenő leírás. A",
+        "beírása új sort hoz létre a leírásban"
+      ],
+      "MaxPlayers": [
+        "Azon játékosok maximális száma, amelyek egyszerre lehetnek a szerveren. Kivéve az Adminokat. <br>FIGYELMEZTETÉS: A 32 feletti játékosok száma várhatóan gyenge gyenge térképfolyamatot és de-szinkronizálást eredményezhet. Kérlek, óvatosan állítsd."
+      ],
+      "PingLimit": [
+        "Ping korlát milliszekundumban, mielőtt egy játékost kirúgnak a szerverről. (A letiltáshoz állítsd 0-ra)"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "A tárgyak nem jelennek meg újra azokban az épületekben, amelyeket a játékosok védőháznak vallottak"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Eltávolítja a játékosfiókokat az engedélylistáról haláluk után. Ez megakadályozza, hogy a játékosok új karakter hozzanak létre haláluk után az open=false szervereken."
+      ],
+      "NoFire": [
+        "A tűz minden formája le van tiltva, a tábortűz kivételével"
+      ],
+      "AnnounceDeath": [
+        "Ha be van jelölve, minden alkalommal, amikor egy játékos meghal, globális üzenet jelenik meg a chat-ben."
+      ],
+      "AnnounceAnimalDeath": [
+        "Ha engedélyezett, amikor egy állat meghal, globális üzenet jelenik meg a csevegésben."
+      ],
+      "SaveWorldEveryMinutes": [
+        "A betöltött térkép részei mentésre kerülnek, miután ez a beállított valós világ perceinek száma eltelt. (A térkép általában csak azután kerül mentésre, amikor az ügyfelek elhagyják a betöltött területet)"
+      ],
+      "PlayerSafehouse": [
+        "Az adminisztrátorok és a játékosok egyaránt igényelhetnek menedékházakat."
+      ],
+      "AdminSafehouse": [
+        "Csak az adminisztrátorok igényelhetnek menedékházakat."
+      ],
+      "SafehouseAllowTrepass": [
+        "Nem tagok meghívás nélkül léphetnek be egy menedékházba."
+      ],
+      "SafehouseAllowFire": [
+        "Engedélyezi, hogy a tűz megrongálja a menedékházakat."
+      ],
+      "SafehouseAllowLoot": [
+        "Engedélyezi a nem tagoknak, hogy tárgyakat vihessenek el a menedékházakból."
+      ],
+      "SafehouseAllowRespawn": [
+        "A játékosok abban a menedékházban fognak újraéledni, amelynek a tagjai voltak, mielőtt meghaltak."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "A játékosoknak túl kell élniük ennyi játékbeli napot, mielőtt menedékházat igényelhetnek."
+      ],
+      "SafeHouseRemovalTime": [
+        "A játékosok automatikusan eltávolításra kerülnek egy olyan menedékházból, amelyet nem látogattak meg ennyi valós órán keresztül."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Szabályozza, hogy a játékosok igényelhetnek-e nem lakóépületet."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Engedélyezi a játékosoknak a világ objektumainak elpusztítását kalapácsokkal."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Engedélyezi a játékosoknak a világ objektumainak elpusztítását a saját védett házukban (Szükséges, hogy az AllowDestructionBySledgehammer igaz legyen)."
+      ],
+      "WarStartDelay": [
+        "A háború kezdete előtti idő másodpercekben."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "A ServerPlayerID meghatározza, hogy egy karakter másik Szerverről, vagy egyjátékos játékból származik-e. Ezt az értéket a finom-újraindítások módosíthatják. Ha ez a szám megegyezik a klienssel, akkor a kliensnek új karaktert kell létrehoznia. Ez a ResetID azonosítóval együtt használható. Erősen ajánlott, hogy készíts biztonsági másolatot valahová ezekről az azonosítókról."
+      ],
+      "RCONPort": [
+        "RCON port (Távoli Konzol)"
+      ],
+      "RCONPassword": [
+        "RCON jelszó (Válassz egy erős jelszót)"
+      ],
+      "DiscordEnable": [
+        "Engedélyezi a globális chat szövegének integrációját egy Discord csatornával"
+      ],
+      "DiscordToken": [
+        "Discord bot hozzáférési token"
+      ],
+      "DiscordChannel": [
+        "A Discord csatorna neve. (Próbáld a különálló csatorna azonosítója beállítást, ha nehézségek adódnak)"
+      ],
+      "DiscordChannelID": [
+        "A Discord csatorna azonosítója. (Használd, ha nehézségek adódnak a Discord csatorna neve beállítással)"
+      ],
+      "WebhookAddress": [
+        "A Slack bejövő webhook URL-je"
+      ],
+      "Password": [
+        "A kiszolgálóhoz való csatlakozáshoz a klienseknek ismerniük kell ezt a jelszót. (Figyelmen kívül hagyja, ha a host gombon keresztül van üzemeltetve egy kiszolgáló)"
+      ],
+      "MaxAccountsPerUser": [
+        "Korlátozza az egyetlen Steam-felhasználó által, ezen a kiszolgálón létrehozható fiókok számát. A Host gomb használatakor figyelmen kívül hagyja."
+      ],
+      "AllowCoop": [
+        "Engedélyezi a co-op/osztott-képernyős játékosokat."
+      ],
+      "SleepAllowed": [
+        "A játékosoknak engedélyezett az alvás, amikor a túlélőjük elfáradtak, de NINCS szükségük alvásra."
+      ],
+      "SleepNeeded": [
+        "A játékosok elfáradnak és aludniuk kell. (Figyelmen kívül hagyja, ha a SleepAllowed=false)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Műhely-azonosítók listája, amit a szerver letölt. Mindegyiket pontosvesszővel kell elválasztani egymástól. Például: WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Megjeleníti a Steam Felhasználóneveket és Avatarokat a Játékosok listában. "
+      ],
+      "SteamVAC": [
+        "Engedélyezd a Steam VAC rendszert"
+      ],
+      "UPnP": [
+        "Kísérlet egy UPnP-kompatibilis internetes átjáró konfigurálására a porttovábbítási szabályok automatikus beállításához. Ha ez nem sikerül, a kiszolgáló visszaáll az alapértelmezett portokra."
+      ],
+      "VoiceEnable": [
+        "A VOIP engedélyezve van, ha be van jelölve."
+      ],
+      "VoiceMinDistance": [
+        "A VOIP hangok minimális hallható távolsága."
+      ],
+      "VoiceMaxDistance": [
+        "A VOIP hangok maximális hallható távolsága."
+      ],
+      "Voice3D": [
+        "Irányított hang kapcsoló a VOIP számára."
+      ],
+      "server_browser_announced_ip": [
+        "Állítsd be azt az IP-címet, amelyre a szerver sugároz. Ez több IP-címmel rendelkező hálózati konfigurációkhoz van, például szerverfarmokhoz"
+      ],
+      "PlayerRespawnWithSelf": [
+        "A játékosok újjáéledhetnek a játékban azon a koordinátán, ahol meghaltak."
+      ],
+      "PlayerRespawnWithOther": [
+        "A játékosok újraéledhetnek a játékban egy osztott képernyős / Remote Play játékos helyén."
+      ],
+      "FastForwardMultiplier": [
+        "Szabályozza, hogy milyen gyorsan telik az idő, amikor minden játékos alszik. Az érték megsokszorozza az alvás közben elmúló idő sebességét."
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "A Menedékház olyan lesz, mint egy normális ház, ha a Menedékház egyik tagja csatlakozott. (így biztonságos, ha a játékosok nincsenek belépve)"
+      ],
+      "Faction": [
+        "A játékosok frakciókat hozhatnak létre, amikor igaz."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "A játékosoknak túl kell élniük ennyi játékbeli napot, mielőtt frakciókat hozhatnának létre."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Szükséges játékosok, mint frakciótagok száma, mielőtt a frakciótulajdonos létrehozhat egy csapat címkét."
+      ],
+      "DisableRadioStaff": [
+        "Letiltja egy hozzáférési szinttel rendelkező játékosok rádiójának adásait."
+      ],
+      "DisableRadioAdmin": [
+        "Letiltja az admin hozzáférési szinttel rendelkező játékosok rádiójának adásait."
+      ],
+      "DisableRadioGM": [
+        "Letiltja a gm hozzáférési szinttel rendelkező játékosok rádiójának adásait."
+      ],
+      "DisableRadioOverseer": [
+        "Letiltja a felügyelő hozzáférési szinttel rendelkező játékosok rádiójának adásait."
+      ],
+      "DisableRadioModerator": [
+        "Letiltja a moderátor hozzáférési szinttel rendelkező játékosok rádiójának adásait."
+      ],
+      "DisableRadioInvisible": [
+        "Letiltja a láthatatlan játékosok rádiójának adásait."
+      ],
+      "ClientCommandFilter": [
+        "Pontosvesszővel elválasztott parancsok listája, amelyek nem lesznek beírva a cmd.txt kiszolgálónaplóba. Például:",
+        "-vehicle.* azt jelenti, hogy ne írjon semmilyen járműparancsot.",
+        "+vehicle.installPart azt jelenti, hogy írja be ezt a parancsot."
+      ],
+      "ClientActionLogs": [
+        "Műveletek pontosvesszővel elválasztott listája, ami be lesz írva a ClientActionLogs.txt szerver naplóba."
+      ],
+      "PerkLogs": [
+        "Játékos készségszintjeiben történt változások követése a PerkLog.txt szerver naplóban."
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Egy tárolóba helyezhető elemek maximális száma. A nulla azt jelenti, hogy nincs korlát. (FIGYELEM!: Ebbe beletartoznak az egyes apró tételek is, mint a szögek. Az 50-es korlát azt jelenti, hogy 50 szög tárolható.)"
+      ],
+      "BloodSplatLifespanDays": [
+        "Napok száma, mielőtt a régi vérfoltok eltávolításra kerülnek.<br>Eltávolítás a térképrészek betöltésekor történik.<br>A Nulla azt jelenti, hogy soha nem tűnnek el."
+      ],
+      "AllowNonAsciiUsername": [
+        "Engedélyezi a nem ASCII (cirill, stb.) karakterek használatát a felhasználónevekben."
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Ha engedélyezve van, a HoursForCorpseRemoval aktiválódásakor a játékosok holttestei is eltávolításra kerülnek a talajról."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Ha ez igaz, a játékos ismét üthet, ha egy másik játékos elütötte."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Ha ez igaz, a játékosoknak valaki fölé kell vinniük az egeret, hogy láthassák a megjelenített nevét."
+      ],
+      "HidePlayersBehindYou": [
+        "Ha igaz, akkor automatikusan elrejti a nem látható játékost (például a zombikat)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Sebzésszorzó PVP közelharci támadásokhoz."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Sebzésszorzó a PVP hatótávolságú támadásokhoz."
+      ],
+      "CarEngineAttractionModifier": [
+        "Módosítsa a zombik vonzerejét az autókhoz. "
+      ],
+      "PlayerBumpPlayer": [
+        "Szabályozza, hogy a játékosok összeütközzenek-e más játékosokkal (és eldőljenek-e), amikor átfutnak rajtuk."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Vezérli a távoli játékosok megjelenítését a játékon belüli térképen.",
+        "1=Rejtett 2=Barátok 3=Mindenki"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "A tiltandó szavak listáját tartalmazó fájl elérési útja. "
+      ],
+      "GoodWordListFile": [
+        "A fájl elérési útja az engedélyezett szavak listájával, még akkor is, ha rossz szót tartalmaznak. "
+      ],
+      "BadWordPolicy": [
+        "Mi a teendő a rossz szó feladójával a chatben: 1 - kitiltás, 2 - rúgás, 3 - rögzítse a szabálysértést az adatbázisban, 4 - némítás"
+      ],
+      "BadWordReplacement": [
+        "Az a szimbólum vagy szövegrész, amely felváltja a rossz szót"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Letiltja a mozgás elleni csalásvédelmet."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Letiltja a játékosok elleni csalásvédelmet."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Letiltja az elemellenőrzések csalás elleni védelmét."
+      ],
+      "AntiCheatServerCustomization": [
+        "Letiltja a szerver testreszabási csalásvédelmet."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Beállítja a többjátékos frissítési időszakot másodpercekben. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Elrejti az adminokat a játékoslistában."
+      ],
+      "Seed": [
+        "A világ létrehozásához használt worldgen seed.<br>Ha ezt meg szeretné változtatni, adjon meg egy új értéket, és törölje a map_worldgen.bin fájlt a mentési könyvtárból."
+      ],
+      "SpeedLimit": [
+        "A jármű sebességkorlátozása."
+      ],
+      "BackupsCount": [
+        "Min: 1 Max: 300 Alapértelmezett: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Max: 1500 Alapértelmezett: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Max: 1024 Alapértelmezett: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Max: 30 Alapértelmezett: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Max: 1200 Alapértelmezett: 60"
+      ],
+      "Map": [
+        "Add meg a mod mappanevét, amely itt található: \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Max: 2147483647 Alapértelmezett: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Max: 60 Alapértelmezett: 60"
+      ],
+      "TrashDeleteAll": [
+        "Ha engedélyezett, a játékos használhatja a \\"törlés mindent\\" gombot a kukákon."
+      ],
+      "UDPPort": [
+        "Min: 0 Max: 65535 Alapértelmezett: 16262"
+      ]
+    }
+  }
+}
+
+

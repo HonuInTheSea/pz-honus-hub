@@ -1,6 +1,18 @@
 <ng-container *transloco="let t">
 <p-toast position="top-center"></p-toast>
 
+@if (localeLoading) {
+  <div class="mods-loading-overlay">
+    <div class="mods-loading-content">
+      <span>{{ t('menu.loadingLocale') }}</span>
+      <p-progressbar
+        mode="indeterminate"
+        [style]="{ height: '4px', width: '100%', marginTop: '0.75rem' }"
+      ></p-progressbar>
+    </div>
+  </div>
+}
+
 <!--
 <p-accordion class="sidebar-media-accordion" [value]="null">
   <p-accordion-panel value="media-player">

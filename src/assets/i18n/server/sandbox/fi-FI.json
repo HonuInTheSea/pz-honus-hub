@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombit",
+  "Distribution": "Jakautuminen",
+  "ZombieVoronoiNoise": "Zombie Voronoi -kohina",
+  "ZombieRespawn": "Zombien uudelleenilmestyminen",
+  "ZombieMigrate": "Zombien vaellus",
+  "DayLength": "Päivän pituus",
+  "StartMonth": "Aloituskuukausi",
+  "StartDay": "Aloituspäivä",
+  "StartTime": "Aloitusaika",
+  "DayNightCycle": "Vuorokausisykli",
+  "ClimateCycle": "Ilmastokierto",
+  "FogCycle": "Sumukierto",
+  "WaterShut": "Vedenkatkaisu",
+  "ElecShut": "Sähkökatko",
+  "AlarmDecay": "Hälytysten heikkeneminen",
+  "WaterShutModifier": "Vedenkatkaisun muunnin",
+  "ElecShutModifier": "Sähkökatkon muunnin",
+  "AlarmDecayModifier": "Hälytysten heikkenemisen muunnin",
+  "FoodLootNew": "Ruokasaalis (uusi)",
+  "LiteratureLootNew": "Kirjallisuussaali (uusi)",
+  "MedicalLootNew": "Lääkintäsaalis (uusi)",
+  "SurvivalGearsLootNew": "Selviytymisvarustesaali (uusi)",
+  "CannedFoodLootNew": "Säilykeruokasaali (uusi)",
+  "WeaponLootNew": "Ase-saali (uusi)",
+  "RangedWeaponLootNew": "Etäase-saali (uusi)",
+  "AmmoLootNew": "Ammussaali (uusi)",
+  "MechanicsLootNew": "Mekaniikkasaali (uusi)",
+  "OtherLootNew": "Muu saalis (uusi)",
+  "ClothingLootNew": "Vaatteet-saali (uusi)",
+  "ContainerLootNew": "Säiliösaali (uusi)",
+  "KeyLootNew": "Avaimetsaali (uusi)",
+  "MediaLootNew": "Media-saali (uusi)",
+  "MementoLootNew": "Muistoesine-saali (uusi)",
+  "CookwareLootNew": "Keittiöväline-saali (uusi)",
+  "MaterialLootNew": "Materiaali-saali (uusi)",
+  "FarmingLootNew": "Maatalous-saali (uusi)",
+  "ToolLootNew": "Työkalusaali (uusi)",
+  "RollsMultiplier": "Heittokertoja",
+  "LootItemRemovalList": "Saalin poistoluettelo",
+  "RemoveStoryLoot": "Poista tarinasaalis",
+  "RemoveZombieLoot": "Poista zombisaalis",
+  "ZombiePopLootEffect": "Saalistehoste zombiepopulaatiosta",
+  "InsaneLootFactor": "Saaliin kerroin: Hullu",
+  "ExtremeLootFactor": "Saaliin kerroin: Äärimmäinen",
+  "RareLootFactor": "Saaliin kerroin: Harvinainen",
+  "NormalLootFactor": "Saaliin kerroin: Normaali",
+  "CommonLootFactor": "Saaliin kerroin: Yleinen",
+  "AbundantLootFactor": "Saaliin kerroin: Runsas",
+  "Temperature": "Lämpötila",
+  "Rain": "Sade",
+  "ErosionSpeed": "Eroosion nopeus",
+  "ErosionDays": "Eroosiopäivät",
+  "Farming": "Maatalous",
+  "CompostTime": "Kompostointiaika",
+  "StatsDecrease": "Tilastojen heikkeneminen",
+  "NatureAbundance": "Luonnon runsaus",
+  "Alarm": "Hälytys",
+  "LockedHouses": "Lukitut talot",
+  "StarterKit": "Aloituspakkaus",
+  "Nutrition": "Ravitsemus",
+  "FoodRotSpeed": "Ruoan pilaantumisnopeus",
+  "FridgeFactor": "Jääkaappikerroin",
+  "SeenHoursPreventLootRespawn": "Nähdyt tunnit estävät saaliin respawnin",
+  "HoursForLootRespawn": "Tunnit saaliin respawniin",
+  "MaxItemsForLootRespawn": "Enintään esineitä saaliin respawniin",
+  "ConstructionPreventsLootRespawn": "Rakentaminen estää saaliin respawnin",
+  "WorldItemRemovalList": "Maailmaesineiden poistoluettelo",
+  "HoursForWorldItemRemoval": "Tunnit maailmaesineiden poistoon",
+  "ItemRemovalListBlacklistToggle": "Vaihda esineiden poiston musta lista",
+  "TimeSinceApo": "Aikaa apokalypsista",
+  "PlantResilience": "Kasvien kestävyys",
+  "PlantAbundance": "Kasvien runsaus",
+  "EndRegen": "Kestävyyden palautuminen",
+  "Helicopter": "Helikopteri",
+  "MetaEvent": "Metatapahtuma",
+  "SleepingEvent": "Unen tapahtuma",
+  "GeneratorFuelConsumption": "Generaattorin polttoaineen kulutus",
+  "GeneratorSpawning": "Generaattorin ilmestyminen",
+  "AnnotatedMapChance": "Todennäköisyys merkitylle kartalle",
+  "CharacterFreePoints": "Ilmaiset hahmopisteet",
+  "ConstructionBonusPoints": "Rakentamisen bonuspisteet",
+  "NightDarkness": "Yön pimeys",
+  "NightLength": "Yön pituus",
+  "BoneFracture": "Lu murtuma",
+  "InjurySeverity": "Vamman vakavuus",
+  "HoursForCorpseRemoval": "Tunnit ruumiiden poistoon",
+  "DecayingCorpseHealthImpact": "Mätänemien ruumiiden terveysvaikutus",
+  "ZombieHealthImpact": "Zombien terveysvaikutus",
+  "BloodLevel": "Veritaso",
+  "ClothingDegradation": "Vaatteiden kuluminen",
+  "FireSpread": "Tulipalon leviäminen",
+  "DaysForRottenFoodRemoval": "Päivät mädän ruoan poistoon",
+  "AllowExteriorGenerator": "Salli ulkogeneraattori",
+  "MaxFogIntensity": "Maksimi sumun intensiteetti",
+  "MaxRainFxIntensity": "Maksimi sateen efektin intensiteetti",
+  "EnableSnowOnGround": "Ota lumi maassa käyttöön",
+  "AttackBlockMovements": "Hyökkäys estää liikkeet",
+  "SurvivorHouseChance": "Selviytyjän talon todennäköisyys",
+  "VehicleStoryChance": "Ajoneuvotarinoiden todennäköisyys",
+  "ZoneStoryChance": "Aluetarinoiden todennäköisyys",
+  "AllClothesUnlocked": "Kaikki vaatteet avattu",
+  "EnableTaintedWaterText": "Ota saastuneen veden teksti käyttöön",
+  "EnableVehicles": "Ota ajoneuvot käyttöön",
+  "CarSpawnRate": "Auton ilmestymistiheys",
+  "ZombieAttractionMultiplier": "Zombien vetovoimakerroin",
+  "VehicleEasyUse": "Helppo ajoneuvon käyttö",
+  "InitialGas": "Alkubensa",
+  "FuelStationGasInfinite": "Rajaton bensa huoltoasemilla",
+  "FuelStationGasMin": "Minimi bensa huoltoasemilla",
+  "FuelStationGasMax": "Maksimi bensa huoltoasemilla",
+  "FuelStationGasEmptyChance": "Todennäköisyys tyhjälle huoltoasemalle",
+  "LockedCar": "Lukittu auto",
+  "CarGasConsumption": "Auton polttoaineen kulutus",
+  "CarGeneralCondition": "Auton yleiskunto",
+  "CarDamageOnImpact": "Auton vauriot törmäyksessä",
+  "DamageToPlayerFromHitByACar": "Vahinko pelaajalle auton törmäyksestä",
+  "TrafficJam": "Liikenneruuhka",
+  "CarAlarm": "Autohälytin",
+  "PlayerDamageFromCrash": "Vahinko pelaajalle kolarista",
+  "SirenShutoffHours": "Tunnit sireenin sammumiseen",
+  "ChanceHasGas": "Todennäköisyys bensalle",
+  "RecentlySurvivorVehicles": "Viime aikoina selviytyjien ajoneuvot",
+  "MultiHitZombies": "Moni-isku zombeihin",
+  "RearVulnerability": "Haavoittuvuus takaa",
+  "SirenEffectsZombies": "Sireeni vaikuttaa zombeihin",
+  "AnimalStatsModifier": "Eläinten tilastomuunnin",
+  "AnimalMetaStatsModifier": "Eläinten metatilastomuunnin",
+  "AnimalPregnancyTime": "Eläinten tiineysaika",
+  "AnimalAgeModifier": "Eläinten iän muunnin",
+  "AnimalMilkIncModifier": "Maidon lisäyksen muunnin",
+  "AnimalWoolIncModifier": "Villan lisäyksen muunnin",
+  "AnimalRanchChance": "Eläintilan todennäköisyys",
+  "AnimalGrassRegrowTime": "Ruohon uudelleenkasvuaika",
+  "AnimalMetaPredator": "Eläinten meta-peto",
+  "AnimalMatingSeason": "Parittelukausi",
+  "AnimalEggHatch": "Munien kuoriutuminen",
+  "AnimalSoundAttractZombies": "Eläinten äänet houkuttelevat zombeja",
+  "AnimalTrackChance": "Eläinjälkien todennäköisyys",
+  "AnimalPathChance": "Eläinpolun todennäköisyys",
+  "MaximumRatIndex": "Maksimi rottaindeksi",
+  "DaysUntilMaximumRatIndex": "Päiviä maksimi rottaindeksiin",
+  "MetaKnowledge": "Meta-tieto",
+  "SeeNotLearntRecipe": "Näe opimattomat reseptit",
+  "MaximumLootedBuildingRooms": "Maksimi ryöstetyt huoneet",
+  "EnablePoisoning": "Ota myrkytys käyttöön",
+  "MaggotSpawn": "Toukkien ilmestyminen",
+  "LightBulbLifespan": "Hehkulampun käyttöikä",
+  "FishAbundance": "Kalojen runsaus",
+  "LevelForMediaXPCutoff": "Taso XP:n katkaisulle medioille",
+  "LevelForDismantleXPCutoff": "Taso XP:n katkaisulle purkamisessa",
+  "BloodSplatLifespanDays": "Päiviä veriroiskeiden kestolle",
+  "LiteratureCooldown": "Kirjallisuuden jäähdytys",
+  "NegativeTraitsPenalty": "Negatiivisten piirteiden rangaistus",
+  "MinutesPerPage": "Minuutteja per sivu",
+  "KillInsideCrops": "Tapa sisäkasvit",
+  "PlantGrowingSeasons": "Kasvien kausikasvu",
+  "PlaceDirtAboveground": "Aseta maata maanpinnan yläpuolelle",
+  "FarmingSpeedNew": "Maatalouden nopeus (uusi)",
+  "FarmingAmountNew": "Maatalouden määrä (uusi)",
+  "MaximumLooted": "Maksimi ryöstö",
+  "DaysUntilMaximumLooted": "Päiviä maksimi ryöstöön",
+  "RuralLooted": "Maaseudun ryöstö",
+  "MaximumDiminishedLoot": "Maksimi vähentynyt ryöstö",
+  "DaysUntilMaximumDiminishedLoot": "Päiviä maksimi vähentyneeseen ryöstöön",
+  "MuscleStrainFactor": "Lihasrasituskertoimen",
+  "DiscomfortFactor": "Epämukavuuskerroin",
+  "WoundInfectionFactor": "Haavainfektion kerroin",
+  "NoBlackClothes": "Ei mustia vaatteita",
+  "EasyClimbing": "Helppo kiipeäminen",
+  "MaximumFireFuelHours": "Maks. tunnit polttoaineelle tulessa",
+  "FirearmUseDamageChance": "Vahinkotodennäköisyys ampuma-aseilla",
+  "FirearmNoiseMultiplier": "Ampuma-aseiden melukerroin",
+  "FirearmJamMultiplier": "Ampuma-aseiden jumittumiskerroin",
+  "FirearmMoodleMultiplier": "Moodle-kerroin ampuma-aseille",
+  "FirearmWeatherMultiplier": "Sääkerroin ampuma-aseille",
+  "FirearmHeadGearEffect": "Päähineen vaikutus ampuma-aseille",
+  "ClayLakeChance": "Saven todennäköisyys järvissä",
+  "ClayRiverChance": "Saven todennäköisyys joissa",
+  "GeneratorTileRange": "Generaattorin ruutujen kantama",
+  "GeneratorVerticalPowerRange": "Generaattorin pystysuora kantama",
+  "Basement": "Kellari",
+  "SpawnFrequency": "Ilmestymistiheys",
+  "Map": "Kartta",
+  "AllowMiniMap": "Salli minikartta",
+  "AllowWorldMap": "Salli maailmankartta",
+  "MapAllKnown": "Kartta täysin tunnettu",
+  "MapNeedsLight": "Kartta tarvitsee valoa",
+  "ZombieLore": "Zombie-tieto",
+  "Speed": "Nopeus",
+  "SprinterPercentage": "Sprinter-prosentti",
+  "Strength": "Voima",
+  "Toughness": "Kestävyys",
+  "Transmission": "Tartunta",
+  "Mortality": "Kuolleisuus",
+  "Reanimate": "Uudelleenherätys",
+  "Cognition": "Kognitio",
+  "CrawlUnderVehicle": "Ryömi ajoneuvojen alle",
+  "Memory": "Muisti",
+  "Sight": "Näkö",
+  "Hearing": "Kuulo",
+  "SpottedLogic": "Havaitsemislogiikka",
+  "ThumpNoChasing": "Iske ilman takaa-ajoa",
+  "ThumpOnConstruction": "Iske rakennelmiin",
+  "ActiveOnly": "Vain aktiivinen",
+  "TriggerHouseAlarm": "Laukaise talohälytys",
+  "ZombiesDragDown": "Zombit vetävät alas",
+  "ZombiesCrawlersDragDown": "Ryömivät zombit vetävät alas",
+  "ZombiesFenceLunge": "Zombit hyppäävät aidan yli",
+  "ZombiesArmorFactor": "Zombien panssarikerroin",
+  "ZombiesMaxDefense": "Zombien maksipuolustus",
+  "ChanceOfAttachedWeapon": "Todennäköisyys kiinnitetylle aseelle",
+  "ZombiesFallDamage": "Zombien putoamisvahinko",
+  "DisableFakeDead": "Poista vale-kuolleet",
+  "PlayerSpawnZombieRemoval": "Poista zombit spawnista",
+  "FenceThumpersRequired": "Zombit tarvitaan vahingoittamaan aitaa",
+  "FenceDamageMultiplier": "Aitavahingon kerroin",
+  "ZombieConfig": "Zombien asetukset",
+  "PopulationMultiplier": "Populaatiokerroin",
+  "PopulationStartMultiplier": "Aloituspopulaation kerroin",
+  "PopulationPeakMultiplier": "Populaatiohuipun kerroin",
+  "PopulationPeakDay": "Populaatiohuipun päivä",
+  "RespawnHours": "Respawn-tunnit",
+  "RespawnUnseenHours": "Respawn, kun ei nähty -tunnit",
+  "RespawnMultiplier": "Respawn-kerroin",
+  "RedistributeHours": "Uudelleenjakotunnit",
+  "FollowSoundDistance": "Äänen seuraamisen etäisyys",
+  "RallyGroupSize": "Ryhmäkoko",
+  "RallyGroupSizeVariance": "Ryhmäkoon vaihtelu",
+  "RallyTravelDistance": "Ryhmän matkamatka",
+  "RallyGroupSeparation": "Ryhmän erottelu",
+  "RallyGroupRadius": "Ryhmän säde",
+  "ZombiesCountBeforeDelete": "Zombit ennen poistoa",
+  "MultiplierConfig": "Kerroinasetukset",
+  "Global": "Globaali",
+  "GlobalToggle": "Globaali kytkin",
+  "Fitness": "Kunto",
+  "Sprinting": "Sprintti",
+  "Lightfoot": "Kevyt askel",
+  "Nimble": "Ketteryys",
+  "Sneak": "Hiivintä",
+  "Axe": "Kirves",
+  "Blunt": "Tylppä",
+  "SmallBlunt": "Lyhyt tylppä",
+  "LongBlade": "Pitkä terä",
+  "SmallBlade": "Lyhyt terä",
+  "Spear": "Keihäs",
+  "Maintenance": "Ylläpito",
+  "Woodwork": "Puutyöt",
+  "Cooking": "Ruoanlaitto",
+  "Doctor": "Lääketiede",
+  "Electricity": "Sähkö",
+  "MetalWelding": "Metallihitsaus",
+  "Mechanics": "Mekaniikka",
+  "Tailoring": "Ompelu",
+  "Aiming": "Tähtäys",
+  "Reloading": "Uudelleenlataus",
+  "Fishing": "Kalastus",
+  "Trapping": "Pyydystäminen",
+  "PlantScavenging": "Kasvien keräily",
+  "FlintKnapping": "Piikiven iskentä",
+  "Masonry": "Muuraus",
+  "Pottery": "Keramiikka",
+  "Carving": "Veistäminen",
+  "Husbandry": "Karjanhoito",
+  "Tracking": "Jäljitys",
+  "Blacksmith": "Sepäntyö",
+  "Butchering": "Teurastus",
+  "Glassmaking": "Lasityö",
+  "comments": {
+    "Zombies": [
+      "Tämän muuttaminen asettaa \"Väestökerroin\" lisäasetuksen. Oletus = Normaali",
+      "1 = järjetön",
+      "2 = Erittäin korkea",
+      "3 = Korkea",
+      "4 = Normaali",
+      "5 = Matala",
+      "6 = Ei mitään"
+    ],
+    "Distribution": [
+      "Kuinka zombit jakautuvat kartalla. ",
+      "1 = Kaupunki keskittynyt",
+      "2 = yhdenmukainen"
+    ],
+    "ZombieVoronoiNoise": [
+      "Ohjaa, sovelletaanko zombijakaumaan satunnaistuksia."
+    ],
+    "ZombieRespawn": [
+      "Kuinka usein uusia zombeja lisätään maailmaan. Oletus = Normaali",
+      "1 = Korkea",
+      "2 = Normaali",
+      "3 = Matala",
+      "4 = Ei mitään"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Oletus = 1 tunti, 30 minuuttia",
+      "1 = 15 Minuuttia",
+      "2 = 30 Minuuttia",
+      "3 = 1 tunti",
+      "4 = 1 tunti, 30 minuuttia",
+      "5 = 2 Tuntia",
+      "6 = 3 Tuntia",
+      "7 = 4 Tuntia",
+      "8 = 5 Tuntia",
+      "9 = 6 Tuntia",
+      "10 = 7 Tuntia",
+      "11 = 8 Tuntia",
+      "12 = 9 Tuntia",
+      "13 = 10 Tuntia",
+      "14 = 11 Tuntia",
+      "15 = 12 Tuntia",
+      "16 = 13 Tuntia",
+      "17 = 14 Tuntia",
+      "18 = 15 Tuntia",
+      "19 = 16 Tuntia",
+      "20 = 17 Tuntia",
+      "21 = 18 Tuntia",
+      "22 = 19 Tuntia",
+      "23 = 20 Tuntia",
+      "24 = 21 Tuntia",
+      "25 = 22 Tuntia",
+      "26 = 23 Tuntia",
+      "27 = Reaaliaika"
+    ],
+    "StartMonth": [
+      "Kuukausi, jolloin peli alkaa. ",
+      "1 = tammikuu",
+      "2 = helmikuu",
+      "3 = maaliskuuta",
+      "4 = huhtikuu",
+      "5 = toukokuu",
+      "6 = kesäkuuta",
+      "7 = heinäkuu",
+      "8 = elokuu",
+      "9 = syyskuu",
+      "10 = lokakuu",
+      "11 = marraskuu",
+      "12 = joulukuu"
+    ],
+    "StartDay": [
+      "Sen kuukauden päivä, jolloin pelit alkavat."
+    ],
+    "StartTime": [
+      "Kellonaika, jolloin peli alkaa. ",
+      "1 = 7 aamulla",
+      "2 = 9 aamulla",
+      "3 = 12 iltapäivällä",
+      "4 = 2 iltapäivällä",
+      "5 = 5 iltapäivällä",
+      "6 = 9 iltapäivällä",
+      "7 = 12 aamulla",
+      "8 = 2 aamulla",
+      "9 = 5 aamulla"
+    ],
+    "DayNightCycle": [
+      "Vaihteleeko vuorokaudenaika luonnollisesti vai onko se aina päivä/yö. ",
+      "1 = Normaali",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Onko sää muuttunut tai pysyykö samassa tilassa. ",
+      "1 = Normaali",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Syntyykö sumua luonnollisesti, ei koskaan tai on aina läsnä. ",
+      "1 = Normaali",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Kuinka kauan oletusaloituspäivämäärän (9. heinäkuuta 1993) jälkeen putkistot (esim. lavuaarit) lakkaavat olemasta loputtomia veden lähteitä. ",
+      "1 = Välitön",
+      "2 = 0-30 päivää",
+      "3 = 0-2 Kuukaudet",
+      "4 = 0-6 Kuukaudet",
+      "5 = 0-1 vuosi",
+      "6 = 0-5 Vuosia",
+      "7 = 2-6 Kuukaudet",
+      "8 = 6-12 Kuukaudet",
+      "9 = Liikuntarajoitteinen"
+    ],
+    "ElecShut": [
+      "Kuinka kauan oletusaloituspäivän (9.7.1993) jälkeen maailman sähköt sammuvat lopullisesti. ",
+      "1 = Välitön",
+      "2 = 0-30 päivää",
+      "3 = 0-2 Kuukaudet",
+      "4 = 0-6 Kuukaudet",
+      "5 = 0-1 vuosi",
+      "6 = 0-5 Vuosia",
+      "7 = 2-6 Kuukaudet",
+      "8 = 6-12 Kuukaudet",
+      "9 = Liikuntarajoitteinen"
+    ],
+    "AlarmDecay": [
+      "Kuinka kauan hälyttimen paristot voivat kestää virran katkaisun jälkeen. ",
+      "1 = Välitön",
+      "2 = 0-30 päivää",
+      "3 = 0-2 Kuukaudet",
+      "4 = 0-6 Kuukaudet",
+      "5 = 0-1 vuosi",
+      "6 = 0-5 Vuosia"
+    ],
+    "WaterShutModifier": [
+      "Kuinka kauan oletusaloituspäivämäärän (9. heinäkuuta 1993) jälkeen putkistot (esim. lavuaarit) lakkaavat olemasta loputtomia veden lähteitä. "
+    ],
+    "ElecShutModifier": [
+      "Kuinka kauan oletusaloituspäivän (9.7.1993) jälkeen maailman sähköt sammuvat lopullisesti. "
+    ],
+    "AlarmDecayModifier": [
+      "Kuinka kauan hälyttimen paristot voivat kestää virran katkaisun jälkeen. "
+    ],
+    "FoodLootNew": [
+      "Mikä tahansa ruoka, joka voi mätää tai pilaantua. "
+    ],
+    "LiteratureLootNew": [
+      "Kaikki luettavat kohteet, sisältää lehtiset Min: 0,00 Maks: 4,00 Oletus: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Lääkkeet, siteet ja ensiapuvälineet. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Maks: 4.00 Oletus: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Säilykkeet ja kuivatut ruoat, juomat. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Maks: 4.00 Oletus: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Maks: 4.00 Oletus: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Irrallisia ammuksia, laatikoita ja aikakauslehtiä. "
+    ],
+    "MechanicsLootNew": [
+      "Ajoneuvon osat ja niiden asentamiseen tarvittavat työkalut. "
+    ],
+    "OtherLootNew": [
+      "Kaikki muu. "
+    ],
+    "ClothingLootNew": [
+      "Kaikki puettavat tuotteet, jotka eivät ole säiliöitä. "
+    ],
+    "ContainerLootNew": [
+      "Reput ja muut puettavat/varustettavat säilytysastiat, esim. "
+    ],
+    "KeyLootNew": [
+      "Avaimet rakennuksiin/autoihin, avainrenkaat ja lukot. "
+    ],
+    "MediaLootNew": [
+      "VHS-kasetteja ja CD-levyjä. "
+    ],
+    "MementoLootNew": [
+      "Spiffo-esineet, pehmot ja muut keräilyesineet, esim. "
+    ],
+    "CookwareLootNew": [
+      "Ruoanlaitossa käytettävät esineet, mukaan lukien ne (esim. veitset), jotka voivat olla aseita. "
+    ],
+    "MaterialLootNew": [
+      "Esineet ja aseet, joita käytetään ainesosina askarteluun tai rakentamiseen. "
+    ],
+    "FarmingLootNew": [
+      "Esineet ja aseet, joita käytetään sekä eläin- että kasviviljelyssä, kuten siemenet, lastat tai lapiot. "
+    ],
+    "ToolLootNew": [
+      "Esineet ja aseet, jotka ovat työkaluja, mutta jotka eivät sovi muihin luokkiin, kuten mekaniikkaan tai maanviljelyyn. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] On suositeltavaa, että et muuta tätä. "
+    ],
+    "LootItemRemovalList": [
+      "Pilkuilla eroteltu luettelo esinetyypeistä, jotka eivät synny tavallisena ryöstönä."
+    ],
+    "RemoveStoryLoot": [
+      "Jos tämä on käytössä, ryöstökohteiden poistoluettelossa olevat kohteet tai niiden harvinaisuudeksi asetettu \"Ei mitään\" eivät synny satunnaistetuissa maailmantarinoissa."
+    ],
+    "RemoveZombieLoot": [
+      "Jos tämä on käytössä, ryöstettävien kohteiden poistoluettelon kohteet tai niiden harvinaisuudeksi asetettu \"Ei mitään\" eivät synny zombien kulumia tai kiinnittyneitä niihin."
+    ],
+    "ZombiePopLootEffect": [
+      "Jos se on suurempi kuin 0, ryöstömäärä kasvaa suhteessa lähellä olevien zombien määrään, jolloin vaikutus kerrotaan tällä numerolla. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Maks: 0.20 Oletus: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Maks: 0.60 Oletus: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Maks: 1.00 Oletus: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Maks: 2.00 Oletus: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Maks: 3.00 Oletus: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Maks: 4.00 Oletus: 3.00"
+    ],
+    "Temperature": [
+      "Globaali lämpötila. ",
+      "1 = Hyvin kylmä",
+      "2 = Kylmä",
+      "3 = Normaali",
+      "4 = Kuuma",
+      "5 = Todella kuuma"
+    ],
+    "Rain": [
+      "Kuinka usein sataa. ",
+      "1 = Hyvin kuiva",
+      "2 = Kuiva",
+      "3 = Normaali",
+      "4 = Sateinen",
+      "5 = Erittäin Sateinen"
+    ],
+    "ErosionSpeed": [
+      "Päivien määrä ennen kuin eroosiojärjestelmä (joka lisää viiniköynnöksiä, pitkää ruohoa, uusia puita jne. maailmaan) saavuttaa 100 %:n kasvun. ",
+      "1 = Erittäin nopea (20 päivää)",
+      "2 = Nopeasti (50 päivää)",
+      "3 = Normaali (100 päivää)",
+      "4 = Hidas (200 päivää)",
+      "5 = Hyvin hidas (500 päivää)"
+    ],
+    "ErosionDays": [
+      "Mukautettu eroosionopeus. "
+    ],
+    "Farming": [
+      "Nopeus, jolla taito Maatalous nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "CompostTime": [
+      "Kuinka kauan kestää, että ruoka hajoaa kompostorissa. ",
+      "1 = 1 Viikko",
+      "2 = 2 Viikoa",
+      "3 = 3 Viikoa",
+      "4 = 4 Viikoa",
+      "5 = 6 Viikoa",
+      "6 = 8 Viikoa",
+      "7 = 10 Viikoa",
+      "8 = 12 Viikoa"
+    ],
+    "StatsDecrease": [
+      "Kuinka nopeasti hahmon nälkä, jano ja väsymys vähenevät. Oletus = Normaali",
+      "1 = Erittäin nopea",
+      "2 = Nopeasti",
+      "3 = Normaali",
+      "4 = Hidas",
+      "5 = Hyvin hidas"
+    ],
+    "NatureAbundance": [
+      "Vaikuttaa kalastuksen/ravinnonhaun vaikeuteen. Oletus = Normaali",
+      "1 = Erittäin huono",
+      "2 = Huono",
+      "3 = Normaali",
+      "4 = Runsas",
+      "5 = Erittäin runsas"
+    ],
+    "Alarm": [
+      "Kuinka todennäköistä on, että pelaaja aktivoi talon hälytyksen murtautuessaan uuteen taloon. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "LockedHouses": [
+      "Määritä kuinka usein talojen ovet/ikkunat lukitaan. Oletus = Hyvin usein",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "StarterKit": [
+      "Aloita laukusta ja hyödyllisistä työkaluista."
+    ],
+    "Nutrition": [
+      "Ruoan ravintoarvo vaikuttaa pelaajan kuntoon."
+    ],
+    "FoodRotSpeed": [
+      "Määritä, kuinka nopeasti ruoka pilaantuu jääkaapin sisällä tai ulkopuolella. Oletus = Normaali",
+      "1 = Erittäin nopea",
+      "2 = Nopeasti",
+      "3 = Normaali",
+      "4 = Hidas",
+      "5 = Hyvin hidas"
+    ],
+    "FridgeFactor": [
+      "Määritä, kuinka paljon jääkaappi on tehokas. Oletus = Normaali",
+      "1 = Erittäin matala",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Kun > 0, ryöstö ei synny uudelleen vyöhykkeille, joilla on vieraillut tämän tuntimäärän aikana. Min: 0 Maks: 2147483647 Oletus: 0"
+    ],
+    "HoursForLootRespawn": [
+      "Kun arvo on suurempi kuin 0, X tunnin kuluttua kaikki maailman kaupungeissa ja peräkärrypuistoissa olevat kontit syntyvät uudelleen. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Säilöjä, joiden kohteiden lukumäärä on suurempi tai yhtä suuri kuin tämä asetus, ei synny uudelleen. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Esineet eivät synny uudelleen rakennuksiin, jotka pelaajat ovat estäneet tai rakentaneet sisään."
+    ],
+    "WorldItemRemovalList": [
+      "Pilkuilla eroteltu luettelo kohdetyypeistä, jotka poistetaan HoursForWorldItemRemoval tunnin jälkeen."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Tuntimäärä siitä, kun esine pudotettiin maahan ennen sen poistamista.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Jos tosi, kaikki WorldItemRemovalListin *ei* olevat kohteet poistetaan."
+    ],
+    "TimeSinceApo": [
+      "Kuinka kauan maailman lopun jälkeen alkaa. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Vaikuttaa siihen, kuinka paljon vettä kasvi menettää päivässä ja kykyyn välttää sairauksia. Oletus = Normaali",
+      "1 = Erittäin korkea",
+      "2 = Korkea",
+      "3 = Normaali",
+      "4 = Matala",
+      "5 = Erittäin matala"
+    ],
+    "PlantAbundance": [
+      "Vaikuttaa kuinka monta vihannesta kasvi kasvaa. Oletus = Normaali",
+      "1 = Erittäin huono",
+      "2 = Huono",
+      "3 = Normaali",
+      "4 = Runsas",
+      "5 = Erittäin runsas"
+    ],
+    "EndRegen": [
+      "Toipuminen väsymyksestä toimintojen suorittamisen jälkeen. ",
+      "1 = Erittäin nopea",
+      "2 = Nopeasti",
+      "3 = Normaali",
+      "4 = Hidas",
+      "5 = Hyvin hidas"
+    ],
+    "Helicopter": [
+      "Kuinka säännöllisesti helikopterit kulkevat tapahtumaalueen yli. Oletus = Yhden kerran",
+      "1 = Ei koskaan",
+      "2 = Yhden kerran",
+      "3 = Joskus",
+      "4 = Usein"
+    ],
+    "MetaEvent": [
+      "Kuinka usein tapahtuu zombeja houkuttelevia metapelitapahtumia, kuten kaukaisia ??laukauksia. Oletus = Joskus",
+      "1 = Ei koskaan",
+      "2 = Joskus",
+      "3 = Usein"
+    ],
+    "SleepingEvent": [
+      "Ohjaa yön metapelitapahtumia pelaajan unen aikana. Oletus = Ei koskaan",
+      "1 = Ei koskaan",
+      "2 = Joskus",
+      "3 = Usein"
+    ],
+    "GeneratorFuelConsumption": [
+      "Vaikuttaa siihen, kuinka paljon generaattorit kuluttavat polttoainetta. Generaattori, joka ei tarvitse polttoainetta, tulee asettaa päälle 0.0. Min: 0.00 Maks: 100.00 Oletus: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Lisää/vähennä sähkögeneraattoreiden syntymisen mahdollisuutta kartalle. Oletus = Harvinaisesti",
+      "1 = Erittäin harvinainen",
+      "2 = Harvinainen",
+      "3 = Erittäin harvoin",
+      "4 = Harvinaisesti",
+      "5 = Normaali",
+      "6 = Yleistä",
+      "7 = Runsas"
+    ],
+    "AnnotatedMapChance": [
+      "Vaikutus siihen, kuinka usein ryöstetyssä kartassa on kuolleen eloonjääneen merkintöjä. Oletus = Joskus",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "CharacterFreePoints": [
+      "Lisää ilmaisia ??pisteitä hahmon luomisen aikana. Min: -100 Maks: 100 Oletus: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Antaa pelaajien rakentamille rakennuksille ylimääräisiä osumapisteitä, jotta ne kestävät paremmin zombivahinkoja. ",
+      "1 = Erittäin matala",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea"
+    ],
+    "NightDarkness": [
+      "Ympäristön valaistuksen taso yöllä. ",
+      "1 = pilkkopimeä",
+      "2 = pimeä",
+      "3 = Normaali",
+      "4 = Kirkas"
+    ],
+    "NightLength": [
+      "Aika hämärästä aamunkoittoon. ",
+      "1 = Aina yö",
+      "2 = Pitkä",
+      "3 = Normaali",
+      "4 = Lyhyt",
+      "5 = Aina päivä"
+    ],
+    "BoneFracture": [
+      "Ota murtuneet raajat käyttöön tai poista ne käytöstä, kun eloonjääneet saavat vammoja törmäyksistä, zombievaurioista ja putoamisista."
+    ],
+    "InjurySeverity": [
+      "Lisää ja vähennä vammojen vaikutusta kehoosi ja niiden paranemisaikaa. Oletus = Normaali",
+      "1 = Matala",
+      "2 = Normaali",
+      "3 = Korkea"
+    ],
+    "HoursForCorpseRemoval": [
+      "Kuinka kauan, tunteissa, ennen kuin kuolleet zombien ruumiit katoavat maailmasta.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Hallitsee lähistöllä olevien rappeutuvien ruumiiden vaikutusta pelaajan terveyteen ja tunteisiin. Oletus = Normaali",
+      "1 = Ei mitään",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = järjetön"
+    ],
+    "ZombieHealthImpact": [
+      "Onko lähellä olevilla \"elävillä\" zombeilla sama vaikutus pelaajan terveyteen ja tunteisiin."
+    ],
+    "BloodLevel": [
+      "Kuinka paljon verta ruiskutetaan lattialle ja seinille vammojen vuoksi. ",
+      "1 = Ei mitään",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "Säätelee kuinka nopeasti vaatteet hajoavat, likaiset ja veriset. (Voidaan poistaa käytöstä.) Oletus = Normaali",
+      "1 = Liikuntarajoitteinen",
+      "2 = Hidas",
+      "3 = Normaali",
+      "4 = Nopeasti"
+    ],
+    "FireSpread": [
+      "Jos tuli leviää syttyessä."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Pelipäivien lukumäärä ennen kuin mätä ruoka poistetaan kartalta.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Jos se on käytössä, generaattorit toimivat ulkoisten laattojen kanssa.  "
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Oletus = Normaali",
+      "1 = Normaali",
+      "2 = kohtuullinen",
+      "3 = Matala",
+      "4 = Ei mitään"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Oletus = Normaali",
+      "1 = Normaali",
+      "2 = kohtuullinen",
+      "3 = Matala"
+    ],
+    "EnableSnowOnGround": [
+      "Jos lunta kertyy maahan.  "
+    ],
+    "AttackBlockMovements": [
+      "Estä käveleminen esteettömästi lähitaisteluhyökkäyksen aikana."
+    ],
+    "SurvivorHouseChance": [
+      "Mahdollisuus löytää kartalta satunnaisia ​​rakennuksia (esim. palaneita taloja, taloja, joissa on ryöstöjäännöksiä tai ruumiita). ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Yrittää aina"
+    ],
+    "VehicleStoryChance": [
+      "Tietarinoiden (esim. poliisin tiesulkujen) syntymisen mahdollisuus. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Yrittää aina"
+    ],
+    "ZoneStoryChance": [
+      "Karttavyöhykkeille (esim. leirintäalue metsässä) liittyvien tarinoiden kutemisen mahdollisuus. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Yrittää aina"
+    ],
+    "AllClothesUnlocked": [
+      "Voit valita pelin jokaisesta vaatekappaleesta, kun muokkaat hahmoasi"
+    ],
+    "EnableTaintedWaterText": [
+      "Jos vesi on pilaantunut, se näyttää varoituksen, joka merkitsee sen sellaiseksi."
+    ],
+    "EnableVehicles": [
+      "Jos ajoneuvot kutevat."
+    ],
+    "CarSpawnRate": [
+      "Kuinka usein ajoneuvot voidaan löytää kartalta. ",
+      "1 = Ei mitään",
+      "2 = Erittäin matala",
+      "3 = Matala",
+      "4 = Normaali",
+      "5 = Korkea"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Käytä tätä moninkertaistaaksesi tai vähentääksesi moottorin yleistä äänenvoimakkuutta. Min: 0.00 Maks: 100.00 Oletus: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Jos totta, autojen lukitus avataan täydellä bensasäiliöllä ja alhaisella moottorin äänenvoimakkuudella."
+    ],
+    "InitialGas": [
+      "Säätelee, kuinka täynnä kaasusäiliöt ovat löydetyissä autoissa. Oletus = Matala",
+      "1 = Erittäin matala",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea",
+      "6 = täysi"
+    ],
+    "FuelStationGasInfinite": [
+      "Jos tämä on käytössä, kaasupumpuista ei koskaan lopu polttoaine"
+    ],
+    "FuelStationGasMin": [
+      "Vähimmäismäärä bensiiniä, joka voi syntyä kaasupumpuissa. "
+    ],
+    "FuelStationGasMax": [
+      "Suurin määrä bensiiniä, joka voi syntyä kaasupumpuissa. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Mahdollisuus prosentteina, että yksittäisissä kaasupumpuissa ei aluksi ole polttoainetta. "
+    ],
+    "LockedCar": [
+      "Kuinka todennäköisesti autot lukitaan Oletus = Harvinaisesti",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "CarGasConsumption": [
+      "Kuinka kaasunnälkäiset ajoneuvot ovat. "
+    ],
+    "CarGeneralCondition": [
+      "Missä kunnossa uusi auto syntyy. Oletus = Matala",
+      "1 = Erittäin matala",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea"
+    ],
+    "CarDamageOnImpact": [
+      "Säätelee kolariin joutuneille ajoneuvoille aiheutuneiden vahinkojen määrää. Oletus = Normaali",
+      "1 = Erittäin matala",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Pelaajan autosta törmäyksessä saamat vahingot. Oletus = Ei mitään",
+      "1 = Ei mitään",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea",
+      "5 = Erittäin korkea"
+    ],
+    "TrafficJam": [
+      "Jos pääteille ilmaantuu romutettuja autoja koostuvat ruuhkat."
+    ],
+    "CarAlarm": [
+      "Kuinka usein löydetyissä ajoneuvoissa on aktiivisia hälytyksiä. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "PlayerDamageFromCrash": [
+      "Ota käyttöön tai poista käytöstä pelaaja vahingoittumasta auto-onnettomuudessa."
+    ],
+    "SirenShutoffHours": [
+      "Tuntimäärä ennen kuin sireenin ääni lakkaa toistamasta.\n0.0 tarkoittaa toistoa, kunnes akku on tyhjä. Min: 0.00 Maks: 168.00 Oletus: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Säätelee mahdollisuuksia löytää ajoneuvoja, joiden säiliössä on kaasua. Oletus = Matala",
+      "1 = Matala",
+      "2 = Normaali",
+      "3 = Korkea"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Voiko pelaaja löytää auton, josta on pidetty huolta Knox-infektion jälkeen. ",
+      "1 = Ei mitään",
+      "2 = Matala",
+      "3 = Normaali",
+      "4 = Korkea"
+    ],
+    "MultiHitZombies": [
+      "Kun ne ovat käytössä, tietyt lähitaisteluaseet pystyvät lyömään useita zombeja yhdellä osumalla."
+    ],
+    "RearVulnerability": [
+      "Mahdollisuus joutua puremaan, kun zombi hyökkää takaapäin. Oletus = Korkea",
+      "1 = Matala",
+      "2 = Keskikokoinen",
+      "3 = Korkea"
+    ],
+    "SirenEffectsZombies": [
+      "Jos zombit suuntaavat kohti ajoneuvojen sireenien ääntä."
+    ],
+    "AnimalStatsModifier": [
+      "Nopeus, jolla eläinten tilastot (nälkä, jano jne.) vähenevät. ",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Nopeus, jolla eläinten tilastot (nälkä, jano jne.) vähenevät metassa. ",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalPregnancyTime": [
+      "Kuinka kauan eläimet ovat raskaana ennen synnytystä. ",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalAgeModifier": [
+      "Eläinten vanhenemisnopeus. ",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalMilkIncModifier": [
+      "Oletus = Nopeasti",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalWoolIncModifier": [
+      "Oletus = Nopeasti",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalRanchChance": [
+      "Mahdollisuus löytää eläimiä tilalta. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Aina"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Tuntimäärä ruoho kasvaa uudelleen sen jälkeen, kun eläin on syönyt sen tai pelaaja on leikannut sen. "
+    ],
+    "AnimalMetaPredator": [
+      "Jos meta (eli ei näy pelin sisällä) kettu voi hyökätä kanojen kimppuun, jos majan ovi jätetään auki yöllä."
+    ],
+    "AnimalMatingSeason": [
+      "Jos eläimet, joilla on parittelukausi, kunnioittavat sitä.  "
+    ],
+    "AnimalEggHatch": [
+      "Kuinka kauan ennen kuin eläimet kuoriutuvat munista. ",
+      "1 = Ultra Fast",
+      "2 = Erittäin nopea",
+      "3 = Nopeasti",
+      "4 = Normaali",
+      "5 = Hidas",
+      "6 = Hyvin hidas"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Jos totta, eläinten kutsut houkuttelevat lähellä olevia zombeja."
+    ],
+    "AnimalTrackChance": [
+      "Eläinten mahdollisuus jättää jälkiä. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "AnimalPathChance": [
+      "Mahdollisuus luoda polku metsästettäville eläimille. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein"
+    ],
+    "MaximumRatIndex": [
+      "Taajuus ja intensiteetti esim. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Kuinka kauan kestää maksimituhoindeksin saavuttamiseen. "
+    ],
+    "MetaKnowledge": [
+      "Jos mediaa ei ole nähty tai luettu kokonaan, tämä asetus määrittää, näytetäänkö se kokonaan, näytetäänkö se muodossa \"???\" vai piilotetaanko se kokonaan. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Jos totta, voit nähdä kaikki reseptit, jotka voidaan tehdä asemalla, vaikka et olisi vielä oppinut niitä."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Jos rakennuksessa on tätä enemmän huoneita, sitä ei ryöstetä. "
+    ],
+    "EnablePoisoning": [
+      "Jos myrkkyä voidaan lisätä ruokaan. ",
+      "1 = Totta",
+      "2 = Väärä",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Jos/kun toukat voivat kutea ruumiissa. ",
+      "1 = Runkojen sisällä ja ympärillä",
+      "2 = In Bodies Only",
+      "3 = Ei koskaan"
+    ],
+    "LightBulbLifespan": [
+      "Mitä korkeampi arvo, sitä kauemmin hehkulamput kestävät ennen rikkoutumista.  "
+    ],
+    "FishAbundance": [
+      "Kalojen runsaus jokissa ja järvissä. ",
+      "1 = Erittäin huono",
+      "2 = Huono",
+      "3 = Normaali",
+      "4 = Runsas",
+      "5 = Erittäin runsas"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Kun taito on tällä tai korkeammalla tasolla, televisio/VHS/muu media ei tarjoa XP:tä sille. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Kun taito on tällä tai korkeammalla tasolla, huonekalujen romuttaminen ei anna XP:tä kyseisestä taidosta. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Päivien lukumäärä ennen kuin vanhat veriroiskeet poistetaan. "
+    ],
+    "LiteratureCooldown": [
+      "Päivien lukumäärä, ennen kuin voi hyötyä aiemmin luetun kirjallisuuden lukemisesta. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Jos useiden negatiivisten ominaisuuksien valinnasta saatujen bonusominaisuuspisteiden tuotto pienenee. ",
+      "1 = Ei mitään",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 pisteen rangaistus jokaisesta ensimmäisen jälkeen valitusta negatiivisesta piirteestä"
+    ],
+    "MinutesPerPage": [
+      "Peliminuuttien määrä, joka kuluu yhden taitokirjan sivun lukemiseen. "
+    ],
+    "KillInsideCrops": [
+      "Kun tämä on käytössä, rakennusten sisällä kasvatetut viljat ja yrtit kuolevat. "
+    ],
+    "PlantGrowingSeasons": [
+      "Kun se on käytössä, vuodenajat vaikuttavat kasvien kasvuun."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] On suositeltavaa, että et muuta tätä. "
+    ],
+    "FarmingSpeedNew": [
+      "Kasvien kasvun nopeus. "
+    ],
+    "FarmingAmountNew": [
+      "Korjuun sadon runsaus. "
+    ],
+    "MaximumLooted": [
+      "Mahdollisuus, että mikä tahansa rakennus ryöstetään jo löydettäessä. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Kuinka kauan kestää, että suurin ryöstetty rakennusmahdollisuus saavutetaan. "
+    ],
+    "RuralLooted": [
+      "Mahdollisuus, että mikä tahansa maaseuturakennus ryöstetään jo löydettäessä. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Suurin saalis, joka ei synny, kun Days Until Maximum Diminished Loot on saavutettu."
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Kuinka kauan kestää, että enimmäissaalisprosentti on vähennetty. "
+    ],
+    "MuscleStrainFactor": [
+      "Toimii kerrannaisvaikutuksena, kun heiluvat aseet tai kantavat raskaita taakkoja. "
+    ],
+    "DiscomfortFactor": [
+      "Toimii kertojana, kun kuluneet esineet aiheuttavat epämukavuutta. "
+    ],
+    "WoundInfectionFactor": [
+      "Jos suurempi kuin nolla, vakavat haavainfektiot voivat aiheuttaa vaurioita. "
+    ],
+    "NoBlackClothes": [
+      "Jos todelliset vaatteet satunnaistetuilla sävyillä eivät ole niin tummia, että ne olisivat käytännössä mustia."
+    ],
+    "EasyClimbing": [
+      "Poistaa epäonnistumisen mahdollisuudesta kiivettäessä levyköysien yli tai seinien yli."
+    ],
+    "MaximumFireFuelHours": [
+      "Enimmäistunnit polttoainetta, joka voidaan sijoittaa nuotioon, takkaan jne. Min: 1 Maks: 168 Oletus: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Korvaa Chance-To-Hit -mekaniikan Chance-To-Damage-laskelmilla."
+    ],
+    "FirearmNoiseMultiplier": [
+      "Kerroin etäisyydelle, jolla zombit voivat kuulla laukauksia. "
+    ],
+    "FirearmJamMultiplier": [
+      "Kertoin ampuma-asehäiriön mahdollisuudelle. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Kerroin Moodle-tehosteille osumamahdollisuudessa. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Kerroin sään vaikutuksille (tuuli, sade ja sumu) osuman mahdollisuuteen. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Ota käyttöön, että päähineet, kuten hitsausmaskit, vaikuttavat osumamahdollisuuksiin"
+    ],
+    "ClayLakeChance": [
+      "Mahdollisuus muuttaa likalattia savilattiaksi. "
+    ],
+    "ClayRiverChance": [
+      "Mahdollisuus muuttaa likalattia savilattiaksi. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Maks: 100 Oletus: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Kuinka monta tasoa generaattorin ylä- ja alapuolella se voi tuottaa sähköllä. "
+    ],
+    "SpawnFrequency": [
+      "Kuinka usein kellarit syntyvät satunnaisissa paikoissa. ",
+      "1 = Ei koskaan",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Aina"
+    ],
+    "AllowMiniMap": [
+      "Jos käytössä, pienoiskarttaikkuna on käytettävissä."
+    ],
+    "AllowWorldMap": [
+      "Jos tämä on käytössä, maailmankartta voidaan käyttää."
+    ],
+    "MapAllKnown": [
+      "Jos tämä on käytössä, maailmankartta täytetään kokonaan pelin alkaessa."
+    ],
+    "MapNeedsLight": [
+      "Jos tämä on käytössä, karttoja ei voi lukea, ellei valonlähde ole käytettävissä."
+    ],
+    "Speed": [
+      "Kuinka nopeasti zombit liikkuvat. ",
+      "1 = Sprinterit",
+      "2 = Nopeat Shamblerit",
+      "3 = Shamblers",
+      "4 = Satunnainen"
+    ],
+    "SprinterPercentage": [
+      "Jos Random Speed ​​​​on käytössä, tämä on, kuinka suuri prosenttiosuus zombeista on Sprintereita."
+    ],
+    "Strength": [
+      "Nopeus, jolla taito Voima nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Toughness": [
+      "Zombin tappamisen vaikeus. ",
+      "1 = Kova",
+      "2 = Normaali",
+      "3 = Hauras",
+      "4 = Satunnainen"
+    ],
+    "Transmission": [
+      "Kuinka Knox-virus leviää. ",
+      "1 = Veri + sylki",
+      "2 = Vain sylki",
+      "3 = Kaikki ovat tartunnan saaneita",
+      "4 = Ei mitään"
+    ],
+    "Mortality": [
+      "Kuinka nopeasti infektio vaikuttaa. ",
+      "1 = Välitön",
+      "2 = 0-30 Sekuntia",
+      "3 = 0-1 Pöytäkirja",
+      "4 = 0-12 Tuntia",
+      "5 = 2-3 päivää",
+      "6 = 1-2 Viikot",
+      "7 = Ei koskaan"
+    ],
+    "Reanimate": [
+      "Kuinka nopeasti tartunnan saaneet ruumiit nousevat zombeiksi. ",
+      "1 = Välitön",
+      "2 = 0-30 Sekuntia",
+      "3 = 0-1 Pöytäkirja",
+      "4 = 0-12 Tuntia",
+      "5 = 2-3 päivää",
+      "6 = 1-2 Viikot"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Oletus = Perusnavigointi",
+      "1 = Navigoi + Käytä ovia",
+      "2 = Navigoida",
+      "3 = Perusnavigointi",
+      "4 = Satunnainen"
+    ],
+    "CrawlUnderVehicle": [
+      "Kuinka usein zombit voivat ryömiä pysäköityjen ajoneuvojen alle. ",
+      "1 = Vain ryömijä",
+      "2 = Erittäin harvoin",
+      "3 = Harvinaisesti",
+      "4 = Joskus",
+      "5 = Usein",
+      "6 = Hyvin usein",
+      "7 = Aina"
+    ],
+    "Memory": [
+      "Kuinka kauan zombit muistavat pelaajan nähtyään tai kuultuaan heidät. ",
+      "1 = Pitkä",
+      "2 = Normaali",
+      "3 = Lyhyt",
+      "4 = Ei mitään",
+      "5 = Satunnainen",
+      "6 = Satunnainen välillä Normaali ja Ei mitään"
+    ],
+    "Sight": [
+      "Zombien näkösäde. ",
+      "1 = Kotka",
+      "2 = Normaali",
+      "3 = Huono",
+      "4 = Satunnainen",
+      "5 = Satunnainen normaalin ja huonon välillä"
+    ],
+    "Hearing": [
+      "Zombien kuulosäde. ",
+      "1 = Tarkkaile",
+      "2 = Normaali",
+      "3 = Huono",
+      "4 = Satunnainen",
+      "5 = Satunnainen normaalin ja huonon välillä"
+    ],
+    "SpottedLogic": [
+      "Aktivoi uuden edistyneen varkainmekaniikan, jonka avulla voit piiloutua zombeilta autojen taakse, ottaa huomioon ominaisuudet ja sään ja paljon muuta."
+    ],
+    "ThumpNoChasing": [
+      "Zombit, jotka eivät ole nähneet/kuulleet pelaajaa, voivat hyökätä oviin ja rakennuksiin vaeltaessaan."
+    ],
+    "ThumpOnConstruction": [
+      "Hallitsee, voivatko zombit tuhota pelaajien rakenteita ja puolustusta."
+    ],
+    "ActiveOnly": [
+      "Ovatko zombit \"aktiivisempia\" päivällä tai yöllä.  ",
+      "1 = Molemmat",
+      "2 = Yö",
+      "3 = Päivä"
+    ],
+    "TriggerHouseAlarm": [
+      "Antaa zombien laukaista talon hälytyksiä murtautuessaan ikkunoista ja ovista."
+    ],
+    "ZombiesDragDown": [
+      "Jos useat hyökkäävät zombit voivat vetää sinut alas ja tappaa sinut.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Jos ryömintäzombit pelaajan vieressä lisäävät mahdollisuutta tulla alas ja tappaa zombiryhmä."
+    ],
+    "ZombiesFenceLunge": [
+      "Jos zombeilla on mahdollisuus syöksyä kimppuusi kiivettyäsi aidan yli tai ikkunan läpi, jos olet liian lähellä."
+    ],
+    "ZombiesArmorFactor": [
+      "Toimii kertoimena määritettäessä zombien käyttämän panssarin tehokkuutta. "
+    ],
+    "ZombiesMaxDefense": [
+      "Suurin suojausprosentti, jonka mitkä tahansa käytetyt suojavaatteet voivat tarjota zombille. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Prosentuaalinen mahdollisuus saada satunnainen ase. "
+    ],
+    "ZombiesFallDamage": [
+      "Kuinka paljon vahinkoa zombit tekevät putoaessaan korkealta. "
+    ],
+    "DisableFakeDead": [
+      "Herättävätkö kuolleelta näyttävät zombit uudelleen ja hyökkäävätkö pelaajaa vastaan. ",
+      "1 = Maailman zombeja",
+      "2 = World and Combat Zombies",
+      "3 = Ei koskaan"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombit eivät synny siellä, missä pelaajat kutevat. ",
+      "1 = Rakennuksen sisällä ja sen ympärillä",
+      "2 = rakennuksen sisällä",
+      "3 = Huoneen sisällä",
+      "4 = Zombit voivat syntyä missä tahansa"
+    ],
+    "FenceThumpersRequired": [
+      "Kuinka monta zombea kestää vahingoittaa korkea aita. "
+    ],
+    "FenceDamageMultiplier": [
+      "Kuinka nopeasti zombit vahingoittavat korkeita aitoja. "
+    ],
+    "PopulationMultiplier": [
+      "Asetetaan \"Zombie Count\" -populaatiovaihtoehdolla tai mukautetulla numerolla tässä. "
+    ],
+    "PopulationStartMultiplier": [
+      "Kerroin halutulle zombipopulaatiolle pelin alussa. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Kerroin halutulle zombipopulaatiolle huippupäivänä. "
+    ],
+    "PopulationPeakDay": [
+      "Päivä, jolloin väestö saavuttaa huippunsa. Min: 1 Maks: 365 Oletus: 28"
+    ],
+    "RespawnHours": [
+      "Tuntien määrä, jonka täytyy kulua ennen kuin zombit voivat ilmaantua uudelleen soluun. "
+    ],
+    "RespawnUnseenHours": [
+      "Tuntimäärä, jonka palan täytyy olla näkemättä ennen kuin zombit voivat ilmaantua siihen uudelleen. Min: 0.00 Maks: 8760.00 Oletus: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "Solun halutun populaation murto-osa, joka voi syntyä uudelleen jokaisen RespawnHoursin aikana. Min: 0.00 Maks: 1.00 Oletus: 0.10"
+    ],
+    "RedistributeHours": [
+      "Tuntien määrä, jonka täytyy kulua ennen kuin zombit siirtyvät saman solun tyhjiin osiin. "
+    ],
+    "FollowSoundDistance": [
+      "Etäisyys, jonka virtuaalinen zombi yrittää kävellä kohti viimeistä kuulemaansa ääntä. Min: 10 Maks: 1000 Oletus: 100"
+    ],
+    "RallyGroupSize": [
+      "Ryhmien kokoiset todelliset zombit muodostuvat tyhjäkäynnillä. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Summa prosentteina, jonka zombieryhmät voivat poiketa oletusarvosta (sekä suurempia että pienempiä).   "
+    ],
+    "RallyTravelDistance": [
+      "Sen matkan, jonka todelliset zombit kulkevat muodostaakseen ryhmiä tyhjäkäynnillä. Min: 5 Maks: 50 Oletus: 20"
+    ],
+    "RallyGroupSeparation": [
+      "Zombiryhmien välinen etäisyys. Min: 5 Maks: 25 Oletus: 15"
+    ],
+    "RallyGroupRadius": [
+      "Kuinka lähellä ryhmän jäsenet pysyvät ryhmän johtajalle. Min: 1 Maks: 10 Oletus: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Maks: 500 Oletus: 300"
+    ],
+    "Global": [
+      "Nopeus, jolla kaikki taidot nousevat. "
+    ],
+    "GlobalToggle": [
+      "Kun tämä on käytössä, kaikki taidot käyttävät globaalia kerrointa."
+    ],
+    "Fitness": [
+      "Nopeus, jolla taito Kunto nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Sprinting": [
+      "Nopeus, jolla taito Sprintti nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Lightfoot": [
+      "Nopeus, jolla taito Kevyt askel nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Nimble": [
+      "Nopeus, jolla taito Ketteryys nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Sneak": [
+      "Nopeus, jolla taito Hiivintä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Axe": [
+      "Nopeus, jolla taito Kirves nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Blunt": [
+      "Nopeus, jolla taito Tylppä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "SmallBlunt": [
+      "Nopeus, jolla taito Lyhyt tylppä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "LongBlade": [
+      "Nopeus, jolla taito Pitkä terä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "SmallBlade": [
+      "Nopeus, jolla taito Lyhyt terä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Spear": [
+      "Nopeus, jolla taito Keihäs nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Maintenance": [
+      "Nopeus, jolla taito Ylläpito nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Woodwork": [
+      "Nopeus, jolla taito Puutyöt nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Cooking": [
+      "Nopeus, jolla taito Ruoanlaitto nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Doctor": [
+      "Nopeus, jolla taito Lääketiede nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Electricity": [
+      "Nopeus, jolla taito Sähkö nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "MetalWelding": [
+      "Nopeus, jolla taito Metallihitsaus nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Mechanics": [
+      "Nopeus, jolla taito Mekaniikka nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Tailoring": [
+      "Nopeus, jolla taito Ompelu nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Aiming": [
+      "Nopeus, jolla taito Tähtäys nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Reloading": [
+      "Nopeus, jolla taito Uudelleenlataus nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Fishing": [
+      "Nopeus, jolla taito Kalastus nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Trapping": [
+      "Nopeus, jolla taito Pyydystäminen nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "PlantScavenging": [
+      "Nopeus, jolla taito Kasvien keräily nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "FlintKnapping": [
+      "Nopeus, jolla taito Piikiven iskentä nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Masonry": [
+      "Nopeus, jolla taito Muuraus nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Pottery": [
+      "Nopeus, jolla taito Keramiikka nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Carving": [
+      "Nopeus, jolla taito Veistäminen nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Husbandry": [
+      "Nopeus, jolla taito Karjanhoito nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Tracking": [
+      "Nopeus, jolla taito Jäljitys nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Blacksmith": [
+      "Nopeus, jolla taito Sepäntyö nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Butchering": [
+      "Nopeus, jolla taito Teurastus nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ],
+    "Glassmaking": [
+      "Nopeus, jolla taito Lasityö nousee tasoa. Min: 0.00 Maks: 1000.00 Oletus: 1.00"
+    ]
+  }
+}
+
+

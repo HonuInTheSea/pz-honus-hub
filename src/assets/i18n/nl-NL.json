@@ -49,7 +49,8 @@
       "supportKofi": "Ondersteuning op Ko-fi",
       "resetApp": "Toepassing opnieuw instellen",
       "resetAppTooltip": "Vensterinstellingen opnieuw instellen en opgeslagen gegevens verwijderen",
-      "myMods": "Mijn mods"
+      "myMods": "Mijn mods",
+      "server": "Server"
     },
     "filters": {
       "adultLabel": "Heeft inhoud voor volwassenen",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Mappen configureren"
-    }
+    },
+    "loadingLocale": "Taal laden..."
   },
   "changelog": {
     "title": "Wijzigingslogboek",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Nieuwe functie",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Mogelijkheid toegevoegd om met de configuratiebestanden van de dedicated server te werken</li><li>README.md bijgewerkt</li><li>Documentatiepagina bijgewerkt</li></ul>"
+      },
       "initialRelease": {
         "title": "Eerste release",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Eerste openbare build van Honu's Project Zomboid Hub."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Kleine fixes",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Werkt bij waar de update-link naartoe verwijst</li><li>Werkt het versienummer bij</li><li>Werkt README.md bij</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Kleine fixes",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Bijwerken van taalondersteuning"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "Werkstroom",
       "data": "Gegevens die de app gebruikt",
       "features": "Functies",
+      "server": "Serverbeheer",
       "mediaPlayer": "Mediaspeler",
       "logInspector": "Loginspector",
       "folderSetup": "Mappen instellen",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Afspeellijst</strong> - toont gedetecteerde tracks en basismetagegevens (titel/artiest/album indien beschikbaar).",
       "bullet2": "<strong>Afspelen</strong> - afspelen/pauzeren plus vorige/volgende track.",
       "bullet3": "<strong>Zoeken + volume</strong> - door de track bladeren en volume/dempen aanpassen."
+    },
+    "server": {
+      "title": "Serverbeheer",
+      "intro": "Gebruik de pagina Servers om lokale Project Zomboid-serverbestanden te beheren.",
+      "bullet1": "<strong>Maak</strong> een nieuwe server om de standaardbestanden .ini, _SandboxVars.lua, _spawnpoints.lua en _spawnregions.lua te genereren.",
+      "bullet2": "<strong>Kopieer</strong> een bestaande server om de bestanden te dupliceren onder een nieuwe naam.",
+      "bullet3": "<strong>Bewerk</strong> INI- en Sandbox-variabelen en werk spawnpoints/spawnregions direct bij in de app."
     },
     "logInspector": {
       "title": "Logboekinspecteur",
@@ -561,11 +589,13 @@
         "summary": "Ongeldige servernaam",
         "detailMissing": "Voer een server in naam.",
         "detailInvalidChars": "De servernaam bevat ongeldige tekens voor de bestandsnaam.",
-        "detailTrailing": "De servernaam mag niet eindigen met een punt of een spatie."
+        "detailTrailing": "De servernaam mag niet eindigen met een punt of een spatie.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "De servernaam bestaat al",
-        "detail": "Kies een unieke servernaam."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Ontbrekende gebruikersmap",
@@ -696,6 +726,212 @@
       "noFilePath": "Stel een bestandspad in om logboeken te laden.",
       "loadFailed": "Kan het logbestand niet laden.",
       "clearFailed": "Kan het logbestand niet wissen."
+    }
+  },
+  "server": {
+    "ini": {
+      "PVP": "PVP",
+      "PVPLogToolChat": "PVP Log Tool Chat",
+      "PVPLogToolFile": "PVP Log Tool File",
+      "PauseEmpty": "Pause Empty",
+      "GlobalChat": "Global Chat",
+      "Open": "Open",
+      "ServerWelcomeMessage": "Server Welcome Message",
+      "ServerImageLoginScreen": "Server Image Login Screen",
+      "ServerImageLoadingScreen": "Server Image Loading Screen",
+      "ServerImageIcon": "Server Image Icon",
+      "AutoCreateUserInWhiteList": "Auto Create User In White List",
+      "DisplayUserName": "Display User Name",
+      "ShowFirstAndLastName": "Show First And Last Name",
+      "SpawnPoint": "Spawn Point",
+      "SafetySystem": "Safety System",
+      "ShowSafety": "Show Safety",
+      "SafetyToggleTimer": "Safety Toggle Timer",
+      "SafetyCooldownTimer": "Safety Cooldown Timer",
+      "SafetyDisconnectDelay": "Safety Disconnect Delay",
+      "SpawnItems": "Spawn Items",
+      "DefaultPort": "Default Port",
+      "UDPPort": "UDP Port",
+      "ResetID": "Reset ID",
+      "Mods": "Mods",
+      "Map": "Map",
+      "DoLuaChecksum": "Do Lua Checksum",
+      "Public": "Public",
+      "PublicName": "Public Name",
+      "PublicDescription": "Public Description",
+      "MaxPlayers": "Max Players",
+      "PingLimit": "Ping Limit",
+      "SafehousePreventsLootRespawn": "Safehouse Prevents Loot Respawn",
+      "DropOffWhiteListAfterDeath": "Drop Off White List After Death",
+      "NoFire": "No Fire",
+      "AnnounceDeath": "Announce Death",
+      "SaveWorldEveryMinutes": "Save World Every Minutes",
+      "PlayerSafehouse": "Player Safehouse",
+      "AdminSafehouse": "Admin Safehouse",
+      "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+      "SafehouseAllowFire": "Safehouse Allow Fire",
+      "SafehouseAllowLoot": "Safehouse Allow Loot",
+      "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+      "SafehouseDaySurvivedToClaim": "Safehouse Day Survived To Claim",
+      "SafeHouseRemovalTime": "Safe House Removal Time",
+      "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+      "MaxSafezoneSize": "Max Safezone Size",
+      "AllowDestructionBySledgehammer": "Allow Destruction By Sledgehammer",
+      "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+      "WarStartDelay": "War Start Delay",
+      "WarDuration": "War Duration",
+      "WarSafehouseHitPoints": "War Safehouse Hit Points",
+      "ServerPlayerID": "Server Player ID",
+      "RCONPort": "RCON Port",
+      "RCONPassword": "RCON Password",
+      "DiscordEnable": "Discord Enable",
+      "DiscordToken": "Discord Token",
+      "DiscordChannel": "Discord Channel",
+      "DiscordChannelID": "Discord Channel ID",
+      "WebhookAddress": "Webhook Address",
+      "Password": "Password",
+      "MaxAccountsPerUser": "Max Accounts Per User",
+      "AllowCoop": "Allow Coop",
+      "SleepAllowed": "Sleep Allowed",
+      "SleepNeeded": "Sleep Needed",
+      "KnockedDownAllowed": "Knocked Down Allowed",
+      "SneakModeHideFromOtherPlayers": "Sneak Mode Hide From Other Players",
+      "WorkshopItems": "Workshop Items",
+      "SteamScoreboard": "Steam Scoreboard",
+      "SteamVAC": "Steam VAC",
+      "UPnP": "UPnP",
+      "VoiceEnable": "Voice Enable",
+      "VoiceMinDistance": "Voice Min Distance",
+      "VoiceMaxDistance": "Voice Max Distance",
+      "Voice3D": "Voice 3D",
+      "SpeedLimit": "Speed Limit",
+      "LoginQueueConnectTimeout": "Login Queue Connect Timeout",
+      "server_browser_announced_ip": "Server browser announced ip",
+      "PlayerRespawnWithSelf": "Player Respawn With Self",
+      "PlayerRespawnWithOther": "Player Respawn With Other",
+      "FastForwardMultiplier": "Fast Forward Multiplier",
+      "DisableSafehouseWhenPlayerConnected": "Disable Safehouse When Player Connected",
+      "Faction": "Faction",
+      "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
+      "FactionPlayersRequiredForTag": "Faction Players Required For Tag",
+      "DisableRadioStaff": "Disable Radio Staff",
+      "DisableRadioAdmin": "Disable Radio Admin",
+      "DisableRadioGM": "Disable Radio GM",
+      "DisableRadioOverseer": "Disable Radio Overseer",
+      "DisableRadioModerator": "Disable Radio Moderator",
+      "DisableRadioInvisible": "Disable Radio Invisible",
+      "ClientCommandFilter": "Client Command Filter",
+      "ClientActionLogs": "Client Action Logs",
+      "PerkLogs": "Perk Logs",
+      "ItemNumbersLimitPerContainer": "Item Numbers Limit Per Container",
+      "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+      "AllowNonAsciiUsername": "Allow Non Ascii Username",
+      "RemovePlayerCorpsesOnCorpseRemoval": "Remove Player Corpses On Corpse Removal",
+      "TrashDeleteAll": "Trash Delete All",
+      "PVPMeleeWhileHitReaction": "PVP Melee While Hit Reaction",
+      "MouseOverToSeeDisplayName": "Mouse Over To See Display Name",
+      "HidePlayersBehindYou": "Hide Players Behind You",
+      "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+      "PVPFirearmDamageModifier": "PVP Firearm Damage Modifier",
+      "CarEngineAttractionModifier": "Car Engine Attraction Modifier",
+      "PlayerBumpPlayer": "Player Bump Player",
+      "MapRemotePlayerVisibility": "Map Remote Player Visibility",
+      "BackupsCount": "Backups Count",
+      "BackupsOnStart": "Backups On Start",
+      "BackupsPeriod": "Backups Period",
+      "DisableVehicleTowing": "Disable Vehicle Towing",
+      "DisableTrailerTowing": "Disable Trailer Towing",
+      "DisableBurntTowing": "Disable Burnt Towing",
+      "BadWordListFile": "Bad Word List File",
+      "GoodWordListFile": "Good Word List File",
+      "BadWordPolicy": "Bad Word Policy",
+      "BadWordReplacement": "Bad Word Replacement",
+      "AntiCheatSafety": "Anti Cheat Safety",
+      "AntiCheatMovement": "Anti Cheat Movement",
+      "AntiCheatHit": "Anti Cheat Hit",
+      "AntiCheatPacket": "Anti Cheat Packet",
+      "AntiCheatPermission": "Anti Cheat Permission",
+      "AntiCheatXP": "Anti Cheat XP",
+      "AntiCheatFire": "Anti Cheat Fire",
+      "AntiCheatSafeHouse": "Anti Cheat Safe House",
+      "AntiCheatRecipe": "Anti Cheat Recipe",
+      "AntiCheatPlayer": "Anti Cheat Player",
+      "AntiCheatChecksum": "Anti Cheat Checksum",
+      "AntiCheatItem": "Anti Cheat Item",
+      "AntiCheatServerCustomization": "Anti Cheat Server Customization",
+      "MultiplayerStatisticsPeriod": "Multiplayer Statistics Period",
+      "DisableScoreboard": "Disable Scoreboard",
+      "HideAdminsInPlayerList": "Hide Admins In Player List",
+      "Seed": "Seed",
+      "ChatMessageCharacterLimit": "Chat Message Character Limit",
+      "ChatMessageSlowModeTime": "Chat Message Slow Mode Time",
+      "comments": {
+        "ServerImageLoginScreen": [
+          "Pad naar de afbeelding die wordt weergegeven op het aanmeldscherm van de server."
+        ],
+        "ServerImageLoadingScreen": [
+          "Pad naar de afbeelding die wordt weergegeven op het laadscherm van de server."
+        ],
+        "ServerImageIcon": [
+          "Pad naar de afbeelding die als serverpictogram wordt gebruikt."
+        ],
+        "SneakModeHideFromOtherPlayers": [
+          "Als dit is ingeschakeld, worden spelers in sluipmodus verborgen voor andere spelers."
+        ],
+        "AnnounceAnimalDeath": [
+          "Als dit is ingeschakeld, wordt telkens wanneer een dier sterft een globaal bericht in de chat weergegeven."
+        ],
+        "AntiCheatMovement": [
+          "Schakelt de anti-cheatbeveiliging voor beweging uit."
+        ],
+        "AntiCheatPlayer": [
+          "Schakelt de anti-cheatbeveiliging voor spelers uit."
+        ],
+        "AntiCheatServerCustomization": [
+          "Schakelt de anti-cheatbeveiliging voor serveraanpassing uit."
+        ]
+      }
+    },
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Annuleren",
+      "create": "Create",
+      "editServerVariableTitle": "Servervariabele bewerken",
+      "editSandboxVariableTitle": "Sandboxvariabele bewerken",
+      "noDescription": "No description available.",
+      "save": "Opslaan",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "WAAR",
+      "falseLabel": "Vals",
+      "exportServer": "Exporteren"
     }
   }
 }

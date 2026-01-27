@@ -49,7 +49,8 @@
       "supportKofi": "Support på Ko-fi",
       "resetApp": "Nulstil applikation",
       "resetAppTooltip": "Nulstil vinduesindstillinger og slet gemte data",
-      "myMods": "Mine Mods"
+      "myMods": "Mine Mods",
+      "server": "Server"
     },
     "filters": {
       "adultLabel": "Har voksenindhold",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Konfigurer mapper"
-    }
+    },
+    "loadingLocale": "Indlæser sprog..."
   },
   "changelog": {
     "title": "Ændringslog",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Ny funktion",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Tilføjet mulighed for at arbejde med konfigurationsfilerne til den dedikerede server</li><li>README.md opdateret</li><li>Dokumentationssiden opdateret</li></ul>"
+      },
       "initialRelease": {
         "title": "Første udgivelse",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Første offentlige version af Honu's Project Zomboid Hub."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Mindre rettelser",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Opdater hvor opdateringslinket leder hen</li><li>Opdater versionsnummeret</li><li>Opdater README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Mindre rettelser",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Opdatering af sprogunderstøttelse"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "Arbejdsgang",
       "data": "Data, som appen bruger",
       "features": "Funktioner",
+      "server": "Serverstyring",
       "mediaPlayer": "Medieafspiller",
       "logInspector": "Log inspektør",
       "folderSetup": "Opsætning af mappe",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Playliste</strong> – viser registrerede numre og grundlæggende metadata (titel/kunstner/album, når det er tilgængeligt).",
       "bullet2": "<strong>Afspilning</strong> - afspil/pause plus forrige/næste spor.",
       "bullet3": "<strong>Søg + lydstyrke</strong> - skrub gennem sporet og juster lydstyrken/lydløs."
+    },
+    "server": {
+      "title": "Serverstyring",
+      "intro": "Brug Servers-siden til at administrere lokale Project Zomboid-serverfiler.",
+      "bullet1": "<strong>Opret</strong> en ny server for at generere standardfilerne .ini, _SandboxVars.lua, _spawnpoints.lua og _spawnregions.lua.",
+      "bullet2": "<strong>Kopiér</strong> en eksisterende server for at kopiere dens filer under et nyt navn.",
+      "bullet3": "<strong>Redigér</strong> INI- og Sandbox-variabler og opdater spawnpoints/spawnregions direkte i appen."
     },
     "logInspector": {
       "title": "Log inspektør",
@@ -561,11 +589,13 @@
         "summary": "Ugyldigt servernavn",
         "detailMissing": "Indtast et servernavn.",
         "detailInvalidChars": "Servernavnet indeholder ugyldige filnavntegn.",
-        "detailTrailing": "Servernavnet må ikke slutte med en prik eller et mellemrum."
+        "detailTrailing": "Servernavnet må ikke slutte med en prik eller et mellemrum.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Servernavnet findes allerede",
-        "detail": "Vælg et unikt servernavn."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Manglende brugermappe",
@@ -696,6 +726,49 @@
       "noFilePath": "Indstil en filsti for at indlæse logfiler.",
       "loadFailed": "Kunne ikke indlæse logfilen.",
       "clearFailed": "Kunne ikke rydde logfilen."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Ophæve",
+      "create": "Create",
+      "editServerVariableTitle": "Rediger servervariabel",
+      "editSandboxVariableTitle": "Rediger Sandbox Variable",
+      "noDescription": "No description available.",
+      "save": "Spare",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "ægte",
+      "falseLabel": "falsk",
+      "exportServer": "Eksportér"
     }
   }
 }

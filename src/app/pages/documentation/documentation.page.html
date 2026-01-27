@@ -18,6 +18,7 @@
         <li><a routerLink="/documentation" fragment="workflow">{{ t('docs.toc.workflow') }}</a></li>
         <li><a routerLink="/documentation" fragment="data">{{ t('docs.toc.data') }}</a></li>
         <li><a routerLink="/documentation" fragment="features">{{ t('docs.toc.features') }}</a></li>
+        <li><a routerLink="/documentation" fragment="server">{{ t('docs.toc.server') }}</a></li>
         <!-- <li><a routerLink="/documentation" fragment="media-player">{{ t('docs.toc.mediaPlayer') }}</a></li> -->
         <li><a routerLink="/documentation" fragment="log-inspector">{{ t('docs.toc.logInspector') }}</a></li>
         <li><a routerLink="/documentation" fragment="folder-setup">{{ t('docs.toc.folderSetup') }}</a></li>
@@ -158,6 +159,16 @@
           <a routerLink="/documentation" fragment="log-inspector">{{ t('docs.features.logInspectorLink') }}</a>.
         </li>
         <li [innerHTML]="t('docs.features.bullet6')"></li>
+      </ul>
+    </section>
+
+    <section id="server">
+      <h3>{{ t('docs.server.title') }}</h3>
+      <p>{{ t('docs.server.intro') }}</p>
+      <ul>
+        <li [innerHTML]="t('docs.server.bullet1')"></li>
+        <li [innerHTML]="t('docs.server.bullet2')"></li>
+        <li [innerHTML]="t('docs.server.bullet3')"></li>
       </ul>
     </section>
 

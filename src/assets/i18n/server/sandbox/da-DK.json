@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombier",
+  "Distribution": "Fordeling",
+  "ZombieVoronoiNoise": "Zombie Voronoi-støj",
+  "ZombieRespawn": "Zombie-genopståen",
+  "ZombieMigrate": "Zombie-migration",
+  "DayLength": "Døgnlængde",
+  "StartMonth": "Startmåned",
+  "StartDay": "Startdag",
+  "StartTime": "Starttid",
+  "DayNightCycle": "Døgncyklus",
+  "ClimateCycle": "Klimacyklus",
+  "FogCycle": "Tågecyklus",
+  "WaterShut": "Vandlukning",
+  "ElecShut": "Strømafbrydelse",
+  "AlarmDecay": "Alarmnedbrydning",
+  "WaterShutModifier": "Modifikator for vandlukning",
+  "ElecShutModifier": "Modifikator for strømafbrydelse",
+  "AlarmDecayModifier": "Modifikator for alarmnedbrydning",
+  "FoodLootNew": "Madværdi (ny)",
+  "LiteratureLootNew": "Litteraturbytte (ny)",
+  "MedicalLootNew": "Medicinsk bytte (ny)",
+  "SurvivalGearsLootNew": "Overlevelsesudstyr-byttet (ny)",
+  "CannedFoodLootNew": "Konservesbytte (ny)",
+  "WeaponLootNew": "Våbenbytte (ny)",
+  "RangedWeaponLootNew": "Distancevåbenbytte (ny)",
+  "AmmoLootNew": "Ammunitionsbytte (ny)",
+  "MechanicsLootNew": "Mekanikbytte (ny)",
+  "OtherLootNew": "Andet bytte (ny)",
+  "ClothingLootNew": "Tøjbytte (ny)",
+  "ContainerLootNew": "Beholderbytte (ny)",
+  "KeyLootNew": "Nøglebytte (ny)",
+  "MediaLootNew": "Mediabytte (ny)",
+  "MementoLootNew": "Minde-byttet (ny)",
+  "CookwareLootNew": "Køkkenudstyrsbytte (ny)",
+  "MaterialLootNew": "Materialebytte (ny)",
+  "FarmingLootNew": "Landbrugsbytte (ny)",
+  "ToolLootNew": "Værktøjsbytte (ny)",
+  "RollsMultiplier": "Kastemultiplikator",
+  "LootItemRemovalList": "Fjerningsliste for bytte",
+  "RemoveStoryLoot": "Fjern historieb ytte",
+  "RemoveZombieLoot": "Fjern zombieb ytte",
+  "ZombiePopLootEffect": "Bytteffekt af zombiepopulation",
+  "InsaneLootFactor": "Byttefaktor vanvittig",
+  "ExtremeLootFactor": "Byttefaktor ekstrem",
+  "RareLootFactor": "Byttefaktor sjælden",
+  "NormalLootFactor": "Byttefaktor normal",
+  "CommonLootFactor": "Byttefaktor almindelig",
+  "AbundantLootFactor": "Byttefaktor rigelig",
+  "Temperature": "Temperatur",
+  "Rain": "Regn",
+  "ErosionSpeed": "Erosionshastighed",
+  "ErosionDays": "Erosionsdage",
+  "Farming": "Landbrug",
+  "CompostTime": "Komposttid",
+  "StatsDecrease": "Statistikreduktion",
+  "NatureAbundance": "Naturens overflod",
+  "Alarm": "Alarm",
+  "LockedHouses": "Låste huse",
+  "StarterKit": "Startpakke",
+  "Nutrition": "Ernæring",
+  "FoodRotSpeed": "Rådningshastighed for mad",
+  "FridgeFactor": "Køleskabsfaktor",
+  "SeenHoursPreventLootRespawn": "Sete timer forhindrer respawn af bytte",
+  "HoursForLootRespawn": "Timer til respawn af bytte",
+  "MaxItemsForLootRespawn": "Maks. genstande for respawn af bytte",
+  "ConstructionPreventsLootRespawn": "Byggeri forhindrer respawn af bytte",
+  "WorldItemRemovalList": "Fjerningsliste for verdensgenstande",
+  "HoursForWorldItemRemoval": "Timer til fjernelse af verdensgenstande",
+  "ItemRemovalListBlacklistToggle": "Skift sortliste for fjernelse af genstande",
+  "TimeSinceApo": "Tid siden apokalypsen",
+  "PlantResilience": "Plante-modstandskraft",
+  "PlantAbundance": "Planteoverflod",
+  "EndRegen": "Udholdenhedsregenerering",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta-hændelse",
+  "SleepingEvent": "Søvn-hændelse",
+  "GeneratorFuelConsumption": "Generatorens brændstofforbrug",
+  "GeneratorSpawning": "Generator-spawn",
+  "AnnotatedMapChance": "Chance for annoteret kort",
+  "CharacterFreePoints": "Gratis karakterpoint",
+  "ConstructionBonusPoints": "Byggebonuspoint",
+  "NightDarkness": "Nattemørke",
+  "NightLength": "Natlængde",
+  "BoneFracture": "Knoglebrud",
+  "InjurySeverity": "Skadens alvorlighed",
+  "HoursForCorpseRemoval": "Timer til fjernelse af lig",
+  "DecayingCorpseHealthImpact": "Sundhedspåvirkning af rådne lig",
+  "ZombieHealthImpact": "Sundhedspåvirkning af zombier",
+  "BloodLevel": "Blodniveau",
+  "ClothingDegradation": "Tøjnedbrydning",
+  "FireSpread": "Brandspredning",
+  "DaysForRottenFoodRemoval": "Dage til fjernelse af rådden mad",
+  "AllowExteriorGenerator": "Tillad udendørs generator",
+  "MaxFogIntensity": "Maksimal tågeintensitet",
+  "MaxRainFxIntensity": "Maksimal regn-effektintensitet",
+  "EnableSnowOnGround": "Aktiver sne på jorden",
+  "AttackBlockMovements": "Angreb blokerer bevægelser",
+  "SurvivorHouseChance": "Chance for overlevendehus",
+  "VehicleStoryChance": "Chance for køretøjshistorier",
+  "ZoneStoryChance": "Chance for zonehistorier",
+  "AllClothesUnlocked": "Alle tøjdele låst op",
+  "EnableTaintedWaterText": "Aktiver tekst for forurenet vand",
+  "EnableVehicles": "Aktiver køretøjer",
+  "CarSpawnRate": "Køretøjs-spawnrate",
+  "ZombieAttractionMultiplier": "Zombie-tiltrækningsmultiplikator",
+  "VehicleEasyUse": "Nem køretøjsbrug",
+  "InitialGas": "Startbenzin",
+  "FuelStationGasInfinite": "Uendelig benzin ved tankstationer",
+  "FuelStationGasMin": "Min. benzin ved tankstationer",
+  "FuelStationGasMax": "Maks. benzin ved tankstationer",
+  "FuelStationGasEmptyChance": "Chance for tom tankstation",
+  "LockedCar": "Låst bil",
+  "CarGasConsumption": "Bilens brændstofforbrug",
+  "CarGeneralCondition": "Bilens generelle tilstand",
+  "CarDamageOnImpact": "Bilskade ved kollision",
+  "DamageToPlayerFromHitByACar": "Skade på spiller fra bil",
+  "TrafficJam": "Trafikprop",
+  "CarAlarm": "Bilalarm",
+  "PlayerDamageFromCrash": "Skade på spiller ved ulykke",
+  "SirenShutoffHours": "Timer til sirenen slukkes",
+  "ChanceHasGas": "Chance for at have benzin",
+  "RecentlySurvivorVehicles": "Nylige overleverkøretøjer",
+  "MultiHitZombies": "Flertræf på zombier",
+  "RearVulnerability": "Sårbarhed bagfra",
+  "SirenEffectsZombies": "Sirene påvirker zombier",
+  "AnimalStatsModifier": "Modifikator for dyrestatistik",
+  "AnimalMetaStatsModifier": "Modifikator for meta-dyrestatistik",
+  "AnimalPregnancyTime": "Drægtighedstid for dyr",
+  "AnimalAgeModifier": "Modifikator for dyrealder",
+  "AnimalMilkIncModifier": "Modifikator for mælkeøgning",
+  "AnimalWoolIncModifier": "Modifikator for uldøgning",
+  "AnimalRanchChance": "Chance for dyregård",
+  "AnimalGrassRegrowTime": "Tid for græsgenvækst",
+  "AnimalMetaPredator": "Meta-rovdyr for dyr",
+  "AnimalMatingSeason": "Parringssæson",
+  "AnimalEggHatch": "Ægklækning",
+  "AnimalSoundAttractZombies": "Dyrelyde tiltrækker zombier",
+  "AnimalTrackChance": "Chance for dyrespor",
+  "AnimalPathChance": "Chance for dyresti",
+  "MaximumRatIndex": "Maksimal rotteindeks",
+  "DaysUntilMaximumRatIndex": "Dage til maksimal rotteindeks",
+  "MetaKnowledge": "Meta-kendskab",
+  "SeeNotLearntRecipe": "Se ikke-lærte opskrifter",
+  "MaximumLootedBuildingRooms": "Maksimalt plyndrede rum",
+  "EnablePoisoning": "Aktiver forgiftning",
+  "MaggotSpawn": "Larve-spawn",
+  "LightBulbLifespan": "Levetid for pærer",
+  "FishAbundance": "Fiskeoverflod",
+  "LevelForMediaXPCutoff": "Niveau for XP-stop for medier",
+  "LevelForDismantleXPCutoff": "Niveau for XP-stop ved demontering",
+  "BloodSplatLifespanDays": "Dage for blodstænk-livslængde",
+  "LiteratureCooldown": "Litteratur-nedkøling",
+  "NegativeTraitsPenalty": "Straf for negative træk",
+  "MinutesPerPage": "Minutter pr. side",
+  "KillInsideCrops": "Dræb afgrøder indendørs",
+  "PlantGrowingSeasons": "Sæsonbestemt plantevækst",
+  "PlaceDirtAboveground": "Placer jord over jorden",
+  "FarmingSpeedNew": "Landbrugshastighed (ny)",
+  "FarmingAmountNew": "Landbrugsmængde (ny)",
+  "MaximumLooted": "Maksimal plyndring",
+  "DaysUntilMaximumLooted": "Dage til maksimal plyndring",
+  "RuralLooted": "Landlig plyndring",
+  "MaximumDiminishedLoot": "Maksimalt reduceret plyndring",
+  "DaysUntilMaximumDiminishedLoot": "Dage til maksimalt reduceret plyndring",
+  "MuscleStrainFactor": "Muskulær belastningsfaktor",
+  "DiscomfortFactor": "Ubehagsfaktor",
+  "WoundInfectionFactor": "Sårinfektionsfaktor",
+  "NoBlackClothes": "Ingen sorte tøj",
+  "EasyClimbing": "Let klatring",
+  "MaximumFireFuelHours": "Maks timer brændstof til ild",
+  "FirearmUseDamageChance": "Skadechance ved brug af skydevåben",
+  "FirearmNoiseMultiplier": "Støjmultiplikator for skydevåben",
+  "FirearmJamMultiplier": "Kile-multiplikator for skydevåben",
+  "FirearmMoodleMultiplier": "Moodle-multiplikator for skydevåben",
+  "FirearmWeatherMultiplier": "Vejr-multiplikator for skydevåben",
+  "FirearmHeadGearEffect": "Hovedbeklædningseffekt for skydevåben",
+  "ClayLakeChance": "Chance for ler ved søer",
+  "ClayRiverChance": "Chance for ler ved floder",
+  "GeneratorTileRange": "Generatorens flisrækkevidde",
+  "GeneratorVerticalPowerRange": "Generatorens vertikale rækkevidde",
+  "Basement": "Kælder",
+  "SpawnFrequency": "Spawnfrekvens",
+  "Map": "Kort",
+  "AllowMiniMap": "Tillad minimap",
+  "AllowWorldMap": "Tillad verdenskort",
+  "MapAllKnown": "Kort helt kendt",
+  "MapNeedsLight": "Kort kræver lys",
+  "ZombieLore": "Zombie-lore",
+  "Speed": "Hastighed",
+  "SprinterPercentage": "Sprinterprocent",
+  "Strength": "Styrke",
+  "Toughness": "Sejhed",
+  "Transmission": "Smitte",
+  "Mortality": "Dødelighed",
+  "Reanimate": "Genoplivning",
+  "Cognition": "Kognition",
+  "CrawlUnderVehicle": "Kryb under køretøjer",
+  "Memory": "Hukommelse",
+  "Sight": "Syn",
+  "Hearing": "Hørelse",
+  "SpottedLogic": "Opdagelseslogik",
+  "ThumpNoChasing": "Dunk uden jagt",
+  "ThumpOnConstruction": "Dunk på konstruktioner",
+  "ActiveOnly": "Kun aktiv",
+  "TriggerHouseAlarm": "Udløs husalarm",
+  "ZombiesDragDown": "Zombier trækker ned",
+  "ZombiesCrawlersDragDown": "Krybende zombier trækker ned",
+  "ZombiesFenceLunge": "Zombier hopper over hegn",
+  "ZombiesArmorFactor": "Zombiers rustningsfaktor",
+  "ZombiesMaxDefense": "Zombiers maks forsvar",
+  "ChanceOfAttachedWeapon": "Chance for påsat våben",
+  "ZombiesFallDamage": "Zombiers faldskade",
+  "DisableFakeDead": "Deaktiver falske døde",
+  "PlayerSpawnZombieRemoval": "Fjern zombier ved spawn",
+  "FenceThumpersRequired": "Zombier kræves for at skade hegnet",
+  "FenceDamageMultiplier": "Skademultiplikator for hegn",
+  "ZombieConfig": "Zombie-konfiguration",
+  "PopulationMultiplier": "Populationsmultiplikator",
+  "PopulationStartMultiplier": "Startpopulationsmultiplikator",
+  "PopulationPeakMultiplier": "Populationsspids-multiplikator",
+  "PopulationPeakDay": "Dag for populationsspids",
+  "RespawnHours": "Respawn-timer",
+  "RespawnUnseenHours": "Usete timer for respawn",
+  "RespawnMultiplier": "Respawn-multiplikator",
+  "RedistributeHours": "Omfordelingstimer",
+  "FollowSoundDistance": "Afstand til at følge lyd",
+  "RallyGroupSize": "Gruppestørrelse",
+  "RallyGroupSizeVariance": "Varians for gruppestørrelse",
+  "RallyTravelDistance": "Grupperejseafstand",
+  "RallyGroupSeparation": "Gruppeseparation",
+  "RallyGroupRadius": "Grupperadius",
+  "ZombiesCountBeforeDelete": "Zombier før sletning",
+  "MultiplierConfig": "Multiplikatorkonfiguration",
+  "Global": "Global",
+  "GlobalToggle": "Global til/fra",
+  "Fitness": "Kondition",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Letfod",
+  "Nimble": "Smidig",
+  "Sneak": "Snik",
+  "Axe": "Økse",
+  "Blunt": "Sløv",
+  "SmallBlunt": "Kort sløv",
+  "LongBlade": "Langt blad",
+  "SmallBlade": "Kort blad",
+  "Spear": "Spyd",
+  "Maintenance": "Vedligeholdelse",
+  "Woodwork": "Træarbejde",
+  "Cooking": "Madlavning",
+  "Doctor": "Medicin",
+  "Electricity": "Elektricitet",
+  "MetalWelding": "Metalsvejsning",
+  "Mechanics": "Mekanik",
+  "Tailoring": "Skrædderi",
+  "Aiming": "Sigte",
+  "Reloading": "Genladning",
+  "Fishing": "Fiskeri",
+  "Trapping": "Fangst",
+  "PlantScavenging": "Planteindsamling",
+  "FlintKnapping": "Flintknapning",
+  "Masonry": "Murerarbejde",
+  "Pottery": "Keramik",
+  "Carving": "Udskæring",
+  "Husbandry": "Dyrehold",
+  "Tracking": "Sporing",
+  "Blacksmith": "Smed",
+  "Butchering": "Slagtning",
+  "Glassmaking": "Glasblæsning",
+  "comments": {
+    "Zombies": [
+      "Ændring af dette sætter også \"befolkningsmultiplikatoren\" i avancerede zombieindstillinger. ",
+      "1 = Insane",
+      "2 = Very High",
+      "3 = High",
+      "4 = Normal",
+      "5 = Low",
+      "6 = None"
+    ],
+    "Distribution": [
+      "Hvordan zombier er fordelt over hele kortet. ",
+      "1 = Urban Focused",
+      "2 = Uniform"
+    ],
+    "ZombieVoronoiNoise": [
+      "Styrer, om en vis randomisering anvendes til zombiedistribution."
+    ],
+    "ZombieRespawn": [
+      "Hvor ofte tilføjes nye zombier til verden. ",
+      "1 = High",
+      "2 = Normal",
+      "3 = Low",
+      "4 = None"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Standard = 1 time, 30 minutter",
+      "1 = 15 minutter",
+      "2 = 30 minutter",
+      "3 = 1 Hour",
+      "4 = 1 time, 30 minutter",
+      "5 = 2 timer",
+      "6 = 3 timer",
+      "7 = 4 timer",
+      "8 = 5 timer",
+      "9 = 6 timer",
+      "10 = 7 timer",
+      "11 = 8 timer",
+      "12 = 9 timer",
+      "13 = 10 timer",
+      "14 = 11 timer",
+      "15 = 12 timer",
+      "16 = 13 timer",
+      "17 = 14 timer",
+      "18 = 15 timer",
+      "19 = 16 timer",
+      "20 = 17 timer",
+      "21 = 18 timer",
+      "22 = 19 timer",
+      "23 = 20 timer",
+      "24 = 21 timer",
+      "25 = 22 timer",
+      "26 = 23 timer",
+      "27 = Realtid"
+    ],
+    "StartMonth": [
+      "Måned, hvor spillet starter. ",
+      "1 = January",
+      "2 = February",
+      "3 = March",
+      "4 = April",
+      "5 = May",
+      "6 = June",
+      "7 = July",
+      "8 = August",
+      "9 = September",
+      "10 = October",
+      "11 = November",
+      "12 = December"
+    ],
+    "StartDay": [
+      "Dag i måneden, hvor spillene starter."
+    ],
+    "StartTime": [
+      "Time på dagen, hvor spillet starter. ",
+      "1 = 7 AM",
+      "2 = 9 AM",
+      "3 = 12 PM",
+      "4 = 2 PM",
+      "5 = 5 PM",
+      "6 = 9 PM",
+      "7 = 12 AM",
+      "8 = 2 AM",
+      "9 = 5 AM"
+    ],
+    "DayNightCycle": [
+      "Om tidspunktet på dagen ændrer sig naturligt, eller det altid er dag/nat. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Om vejret ændrer sig eller forbliver i en enkelt tilstand. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Om tåge opstår naturligt, aldrig forekommer eller altid er til stede. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Hvor længe efter standardstartdatoen (9. juli 1993), holder VVS-armaturer (f.eks. dræn) op med at være uendelige kilder til vand. ",
+      "1 = Instant",
+      "2 = 0-30 dage",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "ElecShut": [
+      "Hvor længe efter standardstartdatoen (9. juli 1993), at verdens elektricitet slukker for altid. ",
+      "1 = Instant",
+      "2 = 0-30 dage",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "AlarmDecay": [
+      "Hvor længe kan alarmbatterier holde, efter at strømmen er slukket. ",
+      "1 = Instant",
+      "2 = 0-30 dage",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years"
+    ],
+    "WaterShutModifier": [
+      "Hvor længe efter standardstartdatoen (9. juli 1993), holder VVS-armaturer (f.eks. dræn) op med at være uendelige kilder til vand. "
+    ],
+    "ElecShutModifier": [
+      "Hvor længe efter standardstartdatoen (9. juli 1993), at verdens elektricitet slukker for altid. "
+    ],
+    "AlarmDecayModifier": [
+      "Hvor længe kan alarmbatterier holde, efter at strømmen er slukket. "
+    ],
+    "FoodLootNew": [
+      "Enhver mad, der kan rådne eller fordærve. "
+    ],
+    "LiteratureLootNew": [
+      "Alle elementer, der kan læses, inkluderer løbesedler Min: 0,00 Maks: 4,00 Standard: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Medicin, bandager og førstehjælpsredskaber. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Maks: 4.00 Standard: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Dåse og tørret mad, drikkevarer. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Maks: 4.00 Standard: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Maks: 4.00 Standard: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Løs ammunition, æsker og magasiner. "
+    ],
+    "MechanicsLootNew": [
+      "Køretøjsdele og det nødvendige værktøj til at installere dem. "
+    ],
+    "OtherLootNew": [
+      "Alt andet. "
+    ],
+    "ClothingLootNew": [
+      "Alle bærbare ting, der ikke er containere. "
+    ],
+    "ContainerLootNew": [
+      "Rygsække og andre bærbare/udstyrbare beholdere, f.eks. "
+    ],
+    "KeyLootNew": [
+      "Nøgler til bygninger/biler, nøgleringe og låse. "
+    ],
+    "MediaLootNew": [
+      "VHS-bånd og cd'er. "
+    ],
+    "MementoLootNew": [
+      "Spiffo-genstande, plys og andre samlerobjekter, f.eks. "
+    ],
+    "CookwareLootNew": [
+      "Genstande, der bruges i madlavningen, herunder dem (f.eks. knive), der kan være våben. "
+    ],
+    "MaterialLootNew": [
+      "Genstande og våben, der bruges som ingredienser til håndværk eller bygning. "
+    ],
+    "FarmingLootNew": [
+      "Genstande og våben, der bruges i både dyre- og planteavl, såsom frø, trowels eller skovle. "
+    ],
+    "ToolLootNew": [
+      "Genstande og våben, der er værktøj, men som ikke passer ind i andre kategorier såsom mekanik eller landbrug. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Det anbefales, at du IKKE ændrer dette. "
+    ],
+    "LootItemRemovalList": [
+      "En kommasepareret liste over genstandstyper, der ikke opstår som almindeligt bytte."
+    ],
+    "RemoveStoryLoot": [
+      "Hvis det er aktiveret, vil elementer på listen over fjernelse af byttegenstande, eller som har deres sjældenhed indstillet til 'Ingen', ikke opstå i randomiserede verdenshistorier."
+    ],
+    "RemoveZombieLoot": [
+      "Hvis det er aktiveret, vil genstande på listen over fjernelse af byttegenstande, eller som har deres sjældenhed indstillet til 'Ingen', ikke affødes båret af eller knyttet til zombier."
+    ],
+    "ZombiePopLootEffect": [
+      "Hvis det er større end 0, øges tyveriets gydning i forhold til antallet af nærliggende zombier, med effekten ganget med dette tal. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Maks: 0.20 Standard: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Maks: 0.60 Standard: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Maks: 1.00 Standard: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Maks: 2.00 Standard: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Maks: 3.00 Standard: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Maks: 4.00 Standard: 3.00"
+    ],
+    "Temperature": [
+      "Den globale temperatur. ",
+      "1 = Very Cold",
+      "2 = Cold",
+      "3 = Normal",
+      "4 = Hot",
+      "5 = Very Hot"
+    ],
+    "Rain": [
+      "Hvor ofte det regner. ",
+      "1 = Very Dry",
+      "2 = Dry",
+      "3 = Normal",
+      "4 = Rainy",
+      "5 = Very Rainy"
+    ],
+    "ErosionSpeed": [
+      "Antal dage indtil erosionssystemet (som tilføjer vinstokke, langt græs, nye træer osv. til verden) vil nå 100% vækst. ",
+      "1 = Meget hurtig (20 dage)",
+      "2 = Hurtig (50 dage)",
+      "3 = Normal (100 dage)",
+      "4 = Langsom (200 dage)",
+      "5 = Meget langsom (500 dage)"
+    ],
+    "ErosionDays": [
+      "Til en tilpasset erosionshastighed. "
+    ],
+    "Farming": [
+      "Hastighed hvormed færdigheden Landbrug stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "CompostTime": [
+      "Hvor lang tid det tager for mad at nedbryde i en komposter. ",
+      "1 = 1 Week",
+      "2 = 2 Weeks",
+      "3 = 3 Weeks",
+      "4 = 4 Weeks",
+      "5 = 6 Weeks",
+      "6 = 8 Weeks",
+      "7 = 10 Weeks",
+      "8 = 12 Weeks"
+    ],
+    "StatsDecrease": [
+      "Hvor hurtigt vil spillerens sult, tørst og træthed falde. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "NatureAbundance": [
+      "Overfloden af ​​genstande fundet i Foraging-tilstand. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "Alarm": [
+      "Hvor sandsynligt er det, at spilleren aktiverer en husalarm, når han bryder ind i et nyt hus. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "LockedHouses": [
+      "Hvor ofte døre til boliger og bygninger vil blive låst, når de opdages. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "StarterKit": [
+      "Spawn med chips, en vandflaske, en lille rygsæk, et baseballbat og en hammer."
+    ],
+    "Nutrition": [
+      "Madens næringsværdi påvirker spillerens tilstand. "
+    ],
+    "FoodRotSpeed": [
+      "Hvor hurtigt vil maden blive fordærvet, i eller uden for et køleskab. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "FridgeFactor": [
+      "Hvor effektivt et køleskab vil være til at holde mad frisk i længere tid. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Når det er større end 0, vil loot ikke genopstå i zoner, der er blevet besøgt inden for dette antal timer i spillet. "
+    ],
+    "HoursForLootRespawn": [
+      "Når større end 0, efter X timer, vil alle containere i byer og trailerparker i verden genskabe byttet. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Containere med et antal genstande større eller lig med denne indstilling vil ikke genoptages. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Genstande vil ikke genopstå i bygninger, som spillere har spærret eller bygget ind i."
+    ],
+    "WorldItemRemovalList": [
+      "En kommasepareret liste over varetyper, der vil blive fjernet efter timer for fjernelse af timer."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Antal timer siden en genstand blev tabt på jorden, før den fjernes.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Hvis sandt, vil alle elementer *ikke* i WorldItemRemovalList blive fjernet."
+    ],
+    "TimeSinceApo": [
+      "Hvor længe efter verdens ende skal begynde. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Hvor meget vand planter vil miste om dagen, og deres evne til at undgå sygdom. ",
+      "1 = Very High",
+      "2 = High",
+      "3 = Normal",
+      "4 = Low",
+      "5 = Very Low"
+    ],
+    "PlantAbundance": [
+      "Udbyttet af planter ved høst. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "EndRegen": [
+      "Restitution efter at være træt efter at have udført handlinger. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "Helicopter": [
+      "Hvor regelmæssigt en helikopter passerer over Event Zone. ",
+      "1 = Aldrig",
+      "2 = Once",
+      "3 = Sometimes",
+      "4 = Often"
+    ],
+    "MetaEvent": [
+      "Hvor ofte vil zombie-tiltrækkende metagame-begivenheder som fjerne pistolskud forekomme. ",
+      "1 = Aldrig",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "SleepingEvent": [
+      "Hvor ofte opstår begivenheder under spillerens søvn, såsom mareridt. ",
+      "1 = Aldrig",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "GeneratorFuelConsumption": [
+      "Hvor meget brændstof forbruges af generatorer pr. time i spillet. "
+    ],
+    "GeneratorSpawning": [
+      "Chancen for, at elektriske generatorer gyder på kortet. ",
+      "1 = None (not recommended)",
+      "2 = Insanely Rare",
+      "3 = Extremely Rare",
+      "4 = Rare",
+      "5 = Normal",
+      "6 = Common",
+      "7 = Abundant"
+    ],
+    "AnnotatedMapChance": [
+      "Hvor ofte vil et plyndret kort have noter skrevet af en afdød overlevende. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CharacterFreePoints": [
+      "Adds free points during character creation. Min: -100 Maks: 100 Standard: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Giver spillerbyggede konstruktioner ekstra hitpoint, så de er mere modstandsdygtige over for zombieskader. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "NightDarkness": [
+      "Niveauet af omgivende belysning om natten. ",
+      "1 = Pitch Black",
+      "2 = Dark",
+      "3 = Normal",
+      "4 = Bright"
+    ],
+    "NightLength": [
+      "Tiden fra solnedgang til daggry. ",
+      "1 = Altid nat",
+      "2 = Long",
+      "3 = Normal",
+      "4 = Short",
+      "5 = Altid Dag"
+    ],
+    "BoneFracture": [
+      "Hvis overlevende kan få brækkede lemmer fra stød, zombieskader, fald osv."
+    ],
+    "InjurySeverity": [
+      "Den indvirkning, som skader har på din krop, og deres helbredende tid. ",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "HoursForCorpseRemoval": [
+      "Hvor længe, ​​i timer, før døde zombie-kroppe forsvinder fra verden.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Den indflydelse, som nærliggende forfaldne kroppe har på spillerens helbred og følelser. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Insane"
+    ],
+    "ZombieHealthImpact": [
+      "Om \"levende\" zombier i nærheden har samme indflydelse på spillerens helbred og følelser."
+    ],
+    "BloodLevel": [
+      "Hvor meget blod sprøjtes der på gulve og vægge ved skader. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "Hvor hurtigt tøj nedbrydes, bliver snavset og blodigt. ",
+      "1 = Disabled",
+      "2 = Slow",
+      "3 = Normal",
+      "4 = Fast"
+    ],
+    "FireSpread": [
+      "Hvis brande breder sig ved opstart."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Antal dage i spillet, før rådden mad fjernes fra kortet.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Hvis aktiveret, vil generatorer arbejde på udvendige fliser.  "
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Standard = Normal",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low",
+      "4 = None"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Standard = Normal",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low"
+    ],
+    "EnableSnowOnGround": [
+      "Hvis sne vil samle sig på jorden.  "
+    ],
+    "AttackBlockMovements": [
+      "Hvis nærkampsangreb bremser dig."
+    ],
+    "SurvivorHouseChance": [
+      "Chancen for at finde tilfældige bygninger på kortet (f.eks. udbrændte huse, huse, der indeholder tyvegods eller døde kroppe). ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Forsøger altid"
+    ],
+    "VehicleStoryChance": [
+      "Chancen for, at vejhistorier (f.eks. politispærringer) gyder. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Forsøger altid"
+    ],
+    "ZoneStoryChance": [
+      "Muligheden for, at historier, der er specifikke for kortzoner (f.eks. en campingplads i en skov), gyder. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Forsøger altid"
+    ],
+    "AllClothesUnlocked": [
+      "Giver dig mulighed for at vælge mellem hvert stykke tøj i spillet, når du tilpasser din karakter"
+    ],
+    "EnableTaintedWaterText": [
+      "Hvis forurenet vand vil vise en advarsel, der markerer det som sådan."
+    ],
+    "EnableVehicles": [
+      "Hvis køretøjer vil gyde."
+    ],
+    "CarSpawnRate": [
+      "Hvor ofte kan køretøjer opdages på kortet. ",
+      "1 = None",
+      "2 = Very Low",
+      "3 = Low",
+      "4 = Normal",
+      "5 = High"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Generel motorlydstyrke til zombier. "
+    ],
+    "VehicleEasyUse": [
+      "Om fundne køretøjer er låst, skal have nøgler til at starte osv."
+    ],
+    "InitialGas": [
+      "Hvor fuld vil benzintanken med opdagede køretøjer være. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = Full"
+    ],
+    "FuelStationGasInfinite": [
+      "Hvis den er aktiveret, løber benzinpumperne aldrig tør for brændstof"
+    ],
+    "FuelStationGasMin": [
+      "Den mindste mængde benzin, der kan gyde i benzinpumper. "
+    ],
+    "FuelStationGasMax": [
+      "Den maksimale mængde benzin, der kan gyde i benzinpumper. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Sandsynligheden, i procent, for, at individuelle benzinpumper i første omgang ikke har noget brændstof. "
+    ],
+    "LockedCar": [
+      "Hvor sandsynligt er biler låst Standard = Sjælden",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CarGasConsumption": [
+      "Hvor gashungrende køretøjer er. "
+    ],
+    "CarGeneralCondition": [
+      "Generel stand opdagede køretøjer vil være i. Standard = Lav",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "CarDamageOnImpact": [
+      "Mængden af ​​skader på køretøjer, der styrtede ned. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Skader modtaget af spilleren ved at blive styrtet ind. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "TrafficJam": [
+      "Hvis der opstår trafikpropper bestående af ødelagte biler på hovedvejene."
+    ],
+    "CarAlarm": [
+      "Hvor ofte opdagede køretøjer har aktive alarmer. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "PlayerDamageFromCrash": [
+      "Hvis spilleren kan komme til skade ved en bilulykke."
+    ],
+    "SirenShutoffHours": [
+      "Hvor mange timer i spillet, før en jamrende sirene slukker. "
+    ],
+    "ChanceHasGas": [
+      "Chancen for at finde et køretøj med gas i tanken. ",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Om en spiller kan opdage en bil, der er blevet plejet efter Knox-infektionen ramte. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High"
+    ],
+    "MultiHitZombies": [
+      "Hvis visse nærkampsvåben vil være i stand til at slå flere zombier i ét hit."
+    ],
+    "RearVulnerability": [
+      "Mulighed for at blive bidt, når en zombie angriber bagfra. ",
+      "1 = Low",
+      "2 = Medium",
+      "3 = High"
+    ],
+    "SirenEffectsZombies": [
+      "Hvis zombier vil lede mod lyden af ​​køretøjssirener."
+    ],
+    "AnimalStatsModifier": [
+      "Den hastighed, hvormed dyrestatistikker (sult, tørst osv.) reducerer. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Hastighed, hvormed dyrestatistikker (sult, tørst osv.) reduceres, mens de er i meta. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalPregnancyTime": [
+      "Hvor længe vil dyr være drægtige inden fødslen. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalAgeModifier": [
+      "Den hastighed, hvormed dyr ældes. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMilkIncModifier": [
+      "Standard = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalWoolIncModifier": [
+      "Standard = Fast",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalRanchChance": [
+      "Chancen for at finde dyr i gården. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Altid"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Antallet af timer græs vil vokse igen efter at være blevet spist af et dyr eller klippet af spilleren. "
+    ],
+    "AnimalMetaPredator": [
+      "Hvis en meta (dvs. ikke faktisk er synlig i spillet) ræv kan angribe dine høns, hvis hyttens dør står åben om natten."
+    ],
+    "AnimalMatingSeason": [
+      "Hvis dyr med en parringssæson vil respektere det.  "
+    ],
+    "AnimalEggHatch": [
+      "Hvor lang tid før babydyr klækkes fra æg. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Hvis det er sandt, vil dyrekald tiltrække nærliggende zombier."
+    ],
+    "AnimalTrackChance": [
+      "Muligheden for, at dyr forlader spor. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "AnimalPathChance": [
+      "Chancen for at skabe en sti for dyr, der kan jages. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "MaximumRatIndex": [
+      "Hyppigheden og intensiteten af ​​f.eks. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Hvor lang tid tager det, før det maksimale skadedyrsindeks nås. "
+    ],
+    "MetaKnowledge": [
+      "Hvis et stykke medie ikke er blevet set eller læst fuldt ud, bestemmer denne indstilling, om det skal vises fuldt ud, vises som \"???\" eller skjules helt. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Hvis det er sandt, vil du kunne se alle opskrifter, der kan laves med en station, selvom du ikke har lært dem endnu."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Hvis en bygning har mere end dette antal værelser, vil den ikke blive plyndret. "
+    ],
+    "EnablePoisoning": [
+      "Hvis der kan tilsættes gift til maden. ",
+      "1 = True",
+      "2 = False",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Hvis/når maddiker kan gyde i lig. ",
+      "1 = I og omkring legemer",
+      "2 = In Bodies Only",
+      "3 = Aldrig"
+    ],
+    "LightBulbLifespan": [
+      "Jo højere værdi, jo længere holder pærerne, før de går i stykker.  "
+    ],
+    "FishAbundance": [
+      "Overfloden af ​​fisk i floder og søer. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Når en færdighed er på dette niveau eller derover, vil tv/VHS/andre medier ikke give XP til det. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Når en færdighed er på dette niveau eller derover, giver skrotning af møbler ikke XP for den relevante færdighed. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Antal dage før gamle blodpletter fjernes. "
+    ],
+    "LiteratureCooldown": [
+      "Antal dage før man kan have gavn af at læse tidligere læste litteraturartikler. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Hvis der er faldende afkast på bonusegenskaber, der gives ved at vælge flere negative egenskaber. ",
+      "1 = None",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 point straf for hver negativ egenskab valgt efter den første"
+    ],
+    "MinutesPerPage": [
+      "Antallet af minutter i spillet, det tager at læse én side i en færdighedsbog. "
+    ],
+    "KillInsideCrops": [
+      "Når det er aktiveret, vil afgrøder og urter, der dyrkes inde i bygninger, dø. "
+    ],
+    "PlantGrowingSeasons": [
+      "Når den er aktiveret, påvirkes planternes vækst af årstider."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Det anbefales, at du IKKE ændrer dette. "
+    ],
+    "FarmingSpeedNew": [
+      "Hastigheden af ​​plantevækst. "
+    ],
+    "FarmingAmountNew": [
+      "Overfloden af ​​høstede afgrøder. "
+    ],
+    "MaximumLooted": [
+      "Chancen for, at enhver bygning allerede vil blive plyndret, når den findes. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Hvor lang tid tager det, før Maksimal Plyndret Building Chance er nået. "
+    ],
+    "RuralLooted": [
+      "Chancen for, at enhver bygning på landet allerede vil blive plyndret, når den bliver fundet. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Det maksimale bytte, der ikke vil give dig, når Days Until Maximum Diminished Loot er nået."
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Hvor lang tid det tager, før den maksimale reducerede tyveriprocent er nået. "
+    ],
+    "MuscleStrainFactor": [
+      "Fungerer som en multiplikator, når du påfører muskelbelastning fra svingende våben eller bærer tunge byrder. "
+    ],
+    "DiscomfortFactor": [
+      "Fungerer som en multiplikator ved påføring af ubehag fra slidte genstande. "
+    ],
+    "WoundInfectionFactor": [
+      "Hvis der er større end nul, kan der tages skade fra alvorlige sårinfektioner. "
+    ],
+    "NoBlackClothes": [
+      "Hvis ægte tøj med randomiserede nuancer ikke vil være så mørkt at det næsten er sort."
+    ],
+    "EasyClimbing": [
+      "Deaktiverer risikoen for fejl ved klatring af reb eller over vægge."
+    ],
+    "MaximumFireFuelHours": [
+      "De maksimale timer brændstof, der kan placeres i bål, brændeovn osv. Min: 1 Maks: 168 Standard: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Erstatter Chance-To-Hit-mekanik med Chance-To-Damage-beregninger."
+    ],
+    "FirearmNoiseMultiplier": [
+      "En multiplikator for den afstand, som zombier kan høre skud på. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplikator for risiko for jamming af skydevåben. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplikator for Moodle-effekter på hitchance. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplikator for virkningerne af vejr (vind, regn og tåge) på hit chance. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Aktiver at have hovedbeklædning som svejsemasker påvirker hitchance"
+    ],
+    "ClayLakeChance": [
+      "Mulighed for at forvandle et jordgulv til et lergulv. "
+    ],
+    "ClayRiverChance": [
+      "Mulighed for at forvandle et jordgulv til et lergulv. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Maks: 100 Standard: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Hvor mange niveauer både over og under en generator kan den forsyne med strøm. "
+    ],
+    "SpawnFrequency": [
+      "Hvor ofte kældre gyder på tilfældige steder. ",
+      "1 = Aldrig",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Altid"
+    ],
+    "AllowMiniMap": [
+      "Hvis det er aktiveret, vil et minikortvindue være tilgængeligt."
+    ],
+    "AllowWorldMap": [
+      "Hvis det er aktiveret, kan verdenskortet tilgås."
+    ],
+    "MapAllKnown": [
+      "Hvis det er aktiveret, vil verdenskortet være fuldstændigt udfyldt ved start af spillet."
+    ],
+    "MapNeedsLight": [
+      "Hvis aktiveret, kan kort ikke læses, medmindre der er en lyskilde tilgængelig."
+    ],
+    "Speed": [
+      "Hvor hurtigt zombier bevæger sig. ",
+      "1 = Sprinters",
+      "2 = Fast Shamblers",
+      "3 = Shamblers",
+      "4 = Random"
+    ],
+    "SprinterPercentage": [
+      "Hvis Random Speed ​​​​er aktiveret, styrer dette, hvor stor en procentdel af zombier der er sprintere."
+    ],
+    "Strength": [
+      "Hastighed hvormed færdigheden Styrke stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Toughness": [
+      "Vanskeligheden ved at dræbe en zombie. ",
+      "1 = Tough",
+      "2 = Normal",
+      "3 = Fragile",
+      "4 = Random"
+    ],
+    "Transmission": [
+      "Hvordan Knox Virus spredes. ",
+      "1 = Blod og spyt",
+      "2 = Saliva Only",
+      "3 = Everyone's Infected",
+      "4 = None"
+    ],
+    "Mortality": [
+      "Hvor hurtigt infektionen træder i kraft. ",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 minutter",
+      "4 = 0-12 timer",
+      "5 = 2-3 dage",
+      "6 = 1-2 Weeks",
+      "7 = Aldrig"
+    ],
+    "Reanimate": [
+      "Hvor hurtigt rejser inficerede lig sig som zombier. ",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 minutter",
+      "4 = 0-12 timer",
+      "5 = 2-3 dage",
+      "6 = 1-2 Weeks"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Standard = Basic Navigation",
+      "1 = Naviger og brug døre",
+      "2 = Navigate",
+      "3 = Basic Navigation",
+      "4 = Random"
+    ],
+    "CrawlUnderVehicle": [
+      "Hvor ofte kan zombier kravle under parkerede køretøjer. ",
+      "1 = Crawlers Only",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Altid"
+    ],
+    "Memory": [
+      "Hvor længe zombier husker en spiller efter at have set eller hørt dem. ",
+      "1 = Long",
+      "2 = Normal",
+      "3 = Short",
+      "4 = None",
+      "5 = Random",
+      "6 = Tilfældig mellem Normal og Ingen"
+    ],
+    "Sight": [
+      "Zombie vision radius. ",
+      "1 = Eagle",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Tilfældig mellem Normal og Dårlig"
+    ],
+    "Hearing": [
+      "Zombie høreradius. ",
+      "1 = Pinpoint",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Tilfældig mellem Normal og Dårlig"
+    ],
+    "SpottedLogic": [
+      "Aktiverer den nye avancerede stealth-mekanik, som giver dig mulighed for at gemme dig for zombier bag biler, tager højde for egenskaber og vejr og meget mere."
+    ],
+    "ThumpNoChasing": [
+      "Hvis zombier, der ikke har set/hørt spiller, kan angribe døre og konstruktioner under roaming."
+    ],
+    "ThumpOnConstruction": [
+      "Hvis zombier kan ødelægge spillerkonstruktioner og forsvar."
+    ],
+    "ActiveOnly": [
+      "Om zombier er mere \"aktive\" i løbet af dagen eller natten.  ",
+      "1 = Both",
+      "2 = Night",
+      "3 = Day"
+    ],
+    "TriggerHouseAlarm": [
+      "Hvis zombier udløser husalarmer, når de bryder gennem vinduer eller døre."
+    ],
+    "ZombiesDragDown": [
+      "Hvis flere angribende zombier kan trække dig ned og dræbe dig.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Hvis crawler-zombier ved siden af ​​en spiller bidrager til chancen for at blive trukket ned og dræbt af en gruppe zombier."
+    ],
+    "ZombiesFenceLunge": [
+      "Hvis zombier har en chance for at kaste sig ud mod dig efter at være klatret over et hegn eller gennem et vindue, hvis du er for tæt på."
+    ],
+    "ZombiesArmorFactor": [
+      "Fungerer som en multiplikator, når man bestemmer effektiviteten af ​​rustning båret af zombier. "
+    ],
+    "ZombiesMaxDefense": [
+      "Den maksimale forsvarsprocent, som ethvert slidt beskyttelsestøj kan give en zombie. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Procentvis chance for at have et tilfældigt vedhæftet våben. "
+    ],
+    "ZombiesFallDamage": [
+      "Hvor meget skade zombier tager, når de falder fra højden. "
+    ],
+    "DisableFakeDead": [
+      "Om nogle dødt udseende zombier vil genoplive og angribe spilleren. ",
+      "1 = Verdens zombier",
+      "2 = Verden og bekæmp zombier",
+      "3 = Aldrig"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombier vil ikke gyde, hvor spillere gyder. ",
+      "1 = Inde i bygningen og omkring den",
+      "2 = Inde i bygningen",
+      "3 = Inde i rummet",
+      "4 = Zombier kan spawne hvor som helst"
+    ],
+    "FenceThumpersRequired": [
+      "Hvor mange zombier skal der til for at beskadige et højt hegn. "
+    ],
+    "FenceDamageMultiplier": [
+      "Hvor hurtigt ødelægger zombier høje hegn. "
+    ],
+    "PopulationMultiplier": [
+      "Indstillet af \"Zombie Count\" befolkningsindstillingen, eller af et brugerdefineret nummer her. "
+    ],
+    "PopulationStartMultiplier": [
+      "En multiplikator for den ønskede zombiepopulation i starten af ​​spillet. "
+    ],
+    "PopulationPeakMultiplier": [
+      "En multiplikator for den ønskede zombiepopulation på spidsbelastningsdagen. "
+    ],
+    "PopulationPeakDay": [
+      "Dagen hvor befolkningen når sit højdepunkt. "
+    ],
+    "RespawnHours": [
+      "Antallet af timer, der skal gå, før zombier kan genopstå i en celle. "
+    ],
+    "RespawnUnseenHours": [
+      "Antallet af timer, som en del skal være uset, før zombier kan genopstå i den. "
+    ],
+    "RespawnMultiplier": [
+      "Den brøkdel af en celles ønskede population, der kan genskabe hver RespawnHours. "
+    ],
+    "RedistributeHours": [
+      "Antallet af timer, der skal gå, før zombier migrerer til tomme dele af den samme celle. "
+    ],
+    "FollowSoundDistance": [
+      "Den afstand en zombie vil forsøge at gå mod den sidste lyd, den hørte. "
+    ],
+    "RallyGroupSize": [
+      "Størrelsen af ​​grupper dannes rigtige zombier, når de er inaktive. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Mængden, som en procentdel, som zombiegrupper kan variere i størrelse fra standarden (både større og mindre).   "
+    ],
+    "RallyTravelDistance": [
+      "Den afstand, rigtige zombier rejser for at danne grupper, når de er inaktive. "
+    ],
+    "RallyGroupSeparation": [
+      "Afstanden mellem zombiegrupper. "
+    ],
+    "RallyGroupRadius": [
+      "Hvor tæt medlemmer af en zombiegruppe holder sig til gruppens \"leder\". "
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Maks: 500 Standard: 300"
+    ],
+    "Global": [
+      "Den hastighed, hvormed alle færdigheder stiger. "
+    ],
+    "GlobalToggle": [
+      "Når det er aktiveret, vil alle færdigheder bruge den globale multiplikator."
+    ],
+    "Fitness": [
+      "Hastighed hvormed færdigheden Kondition stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Sprinting": [
+      "Hastighed hvormed færdigheden Sprint stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Lightfoot": [
+      "Hastighed hvormed færdigheden Letfod stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Nimble": [
+      "Hastighed hvormed færdigheden Smidig stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Sneak": [
+      "Hastighed hvormed færdigheden Snik stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Axe": [
+      "Hastighed hvormed færdigheden Økse stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Blunt": [
+      "Hastighed hvormed færdigheden Sløv stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "SmallBlunt": [
+      "Hastighed hvormed færdigheden Kort sløv stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "LongBlade": [
+      "Hastighed hvormed færdigheden Langt blad stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "SmallBlade": [
+      "Hastighed hvormed færdigheden Kort blad stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Spear": [
+      "Hastighed hvormed færdigheden Spyd stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Maintenance": [
+      "Hastighed hvormed færdigheden Vedligeholdelse stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Woodwork": [
+      "Hastighed hvormed færdigheden Træarbejde stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Cooking": [
+      "Hastighed hvormed færdigheden Madlavning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Doctor": [
+      "Hastighed hvormed færdigheden Medicin stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Electricity": [
+      "Hastighed hvormed færdigheden Elektricitet stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "MetalWelding": [
+      "Hastighed hvormed færdigheden Metalsvejsning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Mechanics": [
+      "Hastighed hvormed færdigheden Mekanik stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Tailoring": [
+      "Hastighed hvormed færdigheden Skrædderi stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Aiming": [
+      "Hastighed hvormed færdigheden Sigte stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Reloading": [
+      "Hastighed hvormed færdigheden Genladning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Fishing": [
+      "Hastighed hvormed færdigheden Fiskeri stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Trapping": [
+      "Hastighed hvormed færdigheden Fangst stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "PlantScavenging": [
+      "Hastighed hvormed færdigheden Planteindsamling stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "FlintKnapping": [
+      "Hastighed hvormed færdigheden Flintknapning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Masonry": [
+      "Hastighed hvormed færdigheden Murerarbejde stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Pottery": [
+      "Hastighed hvormed færdigheden Keramik stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Carving": [
+      "Hastighed hvormed færdigheden Udskæring stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Husbandry": [
+      "Hastighed hvormed færdigheden Dyrehold stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Tracking": [
+      "Hastighed hvormed færdigheden Sporing stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Blacksmith": [
+      "Hastighed hvormed færdigheden Smed stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Butchering": [
+      "Hastighed hvormed færdigheden Slagtning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ],
+    "Glassmaking": [
+      "Hastighed hvormed færdigheden Glasblæsning stiger i niveau. Min: 0.00 Maks: 1000.00 Standard: 1.00"
+    ]
+  }
+}
+
+

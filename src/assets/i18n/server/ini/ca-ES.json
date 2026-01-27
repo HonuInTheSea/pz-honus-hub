@@ -1,0 +1,553 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "Xat de l'eina de registre de PVP",
+    "PVPLogToolFile": "Fitxer de l'eina de registre PVP",
+    "PauseEmpty": "Pausa buit",
+    "GlobalChat": "Xat global",
+    "Open": "Obert",
+    "ServerWelcomeMessage": "Missatge de benvinguda del servidor",
+    "ServerImageLoginScreen": "Pantalla d'inici de sessió de la imatge del servidor",
+    "ServerImageLoadingScreen": "Pantalla de càrrega de la imatge del servidor",
+    "ServerImageIcon": "Icona d'imatge del servidor",
+    "AutoCreateUserInWhiteList": "Creació automàtica d'usuari a la llista blanca",
+    "DisplayUserName": "Mostra el nom d'usuari",
+    "ShowFirstAndLastName": "Mostra nom i cognoms",
+    "SpawnPoint": "Punt de generació",
+    "SafetySystem": "Sistema de seguretat",
+    "ShowSafety": "Mostra la seguretat",
+    "SafetyToggleTimer": "Temporitzador de commutació de seguretat",
+    "SafetyCooldownTimer": "Temporitzador de refredament de seguretat",
+    "SafetyDisconnectDelay": "Retard de desconnexió de seguretat",
+    "SpawnItems": "Elements de generació",
+    "DefaultPort": "Port per defecte",
+    "UDPPort": "Port UDP",
+    "ResetID": "Restableix l'identificador",
+    "Mods": "Mods",
+    "Map": "Mapa",
+    "DoLuaChecksum": "Do Lua Checksum",
+    "Public": "Públic",
+    "PublicName": "Nom Públic",
+    "PublicDescription": "Descripció pública",
+    "MaxPlayers": "Màxim jugadors",
+    "PingLimit": "Límit de ping",
+    "SafehousePreventsLootRespawn": "Safehouse evita la reaparició del botí",
+    "DropOffWhiteListAfterDeath": "Deixeu la llista blanca després de la mort",
+    "NoFire": "Sense foc",
+    "AnnounceDeath": "Anunciar la mort",
+    "SaveWorldEveryMinutes": "Salva el món cada minut",
+    "PlayerSafehouse": "Jugador Safehouse",
+    "AdminSafehouse": "Administrador Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowFire": "Safehouse Allow Fire",
+    "SafehouseAllowLoot": "Safehouse Allow Loot",
+    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day va sobreviure per reclamar",
+    "SafeHouseRemovalTime": "Temps de retirada de casa segura",
+    "SafehouseAllowNonResidential": "Safehouse Allow No residencial",
+    "MaxSafezoneSize": "Mida màxima de la zona segura",
+    "AllowDestructionBySledgehammer": "Permet la destrucció amb un martell",
+    "SledgehammerOnlyInSafehouse": "Martell només a Safehouse",
+    "WarStartDelay": "Retard de l'inici de la guerra",
+    "WarDuration": "Durada de la guerra",
+    "WarSafehouseHitPoints": "Punts de vida de War Safehouse",
+    "ServerPlayerID": "ID del jugador del servidor",
+    "RCONPort": "Port RCON",
+    "RCONPassword": "Contrasenya RCON",
+    "DiscordEnable": "Habilita Discord",
+    "DiscordToken": "Fitxa de discòrdia",
+    "DiscordChannel": "Canal de Discòrdia",
+    "DiscordChannelID": "Identificador del canal de Discord",
+    "WebhookAddress": "Adreça del webhook",
+    "Password": "Contrasenya",
+    "MaxAccountsPerUser": "Màxim de comptes per usuari",
+    "AllowCoop": "Permet Coop",
+    "SleepAllowed": "Dormir permès",
+    "SleepNeeded": "Cal dormir",
+    "KnockedDownAllowed": "Enderrocat Permès",
+    "SneakModeHideFromOtherPlayers": "El mode furtiva s'amaga d'altres jugadors",
+    "WorkshopItems": "Elements del taller",
+    "SteamScoreboard": "Marcador de Steam",
+    "SteamVAC": "VAC de vapor",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Activació de veu",
+    "VoiceMinDistance": "Distància mínima de veu",
+    "VoiceMaxDistance": "Distància màxima de veu",
+    "Voice3D": "Veu 3D",
+    "SpeedLimit": "Límit de velocitat",
+    "LoginQueueConnectTimeout": "Temps d'espera de connexió de la cua d'inici de sessió",
+    "server_browser_announced_ip": "El navegador del servidor ha anunciat la ip",
+    "PlayerRespawnWithSelf": "El jugador reapareixi amb si mateix",
+    "PlayerRespawnWithOther": "Reaparició del jugador amb un altre",
+    "FastForwardMultiplier": "Multiplicador d'avanç ràpid",
+    "DisableSafehouseWhenPlayerConnected": "Desactiveu Safehouse quan el jugador estigui connectat",
+    "Faction": "Facció",
+    "FactionDaySurvivedToCreate": "El dia de la facció va sobreviure per crear",
+    "FactionPlayersRequiredForTag": "Es requereixen jugadors de facció per a l'etiqueta",
+    "DisableRadioStaff": "Desactivar el personal de ràdio",
+    "DisableRadioAdmin": "Desactiva l'administració de ràdio",
+    "DisableRadioGM": "Desactiva Ràdio GM",
+    "DisableRadioOverseer": "Desactiva el supervisor de ràdio",
+    "DisableRadioModerator": "Desactiva el moderador de ràdio",
+    "DisableRadioInvisible": "Desactiva Radio Invisible",
+    "ClientCommandFilter": "Filtre d'ordres del client",
+    "ClientActionLogs": "Registres d'accions del client",
+    "PerkLogs": "Registres de beneficis",
+    "ItemNumbersLimitPerContainer": "Límit de números d'articles per contenidor",
+    "BloodSplatLifespanDays": "Dies de vida útil de Blood Splat",
+    "AllowNonAsciiUsername": "Permet un nom d'usuari que no sigui ASCII",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Elimina els cadàvers de jugadors en l'eliminació de cadàvers",
+    "TrashDeleteAll": "Paperera Suprimeix-ho tot",
+    "PVPMeleeWhileHitReaction": "Reacció cos a cos PVP mentre es colpeja",
+    "MouseOverToSeeDisplayName": "Passeu el ratolí per veure el nom de visualització",
+    "HidePlayersBehindYou": "Amaga els jugadors darrere teu",
+    "PVPMeleeDamageModifier": "Modificador de danys cos a cos a PVP",
+    "PVPFirearmDamageModifier": "Modificador de danys d'arma de foc PVP",
+    "CarEngineAttractionModifier": "Modificador d'atracció del motor del cotxe",
+    "PlayerBumpPlayer": "Jugador Bump Player",
+    "MapRemotePlayerVisibility": "Mapa de visibilitat del jugador remot",
+    "BackupsCount": "Recompte de còpies de seguretat",
+    "BackupsOnStart": "Còpies de seguretat a l'inici",
+    "BackupsPeriod": "Període de còpies de seguretat",
+    "DisableVehicleTowing": "Desactiva el remolc de vehicles",
+    "DisableTrailerTowing": "Desactiva el remolc de remolc",
+    "DisableBurntTowing": "Desactiva el remolc cremat",
+    "BadWordListFile": "Fitxer de llista de paraules incorrectes",
+    "GoodWordListFile": "Bon fitxer de llista de paraules",
+    "BadWordPolicy": "Política de paraules dolentes",
+    "BadWordReplacement": "Substitució de paraules dolentes",
+    "AntiCheatSafety": "Seguretat anti-trampa",
+    "AntiCheatMovement": "Moviment anti-trampa",
+    "AntiCheatHit": "Hit anti-trampa",
+    "AntiCheatPacket": "Paquet anti-trampa",
+    "AntiCheatPermission": "Permís anti-trampa",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Foc anti-trampa",
+    "AntiCheatSafeHouse": "Casa segura anti-trampa",
+    "AntiCheatRecipe": "Recepta anti-trampa",
+    "AntiCheatPlayer": "Jugador anti-trampa",
+    "AntiCheatChecksum": "Suma de control anti-trampa",
+    "AntiCheatItem": "Element anti-trampa",
+    "AntiCheatServerCustomization": "Personalització del servidor anti-trampa",
+    "MultiplayerStatisticsPeriod": "Període d'estadístiques multijugador",
+    "DisableScoreboard": "Desactiva el marcador",
+    "HideAdminsInPlayerList": "Amaga els administradors a la llista de jugadors",
+    "Seed": "Llavor",
+    "ChatMessageCharacterLimit": "Límit de caràcters del missatge de xat",
+    "ChatMessageSlowModeTime": "Temps de mode lent del missatge de xat",
+    "comments": {
+"PVP": [
+        "Els jugadors poden ferir i matar d'altres jugadors."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "El temps del joc para quan no hi ha jugadors en l�nia"
+      ],
+      "GlobalChat": [
+        "Canvia el xat global entre enc�s i apagat."
+      ],
+      "Open": [
+        "Els clients podran unir-se sense tindre un compte a la llista blanca. Si no es marca, els administradors hauran de crear manualment combinacions usuari/contrasenya."
+      ],
+      "ServerWelcomeMessage": [
+        "El primer missatge de benvinguda visible en el panell de xat. "
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Si s'activa, els jugadors en mode furtiu s'oculten als altres jugadors."
+      ],
+      "ServerImageLoadingScreen": [
+        "Camí de la imatge que es mostra a la pantalla de càrrega del servidor."
+      ],
+      "ServerImageIcon": [
+        "Camí de la imatge que s'utilitza com a icona del servidor."
+      ],
+      "ServerImageLoginScreen": [
+        "Camí de la imatge que es mostra a la pantalla d'inici de sessió del servidor."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Afig noms d'usuari desconeguts a la llista blanca quan els jugadors s'hi unisquen. "
+      ],
+      "DisplayUserName": [
+        "Mostra els noms d'usuari sobre els caps dels jugadors."
+      ],
+      "ShowFirstAndLastName": [
+        "Mostra noms i cognoms sobre el cap dels jugadors en comptes del nom d'usuari."
+      ],
+      "SpawnPoint": [
+        "For�a que tots els nous jugadors apareguen en les coordenades del m�n x,y,z. Troba les coordenades desitjades en map.projectzomboid.com (S'ignora quan 0,0,0)"
+      ],
+      "SafetySystem": [
+        "Els jugadors poden entrar i abandonar el mode PVP individualment. Un jugador pot ferir-ne un altre �nicament quan almenys un d'ells est� en mode PVP -com mostren la calavera i ossos creuats enfosquits de l'esquerra de la pantalla.  Quan SafetySystem=false, els jugadors s�n lliures de ferir-se entre si en qualsevol moment, si el mode PVP est� activat."
+      ],
+      "ShowSafety": [
+        "Mostra una calavera sobre els caps dels jugadors en mode PVP."
+      ],
+      "SafetyToggleTimer": [
+        "Els temps que tarda un jugador en entrar o eixir del mode PVP."
+      ],
+      "SafetyCooldownTimer": [
+        "El retard entre que un jugador entra o ix del mode PVP una altra vegada, despr�s d'haver-ho acabat de fer."
+      ],
+      "SpawnItems": [
+        "Tipus de coses amb qu� els nous jugadors apareixen.",
+        "Separa els diferents tipus de coses amb comes.",
+        "Per exemple Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Port inicial per defecte per a les dades del jugador. "
+      ],
+      "ResetID": [
+        "Determina si el servidor ha sofrit algun reinici suau (soft-reset). "
+      ],
+      "Mods": [
+        "Introdu�x la ID de c�rrega del mod ac�. Es pot trobar en \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Expulsa els clients que tinguen arxius del joc que no es corresponguen amb els del servidor."
+      ],
+      "Public": [
+        "Mostra el servidor en el cercador intern del joc. "
+      ],
+      "PublicName": [
+        "Nom del servidor mostrat al cercador intern del joc i, si s'hi aplica, al cercador de Steam"
+      ],
+      "PublicDescription": [
+        "Descripci� mostrada en el cercador de servidors intern del joc. Escriure-hi /n crear� una nova l�nia a la teua descripci�"
+      ],
+      "MaxPlayers": [
+        "Nombre màxim de jugadors que poden estar al servidor alhora. "
+      ],
+      "PingLimit": [
+        "El l�mit del ping en mil�lisegons abans d'expulsar el jugador del servidor. "
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Els articles no reapareixeran als edificis que els jugadors hagin reclamat com a refugi"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Elimina comptes de jugadors de la llista blanca despr�s de morir. Impedix que els jugadors creen un personatge nou despr�s de morir en open=false servidors."
+      ],
+      "NoFire": [
+        "Totes les formes de foc estan desactivades, llevant de les fogates."
+      ],
+      "AnnounceDeath": [
+        "Si s'activa, cada vegada que un jugador mor es mostrar� un missatge al xat."
+      ],
+      "AnnounceAnimalDeath": [
+        "Si s'activa, cada cop que mori un animal es mostrarà un missatge global al xat."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Les parts carregades del mapa es desen despr�s d'aquest nombre de minuts reals. El mapa se sol desar despr�s que els clients abandonen l'�rea carregada."
+      ],
+      "PlayerSafehouse": [
+        "Els �dmins i els jugadors poden reclamar refugis."
+      ],
+      "AdminSafehouse": [
+        "Solament els �dmins poden reclamar refugis."
+      ],
+      "SafehouseAllowTrepass": [
+        "Permet als no membres entrar a un refugi sense ser-hi convidats."
+      ],
+      "SafehouseAllowFire": [
+        "Permet que el foc danye els refugis."
+      ],
+      "SafehouseAllowLoot": [
+        "Permet als no membres agafar coses del refugi."
+      ],
+      "SafehouseAllowRespawn": [
+        "Els jugadors apareixen en el refugi de qu� eren membres abans de morir."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Els jugadors hauran d'haver sobreviscut aquest nombre de dies interns del joc abans de reclamar un refugi."
+      ],
+      "SafeHouseRemovalTime": [
+        "Els jugadors seran autom�ticament eliminats d'un refugi si no l'han visitat en aquest nombre d'hores reals."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Governa si els jugadors poden reclamar edificis no residencials."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Permet als jugadors destruir objectes del m�n amb una ma�a."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Permet als jugadors destruir objectes del m�n solament al refugi (primer AllowDestructionBySledgehammer ha de ser true)."
+      ],
+      "WarStartDelay": [
+        "Temps en segons abans que comenci la guerra."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID determina si un personatge �s d'un altre servidor o del joc en solitari. Aquest valor pot canviar mitjan�ant reinicis suaus. Si aquest nombre no coincidix amb el del client, el client haur� de crear un nou personatge. S'usa juntament amb ResetID. Es recomana fer una c�pia de seguretat d'aquestes ID a algun lloc"
+      ],
+      "RCONPort": [
+        "El port per a RCON (Consola remota)"
+      ],
+      "RCONPassword": [
+        "Contrasenya RCON (Tria una contrasenya forta)"
+      ],
+      "DiscordEnable": [
+        "Permet la integraci� global del xat de text amb un canal de Discord"
+      ],
+      "DiscordToken": [
+        "Token d'acc�s del bot de Discord"
+      ],
+      "DiscordChannel": [
+        "Nom del canal de Discord. (Intenta l'opci� d'ID del canal separada si tens dificultats)"
+      ],
+      "DiscordChannelID": [
+        "ID del canal de Discord (Usa-la si tens dificultats amb l'opci� del nom del canal de Discord)"
+      ],
+      "WebhookAddress": [
+        "L'URL del webhook entrant de Slack"
+      ],
+      "Password": [
+        "Els clients hauran de saber la contrasenya per a unir-se al servidor. "
+      ],
+      "MaxAccountsPerUser": [
+        "Limita el nombre de comptes diferents que un usuari �nic de Steam pot crear a aquest servidor. S'ignora si s'usa el bot� Amfitri�."
+      ],
+      "AllowCoop": [
+        "Permet jugadors cooperatius/pantalla dividida"
+      ],
+      "SleepAllowed": [
+        "Els jugadors poden dormir quan el seu personatge està cansat, per no NECESSITEN dormir."
+      ],
+      "SleepNeeded": [
+        "Els jugadors es cansen i necessiten dormir. (S'ignora si SleepAllowed=false)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Llista de les ID dels mods del taller perqu� el servidor els descarregue. "
+      ],
+      "SteamScoreboard": [
+        "Mostra els noms d'usuari de Steam i els avatars a la llista de jugadors. "
+      ],
+      "SteamVAC": [
+        "Activar el sistema VAC de Steam."
+      ],
+      "UPnP": [
+        "Intenta configurar una porta d'internet UPnP-activada per a autom�ticament posar unes regles d'entrada al port. "
+      ],
+      "VoiceEnable": [
+        "Si es marca, VOIP est� activat."
+      ],
+      "VoiceMinDistance": [
+        "La dist�ncia m�nima en caselles a la qual els sons VOIP es poden sentir."
+      ],
+      "VoiceMaxDistance": [
+        "La dist�ncia m�xima en caselles a la qual els sons VOIP es poden sentir."
+      ],
+      "Voice3D": [
+        "�àudio direccional per a VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Configura la IP per a la qual el servidor es retransmet. "
+      ],
+      "PlayerRespawnWithSelf": [
+        "Els jugadors poden reapar�ixer en el joc al lloc on moriren."
+      ],
+      "PlayerRespawnWithOther": [
+        "Els jugadors poden reapar�ixer en el joc a localitzaci� d'un jugador en pantalla partida/joc remot."
+      ],
+      "FastForwardMultiplier": [
+        "Controla com de r�pidament passa el temps quan tothom dorm. El valor multiplica la velocitat del temps que passa mentres es dorm"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Far� que el refugi funcione com una casa normal si alg� pertanyent a aqueix refugi est� connectat (per tant segura quan els jugadors estan desconnectats)"
+      ],
+      "Faction": [
+        "Si es marca, permet als jugadors crear faccions."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Els jugadors hauran de sobreviure aquest nombre de dies interns al joc abans de tindre perm�s crear una facci�."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Nombre de jugadors necessaris abans que el propietari de la facci� cree una etiqueta de grup."
+      ],
+      "DisableRadioStaff": [
+        "Desactiva les transmissions per r�dio de jugadors amb un nivell d'acc�s."
+      ],
+      "DisableRadioAdmin": [
+        "Desactiva les transmissions per ràdio de jugadors amb nivell d'accés d'admin."
+      ],
+      "DisableRadioGM": [
+        "Desactiva les transmissions per r�dio de jugadors amb nivell d'acc�s gm."
+      ],
+      "DisableRadioOverseer": [
+        "Desactiva les transmissions per ràdio de jugadors amb nivell d'accés d'observador."
+      ],
+      "DisableRadioModerator": [
+        "Desactiva les transmissions per ràdio de jugadors amb nivell d'accés de moderador."
+      ],
+      "DisableRadioInvisible": [
+        "Desactiva les transmissions per ràdio de jugadors invisibles."
+      ],
+      "ClientCommandFilter": [
+        "Llista de comandaments separats per punt i coma que no s'escriuran al diari del servidor cmd.txt. ",
+        "-vehicle. Introduir * significa que NO s'escriur� cap comandament de vehicles. Introduir",
+        "+vehicle.installPart significa que s'escriur� aqueix comandament."
+      ],
+      "ClientActionLogs": [
+        "Llista d'accions separades per punt i comta que s'escriuran al diari del servidor ClientActionLogs.txt."
+      ],
+      "PerkLogs": [
+        "Pren compte dels canvis en els nivells d'habilitats dels jugadors al diari del servidor PerkLog.txt"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "M�xim nombre de coses que poden ficar a un contenidor. "
+      ],
+      "BloodSplatLifespanDays": [
+        "Nombre de dies abans que les taques de sang desapareguen.<br>L'eliminaci� ocorre quan els chunks del mapa es carreguen.<br>Zero significa que mai s'eliminen."
+      ],
+      "AllowNonAsciiUsername": [
+        "Permet l'�s de car�cters no Ascii (cir�l�lic...) en el nom d'usuari"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Si es marca, quan passen HoursForCorpseRemoval, tamb� s'eliminaran els cad�vers dels jugadors de terra."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Si és marca, els jugadors poden colpejar una altra vegada quan s�n colpejats per un altre jugador."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Si és marca, els jugadors hauran de passar el ratolí per damunt d'un altre per a mostrar-ne el nom."
+      ],
+      "HidePlayersBehindYou": [
+        "Si es marca, s'amaguen autom�ticament els jugadors que no pots veure (com els zombis)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Multiplicador de dany per a atacs PVP cos a cos."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Multiplicador de dany per a atacs PVP a dist�ncia."
+      ],
+      "CarEngineAttractionModifier": [
+        "Modifica l'abast de l'atracci� dels zombis cap als cotxes. (Valors menors poden ajudar a combatre el retard en el servidor)"
+      ],
+      "PlayerBumpPlayer": [
+        "Controla si els jugadors espenten (i tiren a terra) els altres jugadors quan corren contra ells."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Controla la visualitzaci� dels jugadors llunyans en el mapa del joc.",
+        "1=Amagat 2=Amics 3=Tothom"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Camí al fitxer amb la llista de paraules a prohibir. "
+      ],
+      "GoodWordListFile": [
+        "Camí al fitxer amb la llista de paraules que s'haurien de permetre, encara que continguin paraules dolentes. "
+      ],
+      "BadWordPolicy": [
+        "Què fer amb el remitent d'una paraula dolenta al xat: 1 - prohibició, 2 - puntada de peu, 3 - registrar la violació a la base de dades, 4 - silenciar"
+      ],
+      "BadWordReplacement": [
+        "El símbol o fragment de text que substituirà la paraula dolenta"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Desactiva la protecció antitrampes del moviment."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Desactiva la protecció antitrampes dels jugadors."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Desactiva la protecció anti-trampa de comprovacions d'elements."
+      ],
+      "AntiCheatServerCustomization": [
+        "Desactiva la protecció antitrampes de la personalització del servidor."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Estableix el període d'actualització multijugador en segons. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Amaga els administradors a la llista de jugadors."
+      ],
+      "Seed": [
+        "La llavor del worldgen que s'utilitza per generar el món.<br>Si voleu canviar-ho, introduïu un valor nou i suprimiu map_worldgen.bin al vostre directori desat."
+      ],
+      "SpeedLimit": [
+        "Límit de velocitat del vehicle."
+      ],
+      "BackupsCount": [
+        "Mín: 1 Màx: 300 Per defecte: 5"
+      ],
+      "BackupsPeriod": [
+        "Mín: 0 Màx: 1500 Per defecte: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Mín: 64 Màx: 1024 Per defecte: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Mín: 1 Màx: 30 Per defecte: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Mín: 20 Màx: 1200 Per defecte: 60"
+      ],
+      "Map": [
+        "Introduïu el nom de la carpeta del mod que es troba a \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Mín: 0 Màx: 2147483647 Per defecte: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Mín: 0 Màx: 60 Per defecte: 60"
+      ],
+      "TrashDeleteAll": [
+        "Si s'activa, el jugador pot usar el botó \\"esborra-ho tot\\" als contenidors."
+      ],
+      "UDPPort": [
+        "Mín: 0 Màx: 65535 Per defecte: 16262"
+      ]
+    }
+  }
+}
+
+

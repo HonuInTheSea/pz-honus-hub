@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolFile": "PVP-logværktøjsfil",
+    "PauseEmpty": "Pause Tom",
+    "GlobalChat": "Global chat",
+    "Open": "Åbn",
+    "ServerWelcomeMessage": "Servervelkomstbesked",
+    "ServerImageLoginScreen": "Skærm til login til serverbillede",
+    "ServerImageLoadingScreen": "Skærm til indlæsning af serverbillede",
+    "ServerImageIcon": "Server billede ikon",
+    "AutoCreateUserInWhiteList": "Opret bruger automatisk på hvidliste",
+    "DisplayUserName": "Vis brugernavn",
+    "ShowFirstAndLastName": "Vis for- og efternavn",
+    "SpawnPoint": "Spawn Point",
+    "SafetySystem": "Sikkerhedssystem",
+    "ShowSafety": "Vis sikkerhed",
+    "SafetyToggleTimer": "Sikkerhedsskift-timer",
+    "SafetyCooldownTimer": "Sikkerhedsafkølingstimer",
+    "SafetyDisconnectDelay": "Sikkerhedsfrakoblingsforsinkelse",
+    "SpawnItems": "Spawn genstande",
+    "DefaultPort": "Standard port",
+    "UDPPort": "UDP-port",
+    "ResetID": "Nulstil ID",
+    "Mods": "Mods",
+    "Map": "Kort",
+    "DoLuaChecksum": "Gør Lua Checksum",
+    "Public": "Offentlig",
+    "PublicName": "Offentligt navn",
+    "PublicDescription": "Offentlig Beskrivelse",
+    "MaxPlayers": "Max spillere",
+    "PingLimit": "Ping-grænse",
+    "SafehousePreventsLootRespawn": "Safehouse forhindrer genskabelse af bytte",
+    "DropOffWhiteListAfterDeath": "Drop White List efter døden",
+    "NoFire": "Ingen ild",
+    "AnnounceDeath": "Meddel Døden",
+    "SaveWorldEveryMinutes": "Red verden hvert minut",
+    "PlayerSafehouse": "Spiller Safehouse",
+    "AdminSafehouse": "Admin Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Tillad Trepass",
+    "SafehouseAllowFire": "Safehouse Tillad Brand",
+    "SafehouseAllowLoot": "Safehouse Tillad tyveri",
+    "SafehouseAllowRespawn": "Safehouse Tillad genoptagelse",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day overlevede at kræve",
+    "SafeHouseRemovalTime": "Sikkert husfjernelsestid",
+    "SafehouseAllowNonResidential": "Safehouse Tillad ikke-bolig",
+    "MaxSafezoneSize": "Max Safezone Størrelse",
+    "AllowDestructionBySledgehammer": "Tillad ødelæggelse med Sledgehammer",
+    "SledgehammerOnlyInSafehouse": "Forhammer kun i safehouse",
+    "WarStartDelay": "Forsinket krigsstart",
+    "WarDuration": "Krigens varighed",
+    "WarSafehouseHitPoints": "War Safehouse Hit Points",
+    "ServerPlayerID": "Server Spiller ID",
+    "RCONPort": "RCON port",
+    "RCONPassword": "RCON adgangskode",
+    "DiscordEnable": "Discord Aktiver",
+    "DiscordToken": "Discord-token",
+    "DiscordChannel": "Discord kanal",
+    "DiscordChannelID": "Discord kanal-id",
+    "WebhookAddress": "Webhook-adresse",
+    "Password": "Adgangskode",
+    "MaxAccountsPerUser": "Max konti pr. bruger",
+    "AllowCoop": "Tillad Coop",
+    "SleepAllowed": "Søvn tilladt",
+    "SleepNeeded": "Søvn nødvendig",
+    "KnockedDownAllowed": "Slået ned tilladt",
+    "SneakModeHideFromOtherPlayers": "Sneak Mode Skjul fra andre spillere",
+    "WorkshopItems": "Værkstedsartikler",
+    "SteamScoreboard": "Steam resultattavle",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Stemmeaktivering",
+    "VoiceMinDistance": "Stemme min afstand",
+    "VoiceMaxDistance": "Voice Max Distance",
+    "Voice3D": "Stemme 3D",
+    "SpeedLimit": "Hastighedsgrænse",
+    "LoginQueueConnectTimeout": "Log ind Kø Connect Timeout",
+    "server_browser_announced_ip": "Server browser annonceret ip",
+    "PlayerRespawnWithSelf": "Spiller genopliver med sig selv",
+    "PlayerRespawnWithOther": "Spiller genoplives med andre",
+    "FastForwardMultiplier": "Fast forward multiplikator",
+    "DisableSafehouseWhenPlayerConnected": "Deaktiver Safehouse, når spilleren er tilsluttet",
+    "Faction": "Fraktion",
+    "FactionDaySurvivedToCreate": "Fraktionsdag overlevede for at skabe",
+    "FactionPlayersRequiredForTag": "Fraktionsspillere kræves til tag",
+    "DisableRadioStaff": "Deaktiver radiopersonale",
+    "DisableRadioAdmin": "Deaktiver Radio Admin",
+    "DisableRadioGM": "Deaktiver Radio GM",
+    "DisableRadioOverseer": "Deaktiver Radio Overseer",
+    "DisableRadioModerator": "Deaktiver radiomoderator",
+    "DisableRadioInvisible": "Deaktiver Radio Invisible",
+    "ClientCommandFilter": "Klientkommandofilter",
+    "ClientActionLogs": "Klienthandlingslogs",
+    "PerkLogs": "Perk Logs",
+    "ItemNumbersLimitPerContainer": "Varenummergrænse pr. container",
+    "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+    "AllowNonAsciiUsername": "Tillad Non Ascii-brugernavn",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Fjern spillerlig ved fjernelse af lig",
+    "TrashDeleteAll": "Papirkurv Slet alle",
+    "PVPMeleeWhileHitReaction": "PVP nærkamp mens hitreaktion",
+    "MouseOverToSeeDisplayName": "Hold musen over for at se det viste navn",
+    "HidePlayersBehindYou": "Skjul spillere bag dig",
+    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPFirearmDamageModifier": "PVP-skydevåbenskademodifikator",
+    "CarEngineAttractionModifier": "Modifikator for bilmotorer",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Kort fjernafspillerens synlighed",
+    "BackupsCount": "Sikkerhedskopier tæller",
+    "BackupsOnStart": "Sikkerhedskopier ved start",
+    "BackupsPeriod": "Sikkerhedskopieringsperiode",
+    "DisableVehicleTowing": "Deaktiver bugsering af køretøjer",
+    "DisableTrailerTowing": "Deaktiver anhængertræk",
+    "DisableBurntTowing": "Deaktiver brændt bugsering",
+    "BadWordListFile": "Dårlig ordlistefil",
+    "GoodWordListFile": "God ordlistefil",
+    "BadWordPolicy": "Dårlig ordpolitik",
+    "BadWordReplacement": "Dårlig orderstatning",
+    "AntiCheatSafety": "Anti-snydesikkerhed",
+    "AntiCheatMovement": "Anti-snydebevægelse",
+    "AntiCheatHit": "Anti snyde hit",
+    "AntiCheatPacket": "Anti-snyde-pakke",
+    "AntiCheatPermission": "Anti-snydetilladelse",
+    "AntiCheatXP": "Anti snyde XP",
+    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatRecipe": "Anti snyde opskrift",
+    "AntiCheatPlayer": "Anti snyde spiller",
+    "AntiCheatChecksum": "Anti Cheat Checksum",
+    "AntiCheatItem": "Anti snyde vare",
+    "AntiCheatServerCustomization": "Anti Cheat Server tilpasning",
+    "MultiplayerStatisticsPeriod": "Multiplayer Statistik Periode",
+    "DisableScoreboard": "Deaktiver resultattavle",
+    "HideAdminsInPlayerList": "Skjul administratorer i spillerlisten",
+    "Seed": "Frø",
+    "ChatMessageCharacterLimit": "Chatbesked tegngrænse",
+    "ChatMessageSlowModeTime": "Chatbesked Langsom tilstandstid",
+    "comments": {
+"PVP": [
+        "Spillere kan såre og dræbe andre spillere"
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Spilletiden stopper, når der ikke er nogen spillere online"
+      ],
+      "GlobalChat": [
+        "Slår global chat til eller fra."
+      ],
+      "Open": [
+        "Kunder kan tilmelde sig uden allerede at have en konto på hvidlisten. "
+      ],
+      "ServerWelcomeMessage": [
+        "Den første velkomstbesked er synlig i chatpanelet. "
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Hvis aktiveret, skjules spillere i snigetilstand for andre spillere."
+      ],
+      "ServerImageLoadingScreen": [
+        "Sti til billedet, der vises på serverens indlæsningsskærm."
+      ],
+      "ServerImageIcon": [
+        "Sti til billedet, der bruges som serverikon."
+      ],
+      "ServerImageLoginScreen": [
+        "Sti til billedet, der vises på serverens loginskærm."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Tilføj ukendte brugernavne til hvidlisten, når spillere tilmelder sig. "
+      ],
+      "DisplayUserName": [
+        "Display usernames above player's heads in-game."
+      ],
+      "ShowFirstAndLastName": [
+        "Display first & last name above player's heads."
+      ],
+      "SpawnPoint": [
+        "Tving hver ny spiller til at spawne på disse sæt x,y,z verdenskoordinater. "
+      ],
+      "SafetySystem": [
+        "Spillere kan gå ind og forlade PVP på individuel basis. "
+      ],
+      "ShowSafety": [
+        "Vis et kranieikon over hovedet på spillere, der er gået ind i PVP-tilstand"
+      ],
+      "SafetyToggleTimer": [
+        "Den tid det tager for en spiller at gå ind og ud af PVP-tilstand"
+      ],
+      "SafetyCooldownTimer": [
+        "Forsinkelsen, før en spiller kan gå ind i eller forlade PVP-tilstand igen, efter at have gjort det for nylig"
+      ],
+      "SpawnItems": [
+        "Genstandstyper nye spillere gyder med.",
+        "Adskil flere elementtyper med kommaer.",
+        "Example: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Standard startport for afspillerdata. "
+      ],
+      "ResetID": [
+        "Nulstil ID bestemmer, om serveren har gennemgået en blød nulstilling. "
+      ],
+      "Mods": [
+        "Indtast mod loading ID her. "
+      ],
+      "DoLuaChecksum": [
+        "Kick klienter, hvis spilfiler ikke matcher serverens."
+      ],
+      "Public": [
+        "Viser serveren på browseren i spillet. "
+      ],
+      "PublicName": [
+        "Navnet på serveren, der vises i browseren i spillet og, hvis det er relevant, Steam-browseren"
+      ],
+      "PublicDescription": [
+        "Beskrivelsen vises i den offentlige serverbrowser i spillet. ",
+        "vil oprette en ny linje i din beskrivelse"
+      ],
+      "MaxPlayers": [
+        "Maksimalt antal spillere, der kan være på serveren på én gang. "
+      ],
+      "PingLimit": [
+        "Ping-grænse, i millisekunder, før en spiller bliver sparket fra serveren. "
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Genstande vil ikke genopstå i bygninger, som spillere har hævdet som et safehouse"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Fjern spillerkonti fra hvidlisten efter døden. "
+      ],
+      "NoFire": [
+        "All forms of fire are disabled - except for campfires"
+      ],
+      "AnnounceDeath": [
+        "Hvis markeret, vil der hver gang en spiller dør, blive vist en global besked i chatten"
+      ],
+      "AnnounceAnimalDeath": [
+        "Hvis aktiveret, vises en global besked i chatten, hver gang et dyr dør."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Indlæste dele af kortet gemmes efter dette indstillede antal minutter i den virkelige verden er gået. "
+      ],
+      "PlayerSafehouse": [
+        "Både administratorer og spillere kan gøre krav på safehouses"
+      ],
+      "AdminSafehouse": [
+        "Kun administratorer kan gøre krav på safehouses"
+      ],
+      "SafehouseAllowTrepass": [
+        "Tillad ikke-medlemmer at komme ind i et safehouse uden at blive inviteret"
+      ],
+      "SafehouseAllowFire": [
+        "Tillad ild at beskadige sikkerhedshuse"
+      ],
+      "SafehouseAllowLoot": [
+        "Tillad ikke-medlemmer at tage genstande fra safehouses"
+      ],
+      "SafehouseAllowRespawn": [
+        "Spillere vil genoplive i et safehouse, som de var medlem af, før de døde"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Spillere skal have overlevet dette antal dage i spillet, før de får lov til at gøre krav på et safehouse"
+      ],
+      "SafeHouseRemovalTime": [
+        "Spillere bliver automatisk fjernet fra et safehouse, de ikke har besøgt i så mange timer i den virkelige verden"
+      ],
+      "SafehouseAllowNonResidential": [
+        "Styrer, om spillere kan gøre krav på ikke-beboelsesbygninger."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Tillad spillere at ødelægge verdensobjekter med forhammere"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Tillad kun spillere at ødelægge verdensobjekter i deres safehouse (kræver AllowDestructionBySledgehammer for at sande)."
+      ],
+      "WarStartDelay": [
+        "Tid i sekunder før krigen starter."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID bestemmer, om en karakter er fra en anden server eller enkeltspiller. "
+      ],
+      "RCONPort": [
+        "Porten til RCON (Remote Console)"
+      ],
+      "RCONPassword": [
+        "RCON password (Pick a strong password)"
+      ],
+      "DiscordEnable": [
+        "Enables global text chat integration with a Discord channel"
+      ],
+      "DiscordToken": [
+        "Discord bot access token"
+      ],
+      "DiscordChannel": [
+        "Discord-kanalens navn. "
+      ],
+      "DiscordChannelID": [
+        "Discord kanal-id. "
+      ],
+      "WebhookAddress": [
+        "Slack indgående webhook-URL"
+      ],
+      "Password": [
+        "Klienter skal kende denne adgangskode for at tilslutte sig serveren. "
+      ],
+      "MaxAccountsPerUser": [
+        "Begrænser antallet af forskellige konti, som en enkelt Steam-bruger må oprette på denne server. "
+      ],
+      "AllowCoop": [
+        "Tillad co-op/splitscreen-spillere"
+      ],
+      "SleepAllowed": [
+        "Spillere får lov til at sove, når deres overlevende bliver træt, men de behøver ikke at sove"
+      ],
+      "SleepNeeded": [
+        "Spillere bliver trætte og har brug for at sove. "
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Liste Workshop Mod ID'er for serveren til download. "
+      ],
+      "SteamScoreboard": [
+        "Vis Steam-brugernavne og -avatarer på spillerlisten."
+      ],
+      "SteamVAC": [
+        "Aktiver Steam VAC-systemet"
+      ],
+      "UPnP": [
+        "Forsøg på at konfigurere en UPnP-aktiveret internetgateway til automatisk at konfigurere regler for portvideresendelse. "
+      ],
+      "VoiceEnable": [
+        "VOIP er aktiveret, når det er markeret"
+      ],
+      "VoiceMinDistance": [
+        "Den mindste fliseafstand, over hvilken VOIP-lyde kan høres."
+      ],
+      "VoiceMaxDistance": [
+        "Den maksimale fliseafstand, over hvilken VOIP-lyde kan høres."
+      ],
+      "Voice3D": [
+        "Toggle directional audio for VOIP"
+      ],
+      "server_browser_announced_ip": [
+        "Indstil den IP, som serveren udsendes fra. "
+      ],
+      "PlayerRespawnWithSelf": [
+        "Spillere kan genstarte i spillet ved de koordinater, hvor de døde"
+      ],
+      "PlayerRespawnWithOther": [
+        "Spillere kan genoptage spillet i en delt skærm / Remote Play-spillerens placering"
+      ],
+      "FastForwardMultiplier": [
+        "Styrer, hvor hurtigt tiden går, mens spillerne sover. "
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Safehouse fungerer som et normalt hus, hvis et medlem af safehouse er tilsluttet (så sikkert, når spillere er offline)"
+      ],
+      "Faction": [
+        "Spillere kan oprette fraktioner, når det er sandt"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Spillere skal overleve dette antal dage i spillet, før de får lov til at oprette en fraktion"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Antal spillere, der kræves som fraktionsmedlemmer, før fraktionsejeren kan oprette et gruppetag"
+      ],
+      "DisableRadioStaff": [
+        "Deaktiverer radiotransmissioner fra spillere med et adgangsniveau"
+      ],
+      "DisableRadioAdmin": [
+        "Deaktiverer radiotransmissioner fra spillere med 'admin' adgangsniveau"
+      ],
+      "DisableRadioGM": [
+        "Deaktiverer radiotransmissioner fra spillere med 'gm' adgangsniveau"
+      ],
+      "DisableRadioOverseer": [
+        "Deaktiverer radiotransmissioner fra spillere med 'overseer'-adgangsniveau"
+      ],
+      "DisableRadioModerator": [
+        "Deaktiverer radiotransmissioner fra spillere med 'moderator' adgangsniveau"
+      ],
+      "DisableRadioInvisible": [
+        "Deaktiverer radiotransmissioner fra usynlige afspillere"
+      ],
+      "ClientCommandFilter": [
+        "Semikolon-separeret liste over kommandoer, der ikke vil blive skrevet til cmd.txt-serverloggen. ",
+        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
+        "+vehicle.installPart means DO write that command"
+      ],
+      "ClientActionLogs": [
+        "Semikolon-separeret liste over handlinger, der vil blive skrevet til ClientActionLogs.txt-serverloggen."
+      ],
+      "PerkLogs": [
+        "Track changes in player perk levels in PerkLog.txt server log"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Maksimalt antal genstande, der kan placeres i en container.  "
+      ],
+      "BloodSplatLifespanDays": [
+        "Antal dage før gamle blodpletter fjernes.<br>Fjernelse sker, når kortstykker indlæses.<br>Nul betyder, at de aldrig forsvinder"
+      ],
+      "AllowNonAsciiUsername": [
+        "Tillad brug af ikke-ASCII (kyrilliske osv.) tegn i brugernavne"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Hvis den er aktiveret, når HoursForCorpseRemoval udløses, vil den også fjerne spillerens lig fra jorden."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Hvis det er sandt, kan spilleren slå igen, når den bliver ramt af en anden spiller."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Hvis det er sandt, bliver spillere nødt til at føre musen over nogen for at se deres visningsnavn."
+      ],
+      "HidePlayersBehindYou": [
+        "Hvis det er sandt, skal du automatisk skjule den afspiller, du ikke kan se (som zombier)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Skadesmultiplikator for PVP-næreangreb."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Skademultiplikator for PVP ranged angreb."
+      ],
+      "CarEngineAttractionModifier": [
+        "Rediger rækkevidden af ​​zombie-attraktion til biler. "
+      ],
+      "PlayerBumpPlayer": [
+        "Styrer, om spillere støder (og vælter) andre spillere, når de løber igennem dem."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Styrer visning af fjernspillere på kortet i spillet.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Sti til filen med listen over ord, der skal forbydes. "
+      ],
+      "GoodWordListFile": [
+        "Sti til filen med listen over ord, der bør tillades, selvom de indeholder dårlige ord. "
+      ],
+      "BadWordPolicy": [
+        "Hvad skal man gøre med afsenderen af ​​et dårligt ord i chatten: 1 - forbud, 2 - spark, 3 - optag overtrædelsen i databasen, 4 - mute"
+      ],
+      "BadWordReplacement": [
+        "Symbolet eller stykke tekst, der skal erstatte det dårlige ord"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Deaktiverer anti-cheat-beskyttelse for bevægelse."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Deaktiverer anti-cheat-beskyttelse for spillere."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Deaktiverer varetjek-beskyttelse mod snyd."
+      ],
+      "AntiCheatServerCustomization": [
+        "Deaktiverer anti-cheat-beskyttelse for servertilpasning."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Indstiller multiplayer-opdateringsperioden i sekunder. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Skjuler administratorer i spillerlisten."
+      ],
+      "Seed": [
+        "Worldgen-frøet, der blev brugt til at generere verden.<br>Hvis du vil ændre dette, skal du indsætte en ny værdi og slette map_worldgen.bin i din gemte mappe."
+      ],
+      "SpeedLimit": [
+        "Køretøjets hastighedsgrænse."
+      ],
+      "BackupsCount": [
+        "Min: 1 Maks: 300 Standard: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Maks: 1500 Standard: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Maks: 1024 Standard: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Maks: 30 Standard: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Maks: 1200 Standard: 60"
+      ],
+      "Map": [
+        "Indtast mappenavnet på moddet, der findes i \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Maks: 2147483647 Standard: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Maks: 60 Standard: 60"
+      ],
+      "TrashDeleteAll": [
+        "Hvis aktiveret kan spilleren bruge knappen \\"slet alt\\" på skraldespande."
+      ],
+      "UDPPort": [
+        "Min: 0 Maks: 65535 Standard: 16262"
+      ]
+    }
+  }
+}
+
+

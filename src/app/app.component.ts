@@ -52,6 +52,7 @@ export class AppComponent implements OnInit {
   };
   steamApiKeyDraft = '';
   contentReady = false;
+  private skipContentLoading = false;
 
   constructor(
     private readonly windowState: WindowStateService,
@@ -65,6 +66,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   async ngOnInit(): Promise<void> {
+    this.skipContentLoading = this.isReloadNavigation();
     void this.appUpdate.checkForUpdate();
 
     this.contentLoading.ready$
@@ -106,7 +108,7 @@ export class AppComponent implements OnInit {
   }
 
   get showContentLoading(): boolean {
-    return !this.onboardingVisible && !this.contentReady;
+    return !this.skipContentLoading && !this.onboardingVisible && !this.contentReady;
   }
 
   async finishOnboarding(): Promise<void> {
@@ -149,6 +151,20 @@ export class AppComponent implements OnInit {
       return '';
     }
     return `${cleaned}/Lua`;
+  }
+
+  private isReloadNavigation(): boolean {
+    if (typeof performance === 'undefined') {
+      return false;
+    }
+    const entries = performance.getEntriesByType?.('navigation') as
+      | PerformanceNavigationTiming[]
+      | undefined;
+    if (entries && entries.length) {
+      return entries[0].type === 'reload';
+    }
+    const legacy = (performance as { navigation?: { type?: number } }).navigation;
+    return legacy?.type === 1;
   }
 
 }

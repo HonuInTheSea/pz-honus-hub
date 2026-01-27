@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "Instrumentul de jurnal PVP Chat",
+    "PVPLogToolFile": "Fișier PVP Log Tool",
+    "PauseEmpty": "Pauză goală",
+    "GlobalChat": "Chat global",
+    "Open": "Deschide",
+    "ServerWelcomeMessage": "Mesaj de bun venit pe server",
+    "ServerImageLoginScreen": "Ecran de conectare cu imaginea serverului",
+    "ServerImageLoadingScreen": "Ecran de încărcare a imaginii serverului",
+    "ServerImageIcon": "Pictogramă imagine server",
+    "AutoCreateUserInWhiteList": "Creare automată a utilizatorului în lista albă",
+    "DisplayUserName": "Afișează numele utilizatorului",
+    "ShowFirstAndLastName": "Afișați numele și prenumele",
+    "SpawnPoint": "Punct de naștere",
+    "SafetySystem": "Sistem de siguranță",
+    "ShowSafety": "Arată siguranța",
+    "SafetyToggleTimer": "Temporizator comutator de siguranță",
+    "SafetyCooldownTimer": "Temporizator de răcire de siguranță",
+    "SafetyDisconnectDelay": "Întârziere de deconectare de siguranță",
+    "SpawnItems": "Produceți articole",
+    "DefaultPort": "Port implicit",
+    "UDPPort": "Port UDP",
+    "ResetID": "Resetați ID-ul",
+    "Mods": "Moduri",
+    "Map": "Harta",
+    "DoLuaChecksum": "Do Lua Checksum",
+    "Public": "Public",
+    "PublicName": "Nume Public",
+    "PublicDescription": "Descriere publică",
+    "MaxPlayers": "Max jucători",
+    "PingLimit": "Limită de ping",
+    "SafehousePreventsLootRespawn": "Safehouse previne reapariția prăzii",
+    "DropOffWhiteListAfterDeath": "Renunțați la lista albă după moarte",
+    "NoFire": "Fără foc",
+    "AnnounceDeath": "Anunțați Moartea",
+    "SaveWorldEveryMinutes": "Salvați lumea în fiecare minut",
+    "PlayerSafehouse": "Jucător Safehouse",
+    "AdminSafehouse": "Administrator Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowFire": "Safehouse Allow Fire",
+    "SafehouseAllowLoot": "Safehouse Allow Loot",
+    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day a supraviețuit pentru a revendica",
+    "SafeHouseRemovalTime": "Timp de îndepărtare a casei în siguranță",
+    "SafehouseAllowNonResidential": "Safehouse Allow Non-Rezidential",
+    "MaxSafezoneSize": "Dimensiunea maximă a zonei sigure",
+    "AllowDestructionBySledgehammer": "Permite distrugerea cu barosul",
+    "SledgehammerOnlyInSafehouse": "Barosul Doar în Safehouse",
+    "WarStartDelay": "Întârzierea începerii războiului",
+    "WarDuration": "Durata Războiului",
+    "WarSafehouseHitPoints": "Puncte de lovitura War Safehouse",
+    "ServerPlayerID": "ID-ul jucătorului serverului",
+    "RCONPort": "Portul RCON",
+    "RCONPassword": "Parola RCON",
+    "DiscordEnable": "Activare Discord",
+    "DiscordToken": "Jetonul Discord",
+    "DiscordChannel": "Canalul Discord",
+    "DiscordChannelID": "ID-ul canalului Discord",
+    "WebhookAddress": "Adresa webhook",
+    "Password": "Parolă",
+    "MaxAccountsPerUser": "Conturi maxime per utilizator",
+    "AllowCoop": "Permite Coop",
+    "SleepAllowed": "Somn permis",
+    "SleepNeeded": "Este nevoie de somn",
+    "KnockedDownAllowed": "Doborât Permis",
+    "SneakModeHideFromOtherPlayers": "Ascunderea modului furiș de alți jucători",
+    "WorkshopItems": "Articole de atelier",
+    "SteamScoreboard": "Tabla de bord Steam",
+    "SteamVAC": "VAC cu abur",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Activare voce",
+    "VoiceMinDistance": "Distanța minimă a vocii",
+    "VoiceMaxDistance": "Distanța maximă a vocii",
+    "Voice3D": "Voce 3D",
+    "SpeedLimit": "Limită de viteză",
+    "LoginQueueConnectTimeout": "Timp de conectare la coadă de autentificare",
+    "server_browser_announced_ip": "Browserul serverului a anunțat ip",
+    "PlayerRespawnWithSelf": "Jucătorul reapare cu sine",
+    "PlayerRespawnWithOther": "Jucătorul reapare cu alții",
+    "FastForwardMultiplier": "Multiplicator rapid înainte",
+    "DisableSafehouseWhenPlayerConnected": "Dezactivați Safehouse când jucătorul este conectat",
+    "Faction": "Facţiune",
+    "FactionDaySurvivedToCreate": "Ziua facțiunii a supraviețuit pentru a crea",
+    "FactionPlayersRequiredForTag": "Jucătorii de facțiune sunt necesari pentru etichetă",
+    "DisableRadioStaff": "Dezactivați personalul radio",
+    "DisableRadioAdmin": "Dezactivează Administratorul radio",
+    "DisableRadioGM": "Dezactivați Radio GM",
+    "DisableRadioOverseer": "Dezactivați supraveghetorul radio",
+    "DisableRadioModerator": "Dezactivați Radio Moderator",
+    "DisableRadioInvisible": "Dezactivați radio invizibil",
+    "ClientCommandFilter": "Filtru de comandă client",
+    "ClientActionLogs": "Jurnalele de acțiuni ale clientului",
+    "PerkLogs": "Jurnalele de avantaje",
+    "ItemNumbersLimitPerContainer": "Limita numărului de articole pe container",
+    "BloodSplatLifespanDays": "Splat de sânge Zile de viață",
+    "AllowNonAsciiUsername": "Permite nume de utilizator non-Asci",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Eliminați cadavrele jucătorilor la eliminarea cadavrelor",
+    "TrashDeleteAll": "Coșul de gunoi șterge tot",
+    "PVPMeleeWhileHitReaction": "PVP corp la corp în timp ce reacția lovită",
+    "MouseOverToSeeDisplayName": "Treceți mouse-ul peste pentru a vedea numele afișat",
+    "HidePlayersBehindYou": "Ascunde jucătorii în spatele tău",
+    "PVPMeleeDamageModifier": "Modificator de daune PVP corp la corp",
+    "PVPFirearmDamageModifier": "Modificator de daune ale armelor de foc PVP",
+    "CarEngineAttractionModifier": "Modificator de atracție a motorului auto",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Hartă Vizibilitatea jucătorului de la distanță",
+    "BackupsCount": "Număr de copii de rezervă",
+    "BackupsOnStart": "Backup-uri la pornire",
+    "BackupsPeriod": "Perioada de backup",
+    "DisableVehicleTowing": "Dezactivați remorcarea vehiculului",
+    "DisableTrailerTowing": "Dezactivați remorcarea remorcii",
+    "DisableBurntTowing": "Dezactivați remorcarea arsă",
+    "BadWordListFile": "Fișier cu listă de cuvinte proaste",
+    "GoodWordListFile": "Fișier bun cu listă de cuvinte",
+    "BadWordPolicy": "Politică de cuvinte proaste",
+    "BadWordReplacement": "Înlocuirea cuvintelor proaste",
+    "AntiCheatSafety": "Siguranță anti-cheat",
+    "AntiCheatMovement": "Mișcarea anti-cheat",
+    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatPacket": "Pachet anti-cheat",
+    "AntiCheatPermission": "Permisiune anti-cheat",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Foc anti-cheat",
+    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatRecipe": "Rețetă anti-cheat",
+    "AntiCheatPlayer": "Jucător anti-cheat",
+    "AntiCheatChecksum": "Sumă de control anti-cheat",
+    "AntiCheatItem": "Articol anti-cheat",
+    "AntiCheatServerCustomization": "Personalizare Anti Cheat Server",
+    "MultiplayerStatisticsPeriod": "Perioada de statistici multiplayer",
+    "DisableScoreboard": "Dezactivați tabloul de bord",
+    "HideAdminsInPlayerList": "Ascundeți administratorii în lista de jucători",
+    "Seed": "Sămânță",
+    "ChatMessageCharacterLimit": "Limita de caractere a mesajului de chat",
+    "ChatMessageSlowModeTime": "Timp în mod lent pentru mesajul de chat",
+    "comments": {
+"PVP": [
+        "Jucătorii pot răni alți jucători."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Timpul jocului se oprește atunci când nu există jucători online"
+      ],
+      "GlobalChat": [
+        "Activează sau dezactivează chatul global."
+      ],
+      "Open": [
+        "Clienții se pot alătura fără a avea deja un cont în lista albă. "
+      ],
+      "ServerWelcomeMessage": [
+        "Primul mesaj de bun venit vizibil în panoul de chat. "
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Dacă este activat, jucătorii în modul furiș sunt ascunși față de ceilalți jucători."
+      ],
+      "ServerImageLoadingScreen": [
+        "Calea către imaginea afișată pe ecranul de încărcare al serverului."
+      ],
+      "ServerImageIcon": [
+        "Calea către imaginea folosită ca pictogramă a serverului."
+      ],
+      "ServerImageLoginScreen": [
+        "Calea către imaginea afișată pe ecranul de autentificare al serverului."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Adăugați nume de utilizator necunoscute la lista albă atunci când jucătorii se alătură. Clienții își furnizează propriul nume de utilizator/parolă la alăturare.  For Open"
+      ],
+      "DisplayUserName": [
+        "Afișează numele de utilizator deasupra altor jucători."
+      ],
+      "ShowFirstAndLastName": [
+        "Display first & last name above player's heads."
+      ],
+      "SpawnPoint": [
+        "Obligă toți jucătorii noi să se Spawneze în coordonatele x,y,z. Poți vedea coordonatele pe map.projectzomboid.com. Dezactivat când coordonatele sunt 0,0,0."
+      ],
+      "SafetySystem": [
+        "Jucătorii pot intra și părăsi PVP individual. "
+      ],
+      "ShowSafety": [
+        "Afișează un craniu deasupra jucătorilor care sunt în modul PVP."
+      ],
+      "SafetyToggleTimer": [
+        "Timpul până când un jucător poate intra sau ieși din modul PVP."
+      ],
+      "SafetyCooldownTimer": [
+        "Timpul până când un jucător poate intra sau ieși din modul PVP după ce tocmai au făcut asta."
+      ],
+      "SpawnItems": [
+        "Tipuri de articole cu care apar jucătorii noi.",
+        "Separați mai multe tipuri de articole prin virgule.",
+        "Example: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Port de pornire pentru datele jucătorului. Dacă UDP, acesta este unul dintre cele două porturi utilizate. Dacă legacy TCP, un port este folosit pentru fiecare jucător, începând cu acel port"
+      ],
+      "ResetID": [
+        "ID-ul de resetare determină dacă serverul a suferit o resetare soft. "
+      ],
+      "Mods": [
+        "Introduceți ID-ul de încărcare a modului aici. "
+      ],
+      "DoLuaChecksum": [
+        "Dă afară clienții atunci când fișierele clientului și ale fișierului nu se potrivesc."
+      ],
+      "Public": [
+        "Afișează serverul în browserul din joc. "
+      ],
+      "PublicName": [
+        "Numele serverului afișat în browserul din joc și, dacă este cazul, browserul Steam"
+      ],
+      "PublicDescription": [
+        "Descrierea este afișată în browserul serverului public din joc. ",
+        "va crea o nouă linie în descrierea dvs"
+      ],
+      "MaxPlayers": [
+        "Maximul de jucători care pot fi conectați pe server în același timp, cu excepția administratorilor. Steam permite maxim 126 de jucători."
+      ],
+      "PingLimit": [
+        "Ping-ul limită până a fi dat afară de pe server. Setează 0 pentru a dezactiva"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Obiectele nu vor reapare în clădirile pe care jucătorii le-au revendicat drept casă de siguranță"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Elimină jucătorii care au murit din lista albă. Previne crearea unui caracter nou după moarte sau la intrare"
+      ],
+      "NoFire": [
+        "Toate formele de foc sunt dezactivate, exceptând focul de tabără."
+      ],
+      "AnnounceDeath": [
+        "Dacă este activat, de fiecare dată când un jucător moare un mesaj va fi afișat în chat."
+      ],
+      "AnnounceAnimalDeath": [
+        "Dacă este activat, de fiecare dată când moare un animal, în chat va fi afișat un mesaj global."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Părțile încărcate ale hărții sunt salvate după ce au trecut acest număr stabilit de minute în lumea reală. "
+      ],
+      "PlayerSafehouse": [
+        "Atât administratorii cât și jucătorii pot revendica ascunzători."
+      ],
+      "AdminSafehouse": [
+        "Doar administratorii pot revendica ascunzători."
+      ],
+      "SafehouseAllowTrepass": [
+        "Permite non-membrii să intre într-o ascunzătoare, fără a fi invitați."
+      ],
+      "SafehouseAllowFire": [
+        "Permite focul să deterioreze ascunzătorile."
+      ],
+      "SafehouseAllowLoot": [
+        "Permite non-membrii să ia iteme din ascunzători."
+      ],
+      "SafehouseAllowRespawn": [
+        "Jucătorii apar intr-un safehouse din care erau membri înainte de a muri."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Jucătorii trebuie să supraviețuiească atâtea zile în joc pentru a revendica o ascunzătoare."
+      ],
+      "SafeHouseRemovalTime": [
+        "Jucătorii sunt îndepărtați automat dintr-o casă de siguranță pe care nu l-au vizitat de atâtea ore din lumea reală"
+      ],
+      "SafehouseAllowNonResidential": [
+        "Stabilește dacă jucătorii pot revendica clădiri nerezidențiale."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Permite jucătorii să distrugă obiecte ale lumii cu barosul."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Permiteți jucătorilor să distrugă obiecte din lume numai în casele lor de siguranță (se cere AllowDestructionBySledgehammer să fie adevărat)."
+      ],
+      "WarStartDelay": [
+        "Timp în secunde înainte de începerea războiului."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID determină dacă un personaj este de pe alt server sau de pe un singur jucător. "
+      ],
+      "RCONPort": [
+        "Portul RCON"
+      ],
+      "RCONPassword": [
+        "Parolă RCON"
+      ],
+      "DiscordEnable": [
+        "Activați integrarea cu Discord"
+      ],
+      "DiscordToken": [
+        "Jetonul de Acces al Bot-ului de Discord"
+      ],
+      "DiscordChannel": [
+        "Numele canalului de Discord. În caz de probleme, poți folosi ID-ul canalului"
+      ],
+      "DiscordChannelID": [
+        "ID-ul canalului de Discord. Nu este necesar. Folosește în caz de probleme în legătură cu numele canalului"
+      ],
+      "WebhookAddress": [
+        "Adresa URL a webhook-ului de intrare Slack"
+      ],
+      "Password": [
+        "Clienții trebuie să cunoască această parolă pentru a se alătura serverului. Ignorat atunci când găzduiești un server prin butonul Gazde."
+      ],
+      "MaxAccountsPerUser": [
+        "Limitează numărul de conturi diferite pe care un singur utilizator Steam le poate crea pe acest server. "
+      ],
+      "AllowCoop": [
+        "Permiteți jucători în cooperare/splitscreen"
+      ],
+      "SleepAllowed": [
+        "Jucătorii pot alege să doarmă oricând sunt obosiți."
+      ],
+      "SleepNeeded": [
+        "Jucătorii obosesc și au nevoie să doarmă. "
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Listați ID-urile modurilor de atelier pentru descărcare de server. "
+      ],
+      "SteamScoreboard": [
+        "Afișați numele de utilizator și avatarele Steam în lista de jucători."
+      ],
+      "SteamVAC": [
+        "Activează sistemul VAC Steam. Momentan nefuncțional."
+      ],
+      "UPnP": [
+        "Încercați să configurați un gateway de internet activat pentru UPnP pentru a configura automat regulile de redirecționare a portului. "
+      ],
+      "VoiceEnable": [
+        "Dacă este adevărat, VOIP este activat."
+      ],
+      "VoiceMinDistance": [
+        "Distanța minimă în plăci de sunete VOIP poate fi auzită."
+      ],
+      "VoiceMaxDistance": [
+        "Distanța maximă în plăci poate fi auzită sunetul VOIP."
+      ],
+      "Voice3D": [
+        "Audio direcțional pentru VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Setați IP-ul de la care este difuzat serverul. "
+      ],
+      "PlayerRespawnWithSelf": [
+        "Jucătorii se pot respawna în locul în care au murit."
+      ],
+      "PlayerRespawnWithOther": [
+        "Jucătorii pot reapari în joc într-un ecran împărțit / locația jucătorului de la Remote Play"
+      ],
+      "FastForwardMultiplier": [
+        "Cât de repede trece timpul când toată lumea doarme?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Safehouse acționează ca o casă normală dacă un membru al safehouse este conectat (deci sigur când jucătorii sunt offline)"
+      ],
+      "Faction": [
+        "Jucătorii pot crea facțiuni atunci când este adevărat"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Jucătorii trebuie să supraviețuiască acestui număr de zile în joc înainte de a li se permite să creeze o facțiune"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "De câti jucători e nevoie până când fondatorul facțiunii poate crea o etichetă specială."
+      ],
+      "DisableRadioStaff": [
+        "Dezactivează transmisiile radio de la jucători cu orice nivel de acces."
+      ],
+      "DisableRadioAdmin": [
+        "Dezactivează transmisiile radio de la jucătorii cu nivel de acces „admin”."
+      ],
+      "DisableRadioGM": [
+        "Dezactivează transmisiile radio de la jucători cu nivel de acces „gm”."
+      ],
+      "DisableRadioOverseer": [
+        "Dezactivează transmisiile radio de la jucătorii cu nivel de acces 'overseer'."
+      ],
+      "DisableRadioModerator": [
+        "Dezactivează transmisiile radio de la jucătorii cu nivel de acces „moderator”."
+      ],
+      "DisableRadioInvisible": [
+        "Dezactivează transmisiile radio de la jucătorii invizibili."
+      ],
+      "ClientCommandFilter": [
+        "Lista de comenzi separate prin punct și virgulă care nu vor fi scrise în jurnalul serverului cmd.txt. ",
+        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
+        "+vehicle.installPart means DO write that command"
+      ],
+      "ClientActionLogs": [
+        "Lista de acțiuni separate prin punct și virgulă care vor fi scrise în jurnalul serverului ClientActionLogs.txt."
+      ],
+      "PerkLogs": [
+        "Track changes in player perk levels in PerkLog.txt server log"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Numărul maxim de articole care pot fi plasate într-un container.  "
+      ],
+      "BloodSplatLifespanDays": [
+        "Numărul de zile înainte ca vechile pete de sânge să fie îndepărtate.<br>Eliminarea are loc atunci când sunt încărcate bucăți de hartă.<br>Zero înseamnă să nu eliminați niciodată."
+      ],
+      "AllowNonAsciiUsername": [
+        "Permite utilizarea a caracterelor non ASCII (chirilic...) în numele de utilizator"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Dacă este activat, atunci când HoursForCorpseRemoval se declanșează, va elimina și cadavrele jucătorului de pe pământ."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Dacă este adevărat, jucătorul poate lovi din nou atunci când este lovit de un alt jucător."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Dacă este adevărat, jucătorii vor trebui să treacă cu mouse-ul peste cineva pentru a-și vedea numele afișat."
+      ],
+      "HidePlayersBehindYou": [
+        "Dacă este adevărat, ascunde automat playerul pe care nu-l poți vedea (cum ar fi zombi)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Multiplicator de daune pentru atacurile corp la corp PVP."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Multiplicator de daune pentru atacurile la distanță PVP."
+      ],
+      "CarEngineAttractionModifier": [
+        "Modificați gama de atracție zombi pentru mașini. "
+      ],
+      "PlayerBumpPlayer": [
+        "Stabilește dacă jucătorii lovesc (și răsturnează) alți jucători atunci când trec prin ei."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Controlează afișarea jucătorilor de la distanță pe harta din joc.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Calea către fișierul cu lista de cuvinte care trebuie interzise. "
+      ],
+      "GoodWordListFile": [
+        "Calea către fișierul cu lista de cuvinte care ar trebui permise, chiar dacă acestea conțin cuvinte proaste. "
+      ],
+      "BadWordPolicy": [
+        "Ce să faci cu expeditorul unui cuvânt rău în chat: 1 - interdicție, 2 - lovitură, 3 - înregistrarea încălcării în baza de date, 4 - sunet"
+      ],
+      "BadWordReplacement": [
+        "Simbolul sau fragmentul de text care va înlocui cuvântul rău"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Dezactivează protecția anti-cheat pentru mișcare."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Dezactivează protecția anti-cheat pentru jucători."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Dezactivează protecția anti-cheat a verificărilor articolelor."
+      ],
+      "AntiCheatServerCustomization": [
+        "Dezactivează protecția anti-cheat pentru personalizarea serverului."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Setează perioada de actualizare multiplayer în secunde. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Ascunde administratorii din lista de jucători."
+      ],
+      "Seed": [
+        "Semințele worldgen folosite pentru a genera lumea.<br>Dacă doriți să schimbați acest lucru, introduceți o nouă valoare și ștergeți map_worldgen.bin din directorul de salvare."
+      ],
+      "SpeedLimit": [
+        "Limita de viteză a vehiculului."
+      ],
+      "BackupsCount": [
+        "Min: 1 Max: 300 Implicit: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Max: 1500 Implicit: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Max: 1024 Implicit: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Max: 30 Implicit: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Max: 1200 Implicit: 60"
+      ],
+      "Map": [
+        "Introduceți numele folderului modului găsit în \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Max: 2147483647 Implicit: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Max: 60 Implicit: 60"
+      ],
+      "TrashDeleteAll": [
+        "Dacă este activat, jucătorul poate folosi butonul \\"șterge tot\\" la coșuri."
+      ],
+      "UDPPort": [
+        "Min: 0 Max: 65535 Implicit: 16262"
+      ]
+    }
+  }
+}
+
+

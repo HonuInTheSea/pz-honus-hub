@@ -1,0 +1,553 @@
+{
+  "ini": {
+    "PVP": "ПВП",
+    "PVPLogToolChat": "Чат журнала PVP",
+    "PVPLogToolFile": "Файл журнала PVP",
+    "PauseEmpty": "Пауза Пусто",
+    "GlobalChat": "Глобальный чат",
+    "Open": "Открыть",
+    "ServerWelcomeMessage": "Приветственное сообщение сервера",
+    "ServerImageLoginScreen": "Экран входа в образ сервера",
+    "ServerImageLoadingScreen": "Экран загрузки образа сервера",
+    "ServerImageIcon": "Значок изображения сервера",
+    "AutoCreateUserInWhiteList": "Автоматическое создание пользователя в белом списке",
+    "DisplayUserName": "Отобразить имя пользователя",
+    "ShowFirstAndLastName": "Показать имя и фамилию",
+    "SpawnPoint": "Точка появления",
+    "SafetySystem": "Система безопасности",
+    "ShowSafety": "Показать безопасность",
+    "SafetyToggleTimer": "Таймер переключения безопасности",
+    "SafetyCooldownTimer": "Таймер безопасного восстановления",
+    "SafetyDisconnectDelay": "Задержка безопасного отключения",
+    "SpawnItems": "Создавать предметы",
+    "DefaultPort": "Порт по умолчанию",
+    "UDPPort": "UDP-порт",
+    "ResetID": "Сбросить идентификатор",
+    "Mods": "Моды",
+    "Map": "Карта",
+    "DoLuaChecksum": "Сделать контрольную сумму Lua",
+    "Public": "Общественный",
+    "PublicName": "Публичное имя",
+    "PublicDescription": "Публичное описание",
+    "MaxPlayers": "Максимальное количество игроков",
+    "PingLimit": "Предел пинга",
+    "SafehousePreventsLootRespawn": "Убежище предотвращает возрождение добычи",
+    "DropOffWhiteListAfterDeath": "Выбросить белый список после смерти",
+    "NoFire": "Нет огня",
+    "AnnounceDeath": "Объявить о смерти",
+    "SaveWorldEveryMinutes": "Спасайте мир каждую минуту",
+    "PlayerSafehouse": "Убежище игрока",
+    "AdminSafehouse": "Убежище администратора",
+    "SafehouseAllowTrepass": "Убежище Разрешить проникновение",
+    "SafehouseAllowFire": "Убежище, позволяющее вести огонь",
+    "SafehouseAllowLoot": "Убежище с возможностью добычи",
+    "SafehouseAllowRespawn": "Убежище Разрешить возрождение",
+    "SafehouseDaySurvivedToClaim": "День убежища выжил, чтобы заявить",
+    "SafeHouseRemovalTime": "Время удаления безопасного дома",
+    "SafehouseAllowNonResidential": "Убежище разрешено для нежилых помещений",
+    "MaxSafezoneSize": "Максимальный размер безопасной зоны",
+    "AllowDestructionBySledgehammer": "Разрешить разрушение кувалдой",
+    "SledgehammerOnlyInSafehouse": "Кувалда только в убежище",
+    "WarStartDelay": "Задержка начала войны",
+    "WarDuration": "Продолжительность войны",
+    "WarSafehouseHitPoints": "Здоровье военного убежища",
+    "ServerPlayerID": "Идентификатор игрока на сервере",
+    "RCONPort": "Порт РКОН",
+    "RCONPassword": "Пароль RCON",
+    "DiscordEnable": "Раздор включить",
+    "DiscordToken": "Токен раздора",
+    "DiscordChannel": "Дискорд-канал",
+    "DiscordChannelID": "Идентификатор канала Discord",
+    "WebhookAddress": "Адрес вебхука",
+    "Password": "Пароль",
+    "MaxAccountsPerUser": "Максимальное количество учетных записей на пользователя",
+    "AllowCoop": "Разрешить кооператив",
+    "SleepAllowed": "Сон разрешен",
+    "SleepNeeded": "Нужен сон",
+    "KnockedDownAllowed": "Сбитый с ног разрешен",
+    "SneakModeHideFromOtherPlayers": "Режим скрытности: скрыться от других игроков",
+    "WorkshopItems": "Предметы мастерской",
+    "SteamScoreboard": "Табло Steam",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "УПнП",
+    "VoiceEnable": "Голосовое включение",
+    "VoiceMinDistance": "Минимальное расстояние голоса",
+    "VoiceMaxDistance": "Голосовое максимальное расстояние",
+    "Voice3D": "Голос 3D",
+    "SpeedLimit": "Ограничение скорости",
+    "LoginQueueConnectTimeout": "Время ожидания подключения в очереди на вход",
+    "server_browser_announced_ip": "Браузер сервера объявил ip",
+    "PlayerRespawnWithSelf": "Возрождение игрока с самим собой",
+    "PlayerRespawnWithOther": "Возрождение игрока с другими",
+    "FastForwardMultiplier": "Множитель быстрой перемотки вперед",
+    "DisableSafehouseWhenPlayerConnected": "Отключить убежище при подключении игрока",
+    "Faction": "Фракция",
+    "FactionDaySurvivedToCreate": "День фракции выжил, чтобы создать",
+    "FactionPlayersRequiredForTag": "Для тега требуются игроки фракции",
+    "DisableRadioStaff": "Отключить радиоперсонал",
+    "DisableRadioAdmin": "Отключить администратор радио",
+    "DisableRadioGM": "Отключить радио GM",
+    "DisableRadioOverseer": "Отключить Радио-Наблюдателя",
+    "DisableRadioModerator": "Отключить радиомодератор",
+    "DisableRadioInvisible": "Отключить невидимое радио",
+    "ClientCommandFilter": "Клиентский фильтр команд",
+    "ClientActionLogs": "Журналы действий клиента",
+    "PerkLogs": "Журналы перков",
+    "ItemNumbersLimitPerContainer": "Ограничение количества предметов на контейнер",
+    "BloodSplatLifespanDays": "Продолжительность жизни, дни",
+    "AllowNonAsciiUsername": "Разрешить использование имени пользователя, отличного от Ascii",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Удаление трупов игроков при удалении трупов",
+    "TrashDeleteAll": "Корзина Удалить все",
+    "PVPMeleeWhileHitReaction": "PVP Ближний бой при ударе Реакция",
+    "MouseOverToSeeDisplayName": "Наведите указатель мыши, чтобы увидеть отображаемое имя.",
+    "HidePlayersBehindYou": "Скрыть игроков позади вас",
+    "PVPMeleeDamageModifier": "Модификатор урона в ближнем бою PVP",
+    "PVPFirearmDamageModifier": "Модификатор урона от огнестрельного оружия в PVP",
+    "CarEngineAttractionModifier": "Модификатор привлекательности двигателя автомобиля",
+    "PlayerBumpPlayer": "Игрок ударить игрока",
+    "MapRemotePlayerVisibility": "Карта видимости удаленного игрока",
+    "BackupsCount": "Количество резервных копий",
+    "BackupsOnStart": "Резервное копирование при запуске",
+    "BackupsPeriod": "Период резервного копирования",
+    "DisableVehicleTowing": "Отключить буксировку автомобиля",
+    "DisableTrailerTowing": "Отключить буксировку прицепа",
+    "DisableBurntTowing": "Отключить сгоревшую буксировку",
+    "BadWordListFile": "Файл списка неверных слов",
+    "GoodWordListFile": "Файл списка хороших слов",
+    "BadWordPolicy": "Политика в отношении плохих слов",
+    "BadWordReplacement": "Замена плохого слова",
+    "AntiCheatSafety": "Античит-безопасность",
+    "AntiCheatMovement": "Античит-движение",
+    "AntiCheatHit": "Античит-хит",
+    "AntiCheatPacket": "Античит-пакет",
+    "AntiCheatPermission": "Разрешение на защиту от мошенничества",
+    "AntiCheatXP": "Античит XP",
+    "AntiCheatFire": "Анти Чит Огонь",
+    "AntiCheatSafeHouse": "Античит-безопасный дом",
+    "AntiCheatRecipe": "Рецепт античита",
+    "AntiCheatPlayer": "Античит-плеер",
+    "AntiCheatChecksum": "Контрольная сумма античита",
+    "AntiCheatItem": "Античит-предмет",
+    "AntiCheatServerCustomization": "Настройка античит-сервера",
+    "MultiplayerStatisticsPeriod": "Период многопользовательской статистики",
+    "DisableScoreboard": "Отключить табло",
+    "HideAdminsInPlayerList": "Скрыть администраторов в списке игроков",
+    "Seed": "Семя",
+    "ChatMessageCharacterLimit": "Ограничение количества символов в сообщениях чата",
+    "ChatMessageSlowModeTime": "Сообщение чата Время медленного режима",
+    "comments": {
+"PVP": [
+        "Игроки могут атаковать других игроков."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Мировое время в игре остановится, если на сервере отсутствуют игроки."
+      ],
+      "GlobalChat": [
+        "Переключение глобального чата вкл или выкл."
+      ],
+      "Open": [
+        "Игроки могут подключиться даже если не внесены в ВайтЛист (белый список). Если установлено значение false, администраторы должны вручную создавать логин и пароль игрокам."
+      ],
+      "ServerWelcomeMessage": [
+        "Первое сообщение, видимое в панели чата; отображается, когда игрок подключился. Вы можете использовать цветовую палитру RGB и < LINE > для создания отдельных строк в тексте. Пример: <RGB:1,0,0>  Это сообщение будет красным!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Если включено, игроки в режиме скрытности скрываются от других игроков."
+      ],
+      "ServerImageLoadingScreen": [
+        "Путь к изображению, отображаемому на экране загрузки сервера."
+      ],
+      "ServerImageIcon": [
+        "Путь к изображению, используемому в качестве значка сервера."
+      ],
+      "ServerImageLoginScreen": [
+        "Путь к изображению, отображаемому на экране входа сервера."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Добавляет новых игроков в белый список. Клиенты вводят свое имя пользователя/пароль при подключении. Для Open=true (вкл) серверов."
+      ],
+      "DisplayUserName": [
+        "Будет ли отображаться имя над головами игроков."
+      ],
+      "ShowFirstAndLastName": [
+        "Отображение имени и фамилии над головой персонажа вместо имени пользователя."
+      ],
+      "SpawnPoint": [
+        "В игровом мире, у всех новых игроков будет одна точка появления, по координатам x,y,z. Получить координаты можно тут: map.projectzomboid.com. Игнорирует координаты 0,0,0."
+      ],
+      "SafetySystem": [
+        "Игроки лично могут входить и выходить из PVP. Игрок может навредить другому игроку только тогда, когда хотя бы один из них находится в режиме PVP — это будет показано незатененным черепом и скрещенными костями в левой части экрана. Когда SafetySystem=false, игроки могут причинять друг другу вред в любое время, если включено PVP."
+      ],
+      "ShowSafety": [
+        "Отображать череп над головами тех игроков, которые находятся в режиме ПВП."
+      ],
+      "SafetyToggleTimer": [
+        "Время необходимое игроку, чтобы войти или выйти из режима ПВП."
+      ],
+      "SafetyCooldownTimer": [
+        "Временная задержка входа в режим ПВП. Тем самым запрещает очень часто входить и выходить из данного режима."
+      ],
+      "SpawnItems": [
+        "Список предметов имеющийся у игрока при появлении.",
+        "Разделите несколько типов элементов запятыми.",
+        "Пример: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Используемый UDP порт при подключении клиентов к серверу."
+      ],
+      "ResetID": [
+        "Этот номер изменяется после выполнения софт сброса. Изменение этого числа приводит к удалению клиентских файлов сохранения (но не файлов игрока клиента). Используется вместе с PlayerServerID. Пожалуйста, сделайте резервную копию этих ID где-нибудь."
+      ],
+      "Mods": [
+        "Введите ID загружаемого мода здесь. Его можно найти в \\Steam\\steamapps\\workshop\\modID\\mods\\названиеМода\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Кикать клиентов, файлы игры которых не соответствуют серверу."
+      ],
+      "Public": [
+        "Будет ли отображаться во внутри игровом сервер-браузере (а также в сервер-браузере Steam)."
+      ],
+      "PublicName": [
+        "Отображается во внутриигровом сервер-браузере (а также в сервер-браузере Steam)."
+      ],
+      "PublicDescription": [
+        "Отображение описания сервера в сервер-браузере."
+      ],
+      "MaxPlayers": [
+        "Максимальное количество игроков, которые могут находиться на сервере одновременно, исключая Админов. <br>ВНИМАНИЕ: Пожалуйста учтите, что количество игроков на сервере выше 32-х может привести к плохой прогрузке карты и рассинхронизации."
+      ],
+      "PingLimit": [
+        "Ограничение пинга в миллисекундах перед тем, как быть кикнутым с сервера. (Установите 0, чтобы отключить)"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Предметы не будут возрождаться в зданиях, которые игроки назвали убежищем."
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Удаляет игрока из списка в белый список после смерти. Запрещает создавать нового персонажа в игре, если прошлый погиб."
+      ],
+      "NoFire": [
+        "Все виды огня отключены, за исключением походных костров."
+      ],
+      "AnnounceDeath": [
+        "Если вкл, каждый раз, когда игрок умирает, это отобразится в чате."
+      ],
+      "AnnounceAnimalDeath": [
+        "Если включено, каждый раз при смерти животного в чате отображается глобальное сообщение."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Загруженные части карты сохраняются после того, как прошло много минут реального времени. Карта обычно сохраняется только после того, как клиенты покидают загруженную область."
+      ],
+      "PlayerSafehouse": [
+        "Админы и игроки могут создавать убежища."
+      ],
+      "AdminSafehouse": [
+        "Только админы могут создавать убежища."
+      ],
+      "SafehouseAllowTrepass": [
+        "Позволяет любым игрокам входить в убежище (Даже тем, кто вне списка убежища)."
+      ],
+      "SafehouseAllowFire": [
+        "Огонь может разрушить убежище."
+      ],
+      "SafehouseAllowLoot": [
+        "Позволяет любым игрокам брать лут в убежище."
+      ],
+      "SafehouseAllowRespawn": [
+        "После смерти игроки могут появиться в убежище своей фракции."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Игроки должны будут пережить это количество дней до того, как они смогут указывать убежище."
+      ],
+      "SafeHouseRemovalTime": [
+        "Игроки будут автоматически удалены из списка убежища, если они не посещали его много реальных часов."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Позволяет игрокам создавать убежища в нежилых зданиях."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Разрешить игрокам разрушать игровые объекты кувалдой."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Разрешить игрокам уничтожать объекты мира только в их убежище (требуйте, чтобы для параметра AllowDestructionBySledgehammer было установлено значение true)."
+      ],
+      "WarStartDelay": [
+        "Время в секундах до начала войны."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "Считывает клиентские файлы игрока, чтобы игроки не могли обманом использовать файлы из одиночной игры или файлы с другого сервера. Это значение может быть изменено путем софт-сброса. Если этот номер соответствует клиенту, клиент должен создать нового персонажа. Используется в сочетании с ResetID. Пожалуйста, сделайте резервную копию этих ID где-нибудь."
+      ],
+      "RCONPort": [
+        "Порт для RCON"
+      ],
+      "RCONPassword": [
+        "Пароль RCON"
+      ],
+      "DiscordEnable": [
+        "Включить интеграцию c Discord"
+      ],
+      "DiscordToken": [
+        "Токен доступа Discord Bot"
+      ],
+      "DiscordChannel": [
+        "Имя канала Discord"
+      ],
+      "DiscordChannelID": [
+        "Discord ID канала. Не требуется. Используйте в случае проблем с названием канала"
+      ],
+      "WebhookAddress": [
+        "URL-адрес входящего веб-перехватчика Slack"
+      ],
+      "Password": [
+        "Клиенты должны знать пароль, чтобы могли присоединиться к серверу. Игнорируется, если хост Steam сервер."
+      ],
+      "MaxAccountsPerUser": [
+        "Лимит количества разных аккаунтов Steam, один профиль можно создать на сервере. Игнорируется когда Steam является хостом сервера."
+      ],
+      "AllowCoop": [
+        "Разрешить кооператив/сплитскрин игроков"
+      ],
+      "SleepAllowed": [
+        "Игроки могут спать в любое время."
+      ],
+      "SleepNeeded": [
+        "Игроки устают и хотят спать. Игнорируется если SleepAllowed=false (выкл)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Список Workshop модов ID для загрузки сервера. Разделяйте точкой с запятой. Пример WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Отображать Steam профили и аватары в Списке Игроков. Может быть включено ((true) всем), выключено ((false)(не видно никому))или Админ ((admin)видно только администраторам)."
+      ],
+      "SteamVAC": [
+        "Включить Valve Anti-Cheat (VAC)."
+      ],
+      "UPnP": [
+        "Пытаться настроить интернет-шлюз с поддержкой UPnP для автоматической настройки правил переадресации портов."
+      ],
+      "VoiceEnable": [
+        "Если true, то голосовая связь VOIP разрешена."
+      ],
+      "VoiceMinDistance": [
+        "Минимальное расстояние в названиях VOIP можно услышать звуки"
+      ],
+      "VoiceMaxDistance": [
+        "Максимальное расстояние в названиях VOIP можно услышать звуки"
+      ],
+      "Voice3D": [
+        "Направленный звук для VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Установите IP-адрес, для которого транслируется сервер. Для сетевых конфигураций с несколькими IP-адресами, таких как сервера-фермы"
+      ],
+      "PlayerRespawnWithSelf": [
+        "Если игроки погибли, то они могут появиться у своего трупа."
+      ],
+      "PlayerRespawnWithOther": [
+        "Игроки могут снова появиться в режиме игры одного окна (splitscreen)."
+      ],
+      "FastForwardMultiplier": [
+        "Как быстро проходит время когда все спят?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Убежище не будет отличаться от обычного дома, если кто-то из этого убежища в сети."
+      ],
+      "Faction": [
+        "Если ВКЛ (true), позвольте игрокам создавать фракции."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Вы должны будете выжить X дней чтобы создать фракцию."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Сколько игроков нужно, прежде чем позволить владельцу фракции создать специальный тег."
+      ],
+      "DisableRadioStaff": [
+        "Отключает радиопередачи от игроков с любым уровнем доступа."
+      ],
+      "DisableRadioAdmin": [
+        "Отключает радиопередачи от игроков с уровнем доступа «admin»."
+      ],
+      "DisableRadioGM": [
+        "Отключает радиопередачи от игроков с уровнем доступа «gm»."
+      ],
+      "DisableRadioOverseer": [
+        "Отключает радиопередачи от игроков с уровнем доступа «надзиратель»."
+      ],
+      "DisableRadioModerator": [
+        "Отключает радиопередачи от игроков с уровнем доступа «модератор»."
+      ],
+      "DisableRadioInvisible": [
+        "Отключает радиопередачи от невидимых игроков."
+      ],
+      "ClientCommandFilter": [
+        "Список команд, разделенных точкой с запятой, которые не будут записываться в журнал сервера cmd.txt.",
+        "-vehicle.* означает, что не пишите команду транспортного средства.",
+        "+vehicle.install Часть означает, что надо написать эту команду."
+      ],
+      "ClientActionLogs": [
+        "Список действий, разделенных точкой с запятой, которые будут записаны в журнал сервера ClientActionLogs.txt."
+      ],
+      "PerkLogs": [
+        "Track changes in player perk levels in PerkLog.txt server log"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Максимальное количество предметов, которые можно поместить в контейнер. Ноль означает без ограничений."
+      ],
+      "BloodSplatLifespanDays": [
+        "Количество дней до удаления старых брызг крови.<br>Удаление происходит при загрузке фрагментов карты.<br>Ноль означает никогда не удалять."
+      ],
+      "AllowNonAsciiUsername": [
+        "Разрешить или запретить использование не ASCII символов (кириллица и тд) в имени пользователя"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Если true, когда часы «Удаление трупа» сработают, он также будет удалять трупы игрока."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Если включенно, игрок может ударить в ответ, если его ударит другой игрок."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Если включенно, игрокам нужно будет навести указатель мыши на кого-нибудь, чтобы увидеть имя."
+      ],
+      "HidePlayersBehindYou": [
+        "Если включенно, игроки которых вы не видите, будут скрываться (как зомби)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Доп. урон для PVP-атак ближнего боя."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Доп. урон для огнестрельных PVP-атак."
+      ],
+      "CarEngineAttractionModifier": [
+        "Модификатор расстояния на котором автомобили привлекают зомби, более низкие значения могут снизить лаги сервера."
+      ],
+      "PlayerBumpPlayer": [
+        "Игроки сталкиваются с друг другом."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Управляет отображением удаленных игроков на внутриигровой карте.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Путь к файлу со списком запрещенных слов. "
+      ],
+      "GoodWordListFile": [
+        "Путь к файлу со списком разрешенных слов, даже если они содержат нецензурные слова. "
+      ],
+      "BadWordPolicy": [
+        "Что делать с отправителем плохого слова в чате: 1 - забанить, 2 - кикнуть, 3 - зафиксировать нарушение в базе, 4 - заглушить"
+      ],
+      "BadWordReplacement": [
+        "Символ или фрагмент текста, который заменит плохое слово"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Отключает античит-защиту движения."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Отключает античит-защиту для игроков."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Отключает проверку предметов от защиты от мошенничества."
+      ],
+      "AntiCheatServerCustomization": [
+        "Отключает античит-защиту настройки сервера."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Устанавливает период обновления многопользовательской игры в секундах. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Скрывает администраторов в списке игроков."
+      ],
+      "Seed": [
+        "Начальное значение worldgen, используемое для создания мира.<br>Если вы хотите изменить это, введите новое значение и удалите файл map_worldgen.bin в каталоге сохранения."
+      ],
+      "SpeedLimit": [
+        "Ограничение скорости автомобиля."
+      ],
+      "BackupsCount": [
+        "Мин: 1 Макс: 300 По умолчанию: 5"
+      ],
+      "BackupsPeriod": [
+        "Мин: 0 Макс: 1500 По умолчанию: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Мин: 64 Макс: 1024 По умолчанию: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Мин: 1 Макс: 30 По умолчанию: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Мин: 20 Макс: 1200 По умолчанию: 60"
+      ],
+      "Map": [
+        "Введите имя папки мода, находящейся в \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Мин: 0 Макс: 2147483647 По умолчанию: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Мин: 0 Макс: 60 По умолчанию: 60"
+      ],
+      "TrashDeleteAll": [
+        "Если включено, игрок может использовать кнопку \\"удалить всё\\" на мусорных баках."
+      ],
+      "UDPPort": [
+        "Мин: 0 Макс: 65535 По умолчанию: 16262"
+      ]
+    }
+  }
+}
+
+

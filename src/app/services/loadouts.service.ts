@@ -20,6 +20,14 @@ export class LoadoutsService {
     return invoke<void>('write_text_file', { path, content });
   }
 
+  async copyFile(source: string, target: string): Promise<void> {
+    return invoke<void>('copy_file', { source, target });
+  }
+
+  async deleteServerFiles(userDir: string, serverName: string): Promise<void> {
+    return invoke<void>('delete_server_files', { userDir, serverName });
+  }
+
   async listServerNames(userDir: string): Promise<string[]> {
     return invoke<string[]>('list_server_names', { userDir });
   }

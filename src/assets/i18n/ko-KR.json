@@ -49,7 +49,8 @@
       "supportKofi": "Ko-fi 지원",
       "resetApp": "애플리케이션 재설정",
       "resetAppTooltip": "창 설정 재설정 및 저장된 데이터 삭제",
-      "myMods": "내 모드"
+      "myMods": "내 모드",
+      "server": "섬기는 사람"
     },
     "filters": {
       "adultLabel": "성인용 콘텐츠가 있음",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "폴더 구성"
-    }
+    },
+    "loadingLocale": "언어 로드 중..."
   },
   "changelog": {
     "title": "변경 내역",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "새 기능",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>전용 서버 구성 파일을 다룰 수 있는 기능 추가</li><li>README.md 업데이트</li><li>문서 페이지 업데이트</li></ul>"
+      },
       "initialRelease": {
         "title": "초기 릴리스",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Honu's Project Zomboid Hub의 첫 공개 버전."
+      },
+      "minorFixes_0_4_1": {
+        "title": "사소한 수정",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>업데이트 링크의 이동 위치 업데이트</li><li>버전 번호 업데이트</li><li>README.md 업데이트</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "사소한 수정",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "언어 지원 업데이트"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "작업 흐름",
       "data": "앱이 사용하는 데이터",
       "features": "특징",
+      "server": "서버 관리",
       "mediaPlayer": "미디어 플레이어",
       "logInspector": "로그 검사기",
       "folderSetup": "폴더 설정",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>재생목록</strong> - 감지된 트랙과 기본 메타데이터(사용 가능한 경우 제목/아티스트/앨범)를 표시합니다.",
       "bullet2": "<strong>재생</strong> - 재생/일시 정지 및 이전/다음 트랙.",
       "bullet3": "<strong>탐색 + 볼륨</strong> - 트랙을 탐색하고 볼륨/음소거를 조정합니다."
+    },
+    "server": {
+      "title": "서버 관리",
+      "intro": "서버 페이지에서 Project Zomboid 로컬 서버 파일을 관리합니다.",
+      "bullet1": "<strong>생성</strong>으로 새 서버를 만들어 기본 .ini, _SandboxVars.lua, _spawnpoints.lua, _spawnregions.lua 파일을 생성합니다.",
+      "bullet2": "<strong>복사</strong>로 기존 서버를 새 이름으로 복제합니다.",
+      "bullet3": "<strong>편집</strong>으로 INI 및 Sandbox 변수를 편집하고 spawnpoints/spawnregions를 앱에서 직접 업데이트합니다."
     },
     "logInspector": {
       "title": "로그 검사기",
@@ -561,11 +589,13 @@
         "summary": "잘못된 서버 이름",
         "detailMissing": "서버를 입력하세요 이름.",
         "detailInvalidChars": "서버 이름에 잘못된 파일 이름 문자가 포함되어 있습니다.",
-        "detailTrailing": "서버 이름은 점이나 공백으로 끝날 수 없습니다."
+        "detailTrailing": "서버 이름은 점이나 공백으로 끝날 수 없습니다.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "서버 이름이 이미 존재합니다.",
-        "detail": "고유한 서버 이름을 선택하세요."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "사용자 폴더 누락",
@@ -696,6 +726,49 @@
       "noFilePath": "로그를 로드할 파일 경로를 설정합니다.",
       "loadFailed": "로그 파일을 로드하지 못했습니다.",
       "clearFailed": "로그 파일을 지우지 못했습니다."
+    }
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "취소",
+      "create": "Create",
+      "editServerVariableTitle": "서버 변수 편집",
+      "editSandboxVariableTitle": "샌드박스 변수 편집",
+      "noDescription": "No description available.",
+      "save": "구하다",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "진실",
+      "falseLabel": "거짓",
+      "exportServer": "내보내기"
     }
   }
 }

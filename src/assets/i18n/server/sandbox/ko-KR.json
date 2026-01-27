@@ -1,0 +1,1521 @@
+{
+  "Zombies": "좀비",
+  "Distribution": "분포",
+  "ZombieVoronoiNoise": "좀비 보로노이 노이즈",
+  "ZombieRespawn": "좀비 리스폰",
+  "ZombieMigrate": "좀비 이동",
+  "DayLength": "낮 길이",
+  "StartMonth": "시작 월",
+  "StartDay": "시작 일",
+  "StartTime": "시작 시간",
+  "DayNightCycle": "주야 순환",
+  "ClimateCycle": "기후 순환",
+  "FogCycle": "안개 순환",
+  "WaterShut": "단수",
+  "ElecShut": "정전",
+  "AlarmDecay": "경보 감쇠",
+  "WaterShutModifier": "단수 배율",
+  "ElecShutModifier": "정전 배율",
+  "AlarmDecayModifier": "경보 감쇠 배율",
+  "FoodLootNew": "새 음식 전리품",
+  "LiteratureLootNew": "새 서적 전리품",
+  "MedicalLootNew": "새 의료 전리품",
+  "SurvivalGearsLootNew": "새 생존 장비 전리품",
+  "CannedFoodLootNew": "새 통조림 전리품",
+  "WeaponLootNew": "새 무기 전리품",
+  "RangedWeaponLootNew": "새 원거리 무기 전리품",
+  "AmmoLootNew": "새 탄약 전리품",
+  "MechanicsLootNew": "새 정비 전리품",
+  "OtherLootNew": "새 기타 전리품",
+  "ClothingLootNew": "새 의류 전리품",
+  "ContainerLootNew": "새 용기 전리품",
+  "KeyLootNew": "새 열쇠 전리품",
+  "MediaLootNew": "새 미디어 전리품",
+  "MementoLootNew": "새 기념품 전리품",
+  "CookwareLootNew": "새 조리도구 전리품",
+  "MaterialLootNew": "새 재료 전리품",
+  "FarmingLootNew": "새 농업 전리품",
+  "ToolLootNew": "새 도구 전리품",
+  "RollsMultiplier": "굴림 배율",
+  "LootItemRemovalList": "전리품 항목 제거 목록",
+  "RemoveStoryLoot": "스토리 전리품 제거",
+  "RemoveZombieLoot": "좀비 전리품 제거",
+  "ZombiePopLootEffect": "좀비 개체수 전리품 효과",
+  "InsaneLootFactor": "광기 전리품 계수",
+  "ExtremeLootFactor": "극단 전리품 계수",
+  "RareLootFactor": "희귀 전리품 계수",
+  "NormalLootFactor": "보통 전리품 계수",
+  "CommonLootFactor": "일반 전리품 계수",
+  "AbundantLootFactor": "풍부 전리품 계수",
+  "Temperature": "온도",
+  "Rain": "비",
+  "ErosionSpeed": "침식 속도",
+  "ErosionDays": "침식 일수",
+  "Farming": "농업",
+  "CompostTime": "퇴비 시간",
+  "StatsDecrease": "능력치 감소",
+  "NatureAbundance": "자연 풍부도",
+  "Alarm": "경보",
+  "LockedHouses": "잠긴 집",
+  "StarterKit": "스타터 키트",
+  "Nutrition": "영양",
+  "FoodRotSpeed": "음식 부패 속도",
+  "FridgeFactor": "냉장고 계수",
+  "SeenHoursPreventLootRespawn": "목격 시간은 전리품 리스폰 방지",
+  "HoursForLootRespawn": "전리품 리스폰 시간",
+  "MaxItemsForLootRespawn": "전리품 리스폰 최대 항목",
+  "ConstructionPreventsLootRespawn": "건설 시 전리품 리스폰 방지",
+  "WorldItemRemovalList": "세계 아이템 제거 목록",
+  "HoursForWorldItemRemoval": "세계 아이템 제거 시간",
+  "ItemRemovalListBlacklistToggle": "아이템 제거 목록 블랙리스트 전환",
+  "TimeSinceApo": "종말 이후 시간",
+  "PlantResilience": "식물 회복력",
+  "PlantAbundance": "식물 풍부도",
+  "EndRegen": "지구력 회복",
+  "Helicopter": "헬리콥터",
+  "MetaEvent": "메타 이벤트",
+  "SleepingEvent": "수면 이벤트",
+  "GeneratorFuelConsumption": "발전기 연료 소비",
+  "GeneratorSpawning": "발전기 생성",
+  "AnnotatedMapChance": "주석 지도 확률",
+  "CharacterFreePoints": "캐릭터 무료 포인트",
+  "ConstructionBonusPoints": "건설 보너스 포인트",
+  "NightDarkness": "밤 어두움",
+  "NightLength": "밤 길이",
+  "BoneFracture": "골절",
+  "InjurySeverity": "부상 심각도",
+  "HoursForCorpseRemoval": "시체 제거 시간",
+  "DecayingCorpseHealthImpact": "부패 시체 건강 영향",
+  "ZombieHealthImpact": "좀비 건강 영향",
+  "BloodLevel": "혈액 수준",
+  "ClothingDegradation": "의류 열화",
+  "FireSpread": "화재 확산",
+  "DaysForRottenFoodRemoval": "부패 음식 제거 일수",
+  "AllowExteriorGenerator": "야외 발전기 허용",
+  "MaxFogIntensity": "최대 안개 강도",
+  "MaxRainFxIntensity": "최대 비 효과 강도",
+  "EnableSnowOnGround": "지면 눈 활성화",
+  "AttackBlockMovements": "공격이 이동을 차단",
+  "SurvivorHouseChance": "생존자 집 확률",
+  "VehicleStoryChance": "차량 스토리 확률",
+  "ZoneStoryChance": "구역 스토리 확률",
+  "AllClothesUnlocked": "모든 의류 잠금 해제",
+  "EnableTaintedWaterText": "오염된 물 텍스트 활성화",
+  "EnableVehicles": "차량 활성화",
+  "CarSpawnRate": "차량 생성률",
+  "ZombieAttractionMultiplier": "좀비 유인 배율",
+  "VehicleEasyUse": "차량 쉬운 사용",
+  "InitialGas": "초기 연료",
+  "FuelStationGasInfinite": "주유소 연료 무한",
+  "FuelStationGasMin": "주유소 연료 최소",
+  "FuelStationGasMax": "주유소 연료 최대",
+  "FuelStationGasEmptyChance": "주유소 연료 없음 확률",
+  "LockedCar": "잠긴 차량",
+  "CarGasConsumption": "차량 연료 소비",
+  "CarGeneralCondition": "차량 일반 상태",
+  "CarDamageOnImpact": "충돌 시 차량 손상",
+  "DamageToPlayerFromHitByACar": "차량 충돌로 인한 플레이어 피해",
+  "TrafficJam": "교통 체증",
+  "CarAlarm": "차량 경보",
+  "PlayerDamageFromCrash": "충돌로 인한 플레이어 피해",
+  "SirenShutoffHours": "사이렌 종료 시간",
+  "ChanceHasGas": "연료 보유 확률",
+  "RecentlySurvivorVehicles": "최근 생존자 차량",
+  "MultiHitZombies": "다중 공격 좀비",
+  "RearVulnerability": "후면 취약성",
+  "SirenEffectsZombies": "사이렌이 좀비에 영향",
+  "AnimalStatsModifier": "동물 능력치 배율",
+  "AnimalMetaStatsModifier": "동물 메타 능력치 배율",
+  "AnimalPregnancyTime": "동물 임신 시간",
+  "AnimalAgeModifier": "동물 나이 배율",
+  "AnimalMilkIncModifier": "동물 우유 증가 배율",
+  "AnimalWoolIncModifier": "동물 양털 증가 배율",
+  "AnimalRanchChance": "동물 목장 확률",
+  "AnimalGrassRegrowTime": "동물 풀 재생 시간",
+  "AnimalMetaPredator": "동물 메타 포식자",
+  "AnimalMatingSeason": "동물 번식기",
+  "AnimalEggHatch": "동물 알 부화",
+  "AnimalSoundAttractZombies": "동물 소리가 좀비를 유인",
+  "AnimalTrackChance": "동물 발자국 확률",
+  "AnimalPathChance": "동물 길 확률",
+  "MaximumRatIndex": "최대 쥐 지수",
+  "DaysUntilMaximumRatIndex": "최대 쥐 지수까지 일수",
+  "MetaKnowledge": "메타 지식",
+  "SeeNotLearntRecipe": "배우지 않은 레시피 표시",
+  "MaximumLootedBuildingRooms": "최대 약탈된 건물 방 수",
+  "EnablePoisoning": "중독 활성화",
+  "MaggotSpawn": "구더기 생성",
+  "LightBulbLifespan": "전구 수명",
+  "FishAbundance": "물고기 풍부도",
+  "LevelForMediaXPCutoff": "미디어 XP 컷오프 레벨",
+  "LevelForDismantleXPCutoff": "해체 XP 컷오프 레벨",
+  "BloodSplatLifespanDays": "혈흔 수명 일수",
+  "LiteratureCooldown": "서적 쿨다운",
+  "NegativeTraitsPenalty": "부정적 특성 패널티",
+  "MinutesPerPage": "페이지당 분",
+  "KillInsideCrops": "작물 내부에서 처치",
+  "PlantGrowingSeasons": "식물 성장 계절",
+  "PlaceDirtAboveground": "지상에 흙 배치",
+  "FarmingSpeedNew": "새 농업 속도",
+  "FarmingAmountNew": "새 농업 양",
+  "MaximumLooted": "최대 약탈량",
+  "DaysUntilMaximumLooted": "최대 약탈량까지 일수",
+  "RuralLooted": "농촌 약탈량",
+  "MaximumDiminishedLoot": "최대 감소 전리품",
+  "DaysUntilMaximumDiminishedLoot": "최대 감소 전리품까지 일수",
+  "MuscleStrainFactor": "근육 부담 계수",
+  "DiscomfortFactor": "불편 계수",
+  "WoundInfectionFactor": "상처 감염 계수",
+  "NoBlackClothes": "검은 옷 없음",
+  "EasyClimbing": "쉬운 등반",
+  "MaximumFireFuelHours": "최대 화재 연료 시간",
+  "FirearmUseDamageChance": "총기 사용 손상 확률",
+  "FirearmNoiseMultiplier": "총기 소음 배율",
+  "FirearmJamMultiplier": "총기 걸림 배율",
+  "FirearmMoodleMultiplier": "총기 무들 배율",
+  "FirearmWeatherMultiplier": "총기 날씨 배율",
+  "FirearmHeadGearEffect": "총기 헤드기어 효과",
+  "ClayLakeChance": "점토 호수 확률",
+  "ClayRiverChance": "점토 강 확률",
+  "GeneratorTileRange": "발전기 타일 범위",
+  "GeneratorVerticalPowerRange": "발전기 수직 전력 범위",
+  "Basement": "지하실",
+  "SpawnFrequency": "생성 빈도",
+  "Map": "지도",
+  "AllowMiniMap": "미니맵 허용",
+  "AllowWorldMap": "월드맵 허용",
+  "MapAllKnown": "지도 전체 공개",
+  "MapNeedsLight": "지도에 빛 필요",
+  "ZombieLore": "좀비 설정",
+  "Speed": "속도",
+  "SprinterPercentage": "스프린터 비율",
+  "Strength": "힘",
+  "Toughness": "강인함",
+  "Transmission": "감염 전파",
+  "Mortality": "치사율",
+  "Reanimate": "재애니메이션",
+  "Cognition": "인지",
+  "CrawlUnderVehicle": "차량 아래 기어가기",
+  "Memory": "기억",
+  "Sight": "시야",
+  "Hearing": "청각",
+  "SpottedLogic": "발견 로직",
+  "ThumpNoChasing": "추격 없이 두드림",
+  "ThumpOnConstruction": "건물 두드림",
+  "ActiveOnly": "활성만",
+  "TriggerHouseAlarm": "집 경보 트리거",
+  "ZombiesDragDown": "좀비가 끌어내림",
+  "ZombiesCrawlersDragDown": "기어다니는 좀비가 끌어내림",
+  "ZombiesFenceLunge": "좀비 울타리 돌진",
+  "ZombiesArmorFactor": "좀비 방어 계수",
+  "ZombiesMaxDefense": "좀비 최대 방어",
+  "ChanceOfAttachedWeapon": "부착 무기 확률",
+  "ZombiesFallDamage": "좀비 낙하 피해",
+  "DisableFakeDead": "가짜 죽음 비활성화",
+  "PlayerSpawnZombieRemoval": "플레이어 생성 시 좀비 제거",
+  "FenceThumpersRequired": "울타리 두드림 필요",
+  "FenceDamageMultiplier": "울타리 피해 배율",
+  "ZombieConfig": "좀비 설정",
+  "PopulationMultiplier": "인구 배율",
+  "PopulationStartMultiplier": "인구 시작 배율",
+  "PopulationPeakMultiplier": "인구 최고 배율",
+  "PopulationPeakDay": "인구 최고일",
+  "RespawnHours": "리스폰 시간",
+  "RespawnUnseenHours": "미노출 리스폰 시간",
+  "RespawnMultiplier": "리스폰 배율",
+  "RedistributeHours": "재분배 시간",
+  "FollowSoundDistance": "소리 추적 거리",
+  "RallyGroupSize": "집결 그룹 크기",
+  "RallyGroupSizeVariance": "집결 그룹 크기 분산",
+  "RallyTravelDistance": "집결 이동 거리",
+  "RallyGroupSeparation": "집결 그룹 분리",
+  "RallyGroupRadius": "집결 그룹 반경",
+  "ZombiesCountBeforeDelete": "삭제 전 좀비 수",
+  "MultiplierConfig": "배율 설정",
+  "Global": "전역",
+  "GlobalToggle": "전역 토글",
+  "Fitness": "체력",
+  "Sprinting": "스프린트",
+  "Lightfoot": "가벼운 발걸음",
+  "Nimble": "민첩",
+  "Sneak": "은신",
+  "Axe": "도끼",
+  "Blunt": "둔기",
+  "SmallBlunt": "작은 둔기",
+  "LongBlade": "긴 칼날",
+  "SmallBlade": "짧은 칼날",
+  "Spear": "창",
+  "Maintenance": "정비",
+  "Woodwork": "목공",
+  "Cooking": "요리",
+  "Doctor": "의술",
+  "Electricity": "전기",
+  "MetalWelding": "금속 용접",
+  "Mechanics": "기계",
+  "Tailoring": "재봉",
+  "Aiming": "조준",
+  "Reloading": "재장전",
+  "Fishing": "낚시",
+  "Trapping": "덫",
+  "PlantScavenging": "식물 채집",
+  "FlintKnapping": "부싯돌 가공",
+  "Masonry": "석공",
+  "Pottery": "도예",
+  "Carving": "조각",
+  "Husbandry": "목축",
+  "Tracking": "추적",
+  "Blacksmith": "대장장이",
+  "Butchering": "도살",
+  "Glassmaking": "유리 제작",
+  "comments": {
+    "Zombies": [
+      "이를 변경하면 고급 좀비 옵션의 \"인구 승수\"도 설정됩니다. ",
+      "1 = 미친듯이 높음",
+      "2 = 많이 높음",
+      "3 = 높음",
+      "4 = 보통",
+      "5 = 낮음",
+      "6 = 없음"
+    ],
+    "Distribution": [
+      "좀비가 맵 전체에 분포되는 방식. ",
+      "1 = 도심지 중점",
+      "2 = 골고루 분포"
+    ],
+    "ZombieVoronoiNoise": [
+      "좀비 배포에 일부 무작위화가 적용되는지 여부를 제어합니다."
+    ],
+    "ZombieRespawn": [
+      "얼마나 자주 새로운 좀비가 재생성되는지 정합니다. 기본값 = 보통",
+      "1 = 높음",
+      "2 = 보통",
+      "3 = 낮음",
+      "4 = 없음"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "있었다 = 1시간 30분",
+      "1 = 15 분",
+      "2 = 30 분",
+      "3 = 1 시간",
+      "4 = 1시간 30분",
+      "5 = 2 시간",
+      "6 = 3 시간",
+      "7 = 4 시간",
+      "8 = 5 시간",
+      "9 = 6 시간",
+      "10 = 7 시간",
+      "11 = 8 시간",
+      "12 = 9 시간",
+      "13 = 10 시간",
+      "14 = 11 시간",
+      "15 = 12 시간",
+      "16 = 13 시간",
+      "17 = 14 시간",
+      "18 = 15 시간",
+      "19 = 16 시간",
+      "20 = 17 시간",
+      "21 = 18 시간",
+      "22 = 19 시간",
+      "23 = 20 시간",
+      "24 = 21 시간",
+      "25 = 22 시간",
+      "26 = 23 시간",
+      "27 = 실시간"
+    ],
+    "StartMonth": [
+      "게임이 시작되는 달입니다. ",
+      "1 = 1월",
+      "2 = 2월",
+      "3 = 3월",
+      "4 = 4월",
+      "5 = 5월",
+      "6 = 6월",
+      "7 = 7월",
+      "8 = 8월",
+      "9 = 9월",
+      "10 = 10월",
+      "11 = 11월",
+      "12 = 12월"
+    ],
+    "StartDay": [
+      "게임이 시작되는 달의 날짜입니다."
+    ],
+    "StartTime": [
+      "게임이 시작되는 시간입니다. ",
+      "1 = 오전 7시",
+      "2 = 오전 9 시",
+      "3 = 낮 12 시",
+      "4 = 오후 2 시",
+      "5 = 오후 5 시",
+      "6 = 오후 9 시",
+      "7 = 밤 12 시",
+      "8 = 오전 2 시",
+      "9 = 오전 5 시"
+    ],
+    "DayNightCycle": [
+      "하루 중 시간이 자연스럽게 바뀌는지, 아니면 항상 낮/밤인지 여부. ",
+      "1 = 보통",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "날씨가 변하는지 아니면 단일 상태로 유지되는지 여부. ",
+      "1 = 보통",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "안개가 자연적으로 발생하는지, 전혀 발생하지 않는지, 아니면 항상 존재하는지 여부입니다. ",
+      "1 = 보통",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "기본 시작일(1993년 7월 9일) 이후 배관 설비(예: 싱크대)가 무한한 물 공급원이 되지 않는 기간입니다. ",
+      "1 = 즉시",
+      "2 = 0 - 30 일 사이",
+      "3 = 0 - 2 개월 사이",
+      "4 = 0 - 6 개월 사이",
+      "5 = 0 - 1 년 사이",
+      "6 = 0 - 5 년 사이",
+      "7 = 2 - 6 개월 사이",
+      "8 = 6 - 12 개월 사이",
+      "9 = 없음"
+    ],
+    "ElecShut": [
+      "기본 시작일(1993년 7월 9일) 이후 세계의 전기가 영원히 꺼지는 기간입니다. ",
+      "1 = 즉시",
+      "2 = 0 - 30 일 사이",
+      "3 = 0 - 2 개월 사이",
+      "4 = 0 - 6 개월 사이",
+      "5 = 0 - 1 년 사이",
+      "6 = 0 - 5 년 사이",
+      "7 = 2 - 6 개월 사이",
+      "8 = 6 - 12 개월 사이",
+      "9 = 없음"
+    ],
+    "AlarmDecay": [
+      "전원이 꺼진 후 알람 배터리가 얼마나 오래 지속될 수 있습니까? ",
+      "1 = 즉시",
+      "2 = 0 - 30 일 사이",
+      "3 = 0 - 2 개월 사이",
+      "4 = 0 - 6 개월 사이",
+      "5 = 0 - 1 년 사이",
+      "6 = 0 - 5 년 사이"
+    ],
+    "WaterShutModifier": [
+      "기본 시작일(1993년 7월 9일) 이후 배관 설비(예: 싱크대)가 무한한 물 공급원이 되지 않는 기간입니다. "
+    ],
+    "ElecShutModifier": [
+      "기본 시작일(1993년 7월 9일) 이후 세계의 전기가 영원히 꺼지는 기간입니다. "
+    ],
+    "AlarmDecayModifier": [
+      "전원이 꺼진 후 알람 배터리가 얼마나 오래 지속될 수 있습니까? "
+    ],
+    "FoodLootNew": [
+      "부패하거나 상할 수 있는 모든 음식. "
+    ],
+    "LiteratureLootNew": [
+      "읽을 수 있는 모든 항목에는 전단지가 포함되어 있습니다. 최소: 0.00 최대: 4.00 있어요: 0.60"
+    ],
+    "MedicalLootNew": [
+      "약, 붕대 및 응급 처치 도구. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. 최소: 0.00 최대: 4.00 기본값: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "통조림 및 건조 식품, 음료. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. 최소: 0.00 최대: 4.00 기본값: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. 최소: 0.00 최대: 4.00 기본값: 0.60"
+    ],
+    "AmmoLootNew": [
+      "느슨한 탄약, 상자 및 잡지. "
+    ],
+    "MechanicsLootNew": [
+      "차량 부품과 이를 설치하는 데 필요한 도구입니다. "
+    ],
+    "OtherLootNew": [
+      "그 밖의 모든 것. "
+    ],
+    "ClothingLootNew": [
+      "용기가 아닌 모든 착용 가능한 물품. "
+    ],
+    "ContainerLootNew": [
+      "배낭 및 기타 착용 가능/장착 가능한 용기. "
+    ],
+    "KeyLootNew": [
+      "건물/자동차 열쇠, 열쇠고리, 자물쇠. "
+    ],
+    "MediaLootNew": [
+      "VHS 테이프와 CD. "
+    ],
+    "MementoLootNew": [
+      "Spiffo 품목, 봉제인형 및 기타 수집 가능한 기념품 품목. "
+    ],
+    "CookwareLootNew": [
+      "무기가 될 수 있는 물건(예: 칼)을 포함하여 요리에 사용되는 품목입니다. "
+    ],
+    "MaterialLootNew": [
+      "제작이나 건축의 재료로 사용되는 아이템과 무기입니다. "
+    ],
+    "FarmingLootNew": [
+      "씨앗, 흙손, 삽 등 동식물 농업에 모두 사용되는 품목 및 무기입니다. "
+    ],
+    "ToolLootNew": [
+      "도구이지만 기계나 농업 등 다른 범주에 속하지 않는 아이템과 무기입니다. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] 이 항목은 변경하지 않는 것이 좋습니다. "
+    ],
+    "LootItemRemovalList": [
+      "일반 전리품으로 생성되지 않는 항목 유형을 쉼표로 구분한 목록입니다."
+    ],
+    "RemoveStoryLoot": [
+      "활성화하면 전리품 제거 목록에 있는 항목이나 희귀도가 '없음'으로 설정된 항목은 무작위 세계 스토리에 생성되지 않습니다."
+    ],
+    "RemoveZombieLoot": [
+      "활성화하면 전리품 제거 목록에 있는 아이템이나 희귀도가 '없음'으로 설정된 아이템은 좀비가 착용하거나 부착한 아이템이 생성되지 않습니다."
+    ],
+    "ZombiePopLootEffect": [
+      "0보다 크면 주변 좀비 수에 비례하여 전리품 생성량이 증가하고 효과에 이 숫자가 곱해집니다. "
+    ],
+    "InsaneLootFactor": [
+      "최소: 0.00 최대: 0.20 기본값: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "최소: 0.05 최대: 0.60 기본값: 0.20"
+    ],
+    "RareLootFactor": [
+      "최소: 0.20 최대: 1.00 기본값: 0.60"
+    ],
+    "NormalLootFactor": [
+      "최소: 0.60 최대: 2.00 기본값: 1.00"
+    ],
+    "CommonLootFactor": [
+      "최소: 1.00 최대: 3.00 기본값: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "최소: 2.00 최대: 4.00 기본값: 3.00"
+    ],
+    "Temperature": [
+      "세계 온도를 정합니다. 기본값 = 보통",
+      "1 = 매우 추움",
+      "2 = 추움",
+      "3 = 보통",
+      "4 = 더움",
+      "5 = 매우 더움"
+    ],
+    "Rain": [
+      "비가 내리는 빈도를 정합니다. 기본값 = 보통",
+      "1 = 매우 건조함",
+      "2 = 건조함",
+      "3 = 보통",
+      "4 = 비가 많이 옴",
+      "5 = 매우 비가 많이 옴"
+    ],
+    "ErosionSpeed": [
+      "침식 시스템(덩굴, 긴 풀, 새로운 나무 등을 세계에 추가하는)이 100% 성장에 도달할 때까지의 일수입니다. ",
+      "1 = 매우 빠름 (20일)",
+      "2 = 빠름 (50일)",
+      "3 = 보통 (100일)",
+      "4 = 느림 (200일)",
+      "5 = 매우 느림(500일)"
+    ],
+    "ErosionDays": [
+      "사용자 정의 침식 속도의 경우. "
+    ],
+    "Farming": [
+      "농업 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "CompostTime": [
+      "퇴비통에서 음식이 분해되는 데 걸리는 시간을 정합니다. 기본값 = 2 주일",
+      "1 = 1 주일",
+      "2 = 2 주일",
+      "3 = 3 주일",
+      "4 = 4 주일",
+      "5 = 6 주일",
+      "6 = 8 주일",
+      "7 = 10 주일",
+      "8 = 12 주일"
+    ],
+    "StatsDecrease": [
+      "캐릭터가 얼마나 빨리 배고픔, 갈증, 피로가 생기는지 설정합니다. 기본값 = 보통",
+      "1 = 매우 빠름",
+      "2 = 빠름",
+      "3 = 보통",
+      "4 = 느림",
+      "5 = 매우 느림"
+    ],
+    "NatureAbundance": [
+      "낚시, 채집의 성공율 및 채집량에 영향을 줍니다. 기본값 = 보통",
+      "1 = 매우 부족함",
+      "2 = 부족함",
+      "3 = 보통",
+      "4 = 많음",
+      "5 = 매우 많음"
+    ],
+    "Alarm": [
+      "플레이어가 새 집에 침입할 때 집 경보를 활성화할 가능성은 얼마나 됩니까? ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "LockedHouses": [
+      "문과 창문이 잠겨 있을 확률을 정합니다. 기본값 = 매우 많음",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "StarterKit": [
+      "가방과 몇 가지 유용한 도구소지하고 시작합니다"
+    ],
+    "Nutrition": [
+      "음식의 영양가는 캐릭터의 건강상태에 영향을 미칩니다."
+    ],
+    "FoodRotSpeed": [
+      "냉장고 안이나 밖에 있는 음식의 부패 속도를 정합니다. 기본값 = 보통",
+      "1 = 매우 빠름",
+      "2 = 빠름",
+      "3 = 보통",
+      "4 = 느림",
+      "5 = 매우 느림"
+    ],
+    "FridgeFactor": [
+      "냉장고의 효율을 설정하여 음식이 신선한 상태를 유지하는 시간을 조절합니다. 기본값 = 보통",
+      "1 = 매우 낮음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "설정한 시간이 0보다 높을 경우, 설정한 시간 내에 방문한 지역에서는 물건이 재생성되지 않습니다. 최소: 0 최대: 2147483647 기본값: 0"
+    ],
+    "HoursForLootRespawn": [
+      "0보다 크면 X시간 후에 전 세계의 마을과 트레일러 공원에 있는 모든 컨테이너가 전리품을 다시 생성합니다. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "이 설정보다 크거나 같은 항목 수가 포함된 컨테이너는 다시 생성되지 않습니다. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "플레이어가 바리케이드를 쳤거나 건설한 건물에서는 아이템이 다시 생성되지 않습니다."
+    ],
+    "WorldItemRemovalList": [
+      "HoursForWorldItemRemoval 시간 이후에 제거될 항목 유형의 쉼표로 구분된 목록입니다."
+    ],
+    "HoursForWorldItemRemoval": [
+      "항목이 땅에 떨어진 후 제거되기 전까지 경과된 시간입니다.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "true인 경우 WorldItemRemovalList에 *아님* 모든 항목이 제거됩니다."
+    ],
+    "TimeSinceApo": [
+      "세상의 종말이 언제부터 시작될 것인가. ",
+      "1 = 재앙 직 후",
+      "2 = 재앙부터 1개월 뒤",
+      "3 = 재앙부터 2개월 뒤",
+      "4 = 재앙부터 3개월 뒤",
+      "5 = 재앙부터 4개월 뒤",
+      "6 = 재앙부터 5개월 뒤",
+      "7 = 재앙부터 6개월 뒤",
+      "8 = 재앙부터 7개월 뒤",
+      "9 = 재앙부터 8개월 뒤",
+      "10 = 재앙부터 9개월 뒤",
+      "11 = 재앙부터 10개월 뒤",
+      "12 = 재앙부터 11개월 뒤",
+      "13 = 재앙부터 12개월 뒤"
+    ],
+    "PlantResilience": [
+      "이 설정은 농작물이 물을 하루에 얼마나 소비하는지와 질병을 방지할 수 있는 능력에 영향을 미칩니다. 기본값 = 보통",
+      "1 = 많이 높음",
+      "2 = 높음",
+      "3 = 보통",
+      "4 = 낮음",
+      "5 = 매우 낮음"
+    ],
+    "PlantAbundance": [
+      "농작물의 수확량을 조정합니다. 기본값 = 보통",
+      "1 = 매우 부족함",
+      "2 = 부족함",
+      "3 = 보통",
+      "4 = 많음",
+      "5 = 매우 많음"
+    ],
+    "EndRegen": [
+      "작업으로 인한 피로 회복 속도를 정합니다. 기본값 = 보통",
+      "1 = 매우 빠름",
+      "2 = 빠름",
+      "3 = 보통",
+      "4 = 느림",
+      "5 = 매우 느림"
+    ],
+    "Helicopter": [
+      "헬리콥터가 지나가는 출현 빈도를 설정합니다. 기본값 = 1번만 발생",
+      "1 = 없음",
+      "2 = 1번만 발생",
+      "3 = 보통",
+      "4 = 많음"
+    ],
+    "MetaEvent": [
+      "총소리등 주변에서 임의로 일어나는 요란한 소리의 빈도를 정합니다. 기본값 = 보통",
+      "1 = 없음",
+      "2 = 보통",
+      "3 = 많음"
+    ],
+    "SleepingEvent": [
+      "밤에 플레이어가 잠자는 도중 발생하는 요란한 소리의 빈도를 정합니다. 기본값 = 없음",
+      "1 = 없음",
+      "2 = 보통",
+      "3 = 많음"
+    ],
+    "GeneratorFuelConsumption": [
+      "발전기 연료 소비량을 설정 합니다. 0.0에서는 연료를 소비 하지 않습니다. 최소: 0.00 최대: 100.00 기본값: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "게임 내 발전기가 생성될 가능성 증가/감소 기본값 = 적음",
+      "1 = 없음",
+      "2 = 미친듯이 적음",
+      "3 = 매우 적음",
+      "4 = 적음",
+      "5 = 보통",
+      "6 = 많음",
+      "7 = 많음"
+    ],
+    "AnnotatedMapChance": [
+      "메모가 되어있는 지도에는 생존자가 적어둔, 비밀의 은신처나 물건을 숨겨진 장소가 적혀 있습니다. 기본값 = 보통",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "CharacterFreePoints": [
+      "캐릭터의 특성 포인트를 임의로 늘릴 수 있습니다. 최소: -100 최대: 100 기본값: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "플레이어가 만든 구조물에 추가 체력을 부여하여 좀비 피해에 대한 저항력을 높입니다. ",
+      "1 = 매우 낮음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음"
+    ],
+    "NightDarkness": [
+      "야간에 주변 광원 정도를 정합니다 기본값 = 보통",
+      "1 = 암흑",
+      "2 = 어두움",
+      "3 = 보통",
+      "4 = 밝음"
+    ],
+    "NightLength": [
+      "밤 시간 길이를 정합니다. 기본값 = 보통",
+      "1 = 항상 밤",
+      "2 = 장시간",
+      "3 = 보통",
+      "4 = 짧음",
+      "5 = 항상 낮"
+    ],
+    "BoneFracture": [
+      "플레이어가 충격 받거나, 좀비에게 공격 받거나, 추락으로 인한 부상을 입었을 때 팔다리가 부러지게 합니다."
+    ],
+    "InjurySeverity": [
+      "플레이어의 부상이 신체에 영향을 미치는 정도와 치유 시간을 설정합니다. 기본값 = 보통",
+      "1 = 낮음",
+      "2 = 보통",
+      "3 = 높음"
+    ],
+    "HoursForCorpseRemoval": [
+      "죽은 좀비 시체가 세상에서 사라지기까지 몇 시간이 걸립니다.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "시체가 캐릭터에 미치는 질병이나 슬픔을 유발시키는 피해의 영향을 설정합니다. 기본값 = 보통",
+      "1 = 없음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 미친듯이 높음"
+    ],
+    "ZombieHealthImpact": [
+      "근처의 \"살아있는\" 좀비가 플레이어의 건강과 감정에 동일한 영향을 미치는지 여부."
+    ],
+    "BloodLevel": [
+      "바닥과 벽에 튀는 피의 양을 정합니다. 기본값 = 보통",
+      "1 = 없음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 엄청많은 핏자국"
+    ],
+    "ClothingDegradation": [
+      "옷이 헤지고, 더러워지고, 피투성이가 되는지 설정합니다. 기본값 = 보통",
+      "1 = 없음",
+      "2 = 느림",
+      "3 = 보통",
+      "4 = 빠름"
+    ],
+    "FireSpread": [
+      "시작 시 화재가 확산되는 경우."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "썩은 음식이 지도에서 제거되기 전까지의 게임 내 일수입니다.  "
+    ],
+    "AllowExteriorGenerator": [
+      "활성화하면 생성기가 외부 타일에서 작동합니다.  "
+    ],
+    "MaxFogIntensity": [
+      "안개의 최대 강도를 정합니다. 기본값 = 보통",
+      "1 = 보통",
+      "2 = 적당히",
+      "3 = 낮음",
+      "4 = 없음"
+    ],
+    "MaxRainFxIntensity": [
+      "비가 내리는 최대 강도를 정합니다. 기본값 = 보통",
+      "1 = 보통",
+      "2 = 적당히",
+      "3 = 낮음"
+    ],
+    "EnableSnowOnGround": [
+      "눈이 땅에 쌓일 경우.  "
+    ],
+    "AttackBlockMovements": [
+      "비활성화시 근접 공격 중에는 걸을 수 없게 됩니다."
+    ],
+    "SurvivorHouseChance": [
+      "지도에서 무작위 건물을 찾을 가능성이 있습니다(예: 불타버린 집, 전리품 보관함 또는 시체가 들어 있는 건물). ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상 시도"
+    ],
+    "VehicleStoryChance": [
+      "도로 이야기(예: 경찰 장애물)가 나타날 확률입니다. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상 시도"
+    ],
+    "ZoneStoryChance": [
+      "지도 구역(예: 숲 속의 캠프장)에 특정한 이야기가 생성될 확률입니다. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상 시도"
+    ],
+    "AllClothesUnlocked": [
+      "캐릭터를 맞춤 설정할 때 게임 내 모든 의상 중에서 선택할 수 있습니다."
+    ],
+    "EnableTaintedWaterText": [
+      "비활성화된 경우 오염된 물의 경고 표시하지 않습니다."
+    ],
+    "EnableVehicles": [
+      "활성화시 자동차가 나오게 됩니다."
+    ],
+    "CarSpawnRate": [
+      "세계에 자동차가 얼마나 발견되는지 정합니다. 기본값 = 낮음",
+      "1 = 없음",
+      "2 = 매우 낮음",
+      "3 = 낮음",
+      "4 = 보통",
+      "5 = 높음"
+    ],
+    "ZombieAttractionMultiplier": [
+      "자동차 엔진의 일반적인 소음 크기를 설정합니다. 최소: 0.00 최대: 100.00 기본값: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "활성화하면 모든 차량의 문이 열려있고, 운전이 가능하고, 연료는 가득 차있고, 엔진 소리가 낮아집니다."
+    ],
+    "InitialGas": [
+      "발견된 차량의 연료가 얼마나 들어있을지 설정합니다. 기본값 = 낮음",
+      "1 = 매우 낮음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음",
+      "6 = 가득참"
+    ],
+    "FuelStationGasInfinite": [
+      "활성화하면 가스 펌프의 연료가 절대 부족하지 않습니다."
+    ],
+    "FuelStationGasMin": [
+      "주유 펌프에서 스폰될 수 있는 휘발유의 최소량입니다. "
+    ],
+    "FuelStationGasMax": [
+      "주유 펌프에서 생성될 수 있는 휘발유의 최대량입니다. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "개별 가스 펌프에 처음에 연료가 없을 확률(%)입니다. "
+    ],
+    "LockedCar": [
+      "자동차가 잠길 가능성은 얼마나 될까요?",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "CarGasConsumption": [
+      "자동차의 연료 소비하는 정도를 설정합니다. 최소: 0.00 최대: 100.00 기본값: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "새 차가 나타날 확률 기본값 = 낮음",
+      "1 = 매우 낮음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음"
+    ],
+    "CarDamageOnImpact": [
+      "차량이 손상될 때 받는 차체에 대한 충격량을 설정합니다. 기본값 = 보통",
+      "1 = 매우 낮음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "차량이 플레이어에 충돌했을 때 주는 충격량을 설정합니다. 기본값 = 없음",
+      "1 = 없음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음",
+      "5 = 많이 높음"
+    ],
+    "TrafficJam": [
+      "파손된 차량으로 인한 교통 정체가 주요 도로에 나타날 경우."
+    ],
+    "CarAlarm": [
+      "경보가 울리는 차량을 발견하는 빈도를 정합니다. 기본값 = 매우 적음",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "PlayerDamageFromCrash": [
+      "차량사고로 플레이어 받는 부상을 키거나 끕니다."
+    ],
+    "SirenShutoffHours": [
+      "사이렌 소리가 더 이상 재생되지 않을 때까지의 시간. \n0.0은 배터리가 다 될 때까지 재생하는 것을 의미합니다. 최소: 0.00 최대: 168.00 기본값: 0.00"
+    ],
+    "ChanceHasGas": [
+      "연료가 들어있는 차량이 발견 확률을 설정합니다. 기본값 = 낮음",
+      "1 = 낮음",
+      "2 = 보통",
+      "3 = 높음"
+    ],
+    "RecentlySurvivorVehicles": [
+      "플레이어가 Knox 감염 이후 관리된 자동차를 발견할 수 있는지 여부. ",
+      "1 = 없음",
+      "2 = 낮음",
+      "3 = 보통",
+      "4 = 높음"
+    ],
+    "MultiHitZombies": [
+      "특정 근접 무기가 광범위공격이 활성화 되면 한번에 여러좀비를 공격 할 수 있습니다."
+    ],
+    "RearVulnerability": [
+      "좀비가 뒤에서 공격했을 때 물릴 가능성 기본값 = 높음",
+      "1 = 낮음",
+      "2 = 보통",
+      "3 = 높음"
+    ],
+    "SirenEffectsZombies": [
+      "좀비가 차량 사이렌 소리를 향해 향할 경우."
+    ],
+    "AnimalStatsModifier": [
+      "동물의 능력치(배고픔, 갈증 등)가 감소하는 속도입니다. ",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalMetaStatsModifier": [
+      "메타에 있는 동안 동물의 능력치(배고픔, 갈증 등)가 감소하는 속도입니다. ",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalPregnancyTime": [
+      "출산 전 동물의 임신 기간은 얼마나 됩니까? ",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalAgeModifier": [
+      "동물이 노화되는 속도. ",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalMilkIncModifier": [
+      "기본값 = 빠름",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalWoolIncModifier": [
+      "기본값 = 빠름",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalRanchChance": [
+      "농장에서 동물을 찾을 확률. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상"
+    ],
+    "AnimalGrassRegrowTime": [
+      "동물이 먹거나 플레이어가 잘라낸 잔디가 다시 자라나는 시간입니다. "
+    ],
+    "AnimalMetaPredator": [
+      "밤에 우리의 문이 열려 있으면 메타(즉, 실제로 게임 내에서 보이지 않는) 여우가 닭을 공격할 수 있습니다."
+    ],
+    "AnimalMatingSeason": [
+      "짝짓기 계절이 있는 동물이라면 이를 존중할 것입니다.  "
+    ],
+    "AnimalEggHatch": [
+      "새끼 동물이 알에서 부화하기까지의 시간입니다. ",
+      "1 = Ultra Fast",
+      "2 = 매우 빠름",
+      "3 = 빠름",
+      "4 = 보통",
+      "5 = 느림",
+      "6 = 매우 느림"
+    ],
+    "AnimalSoundAttractZombies": [
+      "만약 사실이라면, 동물의 울음소리는 근처의 좀비를 끌어들일 것입니다."
+    ],
+    "AnimalTrackChance": [
+      "동물이 흔적을 남길 확률. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "AnimalPathChance": [
+      "동물을 사냥할 수 있는 길을 만들 확률. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음"
+    ],
+    "MaximumRatIndex": [
+      "예를 들어 빈도와 강도. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "최대 해충 지수에 도달하는 데 걸리는 시간입니다. "
+    ],
+    "MetaKnowledge": [
+      "미디어를 완전히 보거나 읽지 않은 경우 이 설정에 따라 해당 미디어가 완전히 표시되는지, \"???\"로 표시되는지 또는 완전히 숨겨지는지 결정됩니다. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "true인 경우, 아직 배우지 않았더라도 스테이션으로 수행할 수 있는 모든 레시피를 볼 수 있습니다."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "건물에 이 양보다 많은 방이 있으면 약탈되지 않습니다. "
+    ],
+    "EnablePoisoning": [
+      "독성 음식의 중독을 활성화할지 선택합니다. 기본값 = 있음",
+      "1 = 있음",
+      "2 = 없음",
+      "3 = 표백제 중독만 비활성화"
+    ],
+    "MaggotSpawn": [
+      "구더기가 시체에서 생성될 수 있는 경우. ",
+      "1 = 신체 내부 및 주변",
+      "2 = 신체 내부만",
+      "3 = 없음"
+    ],
+    "LightBulbLifespan": [
+      "값이 높을수록 전구가 깨지기 전까지 지속되는 시간이 길어집니다.  "
+    ],
+    "FishAbundance": [
+      "강과 호수에는 물고기가 풍부합니다. ",
+      "1 = 매우 부족함",
+      "2 = 부족함",
+      "3 = 보통",
+      "4 = 많음",
+      "5 = 매우 많음"
+    ],
+    "LevelForMediaXPCutoff": [
+      "기술이 이 수준 이상인 경우 TV/VHS/기타 미디어에서는 해당 기술에 대한 XP를 제공하지 않습니다. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "스킬이 이 레벨 이상일 경우, 가구를 분해해도 해당 스킬에 대한 XP가 제공되지 않습니다. "
+    ],
+    "BloodSplatLifespanDays": [
+      "오래된 혈흔이 제거되기까지의 일수입니다. "
+    ],
+    "LiteratureCooldown": [
+      "이전에 읽은 문헌 항목을 읽으면 혜택을 받을 수 있는 일수입니다. "
+    ],
+    "NegativeTraitsPenalty": [
+      "여러 부정적인 특성을 선택하여 제공되는 보너스 특성 포인트에 대한 수익이 감소하는 경우. ",
+      "1 = 없음",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 첫 번째 이후 선택된 모든 부정적인 특성에 대해 1점 페널티"
+    ],
+    "MinutesPerPage": [
+      "스킬 북의 한 페이지를 읽는 데 걸리는 게임 내 시간(분)입니다. "
+    ],
+    "KillInsideCrops": [
+      "활성화하면 건물 내부에서 자라는 작물과 허브가 죽습니다. "
+    ],
+    "PlantGrowingSeasons": [
+      "활성화되면 식물의 성장은 계절의 영향을 받습니다."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] 이 항목은 변경하지 않는 것이 좋습니다. "
+    ],
+    "FarmingSpeedNew": [
+      "식물의 성장 속도를 정합니다. 최소: 0.10 최대: 100.00 기본값: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "수확된 작물이 풍부합니다. "
+    ],
+    "MaximumLooted": [
+      "건물이 발견되면 이미 약탈당할 가능성이 있습니다. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "최대 약탈 건물 확률에 도달하는 데 걸리는 시간입니다. "
+    ],
+    "RuralLooted": [
+      "시골 건물이 발견되면 이미 약탈당할 가능성이 있습니다. "
+    ],
+    "MaximumDiminishedLoot": [
+      "최대 감소 전리품 남은 일수에 도달하면 생성되지 않는 최대 전리품입니다. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "최대 감소 전리품 비율에 도달하는 데 걸리는 시간입니다. "
+    ],
+    "MuscleStrainFactor": [
+      "무기를 휘두르거나 무거운 짐을 운반할 때 근육 긴장을 가할 때 승수 역할을 합니다. "
+    ],
+    "DiscomfortFactor": [
+      "착용한 아이템으로 인한 불편함을 적용할 때 승수 역할을 합니다. "
+    ],
+    "WoundInfectionFactor": [
+      "0보다 큰 피해를 입으면 심각한 상처 감염으로 인해 피해를 입을 수 있습니다. "
+    ],
+    "NoBlackClothes": [
+      "무작위 색조를 지닌 실제 의상이 실제로 검은색이 될 정도로 어둡지는 않을 것입니다."
+    ],
+    "EasyClimbing": [
+      "시트 로프를 오르거나 벽을 넘어갈 때 실패 가능성을 비활성화합니다."
+    ],
+    "MaximumFireFuelHours": [
+      "캠프파이어, 장작 난로 등에 넣을 수 있는 연료의 최대 시간 최소: 1 최대: 168 존재: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "적중 확률 메커니즘을 피해 확률 계산으로 대체합니다.  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "좀비가 총소리를 들을 수 있는 거리에 대한 배수입니다. "
+    ],
+    "FirearmJamMultiplier": [
+      "총기 방해 가능성에 대한 배수입니다. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "적중률에 대한 무들 효과의 승수입니다. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "날씨(바람, 비, 안개)가 적중 확률에 미치는 영향에 대한 배수입니다. "
+    ],
+    "FirearmHeadGearEffect": [
+      "용접 마스크와 같은 헤드기어가 적중 확률에 영향을 미치도록 활성화"
+    ],
+    "ClayLakeChance": [
+      "흙바닥을 점토바닥으로 바꿀 수 있는 기회입니다. "
+    ],
+    "ClayRiverChance": [
+      "흙바닥을 점토바닥으로 바꿀 수 있는 기회입니다. "
+    ],
+    "GeneratorTileRange": [
+      "최소: 1 최대: 100 기본값: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "발전기 위와 아래 모두에서 전기를 공급할 수 있는 레벨 수입니다. "
+    ],
+    "SpawnFrequency": [
+      "지하실이 무작위 위치에 생성되는 빈도입니다. ",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상"
+    ],
+    "AllowMiniMap": [
+      "활성화하면 미니맵 창을 사용할 수 있습니다."
+    ],
+    "AllowWorldMap": [
+      "활성화하면 세계지도에 접근할 수 있습니다."
+    ],
+    "MapAllKnown": [
+      "활성화하면 게임을 시작할 때 세계 지도가 완전히 채워집니다."
+    ],
+    "MapNeedsLight": [
+      "활성화하면 사용 가능한 광원이 없으면 지도를 읽을 수 없습니다."
+    ],
+    "Speed": [
+      "좀비 이동 속도를 정합니다. 기본값 = 무작위",
+      "1 = 달림",
+      "2 = 빠른 걸음",
+      "3 = 느린 걸음",
+      "4 = 무작위"
+    ],
+    "SprinterPercentage": [
+      "무작위 속도가 활성화되면 스프린터인 좀비의 비율을 제어합니다. "
+    ],
+    "Strength": [
+      "힘 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Toughness": [
+      "좀비 처치 난이도를 정합니다. 기본값 = 무작위",
+      "1 = 튼튼함",
+      "2 = 보통",
+      "3 = 약함",
+      "4 = 무작위"
+    ],
+    "Transmission": [
+      "좀비 바이러스가 퍼지는 방식을 정합니다. 기본값 = 혈액 + 타액",
+      "1 = 혈액 + 타액",
+      "2 = 타액으로 감염",
+      "3 = 모두 감염됨(접촉에 의한 감염)",
+      "4 = 없음"
+    ],
+    "Mortality": [
+      "감염의 발생 속도를 정합니다. 기본값 = 2-3 일",
+      "1 = 즉시",
+      "2 = 0-30 초",
+      "3 = 0-1 분",
+      "4 = 0-12 시간",
+      "5 = 2-3 일",
+      "6 = 1-2 주일",
+      "7 = 없음"
+    ],
+    "Reanimate": [
+      "죽은 후 좀비로 일어나는 시간을 정합니다. 기본값 = 0-1 분",
+      "1 = 즉시",
+      "2 = 0-30 초",
+      "3 = 0-1 분",
+      "4 = 0-12 시간",
+      "5 = 2-3 일",
+      "6 = 1-2 주일"
+    ],
+    "Cognition": [
+      "좀비의 지능 수준을 정합니다. 기본값 = 어설픈 추적",
+      "1 = 추적 + 문 사용",
+      "2 = 추적",
+      "3 = 어설픈 추적",
+      "4 = 무작위"
+    ],
+    "CrawlUnderVehicle": [
+      "차량 밑으로 기어들어가는 좀비 수를 조절합니다. 기본값 = 많음",
+      "1 = 없음",
+      "2 = 매우 적음",
+      "3 = 적음",
+      "4 = 보통",
+      "5 = 많음",
+      "6 = 매우 많음",
+      "7 = 항상"
+    ],
+    "Memory": [
+      "좀비가 플레이어를 보고 들은 후 얼마나 기억을 하는지 정합니다. 기본값 = 보통",
+      "1 = 장시간",
+      "2 = 보통",
+      "3 = 짧음",
+      "4 = 없음",
+      "5 = 무작위",
+      "6 = 정상과 없음 사이의 무작위"
+    ],
+    "Sight": [
+      "좀비들은 범위를 정합니다. ",
+      "1 = 매의 눈",
+      "2 = 보통",
+      "3 = 부족함",
+      "4 = 무작위",
+      "5 = 보통과 나쁨 사이의 무작위"
+    ],
+    "Hearing": [
+      "좀비의 심판 범위를 정합니다. ",
+      "1 = 귀신같이 들림",
+      "2 = 보통",
+      "3 = 부족함",
+      "4 = 무작위",
+      "5 = 보통과 나쁨 사이의 무작위"
+    ],
+    "SpottedLogic": [
+      "자동차 뒤의 좀비로부터 숨을 수 있고 특성과 날씨 등을 고려하는 새로운 고급 스텔스 메커니즘을 활성화합니다."
+    ],
+    "ThumpNoChasing": [
+      "좀비가 배회할 때, 플레이어의 모습이나 소리가 없어도 건축물이나 문 등 파괴할지 설정합니다."
+    ],
+    "ThumpOnConstruction": [
+      "플레이어가 제작한 건축물이나 바리케이드를 좀비가 파괴할지 설정합니다."
+    ],
+    "ActiveOnly": [
+      "좀비가 낮이나 밤에 더 \"활동적\"인지 여부.  ",
+      "1 = 둘다",
+      "2 = 야간",
+      "3 = 주간"
+    ],
+    "TriggerHouseAlarm": [
+      "좀비가 창문이나 문을 돌파했을 때 주택방범 알람이 동작하는지 설정합니다."
+    ],
+    "ZombiesDragDown": [
+      "여러 명의 공격하는 좀비가 당신을 끌어내려 죽일 수 있다면.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "플레이어 옆에 있는 크롤러 좀비가 좀비 무리에 의해 끌려가서 살해될 가능성에 기여하는 경우."
+    ],
+    "ZombiesFenceLunge": [
+      "울타리를 넘은 후 좀비가 당신에게 돌진할 기회가 있거나 당신이 너무 가까이 있으면 창문을 통해 돌진할 기회가 있는 경우."
+    ],
+    "ZombiesArmorFactor": [
+      "좀비가 착용하는 갑옷의 효과를 결정할 때 승수 역할을 합니다. "
+    ],
+    "ZombiesMaxDefense": [
+      "착용한 보호복이 좀비에게 제공할 수 있는 최대 방어율입니다. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "무작위로 부착된 무기를 가질 확률(%)입니다. "
+    ],
+    "ZombiesFallDamage": [
+      "좀비가 높은 곳에서 떨어질 때 받는 피해량입니다. "
+    ],
+    "DisableFakeDead": [
+      "일부 죽은 모습의 좀비가 다시 살아나 플레이어를 공격할지 여부. ",
+      "1 = 세상에 있는 일부 좀비들만 죽은 척함.",
+      "2 = 세상에 있는 일부 좀비들과 당신이 '죽인' 좀비들도 죽은 척함.",
+      "3 = 없음"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "플레이어가 스폰되는 곳에서는 좀비가 스폰되지 않습니다. ",
+      "1 = 건물 내부 및 주변",
+      "2 = 건물 내부",
+      "3 = 방 내부",
+      "4 = 좀비는 어디에서나 생성될 수 있습니다."
+    ],
+    "FenceThumpersRequired": [
+      "높은 울타리를 손상시키려면 얼마나 많은 좀비가 필요합니까? "
+    ],
+    "FenceDamageMultiplier": [
+      "좀비가 높은 울타리를 얼마나 빨리 손상시키는지. "
+    ],
+    "PopulationMultiplier": [
+      "\"좀비 수\" 인구 옵션으로 설정하거나 여기에서 사용자 정의 숫자로 설정합니다. "
+    ],
+    "PopulationStartMultiplier": [
+      "게임 시작 시 원하는 좀비 인구에 대한 배수입니다. "
+    ],
+    "PopulationPeakMultiplier": [
+      "피크 날에 원하는 좀비 인구에 대한 승수입니다. "
+    ],
+    "PopulationPeakDay": [
+      "좀비 수량이 최대로 나오기 까지 걸리는 기간을 정할 수 있습니다. 최소: 1 최대: 365 기본값: 28"
+    ],
+    "RespawnHours": [
+      "좀비가 셀에서 다시 생성되기까지 경과해야 하는 시간입니다. "
+    ],
+    "RespawnUnseenHours": [
+      "플레이어의 최근 이동한 범위 내 좀비가 재생성되는걸 막아주는 시간입니다. 범위: 약 19청크, 기준: 청크(10*10타일) 최소: 0.00 최대: 8760.00 기본값: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "재생성 시간마다 셀(300*300타일) 내에 재생성되는 좀비 무리의 배율. 최소: 0.00 최대: 1.00 기본값: 0.10"
+    ],
+    "RedistributeHours": [
+      "좀비가 동일한 셀의 빈 부분으로 이동하기 전에 통과해야 하는 시간입니다. "
+    ],
+    "FollowSoundDistance": [
+      "가상의 좀비(게임 내 비활성화 상태인 좀비)가 마지막으로 들은 소리를 향해 걸어가는 거리를 정합니다. 최소: 10 최대: 1000 기본값: 100"
+    ],
+    "RallyGroupSize": [
+      "유휴 상태일 때 실제 좀비가 형성하는 그룹의 크기입니다. "
+    ],
+    "RallyGroupSizeVariance": [
+      "좀비 그룹의 크기가 기본값과 다를 수 있는 비율(%)입니다(크거나 작음 모두).   "
+    ],
+    "RallyTravelDistance": [
+      "좀비들이 서로 떨어져 있을 때 무리를 만들기 위해 이동하는 거리를 정합니다. 최소: 5 최대: 50 기본값: 20"
+    ],
+    "RallyGroupSeparation": [
+      "좀비 무리 간 떨어져있는 거리를 정합니다. 최소: 5 최대: 25 기본값: 15"
+    ],
+    "RallyGroupRadius": [
+      "좀비 무리의 대장과 일반 좀비들이 얼마나 가까운 거리에 있을지 정합니다. 최소: 1 최대: 10 기본값: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "최소: 10 최대: 500 기본값: 300"
+    ],
+    "Global": [
+      "모든 스킬의 레벨업 속도입니다. "
+    ],
+    "GlobalToggle": [
+      "활성화되면 모든 스킬이 전역 승수를 사용합니다."
+    ],
+    "Fitness": [
+      "체력 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Sprinting": [
+      "스프린트 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Lightfoot": [
+      "가벼운 발걸음 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Nimble": [
+      "민첩 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Sneak": [
+      "은신 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Axe": [
+      "도끼 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Blunt": [
+      "둔기 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "SmallBlunt": [
+      "작은 둔기 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "LongBlade": [
+      "긴 칼날 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "SmallBlade": [
+      "짧은 칼날 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Spear": [
+      "창 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Maintenance": [
+      "정비 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Woodwork": [
+      "목공 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Cooking": [
+      "요리 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Doctor": [
+      "의술 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Electricity": [
+      "전기 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "MetalWelding": [
+      "금속 용접 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Mechanics": [
+      "기계 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Tailoring": [
+      "재봉 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Aiming": [
+      "조준 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Reloading": [
+      "재장전 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Fishing": [
+      "낚시 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Trapping": [
+      "덫 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "PlantScavenging": [
+      "식물 채집 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "FlintKnapping": [
+      "부싯돌 가공 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Masonry": [
+      "석공 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Pottery": [
+      "도예 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Carving": [
+      "조각 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Husbandry": [
+      "목축 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Tracking": [
+      "추적 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Blacksmith": [
+      "대장장이 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Butchering": [
+      "도살 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ],
+    "Glassmaking": [
+      "유리 제작 기술 레벨이 오르는 속도. 최소: 0.00 최대: 1000.00 기본값: 1.00"
+    ]
+  }
+}
+
+

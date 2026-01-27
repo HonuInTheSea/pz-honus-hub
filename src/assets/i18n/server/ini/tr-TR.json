@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Günlük Aracı Sohbeti",
+    "PVPLogToolFile": "PVP Günlük Aracı Dosyası",
+    "PauseEmpty": "Boş Duraklat",
+    "GlobalChat": "Küresel Sohbet",
+    "Open": "Açık",
+    "ServerWelcomeMessage": "Sunucu Hoş Geldiniz Mesajı",
+    "ServerImageLoginScreen": "Sunucu Görüntüsü Giriş Ekranı",
+    "ServerImageLoadingScreen": "Sunucu Görüntüsü Yükleme Ekranı",
+    "ServerImageIcon": "Sunucu Görüntüsü Simgesi",
+    "AutoCreateUserInWhiteList": "Beyaz Listede Kullanıcıyı Otomatik Oluştur",
+    "DisplayUserName": "Kullanıcı Adını Görüntüle",
+    "ShowFirstAndLastName": "Adı ve Soyadı Göster",
+    "SpawnPoint": "Doğma Noktası",
+    "SafetySystem": "Güvenlik Sistemi",
+    "ShowSafety": "Güvenliği Göster",
+    "SafetyToggleTimer": "Güvenlik Geçiş Zamanlayıcısı",
+    "SafetyCooldownTimer": "Güvenlik Bekleme Süresi Sayacı",
+    "SafetyDisconnectDelay": "Güvenlik Bağlantı Kesme Gecikmesi",
+    "SpawnItems": "Öğeleri Yeniden Doğur",
+    "DefaultPort": "Varsayılan Bağlantı Noktası",
+    "UDPPort": "UDP Bağlantı Noktası",
+    "ResetID": "Kimliği sıfırla",
+    "Mods": "Modlar",
+    "Map": "Harita",
+    "DoLuaChecksum": "Lua Sağlama Toplamı Yap",
+    "Public": "Halk",
+    "PublicName": "Genel Ad",
+    "PublicDescription": "Genel Açıklama",
+    "MaxPlayers": "Maksimum Oyuncu",
+    "PingLimit": "Ping Sınırı",
+    "SafehousePreventsLootRespawn": "Safehouse, Yağmanın Yeniden Doğuşunu Önler",
+    "DropOffWhiteListAfterDeath": "Ölümden Sonra Beyaz Listeyi Bırakın",
+    "NoFire": "Ateş Yok",
+    "AnnounceDeath": "Ölümü Duyurun",
+    "SaveWorldEveryMinutes": "Dünyayı Her Dakikada Kurtarın",
+    "PlayerSafehouse": "Oyuncu Güvenli Evi",
+    "AdminSafehouse": "Yönetici Güvenliği",
+    "SafehouseAllowTrepass": "Güvenli Ev İzinsiz Girişe İzin Ver",
+    "SafehouseAllowFire": "Güvenli Ev Yangına İzin Ver",
+    "SafehouseAllowLoot": "Safehouse Yağmalamaya İzin Ver",
+    "SafehouseAllowRespawn": "Safehouse Yeniden Doğmaya İzin Ver",
+    "SafehouseDaySurvivedToClaim": "Güvenli Ev Günü Hak Kazanmak İçin Hayatta Kaldı",
+    "SafeHouseRemovalTime": "Güvenli Evden Çıkarma Süresi",
+    "SafehouseAllowNonResidential": "Güvenli Ev Konut Dışına İzin Veriyor",
+    "MaxSafezoneSize": "Maksimum Güvenli Bölge Boyutu",
+    "AllowDestructionBySledgehammer": "Balyozla İmhaya İzin Ver",
+    "SledgehammerOnlyInSafehouse": "Balyoz Sadece Güvenli Ev'de",
+    "WarStartDelay": "Savaş Başlangıç ​​Gecikmesi",
+    "WarDuration": "Savaş Süresi",
+    "WarSafehouseHitPoints": "War Safehouse Can Puanları",
+    "ServerPlayerID": "Sunucu Oyuncu Kimliği",
+    "RCONPort": "RCON Bağlantı Noktası",
+    "RCONPassword": "RCON Şifresi",
+    "DiscordEnable": "Anlaşmazlığı Etkinleştir",
+    "DiscordToken": "Anlaşmazlık Jetonu",
+    "DiscordChannel": "Discord Kanalı",
+    "DiscordChannelID": "Discord Kanal Kimliği",
+    "WebhookAddress": "Web Kancası Adresi",
+    "Password": "Şifre",
+    "MaxAccountsPerUser": "Kullanıcı Başına Maksimum Hesap Sayısı",
+    "AllowCoop": "Coop'a izin ver",
+    "SleepAllowed": "Uykuya İzin Verildi",
+    "SleepNeeded": "Uyku Gerekli",
+    "KnockedDownAllowed": "Devrilmeye İzin Verildi",
+    "SneakModeHideFromOtherPlayers": "Gizli Mod Diğer Oyunculardan Gizlenir",
+    "WorkshopItems": "Atölye Öğeleri",
+    "SteamScoreboard": "Steam Skor Tablosu",
+    "SteamVAC": "Buhar VAC'si",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Ses Etkinleştirme",
+    "VoiceMinDistance": "Ses Minimum Mesafesi",
+    "VoiceMaxDistance": "Ses Maksimum Mesafesi",
+    "Voice3D": "Ses 3D",
+    "SpeedLimit": "Hız Limiti",
+    "LoginQueueConnectTimeout": "Oturum Açma Kuyruğu Bağlantı Zaman Aşımı",
+    "server_browser_announced_ip": "Sunucu tarayıcısının IP'si açıklandı",
+    "PlayerRespawnWithSelf": "Oyuncu Kendisiyle Yeniden Doğdu",
+    "PlayerRespawnWithOther": "Oyuncu Diğerleriyle Yeniden Doğar",
+    "FastForwardMultiplier": "Hızlı İleri Sarma Çarpanı",
+    "DisableSafehouseWhenPlayerConnected": "Oyuncu Bağlandığında Safehouse'u Devre Dışı Bırak",
+    "Faction": "Hizip",
+    "FactionDaySurvivedToCreate": "Fraksiyon Günü Yaratmak İçin Hayatta Kaldı",
+    "FactionPlayersRequiredForTag": "Etiket İçin Fraksiyon Oyuncuları Gerekli",
+    "DisableRadioStaff": "Radyo Personelini Devre Dışı Bırak",
+    "DisableRadioAdmin": "Radyo Yöneticisini Devre Dışı Bırak",
+    "DisableRadioGM": "Radyo GM'yi devre dışı bırak",
+    "DisableRadioOverseer": "Radyo Gözlemcisini Devre Dışı Bırak",
+    "DisableRadioModerator": "Radyo Moderatörünü Devre Dışı Bırak",
+    "DisableRadioInvisible": "Radyo Görünmezliğini Devre Dışı Bırak",
+    "ClientCommandFilter": "İstemci Komut Filtresi",
+    "ClientActionLogs": "İstemci Eylem Günlükleri",
+    "PerkLogs": "Ayrıcalık Günlükleri",
+    "ItemNumbersLimitPerContainer": "Konteyner Başına Ürün Sayısı Sınırı",
+    "BloodSplatLifespanDays": "Kan Uyarısı Ömrü Günleri",
+    "AllowNonAsciiUsername": "Ascii Olmayan Kullanıcı Adına İzin Ver",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Ceset Kaldırıldığında Oyuncu Cesetlerini Kaldır",
+    "TrashDeleteAll": "Çöp Kutusu Tümünü Sil",
+    "PVPMeleeWhileHitReaction": "Vuruş Sırasında PVP Yakın Dövüş Tepkisi",
+    "MouseOverToSeeDisplayName": "Görünen Adı Görmek İçin Farenin Üzerine Gelin",
+    "HidePlayersBehindYou": "Oyuncuları Arkanızda Gizleyin",
+    "PVPMeleeDamageModifier": "PVP Yakın Dövüş Hasarı Değiştirici",
+    "PVPFirearmDamageModifier": "PVP Ateşli Silah Hasar Değiştirici",
+    "CarEngineAttractionModifier": "Araba Motoru Cazibe Değiştirici",
+    "PlayerBumpPlayer": "Oyuncu Çarpma Oyuncusu",
+    "MapRemotePlayerVisibility": "Harita Uzak Oynatıcı Görünürlüğü",
+    "BackupsCount": "Yedekleme Sayısı",
+    "BackupsOnStart": "Başlangıçta Yedeklemeler",
+    "BackupsPeriod": "Yedekleme Dönemi",
+    "DisableVehicleTowing": "Araç Çekmeyi Devre Dışı Bırak",
+    "DisableTrailerTowing": "Römork Çekmeyi Devre Dışı Bırak",
+    "DisableBurntTowing": "Yanmış Çekmeyi Devre Dışı Bırak",
+    "BadWordListFile": "Kötü Kelime Listesi Dosyası",
+    "GoodWordListFile": "İyi Kelime Listesi Dosyası",
+    "BadWordPolicy": "Kötü Söz Politikası",
+    "BadWordReplacement": "Kötü Kelime Değiştirme",
+    "AntiCheatSafety": "Hile Önleme Güvenliği",
+    "AntiCheatMovement": "Hile Karşıtı Hareket",
+    "AntiCheatHit": "Hile Karşıtı Hit",
+    "AntiCheatPacket": "Hile Önleme Paketi",
+    "AntiCheatPermission": "Hile Önleme İzni",
+    "AntiCheatXP": "Hile Karşıtı XP",
+    "AntiCheatFire": "Hile Karşıtı Ateş",
+    "AntiCheatSafeHouse": "Hile Önleyici Güvenli Ev",
+    "AntiCheatRecipe": "Hile Önleyici Tarif",
+    "AntiCheatPlayer": "Hile Önleyici Oyuncu",
+    "AntiCheatChecksum": "Hile Karşıtı Sağlama Toplamı",
+    "AntiCheatItem": "Hile Karşıtı Öğe",
+    "AntiCheatServerCustomization": "Hile Önleyici Sunucu Özelleştirmesi",
+    "MultiplayerStatisticsPeriod": "Çok Oyunculu İstatistik Dönemi",
+    "DisableScoreboard": "Puan Tablosunu Devre Dışı Bırak",
+    "HideAdminsInPlayerList": "Oyuncu Listesindeki Yöneticileri Gizle",
+    "Seed": "Tohum",
+    "ChatMessageCharacterLimit": "Sohbet Mesajı Karakter Limiti",
+    "ChatMessageSlowModeTime": "Sohbet Mesajı Yavaş Mod Süresi",
+    "comments": {
+"PVP": [
+        "Oyuncular diğer oyunculara zarar verebilir."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Sunucuda hiç oyuncu yoksa oyun dünyasının zamanı durur."
+      ],
+      "GlobalChat": [
+        "Genel sohbetin kullanılıp kullanılmayacağını belirler."
+      ],
+      "Open": [
+        "Oyuncular, whitelist'te bulunmasalar bile sunucuya bağlanabilir. Eğer bu değer false yapılırsa, adminler kullanıcı adı ve parolaları manuel olarak sisteme girmelidir."
+      ],
+      "ServerWelcomeMessage": [
+        "Bu mesaj, bir istemci oyuna bağlandığında onun sohbet ekranında görüntülenecektir."
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Etkinse, gizlilik modundaki oyuncular diğer oyunculardan gizlenir."
+      ],
+      "ServerImageLoadingScreen": [
+        "Sunucunun yükleme ekranında gösterilen görüntünün yolu."
+      ],
+      "ServerImageIcon": [
+        "Sunucu simgesi olarak kullanılan görüntünün yolu."
+      ],
+      "ServerImageLoginScreen": [
+        "Sunucunun giriş ekranında gösterilen görüntünün yolu."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Oyuncular bağlandığı zaman, bilinmeyen kullanıcı adlarını whitelist'e ekleyebilirsiniz.  Open"
+      ],
+      "DisplayUserName": [
+        "Karakterin üstünde oyuncunun kullanıcı adını gösterir."
+      ],
+      "ShowFirstAndLastName": [
+        "Kullanıcı adı yerine oyuncunun başlarının üstünde oyundaki adı ve soyadını göster."
+      ],
+      "SpawnPoint": [
+        "Bütün yeni oyuncuları, belirlenen X,Y,Z koordinatlarında doğmaya zorlar. Koordinatları map.projectzomboid.com adresinden öğrenebilirsiniz.<br>0,0,0 iken yok sayılır."
+      ],
+      "SafetySystem": [
+        "Oyuncular PVP moduna girebilir.  Bir oyuncu diğer oyuncuya bir ya da ikisinin de PVP modu açıksa zarar verebilir.  SafetySystem"
+      ],
+      "ShowSafety": [
+        "Oyuncular PVP moduna girdiği zaman karakterlerin üstünde bir kurukafa simgesi gözükür."
+      ],
+      "SafetyToggleTimer": [
+        "Oyuncunun PVP moduna girerken veya çıkarken bekleyeceği zamandır."
+      ],
+      "SafetyCooldownTimer": [
+        "Oyuncunun tekrar PVP moduna girmeden veya çıkmadan bekleyeceği gecikme (cooldown) süresidir."
+      ],
+      "SpawnItems": [
+        "Yeni oyuncuların hangi eşyalar ile başlayacağını belirler.",
+        "Birden çok öğeleri virgül ile ayırın.",
+        "Örn: Base.Axe,Base.BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Oyuncu verileri için başlangıç portu. Eğer UDP ise, bu kullanılan iki porttan biridir. Eğer legacy TCP ise, bu port ile başlayan her oyuncu için bir port kullanılır."
+      ],
+      "ResetID": [
+        "Sunucuda sıfırlanma işleminin yapılıp yapılmadığını belirlemek için kullanılır. Bu sayı istemci ile eşleşiyorsa, istemcinin yeni bir karakter oluşturması gerekmektedir. PlayerServerID ile bağlantılıdır. Lütfen, bu kimlikleri bir yere yedekleyin."
+      ],
+      "Mods": [
+        "Modun ID kimliğini buraya girin. ID kimliği şu dosyada bulunabilir: \\Steam\\steamapps\\workshop\\modID\\mods\\modAdı\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "İstemcinin dosyaları sunucu ile uyuşmadığı zaman oyuncuyu otomatik olarak sunucudan atar."
+      ],
+      "Public": [
+        "Sunucuyu, oyun içindeki sunucu listesinde listeler.<br>Not: Steam onaylı sunucular, her zaman Steam'in sunucu tarayıcısında görüntülenir."
+      ],
+      "PublicName": [
+        "Oyun içinde ve Steam sunucu listesinde (varsa) gösterilecek sunucu adı."
+      ],
+      "PublicDescription": [
+        "Oyun içindeki sunucu listesinde gösterilecek sunucu açıklaması."
+      ],
+      "MaxPlayers": [
+        "Adminler hariç, sunucuya eş zamanlı olarak bağlanabilecek maksimum oyuncu sayısı.<br>Steam, maksimum 126 oyuncuya izin verir."
+      ],
+      "PingLimit": [
+        "Milisaniye bazında, sunucudan atılmadan önceki ping sınırı. Devre dışı bırakmak için 0 değeri girilmelidir."
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Oyuncuların güvenli ev olduğunu iddia ettiği binalarda eşyalar yeniden doğmayacak"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Oyuncu öldükten sonra, oyuncunun kullanıcı hesabı whitelist'ten silinir. Open"
+      ],
+      "NoFire": [
+        "Kamp ateşi hariç, sunucuda oluşabilecek herhangi bir yangın türünü devre dışı bırakır."
+      ],
+      "AnnounceDeath": [
+        "Eğer true ise, her zaman sunucunun sohbet ekranında oyuncuların ölüm mesajları gösterilir."
+      ],
+      "AnnounceAnimalDeath": [
+        "Etkinse, bir hayvan her öldüğünde sohbette genel bir mesaj gösterilir."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Haritanın yüklü parçaları gerçek zamanla bu kadar dakika geçtikten sonra kaydedilir.  Harita genellikle istemci yüklenmiş bölgeden ayrıldığı zaman kaydedilir."
+      ],
+      "PlayerSafehouse": [
+        "Oyuncular sığınak (safehouse) sahiplenebilir."
+      ],
+      "AdminSafehouse": [
+        "Sadece adminler sığınak (safehouse) sahiplenebilir."
+      ],
+      "SafehouseAllowTrepass": [
+        "Sığınak üyesi olmayanların sığınağa girmesine izin verir."
+      ],
+      "SafehouseAllowFire": [
+        "Sığınaklarda yangın çıkmasına ve çıkarılmasına izin verir."
+      ],
+      "SafehouseAllowLoot": [
+        "Sığınak üyesi olmayanların sığınaktan eşya almalarına izin verir."
+      ],
+      "SafehouseAllowRespawn": [
+        "Oyuncular öldüğü zaman, üye oldukları sığınaklarında yeniden doğarlar."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Oyuncular, sığınak sahiplenebilmek için oyun içi zaman ile bu kadar gün hayatta kalmış olmalıdır."
+      ],
+      "SafeHouseRemovalTime": [
+        "Oyuncular, gerçek zamanla bu kadar saat içinde sığınağı ziyaret etmediklerinde, sığınak üyeliğinden otomatik olarak silinirler."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Oyuncuların konut dışı binaları talep edip edemeyeceğini belirler."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Oyuncuların balyoz ile dünya objelerini yok etmesine izin verir."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Oyuncuların dünya nesnelerini yalnızca güvenli evlerinde yok etmelerine izin verin (AllowDestructionBySledgehammer 'ın true olmasını gerektirir)."
+      ],
+      "WarStartDelay": [
+        "Savaşın başlamasından saniyeler önce geçen süre."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "Karakterin başka bir sunucudan mı yoksa tek oyunculu moddan mı olduğunu belirlemek için kullanılır. Bu değer soft-reset ile değiştirilebilir. Bu sayı istemci ile eşleşiyorsa, istemcinin yeni bir karakter oluşturması gerekmektedir. ResetID ile bağlantılıdır. Lütfen, bu kimlikleri bir yere yedekleyin."
+      ],
+      "RCONPort": [
+        "RCON bağlantısı için bir port seçin."
+      ],
+      "RCONPassword": [
+        "RCON şifresini belirler."
+      ],
+      "DiscordEnable": [
+        "Discord ile entegrasyonu etkinleştir"
+      ],
+      "DiscordToken": [
+        "Discord bot erişim tokeni"
+      ],
+      "DiscordChannel": [
+        "Discord kanal adı. Bununla ilgili bazı sorunlarınız varsa, bunun yerine kanal kimliğini kullanın"
+      ],
+      "DiscordChannelID": [
+        "Discord kanal kimliği. Zorunlu değildir. Kanal adıyla ilgili sorun olması durumunda kullanın"
+      ],
+      "WebhookAddress": [
+        "Slack gelen web kancası URL'si"
+      ],
+      "Password": [
+        "İstemciler sunucuya bağlanabilmek için bu şifreyi bilmek zorundadır. Host bölümünden sunucu kurulduğu zaman yok sayılır."
+      ],
+      "MaxAccountsPerUser": [
+        "Tek bir Steam kullanıcısının bu sunucuda birden çok hesap (karakter) ile oynamasını sınırlar. Steam sunucusu kurulduğu zaman yok sayılır."
+      ],
+      "AllowCoop": [
+        "İşbirliğine/bölünmüş ekran oyuncularına izin ver"
+      ],
+      "SleepAllowed": [
+        "Oyuncular istediği zaman uyuyabilir."
+      ],
+      "SleepNeeded": [
+        "Oyuncular yorulur ve uykuya ihtiyaç duyarlar.  SleepAllowed"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Sunucuya indirilecek Atölye Mod'larını listelemek için kullanılır. Noktalı virgülle ayrılmalıdır. Örnek: WorkshopItems"
+      ],
+      "SteamScoreboard": [
+        "Oyuncular listesinde Steam kullanıcı adlarını ve avatarlarını göster.",
+        "Bu ayar true, false veya admin olabilir."
+      ],
+      "SteamVAC": [
+        "Steam VAC sistemi kullanılır."
+      ],
+      "UPnP": [
+        "UPnP özellikli internet ağ geçidini otomatik olarak port yönlendirme kurallarını alması için yapılandırır."
+      ],
+      "VoiceEnable": [
+        "Eğer true ise, VOIP etkinleştirilecektir."
+      ],
+      "VoiceMinDistance": [
+        "VOIP seslerinin duyulabileceği minimum mesafe."
+      ],
+      "VoiceMaxDistance": [
+        "VOIP seslerinin duyulabileceği maksimum mesafe."
+      ],
+      "Voice3D": [
+        "VOIP için 3D ses."
+      ],
+      "server_browser_announced_ip": [
+        "Sunucunun yayınlanacağı IP adresini ayarlayın. Sunucu grupları gibi birden çok IP adresine sahip ağ yapılandırmaları içindir."
+      ],
+      "PlayerRespawnWithSelf": [
+        "Oyuncular öldükleri yerde tekrar yeniden doğabilirler."
+      ],
+      "PlayerRespawnWithOther": [
+        "Oyuncu Başka Bir Oyuncunun Yanında Yeniden Başlayabilir"
+      ],
+      "FastForwardMultiplier": [
+        "Herkes uyuduğu zaman, oyun zamanı ne kadar hızlı ilerleyecek?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Eğer zaten sahip olunan bir sığınağı sahiplenmeye kalkan olursa, sığınak normal bir ev gibi gözükecektir."
+      ],
+      "Faction": [
+        "Eğer true ise, oyuncuların grup oluşturmalarına izin verir."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Bir grup oluşturmadan önce X gün boyunca hayatta kalmış olmanız gerekmektedir."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Grup sahibinin, özel bir isim etiketi oluşturmadan önce grupta ne kadar üye olması gerektiğini belirler."
+      ],
+      "DisableRadioStaff": [
+        "Herhangi bir erişim seviyesine sahip oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "DisableRadioAdmin": [
+        "'Yönetici' erişim düzeyine sahip oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "DisableRadioGM": [
+        "'GM' erişim düzeyine sahip oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "DisableRadioOverseer": [
+        "'İdareci' erişim düzeyine sahip oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "DisableRadioModerator": [
+        "'Moderatör' erişim düzeyine sahip oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "DisableRadioInvisible": [
+        "Görünmez oyunculardan radyo yayınlarını almayı devre dışı bırakır."
+      ],
+      "ClientCommandFilter": [
+        "Cmd.txt sunucu günlüğüne yazılmayacak olan komutların noktalı virgülle ayrılmış listesi.",
+        "-vehicle.* değeri herhangi bir araç komutunun yazılmaması anlamına gelir.",
+        "+vehicle.installPart değeri geçerli komutun yazılması anlamına gelir."
+      ],
+      "ClientActionLogs": [
+        "ClientActionLogs.txt sunucu günlüğüne yazılacak eylemlerin noktalı virgülle ayrılmış listesi."
+      ],
+      "PerkLogs": [
+        "PerkLog.txt sunucu günlüğünde oyuncu Beceri düzeylerindeki değişiklikleri izleyin"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Bir depolama alanına yerleştirilebilecek maksimum öğe sayısı. Sıfır değeri sınır yok anlamına gelir."
+      ],
+      "BloodSplatLifespanDays": [
+        "Eski kan lekelerinin kaldırılmasından önceki gün sayısı.<br>Kaldırma, harita parçaları yüklendiğinde gerçekleşir.<br>Sıfır, hiçbir zaman kaldırmayacak anlamına gelir."
+      ],
+      "AllowNonAsciiUsername": [
+        "Kullanıcı adında Ascii olmayan (kiril...) karakterlerin kullanımına izin verin veya vermeyin"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Doğruysa, HoursForCorpseRemoval tetiklendiğinde, oyuncuların cesetlerini de kaldıracaktır."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Eğer açıksa oyuncu başka bir oyuncu tarafından vurulduğunda tekrar vurabilir."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Açıksa, oyuncuların adları görebilmek için fareyi birinin üzerine getirmesi gerekir."
+      ],
+      "HidePlayersBehindYou": [
+        "Açıksa, göremediklerinizi (zombiler gibi) otomatik olarak gizleyin."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Yakın Dövüş PVP İçin Hasar Ayarı"
+      ],
+      "PVPFirearmDamageModifier": [
+        "Menzilli PVP İçin Hasar Ayarı"
+      ],
+      "CarEngineAttractionModifier": [
+        "Arabaların zombileri çekme aralığını değiştirin, daha düşük değerler sunucu gecikmelerine(lag) yardımcı olabilir."
+      ],
+      "PlayerBumpPlayer": [
+        "Oyuncular koşarken birbirlerini çarparak itebilir."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Oyun içi haritada uzaktaki oyuncuların görüntülenmesini kontrol eder.",
+        "1"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Yasaklanacak kelimelerin listesini içeren dosyanın yolu. "
+      ],
+      "GoodWordListFile": [
+        "Kötü kelime içerseler bile izin verilmesi gereken kelimelerin listesini içeren dosyanın yolu. "
+      ],
+      "BadWordPolicy": [
+        "Sohbette kötü bir kelime gönderen kişiyle ne yapmalı: 1 - yasaklama, 2 - tekme, 3 - ihlali veritabanına kaydetme, 4 - sessize alma"
+      ],
+      "BadWordReplacement": [
+        "Kötü kelimenin yerini alacak sembol veya metin parçası"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Hareket için hile karşıtı korumayı devre dışı bırakır."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Oyuncular için hile karşıtı korumayı devre dışı bırakır."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Hile karşıtı korumayı öğe kontrollerini devre dışı bırakır."
+      ],
+      "AntiCheatServerCustomization": [
+        "Sunucu özelleştirmesi için hile karşıtı korumayı devre dışı bırakır."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Çok oyunculu güncelleme süresini saniye cinsinden ayarlar. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Oyuncu listesindeki yöneticileri gizler."
+      ],
+      "Seed": [
+        "Dünyayı oluşturmak için kullanılan worldgen tohumu.<br>Bunu değiştirmek istiyorsanız, yeni bir değer girin ve kaydetme dizininizdeki map_worldgen.bin dosyasını silin."
+      ],
+      "SpeedLimit": [
+        "Araç hız sınırı."
+      ],
+      "BackupsCount": [
+        "Min: 1 Maks: 300 Varsayılan: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Maks: 1500 Varsayılan: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Maks: 1024 Varsayılan: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Maks: 30 Varsayılan: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Maks: 1200 Varsayılan: 60"
+      ],
+      "Map": [
+        "Şurada bulunan modun klasör adını girin: \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Maks: 2147483647 Varsayılan: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Maks: 60 Varsayılan: 60"
+      ],
+      "TrashDeleteAll": [
+        "Etkinse, oyuncu çöp kutularında \\"tümünü sil\\" düğmesini kullanabilir."
+      ],
+      "UDPPort": [
+        "Min: 0 Maks: 65535 Varsayılan: 16262"
+      ]
+    }
+  }
+}
+
+

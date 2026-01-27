@@ -49,7 +49,8 @@
       "supportKofi": "Ko-fi desteği",
       "resetApp": "Uygulamayı Sıfırla",
       "resetAppTooltip": "Pencere ayarlarını sıfırlayın ve depolanan verileri silin",
-      "myMods": "Modlarım"
+      "myMods": "Modlarım",
+      "server": "Sunucu"
     },
     "filters": {
       "adultLabel": "Yetişkinlere Uygun İçerik Var",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "Klasörleri Yapılandır"
-    }
+    },
+    "loadingLocale": "Dil yükleniyor..."
   },
   "changelog": {
     "title": "Değişiklik günlüğü",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Yeni özellik",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Özel sunucu yapılandırma dosyalarıyla çalışabilme özelliği eklendi</li><li>README.md güncellendi</li><li>Dokümantasyon sayfası güncellendi</li></ul>"
+      },
       "initialRelease": {
         "title": "İlk sürüm",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Honu's Project Zomboid Hub'un ilk genel sürümü."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Küçük düzeltmeler",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Güncelleme bağlantısının yönlendirdiği yeri günceller</li><li>Sürüm numarasını günceller</li><li>README.md dosyasını günceller</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Küçük düzeltmeler",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Dil desteği güncellemesi"
       }
     }
   },
@@ -161,6 +181,7 @@
       "workflow": "İş akışı",
       "data": "Uygulamanın kullandığı veriler",
       "features": "Özellikler",
+      "server": "Sunucu Yönetimi",
       "mediaPlayer": "Medya oynatıcı",
       "logInspector": "Günlük denetçisi",
       "folderSetup": "Klasör kurulumu",
@@ -229,6 +250,13 @@
       "bullet1": "<strong>Çalma listesi</strong> - algılanan parçaları ve temel meta verileri (varsa başlık/sanatçı/albüm) gösterir.",
       "bullet2": "<strong>Oynatma</strong> - oynatma/duraklatma artı önceki/sonraki parça.",
       "bullet3": "<strong>Arama + ses seviyesi</strong> - parça üzerinde gezinin ve ses seviyesini/sessizi ayarlayın."
+    },
+    "server": {
+      "title": "Sunucu Yönetimi",
+      "intro": "Project Zomboid yerel sunucu dosyalarını yönetmek için Sunucular sayfasını kullanın.",
+      "bullet1": "<strong>Oluştur</strong> seçeneğiyle varsayılan .ini, _SandboxVars.lua, _spawnpoints.lua ve _spawnregions.lua dosyalarını oluşturun.",
+      "bullet2": "<strong>Kopyala</strong> ile mevcut bir sunucuyu yeni bir adla çoğaltın.",
+      "bullet3": "<strong>Düzenle</strong> ile INI ve Sandbox değişkenlerini düzenleyin ve spawnpoints/spawnregions dosyalarını uygulama içinde güncelleyin."
     },
     "logInspector": {
       "title": "Günlük denetçisi",
@@ -561,11 +589,13 @@
         "summary": "Geçersiz sunucu ad",
         "detailMissing": "Bir sunucu adı girin.",
         "detailInvalidChars": "Sunucu adı geçersiz dosya adı karakterleri içeriyor.",
-        "detailTrailing": "Sunucu adı nokta veya boşlukla bitemez."
+        "detailTrailing": "Sunucu adı nokta veya boşlukla bitemez.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Sunucu adı zaten mevcut",
-        "detail": "Benzersiz bir sunucu adı seçin."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Eksik kullanıcı klasörü",
@@ -696,6 +726,212 @@
       "noFilePath": "Set a file path to load logs.",
       "loadFailed": "Failed to load log file.",
       "clearFailed": "Failed to clear log file."
+    }
+  },
+  "server": {
+    "ini": {
+      "PVP": "PVP",
+      "PVPLogToolChat": "PVP Log Tool Chat",
+      "PVPLogToolFile": "PVP Log Tool File",
+      "PauseEmpty": "Pause Empty",
+      "GlobalChat": "Global Chat",
+      "Open": "Open",
+      "ServerWelcomeMessage": "Server Welcome Message",
+      "ServerImageLoginScreen": "Server Image Login Screen",
+      "ServerImageLoadingScreen": "Server Image Loading Screen",
+      "ServerImageIcon": "Server Image Icon",
+      "AutoCreateUserInWhiteList": "Auto Create User In White List",
+      "DisplayUserName": "Display User Name",
+      "ShowFirstAndLastName": "Show First And Last Name",
+      "SpawnPoint": "Spawn Point",
+      "SafetySystem": "Safety System",
+      "ShowSafety": "Show Safety",
+      "SafetyToggleTimer": "Safety Toggle Timer",
+      "SafetyCooldownTimer": "Safety Cooldown Timer",
+      "SafetyDisconnectDelay": "Safety Disconnect Delay",
+      "SpawnItems": "Spawn Items",
+      "DefaultPort": "Default Port",
+      "UDPPort": "UDP Port",
+      "ResetID": "Reset ID",
+      "Mods": "Mods",
+      "Map": "Map",
+      "DoLuaChecksum": "Do Lua Checksum",
+      "Public": "Public",
+      "PublicName": "Public Name",
+      "PublicDescription": "Public Description",
+      "MaxPlayers": "Max Players",
+      "PingLimit": "Ping Limit",
+      "SafehousePreventsLootRespawn": "Safehouse Prevents Loot Respawn",
+      "DropOffWhiteListAfterDeath": "Drop Off White List After Death",
+      "NoFire": "No Fire",
+      "AnnounceDeath": "Announce Death",
+      "SaveWorldEveryMinutes": "Save World Every Minutes",
+      "PlayerSafehouse": "Player Safehouse",
+      "AdminSafehouse": "Admin Safehouse",
+      "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+      "SafehouseAllowFire": "Safehouse Allow Fire",
+      "SafehouseAllowLoot": "Safehouse Allow Loot",
+      "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+      "SafehouseDaySurvivedToClaim": "Safehouse Day Survived To Claim",
+      "SafeHouseRemovalTime": "Safe House Removal Time",
+      "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+      "MaxSafezoneSize": "Max Safezone Size",
+      "AllowDestructionBySledgehammer": "Allow Destruction By Sledgehammer",
+      "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+      "WarStartDelay": "War Start Delay",
+      "WarDuration": "War Duration",
+      "WarSafehouseHitPoints": "War Safehouse Hit Points",
+      "ServerPlayerID": "Server Player ID",
+      "RCONPort": "RCON Port",
+      "RCONPassword": "RCON Password",
+      "DiscordEnable": "Discord Enable",
+      "DiscordToken": "Discord Token",
+      "DiscordChannel": "Discord Channel",
+      "DiscordChannelID": "Discord Channel ID",
+      "WebhookAddress": "Webhook Address",
+      "Password": "Password",
+      "MaxAccountsPerUser": "Max Accounts Per User",
+      "AllowCoop": "Allow Coop",
+      "SleepAllowed": "Sleep Allowed",
+      "SleepNeeded": "Sleep Needed",
+      "KnockedDownAllowed": "Knocked Down Allowed",
+      "SneakModeHideFromOtherPlayers": "Sneak Mode Hide From Other Players",
+      "WorkshopItems": "Workshop Items",
+      "SteamScoreboard": "Steam Scoreboard",
+      "SteamVAC": "Steam VAC",
+      "UPnP": "UPnP",
+      "VoiceEnable": "Voice Enable",
+      "VoiceMinDistance": "Voice Min Distance",
+      "VoiceMaxDistance": "Voice Max Distance",
+      "Voice3D": "Voice 3D",
+      "SpeedLimit": "Speed Limit",
+      "LoginQueueConnectTimeout": "Login Queue Connect Timeout",
+      "server_browser_announced_ip": "Server browser announced ip",
+      "PlayerRespawnWithSelf": "Player Respawn With Self",
+      "PlayerRespawnWithOther": "Player Respawn With Other",
+      "FastForwardMultiplier": "Fast Forward Multiplier",
+      "DisableSafehouseWhenPlayerConnected": "Disable Safehouse When Player Connected",
+      "Faction": "Faction",
+      "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
+      "FactionPlayersRequiredForTag": "Faction Players Required For Tag",
+      "DisableRadioStaff": "Disable Radio Staff",
+      "DisableRadioAdmin": "Disable Radio Admin",
+      "DisableRadioGM": "Disable Radio GM",
+      "DisableRadioOverseer": "Disable Radio Overseer",
+      "DisableRadioModerator": "Disable Radio Moderator",
+      "DisableRadioInvisible": "Disable Radio Invisible",
+      "ClientCommandFilter": "Client Command Filter",
+      "ClientActionLogs": "Client Action Logs",
+      "PerkLogs": "Perk Logs",
+      "ItemNumbersLimitPerContainer": "Item Numbers Limit Per Container",
+      "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+      "AllowNonAsciiUsername": "Allow Non Ascii Username",
+      "RemovePlayerCorpsesOnCorpseRemoval": "Remove Player Corpses On Corpse Removal",
+      "TrashDeleteAll": "Trash Delete All",
+      "PVPMeleeWhileHitReaction": "PVP Melee While Hit Reaction",
+      "MouseOverToSeeDisplayName": "Mouse Over To See Display Name",
+      "HidePlayersBehindYou": "Hide Players Behind You",
+      "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+      "PVPFirearmDamageModifier": "PVP Firearm Damage Modifier",
+      "CarEngineAttractionModifier": "Car Engine Attraction Modifier",
+      "PlayerBumpPlayer": "Player Bump Player",
+      "MapRemotePlayerVisibility": "Map Remote Player Visibility",
+      "BackupsCount": "Backups Count",
+      "BackupsOnStart": "Backups On Start",
+      "BackupsPeriod": "Backups Period",
+      "DisableVehicleTowing": "Disable Vehicle Towing",
+      "DisableTrailerTowing": "Disable Trailer Towing",
+      "DisableBurntTowing": "Disable Burnt Towing",
+      "BadWordListFile": "Bad Word List File",
+      "GoodWordListFile": "Good Word List File",
+      "BadWordPolicy": "Bad Word Policy",
+      "BadWordReplacement": "Bad Word Replacement",
+      "AntiCheatSafety": "Anti Cheat Safety",
+      "AntiCheatMovement": "Anti Cheat Movement",
+      "AntiCheatHit": "Anti Cheat Hit",
+      "AntiCheatPacket": "Anti Cheat Packet",
+      "AntiCheatPermission": "Anti Cheat Permission",
+      "AntiCheatXP": "Anti Cheat XP",
+      "AntiCheatFire": "Anti Cheat Fire",
+      "AntiCheatSafeHouse": "Anti Cheat Safe House",
+      "AntiCheatRecipe": "Anti Cheat Recipe",
+      "AntiCheatPlayer": "Anti Cheat Player",
+      "AntiCheatChecksum": "Anti Cheat Checksum",
+      "AntiCheatItem": "Anti Cheat Item",
+      "AntiCheatServerCustomization": "Anti Cheat Server Customization",
+      "MultiplayerStatisticsPeriod": "Multiplayer Statistics Period",
+      "DisableScoreboard": "Disable Scoreboard",
+      "HideAdminsInPlayerList": "Hide Admins In Player List",
+      "Seed": "Seed",
+      "ChatMessageCharacterLimit": "Chat Message Character Limit",
+      "ChatMessageSlowModeTime": "Chat Message Slow Mode Time",
+      "comments": {
+        "ServerImageLoginScreen": [
+          "Sunucunun giriş ekranında gösterilen görüntünün yolu."
+        ],
+        "ServerImageLoadingScreen": [
+          "Sunucunun yükleme ekranında gösterilen görüntünün yolu."
+        ],
+        "ServerImageIcon": [
+          "Sunucu simgesi olarak kullanılan görüntünün yolu."
+        ],
+        "SneakModeHideFromOtherPlayers": [
+          "Etkinse, gizlilik modundaki oyuncular diğer oyunculardan gizlenir."
+        ],
+        "AnnounceAnimalDeath": [
+          "Etkinse, bir hayvan her öldüğünde sohbette genel bir mesaj gösterilir."
+        ],
+        "AntiCheatMovement": [
+          "Hareket için hile karşıtı korumayı devre dışı bırakır."
+        ],
+        "AntiCheatPlayer": [
+          "Oyuncular için hile karşıtı korumayı devre dışı bırakır."
+        ],
+        "AntiCheatServerCustomization": [
+          "Sunucu özelleştirmesi için hile karşıtı korumayı devre dışı bırakır."
+        ]
+      }
+    },
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "İptal etmek",
+      "create": "Create",
+      "editServerVariableTitle": "Sunucu Değişkenini Düzenle",
+      "editSandboxVariableTitle": "Korumalı Alan Değişkenini Düzenle",
+      "noDescription": "No description available.",
+      "save": "Kaydetmek",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "Doğru",
+      "falseLabel": "YANLIŞ",
+      "exportServer": "Dışa aktar"
     }
   }
 }

@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolFile": "PVP-loggverktygsfil",
+    "PauseEmpty": "Pausa Tom",
+    "GlobalChat": "Global chatt",
+    "Open": "Öppna",
+    "ServerWelcomeMessage": "Serverns välkomstmeddelande",
+    "ServerImageLoginScreen": "Inloggningsskärm för serverbild",
+    "ServerImageLoadingScreen": "Skärm för laddning av serverbild",
+    "ServerImageIcon": "Serverbildsikon",
+    "AutoCreateUserInWhiteList": "Skapa automatiskt användare i vit lista",
+    "DisplayUserName": "Visa användarnamn",
+    "ShowFirstAndLastName": "Visa för- och efternamn",
+    "SpawnPoint": "Spawn Point",
+    "SafetySystem": "Säkerhetssystem",
+    "ShowSafety": "Visa säkerhet",
+    "SafetyToggleTimer": "Säkerhetsväxlingstimer",
+    "SafetyCooldownTimer": "Säkerhetsavkylningstimer",
+    "SafetyDisconnectDelay": "Säkerhetsfrånkopplingsfördröjning",
+    "SpawnItems": "Spawn objekt",
+    "DefaultPort": "Standardport",
+    "UDPPort": "UDP-port",
+    "ResetID": "Återställ ID",
+    "Mods": "Mods",
+    "Map": "Karta",
+    "DoLuaChecksum": "Gör Lua Checksum",
+    "Public": "Offentligt",
+    "PublicName": "Offentligt namn",
+    "PublicDescription": "Offentlig beskrivning",
+    "MaxPlayers": "Max spelare",
+    "PingLimit": "Ping-gräns",
+    "SafehousePreventsLootRespawn": "Safehouse förhindrar återuppbyggnad av byte",
+    "DropOffWhiteListAfterDeath": "Släpp av vita listan efter döden",
+    "NoFire": "Ingen eld",
+    "AnnounceDeath": "Tillkännage döden",
+    "SaveWorldEveryMinutes": "Rädda världen varje minut",
+    "PlayerSafehouse": "Spelaren Safehouse",
+    "AdminSafehouse": "Admin Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Tillåt Trepass",
+    "SafehouseAllowFire": "Safehouse Tillåt eld",
+    "SafehouseAllowLoot": "Safehouse Tillåt byte",
+    "SafehouseAllowRespawn": "Safehouse Tillåt återuppbyggnad",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day överlevde att hävda",
+    "SafeHouseRemovalTime": "Tid för borttagning av säkert hus",
+    "SafehouseAllowNonResidential": "Safehouse Tillåt icke bostäder",
+    "MaxSafezoneSize": "Max Safezone Storlek",
+    "AllowDestructionBySledgehammer": "Tillåt förstörelse med slägga",
+    "SledgehammerOnlyInSafehouse": "Slägga endast i safehouse",
+    "WarStartDelay": "Fördröjning av krigsstart",
+    "WarDuration": "Krigets varaktighet",
+    "WarSafehouseHitPoints": "War Safehouse Hit Points",
+    "ServerPlayerID": "Server spelar-ID",
+    "RCONPort": "RCON-port",
+    "RCONPassword": "RCON lösenord",
+    "DiscordEnable": "Discord aktivera",
+    "DiscordToken": "Discord Token",
+    "DiscordChannel": "Discord kanal",
+    "DiscordChannelID": "Discord kanal-ID",
+    "WebhookAddress": "Webhook-adress",
+    "Password": "Lösenord",
+    "MaxAccountsPerUser": "Max konton per användare",
+    "AllowCoop": "Tillåt Coop",
+    "SleepAllowed": "Sömn tillåten",
+    "SleepNeeded": "Sömn behövs",
+    "KnockedDownAllowed": "Nedslagen tillåten",
+    "SneakModeHideFromOtherPlayers": "Smygläge Dölj från andra spelare",
+    "WorkshopItems": "Verkstadsföremål",
+    "SteamScoreboard": "Steam resultattavla",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Röstaktivering",
+    "VoiceMinDistance": "Röst Min Distance",
+    "VoiceMaxDistance": "Röst Max avstånd",
+    "Voice3D": "Röst 3D",
+    "SpeedLimit": "Hastighetsgräns",
+    "LoginQueueConnectTimeout": "Inloggningskö Connect Timeout",
+    "server_browser_announced_ip": "Serverwebbläsaren meddelade ip",
+    "PlayerRespawnWithSelf": "Spelare återuppstår med själv",
+    "PlayerRespawnWithOther": "Spelare återuppstår med andra",
+    "FastForwardMultiplier": "Snabbspolningsmultiplikator",
+    "DisableSafehouseWhenPlayerConnected": "Inaktivera Safehouse när spelaren är ansluten",
+    "Faction": "Fraktion",
+    "FactionDaySurvivedToCreate": "Fraktionsdagen överlevde att skapa",
+    "FactionPlayersRequiredForTag": "Fraktionsspelare krävs för tagg",
+    "DisableRadioStaff": "Inaktivera radiopersonal",
+    "DisableRadioAdmin": "Inaktivera Radio Admin",
+    "DisableRadioGM": "Inaktivera Radio GM",
+    "DisableRadioOverseer": "Inaktivera Radio Overseer",
+    "DisableRadioModerator": "Inaktivera radiomoderator",
+    "DisableRadioInvisible": "Inaktivera Radio Invisible",
+    "ClientCommandFilter": "Klientkommandofilter",
+    "ClientActionLogs": "Klientåtgärdsloggar",
+    "PerkLogs": "Förmånsloggar",
+    "ItemNumbersLimitPerContainer": "Artikelnummergräns per behållare",
+    "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+    "AllowNonAsciiUsername": "Tillåt Non Ascii Användarnamn",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Ta bort spelarlik vid borttagning av lik",
+    "TrashDeleteAll": "Papperskorgen Radera alla",
+    "PVPMeleeWhileHitReaction": "PVP närstrid medan träffareaktion",
+    "MouseOverToSeeDisplayName": "För musen över för att se visningsnamn",
+    "HidePlayersBehindYou": "Göm spelare bakom dig",
+    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPFirearmDamageModifier": "PVP skjutvapen skademodifierare",
+    "CarEngineAttractionModifier": "Modifierare av bilmotorattraktion",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Karta fjärrspelarens synlighet",
+    "BackupsCount": "Säkerhetskopieringar räknas",
+    "BackupsOnStart": "Säkerhetskopiering vid start",
+    "BackupsPeriod": "Säkerhetskopieringsperiod",
+    "DisableVehicleTowing": "Inaktivera bogsering av fordon",
+    "DisableTrailerTowing": "Inaktivera bogsering av släp",
+    "DisableBurntTowing": "Inaktivera bränd bogsering",
+    "BadWordListFile": "Dålig ordlista",
+    "GoodWordListFile": "Bra ordlista fil",
+    "BadWordPolicy": "Dålig ordpolicy",
+    "BadWordReplacement": "Dåligt ordbyte",
+    "AntiCheatSafety": "Säkerhet mot fusk",
+    "AntiCheatMovement": "Antifuskrörelsen",
+    "AntiCheatHit": "Anti fuskhit",
+    "AntiCheatPacket": "Antifuskpaket",
+    "AntiCheatPermission": "Antifusk tillstånd",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatRecipe": "Antifusk recept",
+    "AntiCheatPlayer": "Antifuskspelare",
+    "AntiCheatChecksum": "Antifuskkontrollsumma",
+    "AntiCheatItem": "Anti fusk objekt",
+    "AntiCheatServerCustomization": "Anti Cheat Server Anpassning",
+    "MultiplayerStatisticsPeriod": "Flerspelarstatistikperiod",
+    "DisableScoreboard": "Inaktivera resultattavlan",
+    "HideAdminsInPlayerList": "Göm administratörer i spelarlistan",
+    "Seed": "Frö",
+    "ChatMessageCharacterLimit": "Chattmeddelande teckenbegränsning",
+    "ChatMessageSlowModeTime": "Chattmeddelande Tid för långsamt läge",
+    "comments": {
+"PVP": [
+        "Spelare kan skada och döda andra spelare"
+      ],
+      "PVPLogToolChat": [
+        "PVP är inloggad till adminchatt"
+      ],
+      "PVPLogToolFile": [
+        "PVP loggas till filen"
+      ],
+      "PauseEmpty": [
+        "Speltiden stannar när det inte finns några spelare online"
+      ],
+      "GlobalChat": [
+        "Slår på eller av global chatt."
+      ],
+      "Open": [
+        "Kunder kan gå med utan att redan ha ett konto i vitlistan. "
+      ],
+      "ServerWelcomeMessage": [
+        "Det första välkomstmeddelandet som visas i chattpanelen. "
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Om detta är aktiverat döljs spelare i smygläge för andra spelare."
+      ],
+      "ServerImageLoadingScreen": [
+        "Sökväg till bilden som visas på serverns laddningsskärm."
+      ],
+      "ServerImageIcon": [
+        "Sökväg till bilden som används som serverikon."
+      ],
+      "ServerImageLoginScreen": [
+        "Sökväg till bilden som visas på serverns inloggningsskärm."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Lägg till okända användarnamn till vitlistan när spelare går med. "
+      ],
+      "DisplayUserName": [
+        "Visa användarnamn ovanför spelarens huvuden i spelet."
+      ],
+      "ShowFirstAndLastName": [
+        "Visa för- och efternamn ovanför spelarens huvuden."
+      ],
+      "SpawnPoint": [
+        "Tvinga varje ny spelare att spawna vid dessa uppsatta x,y,z världskoordinater. "
+      ],
+      "SafetySystem": [
+        "Spelare kan gå in och lämna PVP på individuell basis. "
+      ],
+      "ShowSafety": [
+        "Visa en dödskalleikon över huvudet på spelare som har gått in i PVP-läge"
+      ],
+      "SafetyToggleTimer": [
+        "Tiden det tar för en spelare att gå in i och lämna PVP-läget"
+      ],
+      "SafetyCooldownTimer": [
+        "Fördröjningen innan en spelare kan gå in i eller lämna PVP-läget igen, efter att ha gjort det nyligen"
+      ],
+      "SpawnItems": [
+        "Objekttyper nya spelare spawnar med.",
+        "Separera flera objekttyper med kommatecken.",
+        "Exempel: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Standardstartport för spelardata. "
+      ],
+      "ResetID": [
+        "Reset ID avgör om servern har genomgått en mjuk återställning. "
+      ],
+      "Mods": [
+        "Ange modladdnings-ID här. "
+      ],
+      "DoLuaChecksum": [
+        "Sparka klienter vars spelfiler inte matchar serverns."
+      ],
+      "Public": [
+        "Visar servern på webbläsaren i spelet. "
+      ],
+      "PublicName": [
+        "Namnet på servern som visas i webbläsaren i spelet och, om tillämpligt, Steam-webbläsaren"
+      ],
+      "PublicDescription": [
+        "Beskrivning som visas i spelets offentliga serverwebbläsare. ",
+        "kommer att skapa en ny rad i din beskrivning"
+      ],
+      "MaxPlayers": [
+        "Maximalt antal spelare som kan vara på servern samtidigt. "
+      ],
+      "PingLimit": [
+        "Pinggräns, i millisekunder, innan en spelare sparkas från servern. "
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Föremål kommer inte att återuppstå i byggnader som spelare har hävdat som ett safehouse"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Ta bort spelarkonton från vitlistan efter döden. "
+      ],
+      "NoFire": [
+        "Alla former av eld är handikappade - förutom lägereldar"
+      ],
+      "AnnounceDeath": [
+        "Om markerad, varje gång en spelare dör kommer ett globalt meddelande att visas i chatten"
+      ],
+      "AnnounceAnimalDeath": [
+        "Om detta är aktiverat visas ett globalt meddelande i chatten varje gång ett djur dör."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Laddade delar av kartan sparas efter att detta antal minuter i verkligheten har passerat. "
+      ],
+      "PlayerSafehouse": [
+        "Både administratörer och spelare kan göra anspråk på safehouses"
+      ],
+      "AdminSafehouse": [
+        "Endast administratörer kan göra anspråk på safehouses"
+      ],
+      "SafehouseAllowTrepass": [
+        "Tillåt icke-medlemmar att komma in i ett safehouse utan att bli inbjudna"
+      ],
+      "SafehouseAllowFire": [
+        "Låt eld skada skyddsrum"
+      ],
+      "SafehouseAllowLoot": [
+        "Tillåt icke-medlemmar att ta föremål från safehouses"
+      ],
+      "SafehouseAllowRespawn": [
+        "Spelare kommer att återuppstå i ett safehouse som de var medlem i innan de dog"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Spelare måste ha överlevt detta antal dagar i spelet innan de tillåts göra anspråk på ett safehouse"
+      ],
+      "SafeHouseRemovalTime": [
+        "Spelare tas automatiskt bort från ett safehouse de inte har besökt på så många timmar i verkligheten"
+      ],
+      "SafehouseAllowNonResidential": [
+        "Styr om spelare kan göra anspråk på icke-bostadsbyggnader."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Tillåt spelare att förstöra världsobjekt med slägga"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Tillåt spelare att förstöra världsobjekt endast i deras safehouse (kräv AllowDestructionBySledgehammer för att sant)."
+      ],
+      "WarStartDelay": [
+        "Tid i sekunder innan kriget börjar."
+      ],
+      "WarDuration": [
+        "Krigets varaktighet i sekunder."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse träffpoänggräns."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID avgör om en karaktär kommer från en annan server eller enstaka spelare. "
+      ],
+      "RCONPort": [
+        "Porten för RCON (Remote Console)"
+      ],
+      "RCONPassword": [
+        "RCON-lösenord (Välj ett starkt lösenord)"
+      ],
+      "DiscordEnable": [
+        "Möjliggör global textchattintegrering med en Discord-kanal"
+      ],
+      "DiscordToken": [
+        "Discord bot-åtkomsttoken"
+      ],
+      "DiscordChannel": [
+        "Discord-kanalens namn. "
+      ],
+      "DiscordChannelID": [
+        "Discord-kanal-ID. "
+      ],
+      "WebhookAddress": [
+        "Slack inkommande webhook-URL"
+      ],
+      "Password": [
+        "Klienter måste känna till detta lösenord för att ansluta till servern. "
+      ],
+      "MaxAccountsPerUser": [
+        "Begränsar antalet olika konton som en enskild Steam-användare kan skapa på den här servern. "
+      ],
+      "AllowCoop": [
+        "Tillåt co-op/splitscreen-spelare"
+      ],
+      "SleepAllowed": [
+        "Spelare får sova när deras överlevande blir trött, men de BEHÖVER inte sova"
+      ],
+      "SleepNeeded": [
+        "Spelare blir trötta och behöver sova. "
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Aktivering av denna inställning kan orsaka visuell avsynkronisering av spelarpositioner."
+      ],
+      "WorkshopItems": [
+        "Lista Workshop Mod ID:n för servern att ladda ner. "
+      ],
+      "SteamScoreboard": [
+        "Visa Steam-användarnamn och avatarer i spelarlistan."
+      ],
+      "SteamVAC": [
+        "Aktivera Steam VAC-systemet"
+      ],
+      "UPnP": [
+        "Försök att konfigurera en UPnP-aktiverad internetgateway för att automatiskt ställa in regler för portvidarebefordran. "
+      ],
+      "VoiceEnable": [
+        "VOIP är aktiverat när det är markerat"
+      ],
+      "VoiceMinDistance": [
+        "Det minsta brickavstånd över vilket VOIP-ljud kan höras."
+      ],
+      "VoiceMaxDistance": [
+        "Det maximala avståndet över vilket VOIP-ljud kan höras."
+      ],
+      "Voice3D": [
+        "Växla riktningsljud för VOIP"
+      ],
+      "server_browser_announced_ip": [
+        "Ställ in den IP från vilken servern sänds. "
+      ],
+      "PlayerRespawnWithSelf": [
+        "Spelare kan återuppstå i spelet vid koordinaterna där de dog"
+      ],
+      "PlayerRespawnWithOther": [
+        "Spelare kan återuppta spelet på en delad skärm/fjärrspelsspelares plats"
+      ],
+      "FastForwardMultiplier": [
+        "Styr hur snabbt tiden går medan spelare sover. "
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Safehouse fungerar som ett vanligt hus om en medlem av safehouse är ansluten (så säkert när spelare är offline)"
+      ],
+      "Faction": [
+        "Spelare kan skapa fraktioner när det är sant"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Spelare måste överleva detta antal dagar i spelet innan de får skapa en fraktion"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Antal spelare som krävs som fraktionsmedlemmar innan fraktionsägaren kan skapa en grupptagg"
+      ],
+      "DisableRadioStaff": [
+        "Inaktiverar radiosändningar från spelare med en åtkomstnivå"
+      ],
+      "DisableRadioAdmin": [
+        "Inaktiverar radiosändningar från spelare med \"admin\"-åtkomstnivå"
+      ],
+      "DisableRadioGM": [
+        "Inaktiverar radiosändningar från spelare med \"gm\"-åtkomstnivå"
+      ],
+      "DisableRadioOverseer": [
+        "Inaktiverar radiosändningar från spelare med åtkomstnivå för \"övervakare\"."
+      ],
+      "DisableRadioModerator": [
+        "Inaktiverar radiosändningar från spelare med \"moderator\"-åtkomstnivå"
+      ],
+      "DisableRadioInvisible": [
+        "Inaktiverar radiosändningar från osynliga spelare"
+      ],
+      "ClientCommandFilter": [
+        "Semikolonseparerad lista över kommandon som inte kommer att skrivas till cmd.txt-serverloggen. ",
+        "-fordon. ",
+        "+vehicle.installPart betyder att du ska skriva det kommandot"
+      ],
+      "ClientActionLogs": [
+        "Semikolonseparerad lista över åtgärder som kommer att skrivas till ClientActionLogs.txt-serverloggen."
+      ],
+      "PerkLogs": [
+        "Spåra ändringar i spelarförmånsnivåer i PerkLog.txt-serverloggen"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Maximalt antal föremål som kan placeras i en container.  "
+      ],
+      "BloodSplatLifespanDays": [
+        "Antal dagar innan gamla blodfläckar tas bort.<br>Borttagning sker när kartbitar laddas.<br>Noll betyder att de aldrig kommer att försvinna"
+      ],
+      "AllowNonAsciiUsername": [
+        "Tillåt användning av icke-ASCII-tecken (kyrilliska etc.) i användarnamn"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Om aktiverat, när HoursForCorpseRemoval utlöses, kommer det också att ta bort spelarens lik från marken."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Om det är sant kan spelaren slå igen när den träffas av en annan spelare."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Om det är sant måste spelare föra muspekaren över någon för att se deras visningsnamn."
+      ],
+      "HidePlayersBehindYou": [
+        "Om det är sant, döljer automatiskt spelaren du inte kan se (som zombies)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Skademultiplikator för PVP-närstridsattacker."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Skademultiplikator för PVP-avståndsattacker."
+      ],
+      "CarEngineAttractionModifier": [
+        "Ändra utbudet av zombieattraktion till bilar. "
+      ],
+      "PlayerBumpPlayer": [
+        "Styr om spelare stöter (och slår omkull) andra spelare när de springer igenom dem."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Styr visning av fjärrspelare på kartan i spelet.",
+        "1=Dold 2=Vänner 3=Alla"
+      ],
+      "DisableVehicleTowing": [
+        "Inaktiverar bogsering av fordon"
+      ],
+      "DisableTrailerTowing": [
+        "Avaktiverar bogsering av släp"
+      ],
+      "DisableBurntTowing": [
+        "Inaktiverar bogsering av bränt fordon"
+      ],
+      "BadWordListFile": [
+        "Sökväg till filen med listan över ord som ska förbjudas. "
+      ],
+      "GoodWordListFile": [
+        "Sökväg till filen med listan över ord som bör tillåtas, även om de innehåller dåliga ord. "
+      ],
+      "BadWordPolicy": [
+        "Vad man ska göra med avsändaren av ett dåligt ord i chatten: 1 - ban, 2 - kick, 3 - registrera överträdelsen i databasen, 4 - tyst"
+      ],
+      "BadWordReplacement": [
+        "Symbolen eller textstycket som kommer att ersätta det dåliga ordet"
+      ],
+      "AntiCheatSafety": [
+        "Inaktiverar skydd mot fusk av säkerhetssystemet."
+      ],
+      "AntiCheatMovement": [
+        "Inaktiverar anticheat-skyddet för rörelse."
+      ],
+      "AntiCheatHit": [
+        "Inaktiverar skydd mot fusk mot karaktärsträffar."
+      ],
+      "AntiCheatPacket": [
+        "Inaktiverar skydd mot fusk för paketkontroller."
+      ],
+      "AntiCheatPermission": [
+        "Inaktiverar spelarbehörigheter mot fuskskydd."
+      ],
+      "AntiCheatXP": [
+        "Inaktiverar spelare XP-skydd mot fusk."
+      ],
+      "AntiCheatFire": [
+        "Inaktiverar brandkontroller mot fuskskydd."
+      ],
+      "AntiCheatSafeHouse": [
+        "Inaktiverar skydd mot fusk i safehouse."
+      ],
+      "AntiCheatRecipe": [
+        "Inaktiverar receptkontroller mot fuskskydd."
+      ],
+      "AntiCheatPlayer": [
+        "Inaktiverar anticheat-skyddet för spelare."
+      ],
+      "AntiCheatChecksum": [
+        "Inaktiverar skydd mot fusk mot checksumma."
+      ],
+      "AntiCheatItem": [
+        "Inaktiverar objektkontroller mot fuskskydd."
+      ],
+      "AntiCheatServerCustomization": [
+        "Inaktiverar anticheat-skyddet för serveranpassning."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Ställer in uppdateringsperioden för flera spelare i sekunder. "
+      ],
+      "DisableScoreboard": [
+        "Inaktiverar resultattavlan."
+      ],
+      "HideAdminsInPlayerList": [
+        "Döljer administratörer i spelarlistan."
+      ],
+      "Seed": [
+        "Worldgen-fröet som användes för att skapa världen.<br>Om du vill ändra detta, lägg in ett nytt värde i och ta bort map_worldgen.bin i din spara-katalog."
+      ],
+      "SpeedLimit": [
+        "Fordonets hastighetsbegränsning."
+      ],
+      "BackupsCount": [
+        "Min: 1 Max: 300 Standard: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Max: 1500 Standard: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Max: 1024 Standard: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Max: 30 Standard: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Max: 1200 Standard: 60"
+      ],
+      "Map": [
+        "Ange mappnamnet för modden som finns i \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Max: 2147483647 Standard: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Max: 60 Standard: 60"
+      ],
+      "TrashDeleteAll": [
+        "Om detta är aktiverat kan spelaren använda knappen \\"ta bort allt\\" på sopkärl."
+      ],
+      "UDPPort": [
+        "Min: 0 Max: 65535 Standard: 16262"
+      ]
+    }
+  }
+}
+
+

@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVPログツールチャット",
+    "PVPLogToolFile": "PVP ログツールファイル",
+    "PauseEmpty": "空の一時停止",
+    "GlobalChat": "グローバルチャット",
+    "Open": "開ける",
+    "ServerWelcomeMessage": "サーバーのウェルカムメッセージ",
+    "ServerImageLoginScreen": "サーバーイメージのログイン画面",
+    "ServerImageLoadingScreen": "サーバーイメージのロード画面",
+    "ServerImageIcon": "サーバー画像アイコン",
+    "AutoCreateUserInWhiteList": "ホワイトリストにユーザーを自動作成",
+    "DisplayUserName": "ユーザー名を表示する",
+    "ShowFirstAndLastName": "姓名を表示",
+    "SpawnPoint": "スポーンポイント",
+    "SafetySystem": "安全システム",
+    "ShowSafety": "安全性を示す",
+    "SafetyToggleTimer": "セーフティトグルタイマー",
+    "SafetyCooldownTimer": "安全クールダウンタイマー",
+    "SafetyDisconnectDelay": "安全切断遅延",
+    "SpawnItems": "スポーンアイテム",
+    "DefaultPort": "デフォルトのポート",
+    "UDPPort": "UDPポート",
+    "ResetID": "IDのリセット",
+    "Mods": "改造",
+    "Map": "地図",
+    "DoLuaChecksum": "Do Lua チェックサム",
+    "Public": "公共",
+    "PublicName": "公開名",
+    "PublicDescription": "公開説明",
+    "MaxPlayers": "最大プレイヤー数",
+    "PingLimit": "Ping制限",
+    "SafehousePreventsLootRespawn": "セーフハウスが戦利品のリスポーンを防ぐ",
+    "DropOffWhiteListAfterDeath": "死後ホワイトリストを削除する",
+    "NoFire": "火気厳禁",
+    "AnnounceDeath": "死を告げる",
+    "SaveWorldEveryMinutes": "毎分世界を救おう",
+    "PlayerSafehouse": "プレイヤーのセーフハウス",
+    "AdminSafehouse": "管理者のセーフハウス",
+    "SafehouseAllowTrepass": "セーフハウス トレパスを許可する",
+    "SafehouseAllowFire": "セーフハウス 火災を許可する",
+    "SafehouseAllowLoot": "セーフハウスで戦利品を許可",
+    "SafehouseAllowRespawn": "セーフハウスでリスポーンを許可する",
+    "SafehouseDaySurvivedToClaim": "セーフハウス・デイは生き残って請求できる",
+    "SafeHouseRemovalTime": "セーフハウスの撤去時間",
+    "SafehouseAllowNonResidential": "セーフハウスは非​​居住者を許可します",
+    "MaxSafezoneSize": "最大セーフゾーン サイズ",
+    "AllowDestructionBySledgehammer": "スレッジハンマーによる破壊を許可する",
+    "SledgehammerOnlyInSafehouse": "セーフハウスのみのスレッジハンマー",
+    "WarStartDelay": "戦争開始の遅延",
+    "WarDuration": "戦争期間",
+    "WarSafehouseHitPoints": "戦時保管庫のヒットポイント",
+    "ServerPlayerID": "サーバープレイヤーID",
+    "RCONPort": "RCONポート",
+    "RCONPassword": "RCONパスワード",
+    "DiscordEnable": "Discordを有効にする",
+    "DiscordToken": "ディスコードトークン",
+    "DiscordChannel": "Discordチャンネル",
+    "DiscordChannelID": "DiscordチャンネルID",
+    "WebhookAddress": "Webhook アドレス",
+    "Password": "パスワード",
+    "MaxAccountsPerUser": "ユーザーあたりの最大アカウント数",
+    "AllowCoop": "協力を許可する",
+    "SleepAllowed": "スリープ許可",
+    "SleepNeeded": "睡眠が必要です",
+    "KnockedDownAllowed": "ノックダウン可",
+    "SneakModeHideFromOtherPlayers": "スニークモード 他のプレイヤーから隠れる",
+    "WorkshopItems": "ワークショップアイテム",
+    "SteamScoreboard": "Steam スコアボード",
+    "SteamVAC": "スチームVAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "音声有効化",
+    "VoiceMinDistance": "音声の最小距離",
+    "VoiceMaxDistance": "音声の最大距離",
+    "Voice3D": "ボイス3D",
+    "SpeedLimit": "制限速度",
+    "LoginQueueConnectTimeout": "ログインキューの接続タイムアウト",
+    "server_browser_announced_ip": "サーバーブラウザのIPアドレスが発表されました",
+    "PlayerRespawnWithSelf": "プレイヤーは自分自身でリスポーンします",
+    "PlayerRespawnWithOther": "プレイヤーが他のプレイヤーと一緒にリスポーンする",
+    "FastForwardMultiplier": "早送り乗数",
+    "DisableSafehouseWhenPlayerConnected": "プレーヤー接続時にセーフハウスを無効にする",
+    "Faction": "派",
+    "FactionDaySurvivedToCreate": "ファクションデイは作成のために生き残った",
+    "FactionPlayersRequiredForTag": "タッグに必要な派閥プレイヤー",
+    "DisableRadioStaff": "ラジオスタッフを無効にする",
+    "DisableRadioAdmin": "無線管理を無効にする",
+    "DisableRadioGM": "ラジオ GM を無効にする",
+    "DisableRadioOverseer": "無線監督を無効にする",
+    "DisableRadioModerator": "無線モデレーターを無効にする",
+    "DisableRadioInvisible": "非表示の無線を無効にする",
+    "ClientCommandFilter": "クライアントコマンドフィルター",
+    "ClientActionLogs": "クライアントアクションログ",
+    "PerkLogs": "パークログ",
+    "ItemNumbersLimitPerContainer": "コンテナごとのアイテム数の制限",
+    "BloodSplatLifespanDays": "血しぶきの寿命日数",
+    "AllowNonAsciiUsername": "非 ASCII ユーザー名を許可する",
+    "RemovePlayerCorpsesOnCorpseRemoval": "死体除去時にプレイヤーの死体を除去する",
+    "TrashDeleteAll": "ゴミ箱 すべて削除",
+    "PVPMeleeWhileHitReaction": "PVP 近接攻撃中反応",
+    "MouseOverToSeeDisplayName": "マウスオーバーすると表示名が表示されます",
+    "HidePlayersBehindYou": "プレイヤーを後ろに隠す",
+    "PVPMeleeDamageModifier": "PVP近接ダメージ修正",
+    "PVPFirearmDamageModifier": "PVP 銃器ダメージ修正",
+    "CarEngineAttractionModifier": "車のエンジン吸引力調整剤",
+    "PlayerBumpPlayer": "プレーヤー バンププレーヤー",
+    "MapRemotePlayerVisibility": "リモート プレーヤーの可視性をマップする",
+    "BackupsCount": "バックアップ数",
+    "BackupsOnStart": "開始時のバックアップ",
+    "BackupsPeriod": "バックアップ期間",
+    "DisableVehicleTowing": "車両牽引を無効にする",
+    "DisableTrailerTowing": "トレーラー牽引を無効にする",
+    "DisableBurntTowing": "焼けた牽引を無効にする",
+    "BadWordListFile": "不適切な単語リスト ファイル",
+    "GoodWordListFile": "グッドワードリストファイル",
+    "BadWordPolicy": "悪い言葉に関するポリシー",
+    "BadWordReplacement": "悪い言葉の置き換え",
+    "AntiCheatSafety": "アンチチートの安全性",
+    "AntiCheatMovement": "反チート運動",
+    "AntiCheatHit": "アンチチートヒット",
+    "AntiCheatPacket": "アンチチートパケット",
+    "AntiCheatPermission": "アンチチート許可",
+    "AntiCheatXP": "アンチチート XP",
+    "AntiCheatFire": "アンチチートファイア",
+    "AntiCheatSafeHouse": "アンチチートセーフハウス",
+    "AntiCheatRecipe": "アンチチートレシピ",
+    "AntiCheatPlayer": "アンチチートプレイヤー",
+    "AntiCheatChecksum": "アンチチートチェックサム",
+    "AntiCheatItem": "アンチチートアイテム",
+    "AntiCheatServerCustomization": "アンチチートサーバーのカスタマイズ",
+    "MultiplayerStatisticsPeriod": "マルチプレイヤー統計期間",
+    "DisableScoreboard": "スコアボードを無効にする",
+    "HideAdminsInPlayerList": "プレーヤーリストで管理者を非表示にする",
+    "Seed": "シード",
+    "ChatMessageCharacterLimit": "チャットメッセージの文字数制限",
+    "ChatMessageSlowModeTime": "チャットメッセージスローモード時間",
+    "comments": {
+"PVP": [
+        "プレイヤーが他のプレイヤーを殺傷することができます"
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "オンラインプレーヤーがいなくなると、ゲームタイムが停止します。"
+      ],
+      "GlobalChat": [
+        "グローバルチャットのON/OFFを切り替えます。"
+      ],
+      "Open": [
+        "クライアントは、すでにホワイトリストにアカウントを持っていなくても参加することができます。falseに設定すると、管理者はユーザー名とパスワードの組み合わせを、手動で作成する必要があります。"
+      ],
+      "ServerWelcomeMessage": [
+        "チャットパネルに表示される最初のウェルカムメッセージです。 RGBカラーを使用すると、ウェルカムメッセージの色を変更することができます。 また、<LINE>を使用すると、テキスト内に別の行を作成することができます。 使用方法: <RGB:1,0,0> このメッセージは赤く表示されます!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "有効にすると、スニークモードのプレイヤーは他のプレイヤーから隠れます。"
+      ],
+      "ServerImageLoadingScreen": [
+        "サーバーのロード画面に表示される画像のパス。"
+      ],
+      "ServerImageIcon": [
+        "サーバーのアイコンとして使用される画像のパス。"
+      ],
+      "ServerImageLoginScreen": [
+        "サーバーのログイン画面に表示される画像のパス。"
+      ],
+      "AutoCreateUserInWhiteList": [
+        "プレイヤー参加時に不明なユーザー名としてをホワイトリストに追加します。 ユーザー名とパスワードは、参加時にクライアント自身に用意させてください。 (これは公開=trueのサーバーの場合です。)"
+      ],
+      "DisplayUserName": [
+        "ゲーム内でプレイヤーの頭上にユーザー名を表示します。"
+      ],
+      "ShowFirstAndLastName": [
+        "プレイヤーの頭上に姓と名を表示します。"
+      ],
+      "SpawnPoint": [
+        "すべての新しいプレイヤーは、この設定されたx,y,zワールド座標で強制にスポーンされます。map.projectzomboid.comで任意の座標を検索してください。 (0,0,0の時は無視されます)"
+      ],
+      "SafetySystem": [
+        "プレイヤーは個別でPVPに参加したり離脱することができます。 プレイヤーは、少なくとも他の1人がPVPモードである場合にのみ(画面左のドクロとクロスボーンが明るく表示している)、他のプレイヤーを傷つけることができます。<br> SafetySystem=falseの場合、PVPが有効であれば、プレイヤーはいつでも自由にお互いを傷つけ合うことができます。"
+      ],
+      "ShowSafety": [
+        "PVPモードに入っているプレイヤーの頭上にドクロのアイコンを表示します。"
+      ],
+      "SafetyToggleTimer": [
+        "PVPモードへの参加/離脱に掛かる時間です。"
+      ],
+      "SafetyCooldownTimer": [
+        "最近PVPモードに参加したプレイヤーが、再びPVPモードに参加/離脱できるようになるまでの遅延時間です。"
+      ],
+      "SpawnItems": [
+        "新しいプレイヤーにスポーンするアイテムの種類を指定します。",
+        "複数のアイテムはカンマで区切ってください。",
+        "例: Base.Axe,Base.Bag_BigHikingBag"
+      ],
+      "DefaultPort": [
+        "プレイヤーデータ用のデフォルトの開始ポートです。 UDPの場合、2つのポート番号のうち1つが使用されます。"
+      ],
+      "ResetID": [
+        "リセットIDは、サーバーがソフトリセットを行ったかどうかを判断します。 この番号がクライアントと一致する場合、クライアントは新しいキャラクターを作成する必要があります。<br>PlayerServerIDと一緒に使用します。これらのIDはどこかに控えておくことを強くお勧めします。"
+      ],
+      "Mods": [
+        "ここにMODの読み込みIDを入力してください。 IDは\\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txtで見つけることができます"
+      ],
+      "DoLuaChecksum": [
+        "ゲームファイルがサーバーのものと一致しないクライアントをキックします。"
+      ],
+      "Public": [
+        "ゲーム内ブラウザにサーバーを表示します。",
+        "Steam対応サーバーは、Steamサーバーブラウザで常に表示されます。"
+      ],
+      "PublicName": [
+        "ゲーム内ブラウザ、および該当する場合においてSteamブラウザに表示されるサーバー名です。"
+      ],
+      "PublicDescription": [
+        "ゲーム内の公開サーバーのブラウザに表示される説明文です。<br>入力すると、説明文に新しい行が作成されます。"
+      ],
+      "MaxPlayers": [
+        "管理者を除く、一度にサーバに接続できるプレイヤーの最大人数です。<br>警告: サーバーのプレイヤー数が32人を超えると、マップのストリーミングがうまくいかず、非同期になってしまう可能性があります。注意して進めてください。"
+      ],
+      "PingLimit": [
+        "プレイヤーがサーバーからキックされるまでのPing（ミリ秒単位）の制限値です。(0に設定すると無効になります。）"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "プレイヤーがセーフハウスとして主張した建物ではアイテムは復活しません"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "死亡後にプレイヤーのアカウントをホワイトリストから削除します。これにより、公開=falseのサーバで死亡後に新しいキャラクターを作成することを防ぎます。"
+      ],
+      "NoFire": [
+        "キャンプファイヤー以外の全ての火気を使用不可にします"
+      ],
+      "AnnounceDeath": [
+        "チェックした場合、プレイヤーが死ぬたびにグローバルメッセージがチャットに表示されます"
+      ],
+      "AnnounceAnimalDeath": [
+        "有効にすると、動物が死亡するたびにチャットにグローバルメッセージが表示されます。"
+      ],
+      "SaveWorldEveryMinutes": [
+        "ロードされたマップの部分は、ゲーム内で設定された時間経過後に削除します。 (マップの保存は通常、クライアントがロードしたエリアから出た後に行われます)"
+      ],
+      "PlayerSafehouse": [
+        "管理者とプレイヤーの両方がセーフハウスを主張することができます"
+      ],
+      "AdminSafehouse": [
+        "管理者のみがセーフハウスを主張することができます"
+      ],
+      "SafehouseAllowTrepass": [
+        "メンバー以外が招待無しでセーフハウスに入ることを許可します"
+      ],
+      "SafehouseAllowFire": [
+        "火災でセーフハウスが被害を受けるようにします"
+      ],
+      "SafehouseAllowLoot": [
+        "メンバー以外がセーフハウスからアイテムを持ち出すことを許可します"
+      ],
+      "SafehouseAllowRespawn": [
+        "プレイヤーは死亡する前に所属していたセーフハウスにリスポーンします"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "プレイヤーはゲーム内でこの日数生存していれば、セーフハウスを主張することができます"
+      ],
+      "SafeHouseRemovalTime": [
+        "この現実世界の時間数だけプレイヤーが訪問していないセーフハウスは、自動的に削除されます。"
+      ],
+      "SafehouseAllowNonResidential": [
+        "プレイヤーが非住宅の建物を主張できるかどうかを設定します。"
+      ],
+      "AllowDestructionBySledgehammer": [
+        "プレイヤーがスレッジハンマーでワールドのオブジェクトを破壊できるようにします。"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "プレイヤーが自分のセーフハウス内でのみ、ワールドオブジェクトを破壊できるようにします(AllowDestructionBySledgehammerをtrueにする必要があります)。"
+      ],
+      "WarStartDelay": [
+        "戦争が始まるまでの秒数。"
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerIDは、キャラクターが他のサーバーのものか、シングルプレイヤーかを判断します。この値はソフトリセットによって変更されることがあります。<br>この数値がクライアントと一致する場合、クライアントは新しいキャラクターを作成する必要があります。<br>リセットIDと一緒に使用されます。これらのIDはどこかに控えておくことを強くお勧めします。"
+      ],
+      "RCONPort": [
+        "RCON（リモートコンソール）用ポート"
+      ],
+      "RCONPassword": [
+        "RCONのパスワード（強力なパスワードを設定してください）"
+      ],
+      "DiscordEnable": [
+        "Discordチャンネルとのグローバルテキストチャット統合を有効にします"
+      ],
+      "DiscordToken": [
+        "Discordボットアクセストークン"
+      ],
+      "DiscordChannel": [
+        "Discordのチャンネル名です。 (問題がある場合は、別のチャンネルIDオプションを試してみてください)"
+      ],
+      "DiscordChannelID": [
+        "DiscordのチャンネルIDです。(Discordチャンネル名オプションに問題がある場合に使用します)"
+      ],
+      "WebhookAddress": [
+        "Slack の受信 Webhook URL"
+      ],
+      "Password": [
+        "クライアントがサーバーに参加するためにはこのパスワードを知っている必要があります。<br>ホストボタンでサーバーをホストする場合はパスワードは無視されます。"
+      ],
+      "MaxAccountsPerUser": [
+        "1人のSteamユーザーがこのサーバーで作成できる異なるアカウントの数を制限します。<br>ホストボタンで使用する場合は無視されます。"
+      ],
+      "AllowCoop": [
+        "協力プレイ/画面分割プレーヤーを許可する"
+      ],
+      "SleepAllowed": [
+        "プレイヤーはサバイバーが疲れたら寝ることができますが、寝る必要はありません。"
+      ],
+      "SleepNeeded": [
+        "プレイヤーが疲れるようになり睡眠が必要になります。 (SleepAllowed=falseの場合は無効になります)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "サーバーがダウンロードするWORKSHOPのMODのIDをリストアップします。それぞれをセミコロンで区切ってください。 例: WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Steam ユーザー名とアバターをプレイヤーリストに表示します。 true（全員に見えます）、false（誰にも見えません）、admin（管理者のみ見えます）のいずれか指定できます。"
+      ],
+      "SteamVAC": [
+        "Steam VACシステムを有効にする"
+      ],
+      "UPnP": [
+        "UPnP対応インターネットゲートウェイを、ポート転送ルールに自動的に設定することを試みます。 これに失敗した場合、サーバーはデフォルトのポートに戻ります。"
+      ],
+      "VoiceEnable": [
+        "チェックすると、VOIPが有効になります"
+      ],
+      "VoiceMinDistance": [
+        "VOIPの音が聞こえる最小タイル距離です。"
+      ],
+      "VoiceMaxDistance": [
+        "VOIPの音が聞こえる最大タイル距離です。"
+      ],
+      "Voice3D": [
+        "VOIPの指向性音声を切り替えます。"
+      ],
+      "server_browser_announced_ip": [
+        "サーバーのブロードキャスト元となるIPを設定します。サーバーファームなど、複数のIPアドレスを持つネットワーク構成の場合に設定します。"
+      ],
+      "PlayerRespawnWithSelf": [
+        "プレイヤーはゲーム内で死亡した座標にリスポーンすることができます"
+      ],
+      "PlayerRespawnWithOther": [
+        "ゲーム内の分割画面/リモートプレイのプレイヤーの位置で、リスポーンすることができます。"
+      ],
+      "FastForwardMultiplier": [
+        "睡眠中の時間経過の速さを制御する。値は睡眠中の時間経過の速さを表します。"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "セーフハウスにメンバーがいる場合、セーフハウスが通常の家と同じように動作します。 (オフライン時の安全性を確保するためです)"
+      ],
+      "Faction": [
+        "trueの場合、プレイヤーは派閥を作ることができます"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "プレイヤーは、ゲーム内でこの日数を生き延びなければ、派閥を作ることができません"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "派閥のオーナーがグループタグを作成するのに必要な派閥のメンバーとしてのプレイヤーの数です。"
+      ],
+      "DisableRadioStaff": [
+        "アクセスレベルを持つプレイヤーからの無線送信を無効にします"
+      ],
+      "DisableRadioAdmin": [
+        "アクセスレベルが「admin」のプレイヤーからの無線送信を無効にします。"
+      ],
+      "DisableRadioGM": [
+        "アクセスレベルが「gm」のプレイヤーからの無線通信を無効にします"
+      ],
+      "DisableRadioOverseer": [
+        "アクセスレベルが「overseer」のプレイヤーからの無線通信を無効にします"
+      ],
+      "DisableRadioModerator": [
+        "アクセスレベルが「moderator」のプレイヤーからの無線通信を無効にします"
+      ],
+      "DisableRadioInvisible": [
+        "透明なプレーヤーからの無線通信を無効にします"
+      ],
+      "ClientCommandFilter": [
+        "cmd.txtサーバーログに書き込まないコマンドを、セミコロンで区切ってリストアップします。 例:",
+        "-vehicle を入力すると、車両のコマンドを一切書き込まないことを意味します。 書き込む:",
+        "+vehicle はinstallPartにコマンドを書き込むことを意味します"
+      ],
+      "ClientActionLogs": [
+        "ClientActionLogs.txtサーバーログに書き込まれるアクションの、セミコロン区切りのリストです"
+      ],
+      "PerkLogs": [
+        "PerkLog.txtのサーバーログに、プレイヤーのスキルレベルの変化を記録します。"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "コンテナに入れることができるアイテムの上限数です。 0は無制限を意味します。 (注意してください: 釘のような小物も含まれます。50本とすると、釘は50本までしか収納できません。)"
+      ],
+      "BloodSplatLifespanDays": [
+        "古い血痕が除去されるまでの日数です。<br>削除はマップチャンクのロード時に行われます。<br>0は血痕を削除しないことを意味します"
+      ],
+      "AllowNonAsciiUsername": [
+        "ユーザー名に非ASCII文字（キリル文字など）を使用を許可します。"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "HoursForCorpseRemovalがtrueの場合に有効にすると、プレイヤーの死体も地面から除去されるようになります。"
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "trueの場合、プレイヤーは他のプレーヤーに殴られたとき、殴り変えすことができます。"
+      ],
+      "MouseOverToSeeDisplayName": [
+        "trueの場合、プレイヤーは、誰かの上にマウスを置くと、その人の表示名を見ることができます。"
+      ],
+      "HidePlayersBehindYou": [
+        "trueの場合、視界外のプレイヤーは(ゾンビのように)自動で隠れます。"
+      ],
+      "PVPMeleeDamageModifier": [
+        "PVPの近接攻撃時のダメージ倍率を追加します。"
+      ],
+      "PVPFirearmDamageModifier": [
+        "PVPの遠距離攻撃のダメージ倍率を追加します。"
+      ],
+      "CarEngineAttractionModifier": [
+        "ゾンビが車両へ吸い寄せられる範囲を変更します(低い値ほどラグが解消されます。)。"
+      ],
+      "PlayerBumpPlayer": [
+        "プレイヤーが他のプレイヤーの間を走り抜けるときに、他のプレイヤーにぶつかる(または転ぶ)かどうかを制御します。"
+      ],
+      "MapRemotePlayerVisibility": [
+        "ゲーム内のマップに表示されるリモートプレーヤーの表示を制御します。",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "禁止される単語のリストが含まれるファイルへのパス。"
+      ],
+      "GoodWordListFile": [
+        "たとえ不適切な単語が含まれている場合でも、許可される単語のリストが含まれるファイルへのパス。"
+      ],
+      "BadWordPolicy": [
+        "チャット内で悪い言葉の送信者に何をすべきか: 1 - 禁止、2 - キック、3 - 違反をデータベースに記録、4 - ミュート"
+      ],
+      "BadWordReplacement": [
+        "悪い単語を置き換える記号またはテキスト"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "移動のアンチチート保護を無効にします。"
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "プレイヤーのアンチチート保護を無効にします。"
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "アイテムチェックのアンチチート保護を無効にします。"
+      ],
+      "AntiCheatServerCustomization": [
+        "サーバーカスタマイズのアンチチート保護を無効にします。"
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "マルチプレイヤーの更新期間を秒単位で設定します。"
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "プレーヤーリストで管理者を非表示にします。"
+      ],
+      "Seed": [
+        "ワールドの生成に使用される worldgen シード。<br>これを変更したい場合は、新しい値を入力し、保存ディレクトリの map_worldgen.bin を削除します。"
+      ],
+      "SpeedLimit": [
+        "車の速度制限。"
+      ],
+      "BackupsCount": [
+        "最小: 1 最大: 300 既定: 5"
+      ],
+      "BackupsPeriod": [
+        "最小: 0 最大: 1500 既定: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "最小: 64 最大: 1024 既定: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "最小: 1 最大: 30 既定: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "最小: 20 最大: 1200 既定: 60"
+      ],
+      "Map": [
+        "\\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\ にあるMODのフォルダー名を入力してください"
+      ],
+      "MaxSafezoneSize": [
+        "最小: 0 最大: 2147483647 既定: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "最小: 0 最大: 60 既定: 60"
+      ],
+      "TrashDeleteAll": [
+        "有効にすると、プレイヤーはゴミ箱で「すべて削除」ボタンを使用できます。"
+      ],
+      "UDPPort": [
+        "最小: 0 最大: 65535 既定: 16262"
+      ]
+    }
+  }
+}
+
+

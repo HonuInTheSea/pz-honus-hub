@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, firstValueFrom, Subject } from 'rxjs';
 import { TranslocoService } from '@jsverse/transloco';
+import { HttpClient } from '@angular/common/http';
 import { TauriStoreService } from './tauri-store.service';
 import { SUPPORTED_LOCALES } from '../i18n/locales';
 import { locale as osLocale } from '@tauri-apps/plugin-os';
@@ -13,12 +14,23 @@ export class LocalizationService {
   private readonly LOCALE_KEY = 'pz_locale';
   private readonly localeSubject = new BehaviorSubject<string>('en-US');
   readonly locale$ = this.localeSubject.asObservable();
+  private readonly localeLoadingSubject = new BehaviorSubject<boolean>(false);
+  readonly localeLoading$ = this.localeLoadingSubject.asObservable();
+  private localeLoadingCount = 0;
   private initPromise: Promise<void> | null = null;
+  private readonly loadedLocales = new Set<string>();
+  private readonly loadedServerScopes = new Set<string>();
+  private readonly cacheEventsSubject = new Subject<{
+    type: 'locale' | 'page' | 'tab';
+    name: string;
+  }>();
+  readonly cacheEvents$ = this.cacheEventsSubject.asObservable();
 
   constructor(
     private readonly store: TauriStoreService,
     private readonly transloco: TranslocoService,
     private readonly primeng: PrimeNG,
+    private readonly http: HttpClient,
   ) {
     void this.init();
     this.syncPrimeNgTranslations();
@@ -35,23 +47,31 @@ export class LocalizationService {
     return this.initPromise;
   }
 
-  setLocale(locale: string): void {
+  async setLocale(locale: string): Promise<void> {
     const cleaned = this.normalizeLocale(locale);
     if (!cleaned || cleaned === this.localeSubject.value) {
       return;
     }
-    this.applyLocale(cleaned);
-    void this.store.setItem(this.LOCALE_KEY, cleaned);
+    this.beginLocaleLoading();
+    try {
+      await this.preloadLocale(cleaned);
+      this.applyLocale(cleaned);
+      void this.store.setItem(this.LOCALE_KEY, cleaned);
+    } finally {
+      this.endLocaleLoading();
+    }
   }
 
   private async loadLocale(): Promise<void> {
     const stored = await this.store.getItem<string>(this.LOCALE_KEY);
     const cleaned = this.normalizeLocale(stored);
     if (cleaned) {
+      await this.preloadLocale(cleaned);
       this.applyLocale(cleaned);
       return;
     }
     const detected = await this.resolveSystemLocale();
+    await this.preloadLocale(detected);
     this.applyLocale(detected);
     void this.store.setItem(this.LOCALE_KEY, detected);
   }
@@ -72,6 +92,82 @@ export class LocalizationService {
     }
     this.transloco.setActiveLang(locale);
     this.applyDocumentLocale(locale);
+  }
+
+  private async preloadLocale(locale: string): Promise<void> {
+    const normalized = this.normalizeLocale(locale);
+    if (!normalized || this.loadedLocales.has(normalized)) {
+      return;
+    }
+    await firstValueFrom(this.transloco.selectTranslation(normalized));
+    this.loadedLocales.add(normalized);
+    await this.preloadServerScopes(normalized);
+    this.notifyCache({ type: 'locale', name: normalized });
+  }
+
+  beginLocaleLoading(): void {
+    this.localeLoadingCount += 1;
+    if (this.localeLoadingCount === 1) {
+      this.localeLoadingSubject.next(true);
+    }
+  }
+
+  endLocaleLoading(): void {
+    this.localeLoadingCount = Math.max(this.localeLoadingCount - 1, 0);
+    if (this.localeLoadingCount === 0) {
+      this.localeLoadingSubject.next(false);
+    }
+  }
+
+  private async preloadServerScopes(locale: string): Promise<void> {
+    const scopes = ['ini', 'sandbox', 'spawnpoints', 'spawnregions'];
+    await Promise.all(
+      scopes.map(async (scope) => {
+        const key = `${scope}:${locale}`;
+        if (this.loadedServerScopes.has(key)) {
+          return;
+        }
+        try {
+          const data = await this.fetchJsonWithTimeout(
+            `/assets/i18n/server/${scope}/${locale}.json`,
+            3000,
+          );
+          const payload =
+            scope === 'ini'
+              ? { server: { ini: (data as { ini?: Record<string, string> }).ini ?? data } }
+              : { server: { [scope]: data } };
+          this.transloco.setTranslation(payload, locale, { merge: true });
+          this.loadedServerScopes.add(key);
+          this.notifyCache({ type: 'page', name: `server:${key}` });
+        } catch {
+          // Ignore missing scope files.
+        }
+      }),
+    );
+  }
+
+  private async fetchJsonWithTimeout(
+    url: string,
+    timeoutMs: number,
+  ): Promise<Record<string, unknown>> {
+    try {
+      const data = await Promise.race([
+        firstValueFrom(this.http.get<Record<string, unknown>>(url)),
+        new Promise<Record<string, unknown>>((resolve) =>
+          setTimeout(() => resolve({}), timeoutMs),
+        ),
+      ]);
+      return data ?? {};
+    } catch {
+      return {};
+    }
+  }
+
+  notifyCache(event: { type: 'locale' | 'page' | 'tab'; name: string }): void {
+    if (!event.name) {
+      return;
+    }
+    this.cacheEventsSubject.next(event);
   }
 
   private syncPrimeNgTranslations(): void {

@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombi",
+  "Distribution": "Pamamahagi",
+  "ZombieVoronoiNoise": "Ingay ng Zombie Voronoi",
+  "ZombieRespawn": "Pagbalik ng Zombi",
+  "ZombieMigrate": "Paglipat ng Zombi",
+  "DayLength": "Haba ng Araw",
+  "StartMonth": "Buwan ng Simula",
+  "StartDay": "Araw ng Simula",
+  "StartTime": "Oras ng Simula",
+  "DayNightCycle": "Siklo ng Araw/Gabi",
+  "ClimateCycle": "Siklo ng Klima",
+  "FogCycle": "Siklo ng Hamog",
+  "WaterShut": "Pagpapatigil ng Tubig",
+  "ElecShut": "Pagpapatigil ng Kuryente",
+  "AlarmDecay": "Pagkabulok ng Alarm",
+  "WaterShutModifier": "Modifier ng Pagpapatigil ng Tubig",
+  "ElecShutModifier": "Modifier ng Pagpapatigil ng Kuryente",
+  "AlarmDecayModifier": "Modifier ng Pagkabulok ng Alarm",
+  "FoodLootNew": "Kuhang Pagkain (bago)",
+  "LiteratureLootNew": "Kuhang Literatura (bago)",
+  "MedicalLootNew": "Kuhang Medikal (bago)",
+  "SurvivalGearsLootNew": "Kuhang Kagamitang Pang-survive (bago)",
+  "CannedFoodLootNew": "Kuhang De-latang Pagkain (bago)",
+  "WeaponLootNew": "Kuhang Sandata (bago)",
+  "RangedWeaponLootNew": "Kuhang Pangmalayuang Sandata (bago)",
+  "AmmoLootNew": "Kuhang Bala (bago)",
+  "MechanicsLootNew": "Kuhang Mekanika (bago)",
+  "OtherLootNew": "Ibang Kuha (bago)",
+  "ClothingLootNew": "Kuhang Damit (bago)",
+  "ContainerLootNew": "Kuhang Lalagyan (bago)",
+  "KeyLootNew": "Kuhang Susi (bago)",
+  "MediaLootNew": "Kuhang Media (bago)",
+  "MementoLootNew": "Kuhang Alaala (bago)",
+  "CookwareLootNew": "Kuhang Kagamitang Pangluto (bago)",
+  "MaterialLootNew": "Kuhang Materyales (bago)",
+  "FarmingLootNew": "Kuhang Pagsasaka (bago)",
+  "ToolLootNew": "Kuhang Kasangkapan (bago)",
+  "RollsMultiplier": "Multiplikador ng Pagroll",
+  "LootItemRemovalList": "Listahan ng Pag-alis ng Kuha",
+  "RemoveStoryLoot": "Alisin ang Kuha ng Kuwento",
+  "RemoveZombieLoot": "Alisin ang Kuha ng Zombi",
+  "ZombiePopLootEffect": "Epekto ng Kuha mula sa Populasyon ng Zombi",
+  "InsaneLootFactor": "Salik ng Kuha: Baliw",
+  "ExtremeLootFactor": "Salik ng Kuha: Matindi",
+  "RareLootFactor": "Salik ng Kuha: Bihira",
+  "NormalLootFactor": "Salik ng Kuha: Normal",
+  "CommonLootFactor": "Salik ng Kuha: Karaniwan",
+  "AbundantLootFactor": "Salik ng Kuha: Masagana",
+  "Temperature": "Temperatura",
+  "Rain": "Ulan",
+  "ErosionSpeed": "Bilis ng Erosion",
+  "ErosionDays": "Mga Araw ng Erosion",
+  "Farming": "Pagsasaka",
+  "CompostTime": "Oras ng Kompost",
+  "StatsDecrease": "Pagbaba ng Stats",
+  "NatureAbundance": "Kasaganaan ng Kalikasan",
+  "Alarm": "Alarm",
+  "LockedHouses": "Nakalock na Bahay",
+  "StarterKit": "Panimulang Kit",
+  "Nutrition": "Nutrisyon",
+  "FoodRotSpeed": "Bilis ng Pagkapanis ng Pagkain",
+  "FridgeFactor": "Factor ng Refrigerator",
+  "SeenHoursPreventLootRespawn": "Mga Oras na Nakita ay Pumipigil sa Respawn ng Kuha",
+  "HoursForLootRespawn": "Mga Oras bago Respawn ng Kuha",
+  "MaxItemsForLootRespawn": "Max na Items para sa Respawn ng Kuha",
+  "ConstructionPreventsLootRespawn": "Pinipigilan ng Konstruksyon ang Respawn ng Kuha",
+  "WorldItemRemovalList": "Listahan ng Pag-alis ng Item sa Mundo",
+  "HoursForWorldItemRemoval": "Mga Oras bago Alisin ang Item sa Mundo",
+  "ItemRemovalListBlacklistToggle": "Toggle Blacklist ng Pag-alis ng Item",
+  "TimeSinceApo": "Oras Mula sa Apokalipsis",
+  "PlantResilience": "Katatagan ng Halaman",
+  "PlantAbundance": "Kasaganaan ng Halaman",
+  "EndRegen": "Regenerasyon ng Stamina",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta Event",
+  "SleepingEvent": "Kaganapan habang Natutulog",
+  "GeneratorFuelConsumption": "Konsumo ng Gasolina ng Generator",
+  "GeneratorSpawning": "Paglitaw ng Generator",
+  "AnnotatedMapChance": "Tsansa ng May Anotasyon na Mapa",
+  "CharacterFreePoints": "Libreng Puntos ng Karakter",
+  "ConstructionBonusPoints": "Bonus na Puntos sa Konstruksyon",
+  "NightDarkness": "Kadiliman ng Gabi",
+  "NightLength": "Haba ng Gabi",
+  "BoneFracture": "Bali ng Buto",
+  "InjurySeverity": "Tindi ng Pinsala",
+  "HoursForCorpseRemoval": "Mga Oras bago Alisin ang Bangkay",
+  "DecayingCorpseHealthImpact": "Epekto sa Kalusugan ng Nabubulok na Bangkay",
+  "ZombieHealthImpact": "Epekto sa Kalusugan ng Zombi",
+  "BloodLevel": "Antas ng Dugo",
+  "ClothingDegradation": "Pagkasira ng Damit",
+  "FireSpread": "Pagkalat ng Apoy",
+  "DaysForRottenFoodRemoval": "Mga Araw bago Alisin ang Bulok na Pagkain",
+  "AllowExteriorGenerator": "Pahintulutan ang Panlabas na Generator",
+  "MaxFogIntensity": "Max na Tindi ng Hamog",
+  "MaxRainFxIntensity": "Max na Tindi ng Epekto ng Ulan",
+  "EnableSnowOnGround": "Paganahin ang Niyebe sa Lupa",
+  "AttackBlockMovements": "Hinaharang ng Atake ang Paggalaw",
+  "SurvivorHouseChance": "Tsansa ng Bahay ng Survivor",
+  "VehicleStoryChance": "Tsansa ng mga Kuwento ng Sasakyan",
+  "ZoneStoryChance": "Tsansa ng mga Kuwento ng Zona",
+  "AllClothesUnlocked": "Lahat ng Damit Ay Na-unlock",
+  "EnableTaintedWaterText": "Paganahin ang Teksto ng Kontaminadong Tubig",
+  "EnableVehicles": "Paganahin ang mga Sasakyan",
+  "CarSpawnRate": "Bilis ng Paglitaw ng Sasakyan",
+  "ZombieAttractionMultiplier": "Multiplikador ng Atraksyon ng Zombi",
+  "VehicleEasyUse": "Madaling Gamitin ang Sasakyan",
+  "InitialGas": "Panimulang Gasolina",
+  "FuelStationGasInfinite": "Walang Hanggang Gasolina sa Gasolinahan",
+  "FuelStationGasMin": "Minimum na Gasolina sa Gasolinahan",
+  "FuelStationGasMax": "Maximum na Gasolina sa Gasolinahan",
+  "FuelStationGasEmptyChance": "Tsansa ng Walang Gasolina na Gasolinahan",
+  "LockedCar": "Nakalock na Sasakyan",
+  "CarGasConsumption": "Konsumo ng Gasolina ng Sasakyan",
+  "CarGeneralCondition": "Pangkalahatang Kondisyon ng Sasakyan",
+  "CarDamageOnImpact": "Pinsala ng Sasakyan sa Banggaan",
+  "DamageToPlayerFromHitByACar": "Pinsala sa Manlalaro mula sa Banggaan ng Sasakyan",
+  "TrafficJam": "Trapiko",
+  "CarAlarm": "Alarm ng Sasakyan",
+  "PlayerDamageFromCrash": "Pinsala sa Manlalaro mula sa Banggaan",
+  "SirenShutoffHours": "Mga Oras bago Mamatay ang Sirena",
+  "ChanceHasGas": "Tsansa na May Gasolina",
+  "RecentlySurvivorVehicles": "Mga Bagong Sasakyan ng Survivor",
+  "MultiHitZombies": "Maramihang Tama sa Zombi",
+  "RearVulnerability": "Kahinaan sa Likuran",
+  "SirenEffectsZombies": "Epekto ng Sirena sa Zombi",
+  "AnimalStatsModifier": "Modifier ng Stats ng Hayop",
+  "AnimalMetaStatsModifier": "Modifier ng Meta Stats ng Hayop",
+  "AnimalPregnancyTime": "Panahon ng Pagbubuntis ng Hayop",
+  "AnimalAgeModifier": "Modifier ng Edad ng Hayop",
+  "AnimalMilkIncModifier": "Modifier ng Pagtaas ng Gatas",
+  "AnimalWoolIncModifier": "Modifier ng Pagtaas ng Lana",
+  "AnimalRanchChance": "Tsansa ng Animal Ranch",
+  "AnimalGrassRegrowTime": "Oras ng Muling Pagtubo ng Damo",
+  "AnimalMetaPredator": "Meta Predator ng Hayop",
+  "AnimalMatingSeason": "Panahon ng Pagpaparami",
+  "AnimalEggHatch": "Pagpisa ng Itlog",
+  "AnimalSoundAttractZombies": "Tunog ng Hayop ay Umaakit ng Zombi",
+  "AnimalTrackChance": "Tsansa ng Bakas ng Hayop",
+  "AnimalPathChance": "Tsansa ng Daan ng Hayop",
+  "MaximumRatIndex": "Maximum Rat Index",
+  "DaysUntilMaximumRatIndex": "Mga Araw hanggang Maximum Rat Index",
+  "MetaKnowledge": "Kaalamang Meta",
+  "SeeNotLearntRecipe": "Tingnan ang Mga Hindi Natutunang Resipe",
+  "MaximumLootedBuildingRooms": "Max na Na-loot na Kwarto ng Gusali",
+  "EnablePoisoning": "Paganahin ang Paglalason",
+  "MaggotSpawn": "Paglitaw ng Uod",
+  "LightBulbLifespan": "Haba ng Buhay ng Bombilya",
+  "FishAbundance": "Kasaganaan ng Isda",
+  "LevelForMediaXPCutoff": "Antas para sa XP Cutoff ng Media",
+  "LevelForDismantleXPCutoff": "Antas para sa XP Cutoff ng Pagbubuwag",
+  "BloodSplatLifespanDays": "Mga Araw ng Haba ng Buhay ng Dugo",
+  "LiteratureCooldown": "Cooldown ng Literatura",
+  "NegativeTraitsPenalty": "Parusa sa Negatibong Katangian",
+  "MinutesPerPage": "Minuto bawat Pahina",
+  "KillInsideCrops": "Patayin ang mga Halaman sa Loob",
+  "PlantGrowingSeasons": "Panahong Paglago ng Halaman",
+  "PlaceDirtAboveground": "Ilagay ang Lupa sa Itaas",
+  "FarmingSpeedNew": "Bilis ng Pagsasaka (bago)",
+  "FarmingAmountNew": "Dami ng Pagsasaka (bago)",
+  "MaximumLooted": "Pinakamataas na Na-loot",
+  "DaysUntilMaximumLooted": "Mga Araw hanggang Pinakamataas na Na-loot",
+  "RuralLooted": "Na-loot sa Kanayunan",
+  "MaximumDiminishedLoot": "Pinakamataas na Nababawas na Loot",
+  "DaysUntilMaximumDiminishedLoot": "Mga Araw hanggang Pinakamataas na Nababawas na Loot",
+  "MuscleStrainFactor": "Salik ng Pagkapuwersa ng Kalamnan",
+  "DiscomfortFactor": "Salik ng Hindi Komportable",
+  "WoundInfectionFactor": "Salik ng Impeksiyon sa Sugat",
+  "NoBlackClothes": "Walang Itim na Damit",
+  "EasyClimbing": "Madaling Pag-akyat",
+  "MaximumFireFuelHours": "Max na Oras ng Panggatong para sa Apoy",
+  "FirearmUseDamageChance": "Tsansa ng Pinsala sa Paggamit ng Baril",
+  "FirearmNoiseMultiplier": "Multiplikador ng Ingay ng Baril",
+  "FirearmJamMultiplier": "Multiplikador ng Pagkakabara ng Baril",
+  "FirearmMoodleMultiplier": "Multiplikador ng Mood para sa Baril",
+  "FirearmWeatherMultiplier": "Multiplikador ng Panahon para sa Baril",
+  "FirearmHeadGearEffect": "Epekto ng Panakip-ulo para sa Baril",
+  "ClayLakeChance": "Tsansa ng Luad sa Lawa",
+  "ClayRiverChance": "Tsansa ng Luad sa Ilog",
+  "GeneratorTileRange": "Saklaw ng Tile ng Generator",
+  "GeneratorVerticalPowerRange": "Patayong Saklaw ng Kuryente ng Generator",
+  "Basement": "Basement",
+  "SpawnFrequency": "Dalas ng Paglitaw",
+  "Map": "Mapa",
+  "AllowMiniMap": "Pahintulutan ang MiniMap",
+  "AllowWorldMap": "Pahintulutan ang Mapa ng Mundo",
+  "MapAllKnown": "Lahat ng Mapa ay Kilala",
+  "MapNeedsLight": "Kailangan ng Ilaw ang Mapa",
+  "ZombieLore": "Kaalaman sa Zombi",
+  "Speed": "Bilis",
+  "SprinterPercentage": "Porsyento ng Sprinter",
+  "Strength": "Lakas",
+  "Toughness": "Katigasan",
+  "Transmission": "Pagkalat",
+  "Mortality": "Kamatayan",
+  "Reanimate": "Muling Buhayin",
+  "Cognition": "Kognisyon",
+  "CrawlUnderVehicle": "Gumapang sa Ilalim ng Sasakyan",
+  "Memory": "Memorya",
+  "Sight": "Paningin",
+  "Hearing": "Pandinig",
+  "SpottedLogic": "Lohika ng Pagkakita",
+  "ThumpNoChasing": "Pagtapik nang walang Habol",
+  "ThumpOnConstruction": "Pagtapik sa Konstruksyon",
+  "ActiveOnly": "Aktibo Lamang",
+  "TriggerHouseAlarm": "I-activate ang Alarm ng Bahay",
+  "ZombiesDragDown": "Hihilahin pababa ng Zombi",
+  "ZombiesCrawlersDragDown": "Hihilahin pababa ng Gumagapang na Zombi",
+  "ZombiesFenceLunge": "Tatalon ang Zombi sa Bakod",
+  "ZombiesArmorFactor": "Salik ng Baluti ng Zombi",
+  "ZombiesMaxDefense": "Pinakamataas na Depensa ng Zombi",
+  "ChanceOfAttachedWeapon": "Tsansa ng Nakakabit na Sandata",
+  "ZombiesFallDamage": "Pinsala sa Pagkahulog ng Zombi",
+  "DisableFakeDead": "I-disable ang Pekeng Patay",
+  "PlayerSpawnZombieRemoval": "Alisin ang Zombi sa Spawn",
+  "FenceThumpersRequired": "Kailangang Zombi para Masira ang Bakod",
+  "FenceDamageMultiplier": "Multiplikador ng Pinsala sa Bakod",
+  "ZombieConfig": "Konfigurasyon ng Zombi",
+  "PopulationMultiplier": "Multiplikador ng Populasyon",
+  "PopulationStartMultiplier": "Multiplikador ng Panimulang Populasyon",
+  "PopulationPeakMultiplier": "Multiplikador ng Rurok ng Populasyon",
+  "PopulationPeakDay": "Araw ng Rurok ng Populasyon",
+  "RespawnHours": "Mga Oras ng Respawn",
+  "RespawnUnseenHours": "Mga Oras na Hindi Nakita para sa Respawn",
+  "RespawnMultiplier": "Multiplikador ng Respawn",
+  "RedistributeHours": "Mga Oras ng Redistribusyon",
+  "FollowSoundDistance": "Layo ng Pagsunod sa Tunog",
+  "RallyGroupSize": "Laki ng Grupo",
+  "RallyGroupSizeVariance": "Pagkakaiba ng Laki ng Grupo",
+  "RallyTravelDistance": "Distansya ng Paglalakbay ng Grupo",
+  "RallyGroupSeparation": "Paghihiwalay ng Grupo",
+  "RallyGroupRadius": "Radius ng Grupo",
+  "ZombiesCountBeforeDelete": "Bilang ng Zombi Bago Burahin",
+  "MultiplierConfig": "Konfigurasyon ng Multiplikador",
+  "Global": "Pangkalahatan",
+  "GlobalToggle": "Toggle ng Pangkalahatan",
+  "Fitness": "Kondisyon",
+  "Sprinting": "Pag-sprint",
+  "Lightfoot": "Magaan ang Hakbang",
+  "Nimble": "Maliksi",
+  "Sneak": "Pagsingit",
+  "Axe": "Palakol",
+  "Blunt": "Panghampas",
+  "SmallBlunt": "Maliit na Panghampas",
+  "LongBlade": "Mahabang Talim",
+  "SmallBlade": "Maikling Talim",
+  "Spear": "Sibat",
+  "Maintenance": "Pagpapanatili",
+  "Woodwork": "Pagkakahoy",
+  "Cooking": "Cooking",
+  "Doctor": "Doctor",
+  "Electricity": "Electricity",
+  "MetalWelding": "Metal Welding",
+  "Mechanics": "Mechanics",
+  "Tailoring": "Tailoring",
+  "Aiming": "Aiming",
+  "Reloading": "Reloading",
+  "Fishing": "Fishing",
+  "Trapping": "Trapping",
+  "PlantScavenging": "Plant Scavenging",
+  "FlintKnapping": "Flint Knapping",
+  "Masonry": "Masonry",
+  "Pottery": "Pottery",
+  "Carving": "Carving",
+  "Husbandry": "Husbandry",
+  "Tracking": "Tracking",
+  "Blacksmith": "Blacksmith",
+  "Butchering": "Butchering",
+  "Glassmaking": "Glassmaking",
+  "comments": {
+    "Zombies": [
+      "Ang pagpapalit nito ay nagtatakda din ng \"Population Multiplier\" sa Advanced Zombie Options.",
+      "1 = Insane",
+      "2 = Very High",
+      "3 = High",
+      "4 = Normal",
+      "5 = Low",
+      "6 = None"
+    ],
+    "Distribution": [
+      "Paano ipinamamahagi ang mga zombie sa buong mapa. ",
+      "1 = Urban Focused",
+      "2 = Uniform"
+    ],
+    "ZombieVoronoiNoise": [
+      "Kinokontrol kung ang ilang randomization ay inilalapat sa pamamahagi ng zombie."
+    ],
+    "ZombieRespawn": [
+      "Gaano kadalas naidagdag ang mga bagong zombie sa mundo. ",
+      "1 = High",
+      "2 = Normal",
+      "3 = Low",
+      "4 = None"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Default = 1 Oras, 30 Minuto",
+      "1 = 15 Minuto",
+      "2 = 30 Minuto",
+      "3 = 1 Hour",
+      "4 = 1 Oras, 30 Minuto",
+      "5 = 2 Oras",
+      "6 = 3 Oras",
+      "7 = 4 na Oras",
+      "8 = 5 Oras",
+      "9 = 6 na Oras",
+      "10 = 7 Oras",
+      "11 = 8 Oras",
+      "12 = 9 na Oras",
+      "13 = 10 Oras",
+      "14 = 11 Oras",
+      "15 = 12 Oras",
+      "16 = 13 Oras",
+      "17 = 14 na Oras",
+      "18 = 15 Oras",
+      "19 = 16 na Oras",
+      "20 = 17 Oras",
+      "21 = 18 Oras",
+      "22 = 19 Oras",
+      "23 = 20 Oras",
+      "24 = 21 Oras",
+      "25 = 22 Oras",
+      "26 = 23 Oras",
+      "27 = Real-time"
+    ],
+    "StartMonth": [
+      "Buwan kung saan magsisimula ang laro. ",
+      "1 = January",
+      "2 = February",
+      "3 = March",
+      "4 = April",
+      "5 = May",
+      "6 = June",
+      "7 = July",
+      "8 = August",
+      "9 = September",
+      "10 = October",
+      "11 = November",
+      "12 = December"
+    ],
+    "StartDay": [
+      "Araw ng buwan kung saan magsisimula ang mga laro."
+    ],
+    "StartTime": [
+      "Oras ng araw kung saan magsisimula ang laro. ",
+      "1 = 7 AM",
+      "2 = 9 AM",
+      "3 = 12 PM",
+      "4 = 2 PM",
+      "5 = 5 PM",
+      "6 = 9 PM",
+      "7 = 12 AM",
+      "8 = 2 AM",
+      "9 = 5 AM"
+    ],
+    "DayNightCycle": [
+      "Kung natural na nagbabago ang oras ng araw, o palaging araw/gabi. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Kung nagbabago ang panahon o nananatili sa isang estado. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Kung ang fog ay natural na nangyayari, hindi kailanman nangyayari, o palaging naroroon. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang mga kagamitan sa pagtutubero (hal. lababo) ay hihinto sa pagiging walang katapusang pinagmumulan ng tubig. ",
+      "1 = Instant",
+      "2 = 0-30 Araw",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "ElecShut": [
+      "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang koryente sa mundo ay tuluyang napatay. ",
+      "1 = Instant",
+      "2 = 0-30 Araw",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years",
+      "7 = 2-6 Months",
+      "8 = 6-12 Months",
+      "9 = Disabled"
+    ],
+    "AlarmDecay": [
+      "Gaano katagal maaaring tumagal ang mga baterya ng alarma pagkatapos patayin ang kuryente. ",
+      "1 = Instant",
+      "2 = 0-30 Araw",
+      "3 = 0-2 Months",
+      "4 = 0-6 Months",
+      "5 = 0-1 Year",
+      "6 = 0-5 Years"
+    ],
+    "WaterShutModifier": [
+      "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang mga kagamitan sa pagtutubero (hal. lababo) ay huminto sa pagiging walang katapusang pinagmumulan ng tubig. "
+    ],
+    "ElecShutModifier": [
+      "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang koryente sa mundo ay tuluyang napatay. "
+    ],
+    "AlarmDecayModifier": [
+      "Gaano katagal maaaring tumagal ang mga baterya ng alarma pagkatapos patayin ang kuryente. "
+    ],
+    "FoodLootNew": [
+      "Anumang pagkain na maaaring mabulok o masira. "
+    ],
+    "LiteratureLootNew": [
+      "Lahat ng mga item na mababasa, kasama ang mga flier Min: 0.00 Max: 4.00 Default: 0.60"
+    ],
+    "MedicalLootNew": [
+      "Gamot, benda at mga kagamitan sa pangunang lunas. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Mga Fishing Rod, Tents, camping gear atbp. "
+    ],
+    "CannedFoodLootNew": [
+      "Mga de-latang at pinatuyong pagkain, inumin. "
+    ],
+    "WeaponLootNew": [
+      "Mga sandata na hindi kasangkapan sa ibang mga kategorya. "
+    ],
+    "RangedWeaponLootNew": [
+      "Kasama rin ang mga attachment ng armas. "
+    ],
+    "AmmoLootNew": [
+      "Maluwag na bala, mga kahon at mga magazine. "
+    ],
+    "MechanicsLootNew": [
+      "Mga bahagi ng sasakyan at ang mga tool na kailangan para i-install ang mga ito. "
+    ],
+    "OtherLootNew": [
+      "Lahat ng iba pa. "
+    ],
+    "ClothingLootNew": [
+      "Lahat ng naisusuot na bagay na hindi lalagyan. "
+    ],
+    "ContainerLootNew": [
+      "Mga backpack at iba pang nasusuot/nakakagamit na mga lalagyan, hal. "
+    ],
+    "KeyLootNew": [
+      "Mga susi para sa mga gusali/kotse, key ring, at kandado. "
+    ],
+    "MediaLootNew": [
+      "Mga VHS tape at CD. "
+    ],
+    "MementoLootNew": [
+      "Spiffo item, plushie, at iba pang collectible na keepsake item hal. "
+    ],
+    "CookwareLootNew": [
+      "Mga bagay na ginagamit sa pagluluto, kabilang ang mga (hal. kutsilyo) na maaaring maging sandata. "
+    ],
+    "MaterialLootNew": [
+      "Mga bagay at armas na ginagamit bilang mga sangkap para sa paggawa o paggawa. "
+    ],
+    "FarmingLootNew": [
+      "Mga bagay at sandata na ginagamit sa parehong pagsasaka ng hayop at halaman, gaya ng Mga Binhi, Trowel, o Pala. "
+    ],
+    "ToolLootNew": [
+      "Mga item at armas na Tools ngunit hindi akma sa ibang mga kategorya gaya ng Mechanics o Pagsasaka. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Inirerekomenda na HUWAG mong baguhin ito. "
+    ],
+    "LootItemRemovalList": [
+      "Isang listahan ng mga uri ng item na pinaghihiwalay ng kuwit na hindi lalabas bilang ordinaryong pagnakawan."
+    ],
+    "RemoveStoryLoot": [
+      "Kung naka-enable, ang mga item sa Loot Item Removal List, o ang pambihira ay nakatakda sa 'Wala', ay hindi lalabas sa mga randomized na kwento sa mundo."
+    ],
+    "RemoveZombieLoot": [
+      "Kung naka-enable, ang mga item sa Loot Item Removal List, o na ang mga bagay na pambihira ay nakatakda sa 'Wala', ay hindi masususuot ng, o nakakabit sa, mga zombie."
+    ],
+    "ZombiePopLootEffect": [
+      "Kung higit sa 0, ang spawn ng loot ay tataas na kaugnay sa bilang ng mga kalapit na zombie, na ang epekto ay na-multiply sa numerong ito."
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Max: 0.20 Default: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Max: 0.60 Default: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Max: 1.00 Default: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Max: 2.00 Default: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Max: 3.00 Default: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Max: 4.00 Default: 3.00"
+    ],
+    "Temperature": [
+      "Ang pandaigdigang temperatura. ",
+      "1 = Very Cold",
+      "2 = Cold",
+      "3 = Normal",
+      "4 = Hot",
+      "5 = Very Hot"
+    ],
+    "Rain": [
+      "Gaano kadalas umuulan. ",
+      "1 = Very Dry",
+      "2 = Dry",
+      "3 = Normal",
+      "4 = Rainy",
+      "5 = Very Rainy"
+    ],
+    "ErosionSpeed": [
+      "Bilang ng mga araw bago ang sistema ng pagguho (na nagdaragdag ng mga baging, mahabang damo, bagong puno atbp. sa mundo) ay aabot sa 100% na paglago. ",
+      "1 = Napakabilis (20 Araw)",
+      "2 = Mabilis (50 Araw)",
+      "3 = Normal (100 Araw)",
+      "4 = Mabagal (200 Araw)",
+      "5 = Napakabagal (500 Araw)"
+    ],
+    "ErosionDays": [
+      "Para sa isang custom na Bilis ng Erosion. "
+    ],
+    "Farming": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pagsasaka. "
+    ],
+    "CompostTime": [
+      "Gaano katagal bago masira ang pagkain sa isang composter. ",
+      "1 = 1 Week",
+      "2 = 2 Weeks",
+      "3 = 3 Weeks",
+      "4 = 4 Weeks",
+      "5 = 6 Weeks",
+      "6 = 8 Weeks",
+      "7 = 10 Weeks",
+      "8 = 12 Weeks"
+    ],
+    "StatsDecrease": [
+      "Gaano kabilis ang gutom, uhaw, at pagod ng manlalaro ay bababa. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "NatureAbundance": [
+      "Ang kasaganaan ng mga item na makikita sa Foraging mode. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "Alarm": [
+      "Gaano ang posibilidad na ang manlalaro ay mag-activate ng alarma sa bahay kapag pumasok sa isang bagong bahay. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "LockedHouses": [
+      "Gaano kadalas isasara ang mga pinto ng mga bahay at gusali kapag natuklasan. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "StarterKit": [
+      "Spawn na may Chip, Bote ng Tubig, Maliit na Backpack, Baseball Bat, at Martilyo."
+    ],
+    "Nutrition": [
+      "Ang halaga ng nutrisyon ng pagkain ay nakakaapekto sa kondisyon ng manlalaro. "
+    ],
+    "FoodRotSpeed": [
+      "Gaano kabilis masira ang pagkain na iyon, sa loob o labas ng refrigerator. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "FridgeFactor": [
+      "Gaano kabisa ang isang refrigerator sa pagpapanatiling sariwa ng pagkain nang mas matagal. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Kapag mas malaki sa 0, hindi na respawn ang loot sa mga zone na binisita sa loob ng bilang na ito ng in-game na oras. "
+    ],
+    "HoursForLootRespawn": [
+      "Kapag mas malaki sa 0, pagkatapos ng X na oras, ang lahat ng container sa mga bayan at trailer park sa mundo ay muling magnanakaw. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Ang mga container na may bilang ng mga item na mas malaki, o katumbas ng, ang setting na ito ay hindi respawn. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Hindi respawn ang mga item sa mga gusali kung saan binarikadahan o itinayo ng mga manlalaro."
+    ],
+    "WorldItemRemovalList": [
+      "Isang listahan ng mga uri ng item na pinaghihiwalay ng kuwit na aalisin pagkatapos ng mga oras ng HoursForWorldItemRemoval."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Bilang ng oras mula nang ihulog ang isang item sa lupa bago ito maalis.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Kung totoo, ang anumang mga item *hindi* sa WorldItemRemovalList ay aalisin."
+    ],
+    "TimeSinceApo": [
+      "Gaano katagal pagkatapos ng katapusan ng mundo upang magsimula. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Gaano karaming tubig ang mawawala sa mga halaman bawat araw, at ang kanilang kakayahang maiwasan ang sakit. ",
+      "1 = Very High",
+      "2 = High",
+      "3 = Normal",
+      "4 = Low",
+      "5 = Very Low"
+    ],
+    "PlantAbundance": [
+      "Ang ani ng mga halaman kapag inani. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "EndRegen": [
+      "Pagbawi mula sa pagod pagkatapos magsagawa ng mga aksyon. ",
+      "1 = Very Fast",
+      "2 = Fast",
+      "3 = Normal",
+      "4 = Slow",
+      "5 = Very Slow"
+    ],
+    "Helicopter": [
+      "Gaano kadalas na dumadaan ang isang helicopter sa Event Zone. ",
+      "1 = Hindi kailanman",
+      "2 = Once",
+      "3 = Sometimes",
+      "4 = Often"
+    ],
+    "MetaEvent": [
+      "Gaano kadalas magaganap ang mga kaganapang metagame na nakakaakit ng zombie tulad ng malalayong putok ng baril. ",
+      "1 = Hindi kailanman",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "SleepingEvent": [
+      "Gaano kadalas nangyayari ang mga kaganapan sa pagtulog ng manlalaro, tulad ng mga bangungot. ",
+      "1 = Hindi kailanman",
+      "2 = Sometimes",
+      "3 = Often"
+    ],
+    "GeneratorFuelConsumption": [
+      "Gaano karaming gasolina ang natupok ng mga generator kada in-game hour. "
+    ],
+    "GeneratorSpawning": [
+      "Ang pagkakataon ng mga de-koryenteng generator na lumilitaw sa mapa. ",
+      "1 = None (not recommended)",
+      "2 = Insanely Rare",
+      "3 = Extremely Rare",
+      "4 = Rare",
+      "5 = Normal",
+      "6 = Common",
+      "7 = Abundant"
+    ],
+    "AnnotatedMapChance": [
+      "Gaano kadalas magkakaroon ng mga tala ang isang ninakaw na mapa, na isinulat ng isang namatay na nakaligtas. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CharacterFreePoints": [
+      "Nagdaragdag ng mga libreng puntos sa paggawa ng character. "
+    ],
+    "ConstructionBonusPoints": [
+      "Nagbibigay ng dagdag na hit point sa mga constructions na binuo ng player para mas lumalaban ang mga ito sa pinsala ng zombie. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "NightDarkness": [
+      "Ang antas ng ambient lighting sa gabi. ",
+      "1 = Pitch Black",
+      "2 = Dark",
+      "3 = Normal",
+      "4 = Bright"
+    ],
+    "NightLength": [
+      "Ang oras mula dapit-hapon hanggang madaling araw. ",
+      "1 = Laging Gabi",
+      "2 = Long",
+      "3 = Normal",
+      "4 = Short",
+      "5 = Laging Araw"
+    ],
+    "BoneFracture": [
+      "Kung ang mga nakaligtas ay maaaring makakuha ng mga bali ng paa mula sa mga impact, pinsala ng zombie, pagkahulog atbp."
+    ],
+    "InjurySeverity": [
+      "Ang epekto ng mga pinsala sa iyong katawan, at ang kanilang oras ng pagpapagaling. ",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "HoursForCorpseRemoval": [
+      "Gaano katagal, sa mga oras, bago mawala ang mga patay na katawan ng zombie sa mundo.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Ang epekto ng malalapit na nabubulok na katawan sa kalusugan at emosyon ng manlalaro. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Insane"
+    ],
+    "ZombieHealthImpact": [
+      "Kung ang mga kalapit na \"nabubuhay\" na zombie ay may parehong epekto sa kalusugan at emosyon ng manlalaro."
+    ],
+    "BloodLevel": [
+      "Gaano karaming dugo ang na-spray sa sahig at dingding dahil sa mga pinsala. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "Gaano kabilis masira ang damit, marumi, at duguan. ",
+      "1 = Disabled",
+      "2 = Slow",
+      "3 = Normal",
+      "4 = Fast"
+    ],
+    "FireSpread": [
+      "Kung kumalat ang apoy kapag nagsimula."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Bilang ng mga in-game na araw bago maalis ang bulok na pagkain sa mapa.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Kung pinagana, gagana ang mga generator sa mga panlabas na tile.  "
+    ],
+    "MaxFogIntensity": [
+      "Pinakamataas na intensity ng fog. ",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low",
+      "4 = None"
+    ],
+    "MaxRainFxIntensity": [
+      "Pinakamataas na intensity ng ulan. ",
+      "1 = Normal",
+      "2 = Moderate",
+      "3 = Low"
+    ],
+    "EnableSnowOnGround": [
+      "Kung ang snow ay maipon sa lupa.  "
+    ],
+    "AttackBlockMovements": [
+      "Kung ang pag-atake ng suntukan ay nagpapabagal sa iyo."
+    ],
+    "SurvivorHouseChance": [
+      "Ang pagkakataong makahanap ng mga random na gusali sa mapa (hal. nasunog na mga bahay, mga naglalaman ng mga nakatagong pagnanakaw o mga bangkay). ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging Sinusubukan"
+    ],
+    "VehicleStoryChance": [
+      "Ang pagkakataon ng mga kwento sa kalsada (hal. mga hadlang sa kalsada ng pulisya) na mag-spawning. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging Sinusubukan"
+    ],
+    "ZoneStoryChance": [
+      "Ang pagkakataon ng mga kuwentong partikular sa mga zone ng mapa (hal. isang campsite sa isang kagubatan) na nag-spawning. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging Sinusubukan"
+    ],
+    "AllClothesUnlocked": [
+      "Binibigyang-daan kang pumili mula sa bawat piraso ng damit sa laro kapag kino-customize ang iyong karakter"
+    ],
+    "EnableTaintedWaterText": [
+      "Kung may bahid na tubig ay magpapakita ng babala na nagmamarka dito."
+    ],
+    "EnableVehicles": [
+      "Kung ang mga sasakyan ay lilitaw."
+    ],
+    "CarSpawnRate": [
+      "Gaano kadalas matutuklasan ang mga sasakyan sa mapa. ",
+      "1 = None",
+      "2 = Very Low",
+      "3 = Low",
+      "4 = Normal",
+      "5 = High"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Pangkalahatang lakas ng makina sa mga zombie. "
+    ],
+    "VehicleEasyUse": [
+      "Naka-lock man ang mga natagpuang sasakyan, kailangan ng mga susi para magsimula atbp."
+    ],
+    "InitialGas": [
+      "Kung gaano kapuno ang tangke ng gas ng mga natuklasang sasakyan. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High",
+      "6 = Full"
+    ],
+    "FuelStationGasInfinite": [
+      "Kung pinagana, ang mga gas pump ay hindi mauubusan ng gasolina"
+    ],
+    "FuelStationGasMin": [
+      "Ang pinakamababang halaga ng gasolina na maaaring mag-spawn sa mga gas pump. "
+    ],
+    "FuelStationGasMax": [
+      "Ang maximum na dami ng gasolina na maaaring mag-spawn sa mga gas pump. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Ang pagkakataon, bilang isang porsyento, na ang mga indibidwal na gas pump ay sa simula ay walang gasolina. "
+    ],
+    "LockedCar": [
+      "Gaano kalamang na mai-lock ang mga sasakyan Default = Rare",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "CarGasConsumption": [
+      "Kung gaano kagutom ang mga sasakyan. "
+    ],
+    "CarGeneralCondition": [
+      "Pangkalahatang kondisyon na natuklasang mga sasakyan ay papasok. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "CarDamageOnImpact": [
+      "Ang dami ng pinsalang natamo sa mga sasakyang nag-crash. ",
+      "1 = Very Low",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Pinsala na natanggap ng player mula sa pagkakabangga. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High",
+      "5 = Very High"
+    ],
+    "TrafficJam": [
+      "Kung ang mga jam ng trapiko na binubuo ng mga nasirang sasakyan ay lilitaw sa mga pangunahing kalsada."
+    ],
+    "CarAlarm": [
+      "Gaano kadalas natuklasang may mga aktibong alarma ang mga sasakyan. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "PlayerDamageFromCrash": [
+      "Kung ang manlalaro ay maaaring masugatan mula sa isang aksidente sa sasakyan."
+    ],
+    "SirenShutoffHours": [
+      "Ilang oras sa laro bago pumutok ang isang umiiyak na sirena. "
+    ],
+    "ChanceHasGas": [
+      "Ang pagkakataong makahanap ng sasakyan na may gas sa tangke nito. ",
+      "1 = Low",
+      "2 = Normal",
+      "3 = High"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Kung matutuklasan ng isang manlalaro ang isang kotse na inalagaan pagkatapos tumama ang impeksyon sa Knox. ",
+      "1 = None",
+      "2 = Low",
+      "3 = Normal",
+      "4 = High"
+    ],
+    "MultiHitZombies": [
+      "Kung ang ilang mga suntukan na armas ay makakapag-atake ng maraming zombie sa isang hit."
+    ],
+    "RearVulnerability": [
+      "Tsansang makagat kapag may zombie na umatake mula sa likod. ",
+      "1 = Low",
+      "2 = Medium",
+      "3 = High"
+    ],
+    "SirenEffectsZombies": [
+      "Kung ang mga zombie ay tutungo sa tunog ng mga sirena ng sasakyan."
+    ],
+    "AnimalStatsModifier": [
+      "Ang bilis ng pagbabawas ng mga istatistika ng hayop (gutom, uhaw atbp.). ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Ang bilis ng pagbabawas ng mga istatistika ng hayop (gutom, uhaw atbp.) habang nasa meta. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalPregnancyTime": [
+      "Gaano katagal magbubuntis ang mga hayop bago manganak. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalAgeModifier": [
+      "Bilis sa edad ng mga hayop. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalMilkIncModifier": [
+      "Default = Mabilis",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalWoolIncModifier": [
+      "Default = Mabilis",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalRanchChance": [
+      "Ang pagkakataon na makahanap ng mga hayop sa bukid. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Ang bilang ng mga oras na damo ay muling tutubo pagkatapos kainin ng isang hayop o putulin ng manlalaro. "
+    ],
+    "AnimalMetaPredator": [
+      "Kung ang isang meta (ibig sabihin, hindi talaga nakikita sa laro) na fox ay maaaring umatake sa iyong mga manok kung ang pinto ng kubol ay naiwang bukas sa gabi."
+    ],
+    "AnimalMatingSeason": [
+      "Kung ang mga hayop na may panahon ng pag-aasawa ay igagalang ito.  "
+    ],
+    "AnimalEggHatch": [
+      "Gaano katagal bago mapisa ang mga sanggol na hayop mula sa mga itlog. ",
+      "1 = Ultra Fast",
+      "2 = Very Fast",
+      "3 = Fast",
+      "4 = Normal",
+      "5 = Slow",
+      "6 = Very Slow"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Kung totoo, ang mga tawag sa hayop ay makakaakit ng mga kalapit na zombie."
+    ],
+    "AnimalTrackChance": [
+      "Ang pagkakataon ng mga hayop na umalis sa mga track. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "AnimalPathChance": [
+      "Ang pagkakataon na lumikha ng isang landas para sa mga hayop upang mahuli. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often"
+    ],
+    "MaximumRatIndex": [
+      "Ang dalas at intensity ng hal. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Gaano katagal bago maabot ang Maximum Vermin Index. "
+    ],
+    "MetaKnowledge": [
+      "Kung ang isang piraso ng media ay hindi pa ganap na nakikita o nabasa, tinutukoy ng setting na ito kung ito ay ganap na ipinapakita, ipinapakita bilang \"???\", o ganap na nakatago. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Kung totoo, makikita mo ang anumang mga recipe na maaaring gawin sa isang istasyon, kahit na hindi mo pa natutunan ang mga ito."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Kung ang isang gusali ay may higit sa ganitong halaga ng mga silid, hindi ito mananakawan. "
+    ],
+    "EnablePoisoning": [
+      "Kung maaring magdagdag ng lason sa pagkain. ",
+      "1 = True",
+      "2 = False",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Kung/kung kailan maaaring mangitlog ang mga uod sa mga bangkay. ",
+      "1 = Sa loob at Paligid ng mga Katawan",
+      "2 = In Bodies Only",
+      "3 = Hindi kailanman"
+    ],
+    "LightBulbLifespan": [
+      "Kung mas mataas ang halaga, mas matagal ang mga bombilya bago masira.  "
+    ],
+    "FishAbundance": [
+      "Ang kasaganaan ng mga isda sa mga ilog at lawa. ",
+      "1 = Very Poor",
+      "2 = Poor",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Very Abundant"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Kapag ang isang kasanayan ay nasa antas na ito o mas mataas, ang telebisyon/VHS/ibang media ay hindi magbibigay ng XP para dito. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Kapag ang isang kasanayan ay nasa antas na ito o mas mataas, ang pag-scrap ng mga kasangkapan ay hindi nagbibigay ng XP para sa nauugnay na kasanayan. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Bilang ng mga araw bago maalis ang mga lumang splat ng dugo. "
+    ],
+    "LiteratureCooldown": [
+      "Bilang ng mga araw bago ang isa ay maaaring makinabang mula sa pagbabasa ng mga naunang nabasang mga panitikan. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Kung may mga lumiliit na balik sa bonus na mga katangiang puntos na ibinigay mula sa pagpili ng maramihang mga negatibong katangian. ",
+      "1 = None",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 puntos na parusa para sa bawat negatibong katangiang pinili pagkatapos ng una"
+    ],
+    "MinutesPerPage": [
+      "Ang bilang ng mga in-game na minuto na kinakailangan upang mabasa ang isang pahina ng isang skill book. "
+    ],
+    "KillInsideCrops": [
+      "Kapag pinagana, mamamatay ang mga pananim at halamang halaman sa loob ng mga gusali. "
+    ],
+    "PlantGrowingSeasons": [
+      "Kapag pinagana, ang paglago ng mga halaman ay apektado ng mga panahon."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Inirerekomenda na HUWAG mong baguhin ito. "
+    ],
+    "FarmingSpeedNew": [
+      "Ang bilis ng paglaki ng halaman. "
+    ],
+    "FarmingAmountNew": [
+      "Ang kasaganaan ng mga ani na pananim. "
+    ],
+    "MaximumLooted": [
+      "Ang pagkakataon na ang anumang gusali ay maagaw na kapag natagpuan. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Gaano katagal bago maabot ang Maximum Looted Building Chance. "
+    ],
+    "RuralLooted": [
+      "Ang pagkakataon na ang anumang rural na gusali ay maagaw na kapag natagpuan. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Ang maximum na pagnakawan na hindi lalabas kapag naabot na ang Mga Araw Until Maximum Nabawasang Loot. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Gaano katagal bago maabot ang Maximum Nabawasang Loot Porsyento. "
+    ],
+    "MuscleStrainFactor": [
+      "Gumagana bilang isang multiplier kapag nag-aaplay ng muscle strain mula sa pag-indayog ng mga armas o pagdadala ng mabibigat na kargada. "
+    ],
+    "DiscomfortFactor": [
+      "Gumagana bilang isang multiplier kapag nag-aaplay ng kakulangan sa ginhawa mula sa mga gamit na gamit. "
+    ],
+    "WoundInfectionFactor": [
+      "Kung mas malaki sa zero ang pinsala ay maaaring makuha mula sa malubhang impeksyon sa sugat. "
+    ],
+    "NoBlackClothes": [
+      "Kung ang tunay na damit na may randomized na tints ay hindi masyadong madilim para maging halos itim."
+    ],
+    "EasyClimbing": [
+      "Hindi pinapagana ang mga pagkakataong mabigo kapag umaakyat sa mga lubid ng sheet o sa ibabaw ng mga dingding."
+    ],
+    "MaximumFireFuelHours": [
+      "Ang maximum na oras ng gasolina ay maaaring ilagay sa isang campfire, wood stove atbp. "
+    ],
+    "FirearmUseDamageChance": [
+      "Pinapalitan ang Chance-To-Hit mechanics ng Chance-To-Damage calculations."
+    ],
+    "FirearmNoiseMultiplier": [
+      "Isang multiplier para sa distansya kung saan maririnig ng mga zombie ang mga putok ng baril. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplier para sa pagkakataong mag-jamming ng baril. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplier para sa Moodle effect sa hit chance."
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplier para sa mga epekto ng panahon (hangin, ulan at fog) sa pagkakataong tamaan. "
+    ],
+    "FirearmHeadGearEffect": [
+      "I-enable na magkaroon ng headgear tulad ng mga welding mask na makakaapekto sa hit chance"
+    ],
+    "ClayLakeChance": [
+      "Pagkakataong gawing luad na sahig ang maruming sahig. "
+    ],
+    "ClayRiverChance": [
+      "Pagkakataong gawing luad na sahig ang maruming sahig. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Max: 100 Default: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Gaano karaming mga antas sa itaas at ibaba ng generator ang maibibigay nito ng kuryente. "
+    ],
+    "SpawnFrequency": [
+      "Gaano kadalas umusbong ang mga basement sa mga random na lokasyon. ",
+      "1 = Hindi kailanman",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging"
+    ],
+    "AllowMiniMap": [
+      "Kung pinagana, isang window ng mini-map ay magagamit."
+    ],
+    "AllowWorldMap": [
+      "Kung pinagana, maa-access ang mapa ng mundo."
+    ],
+    "MapAllKnown": [
+      "Kung pinagana, ang mapa ng mundo ay ganap na mapupunan sa pagsisimula ng laro."
+    ],
+    "MapNeedsLight": [
+      "Kung naka-enable, hindi mababasa ang mga mapa maliban kung may available na source ng liwanag."
+    ],
+    "Speed": [
+      "Ang bilis gumalaw ng mga zombie. ",
+      "1 = Sprinters",
+      "2 = Fast Shamblers",
+      "3 = Shamblers",
+      "4 = Random"
+    ],
+    "SprinterPercentage": [
+      "Kung naka-enable ang Random Speed, kinokontrol nito kung ilang porsyento ng mga zombie ang mga Sprinter."
+    ],
+    "Strength": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Lakas. "
+    ],
+    "Toughness": [
+      "Ang hirap pumatay ng zombie. ",
+      "1 = Tough",
+      "2 = Normal",
+      "3 = Fragile",
+      "4 = Random"
+    ],
+    "Transmission": [
+      "Paano kumakalat ang Knox Virus. ",
+      "1 = Dugo at Laway",
+      "2 = Saliva Only",
+      "3 = Everyone's Infected",
+      "4 = None"
+    ],
+    "Mortality": [
+      "Gaano kabilis magkabisa ang impeksyon. ",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 Minuto",
+      "4 = 0-12 Oras",
+      "5 = 2-3 Araw",
+      "6 = 1-2 Weeks",
+      "7 = Hindi kailanman"
+    ],
+    "Reanimate": [
+      "Gaano kabilis tumaas ang mga nahawaang bangkay bilang mga zombie. ",
+      "1 = Instant",
+      "2 = 0-30 Seconds",
+      "3 = 0-1 Minuto",
+      "4 = 0-12 Oras",
+      "5 = 2-3 Araw",
+      "6 = 1-2 Weeks"
+    ],
+    "Cognition": [
+      "Katalinuhan ng zombie. ",
+      "1 = Mag-navigate at Gumamit ng Mga Pintuan",
+      "2 = Navigate",
+      "3 = Basic Navigation",
+      "4 = Random"
+    ],
+    "CrawlUnderVehicle": [
+      "Gaano kadalas maaaring gumapang ang mga zombie sa ilalim ng mga nakaparadang sasakyan. ",
+      "1 = Crawlers Only",
+      "2 = Extremely Rare",
+      "3 = Rare",
+      "4 = Sometimes",
+      "5 = Often",
+      "6 = Very Often",
+      "7 = Laging"
+    ],
+    "Memory": [
+      "Gaano katagal naaalala ng mga zombie ang isang manlalaro matapos silang makita o marinig. ",
+      "1 = Long",
+      "2 = Normal",
+      "3 = Short",
+      "4 = None",
+      "5 = Random",
+      "6 = Random sa pagitan ng Normal at Wala"
+    ],
+    "Sight": [
+      "Zombie vision radius. ",
+      "1 = Eagle",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Random sa pagitan ng Normal at Mahina"
+    ],
+    "Hearing": [
+      "Zombie hearing radius. ",
+      "1 = Pinpoint",
+      "2 = Normal",
+      "3 = Poor",
+      "4 = Random",
+      "5 = Random sa pagitan ng Normal at Mahina"
+    ],
+    "SpottedLogic": [
+      "Ina-activate ang bagong advanced na stealth mechanics, na nagbibigay-daan sa iyong magtago mula sa mga zombie sa likod ng mga kotse, isinasaalang-alang ang mga katangian at lagay ng panahon, at marami pang iba."
+    ],
+    "ThumpNoChasing": [
+      "Kung ang mga zombie na hindi pa nakikita/naririnig na manlalaro ay maaaring umatake sa mga pinto at constructions habang gumagala."
+    ],
+    "ThumpOnConstruction": [
+      "Kung kayang sirain ng mga zombie ang mga constructions at depensa ng player."
+    ],
+    "ActiveOnly": [
+      "Kung ang mga zombie ay mas \"aktibo\" sa araw o gabi.  ",
+      "1 = Both",
+      "2 = Night",
+      "3 = Day"
+    ],
+    "TriggerHouseAlarm": [
+      "Kung ang mga zombie ay nag-trigger ng mga alarma sa bahay kapag sumisira sa mga bintana o pinto."
+    ],
+    "ZombiesDragDown": [
+      "Kung maraming umaatakeng zombie ang makakaladkad sa iyo pababa at mapatay ka.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Kung ang mga crawler zombie sa tabi ng isang player ay nag-aambag sa pagkakataong ma-drag pababa at mapatay ng isang grupo ng mga zombie."
+    ],
+    "ZombiesFenceLunge": [
+      "Kung ang mga zombie ay may pagkakataon na suntukin ka pagkatapos umakyat sa isang bakod o sa pamamagitan ng isang bintana kung ikaw ay masyadong malapit."
+    ],
+    "ZombiesArmorFactor": [
+      "Nagsisilbing multiplier kapag tinutukoy ang pagiging epektibo ng armor na isinusuot ng mga zombie. "
+    ],
+    "ZombiesMaxDefense": [
+      "Ang maximum na porsyento ng pagtatanggol na maibibigay ng anumang suot na pang-proteksyon na kasuotan sa isang zombie. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Porsiyento ng posibilidad na magkaroon ng random na nakakabit na armas. "
+    ],
+    "ZombiesFallDamage": [
+      "Gaano karaming pinsala ang natatanggap ng mga zombie kapag nahulog mula sa taas. "
+    ],
+    "DisableFakeDead": [
+      "Kung ang ilang mukhang patay na mga zombie ay muling mabubuhay at aatake sa manlalaro. ",
+      "1 = World Zombies",
+      "2 = Mundo at Combat Zombies",
+      "3 = Hindi kailanman"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Ang mga zombie ay hindi mag-spawn kung saan ang mga manlalaro ay nangingitlog. ",
+      "1 = Sa loob ng gusali at sa paligid nito",
+      "2 = Sa loob ng gusali",
+      "3 = Sa loob ng silid",
+      "4 = Ang mga zombie ay maaaring mangitlog kahit saan"
+    ],
+    "FenceThumpersRequired": [
+      "Ilang zombie ang kailangan para masira ang isang mataas na bakod. "
+    ],
+    "FenceDamageMultiplier": [
+      "Gaano kabilis nasira ng mga zombie ang matataas na bakod. "
+    ],
+    "PopulationMultiplier": [
+      "Itinakda ng opsyong populasyon ng \"Zombie Count\", o ng custom na numero dito. "
+    ],
+    "PopulationStartMultiplier": [
+      "Isang multiplier para sa gustong populasyon ng zombie sa simula ng laro. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Isang multiplier para sa gustong populasyon ng zombie sa peak day. "
+    ],
+    "PopulationPeakDay": [
+      "Ang araw kung kailan ang populasyon ay umabot sa rurok nito. "
+    ],
+    "RespawnHours": [
+      "Ang bilang ng mga oras na dapat lumipas bago muling lumabas ang mga zombie sa isang cell. "
+    ],
+    "RespawnUnseenHours": [
+      "Ang bilang ng mga oras na ang isang tipak ay dapat na hindi makita bago ang mga zombie ay maaaring muling lumabas dito. "
+    ],
+    "RespawnMultiplier": [
+      "Ang fraction ng gustong populasyon ng isang cell na maaaring respawn bawat RespawnHours. "
+    ],
+    "RedistributeHours": [
+      "Ang bilang ng mga oras na dapat lumipas bago lumipat ang mga zombie sa mga walang laman na bahagi ng parehong cell. "
+    ],
+    "FollowSoundDistance": [
+      "Ang layo na susubukang lakaran ng zombie patungo sa huling tunog na narinig nito. "
+    ],
+    "RallyGroupSize": [
+      "Ang laki ng mga grupo ng mga totoong zombie na nabubuo kapag walang ginagawa. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Ang halaga, bilang isang porsyento, ang mga pangkat ng zombie ay maaaring mag-iba sa laki mula sa default (parehong mas malaki at mas maliit).   "
+    ],
+    "RallyTravelDistance": [
+      "Ang layo ng paglalakbay ng mga totoong zombie upang bumuo ng mga grupo kapag walang ginagawa. "
+    ],
+    "RallyGroupSeparation": [
+      "Ang distansya sa pagitan ng mga grupo ng zombie. "
+    ],
+    "RallyGroupRadius": [
+      "Gaano kalapit ang mga miyembro ng isang zombie group na nananatili sa \"lider\" ng grupo. "
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Max: 500 Default: 300"
+    ],
+    "Global": [
+      "Ang rate kung saan tumataas ang lahat ng kasanayan. "
+    ],
+    "GlobalToggle": [
+      "Kapag pinagana, lahat ng mga kasanayan ay gagamit ng Global Multiplier."
+    ],
+    "Fitness": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Kondisyon. "
+    ],
+    "Sprinting": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pag-sprint. "
+    ],
+    "Lightfoot": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Magaan ang Hakbang. "
+    ],
+    "Nimble": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Maliksi. "
+    ],
+    "Sneak": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pagsingit. "
+    ],
+    "Axe": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Palakol. "
+    ],
+    "Blunt": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Panghampas. "
+    ],
+    "SmallBlunt": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Maliit na Panghampas. "
+    ],
+    "LongBlade": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Mahabang Talim. "
+    ],
+    "SmallBlade": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Maikling Talim. "
+    ],
+    "Spear": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Sibat. "
+    ],
+    "Maintenance": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pagpapanatili. "
+    ],
+    "Woodwork": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pagkakahoy. "
+    ],
+    "Cooking": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Cooking. "
+    ],
+    "Doctor": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Doctor. "
+    ],
+    "Electricity": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Electricity. "
+    ],
+    "MetalWelding": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Metal Welding. "
+    ],
+    "Mechanics": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Mechanics. "
+    ],
+    "Tailoring": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Tailoring. "
+    ],
+    "Aiming": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Aiming. "
+    ],
+    "Reloading": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Reloading. "
+    ],
+    "Fishing": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pangingisda. "
+    ],
+    "Trapping": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Trapping. "
+    ],
+    "PlantScavenging": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Plant Scavenging. "
+    ],
+    "FlintKnapping": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Flint Knapping. "
+    ],
+    "Masonry": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Masonry. "
+    ],
+    "Pottery": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Pottery. "
+    ],
+    "Carving": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Carving. "
+    ],
+    "Husbandry": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Husbandry. "
+    ],
+    "Tracking": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Tracking. "
+    ],
+    "Blacksmith": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Panday. "
+    ],
+    "Butchering": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Butchering. "
+    ],
+    "Glassmaking": [
+      "Bilis kung paano tumataas ang antas ng kasanayang Glassmaking. "
+    ]
+  }
+}
+
+

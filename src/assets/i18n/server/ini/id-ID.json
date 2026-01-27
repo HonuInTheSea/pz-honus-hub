@@ -1,0 +1,553 @@
+{
+  "ini": {
+    "PVP": "PVT",
+    "PVPLogToolChat": "Obrolan Alat Log PVP",
+    "PVPLogToolFile": "File Alat Log PVP",
+    "PauseEmpty": "Jeda Kosong",
+    "GlobalChat": "Obrolan Global",
+    "Open": "Membuka",
+    "ServerWelcomeMessage": "Pesan Selamat Datang Server",
+    "ServerImageLoginScreen": "Layar Masuk Gambar Server",
+    "ServerImageLoadingScreen": "Layar Pemuatan Gambar Server",
+    "ServerImageIcon": "Ikon Gambar Server",
+    "AutoCreateUserInWhiteList": "Buat Pengguna Secara Otomatis Dalam Daftar Putih",
+    "DisplayUserName": "Tampilkan Nama Pengguna",
+    "ShowFirstAndLastName": "Tampilkan Nama Depan dan Belakang",
+    "SpawnPoint": "Titik Pemijahan",
+    "SafetySystem": "Sistem Keamanan",
+    "ShowSafety": "Tunjukkan Keamanan",
+    "SafetyToggleTimer": "Pengatur Waktu Pengalih Keamanan",
+    "SafetyCooldownTimer": "Pengatur Waktu Cooldown Keamanan",
+    "SafetyDisconnectDelay": "Penundaan Pemutusan Keamanan",
+    "SpawnItems": "Item yang Dimunculkan",
+    "DefaultPort": "Pelabuhan Bawaan",
+    "UDPPort": "Pelabuhan UDP",
+    "ResetID": "Setel ulang ID",
+    "Mods": "Modifikasi",
+    "Map": "Peta",
+    "DoLuaChecksum": "Lakukan Lua Checksum",
+    "Public": "Publik",
+    "PublicName": "Nama Publik",
+    "PublicDescription": "Deskripsi Publik",
+    "MaxPlayers": "Pemain Maks",
+    "PingLimit": "Batas Ping",
+    "SafehousePreventsLootRespawn": "Safehouse Mencegah Loot Respawn",
+    "DropOffWhiteListAfterDeath": "Keluarkan Daftar Putih Setelah Kematian",
+    "NoFire": "Tidak Ada Api",
+    "AnnounceDeath": "Umumkan Kematian",
+    "SaveWorldEveryMinutes": "Selamatkan Dunia Setiap Menit",
+    "PlayerSafehouse": "Rumah Perlindungan Pemain",
+    "AdminSafehouse": "Admin Rumah Aman",
+    "SafehouseAllowTrepass": "Safehouse Izinkan Pelanggaran",
+    "SafehouseAllowFire": "Safehouse Izinkan Kebakaran",
+    "SafehouseAllowLoot": "Safehouse Izinkan Penjarahan",
+    "SafehouseAllowRespawn": "Safehouse Izinkan Respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day Selamat Untuk Diklaim",
+    "SafeHouseRemovalTime": "Waktu Penghapusan Rumah Aman",
+    "SafehouseAllowNonResidential": "Safehouse Izinkan Non Perumahan",
+    "MaxSafezoneSize": "Ukuran Zona Aman Maks",
+    "AllowDestructionBySledgehammer": "Izinkan Penghancuran Dengan Palu Godam",
+    "SledgehammerOnlyInSafehouse": "Palu Godam Hanya Di Safehouse",
+    "WarStartDelay": "Penundaan Awal Perang",
+    "WarDuration": "Durasi Perang",
+    "WarSafehouseHitPoints": "Titik Serangan Safehouse Perang",
+    "ServerPlayerID": "ID Pemain Server",
+    "RCONPort": "Pelabuhan RCON",
+    "RCONPassword": "Kata Sandi RCON",
+    "DiscordEnable": "Perselisihan Aktif",
+    "DiscordToken": "Token Perselisihan",
+    "DiscordChannel": "Saluran Perselisihan",
+    "DiscordChannelID": "ID Saluran Perselisihan",
+    "WebhookAddress": "Alamat Webhook",
+    "Password": "Kata sandi",
+    "MaxAccountsPerUser": "Akun Maks Per Pengguna",
+    "AllowCoop": "Izinkan Kerjasama",
+    "SleepAllowed": "Tidur Diizinkan",
+    "SleepNeeded": "Dibutuhkan Tidur",
+    "KnockedDownAllowed": "Dibolehkan Dirobohkan",
+    "SneakModeHideFromOtherPlayers": "Mode Menyelinap Sembunyikan Dari Pemain Lain",
+    "WorkshopItems": "Barang Bengkel",
+    "SteamScoreboard": "Papan Skor Uap",
+    "SteamVAC": "Uap VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Aktifkan Suara",
+    "VoiceMinDistance": "Jarak Min Suara",
+    "VoiceMaxDistance": "Jarak Maksimum Suara",
+    "Voice3D": "Suara 3D",
+    "SpeedLimit": "Batas kecepatan",
+    "LoginQueueConnectTimeout": "Batas Waktu Sambungan Antrian Masuk",
+    "server_browser_announced_ip": "Browser server mengumumkan ip",
+    "PlayerRespawnWithSelf": "Pemain Respawn Dengan Diri Sendiri",
+    "PlayerRespawnWithOther": "Pemain Respawn Dengan Lainnya",
+    "FastForwardMultiplier": "Pengganda Maju Cepat",
+    "DisableSafehouseWhenPlayerConnected": "Nonaktifkan Safehouse Saat Pemain Terhubung",
+    "Faction": "Fraksi",
+    "FactionDaySurvivedToCreate": "Hari Fraksi Diselamatkan Untuk Berkreasi",
+    "FactionPlayersRequiredForTag": "Pemain Fraksi Diperlukan Untuk Tag",
+    "DisableRadioStaff": "Nonaktifkan Staf Radio",
+    "DisableRadioAdmin": "Nonaktifkan Admin Radio",
+    "DisableRadioGM": "Nonaktifkan Radio GM",
+    "DisableRadioOverseer": "Nonaktifkan Pengawas Radio",
+    "DisableRadioModerator": "Nonaktifkan Moderator Radio",
+    "DisableRadioInvisible": "Nonaktifkan Radio Tak Terlihat",
+    "ClientCommandFilter": "Filter Perintah Klien",
+    "ClientActionLogs": "Log Tindakan Klien",
+    "PerkLogs": "Log Keuntungan",
+    "ItemNumbersLimitPerContainer": "Batas Nomor Barang Per Kontainer",
+    "BloodSplatLifespanDays": "Hari Umur Percikan Darah",
+    "AllowNonAsciiUsername": "Izinkan Nama Pengguna Non Ascii",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Hapus Mayat Pemain Saat Menghapus Mayat",
+    "TrashDeleteAll": "Sampah Hapus Semua",
+    "PVPMeleeWhileHitReaction": "PVP Melee Saat Terkena Reaksi",
+    "MouseOverToSeeDisplayName": "Arahkan Mouse Untuk Melihat Nama Tampilan",
+    "HidePlayersBehindYou": "Sembunyikan Pemain di Belakang Anda",
+    "PVPMeleeDamageModifier": "Pengubah Kerusakan Jarak Dekat PVP",
+    "PVPFirearmDamageModifier": "Pengubah Kerusakan Senjata Api PVP",
+    "CarEngineAttractionModifier": "Pengubah Daya Tarik Mesin Mobil",
+    "PlayerBumpPlayer": "Pemain Benturan Pemain",
+    "MapRemotePlayerVisibility": "Memetakan Visibilitas Pemain Jarak Jauh",
+    "BackupsCount": "Jumlah Cadangan",
+    "BackupsOnStart": "Cadangan Saat Mulai",
+    "BackupsPeriod": "Periode Cadangan",
+    "DisableVehicleTowing": "Nonaktifkan Penarik Kendaraan",
+    "DisableTrailerTowing": "Nonaktifkan Penarik Trailer",
+    "DisableBurntTowing": "Nonaktifkan Penarik Terbakar",
+    "BadWordListFile": "File Daftar Kata Buruk",
+    "GoodWordListFile": "File Daftar Kata yang Bagus",
+    "BadWordPolicy": "Kebijakan Kata Buruk",
+    "BadWordReplacement": "Penggantian Kata yang Buruk",
+    "AntiCheatSafety": "Keamanan Anti Curang",
+    "AntiCheatMovement": "Gerakan Anti Curang",
+    "AntiCheatHit": "Pukulan Anti Curang",
+    "AntiCheatPacket": "Paket Anti Curang",
+    "AntiCheatPermission": "Izin Anti Curang",
+    "AntiCheatXP": "Anti Curang XP",
+    "AntiCheatFire": "Anti Cheat Api",
+    "AntiCheatSafeHouse": "Rumah Aman Anti Curang",
+    "AntiCheatRecipe": "Resep Anti Curang",
+    "AntiCheatPlayer": "Pemain Anti Curang",
+    "AntiCheatChecksum": "Checksum Anti Curang",
+    "AntiCheatItem": "Barang Anti Curang",
+    "AntiCheatServerCustomization": "Kustomisasi Server Anti Curang",
+    "MultiplayerStatisticsPeriod": "Periode Statistik Multi Pemain",
+    "DisableScoreboard": "Nonaktifkan Papan Skor",
+    "HideAdminsInPlayerList": "Sembunyikan Admin Di Daftar Pemain",
+    "Seed": "Benih",
+    "ChatMessageCharacterLimit": "Batas Karakter Pesan Obrolan",
+    "ChatMessageSlowModeTime": "Pesan Obrolan Waktu Mode Lambat",
+    "comments": {
+"PVP": [
+        "Player dapat melukai Player lain."
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Waktu permainan berhenti jika tidak ada Player yang online"
+      ],
+      "GlobalChat": [
+        "Mengaktifkan atau menonaktifkan obrolan global."
+      ],
+      "Open": [
+        "Klien dapat bergabung tanpa memiliki akun di daftar putih. Jika disetel ke false, administrator harus membuat kombo nama pengguna/kata sandi secara manual.."
+      ],
+      "ServerWelcomeMessage": [
+        "Pesan pertama terlihat di panel obrolan; langsung ditampilkan saat Player masuk."
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Jika diaktifkan, pemain dalam mode menyelinap akan disembunyikan dari pemain lain."
+      ],
+      "ServerImageLoadingScreen": [
+        "Jalur gambar yang ditampilkan pada layar pemuatan server."
+      ],
+      "ServerImageIcon": [
+        "Jalur gambar yang digunakan sebagai ikon server."
+      ],
+      "ServerImageLoginScreen": [
+        "Jalur gambar yang ditampilkan pada layar masuk server."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Tambahkan nama pengguna yang tidak dikenal ke daftar putih saat Player bergabung. Klien memberikan nama pengguna/kata sandi mereka sendiri saat bergabung. Untuk server Open=true."
+      ],
+      "DisplayUserName": [
+        "Tampilkan nama pengguna di atas kepala Player dalam game."
+      ],
+      "ShowFirstAndLastName": [
+        "Tampilkan nama depan & belakang di atas kepala Player, bukan nama pengguna."
+      ],
+      "SpawnPoint": [
+        "Paksa setiap Player baru untuk muncul di koordinat dunia x,y,z ini. Ambil koordinat dari map.projectzomboid.com. Diabaikan saat 0,0,0."
+      ],
+      "SafetySystem": [
+        "Pemain dapat masuk dan keluar dari mode PVP satu per satu. "
+      ],
+      "ShowSafety": [
+        "Tampilkan ikon tengkorak di atas kepala Player yang berada dalam mode PVP."
+      ],
+      "SafetyToggleTimer": [
+        "Waktu yang dibutuhkan Player untuk masuk atau keluar dari mode PVP."
+      ],
+      "SafetyCooldownTimer": [
+        "Penundaan sebelum Player dapat masuk atau keluar dari mode PVP lagi setelah mereka melakukannya."
+      ],
+      "SpawnItems": [
+        "Tipe item muncul dengan Player baru.",
+        "Pisahkan beberapa tipe item dengan koma.",
+        "ex. Base.Axe,Base.BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Port awal untuk pemutar data. "
+      ],
+      "ResetID": [
+        "Menentukan apakah server telah mengalami soft-reset. Jika nomor ini cocok dengan klien, klien harus membuat karakter baru. Digunakan bersama dengan PlayerServerID. Harap cadangkan ID ini di suatu tempat."
+      ],
+      "Mods": [
+        "Masukkan ID pemuatan mod di sini. ID ini dapat ditemukan di \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Tendang klien yang file gamenya tidak cocok dengan server."
+      ],
+      "Public": [
+        "Tampilkan server di browser dalam game. Catatan, server yang mengaktifkan Steam selalu terlihat di browser server Steam."
+      ],
+      "PublicName": [
+        "Nama server ditampilkan di browser server dalam game dan Steam (jika ada)"
+      ],
+      "PublicDescription": [
+        "Deskripsi ditampilkan di browser server dalam game."
+      ],
+      "MaxPlayers": [
+        "Jumlah maksimum Player yang dapat berada di server pada satu waktu, tidak termasuk admin. Steam memungkinkan maksimum 126 Player."
+      ],
+      "PingLimit": [
+        "Batas ping dalam milidetik sebelum ditendang dari server. Setel ke 0 untuk menonaktifkannya"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Item tidak akan muncul kembali di bangunan yang diklaim pemain sebagai rumah persembunyian"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Hapus akun Player dari daftar putih setelah kematian. Mencegah pembuatan karakter baru setelah kematian pada server open=false."
+      ],
+      "NoFire": [
+        "Semua bentuk api dinonaktifkan, kecuali api unggun."
+      ],
+      "AnnounceDeath": [
+        "Jika benar, setiap Player mati akan muncul pesan di chat."
+      ],
+      "AnnounceAnimalDeath": [
+        "Jika diaktifkan, setiap kali hewan mati, pesan global akan ditampilkan di chat."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Bagian Map yang dimuat disimpan setelah beberapa menit dunia nyata berlalu. Map biasanya disimpan hanya setelah klien meninggalkan area yang dimuat."
+      ],
+      "PlayerSafehouse": [
+        "Admin dan Player dapat mengklaim safehouse."
+      ],
+      "AdminSafehouse": [
+        "Hanya admin yang dapat mengklaim safehouse."
+      ],
+      "SafehouseAllowTrepass": [
+        "Izinkan non-anggota masuk ke safehouse tanpa diundang."
+      ],
+      "SafehouseAllowFire": [
+        "Biarkan api merusak safehouses."
+      ],
+      "SafehouseAllowLoot": [
+        "Izinkan non-anggota untuk mengambil barang dari safehouses."
+      ],
+      "SafehouseAllowRespawn": [
+        "Player muncul di safehouse tempat mereka menjadi anggota sebelum mereka mati."
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Player harus selamat dari banyak hari di dunia game ini sebelum mereka dapat mengklaim safehouse."
+      ],
+      "SafeHouseRemovalTime": [
+        "Player secara otomatis dikeluarkan dari safehouse yang belum mereka kunjungi selama berjam-jam di dunia nyata ini."
+      ],
+      "SafehouseAllowNonResidential": [
+        "Mengatur apakah pemain dapat mengklaim bangunan non-perumahan."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Izinkan Player menghancurkan objek dunia dengan palu godam."
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Izinkan Player untuk menghancurkan objek dunia hanya di safehouse mereka (memerlukan AllowDestructionBySledgehammer menjadi true)."
+      ],
+      "WarStartDelay": [
+        "Waktu dalam hitungan detik sebelum perang dimulai."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "Menentukan apakah karakter tersebut berasal dari server atau singleplayer lain. Nilai ini dapat diubah dengan soft-reset. Jika nomor ini cocok dengan klien, klien harus membuat karakter baru. Digunakan bersama dengan ResetID. Tolong, buat cadangan ID ini di suatu tempat"
+      ],
+      "RCONPort": [
+        "Port untuk RCON"
+      ],
+      "RCONPassword": [
+        "Kata sandi RCON"
+      ],
+      "DiscordEnable": [
+        "Aktifkan integrasi dengan Discord"
+      ],
+      "DiscordToken": [
+        "Discord bot access token"
+      ],
+      "DiscordChannel": [
+        "Discord nama saluran. Jika Anda mendapat masalah, gunakan ID saluran sebagai gantinya"
+      ],
+      "DiscordChannelID": [
+        "Discord channel ID. Tidak diperlukan. Gunakan jika ada masalah dengan nama channel"
+      ],
+      "WebhookAddress": [
+        "URL webhook masuk Slack"
+      ],
+      "Password": [
+        "Klien harus mengetahui kata sandi ini untuk bergabung dengan server. Diabaikan saat menghosting server melalui tombol Host."
+      ],
+      "MaxAccountsPerUser": [
+        "Membatasi jumlah akun berbeda yang dapat dibuat oleh satu pengguna Steam di server ini. Diabaikan saat menggunakan tombol Host."
+      ],
+      "AllowCoop": [
+        "Izinkan pemutar co-op/splitscreen"
+      ],
+      "SleepAllowed": [
+        "Player dapat memilih untuk tidur setiap kali lelah."
+      ],
+      "SleepNeeded": [
+        "Player lelah dan perlu tidur. Diabaikan jika SleepAllowed=false"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Daftar ID Mod Workshop untuk diunduh server. Dipisahkan dengan titik koma. Contoh WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Tampilkan nama pengguna dan avatar Steam di daftar Player. Mungkin benar (terlihat oleh semua orang), salah (tidak terlihat oleh siapa pun), atau admin (hanya dapat dilihat oleh admin)."
+      ],
+      "SteamVAC": [
+        "Aktifkan sistem Steam VAC. Saat ini tidak berfungsi."
+      ],
+      "UPnP": [
+        "berencana untuk mengkonfigurasi gateway internet yang mendukung UPnP untuk secara otomatis mengatur aturan penerusan port. "
+      ],
+      "VoiceEnable": [
+        "Jika benar, VOIP diaktifkan."
+      ],
+      "VoiceMinDistance": [
+        "Jarak minimum suara VOIP ubin dapat didengar."
+      ],
+      "VoiceMaxDistance": [
+        "Jarak maksimum suara VOIP di ubin dapat didengar."
+      ],
+      "Voice3D": [
+        "Audio terarah untuk VOIP."
+      ],
+      "server_browser_announced_ip": [
+        "Setel IP untuk server yang disiarkan. Untuk konfigurasi jaringan dengan beberapa alamat IP, seperti server farm"
+      ],
+      "PlayerRespawnWithSelf": [
+        "Player dapat respawn dalam game saat mereka mati."
+      ],
+      "PlayerRespawnWithOther": [
+        "Player dapat respawn dalam game di lokasi Player splitscreen."
+      ],
+      "FastForwardMultiplier": [
+        "Seberapa cepat waktu berlalu ketika semua orang tertidur?"
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Akan membuat safehouse berfungsi seperti rumah biasa jika seseorang dari safehouse ini terhubung."
+      ],
+      "Faction": [
+        "Jika benar, izinkan Player membuat faksi."
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Anda harus bertahan selama X hari sebelum dapat membuat faksi."
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Berapa banyak Player yang dibutuhkan sebelum membiarkan pemilik faksi membuat tag khusus."
+      ],
+      "DisableRadioStaff": [
+        "Menonaktifkan transmisi radio dari pemutar dengan tingkat akses apa pun."
+      ],
+      "DisableRadioAdmin": [
+        "Menonaktifkan transmisi radio dari pemain dengan tingkat akses 'admin'"
+      ],
+      "DisableRadioGM": [
+        "Menonaktifkan transmisi radio dari pemain dengan tingkat akses 'gm'"
+      ],
+      "DisableRadioOverseer": [
+        "Menonaktifkan transmisi radio dari pemain dengan tingkat akses 'pengawas'"
+      ],
+      "DisableRadioModerator": [
+        "Menonaktifkan transmisi radio dari pemain dengan tingkat akses 'moderator'"
+      ],
+      "DisableRadioInvisible": [
+        "Menonaktifkan transmisi radio dari Player tak terlihat."
+      ],
+      "ClientCommandFilter": [
+        "Daftar perintah yang dipisahkan titik koma yang tidak akan ditulis ke log server cmd.txt.",
+        "-vehicle.* artinya jangan tulis perintah kendaraan apa pun.",
+        "+vehicle.installPart artinya tulis perintah itu."
+      ],
+      "ClientActionLogs": [
+        "Daftar tindakan yang dipisahkan titik koma yang akan ditulis ke log server ClientActionLogs.txt."
+      ],
+      "PerkLogs": [
+        "Track changes in player perk levels in PerkLog.txt server log"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Jumlah maksimum item yang dapat ditempatkan dalam wadah. "
+      ],
+      "BloodSplatLifespanDays": [
+        "Jumlah hari sebelum cipratan darah lama dihapus.<br>Penghapusan terjadi saat potongan Map dimuat.<br>Nol berarti tidak pernah dihapus."
+      ],
+      "AllowNonAsciiUsername": [
+        "Mengizinkan atau tidak penggunaan karakter non Ascii (cyrillic...) dalam nama pengguna"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Jika benar, ketika HoursForCorpseRemoval dipicu, itu juga akan menghapus mayat Player."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Jika benar, Player dapat memukul lagi ketika dipukul oleh Player lain."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Jika benar, Player harus mengarahkan mouse ke seseorang untuk melihat nama tampilan mereka."
+      ],
+      "HidePlayersBehindYou": [
+        "Jika benar, otomatis menyembunyikan Player yang tidak terlihat (seperti zombie)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Menambahkan kerusakan untuk serangan jarak dekat PVP."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Menambahkan kerusakan untuk serangan jarak jauh PVP."
+      ],
+      "CarEngineAttractionModifier": [
+        "Ubah kisaran di mana mobil menarik zombie, nilai yang lebih rendah dapat membantu server lag."
+      ],
+      "PlayerBumpPlayer": [
+        "Player menabrak/mendorong Player lain saat berlari melewati mereka."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Mengontrol tampilan pemain jarak jauh di peta dalam game.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Jalur ke file dengan daftar kata yang dilarang. "
+      ],
+      "GoodWordListFile": [
+        "Jalur ke file dengan daftar kata yang diperbolehkan, meskipun mengandung kata buruk. "
+      ],
+      "BadWordPolicy": [
+        "Apa yang harus dilakukan dengan pengirim kata-kata buruk dalam obrolan: 1 - ban, 2 - tendang, 3 - catat pelanggaran di database, 4 - bisu"
+      ],
+      "BadWordReplacement": [
+        "Simbol atau potongan teks yang akan menggantikan kata buruk"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Menonaktifkan perlindungan anti-cheat untuk pergerakan."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Menonaktifkan perlindungan anti-cheat untuk pemain."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Menonaktifkan item memeriksa perlindungan anti-cheat."
+      ],
+      "AntiCheatServerCustomization": [
+        "Menonaktifkan perlindungan anti-cheat untuk penyesuaian server."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Menetapkan periode pembaruan multipemain dalam hitungan detik. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Menyembunyikan admin di daftar pemain."
+      ],
+      "Seed": [
+        "Benih worldgen digunakan untuk menghasilkan dunia.<br>Jika Anda ingin mengubahnya, masukkan nilai baru dan hapus map_worldgen.bin di direktori penyimpanan Anda."
+      ],
+      "SpeedLimit": [
+        "Batas kecepatan kendaraan."
+      ],
+      "BackupsCount": [
+        "Min: 1 Maks: 300 Default: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Maks: 1500 Default: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Maks: 1024 Default: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Maks: 30 Default: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Maks: 1200 Default: 60"
+      ],
+      "Map": [
+        "Masukkan nama folder mod yang berada di \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Maks: 2147483647 Default: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Maks: 60 Default: 60"
+      ],
+      "TrashDeleteAll": [
+        "Jika diaktifkan, pemain dapat menggunakan tombol \\"hapus semua\\" pada tempat sampah."
+      ],
+      "UDPPort": [
+        "Min: 0 Maks: 65535 Default: 16262"
+      ]
+    }
+  }
+}
+
+

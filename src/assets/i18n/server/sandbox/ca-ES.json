@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombis",
+  "Distribution": "Distribució",
+  "ZombieVoronoiNoise": "Soroll Voronoi de zombis",
+  "ZombieRespawn": "Reaparició de zombis",
+  "ZombieMigrate": "Migració de zombis",
+  "DayLength": "Durada del dia",
+  "StartMonth": "Mes inicial",
+  "StartDay": "Dia inicial",
+  "StartTime": "Hora inicial",
+  "DayNightCycle": "Cicle dia/nit",
+  "ClimateCycle": "Cicle climàtic",
+  "FogCycle": "Cicle de boira",
+  "WaterShut": "Tall d'aigua",
+  "ElecShut": "Tall d'electricitat",
+  "AlarmDecay": "Desgast de les alarmes",
+  "WaterShutModifier": "Modificador del tall d'aigua",
+  "ElecShutModifier": "Modificador del tall d'electricitat",
+  "AlarmDecayModifier": "Modificador del desgast de les alarmes",
+  "FoodLootNew": "Botí de menjar (nou)",
+  "LiteratureLootNew": "Botí de literatura (nou)",
+  "MedicalLootNew": "Botí mèdic (nou)",
+  "SurvivalGearsLootNew": "Botí d'equip de supervivència (nou)",
+  "CannedFoodLootNew": "Botí de menjar enllaunat (nou)",
+  "WeaponLootNew": "Botí d'armes (nou)",
+  "RangedWeaponLootNew": "Botí d'armes a distància (nou)",
+  "AmmoLootNew": "Botí de munició (nou)",
+  "MechanicsLootNew": "Botí de mecànica (nou)",
+  "OtherLootNew": "Botí d'altres (nou)",
+  "ClothingLootNew": "Botí de roba (nou)",
+  "ContainerLootNew": "Botí de contenidors (nou)",
+  "KeyLootNew": "Botí de claus (nou)",
+  "MediaLootNew": "Botí de suports (nou)",
+  "MementoLootNew": "Botí de records (nou)",
+  "CookwareLootNew": "Botí d'estris de cuina (nou)",
+  "MaterialLootNew": "Botí de materials (nou)",
+  "FarmingLootNew": "Botí d'agricultura (nou)",
+  "ToolLootNew": "Botí d'eines (nou)",
+  "RollsMultiplier": "Multiplicador de tirades",
+  "LootItemRemovalList": "Llista d'eliminació de botí",
+  "RemoveStoryLoot": "Elimina el botí d'històries",
+  "RemoveZombieLoot": "Elimina el botí de zombis",
+  "ZombiePopLootEffect": "Efecte del botí per població de zombis",
+  "InsaneLootFactor": "Factor de botí insà",
+  "ExtremeLootFactor": "Factor de botí extrem",
+  "RareLootFactor": "Factor de botí rar",
+  "NormalLootFactor": "Factor de botí normal",
+  "CommonLootFactor": "Factor de botí comú",
+  "AbundantLootFactor": "Factor de botí abundant",
+  "Temperature": "Temperatura",
+  "Rain": "Pluja",
+  "ErosionSpeed": "Velocitat d'erosió",
+  "ErosionDays": "Dies d'erosió",
+  "Farming": "Agricultura",
+  "CompostTime": "Temps de compostatge",
+  "StatsDecrease": "Disminució d'estadístiques",
+  "NatureAbundance": "Abundància de natura",
+  "Alarm": "Alarma",
+  "LockedHouses": "Cases tancades",
+  "StarterKit": "Kit inicial",
+  "Nutrition": "Nutrició",
+  "FoodRotSpeed": "Velocitat de putrefacció del menjar",
+  "FridgeFactor": "Factor de nevera",
+  "SeenHoursPreventLootRespawn": "Hores vistes eviten la reaparició de botí",
+  "HoursForLootRespawn": "Hores per a la reaparició de botí",
+  "MaxItemsForLootRespawn": "Màx. d'objectes per a la reaparició de botí",
+  "ConstructionPreventsLootRespawn": "La construcció evita la reaparició de botí",
+  "WorldItemRemovalList": "Llista d'eliminació d'objectes del món",
+  "HoursForWorldItemRemoval": "Hores per eliminar objectes del món",
+  "ItemRemovalListBlacklistToggle": "Alterna la llista negra d'eliminació d'objectes",
+  "TimeSinceApo": "Temps des de l'apocalipsi",
+  "PlantResilience": "Resiliència de plantes",
+  "PlantAbundance": "Abundància de plantes",
+  "EndRegen": "Regeneració de resistència",
+  "Helicopter": "Helicòpter",
+  "MetaEvent": "Metaesdeveniment",
+  "SleepingEvent": "Esdeveniment durant el son",
+  "GeneratorFuelConsumption": "Consum de combustible del generador",
+  "GeneratorSpawning": "Aparició de generadors",
+  "AnnotatedMapChance": "Probabilitat de mapa anotat",
+  "CharacterFreePoints": "Punts gratuïts de personatge",
+  "ConstructionBonusPoints": "Punts extra de construcció",
+  "NightDarkness": "Foscor nocturna",
+  "NightLength": "Durada de la nit",
+  "BoneFracture": "Fractura òssia",
+  "InjurySeverity": "Gravetat de lesions",
+  "HoursForCorpseRemoval": "Hores per eliminar cadàvers",
+  "DecayingCorpseHealthImpact": "Impacte en salut per cadàvers en descomposició",
+  "ZombieHealthImpact": "Impacte en salut per zombis",
+  "BloodLevel": "Nivell de sang",
+  "ClothingDegradation": "Degradació de roba",
+  "FireSpread": "Propagació de foc",
+  "DaysForRottenFoodRemoval": "Dies per eliminar menjar podrit",
+  "AllowExteriorGenerator": "Permetre generador exterior",
+  "MaxFogIntensity": "Intensitat màxima de boira",
+  "MaxRainFxIntensity": "Intensitat màxima dels efectes de pluja",
+  "EnableSnowOnGround": "Habilitar neu al terra",
+  "AttackBlockMovements": "L’atac bloqueja moviments",
+  "SurvivorHouseChance": "Probabilitat de casa de supervivents",
+  "VehicleStoryChance": "Probabilitat d'històries de vehicles",
+  "ZoneStoryChance": "Probabilitat d'històries de zona",
+  "AllClothesUnlocked": "Tota la roba desbloquejada",
+  "EnableTaintedWaterText": "Habilitar text d'aigua contaminada",
+  "EnableVehicles": "Habilitar vehicles",
+  "CarSpawnRate": "Taxa d'aparició de cotxes",
+  "ZombieAttractionMultiplier": "Multiplicador d'atracció de zombis",
+  "VehicleEasyUse": "Ús fàcil de vehicles",
+  "InitialGas": "Gasolina inicial",
+  "FuelStationGasInfinite": "Gasolina infinita a les benzineres",
+  "FuelStationGasMin": "Gasolina mínima a les benzineres",
+  "FuelStationGasMax": "Gasolina màxima a les benzineres",
+  "FuelStationGasEmptyChance": "Probabilitat de benzineres sense gasolina",
+  "LockedCar": "Cotxe tancat",
+  "CarGasConsumption": "Consum de gasolina del cotxe",
+  "CarGeneralCondition": "Condició general del cotxe",
+  "CarDamageOnImpact": "Dany del cotxe en l'impacte",
+  "DamageToPlayerFromHitByACar": "Dany al jugador per ser atropellat",
+  "TrafficJam": "Embús de trànsit",
+  "CarAlarm": "Alarma del cotxe",
+  "PlayerDamageFromCrash": "Dany al jugador per xoc",
+  "SirenShutoffHours": "Hores per apagar la sirena",
+  "ChanceHasGas": "Probabilitat de tenir gasolina",
+  "RecentlySurvivorVehicles": "Vehicles de supervivents recents",
+  "MultiHitZombies": "Cop múltiple als zombis",
+  "RearVulnerability": "Vulnerabilitat posterior",
+  "SirenEffectsZombies": "La sirena afecta els zombis",
+  "AnimalStatsModifier": "Modificador d'estadístiques d'animals",
+  "AnimalMetaStatsModifier": "Modificador de metaestadístiques d'animals",
+  "AnimalPregnancyTime": "Temps de gestació animal",
+  "AnimalAgeModifier": "Modificador d'edat animal",
+  "AnimalMilkIncModifier": "Modificador d'increment de llet",
+  "AnimalWoolIncModifier": "Modificador d'increment de llana",
+  "AnimalRanchChance": "Probabilitat de ranxo animal",
+  "AnimalGrassRegrowTime": "Temps de rebrot d'herba",
+  "AnimalMetaPredator": "Depredador meta animal",
+  "AnimalMatingSeason": "Temporada d'aparellament",
+  "AnimalEggHatch": "Eclosió d'ous",
+  "AnimalSoundAttractZombies": "Els sons dels animals atrauen zombis",
+  "AnimalTrackChance": "Probabilitat de rastres d'animals",
+  "AnimalPathChance": "Probabilitat de camí d'animals",
+  "MaximumRatIndex": "Índex màxim de rates",
+  "DaysUntilMaximumRatIndex": "Dies fins a l'índex màxim de rates",
+  "MetaKnowledge": "Coneixement meta",
+  "SeeNotLearntRecipe": "Veure receptes no apreses",
+  "MaximumLootedBuildingRooms": "Màxim d'habitacions saquejades",
+  "EnablePoisoning": "Habilitar enverinament",
+  "MaggotSpawn": "Aparició de cucs",
+  "LightBulbLifespan": "Vida útil de bombetes",
+  "FishAbundance": "Abundància de peixos",
+  "LevelForMediaXPCutoff": "Nivell per tall de XP per mitjans",
+  "LevelForDismantleXPCutoff": "Nivell per tall de XP per desmuntatge",
+  "BloodSplatLifespanDays": "Dies de durada de esquitxos de sang",
+  "LiteratureCooldown": "Refredament de literatura",
+  "NegativeTraitsPenalty": "Penalització de trets negatius",
+  "MinutesPerPage": "Minuts per pàgina",
+  "KillInsideCrops": "Matar cultius a l'interior",
+  "PlantGrowingSeasons": "Creixement estacional de plantes",
+  "PlaceDirtAboveground": "Col·locar terra per sobre del sòl",
+  "FarmingSpeedNew": "Velocitat d'agricultura (nova)",
+  "FarmingAmountNew": "Quantitat d'agricultura (nova)",
+  "MaximumLooted": "Botí màxim",
+  "DaysUntilMaximumLooted": "Dies fins al botí màxim",
+  "RuralLooted": "Botí rural",
+  "MaximumDiminishedLoot": "Botí màxim disminuït",
+  "DaysUntilMaximumDiminishedLoot": "Dies fins al botí màxim disminuït",
+  "MuscleStrainFactor": "Factor de tensió muscular",
+  "DiscomfortFactor": "Factor d'incomoditat",
+  "WoundInfectionFactor": "Factor d'infecció de ferides",
+  "NoBlackClothes": "Sense roba negra",
+  "EasyClimbing": "Escalada fàcil",
+  "MaximumFireFuelHours": "Hores màximes de combustible per al foc",
+  "FirearmUseDamageChance": "Probabilitat de dany en usar armes de foc",
+  "FirearmNoiseMultiplier": "Multiplicador de soroll d'armes de foc",
+  "FirearmJamMultiplier": "Multiplicador d'encasquillament",
+  "FirearmMoodleMultiplier": "Multiplicador d'estats per a armes de foc",
+  "FirearmWeatherMultiplier": "Multiplicador de clima per a armes de foc",
+  "FirearmHeadGearEffect": "Efecte del casc en armes de foc",
+  "ClayLakeChance": "Probabilitat d'argila als llacs",
+  "ClayRiverChance": "Probabilitat d'argila als rius",
+  "GeneratorTileRange": "Abast de cel·les del generador",
+  "GeneratorVerticalPowerRange": "Abast vertical d'energia del generador",
+  "Basement": "Soterrani",
+  "SpawnFrequency": "Freqüència d'aparició",
+  "Map": "Mapa",
+  "AllowMiniMap": "Permetre minimapa",
+  "AllowWorldMap": "Permetre mapa del món",
+  "MapAllKnown": "Mapa completament conegut",
+  "MapNeedsLight": "El mapa necessita llum",
+  "ZombieLore": "Coneixement de zombis",
+  "Speed": "Velocitat",
+  "SprinterPercentage": "Percentatge de corredors",
+  "Strength": "Força",
+  "Toughness": "Resistència",
+  "Transmission": "Transmissió",
+  "Mortality": "Mortalitat",
+  "Reanimate": "Reanimació",
+  "Cognition": "Cognició",
+  "CrawlUnderVehicle": "Arrossegar-se sota vehicles",
+  "Memory": "Memòria",
+  "Sight": "Vista",
+  "Hearing": "Oïda",
+  "SpottedLogic": "Lògica de detecció",
+  "ThumpNoChasing": "Colpejar sense persecució",
+  "ThumpOnConstruction": "Colpejar construccions",
+  "ActiveOnly": "Només actiu",
+  "TriggerHouseAlarm": "Activar alarma de casa",
+  "ZombiesDragDown": "Els zombis arrosseguen cap avall",
+  "ZombiesCrawlersDragDown": "Els zombis reptants arrosseguen cap avall",
+  "ZombiesFenceLunge": "Els zombis salten la tanca",
+  "ZombiesArmorFactor": "Factor d'armadura de zombis",
+  "ZombiesMaxDefense": "Defensa màxima de zombis",
+  "ChanceOfAttachedWeapon": "Probabilitat d'arma adjunta",
+  "ZombiesFallDamage": "Dany per caiguda de zombis",
+  "DisableFakeDead": "Desactivar falsos morts",
+  "PlayerSpawnZombieRemoval": "Eliminar zombis a la zona d'aparició",
+  "FenceThumpersRequired": "Zombis necessaris per danyar la tanca",
+  "FenceDamageMultiplier": "Multiplicador de dany a la tanca",
+  "ZombieConfig": "Configuració de zombis",
+  "PopulationMultiplier": "Multiplicador de població",
+  "PopulationStartMultiplier": "Multiplicador de població inicial",
+  "PopulationPeakMultiplier": "Multiplicador del pic de població",
+  "PopulationPeakDay": "Dia del pic de població",
+  "RespawnHours": "Hores de reaparició",
+  "RespawnUnseenHours": "Hores sense veure per reaparició",
+  "RespawnMultiplier": "Multiplicador de reaparició",
+  "RedistributeHours": "Hores de redistribució",
+  "FollowSoundDistance": "Distància de seguiment del so",
+  "RallyGroupSize": "Mida del grup",
+  "RallyGroupSizeVariance": "Variància de mida del grup",
+  "RallyTravelDistance": "Distància de viatge del grup",
+  "RallyGroupSeparation": "Separació del grup",
+  "RallyGroupRadius": "Radi del grup",
+  "ZombiesCountBeforeDelete": "Zombis abans d'eliminar",
+  "MultiplierConfig": "Configuració de multiplicadors",
+  "Global": "Global",
+  "GlobalToggle": "Alternar global",
+  "Fitness": "Aptitud física",
+  "Sprinting": "Córrer",
+  "Lightfoot": "Pas lleuger",
+  "Nimble": "Àgil",
+  "Sneak": "Sigil",
+  "Axe": "Destral",
+  "Blunt": "Contundent",
+  "SmallBlunt": "Contundent curt",
+  "LongBlade": "Fulla llarga",
+  "SmallBlade": "Fulla curta",
+  "Spear": "Llança",
+  "Maintenance": "Manteniment",
+  "Woodwork": "Fusteria",
+  "Cooking": "Cuina",
+  "Doctor": "Medicina",
+  "Electricity": "Electricitat",
+  "MetalWelding": "Soldadura de metall",
+  "Mechanics": "Mecànica",
+  "Tailoring": "Sastreria",
+  "Aiming": "Punteria",
+  "Reloading": "Recàrrega",
+  "Fishing": "Pesca",
+  "Trapping": "Trampeig",
+  "PlantScavenging": "Recol·lecció de plantes",
+  "FlintKnapping": "Talla de sílex",
+  "Masonry": "Paleta",
+  "Pottery": "Terrissa",
+  "Carving": "Talla",
+  "Husbandry": "Ramaderia",
+  "Tracking": "Rastreig",
+  "Blacksmith": "Ferrer",
+  "Butchering": "Carnisseria",
+  "Glassmaking": "Vidrieria",
+  "comments": {
+    "Zombies": [
+      "Canviar a�� modifica l'opci� avan�ada \"Multiplicador de poblaci�\". ",
+      "1 = Catastr�fic",
+      "2 = Molt alt",
+      "3 = Alt",
+      "4 = Normal",
+      "5 = Baix",
+      "6 = Gens"
+    ],
+    "Distribution": [
+      "Com es distribueixen els zombis pel mapa. ",
+      "1 = Concentraci� urbana",
+      "2 = Uniforme"
+    ],
+    "ZombieVoronoiNoise": [
+      "Controla si s'aplica una mica d'aleatorització a la distribució de zombis."
+    ],
+    "ZombieRespawn": [
+      "Amb quina freq��ncia apareixeran zombis al m�n. ",
+      "1 = Alt",
+      "2 = Normal",
+      "3 = Baix",
+      "4 = Gens"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Per defecte = 2 hores",
+      "1 = 15 minuts",
+      "2 = 30 minuts",
+      "3 = 1 hora",
+      "4 = 2 hores",
+      "5 = 3 hores",
+      "6 = 4 hores",
+      "7 = 5 hores",
+      "8 = 6 hores",
+      "9 = 7 hores",
+      "10 = 8 hores",
+      "11 = 9 hores",
+      "12 = 10 hores",
+      "13 = 11 hores",
+      "14 = 12 hores",
+      "15 = 13 hores",
+      "16 = 14 hores",
+      "17 = 15 hores",
+      "18 = 16 hores",
+      "19 = 17 hores",
+      "20 = 18 hores",
+      "21 = 19 hores",
+      "22 = 20 hores",
+      "23 = 21 hores",
+      "24 = 22 hores",
+      "25 = 23 hores",
+      "26 = Temps real",
+      "27 = Temps real"
+    ],
+    "StartMonth": [
+      "Mes en què comença el joc. ",
+      "1 = Gener",
+      "2 = Febrer",
+      "3 = Mar�",
+      "4 = Abril",
+      "5 = Maig",
+      "6 = Juny",
+      "7 = Juliol",
+      "8 = Agost",
+      "9 = Setembre",
+      "10 = Octubre",
+      "11 = Novembre",
+      "12 = Desembre"
+    ],
+    "StartDay": [
+      "Dia del mes en què comencen els jocs."
+    ],
+    "StartTime": [
+      "Hora del dia en què comença el joc. ",
+      "1 = 7 del mat�",
+      "2 = 9 del mat�",
+      "3 = 12 de la vesprada",
+      "4 = 2 de la vesprada",
+      "5 = 5 de la vesprada",
+      "6 = 9 de la vesprada",
+      "7 = 12 de la nit",
+      "8 = 2 de la matinada",
+      "9 = 5 de la matinada"
+    ],
+    "DayNightCycle": [
+      "Tant si l'hora del dia canvia de manera natural, com si sempre és de dia/nit. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Tant si el temps canvia com si es manté en un sol estat. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Si la boira es produeix de manera natural, no es produeix mai o és sempre present. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Quant de temps després de la data d'inici predeterminada (9 de juliol de 1993) que els accessoris de fontaneria (p. ex. piques) deixen de ser fonts infinites d'aigua. ",
+      "1 = Instant�nia",
+      "2 = 0-30 dies",
+      "3 = 0-2 mesos",
+      "4 = 0-6 mesos",
+      "5 = 0-1 any",
+      "6 = 0-5 anys",
+      "7 = 2-6 mesos",
+      "8 = 6-12 mesos",
+      "9 = Desactivada"
+    ],
+    "ElecShut": [
+      "Quant de temps després de la data d'inici predeterminada (9 de juliol de 1993) que s'apaga definitivament l'electricitat del món. ",
+      "1 = Instant�nia",
+      "2 = 0-30 dies",
+      "3 = 0-2 mesos",
+      "4 = 0-6 mesos",
+      "5 = 0-1 any",
+      "6 = 0-5 anys",
+      "7 = 2-6 mesos",
+      "8 = 6-12 mesos",
+      "9 = Desactivada"
+    ],
+    "AlarmDecay": [
+      "Quant de temps poden durar les bateries d'alarma després que s'apaga l'alimentació. ",
+      "1 = Instant�nia",
+      "2 = 0-30 dies",
+      "3 = 0-2 mesos",
+      "4 = 0-6 mesos",
+      "5 = 0-1 any",
+      "6 = 0-5 anys"
+    ],
+    "WaterShutModifier": [
+      "Quant de temps després de la data d'inici predeterminada (9 de juliol de 1993) que els accessoris de fontaneria (p. ex. piques) deixen de ser fonts infinites d'aigua. "
+    ],
+    "ElecShutModifier": [
+      "Quant de temps després de la data d'inici predeterminada (9 de juliol de 1993) que s'apaga definitivament l'electricitat del món. "
+    ],
+    "AlarmDecayModifier": [
+      "Quant de temps poden durar les bateries d'alarma després que s'apaga l'alimentació. "
+    ],
+    "FoodLootNew": [
+      "Qualsevol aliment que es pugui podrir o fer malbé. "
+    ],
+    "LiteratureLootNew": [
+      "Tots els elements que es poden llegir, inclou volants Mín: 0,00 Màx: 4,00 Per defecte: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Medicina, embenats i eines de primers auxilis. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Canyes de pescar, tendes de campanya, material d'acampada, etc. Mín: 0,00 Màx: 4,00 Per defecte: 0,60"
+    ],
+    "CannedFoodLootNew": [
+      "Aliments enllaunats i secs, begudes. "
+    ],
+    "WeaponLootNew": [
+      "Armes que no són eines d'altres categories. "
+    ],
+    "RangedWeaponLootNew": [
+      "També inclou accessoris d'armes. "
+    ],
+    "AmmoLootNew": [
+      "Munició solta, caixes i revistes. "
+    ],
+    "MechanicsLootNew": [
+      "Les peces del vehicle i les eines necessàries per instal·lar-les. "
+    ],
+    "OtherLootNew": [
+      "Tota la resta. "
+    ],
+    "ClothingLootNew": [
+      "Tots els articles portàtils que no siguin contenidors. "
+    ],
+    "ContainerLootNew": [
+      "Motxilles i altres contenidors que es poden portar/equipar, p. "
+    ],
+    "KeyLootNew": [
+      "Claus d'edificis/cotxes, clauers i panys. "
+    ],
+    "MediaLootNew": [
+      "Cintes VHS i CD. "
+    ],
+    "MementoLootNew": [
+      "Articles Spiffo, peluixos i altres articles de record de col·lecció, per exemple. "
+    ],
+    "CookwareLootNew": [
+      "Articles que s'utilitzen a la cuina, inclosos aquells (p. ex. ganivets) que poden ser armes. "
+    ],
+    "MaterialLootNew": [
+      "Articles i armes que s'utilitzen com a ingredients per a l'elaboració o construcció. "
+    ],
+    "FarmingLootNew": [
+      "Articles i armes que s'utilitzen tant en agricultura animal com vegetal, com ara llavors, pales o pales. "
+    ],
+    "ToolLootNew": [
+      "Articles i armes que són Eines però que no encaixen en altres categories com Mecànica o Agricultura. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Es recomana que NO canvieu això. "
+    ],
+    "LootItemRemovalList": [
+      "Una llista separada per comes de tipus d'elements que no apareixeran com a botí normal."
+    ],
+    "RemoveStoryLoot": [
+      "Si està activat, els elements de la llista d'eliminació d'elements de botí, o que tinguin la seva raresa establerta en \"Cap\", no apareixeran a les històries del món aleatòries."
+    ],
+    "RemoveZombieLoot": [
+      "Si està activat, els elements de la llista d'eliminació d'objectes de botí, o que tinguin la seva raresa establerta a \"Cap\", no apareixeran portats per zombis ni connectats a ells."
+    ],
+    "ZombiePopLootEffect": [
+      "Si és superior a 0, la generació del botí augmenta en relació amb el nombre de zombis propers, amb l'efecte multiplicat per aquest nombre. "
+    ],
+    "InsaneLootFactor": [
+      "Mín: 0,00 Màx: 0,20 Per defecte: 0,05"
+    ],
+    "ExtremeLootFactor": [
+      "Mín: 0,05 Màx: 0,60 Per defecte: 0,20"
+    ],
+    "RareLootFactor": [
+      "Mín: 0,20 Màx: 1,00 Per defecte: 0,60"
+    ],
+    "NormalLootFactor": [
+      "Mín: 0,60 Màx: 2,00 Per defecte: 1,00"
+    ],
+    "CommonLootFactor": [
+      "Mín: 1,00 Màx: 3,00 Per defecte: 2,00"
+    ],
+    "AbundantLootFactor": [
+      "Mín: 2,00 Màx: 4,00 Per defecte: 3,00"
+    ],
+    "Temperature": [
+      "Controla la temperatura global. ",
+      "1 = Molt gelada",
+      "2 = Gelada",
+      "3 = Normal",
+      "4 = C�lida",
+      "5 = Molt c�lida"
+    ],
+    "Rain": [
+      "Controla com de sovint plou. ",
+      "1 = Molt sec",
+      "2 = Sec",
+      "3 = Normal",
+      "4 = Pluj�s",
+      "5 = Molt pluj�s"
+    ],
+    "ErosionSpeed": [
+      "Nombre de dies fins que el sistema d'erosió (que afegeix vinyes, herba llarga, arbres nous, etc. al món) arribi al 100% de creixement. ",
+      "1 = Molt r�pid (20 dies)",
+      "2 = R�pid (50 dies)",
+      "3 = Normal (100 dies)",
+      "4 = Lent (200 dies)",
+      "5 = Molt lent (500 dies)"
+    ],
+    "ErosionDays": [
+      "Per a una velocitat d'erosió personalitzada. "
+    ],
+    "Farming": [
+      "Velocitat a la qual l'habilitat Agricultura puja de nivell. "
+    ],
+    "CompostTime": [
+      "Controla el temps que tarda el menjar en convertir-se en compost. ",
+      "1 = 1 setmana",
+      "2 = 2 setmanes",
+      "3 = 3 setmanes",
+      "4 = 4 setmanes",
+      "5 = 6 setmanes",
+      "6 = 8 setmanes",
+      "7 = 10 setmanes",
+      "8 = 12 setmanes"
+    ],
+    "StatsDecrease": [
+      "Com de r�pidament la fam, set i fatiga disminu�xen. ",
+      "1 = Molt r�pida",
+      "2 = R�pida",
+      "3 = Normal",
+      "4 = Lenta",
+      "5 = Molt lenta"
+    ],
+    "NatureAbundance": [
+      "Controla l'abundància de la pesca i de l'exploració en general. ",
+      "1 = Molt pobra",
+      "2 = Pobra",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Molt abundant"
+    ],
+    "Alarm": [
+      "Quina és la probabilitat que el jugador activi l'alarma de la casa quan entri en una casa nova. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "LockedHouses": [
+      "Com de freq�entment els edificis i cases descoberts estaran bloquejats. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "StarterKit": [
+      "Comences amb papes, una botella d'aigua, una motxilla escolar, un bat de beisbol i un martell."
+    ],
+    "Nutrition": [
+      "El valor nutricional del menjar afecta la condici� del jugador."
+    ],
+    "FoodRotSpeed": [
+      "Dicta com de r�pidament es deteriora el menjar tant dins com fora de les neveres. ",
+      "1 = Molt r�pida",
+      "2 = R�pida",
+      "3 = Normal",
+      "4 = Lenta",
+      "5 = Molt lenta"
+    ],
+    "FridgeFactor": [
+      "Dicta com d'efectes s�n les neveres. ",
+      "1 = Molt baixa",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Quan > 0, no reapareixer� res a zones que han sigut visitades per davall d'aqueix nombre d'hores internes del joc. "
+    ],
+    "HoursForLootRespawn": [
+      "Quan sigui superior a 0, després de X hores, tots els contenidors de les ciutats i parcs de tràilers del món reapareran el botí. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Els contenidors amb un nombre d'elements superior o igual a aquesta configuració no reapareixeran. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Els elements no reapareixeran als edificis que els jugadors hagin barricat o construït."
+    ],
+    "WorldItemRemovalList": [
+      "Una llista de coses separades per comes que seran eliminades despr�s de les hores marcades."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Nombre d'hores des que s'ha deixat caure un element a terra abans de retirar-lo.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Si és cert, s'eliminaran els elements *no* de WorldItemRemovalList."
+    ],
+    "TimeSinceApo": [
+      "Quant de temps després de la fi del món per començar. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "A�� influir� quanta aigua perdr� la planta per dia i la seva habilitat per a evitar malalties. ",
+      "1 = Molt alt",
+      "2 = Alt",
+      "3 = Normal",
+      "4 = Baix",
+      "5 = Molt baixa"
+    ],
+    "PlantAbundance": [
+      "Controla la productivitat dels vegetals quan es cullen. ",
+      "1 = Molt pobra",
+      "2 = Pobra",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Molt abundant"
+    ],
+    "EndRegen": [
+      "Recuperaci� del cansament despr�s de fer accions Per defecte = Normal",
+      "1 = Molt r�pida",
+      "2 = R�pida",
+      "3 = Normal",
+      "4 = Lenta",
+      "5 = Molt lenta"
+    ],
+    "Helicopter": [
+      "Quina ser� la freq�ncia de pas d'helic�pters sobre la zona dels esdeveniments. ",
+      "1 = Mai",
+      "2 = Una vegada",
+      "3 = A vegades",
+      "4 = A sovint"
+    ],
+    "MetaEvent": [
+      "Com de sovint ocorreran esdeveniments del metajoc que atrauen zombis, com tirs llunyans. ",
+      "1 = Mai",
+      "2 = A vegades",
+      "3 = A sovint"
+    ],
+    "SleepingEvent": [
+      "Governa els esdeveniments del metajoc durant el son del jugador. ",
+      "1 = Mai",
+      "2 = A vegades",
+      "3 = A sovint"
+    ],
+    "GeneratorFuelConsumption": [
+      "Quant de combustible es consumix per cada hora interna del joc. "
+    ],
+    "GeneratorSpawning": [
+      "Redu�x o augmenta la probabilitat d'aparici� de generadors d'electricitat en el mapa. ",
+      "1 = Extremadament rar",
+      "2 = Rar",
+      "3 = Extremadament rar",
+      "4 = Rar",
+      "5 = Normal",
+      "6 = Com�",
+      "7 = Abundant"
+    ],
+    "AnnotatedMapChance": [
+      "Regula com de sovint un mapa trobat tindr� anotacions escrites per un ex-supervivent. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "CharacterFreePoints": [
+      "Afig punts debades per a la creaci� del personatge. "
+    ],
+    "ConstructionBonusPoints": [
+      "Ofereix a les construccions construïdes pel jugador punts de vida addicionals perquè siguin més resistents als danys zombis. ",
+      "1 = Molt baixa",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt"
+    ],
+    "NightDarkness": [
+      "Controla la llum ambiental durant la nit. ",
+      "1 = Negre tancat",
+      "2 = Fosc",
+      "3 = Normal",
+      "4 = Brillant"
+    ],
+    "NightLength": [
+      "Controla el temps entre la posta del sol i el fer-se de dia. ",
+      "1 = Sempre de nit",
+      "2 = Llarga",
+      "3 = Normal",
+      "4 = Curta",
+      "5 = Sempre de dia"
+    ],
+    "BoneFracture": [
+      "Activa o desactiva les fractures quan els supervivents són ferixen per impactes, zombis o caigudes."
+    ],
+    "InjurySeverity": [
+      "Augmenta i redu�x l'impacte que les ferides tenen sobre el teu cos i el temps de curaci�. ",
+      "1 = Baix",
+      "2 = Normal",
+      "3 = Alt"
+    ],
+    "HoursForCorpseRemoval": [
+      "Quant de temps, en hores, abans que els cossos zombis morts desapareguin del món?  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Mesura l'impacte sobre salut i emocions del jugador que els cossos en descomposici� causen. ",
+      "1 = Gens",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Catastr�fic"
+    ],
+    "ZombieHealthImpact": [
+      "Si els zombis \"vius\" propers tenen el mateix impacte en la salut i les emocions del jugador."
+    ],
+    "BloodLevel": [
+      "Quanta sang s'esguita sobre terra i les pares. ",
+      "1 = Gens",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Ultra Gore"
+    ],
+    "ClothingDegradation": [
+      "Governa la rapidesa amb qu� la roba es degrada, embruta i ompli de sang. ",
+      "1 = Desactivada",
+      "2 = Lenta",
+      "3 = Normal",
+      "4 = R�pida"
+    ],
+    "FireSpread": [
+      "Si els incendis s'estenen quan s'inicien."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Nombre de dies de joc abans que el menjar podrit s'elimini del mapa.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Si està activat, els generadors funcionaran en rajoles exteriors.  "
+    ],
+    "MaxFogIntensity": [
+      "Controla la màxima intensitat de la boira. ",
+      "1 = Normal",
+      "2 = Moderada",
+      "3 = Baix",
+      "4 = Gens"
+    ],
+    "MaxRainFxIntensity": [
+      "Controla la màxima intensitat de la pluja. ",
+      "1 = Normal",
+      "2 = Moderada",
+      "3 = Baix"
+    ],
+    "EnableSnowOnGround": [
+      "Si s'acumularà neu a terra.  "
+    ],
+    "AttackBlockMovements": [
+      "Desactiva-la per a caminar sense interrupcions quan atacs amb armes cos a cos."
+    ],
+    "SurvivorHouseChance": [
+      "La possibilitat de trobar edificis aleatoris al mapa (p. ex., cases cremades, les que contenen dipòsits de botí o cadàvers). ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre ho intenta"
+    ],
+    "VehicleStoryChance": [
+      "La possibilitat que apareguin històries de carreteres (p. ex., talls policials). ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre ho intenta"
+    ],
+    "ZoneStoryChance": [
+      "La possibilitat de generar històries específiques de zones del mapa (p. ex., un càmping en un bosc). ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre ho intenta"
+    ],
+    "AllClothesUnlocked": [
+      "Et permet seleccionar entre totes les peces de roba del joc quan personalitzes el teu personatge"
+    ],
+    "EnableTaintedWaterText": [
+      "Si l'aigua contaminada mostrarà un avís que la marcarà com a tal."
+    ],
+    "EnableVehicles": [
+      "Permet que hi apareguen vehicles."
+    ],
+    "CarSpawnRate": [
+      "Dicta amb quina freq��ncia es trobaran cotxes al mapa. ",
+      "1 = Gens",
+      "2 = Molt baixa",
+      "3 = Baix",
+      "4 = Normal",
+      "5 = Alt"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Usa-ho per a multiplicar o requerir el soroll del motor. "
+    ],
+    "VehicleEasyUse": [
+      "Dicta si els cotxes estan bloquejats, necessiten claus per a engegar-los, etc."
+    ],
+    "InitialGas": [
+      "Determina com de plens estaran els dip�sits dels cotxes trobats. ",
+      "1 = Molt baixa",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt",
+      "6 = Ple"
+    ],
+    "FuelStationGasInfinite": [
+      "Si està activat, les bombes de gasolina mai es quedaran sense combustible"
+    ],
+    "FuelStationGasMin": [
+      "La quantitat mínima de gasolina que pot generar a les bombes de gasolina. "
+    ],
+    "FuelStationGasMax": [
+      "La quantitat màxima de gasolina que es pot generar a les bombes de gasolina. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "La possibilitat, en percentatge, que les bombes de gasolina individuals inicialment no tinguin combustible. "
+    ],
+    "LockedCar": [
+      "Quina és la probabilitat de bloquejar els cotxes Per defecte = Rar",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "CarGasConsumption": [
+      "Com són els vehicles amb fam de gas. "
+    ],
+    "CarGeneralCondition": [
+      "La condici� general dels vehicles descoberts al mapa Per defecte = Baix",
+      "1 = Molt baixa",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt"
+    ],
+    "CarDamageOnImpact": [
+      "Determina la quantitat de dany sobre el cotxe quan hi xoques. ",
+      "1 = Molt baixa",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Dany rebut pel jugador per col·lisionar amb un vehicle. ",
+      "1 = Gens",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt",
+      "5 = Molt alt"
+    ],
+    "TrafficJam": [
+      "Si a les carreteres principals apareixeran embussos de cotxes destrossats."
+    ],
+    "CarAlarm": [
+      "Com de freq�entment els cotxes tindran l'alarma activada. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "PlayerDamageFromCrash": [
+      "Activa o desactiva que el jugador reba danys per estar involucrat en un accident."
+    ],
+    "SirenShutoffHours": [
+      "Nombre d'hores internes dels jocs abans que les alarmes dels cotxes paren de sonar. "
+    ],
+    "ChanceHasGas": [
+      "Determina la probabilitat de trobar vehicles amb gasolina en el dip�sit. ",
+      "1 = Baix",
+      "2 = Normal",
+      "3 = Alt"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Si un jugador pot descobrir un cotxe que ha estat cuidat després de la infecció de Knox. ",
+      "1 = Gens",
+      "2 = Baix",
+      "3 = Normal",
+      "4 = Alt"
+    ],
+    "MultiHitZombies": [
+      "Quan s'activa, algunes armes cos a cos podran colpejar m�s d'un zombi alhora."
+    ],
+    "RearVulnerability": [
+      "Probabilitat de ser mossegat quan un zombi t'ataca per darrere. ",
+      "1 = Baix",
+      "2 = Mitjana",
+      "3 = Alt"
+    ],
+    "SirenEffectsZombies": [
+      "Si els zombis es dirigiran cap al so de les sirenes dels vehicles."
+    ],
+    "AnimalStatsModifier": [
+      "Velocitat a la qual es redueixen les estadístiques dels animals (fam, set, etc.). ",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Velocitat amb la qual les estadístiques dels animals (fam, set, etc.) es redueixen mentre estan en meta. ",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalPregnancyTime": [
+      "Quant de temps estaran embarassades els animals abans de donar a llum. ",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalAgeModifier": [
+      "Velocitat amb què els animals envelleixen. ",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalMilkIncModifier": [
+      "Per defecte = R�pida",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalWoolIncModifier": [
+      "Per defecte = R�pida",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalRanchChance": [
+      "La possibilitat de trobar animals a la granja. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre"
+    ],
+    "AnimalGrassRegrowTime": [
+      "El nombre d'hores que l'herba tornarà a créixer després de ser menjada per un animal o tallada pel jugador. "
+    ],
+    "AnimalMetaPredator": [
+      "Si una guineu meta (és a dir, no visible en el joc) pot atacar els vostres pollastres si la porta de la caseta es deixa oberta a la nit."
+    ],
+    "AnimalMatingSeason": [
+      "Si els animals amb època d'aparellament ho respectaran.  "
+    ],
+    "AnimalEggHatch": [
+      "Quant de temps abans que els nadons eclosionin dels ous? ",
+      "1 = Ultra Fast",
+      "2 = Molt r�pida",
+      "3 = R�pida",
+      "4 = Normal",
+      "5 = Lenta",
+      "6 = Molt lenta"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Si és cert, les trucades dels animals atrauran zombis propers."
+    ],
+    "AnimalTrackChance": [
+      "La possibilitat que els animals deixin petjades. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "AnimalPathChance": [
+      "L'oportunitat de crear un camí perquè els animals siguin caçats. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint"
+    ],
+    "MaximumRatIndex": [
+      "La freqüència i la intensitat d'ex. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Quant de temps triga a assolir l'índex màxim d'insectes. "
+    ],
+    "MetaKnowledge": [
+      "Si un material multimèdia no s'ha vist ni llegit completament, aquesta configuració determina si es mostra completament, es mostra com a \"???\" o s'amaga completament. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Si és cert, podreu veure totes les receptes que es puguin fer amb una estació, encara que encara no les hàgiu après."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Si un edifici té més d'aquesta quantitat d'habitacions, no serà saquejat. "
+    ],
+    "EnablePoisoning": [
+      "Si es pot afegir verí als aliments. ",
+      "1 = S�",
+      "2 = No",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Si/quan els cucs poden engendrar als cadàvers. ",
+      "1 = Dins i al voltant dels cossos",
+      "2 = In Bodies Only",
+      "3 = Mai"
+    ],
+    "LightBulbLifespan": [
+      "Com més alt sigui el valor, més temps duren les bombetes abans de trencar-se.  "
+    ],
+    "FishAbundance": [
+      "L'abundància de peixos als rius i llacs. ",
+      "1 = Molt pobra",
+      "2 = Pobra",
+      "3 = Normal",
+      "4 = Abundant",
+      "5 = Molt abundant"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Quan una habilitat és d'aquest nivell o superior, la televisió/VHS/altres mitjans no proporcionaran XP. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Quan una habilitat és d'aquest nivell o superior, el desballestament de mobles no proporciona XP per a l'habilitat rellevant. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Nombre de dies abans que s'eliminin les taques de sang velles. "
+    ],
+    "LiteratureCooldown": [
+      "Nombre de dies abans que un pugui beneficiar-se de llegir articles de literatura llegits prèviament. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Si hi ha rendiments decreixents dels punts de bonificació proporcionats a partir de seleccionar múltiples trets negatius. ",
+      "1 = Gens",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 1 punt de penalització per cada tret negatiu seleccionat després del primer"
+    ],
+    "MinutesPerPage": [
+      "El nombre de minuts dins del joc que triga a llegir una pàgina d'un llibre d'habilitats. "
+    ],
+    "KillInsideCrops": [
+      "Quan està activat, els cultius i les herbes cultivades dins dels edificis moriran. "
+    ],
+    "PlantGrowingSeasons": [
+      "Quan està activat, el creixement de les plantes es veu afectat per les estacions."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Es recomana que NO canvieu això. "
+    ],
+    "FarmingSpeedNew": [
+      "Controla la velocitat de creixement de les plantes. "
+    ],
+    "FarmingAmountNew": [
+      "L'abundància de conreus collits. "
+    ],
+    "MaximumLooted": [
+      "La possibilitat que qualsevol edifici ja sigui saquejat quan es trobi. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Quant de temps triga a assolir la possibilitat màxima d'edifici saquejat. "
+    ],
+    "RuralLooted": [
+      "La possibilitat que qualsevol edifici rural ja sigui saquejat quan es trobi. "
+    ],
+    "MaximumDiminishedLoot": [
+      "El botí màxim que no apareixerà quan s'arribi a Days Until Maximum Disminuted Loot."
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Quant de temps triga a assolir el percentatge màxim de botí reduït. "
+    ],
+    "MuscleStrainFactor": [
+      "Funciona com a multiplicador quan s'aplica una tensió muscular per armes oscil·lants o transportant càrregues pesades. "
+    ],
+    "DiscomfortFactor": [
+      "Funciona com a multiplicador quan s'aplica molèsties per articles usats. "
+    ],
+    "WoundInfectionFactor": [
+      "Si el dany és superior a zero, es pot prendre per infeccions greus de ferides. "
+    ],
+    "NoBlackClothes": [
+      "Si la roba real amb tints aleatoris no serà tan fosca com per ser pràcticament negra."
+    ],
+    "EasyClimbing": [
+      "Desactiva les possibilitats de fallada quan s'enfilen cordes de xapa o sobre parets."
+    ],
+    "MaximumFireFuelHours": [
+      "Les hores màximes de combustible que es poden col·locar en una foguera, estufa de llenya, etc. Mín: 1 Màx: 168 Per defecte: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Substitueix la mecànica Chance-To-Hit per càlculs Chance-To-Damage."
+    ],
+    "FirearmNoiseMultiplier": [
+      "Un multiplicador de la distància a la qual els zombis poden escoltar trets. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplicador per a la possibilitat d'embussos d'armes de foc. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplicador per als efectes de Moodle en la possibilitat d'èxit. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplicador dels efectes del temps (vent, pluja i boira) en cas d'impacte. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Habiliteu l'ús de barrets com màscares de soldadura que afecten la probabilitat d'impacte"
+    ],
+    "ClayLakeChance": [
+      "Possibilitat de convertir un terra de terra en un terra de fang. "
+    ],
+    "ClayRiverChance": [
+      "Possibilitat de convertir un terra de terra en un terra de fang. "
+    ],
+    "GeneratorTileRange": [
+      "Mín: 1 Màx: 100 Per defecte: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Quants nivells tant per sobre com per sota d'un generador pot proporcionar electricitat. "
+    ],
+    "SpawnFrequency": [
+      "Amb quina freqüència es generen els soterranis en llocs aleatoris. ",
+      "1 = Mai",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre"
+    ],
+    "AllowMiniMap": [
+      "Si està activat, hi haurà disponible una finestra de minimapa."
+    ],
+    "AllowWorldMap": [
+      "Si està activat, es pot accedir al mapa del món."
+    ],
+    "MapAllKnown": [
+      "Si està activat, el mapa del món s'omplirà completament en començar el joc."
+    ],
+    "MapNeedsLight": [
+      "Si està activat, els mapes no es poden llegir tret que hi hagi una font de llum disponible."
+    ],
+    "Speed": [
+      "Controla la velocitat de moviment dels zombis. ",
+      "1 = Corredors",
+      "2 = Caminants",
+      "3 = Caminants lents",
+      "4 = Arreu"
+    ],
+    "SprinterPercentage": [
+      "Si la velocitat aleatòria està activada, això controla quin percentatge de zombis són Sprinters. "
+    ],
+    "Strength": [
+      "Velocitat a la qual l'habilitat Força puja de nivell. "
+    ],
+    "Toughness": [
+      "Controla la dificultat per a matar zombis. ",
+      "1 = Forta",
+      "2 = Normal",
+      "3 = Fr�gil",
+      "4 = Arreu"
+    ],
+    "Transmission": [
+      "Controla com es transmet el virus zombi. ",
+      "1 = Sang + Saliva",
+      "2 = Solament saliva",
+      "3 = Tot el m�n est� infectat",
+      "4 = Gens"
+    ],
+    "Mortality": [
+      "Controla com de r�pidament t� efecte la infecci�. ",
+      "1 = Instant�nia",
+      "2 = 0-30 segons",
+      "3 = 0-1 minuts",
+      "4 = 0-12 hores",
+      "5 = 2-3 dies",
+      "6 = 1-2 setmanes",
+      "7 = Mai"
+    ],
+    "Reanimate": [
+      "Controla com de r�pidament els cad�vers s'alcen com a zombis. ",
+      "1 = Instant�nia",
+      "2 = 0-30 segons",
+      "3 = 0-1 minuts",
+      "4 = 0-12 hores",
+      "5 = 2-3 dies",
+      "6 = 1-2 setmanes"
+    ],
+    "Cognition": [
+      "Controla la intel·ligència dels zombis. ",
+      "1 = Despla�ament + Usar portes",
+      "2 = Despla�ament",
+      "3 = Despla�ament b�sic",
+      "4 = Arreu"
+    ],
+    "CrawlUnderVehicle": [
+      "Controla quins zombis poden arrossegar-se per davall dels vehicles. ",
+      "1 = Solament els arrossegats",
+      "2 = Extremadament rar",
+      "3 = Rar",
+      "4 = A vegades",
+      "5 = A sovint",
+      "6 = Molt a sovint",
+      "7 = Sempre"
+    ],
+    "Memory": [
+      "Controla durant quant de temps els zombis recorden el jugador despr�s de veure'l o sentir-lo. ",
+      "1 = Llarga",
+      "2 = Normal",
+      "3 = Curta",
+      "4 = Gens",
+      "5 = Arreu",
+      "6 = Aleatori entre Normal i Cap"
+    ],
+    "Sight": [
+      "Controla el radi de visi� dels zombis. ",
+      "1 = D'�guila",
+      "2 = Normal",
+      "3 = Pobra",
+      "4 = Arreu",
+      "5 = Aleatori entre Normal i Pobre"
+    ],
+    "Hearing": [
+      "Controla el radi de l'o�da dels zombis. ",
+      "1 = De ca�ador",
+      "2 = Normal",
+      "3 = Pobra",
+      "4 = Arreu",
+      "5 = Aleatori entre Normal i Pobre"
+    ],
+    "SpottedLogic": [
+      "Activa la nova mecànica avançada de sigil, que us permet amagar-vos dels zombis darrere dels cotxes, té en compte els trets i el clima, i molt més."
+    ],
+    "ThumpNoChasing": [
+      "Els zombis que no han vist o sentit el jugador poden atacar portes i construccions mentres deambulen."
+    ],
+    "ThumpOnConstruction": [
+      "Informa sobre si els zombis poden o no destruir les defenses i construccions del jugador."
+    ],
+    "ActiveOnly": [
+      "Si els zombis són més \"actius\" durant el dia o la nit.  ",
+      "1 = Ambd�s",
+      "2 = Nit",
+      "3 = Dia"
+    ],
+    "TriggerHouseAlarm": [
+      "Permet que els zombis activen alarmes de cases quan hi entren per portes o finestres trencades."
+    ],
+    "ZombiesDragDown": [
+      "Si diversos zombis atacants et poden arrossegar cap avall i matar-te.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Si els zombis rastrejadors al costat d'un jugador contribueixen a la possibilitat de ser arrossegats i assassinats per un grup de zombis."
+    ],
+    "ZombiesFenceLunge": [
+      "Si els zombis tenen l'oportunitat de llançar-se cap a tu després d'escalar una tanca o per una finestra si estàs massa a prop."
+    ],
+    "ZombiesArmorFactor": [
+      "Serveix com a multiplicador a l'hora de determinar l'efectivitat de l'armadura que porten els zombis. "
+    ],
+    "ZombiesMaxDefense": [
+      "El percentatge màxim de defensa que pot proporcionar a un zombi qualsevol roba de protecció usada. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Percentatge de probabilitat de tenir una arma acoblada aleatòriament. "
+    ],
+    "ZombiesFallDamage": [
+      "Quant dany fan els zombis quan cauen des d'alçada. "
+    ],
+    "DisableFakeDead": [
+      "Si alguns zombis d'aspecte mort es reanimaran i atacaran el jugador. ",
+      "1 = World Zombies",
+      "2 = Món i Combat Zombies",
+      "3 = Mai"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Els zombis no apareixeran on apareguin els jugadors. ",
+      "1 = Dins de l'edifici i al seu voltant",
+      "2 = Dins de l'edifici",
+      "3 = Dins de l'habitació",
+      "4 = Els zombis poden aparèixer a qualsevol lloc"
+    ],
+    "FenceThumpersRequired": [
+      "Quants zombis es necessiten per danyar una tanca alta. "
+    ],
+    "FenceDamageMultiplier": [
+      "Amb quina rapidesa els zombis fan malbé les tanques altes. "
+    ],
+    "PopulationMultiplier": [
+      "Definit per l'opció de població \"Recompte de zombis\" o per un número personalitzat aquí. "
+    ],
+    "PopulationStartMultiplier": [
+      "Un multiplicador per a la població de zombis desitjada a l'inici del joc. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Un multiplicador per a la població de zombis desitjada el dia punta. "
+    ],
+    "PopulationPeakDay": [
+      "El dia en qu� ocorre el pic de poblaci�. "
+    ],
+    "RespawnHours": [
+      "El nombre d'hores que han de passar abans que els zombis puguin reaparecer en una cel·la. "
+    ],
+    "RespawnUnseenHours": [
+      "El nombre de hores que un chunk no ha de ser vist abans que els zombis hi reapareguen. "
+    ],
+    "RespawnMultiplier": [
+      "La fracci� desitjada que reapareixer� en cada cel�la despr�s del temps de reaparici�. "
+    ],
+    "RedistributeHours": [
+      "El nombre d'hores que han de passar abans que els zombis migren a parts buides de la mateixa cel·la. "
+    ],
+    "FollowSoundDistance": [
+      "La dist�ncia que un zombi intentar� caminar cap al darrer so que ha sentit. "
+    ],
+    "RallyGroupSize": [
+      "La mida dels grups que es formen els zombis reals quan estan inactius. "
+    ],
+    "RallyGroupSizeVariance": [
+      "La quantitat, com a percentatge, que els grups de zombis poden variar en mida respecte al valor predeterminat (tant més grans com més petits).   "
+    ],
+    "RallyTravelDistance": [
+      "La dist�cia que els zombis reals viatgen per a formar grups quan estan en rep�s. "
+    ],
+    "RallyGroupSeparation": [
+      "La dist�ncia entre grups de zombis. "
+    ],
+    "RallyGroupRadius": [
+      "Com de prop es mantenen els membres d'un grup al zombi l�der. "
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Mín: 10 Màx: 500 Per defecte: 300"
+    ],
+    "Global": [
+      "El ritme al qual totes les habilitats augmenten de nivell. "
+    ],
+    "GlobalToggle": [
+      "Quan estigui activat, totes les habilitats utilitzaran el multiplicador global."
+    ],
+    "Fitness": [
+      "Velocitat a la qual l'habilitat Aptitud física puja de nivell. "
+    ],
+    "Sprinting": [
+      "Velocitat a la qual l'habilitat Còrrer puja de nivell. "
+    ],
+    "Lightfoot": [
+      "Velocitat a la qual l'habilitat Pas lleugerament puja de nivell. "
+    ],
+    "Nimble": [
+      "Velocitat a la qual l'habilitat Àgil puja de nivell. "
+    ],
+    "Sneak": [
+      "Velocitat a la qual l'habilitat Sigil puja de nivell. "
+    ],
+    "Axe": [
+      "Velocitat a la qual l'habilitat Destral puja de nivell. "
+    ],
+    "Blunt": [
+      "Velocitat a la qual l'habilitat Contundent puja de nivell. "
+    ],
+    "SmallBlunt": [
+      "Velocitat a la qual l'habilitat Contundent curt puja de nivell. "
+    ],
+    "LongBlade": [
+      "Velocitat a la qual l'habilitat Fulla llarga puja de nivell. "
+    ],
+    "SmallBlade": [
+      "Velocitat a la qual l'habilitat Fulla curta puja de nivell. "
+    ],
+    "Spear": [
+      "Velocitat a la qual l'habilitat Llança puja de nivell. "
+    ],
+    "Maintenance": [
+      "Velocitat a la qual l'habilitat Manteniment puja de nivell. "
+    ],
+    "Woodwork": [
+      "Velocitat a la qual l'habilitat Fusteria puja de nivell. "
+    ],
+    "Cooking": [
+      "Velocitat a la qual l'habilitat Cuina puja de nivell. "
+    ],
+    "Doctor": [
+      "Velocitat a la qual l'habilitat Medicina puja de nivell. "
+    ],
+    "Electricity": [
+      "Velocitat a la qual l'habilitat Electricitat puja de nivell. "
+    ],
+    "MetalWelding": [
+      "Velocitat a la qual l'habilitat Soldadura de metall puja de nivell. "
+    ],
+    "Mechanics": [
+      "Velocitat a la qual l'habilitat Mecànica puja de nivell. "
+    ],
+    "Tailoring": [
+      "Velocitat a la qual l'habilitat Sastreria puja de nivell. "
+    ],
+    "Aiming": [
+      "Velocitat a la qual l'habilitat Punteria puja de nivell. "
+    ],
+    "Reloading": [
+      "Velocitat a la qual l'habilitat Recàrrega puja de nivell. "
+    ],
+    "Fishing": [
+      "Velocitat a la qual l'habilitat Pesca puja de nivell. "
+    ],
+    "Trapping": [
+      "Velocitat a la qual l'habilitat Trampeig puja de nivell. "
+    ],
+    "PlantScavenging": [
+      "Velocitat a la qual l'habilitat Recol·lecció de plantes puja de nivell. "
+    ],
+    "FlintKnapping": [
+      "Velocitat a la qual l'habilitat Talla de sílex puja de nivell. "
+    ],
+    "Masonry": [
+      "Velocitat a la qual l'habilitat Paleta puja de nivell. "
+    ],
+    "Pottery": [
+      "Velocitat a la qual l'habilitat Terrissa puja de nivell. "
+    ],
+    "Carving": [
+      "Velocitat a la qual l'habilitat Talla puja de nivell. "
+    ],
+    "Husbandry": [
+      "Velocitat a la qual l'habilitat Ramaderia puja de nivell. "
+    ],
+    "Tracking": [
+      "Velocitat a la qual l'habilitat Rastreig puja de nivell. "
+    ],
+    "Blacksmith": [
+      "Velocitat a la qual l'habilitat Ferrer puja de nivell. "
+    ],
+    "Butchering": [
+      "Velocitat a la qual l'habilitat Carnisseria puja de nivell. "
+    ],
+    "Glassmaking": [
+      "Velocitat a la qual l'habilitat Vidrieria puja de nivell. "
+    ]
+  }
+}
+
+

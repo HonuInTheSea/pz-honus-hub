@@ -1,0 +1,124 @@
+<p-dialog
+  header="Edit Mods"
+  [(visible)]="visible"
+  [modal]="true"
+  [style]="{ width: '70rem', maxWidth: '95vw' }"
+  (onHide)="onHide()"
+>
+  <div class="p-fluid">
+    <div
+      class="p-picklist-list-container p-picklist-source-list-container mb-3"
+      [style.width]="modsTagsWidth"
+    >
+      <div class="p-picklist-list p-component" style="height: auto;">
+        <app-mod-tag-filter [compact]="true"></app-mod-tag-filter>
+      </div>
+    </div>
+    <p-pickList
+      #modsPicklist
+      [source]="modsSource"
+      [target]="modsTarget"
+      sourceHeader="Available Mods"
+      targetHeader="Selected Mods"
+      dataKey="modId"
+      [filterBy]="'label'"
+      [showSourceFilter]="true"
+      [showTargetFilter]="true"
+      [showSourceControls]="false"
+      [metaKeySelection]="false"
+      [responsive]="true"
+      [sourceStyle]="{ height: '22rem' }"
+      [targetStyle]="{ height: '22rem' }"
+      sourceFilterPlaceholder="Filter available mods"
+      targetFilterPlaceholder="Filter selected mods"
+      styleClass="w-full"
+      (onMoveToTarget)="onModsPickListChange()"
+      (onMoveToSource)="onModsMoveToSource($event)"
+      (onMoveAllToTarget)="onModsPickListChange()"
+      (onMoveAllToSource)="onModsMoveToSource($event)"
+    >
+      <ng-template pTemplate="sourceheader">
+        <div class="font-medium">Available Mods</div>
+      </ng-template>
+      <ng-template pTemplate="sourcefilter" let-options>
+        <input
+          pInputText
+          type="text"
+          class="w-full"
+          [ngModel]="modsSourceFilterValue"
+          (ngModelChange)="onModsSourceFilterValueChange($event, options)"
+          placeholder="Filter available mods"
+        />
+      </ng-template>
+      <ng-template let-item pTemplate="item">
+        <div style="white-space: normal; word-break: break-word;">
+          {{ item.label }}
+        </div>
+      </ng-template>
+    </p-pickList>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Cancel" class="p-button-text" (click)="cancel()"></button>
+      <button pButton type="button" label="Save" icon="pi pi-save" (click)="saveSelection()"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog
+  header="Missing Mods"
+  [(visible)]="missingModsDialogVisible"
+  [modal]="true"
+  [style]="{ width: '42rem', maxWidth: '95vw' }"
+>
+  <div class="p-fluid">
+    <p class="text-color-secondary">
+      One or more mods could not be matched. Subscribe to the missing mods, then run the local mod update and Steam Workshop update.
+    </p>
+    @if (missingModsLoading) {
+      <p class="text-color-secondary">Loading Steam Workshop details...</p>
+    } @else {
+      <ul class="m-0 pl-3 list-disc">
+        @for (item of missingMods; track item.id) {
+          <li class="mb-2">
+            @if (item.url) {
+              <a [href]="item.url" target="_blank" rel="noopener noreferrer">
+                {{ item.title || item.workshopId || item.id }}
+              </a>
+            } @else {
+              <span>{{ item.title || item.workshopId || item.id }}</span>
+            }
+            @if (!missingModsHasApiKey) {
+              <span class="text-sm text-color-secondary ml-2">(Steam API key not set)</span>
+            } @else if (item.error) {
+              <span class="text-sm text-color-secondary ml-2">{{ item.error }}</span>
+            }
+          </li>
+        }
+      </ul>
+    }
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Close" class="p-button-text" (click)="missingModsDialogVisible = false"></button>
+    </div>
+  </div>
+</p-dialog>
+
+<p-dialog
+  header="Dependent Mods"
+  [(visible)]="removeDependentsDialogVisible"
+  [modal]="true"
+  [style]="{ width: '36rem', maxWidth: '95vw' }"
+>
+  <div class="p-fluid">
+    <p class="text-color-secondary">
+      The following selected mods depend on the mod you are removing:
+    </p>
+    <ul class="m-0 pl-3 list-disc">
+      @for (item of pendingDependentMods; track item.modId) {
+        <li class="mb-1">{{ item.label }}</li>
+      }
+    </ul>
+    <div class="flex justify-content-end gap-2 mt-3">
+      <button pButton type="button" label="Cancel" class="p-button-text" (click)="cancelMoveDependents()"></button>
+      <button pButton type="button" label="Confirm" icon="pi pi-check" (click)="confirmMoveDependents()"></button>
+    </div>
+  </div>
+</p-dialog>

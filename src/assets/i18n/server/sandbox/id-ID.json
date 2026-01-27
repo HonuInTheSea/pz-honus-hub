@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombi",
+  "Distribution": "Distribusi",
+  "ZombieVoronoiNoise": "Kebisingan Voronoi zombi",
+  "ZombieRespawn": "Muncul kembali zombi",
+  "ZombieMigrate": "Migrasi zombi",
+  "DayLength": "Lama siang",
+  "StartMonth": "Bulan awal",
+  "StartDay": "Hari awal",
+  "StartTime": "Waktu awal",
+  "DayNightCycle": "Siklus siang/malam",
+  "ClimateCycle": "Siklus iklim",
+  "FogCycle": "Siklus kabut",
+  "WaterShut": "Pemadaman air",
+  "ElecShut": "Pemadaman listrik",
+  "AlarmDecay": "Penurunan alarm",
+  "WaterShutModifier": "Pengubah pemadaman air",
+  "ElecShutModifier": "Pengubah pemadaman listrik",
+  "AlarmDecayModifier": "Pengubah penurunan alarm",
+  "FoodLootNew": "Rampasan makanan (baru)",
+  "LiteratureLootNew": "Rampasan literatur (baru)",
+  "MedicalLootNew": "Rampasan medis (baru)",
+  "SurvivalGearsLootNew": "Rampasan perlengkapan bertahan hidup (baru)",
+  "CannedFoodLootNew": "Rampasan makanan kaleng (baru)",
+  "WeaponLootNew": "Rampasan senjata (baru)",
+  "RangedWeaponLootNew": "Rampasan senjata jarak jauh (baru)",
+  "AmmoLootNew": "Rampasan amunisi (baru)",
+  "MechanicsLootNew": "Rampasan mekanik (baru)",
+  "OtherLootNew": "Rampasan lain (baru)",
+  "ClothingLootNew": "Rampasan pakaian (baru)",
+  "ContainerLootNew": "Rampasan kontainer (baru)",
+  "KeyLootNew": "Rampasan kunci (baru)",
+  "MediaLootNew": "Rampasan media (baru)",
+  "MementoLootNew": "Rampasan kenang-kenangan (baru)",
+  "CookwareLootNew": "Rampasan peralatan masak (baru)",
+  "MaterialLootNew": "Rampasan bahan (baru)",
+  "FarmingLootNew": "Rampasan pertanian (baru)",
+  "ToolLootNew": "Rampasan alat (baru)",
+  "RollsMultiplier": "Pengali guliran",
+  "LootItemRemovalList": "Daftar penghapusan rampasan",
+  "RemoveStoryLoot": "Hapus rampasan cerita",
+  "RemoveZombieLoot": "Hapus rampasan zombi",
+  "ZombiePopLootEffect": "Efek rampasan populasi zombi",
+  "InsaneLootFactor": "Faktor rampasan gila",
+  "ExtremeLootFactor": "Faktor rampasan ekstrem",
+  "RareLootFactor": "Faktor rampasan langka",
+  "NormalLootFactor": "Faktor rampasan normal",
+  "CommonLootFactor": "Faktor rampasan umum",
+  "AbundantLootFactor": "Faktor rampasan melimpah",
+  "Temperature": "Suhu",
+  "Rain": "Hujan",
+  "ErosionSpeed": "Kecepatan erosi",
+  "ErosionDays": "Hari erosi",
+  "Farming": "Pertanian",
+  "CompostTime": "Waktu kompos",
+  "StatsDecrease": "Penurunan statistik",
+  "NatureAbundance": "Kelimpahan alam",
+  "Alarm": "Alarm",
+  "LockedHouses": "Rumah terkunci",
+  "StarterKit": "Paket awal",
+  "Nutrition": "Nutrisi",
+  "FoodRotSpeed": "Kecepatan pembusukan makanan",
+  "FridgeFactor": "Faktor kulkas",
+  "SeenHoursPreventLootRespawn": "Jam terlihat mencegah respawn rampasan",
+  "HoursForLootRespawn": "Jam hingga respawn rampasan",
+  "MaxItemsForLootRespawn": "Maks item untuk respawn rampasan",
+  "ConstructionPreventsLootRespawn": "Konstruksi mencegah respawn rampasan",
+  "WorldItemRemovalList": "Daftar penghapusan item dunia",
+  "HoursForWorldItemRemoval": "Jam hingga penghapusan item dunia",
+  "ItemRemovalListBlacklistToggle": "Sakelar daftar hitam penghapusan item",
+  "TimeSinceApo": "Waktu sejak apokalips",
+  "PlantResilience": "Ketahanan tanaman",
+  "PlantAbundance": "Kelimpahan tanaman",
+  "EndRegen": "Regenerasi stamina",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Peristiwa meta",
+  "SleepingEvent": "Peristiwa saat tidur",
+  "GeneratorFuelConsumption": "Konsumsi bahan bakar generator",
+  "GeneratorSpawning": "Kemunculan generator",
+  "AnnotatedMapChance": "Peluang peta beranotasi",
+  "CharacterFreePoints": "Poin gratis karakter",
+  "ConstructionBonusPoints": "Poin bonus konstruksi",
+  "NightDarkness": "Kegelapan malam",
+  "NightLength": "Durasi malam",
+  "BoneFracture": "Patah tulang",
+  "InjurySeverity": "Tingkat keparahan cedera",
+  "HoursForCorpseRemoval": "Jam hingga penghapusan mayat",
+  "DecayingCorpseHealthImpact": "Dampak kesehatan mayat membusuk",
+  "ZombieHealthImpact": "Dampak kesehatan zombie",
+  "BloodLevel": "Tingkat darah",
+  "ClothingDegradation": "Degradasi pakaian",
+  "FireSpread": "Penyebaran api",
+  "DaysForRottenFoodRemoval": "Hari hingga penghapusan makanan busuk",
+  "AllowExteriorGenerator": "Izinkan generator luar",
+  "MaxFogIntensity": "Intensitas kabut maksimum",
+  "MaxRainFxIntensity": "Intensitas efek hujan maksimum",
+  "EnableSnowOnGround": "Aktifkan salju di tanah",
+  "AttackBlockMovements": "Serangan memblokir pergerakan",
+  "SurvivorHouseChance": "Peluang rumah penyintas",
+  "VehicleStoryChance": "Peluang cerita kendaraan",
+  "ZoneStoryChance": "Peluang cerita zona",
+  "AllClothesUnlocked": "Semua pakaian terbuka",
+  "EnableTaintedWaterText": "Aktifkan teks air tercemar",
+  "EnableVehicles": "Aktifkan kendaraan",
+  "CarSpawnRate": "Tingkat kemunculan mobil",
+  "ZombieAttractionMultiplier": "Pengali daya tarik zombie",
+  "VehicleEasyUse": "Penggunaan kendaraan mudah",
+  "InitialGas": "Bensin awal",
+  "FuelStationGasInfinite": "Bensin tak terbatas di SPBU",
+  "FuelStationGasMin": "Bensin minimum di SPBU",
+  "FuelStationGasMax": "Bensin maksimum di SPBU",
+  "FuelStationGasEmptyChance": "Peluang SPBU kosong",
+  "LockedCar": "Mobil terkunci",
+  "CarGasConsumption": "Konsumsi bensin mobil",
+  "CarGeneralCondition": "Kondisi umum mobil",
+  "CarDamageOnImpact": "Kerusakan mobil saat tabrakan",
+  "DamageToPlayerFromHitByACar": "Kerusakan pada pemain karena tertabrak mobil",
+  "TrafficJam": "Kemacetan",
+  "CarAlarm": "Alarm mobil",
+  "PlayerDamageFromCrash": "Kerusakan pada pemain karena tabrakan",
+  "SirenShutoffHours": "Jam hingga sirene mati",
+  "ChanceHasGas": "Peluang memiliki bensin",
+  "RecentlySurvivorVehicles": "Kendaraan penyintas terbaru",
+  "MultiHitZombies": "Serangan multi pada zombie",
+  "RearVulnerability": "Kerentanan belakang",
+  "SirenEffectsZombies": "Sirene memengaruhi zombie",
+  "AnimalStatsModifier": "Pengubah statistik hewan",
+  "AnimalMetaStatsModifier": "Pengubah meta statistik hewan",
+  "AnimalPregnancyTime": "Waktu kehamilan hewan",
+  "AnimalAgeModifier": "Pengubah usia hewan",
+  "AnimalMilkIncModifier": "Pengubah peningkatan susu",
+  "AnimalWoolIncModifier": "Pengubah peningkatan wol",
+  "AnimalRanchChance": "Peluang peternakan hewan",
+  "AnimalGrassRegrowTime": "Waktu tumbuh kembali rumput",
+  "AnimalMetaPredator": "Predator meta hewan",
+  "AnimalMatingSeason": "Musim kawin",
+  "AnimalEggHatch": "Penetasan telur",
+  "AnimalSoundAttractZombies": "Suara hewan menarik zombie",
+  "AnimalTrackChance": "Peluang jejak hewan",
+  "AnimalPathChance": "Peluang jalur hewan",
+  "MaximumRatIndex": "Indeks tikus maksimum",
+  "DaysUntilMaximumRatIndex": "Hari hingga indeks tikus maksimum",
+  "MetaKnowledge": "Pengetahuan meta",
+  "SeeNotLearntRecipe": "Lihat resep yang belum dipelajari",
+  "MaximumLootedBuildingRooms": "Maksimum ruangan gedung dijarah",
+  "EnablePoisoning": "Aktifkan keracunan",
+  "MaggotSpawn": "Kemunculan belatung",
+  "LightBulbLifespan": "Masa pakai bohlam",
+  "FishAbundance": "Kelimpahan ikan",
+  "LevelForMediaXPCutoff": "Tingkat untuk penghentian XP media",
+  "LevelForDismantleXPCutoff": "Tingkat untuk penghentian XP pembongkaran",
+  "BloodSplatLifespanDays": "Hari umur bercak darah",
+  "LiteratureCooldown": "Cooldown literatur",
+  "NegativeTraitsPenalty": "Hukuman sifat negatif",
+  "MinutesPerPage": "Menit per halaman",
+  "KillInsideCrops": "Membunuh tanaman di dalam",
+  "PlantGrowingSeasons": "Pertumbuhan tanaman musiman",
+  "PlaceDirtAboveground": "Letakkan tanah di atas tanah",
+  "FarmingSpeedNew": "Kecepatan pertanian (baru)",
+  "FarmingAmountNew": "Jumlah pertanian (baru)",
+  "MaximumLooted": "Penjarahan maksimum",
+  "DaysUntilMaximumLooted": "Hari hingga penjarahan maksimum",
+  "RuralLooted": "Penjarahan pedesaan",
+  "MaximumDiminishedLoot": "Penjarahan maksimum berkurang",
+  "DaysUntilMaximumDiminishedLoot": "Hari hingga penjarahan maksimum berkurang",
+  "MuscleStrainFactor": "Faktor ketegangan otot",
+  "DiscomfortFactor": "Faktor ketidaknyamanan",
+  "WoundInfectionFactor": "Faktor infeksi luka",
+  "NoBlackClothes": "Tidak ada pakaian hitam",
+  "EasyClimbing": "Memanjat mudah",
+  "MaximumFireFuelHours": "Jam maksimum bahan bakar untuk api",
+  "FirearmUseDamageChance": "Peluang kerusakan saat menggunakan senjata api",
+  "FirearmNoiseMultiplier": "Pengali kebisingan senjata api",
+  "FirearmJamMultiplier": "Pengali macet senjata api",
+  "FirearmMoodleMultiplier": "Pengali moodle senjata api",
+  "FirearmWeatherMultiplier": "Pengali cuaca senjata api",
+  "FirearmHeadGearEffect": "Efek penutup kepala pada senjata api",
+  "ClayLakeChance": "Peluang tanah liat di danau",
+  "ClayRiverChance": "Peluang tanah liat di sungai",
+  "GeneratorTileRange": "Jangkauan ubin generator",
+  "GeneratorVerticalPowerRange": "Jangkauan vertikal generator",
+  "Basement": "Ruang bawah tanah",
+  "SpawnFrequency": "Frekuensi kemunculan",
+  "Map": "Peta",
+  "AllowMiniMap": "Izinkan minimap",
+  "AllowWorldMap": "Izinkan peta dunia",
+  "MapAllKnown": "Peta sepenuhnya diketahui",
+  "MapNeedsLight": "Peta membutuhkan cahaya",
+  "ZombieLore": "Pengetahuan zombie",
+  "Speed": "Kecepatan",
+  "SprinterPercentage": "Persentase pelari",
+  "Strength": "Kekuatan",
+  "Toughness": "Ketahanan",
+  "Transmission": "Penularan",
+  "Mortality": "Kematian",
+  "Reanimate": "Bangkit kembali",
+  "Cognition": "Kognisi",
+  "CrawlUnderVehicle": "Merayap di bawah kendaraan",
+  "Memory": "Memori",
+  "Sight": "Penglihatan",
+  "Hearing": "Pendengaran",
+  "SpottedLogic": "Logika terdeteksi",
+  "ThumpNoChasing": "Memukul tanpa mengejar",
+  "ThumpOnConstruction": "Memukul konstruksi",
+  "ActiveOnly": "Hanya aktif",
+  "TriggerHouseAlarm": "Aktifkan alarm rumah",
+  "ZombiesDragDown": "Zombi menyeret ke bawah",
+  "ZombiesCrawlersDragDown": "Zombi merayap menyeret ke bawah",
+  "ZombiesFenceLunge": "Zombi melompati pagar",
+  "ZombiesArmorFactor": "Faktor armor zombi",
+  "ZombiesMaxDefense": "Pertahanan maksimum zombi",
+  "ChanceOfAttachedWeapon": "Peluang senjata terpasang",
+  "ZombiesFallDamage": "Kerusakan jatuh zombi",
+  "DisableFakeDead": "Nonaktifkan zombie pura-pura mati",
+  "PlayerSpawnZombieRemoval": "Hapus zombi di area spawn",
+  "FenceThumpersRequired": "Zombi diperlukan untuk merusak pagar",
+  "FenceDamageMultiplier": "Pengali kerusakan pagar",
+  "ZombieConfig": "Konfigurasi zombi",
+  "PopulationMultiplier": "Pengali populasi",
+  "PopulationStartMultiplier": "Pengali populasi awal",
+  "PopulationPeakMultiplier": "Pengali puncak populasi",
+  "PopulationPeakDay": "Hari puncak populasi",
+  "RespawnHours": "Jam respawn",
+  "RespawnUnseenHours": "Jam tidak terlihat untuk respawn",
+  "RespawnMultiplier": "Pengali respawn",
+  "RedistributeHours": "Jam redistribusi",
+  "FollowSoundDistance": "Jarak mengikuti suara",
+  "RallyGroupSize": "Ukuran kelompok",
+  "RallyGroupSizeVariance": "Variasi ukuran kelompok",
+  "RallyTravelDistance": "Jarak perjalanan kelompok",
+  "RallyGroupSeparation": "Pemisahan kelompok",
+  "RallyGroupRadius": "Radius kelompok",
+  "ZombiesCountBeforeDelete": "Zombi sebelum dihapus",
+  "MultiplierConfig": "Konfigurasi pengali",
+  "Global": "Global",
+  "GlobalToggle": "Alihkan global",
+  "Fitness": "Kebugaran",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Langkah ringan",
+  "Nimble": "Lincah",
+  "Sneak": "Menyelinap",
+  "Axe": "Kapak",
+  "Blunt": "Tumpul",
+  "SmallBlunt": "Tumpul kecil",
+  "LongBlade": "Bilah panjang",
+  "SmallBlade": "Bilah pendek",
+  "Spear": "Tombak",
+  "Maintenance": "Perawatan",
+  "Woodwork": "Pertukangan kayu",
+  "Cooking": "Memasak",
+  "Doctor": "Kedokteran",
+  "Electricity": "Listrik",
+  "MetalWelding": "Pengelasan logam",
+  "Mechanics": "Mekanik",
+  "Tailoring": "Menjahit",
+  "Aiming": "Membidik",
+  "Reloading": "Mengisi ulang",
+  "Fishing": "Memancing",
+  "Trapping": "Menjebak",
+  "PlantScavenging": "Mengumpulkan tanaman",
+  "FlintKnapping": "Menatah batu api",
+  "Masonry": "Pertukangan batu",
+  "Pottery": "Keramik",
+  "Carving": "Ukiran",
+  "Husbandry": "Peternakan",
+  "Tracking": "Pelacakan",
+  "Blacksmith": "Pandai besi",
+  "Butchering": "Pemotongan hewan",
+  "Glassmaking": "Pembuatan kaca",
+  "comments": {
+    "Zombies": [
+      "Mengganti ini akan menetapkan \"Populasi penggKamu\" setelan lanjutan. Bawaan = Normal",
+      "1 = Terlalu Tinggi",
+      "2 = Sangat Tinggi",
+      "3 = Tinggi",
+      "4 = Normal",
+      "5 = Rendah",
+      "6 = None"
+    ],
+    "Distribution": [
+      "Bagaimana zombie didistribusikan ke seluruh peta. ",
+      "1 = Fokus di perkotaan",
+      "2 = Semua Tempat"
+    ],
+    "ZombieVoronoiNoise": [
+      "Mengontrol apakah pengacakan diterapkan pada distribusi zombi."
+    ],
+    "ZombieRespawn": [
+      "Seberapa sering zombie akan spawn di dunia. Bawaan = Normal",
+      "1 = Tinggi",
+      "2 = Normal",
+      "3 = Rendah",
+      "4 = None"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Bawaan = 2 Jam",
+      "1 = 15 Menit",
+      "2 = 30 Menit",
+      "3 = 1 Jam",
+      "4 = 2 Jam",
+      "5 = 3 Jam",
+      "6 = 4 Jam",
+      "7 = 5 Jam",
+      "8 = 6 Jam",
+      "9 = 7 Jam",
+      "10 = 8 Jam",
+      "11 = 9 Jam",
+      "12 = 10 Jam",
+      "13 = 11 Jam",
+      "14 = 12 Jam",
+      "15 = 13 Jam",
+      "16 = 14 Jam",
+      "17 = 15 Jam",
+      "18 = 16 Jam",
+      "19 = 17 Jam",
+      "20 = 18 Jam",
+      "21 = 19 Jam",
+      "22 = 20 Jam",
+      "23 = 21 Jam",
+      "24 = 22 Jam",
+      "25 = 23 Jam",
+      "26 = Waktu asli",
+      "27 = Waktu nyata"
+    ],
+    "StartMonth": [
+      "Bulan saat permainan dimulai. ",
+      "1 = Januari",
+      "2 = Februari",
+      "3 = Maret",
+      "4 = April",
+      "5 = Mei",
+      "6 = Juni",
+      "7 = Juli",
+      "8 = Agustus",
+      "9 = September",
+      "10 = Oktober",
+      "11 = November",
+      "12 = Desember"
+    ],
+    "StartDay": [
+      "Hari di bulan saat pertandingan dimulai."
+    ],
+    "StartTime": [
+      "Jam pada hari saat permainan dimulai. ",
+      "1 = 7 AM",
+      "2 = 9 AM",
+      "3 = 12 PM",
+      "4 = 2 PM",
+      "5 = 5 PM",
+      "6 = 9 PM",
+      "7 = 12 AM",
+      "8 = 2 AM",
+      "9 = 5 AM"
+    ],
+    "DayNightCycle": [
+      "Entah waktu siang hari berubah secara alami, atau selalu siang/malam. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Apakah cuaca berubah atau tetap pada satu keadaan. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Apakah kabut terjadi secara alami, tidak pernah terjadi, atau selalu ada. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Berapa lama setelah tanggal mulai default (9 Juli 1993) perlengkapan pipa (misalnya wastafel) tidak lagi menjadi sumber air yang tak terbatas. ",
+      "1 = Instant",
+      "2 = 0-30 Hari",
+      "3 = 0-2 Bulan",
+      "4 = 0-6 Bulan",
+      "5 = 0-1 Tahun",
+      "6 = 0-5 Tahun",
+      "7 = 2-6 Bulan",
+      "8 = 6-12 Bulan",
+      "9 = Nonaktif"
+    ],
+    "ElecShut": [
+      "Berapa lama setelah tanggal mulai default (9 Juli 1993) listrik dunia padam untuk selamanya. ",
+      "1 = Instant",
+      "2 = 0-30 Hari",
+      "3 = 0-2 Bulan",
+      "4 = 0-6 Bulan",
+      "5 = 0-1 Tahun",
+      "6 = 0-5 Tahun",
+      "7 = 2-6 Bulan",
+      "8 = 6-12 Bulan",
+      "9 = Nonaktif"
+    ],
+    "AlarmDecay": [
+      "Berapa lama baterai alarm dapat bertahan setelah listrik dimatikan. ",
+      "1 = Instant",
+      "2 = 0-30 Hari",
+      "3 = 0-2 Bulan",
+      "4 = 0-6 Bulan",
+      "5 = 0-1 Tahun",
+      "6 = 0-5 Tahun"
+    ],
+    "WaterShutModifier": [
+      "Berapa lama setelah tanggal mulai default (9 Juli 1993) perlengkapan pipa (misalnya wastafel) tidak lagi menjadi sumber air yang tak terbatas. "
+    ],
+    "ElecShutModifier": [
+      "Berapa lama setelah tanggal mulai default (9 Juli 1993) listrik dunia padam untuk selamanya. "
+    ],
+    "AlarmDecayModifier": [
+      "Berapa lama baterai alarm dapat bertahan setelah listrik dimatikan. "
+    ],
+    "FoodLootNew": [
+      "Makanan apa pun yang bisa membusuk atau rusak. "
+    ],
+    "LiteratureLootNew": [
+      "Semua barang yang dapat dibaca, termasuk brosur Min: 0,00 Maks: 4,00 Bawaan: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Obat-obatan, perban dan alat pertolongan pertama. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Maks: 4.00 Bawaan: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Makanan kaleng dan kering, minuman. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Maks: 4.00 Bawaan: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Maks: 4.00 Bawaan: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Amunisi longgar, kotak dan majalah. "
+    ],
+    "MechanicsLootNew": [
+      "Suku cadang kendaraan dan peralatan yang diperlukan untuk memasangnya. "
+    ],
+    "OtherLootNew": [
+      "Segala sesuatu yang lain. "
+    ],
+    "ClothingLootNew": [
+      "Semua barang yang dapat dikenakan yang bukan merupakan wadah. "
+    ],
+    "ContainerLootNew": [
+      "Ransel dan wadah lain yang dapat dipakai/dilengkapi, misalnya. "
+    ],
+    "KeyLootNew": [
+      "Kunci gedung/mobil, gantungan kunci, dan gembok. "
+    ],
+    "MediaLootNew": [
+      "Kaset dan CD VHS. "
+    ],
+    "MementoLootNew": [
+      "Barang-barang spiffo, boneka mewah, dan barang-barang kenang-kenangan koleksi lainnya misalnya. "
+    ],
+    "CookwareLootNew": [
+      "Barang-barang yang digunakan dalam memasak, termasuk (misalnya pisau) yang dapat menjadi senjata. "
+    ],
+    "MaterialLootNew": [
+      "Barang dan senjata yang digunakan sebagai bahan kerajinan atau bangunan. "
+    ],
+    "FarmingLootNew": [
+      "Barang dan senjata yang digunakan dalam pertanian hewan dan tumbuhan, seperti Benih, Sekop, atau Sekop. "
+    ],
+    "ToolLootNew": [
+      "Item dan senjata yang merupakan Alat tetapi tidak cocok dengan kategori lain seperti Mekanik atau Pertanian. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Disarankan agar Anda JANGAN mengubahnya. "
+    ],
+    "LootItemRemovalList": [
+      "Daftar jenis item yang dipisahkan koma yang tidak akan muncul sebagai jarahan biasa."
+    ],
+    "RemoveStoryLoot": [
+      "Jika diaktifkan, item di Daftar Penghapusan Item Loot, atau yang kelangkaannya disetel ke 'Tidak Ada', tidak akan muncul di cerita dunia yang diacak."
+    ],
+    "RemoveZombieLoot": [
+      "Jika diaktifkan, item di Daftar Penghapusan Item Loot, atau yang kelangkaannya disetel ke 'Tidak Ada', tidak akan muncul yang dipakai atau ditempelkan pada zombie."
+    ],
+    "ZombiePopLootEffect": [
+      "Jika lebih besar dari 0, kemunculan jarahan meningkat relatif terhadap jumlah zombie di dekatnya, dengan efek dikalikan dengan angka ini. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Maks: 0.20 Bawaan: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Maks: 0.60 Bawaan: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Maks: 1.00 Bawaan: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Maks: 2.00 Bawaan: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Maks: 3.00 Bawaan: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Maks: 4.00 Bawaan: 3.00"
+    ],
+    "Temperature": [
+      "Suhu global. ",
+      "1 = Sangat Dingin",
+      "2 = Dingin",
+      "3 = Normal",
+      "4 = Panas",
+      "5 = Sangat Panas"
+    ],
+    "Rain": [
+      "Seberapa sering hujan. ",
+      "1 = Sangat kering",
+      "2 = Kering",
+      "3 = Normal",
+      "4 = Musim Hujan",
+      "5 = Puncak Musim Hujan"
+    ],
+    "ErosionSpeed": [
+      "Jumlah hari hingga sistem erosi (yang menambah tanaman merambat, rumput panjang, pohon baru, dll. ke dunia) akan mencapai pertumbuhan 100%. ",
+      "1 = Sangat cepat (20 Hari)",
+      "2 = Cepat (50 Hari)",
+      "3 = Normal (100 Hari)",
+      "4 = Lambat (200 Hari)",
+      "5 = Sangat Lambat (500 Hari)"
+    ],
+    "ErosionDays": [
+      "Untuk Kecepatan Erosi khusus. "
+    ],
+    "Farming": [
+      "Laju naiknya level keterampilan Pertanian. "
+    ],
+    "CompostTime": [
+      "Berapa lama waktu yang dibutuhkan makanan untuk terurai di dalam komposter. ",
+      "1 = 1 Minggu",
+      "2 = 2 Minggu",
+      "3 = 3 Minggu",
+      "4 = 4 Minggu",
+      "5 = 6 Minggu",
+      "6 = 8 Minggu",
+      "7 = 10 Minggu",
+      "8 = 12 Minggu"
+    ],
+    "StatsDecrease": [
+      "Seberapa cepat kelaparan, dahaga, dan kelelahan akan bertambah. Bawaan = Normal",
+      "1 = Sangat Cepat",
+      "2 = Cepat",
+      "3 = Normal",
+      "4 = Lambat",
+      "5 = Sangat Lambat"
+    ],
+    "NatureAbundance": [
+      "Akan berpengaruh pada kesulitan memancing/memulung. Bawaan = Normal",
+      "1 = Sangat sedikit",
+      "2 = Sedikit",
+      "3 = Normal",
+      "4 = Melimpah",
+      "5 = Sangat melimpah"
+    ],
+    "Alarm": [
+      "Seberapa besar kemungkinan pemain mengaktifkan alarm rumah saat membobol rumah baru. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "LockedHouses": [
+      "Menentukan seberapa sering pintu/jendela rumah akan terkunci. Bawaan = Sangat Sering",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "StarterKit": [
+      "Mulai dengan tas yang berisi alat-alat berguna."
+    ],
+    "Nutrition": [
+      "Nilai nutrisi dari makanan akan berpengaruh dengan kondisi player."
+    ],
+    "FoodRotSpeed": [
+      "Menetapkan seberapa cepat makanan akan membusuk di dalam atau di luar kulkas Bawaan = Normal",
+      "1 = Sangat Cepat",
+      "2 = Cepat",
+      "3 = Normal",
+      "4 = Lambat",
+      "5 = Sangat Lambat"
+    ],
+    "FridgeFactor": [
+      "Menetapkan seberapa efektif kulkas berfungsi. Bawaan = Normal",
+      "1 = Sangat Lemah",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Jika nilai lebih besar dari 0, Loot tidak akan respawn pada zona yang sudah dikunjungi dalam jumlah jam yang ditentukan ini Min: 0 Maks: 2147483647 Bawaan: 0"
+    ],
+    "HoursForLootRespawn": [
+      "Jika lebih besar dari 0, setelah X jam, semua kontainer di kota dan tempat parkir trailer di dunia akan memunculkan kembali jarahan. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Kontainer dengan jumlah item lebih besar, atau sama dengan, pengaturan ini tidak akan muncul kembali. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Item tidak akan muncul kembali di bangunan yang telah dibarikade atau dibangun oleh pemain."
+    ],
+    "WorldItemRemovalList": [
+      "Daftar jenis item yang dipisahkan koma yang akan dihapus setelah jam HoursForWorldItemRemoval."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Jumlah jam sejak suatu benda dijatuhkan ke tanah sebelum benda tersebut dipindahkan.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Setiap barang yang *tidak* ada di 'Daftar penghapusan barang dunia' akan dihapus."
+    ],
+    "TimeSinceApo": [
+      "Berapa lama setelah akhir dunia dimulai. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Akan mempengaruhi berapa banyak udara yang akan hilang dari tanaman per hari, dan kemampuan mereka untuk menghindari penyakit. ",
+      "1 = Sangat Tinggi",
+      "2 = Tinggi",
+      "3 = Normal",
+      "4 = Rendah",
+      "5 = Sangat Lemah"
+    ],
+    "PlantAbundance": [
+      "Akan mempengaruhi berapa banyak buah/sayuran yang dihasilkan tanaman. Bawaan = Normal",
+      "1 = Sangat sedikit",
+      "2 = Sedikit",
+      "3 = Normal",
+      "4 = Melimpah",
+      "5 = Sangat melimpah"
+    ],
+    "EndRegen": [
+      "Pemulihan dari rasa lelah setelah melakukan tindakan. ",
+      "1 = Sangat Cepat",
+      "2 = Cepat",
+      "3 = Normal",
+      "4 = Lambat",
+      "5 = Sangat Lambat"
+    ],
+    "Helicopter": [
+      "Seberapa sering helikopter akan lewat. Bawaan = Sekali",
+      "1 = Tidak ada",
+      "2 = Sekali",
+      "3 = Terkadang",
+      "4 = Sering"
+    ],
+    "MetaEvent": [
+      "Seberapa sering metagame event yang akan memancing zombie, seperti suara tembakan akan terjadi. Bawaan = Terkadang",
+      "1 = Tidak ada",
+      "2 = Terkadang",
+      "3 = Sering"
+    ],
+    "SleepingEvent": [
+      "Menetapkan metagame event waktu malam selagi player sedang tidur. Bawaan = Tidak ada",
+      "1 = Tidak ada",
+      "2 = Terkadang",
+      "3 = Sering"
+    ],
+    "GeneratorFuelConsumption": [
+      "Berapa banyak bensin yang akan dikonsumsi generator. Generator yang tidak membutuhkan bensin harus ditetapkan menjadi 0.0. Min: 0.00 Maks: 100.00 Bawaan: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Tambah/kurangkan kesempatan Generator yang akan spawn di dunia. Bawaan = Langka",
+      "1 = Sangat Langka",
+      "2 = Langka",
+      "3 = Sangat langka",
+      "4 = Langka",
+      "5 = Normal",
+      "6 = Melimpah",
+      "7 = Melimpah"
+    ],
+    "AnnotatedMapChance": [
+      "Seberapa sering map akan memiliki tKamu-tKamu/anotasi pada mayat survivor. Bawaan = Terkadang",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "CharacterFreePoints": [
+      "Tambahkan poin traits pada menu membuat karakter. Min: -100 Maks: 100 Bawaan: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Memberikan poin hit tambahan pada konstruksi buatan pemain sehingga lebih tahan terhadap kerusakan zombie. ",
+      "1 = Sangat Lemah",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi"
+    ],
+    "NightDarkness": [
+      "Tingkat pencahayaan sekitar pada malam hari. ",
+      "1 = Terlalu Gelap",
+      "2 = Gelap",
+      "3 = Normal",
+      "4 = Terang"
+    ],
+    "NightLength": [
+      "Waktu dari senja hingga fajar. ",
+      "1 = Selalu Malam",
+      "2 = Baik",
+      "3 = Normal",
+      "4 = Buruk",
+      "5 = Selalu Siang"
+    ],
+    "BoneFracture": [
+      "Aktif atau nonaktifkan patah tulang saat player mendapat luka trauma, zombie menyerang, atau jatuh."
+    ],
+    "InjurySeverity": [
+      "Menambah/mengurangi efek cedera pada tubuh, dan waktu mereka akan sembuh. Bawaan = Normal",
+      "1 = Rendah",
+      "2 = Normal",
+      "3 = Tinggi"
+    ],
+    "HoursForCorpseRemoval": [
+      "Berapa lama, dalam hitungan jam, sebelum mayat zombie menghilang dari dunia.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Menetapkan seberapa parah pengaruh mayat membusuk pada kesehatan dan kesehatan mental player. Bawaan = Normal",
+      "1 = None",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Terlalu Tinggi"
+    ],
+    "ZombieHealthImpact": [
+      "Apakah zombie \"hidup\" di dekatnya memiliki dampak yang sama terhadap kesehatan dan emosi pemain."
+    ],
+    "BloodLevel": [
+      "Berapa banyak darah yang disemprotkan ke lantai dan dinding karena cedera. ",
+      "1 = None",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Sadis"
+    ],
+    "ClothingDegradation": [
+      "Menetapkan seberapa cepat kualitas pakaian menurun, seperti jadi kotor atau berlumuran darah (bisa dinonaktifkan).  Bawaan = Normal",
+      "1 = Nonaktif",
+      "2 = Lambat",
+      "3 = Normal",
+      "4 = Cepat"
+    ],
+    "FireSpread": [
+      "Jika api menyebar saat dinyalakan."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Jumlah hari dalam game sebelum makanan busuk dihapus dari peta.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Jika diaktifkan, generator akan bekerja pada ubin eksterior.  "
+    ],
+    "MaxFogIntensity": [
+      "Maximum intensity of fog. Bawaan = Normal",
+      "1 = Normal",
+      "2 = Sedang",
+      "3 = Rendah",
+      "4 = None"
+    ],
+    "MaxRainFxIntensity": [
+      "Maximum intensity of rain. Bawaan = Normal",
+      "1 = Normal",
+      "2 = Sedang",
+      "3 = Rendah"
+    ],
+    "EnableSnowOnGround": [
+      "Jika salju menumpuk di tanah.  "
+    ],
+    "AttackBlockMovements": [
+      "Nonaktifkan berjalan tanpa hambatan saat menyerang melee."
+    ],
+    "SurvivorHouseChance": [
+      "Peluang menemukan bangunan secara acak di peta (mis. rumah yang terbakar, rumah yang berisi simpanan jarahan, atau mayat). ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu Mencoba"
+    ],
+    "VehicleStoryChance": [
+      "Kemungkinan munculnya cerita-cerita di jalan raya (misalnya penghalang jalan oleh polisi). ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu Mencoba"
+    ],
+    "ZoneStoryChance": [
+      "Peluang munculnya cerita khusus untuk zona peta (mis. lokasi perkemahan di hutan). ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu Mencoba"
+    ],
+    "AllClothesUnlocked": [
+      "Memungkinkan Anda memilih dari setiap pakaian dalam game saat menyesuaikan karakter Anda"
+    ],
+    "EnableTaintedWaterText": [
+      "Jika air tercemar akan muncul peringatan yang menandainya seperti itu."
+    ],
+    "EnableVehicles": [
+      "Jika kendaraan akan muncul."
+    ],
+    "CarSpawnRate": [
+      "Seberapa sering kendaraan dapat ditemukan di peta. ",
+      "1 = None",
+      "2 = Sangat Lemah",
+      "3 = Rendah",
+      "4 = Normal",
+      "5 = Tinggi"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Gunakan untuk menggKamukan atau menurunkan suara mesin. Min: 0.00 Maks: 100.00 Bawaan: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Jika diaktifkan semua kendaraan akan terbuka, tangki gas penuh, dan suara mesin yang tidak berisik."
+    ],
+    "InitialGas": [
+      "Menetapkan seberapa penuh tangki bensin yang ada pada mobil-mobil di dunia. Bawaan = Rendah",
+      "1 = Sangat Lemah",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi",
+      "6 = Full"
+    ],
+    "FuelStationGasInfinite": [
+      "Jika diaktifkan, pompa bensin tidak akan pernah kehabisan bahan bakar"
+    ],
+    "FuelStationGasMin": [
+      "Jumlah minimum bensin yang dapat dihasilkan di pompa bensin. "
+    ],
+    "FuelStationGasMax": [
+      "Jumlah maksimum bensin yang dapat dihasilkan di pompa bensin. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Kemungkinan, dalam persentase, bahwa masing-masing pompa bensin pada awalnya tidak memiliki bahan bakar. "
+    ],
+    "LockedCar": [
+      "Besar kemungkinan mobil akan dikunci Bawaan = Langka",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "CarGasConsumption": [
+      "Betapa kendaraan yang haus bahan bakar. "
+    ],
+    "CarGeneralCondition": [
+      "Dalam kondisi apa mobil-mobil baru akan spawn. Bawaan = Rendah",
+      "1 = Sangat Lemah",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi"
+    ],
+    "CarDamageOnImpact": [
+      "Menetapkan berapa banyak kerusakan yang ditanggung kendaraan setelah tabrakan. Bawaan = Normal",
+      "1 = Sangat Lemah",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Cedera yang harus ditanggung player setelah tertabrak mobil. Bawaan = None",
+      "1 = None",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi",
+      "5 = Sangat Tinggi"
+    ],
+    "TrafficJam": [
+      "Jika kemacetan yang terdiri dari mobil-mobil rusak akan muncul di jalan-jalan utama."
+    ],
+    "CarAlarm": [
+      "Seberapa sering kendaraan yang ditemukan memiliki alarm aktif. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "PlayerDamageFromCrash": [
+      "Aktifkan atau nonaktifkan jika player akan cedera dari kecelakaan mobil."
+    ],
+    "SirenShutoffHours": [
+      "Berapa jam sebelum sirine berhenti berbunyi.\n0.0 artinya akan terus berbunyi sampai aki sudah mati. Min: 0.00 Maks: 168.00 Bawaan: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Menetapkan kemungkinan kendaraan dengan bensin di mobil. Bawaan = Rendah",
+      "1 = Rendah",
+      "2 = Normal",
+      "3 = Tinggi"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Apakah pemain dapat menemukan mobil yang telah dirawat setelah infeksi Knox menyerang. ",
+      "1 = None",
+      "2 = Rendah",
+      "3 = Normal",
+      "4 = Tinggi"
+    ],
+    "MultiHitZombies": [
+      "Saat diaktifkan senjata melee tertentu bisa menyerang lebih dari satu zombie dengan satu serangan."
+    ],
+    "RearVulnerability": [
+      "Kemungkinan untuk tergigit jika zombie menyerang dari belakang. Bawaan = Tinggi",
+      "1 = Rendah",
+      "2 = Sedang",
+      "3 = Tinggi"
+    ],
+    "SirenEffectsZombies": [
+      "Jika zombie akan menuju ke arah suara sirene kendaraan."
+    ],
+    "AnimalStatsModifier": [
+      "Kecepatan penurunan statistik hewan (kelaparan, haus, dll.). ",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Kecepatan penurunan statistik hewan (lapar, haus, dll.) saat berada dalam meta. ",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalPregnancyTime": [
+      "Berapa lama hewan akan bunting sebelum melahirkan. ",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalAgeModifier": [
+      "Kecepatan penuaan hewan. ",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalMilkIncModifier": [
+      "Bawaan = Cepat",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalWoolIncModifier": [
+      "Bawaan = Cepat",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalRanchChance": [
+      "Peluang menemukan hewan di peternakan. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Jumlah jam rumput akan tumbuh kembali setelah dimakan hewan atau dipotong oleh pemain. "
+    ],
+    "AnimalMetaPredator": [
+      "Jika rubah meta (yaitu tidak benar-benar terlihat dalam game) dapat menyerang ayam Anda jika pintu kandang dibiarkan terbuka di malam hari."
+    ],
+    "AnimalMatingSeason": [
+      "Jika hewan dengan musim kawin akan menghormatinya.  "
+    ],
+    "AnimalEggHatch": [
+      "Berapa lama sebelum bayi hewan menetas dari telur. ",
+      "1 = Ultra Fast",
+      "2 = Sangat Cepat",
+      "3 = Cepat",
+      "4 = Normal",
+      "5 = Lambat",
+      "6 = Sangat Lambat"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Jika benar, panggilan binatang akan menarik zombie di dekatnya."
+    ],
+    "AnimalTrackChance": [
+      "Kemungkinan hewan meninggalkan jejak. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "AnimalPathChance": [
+      "Peluang menciptakan jalur bagi hewan untuk diburu. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering"
+    ],
+    "MaximumRatIndex": [
+      "Frekuensi dan intensitas misalnya. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Berapa lama waktu yang dibutuhkan untuk mencapai Indeks Vermin Maksimum. "
+    ],
+    "MetaKnowledge": [
+      "Jika suatu media belum sepenuhnya dilihat atau dibaca, pengaturan ini menentukan apakah media tersebut ditampilkan sepenuhnya, ditampilkan sebagai \"???\", atau disembunyikan sepenuhnya. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Jika benar, Anda akan dapat melihat resep apa pun yang dapat dibuat dengan stasiun, meskipun Anda belum mempelajarinya."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Jika suatu bangunan mempunyai ruangan lebih dari jumlah tersebut, maka bangunan tersebut tidak akan dijarah. "
+    ],
+    "EnablePoisoning": [
+      "Jika racun bisa ditambahkan ke makanan. ",
+      "1 = Aktifkan",
+      "2 = Matikan",
+      "3 = Only bleach poisoning is disabled"
+    ],
+    "MaggotSpawn": [
+      "Jika/kapan belatung bisa bertelur di mayat. ",
+      "1 = Di Dalam dan Di Sekitar Badan",
+      "2 = In Bodies Only",
+      "3 = Tidak ada"
+    ],
+    "LightBulbLifespan": [
+      "Semakin tinggi nilainya, semakin lama bola lampu bertahan sebelum putus.  "
+    ],
+    "FishAbundance": [
+      "Kelimpahan ikan di sungai dan danau. ",
+      "1 = Sangat sedikit",
+      "2 = Sedikit",
+      "3 = Normal",
+      "4 = Melimpah",
+      "5 = Sangat melimpah"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Ketika suatu skill berada pada level ini atau lebih tinggi, televisi/VHS/media lain tidak akan memberikan XP untuk itu. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Ketika suatu keterampilan berada pada level ini atau lebih tinggi, membuang furnitur tidak memberikan XP untuk keterampilan yang relevan. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Jumlah hari sebelum percikan darah lama dihilangkan. "
+    ],
+    "LiteratureCooldown": [
+      "Jumlah hari sebelum seseorang dapat memperoleh manfaat dari membaca literatur yang telah dibaca sebelumnya. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Jika terdapat penurunan keuntungan atas poin sifat bonus yang diperoleh dari pemilihan beberapa sifat negatif. ",
+      "1 = None",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = Penalti 1 poin untuk setiap sifat negatif yang dipilih setelah sifat pertama"
+    ],
+    "MinutesPerPage": [
+      "Jumlah menit dalam game yang diperlukan untuk membaca satu halaman buku keterampilan. "
+    ],
+    "KillInsideCrops": [
+      "Jika diaktifkan, tanaman dan tumbuhan yang ditanam di dalam gedung akan mati. "
+    ],
+    "PlantGrowingSeasons": [
+      "Jika diaktifkan, pertumbuhan tanaman dipengaruhi oleh musim."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Disarankan agar Anda JANGAN mengubahnya. "
+    ],
+    "FarmingSpeedNew": [
+      "Kecepatan pertumbuhan tanaman. "
+    ],
+    "FarmingAmountNew": [
+      "Melimpahnya hasil panen. "
+    ],
+    "MaximumLooted": [
+      "Kemungkinan bangunan mana pun sudah dijarah saat ditemukan. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Berapa lama waktu yang dibutuhkan untuk mencapai Peluang Bangunan yang Dijarah Maksimum. "
+    ],
+    "RuralLooted": [
+      "Kemungkinan bangunan pedesaan mana pun sudah dijarah ketika ditemukan. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Loot maksimum yang tidak akan muncul ketika Hari Hingga Loot Maksimum Berkurang tercapai."
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Berapa lama waktu yang dibutuhkan untuk mencapai Persentase Loot Maksimum yang Dikurangi. "
+    ],
+    "MuscleStrainFactor": [
+      "Berfungsi sebagai pengganda ketika menerapkan ketegangan otot akibat mengayunkan senjata atau membawa beban berat. "
+    ],
+    "DiscomfortFactor": [
+      "Berfungsi sebagai pengganda ketika menimbulkan ketidaknyamanan dari barang yang dipakai. "
+    ],
+    "WoundInfectionFactor": [
+      "Jika lebih besar dari nol, kerusakan dapat disebabkan oleh infeksi luka yang serius. "
+    ],
+    "NoBlackClothes": [
+      "Jika pakaian asli dengan warna acak tidak akan terlalu gelap hingga bisa dibilang hitam."
+    ],
+    "EasyClimbing": [
+      "Menonaktifkan kemungkinan kegagalan saat memanjat tali atau melewati dinding."
+    ],
+    "MaximumFireFuelHours": [
+      "Maksimum jam bahan bakar yang bisa ditaruh di api unggun, tungku kayu dll. Min : 1 Maks : 168 Bawaan : 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Menggantikan mekanisme Chance-To-Hit dengan perhitungan Chance-To-Damage."
+    ],
+    "FirearmNoiseMultiplier": [
+      "Pengganda jarak di mana zombie dapat mendengar suara tembakan. "
+    ],
+    "FirearmJamMultiplier": [
+      "Pengganda untuk peluang gangguan senjata api. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Pengganda untuk efek Moodle pada peluang pukulan. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Pengganda pengaruh cuaca (angin, hujan, dan kabut) terhadap peluang terjadinya. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Memungkinkan untuk memiliki tutup kepala seperti masker las mempengaruhi peluang terkena pukulan"
+    ],
+    "ClayLakeChance": [
+      "Peluang untuk mengubah lantai tanah menjadi lantai tanah liat. "
+    ],
+    "ClayRiverChance": [
+      "Peluang untuk mengubah lantai tanah menjadi lantai tanah liat. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Maks: 100 Bawaan: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Berapa tingkat di atas dan di bawah generator yang dapat menyediakan listrik. "
+    ],
+    "SpawnFrequency": [
+      "Seberapa sering ruang bawah tanah muncul di lokasi acak. ",
+      "1 = Tidak ada",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu"
+    ],
+    "AllowMiniMap": [
+      "Jika diaktifkan, jendela peta mini akan tersedia."
+    ],
+    "AllowWorldMap": [
+      "Jika diaktifkan, peta dunia dapat diakses."
+    ],
+    "MapAllKnown": [
+      "Jika diaktifkan, peta dunia akan terisi penuh saat memulai permainan."
+    ],
+    "MapNeedsLight": [
+      "Jika diaktifkan, peta tidak dapat dibaca kecuali tersedia sumber cahaya."
+    ],
+    "Speed": [
+      "Seberapa cepat zombie bergerak. ",
+      "1 = Pelari Cepat",
+      "2 = Cukup Cepat",
+      "3 = Lambat",
+      "4 = Random/acak"
+    ],
+    "SprinterPercentage": [
+      "Jika Kecepatan Acak diaktifkan, ini mengontrol persentase zombie yang merupakan Sprinter. "
+    ],
+    "Strength": [
+      "Laju naiknya level keterampilan Kekuatan. "
+    ],
+    "Toughness": [
+      "Kesulitan membunuh zombie. ",
+      "1 = Kuat",
+      "2 = Normal",
+      "3 = Rapuh",
+      "4 = Random/acak"
+    ],
+    "Transmission": [
+      "Bagaimana Virus Knox menyebar. ",
+      "1 = Darah + Air liur",
+      "2 = Hanya air liur",
+      "3 = Semua orang terinfeksi",
+      "4 = None"
+    ],
+    "Mortality": [
+      "Seberapa cepat infeksi mulai berlaku. ",
+      "1 = Instant",
+      "2 = 0-30 Detik",
+      "3 = 0-1 Menit",
+      "4 = 0-12 Jam",
+      "5 = 2-3 Hari",
+      "6 = 1-2 Minggu",
+      "7 = Tidak ada"
+    ],
+    "Reanimate": [
+      "Seberapa cepat mayat yang terinfeksi menjadi zombie. ",
+      "1 = Instant",
+      "2 = 0-30 Detik",
+      "3 = 0-1 Menit",
+      "4 = 0-12 Jam",
+      "5 = 2-3 Hari",
+      "6 = 1-2 Minggu"
+    ],
+    "Cognition": [
+      "Zombie intelligence. Bawaan = Navigasi Dasar",
+      "1 = Navigasi + Menggunakan Pintu",
+      "2 = Navigasi",
+      "3 = Navigasi Dasar",
+      "4 = Random/acak"
+    ],
+    "CrawlUnderVehicle": [
+      "Seberapa sering zombie merangkak di bawah kendaraan yang diparkir. ",
+      "1 = Hanya perangkak",
+      "2 = Sangat langka",
+      "3 = Langka",
+      "4 = Terkadang",
+      "5 = Sering",
+      "6 = Sangat Sering",
+      "7 = Selalu"
+    ],
+    "Memory": [
+      "Berapa lama zombie mengingat pemain setelah melihat atau mendengarnya. ",
+      "1 = Baik",
+      "2 = Normal",
+      "3 = Buruk",
+      "4 = None",
+      "5 = Random/acak",
+      "6 = Acak antara Normal dan Tidak Ada"
+    ],
+    "Sight": [
+      "Radius penglihatan zombie. ",
+      "1 = Mata Elang",
+      "2 = Normal",
+      "3 = Sedikit",
+      "4 = Random/acak",
+      "5 = Acak antara Normal dan Buruk"
+    ],
+    "Hearing": [
+      "Radius pendengaran zombie. ",
+      "1 = Sangat Tajam",
+      "2 = Normal",
+      "3 = Sedikit",
+      "4 = Random/acak",
+      "5 = Acak antara Normal dan Buruk"
+    ],
+    "SpottedLogic": [
+      "Mengaktifkan mekanisme siluman canggih baru, yang memungkinkan Anda bersembunyi dari zombie di belakang mobil, memperhitungkan sifat dan cuaca, dan banyak lagi."
+    ],
+    "ThumpNoChasing": [
+      "Zombie yang belum melihat/mendengar player bisa menyerang pintu dan bangunan buatan player kapan pun."
+    ],
+    "ThumpOnConstruction": [
+      "Menetapkan apakah zombie bisa menghancurkan infrastruktur player."
+    ],
+    "ActiveOnly": [
+      "Apakah zombie lebih “aktif” pada siang atau malam hari.  ",
+      "1 = Keduanya",
+      "2 = Malam",
+      "3 = Pagi"
+    ],
+    "TriggerHouseAlarm": [
+      "Izinkan alarm untuk aktif saat zombie menghancurkan jendela dan pintu."
+    ],
+    "ZombiesDragDown": [
+      "Jika beberapa zombie yang menyerang dapat menyeret Anda ke bawah dan membunuh Anda.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Jika zombie perayap di samping pemain berkontribusi terhadap kemungkinan terseret dan dibunuh oleh sekelompok zombie."
+    ],
+    "ZombiesFenceLunge": [
+      "Jika zombie mempunyai kesempatan untuk menyerang Anda setelah memanjat pagar atau melalui jendela jika Anda terlalu dekat."
+    ],
+    "ZombiesArmorFactor": [
+      "Berfungsi sebagai pengganda dalam menentukan efektivitas armor yang dikenakan zombie. "
+    ],
+    "ZombiesMaxDefense": [
+      "Persentase pertahanan maksimum yang dapat diberikan oleh pakaian pelindung apa pun kepada zombie. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Persentase kemungkinan memiliki senjata yang dipasang secara acak. "
+    ],
+    "ZombiesFallDamage": [
+      "Berapa banyak damage yang diterima zombie saat jatuh dari ketinggian. "
+    ],
+    "DisableFakeDead": [
+      "Apakah beberapa zombie yang tampak mati akan hidup kembali dan menyerang pemain. ",
+      "1 = Zombi Dunia",
+      "2 = Zombi Dunia dan Tempur",
+      "3 = Tidak ada"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombi tidak akan muncul di tempat pemain muncul. ",
+      "1 = Di dalam gedung dan sekitarnya",
+      "2 = Di dalam gedung",
+      "3 = Di dalam ruangan",
+      "4 = Zombi bisa muncul dimana saja"
+    ],
+    "FenceThumpersRequired": [
+      "Berapa banyak zombie yang diperlukan untuk merusak pagar yang tinggi. "
+    ],
+    "FenceDamageMultiplier": [
+      "Seberapa cepat zombie merusak pagar yang tinggi. "
+    ],
+    "PopulationMultiplier": [
+      "Ditetapkan berdasarkan opsi populasi \"Jumlah Zombie\", atau berdasarkan nomor khusus di sini. "
+    ],
+    "PopulationStartMultiplier": [
+      "Pengganda populasi zombie yang diinginkan di awal permainan. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Pengganda untuk populasi zombie yang diinginkan pada hari puncak. "
+    ],
+    "PopulationPeakDay": [
+      "Hari di mana populasi akan mencapai puncak. Min: 1 Maks: 365 Bawaan: 28"
+    ],
+    "RespawnHours": [
+      "Jumlah jam yang harus dilewati sebelum zombie dapat muncul kembali di dalam sel. "
+    ],
+    "RespawnUnseenHours": [
+      "Berapa jam yang dibutuhkan untuk chunk yang tidak bisa terlihat sebelum zombie bisa spawn di sana. Min: 0.00 Maks: 8760.00 Bawaan: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "Fraksi dari populasi sel yang diinginkan yang dapat muncul kembali setiap RespawnHours. Min: 0.00 Maks: 1.00 Bawaan: 0.10"
+    ],
+    "RedistributeHours": [
+      "Jumlah jam yang harus dilalui sebelum zombie bermigrasi ke bagian kosong sel yang sama. "
+    ],
+    "FollowSoundDistance": [
+      "Jarak yang akan dicoba oleh zombie untuk berjalan menuju suara terakhir yang didengarnya . Min: 10 Maks: 1000 Bawaan: 100"
+    ],
+    "RallyGroupSize": [
+      "Ukuran kelompok zombie nyata terbentuk saat menganggur. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Jumlahnya, sebagai persentase, ukuran grup zombie dapat bervariasi dari default (lebih besar atau lebih kecil).   "
+    ],
+    "RallyTravelDistance": [
+      "Jarak yang ditentukan agar zombie bisa membuat group saat idle. Min: 5 Maks: 50 Bawaan: 20"
+    ],
+    "RallyGroupSeparation": [
+      "Jarak antara group zombie. Min: 5 Maks: 25 Bawaan: 15"
+    ],
+    "RallyGroupRadius": [
+      "Seberapa dekat member dari group harus mendekat dengan pemimpin group. Min: 1 Maks: 10 Bawaan: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Maks: 500 Bawaan: 300"
+    ],
+    "Global": [
+      "Tingkat peningkatan semua keterampilan. "
+    ],
+    "GlobalToggle": [
+      "Saat diaktifkan, semua keterampilan akan menggunakan Pengganda Global."
+    ],
+    "Fitness": [
+      "Laju naiknya tingkat keterampilan kebugaran. "
+    ],
+    "Sprinting": [
+      "Laju naiknya level skill Sprint. "
+    ],
+    "Lightfoot": [
+      "Laju naiknya level keterampilan Langkah ringan. "
+    ],
+    "Nimble": [
+      "Laju naiknya level skill Lincah. "
+    ],
+    "Sneak": [
+      "Laju naiknya level skill Menyelinap. "
+    ],
+    "Axe": [
+      "Laju naiknya level skill Kapak. "
+    ],
+    "Blunt": [
+      "Laju naiknya level skill Tumpul. "
+    ],
+    "SmallBlunt": [
+      "Laju naiknya level skill Tumpul kecil. "
+    ],
+    "LongBlade": [
+      "Laju naiknya level keterampilan Bilah Panjang. "
+    ],
+    "SmallBlade": [
+      "Laju naiknya level keterampilan Bilah pendek. "
+    ],
+    "Spear": [
+      "Laju naiknya level keterampilan Tombak. "
+    ],
+    "Maintenance": [
+      "Laju naiknya level keterampilan Perawatan. "
+    ],
+    "Woodwork": [
+      "Laju naiknya level keterampilan Pertukangan kayu. "
+    ],
+    "Cooking": [
+      "Laju naiknya level keterampilan Memasak. "
+    ],
+    "Doctor": [
+      "Laju naiknya level keterampilan Kedokteran. "
+    ],
+    "Electricity": [
+      "Laju naiknya level skill Listrik. "
+    ],
+    "MetalWelding": [
+      "Laju naiknya level keterampilan Pengelasan logam. "
+    ],
+    "Mechanics": [
+      "Laju naiknya level keterampilan Mekanik. "
+    ],
+    "Tailoring": [
+      "Laju naiknya level skill Menjahit. "
+    ],
+    "Aiming": [
+      "Laju naiknya level skill Membidik. "
+    ],
+    "Reloading": [
+      "Laju naiknya level skill Mengisi ulang. "
+    ],
+    "Fishing": [
+      "Laju naiknya level keterampilan memancing. "
+    ],
+    "Trapping": [
+      "Laju naiknya level keterampilan Menjebak. "
+    ],
+    "PlantScavenging": [
+      "Laju naiknya level keterampilan Mengumpulkan tanaman. "
+    ],
+    "FlintKnapping": [
+      "Laju naiknya level skill Menatah batu api. "
+    ],
+    "Masonry": [
+      "Laju naiknya level keterampilan Pertukangan batu. "
+    ],
+    "Pottery": [
+      "Laju naiknya level keterampilan Keramik. "
+    ],
+    "Carving": [
+      "Laju naiknya level keterampilan Ukiran. "
+    ],
+    "Husbandry": [
+      "Laju naiknya level keterampilan Peternakan. "
+    ],
+    "Tracking": [
+      "Laju naiknya level keterampilan Pelacakan. "
+    ],
+    "Blacksmith": [
+      "Laju naiknya level keterampilan Pandai besi. "
+    ],
+    "Butchering": [
+      "Laju naiknya level keterampilan Memotong hewan. "
+    ],
+    "Glassmaking": [
+      "Laju naiknya level keterampilan Pembuatan kaca. "
+    ]
+  }
+}
+
+

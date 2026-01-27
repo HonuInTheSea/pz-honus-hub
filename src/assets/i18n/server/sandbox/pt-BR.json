@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zumbis",
+  "Distribution": "Distribuição",
+  "ZombieVoronoiNoise": "Ruído Voronoi de zumbis",
+  "ZombieRespawn": "Reaparecimento de zumbis",
+  "ZombieMigrate": "Migração de zumbis",
+  "DayLength": "Duração do dia",
+  "StartMonth": "Mês inicial",
+  "StartDay": "Dia inicial",
+  "StartTime": "Hora inicial",
+  "DayNightCycle": "Ciclo dia/noite",
+  "ClimateCycle": "Ciclo climático",
+  "FogCycle": "Ciclo de neblina",
+  "WaterShut": "Corte de água",
+  "ElecShut": "Corte de eletricidade",
+  "AlarmDecay": "Desgaste de alarmes",
+  "WaterShutModifier": "Modificador de corte de água",
+  "ElecShutModifier": "Modificador de corte de eletricidade",
+  "AlarmDecayModifier": "Modificador de desgaste de alarmes",
+  "FoodLootNew": "Saque de comida (novo)",
+  "LiteratureLootNew": "Saque de literatura (novo)",
+  "MedicalLootNew": "Saque médico (novo)",
+  "SurvivalGearsLootNew": "Saque de equipamentos de sobrevivência (novo)",
+  "CannedFoodLootNew": "Saque de comida enlatada (novo)",
+  "WeaponLootNew": "Saque de armas (novo)",
+  "RangedWeaponLootNew": "Saque de armas à distância (novo)",
+  "AmmoLootNew": "Saque de munição (novo)",
+  "MechanicsLootNew": "Saque de mecânica (novo)",
+  "OtherLootNew": "Saque de outros (novo)",
+  "ClothingLootNew": "Saque de roupas (novo)",
+  "ContainerLootNew": "Saque de recipientes (novo)",
+  "KeyLootNew": "Saque de chaves (novo)",
+  "MediaLootNew": "Saque de mídia (novo)",
+  "MementoLootNew": "Saque de lembranças (novo)",
+  "CookwareLootNew": "Saque de utensílios de cozinha (novo)",
+  "MaterialLootNew": "Saque de materiais (novo)",
+  "FarmingLootNew": "Saque de agricultura (novo)",
+  "ToolLootNew": "Saque de ferramentas (novo)",
+  "RollsMultiplier": "Multiplicador de rolagens",
+  "LootItemRemovalList": "Lista de remoção de saque",
+  "RemoveStoryLoot": "Remover saque de histórias",
+  "RemoveZombieLoot": "Remover saque de zumbis",
+  "ZombiePopLootEffect": "Efeito de saque por população de zumbis",
+  "InsaneLootFactor": "Fator de saque insano",
+  "ExtremeLootFactor": "Fator de saque extremo",
+  "RareLootFactor": "Fator de saque raro",
+  "NormalLootFactor": "Fator de saque normal",
+  "CommonLootFactor": "Fator de saque comum",
+  "AbundantLootFactor": "Fator de saque abundante",
+  "Temperature": "Temperatura",
+  "Rain": "Chuva",
+  "ErosionSpeed": "Velocidade de erosão",
+  "ErosionDays": "Dias de erosão",
+  "Farming": "Agricultura",
+  "CompostTime": "Tempo de compostagem",
+  "StatsDecrease": "Redução de estatísticas",
+  "NatureAbundance": "Abundância da natureza",
+  "Alarm": "Alarme",
+  "LockedHouses": "Casas trancadas",
+  "StarterKit": "Kit inicial",
+  "Nutrition": "Nutrição",
+  "FoodRotSpeed": "Velocidade de apodrecimento da comida",
+  "FridgeFactor": "Fator de geladeira",
+  "SeenHoursPreventLootRespawn": "Horas vistas impedem respawn de saque",
+  "HoursForLootRespawn": "Horas para respawn de saque",
+  "MaxItemsForLootRespawn": "Máx. itens para respawn de saque",
+  "ConstructionPreventsLootRespawn": "Construção impede respawn de saque",
+  "WorldItemRemovalList": "Lista de remoção de itens do mundo",
+  "HoursForWorldItemRemoval": "Horas para remover itens do mundo",
+  "ItemRemovalListBlacklistToggle": "Alternar lista negra de remoção de itens",
+  "TimeSinceApo": "Tempo desde o apocalipse",
+  "PlantResilience": "Resiliência das plantas",
+  "PlantAbundance": "Abundância das plantas",
+  "EndRegen": "Regeneração de resistência",
+  "Helicopter": "Helicóptero",
+  "MetaEvent": "Metaevento",
+  "SleepingEvent": "Evento durante o sono",
+  "GeneratorFuelConsumption": "Consumo de combustível do gerador",
+  "GeneratorSpawning": "Aparecimento de geradores",
+  "AnnotatedMapChance": "Chance de mapa anotado",
+  "CharacterFreePoints": "Pontos grátis do personagem",
+  "ConstructionBonusPoints": "Pontos bônus de construção",
+  "NightDarkness": "Escuridão noturna",
+  "NightLength": "Duração da noite",
+  "BoneFracture": "Fratura óssea",
+  "InjurySeverity": "Gravidade da lesão",
+  "HoursForCorpseRemoval": "Horas para remover cadáveres",
+  "DecayingCorpseHealthImpact": "Impacto na saúde por cadáveres em decomposição",
+  "ZombieHealthImpact": "Impacto na saúde por zumbis",
+  "BloodLevel": "Nível de sangue",
+  "ClothingDegradation": "Degradação de roupas",
+  "FireSpread": "Propagação de fogo",
+  "DaysForRottenFoodRemoval": "Dias para remover comida podre",
+  "AllowExteriorGenerator": "Permitir gerador externo",
+  "MaxFogIntensity": "Intensidade máxima da neblina",
+  "MaxRainFxIntensity": "Intensidade máxima dos efeitos de chuva",
+  "EnableSnowOnGround": "Habilitar neve no chão",
+  "AttackBlockMovements": "Ataque bloqueia movimentos",
+  "SurvivorHouseChance": "Chance de casa de sobreviventes",
+  "VehicleStoryChance": "Chance de histórias de veículos",
+  "ZoneStoryChance": "Chance de histórias de zona",
+  "AllClothesUnlocked": "Todas as roupas desbloqueadas",
+  "EnableTaintedWaterText": "Habilitar texto de água contaminada",
+  "EnableVehicles": "Habilitar veículos",
+  "CarSpawnRate": "Taxa de aparecimento de carros",
+  "ZombieAttractionMultiplier": "Multiplicador de atração de zumbis",
+  "VehicleEasyUse": "Uso fácil de veículos",
+  "InitialGas": "Gasolina inicial",
+  "FuelStationGasInfinite": "Gasolina infinita em postos",
+  "FuelStationGasMin": "Gasolina mínima em postos",
+  "FuelStationGasMax": "Gasolina máxima em postos",
+  "FuelStationGasEmptyChance": "Chance de posto sem gasolina",
+  "LockedCar": "Carro trancado",
+  "CarGasConsumption": "Consumo de gasolina do carro",
+  "CarGeneralCondition": "Condição geral do carro",
+  "CarDamageOnImpact": "Dano do carro no impacto",
+  "DamageToPlayerFromHitByACar": "Dano ao jogador por carro",
+  "TrafficJam": "Engarrafamento",
+  "CarAlarm": "Alarme de carro",
+  "PlayerDamageFromCrash": "Dano ao jogador por colisão",
+  "SirenShutoffHours": "Horas para desligar a sirene",
+  "ChanceHasGas": "Chance de ter gasolina",
+  "RecentlySurvivorVehicles": "Veículos recentes de sobreviventes",
+  "MultiHitZombies": "Golpe múltiplo em zumbis",
+  "RearVulnerability": "Vulnerabilidade traseira",
+  "SirenEffectsZombies": "A sirene afeta zumbis",
+  "AnimalStatsModifier": "Modificador de atributos dos animais",
+  "AnimalMetaStatsModifier": "Modificador de meta-atributos dos animais",
+  "AnimalPregnancyTime": "Tempo de gestação dos animais",
+  "AnimalAgeModifier": "Modificador de idade dos animais",
+  "AnimalMilkIncModifier": "Modificador de aumento de leite",
+  "AnimalWoolIncModifier": "Modificador de aumento de lã",
+  "AnimalRanchChance": "Chance de rancho de animais",
+  "AnimalGrassRegrowTime": "Tempo de rebrota da grama",
+  "AnimalMetaPredator": "Predador meta dos animais",
+  "AnimalMatingSeason": "Época de acasalamento",
+  "AnimalEggHatch": "Eclosão de ovos",
+  "AnimalSoundAttractZombies": "Sons de animais atraem zumbis",
+  "AnimalTrackChance": "Chance de rastros de animais",
+  "AnimalPathChance": "Chance de trilha de animais",
+  "MaximumRatIndex": "Índice máximo de ratos",
+  "DaysUntilMaximumRatIndex": "Dias até índice máximo de ratos",
+  "MetaKnowledge": "Conhecimento meta",
+  "SeeNotLearntRecipe": "Ver receitas não aprendidas",
+  "MaximumLootedBuildingRooms": "Máximo de cômodos saqueados",
+  "EnablePoisoning": "Habilitar envenenamento",
+  "MaggotSpawn": "Aparição de larvas",
+  "LightBulbLifespan": "Vida útil de lâmpadas",
+  "FishAbundance": "Abundância de peixes",
+  "LevelForMediaXPCutoff": "Nível para corte de XP de mídias",
+  "LevelForDismantleXPCutoff": "Nível para corte de XP de desmontagem",
+  "BloodSplatLifespanDays": "Dias de duração de respingos de sangue",
+  "LiteratureCooldown": "Recarga de literatura",
+  "NegativeTraitsPenalty": "Penalidade de traços negativos",
+  "MinutesPerPage": "Minutos por página",
+  "KillInsideCrops": "Matar plantações em interiores",
+  "PlantGrowingSeasons": "Crescimento sazonal de plantas",
+  "PlaceDirtAboveground": "Colocar terra acima do solo",
+  "FarmingSpeedNew": "Velocidade de agricultura (nova)",
+  "FarmingAmountNew": "Quantidade de agricultura (nova)",
+  "MaximumLooted": "Saque máximo",
+  "DaysUntilMaximumLooted": "Dias até saque máximo",
+  "RuralLooted": "Saque rural",
+  "MaximumDiminishedLoot": "Saque máximo diminuído",
+  "DaysUntilMaximumDiminishedLoot": "Dias até saque máximo diminuído",
+  "MuscleStrainFactor": "Fator de esforço muscular",
+  "DiscomfortFactor": "Fator de desconforto",
+  "WoundInfectionFactor": "Fator de infecção de ferida",
+  "NoBlackClothes": "Sem roupas pretas",
+  "EasyClimbing": "Escalada fácil",
+  "MaximumFireFuelHours": "Horas máximas de combustível para fogo",
+  "FirearmUseDamageChance": "Chance de dano ao usar armas de fogo",
+  "FirearmNoiseMultiplier": "Multiplicador de ruído de armas de fogo",
+  "FirearmJamMultiplier": "Multiplicador de emperramento",
+  "FirearmMoodleMultiplier": "Multiplicador de estados para armas de fogo",
+  "FirearmWeatherMultiplier": "Multiplicador de clima para armas de fogo",
+  "FirearmHeadGearEffect": "Efeito de capacete em armas de fogo",
+  "ClayLakeChance": "Chance de argila em lagos",
+  "ClayRiverChance": "Chance de argila em rios",
+  "GeneratorTileRange": "Alcance de células do gerador",
+  "GeneratorVerticalPowerRange": "Alcance vertical do gerador",
+  "Basement": "Porão",
+  "SpawnFrequency": "Frequência de aparecimento",
+  "Map": "Mapa",
+  "AllowMiniMap": "Permitir minimapa",
+  "AllowWorldMap": "Permitir mapa do mundo",
+  "MapAllKnown": "Mapa totalmente conhecido",
+  "MapNeedsLight": "O mapa precisa de luz",
+  "ZombieLore": "Conhecimento de zumbis",
+  "Speed": "Velocidade",
+  "SprinterPercentage": "Percentual de corredores",
+  "Strength": "Força",
+  "Toughness": "Resistência",
+  "Transmission": "Transmissão",
+  "Mortality": "Mortalidade",
+  "Reanimate": "Reanimar",
+  "Cognition": "Cognição",
+  "CrawlUnderVehicle": "Rastejar sob veículos",
+  "Memory": "Memória",
+  "Sight": "Visão",
+  "Hearing": "Audição",
+  "SpottedLogic": "Lógica de detecção",
+  "ThumpNoChasing": "Golpear sem perseguir",
+  "ThumpOnConstruction": "Golpear construções",
+  "ActiveOnly": "Somente ativo",
+  "TriggerHouseAlarm": "Acionar alarme da casa",
+  "ZombiesDragDown": "Zumbis arrastam para baixo",
+  "ZombiesCrawlersDragDown": "Zumbis rastejantes arrastam para baixo",
+  "ZombiesFenceLunge": "Zumbis saltam cercas",
+  "ZombiesArmorFactor": "Fator de armadura dos zumbis",
+  "ZombiesMaxDefense": "Defesa máxima dos zumbis",
+  "ChanceOfAttachedWeapon": "Chance de arma anexada",
+  "ZombiesFallDamage": "Dano por queda dos zumbis",
+  "DisableFakeDead": "Desativar falsos mortos",
+  "PlayerSpawnZombieRemoval": "Remover zumbis no spawn",
+  "FenceThumpersRequired": "Zumbis necessários para danificar a cerca",
+  "FenceDamageMultiplier": "Multiplicador de dano da cerca",
+  "ZombieConfig": "Configuração de zumbis",
+  "PopulationMultiplier": "Multiplicador de população",
+  "PopulationStartMultiplier": "Multiplicador de população inicial",
+  "PopulationPeakMultiplier": "Multiplicador de pico de população",
+  "PopulationPeakDay": "Dia do pico de população",
+  "RespawnHours": "Horas de respawn",
+  "RespawnUnseenHours": "Horas sem ser visto para respawn",
+  "RespawnMultiplier": "Multiplicador de respawn",
+  "RedistributeHours": "Horas de redistribuição",
+  "FollowSoundDistance": "Distância de seguir som",
+  "RallyGroupSize": "Tamanho do grupo",
+  "RallyGroupSizeVariance": "Variação do tamanho do grupo",
+  "RallyTravelDistance": "Distância de viagem do grupo",
+  "RallyGroupSeparation": "Separação do grupo",
+  "RallyGroupRadius": "Raio do grupo",
+  "ZombiesCountBeforeDelete": "Zumbis antes de apagar",
+  "MultiplierConfig": "Configuração de multiplicadores",
+  "Global": "Global",
+  "GlobalToggle": "Alternar global",
+  "Fitness": "Condicionamento físico",
+  "Sprinting": "Corrida",
+  "Lightfoot": "Passo leve",
+  "Nimble": "Ágil",
+  "Sneak": "Furtividade",
+  "Axe": "Machado",
+  "Blunt": "Contundente",
+  "SmallBlunt": "Contundente curto",
+  "LongBlade": "Lâmina longa",
+  "SmallBlade": "Lâmina curta",
+  "Spear": "Lança",
+  "Maintenance": "Manutenção",
+  "Woodwork": "Carpintaria",
+  "Cooking": "Culinária",
+  "Doctor": "Medicina",
+  "Electricity": "Eletricidade",
+  "MetalWelding": "Soldagem de metal",
+  "Mechanics": "Mecânica",
+  "Tailoring": "Alfaiataria",
+  "Aiming": "Mira",
+  "Reloading": "Recarga",
+  "Fishing": "Pesca",
+  "Trapping": "Armadilhas",
+  "PlantScavenging": "Coleta de plantas",
+  "FlintKnapping": "Lascamento de sílex",
+  "Masonry": "Alvenaria",
+  "Pottery": "Cerâmica",
+  "Carving": "Escultura",
+  "Husbandry": "Pecuária",
+  "Tracking": "Rastreamento",
+  "Blacksmith": "Ferraria",
+  "Butchering": "Açougue",
+  "Glassmaking": "Vidreira",
+  "comments": {
+    "Zombies": [
+      "Alterar essa configuração definirá a opção avançada \"Multiplicador de População\". Padrão = Normal",
+      "1 = Insano",
+      "2 = Muito Alto",
+      "3 = Alto",
+      "4 = Normal",
+      "5 = Baixo",
+      "6 = Nenhum"
+    ],
+    "Distribution": [
+      "Como os zumbis estão distribuídos pelo mapa. ",
+      "1 = Foco Urbano",
+      "2 = Foco Uniforme"
+    ],
+    "ZombieVoronoiNoise": [
+      "Controla se alguma randomização é aplicada à distribuição zumbi."
+    ],
+    "ZombieRespawn": [
+      "Define a frequência com que novos zumbis aparecerão no mundo. Padrão = Normal",
+      "1 = Alto",
+      "2 = Normal",
+      "3 = Baixo",
+      "4 = Nenhum"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Padrão = 1 hora e 30 minutos",
+      "1 = 15 Minutos",
+      "2 = 30 Minutos",
+      "3 = 1 Hora",
+      "4 = 1 hora e 30 minutos",
+      "5 = 2 Horas",
+      "6 = 3 Horas",
+      "7 = 4 Horas",
+      "8 = 5 Horas",
+      "9 = 6 Horas",
+      "10 = 7 Horas",
+      "11 = 8 Horas",
+      "12 = 9 Horas",
+      "13 = 10 Horas",
+      "14 = 11 Horas",
+      "15 = 12 Horas",
+      "16 = 13 Horas",
+      "17 = 14 Horas",
+      "18 = 15 Horas",
+      "19 = 16 Horas",
+      "20 = 17 Horas",
+      "21 = 18 Horas",
+      "22 = 19 Horas",
+      "23 = 20 Horas",
+      "24 = 21 Horas",
+      "25 = 22 Horas",
+      "26 = 23 Horas",
+      "27 = Tempo Real"
+    ],
+    "StartMonth": [
+      "Mês em que o jogo começa. ",
+      "1 = Janeiro",
+      "2 = Fevereiro",
+      "3 = Março",
+      "4 = Abril",
+      "5 = Maio",
+      "6 = Junho",
+      "7 = Julho",
+      "8 = Agosto",
+      "9 = Setembro",
+      "10 = Outubro",
+      "11 = Novembro",
+      "12 = Dezembro"
+    ],
+    "StartDay": [
+      "Dia do mês em que os jogos começam."
+    ],
+    "StartTime": [
+      "Hora do dia em que o jogo começa. ",
+      "1 = 07:00",
+      "2 = 09:00",
+      "3 = 12:00",
+      "4 = 14:00",
+      "5 = 17:00",
+      "6 = 19:00",
+      "7 = 00:00",
+      "8 = 02:00",
+      "9 = 05:00"
+    ],
+    "DayNightCycle": [
+      "Quer a hora do dia mude naturalmente ou seja sempre dia/noite. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Se o clima muda ou permanece em um único estado. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Se a neblina ocorre naturalmente, nunca ocorre ou está sempre presente. ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Quanto tempo após a data de início padrão (9 de julho de 1993) os encanamentos (por exemplo, pias) deixam de ser fontes infinitas de água. ",
+      "1 = Instantâneo",
+      "2 = 0-30 Dias",
+      "3 = 0-2 Meses",
+      "4 = 0-6 Meses",
+      "5 = 0-1 Ano",
+      "6 = 0-5 Anos",
+      "7 = 2-6 Meses",
+      "8 = 6-12 Meses",
+      "9 = Desabilitado"
+    ],
+    "ElecShut": [
+      "Quanto tempo após a data de início padrão (9 de julho de 1993) a eletricidade mundial será desligada definitivamente. ",
+      "1 = Instantâneo",
+      "2 = 0-30 Dias",
+      "3 = 0-2 Meses",
+      "4 = 0-6 Meses",
+      "5 = 0-1 Ano",
+      "6 = 0-5 Anos",
+      "7 = 2-6 Meses",
+      "8 = 6-12 Meses",
+      "9 = Desabilitado"
+    ],
+    "AlarmDecay": [
+      "Quanto tempo as baterias do alarme podem durar depois que a energia for desligada. ",
+      "1 = Instantâneo",
+      "2 = 0-30 Dias",
+      "3 = 0-2 Meses",
+      "4 = 0-6 Meses",
+      "5 = 0-1 Ano",
+      "6 = 0-5 Anos"
+    ],
+    "WaterShutModifier": [
+      "Quanto tempo após a data de início padrão (9 de julho de 1993) os encanamentos (por exemplo, pias) deixam de ser fontes infinitas de água. "
+    ],
+    "ElecShutModifier": [
+      "Quanto tempo após a data de início padrão (9 de julho de 1993) a eletricidade mundial será desligada definitivamente. "
+    ],
+    "AlarmDecayModifier": [
+      "Quanto tempo as baterias do alarme podem durar depois que a energia for desligada. "
+    ],
+    "FoodLootNew": [
+      "Qualquer alimento que possa apodrecer ou estragar. "
+    ],
+    "LiteratureLootNew": [
+      "Todos os itens legíveis, inclui folhetos Mín: 0,00 Máx: 4,00 Padrão: 0,60"
+    ],
+    "MedicalLootNew": [
+      "Remédios, bandagens e ferramentas de primeiros socorros. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Mín: 0.00 Máx: 4.00 Padrão: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Alimentos enlatados e secos, bebidas. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Mín: 0.00 Máx: 4.00 Padrão: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Mín: 0.00 Máx: 4.00 Padrão: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Munição solta, caixas e revistas. "
+    ],
+    "MechanicsLootNew": [
+      "Peças do veículo e as ferramentas necessárias para instalá-las. "
+    ],
+    "OtherLootNew": [
+      "Todo o resto. "
+    ],
+    "ClothingLootNew": [
+      "Todos os itens vestíveis que não sejam contêineres. "
+    ],
+    "ContainerLootNew": [
+      "Mochilas e outros recipientes vestíveis/equipáveis, por exemplo. "
+    ],
+    "KeyLootNew": [
+      "Chaves para edifícios/carros, porta-chaves e fechaduras. "
+    ],
+    "MediaLootNew": [
+      "Fitas VHS e CDs. "
+    ],
+    "MementoLootNew": [
+      "Itens Spiffo, pelúcias e outros itens de lembrança colecionáveis, por exemplo. "
+    ],
+    "CookwareLootNew": [
+      "Itens usados ​​na culinária, incluindo aqueles (por exemplo, facas) que podem ser armas. "
+    ],
+    "MaterialLootNew": [
+      "Itens e armas que são usados ​​como ingredientes para fabricação ou construção. "
+    ],
+    "FarmingLootNew": [
+      "Itens e armas usados ​​na agricultura animal e vegetal, como sementes, espátulas ou pás. "
+    ],
+    "ToolLootNew": [
+      "Itens e armas que são ferramentas, mas não se enquadram em outras categorias, como Mecânica ou Agricultura. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] É recomendado que você NÃO altere isso. "
+    ],
+    "LootItemRemovalList": [
+      "Uma lista separada por vírgulas de tipos de itens que não aparecerão como itens comuns."
+    ],
+    "RemoveStoryLoot": [
+      "Se ativado, os itens na lista de remoção de itens de saque ou que tenham sua raridade definida como 'Nenhum' não aparecerão em histórias mundiais aleatórias."
+    ],
+    "RemoveZombieLoot": [
+      "Se ativado, os itens na Lista de Remoção de Itens de Saque, ou que tenham sua raridade definida como 'Nenhum', não aparecerão usados ​​por ou anexados a zumbis."
+    ],
+    "ZombiePopLootEffect": [
+      "Se for maior que 0, a geração de saque aumenta em relação ao número de zumbis próximos, com o efeito multiplicado por este número. "
+    ],
+    "InsaneLootFactor": [
+      "Mín: 0.00 Máx: 0.20 Padrão: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Mín: 0.05 Máx: 0.60 Padrão: 0.20"
+    ],
+    "RareLootFactor": [
+      "Mín: 0.20 Máx: 1.00 Padrão: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Mín: 0.60 Máx: 2.00 Padrão: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Mín: 1.00 Máx: 3.00 Padrão: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Mín: 2.00 Máx: 4.00 Padrão: 3.00"
+    ],
+    "Temperature": [
+      "Controla a condição global da temperatura. Padrão = Normal",
+      "1 = Muito Frio",
+      "2 = Frio",
+      "3 = Normal",
+      "4 = Quente",
+      "5 = Muito Quente"
+    ],
+    "Rain": [
+      "Controla a frequência com que ocorrerá chuvas e tempestades. Padrão = Normal",
+      "1 = Bem Seco",
+      "2 = Seco",
+      "3 = Normal",
+      "4 = Chuvoso",
+      "5 = Bem Chuvoso"
+    ],
+    "ErosionSpeed": [
+      "Número de dias até que o sistema de erosão (que adiciona vinhas, grama alta, novas árvores, etc.) ao mundo atinja 100% de crescimento. ",
+      "1 = Muito Rápido (20 Dias)",
+      "2 = Rápido (50 Dias)",
+      "3 = Normal (100 Dias)",
+      "4 = Lento (200 Dias)",
+      "5 = Muito Lento (500 Dias)"
+    ],
+    "ErosionDays": [
+      "Para uma velocidade de erosão personalizada. "
+    ],
+    "Farming": [
+      "Taxa em que a habilidade Agricultura sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "CompostTime": [
+      "Controla o tempo que leva para o alimento se decompor em uma composteira. Padrão = 2 Semanas",
+      "1 = 1 Semana",
+      "2 = 2 Semanas",
+      "3 = 3 Semanas",
+      "4 = 4 Semanas",
+      "5 = 6 Semanas",
+      "6 = 8 Semanas",
+      "7 = 10 Semanas",
+      "8 = 12 Semanas"
+    ],
+    "StatsDecrease": [
+      "Define o quão rápido a fome, a sede e a fadiga do personagem irão decair. Padrão = Normal",
+      "1 = Muito Rápido",
+      "2 = Rápido",
+      "3 = Normal",
+      "4 = Devagar",
+      "5 = Muito Devagar"
+    ],
+    "NatureAbundance": [
+      "Controla a abundância da Pescaria e da Coleta. Padrão = Normal",
+      "1 = Muito Ruim",
+      "2 = Ruim",
+      "3 = Normal",
+      "4 = Abundante",
+      "5 = Muito Abundante"
+    ],
+    "Alarm": [
+      "Qual é a probabilidade de o jogador ativar um alarme de casa ao invadir uma nova casa. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "LockedHouses": [
+      "Define com que frequência as casas e construções recém-descobertas estarão trancadas. Padrão = Muito Frequentemente",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "StarterKit": [
+      "Inicia com salgadinho, garrafa de água, mochila escolar, taco de beisebol e um martelo em seu inventário."
+    ],
+    "Nutrition": [
+      "O valor nutricional dos alimentos afetarão a condição do jogador."
+    ],
+    "FoodRotSpeed": [
+      "Define o tempo que os alimentos irão estragar dentro ou fora da geladeira. Padrão = Normal",
+      "1 = Muito Rápido",
+      "2 = Rápido",
+      "3 = Normal",
+      "4 = Devagar",
+      "5 = Muito Devagar"
+    ],
+    "FridgeFactor": [
+      "Define o nível de eficiência da geladeira. Padrão = Normal",
+      "1 = Muito Baixo",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Se acima de 0, os itens não ressurgirão nos recipientes que foram looteados dentro desse tempo *em horas* de jogo. Mín: 0 Máx: 2147483647 Padrão: 0"
+    ],
+    "HoursForLootRespawn": [
+      "Quando for maior que 0, após X horas, todos os contêineres nas cidades e parques de trailers do mundo reaparecerão como saque. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Recipientes com um número de itens maior ou igual a esta configuração não reaparecerão. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Os itens não reaparecerão em edifícios onde os jogadores barricaram ou construíram."
+    ],
+    "WorldItemRemovalList": [
+      "Lista de itens, separados por vírgula, que serão removidos após o tempo definido em \"Tempo de Despawn\"."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Número de horas desde que um item foi deixado cair no chão antes de ser removido.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Se marcado, os itens que *não* estiverem na lista serão removidos."
+    ],
+    "TimeSinceApo": [
+      "Quanto tempo depois do fim do mundo para começar. ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Influencia na quantidade de água que o cultivo precisa por dia e a capacidade de evitar pragas. Padrão = Normal",
+      "1 = Muito Alto",
+      "2 = Alto",
+      "3 = Normal",
+      "4 = Baixo",
+      "5 = Muito Baixo"
+    ],
+    "PlantAbundance": [
+      "Influenciará na quantidade de vegetais que uma planta produzirá. Padrão = Normal",
+      "1 = Muito Ruim",
+      "2 = Ruim",
+      "3 = Normal",
+      "4 = Abundante",
+      "5 = Muito Abundante"
+    ],
+    "EndRegen": [
+      "Tempo de recuperação do cansaço causado por diversas ações. Padrão = Normal",
+      "1 = Muito Rápido",
+      "2 = Rápido",
+      "3 = Normal",
+      "4 = Devagar",
+      "5 = Muito Devagar"
+    ],
+    "Helicopter": [
+      "Frequência com que helicópteros aparecerão na área. Padrão = Uma Vez",
+      "1 = Nunca",
+      "2 = Uma Vez",
+      "3 = Algumas Vezes",
+      "4 = Frequentemente"
+    ],
+    "MetaEvent": [
+      "Frequência com que eventos que atraem zumbis ocorrerão, como por exemplo som de tiros. Padrão = Algumas Vezes",
+      "1 = Nunca",
+      "2 = Algumas Vezes",
+      "3 = Frequentemente"
+    ],
+    "SleepingEvent": [
+      "Controla os eventos que ocorrerão enquanto o jogador estiver dormindo. Padrão = Nunca",
+      "1 = Nunca",
+      "2 = Algumas Vezes",
+      "3 = Frequentemente"
+    ],
+    "GeneratorFuelConsumption": [
+      "Quanto consumirá de combustível a cada hora de jogo. Mín: 0.00 Máx: 100.00 Padrão: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Aumenta/Reduz a chance de geradores elétricos aparecerem no mapa. ",
+      "1 = Nenhum",
+      "2 = Incrivelmente Raro",
+      "3 = Extremamente Raro",
+      "4 = Raro",
+      "5 = Normal",
+      "6 = Comum",
+      "7 = Abundante"
+    ],
+    "AnnotatedMapChance": [
+      "Influência na chance de que um mapa encontrado contenha anotações deixadas por um sobrevivente. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "CharacterFreePoints": [
+      "Adiciona pontos extras de traços para serem usados durante a criação do personagem. Mín: -100 Máx: 100 Padrão: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Dá pontos de vida extras às construções construídas pelos jogadores para que sejam mais resistentes aos danos dos zumbis. ",
+      "1 = Muito Baixo",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto"
+    ],
+    "NightDarkness": [
+      "Controla a luminosidade do mapa durante a noite. Padrão = Normal",
+      "1 = Completamente Escuro",
+      "2 = Escuro",
+      "3 = Normal",
+      "4 = Claro"
+    ],
+    "NightLength": [
+      "Define quanto tempo levará para alternar da noite para o dia. Padrão = Normal",
+      "1 = Sempre Noite",
+      "2 = Longo",
+      "3 = Normal",
+      "4 = Curto",
+      "5 = Sempre Dia"
+    ],
+    "BoneFracture": [
+      "Ativa ou desativa a chance de fraturas em partes do corpo quando o sobrevivente recebe impactos fortes, danos de zumbis e quedas."
+    ],
+    "InjurySeverity": [
+      "Aumenta ou diminui o impacto das lesões que acontecem em seu corpo, assim como seu tempo de cura. Padrão = Normal",
+      "1 = Baixo",
+      "2 = Normal",
+      "3 = Alto"
+    ],
+    "HoursForCorpseRemoval": [
+      "Quanto tempo, em horas, antes que os cadáveres de zumbis desapareçam do mundo.  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Controla o impacto que cadáveres em decomposição próximos ao jogador causem efeitos na saúde e humor. Padrão = Normal",
+      "1 = Nenhum",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Insano"
+    ],
+    "ZombieHealthImpact": [
+      "Se os zumbis \"vivos\" próximos têm o mesmo impacto na saúde e nas emoções do jogador."
+    ],
+    "BloodLevel": [
+      "Quantidade de sangue será derramado no chão e paredes. Padrão = Normal",
+      "1 = Nenhum",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Extremo"
+    ],
+    "ClothingDegradation": [
+      "Define a velocidade em que as roupas se degradarão, ficar sujas e ensanguentadas. Padrão = Normal",
+      "1 = Desabilitado",
+      "2 = Devagar",
+      "3 = Normal",
+      "4 = Rápido"
+    ],
+    "FireSpread": [
+      "Se os incêndios se espalharem quando iniciados."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Número de dias no jogo antes que a comida estragada seja removida do mapa.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Se ativado, os geradores funcionarão em ladrilhos externos.  "
+    ],
+    "MaxFogIntensity": [
+      "Controla a intensidade máxima da neblina. Padrão = Normal",
+      "1 = Normal",
+      "2 = Moderado",
+      "3 = Baixo",
+      "4 = Nenhum"
+    ],
+    "MaxRainFxIntensity": [
+      "Controla a intensidade máxima da chuva. Padrão = Normal",
+      "1 = Normal",
+      "2 = Moderado",
+      "3 = Baixo"
+    ],
+    "EnableSnowOnGround": [
+      "Se a neve se acumular no solo.  "
+    ],
+    "AttackBlockMovements": [
+      "Impede de andar enquanto ataca corpo a corpo."
+    ],
+    "SurvivorHouseChance": [
+      "A chance de encontrar edifícios aleatórios no mapa (por exemplo, casas queimadas, aquelas que contenham saques ou cadáveres). ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre tenta"
+    ],
+    "VehicleStoryChance": [
+      "A chance de ocorrência de histórias nas estradas (por exemplo, bloqueios policiais). ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre tenta"
+    ],
+    "ZoneStoryChance": [
+      "A chance de histórias específicas para zonas do mapa (por exemplo, um acampamento em uma floresta) surgirem. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre tenta"
+    ],
+    "AllClothesUnlocked": [
+      "Permite que você selecione todas as peças de roupa do jogo ao personalizar seu personagem"
+    ],
+    "EnableTaintedWaterText": [
+      "se desativado, o jogador não será alertado quando tiver água contaminada em algum recipiente."
+    ],
+    "EnableVehicles": [
+      "Permite o spawn de veículos."
+    ],
+    "CarSpawnRate": [
+      "Controla a frequência com que veículos surgem no mapa. Padrão = Baixo",
+      "1 = Nenhum",
+      "2 = Muito Baixo",
+      "3 = Baixo",
+      "4 = Normal",
+      "5 = Alto"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Aumenta ou reduz o multiplicador de intensidade do som do motor em geral. Mín: 0.00 Máx: 100.00 Padrão: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Controla se os veículos estarão trancados ou não, precisarão de chaves para ignição, etc."
+    ],
+    "InitialGas": [
+      "Controla quanta gasolina haverá em carros recém-descobertos. Padrão = Baixo",
+      "1 = Muito Baixo",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto",
+      "6 = Cheio"
+    ],
+    "FuelStationGasInfinite": [
+      "Se ativado, as bombas de gasolina nunca ficarão sem combustível"
+    ],
+    "FuelStationGasMin": [
+      "A quantidade mínima de gasolina que pode gerar nas bombas de gasolina. "
+    ],
+    "FuelStationGasMax": [
+      "A quantidade máxima de gasolina que pode gerar nas bombas de gasolina. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "A probabilidade, em percentagem, de que as bombas de gasolina individuais inicialmente não tenham combustível. "
+    ],
+    "LockedCar": [
+      "Qual a probabilidade de os carros ficarem trancados Padrão = Raro",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "CarGasConsumption": [
+      "Quanto de gasolina os veículos consumirão. Mín: 0.00 Máx: 100.00 Padrão: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "Condição geral dos veículos descobertos no mapa. Padrão = Baixo",
+      "1 = Muito Baixo",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto"
+    ],
+    "CarDamageOnImpact": [
+      "Controla a quantidade de danos causados nos veículos em uma batida. Padrão = Normal",
+      "1 = Muito Baixo",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Dano recebido pelo jogador ao ser atropelado por um carro. Padrão = Nenhum",
+      "1 = Nenhum",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto",
+      "5 = Muito Alto"
+    ],
+    "TrafficJam": [
+      "Se surgirem engarrafamentos de carros destruídos nas estradas principais."
+    ],
+    "CarAlarm": [
+      "Frequência com que carros serão encontrados com alarme. Padrão = Extremamente Raro",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "PlayerDamageFromCrash": [
+      "Habilita ou desabilita danos que jogadores sofrem de um carro em um acidente."
+    ],
+    "SirenShutoffHours": [
+      "Quantas horas, em jogo, uma sirene ficará tocando antes de desligar automaticamente. Mín: 0.00 Máx: 168.00 Padrão: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Controla as chances de encontrar um carro com gasolina no tanque. Padrão = Baixo",
+      "1 = Baixo",
+      "2 = Normal",
+      "3 = Alto"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Se um jogador pode descobrir um carro que foi cuidado após a infecção por Knox. ",
+      "1 = Nenhum",
+      "2 = Baixo",
+      "3 = Normal",
+      "4 = Alto"
+    ],
+    "MultiHitZombies": [
+      "Quando habilitado, certas armas brancas poderão atingir diversos zumbis em um único acerto."
+    ],
+    "RearVulnerability": [
+      "Chance de ser mordido quando um zumbi atacar pelas costas. ",
+      "1 = Baixo",
+      "2 = Médio",
+      "3 = Alto"
+    ],
+    "SirenEffectsZombies": [
+      "Se os zumbis se dirigirem ao som das sirenes dos veículos."
+    ],
+    "AnimalStatsModifier": [
+      "Velocidade com que as estatísticas dos animais (fome, sede, etc.) são reduzidas. ",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Velocidade com que as estatísticas dos animais (fome, sede, etc.) são reduzidas durante o meta. ",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalPregnancyTime": [
+      "Quanto tempo os animais ficarão grávidos antes de dar à luz. ",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalAgeModifier": [
+      "Velocidade com que os animais envelhecem. ",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalMilkIncModifier": [
+      "Padrão = Rápido",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalWoolIncModifier": [
+      "Padrão = Rápido",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalRanchChance": [
+      "A chance de encontrar animais na fazenda. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre"
+    ],
+    "AnimalGrassRegrowTime": [
+      "O número de horas que a grama crescerá novamente após ser comida por um animal ou cortada pelo jogador. "
+    ],
+    "AnimalMetaPredator": [
+      "Se uma raposa meta (ou seja, não visível no jogo) pode atacar suas galinhas se a porta da gaiola for deixada aberta à noite."
+    ],
+    "AnimalMatingSeason": [
+      "Se os animais com época de acasalamento respeitarem isso.  "
+    ],
+    "AnimalEggHatch": [
+      "Quanto tempo antes que os filhotes eclodam dos ovos. ",
+      "1 = Ultra Fast",
+      "2 = Muito Rápido",
+      "3 = Rápido",
+      "4 = Normal",
+      "5 = Devagar",
+      "6 = Muito Devagar"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Se for verdade, os chamados dos animais atrairão zumbis próximos."
+    ],
+    "AnimalTrackChance": [
+      "A chance de animais deixarem rastros. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "AnimalPathChance": [
+      "A chance de criar um caminho para os animais serem caçados. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente"
+    ],
+    "MaximumRatIndex": [
+      "A frequência e intensidade de, por exemplo. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Quanto tempo leva para o Índice Máximo de Vermes ser alcançado. "
+    ],
+    "MetaKnowledge": [
+      "Se uma mídia não foi totalmente vista ou lida, esta configuração determina se ela será exibida totalmente, exibida como \"???\" ou completamente ocultada. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Se for verdade, você poderá ver todas as receitas que podem ser feitas com uma estação, mesmo que ainda não as tenha aprendido."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Se um edifício tiver mais do que esta quantidade de quartos, não será saqueado. "
+    ],
+    "EnablePoisoning": [
+      "O jogador é capaz de envenenar alimentos. Padrão = Verdadeiro",
+      "1 = Verdadeiro",
+      "2 = Falso",
+      "3 = Somente o envenenamento por água sanitária é desativado"
+    ],
+    "MaggotSpawn": [
+      "Se/quando larvas podem aparecer em cadáveres. ",
+      "1 = Em cádaveres e ao redor deles",
+      "2 = Apenas em cadáveres",
+      "3 = Nunca"
+    ],
+    "LightBulbLifespan": [
+      "Quanto maior o valor, mais tempo duram as lâmpadas antes de quebrar.  "
+    ],
+    "FishAbundance": [
+      "A abundância de peixes em rios e lagos. ",
+      "1 = Muito Ruim",
+      "2 = Ruim",
+      "3 = Normal",
+      "4 = Abundante",
+      "5 = Muito Abundante"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Quando uma habilidade está neste nível ou acima, televisão/VHS/outras mídias não fornecerão XP para ela. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Quando uma habilidade está neste nível ou acima, demolir móveis não fornece XP para a habilidade relevante. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Número de dias antes que as manchas de sangue antigas sejam removidas. "
+    ],
+    "LiteratureCooldown": [
+      "Número de dias antes que alguém possa se beneficiar da leitura de itens de literatura lidos anteriormente. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Se houver retornos decrescentes nos pontos de característica bônus fornecidos pela seleção de múltiplas características negativas. ",
+      "1 = Nenhum",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = penalidade de 1 ponto para cada característica negativa selecionada após a primeira"
+    ],
+    "MinutesPerPage": [
+      "O número de minutos de jogo necessários para ler uma página de um livro de habilidades. "
+    ],
+    "KillInsideCrops": [
+      "Quando ativado, as colheitas e ervas cultivadas dentro dos edifícios morrerão. "
+    ],
+    "PlantGrowingSeasons": [
+      "Quando ativado, o crescimento das plantas é afetado pelas estações."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] É recomendado que você NÃO altere isso. "
+    ],
+    "FarmingSpeedNew": [
+      "Controla a velocidade de crescimento da plantação. Mín: 0.10 Máx: 100.00 Padrão: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "A abundância de colheitas. "
+    ],
+    "MaximumLooted": [
+      "A chance de qualquer edifício já ter sido saqueado quando encontrado. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Quanto tempo leva para que a Chance Máxima de Construção Saqueada seja alcançada. "
+    ],
+    "RuralLooted": [
+      "A chance de qualquer edifício rural já ter sido saqueado quando encontrado. "
+    ],
+    "MaximumDiminishedLoot": [
+      "O saque máximo que não aparecerá quando o Dias Até o Saque Diminuído Máximo for atingido. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Quanto tempo leva para que a porcentagem máxima de saque diminuída seja atingida. "
+    ],
+    "MuscleStrainFactor": [
+      "Funciona como um multiplicador ao aplicar tensão muscular ao balançar armas ou carregar cargas pesadas. "
+    ],
+    "DiscomfortFactor": [
+      "Funciona como um multiplicador ao aplicar desconforto devido a itens desgastados. "
+    ],
+    "WoundInfectionFactor": [
+      "Se for maior que zero, danos podem ser causados ​​por infecções graves de feridas. "
+    ],
+    "NoBlackClothes": [
+      "Se for verdade, as roupas com tonalidades aleatórias não serão tão escuras a ponto de serem virtualmente pretas."
+    ],
+    "EasyClimbing": [
+      "Desativa as chances de falha ao escalar cordas ou paredes."
+    ],
+    "MaximumFireFuelHours": [
+      "O número máximo de horas de combustível que pode ser colocado em uma fogueira, fogão a lenha etc. Mín: 1 Máx: 168 Padrão: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "Substitui a mecânica de chance de acerto por cálculos de chance de dano.  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "Um multiplicador para a distância em que os zumbis podem ouvir tiros. "
+    ],
+    "FirearmJamMultiplier": [
+      "Multiplicador para chance de bloqueio de arma de fogo. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Multiplicador para efeitos do Moodle na chance de acerto. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Multiplicador para os efeitos do clima (vento, chuva e neblina) na chance de acerto. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Permite que capacetes como máscaras de soldagem afetem a chance de acerto"
+    ],
+    "ClayLakeChance": [
+      "Chance de transformar um chão de terra em um chão de barro. "
+    ],
+    "ClayRiverChance": [
+      "Chance de transformar um chão de terra em um chão de barro. "
+    ],
+    "GeneratorTileRange": [
+      "Mín: 1 Máx: 100 Padrão: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Quantos níveis acima e abaixo de um gerador ele pode fornecer eletricidade. "
+    ],
+    "SpawnFrequency": [
+      "Com que frequência os porões aparecem em locais aleatórios. ",
+      "1 = Nunca",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre"
+    ],
+    "AllowMiniMap": [
+      "Se ativado, uma janela de minimapa estará disponível."
+    ],
+    "AllowWorldMap": [
+      "Se ativado, o mapa mundial pode ser acessado."
+    ],
+    "MapAllKnown": [
+      "Se ativado, o mapa mundial será completamente preenchido ao iniciar o jogo."
+    ],
+    "MapNeedsLight": [
+      "Se ativado, os mapas não poderão ser lidos a menos que haja uma fonte de luz disponível."
+    ],
+    "Speed": [
+      "Controla a movimentação do zumbi. Padrão = Aleatório",
+      "1 = Corredores (Sprinters)",
+      "2 = Normal",
+      "3 = Lento",
+      "4 = Aleatório"
+    ],
+    "SprinterPercentage": [
+      "Se a velocidade aleatória estiver ativada, isso controla a porcentagem de zumbis que são velocistas. "
+    ],
+    "Strength": [
+      "Taxa em que a habilidade Força sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Toughness": [
+      "Controla a dificuldade de matar zumbis. Padrão = Aleatório",
+      "1 = Resistente",
+      "2 = Normal",
+      "3 = Frágil",
+      "4 = Aleatório"
+    ],
+    "Transmission": [
+      "Controla como o vírus é espalhado. Padrão = Sangue + Saliva",
+      "1 = Sangue + Saliva",
+      "2 = Apenas Saliva",
+      "3 = Todos estão Infectados",
+      "4 = Nenhum"
+    ],
+    "Mortality": [
+      "Controla o tempo de início do desenvolvimento da zumbificação. Padrão = 2-3 Dias",
+      "1 = Instantâneo",
+      "2 = 0-30 Segundos",
+      "3 = 0-1 Minutos",
+      "4 = 0-12 Horas",
+      "5 = 2-3 Dias",
+      "6 = 1-2 Semanas",
+      "7 = Nunca"
+    ],
+    "Reanimate": [
+      "Controla quando os corpos zumbificados renascerão como zumbis. Padrão = 0-1 Minutos",
+      "1 = Instantâneo",
+      "2 = 0-30 Segundos",
+      "3 = 0-1 Minutos",
+      "4 = 0-12 Horas",
+      "5 = 2-3 Dias",
+      "6 = 1-2 Semanas"
+    ],
+    "Cognition": [
+      "Controla a inteligência do zumbi. Padrão = Básico",
+      "1 = Avançado (Usa Portas)",
+      "2 = Normal",
+      "3 = Básico",
+      "4 = Aleatório"
+    ],
+    "CrawlUnderVehicle": [
+      "Controla se os zumbis podem se rastejar por debaixo de veículos. Padrão = Frequentemente",
+      "1 = Apenas Rastejantes",
+      "2 = Extremamente Raro",
+      "3 = Raro",
+      "4 = Algumas Vezes",
+      "5 = Frequentemente",
+      "6 = Muito Frequentemente",
+      "7 = Sempre"
+    ],
+    "Memory": [
+      "Controla o tempo em que os zumbis se lembrarão de jogadores após vê-los ou ouvi-los. Padrão = Normal",
+      "1 = Longo",
+      "2 = Normal",
+      "3 = Curto",
+      "4 = Nenhum",
+      "5 = Aleatório",
+      "6 = Aleatório entre Normal e Nenhum"
+    ],
+    "Sight": [
+      "Controle a distância da visão do zumbi. ",
+      "1 = Olhos de Águia",
+      "2 = Normal",
+      "3 = Ruim",
+      "4 = Aleatório",
+      "5 = Aleatório entre Normal e Ruim"
+    ],
+    "Hearing": [
+      "Controle a distância da audição do zumbi. ",
+      "1 = Alta",
+      "2 = Normal",
+      "3 = Ruim",
+      "4 = Aleatório",
+      "5 = Aleatório entre Normal e Ruim"
+    ],
+    "SpottedLogic": [
+      "Ativa a nova mecânica furtiva avançada, que permite que você se esconda de zumbis atrás de carros, leva em consideração características e clima e muito mais."
+    ],
+    "ThumpNoChasing": [
+      "Zumbis que não viram ou escutaram jogadores poderão atacar portas e construções enquanto vagam."
+    ],
+    "ThumpOnConstruction": [
+      "Define se zumbis poderão ou não destruir construções e cercas feitas pelo jogador."
+    ],
+    "ActiveOnly": [
+      "Se os zumbis são mais “ativos” durante o dia ou à noite.  ",
+      "1 = Ambos",
+      "2 = Noite",
+      "3 = Dia"
+    ],
+    "TriggerHouseAlarm": [
+      "Permite que zumbis ativem alarmes de casas quando entrarem através de janelas e portas."
+    ],
+    "ZombiesDragDown": [
+      "Se vários zumbis atacantes puderem arrastá-lo para baixo e matá-lo.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Se zumbis rastreadores ao lado de um jogador contribuem para a chance de ser arrastado e morto por um grupo de zumbis."
+    ],
+    "ZombiesFenceLunge": [
+      "Se os zumbis tiverem a chance de atacar você depois de pular uma cerca ou através de uma janela se você estiver muito perto."
+    ],
+    "ZombiesArmorFactor": [
+      "Serve como multiplicador ao determinar a eficácia da armadura usada pelos zumbis. "
+    ],
+    "ZombiesMaxDefense": [
+      "A porcentagem máxima de defesa que qualquer vestimenta protetora usada pode fornecer a um zumbi. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Chance percentual de ter uma arma anexada aleatoriamente. "
+    ],
+    "ZombiesFallDamage": [
+      "Quanto dano os zumbis sofrem ao cair de altura. "
+    ],
+    "DisableFakeDead": [
+      "Se alguns zumbis com aparência morta irão reanimar e atacar o jogador. ",
+      "1 = Parcial (Apenas zumbis encontrados naturalmente no ambiente)",
+      "2 = Total (Inclusive aqueles mortos pelo jogador) ",
+      "3 = Nunca"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Os zumbis não aparecerão onde os jogadores aparecem. ",
+      "1 = Dentro do prédio e ao redor dele",
+      "2 = Dentro do prédio",
+      "3 = Dentro da sala",
+      "4 = Zumbis podem aparecer em qualquer lugar"
+    ],
+    "FenceThumpersRequired": [
+      "Quantos zumbis são necessários para danificar uma cerca alta. "
+    ],
+    "FenceDamageMultiplier": [
+      "A rapidez com que os zumbis danificam cercas altas. "
+    ],
+    "PopulationMultiplier": [
+      "Definido pela opção de população \"Contagem de Zumbis\" ou por um número personalizado aqui. "
+    ],
+    "PopulationStartMultiplier": [
+      "Um multiplicador para a população de zumbis desejada no início do jogo. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Um multiplicador para a população zumbi desejada no dia de pico. "
+    ],
+    "PopulationPeakDay": [
+      "Dia em que a população alcançará seu pico. Mín: 1 Máx: 365 Padrão: 28"
+    ],
+    "RespawnHours": [
+      "O número de horas que devem passar antes que os zumbis possam reaparecer em uma célula. "
+    ],
+    "RespawnUnseenHours": [
+      "Horas em que uma área precisa deixar de ser visitada antes que os zumbis possam reaparacer nela. Mín: 0.00 Máx: 8760.00 Padrão: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "Fração de população desejada de uma região que reaparecerá de acordo com a configuração \"Horas de Respawn\". Mín: 0.00 Máx: 1.00 Padrão: 0.10"
+    ],
+    "RedistributeHours": [
+      "O número de horas que devem passar antes que os zumbis migrem para partes vazias da mesma cela. "
+    ],
+    "FollowSoundDistance": [
+      "Distância em que um zumbi tentará percorrer até o local que escutou um som. Mín: 10 Máx: 1000 Padrão: 100"
+    ],
+    "RallyGroupSize": [
+      "O tamanho dos grupos que zumbis reais se formam quando estão ociosos. "
+    ],
+    "RallyGroupSizeVariance": [
+      "A quantidade, como porcentagem, que os grupos de zumbis podem variar em tamanho em relação ao padrão (maiores e menores).   "
+    ],
+    "RallyTravelDistance": [
+      "Distância máxima que os zumbis percorrerão para formar hordas quando ociosos. Mín: 5 Máx: 50 Padrão: 20"
+    ],
+    "RallyGroupSeparation": [
+      "Distância entre as hordas que serão formadas. Mín: 5 Máx: 25 Padrão: 15"
+    ],
+    "RallyGroupRadius": [
+      "O quão próximo os membros de uma horda estarão de seu líder. Mín: 1 Máx: 10 Padrão: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Mín: 10 Máx: 500 Padrão: 300"
+    ],
+    "Global": [
+      "A taxa na qual todas as habilidades sobem de nível. "
+    ],
+    "GlobalToggle": [
+      "Quando ativado, todas as habilidades usarão o Multiplicador Global."
+    ],
+    "Fitness": [
+      "Taxa em que a habilidade Condicionamento físico sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Sprinting": [
+      "Taxa em que a habilidade Corrida sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Lightfoot": [
+      "Taxa em que a habilidade Passo leve sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Nimble": [
+      "Taxa em que a habilidade Ágil sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Sneak": [
+      "Taxa em que a habilidade Furtividade sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Axe": [
+      "Taxa em que a habilidade Machado sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Blunt": [
+      "Taxa em que a habilidade Contundente sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "SmallBlunt": [
+      "Taxa em que a habilidade Contundente curto sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "LongBlade": [
+      "Taxa em que a habilidade Lâmina longa sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "SmallBlade": [
+      "Taxa em que a habilidade Lâmina curta sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Spear": [
+      "Taxa em que a habilidade Lança sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Maintenance": [
+      "Taxa em que a habilidade Manutenção sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Woodwork": [
+      "Taxa em que a habilidade Carpintaria sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Cooking": [
+      "Taxa em que a habilidade Culinária sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Doctor": [
+      "Taxa em que a habilidade Medicina sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Electricity": [
+      "Taxa em que a habilidade Eletricidade sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "MetalWelding": [
+      "Taxa em que a habilidade Soldagem de metal sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Mechanics": [
+      "Taxa em que a habilidade Mecânica sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Tailoring": [
+      "Taxa em que a habilidade Alfaiataria sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Aiming": [
+      "Taxa em que a habilidade Mira sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Reloading": [
+      "Taxa em que a habilidade Recarga sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Fishing": [
+      "Taxa em que a habilidade Pesca sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Trapping": [
+      "Taxa em que a habilidade Armadilhas sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "PlantScavenging": [
+      "Taxa em que a habilidade Coleta de plantas sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "FlintKnapping": [
+      "Taxa em que a habilidade Lascamento de sílex sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Masonry": [
+      "Taxa em que a habilidade Alvenaria sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Pottery": [
+      "Taxa em que a habilidade Cerâmica sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Carving": [
+      "Taxa em que a habilidade Escultura sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Husbandry": [
+      "Taxa em que a habilidade Pecuária sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Tracking": [
+      "Taxa em que a habilidade Rastreamento sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Blacksmith": [
+      "Taxa em que a habilidade Ferraria sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Butchering": [
+      "Taxa em que a habilidade Açougue sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ],
+    "Glassmaking": [
+      "Taxa em que a habilidade Vidreira sobe de nível. Mín: 0.00 Máx: 1000.00 Padrão: 1.00"
+    ]
+  }
+}
+
+

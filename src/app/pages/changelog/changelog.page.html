@@ -11,9 +11,9 @@
       </span>
     </ng-template>
     <ng-template #content let-event>
-      <p-card [header]="event.statusKey | transloco" [subheader]="event.dateKey | transloco">
+      <p-card [header]="event.statusKey | transloco" [subheader]="formatChangelogDate(event.dateKey)">
         <p class="m-0 text-sm text-600">{{ event.versionKey | transloco }}</p>
-        <p class="m-0 mt-2">{{ event.descriptionKey | transloco }}</p>
+      <p class="m-0 mt-2" [innerHTML]="event.descriptionKey | transloco"></p>
       </p-card>
     </ng-template>
   </p-timeline>

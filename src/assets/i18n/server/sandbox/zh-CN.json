@@ -1,0 +1,1521 @@
+{
+  "Zombies": "僵尸",
+  "Distribution": "分布",
+  "ZombieVoronoiNoise": "僵尸Voronoi噪声",
+  "ZombieRespawn": "僵尸重生",
+  "ZombieMigrate": "僵尸迁徙",
+  "DayLength": "白天时长",
+  "StartMonth": "开始月份",
+  "StartDay": "开始日期",
+  "StartTime": "开始时间",
+  "DayNightCycle": "昼夜循环",
+  "ClimateCycle": "气候循环",
+  "FogCycle": "雾循环",
+  "WaterShut": "断水",
+  "ElecShut": "断电",
+  "AlarmDecay": "警报衰减",
+  "WaterShutModifier": "断水倍率",
+  "ElecShutModifier": "断电倍率",
+  "AlarmDecayModifier": "警报衰减倍率",
+  "FoodLootNew": "新食物掉落",
+  "LiteratureLootNew": "新读物掉落",
+  "MedicalLootNew": "新医疗掉落",
+  "SurvivalGearsLootNew": "新生存装备掉落",
+  "CannedFoodLootNew": "新罐头食物掉落",
+  "WeaponLootNew": "新武器掉落",
+  "RangedWeaponLootNew": "新远程武器掉落",
+  "AmmoLootNew": "新弹药掉落",
+  "MechanicsLootNew": "新机械掉落",
+  "OtherLootNew": "新其他掉落",
+  "ClothingLootNew": "新服装掉落",
+  "ContainerLootNew": "新容器掉落",
+  "KeyLootNew": "新钥匙掉落",
+  "MediaLootNew": "新媒体掉落",
+  "MementoLootNew": "新纪念品掉落",
+  "CookwareLootNew": "新厨具掉落",
+  "MaterialLootNew": "新材料掉落",
+  "FarmingLootNew": "新农场掉落",
+  "ToolLootNew": "新工具掉落",
+  "RollsMultiplier": "掷骰倍率",
+  "LootItemRemovalList": "掉落物品移除列表",
+  "RemoveStoryLoot": "移除剧情掉落",
+  "RemoveZombieLoot": "移除僵尸掉落",
+  "ZombiePopLootEffect": "僵尸数量掉落影响",
+  "InsaneLootFactor": "疯狂掉落系数",
+  "ExtremeLootFactor": "极端掉落系数",
+  "RareLootFactor": "稀有掉落系数",
+  "NormalLootFactor": "普通掉落系数",
+  "CommonLootFactor": "常见掉落系数",
+  "AbundantLootFactor": "丰富掉落系数",
+  "Temperature": "温度",
+  "Rain": "降雨",
+  "ErosionSpeed": "侵蚀速度",
+  "ErosionDays": "侵蚀天数",
+  "Farming": "农业",
+  "CompostTime": "堆肥时间",
+  "StatsDecrease": "属性下降",
+  "NatureAbundance": "自然丰度",
+  "Alarm": "警报",
+  "LockedHouses": "上锁房屋",
+  "StarterKit": "初始套件",
+  "Nutrition": "营养",
+  "FoodRotSpeed": "食物腐烂速度",
+  "FridgeFactor": "冰箱系数",
+  "SeenHoursPreventLootRespawn": "可见小时数阻止掉落重生",
+  "HoursForLootRespawn": "掉落重生小时数",
+  "MaxItemsForLootRespawn": "掉落重生最大物品数",
+  "ConstructionPreventsLootRespawn": "建造阻止掉落重生",
+  "WorldItemRemovalList": "世界物品移除列表",
+  "HoursForWorldItemRemoval": "世界物品移除小时数",
+  "ItemRemovalListBlacklistToggle": "物品移除列表黑名单开关",
+  "TimeSinceApo": "末日后时间",
+  "PlantResilience": "植物韧性",
+  "PlantAbundance": "植物丰度",
+  "EndRegen": "耐力恢复",
+  "Helicopter": "直升机",
+  "MetaEvent": "元事件",
+  "SleepingEvent": "睡眠事件",
+  "GeneratorFuelConsumption": "发电机燃料消耗",
+  "GeneratorSpawning": "发电机生成",
+  "AnnotatedMapChance": "注释地图概率",
+  "CharacterFreePoints": "角色免费点数",
+  "ConstructionBonusPoints": "建造奖励点数",
+  "NightDarkness": "夜间黑暗度",
+  "NightLength": "夜晚时长",
+  "BoneFracture": "骨折",
+  "InjurySeverity": "伤害严重度",
+  "HoursForCorpseRemoval": "尸体移除小时数",
+  "DecayingCorpseHealthImpact": "腐烂尸体健康影响",
+  "ZombieHealthImpact": "僵尸健康影响",
+  "BloodLevel": "血量",
+  "ClothingDegradation": "服装损耗",
+  "FireSpread": "火势蔓延",
+  "DaysForRottenFoodRemoval": "腐烂食物移除天数",
+  "AllowExteriorGenerator": "允许室外发电机",
+  "MaxFogIntensity": "最大雾强度",
+  "MaxRainFxIntensity": "最大雨效强度",
+  "EnableSnowOnGround": "启用地面积雪",
+  "AttackBlockMovements": "攻击阻止移动",
+  "SurvivorHouseChance": "幸存者房屋概率",
+  "VehicleStoryChance": "车辆故事概率",
+  "ZoneStoryChance": "区域故事概率",
+  "AllClothesUnlocked": "所有服装解锁",
+  "EnableTaintedWaterText": "启用污染水文本",
+  "EnableVehicles": "启用车辆",
+  "CarSpawnRate": "车辆生成率",
+  "ZombieAttractionMultiplier": "僵尸吸引倍率",
+  "VehicleEasyUse": "车辆易用",
+  "InitialGas": "初始汽油",
+  "FuelStationGasInfinite": "加油站汽油无限",
+  "FuelStationGasMin": "加油站汽油最小值",
+  "FuelStationGasMax": "加油站汽油最大值",
+  "FuelStationGasEmptyChance": "加油站空油概率",
+  "LockedCar": "上锁车辆",
+  "CarGasConsumption": "车辆油耗",
+  "CarGeneralCondition": "车辆总体状况",
+  "CarDamageOnImpact": "碰撞车辆损伤",
+  "DamageToPlayerFromHitByACar": "被车辆撞击造成伤害",
+  "TrafficJam": "交通堵塞",
+  "CarAlarm": "车辆警报",
+  "PlayerDamageFromCrash": "碰撞对玩家伤害",
+  "SirenShutoffHours": "警笛关闭小时数",
+  "ChanceHasGas": "有油概率",
+  "RecentlySurvivorVehicles": "近期幸存者车辆",
+  "MultiHitZombies": "多重攻击僵尸",
+  "RearVulnerability": "背部脆弱",
+  "SirenEffectsZombies": "警笛影响僵尸",
+  "AnimalStatsModifier": "动物属性倍率",
+  "AnimalMetaStatsModifier": "动物元属性倍率",
+  "AnimalPregnancyTime": "动物妊娠时间",
+  "AnimalAgeModifier": "动物年龄倍率",
+  "AnimalMilkIncModifier": "动物产奶增量倍率",
+  "AnimalWoolIncModifier": "动物产毛增量倍率",
+  "AnimalRanchChance": "动物牧场概率",
+  "AnimalGrassRegrowTime": "动物草地再生时间",
+  "AnimalMetaPredator": "动物元掠食者",
+  "AnimalMatingSeason": "动物交配季",
+  "AnimalEggHatch": "动物蛋孵化",
+  "AnimalSoundAttractZombies": "动物声音吸引僵尸",
+  "AnimalTrackChance": "动物足迹概率",
+  "AnimalPathChance": "动物路径概率",
+  "MaximumRatIndex": "最大鼠指数",
+  "DaysUntilMaximumRatIndex": "达到最大鼠指数的天数",
+  "MetaKnowledge": "元知识",
+  "SeeNotLearntRecipe": "显示未学习配方",
+  "MaximumLootedBuildingRooms": "最大被掠夺建筑房间数",
+  "EnablePoisoning": "启用中毒",
+  "MaggotSpawn": "蛆虫生成",
+  "LightBulbLifespan": "灯泡寿命",
+  "FishAbundance": "鱼类丰度",
+  "LevelForMediaXPCutoff": "媒体XP截断等级",
+  "LevelForDismantleXPCutoff": "拆解XP截断等级",
+  "BloodSplatLifespanDays": "血迹寿命天数",
+  "LiteratureCooldown": "读物冷却",
+  "NegativeTraitsPenalty": "负面特质惩罚",
+  "MinutesPerPage": "每页分钟数",
+  "KillInsideCrops": "在作物内击杀",
+  "PlantGrowingSeasons": "植物生长季",
+  "PlaceDirtAboveground": "地表放置泥土",
+  "FarmingSpeedNew": "新农业速度",
+  "FarmingAmountNew": "新农业数量",
+  "MaximumLooted": "最大掠夺量",
+  "DaysUntilMaximumLooted": "达到最大掠夺量的天数",
+  "RuralLooted": "乡村掠夺量",
+  "MaximumDiminishedLoot": "最大减少掉落",
+  "DaysUntilMaximumDiminishedLoot": "达到最大减少掉落的天数",
+  "MuscleStrainFactor": "肌肉拉伤系数",
+  "DiscomfortFactor": "不适系数",
+  "WoundInfectionFactor": "伤口感染系数",
+  "NoBlackClothes": "无黑色服装",
+  "EasyClimbing": "易攀爬",
+  "MaximumFireFuelHours": "最大燃料火时长",
+  "FirearmUseDamageChance": "枪械使用损坏概率",
+  "FirearmNoiseMultiplier": "枪械噪音倍率",
+  "FirearmJamMultiplier": "枪械卡壳倍率",
+  "FirearmMoodleMultiplier": "枪械状态倍率",
+  "FirearmWeatherMultiplier": "枪械天气倍率",
+  "FirearmHeadGearEffect": "枪械头部装备效果",
+  "ClayLakeChance": "黏土湖概率",
+  "ClayRiverChance": "黏土河概率",
+  "GeneratorTileRange": "发电机格子范围",
+  "GeneratorVerticalPowerRange": "发电机垂直供电范围",
+  "Basement": "地下室",
+  "SpawnFrequency": "生成频率",
+  "Map": "地图",
+  "AllowMiniMap": "允许小地图",
+  "AllowWorldMap": "允许世界地图",
+  "MapAllKnown": "全地图已知",
+  "MapNeedsLight": "地图需要光照",
+  "ZombieLore": "僵尸设定",
+  "Speed": "速度",
+  "SprinterPercentage": "疾跑者比例",
+  "Strength": "力量",
+  "Toughness": "韧性",
+  "Transmission": "传播",
+  "Mortality": "致死率",
+  "Reanimate": "复活",
+  "Cognition": "认知",
+  "CrawlUnderVehicle": "车底爬行",
+  "Memory": "记忆",
+  "Sight": "视力",
+  "Hearing": "听力",
+  "SpottedLogic": "被发现逻辑",
+  "ThumpNoChasing": "不追逐时敲击",
+  "ThumpOnConstruction": "敲击建筑",
+  "ActiveOnly": "仅激活",
+  "TriggerHouseAlarm": "触发房屋警报",
+  "ZombiesDragDown": "僵尸拖拽倒地",
+  "ZombiesCrawlersDragDown": "爬行僵尸拖拽倒地",
+  "ZombiesFenceLunge": "僵尸翻越围栏",
+  "ZombiesArmorFactor": "僵尸护甲系数",
+  "ZombiesMaxDefense": "僵尸最大防御",
+  "ChanceOfAttachedWeapon": "附带武器概率",
+  "ZombiesFallDamage": "僵尸坠落伤害",
+  "DisableFakeDead": "禁用假死",
+  "PlayerSpawnZombieRemoval": "玩家出生移除僵尸",
+  "FenceThumpersRequired": "需要敲栏者",
+  "FenceDamageMultiplier": "围栏伤害倍率",
+  "ZombieConfig": "僵尸配置",
+  "PopulationMultiplier": "人口倍率",
+  "PopulationStartMultiplier": "人口起始倍率",
+  "PopulationPeakMultiplier": "人口峰值倍率",
+  "PopulationPeakDay": "人口峰值天数",
+  "RespawnHours": "重生小时数",
+  "RespawnUnseenHours": "未见重生小时数",
+  "RespawnMultiplier": "重生倍率",
+  "RedistributeHours": "重新分配小时数",
+  "FollowSoundDistance": "追随声音距离",
+  "RallyGroupSize": "集结组规模",
+  "RallyGroupSizeVariance": "集结组规模差",
+  "RallyTravelDistance": "集结移动距离",
+  "RallyGroupSeparation": "集结组分离",
+  "RallyGroupRadius": "集结组半径",
+  "ZombiesCountBeforeDelete": "删除前僵尸数量",
+  "MultiplierConfig": "倍率配置",
+  "Global": "全局",
+  "GlobalToggle": "全局开关",
+  "Fitness": "体能",
+  "Sprinting": "疾跑",
+  "Lightfoot": "轻步",
+  "Nimble": "敏捷",
+  "Sneak": "潜行",
+  "Axe": "斧",
+  "Blunt": "钝器",
+  "SmallBlunt": "小型钝器",
+  "LongBlade": "长刃",
+  "SmallBlade": "短刃",
+  "Spear": "矛",
+  "Maintenance": "维护",
+  "Woodwork": "木工",
+  "Cooking": "烹饪",
+  "Doctor": "医疗",
+  "Electricity": "电工",
+  "MetalWelding": "金属焊接",
+  "Mechanics": "机械",
+  "Tailoring": "裁缝",
+  "Aiming": "瞄准",
+  "Reloading": "装填",
+  "Fishing": "钓鱼",
+  "Trapping": "设陷阱",
+  "PlantScavenging": "采集植物",
+  "FlintKnapping": "打制燧石",
+  "Masonry": "石工",
+  "Pottery": "陶艺",
+  "Carving": "雕刻",
+  "Husbandry": "畜牧",
+  "Tracking": "追踪",
+  "Blacksmith": "铁匠",
+  "Butchering": "屠宰",
+  "Glassmaking": "玻璃制作",
+  "comments": {
+    "Zombies": [
+      "修改此项会改变高级设置中\"人口倍率\"的设定. 默认 = 普通",
+      "1 = 疯狂",
+      "2 = 非常多",
+      "3 = 多",
+      "4 = 普通",
+      "5 = 少",
+      "6 = 没有"
+    ],
+    "Distribution": [
+      "僵尸如何分布在地图上。 ",
+      "1 = 城镇集中",
+      "2 = 各地分散"
+    ],
+    "ZombieVoronoiNoise": [
+      "控制是否将某些随机化应用于僵尸分布。"
+    ],
+    "ZombieRespawn": [
+      "这将改变游戏中僵尸刷新的时间. 默认 = 普通",
+      "1 = 多",
+      "2 = 普通",
+      "3 = 少",
+      "4 = 没有"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "默认 = 1 小时 30 分钟",
+      "1 = 15 分钟",
+      "2 = 30 分钟",
+      "3 = 1 小时",
+      "4 = 1 小时 30 分钟",
+      "5 = 2 小时",
+      "6 = 3 小时",
+      "7 = 4 小时",
+      "8 = 5 小时",
+      "9 = 6 小时",
+      "10 = 7 小时",
+      "11 = 8 小时",
+      "12 = 9 小时",
+      "13 = 10 小时",
+      "14 = 11 小时",
+      "15 = 12 小时",
+      "16 = 13 小时",
+      "17 = 14 小时",
+      "18 = 15 小时",
+      "19 = 16 小时",
+      "20 = 17 小时",
+      "21 = 18 小时",
+      "22 = 19 小时",
+      "23 = 20 小时",
+      "24 = 21 小时",
+      "25 = 22 小时",
+      "26 = 23 小时",
+      "27 = 24 小时"
+    ],
+    "StartMonth": [
+      "比赛开始的月份。 ",
+      "1 = 一月",
+      "2 = 二月",
+      "3 = 三月",
+      "4 = 四月",
+      "5 = 五月",
+      "6 = 六月",
+      "7 = 七月",
+      "8 = 八月",
+      "9 = 九月",
+      "10 = 十月",
+      "11 = 十一月",
+      "12 = 十二月"
+    ],
+    "StartDay": [
+      "比赛开始的月份的哪一天。"
+    ],
+    "StartTime": [
+      "一天中比赛开始的时间。 ",
+      "1 = 早上 7 点",
+      "2 = 早上 9 点",
+      "3 = 中午 12 点",
+      "4 = 下午 2 点",
+      "5 = 下午 5 点",
+      "6 = 晚上 9 点",
+      "7 = 凌晨 12 点",
+      "8 = 深夜 2 点",
+      "9 = 早晨 5 点"
+    ],
+    "DayNightCycle": [
+      "一天中的时间是否自然变化，或者始终是白天/黑夜。 ",
+      "1 = 普通",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "天气是否变化或保持在单一状态。 ",
+      "1 = 普通",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "雾是自然发生、从未发生还是始终存在。 ",
+      "1 = 普通",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "在默认开始日期（1993 年 7 月 9 日）之后多久，管道装置（例如水槽）不再是无限水源。 ",
+      "1 = 立即",
+      "2 = 0-30 天",
+      "3 = 0-2 个月",
+      "4 = 0-6 个月",
+      "5 = 0-1 年",
+      "6 = 0-5 年",
+      "7 = 2-6 个月",
+      "8 = 6-12 个月",
+      "9 = 禁用"
+    ],
+    "ElecShut": [
+      "默认开始日期（1993 年 7 月 9 日）后多久，世界电力将永久关闭。 ",
+      "1 = 立即",
+      "2 = 0-30 天",
+      "3 = 0-2 个月",
+      "4 = 0-6 个月",
+      "5 = 0-1 年",
+      "6 = 0-5 年",
+      "7 = 2-6 个月",
+      "8 = 6-12 个月",
+      "9 = 禁用"
+    ],
+    "AlarmDecay": [
+      "电源关闭后报警电池可以持续多长时间。 ",
+      "1 = 立即",
+      "2 = 0-30 天",
+      "3 = 0-2 个月",
+      "4 = 0-6 个月",
+      "5 = 0-1 年",
+      "6 = 0-5 年"
+    ],
+    "WaterShutModifier": [
+      "在默认开始日期（1993 年 7 月 9 日）之后多久，管道装置（例如水槽）不再是无限水源。 "
+    ],
+    "ElecShutModifier": [
+      "默认开始日期（1993 年 7 月 9 日）后多久，世界电力将永久关闭。 "
+    ],
+    "AlarmDecayModifier": [
+      "电源关闭后报警电池可以持续多长时间。 "
+    ],
+    "FoodLootNew": [
+      "任何可能腐烂或变质的食物。 "
+    ],
+    "LiteratureLootNew": [
+      "所有可阅读的项目，包括传单 最小：0.00 最大：4.00 默认：0.60"
+    ],
+    "MedicalLootNew": [
+      "药品、绷带和急救工具。 "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. 最小: 0.00 最大: 4.00 默认: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "罐头和干食品、饮料。 "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. 最小: 0.00 最大: 4.00 默认: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. 最小: 0.00 最大: 4.00 默认: 0.60"
+    ],
+    "AmmoLootNew": [
+      "散装弹药、盒子和杂志。 "
+    ],
+    "MechanicsLootNew": [
+      "车辆零件以及安装它们所需的工具。 "
+    ],
+    "OtherLootNew": [
+      "其他一切。"
+    ],
+    "ClothingLootNew": [
+      "所有不是容器的可穿戴物品。 "
+    ],
+    "ContainerLootNew": [
+      "背包和其他可穿戴/可装备的容器，例如。"
+    ],
+    "KeyLootNew": [
+      "建筑物/汽车钥匙、钥匙圈和锁。 "
+    ],
+    "MediaLootNew": [
+      "VHS 磁带和 CD。 "
+    ],
+    "MementoLootNew": [
+      "Spiffo 物品、毛绒玩具和其他可收藏的纪念品，例如。"
+    ],
+    "CookwareLootNew": [
+      "用于烹饪的物品，包括那些可以作为武器的物品（例如刀）。"
+    ],
+    "MaterialLootNew": [
+      "用作制作或建筑原料的物品和武器。"
+    ],
+    "FarmingLootNew": [
+      "用于动植物农业的物品和武器，例如种子、抹刀或铲子。 "
+    ],
+    "ToolLootNew": [
+      "属于工具但不属于其他类别（例如机械或农业）的物品和武器。 "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] 建议您不要更改此设置。 "
+    ],
+    "LootItemRemovalList": [
+      "以逗号分隔的物品类型列表，不会作为普通战利品生成。"
+    ],
+    "RemoveStoryLoot": [
+      "如果启用，战利品移除列表中的物品或稀有度设置为“无”的物品将不会在随机世界故事中生成。"
+    ],
+    "RemoveZombieLoot": [
+      "如果启用，战利品移除列表中的物品或稀有度设置为“无”的物品将不会生成被僵尸穿戴或附着的物品。"
+    ],
+    "ZombiePopLootEffect": [
+      "如果大于 0，则战利品的生成量会相对于附近僵尸的数量而增加，效果会乘以该数字。 "
+    ],
+    "InsaneLootFactor": [
+      "最小: 0.00 最大: 0.20 默认: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "最小: 0.05 最大: 0.60 默认: 0.20"
+    ],
+    "RareLootFactor": [
+      "最小: 0.20 最大: 1.00 默认: 0.60"
+    ],
+    "NormalLootFactor": [
+      "最小: 0.60 最大: 2.00 默认: 1.00"
+    ],
+    "CommonLootFactor": [
+      "最小: 1.00 最大: 3.00 默认: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "最小: 2.00 最大: 4.00 默认: 3.00"
+    ],
+    "Temperature": [
+      "全地图温度. 默认 = 普通",
+      "1 = 非常冷",
+      "2 = 冷",
+      "3 = 普通",
+      "4 = 热",
+      "5 = 非常热"
+    ],
+    "Rain": [
+      "降雨频率. 默认 = 普通",
+      "1 = 非常干旱",
+      "2 = 干旱",
+      "3 = 普通",
+      "4 = 多雨",
+      "5 = 非常多雨"
+    ],
+    "ErosionSpeed": [
+      "侵蚀系统（向世界添加藤蔓、长草、新树等）达到 100% 增长所需的天数。 ",
+      "1 = 非常快 (20 天)",
+      "2 = 快 (50 天)",
+      "3 = 正常 (100 天)",
+      "4 = 慢 (200 天)",
+      "5 = 非常慢 (500 天)"
+    ],
+    "ErosionDays": [
+      "对于自定义侵蚀速度。"
+    ],
+    "Farming": [
+      "农业 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "CompostTime": [
+      "堆肥箱中食物分解的时间. 默认 = 2 周",
+      "1 = 1 周",
+      "2 = 2 周",
+      "3 = 3 周",
+      "4 = 4 周",
+      "5 = 6 周",
+      "6 = 8 周",
+      "7 = 10 周",
+      "8 = 12 周"
+    ],
+    "StatsDecrease": [
+      "角色的饥饿,口渴和疲劳会以多快的速度减少. 默认 = 普通",
+      "1 = 非常快",
+      "2 = 快",
+      "3 = 普通",
+      "4 = 慢",
+      "5 = 非常慢"
+    ],
+    "NatureAbundance": [
+      "影响钓鱼/搜寻的难度. 默认 = 普通",
+      "1 = 非常贫瘠",
+      "2 = 贫瘠",
+      "3 = 普通",
+      "4 = 丰饶",
+      "5 = 非常丰饶"
+    ],
+    "Alarm": [
+      "玩家闯入新房子时激活房屋警报的可能性有多大。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "LockedHouses": [
+      "决定房屋门窗上锁几率. 默认 = 非常频繁",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "StarterKit": [
+      "带着薯片、水瓶、书包、棒球棒和铁锤开局."
+    ],
+    "Nutrition": [
+      "食物的营养价值影响玩家的身体状况."
+    ],
+    "FoodRotSpeed": [
+      "决定食物在冰箱里/外有多快会变质. 默认 = 普通",
+      "1 = 非常快",
+      "2 = 快",
+      "3 = 普通",
+      "4 = 慢",
+      "5 = 非常慢"
+    ],
+    "FridgeFactor": [
+      "决定冰箱的效果有多强劲. 默认 = 普通",
+      "1 = 很低",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "当 > 0时,物品将不会在此小时内访问过的区域中重新生成. 最小: 0 最大: 2147483647 默认: 0"
+    ],
+    "HoursForLootRespawn": [
+      "当大于 0 时，X 小时后，世界上城镇和拖车公园中的所有集装箱都将重生战利品。"
+    ],
+    "MaxItemsForLootRespawn": [
+      "物品数量大于或等于此设置的容器将不会重生。 "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "物品不会在玩家设置路障或建造的建筑物中重生。"
+    ],
+    "WorldItemRemovalList": [
+      "将在 移除清单的时间 设置的小时后删除.\n 以逗号分隔的项目类型列表."
+    ],
+    "HoursForWorldItemRemoval": [
+      "从物品掉落到地面到被移除之前的小时数。  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "如果为是,任何不在 世界物品移除列表 中的项目将被删除."
+    ],
+    "TimeSinceApo": [
+      "世界末日多久之后才开始。",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "会影响植物每天损失多少水分以及它们避免疾病的能力. 默认 = 普通",
+      "1 = 非常多",
+      "2 = 多",
+      "3 = 普通",
+      "4 = 少",
+      "5 = 很低"
+    ],
+    "PlantAbundance": [
+      "影响作物收获时的产量. 默认 = 普通",
+      "1 = 非常贫瘠",
+      "2 = 贫瘠",
+      "3 = 普通",
+      "4 = 丰饶",
+      "5 = 非常丰饶"
+    ],
+    "EndRegen": [
+      "影响体力恢复速度 默认 = 普通",
+      "1 = 非常快",
+      "2 = 快",
+      "3 = 普通",
+      "4 = 慢",
+      "5 = 非常慢"
+    ],
+    "Helicopter": [
+      "直升机在活动区域上空飞过的频率. 默认 = 一次",
+      "1 = 无",
+      "2 = 一次",
+      "3 = 偶尔",
+      "4 = 经常"
+    ],
+    "MetaEvent": [
+      "僵尸吸引元游戏事件的频率有多高,比如远处的枪声. 默认 = 偶尔",
+      "1 = 无",
+      "2 = 偶尔",
+      "3 = 经常"
+    ],
+    "SleepingEvent": [
+      "控制玩家睡眠期间的夜间元游戏事件. 默认 = 无",
+      "1 = 无",
+      "2 = 偶尔",
+      "3 = 经常"
+    ],
+    "GeneratorFuelConsumption": [
+      "影响发电机每小时消耗多少燃料. 最小: 0.00 最大: 100.00 默认: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "增加/减少发电机在地图上生成的机会. 默认 = 稀少",
+      "1 = 无",
+      "2 = 极度罕见",
+      "3 = 极稀少",
+      "4 = 稀少",
+      "5 = 普通",
+      "6 = 常见",
+      "7 = 丰饶"
+    ],
+    "AnnotatedMapChance": [
+      "影响一张被搜刮到的地图上有已故幸存者标记注释的频率. 默认 = 偶尔",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "CharacterFreePoints": [
+      "在角色创建期间追加的自由点数. 最小: -100 最大: 100 默认: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "为玩家建造的建筑提供额外的生命值，使它们更能抵抗僵尸的伤害。 ",
+      "1 = 很低",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多"
+    ],
+    "NightDarkness": [
+      "夜间的光亮度. 默认 = 普通",
+      "1 = 漆黑",
+      "2 = 黑暗",
+      "3 = 普通",
+      "4 = 明亮"
+    ],
+    "NightLength": [
+      "夜间至天明的时间. 默认 = 普通",
+      "1 = 永夜",
+      "2 = 长",
+      "3 = 普通",
+      "4 = 短",
+      "5 = 永昼"
+    ],
+    "BoneFracture": [
+      "当幸存者受到撞击,僵尸伤害和跌落的伤害时,启用或禁用断肢."
+    ],
+    "InjurySeverity": [
+      "增加和减少伤害对你身体的影响,以及它们的愈合时间. 默认 = 普通",
+      "1 = 少",
+      "2 = 普通",
+      "3 = 多"
+    ],
+    "HoursForCorpseRemoval": [
+      "距离僵尸尸体从世界上消失还有多长时间（以小时为单位）。  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "控制附近腐烂的尸体对玩家健康和情绪的影响. 默认 = 普通",
+      "1 = 没有",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 疯狂"
+    ],
+    "ZombieHealthImpact": [
+      "附近的“活”僵尸是否对玩家的健康和情绪有同样的影响。"
+    ],
+    "BloodLevel": [
+      "溅射在 地板/墙壁 上的血量. 默认 = 普通",
+      "1 = 没有",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 极度血腥"
+    ],
+    "ClothingDegradation": [
+      "控制衣物劣化,变脏和血迹斑斑的速度.  默认 = 普通",
+      "1 = 禁用",
+      "2 = 慢",
+      "3 = 普通",
+      "4 = 快"
+    ],
+    "FireSpread": [
+      "如果火灾在开始时蔓延。"
+    ],
+    "DaysForRottenFoodRemoval": [
+      "腐烂食物从地图上移除之前的游戏内天数。  "
+    ],
+    "AllowExteriorGenerator": [
+      "如果启用，发电机将在外部瓷砖上运行。  "
+    ],
+    "MaxFogIntensity": [
+      "雾气最大强度. 默认 = 普通",
+      "1 = 普通",
+      "2 = 中等",
+      "3 = 少",
+      "4 = 没有"
+    ],
+    "MaxRainFxIntensity": [
+      "降雨最大强度. 默认 = 普通",
+      "1 = 普通",
+      "2 = 中等",
+      "3 = 少"
+    ],
+    "EnableSnowOnGround": [
+      "如果地上会积雪。  "
+    ],
+    "AttackBlockMovements": [
+      "若禁用则近战攻击不影响行走."
+    ],
+    "SurvivorHouseChance": [
+      "在地图上找到随机建筑物的机会（例如，烧毁的房屋、藏有战利品或尸体的房屋）。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 总是尝试"
+    ],
+    "VehicleStoryChance": [
+      "道路故事（例如警察路障）产生的机会。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 总是尝试"
+    ],
+    "ZoneStoryChance": [
+      "特定于地图区域（例如森林中的露营地）的故事产生的机会。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 总是尝试"
+    ],
+    "AllClothesUnlocked": [
+      "自定义角色时允许您从游戏中的每件衣服中进行选择"
+    ],
+    "EnableTaintedWaterText": [
+      "如果禁用,污染的水将不会有警告标志"
+    ],
+    "EnableVehicles": [
+      "允许车辆的生成."
+    ],
+    "CarSpawnRate": [
+      "地图上发现汽车的频率 默认 = 少",
+      "1 = 没有",
+      "2 = 很低",
+      "3 = 少",
+      "4 = 普通",
+      "5 = 多"
+    ],
+    "ZombieAttractionMultiplier": [
+      "用此来放大或降低发动机的总体响度. 最小: 0.00 最大: 100.00 默认: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "汽车是否被锁住,是否需要钥匙才能启动等."
+    ],
+    "InitialGas": [
+      "控制发现的汽车的油箱装满程度. 默认 = 少",
+      "1 = 很低",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多",
+      "6 = 满"
+    ],
+    "FuelStationGasInfinite": [
+      "如果启用，加油泵将永远不会耗尽燃料"
+    ],
+    "FuelStationGasMin": [
+      "加油泵中可以产生的最小汽油量。"
+    ],
+    "FuelStationGasMax": [
+      "加油泵中可产生的最大汽油量。"
+    ],
+    "FuelStationGasEmptyChance": [
+      "单个气泵最初没有燃料的可能性（以百分比表示）。 "
+    ],
+    "LockedCar": [
+      "默认情况下汽车被锁的可能性有多大=稀少",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "CarGasConsumption": [
+      "车辆的耗油量. 最小: 0.00 最大: 100.00 默认: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "地图上发现的车辆的总体状况 默认 = 少",
+      "1 = 很低",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多"
+    ],
+    "CarDamageOnImpact": [
+      "控制撞车对车辆造成损坏的程度. 默认 = 普通",
+      "1 = 很低",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "玩家在撞车中受到的伤害. 默认 = 没有",
+      "1 = 没有",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多",
+      "5 = 非常多"
+    ],
+    "TrafficJam": [
+      "如果主要道路上出现由失事汽车组成的交通堵塞。"
+    ],
+    "CarAlarm": [
+      "发现带有警报的汽车. 默认 = 极稀少",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "PlayerDamageFromCrash": [
+      "启用或禁用玩家在车祸中受到伤害."
+    ],
+    "SirenShutoffHours": [
+      "车辆警报持续时间.\n 0.0意味着响到电池没电. 最小: 0.00 最大: 168.00 默认: 0.00"
+    ],
+    "ChanceHasGas": [
+      "控制找到油箱中有汽油的车辆的机会. 默认 = 少",
+      "1 = 少",
+      "2 = 普通",
+      "3 = 多"
+    ],
+    "RecentlySurvivorVehicles": [
+      "玩家是否可以发现诺克斯感染发生后得到保养的汽车。 ",
+      "1 = 没有",
+      "2 = 少",
+      "3 = 普通",
+      "4 = 多"
+    ],
+    "MultiHitZombies": [
+      "当启用时,部分近战武器能横扫多个僵尸."
+    ],
+    "RearVulnerability": [
+      "僵尸从背后攻击时被咬的可能性. 默认 = 多",
+      "1 = 少",
+      "2 = 中",
+      "3 = 多"
+    ],
+    "SirenEffectsZombies": [
+      "如果僵尸会朝着车辆警报声的方向前进。"
+    ],
+    "AnimalStatsModifier": [
+      "Speed at which animals stats (hunger, thirst etc.) reduce. ",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalMetaStatsModifier": [
+      "动物在元状态下统计数据（饥饿、口渴等）减少的速度。 ",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalPregnancyTime": [
+      "动物在分娩前会怀孕多长时间。 ",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalAgeModifier": [
+      "动物衰老的速度。 ",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalMilkIncModifier": [
+      "默认 = 快",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalWoolIncModifier": [
+      "默认 = 快",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalRanchChance": [
+      "在农场找到动物的机会。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 全部"
+    ],
+    "AnimalGrassRegrowTime": [
+      "草被动物吃掉或被玩家割断后重新生长的小时数。 "
+    ],
+    "AnimalMetaPredator": [
+      "如果夜间鸡舍的门开着，元狐狸（即在游戏中实际上不可见）可能会攻击您的鸡。"
+    ],
+    "AnimalMatingSeason": [
+      "如果有交配季节的动物会尊重它。  "
+    ],
+    "AnimalEggHatch": [
+      "小动物从蛋中孵化出来需要多长时间。 ",
+      "1 = Ultra Fast",
+      "2 = 非常快",
+      "3 = 快",
+      "4 = 普通",
+      "5 = 慢",
+      "6 = 非常慢"
+    ],
+    "AnimalSoundAttractZombies": [
+      "如果属实，动物的叫声会吸引附近的僵尸。"
+    ],
+    "AnimalTrackChance": [
+      "动物留下足迹的机会。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "AnimalPathChance": [
+      "为被猎杀的动物创造一条道路的机会。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁"
+    ],
+    "MaximumRatIndex": [
+      "例如的频率和强度。"
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "达到最大害虫指数需要多长时间。 "
+    ],
+    "MetaKnowledge": [
+      "如果一段媒体尚未完全查看或读取，此设置将确定它是完全显示、显示为“???”还是完全隐藏。 ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "如果属实，您将能够看到可以通过工作站完成的任何食谱，即使您尚未学习它们。"
+    ],
+    "MaximumLootedBuildingRooms": [
+      "如果建筑物的房间数量超过此数量，则不会被抢劫。 "
+    ],
+    "EnablePoisoning": [
+      "管理是否启用中毒食物 默认 = 启用",
+      "1 = 启用",
+      "2 = 禁用",
+      "3 = 只禁用漂白剂的中毒"
+    ],
+    "MaggotSpawn": [
+      "如果/当蛆虫可以在尸体中产卵时。 ",
+      "1 = 尸体和周围",
+      "2 = 只在尸体上",
+      "3 = 无"
+    ],
+    "LightBulbLifespan": [
+      "该值越高，灯泡在损坏前的使用寿命就越长。  "
+    ],
+    "FishAbundance": [
+      "河流、湖泊中鱼类丰富。 ",
+      "1 = 非常贫瘠",
+      "2 = 贫瘠",
+      "3 = 普通",
+      "4 = 丰饶",
+      "5 = 非常丰饶"
+    ],
+    "LevelForMediaXPCutoff": [
+      "当某项技能达到此级别或更高级别时，电视/VHS/其他媒体将不会为其提供 XP。 "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "当技能达到此级别或更高级别时，报废家具不会为相关技能提供经验值。"
+    ],
+    "BloodSplatLifespanDays": [
+      "旧血迹被清除之前的天数。"
+    ],
+    "LiteratureCooldown": [
+      "一个人可以从阅读以前阅读过的文献中受益之前的天数。 "
+    ],
+    "NegativeTraitsPenalty": [
+      "如果选择多个负面特征所提供的奖励特征点的回报递减。 ",
+      "1 = 没有",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = 第一个之后选择的每个负面特征扣 1 分"
+    ],
+    "MinutesPerPage": [
+      "阅读一页技能书所需的游戏分钟数。 "
+    ],
+    "KillInsideCrops": [
+      "启用后，建筑物内种植的农作物和草药将会死亡。"
+    ],
+    "PlantGrowingSeasons": [
+      "启用后，植物的生长会受到季节的影响。"
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] 建议您不要更改此设置。"
+    ],
+    "FarmingSpeedNew": [
+      "植物生长速度. 最小: 0.10 最大: 100.00 默认: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "农作物丰收。 "
+    ],
+    "MaximumLooted": [
+      "任何建筑物在被发现时已经被洗劫的可能性。"
+    ],
+    "DaysUntilMaximumLooted": [
+      "达到最大被掠夺建筑几率需要多长时间。 "
+    ],
+    "RuralLooted": [
+      "任何农村建筑被发现时都有可能被洗劫一空。"
+    ],
+    "MaximumDiminishedLoot": [
+      "当达到最大减少战利品前的天数时，不会产生最大战利品。"
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "达到最大减少战利品百分比需要多长时间。 "
+    ],
+    "MuscleStrainFactor": [
+      "当因挥舞武器或搬运重物而造成肌肉拉伤时，可起到倍增器的作用。 "
+    ],
+    "DiscomfortFactor": [
+      "当因磨损物品而感到不适时，可起到乘数作用。 "
+    ],
+    "WoundInfectionFactor": [
+      "如果大于零，则可以从严重的伤口感染中得到损害。 "
+    ],
+    "NoBlackClothes": [
+      "如果具有随机色调的真实服装不会太暗而几乎是黑色的。"
+    ],
+    "EasyClimbing": [
+      "消除攀爬绳索或翻墙时的失败机会。"
+    ],
+    "MaximumFireFuelHours": [
+      "篝火、木火炉等可放置燃料的最大小时数 最小：1 最大：168 默认：8"
+    ],
+    "FirearmUseDamageChance": [
+      "用伤害几率计算取代命中几率机制。  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "僵尸可以听到枪声的距离的乘数。 "
+    ],
+    "FirearmJamMultiplier": [
+      "枪支干扰机会的乘数。 "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Moodle 效果乘数对命中率的影响。 "
+    ],
+    "FirearmWeatherMultiplier": [
+      "天气（风、雨和雾）对命中率影响的乘数。 "
+    ],
+    "FirearmHeadGearEffect": [
+      "允许让焊接面罩等头盔影响命中率"
+    ],
+    "ClayLakeChance": [
+      "有机会将泥土地板变成粘土地板。"
+    ],
+    "ClayRiverChance": [
+      "有机会将泥土地板变成粘土地板。"
+    ],
+    "GeneratorTileRange": [
+      "最小: 1 最大: 100 默认: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "发电机可以为上方和下方多少层提供电力。 "
+    ],
+    "SpawnFrequency": [
+      "地下室在随机位置生成的频率。 ",
+      "1 = 无",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 全部"
+    ],
+    "AllowMiniMap": [
+      "如果启用，将出现一个迷你地图窗口。"
+    ],
+    "AllowWorldMap": [
+      "如果启用，则可以访问世界地图。"
+    ],
+    "MapAllKnown": [
+      "如果启用，世界地图将在游戏开始时被完全填满。"
+    ],
+    "MapNeedsLight": [
+      "如果启用，除非有可用光源，否则无法读取地图。"
+    ],
+    "Speed": [
+      "僵尸的移动速度. 默认 = 随机",
+      "1 = 短跑运动员",
+      "2 = 快速蹒跚",
+      "3 = 蹒跚",
+      "4 = 随机"
+    ],
+    "SprinterPercentage": [
+      "如果启用随机速度，这将控制僵尸中短跑运动员的百分比。"
+    ],
+    "Strength": [
+      "力量 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Toughness": [
+      "杀死僵尸的难度. 默认 = 随机",
+      "1 = 坚强",
+      "2 = 普通",
+      "3 = 脆弱",
+      "4 = 随机"
+    ],
+    "Transmission": [
+      "僵尸病毒的传播方式. 默认 = 血液+唾液",
+      "1 = 血液+唾液",
+      "2 = 仅唾液",
+      "3 = 所有感染方式",
+      "4 = 没有"
+    ],
+    "Mortality": [
+      "僵尸感染致死速度. 默认 = 2-3 天",
+      "1 = 立即",
+      "2 = 0-30 秒",
+      "3 = 0-1 分钟",
+      "4 = 0-12 小时",
+      "5 = 2-3 天",
+      "6 = 1-2 星期",
+      "7 = 无"
+    ],
+    "Reanimate": [
+      "尸体尸变速度. 默认 = 0-1 分钟",
+      "1 = 立即",
+      "2 = 0-30 秒",
+      "3 = 0-1 分钟",
+      "4 = 0-12 小时",
+      "5 = 2-3 天",
+      "6 = 1-2 星期"
+    ],
+    "Cognition": [
+      "僵尸寻路智力. 默认 = 基础本能",
+      "1 = 本能+开门",
+      "2 = 本能",
+      "3 = 基础本能",
+      "4 = 随机"
+    ],
+    "CrawlUnderVehicle": [
+      "僵尸可以在车底爬行. 默认 = 经常",
+      "1 = 从不",
+      "2 = 极稀少",
+      "3 = 稀少",
+      "4 = 偶尔",
+      "5 = 经常",
+      "6 = 非常频繁",
+      "7 = 全部"
+    ],
+    "Memory": [
+      "僵尸听/看到玩家的记忆时间. 默认 = 普通",
+      "1 = 长",
+      "2 = 普通",
+      "3 = 短",
+      "4 = 没有",
+      "5 = 随机",
+      "6 = 正常和无之间随机"
+    ],
+    "Sight": [
+      "蚊子的视线。 ",
+      "1 = 鹰眼",
+      "2 = 普通",
+      "3 = 贫瘠",
+      "4 = 随机",
+      "5 = 正常和较差之间随机"
+    ],
+    "Hearing": [
+      "僵尸的听觉半径。 ",
+      "1 = 灵敏",
+      "2 = 普通",
+      "3 = 贫瘠",
+      "4 = 随机",
+      "5 = 正常和较差之间随机"
+    ],
+    "SpottedLogic": [
+      "激活新的先进隐形机制，让您能够躲避汽车后面的僵尸，考虑特征和天气等等。"
+    ],
+    "ThumpNoChasing": [
+      "没有见到/听到玩家时僵尸可以在漫游时攻击门和建筑物."
+    ],
+    "ThumpOnConstruction": [
+      "控制僵尸是否可以摧毁玩家的建筑和防御."
+    ],
+    "ActiveOnly": [
+      "僵尸在白天还是晚上更“活跃”。  ",
+      "1 = 两者",
+      "2 = 晚上",
+      "3 = 白天"
+    ],
+    "TriggerHouseAlarm": [
+      "允许僵尸在破坏门窗时触发防盗警报."
+    ],
+    "ZombiesDragDown": [
+      "如果多个攻击僵尸可以拖垮你并杀死你。  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "如果玩家身边有爬行僵尸，就会有被一群僵尸拖下去杀死的几率。"
+    ],
+    "ZombiesFenceLunge": [
+      "如果僵尸在爬过栅栏或穿过窗户后有机会向你猛扑（如果你离得太近）。"
+    ],
+    "ZombiesArmorFactor": [
+      "在确定僵尸所穿盔甲的有效性时充当乘数。 "
+    ],
+    "ZombiesMaxDefense": [
+      "任何磨损的防护服可以为僵尸提供的最大防御百分比。 "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "拥有随机附加武器的百分比几率。 "
+    ],
+    "ZombiesFallDamage": [
+      "僵尸从高处坠落时会受到多少伤害。 "
+    ],
+    "DisableFakeDead": [
+      "一些看起来已经死了的僵尸是否会复活并攻击玩家。 ",
+      "1 = 世界上的一些丧尸会假装死亡",
+      "2 = 世界上的一些丧尸,以及你'杀死'的一些僵尸会假死",
+      "3 = 无"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "僵尸不会在玩家生成的地方生成。 ",
+      "1 = 建筑物内部及其周围",
+      "2 = 建筑物内部",
+      "3 = 房间内",
+      "4 = 僵尸可以在任何地方生成"
+    ],
+    "FenceThumpersRequired": [
+      "需要多少僵尸才能破坏高高的栅栏。 "
+    ],
+    "FenceDamageMultiplier": [
+      "僵尸破坏高栅栏的速度有多快。 "
+    ],
+    "PopulationMultiplier": [
+      "通过“僵尸计数”人口选项或此处​​的自定义数字进行设置。"
+    ],
+    "PopulationStartMultiplier": [
+      "游戏开始时所需僵尸数量的乘数。"
+    ],
+    "PopulationPeakMultiplier": [
+      "高峰日所需僵尸数量的乘数。"
+    ],
+    "PopulationPeakDay": [
+      "多少天后达到人口峰值日. 最小: 1 最大: 365 默认: 28"
+    ],
+    "RespawnHours": [
+      "僵尸在牢房中重生之前必须经过的小时数。"
+    ],
+    "RespawnUnseenHours": [
+      "一个区块在僵尸可能在其中重生之前必须未被巡视的小时数. 最小: 0.00 最大: 8760.00 默认: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "可在每个固定刷新时间在每个区块想要的人口密度中生成的比例. 最小: 0.00 最大: 1.00 默认: 0.10"
+    ],
+    "RedistributeHours": [
+      "僵尸迁移到同一单元的空部分之前必须经过的小时数。"
+    ],
+    "FollowSoundDistance": [
+      "僵尸会试图走向它最后听到的声音的大致距离. 最小: 10 最大: 1000 默认: 100"
+    ],
+    "RallyGroupSize": [
+      "真正的僵尸闲置时形成的群体规模。 "
+    ],
+    "RallyGroupSizeVariance": [
+      "僵尸组的数量（以百分比表示）的大小可以与默认值不同（更大或更小）。   "
+    ],
+    "RallyTravelDistance": [
+      "僵尸在空闲时走向群组的实际距离. 最小: 5 最大: 50 默认: 20"
+    ],
+    "RallyGroupSeparation": [
+      "群体之间的间距. 最小: 5 最大: 25 默认: 15"
+    ],
+    "RallyGroupRadius": [
+      "一组成员与其组长之间站得有多近. 最小: 1 最大: 10 默认: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "最小: 10 最大: 500 默认: 300"
+    ],
+    "Global": [
+      "所有技能升级的速度。 "
+    ],
+    "GlobalToggle": [
+      "启用后，所有技能都将使用全局乘数。"
+    ],
+    "Fitness": [
+      "体能 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Sprinting": [
+      "疾跑 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Lightfoot": [
+      "轻步 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Nimble": [
+      "敏捷 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Sneak": [
+      "潜行 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Axe": [
+      "斧 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Blunt": [
+      "钝器 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "SmallBlunt": [
+      "小型钝器 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "LongBlade": [
+      "长刃 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "SmallBlade": [
+      "短刃 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Spear": [
+      "矛 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Maintenance": [
+      "维护 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Woodwork": [
+      "木工 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Cooking": [
+      "烹饪 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Doctor": [
+      "医疗 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Electricity": [
+      "电工 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "MetalWelding": [
+      "金属焊接 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Mechanics": [
+      "机械 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Tailoring": [
+      "裁缝 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Aiming": [
+      "瞄准 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Reloading": [
+      "装填 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Fishing": [
+      "钓鱼 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Trapping": [
+      "设陷阱 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "PlantScavenging": [
+      "采集植物 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "FlintKnapping": [
+      "打制燧石 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Masonry": [
+      "石工 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Pottery": [
+      "陶艺 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Carving": [
+      "雕刻 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Husbandry": [
+      "畜牧 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Tracking": [
+      "追踪 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Blacksmith": [
+      "铁匠 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Butchering": [
+      "屠宰 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ],
+    "Glassmaking": [
+      "玻璃制作 技能升级速度。 最小: 0.00 最大: 1000.00 默认: 1.00"
+    ]
+  }
+}
+
+

@@ -399,3 +399,21 @@
   vertical-align: -0.1em;
   --CountryFlagIcon-height: 1rem;
 }
+
+.pz-copy-button.p-button {
+  background: var(--p-orange-500, #f59e0b);
+  border-color: var(--p-orange-500, #f59e0b);
+  color: #000000;
+}
+
+.pz-copy-button.p-button:enabled:hover {
+  background: var(--p-orange-600, #d97706);
+  border-color: var(--p-orange-600, #d97706);
+  color: #000000;
+}
+
+.pz-copy-button.p-button:enabled:active {
+  background: var(--p-orange-700, #b45309);
+  border-color: var(--p-orange-700, #b45309);
+  color: #000000;
+}

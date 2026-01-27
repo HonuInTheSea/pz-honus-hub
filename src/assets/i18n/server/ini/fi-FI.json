@@ -1,0 +1,554 @@
+{
+  "ini": {
+    "PVP": "PVP",
+    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolFile": "PVP-lokityökalutiedosto",
+    "PauseEmpty": "Tauko Tyhjä",
+    "GlobalChat": "Globaali chat",
+    "Open": "Avata",
+    "ServerWelcomeMessage": "Palvelimen tervetuloviesti",
+    "ServerImageLoginScreen": "Palvelimen kuvan kirjautumisnäyttö",
+    "ServerImageLoadingScreen": "Palvelimen kuvan latausnäyttö",
+    "ServerImageIcon": "Palvelimen kuvakuvake",
+    "AutoCreateUserInWhiteList": "Luo käyttäjä automaattisesti valkoiselle listalle",
+    "DisplayUserName": "Näytä käyttäjänimi",
+    "ShowFirstAndLastName": "Näytä etu- ja sukunimi",
+    "SpawnPoint": "Spawn Point",
+    "SafetySystem": "Turvajärjestelmä",
+    "ShowSafety": "Näytä Turvallisuus",
+    "SafetyToggleTimer": "Turvakytkinajastin",
+    "SafetyCooldownTimer": "Turvajäähdytysajastin",
+    "SafetyDisconnectDelay": "Turvakatkaisun viive",
+    "SpawnItems": "Spawn kohteet",
+    "DefaultPort": "Oletusportti",
+    "UDPPort": "UDP-portti",
+    "ResetID": "Nollaa tunnus",
+    "Mods": "Modit",
+    "Map": "Kartta",
+    "DoLuaChecksum": "Tee Lua-tarkistussumma",
+    "Public": "Julkinen",
+    "PublicName": "Julkinen nimi",
+    "PublicDescription": "Julkinen kuvaus",
+    "MaxPlayers": "Max pelaajat",
+    "PingLimit": "Ping-rajoitus",
+    "SafehousePreventsLootRespawn": "Safehouse estää ryöstöjen uudelleensyntymisen",
+    "DropOffWhiteListAfterDeath": "Poista valkoinen lista kuoleman jälkeen",
+    "NoFire": "Ei Tuli",
+    "AnnounceDeath": "Ilmoita Kuolema",
+    "SaveWorldEveryMinutes": "Pelasta maailma joka minuutti",
+    "PlayerSafehouse": "Pelaajien turvatalo",
+    "AdminSafehouse": "Admin Safehouse",
+    "SafehouseAllowTrepass": "Safehouse Salli Trepass",
+    "SafehouseAllowFire": "Turvahuone Salli tulipalo",
+    "SafehouseAllowLoot": "Safehouse Salli ryöstö",
+    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseDaySurvivedToClaim": "Safehouse Day Survived to Claim",
+    "SafeHouseRemovalTime": "Turvallinen talon poistoaika",
+    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "MaxSafezoneSize": "Safezonen enimmäiskoko",
+    "AllowDestructionBySledgehammer": "Salli tuhoaminen vasaralla",
+    "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+    "WarStartDelay": "Sodan alkamisen viive",
+    "WarDuration": "Sodan kesto",
+    "WarSafehouseHitPoints": "War Safehousen osumapisteet",
+    "ServerPlayerID": "Palvelimen pelaajatunnus",
+    "RCONPort": "RCON-portti",
+    "RCONPassword": "RCON salasana",
+    "DiscordEnable": "Discord käytössä",
+    "DiscordToken": "Discord Token",
+    "DiscordChannel": "Discord kanava",
+    "DiscordChannelID": "Discord-kanavan tunnus",
+    "WebhookAddress": "Webhook-osoite",
+    "Password": "Salasana",
+    "MaxAccountsPerUser": "Maksimitilit käyttäjää kohti",
+    "AllowCoop": "Salli Coop",
+    "SleepAllowed": "Nukkuminen sallittu",
+    "SleepNeeded": "Unta tarvitaan",
+    "KnockedDownAllowed": "Pudotettu sallittu",
+    "SneakModeHideFromOtherPlayers": "Sneak Mode Piilota muilta pelaajilta",
+    "WorkshopItems": "Työpajan esineet",
+    "SteamScoreboard": "Steamin tulostaulu",
+    "SteamVAC": "Steam VAC",
+    "UPnP": "UPnP",
+    "VoiceEnable": "Ääni käytössä",
+    "VoiceMinDistance": "Äänen minimietäisyys",
+    "VoiceMaxDistance": "Äänen maksimietäisyys",
+    "Voice3D": "Ääni 3D",
+    "SpeedLimit": "Nopeusrajoitus",
+    "LoginQueueConnectTimeout": "Kirjautumisjonon yhteyden aikakatkaisu",
+    "server_browser_announced_ip": "Palvelinselain ilmoitti ip",
+    "PlayerRespawnWithSelf": "Player Respawn With Self",
+    "PlayerRespawnWithOther": "Player Respawn muiden kanssa",
+    "FastForwardMultiplier": "Pikakelauskerroin",
+    "DisableSafehouseWhenPlayerConnected": "Poista Safehouse käytöstä, kun pelaaja yhdistetään",
+    "Faction": "Ryhmä",
+    "FactionDaySurvivedToCreate": "Fraction Day selvisi luomiseen",
+    "FactionPlayersRequiredForTag": "Tagille vaaditaan ryhmäsoittimia",
+    "DisableRadioStaff": "Poista Radio Staff käytöstä",
+    "DisableRadioAdmin": "Poista Radio Admin käytöstä",
+    "DisableRadioGM": "Poista Radio GM käytöstä",
+    "DisableRadioOverseer": "Poista Radio Overseer käytöstä",
+    "DisableRadioModerator": "Poista radiomoderaattori käytöstä",
+    "DisableRadioInvisible": "Poista Radio Invisible käytöstä",
+    "ClientCommandFilter": "Asiakaskomentosuodatin",
+    "ClientActionLogs": "Asiakastoimintolokit",
+    "PerkLogs": "Perk lokit",
+    "ItemNumbersLimitPerContainer": "Tuotenumerorajoitus säiliötä kohti",
+    "BloodSplatLifespanDays": "Verimerkkien elinikäpäivät",
+    "AllowNonAsciiUsername": "Salli muu kuin Ascii-käyttäjänimi",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Poista pelaajan ruumiit ruumiinpoistossa",
+    "TrashDeleteAll": "Roskakori Poista kaikki",
+    "PVPMeleeWhileHitReaction": "PVP lähitaistelu osumareaktion aikana",
+    "MouseOverToSeeDisplayName": "Vie hiiri päälle nähdäksesi näyttönimen",
+    "HidePlayersBehindYou": "Piilota pelaajat taaksesi",
+    "PVPMeleeDamageModifier": "PVP lähitaisteluvaurion muuntaja",
+    "PVPFirearmDamageModifier": "PVP ampuma-asevaurion muuntaja",
+    "CarEngineAttractionModifier": "Auton moottorin vetovoiman muokkaaja",
+    "PlayerBumpPlayer": "Player Bump Player",
+    "MapRemotePlayerVisibility": "Kartta-etäsoittimen näkyvyys",
+    "BackupsCount": "Varmuuskopioiden määrä",
+    "BackupsOnStart": "Varmuuskopiot alkaessa",
+    "BackupsPeriod": "Varmuuskopiointiaika",
+    "DisableVehicleTowing": "Poista ajoneuvon hinaus käytöstä",
+    "DisableTrailerTowing": "Poista perävaunun hinaus käytöstä",
+    "DisableBurntTowing": "Poista palanut hinaus käytöstä",
+    "BadWordListFile": "Huono sanaluettelotiedosto",
+    "GoodWordListFile": "Hyvä sanaluettelotiedosto",
+    "BadWordPolicy": "Huono sanapolitiikka",
+    "BadWordReplacement": "Huono sanan vaihto",
+    "AntiCheatSafety": "Huijausten vastainen turvallisuus",
+    "AntiCheatMovement": "Huijauksen vastainen liike",
+    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatPacket": "Huijauksenestopaketti",
+    "AntiCheatPermission": "Huijaamisen esto lupa",
+    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatSafeHouse": "Huijauksen vastainen turvallinen talo",
+    "AntiCheatRecipe": "Huijauksen vastainen resepti",
+    "AntiCheatPlayer": "Huijauksen vastainen pelaaja",
+    "AntiCheatChecksum": "Anti-huijauksen tarkistussumma",
+    "AntiCheatItem": "Huijauksen vastainen tuote",
+    "AntiCheatServerCustomization": "Huijausten vastainen palvelimen räätälöinti",
+    "MultiplayerStatisticsPeriod": "Moninpelin tilastokausi",
+    "DisableScoreboard": "Poista tulostaulu käytöstä",
+    "HideAdminsInPlayerList": "Piilota järjestelmänvalvojat pelaajaluettelosta",
+    "Seed": "Siemen",
+    "ChatMessageCharacterLimit": "Chat-viestien merkkirajoitus",
+    "ChatMessageSlowModeTime": "Chat Viesti Hidas tilan aika",
+    "comments": {
+"PVP": [
+        "Pelaajat voivat satuttaa ja tappaa muita pelaajia"
+      ],
+      "PVPLogToolChat": [
+        "PVP is logged to admin chat"
+      ],
+      "PVPLogToolFile": [
+        "PVP is logged to file"
+      ],
+      "PauseEmpty": [
+        "Peliaika pysähtyy, kun verkossa ei ole yhtään pelaajaa"
+      ],
+      "GlobalChat": [
+        "Ottaa globaalin chatin käyttöön tai poistaa sen käytöstä."
+      ],
+      "Open": [
+        "Asiakkaat voivat liittyä ilman tiliä sallittujen luettelossa. Jos se on epätosi, järjestelmänvalvojien on luotava manuaalisesti käyttäjätunnus/salasana-yhdistelmät"
+      ],
+      "ServerWelcomeMessage": [
+        "Ensimmäinen chat-paneelissa näkyvä tervetuloviesti. Tämä tulee näkyviin heti pelaajan kirjautumisen jälkeen. Voit käyttää RGB-värejä tervetuliaisviestin värin määrittämiseen. Voit myös luoda erilliset rivit sovellukseen <LINE> tekstiä. Käytä: <RGB:1,0,0> Tämä viesti näkyy punaisena!"
+      ],
+      "SneakModeHideFromOtherPlayers": [
+        "Jos käytössä, hiiviskelytilassa olevat pelaajat piilotetaan muilta pelaajilta."
+      ],
+      "ServerImageLoadingScreen": [
+        "Polku kuvaan, joka näytetään palvelimen latausnäytössä."
+      ],
+      "ServerImageIcon": [
+        "Polku kuvaan, jota käytetään palvelimen kuvakkeena."
+      ],
+      "ServerImageLoginScreen": [
+        "Polku kuvaan, joka näytetään palvelimen kirjautumisnäytössä."
+      ],
+      "AutoCreateUserInWhiteList": [
+        "Lisää tuntemattomia käyttäjänimiä sallittujen luetteloon pelaajien liittyessä. Asiakkaat antavat oman käyttäjätunnuksensa/salasanansa liittyessään. (Tämä on Open=true-palvelimille)"
+      ],
+      "DisplayUserName": [
+        "Näytä käyttäjänimet pelaajan pään yläpuolella pelissä."
+      ],
+      "ShowFirstAndLastName": [
+        "Näytä etu- ja sukunimi pelaajan pään yläpuolella käyttäjänimen sijaan."
+      ],
+      "SpawnPoint": [
+        "Pako jokainen uusi pelaaja poikimaan näissä x,y,z maailmankoordinaateissa. Etsi haluamasi koordinaatit osoitteesta map.projectzomboid.com. (Ohitetaan, kun 0,0,0)"
+      ],
+      "SafetySystem": [
+        "Pelaajat voivat liittyä PVP:hen ja poistua siitä yksilöllisesti. Pelaaja voi vahingoittaa toista pelaajaa vain, kun vähintään yksi heistä on PVP-tilassa - kuten näytön oikeassa alakulmassa näkyvät punaiset ristikkäiset akselit. Kun SafetySystem= false, pelaajat voivat satuttaa toisiaan milloin tahansa, jos PVP on käytössä."
+      ],
+      "ShowSafety": [
+        "Näytä kallokuvake PVP-tilaan siirtyneiden pelaajien pään päällä"
+      ],
+      "SafetyToggleTimer": [
+        "Aika, joka kuluu pelaajalta PVP-tilaan siirtymiseen ja siitä poistumiseen"
+      ],
+      "SafetyCooldownTimer": [
+        "Viive ennen kuin pelaaja voi palata PVP-tilaan tai poistua siitä äskettäin tehtyään"
+      ],
+      "SpawnItems": [
+        "Tuotetyypit, joilla uudet pelaajat synnyttävät.",
+        "Erottele useat tuotetyypit pilkuilla.",
+        "ex. Base.Axe,Base.BigHikingBag"
+      ],
+      "DefaultPort": [
+        "Oletusaloitusportti pelaajatiedoille. Jos UDP, tämä on toinen kahdesta käytetystä portista."
+      ],
+      "ResetID": [
+        "Nollaustunnus määrittää, onko palvelimelle suoritettu soft-reset. Jos tämä numero vastaa asiakasta, asiakkaan on luotava uusi merkki. Käytetään yhdessä PlayerServerID:n kanssa. On erittäin suositeltavaa varmuuskopioida nämä tunnukset jonnekin"
+      ],
+      "Mods": [
+        "Anna modin lataustunnus tähän. Se löytyy hakemistosta \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\info.txt"
+      ],
+      "DoLuaChecksum": [
+        "Potkaa asiakkaat, joiden pelitiedostot eivät täsmää palvelimen tiedostoihin."
+      ],
+      "Public": [
+        "Näyttää palvelimen pelin sisäisessä selaimessa. (Huomaa: Steam-yhteensopivat palvelimet näkyvät aina Steam-palvelimen selaimessa)"
+      ],
+      "PublicName": [
+        "Palvelimen nimi, joka näkyy pelin sisäisessä selaimessa ja tarvittaessa Steam-selaimessa"
+      ],
+      "PublicDescription": [
+        "Kuvaus näkyy pelin sisäisessä julkisessa palvelimessa.",
+        "kirjoittaminen luo uuden rivin kuvaukseen"
+      ],
+      "MaxPlayers": [
+        "Palvelimella voi olla kerrallaan pelaajien enimmäismäärä. Tämä ei sisällä järjestelmänvalvojia."
+      ],
+      "PingLimit": [
+        "Ping-raja millisekunteina, ennen kuin pelaaja potkaistaan ??palvelimelta. (Aseta 0 poistaaksesi käytöstä)"
+      ],
+      "SafehousePreventsLootRespawn": [
+        "Esineet eivät synny uudelleen rakennuksiin, jotka pelaajat ovat ilmoittaneet turvarakennukseksi"
+      ],
+      "DropOffWhiteListAfterDeath": [
+        "Poista pelaajatilit sallittujen listalta kuoleman jälkeen. Tämä estää pelaajia luomasta uutta hahmoa kuoleman jälkeen Open=false-palvelimilla"
+      ],
+      "NoFire": [
+        "Kaikki tulen muodot on poistettu käytöstä - paitsi nuotiot"
+      ],
+      "AnnounceDeath": [
+        "Jos tämä on valittuna, chatissa näytetään aina, kun pelaaja kuolee, yleinen viesti"
+      ],
+      "AnnounceAnimalDeath": [
+        "Jos käytössä, aina kun eläin kuolee, chatissa näytetään globaali viesti."
+      ],
+      "SaveWorldEveryMinutes": [
+        "Ladatut kartan osat tallennetaan, kun asetettu määrä reaalimaailman minuutteja on kulunut. (Kartta tallennetaan yleensä vasta, kun asiakkaat poistuvat ladatulta alueelta)"
+      ],
+      "PlayerSafehouse": [
+        "Sekä järjestelmänvalvojat että pelaajat voivat vaatia turvapaikkoja"
+      ],
+      "AdminSafehouse": [
+        "Vain järjestelmänvalvojat voivat lunastaa turvapaikkoja"
+      ],
+      "SafehouseAllowTrepass": [
+        "Salli muiden kuin jäsenten päästä turvahuoneeseen ilman kutsua"
+      ],
+      "SafehouseAllowFire": [
+        "Salli palon vaurioittaa turvahuoneita"
+      ],
+      "SafehouseAllowLoot": [
+        "Salli muiden kuin jäsenten ottaa tavaroita turvahuoneista"
+      ],
+      "SafehouseAllowRespawn": [
+        "Pelaajat synnyttävät uudelleen turvatalossa, jonka jäseninä he olivat ennen kuolemaansa"
+      ],
+      "SafehouseDaySurvivedToClaim": [
+        "Pelaajien on täytynyt selvitä tästä määrästä pelin sisäisiä päiviä ennen kuin he saavat lunastaa turvapaikan"
+      ],
+      "SafeHouseRemovalTime": [
+        "Pelaajat poistetaan automaattisesti turvahuoneesta, jossa he eivät ole käyneet näin moneen reaalimaailman tuntiin"
+      ],
+      "SafehouseAllowNonResidential": [
+        "Määrittää, voivatko pelaajat vaatia muita kuin asuinrakennuksia."
+      ],
+      "AllowDestructionBySledgehammer": [
+        "Salli pelaajien tuhota maailman esineitä vasaralla"
+      ],
+      "SledgehammerOnlyInSafehouse": [
+        "Salli pelaajien tuhota maailman esineitä vain omassa turvahuoneessaan (edellyttää AllowDestructionBySledgehammer todeksi)."
+      ],
+      "WarStartDelay": [
+        "Aika sekunneissa ennen sodan alkamista."
+      ],
+      "WarDuration": [
+        "War duration in seconds."
+      ],
+      "WarSafehouseHitPoints": [
+        "Safehouse hit points limit."
+      ],
+      "ServerPlayerID": [
+        "ServerPlayerID määrittää, onko merkki toiselta palvelimelta vai yhdeltä pelaajalta. Tätä arvoa voidaan muuttaa soft resetin avulla. Jos tämä numero vastaa asiakasohjelmaa, asiakkaan on luotava uusi merkki. Tätä käytetään yhdessä ResetID:n kanssa. On erittäin suositeltavaa varmuuskopioida nämä tunnukset jonnekin"
+      ],
+      "RCONPort": [
+        "RCON-portti (etäkonsoli)"
+      ],
+      "RCONPassword": [
+        "RCON-salasana (valitse vahva salasana)"
+      ],
+      "DiscordEnable": [
+        "Ottaa käyttöön maailmanlaajuisen tekstikeskustelun integroinnin Discord-kanavan kanssa"
+      ],
+      "DiscordToken": [
+        "Discord bot access token"
+      ],
+      "DiscordChannel": [
+        "Discord-kanavan nimi. (Kokeile erillistä kanavatunnusvaihtoehtoa, jos sinulla on ongelmia)"
+      ],
+      "DiscordChannelID": [
+        "Discord-kanavan tunnus. (Käytä, jos sinulla on ongelmia Discord-kanavan nimi -asetuksen kanssa)"
+      ],
+      "WebhookAddress": [
+        "Slackin saapuvan webhookin URL-osoite"
+      ],
+      "Password": [
+        "Asiakkaiden on tiedettävä tämä salasana liittyäkseen palvelimelle. (Ohitetaan isännöidessään palvelinta Isäntä-painikkeen kautta)"
+      ],
+      "MaxAccountsPerUser": [
+        "Rajoittaa eri tilien määrää, jonka yksi Steam-käyttäjä voi luoda tälle palvelimelle. Ohitetaan, kun käytetään Isännät-painiketta."
+      ],
+      "AllowCoop": [
+        "Salli yhteistyö-/jaetun näytön soittimet"
+      ],
+      "SleepAllowed": [
+        "Pelaajat saavat nukkua, kun heidän selviytymisensä väsyy, mutta heidän ei TARVITSE nukkua"
+      ],
+      "SleepNeeded": [
+        "Pelaajat väsyvät ja heidän täytyy nukkua. (Ohitetaan, jos SleepAllowed=false)"
+      ],
+      "KnockedDownAllowed": [
+        "WIP: Activating this setting may cause visual desynchronization of player positions."
+      ],
+      "WorkshopItems": [
+        "Luettelo palvelimelle ladattavat Workshop Mod ID -tunnukset. Jokainen on erotettava puolipisteellä. Esimerkki: WorkshopItems=514427485;513111049"
+      ],
+      "SteamScoreboard": [
+        "Näytä Steam-käyttäjänimet ja avatarit Pelaajat-luettelossa. Voi olla tosi (näkyy kaikille), false (ei näy kenellekään) tai admin (näkyy vain järjestelmänvalvojille)"
+      ],
+      "SteamVAC": [
+        "Ota Steam VAC -järjestelmä käyttöön"
+      ],
+      "UPnP": [
+        "Yritä määrittää UPnP-yhteensopiva Internet-yhdyskäytävä portin edelleenlähetyssääntöjen automaattiseksi määrittämiseksi. Palvelin palaa oletusportteihin, jos tämä epäonnistuu"
+      ],
+      "VoiceEnable": [
+        "VOIP on käytössä, kun se on valittuna"
+      ],
+      "VoiceMinDistance": [
+        "Pienin ruutuetäisyys, jonka yli VOIP-äänet voidaan kuulla. Oletus on 10"
+      ],
+      "VoiceMaxDistance": [
+        "Enimmäisetäisyys, jolta VOIP-äänet voidaan kuulla. Oletus on 300"
+      ],
+      "Voice3D": [
+        "Vaihda suunnattua ääntä VOIP:lle"
+      ],
+      "server_browser_announced_ip": [
+        "Aseta IP, josta palvelin lähetetään. Tämä on verkkokokoonpanoille, joissa on useita IP-osoitteita, kuten palvelinfarmit"
+      ],
+      "PlayerRespawnWithSelf": [
+        "Pelaajat voivat synnyttää uudelleen pelin sisällä koordinaateissa, joissa he kuolivat"
+      ],
+      "PlayerRespawnWithOther": [
+        "Pelaajat voivat synnyttää uudelleen pelin sisällä jaetun näytön / etäpelin pelaajan sijainnissa"
+      ],
+      "FastForwardMultiplier": [
+        "Säätää kuinka nopeasti aika kuluu pelaajien nukkuessa. Arvo kertoo nukkumisen aikana kuluvan ajan nopeuden."
+      ],
+      "DisableSafehouseWhenPlayerConnected": [
+        "Turvatalo toimii normaalin talon tavoin, jos turvatalon jäsen on yhdistetty (niin turvallinen, kun pelaajat ovat offline-tilassa)"
+      ],
+      "Faction": [
+        "Pelaajat voivat luoda ryhmittymiä, kun tosi"
+      ],
+      "FactionDaySurvivedToCreate": [
+        "Pelaajien on selviydyttävä tästä määrästä pelin sisäisiä päiviä ennen kuin he saavat luoda ryhmittymän"
+      ],
+      "FactionPlayersRequiredForTag": [
+        "Pelaajien lukumäärä vaaditaan ryhmän jäseniksi ennen kuin ryhmän omistaja voi luoda ryhmätunnisteen"
+      ],
+      "DisableRadioStaff": [
+        "Poista radiolähetykset käytöstä pelaajilta, joilla on käyttöoikeustaso"
+      ],
+      "DisableRadioAdmin": [
+        "Poistaa radiolähetykset pelaajilta, joilla on 'admin'-käyttöoikeus"
+      ],
+      "DisableRadioGM": [
+        "Poista radiolähetykset käytöstä pelaajilta, joilla on gm-käyttöoikeus"
+      ],
+      "DisableRadioOverseer": [
+        "Poistaa radiolähetykset pelaajilta, joilla on valvojan käyttöoikeus"
+      ],
+      "DisableRadioModerator": [
+        "Poistaa radiolähetykset pelaajilta, joilla on moderaattorin käyttöoikeus"
+      ],
+      "DisableRadioInvisible": [
+        "Poista radiolähetykset näkymättömistä soittimista"
+      ],
+      "ClientCommandFilter": [
+        "Puolipisteillä eroteltu luettelo komennoista, joita ei kirjoiteta cmd.txt-palvelimen lokiin. Esimerkiksi:",
+        "-vehicle. * * tarkoittaa, että älä kirjoita mitään ajoneuvokomentoa. Syöttö:",
+        "+vehicle.installPart tarkoittaa DO kirjoita se käsky"
+      ],
+      "ClientActionLogs": [
+        "Puolipisteillä eroteltu luettelo toiminnoista, jotka kirjoitetaan ClientActionLogs.txt-palvelimen lokiin."
+      ],
+      "PerkLogs": [
+        "Seuraa muutoksia pelaajan etujen tasoissa PerkLog.txt-palvelimen lokissa"
+      ],
+      "ItemNumbersLimitPerContainer": [
+        "Säilöön mahtuvien esineiden enimmäismäärä. Nolla tarkoittaa, että rajoituksia ei ole. (HUOM: Tämä sisältää yksittäisiä pieniä esineitä, kuten nauloja. 50 raja tarkoittaa, että vain 50 naulaa voidaan tallentaa.)"
+      ],
+      "BloodSplatLifespanDays": [
+        "Päivien lukumäärä ennen kuin vanhat veriroiskeet poistetaan.<br>Poistaminen tapahtuu, kun karttapalat ladataan.<br>Nolla tarkoittaa, että ne eivät koskaan katoa"
+      ],
+      "AllowNonAsciiUsername": [
+        "Salli muiden kuin ASCII-merkkien (kyrillinen jne.) käyttö käyttäjätunnuksissa"
+      ],
+      "RemovePlayerCorpsesOnCorpseRemoval": [
+        "Jos tämä on käytössä, se poistaa myös pelaajan ruumiit maasta, kun HoursForCorpseRemoval laukeaa."
+      ],
+      "PVPMeleeWhileHitReaction": [
+        "Jos totta, pelaaja voi lyödä uudelleen toisen pelaajan osuessa."
+      ],
+      "MouseOverToSeeDisplayName": [
+        "Jos totta, pelaajien on vietävä hiiren osoitin jonkun päälle nähdäkseen näyttönimensä."
+      ],
+      "HidePlayersBehindYou": [
+        "Jos totta, piilota automaattisesti pelaaja, jota et näe (kuten zombit)."
+      ],
+      "PVPMeleeDamageModifier": [
+        "Lisätty vahinko PVP lähitaisteluhyökkäyksille."
+      ],
+      "PVPFirearmDamageModifier": [
+        "Lisätty vahinko PVP-etäisyydelle kuuluville hyökkäyksille."
+      ],
+      "CarEngineAttractionModifier": [
+        "Muokkaa zombien vetovoimaa autoihin. (Pienemmät arvot voivat auttaa viiveessä.)"
+      ],
+      "PlayerBumpPlayer": [
+        "Säätääkö pelaajat törmäävätkö (ja lyövätkö) toisia pelaajia heidän läpi kulkiessaan."
+      ],
+      "MapRemotePlayerVisibility": [
+        "Ohjaa etäpelaajien näyttöä pelin sisäisellä kartalla.",
+        "1=Hidden 2=Friends 3=Everyone"
+      ],
+      "DisableVehicleTowing": [
+        "Disables vehicle towing"
+      ],
+      "DisableTrailerTowing": [
+        "Disables trailer towing"
+      ],
+      "DisableBurntTowing": [
+        "Disables burnt vehicle towing"
+      ],
+      "BadWordListFile": [
+        "Polku tiedostoon, jossa on luettelo kiellettävistä sanoista. "
+      ],
+      "GoodWordListFile": [
+        "Polku tiedostoon, jossa on luettelo sallituista sanoista, vaikka ne sisältävät huonoja sanoja. "
+      ],
+      "BadWordPolicy": [
+        "Mitä tehdä huonon sanan lähettäjälle chatissa: 1 - kieltää, 2 - potkia, 3 - tallentaa rikkomus tietokantaan, 4 - mykistää"
+      ],
+      "BadWordReplacement": [
+        "Symboli tai tekstikappale, joka korvaa huonon sanan"
+      ],
+      "AntiCheatSafety": [
+        "Disables safety system anti-cheat protection."
+      ],
+      "AntiCheatMovement": [
+        "Poistaa liikkeen huijauksenestonsuojauksen."
+      ],
+      "AntiCheatHit": [
+        "Disables character hit anti-cheat protection."
+      ],
+      "AntiCheatPacket": [
+        "Disables packet checks anti-cheat protection."
+      ],
+      "AntiCheatPermission": [
+        "Disables player permissions anti-cheat protection."
+      ],
+      "AntiCheatXP": [
+        "Disables player XP anti-cheat protection."
+      ],
+      "AntiCheatFire": [
+        "Disables fire checks anti-cheat protection."
+      ],
+      "AntiCheatSafeHouse": [
+        "Disables safehouse anti-cheat protection."
+      ],
+      "AntiCheatRecipe": [
+        "Disables recipe checks anti-cheat protection."
+      ],
+      "AntiCheatPlayer": [
+        "Poistaa pelaajien huijauksenestonsuojauksen."
+      ],
+      "AntiCheatChecksum": [
+        "Disables checksum anti-cheat protection."
+      ],
+      "AntiCheatItem": [
+        "Poistaa huijaussuojan käytöstä."
+      ],
+      "AntiCheatServerCustomization": [
+        "Poistaa palvelimen mukautuksen huijauksenestonsuojauksen."
+      ],
+      "MultiplayerStatisticsPeriod": [
+        "Asettaa moninpelin päivitysjakson sekunneissa. "
+      ],
+      "DisableScoreboard": [
+        "Disables scoreboard."
+      ],
+      "HideAdminsInPlayerList": [
+        "Piilottaa järjestelmänvalvojat pelaajaluettelosta."
+      ],
+      "Seed": [
+        "Maailman luomiseen käytetty worldgen siemen.<br>Jos haluat muuttaa tätä, aseta uusi arvo ja poista map_worldgen.bin tallennushakemistostasi."
+      ],
+      "SpeedLimit": [
+        "Ajoneuvon nopeusrajoitus."
+      ],
+      "BackupsCount": [
+        "Min: 1 Maks: 300 Oletus: 5"
+      ],
+      "BackupsPeriod": [
+        "Min: 0 Maks: 1500 Oletus: 0"
+      ],
+      "ChatMessageCharacterLimit": [
+        "Min: 64 Maks: 1024 Oletus: 200"
+      ],
+      "ChatMessageSlowModeTime": [
+        "Min: 1 Maks: 30 Oletus: 3"
+      ],
+      "LoginQueueConnectTimeout": [
+        "Min: 20 Maks: 1200 Oletus: 60"
+      ],
+      "Map": [
+        "Syötä modin kansion nimi, joka löytyy polusta \\Steam\\steamapps\\workshop\\modID\\mods\\modName\\media\\maps\\"
+      ],
+      "MaxSafezoneSize": [
+        "Min: 0 Maks: 2147483647 Oletus: 20000"
+      ],
+      "SafetyDisconnectDelay": [
+        "Min: 0 Maks: 60 Oletus: 60"
+      ],
+      "TrashDeleteAll": [
+        "Jos käytössä, pelaaja voi käyttää \\"poista kaikki\\" -painiketta roskiksissa."
+      ],
+      "UDPPort": [
+        "Min: 0 Maks: 65535 Oletus: 16262"
+      ]
+    }
+  }
+}
+
+

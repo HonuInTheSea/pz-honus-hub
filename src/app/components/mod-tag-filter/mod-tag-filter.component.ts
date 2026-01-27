@@ -1,4 +1,4 @@
-import { Component, DestroyRef } from '@angular/core';
+import { Component, DestroyRef, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MultiSelectModule } from 'primeng/multiselect';
@@ -23,6 +23,7 @@ interface TagOption {
   templateUrl: './mod-tag-filter.component.html',
 })
 export class ModTagFilterComponent {
+  @Input() compact = false;
   tagOptions: TagOption[] = [];
   selectedValues: string[] = [];
   matchMode: 'any' | 'all' = 'any';

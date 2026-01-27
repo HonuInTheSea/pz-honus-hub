@@ -1,0 +1,1521 @@
+{
+  "Zombies": "Zombiler",
+  "Distribution": "Dağılım",
+  "ZombieVoronoiNoise": "Zombi Voronoi Gürültüsü",
+  "ZombieRespawn": "Zombi Yeniden Doğma",
+  "ZombieMigrate": "Zombi Göçü",
+  "DayLength": "Gün Uzunluğu",
+  "StartMonth": "Başlangıç Ayı",
+  "StartDay": "Başlangıç Günü",
+  "StartTime": "Başlangıç Saati",
+  "DayNightCycle": "Gün Gece Döngüsü",
+  "ClimateCycle": "İklim Döngüsü",
+  "FogCycle": "Sis Döngüsü",
+  "WaterShut": "Su Kesintisi",
+  "ElecShut": "Elektrik Kesintisi",
+  "AlarmDecay": "Alarm Azalması",
+  "WaterShutModifier": "Su Kesintisi Çarpanı",
+  "ElecShutModifier": "Elektrik Kesintisi Çarpanı",
+  "AlarmDecayModifier": "Alarm Azalma Çarpanı",
+  "FoodLootNew": "Yeni Yiyecek Ganimeti",
+  "LiteratureLootNew": "Yeni Edebiyat Ganimeti",
+  "MedicalLootNew": "Yeni Tıbbi Ganimet",
+  "SurvivalGearsLootNew": "Yeni Hayatta Kalma Teçhizatı Ganimeti",
+  "CannedFoodLootNew": "Yeni Konserve Yiyecek Ganimeti",
+  "WeaponLootNew": "Yeni Silah Ganimeti",
+  "RangedWeaponLootNew": "Yeni Menzilli Silah Ganimeti",
+  "AmmoLootNew": "Yeni Mühimmat Ganimeti",
+  "MechanicsLootNew": "Yeni Mekanik Ganimeti",
+  "OtherLootNew": "Yeni Diğer Ganimet",
+  "ClothingLootNew": "Yeni Kıyafet Ganimeti",
+  "ContainerLootNew": "Yeni Kap Ganimeti",
+  "KeyLootNew": "Yeni Anahtar Ganimeti",
+  "MediaLootNew": "Yeni Medya Ganimeti",
+  "MementoLootNew": "Yeni Hatıra Ganimeti",
+  "CookwareLootNew": "Yeni Pişirme Gereci Ganimeti",
+  "MaterialLootNew": "Yeni Malzeme Ganimeti",
+  "FarmingLootNew": "Yeni Tarım Ganimeti",
+  "ToolLootNew": "Yeni Alet Ganimeti",
+  "RollsMultiplier": "Rulo Çarpanı",
+  "LootItemRemovalList": "Ganimet Öğesi Kaldırma Listesi",
+  "RemoveStoryLoot": "Hikâye Ganimetini Kaldır",
+  "RemoveZombieLoot": "Zombi Ganimetini Kaldır",
+  "ZombiePopLootEffect": "Zombi Popülasyon Ganimet Etkisi",
+  "InsaneLootFactor": "Çılgın Ganimet Faktörü",
+  "ExtremeLootFactor": "Aşırı Ganimet Faktörü",
+  "RareLootFactor": "Nadir Ganimet Faktörü",
+  "NormalLootFactor": "Normal Ganimet Faktörü",
+  "CommonLootFactor": "Yaygın Ganimet Faktörü",
+  "AbundantLootFactor": "Bol Ganimet Faktörü",
+  "Temperature": "Sıcaklık",
+  "Rain": "Yağmur",
+  "ErosionSpeed": "Erozyon Hızı",
+  "ErosionDays": "Erozyon Günleri",
+  "Farming": "Tarım",
+  "CompostTime": "Kompost Süresi",
+  "StatsDecrease": "İstatistik Azalması",
+  "NatureAbundance": "Doğa Bolluğu",
+  "Alarm": "Alarm",
+  "LockedHouses": "Kilitli Evler",
+  "StarterKit": "Başlangıç Kiti",
+  "Nutrition": "Beslenme",
+  "FoodRotSpeed": "Yiyecek Çürüme Hızı",
+  "FridgeFactor": "Buzdolabı Faktörü",
+  "SeenHoursPreventLootRespawn": "Görülen Saatler Ganimet Yeniden Doğmasını Engeller",
+  "HoursForLootRespawn": "Ganimet Yeniden Doğma Saatleri",
+  "MaxItemsForLootRespawn": "Ganimet Yeniden Doğma İçin Azami Öğe",
+  "ConstructionPreventsLootRespawn": "İnşaat Ganimet Yeniden Doğmasını Engeller",
+  "WorldItemRemovalList": "Dünya Öğesi Kaldırma Listesi",
+  "HoursForWorldItemRemoval": "Dünya Öğesi Kaldırma Saatleri",
+  "ItemRemovalListBlacklistToggle": "Öğe Kaldırma Listesi Kara Liste Anahtarı",
+  "TimeSinceApo": "Kıyametten Sonra Geçen Süre",
+  "PlantResilience": "Bitki Dayanıklılığı",
+  "PlantAbundance": "Bitki Bolluğu",
+  "EndRegen": "Dayanıklılık Yenilenmesi",
+  "Helicopter": "Helikopter",
+  "MetaEvent": "Meta Olay",
+  "SleepingEvent": "Uyku Olayı",
+  "GeneratorFuelConsumption": "Jeneratör Yakıt Tüketimi",
+  "GeneratorSpawning": "Jeneratör Oluşumu",
+  "AnnotatedMapChance": "Açıklamalı Harita Şansı",
+  "CharacterFreePoints": "Karakter Ücretsiz Puanları",
+  "ConstructionBonusPoints": "İnşaat Bonus Puanları",
+  "NightDarkness": "Gece Karanlığı",
+  "NightLength": "Gece Uzunluğu",
+  "BoneFracture": "Kemik Kırığı",
+  "InjurySeverity": "Yaralanma Şiddeti",
+  "HoursForCorpseRemoval": "Ceset Kaldırma Saatleri",
+  "DecayingCorpseHealthImpact": "Çürüyen Ceset Sağlık Etkisi",
+  "ZombieHealthImpact": "Zombi Sağlık Etkisi",
+  "BloodLevel": "Kan Seviyesi",
+  "ClothingDegradation": "Kıyafet Aşınması",
+  "FireSpread": "Yangın Yayılması",
+  "DaysForRottenFoodRemoval": "Çürük Yiyecek Kaldırma Günleri",
+  "AllowExteriorGenerator": "Dış Mekan Jeneratörüne İzin Ver",
+  "MaxFogIntensity": "Azami Sis Yoğunluğu",
+  "MaxRainFxIntensity": "Azami Yağmur Efekti Yoğunluğu",
+  "EnableSnowOnGround": "Zeminde Karı Etkinleştir",
+  "AttackBlockMovements": "Saldırı Hareketleri Engeller",
+  "SurvivorHouseChance": "Hayatta Kalan Evi Şansı",
+  "VehicleStoryChance": "Araç Hikâyesi Şansı",
+  "ZoneStoryChance": "Bölge Hikâyesi Şansı",
+  "AllClothesUnlocked": "Tüm Kıyafetler Kilidi Açık",
+  "EnableTaintedWaterText": "Kirli Su Metnini Etkinleştir",
+  "EnableVehicles": "Araçları Etkinleştir",
+  "CarSpawnRate": "Araç Doğma Oranı",
+  "ZombieAttractionMultiplier": "Zombi Çekim Çarpanı",
+  "VehicleEasyUse": "Araç Kolay Kullanım",
+  "InitialGas": "Başlangıç Benzini",
+  "FuelStationGasInfinite": "Akaryakıt İstasyonu Benzini Sonsuz",
+  "FuelStationGasMin": "Akaryakıt İstasyonu Benzini Minimum",
+  "FuelStationGasMax": "Akaryakıt İstasyonu Benzini Maksimum",
+  "FuelStationGasEmptyChance": "Akaryakıt İstasyonu Benzini Boş Şansı",
+  "LockedCar": "Kilitli Araç",
+  "CarGasConsumption": "Araç Benzin Tüketimi",
+  "CarGeneralCondition": "Araç Genel Durumu",
+  "CarDamageOnImpact": "Çarpma Sonrası Araç Hasarı",
+  "DamageToPlayerFromHitByACar": "Araba Çarpmasından Oyuncu Hasarı",
+  "TrafficJam": "Trafik Sıkışıklığı",
+  "CarAlarm": "Araç Alarmı",
+  "PlayerDamageFromCrash": "Kaza Sonrası Oyuncu Hasarı",
+  "SirenShutoffHours": "Siren Kapatma Saatleri",
+  "ChanceHasGas": "Benzin Var Şansı",
+  "RecentlySurvivorVehicles": "Yakın Zamanda Hayatta Kalan Araçları",
+  "MultiHitZombies": "Çoklu Vuruş Zombileri",
+  "RearVulnerability": "Arka Zayıflık",
+  "SirenEffectsZombies": "Siren Zombileri Etkiler",
+  "AnimalStatsModifier": "Hayvan İstatistik Çarpanı",
+  "AnimalMetaStatsModifier": "Hayvan Meta İstatistik Çarpanı",
+  "AnimalPregnancyTime": "Hayvan Gebelik Süresi",
+  "AnimalAgeModifier": "Hayvan Yaş Çarpanı",
+  "AnimalMilkIncModifier": "Hayvan Süt Artış Çarpanı",
+  "AnimalWoolIncModifier": "Hayvan Yün Artış Çarpanı",
+  "AnimalRanchChance": "Hayvan Çiftliği Şansı",
+  "AnimalGrassRegrowTime": "Hayvan Ot Yeniden Büyüme Süresi",
+  "AnimalMetaPredator": "Hayvan Meta Yırtıcı",
+  "AnimalMatingSeason": "Hayvan Çiftleşme Mevsimi",
+  "AnimalEggHatch": "Hayvan Yumurta Çıkışı",
+  "AnimalSoundAttractZombies": "Hayvan Sesi Zombileri Çeker",
+  "AnimalTrackChance": "Hayvan İz Şansı",
+  "AnimalPathChance": "Hayvan Patika Şansı",
+  "MaximumRatIndex": "Azami Sıçan Endeksi",
+  "DaysUntilMaximumRatIndex": "Azami Sıçan Endeksine Kalan Gün",
+  "MetaKnowledge": "Meta Bilgi",
+  "SeeNotLearntRecipe": "Öğrenilmemiş Tarifi Gör",
+  "MaximumLootedBuildingRooms": "Azami Yağmalanmış Bina Odaları",
+  "EnablePoisoning": "Zehirlenmeyi Etkinleştir",
+  "MaggotSpawn": "Kurtçuk Doğma",
+  "LightBulbLifespan": "Ampul Ömrü",
+  "FishAbundance": "Balık Bolluğu",
+  "LevelForMediaXPCutoff": "Medya XP Kesme Seviyesi",
+  "LevelForDismantleXPCutoff": "Sökme XP Kesme Seviyesi",
+  "BloodSplatLifespanDays": "Kan Sıçraması Ömür Günleri",
+  "LiteratureCooldown": "Edebiyat Bekleme Süresi",
+  "NegativeTraitsPenalty": "Olumsuz Özellikler Cezası",
+  "MinutesPerPage": "Sayfa Başına Dakika",
+  "KillInsideCrops": "Ekin İçinde Öldür",
+  "PlantGrowingSeasons": "Bitki Büyüme Mevsimleri",
+  "PlaceDirtAboveground": "Toprağı Yerin Üstüne Yerleştir",
+  "FarmingSpeedNew": "Yeni Tarım Hızı",
+  "FarmingAmountNew": "Yeni Tarım Miktarı",
+  "MaximumLooted": "Azami Yağmalanmış",
+  "DaysUntilMaximumLooted": "Azami Yağmalanmaya Kalan Gün",
+  "RuralLooted": "Kırsal Yağmalanmış",
+  "MaximumDiminishedLoot": "Azami Azalmış Ganimet",
+  "DaysUntilMaximumDiminishedLoot": "Azami Azalmış Ganimete Kalan Gün",
+  "MuscleStrainFactor": "Kas Zorlanması Faktörü",
+  "DiscomfortFactor": "Rahatsızlık Faktörü",
+  "WoundInfectionFactor": "Yara Enfeksiyonu Faktörü",
+  "NoBlackClothes": "Siyah Kıyafet Yok",
+  "EasyClimbing": "Kolay Tırmanma",
+  "MaximumFireFuelHours": "Azami Ateş Yakıt Saatleri",
+  "FirearmUseDamageChance": "Ateşli Silah Kullanım Hasar Şansı",
+  "FirearmNoiseMultiplier": "Ateşli Silah Gürültü Çarpanı",
+  "FirearmJamMultiplier": "Ateşli Silah Tutukluk Çarpanı",
+  "FirearmMoodleMultiplier": "Ateşli Silah Moodle Çarpanı",
+  "FirearmWeatherMultiplier": "Ateşli Silah Hava Durumu Çarpanı",
+  "FirearmHeadGearEffect": "Ateşli Silah Başlık Etkisi",
+  "ClayLakeChance": "Kil Gölü Şansı",
+  "ClayRiverChance": "Kil Nehri Şansı",
+  "GeneratorTileRange": "Jeneratör Döşeme Menzili",
+  "GeneratorVerticalPowerRange": "Jeneratör Dikey Güç Menzili",
+  "Basement": "Bodrum",
+  "SpawnFrequency": "Doğma Sıklığı",
+  "Map": "Harita",
+  "AllowMiniMap": "Mini Haritaya İzin Ver",
+  "AllowWorldMap": "Dünya Haritasına İzin Ver",
+  "MapAllKnown": "Tüm Harita Bilinir",
+  "MapNeedsLight": "Harita Işığa İhtiyaç Duyar",
+  "ZombieLore": "Zombi Efsanesi",
+  "Speed": "Hız",
+  "SprinterPercentage": "Sprinter Yüzdesi",
+  "Strength": "Güç",
+  "Toughness": "Dayanıklılık",
+  "Transmission": "Bulaşma",
+  "Mortality": "Ölümcüllük",
+  "Reanimate": "Yeniden Canlanma",
+  "Cognition": "Biliş",
+  "CrawlUnderVehicle": "Aracın Altından Sürün",
+  "Memory": "Hafıza",
+  "Sight": "Görüş",
+  "Hearing": "İşitme",
+  "SpottedLogic": "Fark Edilme Mantığı",
+  "ThumpNoChasing": "Kovalama Yoksa Vurma",
+  "ThumpOnConstruction": "İnşaata Vurma",
+  "ActiveOnly": "Yalnızca Aktif",
+  "TriggerHouseAlarm": "Ev Alarmını Tetikle",
+  "ZombiesDragDown": "Zombiler Aşağı Çeker",
+  "ZombiesCrawlersDragDown": "Sürüngen Zombiler Aşağı Çeker",
+  "ZombiesFenceLunge": "Zombiler Çit Atlayışı",
+  "ZombiesArmorFactor": "Zombi Zırh Faktörü",
+  "ZombiesMaxDefense": "Zombi Azami Savunma",
+  "ChanceOfAttachedWeapon": "Takılı Silah Şansı",
+  "ZombiesFallDamage": "Zombi Düşme Hasarı",
+  "DisableFakeDead": "Sahte Ölüyü Devre Dışı Bırak",
+  "PlayerSpawnZombieRemoval": "Oyuncu Doğum Zombi Kaldırma",
+  "FenceThumpersRequired": "Çit Vurucular Gerekli",
+  "FenceDamageMultiplier": "Çit Hasar Çarpanı",
+  "ZombieConfig": "Zombi Yapılandırması",
+  "PopulationMultiplier": "Popülasyon Çarpanı",
+  "PopulationStartMultiplier": "Popülasyon Başlangıç Çarpanı",
+  "PopulationPeakMultiplier": "Popülasyon Zirve Çarpanı",
+  "PopulationPeakDay": "Popülasyon Zirve Günü",
+  "RespawnHours": "Yeniden Doğma Saatleri",
+  "RespawnUnseenHours": "Görülmeyen Yeniden Doğma Saatleri",
+  "RespawnMultiplier": "Yeniden Doğma Çarpanı",
+  "RedistributeHours": "Yeniden Dağıtım Saatleri",
+  "FollowSoundDistance": "Ses Takip Mesafesi",
+  "RallyGroupSize": "Toplanma Grup Boyutu",
+  "RallyGroupSizeVariance": "Toplanma Grup Boyutu Varyansı",
+  "RallyTravelDistance": "Toplanma Seyahat Mesafesi",
+  "RallyGroupSeparation": "Toplanma Grup Ayrımı",
+  "RallyGroupRadius": "Toplanma Grup Yarıçapı",
+  "ZombiesCountBeforeDelete": "Silmeden Önce Zombi Sayısı",
+  "MultiplierConfig": "Çarpan Yapılandırması",
+  "Global": "Genel",
+  "GlobalToggle": "Genel Anahtar",
+  "Fitness": "Kondisyon",
+  "Sprinting": "Sprint",
+  "Lightfoot": "Hafif Adım",
+  "Nimble": "Çevik",
+  "Sneak": "Gizlilik",
+  "Axe": "Balta",
+  "Blunt": "Kör",
+  "SmallBlunt": "Küçük Kör",
+  "LongBlade": "Uzun Bıçak",
+  "SmallBlade": "Küçük Bıçak",
+  "Spear": "Mızrak",
+  "Maintenance": "Bakım",
+  "Woodwork": "Marangozluk",
+  "Cooking": "Yemek Pişirme",
+  "Doctor": "Doktor",
+  "Electricity": "Elektrik",
+  "MetalWelding": "Metal Kaynak",
+  "Mechanics": "Mekanik",
+  "Tailoring": "Terzilik",
+  "Aiming": "Nişan Alma",
+  "Reloading": "Yeniden Doldurma",
+  "Fishing": "Balıkçılık",
+  "Trapping": "Tuzak Kurma",
+  "PlantScavenging": "Bitki Toplama",
+  "FlintKnapping": "Çakmaktaşı Yontma",
+  "Masonry": "Taş İşçiliği",
+  "Pottery": "Seramik",
+  "Carving": "Oymacılık",
+  "Husbandry": "Hayvancılık",
+  "Tracking": "İz Sürme",
+  "Blacksmith": "Demircilik",
+  "Butchering": "Kasaplık",
+  "Glassmaking": "Camcılık",
+  "comments": {
+    "Zombies": [
+      "Bunu değiştirmek, gelişmiş ayarlardaki \\Nüfus Çarpanı\\ ayarını etkiler. Varsayılan = Normal",
+      "1 = En Yüksek",
+      "2 = Çok Yüksek",
+      "3 = Yüksek",
+      "4 = Normal",
+      "5 = Az",
+      "6 = Yok"
+    ],
+    "Distribution": [
+      "Zombilerin haritaya nasıl dağıldığı. ",
+      "1 = Şehir Odaklı",
+      "2 = Dağınık"
+    ],
+    "ZombieVoronoiNoise": [
+      "Zombi dağıtımına bir miktar rastgeleleştirme uygulanıp uygulanmadığını kontrol eder."
+    ],
+    "ZombieRespawn": [
+      "Dünyaya ne sıklıkla yeni zombilerin ekleneceğini tanımlar. Varsayılan = Normal",
+      "1 = Yüksek",
+      "2 = Normal",
+      "3 = Az",
+      "4 = Yok"
+    ],
+    "ZombieMigrate": [
+      "Zombie allowed to migrate to empty cells."
+    ],
+    "DayLength": [
+      "Varsayılan = 1 Saat, 30 Dakika",
+      "1 = 15 Dakika",
+      "2 = 30 Dakika",
+      "3 = 1 Saat",
+      "4 = 1 Saat, 30 Dakika",
+      "5 = 2 Saat",
+      "6 = 3 Saat",
+      "7 = 4 Saat",
+      "8 = 5 Saat",
+      "9 = 12 Saat",
+      "10 = Gerçek Zamanlı",
+      "11 = 8 Saat",
+      "12 = 9 Saat",
+      "13 = 10 Saat",
+      "14 = 11 Saat",
+      "15 = 12 Saat",
+      "16 = 13 Saat",
+      "17 = 14 Saat",
+      "18 = 15 Saat",
+      "19 = 16 Saat",
+      "20 = 17 Saat",
+      "21 = 18 Saat",
+      "22 = 19 Saat",
+      "23 = 20 Saat",
+      "24 = 21 Saat",
+      "25 = 22 Saat",
+      "26 = 23 Saat",
+      "27 = Gerçek Zamanlı"
+    ],
+    "StartMonth": [
+      "Oyunun başladığı ay. ",
+      "1 = Ocak",
+      "2 = Şubat",
+      "3 = Mart",
+      "4 = Nisan",
+      "5 = Mayıs",
+      "6 = Haziran",
+      "7 = Temmuz",
+      "8 = Ağustos",
+      "9 = Eylül",
+      "10 = Ekim",
+      "11 = Kasım",
+      "12 = Aralık"
+    ],
+    "StartDay": [
+      "Oyunların başlayacağı ayın günü."
+    ],
+    "StartTime": [
+      "Oyunun başlayacağı günün saati. ",
+      "1 = 7:00",
+      "2 = 9:00",
+      "3 = 12:00",
+      "4 = 14:00",
+      "5 = 17:00",
+      "6 = 21:00",
+      "7 = 00:00",
+      "8 = 02:00",
+      "9 = 05:00"
+    ],
+    "DayNightCycle": [
+      "Günün saatinin doğal olarak değişmesi veya her zaman gündüz/gece olması. ",
+      "1 = Normal",
+      "2 = Endless Day",
+      "3 = Endless Night"
+    ],
+    "ClimateCycle": [
+      "Havanın değişmesi veya tek bir durumda kalması. ",
+      "1 = Normal",
+      "2 = No Weather",
+      "3 = Endless Rain",
+      "4 = Endless Storm",
+      "5 = Endless Snow",
+      "6 = Endless Blizzard"
+    ],
+    "FogCycle": [
+      "Sis doğal olarak mı oluşuyor, hiç mi oluşmuyor veya her zaman mevcut mu? ",
+      "1 = Normal",
+      "2 = No Fog",
+      "3 = Endless Fog"
+    ],
+    "WaterShut": [
+      "Varsayılan başlangıç ​​tarihinden (9 Temmuz 1993) ne kadar süre sonra sıhhi tesisat armatürleri (örneğin lavabolar) sonsuz su kaynağı olmaktan çıkar? ",
+      "1 = Anlık",
+      "2 = 0-30 Gün",
+      "3 = 0-2 Ay",
+      "4 = 0-6 Ay",
+      "5 = 0-1 Yıl",
+      "6 = 0-5 Yıl",
+      "7 = 2-6 Ay",
+      "8 = 6-12 Ay",
+      "9 = Kapalı"
+    ],
+    "ElecShut": [
+      "Varsayılan başlangıç ​​tarihinden (9 Temmuz 1993) ne kadar süre sonra dünya elektriğinin tamamen kesileceği. ",
+      "1 = Anlık",
+      "2 = 0-30 Gün",
+      "3 = 0-2 Ay",
+      "4 = 0-6 Ay",
+      "5 = 0-1 Yıl",
+      "6 = 0-5 Yıl",
+      "7 = 2-6 Ay",
+      "8 = 6-12 Ay",
+      "9 = Kapalı"
+    ],
+    "AlarmDecay": [
+      "Güç kesildikten sonra alarm pillerinin ne kadar süre dayanabileceği. ",
+      "1 = Anlık",
+      "2 = 0-30 Gün",
+      "3 = 0-2 Ay",
+      "4 = 0-6 Ay",
+      "5 = 0-1 Yıl",
+      "6 = 0-5 Yıl"
+    ],
+    "WaterShutModifier": [
+      "Varsayılan başlangıç ​​tarihinden (9 Temmuz 1993) ne kadar süre sonra sıhhi tesisat armatürleri (örneğin lavabolar) sonsuz su kaynağı olmaktan çıkar? "
+    ],
+    "ElecShutModifier": [
+      "Varsayılan başlangıç ​​tarihinden (9 Temmuz 1993) ne kadar süre sonra dünya elektriğinin tamamen kesileceği. "
+    ],
+    "AlarmDecayModifier": [
+      "Güç kesildikten sonra alarm pillerinin ne kadar süre dayanabileceği. "
+    ],
+    "FoodLootNew": [
+      "Çürüyebilecek veya bozulabilecek herhangi bir yiyecek. "
+    ],
+    "LiteratureLootNew": [
+      "Okunabilen tüm öğeler, el ilanları dahil Min: 0,00 Maks: 4,00 Varsayılan: 0,60"
+    ],
+    "MedicalLootNew": [
+      "İlaç, bandaj ve ilk yardım araçları. "
+    ],
+    "SurvivalGearsLootNew": [
+      "Fishing Rods, Tents, camping gear etc. Min: 0.00 Maks: 4.00 Varsayılan: 0.60"
+    ],
+    "CannedFoodLootNew": [
+      "Konserve ve kurutulmuş gıdalar, içecekler. "
+    ],
+    "WeaponLootNew": [
+      "Weapons that are not tools in other categories. Min: 0.00 Maks: 4.00 Varsayılan: 0.60"
+    ],
+    "RangedWeaponLootNew": [
+      "Also includes weapon attachments. Min: 0.00 Maks: 4.00 Varsayılan: 0.60"
+    ],
+    "AmmoLootNew": [
+      "Gevşek cephane, kutular ve şarjörler. "
+    ],
+    "MechanicsLootNew": [
+      "Araç parçaları ve bunları takmak için gereken aletler. "
+    ],
+    "OtherLootNew": [
+      "Diğer her şey. "
+    ],
+    "ClothingLootNew": [
+      "Konteyner olmayan tüm giyilebilir ürünler. "
+    ],
+    "ContainerLootNew": [
+      "Sırt çantaları ve diğer giyilebilir/donatılabilir kaplar, ör. "
+    ],
+    "KeyLootNew": [
+      "Binalar/arabalar için anahtarlar, anahtarlıklar ve kilitler. "
+    ],
+    "MediaLootNew": [
+      "VHS kasetleri ve CD'ler. "
+    ],
+    "MementoLootNew": [
+      "Spiffo eşyaları, peluşlar ve diğer koleksiyonluk hatıra eşyaları, örn. "
+    ],
+    "CookwareLootNew": [
+      "Silah olabilenler (örneğin bıçaklar) da dahil olmak üzere, yemek pişirmede kullanılan eşyalar. "
+    ],
+    "MaterialLootNew": [
+      "Üretim veya inşaat için malzeme olarak kullanılan öğeler ve silahlar. "
+    ],
+    "FarmingLootNew": [
+      "Tohum, Mala veya Kürek gibi hem hayvan hem de bitki tarımında kullanılan öğeler ve silahlar. "
+    ],
+    "ToolLootNew": [
+      "Alet olan ancak Mekanik veya Çiftçilik gibi diğer kategorilere uymayan öğeler ve silahlar. "
+    ],
+    "RollsMultiplier": [
+      "<BHC> [!] Bunu DEĞİŞTİRMEMENİZ önerilir. "
+    ],
+    "LootItemRemovalList": [
+      "Sıradan ganimet olarak ortaya çıkmayacak olan eşya türlerinin virgülle ayrılmış listesi."
+    ],
+    "RemoveStoryLoot": [
+      "Etkinleştirilirse, Ganimet Öğesi Kaldırma Listesindeki veya nadirliği 'Yok' olarak ayarlanmış öğeler, rastgele dünya hikayelerinde ortaya çıkmaz."
+    ],
+    "RemoveZombieLoot": [
+      "Etkinleştirilirse, Yağma Öğesi Kaldırma Listesindeki veya nadirliği 'Yok' olarak ayarlanmış öğeler zombiler tarafından giyilmez veya zombilere eklenmez."
+    ],
+    "ZombiePopLootEffect": [
+      "0'dan büyükse, ganimetlerin ortaya çıkışı yakındaki zombilerin sayısına göre artar ve etki bu sayıyla çarpılır. "
+    ],
+    "InsaneLootFactor": [
+      "Min: 0.00 Maks: 0.20 Varsayılan: 0.05"
+    ],
+    "ExtremeLootFactor": [
+      "Min: 0.05 Maks: 0.60 Varsayılan: 0.20"
+    ],
+    "RareLootFactor": [
+      "Min: 0.20 Maks: 1.00 Varsayılan: 0.60"
+    ],
+    "NormalLootFactor": [
+      "Min: 0.60 Maks: 2.00 Varsayılan: 1.00"
+    ],
+    "CommonLootFactor": [
+      "Min: 1.00 Maks: 3.00 Varsayılan: 2.00"
+    ],
+    "AbundantLootFactor": [
+      "Min: 2.00 Maks: 4.00 Varsayılan: 3.00"
+    ],
+    "Temperature": [
+      "Küresel sıcaklığı kontrol eder. Varsayılan = Normal",
+      "1 = Çok Soğuk",
+      "2 = Soğuk",
+      "3 = Normal",
+      "4 = Sıcak",
+      "5 = Çok Sıcak"
+    ],
+    "Rain": [
+      "Ne kadar sıklıkla yağmur yağacağını belirler. Varsayılan = Normal",
+      "1 = Çok Kurak",
+      "2 = Kurak",
+      "3 = Normal",
+      "4 = Yağışlı",
+      "5 = Çok Yağışlı"
+    ],
+    "ErosionSpeed": [
+      "Dünyaya üzüm bağları, uzun otlar, yeni ağaçlar vb. ekleyen erozyon sisteminin %100 büyümeye ulaşması için gün sayısı. ",
+      "1 = Çok Hızlı (20 Gün)",
+      "2 = Hızlı (50 Gün)",
+      "3 = Normal (100 Gün)",
+      "4 = Yavaş (200 Gün)",
+      "5 = Çok Yavaş (500 Gün)"
+    ],
+    "ErosionDays": [
+      "Özel bir Erozyon Hızı için. "
+    ],
+    "Farming": [
+      "Tarım becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "CompostTime": [
+      "Yiyeceklerin kompostolarda gübre olması için geçen süreyi belirler. Varsayılan = 2 Hafta",
+      "1 = 1 Hafta",
+      "2 = 2 Hafta",
+      "3 = 3 Hafta",
+      "4 = 4 Hafta",
+      "5 = 6 Hafta",
+      "6 = 8 Hafta",
+      "7 = 10 Hafta",
+      "8 = 12 Hafta"
+    ],
+    "StatsDecrease": [
+      "Karakterin açlık, susuzluk ve yorgunluğunun ne kadar hızlı azalacağını tanımlar. Varsayılan = Normal",
+      "1 = Çok Hızlı",
+      "2 = Hızlı",
+      "3 = Normal",
+      "4 = Yavaş",
+      "5 = Çok Yavaş"
+    ],
+    "NatureAbundance": [
+      "Balıkçılık ve araştırmanın zorluk seviyesini etkiler. Varsayılan = Normal",
+      "1 = Çok Verimsiz",
+      "2 = Verimsiz",
+      "3 = Normal",
+      "4 = Verimli",
+      "5 = Çok Verimli"
+    ],
+    "Alarm": [
+      "Oyuncunun yeni bir eve girerken ev alarmını etkinleştirme olasılığı nedir? ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "LockedHouses": [
+      "Kapılar ve evlerin pencerelerinin ne kadar sıklıkla kilitli olacağını tanımlar. Varsayılan = Çok Sık",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "StarterKit": [
+      "Karakter bir çanta ve kullanışlı eşyalarla başlar."
+    ],
+    "Nutrition": [
+      "Gıdaların besin değerleri oyuncunun kondisyonunu etkiler."
+    ],
+    "FoodRotSpeed": [
+      "Gıdaların buzdolabı içinde veya dışında ne kadar hızlı bozulacağını tanımlar. Varsayılan = Normal",
+      "1 = Çok Hızlı",
+      "2 = Hızlı",
+      "3 = Normal",
+      "4 = Yavaş",
+      "5 = Çok Yavaş"
+    ],
+    "FridgeFactor": [
+      "Dondurmanın (buzdolabı) ne kadar etkili olacağını tanımlar. Varsayılan = Normal",
+      "1 = Çok Düşük",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek",
+      "6 = No decay"
+    ],
+    "SeenHoursPreventLootRespawn": [
+      "Değer 0'dan büyük olduğunda, bu saat içinde tekrar ziyaret edilen bölgelerde eşyaların yeniden doğmasını önler. Min: 0 Maks: 2147483647 Varsayılan: 0"
+    ],
+    "HoursForLootRespawn": [
+      "0'dan büyük olduğunda, X saat sonra dünyadaki kasaba ve karavan parklarındaki tüm konteynerler ganimet olarak yeniden doğacak. "
+    ],
+    "MaxItemsForLootRespawn": [
+      "Bu ayara eşit veya daha fazla sayıda öğe içeren kutular yeniden doğmayacaktır. "
+    ],
+    "ConstructionPreventsLootRespawn": [
+      "Öğeler, oyuncuların barikat kurduğu veya inşa ettiği binalarda yeniden doğmayacaktır."
+    ],
+    "WorldItemRemovalList": [
+      "Virgül ile ayrılmış her eşya oyunda HoursForWorldItemRemoval süre geçtikten sonra dünyadan silinecektir."
+    ],
+    "HoursForWorldItemRemoval": [
+      "Bir öğenin kaldırılmadan önce yere bırakılmasından bu yana geçen saat sayısı.  "
+    ],
+    "ItemRemovalListBlacklistToggle": [
+      "Bu ayar açıksa  WorldItemRemovalList listesinde bulunmayan her eşya kaldırılacaktır"
+    ],
+    "TimeSinceApo": [
+      "Dünyanın sonu ne kadar sonra başlayacak? ",
+      "1 = 0",
+      "2 = 1",
+      "3 = 2",
+      "4 = 3",
+      "5 = 4",
+      "6 = 5",
+      "7 = 6",
+      "8 = 7",
+      "9 = 8",
+      "10 = 9",
+      "11 = 10",
+      "12 = 11",
+      "13 = 12"
+    ],
+    "PlantResilience": [
+      "Bu, bitkilerin günde ne kadar su kaybedeceği ve iyileşme yeteneğiyle ilgilidir. Varsayılan = Normal",
+      "1 = Çok Yüksek",
+      "2 = Yüksek",
+      "3 = Normal",
+      "4 = Az",
+      "5 = Çok Düşük"
+    ],
+    "PlantAbundance": [
+      "Tohum başına alınacak ürün sayısı. Varsayılan = Normal",
+      "1 = Çok Verimsiz",
+      "2 = Verimsiz",
+      "3 = Normal",
+      "4 = Verimli",
+      "5 = Çok Verimli"
+    ],
+    "EndRegen": [
+      "Dinlenme miktarını belirler. Varsayılan = Normal",
+      "1 = Çok Hızlı",
+      "2 = Hızlı",
+      "3 = Normal",
+      "4 = Yavaş",
+      "5 = Çok Yavaş"
+    ],
+    "Helicopter": [
+      "Helikopterlerin, Olay Bölgesi'nden ne kadar sıklıkla geçeceğini tanımlar. Varsayılan = Bir Kez",
+      "1 = Hiçbir Zaman",
+      "2 = Bir Kez",
+      "3 = Bazen",
+      "4 = Sık"
+    ],
+    "MetaEvent": [
+      "Rastgele olayların ne kadar sıklıkla olacağını tanımlar.<br>Helikopter sesi ve silah ateşlenmesi gibi olaylar meydana gelebilir ve zombiler o yöne doğru hareket edebilir. Varsayılan = Bazen",
+      "1 = Hiçbir Zaman",
+      "2 = Bazen",
+      "3 = Sık"
+    ],
+    "SleepingEvent": [
+      "Oyuncunun uykusu sırasında ne kadar sıklıkla rastgele olaylar olacağını tanımlar. Varsayılan = Hiçbir Zaman",
+      "1 = Hiçbir Zaman",
+      "2 = Bazen",
+      "3 = Sık"
+    ],
+    "GeneratorFuelConsumption": [
+      "Jeneratörlerin ne kadar yakıt tüketeceğini etkiler. Jeneratörler yakıt tüketmesin istiyorsanız, bu değeri 0.0 olarak ayarlamalısınız. Min: 0.00 Maks: 100.00 Varsayılan: 0.10"
+    ],
+    "GeneratorSpawning": [
+      "Jeneratörlerin harita üzerindeki dağılımını tanımlar. Varsayılan = Nadir",
+      "1 = Yok",
+      "2 = İnanılmaz Nadir",
+      "3 = Çok Nadir",
+      "4 = Nadir",
+      "5 = Normal",
+      "6 = Yaygın",
+      "7 = Verimli"
+    ],
+    "AnnotatedMapChance": [
+      "Ölü insanların ve zombilerin üzerinden ne kadar sıklıkla açıklamalı harita çıkacağını tanımlar. Varsayılan = Bazen",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "CharacterFreePoints": [
+      "Karakter oluşturma sırasında oyuncuya ekstra özellik puanı ekler. Min: -100 Maks: 100 Varsayılan: 0"
+    ],
+    "ConstructionBonusPoints": [
+      "Oyuncuların oluşturduğu yapılara ekstra can puanı verir, böylece zombi hasarına karşı daha dirençli olurlar. ",
+      "1 = Çok Düşük",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek"
+    ],
+    "NightDarkness": [
+      "Geceleri ortam aydınlatmasını belirler. Varsayılan = Normal",
+      "1 = Çok Karanlık",
+      "2 = Karanlık",
+      "3 = Normal",
+      "4 = Parlak"
+    ],
+    "NightLength": [
+      "Şafaktan Alacakaranlığa kadarki olan zamanı belirler. Varsayılan = Normal",
+      "1 = Her zaman Gece",
+      "2 = Uzun",
+      "3 = Normal",
+      "4 = Kısa",
+      "5 = Her zaman Gündüz"
+    ],
+    "BoneFracture": [
+      "Mücadelecilerin yüksek bir yerden düşme, zombi tarafından alınan sert bir darbe vb. gibi durumlar sonucunda oluşacak kemik kırılma faktörünü etkin kılar veya devre dışı bırakır."
+    ],
+    "InjurySeverity": [
+      "Yaralanmaların vücudunuz üzerindeki etkisini ve iyileşme sürecini etkiler. Varsayılan = Normal",
+      "1 = Az",
+      "2 = Normal",
+      "3 = Yüksek"
+    ],
+    "HoursForCorpseRemoval": [
+      "Ölü zombi bedenlerinin dünyadan kaybolması saatler içinde ne kadar sürer?  "
+    ],
+    "DecayingCorpseHealthImpact": [
+      "Yakınlardaki cesetlerin, oyuncu sağlığına ve duygularına etki edip etmeyeğini tanımlar. Varsayılan = Normal",
+      "1 = Yok",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = En Yüksek"
+    ],
+    "ZombieHealthImpact": [
+      "Yakındaki \"yaşayan\" zombilerin oyuncunun sağlığı ve duyguları üzerinde aynı etkiye sahip olup olmadığı."
+    ],
+    "BloodLevel": [
+      "Yere ve duvarlara ne kadar kan sıçrayacağını belirler Varsayılan = Normal",
+      "1 = Yok",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek"
+    ],
+    "ClothingDegradation": [
+      "Giysilerin ne kadar hızla kirleneceğini geleceğini tanımlar. (Kapatılabilir.) Varsayılan = Normal",
+      "1 = Kapalı",
+      "2 = Yavaş",
+      "3 = Normal",
+      "4 = Hızlı"
+    ],
+    "FireSpread": [
+      "Yangınlar başladığında yayılırsa."
+    ],
+    "DaysForRottenFoodRemoval": [
+      "Çürümüş yiyeceklerin haritadan kaldırılmasına kadar geçen oyun içi gün sayısı.  "
+    ],
+    "AllowExteriorGenerator": [
+      "Etkinleştirilirse jeneratörler dış döşemelerde çalışacaktır.  "
+    ],
+    "MaxFogIntensity": [
+      "Sisin maksimum yoğunluğunu belirler. Varsayılan = Normal",
+      "1 = Normal",
+      "2 = Ilımlı",
+      "3 = Az",
+      "4 = Yok"
+    ],
+    "MaxRainFxIntensity": [
+      "Yağmurun maksimum yoğunluğunu kontrol eder. Varsayılan = Normal",
+      "1 = Normal",
+      "2 = Ilımlı",
+      "3 = Az"
+    ],
+    "EnableSnowOnGround": [
+      "Yerde kar birikecekse.  "
+    ],
+    "AttackBlockMovements": [
+      "Yakın dövüş saldırısı sırasında engelsiz yürümeyi devre dışı bırakın."
+    ],
+    "SurvivorHouseChance": [
+      "Haritada rastgele binalar bulma şansı (örneğin yanmış evler, ganimet zulaları veya cesetler içeren evler). ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman Dener"
+    ],
+    "VehicleStoryChance": [
+      "Yol hikayelerinin (örneğin polis barikatları) ortaya çıkma şansı. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman Dener"
+    ],
+    "ZoneStoryChance": [
+      "Harita bölgelerine (örneğin ormandaki bir kamp alanı) özgü hikayelerin ortaya çıkma şansı. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman Dener"
+    ],
+    "AllClothesUnlocked": [
+      "Karakterinizi kişiselleştirirken oyundaki her kıyafetten seçim yapmanızı sağlar"
+    ],
+    "EnableTaintedWaterText": [
+      "Eğer kapalıysa,Kontamine suyu normal sudan ayırt edemezsiniz."
+    ],
+    "EnableVehicles": [
+      "Araçların haritada ortaya çıkmasını sağlar."
+    ],
+    "CarSpawnRate": [
+      "Haritada arabaların ne sıklıkta keşfedildiğini belirler. Varsayılan = Az",
+      "1 = Yok",
+      "2 = Çok Düşük",
+      "3 = Az",
+      "4 = Normal",
+      "5 = Yüksek"
+    ],
+    "ZombieAttractionMultiplier": [
+      "Bu değer, motorun genel ses yüksekliğini arttırmak veya azaltmak için kullanılır. Min: 0.00 Maks: 100.00 Varsayılan: 1.00"
+    ],
+    "VehicleEasyUse": [
+      "Bu değer true ise, araçların kapıları her zaman açık, benzin depoları dolu ve motor ses seviyeleri daima düşük olacaktır."
+    ],
+    "InitialGas": [
+      "Yeni keşfedilen araçlarda, deponun ne kadar dolu olacağını tanımlar. Varsayılan = Az",
+      "1 = Çok Düşük",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek",
+      "6 = Tam Dolu"
+    ],
+    "FuelStationGasInfinite": [
+      "Etkinleştirilirse, gaz pompalarının yakıtı asla bitmez"
+    ],
+    "FuelStationGasMin": [
+      "Benzin pompalarında ortaya çıkabilecek minimum benzin miktarı. "
+    ],
+    "FuelStationGasMax": [
+      "Benzin pompalarında ortaya çıkabilecek maksimum benzin miktarı. "
+    ],
+    "FuelStationGasEmptyChance": [
+      "Yüzde olarak, bireysel gaz pompalarının başlangıçta yakıtsız kalma şansı. "
+    ],
+    "LockedCar": [
+      "Arabaların kilitlenme olasılığı ne kadardır Varsayılan = Nadir",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "CarGasConsumption": [
+      "Araçların ortalama ne kadar çok yakacağını belirler. Min: 0.00 Maks: 100.00 Varsayılan: 1.00"
+    ],
+    "CarGeneralCondition": [
+      "Araçların ne durumda doğacağını tanımlar. Varsayılan = Az",
+      "1 = Çok Düşük",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek"
+    ],
+    "CarDamageOnImpact": [
+      "Kaza yapan araçların ne kadar hasar alacağını tanımlar. Varsayılan = Normal",
+      "1 = Çok Düşük",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek"
+    ],
+    "DamageToPlayerFromHitByACar": [
+      "Bir çarpışmada arabadaki oyuncudan alınan hasar Varsayılan = Yok",
+      "1 = Yok",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek",
+      "5 = Çok Yüksek"
+    ],
+    "TrafficJam": [
+      "Ana yollarda kaza yapmış arabalardan oluşan trafik sıkışıklıkları ortaya çıkacak."
+    ],
+    "CarAlarm": [
+      "Bir arabanın alarmlı olarak ne sıklıkla keşfedileceğini belirler. Varsayılan = Çok Nadir",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "PlayerDamageFromCrash": [
+      "Aracın bir oyuncuya çarpmasından dolayı oluşabilecek hasarları etkinleştirin veya devre dışı bırakın."
+    ],
+    "SirenShutoffHours": [
+      "Siren sesinin durması için gereken saat sayısı.\n0.0 değeri, akü bitene kadar sirenin çalacağı anlamına gelir. Min: 0.00 Maks: 168.00 Varsayılan: 0.00"
+    ],
+    "ChanceHasGas": [
+      "Deposu benzin dolu araçların ne sıklıkla bulunacağını tanımlar. Varsayılan = Az",
+      "1 = Az",
+      "2 = Normal",
+      "3 = Yüksek"
+    ],
+    "RecentlySurvivorVehicles": [
+      "Bir oyuncunun Knox enfeksiyonundan sonra bakımı yapılmış bir arabayı keşfedip keşfedemeyeceği. ",
+      "1 = Yok",
+      "2 = Az",
+      "3 = Normal",
+      "4 = Yüksek"
+    ],
+    "MultiHitZombies": [
+      "Etkinleştirildiğinde, belirli yakın dövüş silahları tek vuruşta birden fazla zombiyi vurabilir."
+    ],
+    "RearVulnerability": [
+      "Bir zombi arkadan saldırdığında ısırılma şansı. Varsayılan = Yüksek",
+      "1 = Az",
+      "2 = Orta",
+      "3 = Yüksek"
+    ],
+    "SirenEffectsZombies": [
+      "Zombi ise araç siren sesine doğru yönelecektir."
+    ],
+    "AnimalStatsModifier": [
+      "Hayvan istatistiklerinin (açlık, susuzluk vb.) azalma hızı. ",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalMetaStatsModifier": [
+      "Hayvan istatistiklerinin (açlık, susuzluk vb.) metada azalma hızı. ",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalPregnancyTime": [
+      "Hayvanların doğumdan önce ne kadar süreyle hamile kalacağı. ",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalAgeModifier": [
+      "Hayvanların yaşlanma hızı. ",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalMilkIncModifier": [
+      "Varsayılan = Hızlı",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalWoolIncModifier": [
+      "Varsayılan = Hızlı",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalRanchChance": [
+      "Çiftlikte hayvan bulma şansı. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman"
+    ],
+    "AnimalGrassRegrowTime": [
+      "Çimlerin bir hayvan tarafından yenilmesinden veya oyuncu tarafından kesilmesinden sonra yeniden büyüyeceği saat sayısı. "
+    ],
+    "AnimalMetaPredator": [
+      "Eğer bir meta (yani oyunda aslında görünmeyen) bir tilki, gece kulübenin kapısı açık bırakılırsa tavuklarınıza saldırabilir."
+    ],
+    "AnimalMatingSeason": [
+      "Çiftleşme mevsimi olan hayvanlar buna saygı duyarsa.  "
+    ],
+    "AnimalEggHatch": [
+      "Yavru hayvanların yumurtadan çıkması ne kadar sürer? ",
+      "1 = Ultra Fast",
+      "2 = Çok Hızlı",
+      "3 = Hızlı",
+      "4 = Normal",
+      "5 = Yavaş",
+      "6 = Çok Yavaş"
+    ],
+    "AnimalSoundAttractZombies": [
+      "Eğer doğruysa, hayvan sesleri yakındaki zombileri çekecektir."
+    ],
+    "AnimalTrackChance": [
+      "Hayvanların iz bırakma ihtimali. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "AnimalPathChance": [
+      "Avlanacak hayvanlar için yol oluşturma şansı. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık"
+    ],
+    "MaximumRatIndex": [
+      "Örneğin sıklığı ve yoğunluğu. "
+    ],
+    "DaysUntilMaximumRatIndex": [
+      "Maksimum Haşarat İndeksine ulaşmanın ne kadar süreceği. "
+    ],
+    "MetaKnowledge": [
+      "Bir medya parçası tam olarak görülmediyse veya okunmadıysa bu ayar, medyanın tam olarak mı görüntüleneceğini, \"???\" olarak mı görüntüleneceğini veya tamamen gizleneceğini belirler. ",
+      "1 = Fully revealed",
+      "2 = Shown as ???",
+      "3 = Completely hidden"
+    ],
+    "SeeNotLearntRecipe": [
+      "Doğruysa, henüz öğrenmemiş olsanız bile, bir istasyonla yapılabilecek tarifleri görebileceksiniz."
+    ],
+    "MaximumLootedBuildingRooms": [
+      "Bir binada bu miktardan daha fazla oda varsa yağmalanmayacaktır. "
+    ],
+    "EnablePoisoning": [
+      "Besin Zehirlenmesini Belirler. Varsayılan = Açık",
+      "1 = Açık",
+      "2 = Kapalı",
+      "3 = Sadece Çamaşır Suyu Kapalı"
+    ],
+    "MaggotSpawn": [
+      "Kurtçukların cesetlerde ortaya çıkıp çıkmadığı/ne zaman ortaya çıktığı. ",
+      "1 = İçinde ve Çevresinde",
+      "2 = Sadece içinde",
+      "3 = Hiçbir Zaman"
+    ],
+    "LightBulbLifespan": [
+      "Değer ne kadar yüksek olursa, ampullerin kırılmadan önceki ömrü de o kadar uzun olur.  "
+    ],
+    "FishAbundance": [
+      "Nehirlerde ve göllerde balık bolluğu. ",
+      "1 = Çok Verimsiz",
+      "2 = Verimsiz",
+      "3 = Normal",
+      "4 = Verimli",
+      "5 = Çok Verimli"
+    ],
+    "LevelForMediaXPCutoff": [
+      "Bir beceri bu düzeyde veya üzerinde olduğunda televizyon/VHS/diğer medya ona XP sağlamayacaktır. "
+    ],
+    "LevelForDismantleXPCutoff": [
+      "Bir beceri bu seviyede veya üzerinde olduğunda, mobilyaların hurdaya çıkarılması ilgili beceri için XP sağlamaz. "
+    ],
+    "BloodSplatLifespanDays": [
+      "Eski kan lekelerinin çıkarılmasından önceki gün sayısı. "
+    ],
+    "LiteratureCooldown": [
+      "Daha önce okunmuş literatür öğelerinin okunmasından yararlanılabilecek gün sayısı. "
+    ],
+    "NegativeTraitsPenalty": [
+      "Birden fazla olumsuz özelliğin seçilmesiyle sağlanan bonus özellik puanlarında azalan getiriler varsa. ",
+      "1 = Yok",
+      "2 = 1 point penalty for every 3 negative traits selected",
+      "3 = 1 point penalty for every 2 negative traits selected",
+      "4 = İlkinden sonra seçilen her olumsuz özellik için 1 puan ceza"
+    ],
+    "MinutesPerPage": [
+      "Bir beceri kitabının bir sayfasını okumak için oyun içinde geçen dakika sayısı. "
+    ],
+    "KillInsideCrops": [
+      "Etkinleştirildiğinde binaların içinde yetişen mahsuller ve şifalı bitkiler ölecek. "
+    ],
+    "PlantGrowingSeasons": [
+      "Etkinleştirildiğinde bitkilerin büyümesi mevsimlerden etkilenir."
+    ],
+    "PlaceDirtAboveground": [
+      "<BHC> [!] Bunu DEĞİŞTİRMEMENİZ önerilir. "
+    ],
+    "FarmingSpeedNew": [
+      "Bitki büyüme hızını belirler. Min: 0.10 Maks: 100.00 Varsayılan: 1.00"
+    ],
+    "FarmingAmountNew": [
+      "Hasat edilen mahsulün bolluğu. "
+    ],
+    "MaximumLooted": [
+      "Bulunduğunda herhangi bir binanın yağmalanma ihtimali. "
+    ],
+    "DaysUntilMaximumLooted": [
+      "Maksimum Yağmalanan Bina Şansına ulaşılması ne kadar sürer. "
+    ],
+    "RuralLooted": [
+      "Herhangi bir kırsal binanın bulunduğunda yağmalanma ihtimali. "
+    ],
+    "MaximumDiminishedLoot": [
+      "Maksimum Azalan Ganimet'e Kadar Geçen Günler'e ulaşıldığında ortaya çıkmayacak maksimum ganimet. "
+    ],
+    "DaysUntilMaximumDiminishedLoot": [
+      "Maksimum Azaltılmış Yağma Yüzdesine ulaşılması ne kadar sürer. "
+    ],
+    "MuscleStrainFactor": [
+      "Silah sallamaktan veya ağır yük taşımaktan kaynaklanan kas gerginliğini uygularken çarpan görevi görür. "
+    ],
+    "DiscomfortFactor": [
+      "Aşınmış eşyalardan rahatsızlık geldiğinde çarpan görevi görür. "
+    ],
+    "WoundInfectionFactor": [
+      "Ciddi yara enfeksiyonlarından sıfırdan büyük hasar alınabilir. "
+    ],
+    "NoBlackClothes": [
+      "Rastgele renk tonlarına sahip gerçek giysiler neredeyse siyah olacak kadar koyu olmayacaktır."
+    ],
+    "EasyClimbing": [
+      "Halatlara tırmanırken veya duvarların üzerinden geçerken arıza olasılığını ortadan kaldırır."
+    ],
+    "MaximumFireFuelHours": [
+      "Kamp ateşi, odun sobası vb. yerlere konulabilecek maksimum yakıt saati Min: 1 Maks: 168 Varsayılan: 8"
+    ],
+    "FirearmUseDamageChance": [
+      "İsabet Şansı mekaniğini Hasar Olasılığı hesaplamalarıyla değiştirir.  "
+    ],
+    "FirearmNoiseMultiplier": [
+      "Zombilerin silah seslerini duyabileceği mesafenin çarpanı. "
+    ],
+    "FirearmJamMultiplier": [
+      "Ateşli silah sıkışma şansı çarpanı. "
+    ],
+    "FirearmMoodleMultiplier": [
+      "Vuruş şansı üzerindeki Moodle etkileri için çarpan. "
+    ],
+    "FirearmWeatherMultiplier": [
+      "Hava koşullarının (rüzgar, yağmur ve sis) isabet şansı üzerindeki etkilerinin çarpanı. "
+    ],
+    "FirearmHeadGearEffect": [
+      "Kaynak maskeleri gibi başlığın isabet şansını etkilemesini etkinleştirin"
+    ],
+    "ClayLakeChance": [
+      "Toprak zemini kil zemine dönüştürme şansı. "
+    ],
+    "ClayRiverChance": [
+      "Toprak zemini kil zemine dönüştürme şansı. "
+    ],
+    "GeneratorTileRange": [
+      "Min: 1 Maks: 100 Varsayılan: 20"
+    ],
+    "GeneratorVerticalPowerRange": [
+      "Bir jeneratörün hem üstünde hem de altında kaç kat elektrik sağlayabildiği. "
+    ],
+    "SpawnFrequency": [
+      "Bodrumların rastgele konumlarda ne sıklıkta ortaya çıktığı. ",
+      "1 = Hiçbir Zaman",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman"
+    ],
+    "AllowMiniMap": [
+      "Etkinleştirilirse, bir mini harita penceresi mevcut olacaktır."
+    ],
+    "AllowWorldMap": [
+      "Etkinleştirilirse dünya haritasına erişilebilir."
+    ],
+    "MapAllKnown": [
+      "Etkinleştirilirse, oyun başlatıldığında dünya haritası tamamen doldurulacaktır."
+    ],
+    "MapNeedsLight": [
+      "Etkinleştirilirse, bir ışık kaynağı olmadığı sürece haritalar okunamaz."
+    ],
+    "Speed": [
+      "Zombi hareket hızını belirler Varsayılan = Rastgele",
+      "1 = Koşucular",
+      "2 = Hızlı Yürüme",
+      "3 = Yürüme",
+      "4 = Rastgele"
+    ],
+    "SprinterPercentage": [
+      "Rastgele Hız etkinleştirilirse bu, zombilerin yüzde kaçının Sprinter olduğunu kontrol eder. "
+    ],
+    "Strength": [
+      "Güç becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Toughness": [
+      "Zombileri öldürmenin zorluğunu belirler. Varsayılan = Rastgele",
+      "1 = Dayanıklı",
+      "2 = Normal",
+      "3 = Kırılgan",
+      "4 = Rastgele"
+    ],
+    "Transmission": [
+      "Zombi virüsünün nasıl yayılacağını belirler. Varsayılan = Kan + Salya",
+      "1 = Kan + Salya",
+      "2 = Sadece Salya",
+      "3 = Herkes Enfekte",
+      "4 = Yok"
+    ],
+    "Mortality": [
+      "Enfeksiyonun ne kadar hızlı etkisini göstereceğini belirler. Varsayılan = 2-3 Gün",
+      "1 = Anlık",
+      "2 = 0-30 Saniye",
+      "3 = 0-1 Dakika",
+      "4 = 0-12 Saat",
+      "5 = 2-3 Gün",
+      "6 = 1-2 Hafta",
+      "7 = Hiçbir Zaman"
+    ],
+    "Reanimate": [
+      "Cesetlerin zombi olarak kalkmadan önce yerde ne kadar kalacağını belirler. Varsayılan = 0-1 Dakika",
+      "1 = Anlık",
+      "2 = 0-30 Saniye",
+      "3 = 0-1 Dakika",
+      "4 = 0-12 Saat",
+      "5 = 2-3 Gün",
+      "6 = 1-2 Hafta"
+    ],
+    "Cognition": [
+      "Zombilerin ne kadar zeki olacaklarını belirler Varsayılan = Basit Yön Bulma",
+      "1 = Yön Bulma + Kapı Açma",
+      "2 = Yön Bulma",
+      "3 = Basit Yön Bulma",
+      "4 = Rastgele"
+    ],
+    "CrawlUnderVehicle": [
+      "Zombilerin ne kadar sıklıkla araçların altından sürünerek geçebileceğini belirler. Varsayılan = Sık",
+      "1 = Asla",
+      "2 = Çok Nadir",
+      "3 = Nadir",
+      "4 = Bazen",
+      "5 = Sık",
+      "6 = Çok Sık",
+      "7 = Her Zaman"
+    ],
+    "Memory": [
+      "Zombilerin gördükten veya duyduktan sonra oyuncuları ne kadar süre hatırlayacağını belirler. Varsayılan = Normal",
+      "1 = Uzun",
+      "2 = Normal",
+      "3 = Kısa",
+      "4 = Yok",
+      "5 = Rastgele",
+      "6 = Normal ve Hiçbiri arasında rastgele"
+    ],
+    "Sight": [
+      "Zombi buluşma mesafesini belirler. ",
+      "1 = Keskin",
+      "2 = Normal",
+      "3 = Verimsiz",
+      "4 = Rastgele",
+      "5 = Normal ile Kötü arasında rastgele"
+    ],
+    "Hearing": [
+      "Zombi işitme mesafesini belirler. ",
+      "1 = Keskin",
+      "2 = Normal",
+      "3 = Verimsiz",
+      "4 = Rastgele",
+      "5 = Normal ile Kötü arasında rastgele"
+    ],
+    "SpottedLogic": [
+      "Arabaların arkasındaki zombilerden saklanmanıza olanak tanıyan, özellikleri, hava durumunu ve çok daha fazlasını hesaba katan yeni gelişmiş gizlilik mekanizmalarını etkinleştirir."
+    ],
+    "ThumpNoChasing": [
+      "Zombiler serbest dolaşırken oyuncuyu görmeden/duymadan kapılara ve etraftaki yapılara saldırabilir."
+    ],
+    "ThumpOnConstruction": [
+      "Zombilerin, oyuncunun inşa ettiği yapılara ve barikatlara zarar verip veremeyeceğini tanımlar."
+    ],
+    "ActiveOnly": [
+      "Zombilerin gündüz veya gece boyunca daha \"aktif\" olup olmadığı.  ",
+      "1 = Her İkiside",
+      "2 = Gece",
+      "3 = Gündüz"
+    ],
+    "TriggerHouseAlarm": [
+      "Zombilerin kapı veya pencereleri kırarak ev alarmlarını etkinleştirmesine izin verir."
+    ],
+    "ZombiesDragDown": [
+      "Birden fazla saldıran zombi sizi aşağı sürükleyip öldürebilirse.  "
+    ],
+    "ZombiesCrawlersDragDown": [
+      "Bir oyuncunun yanındaki paletli zombiler, bir grup zombi tarafından sürüklenip öldürülme şansına katkıda bulunursa."
+    ],
+    "ZombiesFenceLunge": [
+      "Bir çitin üzerinden tırmandıktan sonra zombilerin üzerinize saldırma şansı varsa veya çok yakınsanız bir pencereden içeri girin."
+    ],
+    "ZombiesArmorFactor": [
+      "Zombilerin giydiği zırhın etkinliğini belirlerken çarpan görevi görür. "
+    ],
+    "ZombiesMaxDefense": [
+      "Aşınmış herhangi bir koruyucu giysinin bir zombiye sağlayabileceği maksimum savunma yüzdesi. "
+    ],
+    "ChanceOfAttachedWeapon": [
+      "Rastgele eklenen bir silaha sahip olma şansının yüzdesi. "
+    ],
+    "ZombiesFallDamage": [
+      "Yüksekten düşerken zombilerin ne kadar hasar aldığı. "
+    ],
+    "DisableFakeDead": [
+      "Bazı ölü görünümlü zombilerin yeniden canlanıp oyuncuya saldırıp saldırmayacağı. ",
+      "1 = Bazı Zombiler Ölü Taklidi Yaparlar.",
+      "2 = Bazı zombiler ve sizin 'öldürdüğünüz 'Bazı Zombiler",
+      "3 = Hiçbir Zaman"
+    ],
+    "PlayerSpawnZombieRemoval": [
+      "Zombiler oyuncuların doğduğu yerde ortaya çıkmayacak. ",
+      "1 = Binanın içi ve çevresi",
+      "2 = Binanın içi",
+      "3 = Odanın içi",
+      "4 = Zombiler her yerde doğabilir"
+    ],
+    "FenceThumpersRequired": [
+      "Uzun bir çite zarar vermek için kaç zombi gerekir? "
+    ],
+    "FenceDamageMultiplier": [
+      "Zombilerin uzun çitlere ne kadar çabuk zarar verdiği. "
+    ],
+    "PopulationMultiplier": [
+      "\"Zombi Sayısı\" nüfus seçeneği veya burada özel bir sayı ile ayarlanır. "
+    ],
+    "PopulationStartMultiplier": [
+      "Oyunun başında istenen zombi popülasyonu için bir çarpan. "
+    ],
+    "PopulationPeakMultiplier": [
+      "Yoğun günde istenen zombi popülasyonunun çarpanı. "
+    ],
+    "PopulationPeakDay": [
+      "Başlangıç Nüfusu Çarpanı Değerinden Nüfus Sınırı Çarpanı Değerine Kaç Günde Ulaşılacağını Belirler. Min: 1 Maks: 365 Varsayılan: 28"
+    ],
+    "RespawnHours": [
+      "Zombilerin bir hücrede yeniden doğması için geçmesi gereken saat sayısı. "
+    ],
+    "RespawnUnseenHours": [
+      "Daha önce zombilerin sizi görmediği saatlerde etrafınızda doğacak zombi sayısı. Min: 0.00 Maks: 8760.00 Varsayılan: 16.00"
+    ],
+    "RespawnMultiplier": [
+      "Her Doğma Saatinde yeniden doğma olabilecek bir yerde istenilen zombi yoğunluğu. Min: 0.00 Maks: 1.00 Varsayılan: 0.10"
+    ],
+    "RedistributeHours": [
+      "Zombilerin aynı hücrenin boş kısımlarına göç etmesi için geçmesi gereken saat sayısı. "
+    ],
+    "FollowSoundDistance": [
+      "Zombiler belirlenen mesafe içindeki en son duyukları sese doğru hareketlenecektir. Min: 10 Maks: 1000 Varsayılan: 100"
+    ],
+    "RallyGroupSize": [
+      "Gerçek zombilerin boştayken oluşturduğu grupların boyutu. "
+    ],
+    "RallyGroupSizeVariance": [
+      "Yüzde olarak zombi gruplarının boyutu varsayılandan farklı olabilir (hem daha büyük hem daha küçük).   "
+    ],
+    "RallyTravelDistance": [
+      "Zombilerin boşta iken gruplara ilerleme mesafesi. Min: 5 Maks: 50 Varsayılan: 20"
+    ],
+    "RallyGroupSeparation": [
+      "Zombi gruplarının arasındaki uzaklık. Min: 5 Maks: 25 Varsayılan: 15"
+    ],
+    "RallyGroupRadius": [
+      "Grup üyeleri grup liderine ne kadar yakın olsun? Min: 1 Maks: 10 Varsayılan: 3"
+    ],
+    "ZombiesCountBeforeDelete": [
+      "Min: 10 Maks: 500 Varsayılan: 300"
+    ],
+    "Global": [
+      "Tüm becerilerin seviye atlama oranı. "
+    ],
+    "GlobalToggle": [
+      "Etkinleştirildiğinde tüm beceriler Global Çarpanı kullanacaktır."
+    ],
+    "Fitness": [
+      "Kondisyon becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Sprinting": [
+      "Sprint becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Lightfoot": [
+      "Hafif Adım becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Nimble": [
+      "Çevik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Sneak": [
+      "Gizlilik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Axe": [
+      "Balta becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Blunt": [
+      "Kör becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "SmallBlunt": [
+      "Küçük Kör becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "LongBlade": [
+      "Uzun Bıçak becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "SmallBlade": [
+      "Küçük Bıçak becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Spear": [
+      "Mızrak becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Maintenance": [
+      "Bakım becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Woodwork": [
+      "Marangozluk becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Cooking": [
+      "Yemek Pişirme becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Doctor": [
+      "Doktor becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Electricity": [
+      "Elektrik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "MetalWelding": [
+      "Metal Kaynak becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Mechanics": [
+      "Mekanik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Tailoring": [
+      "Terzilik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Aiming": [
+      "Nişan Alma becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Reloading": [
+      "Yeniden Doldurma becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Fishing": [
+      "Balıkçılık becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Trapping": [
+      "Tuzak Kurma becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "PlantScavenging": [
+      "Bitki Toplama becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "FlintKnapping": [
+      "Çakmaktaşı Yontma becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Masonry": [
+      "Taş İşçiliği becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Pottery": [
+      "Seramik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Carving": [
+      "Oymacılık becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Husbandry": [
+      "Hayvancılık becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Tracking": [
+      "İz Sürme becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Blacksmith": [
+      "Demircilik becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Butchering": [
+      "Kasaplık becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ],
+    "Glassmaking": [
+      "Camcılık becerisinin seviye atlama hızı. Min: 0.00 Maks: 1000.00 Varsayılan: 1.00"
+    ]
+  }
+}
+
+

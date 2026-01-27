@@ -49,7 +49,8 @@
       "honuWorkshop": "Steam Workshop ng HonuInTheSea",
       "supportKofi": "Suporta sa Ko-fi",
       "resetApp": "I-reset ang Application",
-      "resetAppTooltip": "I-reset ang mga setting ng window at tanggalin ang nakaimbak na data"
+      "resetAppTooltip": "I-reset ang mga setting ng window at tanggalin ang nakaimbak na data",
+      "server": "server"
     },
     "filters": {
       "adultLabel": "May Pang-adultong Nilalaman",
@@ -138,16 +139,35 @@
     },
     "folders": {
       "dialogTitle": "I-configure ang Mga Folder"
-    }
+    },
+    "loadingLocale": "Nilo-load ang wika..."
   },
   "changelog": {
     "title": "Changelog",
     "events": {
+      "newFeature_0_5_0": {
+        "title": "Bagong tampok",
+        "version": "0.5.0",
+        "date": "2026-01-26",
+        "description": "<ul><li>Idinagdag ang kakayahang magtrabaho sa mga configuration file ng dedicated server</li><li>In-update ang README.md</li><li>In-update ang pahina ng dokumentasyon</li></ul>"
+      },
       "initialRelease": {
         "title": "Paunang paglabas",
         "version": "0.4.0",
         "date": "2026-01-17",
         "description": "Unang pampublikong pagtatayo ng Project Zomboid Hub ni Honu."
+      },
+      "minorFixes_0_4_1": {
+        "title": "Maliliit na pag-aayos",
+        "version": "0.4.1",
+        "date": "2026-01-19",
+        "description": "<ul><li>Ina-update kung saan tumuturo ang update link</li><li>Ina-update ang numero ng bersyon</li><li>Ina-update ang README.md</li></ul>"
+      },
+      "minorFixes_0_4_3": {
+        "title": "Maliliit na pag-aayos",
+        "version": "0.4.3",
+        "date": "2026-01-19",
+        "description": "Ina-update ang suporta sa wika"
       }
     }
   },
@@ -393,6 +413,7 @@
       "workflow": "Daloy ng trabaho",
       "data": "Data na ginagamit ng app",
       "features": "Mga tampok",
+      "server": "Pamamahala ng Server",
       "mediaPlayer": "Media player",
       "logInspector": "Inspektor ng log",
       "folderSetup": "Pag-setup ng folder",
@@ -461,6 +482,13 @@
       "bullet1": "<strong>Playlist</strong> - nagpapakita ng mga nakitang track at pangunahing metadata (pamagat/artist/album kapag available).",
       "bullet2": "<strong>Playback</strong> - i-play/pause kasama ang nakaraan/susunod na track.",
       "bullet3": "<strong>Seek + volume</strong> - mag-scrub sa track at ayusin ang volume/mute."
+    },
+    "server": {
+      "title": "Pamamahala ng Server",
+      "intro": "Gamitin ang pahinang Servers upang pamahalaan ang mga lokal na server file ng Project Zomboid.",
+      "bullet1": "<strong>Lumikha</strong> ng bagong server upang mabuo ang mga default na .ini, _SandboxVars.lua, _spawnpoints.lua, at _spawnregions.lua file.",
+      "bullet2": "<strong>Kopyahin</strong> ang isang umiiral na server upang i-duplicate ang mga file nito gamit ang bagong pangalan.",
+      "bullet3": "<strong>I-edit</strong> ang mga INI at Sandbox variable at i-update ang spawnpoints/spawnregions nang direkta sa app."
     },
     "logInspector": {
       "title": "Inspektor ng log",
@@ -651,11 +679,13 @@
         "summary": "Di-wastong pangalan ng server",
         "detailMissing": "Maglagay ng pangalan ng server.",
         "detailInvalidChars": "Ang pangalan ng server ay naglalaman ng mga hindi wastong filename na character.",
-        "detailTrailing": "Ang pangalan ng server ay hindi maaaring magtapos sa isang tuldok o espasyo."
+        "detailTrailing": "Ang pangalan ng server ay hindi maaaring magtapos sa isang tuldok o espasyo.",
+        "detailNoSpaces": "Server name must be a single word with no spaces.",
+        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
       },
       "nameExists": {
-        "summary": "Umiiral na ang pangalan ng server",
-        "detail": "Pumili ng natatanging pangalan ng server."
+        "summary": "Server name already taken",
+        "detail": "That server name has already been taken. Choose another name for the new server."
       },
       "missingUserFolder": {
         "summary": "Nawawalang folder ng user",
@@ -697,5 +727,48 @@
     "matchAny": "Itugma ang alinman",
     "addRule": "Magdagdag ng panuntunan",
     "removeRule": "Alisin ang panuntunan"
+  },
+  "server": {
+    "ui": {
+      "serversHeader": "Servers",
+      "refresh": "Refresh",
+      "createNewServer": "Create New Server",
+      "copy": "Copy",
+      "deleteServer": "Delete Server",
+      "noServerFiles": "No server files were found.",
+      "selectServerPlaceholder": "Select a server",
+      "serverEditor": "Server Editor",
+      "selectServerPrompt": "Select a server to begin editing.",
+      "tabs": {
+        "ini": "INI",
+        "sandbox": "Sandbox Variables",
+        "spawnpoints": "Spawn Points",
+        "spawnregions": "Spawn Regions"
+      },
+      "noIniEntries": "No INI entries found.",
+      "serverConfigVars": "Server Configuration Variables",
+      "searchFields": "Search fields",
+      "reset": "Reset",
+      "saveChanges": "Save Changes",
+      "noSandboxEntries": "No sandbox variables found.",
+      "sandboxVariables": "Sandbox Variables",
+      "searchVariables": "Search variables",
+      "createServerTitle": "Create New Server",
+      "copyServerTitle": "Copy Server",
+      "copyServerPrompt": "Copy {{name}} and create the following files:",
+      "serverName": "Server name",
+      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "cancel": "Kanselahin",
+      "create": "Create",
+      "editServerVariableTitle": "I-edit ang Server Variable",
+      "editSandboxVariableTitle": "I-edit ang Sandbox Variable",
+      "noDescription": "No description available.",
+      "save": "I-save",
+      "deleteServerTitle": "Delete Server",
+      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "trueLabel": "totoo",
+      "falseLabel": "Mali",
+      "exportServer": "I-export"
+    }
   }
 }
