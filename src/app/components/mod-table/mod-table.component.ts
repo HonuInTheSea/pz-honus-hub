@@ -59,6 +59,10 @@ export class ModTableComponent implements OnChanges {
       author_display: string;
       workshop_id_display: string;
       install_date_display: string;
+      icon_url?: string;
+      author_avatar_medium: string | null;
+      author_avatar_full: string | null;
+      author_avatar_tooltip: string;
     }
   > = [];
 
@@ -89,14 +93,22 @@ export class ModTableComponent implements OnChanges {
   }
 
   private refreshTableMods(): void {
-    this.tableMods = (this.mods ?? []).map((mod) => ({
+    this.tableMods = (this.mods ?? []).map((mod) => {
+      const authorAvatarFull = this.resolveAuthorAvatarFull(mod);
+      const authorAvatarMedium = this.resolveAuthorAvatarMedium(mod);
+      return {
       ...mod,
       author_display: this.getAuthorDisplay(mod),
       workshop_id_display: mod.workshop_id || 'Unknown',
       install_date_display: mod.install_date
         ? this.formatDateTime(mod.install_date)
         : 'Unknown',
-    }));
+      icon_url: mod.icon ? convertFileSrc(mod.icon) : undefined,
+      author_avatar_medium: authorAvatarMedium,
+      author_avatar_full: authorAvatarFull,
+      author_avatar_tooltip: this.buildAuthorAvatarTooltip(authorAvatarFull),
+    };
+    });
   }
 
   get allModsForLinks(): ModSummary[] {
@@ -176,15 +188,6 @@ export class ModTableComponent implements OnChanges {
     return parts[0];
   }
 
-  posterUrl(path: string | null | undefined): string | undefined {
-    if (!path) {
-      return undefined;
-    }
-    // Use Tauri helper to convert a file-system path
-    // into a URL the webview can load.
-    return convertFileSrc(path);
-  }
-
   formatDateTime(value: string | number | null | undefined): string {
     if (value == null || value === '') {
       return '';
@@ -238,7 +241,7 @@ export class ModTableComponent implements OnChanges {
     return authorRaw || 'Unknown';
   }
 
-  getAuthorAvatar(mod: ModSummary): string | null {
+  private resolveAuthorAvatarMedium(mod: ModSummary): string | null {
     const workshop = mod.workshop;
     if (!workshop) {
       return null;
@@ -253,7 +256,7 @@ export class ModTableComponent implements OnChanges {
     return avatar ? avatar : null;
   }
 
-  getAuthorAvatarFull(mod: ModSummary): string | null {
+  private resolveAuthorAvatarFull(mod: ModSummary): string | null {
     const workshop = mod.workshop;
     if (!workshop) {
       return null;
@@ -268,8 +271,7 @@ export class ModTableComponent implements OnChanges {
     return avatar ? avatar : null;
   }
 
-  getAuthorAvatarTooltip(mod: ModSummary): string {
-    const url = this.getAuthorAvatarFull(mod);
+  private buildAuthorAvatarTooltip(url: string | null): string {
     if (!url) {
       return '';
     }

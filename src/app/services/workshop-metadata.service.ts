@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { fetch } from '@tauri-apps/plugin-http';
-import { TauriStoreService } from './tauri-store.service';
+import { SteamApiKeyService } from './steam-api-key.service';
 
 export const STEAM_API_TIMEOUT_CODE = 'STEAM_API_TIMEOUT';
 
@@ -161,9 +161,7 @@ export class WorkshopMetadataService {
     'https://api.steampowered.com/ISteamNews/GetNewsForApp/v2/';
   private readonly queryFilesEndpoint =
     'https://api.steampowered.com/IPublishedFileService/QueryFiles/v1/';
-  constructor(
-    private readonly store: TauriStoreService,
-  ) {}
+  constructor(private readonly steamApiKeyService: SteamApiKeyService) {}
 
   private isTimeoutError(error: unknown): boolean {
     return error instanceof Error && error.message === STEAM_API_TIMEOUT_CODE;
@@ -1669,9 +1667,7 @@ export class WorkshopMetadataService {
 
   private async loadApiKey(): Promise<string | null> {
     try {
-      const stored = await this.store.getItem<string>('steam_api_key');
-      const key = (stored ?? '').trim();
-      return key || null;
+      return await this.steamApiKeyService.get();
     } catch {
       return null;
     }

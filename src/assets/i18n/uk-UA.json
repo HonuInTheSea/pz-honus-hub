@@ -50,7 +50,9 @@
       "resetApp": "Скинути додаток",
       "resetAppTooltip": "Скинути налаштування вікна та видалити збережені дані",
       "myMods": "Мої моди",
-      "server": "Сервер"
+      "server": "Сервер",
+      "modCollections": "Колекції модів",
+      "modPresets": "Пресети модів"
     },
     "filters": {
       "adultLabel": "Має вміст для дорослих",
@@ -188,7 +190,6 @@
       "data": "Дані, які використовує програма",
       "features": "особливості",
       "server": "Керування сервером",
-      "mediaPlayer": "Медіаплеєр",
       "logInspector": "Інспектор журналу",
       "folderSetup": "Налаштування папки",
       "tauri": "Інтеграція з робочим столом (Tauri).",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Деталі рядка</strong> – розгорніть рядок, щоб побачити більше інформації про мод (якщо доступно).",
       "bullet3": "<strong>Відкрити в Steam</strong> – відкриває сторінку майстерні у вашому браузері за умовчанням для модів із дійсним ідентифікатором майстерні.",
       "bullet4": "<strong>Відкрити папку</strong> - відкриває вибрану папку мода у вашому файловому провіднику.",
-      "mediaPlayer": "<strong>Медіаплеєр</strong> - відтворюйте музичні треки Project Zomboid із бічної панелі. Див. <a routerLink=\"/documentation\" fragment=\"media-player\">Медіаплеєр</a>.",
       "logInspectorPrefix": "<strong>Інспектор журналів</strong> – завантажуйте та фільтруйте файли журналів (наприклад, <code>console.txt</code>), щоб швидко знаходити помилки та попередження. див",
       "logInspectorLink": "Інспектор журналу",
       "bullet6": "<strong>Інформаційна панель</strong> – показує швидку статистику (наприклад, загальну кількість виявлених мод) та інші індикатори високого рівня."
-    },
-    "mediaPlayer": {
-      "title": "Медіаплеєр",
-      "intro": "Бічна панель містить легкий музичний плеєр, який може сканувати звукові доріжки Project Zomboid (OGG) і відтворювати їх у програмі.",
-      "bullet1": "<strong>Список відтворення</strong> – показує виявлені композиції та основні метадані (назва/виконавець/альбом, якщо доступно).",
-      "bullet2": "<strong>Відтворення</strong> - відтворення/пауза плюс попередній/наступний трек.",
-      "bullet3": "<strong>Пошук + гучність</strong> - гортайте композицію та регулюйте гучність/вимкнення звуку."
     },
     "server": {
       "title": "Керування сервером",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Оновити",
+      "createNewServer": "Створити новий сервер",
+      "copy": "Копіювати",
+      "deleteServer": "Видалити сервер",
       "createBackupOnSave": "Створювати резервну копію під час збереження",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Змінні Sandbox",
+        "spawnpoints": "Точки спавну",
+        "spawnregions": "Регіони спавну"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Змінні конфігурації сервера",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Скинути",
+      "saveChanges": "Зберегти зміни",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Змінні Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

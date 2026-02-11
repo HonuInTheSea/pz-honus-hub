@@ -50,7 +50,9 @@
       "supportKofi": "รองรับ Ko-fi",
       "resetApp": "รีเซ็ตแอปพลิเคชัน",
       "resetAppTooltip": "รีเซ็ตการตั้งค่าหน้าต่างและลบข้อมูลที่เก็บไว้",
-      "server": "เซิร์ฟเวอร์"
+      "server": "เซิร์ฟเวอร์",
+      "modCollections": "คอลเลกชันม็อด",
+      "modPresets": "พรีเซ็ตม็อด"
     },
     "filters": {
       "adultLabel": "มีเนื้อหาสำหรับผู้ใหญ่",
@@ -419,7 +421,6 @@
       "data": "ข้อมูลที่แอปใช้",
       "features": "คุณสมบัติ",
       "server": "การจัดการเซิร์ฟเวอร์",
-      "mediaPlayer": "เครื่องเล่นมีเดีย",
       "logInspector": "ตัวตรวจสอบบันทึก",
       "folderSetup": "การตั้งค่าโฟลเดอร์",
       "tauri": "การรวมเดสก์ท็อป (Tauri)",
@@ -476,17 +477,9 @@
       "bullet2": "<strong>รายละเอียดแถว</strong> - ขยายแถวเพื่อดูข้อมูลเพิ่มเติมเกี่ยวกับม็อด (หากมี)",
       "bullet3": "<strong>เปิดใน Steam</strong> - เปิดหน้าเวิร์กชอปในเบราว์เซอร์เริ่มต้นของคุณสำหรับม็อดที่มีรหัสเวิร์กชอปที่ถูกต้อง",
       "bullet4": "<strong>เปิดโฟลเดอร์</strong> - เปิดโฟลเดอร์ mod ที่เลือกใน file explorer ของคุณ",
-      "mediaPlayer": "<strong>เครื่องเล่นสื่อ</strong> - เล่นแทร็กเพลง Project Zomboid จากแถบด้านข้าง ดู <a routerLink=\"/documentation\" fragment=\"media-player\">เครื่องเล่นสื่อ</a>",
       "logInspectorPrefix": "<strong>ตัวตรวจสอบบันทึก</strong> - โหลดและกรองไฟล์บันทึก (เช่น <code>console.txt</code>) เพื่อค้นหาข้อผิดพลาดและคำเตือนอย่างรวดเร็ว ดู",
       "logInspectorLink": "ตัวตรวจสอบบันทึก",
       "bullet6": "<strong>Dashboard</strong> - แสดงสถิติด่วน (เช่น: Mod ทั้งหมดที่ตรวจพบ) และตัวบ่งชี้ระดับสูงอื่นๆ"
-    },
-    "mediaPlayer": {
-      "title": "เครื่องเล่นมีเดีย",
-      "intro": "แถบด้านข้างมีเครื่องเล่นเพลงน้ำหนักเบาที่สามารถสแกนหาแทร็กเสียง Project Zomboid (OGG) และเล่นในแอปได้",
-      "bullet1": "<strong>เพลย์ลิสต์</strong> - แสดงแทร็กที่ตรวจพบและข้อมูลเมตาพื้นฐาน (ชื่อ/ศิลปิน/อัลบั้ม หากมี)",
-      "bullet2": "<strong>เล่น</strong> - เล่น/หยุดชั่วคราว พร้อมเพลงก่อนหน้า/ถัดไป",
-      "bullet3": "<strong>ค้นหา + ระดับเสียง</strong> - เลื่อนดูแทร็กและปรับระดับเสียง/ปิดเสียง"
     },
     "server": {
       "title": "การจัดการเซิร์ฟเวอร์",
@@ -899,10 +892,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "รีเฟรช",
+      "createNewServer": "สร้างเซิร์ฟเวอร์ใหม่",
+      "copy": "คัดลอก",
+      "deleteServer": "ลบเซิร์ฟเวอร์",
       "createBackupOnSave": "สร้างข้อมูลสำรองเมื่อบันทึก",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -910,17 +903,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "ตัวแปร Sandbox",
+        "spawnpoints": "จุดเกิด",
+        "spawnregions": "พื้นที่เกิด"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "ตัวแปรการกำหนดค่าเซิร์ฟเวอร์",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "รีเซ็ต",
+      "saveChanges": "บันทึกการเปลี่ยนแปลง",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "ตัวแปร Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

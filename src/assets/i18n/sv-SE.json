@@ -50,7 +50,9 @@
       "resetApp": "Återställ applikation",
       "resetAppTooltip": "Återställ fönsterinställningar och radera lagrad data",
       "myMods": "Mina mods",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Modsamlingar",
+      "modPresets": "Mod-förinställningar"
     },
     "filters": {
       "adultLabel": "Har vuxeninnehåll",
@@ -188,7 +190,6 @@
       "data": "Data som appen använder",
       "features": "Funktioner",
       "server": "Serverhantering",
-      "mediaPlayer": "Mediespelare",
       "logInspector": "Logginspektör",
       "folderSetup": "Mappinställningar",
       "tauri": "Integration för skrivbord (Tauri)",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Raddetaljer</strong> - expandera en rad för att se mer information om en mod (när den är tillgänglig).",
       "bullet3": "<strong>Öppna i Steam</strong> – öppnar Workshop-sidan i din standardwebbläsare för mods med ett giltigt verkstads-ID.",
       "bullet4": "<strong>Öppna mapp</strong> - öppnar den valda mod-mappen i din filutforskare.",
-      "mediaPlayer": "<strong>Mediaspelare</strong> - spela upp Project Zomboid-musikspår från sidofältet. Se <a routerLink=\"/documentation\" fragment=\"media-player\">Mediespelare</a>.",
       "logInspectorPrefix": "<strong>Logginspektör</strong> - ladda och filtrera loggfiler (som <code>console.txt</code>) för att snabbt hitta fel och varningar. Se",
       "logInspectorLink": "Logginspektören",
       "bullet6": "<strong>Dashboard</strong> - visar snabbstatistik (till exempel: totala mods upptäckta) och andra indikatorer på hög nivå."
-    },
-    "mediaPlayer": {
-      "title": "Mediaspelare",
-      "intro": "Sidofältet innehåller en lätt musikspelare som kan söka efter Project Zomboid-ljudspår (OGG) och spela upp dem i appen.",
-      "bullet1": "|<strong> -grundläggande titel/spellista/spellista visas</strong> tillgängligt).",
-      "bullet2": "<strong>Uppspelning</strong> - spela upp/pausa plus föregående/nästa spår.",
-      "bullet3": "<strong>Sök + volym</strong> - skrubba igenom spåret och justera volym/stäng av."
     },
     "server": {
       "title": "Serverhantering",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Uppdatera",
+      "createNewServer": "Skapa ny server",
+      "copy": "Kopiera",
+      "deleteServer": "Ta bort server",
       "createBackupOnSave": "Skapa säkerhetskopia vid sparning",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox-variabler",
+        "spawnpoints": "Spawnpunkter",
+        "spawnregions": "Spawnregioner"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Serverkonfigurationsvariabler",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Återställ",
+      "saveChanges": "Spara ändringar",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox-variabler",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

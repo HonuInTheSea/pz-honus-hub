@@ -11,7 +11,7 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 @Component({
     selector: 'app-layout',
     standalone: true,
-    imports: [CommonModule, AppTopbar, AppSidebar, RouterModule, AppFooter, ScrollTopModule],
+  imports: [CommonModule, AppTopbar, AppSidebar, RouterModule, AppFooter, ScrollTopModule],
     templateUrl: './app.layout.html'})
 export class AppLayout {
     overlayMenuOpenSubscription: Subscription;

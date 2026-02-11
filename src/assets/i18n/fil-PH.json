@@ -50,7 +50,9 @@
       "supportKofi": "Suporta sa Ko-fi",
       "resetApp": "I-reset ang Application",
       "resetAppTooltip": "I-reset ang mga setting ng window at tanggalin ang nakaimbak na data",
-      "server": "server"
+      "server": "server",
+      "modCollections": "Mga Koleksyon ng Mod",
+      "modPresets": "Mga Preset ng Mod"
     },
     "filters": {
       "adultLabel": "May Pang-adultong Nilalaman",
@@ -420,7 +422,6 @@
       "data": "Data na ginagamit ng app",
       "features": "Mga tampok",
       "server": "Pamamahala ng Server",
-      "mediaPlayer": "Media player",
       "logInspector": "Inspektor ng log",
       "folderSetup": "Pag-setup ng folder",
       "tauri": "Pagsasama ng Desktop (Tauri).",
@@ -477,17 +478,9 @@
       "bullet2": "<strong>Mga detalye ng row</strong> - palawakin ang isang row upang makakita ng higit pang impormasyon tungkol sa isang mod (kapag available).",
       "bullet3": "<strong>Buksan sa Steam</strong> - binubuksan ang pahina ng Workshop sa iyong default na browser para sa mga mod na may wastong workshop id.",
       "bullet4": "<strong>Buksan ang folder</strong> - binubuksan ang napiling mod folder sa iyong file explorer.",
-      "mediaPlayer": "<strong>Media player</strong> - i-play ang Project Zomboid music tracks mula sa sidebar. Tingnan ang <a routerLink=\"/documentation\" fragment=\"media-player\">Media player</a>.",
       "logInspectorPrefix": "<strong>Log inspector</strong> - i-load at i-filter ang mga log file (tulad ng <code>console.txt</code>) upang mabilis na makahanap ng mga error at babala. Tingnan mo",
       "logInspectorLink": "Inspektor ng log",
       "bullet6": "<strong>Dashboard</strong> - nagpapakita ng mga mabilisang istatistika (halimbawa: kabuuang mga natukoy na mod) at iba pang mga tagapagpahiwatig ng mataas na antas."
-    },
-    "mediaPlayer": {
-      "title": "Media player",
-      "intro": "Ang sidebar ay may kasamang magaan na music player na maaaring mag-scan para sa Project Zomboid audio track (OGG) at i-play ang mga ito in-app.",
-      "bullet1": "<strong>Playlist</strong> - nagpapakita ng mga nakitang track at pangunahing metadata (pamagat/artist/album kapag available).",
-      "bullet2": "<strong>Playback</strong> - i-play/pause kasama ang nakaraan/susunod na track.",
-      "bullet3": "<strong>Seek + volume</strong> - mag-scrub sa track at ayusin ang volume/mute."
     },
     "server": {
       "title": "Pamamahala ng Server",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "I-refresh",
+      "createNewServer": "Gumawa ng Bagong Server",
+      "copy": "Kopyahin",
+      "deleteServer": "Tanggalin ang Server",
       "createBackupOnSave": "Gumawa ng backup kapag nag-save",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Mga Variable ng Sandbox",
+        "spawnpoints": "Mga Spawn Point",
+        "spawnregions": "Mga Spawn Region"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Mga Variable ng Configuration ng Server",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "I-reset",
+      "saveChanges": "I-save ang mga Pagbabago",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Mga Variable ng Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

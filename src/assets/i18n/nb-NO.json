@@ -50,7 +50,9 @@
       "resetApp": "Tilbakestill applikasjon",
       "resetAppTooltip": "Tilbakestill vindusinnstillinger og slett lagrede data",
       "myMods": "Mine Mods",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Modsamlinger",
+      "modPresets": "Mod-forhåndsinnstillinger"
     },
     "filters": {
       "adultLabel": "Har vokseninnhold",
@@ -188,7 +190,6 @@
       "data": "Data appen bruker",
       "features": "Funksjoner",
       "server": "Serveradministrasjon",
-      "mediaPlayer": "Mediespiller",
       "logInspector": "Logginspektør",
       "folderSetup": "Mappeoppsett",
       "tauri": "Desktop (Tauri) integrasjon",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>raddetaljer</strong> – utvid en rad for å se mer informasjon om en mod (når tilgjengelig).",
       "bullet3": "<strong>Åpne i Steam</strong> – åpner Workshop-siden i standardnettleseren din for mods med en gyldig verksted-ID.",
       "bullet4": "<strong>Åpne mappe</strong> – åpner den valgte mod-mappen i filutforskeren.",
-      "mediaPlayer": "<strong>Mediespiller</strong> – spill Project Zomboid-musikkspor fra sidefeltet. Se <a routerLink=\"/documentation\" fragment=\"media-player\">Mediespiller</a>.",
       "logInspectorPrefix": "<strong>Logginspektør</strong> – last og filtrer loggfiler (som <code>console.txt</code>) for raskt å finne feil og advarsler. Se",
       "logInspectorLink": "Logginspektør",
       "bullet6": "<strong>Dashboard</strong> – viser hurtigstatistikk (for eksempel: totalt antall mods oppdaget) og andre indikatorer på høyt nivå."
-    },
-    "mediaPlayer": {
-      "title": "Mediespiller",
-      "intro": "Sidefeltet inkluderer en lett musikkspiller som kan skanne etter Project Zomboid-lydspor (OGG) og spille dem av i appen.",
-      "bullet1": "<strong>Spilleliste</strong> – viser oppdagede spor og grunnleggende metadata (tittel/artist/album når tilgjengelig).",
-      "bullet2": "<strong>Avspilling</strong> – spill av/pause pluss forrige/neste spor.",
-      "bullet3": "<strong>Søk + volum</strong> – skrubb gjennom sporet og juster volum/demping."
     },
     "server": {
       "title": "Serveradministrasjon",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Oppdater",
+      "createNewServer": "Opprett ny server",
+      "copy": "Kopier",
+      "deleteServer": "Slett server",
       "createBackupOnSave": "Opprett sikkerhetskopi ved lagring",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox-variabler",
+        "spawnpoints": "Spawn-punkter",
+        "spawnregions": "Spawn-regioner"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Serverkonfigurasjonsvariabler",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Tilbakestill",
+      "saveChanges": "Lagre endringer",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox-variabler",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

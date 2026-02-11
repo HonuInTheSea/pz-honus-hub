@@ -12,7 +12,7 @@ import { TranslocoModule } from '@jsverse/transloco';
 @Component({
     selector: 'app-topbar',
     standalone: true,
-    imports: [RouterModule, CommonModule, StyleClassModule, TagModule, TranslocoModule],
+  imports: [RouterModule, CommonModule, StyleClassModule, TagModule, TranslocoModule],
     templateUrl: './app.topbar.html'})
 export class AppTopbar {
     items!: MenuItem[];

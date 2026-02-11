@@ -1,86 +1,45 @@
 use chrono::{DateTime, Utc};
-use lofty::{file::TaggedFileExt, prelude::Accessor, read_from_path};
 use rayon::prelude::*;
 use serde::{Deserialize, Serialize};
 use serde_json::Value as JsonValue;
 use std::collections::HashMap;
 use std::env;
 use std::fs;
-use std::io::{Cursor, Read, Write};
 use std::path::Path;
 use std::process::Command;
-use std::time::{SystemTime, UNIX_EPOCH};
+use std::time::{Instant, SystemTime};
+use tauri::Manager;
 use walkdir::WalkDir;
-use zip::{ZipArchive, ZipWriter};
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerDbEntry {
-    pub id: i64,
-    pub name: Option<String>,
-    pub wx: i32,
-    pub wy: i32,
-    pub x: i32,
-    pub y: i32,
-    pub z: i32,
-    #[serde(rename = "worldVersion")]
-    pub world_version: i32,
-    #[serde(rename = "isDead")]
-    pub is_dead: bool,
-    #[serde(rename = "dataLen")]
-    pub data_len: i32,
-    pub death_cause: Option<String>,
+struct ScopedTimer {
+    name: &'static str,
+    started_at: Instant,
+    enabled: bool,
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerDbBlob {
-    pub id: i64,
-    pub name: Option<String>,
-    pub wx: i32,
-    pub wy: i32,
-    pub x: i32,
-    pub y: i32,
-    pub z: i32,
-    #[serde(rename = "worldVersion")]
-    pub world_version: i32,
-    #[serde(rename = "isDead")]
-    pub is_dead: bool,
-    #[serde(rename = "dataHex")]
-    pub data_hex: String,
+impl Drop for ScopedTimer {
+    fn drop(&mut self) {
+        if !self.enabled {
+            return;
+        }
+        let elapsed_ms = self.started_at.elapsed().as_secs_f64() * 1000.0;
+        println!("[perf][tauri] {}: {:.1}ms", self.name, elapsed_ms);
+    }
 }
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerDbStringHit {
-    pub offset: usize,
-    pub length: usize,
-    pub value: String,
-}
+fn scoped_timer(name: &'static str) -> ScopedTimer {
+    let enabled = env::var("PZ_PROFILE_TIMING")
+        .map(|v| {
+            let lower = v.trim().to_ascii_lowercase();
+            lower == "1" || lower == "true" || lower == "on"
+        })
+        .unwrap_or(false);
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerDbInspect {
-    pub id: i64,
-    pub size: usize,
-    pub strings: Vec<PlayerDbStringHit>,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerBlobTextFile {
-    pub name: String,
-    pub text: String,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct PlayerDbUpdate {
-    pub id: i64,
-    pub name: Option<String>,
-    pub x: Option<i32>,
-    pub y: Option<i32>,
-    pub z: Option<i32>,
-    #[serde(rename = "isDead")]
-    pub is_dead: Option<bool>,
-    #[serde(rename = "dataHex")]
-    pub data_hex: Option<String>,
-    pub backup: Option<bool>,
-    pub death_cause: Option<String>,
+    ScopedTimer {
+        name,
+        started_at: Instant::now(),
+        enabled,
+    }
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -138,25 +97,6 @@ pub struct ModFolderScanResult {
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct OggTrackMetadata {
-    pub title: Option<String>,
-    pub artist: Option<String>,
-    pub album: Option<String>,
-    pub track_number: Option<u32>,
-    pub genre: Option<String>,
-    pub year: Option<i32>,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
-pub struct OggTrackInfo {
-    pub path: String,
-    pub relative_path: String,
-    pub size_bytes: u64,
-    pub modified_epoch_ms: u128,
-    pub metadata: OggTrackMetadata,
-}
-
-#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct HonuModsDbResult {
     pub created: bool,
     pub path: String,
@@ -171,12 +111,6 @@ pub struct StoreSnapshotPayload {
     pub browser_storage: Option<JsonValue>,
     pub workshop: JsonValue,
 }
-fn find_substr(haystack: &[u8], needle: &[u8]) -> Option<usize> {
-    haystack
-        .windows(needle.len())
-        .position(|window| window == needle)
-}
-
 fn parse_list(raw: &str) -> Vec<String> {
     raw.split(|c| c == ';' || c == ',' || c == '\n' || c == '\r')
         .map(|part| part.trim().trim_matches('"').trim_matches('\''))
@@ -193,12 +127,6 @@ fn normalize_mod_ref(raw: &str) -> String {
 fn to_iso_string(time: SystemTime) -> Option<String> {
     let dt: DateTime<Utc> = time.into();
     Some(dt.to_rfc3339())
-}
-
-fn to_epoch_ms(time: SystemTime) -> u128 {
-    time.duration_since(UNIX_EPOCH)
-        .map(|d| d.as_millis())
-        .unwrap_or(0)
 }
 
 fn resolve_relative_path(base: &Path, value: &str) -> Option<String> {
@@ -221,38 +149,6 @@ fn resolve_relative_path(base: &Path, value: &str) -> Option<String> {
     }
 
     None
-}
-
-fn normalize_hex(input: &str) -> String {
-    input
-        .chars()
-        .filter(|c| !c.is_whitespace())
-        .collect::<String>()
-        .to_lowercase()
-}
-
-fn hex_to_bytes(input: &str) -> Result<Vec<u8>, String> {
-    let normalized = normalize_hex(input);
-    if normalized.len() % 2 != 0 {
-        return Err("Hex length must be even.".to_string());
-    }
-    let mut out = Vec::with_capacity(normalized.len() / 2);
-    let mut i = 0;
-    while i < normalized.len() {
-        let chunk = &normalized[i..i + 2];
-        let byte = u8::from_str_radix(chunk, 16).map_err(|_| "Invalid hex".to_string())?;
-        out.push(byte);
-        i += 2;
-    }
-    Ok(out)
-}
-
-fn bytes_to_hex(bytes: &[u8]) -> String {
-    let mut out = String::with_capacity(bytes.len() * 2);
-    for b in bytes {
-        out.push_str(&format!("{:02x}", b));
-    }
-    out
 }
 
 fn sanitize_filename_component(raw: &str) -> String {
@@ -504,113 +400,6 @@ fn merge_summary(base: &mut ModSummary, incoming: ModSummary) {
     merge_optional_string(&mut base.mod_info_path, incoming.mod_info_path);
 }
 
-fn read_player_death_cause_from_blob(data: &[u8]) -> Option<String> {
-    let cursor = Cursor::new(data);
-    let mut archive = match ZipArchive::new(cursor) {
-        Ok(archive) => archive,
-        Err(_) => return None,
-    };
-
-    for i in 0..archive.len() {
-        let mut file = archive.by_index(i).unwrap();
-        if file.name().ends_with(".bin") {
-            let mut buffer = Vec::new();
-            if file.read_to_end(&mut buffer).is_ok() {
-                if let Some(pos) = find_substr(&buffer, b"deathCause") {
-                    let start = pos + 15; // "deathCause = ".len()
-                    let end = buffer[start..]
-                        .iter()
-                        .position(|&b| b == b'\n')
-                        .unwrap_or(buffer.len());
-                    let death_cause_bytes = &buffer[start..start + end];
-                    return Some(String::from_utf8_lossy(death_cause_bytes).to_string());
-                }
-            }
-        }
-    }
-
-    None
-}
-
-#[tauri::command]
-pub fn extract_player_death_cause_from_blob(data_hex: String) -> Result<Option<String>, String> {
-    let bytes = hex_to_bytes(&data_hex)?;
-    Ok(read_player_death_cause_from_blob(&bytes))
-}
-
-#[tauri::command]
-pub fn apply_player_death_cause_to_blob(
-    data_hex: String,
-    death_cause: String,
-) -> Result<String, String> {
-    let data = hex_to_bytes(&data_hex)?;
-    let mut new_data = Vec::new();
-    let cursor = Cursor::new(&data);
-    let mut archive = ZipArchive::new(cursor).map_err(|e| e.to_string())?;
-    let mut new_zip = ZipWriter::new(Cursor::new(&mut new_data));
-
-    for i in 0..archive.len() {
-        let mut file = archive.by_index(i).map_err(|e| e.to_string())?;
-        let mut buffer = Vec::new();
-        file.read_to_end(&mut buffer).map_err(|e| e.to_string())?;
-
-        if file.name().ends_with(".bin") {
-            if let Some(pos) = find_substr(&buffer, b"deathCause") {
-                let start = pos + 15; // "deathCause = ".len()
-                let end = buffer[start..]
-                    .iter()
-                    .position(|&b| b == b'\n')
-                    .unwrap_or(buffer.len());
-                let new_death_cause = format!("deathCause = {}", death_cause);
-                buffer.splice(start..start + end, new_death_cause.bytes());
-            } else {
-                let new_death_cause = format!("\ndeathCause = {}", death_cause);
-                buffer.extend(new_death_cause.bytes());
-            }
-        }
-        new_zip
-            .start_file(file.name(), zip::write::FileOptions::<()>::default())
-            .map_err(|e| e.to_string())?;
-        new_zip.write_all(&buffer).map_err(|e| e.to_string())?;
-    }
-    new_zip.finish().map_err(|e| e.to_string())?;
-    Ok(bytes_to_hex(&new_data))
-}
-
-#[tauri::command]
-pub fn extract_player_blob_text(data_hex: String) -> Result<Vec<PlayerBlobTextFile>, String> {
-    let data = hex_to_bytes(&data_hex)?;
-    let cursor = Cursor::new(&data);
-    let mut archive = match ZipArchive::new(cursor) {
-        Ok(archive) => archive,
-        Err(_) => {
-            let preview = String::from_utf8_lossy(&data)
-                .chars()
-                .take(20000)
-                .collect::<String>();
-            return Ok(vec![PlayerBlobTextFile {
-                name: "raw.bin".to_string(),
-                text: preview,
-            }]);
-        }
-    };
-    let mut out = Vec::new();
-    for i in 0..archive.len() {
-        let mut file = archive.by_index(i).map_err(|e| e.to_string())?;
-        if !file.name().ends_with(".bin") {
-            continue;
-        }
-        let mut buffer = Vec::new();
-        file.read_to_end(&mut buffer).map_err(|e| e.to_string())?;
-        let text = String::from_utf8_lossy(&buffer).to_string();
-        out.push(PlayerBlobTextFile {
-            name: file.name().to_string(),
-            text,
-        });
-    }
-    Ok(out)
-}
-
 #[tauri::command]
 pub fn validate_pz_workshop_path(path: String) -> Result<bool, String> {
     let dir = Path::new(&path);
@@ -649,6 +438,7 @@ pub fn validate_pz_workshop_path(path: String) -> Result<bool, String> {
 
 #[tauri::command]
 pub fn scan_mod_folder(path: String) -> Result<ModFolderScanResult, String> {
+    let _timer = scoped_timer("scan_mod_folder");
     let mut paths: Vec<std::path::PathBuf> = Vec::new();
     for entry in WalkDir::new(&path)
         .follow_links(true)
@@ -785,30 +575,6 @@ pub fn scan_mod_folder(path: String) -> Result<ModFolderScanResult, String> {
 }
 
 #[tauri::command]
-pub fn list_save_player_dbs(user_dir: String) -> Result<Vec<String>, String> {
-    let mut out = Vec::new();
-    let base = Path::new(&user_dir).join("Saves");
-    if !base.exists() {
-        return Ok(out);
-    }
-    for entry in WalkDir::new(base)
-        .follow_links(true)
-        .into_iter()
-        .filter_map(|entry| entry.ok())
-    {
-        if !entry.file_type().is_file() {
-            continue;
-        }
-        let name = entry.file_name().to_string_lossy();
-        if name.eq_ignore_ascii_case("players.db") {
-            out.push(entry.path().to_string_lossy().to_string());
-        }
-    }
-    out.sort();
-    Ok(out)
-}
-
-#[tauri::command]
 pub fn list_media_script_files(
     media_dir: String,
     mod_media_dir: Option<String>,
@@ -849,31 +615,80 @@ pub fn list_media_script_files(
 }
 
 #[tauri::command]
-pub fn export_player_db_json(payload: JsonValue) -> Result<(), String> {
-    let db_path = payload
-        .get("dbPath")
-        .and_then(|v| v.as_str())
-        .ok_or_else(|| "dbPath missing".to_string())?;
-    let player_id = payload
-        .get("player")
-        .and_then(|v| v.get("id"))
-        .and_then(|v| v.as_i64())
-        .unwrap_or(0);
-    let ts = chrono::Utc::now().format("%Y%m%d_%H%M%S").to_string();
-    let file_name = format!("player_{}_{}.json", player_id, ts);
-    let path = Path::new(db_path)
-        .parent()
-        .unwrap_or_else(|| Path::new("."))
-        .join(file_name);
-    ensure_parent_dir(&path)?;
-    let json = serde_json::to_string_pretty(&payload).map_err(|e| e.to_string())?;
-    fs::write(&path, json).map_err(|e| e.to_string())?;
-    Ok(())
+pub fn read_text_file(path: String) -> Result<String, String> {
+    let _timer = scoped_timer("read_text_file");
+    fs::read_to_string(&path).map_err(|e| e.to_string())
+}
+
+fn try_read_store_key(store_json: &JsonValue, key: &str) -> Option<JsonValue> {
+    if let Some(value) = store_json.get(key) {
+        return Some(value.clone());
+    }
+
+    for container_key in ["data", "store"] {
+        if let Some(value) = store_json
+            .get(container_key)
+            .and_then(|container| container.get(key))
+        {
+            return Some(value.clone());
+        }
+    }
+
+    None
 }
 
 #[tauri::command]
-pub fn read_text_file(path: String) -> Result<String, String> {
-    fs::read_to_string(&path).map_err(|e| e.to_string())
+pub fn get_bootstrap_store_items(
+    app: tauri::AppHandle,
+    keys: Vec<String>,
+) -> Result<HashMap<String, JsonValue>, String> {
+    let mut out: HashMap<String, JsonValue> = HashMap::new();
+    let unique_keys: Vec<String> = keys
+        .into_iter()
+        .map(|k| k.trim().to_string())
+        .filter(|k| !k.is_empty())
+        .collect();
+
+    if unique_keys.is_empty() {
+        return Ok(out);
+    }
+
+    let config_dir = app.path().app_config_dir().map_err(|e| e.to_string())?;
+    let store_path = config_dir.join("pz_mod_manager.store.json");
+
+    if !store_path.exists() {
+        for key in unique_keys {
+            out.insert(key, JsonValue::Null);
+        }
+        return Ok(out);
+    }
+
+    let content = match fs::read_to_string(&store_path) {
+        Ok(raw) => raw,
+        Err(_) => {
+            for key in unique_keys {
+                out.insert(key, JsonValue::Null);
+            }
+            return Ok(out);
+        }
+    };
+
+    let parsed: JsonValue = match serde_json::from_str(&content) {
+        Ok(value) => value,
+        Err(_) => {
+            for key in unique_keys {
+                out.insert(key, JsonValue::Null);
+            }
+            return Ok(out);
+        }
+    };
+
+    for key in unique_keys {
+        let value = try_read_store_key(&parsed, &key).unwrap_or(JsonValue::Null);
+        out.insert(key, value);
+    }
+
+    Ok(out)
 }
 
 #[tauri::command]
@@ -896,6 +711,7 @@ pub fn copy_file(source: String, target: String) -> Result<(), String> {
 
 #[tauri::command]
 pub fn list_server_names(user_dir: String) -> Result<Vec<String>, String> {
+    let _timer = scoped_timer("list_server_names");
     let base = Path::new(&user_dir).join("Server");
     let entries = fs::read_dir(&base).map_err(|e| e.to_string())?;
     let mut names: Vec<String> = entries
@@ -958,6 +774,7 @@ pub fn truncate_text_file(path: String) -> Result<(), String> {
 
 #[tauri::command]
 pub fn get_default_zomboid_user_dir() -> Result<Option<String>, String> {
+    let _timer = scoped_timer("get_default_zomboid_user_dir");
     let base = env::var("USERPROFILE")
         .or_else(|_| env::var("HOME"))
         .unwrap_or_default();
@@ -980,6 +797,7 @@ pub fn get_default_zomboid_user_dir() -> Result<Option<String>, String> {
 
 #[tauri::command]
 pub fn list_save_mods_files(user_dir: String) -> Result<Vec<String>, String> {
+    let _timer = scoped_timer("list_save_mods_files");
     let mut out = Vec::new();
     let base = Path::new(&user_dir).join("Saves");
     if !base.exists() {
@@ -1003,6 +821,7 @@ pub fn list_save_mods_files(user_dir: String) -> Result<Vec<String>, String> {
 }
 #[tauri::command]
 pub fn analyze_mod_loadout(mods: Vec<JsonValue>) -> Result<JsonValue, String> {
+    let _timer = scoped_timer("analyze_mod_loadout");
     let ordered: Vec<String> = mods
         .iter()
         .filter_map(|m| m.get("modId").and_then(|v| v.as_str()))
@@ -1033,6 +852,7 @@ pub fn plan_server_preset(
     mod_ids: Vec<String>,
     workshop_ids: Vec<String>,
 ) -> Result<JsonValue, String> {
+    let _timer = scoped_timer("plan_server_preset");
     let file_name = format!("{}.ini", sanitize_filename_component(&preset_name));
     let target = Path::new(&zomboid_user_dir).join("Server").join(file_name);
     let ini_preview = build_server_ini(&mod_ids, &workshop_ids);
@@ -1050,6 +870,7 @@ pub fn write_server_preset(
     mod_ids: Vec<String>,
     workshop_ids: Vec<String>,
 ) -> Result<(), String> {
+    let _timer = scoped_timer("write_server_preset");
     let file_name = format!("{}.ini", sanitize_filename_component(&preset_name));
     let target = Path::new(&zomboid_user_dir).join("Server").join(file_name);
     ensure_parent_dir(&target)?;
@@ -1075,6 +896,7 @@ pub fn plan_singleplayer_save_mods(
     mod_ids: Vec<String>,
     _workshop_ids: Vec<String>,
 ) -> Result<JsonValue, String> {
+    let _timer = scoped_timer("plan_singleplayer_save_mods");
     let target = Path::new(&zomboid_user_dir)
         .join("Saves")
         .join(&save_rel_path)
@@ -1094,6 +916,7 @@ pub fn write_singleplayer_save_mods(
     mod_ids: Vec<String>,
     _workshop_ids: Vec<String>,
 ) -> Result<(), String> {
+    let _timer = scoped_timer("write_singleplayer_save_mods");
     let target = Path::new(&zomboid_user_dir)
         .join("Saves")
         .join(&save_rel_path)
@@ -1104,80 +927,6 @@ pub fn write_singleplayer_save_mods(
     Ok(())
 }
 
-#[tauri::command]
-pub fn list_project_zomboid_music_ogg(game_dir: String) -> Result<Vec<OggTrackInfo>, String> {
-    let mut out = Vec::new();
-    let base = Path::new(&game_dir);
-    let music_dir = base.join("media").join("music");
-    let scan_root = if music_dir.exists() {
-        music_dir
-    } else {
-        base.to_path_buf()
-    };
-
-    for entry in WalkDir::new(&scan_root)
-        .follow_links(true)
-        .into_iter()
-        .filter_map(|entry| entry.ok())
-    {
-        if !entry.file_type().is_file() {
-            continue;
-        }
-        let path = entry.path();
-        let ext = path.extension().and_then(|e| e.to_str()).unwrap_or("");
-        if !ext.eq_ignore_ascii_case("ogg") {
-            continue;
-        }
-
-        let metadata = fs::metadata(path).map_err(|e| e.to_string())?;
-        let modified_epoch_ms = metadata.modified().map(to_epoch_ms).unwrap_or(0);
-        let tagged = read_from_path(path).ok();
-        let tag = tagged
-            .as_ref()
-            .and_then(|t| t.primary_tag())
-            .or_else(|| tagged.as_ref().and_then(|t| t.first_tag()));
-
-        let meta = if let Some(tag) = tag {
-            OggTrackMetadata {
-                title: tag.title().map(|v| v.to_string()),
-                artist: tag.artist().map(|v| v.to_string()),
-                album: tag.album().map(|v| v.to_string()),
-                track_number: tag.track(),
-                genre: tag.genre().map(|v| v.to_string()),
-                year: tag.year().map(|v| v as i32),
-            }
-        } else {
-            OggTrackMetadata {
-                title: None,
-                artist: None,
-                album: None,
-                track_number: None,
-                genre: None,
-                year: None,
-            }
-        };
-
-        let relative = path
-            .strip_prefix(&game_dir)
-            .map(|p| p.to_string_lossy().to_string())
-            .unwrap_or_else(|_| path.to_string_lossy().to_string());
-
-        out.push(OggTrackInfo {
-            path: path.to_string_lossy().to_string(),
-            relative_path: relative,
-            size_bytes: metadata.len(),
-            modified_epoch_ms,
-            metadata: meta,
-        });
-    }
-
-    out.sort_by(|a, b| {
-        a.relative_path
-            .to_lowercase()
-            .cmp(&b.relative_path.to_lowercase())
-    });
-    Ok(out)
-}
 #[tauri::command]
 pub fn has_ogg_files(path: String) -> Result<bool, String> {
     for entry in WalkDir::new(&path)
@@ -1986,14 +1735,10 @@ pub fn run() {
         .plugin(tauri_plugin_http::init())
         .plugin(tauri_plugin_sql::Builder::default().build())
         .invoke_handler(tauri::generate_handler![
+            get_bootstrap_store_items,
             validate_pz_workshop_path,
             scan_mod_folder,
-            list_save_player_dbs,
             list_media_script_files,
-            extract_player_death_cause_from_blob,
-            apply_player_death_cause_to_blob,
-            extract_player_blob_text,
-            export_player_db_json,
             backup_file,
             read_text_file,
             write_text_file,
@@ -2008,7 +1753,6 @@ pub fn run() {
             write_server_preset,
             plan_singleplayer_save_mods,
             write_singleplayer_save_mods,
-            list_project_zomboid_music_ogg,
             has_ogg_files,
             ensure_honu_mods_db,
             open_mod_in_explorer,

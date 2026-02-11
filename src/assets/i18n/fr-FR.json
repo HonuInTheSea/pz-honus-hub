@@ -50,7 +50,9 @@
       "resetApp": "Réinitialiser l'application",
       "resetAppTooltip": "Réinitialiser les paramètres de la fenêtre et supprimer les données stockées",
       "myMods": "Mes mods",
-      "server": "Serveur"
+      "server": "Serveur",
+      "modCollections": "Collections de mods",
+      "modPresets": "Préréglages de mods"
     },
     "filters": {
       "adultLabel": "A du contenu pour adultes",
@@ -188,7 +190,6 @@
       "data": "Données utilisées par l'application",
       "features": "Fonctionnalités",
       "server": "Gestion des serveurs",
-      "mediaPlayer": "Lecteur multimédia",
       "logInspector": "Inspecteur de journaux",
       "folderSetup": "Configuration des dossiers",
       "tauri": "Intégration du bureau (Tauri)",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Détails de la ligne</strong> - développez une ligne pour voir plus d'informations sur un mod (si disponible).",
       "bullet3": "<strong>Ouvrir dans Steam</strong> - ouvre la page Atelier dans votre navigateur par défaut pour les mods avec un identifiant d'atelier valide.",
       "bullet4": "<strong>Ouvrir le dossier</strong> - ouvre le dossier mod sélectionné dans votre explorateur de fichiers.",
-      "mediaPlayer": "<strong>Lecteur multimédia</strong> - lit les morceaux de musique de Project Zomboid à partir de la barre latérale. Consultez le <a routerLink=\"/documentation\" fragment=\"media-player\">Lecteur multimédia</a>.",
       "logInspectorPrefix": "<strong>Inspecteur de journaux</strong> : chargez et filtrez les fichiers journaux (comme <code>console.txt</code>) pour trouver rapidement les erreurs et les avertissements. Voir",
       "logInspectorLink": "Inspecteur de journaux",
       "bullet6": "<strong>Tableau de bord</strong> - affiche des statistiques rapides (par exemple : nombre total de mods détectés) et d'autres indicateurs de haut niveau."
-    },
-    "mediaPlayer": {
-      "title": "Lecteur multimédia",
-      "intro": "La barre latérale comprend un lecteur de musique léger qui peut rechercher les pistes audio du Project Zomboid (OGG) et les lire dans l'application.",
-      "bullet1": "<strong>Playlist</strong> - affiche les pistes détectées et les métadonnées de base (titre/artiste/album si disponible).",
-      "bullet2": "<strong>Lecture</strong> - lecture/pause plus piste précédente/suivante.",
-      "bullet3": "<strong>Recherche + volume</strong> - parcourez la piste et réglez le volume/muet."
     },
     "server": {
       "title": "Gestion des serveurs",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Actualiser",
+      "createNewServer": "Créer un nouveau serveur",
+      "copy": "Copier",
+      "deleteServer": "Supprimer le serveur",
       "createBackupOnSave": "Créer une sauvegarde lors de l'enregistrement",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Variables Sandbox",
+        "spawnpoints": "Points d'apparition",
+        "spawnregions": "Régions d'apparition"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Variables de configuration du serveur",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Réinitialiser",
+      "saveChanges": "Enregistrer les modifications",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Variables Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

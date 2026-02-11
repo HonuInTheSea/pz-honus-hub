@@ -1,13 +1,13 @@
-import { Component, HostBinding, Input } from '@angular/core';
+import { Component, DestroyRef, HostBinding, Input } from '@angular/core';
 import { NavigationEnd, Router, RouterModule, isActive } from '@angular/router';
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Subscription } from 'rxjs';
-import { filter } from 'rxjs/operators';
+import { filter } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { RippleModule } from 'primeng/ripple';
 import { TooltipModule } from 'primeng/tooltip';
 import { MenuItem } from 'primeng/api';
 import { LayoutService } from '../service/layout.service';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 @Component({
     // eslint-disable-next-line @angular-eslint/component-selector
@@ -30,8 +30,7 @@ import { LayoutService } from '../service/layout.service';
             ),
             transition('collapsed <=> expanded', animate('400ms cubic-bezier(0.86, 0, 0.07, 1)'))
         ])
-    ],
-    providers: [LayoutService]
+    ]
 })
 export class AppMenuitem {
     @Input() item!: MenuItem;
@@ -44,19 +43,16 @@ export class AppMenuitem {
 
     active = false;
 
-    menuSourceSubscription: Subscription;
-
-    menuResetSubscription: Subscription;
-
-    routeSubscription: Subscription;
-
     key: string = '';
 
     constructor(
         public router: Router,
-        private layoutService: LayoutService
+        private layoutService: LayoutService,
+        private readonly destroyRef: DestroyRef
     ) {
-        this.menuSourceSubscription = this.layoutService.menuSource$.subscribe((value) => {
+        this.layoutService.menuSource$
+            .pipe(takeUntilDestroyed(this.destroyRef))
+            .subscribe((value) => {
             Promise.resolve(null).then(() => {
                 if (value.routeEvent) {
                     this.active = value.key === this.key || value.key.startsWith(this.key + '-') ? true : false;
@@ -66,17 +62,24 @@ export class AppMenuitem {
                     }
                 }
             });
-        });
+            });
 
-        this.menuResetSubscription = this.layoutService.resetSource$.subscribe(() => {
-            this.active = false;
-        });
+        this.layoutService.resetSource$
+            .pipe(takeUntilDestroyed(this.destroyRef))
+            .subscribe(() => {
+                this.active = false;
+            });
 
-        this.routeSubscription = this.router.events.pipe(filter((event) => event instanceof NavigationEnd)).subscribe((params) => {
-            if (this.item.routerLink) {
-                this.updateActiveStateFromRoute();
-            }
-        });
+        this.router.events
+            .pipe(
+                filter((event) => event instanceof NavigationEnd),
+                takeUntilDestroyed(this.destroyRef)
+            )
+            .subscribe(() => {
+                if (this.item.routerLink) {
+                    this.updateActiveStateFromRoute();
+                }
+            });
     }
 
     ngOnInit() {
@@ -129,17 +132,4 @@ export class AppMenuitem {
         return this.active && !this.root;
     }
 
-    ngOnDestroy() {
-        if (this.menuSourceSubscription) {
-            this.menuSourceSubscription.unsubscribe();
-        }
-
-        if (this.menuResetSubscription) {
-            this.menuResetSubscription.unsubscribe();
-        }
-
-        if (this.routeSubscription) {
-            this.routeSubscription.unsubscribe();
-        }
-    }
 }

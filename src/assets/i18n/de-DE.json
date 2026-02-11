@@ -50,7 +50,9 @@
       "resetApp": "Anwendung zurücksetzen",
       "resetAppTooltip": "Fenstereinstellungen zurücksetzen und gespeicherte Daten löschen",
       "myMods": "Meine Mods",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Mod-Sammlungen",
+      "modPresets": "Mod-Voreinstellungen"
     },
     "filters": {
       "adultLabel": "Hat Inhalte für Erwachsene",
@@ -188,7 +190,6 @@
       "data": "Von der App verwendete Daten",
       "features": "Funktionen",
       "server": "Serververwaltung",
-      "mediaPlayer": "Mediaplayer",
       "logInspector": "Protokollinspektor",
       "folderSetup": "Ordnereinrichtung",
       "tauri": "Desktop (Tauri)-Integration",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Zeilendetails</strong> – erweitern Sie eine Zeile, um weitere Informationen zu einem Mod anzuzeigen (sofern verfügbar).",
       "bullet3": "<strong>In Steam öffnen</strong> – öffnet die Workshop-Seite in Ihr Standardbrowser für Mods mit einer gültigen Workshop-ID.",
       "bullet4": "<strong>Ordner öffnen</strong> – öffnet den ausgewählten Mod-Ordner in Ihrem Datei-Explorer.",
-      "mediaPlayer": "<strong>Media Player</strong> – spielen Sie Project Zomboid-Musiktitel aus der Seitenleiste ab. Siehe <a routerLink=\"/documentation\" fragment=\"media-player\">Media Player</a>.",
       "logInspectorPrefix": "<strong>Protokollinspektor</strong> – lädt und filtert Protokolldateien (wie <code>console.txt</code>), um Fehler und Warnungen schnell zu finden. Siehe",
       "logInspectorLink": "Protokollinspektor",
       "bullet6": "<strong>Dashboard</strong> – zeigt Schnellstatistiken (zum Beispiel: Gesamtzahl der erkannten Mods) und andere allgemeine Indikatoren an."
-    },
-    "mediaPlayer": {
-      "title": "Medienplayer",
-      "intro": "Die Seitenleiste enthält einen kompakten Musikplayer, der nach Project Zomboid-Audiotiteln (OGG) suchen und diese in der App abspielen kann.",
-      "bullet1": "<strong>Playlist</strong> – zeigt erkannte Titel und grundlegende Metadaten (Titel/Künstler/Album, wann). verfügbar).",
-      "bullet2": "<strong>Wiedergabe</strong> – Wiedergabe/Pause plus vorheriger/nächster Titel.",
-      "bullet3": "<strong>Suche + Lautstärke</strong> – Scrollen Sie durch den Titel und passen Sie die Lautstärke/Stummschaltung an."
     },
     "server": {
       "title": "Serververwaltung",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Aktualisieren",
+      "createNewServer": "Neuen Server erstellen",
+      "copy": "Kopieren",
+      "deleteServer": "Server löschen",
       "createBackupOnSave": "Beim Speichern ein Backup erstellen",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox-Variablen",
+        "spawnpoints": "Spawn-Punkte",
+        "spawnregions": "Spawn-Regionen"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Serverkonfigurationsvariablen",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Zurücksetzen",
+      "saveChanges": "Änderungen speichern",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox-Variablen",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

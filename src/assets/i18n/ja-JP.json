@@ -50,7 +50,9 @@
       "resetApp": "アプリケーションをリセットする",
       "resetAppTooltip": "ウィンドウ設定をリセットし、保存されたデータを削除します",
       "myMods": "私の Mods",
-      "server": "サーバ"
+      "server": "サーバ",
+      "modCollections": "Modコレクション",
+      "modPresets": "Modプリセット"
     },
     "filters": {
       "adultLabel": "アダルトコンテンツあり",
@@ -188,7 +190,6 @@
       "data": "アプリが使用するデータ",
       "features": "特徴",
       "server": "サーバー管理",
-      "mediaPlayer": "メディアプレーヤー",
       "logInspector": "ログインスペクタ",
       "folderSetup": "フォルダーの設定",
       "tauri": "デスクトップ (Tauri) の統合",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>行の詳細</strong> - 行を展開すると、MOD に関する詳細情報が表示されます (利用可能な場合)。",
       "bullet3": "<strong>Steam で開く</strong> - 有効なワークショップ ID を持つ MOD のデフォルトのブラウザでワークショップ ページが開きます。",
       "bullet4": "<strong>フォルダーを開く</strong> - 選択した MOD フォルダーをファイル エクスプローラーで開きます。",
-      "mediaPlayer": "<strong>メディア プレーヤー</strong> - サイドバーから Project Zomboid 音楽トラックを再生します。 「<a routerLink=\"/documentation\" flaggment=\"media-player\">メディア プレーヤー</a>」を参照してください。",
       "logInspectorPrefix": "<strong>ログ インスペクター</strong> - ログ ファイル (<code>console.txt</code> など) をロードしてフィルターし、エラーや警告をすばやく見つけます。見る",
       "logInspectorLink": "ログインスペクタ",
       "bullet6": "<strong>ダッシュボード</strong> - 簡単な統計情報 (例: 検出された MOD の合計) やその他の高レベルの指標が表示されます。"
-    },
-    "mediaPlayer": {
-      "title": "メディアプレーヤー",
-      "intro": "サイドバーには、Project Zomboid オーディオ トラック (OGG) をスキャンしてアプリ内で再生できる軽量の音楽プレーヤーが含まれています。",
-      "bullet1": "<strong>プレイリスト</strong> - 検出されたトラックと基本的なメタデータ (タイトル/アーティスト/アルバム (利用可能な場合)) が表示されます。",
-      "bullet2": "<strong>再生</strong> - 再生/一時停止と前/次のトラック。",
-      "bullet3": "<strong>シーク + 音量</strong> - トラックをスクラブし、音量/ミュートを調整します。"
     },
     "server": {
       "title": "サーバー管理",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "更新",
+      "createNewServer": "新しいサーバーを作成",
+      "copy": "コピー",
+      "deleteServer": "サーバーを削除",
       "createBackupOnSave": "保存時にバックアップを作成",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox変数",
+        "spawnpoints": "スポーンポイント",
+        "spawnregions": "スポーンリージョン"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "サーバー設定変数",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "リセット",
+      "saveChanges": "変更を保存",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox変数",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

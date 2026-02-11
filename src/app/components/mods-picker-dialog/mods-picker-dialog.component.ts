@@ -1,5 +1,4 @@
-import {
-  Component,
+import { Component,
   DestroyRef,
   ElementRef,
   EventEmitter,
@@ -19,7 +18,7 @@ import { ModTagFilterComponent } from '../mod-tag-filter/mod-tag-filter.componen
 import { ModsStateService } from '../../services/mods-state.service';
 import { ModsTagsService, TagMatchMode } from '../../services/mods-tags.service';
 import { WorkshopMetadataService } from '../../services/workshop-metadata.service';
-import { TauriStoreService } from '../../services/tauri-store.service';
+import { SteamApiKeyService } from '../../services/steam-api-key.service';
 
 interface ModPickItem {
   id: string;
@@ -91,7 +90,7 @@ export class ModsPickerDialogComponent {
     private readonly modsState: ModsStateService,
     private readonly tagsService: ModsTagsService,
     private readonly workshopMetadata: WorkshopMetadataService,
-    private readonly store: TauriStoreService,
+    private readonly steamApiKeyService: SteamApiKeyService,
     private readonly destroyRef: DestroyRef,
   ) {
     this.tagsService.selectedTags$
@@ -521,7 +520,7 @@ export class ModsPickerDialogComponent {
     }));
     this.missingModsDialogVisible = true;
     this.missingModsLoading = true;
-    const storedKey = await this.store.getItem<string>('steam_api_key');
+    const storedKey = await this.steamApiKeyService.get();
     this.missingModsHasApiKey = !!(storedKey ?? '').trim();
 
     if (this.missingModsHasApiKey) {

@@ -1,4 +1,13 @@
-import { Component, DestroyRef, EventEmitter, Input, Output, OnInit } from '@angular/core';
+import {
+  Component,
+  DestroyRef,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ModSummary } from '../../models/mod.models';
@@ -101,7 +110,7 @@ interface ModPresetRow {
     }
   `]
 })
-export class ModDetailsComponent implements OnInit {
+export class ModDetailsComponent implements OnInit, OnChanges {
   @Input() mod!: ModSummary;
   @Input() readonly = false;
   @Input() allMods: ModSummary[] = [];
@@ -159,6 +168,26 @@ export class ModDetailsComponent implements OnInit {
   pendingAddMode: 'new' | 'existing' | null = null;
   pendingAddLoadoutId: string | null = null;
   pendingAddLoadoutName = '';
+  posterImages: string[] = [];
+  relativeFolderName: string | null = null;
+  mappedTagOptions: { label: string; value: string }[] = [];
+  workshopFileSizeDisplay = '';
+  workshopTimeCreatedDisplay = '';
+  workshopTimeUpdatedDisplay = '';
+  hasModLinkChipsView = false;
+  hasRequiredModValuesView = false;
+  hasLoadAfterValuesView = false;
+  hasLoadBeforeValuesView = false;
+  hasIncompatibleValuesView = false;
+  hasIncompatibleWithModsView = false;
+  hasRequiredByValuesView = false;
+  requiredModChipsView: Array<{ label: string; mod: ModSummary | null; missing: boolean }> = [];
+  loadAfterChipsView: Array<{ label: string; mod: ModSummary | null; missing: boolean }> = [];
+  loadBeforeChipsView: Array<{ label: string; mod: ModSummary | null; missing: boolean }> = [];
+  incompatibleChipsView: Array<{ label: string; mod: ModSummary | null; missing: boolean }> = [];
+  requiredByChipsView: Array<{ label: string; mod: ModSummary | null; missing: boolean }> = [];
+  incompatibleWithModsView: ModSummary[] = [];
+  requiredByIsScrollable = false;
 
   constructor(
     private readonly modsActions: ModsActionsService,
@@ -173,11 +202,13 @@ export class ModDetailsComponent implements OnInit {
   ) {
     this.currentLocale = this.localization.locale || 'en-US';
     this.refreshTagOptions();
+    this.rebuildDerivedView();
 
     this.tagsService.tagOptions$
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe(() => {
         this.refreshTagOptions();
+        this.rebuildDerivedView();
       });
 
     this.tagsService.tagCounts$
@@ -185,6 +216,7 @@ export class ModDetailsComponent implements OnInit {
       .subscribe((counts) => {
         this.tagCounts = counts ?? {};
         this.refreshTagOptions();
+        this.rebuildDerivedView();
       });
 
     this.tagsService.selectedTags$
@@ -197,17 +229,79 @@ export class ModDetailsComponent implements OnInit {
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe((locale) => {
         this.currentLocale = locale;
+        this.rebuildDerivedView();
       });
 
     this.transloco.langChanges$
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe(() => {
         this.refreshTagOptions();
+        this.rebuildDerivedView();
       });
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['mod'] || changes['allMods']) {
+      this.rebuildDerivedView();
+    }
   }
 
   async ngOnInit(): Promise<void> {
     await this.refreshLoadouts();
+  }
+
+  private rebuildDerivedView(): void {
+    if (!this.mod) {
+      this.posterImages = [];
+      this.relativeFolderName = null;
+      this.mappedTagOptions = [];
+      this.workshopFileSizeDisplay = '';
+      this.workshopTimeCreatedDisplay = '';
+      this.workshopTimeUpdatedDisplay = '';
+      this.hasModLinkChipsView = false;
+      this.hasRequiredModValuesView = false;
+      this.hasLoadAfterValuesView = false;
+      this.hasLoadBeforeValuesView = false;
+      this.hasIncompatibleValuesView = false;
+      this.hasIncompatibleWithModsView = false;
+      this.hasRequiredByValuesView = false;
+      this.requiredModChipsView = [];
+      this.loadAfterChipsView = [];
+      this.loadBeforeChipsView = [];
+      this.incompatibleChipsView = [];
+      this.requiredByChipsView = [];
+      this.incompatibleWithModsView = [];
+      this.requiredByIsScrollable = false;
+      return;
+    }
+
+    this.posterImages = this.getPosterImages(this.mod);
+    this.relativeFolderName = this.getRelativeFolderName(this.mod);
+    this.mappedTagOptions = this.getMappedTagOptions(this.mod);
+    this.workshopFileSizeDisplay = this.formatFileSize(this.mod.workshop?.file_size ?? null);
+    this.workshopTimeCreatedDisplay = this.formatDateTime(this.mod.workshop?.time_created ?? null);
+    this.workshopTimeUpdatedDisplay = this.formatDateTime(this.mod.workshop?.time_updated ?? null);
+
+    this.hasRequiredModValuesView = this.hasRequiredModValues;
+    this.hasLoadAfterValuesView = this.hasLoadAfterValues;
+    this.hasLoadBeforeValuesView = this.hasLoadBeforeValues;
+    this.hasIncompatibleValuesView = this.hasIncompatibleValues;
+    this.hasRequiredByValuesView = this.hasRequiredByValues;
+    this.requiredModChipsView = this.requiredModChips;
+    this.loadAfterChipsView = this.loadAfterChips;
+    this.loadBeforeChipsView = this.loadBeforeChips;
+    this.incompatibleChipsView = this.incompatibleChips;
+    this.requiredByChipsView = this.requiredByChips;
+    this.incompatibleWithModsView = this.incompatibleWithMods;
+    this.hasIncompatibleWithModsView = this.incompatibleWithModsView.length > 0;
+    this.hasModLinkChipsView =
+      this.hasRequiredModValuesView ||
+      this.hasLoadAfterValuesView ||
+      this.hasLoadBeforeValuesView ||
+      this.hasIncompatibleValuesView ||
+      this.hasIncompatibleWithModsView ||
+      this.hasRequiredByValuesView;
+    this.requiredByIsScrollable = (this.mod.required_by?.length ?? 0) > 5;
   }
 
   async refreshLoadouts(): Promise<void> {

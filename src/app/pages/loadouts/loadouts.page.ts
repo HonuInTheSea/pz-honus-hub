@@ -27,7 +27,6 @@ import type {
   LoadoutTargetMode,
 } from '../../models/loadout.models';
 import { modsToResolvedMods } from '../../models/loadout.models';
-import type { LoadoutConflictGroup } from '../../models/loadout.models';
 import { open as openDialog } from '@tauri-apps/plugin-dialog';
 import { openPath, revealItemInDir } from '@tauri-apps/plugin-opener';
 import { TranslocoService } from '@jsverse/transloco';
@@ -89,8 +88,30 @@ function parseActiveModsRelDir(presetName: string | null | undefined): string | 
   templateUrl: './loadouts.page.html',
 })
 export class LoadoutsPageComponent implements OnInit {
+  private static readonly importCooldownMs = 15000;
+  private static readonly presetImportAtByUserDir = new Map<string, number>();
+  private static readonly savesImportAtByUserDir = new Map<string, number>();
+
   mods: ModSummary[] = [];
   loadouts: Loadout[] = [];
+  private installedModsCache: ModSummary[] = [];
+  private modIdOptionsCache: Array<{ label: string; value: string }> = [];
+  private availableModIdsCache = new Set<string>();
+  private modOptionsVersion = 0;
+  private draftDerivedCache:
+    | {
+        draftRef: Loadout | null;
+        modIdsRef: string[] | undefined;
+        modOptionsVersion: number;
+        data: {
+          missingDraftModIds: string[];
+          missingDraftModEntriesCount: number;
+          missingDraftModIdCounts: Array<{ modId: string; count: number }>;
+          draftModEntryCount: number;
+          draftModIdOptions: Array<{ label: string; value: string }>;
+        };
+      }
+    | null = null;
 
   editorVisible = false;
   selected: Loadout | null = null;
@@ -103,6 +124,8 @@ export class LoadoutsPageComponent implements OnInit {
   codeMapLine = '';
 
   analysis: LoadoutAnalysis | null = null;
+  analysisCycleDisplay: string[] = [];
+  analysisConflictDisplay: Array<{ relativePath: string; modsDisplay: string }> = [];
   analyzing = false;
   confirmVisible = false;
   confirmMessage = '';
@@ -153,7 +176,7 @@ export class LoadoutsPageComponent implements OnInit {
   }
 
   private get installedMods(): ModSummary[] {
-    return (this.mods ?? []).filter((m) => !!(m?.mod_info_path ?? '').trim());
+    return this.installedModsCache;
   }
 
   get installedModsCount(): number {
@@ -179,20 +202,52 @@ export class LoadoutsPageComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     this.userDirExample = await this.pzDefaults.getDefaultUserDirExample();
     const persisted = await this.modsState.loadPersistedMods();
-    this.mods = (persisted?.local ?? []).filter((m) => !m.hidden);
+    this.setMods((persisted?.local ?? []).filter((m) => !m.hidden));
 
     this.loadouts = await this.loadoutsState.load();
-    await this.importPzModPresets();
-    await this.importActiveModsFromSaves();
+    const userDir = await this.resolveUserDir();
+    await this.importPzModPresets(userDir);
+    await this.importActiveModsFromSaves(userDir);
   }
 
-  private async importPzModPresets(): Promise<void> {
+  private async resolveUserDir(): Promise<string> {
     const storedUserDir = await this.store.getItem<string>('pz_user_dir');
-    const userDir =
+    return (
       (storedUserDir ?? '').trim() ||
       (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
-      '';
+      ''
+    );
+  }
+
+  private shouldRunImport(
+    cache: Map<string, number>,
+    userDir: string,
+    force = false,
+  ): boolean {
+    if (force) {
+      cache.set(userDir, Date.now());
+      return true;
+    }
+    const lastAt = cache.get(userDir) ?? 0;
+    const now = Date.now();
+    if (now - lastAt < LoadoutsPageComponent.importCooldownMs) {
+      return false;
+    }
+    cache.set(userDir, now);
+    return true;
+  }
+
+  private async importPzModPresets(userDir: string, force = false): Promise<void> {
     if (!userDir) {
+      return;
+    }
+    if (
+      !this.shouldRunImport(
+        LoadoutsPageComponent.presetImportAtByUserDir,
+        userDir,
+        force,
+      )
+    ) {
       return;
     }
 
@@ -203,7 +258,7 @@ export class LoadoutsPageComponent implements OnInit {
     let text: string | null = null;
     for (const path of candidates) {
       try {
-        text = await this.loadoutsApi.readTextFile(path);
+        text = await this.loadoutsApi.readTextFile(path, { cacheTtlMs: 5000 });
         break;
       } catch {
         // ignore and try next candidate
@@ -229,13 +284,20 @@ export class LoadoutsPageComponent implements OnInit {
     }
   }
 
-  private async importActiveModsFromSaves(): Promise<void> {
-    const storedUserDir = await this.store.getItem<string>('pz_user_dir');
-    const userDir =
-      (storedUserDir ?? '').trim() ||
-      (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
-      '';
+  private async importActiveModsFromSaves(
+    userDir: string,
+    force = false,
+  ): Promise<void> {
     if (!userDir) {
+      return;
+    }
+    if (
+      !this.shouldRunImport(
+        LoadoutsPageComponent.savesImportAtByUserDir,
+        userDir,
+        force,
+      )
+    ) {
       return;
     }
 
@@ -260,7 +322,7 @@ export class LoadoutsPageComponent implements OnInit {
     for (const file of files) {
       let text: string;
       try {
-        text = await this.loadoutsApi.readTextFile(file);
+        text = await this.loadoutsApi.readTextFile(file, { cacheTtlMs: 5000 });
       } catch {
         continue;
       }
@@ -370,106 +432,37 @@ export class LoadoutsPageComponent implements OnInit {
 
   async refreshModsFromDisk(): Promise<void> {
     const persisted = await this.modsState.loadPersistedMods();
-    this.mods = (persisted?.local ?? []).filter((m) => !m.hidden);
+    this.setMods((persisted?.local ?? []).filter((m) => !m.hidden));
   }
 
   get modIdOptions(): Array<{ label: string; value: string }> {
-    const out: Array<{ label: string; value: string }> = [];
-    for (const mod of this.installedMods) {
-      const modId = (mod.mod_id ?? '').trim();
-      if (!modId) {
-        continue;
-      }
-      out.push({ label: `${mod.name} (${modId})`, value: modId });
-    }
-    out.sort((a, b) => a.label.localeCompare(b.label));
-    return out;
+    return this.modIdOptionsCache;
   }
 
   get missingDraftModIds(): string[] {
-    if (!this.draft) {
-      return [];
-    }
-
-    const installed = new Set<string>();
-    for (const mod of this.installedMods) {
-      const modId = (mod.mod_id ?? '').trim();
-      if (modId) {
-        installed.add(modId);
-      }
-    }
-
-    const missing: string[] = [];
-    for (const id of this.draft.modIds ?? []) {
-      const modId = (id ?? '').trim();
-      if (modId && !installed.has(modId)) {
-        missing.push(modId);
-      }
-    }
-
-    return Array.from(new Set(missing)).sort((a, b) => a.localeCompare(b));
+    return this.getDraftDerivedData().missingDraftModIds;
   }
 
   get missingDraftModEntriesCount(): number {
-    if (!this.draft) {
-      return 0;
-    }
-
-    const available = new Set(this.modIdOptions.map((o) => o.value));
-    let count = 0;
-    for (const raw of this.draft.modIds ?? []) {
-      const modId = (raw ?? '').trim();
-      if (modId && !available.has(modId)) {
-        count++;
-      }
-    }
-    return count;
+    return this.getDraftDerivedData().missingDraftModEntriesCount;
   }
 
   get missingDraftModIdCounts(): Array<{ modId: string; count: number }> {
-    if (!this.draft) {
-      return [];
-    }
-
-    const available = new Set(this.modIdOptions.map((o) => o.value));
-    const counts = new Map<string, number>();
-    for (const raw of this.draft.modIds ?? []) {
-      const modId = (raw ?? '').trim();
-      if (!modId || available.has(modId)) {
-        continue;
-      }
-      counts.set(modId, (counts.get(modId) ?? 0) + 1);
-    }
-
-    return Array.from(counts.entries())
-      .map(([modId, count]) => ({ modId, count }))
-      .sort((a, b) => b.count - a.count || a.modId.localeCompare(b.modId));
+    return this.getDraftDerivedData().missingDraftModIdCounts;
   }
 
   get draftModEntryCount(): number {
-    return this.draft?.modIds?.length ?? 0;
+    return this.getDraftDerivedData().draftModEntryCount;
   }
 
   get draftModIdOptions(): Array<{ label: string; value: string }> {
-    if (!this.draft) {
-      return this.modIdOptions;
-    }
-    const out: Array<{ label: string; value: string }> = [...this.modIdOptions];
-    const known = new Set(out.map((o) => o.value));
-    for (const raw of this.expandModIds(this.draft.modIds)) {
-      if (!known.has(raw)) {
-        known.add(raw);
-        out.push({ label: raw, value: raw });
-      }
-    }
-    out.sort((a, b) => a.label.localeCompare(b.label));
-    return out;
+    return this.getDraftDerivedData().draftModIdOptions;
   }
 
   openNew(): void {
     const ts = nowIso();
     this.selected = null;
-    this.analysis = null;
+    this.setAnalysis(null);
     this.analyzing = false;
     this.confirmVisible = false;
     this.pendingSave = null;
@@ -491,7 +484,7 @@ export class LoadoutsPageComponent implements OnInit {
 
   openEdit(loadout: Loadout): void {
     this.selected = loadout;
-    this.analysis = null;
+    this.setAnalysis(null);
     this.analyzing = false;
     this.confirmVisible = false;
     this.pendingSave = null;
@@ -860,7 +853,7 @@ export class LoadoutsPageComponent implements OnInit {
         this.installedMods,
         this.draft.modIds,
       );
-      this.analysis = this.analyzeResolvedMods(resolvedMods);
+      this.setAnalysis(this.analyzeResolvedMods(resolvedMods));
     } finally {
       this.analyzing = false;
     }
@@ -915,12 +908,12 @@ export class LoadoutsPageComponent implements OnInit {
     });
 
     this.draft.modIds = after;
-    this.analysis = null;
+    this.setAnalysis(null);
     await this.saveDraft();
   }
 
   async openExport(loadout: Loadout): Promise<void> {
-    this.analysis = null;
+    this.setAnalysis(null);
     this.exportingLoadout = loadout;
     this.exportPresetName = loadout.name.replace(/[^\w\- ]+/g, '').trim() || 'servertest';
     this.exportVisible = true;
@@ -959,7 +952,7 @@ export class LoadoutsPageComponent implements OnInit {
   }
 
   async openSingleplayerApply(loadout: Loadout): Promise<void> {
-    this.analysis = null;
+    this.setAnalysis(null);
     this.exportingLoadout = loadout;
     this.spVisible = true;
     this.spPlanText = '';
@@ -1027,10 +1020,6 @@ export class LoadoutsPageComponent implements OnInit {
     } finally {
       this.applyingSp = false;
     }
-  }
-
-  conflictModsDisplay(conflict: LoadoutConflictGroup): string {
-    return (conflict?.mods ?? []).map((m) => m.modId).join(', ');
   }
 
   get exportModsLine(): string {
@@ -1373,7 +1362,7 @@ export class LoadoutsPageComponent implements OnInit {
       return;
     }
 
-    this.analysis = analysis;
+    this.setAnalysis(analysis);
     this.draft.modIds = orderedIds;
     this.draft.updatedAt = nowIso();
     const resolvedMap = this.resolveWorkshopMapForDraft(this.draft.modIds);
@@ -1418,6 +1407,121 @@ export class LoadoutsPageComponent implements OnInit {
         closable: true,
       });
     }
+  }
+
+  private setAnalysis(analysis: LoadoutAnalysis | null): void {
+    this.analysis = analysis;
+    if (!analysis) {
+      this.analysisCycleDisplay = [];
+      this.analysisConflictDisplay = [];
+      return;
+    }
+
+    this.analysisCycleDisplay = analysis.cycles.map((cycle) =>
+      cycle.join(' -> '),
+    );
+    this.analysisConflictDisplay = analysis.conflicts.map((conflict) => ({
+      relativePath: conflict.relativePath,
+      modsDisplay: (conflict?.mods ?? []).map((m) => m.modId).join(', '),
+    }));
+  }
+
+  private setMods(mods: ModSummary[]): void {
+    this.mods = mods;
+    this.installedModsCache = (mods ?? []).filter((m) =>
+      !!(m?.mod_info_path ?? '').trim(),
+    );
+
+    const out: Array<{ label: string; value: string }> = [];
+    for (const mod of this.installedModsCache) {
+      const modId = (mod.mod_id ?? '').trim();
+      if (!modId) {
+        continue;
+      }
+      out.push({ label: `${mod.name} (${modId})`, value: modId });
+    }
+    out.sort((a, b) => a.label.localeCompare(b.label));
+
+    this.modIdOptionsCache = out;
+    this.availableModIdsCache = new Set(out.map((o) => o.value));
+    this.modOptionsVersion++;
+    this.draftDerivedCache = null;
+  }
+
+  private getDraftDerivedData(): {
+    missingDraftModIds: string[];
+    missingDraftModEntriesCount: number;
+    missingDraftModIdCounts: Array<{ modId: string; count: number }>;
+    draftModEntryCount: number;
+    draftModIdOptions: Array<{ label: string; value: string }>;
+  } {
+    if (!this.draft) {
+      return {
+        missingDraftModIds: [],
+        missingDraftModEntriesCount: 0,
+        missingDraftModIdCounts: [],
+        draftModEntryCount: 0,
+        draftModIdOptions: this.modIdOptionsCache,
+      };
+    }
+
+    const modIdsRef = this.draft.modIds;
+    const cache = this.draftDerivedCache;
+    if (
+      cache &&
+      cache.draftRef === this.draft &&
+      cache.modIdsRef === modIdsRef &&
+      cache.modOptionsVersion === this.modOptionsVersion
+    ) {
+      return cache.data;
+    }
+
+    const rawModIds = modIdsRef ?? [];
+    const missingCounts = new Map<string, number>();
+    let missingEntriesCount = 0;
+    for (const raw of rawModIds) {
+      const modId = (raw ?? '').trim();
+      if (!modId || this.availableModIdsCache.has(modId)) {
+        continue;
+      }
+      missingEntriesCount++;
+      missingCounts.set(modId, (missingCounts.get(modId) ?? 0) + 1);
+    }
+
+    const missingDraftModIds = Array.from(missingCounts.keys()).sort((a, b) =>
+      a.localeCompare(b),
+    );
+    const missingDraftModIdCounts = Array.from(missingCounts.entries())
+      .map(([modId, count]) => ({ modId, count }))
+      .sort((a, b) => b.count - a.count || a.modId.localeCompare(b.modId));
+
+    const draftModIdOptions: Array<{ label: string; value: string }> = [
+      ...this.modIdOptionsCache,
+    ];
+    const known = new Set(draftModIdOptions.map((o) => o.value));
+    for (const raw of this.expandModIds(rawModIds)) {
+      if (!known.has(raw)) {
+        known.add(raw);
+        draftModIdOptions.push({ label: raw, value: raw });
+      }
+    }
+    draftModIdOptions.sort((a, b) => a.label.localeCompare(b.label));
+
+    const data = {
+      missingDraftModIds,
+      missingDraftModEntriesCount: missingEntriesCount,
+      missingDraftModIdCounts,
+      draftModEntryCount: rawModIds.length,
+      draftModIdOptions,
+    };
+
+    this.draftDerivedCache = {
+      draftRef: this.draft,
+      modIdsRef,
+      modOptionsVersion: this.modOptionsVersion,
+      data,
+    };
+    return data;
   }
 
   private async updatePzModlistSettingsPreset(

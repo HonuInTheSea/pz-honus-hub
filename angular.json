@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "cli": {
-    "analytics": false
+    "analytics": false,
+    "cache": {
+      "enabled": true,
+      "environment": "all"
+    }
   },
   "projects": {
     "pz-honus-hub": {
@@ -37,6 +41,18 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2.8MB",
+                  "maximumError": "3.2MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "12kB",
+                  "maximumError": "20kB"
+                }
+              ],
               "outputHashing": "all"
             },
             "development": {

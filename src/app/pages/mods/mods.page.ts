@@ -27,6 +27,8 @@ import { BasePageComponent } from '../../components/base-page.component';
 import { LocalizationService } from '../../services/localization.service';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { formatLocalizedDateTime } from '../../i18n/date-time';
+import { profileAsync, profileSync } from '../../utils/perf-trace';
+import { SteamApiKeyService } from '../../services/steam-api-key.service';
 
 @Component({
   selector: 'app-mods-page',
@@ -72,6 +74,10 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   private readonly presetFilterKey = 'pz_filter_in_preset_ids';
   private currentLocale = 'en-US';
   private emptyScanAttempted = false;
+  private readonly persistDebounceMs = 150;
+  private persistTimer: number | null = null;
+  private pendingPersistResolvers: Array<() => void> = [];
+  private pendingPersistRejectors: Array<(reason?: unknown) => void> = [];
 
   constructor(
     private readonly modService: ModService,
@@ -82,6 +88,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     private readonly honuQol: HonuModInfoQolService,
     private readonly localization: LocalizationService,
     private readonly transloco: TranslocoService,
+    private readonly steamApiKeyService: SteamApiKeyService,
   ) {
     super();
     this.currentLocale = this.localization.locale || 'en-US';
@@ -94,18 +101,25 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   }
 
   async ngOnInit(): Promise<void> {
-    try {
-      const onboardingCompleted =
-        (await this.store.getItem<boolean>('pz_onboarding_completed')) ?? false;
-      const onboardingJustFinished =
-        (await this.store.getItem<boolean>('pz_onboarding_just_finished')) ?? false;
+    await profileAsync('mods.ngOnInit', async () => {
+      try {
+      const bootstrap = await this.store.getItems([
+        'pz_onboarding_completed',
+        'pz_onboarding_just_finished',
+        this.itemsPerPageKey,
+        'pz_mod_folder',
+      ]);
+      const onboardingCompletedRaw = bootstrap['pz_onboarding_completed'] as boolean | null;
+      const onboardingJustFinishedRaw = bootstrap['pz_onboarding_just_finished'] as boolean | null;
+      const persistedLimit = bootstrap[this.itemsPerPageKey] as number | null;
+      const savedFolder = bootstrap['pz_mod_folder'] as string | null;
+      const onboardingCompleted = onboardingCompletedRaw ?? false;
+      const onboardingJustFinished = onboardingJustFinishedRaw ?? false;
 
-      const persistedLimit = await this.store.getItem<number>(this.itemsPerPageKey);
       if (persistedLimit && this.limitOptions.includes(persistedLimit)) {
         this.limit = persistedLimit;
       }
 
-      const savedFolder = await this.store.getItem<string>('pz_mod_folder');
       if (savedFolder) {
         this.modsActions.folderPath = savedFolder;
         void this.modsActions.checkMusicAvailability(savedFolder);
@@ -207,7 +221,6 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
         .subscribe(() => {
           void this.syncWorkshopMetadata(true);
         });
-
       this.tagsService.selectedTags$
         .pipe(takeUntilDestroyed(this.destroyRef))
         .subscribe(() => {
@@ -275,19 +288,20 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
       if (onboardingJustFinished && this.mods.length) {
         await this.untilDestroyed(this.tryOnboardingWorkshopSync());
       }
-    } catch (err) {
-      if (isDestroyedError(err)) return;
-      throw err;
-    } finally {
-      if (!this.destroyRef.destroyed) {
-        this.contentLoading.markReady();
+      } catch (err) {
+        if (isDestroyedError(err)) return;
+        throw err;
+      } finally {
+        if (!this.destroyRef.destroyed) {
+          this.contentLoading.markReady();
+        }
       }
-    }
+    });
   }
 
   private async tryOnboardingWorkshopSync(): Promise<void> {
     try {
-      const apiKey = (await this.store.getItem<string>('steam_api_key')) ?? '';
+      const apiKey = (await this.steamApiKeyService.get()) ?? '';
       if (!apiKey.trim()) {
         return;
       }
@@ -317,7 +331,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     // restored correctly on the next visit without requiring another scan
     // or workshop sync.
     try {
-      await this.saveModsToStorage();
+      await this.saveModsToStorage(undefined, { immediate: true });
     } catch {
       // Ignore persistence errors on teardown.
     }
@@ -356,6 +370,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   }
 
   async scan(force = false) {
+    const profileLabel = force ? 'mods.scan(force)' : 'mods.scan';
     const folder = (this.modsActions.folderPath ?? '').trim();
     if (!folder) {
       return;
@@ -378,7 +393,9 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     this.loadingSource = 'local';
     this.loading = true;
     try {
-      const result = await this.untilDestroyed(this.modService.scanFolder(folder));
+      const result = await profileAsync(profileLabel, () =>
+        this.untilDestroyed(this.modService.scanFolder(folder)),
+      );
 
       this.mods = result.summaries
         .map((mod) => ({
@@ -394,13 +411,10 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
       await this.untilDestroyed(this.saveModsToStorage('local'));
       await this.untilDestroyed(this.store.setItem(this.lastLocalScanFolderKey, folder));
       this.applyFilters();
-      this.messageService.add({
-        severity: 'success',
-        summary: this.transloco.translate('toasts.mods.localSyncComplete.summary'),
-        detail: this.transloco.translate('toasts.mods.localSyncComplete.detail'),
-        life: 5000,
-        closable: true,
-      });
+      this.showSyncLocalToast(
+        'success',
+        this.transloco.translate('toasts.mods.localSyncComplete.detail'),
+      );
       await this.untilDestroyed(this.maybeUpdateHonuModsDbAfterSyncs());
     } catch (err: unknown) {
       if (isDestroyedError(err)) throw err;
@@ -410,13 +424,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
           : typeof err === 'string'
             ? err
             : this.transloco.translate('toasts.mods.localSyncFailed.detail');
-      this.messageService.add({
-        severity: 'error',
-        summary: this.transloco.translate('toasts.mods.localSyncFailed.summary'),
-        detail,
-        life: 10000,
-        closable: true,
-      });
+      this.showSyncLocalToast('error', detail);
     } finally {
       this.loading = false;
       this.loadingSource = null;
@@ -431,14 +439,17 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
       this.onboardingFinishedListener = null;
     }
 
-    const savedFolder = await this.untilDestroyed(this.store.getItem<string>('pz_mod_folder'));
+    const bootstrap = await this.untilDestroyed(
+      this.store.getItems(['pz_mod_folder', 'pz_onboarding_completed']),
+    );
+    const savedFolder = bootstrap['pz_mod_folder'] as string | null;
+    const onboardingCompletedRaw = bootstrap['pz_onboarding_completed'] as boolean | null;
     if (savedFolder) {
       this.modsActions.folderPath = savedFolder;
       void this.modsActions.checkMusicAvailability(savedFolder);
     }
 
-    const onboardingCompleted =
-      (await this.untilDestroyed(this.store.getItem<boolean>('pz_onboarding_completed'))) ?? false;
+    const onboardingCompleted = onboardingCompletedRaw ?? false;
     if (!onboardingCompleted || !this.modsActions.folderPath) {
       return;
     }
@@ -453,21 +464,22 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   }
 
   applyFilters(): void {
-    const selectedTags = this.tagsService.selectedTags;
-    const tagMatchMode = this.tagsService.tagMatchMode;
-    const outdatedOnly = this.tagsService.outdatedOnly;
-    const hiddenOnly = this.tagsService.hiddenOnly;
-    const missingSteamOnly = this.tagsService.missingSteamOnly;
-    const hasAdultContentOnly = this.tagsService.hasAdultContentOnly;
-    const hasRulesOnly = this.tagsService.hasRulesOnly;
-    const favoritedOnly = this.tagsService.favoritedOnly;
-    const presetFilterActive = this.presetFilterIds.length > 0;
+    profileSync('mods.applyFilters', () => {
+      const selectedTags = this.tagsService.selectedTags;
+      const tagMatchMode = this.tagsService.tagMatchMode;
+      const outdatedOnly = this.tagsService.outdatedOnly;
+      const hiddenOnly = this.tagsService.hiddenOnly;
+      const missingSteamOnly = this.tagsService.missingSteamOnly;
+      const hasAdultContentOnly = this.tagsService.hasAdultContentOnly;
+      const hasRulesOnly = this.tagsService.hasRulesOnly;
+      const favoritedOnly = this.tagsService.favoritedOnly;
+      const presetFilterActive = this.presetFilterIds.length > 0;
 
-    const incompatibleWithIds = hasRulesOnly
-      ? this.computeIncompatibleWithModIds(this.mods)
-      : new Set<string>();
+      const incompatibleWithIds = hasRulesOnly
+        ? this.computeIncompatibleWithModIds(this.mods)
+        : new Set<string>();
 
-    this.filteredMods = this.mods.filter((mod) => {
+      this.filteredMods = this.mods.filter((mod) => {
       if (presetFilterActive) {
         const modId = (mod.mod_id ?? '').trim();
         if (!modId || !this.presetFilterModIds.has(modId)) {
@@ -579,11 +591,12 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
         }
       }
 
-      return true;
-    });
+        return true;
+      });
 
-    this.updateTagCounts(this.filteredMods);
-    this.first = 0;
+      this.updateTagCounts(this.filteredMods);
+      this.first = 0;
+    });
   }
 
   onSearchChanged(value: string): void {
@@ -808,7 +821,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   async createNewModListing() {
     // Ensure the latest in-memory mods (including hidden flags)
     // are persisted into pz_mods before exporting.
-    await this.untilDestroyed(this.saveModsToStorage());
+    await this.untilDestroyed(this.saveModsToStorage(undefined, { immediate: true }));
 
     const persisted = await this.untilDestroyed(this.modsState.loadPersistedMods());
     const workshopById =
@@ -911,12 +924,64 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     this.autoWorkshopFetch = !!stored;
   }
 
-  private async saveModsToStorage(source?: 'local' | 'workshop'): Promise<void> {
-    await this.modsState.savePersistedMods(
-      this.mods,
-      this.workshopMetadataById,
-      { source },
-    );
+  private async saveModsToStorage(
+    source?: 'local' | 'workshop',
+    options?: { immediate?: boolean },
+  ): Promise<void> {
+    if (source || options?.immediate) {
+      if (this.persistTimer != null) {
+        window.clearTimeout(this.persistTimer);
+        this.persistTimer = null;
+      }
+      try {
+        await this.modsState.savePersistedMods(
+          this.mods,
+          this.workshopMetadataById,
+          { source },
+        );
+        for (const ok of this.pendingPersistResolvers) {
+          ok();
+        }
+      } catch (err) {
+        for (const fail of this.pendingPersistRejectors) {
+          fail(err);
+        }
+        throw err;
+      } finally {
+        this.pendingPersistResolvers = [];
+        this.pendingPersistRejectors = [];
+      }
+      return;
+    }
+
+    return new Promise<void>((resolve, reject) => {
+      this.pendingPersistResolvers.push(resolve);
+      this.pendingPersistRejectors.push(reject);
+      if (this.persistTimer != null) {
+        return;
+      }
+
+      this.persistTimer = window.setTimeout(async () => {
+        this.persistTimer = null;
+        try {
+          await this.modsState.savePersistedMods(
+            this.mods,
+            this.workshopMetadataById,
+            {},
+          );
+          for (const ok of this.pendingPersistResolvers) {
+            ok();
+          }
+        } catch (err) {
+          for (const fail of this.pendingPersistRejectors) {
+            fail(err);
+          }
+        } finally {
+          this.pendingPersistResolvers = [];
+          this.pendingPersistRejectors = [];
+        }
+      }, this.persistDebounceMs);
+    });
   }
 
   private mergeWorkshopMetadataIntoMods(): void {
@@ -977,6 +1042,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
   }
 
   private async syncWorkshopMetadata(force = false): Promise<void> {
+    const profileLabel = force ? 'mods.syncWorkshop(force)' : 'mods.syncWorkshop';
     const folder = (this.modsActions.folderPath ?? '').trim();
     if (!folder) {
       return;
@@ -1011,7 +1077,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     // Use unique ids to avoid duplicate API calls and keep status tracking clean.
     const uniqueIds = Array.from(new Set(ids));
 
-    const apiKey = (await this.store.getItem<string>('steam_api_key')) ?? '';
+    const apiKey = (await this.steamApiKeyService.get()) ?? '';
 
     if (!apiKey.trim()) {
       this.messageService.add({
@@ -1027,8 +1093,8 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
     this.loadingSource = 'workshop';
     this.loading = true;
     try {
-      const allResults = await this.workshopMetadataService.getBatchMetadata(
-        uniqueIds,
+      const allResults = await profileAsync(profileLabel, () =>
+        this.workshopMetadataService.getBatchMetadata(uniqueIds),
       );
       if (this.destroyRef.destroyed) return;
 
@@ -1085,25 +1151,19 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
       await this.saveModsToStorage('workshop');
       await this.store.setItem(this.lastWorkshopSyncFolderKey, folder);
 
-      this.messageService.add({
-        severity: 'success',
-        summary: this.transloco.translate('toasts.mods.workshopSynced.summary'),
-        detail: this.transloco.translate('toasts.mods.workshopSynced.detail'),
-        life: 5000,
-        closable: true,
-      });
+      this.showSyncWorkshopToast(
+        'success',
+        this.transloco.translate('toasts.mods.workshopSynced.detail'),
+      );
 
       this.applyFilters();
       await this.maybeUpdateHonuModsDbAfterSyncs();
     } catch (err: any) {
       if (err instanceof Error && err.message === 'STEAM_API_UNAUTHORIZED') {
-        this.messageService.add({
-          severity: 'error',
-          summary: this.transloco.translate('toasts.mods.workshopUnauthorized.summary'),
-          detail: this.transloco.translate('toasts.mods.workshopUnauthorized.detail'),
-          life: 10000,
-          closable: true,
-        });
+        this.showSyncWorkshopToast(
+          'error',
+          this.transloco.translate('toasts.mods.workshopUnauthorized.detail'),
+        );
       } else {
         const detail =
           err instanceof Error
@@ -1111,13 +1171,7 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
             : typeof err === 'string'
               ? err
               : this.transloco.translate('toasts.mods.workshopSyncFailed.detail');
-        this.messageService.add({
-          severity: 'error',
-          summary: this.transloco.translate('toasts.mods.workshopSyncFailed.summary'),
-          detail,
-          life: 10000,
-          closable: true,
-        });
+        this.showSyncWorkshopToast('error', detail);
       }
     } finally {
       this.loading = false;
@@ -1262,6 +1316,32 @@ export class ModsPageComponent extends BasePageComponent implements OnInit, OnDe
 
   async onHelpLinkClick(url: string) {
     await openUrl(url);
+  }
+
+  private showSyncLocalToast(
+    severity: 'success' | 'error',
+    detail: string,
+  ): void {
+    this.messageService.add({
+      severity,
+      summary: this.transloco.translate('menu.items.syncLocal'),
+      detail,
+      life: severity === 'success' ? 5000 : 8000,
+      closable: true,
+    });
+  }
+
+  private showSyncWorkshopToast(
+    severity: 'success' | 'error',
+    detail: string,
+  ): void {
+    this.messageService.add({
+      severity,
+      summary: this.transloco.translate('menu.items.syncWorkshop'),
+      detail,
+      life: severity === 'success' ? 5000 : 8000,
+      closable: true,
+    });
   }
 }
 

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { ModSummary } from '../models/mod.models';
 import { WorkshopMetadata } from './workshop-metadata.service';
 import { TauriStoreService } from './tauri-store.service';
+import { profileAsync } from '../utils/perf-trace';
 
 interface StoredModsState {
   schemaVersion?: number;
@@ -12,7 +13,7 @@ interface StoredModsState {
   lastWorkshopSyncAt?: string;
 }
 
-const CURRENT_SCHEMA_VERSION = 4;
+const CURRENT_SCHEMA_VERSION = 5;
 
 function stripLargeWorkshopFields(
   meta: WorkshopMetadata,
@@ -27,11 +28,77 @@ function stripLargeWorkshopFields(
   };
 }
 
+function getWorkshopKeyForMod(mod: ModSummary): string | null {
+  const workshopId = (mod.workshop_id ?? '').trim();
+  if (workshopId) {
+    return workshopId;
+  }
+
+  const fileId =
+    mod.workshop && typeof mod.workshop.fileid === 'number'
+      ? String(mod.workshop.fileid)
+      : '';
+  return fileId || null;
+}
+
+function stripEmbeddedWorkshop(mods: ModSummary[]): ModSummary[] {
+  return mods.map((mod) => {
+    const next: ModSummary = {
+      ...mod,
+      hidden: !!mod.hidden,
+      favorite: !!mod.favorite,
+    };
+    delete (next as any).workshop;
+    return next;
+  });
+}
+
+function hydrateLocalWithWorkshop(
+  mods: ModSummary[],
+  workshopById: Record<string, WorkshopMetadata>,
+): ModSummary[] {
+  if (!mods.length) {
+    return mods;
+  }
+
+  return mods.map((mod) => {
+    const key = getWorkshopKeyForMod(mod);
+    if (!key) {
+      return { ...mod, workshop: null };
+    }
+    const meta = workshopById[key] ?? null;
+    return {
+      ...mod,
+      workshop: meta,
+    };
+  });
+}
+
 @Injectable({
   providedIn: 'root',
 })
 export class ModsStateService {
   private readonly storageKey = 'pz_mods';
+  private lastPersistedContentSignature: string | null = null;
+  private inMemoryState:
+    | {
+        local: ModSummary[];
+        workshop: Record<string, WorkshopMetadata>;
+        lastLocalSyncAt?: string;
+        lastWorkshopSyncAt?: string;
+        schemaVersion: number;
+      }
+    | null
+    | undefined = undefined;
+  private inflightLoad:
+    | Promise<{
+        local: ModSummary[];
+        workshop: Record<string, WorkshopMetadata>;
+        lastLocalSyncAt?: string;
+        lastWorkshopSyncAt?: string;
+        schemaVersion: number;
+      } | null>
+    | null = null;
 
   constructor(private readonly store: TauriStoreService) {}
 
@@ -46,123 +113,145 @@ export class ModsStateService {
     lastWorkshopSyncAt?: string;
     schemaVersion: number;
   } | null> {
-    // Prefer Tauri store as the source of truth.
-    let raw =
-      await this.store.getItem<StoredModsState | string | null>(
-        this.storageKey,
-      );
-
-    if (raw === null) {
-      return null;
+    if (this.inMemoryState !== undefined) {
+      return this.inMemoryState;
     }
 
-    let state: StoredModsState | null = null;
+    if (this.inflightLoad) {
+      return this.inflightLoad;
+    }
 
-    if (typeof raw === 'string') {
-      try {
-        state = JSON.parse(raw) as StoredModsState;
-      } catch {
-        state = null;
+    const task = profileAsync('modsState.loadPersistedMods', async () => {
+      // Prefer Tauri store as the source of truth.
+      let raw =
+        await this.store.getItem<StoredModsState | string | null>(
+          this.storageKey,
+        );
+
+      if (raw === null) {
+        this.inMemoryState = null;
+        return null;
       }
-    } else {
-      state = raw as StoredModsState;
-    }
 
-    if (!state) {
-      return null;
-    }
+      let state: StoredModsState | null = null;
 
-    // Support both current and legacy property names for a smooth migration.
-    let local: ModSummary[] | null = null;
-    if (Array.isArray(state.local)) {
-      local = state.local;
-    } else if (Array.isArray((state as any).mods)) {
-      local = (state as any).mods as ModSummary[];
-      state.local = local;
-      // Clean up legacy field so the next save uses the new schema only.
-      delete (state as any).mods;
-      await this.store.setItem(this.storageKey, state);
-    }
+      if (typeof raw === 'string') {
+        try {
+          state = JSON.parse(raw) as StoredModsState;
+        } catch {
+          state = null;
+        }
+      } else {
+        state = raw as StoredModsState;
+      }
 
-    if (!local) {
-      return null;
-    }
+      if (!state) {
+        this.inMemoryState = null;
+        return null;
+      }
 
-    // Normalize boolean flags so the UI always sees a concrete value.
-    local = local.map((mod) => ({
-      ...mod,
-      hidden: !!mod.hidden,
-      favorite: !!mod.favorite,
-    }));
+      // Support both current and legacy property names for a smooth migration.
+      let local: ModSummary[] | null = null;
+      let localFromLegacy = false;
+      if (Array.isArray(state.local)) {
+        local = state.local;
+      } else if (Array.isArray((state as any).mods)) {
+        local = (state as any).mods as ModSummary[];
+        localFromLegacy = true;
+      }
 
-    // Ensure workshop metadata stays in sync with the local mods array.
-    // Prefer current field, but migrate from legacy if present.
-    let workshop =
-      state.workshop ??
-      ((state as any).workshopMetadata as
-        | Record<string, WorkshopMetadata>
-        | undefined) ??
-      ({} as Record<string, WorkshopMetadata>);
+      if (!local) {
+        this.inMemoryState = null;
+        return null;
+      }
 
-    if (!state.workshop && (state as any).workshopMetadata) {
-      state.workshop = workshop;
-      delete (state as any).workshopMetadata;
-      await this.store.setItem(this.storageKey, state);
-    }
+      // Prefer current field, but migrate from legacy if present.
+      let workshop =
+        state.workshop ??
+        ((state as any).workshopMetadata as
+          | Record<string, WorkshopMetadata>
+          | undefined) ??
+        ({} as Record<string, WorkshopMetadata>);
 
-    if (!workshop || Object.keys(workshop).length === 0) {
-      const rebuilt: Record<string, WorkshopMetadata> = {};
-      for (const mod of local) {
-        if (mod && mod.workshop && typeof mod.workshop.fileid === 'number') {
-          const key = String(mod.workshop.fileid);
-          rebuilt[key] = mod.workshop;
+      // Rebuild workshop map from legacy embedded mod.workshop entries.
+      if (!workshop || Object.keys(workshop).length === 0) {
+        const rebuilt: Record<string, WorkshopMetadata> = {};
+        for (const mod of local) {
+          if (mod && mod.workshop) {
+            const key = getWorkshopKeyForMod(mod);
+            if (key) {
+              rebuilt[key] = mod.workshop;
+            }
+          }
+        }
+        workshop = rebuilt;
+      }
+
+      // Prune excessively large fields from older persisted states.
+      let schemaVersion =
+        typeof state.schemaVersion === 'number' ? state.schemaVersion : 1;
+
+      let workshopChanged = schemaVersion < CURRENT_SCHEMA_VERSION;
+      const prunedWorkshop: Record<string, WorkshopMetadata> = {};
+      for (const [key, value] of Object.entries(workshop ?? {})) {
+        if (!value) {
+          continue;
+        }
+        const pruned = stripLargeWorkshopFields(value);
+        prunedWorkshop[key] = pruned;
+        if (
+          (value.file_description ?? null) !== null ||
+          (value.author ?? null) !== null
+        ) {
+          workshopChanged = true;
         }
       }
-      if (Object.keys(rebuilt).length) {
-        workshop = rebuilt;
-        state.workshop = rebuilt;
-        // Persist the repaired state back to Tauri so future loads are consistent.
-        await this.store.setItem(this.storageKey, state);
-      }
-    }
-
-    // Prune excessively large fields from older persisted states.
-    // This is an in-place migration for schema v4 (and a safety net for
-    // any state that contains raw Steam `file_description` / `author` blobs).
-    let schemaVersion =
-      typeof state.schemaVersion === 'number' ? state.schemaVersion : 1;
-
-    let workshopChanged = schemaVersion < CURRENT_SCHEMA_VERSION;
-    const prunedWorkshop: Record<string, WorkshopMetadata> = {};
-    for (const [key, value] of Object.entries(workshop ?? {})) {
-      if (!value) {
-        continue;
-      }
-      const pruned = stripLargeWorkshopFields(value);
-      prunedWorkshop[key] = pruned;
-      if (
-        (value.file_description ?? null) !== null ||
-        (value.author ?? null) !== null
-      ) {
-        workshopChanged = true;
-      }
-    }
-
-    if (workshopChanged) {
       workshop = prunedWorkshop;
-      state.workshop = prunedWorkshop;
-      state.schemaVersion = CURRENT_SCHEMA_VERSION;
-      await this.store.setItem(this.storageKey, state);
-      schemaVersion = CURRENT_SCHEMA_VERSION;
-    }
 
-    return {
-      local,
-      workshop,
-      lastLocalSyncAt: state.lastLocalSyncAt,
-      lastWorkshopSyncAt: state.lastWorkshopSyncAt,
-      schemaVersion,
-    };
+      const persistedLocal = stripEmbeddedWorkshop(local);
+      const hydratedLocal = hydrateLocalWithWorkshop(persistedLocal, workshop);
+
+      const localHadEmbeddedWorkshop = local.some((mod) => !!mod.workshop);
+      const needsMigration =
+        schemaVersion < CURRENT_SCHEMA_VERSION ||
+        localFromLegacy ||
+        !!(state as any).workshopMetadata ||
+        localHadEmbeddedWorkshop ||
+        workshopChanged;
+
+      if (needsMigration) {
+        const migratedState: StoredModsState = {
+          schemaVersion: CURRENT_SCHEMA_VERSION,
+          local: persistedLocal,
+          workshop,
+          lastSyncedAt: state.lastSyncedAt,
+          lastLocalSyncAt: state.lastLocalSyncAt,
+          lastWorkshopSyncAt: state.lastWorkshopSyncAt,
+        };
+        await this.store.setItem(this.storageKey, migratedState);
+        schemaVersion = CURRENT_SCHEMA_VERSION;
+      }
+
+      this.lastPersistedContentSignature = JSON.stringify({
+        local: persistedLocal,
+        workshop,
+      });
+
+      const normalized = {
+        local: hydratedLocal,
+        workshop,
+        lastLocalSyncAt: state.lastLocalSyncAt,
+        lastWorkshopSyncAt: state.lastWorkshopSyncAt,
+        schemaVersion,
+      };
+      this.inMemoryState = normalized;
+      return normalized;
+    });
+
+    this.inflightLoad = task;
+    return task.finally(() => {
+      this.inflightLoad = null;
+    });
   }
 
   async savePersistedMods(
@@ -170,11 +259,12 @@ export class ModsStateService {
     workshop: Record<string, WorkshopMetadata>,
     options?: { source?: 'local' | 'workshop' },
   ): Promise<void> {
-    // Persist the full Workshop metadata objects as-is so the schema exactly
-    // matches the Steam API + WorkshopMetadata interface. If the caller passes
-    // an empty workshop map, preserve any previously stored workshop data.
-    let normalizedWorkshop: Record<string, WorkshopMetadata> =
-      workshop && Object.keys(workshop).length ? workshop : {};
+    return profileAsync('modsState.savePersistedMods', async () => {
+      // Persist the full Workshop metadata objects as-is so the schema exactly
+      // matches the Steam API + WorkshopMetadata interface. If the caller passes
+      // an empty workshop map, preserve any previously stored workshop data.
+      let normalizedWorkshop: Record<string, WorkshopMetadata> =
+        workshop && Object.keys(workshop).length ? workshop : {};
 
     if (!Object.keys(normalizedWorkshop).length) {
       const existingRaw =
@@ -245,15 +335,42 @@ export class ModsStateService {
       lastWorkshopSyncAt = nowIso;
     }
 
-    const state: StoredModsState = {
-      schemaVersion: CURRENT_SCHEMA_VERSION,
-      local: normalizedLocal,
-      workshop: persistedWorkshop,
-      lastSyncedAt: nowIso,
-      lastLocalSyncAt,
-      lastWorkshopSyncAt,
-    };
+      const persistedLocal = stripEmbeddedWorkshop(normalizedLocal);
+      const hydratedLocal = hydrateLocalWithWorkshop(
+        persistedLocal,
+        persistedWorkshop,
+      );
 
-    await this.store.setItem(this.storageKey, state);
+      const contentSignature = JSON.stringify({
+        local: persistedLocal,
+        workshop: persistedWorkshop,
+      });
+
+      if (
+        !options?.source &&
+        contentSignature === this.lastPersistedContentSignature
+      ) {
+        return;
+      }
+
+      const state: StoredModsState = {
+        schemaVersion: CURRENT_SCHEMA_VERSION,
+        local: persistedLocal,
+        workshop: persistedWorkshop,
+        lastSyncedAt: nowIso,
+        lastLocalSyncAt,
+        lastWorkshopSyncAt,
+      };
+
+      await this.store.setItem(this.storageKey, state);
+      this.lastPersistedContentSignature = contentSignature;
+      this.inMemoryState = {
+        local: hydratedLocal,
+        workshop: persistedWorkshop,
+        lastLocalSyncAt,
+        lastWorkshopSyncAt,
+        schemaVersion: CURRENT_SCHEMA_VERSION,
+      };
+    });
   }
 }

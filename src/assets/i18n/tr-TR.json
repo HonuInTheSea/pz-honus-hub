@@ -50,7 +50,9 @@
       "resetApp": "Uygulamayı Sıfırla",
       "resetAppTooltip": "Pencere ayarlarını sıfırlayın ve depolanan verileri silin",
       "myMods": "Modlarım",
-      "server": "Sunucu"
+      "server": "Sunucu",
+      "modCollections": "Mod Koleksiyonları",
+      "modPresets": "Mod Ön Ayarları"
     },
     "filters": {
       "adultLabel": "Yetişkinlere Uygun İçerik Var",
@@ -188,7 +190,6 @@
       "data": "Uygulamanın kullandığı veriler",
       "features": "Özellikler",
       "server": "Sunucu Yönetimi",
-      "mediaPlayer": "Medya oynatıcı",
       "logInspector": "Günlük denetçisi",
       "folderSetup": "Klasör kurulumu",
       "tauri": "Masaüstü (Tauri) entegrasyonu",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Satır ayrıntıları</strong> - bir mod hakkında daha fazla bilgi görmek için satırı genişletin (mevcut olduğunda).",
       "bullet3": "<strong>Steam'de Aç</strong> - geçerli bir atölye kimliğine sahip modlar için varsayılan tarayıcınızda Atölye sayfasını açar.",
       "bullet4": "<strong>Klasörü aç</strong> - seçilen mod klasörünü dosya gezgininizde açar.",
-      "mediaPlayer": "<strong>Medya oynatıcı</strong> - Kenar çubuğundan Project Zomboid müzik parçalarını oynatın. <a routerLink=\"/documentation\" fragment=\"media-player\">Medya oynatıcı</a>'ya bakın.",
       "logInspectorPrefix": "<strong>Günlük denetçisi</strong> - hataları ve uyarıları hızla bulmak için günlük dosyalarını (<code>console.txt</code> gibi) yükleyin ve filtreleyin. Görmek",
       "logInspectorLink": "Günlük denetçisi",
       "bullet6": "<strong>Kontrol Paneli</strong> - hızlı istatistikleri (örneğin: algılanan toplam mod sayısı) ve diğer üst düzey göstergeleri gösterir."
-    },
-    "mediaPlayer": {
-      "title": "Medya oynatıcı",
-      "intro": "Kenar çubuğu, Project Zomboid ses parçalarını (OGG) tarayabilen ve bunları uygulama içinde çalabilen hafif bir müzik çalar içerir.",
-      "bullet1": "<strong>Çalma listesi</strong> - algılanan parçaları ve temel meta verileri (varsa başlık/sanatçı/albüm) gösterir.",
-      "bullet2": "<strong>Oynatma</strong> - oynatma/duraklatma artı önceki/sonraki parça.",
-      "bullet3": "<strong>Arama + ses seviyesi</strong> - parça üzerinde gezinin ve ses seviyesini/sessizi ayarlayın."
     },
     "server": {
       "title": "Sunucu Yönetimi",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Yenile",
+      "createNewServer": "Yeni Sunucu Oluştur",
+      "copy": "Kopyala",
+      "deleteServer": "Sunucuyu Sil",
       "createBackupOnSave": "Kaydederken yedek oluştur",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox Değişkenleri",
+        "spawnpoints": "Doğma Noktaları",
+        "spawnregions": "Doğma Bölgeleri"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Sunucu Yapılandırma Değişkenleri",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Sıfırla",
+      "saveChanges": "Değişiklikleri Kaydet",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox Değişkenleri",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

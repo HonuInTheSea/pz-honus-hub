@@ -8,28 +8,22 @@
     appendTo="body"
   >
     <ng-template let-message pTemplate="message">
-      <div class="flex align-items-start gap-3" style="flex: 1">
-        <i [class]="'pi ' + (
-          message.severity === 'error' ? 'pi-times-circle' : 
-          message.severity === 'warn' ? 'pi-exclamation-triangle' : 
-          message.severity === 'success' ? 'pi-check-circle' : 
-          'pi-info-circle'
-        )" style="font-size: 1.5rem"></i>
-        <div class="flex flex-column">
-          @if (message.summary) {
-            <div class="font-bold">{{ message.summary }}</div>
-          }
+      <div style="display: block; width: 100%">
+        @if (message.summary) {
+          <div class="font-bold">{{ message.summary }}</div>
+        }
+        @if (message.detail) {
           <div class="{{ message.summary ? 'mt-1' : '' }}">{{ message.detail }}</div>
-          @if (message.data?.helpUrl) {
-            <button
-              pButton
-              [label]="t('modsPage.toastHelp')"
-              class="p-button-link p-0 mt-2 text-left font-medium"
-              (click)="onHelpLinkClick(message.data.helpUrl)"
-            ></button>
-          }
+        }
+        @if (message.data?.helpUrl) {
+          <button
+            pButton
+            [label]="t('modsPage.toastHelp')"
+            class="p-button-link p-0 mt-2 text-left font-medium"
+            (click)="onHelpLinkClick(message.data.helpUrl)"
+          ></button>
+        }
         </div>
-      </div>
     </ng-template>
   </p-toast>
 

@@ -50,7 +50,9 @@
       "resetApp": "重置申請",
       "resetAppTooltip": "重置窗口設置並刪除存儲的數據",
       "myMods": "我的 Mod",
-      "server": "伺服器"
+      "server": "伺服器",
+      "modCollections": "模組收藏",
+      "modPresets": "模組預設"
     },
     "filters": {
       "adultLabel": "有成人內容",
@@ -188,7 +190,6 @@
       "data": "應用程序使用的數據",
       "features": "特徵",
       "server": "伺服器管理",
-      "mediaPlayer": "媒體播放器",
       "logInspector": "日誌檢查器",
       "folderSetup": "文件夾設置",
       "tauri": "桌面 (Tauri) 集成",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>行詳細信息</strong> - 展開行以查看有關模組的更多信息（如果有）。",
       "bullet3": "<strong>在 Steam 中打開</strong> - 在默認瀏覽器中打開具有有效創意工坊 ID 的模組的創意工坊頁面。",
       "bullet4": "<strong>打開文件夾</strong> - 在文件資源管理器中打開選定的模組文件夾。",
-      "mediaPlayer": "<strong>媒體播放器</strong> - 從側邊欄播放 Project Zomboid 音樂曲目。請參閱<a routerLink=\"/documentation\"fragment=\"media-player\">媒體播放器</a>。",
       "logInspectorPrefix": "<strong>日誌檢查器</strong> - 加載和過濾日誌文件（如<code>console.txt</code>）以快速查找錯誤和警告。看",
       "logInspectorLink": "日誌檢查器",
       "bullet6": "<strong>儀表板</strong> - 顯示快速統計數據（例如：檢測到的模組總數）和其他高級指標。"
-    },
-    "mediaPlayer": {
-      "title": "媒體播放器",
-      "intro": "側邊欄包括一個輕量級音樂播放器，可以掃描 Project Zomboid 音軌 (OGG) 並在應用程序內播放。",
-      "bullet1": "<strong>播放列表</strong> - 顯示檢測到的曲目和基本元數據（標題/藝術家/專輯（如果可用））。",
-      "bullet2": "<strong>播放</strong> - 播放/暫停以及上一個/下一個曲目。",
-      "bullet3": "<strong>搜索 + 音量</strong> - 瀏覽曲目並調整音量/靜音。"
     },
     "server": {
       "title": "伺服器管理",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "重新整理",
+      "createNewServer": "建立新伺服器",
+      "copy": "複製",
+      "deleteServer": "刪除伺服器",
       "createBackupOnSave": "儲存時建立備份",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox 變數",
+        "spawnpoints": "出生點",
+        "spawnregions": "出生區域"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "伺服器設定變數",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "重設",
+      "saveChanges": "儲存變更",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox 變數",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

@@ -50,7 +50,9 @@
       "resetApp": "Zresetuj aplikację",
       "resetAppTooltip": "Zresetuj ustawienia okna i usuń zapisane dane",
       "myMods": "Moje mody",
-      "server": "Serwer"
+      "server": "Serwer",
+      "modCollections": "Kolekcje modów",
+      "modPresets": "Presety modów"
     },
     "filters": {
       "adultLabel": "Zawiera treści dla dorosłych",
@@ -188,7 +190,6 @@
       "data": "Dane, z których korzysta aplikacja",
       "features": "Cechy",
       "server": "Zarządzanie serwerem",
-      "mediaPlayer": "Odtwarzacz multimedialny",
       "logInspector": "Inspektor logów",
       "folderSetup": "Konfiguracja folderu",
       "tauri": "Integracja z komputerem stacjonarnym (Tauri).",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Szczegóły wiersza</strong> — rozwiń wiersz, aby wyświetlić więcej informacji o modzie (jeśli są dostępne).",
       "bullet3": "<strong>Otwórz w Steam</strong> – otwiera stronę warsztatu w domyślnej przeglądarce dla modów z prawidłowym identyfikatorem warsztatu.",
       "bullet4": "<strong>Otwórz folder</strong> – otwiera wybrany folder modów w eksploratorze plików.",
-      "mediaPlayer": "<strong>Odtwarzacz multimedialny</strong> – odtwarzaj utwory muzyczne z Projektu Zomboid na pasku bocznym. Zobacz <a routerLink=\"/documentation\" fragment=\"media-player\">Odtwarzacz multimedialny</a>.",
       "logInspectorPrefix": "<strong>Inspektor logów</strong> — ładuj i filtruj pliki dziennika (np. <code>console.txt</code>), aby szybko znajdować błędy i ostrzeżenia. Widzieć",
       "logInspectorLink": "Inspektor logów",
       "bullet6": "<strong>Panel</strong> – pokazuje szybkie statystyki (na przykład: całkowitą liczbę wykrytych modów) i inne wskaźniki wysokiego poziomu."
-    },
-    "mediaPlayer": {
-      "title": "Odtwarzacz multimedialny",
-      "intro": "Na pasku bocznym znajduje się lekki odtwarzacz muzyki, który może wyszukiwać ścieżki audio Project Zomboid (OGG) i odtwarzać je w aplikacji.",
-      "bullet1": "<strong>Playlista</strong> – pokazuje wykryte utwory i podstawowe metadane (tytuł/wykonawca/album, jeśli są dostępne).",
-      "bullet2": "<strong>Odtwarzanie</strong> – odtwarzanie/pauza oraz poprzedni/następny utwór.",
-      "bullet3": "<strong>Wyszukiwanie + głośność</strong> – przewijaj ścieżkę i dostosowuj głośność/wyciszenie."
     },
     "server": {
       "title": "Zarządzanie serwerem",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Odśwież",
+      "createNewServer": "Utwórz nowy serwer",
+      "copy": "Kopiuj",
+      "deleteServer": "Usuń serwer",
       "createBackupOnSave": "Twórz kopię zapasową przy zapisywaniu",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Zmienne Sandbox",
+        "spawnpoints": "Punkty odrodzenia",
+        "spawnregions": "Regiony odrodzenia"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Zmienne konfiguracji serwera",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Resetuj",
+      "saveChanges": "Zapisz zmiany",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Zmienne Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

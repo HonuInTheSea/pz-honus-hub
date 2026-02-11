@@ -1,8 +1,8 @@
 <ng-container *transloco="let t">
 <div class="p-4">
-  @if (getPosterImages(mod).length) {
+  @if (posterImages.length) {
   <div class="mod-poster-carousel">
-    <p-carousel [value]="getPosterImages(mod)" [numVisible]="1" [numScroll]="1" [circular]="true"
+    <p-carousel [value]="posterImages" [numVisible]="1" [numScroll]="1" [circular]="true"
       [showIndicators]="true" [showNavigators]="true" [responsiveOptions]="responsiveOptions">
       <ng-template let-image pTemplate="item">
         <div class="mod-poster-carousel-item">
@@ -16,8 +16,8 @@
   <form class="mod-details-form p-fluid">
     <h3 class="mod-details-title">
       {{ mod.name }}
-      @if (getRelativeFolderName(mod)) {
-      ({{ getRelativeFolderName(mod) }})
+      @if (relativeFolderName) {
+      ({{ relativeFolderName }})
       }
     </h3>
 
@@ -79,7 +79,7 @@
         <div class="field">
           <label class="block mb-1">{{ t('modDetails.fields.tags') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (tag of getMappedTagOptions(mod); track tag.value) {
+            @for (tag of mappedTagOptions; track tag.value) {
             <p-chip [label]="tag.label" class="p-chip-outlined mod-tag-chip"
               [class.mod-tag-chip--active]="isTagSelected(tag.value)"
               (click)="toggleTagFilter(tag.value)"></p-chip>
@@ -111,12 +111,12 @@
         </div>
         }
 
-        @if (hasModLinkChips) {
+        @if (hasModLinkChipsView) {
         <div class="field">
-          @if (hasRequiredModValues) {
+          @if (hasRequiredModValuesView) {
           <label class="block mb-1">{{ t('modDetails.links.requiredMods') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (chip of requiredModChips; track chip.label) {
+            @for (chip of requiredModChipsView; track chip.label) {
             @if (!chip.missing && chip.mod) {
             <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
               (click)="openLinkedModDetails(chip.mod)"></p-chip>
@@ -128,10 +128,10 @@
           </div>
           }
 
-          @if (hasLoadAfterValues) {
+          @if (hasLoadAfterValuesView) {
           <label class="block mb-1 mt-3">{{ t('modDetails.links.loadAfter') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (chip of loadAfterChips; track chip.label) {
+            @for (chip of loadAfterChipsView; track chip.label) {
             @if (!chip.missing && chip.mod) {
             <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
               (click)="openLinkedModDetails(chip.mod)"></p-chip>
@@ -143,10 +143,10 @@
           </div>
           }
 
-          @if (hasLoadBeforeValues) {
+          @if (hasLoadBeforeValuesView) {
           <label class="block mb-1 mt-3">{{ t('modDetails.links.loadBefore') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (chip of loadBeforeChips; track chip.label) {
+            @for (chip of loadBeforeChipsView; track chip.label) {
             @if (!chip.missing && chip.mod) {
             <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
               (click)="openLinkedModDetails(chip.mod)"></p-chip>
@@ -158,10 +158,10 @@
           </div>
           }
 
-          @if (hasIncompatibleValues) {
+          @if (hasIncompatibleValuesView) {
           <label class="block mb-1 mt-3">{{ t('modDetails.links.incompatibleMods') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (chip of incompatibleChips; track chip.label) {
+            @for (chip of incompatibleChipsView; track chip.label) {
             @if (!chip.missing && chip.mod) {
             <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
               (click)="openLinkedModDetails(chip.mod)"></p-chip>
@@ -173,10 +173,10 @@
           </div>
           }
 
-          @if (hasRequiredByValues) {
+          @if (hasRequiredByValuesView) {
           <label class="block mb-1 mt-3">{{ t('modDetails.links.requiredBy') }}</label>
-            <div class="required-by-container mt-1 flex flex-wrap gap-2" [class.is-scrollable]="mod.required_by && mod.required_by.length > 5">
-              @for (chip of requiredByChips; track chip.label) {
+            <div class="required-by-container mt-1 flex flex-wrap gap-2" [class.is-scrollable]="requiredByIsScrollable">
+              @for (chip of requiredByChipsView; track chip.label) {
               @if (!chip.missing && chip.mod) {
               <p-chip [label]="chip.label" class="mod-link-chip mod-link-chip--found"
                 (click)="openLinkedModDetails(chip.mod)"></p-chip>
@@ -188,10 +188,10 @@
             </div>
           }
 
-          @if (hasIncompatibleWithMods) {
+          @if (hasIncompatibleWithModsView) {
           <label class="block mb-1 mt-3">{{ t('modDetails.links.incompatibleWith') }}</label>
           <div class="mt-1 flex flex-wrap gap-2">
-            @for (incompatible of incompatibleWithMods; track incompatible.id) {
+            @for (incompatible of incompatibleWithModsView; track incompatible.id) {
             <p-chip [label]="incompatible.name" class="p-chip-outlined mod-link-chip--included-with"
               (click)="openLinkedModDetails(incompatible)"></p-chip>
             }
@@ -296,21 +296,21 @@
           <label class="block mb-1">{{ t('modDetails.fields.fileSize') }}</label>
           <input pInputText class="w-full" [readonly]="true"
             [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
-            [ngModel]="formatFileSize(mod.workshop?.file_size ?? null)" name="file-size-{{ mod.id }}"
+            [ngModel]="workshopFileSizeDisplay" name="file-size-{{ mod.id }}"
             [id]="'file-size-' + mod.id" />
         </div>
         <div class="field">
           <label class="block mb-1">{{ t('modDetails.fields.timeCreated') }}</label>
           <input pInputText class="w-full" [readonly]="true"
             [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
-            [ngModel]="formatDateTime(mod.workshop?.time_created ?? null)" name="time-created-{{ mod.id }}"
+            [ngModel]="workshopTimeCreatedDisplay" name="time-created-{{ mod.id }}"
             [id]="'time-created-' + mod.id" />
         </div>
         <div class="field">
           <label class="block mb-1">{{ t('modDetails.fields.timeUpdated') }}</label>
           <input pInputText class="w-full" [readonly]="true"
             [pTooltip]="t('modDetails.tooltips.steamReadonly')" tooltipPosition="top"
-            [ngModel]="formatDateTime(mod.workshop?.time_updated ?? null)" name="time-updated-{{ mod.id }}"
+            [ngModel]="workshopTimeUpdatedDisplay" name="time-updated-{{ mod.id }}"
             [id]="'time-updated-' + mod.id" />
         </div>
         <div class="field">

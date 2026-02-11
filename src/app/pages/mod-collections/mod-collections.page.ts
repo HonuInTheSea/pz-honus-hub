@@ -37,6 +37,10 @@ import { formatLocalizedDateTime } from '../../i18n/date-time';
 
 interface CollectionRow extends WorkshopQueryItem {
   tags_display?: string;
+  children_count: number;
+  description_full: string;
+  description_short: string;
+  updated_display: string;
 }
 
 interface CollectionModsState {
@@ -54,6 +58,11 @@ interface CollectionModRow {
   needsInstall: boolean;
   workshopUrl: string;
   localMod?: ModSummary | null;
+  thumbnail?: string;
+  statusLabel: string;
+  statusSeverity: 'success' | 'info' | 'danger';
+  installedSeverity: 'success' | 'danger';
+  activeSeverity: 'success' | 'secondary';
 }
 
 function parseActiveModsRelDir(presetName: string | null | undefined): string | null {
@@ -448,10 +457,7 @@ export class ModCollectionsPageComponent
     if (!items.length) {
       return;
     }
-    const mapped = items.map((item) => ({
-      ...item,
-      tags_display: this.formatTags(item.tags),
-    }));
+    const mapped = items.map((item) => this.toCollectionRow(item));
     const merged = [...this.collections, ...mapped];
     const seen = new Set<string>();
     this.collections = merged.filter((item) => {
@@ -465,6 +471,29 @@ export class ModCollectionsPageComponent
 
     this.applyCollectionSort();
     this.updateCollectionTagOptions();
+  }
+
+  private toCollectionRow(item: WorkshopQueryItem): CollectionRow {
+    const description = this.getCollectionDescription(item);
+    return {
+      ...item,
+      tags_display: this.formatTags(item.tags),
+      children_count: this.getChildrenCount(item),
+      description_full: description,
+      description_short: this.toShortDescription(description),
+      updated_display: this.formatDateTime(item.time_updated ?? item.time_created),
+    };
+  }
+
+  private toShortDescription(desc: string): string {
+    if (!desc) {
+      return '';
+    }
+    const maxLen = 160;
+    if (desc.length <= maxLen) {
+      return desc;
+    }
+    return `${desc.slice(0, maxLen)}...`;
   }
 
   private buildCacheKey(): string {
@@ -589,18 +618,7 @@ export class ModCollectionsPageComponent
     return 0;
   }
 
-  getCollectionThumbnail(item: CollectionRow): string | undefined {
-    const id = (item.publishedfileid || '').trim();
-    const detail = id ? this.collectionDetailsById[id] : null;
-    const url = (detail?.preview_url ?? item.preview_url ?? '').trim();
-    return url || undefined;
-  }
-
-  getCollectionTags(item: CollectionRow): string {
-    return (item.tags_display ?? '').trim();
-  }
-
-  getCollectionDescription(item: CollectionRow): string {
+  getCollectionDescription(item: WorkshopQueryItem): string {
     const fromRow =
       (item.short_description ?? item.file_description ?? '').trim();
     if (fromRow) {
@@ -611,18 +629,6 @@ export class ModCollectionsPageComponent
     const detailDesc =
       (detail?.file_description ?? detail?.short_description ?? '').trim();
     return detailDesc;
-  }
-
-  getCollectionDescriptionDisplay(item: CollectionRow): string {
-    const desc = this.getCollectionDescription(item);
-    if (!desc) {
-      return '';
-    }
-    const maxLen = 160;
-    if (desc.length <= maxLen) {
-      return desc;
-    }
-    return `${desc.slice(0, maxLen)}...`;
   }
 
   getCollectionMenuItems(item: CollectionRow): MenuItem[] {
@@ -663,47 +669,6 @@ export class ModCollectionsPageComponent
       },
     );
     return items;
-  }
-
-  getModThumbnail(row: CollectionModRow): string | undefined {
-    if (row.localMod) {
-      if (row.localMod.preview_image_path) {
-        return convertFileSrc(row.localMod.preview_image_path);
-      }
-      if (row.localMod.icon) {
-        return convertFileSrc(row.localMod.icon);
-      }
-    }
-    const url = (row.preview_url ?? '').trim();
-    return url || undefined;
-  }
-
-  formatStatus(row: CollectionModRow): string {
-    if (row.activated) {
-      return 'Activated';
-    }
-    if (row.installed) {
-      return 'Installed';
-    }
-    return 'Needs Install';
-  }
-
-  getStatusSeverity(row: CollectionModRow): 'success' | 'info' | 'danger' {
-    if (row.activated) {
-      return 'success';
-    }
-    if (row.installed) {
-      return 'info';
-    }
-    return 'danger';
-  }
-
-  getInstalledSeverity(row: CollectionModRow): 'success' | 'danger' {
-    return row.installed ? 'success' : 'danger';
-  }
-
-  getActiveSeverity(row: CollectionModRow): 'success' | 'secondary' {
-    return row.activated ? 'success' : 'secondary';
   }
 
   formatDateTime(value: number | string | null | undefined): string {
@@ -825,11 +790,12 @@ export class ModCollectionsPageComponent
       if (!detail) {
         return item;
       }
-      return {
+      const merged: WorkshopQueryItem = {
         ...item,
         file_description: item.file_description ?? detail.file_description,
         short_description: item.short_description ?? detail.file_description,
       };
+      return this.toCollectionRow(merged);
     });
   }
 
@@ -872,6 +838,13 @@ export class ModCollectionsPageComponent
         const modId = (localMod?.mod_id ?? '').trim();
         const installed = !!localMod;
         const activated = installed && (!!modId && this.activeModIds.has(modId));
+        const thumbnail =
+          localMod?.preview_image_path
+            ? convertFileSrc(localMod.preview_image_path)
+            : localMod?.icon
+              ? convertFileSrc(localMod.icon)
+              : (detail?.preview_url ?? '').trim() || undefined;
+
         mods.push({
           publishedfileid: childId,
           title:
@@ -884,6 +857,11 @@ export class ModCollectionsPageComponent
           needsInstall: !installed,
           workshopUrl: `https://steamcommunity.com/sharedfiles/filedetails/?id=${childId}`,
           localMod,
+          thumbnail,
+          statusLabel: activated ? 'Activated' : installed ? 'Installed' : 'Needs Install',
+          statusSeverity: activated ? 'success' : installed ? 'info' : 'danger',
+          installedSeverity: installed ? 'success' : 'danger',
+          activeSeverity: activated ? 'success' : 'secondary',
         });
       }
 

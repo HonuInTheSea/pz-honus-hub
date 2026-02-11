@@ -103,9 +103,9 @@
       </td>
       <td>
         <div class="mod-name-cell">
-          @if (mod.icon) {
+          @if (mod.icon_url) {
             <img
-              [src]="posterUrl(mod.icon)"
+              [src]="mod.icon_url"
               alt="{{ mod.name }} icon"
               class="mod-name-icon"
             />
@@ -116,15 +116,15 @@
       <td>
         <div
           class="author-cell"
-          [pTooltip]="getAuthorAvatarTooltip(mod)"
+          [pTooltip]="mod.author_avatar_tooltip"
           [escape]="false"
-          [tooltipDisabled]="!getAuthorAvatarFull(mod)"
+          [tooltipDisabled]="!mod.author_avatar_full"
           [tooltipStyleClass]="'author-avatar-tooltip-popper'"
           tooltipPosition="top"
         >
-          @if (getAuthorAvatar(mod)) {
+          @if (mod.author_avatar_medium) {
             <img
-              [src]="getAuthorAvatar(mod)"
+              [src]="mod.author_avatar_medium"
               alt="Author avatar"
               class="author-avatar-icon"
               referrerpolicy="no-referrer"

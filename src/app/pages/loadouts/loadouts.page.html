@@ -291,9 +291,9 @@
                   <div class="mb-2">
                     <div class="font-medium mb-1">Cycles</div>
                     <div class="text-sm">
-                      @for (cycle of analysis.cycles; track cycle) {
+                      @for (line of analysisCycleDisplay; track line) {
                         <div style="font-family: var(--font-family-monospace, monospace)">
-                          {{ cycle.join(' -> ') }}
+                          {{ line }}
                         </div>
                       }
                     </div>
@@ -313,9 +313,9 @@
                   <div class="mb-2">
                     <div class="font-medium mb-1">File conflicts (sample)</div>
                     <div class="text-sm" style="max-height: 10rem; overflow: auto; font-family: var(--font-family-monospace, monospace)">
-                      @for (c of analysis.conflicts; track c.relativePath) {
+                      @for (c of analysisConflictDisplay; track c.relativePath) {
                         <div>
-                          {{ c.relativePath }}: {{ conflictModsDisplay(c) }}
+                          {{ c.relativePath }}: {{ c.modsDisplay }}
                         </div>
                       }
                     </div>

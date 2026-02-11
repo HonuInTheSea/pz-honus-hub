@@ -50,7 +50,9 @@
       "resetApp": "Nollaa sovellus",
       "resetAppTooltip": "Palauta ikkunan asetukset ja poista tallennetut tiedot",
       "myMods": "Omat modit",
-      "server": "Palvelin"
+      "server": "Palvelin",
+      "modCollections": "Modikokoelmat",
+      "modPresets": "Modiesiasetukset"
     },
     "filters": {
       "adultLabel": "Sisältää aikuisille suunnattua sisältöä",
@@ -188,7 +190,6 @@
       "data": "Sovelluksen käyttämät tiedot",
       "features": "Ominaisuudet",
       "server": "Palvelinhallinta",
-      "mediaPlayer": "Mediasoitin",
       "logInspector": "Lokin tarkastaja",
       "folderSetup": "Kansion asetukset",
       "tauri": "Desktop (Tauri) integraatio",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Rivin tiedot</strong> – Laajenna rivi nähdäksesi lisätietoja modista (jos saatavilla).",
       "bullet3": "<strong>Avaa Steamissa</strong> – avaa Workshop-sivun oletusselaimessasi modeille, joilla on kelvollinen työpajatunnus.",
       "bullet4": "<strong>Avaa kansio</strong> – avaa valitun mod-kansion tiedostojen hallinnassa.",
-      "mediaPlayer": "<strong>Mediasoitin</strong> – toista Project Zomboid -musiikkikappaleita sivupalkista. Katso <a routerLink=\"/documentation\" fragment=\"media-player\">Mediasoitin</a>.",
       "logInspectorPrefix": "<strong>Lokin tarkastaja</strong> – lataa ja suodata lokitiedostoja (kuten <code>console.txt</code>) löytääksesi virheet ja varoitukset nopeasti. Katso",
       "logInspectorLink": "Lokin tarkastaja",
       "bullet6": "<strong>Hallintapaneeli</strong> – näyttää pikatilastot (esimerkiksi havaittujen modien kokonaismäärä) ja muita korkean tason indikaattoreita."
-    },
-    "mediaPlayer": {
-      "title": "Mediasoitin",
-      "intro": "Sivupalkki sisältää kevyen musiikkisoittimen, joka voi etsiä Project Zomboid -ääniraitoja (OGG) ja toistaa niitä sovelluksessa.",
-      "bullet1": "<strong>Soittolista</strong> – näyttää havaitut kappaleet ja perussisällönkuvaustiedot (nimi/artisti/albumi, jos saatavilla).",
-      "bullet2": "<strong>Toisto</strong> – toisto/tauko plus edellinen/seuraava kappale.",
-      "bullet3": "<strong>Haku + äänenvoimakkuus</strong> – selaa kappaletta ja säädä äänenvoimakkuutta/mykistä."
     },
     "server": {
       "title": "Palvelinhallinta",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Päivitä",
+      "createNewServer": "Luo uusi palvelin",
+      "copy": "Kopioi",
+      "deleteServer": "Poista palvelin",
       "createBackupOnSave": "Luo varmuuskopio tallennettaessa",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox-muuttujat",
+        "spawnpoints": "Spawn-pisteet",
+        "spawnregions": "Spawn-alueet"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Palvelimen asetusten muuttujat",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Nollaa",
+      "saveChanges": "Tallenna muutokset",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox-muuttujat",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

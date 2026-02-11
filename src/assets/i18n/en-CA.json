@@ -50,7 +50,9 @@
       "supportKofi": "Support on Ko-fi",
       "resetApp": "Reset Application",
       "resetAppTooltip": "Reset window settings and delete stored data",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Mod Collections",
+      "modPresets": "Mod Presets"
     },
     "filters": {
       "adultLabel": "Has Adult Content",
@@ -308,7 +310,6 @@
       "data": "Data the app uses",
       "features": "Features",
       "server": "Server Management",
-      "mediaPlayer": "Media player",
       "logInspector": "Log inspector",
       "folderSetup": "Folder setup",
       "tauri": "Desktop (Tauri) integration",
@@ -365,17 +366,9 @@
       "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
       "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
       "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "mediaPlayer": "<strong>Media player</strong> - play Project Zomboid music tracks from the sidebar. See <a routerLink=\"/documentation\" fragment=\"media-player\">Media player</a>.",
       "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
       "logInspectorLink": "Log inspector",
       "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
-    },
-    "mediaPlayer": {
-      "title": "Media player",
-      "intro": "The sidebar includes a lightweight music player that can scan for Project Zomboid audio tracks (OGG) and play them in-app.",
-      "bullet1": "<strong>Playlist</strong> - shows detected tracks and basic metadata (title/artist/album when available).",
-      "bullet2": "<strong>Playback</strong> - play/pause plus previous/next track.",
-      "bullet3": "<strong>Seek + volume</strong> - scrub through the track and adjust volume/mute."
     },
     "server": {
       "title": "Server Management",

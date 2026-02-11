@@ -19,7 +19,6 @@
         <li><a routerLink="/documentation" fragment="data">{{ t('docs.toc.data') }}</a></li>
         <li><a routerLink="/documentation" fragment="features">{{ t('docs.toc.features') }}</a></li>
         <li><a routerLink="/documentation" fragment="server">{{ t('docs.toc.server') }}</a></li>
-        <!-- <li><a routerLink="/documentation" fragment="media-player">{{ t('docs.toc.mediaPlayer') }}</a></li> -->
         <li><a routerLink="/documentation" fragment="log-inspector">{{ t('docs.toc.logInspector') }}</a></li>
         <li><a routerLink="/documentation" fragment="folder-setup">{{ t('docs.toc.folderSetup') }}</a></li>
         <li><a routerLink="/documentation" fragment="tauri">{{ t('docs.toc.tauri') }}</a></li>
@@ -151,9 +150,6 @@
         <li [innerHTML]="t('docs.features.bullet2')"></li>
         <li [innerHTML]="t('docs.features.bullet3')"></li>
         <li [innerHTML]="t('docs.features.bullet4')"></li>
-        <!--
-        <li [innerHTML]="t('docs.features.mediaPlayer')"></li>
-        -->
         <li>
           <span [innerHTML]="t('docs.features.logInspectorPrefix')"></span>
           <a routerLink="/documentation" fragment="log-inspector">{{ t('docs.features.logInspectorLink') }}</a>.
@@ -171,18 +167,6 @@
         <li [innerHTML]="t('docs.server.bullet3')"></li>
       </ul>
     </section>
-
-    <!--
-    <section id="media-player">
-      <h3>{{ t('docs.mediaPlayer.title') }}</h3>
-      <p>{{ t('docs.mediaPlayer.intro') }}</p>
-      <ul>
-        <li [innerHTML]="t('docs.mediaPlayer.bullet1')"></li>
-        <li [innerHTML]="t('docs.mediaPlayer.bullet2')"></li>
-        <li [innerHTML]="t('docs.mediaPlayer.bullet3')"></li>
-      </ul>
-    </section>
-    -->
 
     <section id="log-inspector">
       <h3>{{ t('docs.logInspector.title') }}</h3>

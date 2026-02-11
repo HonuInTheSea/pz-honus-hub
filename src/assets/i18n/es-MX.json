@@ -50,7 +50,9 @@
       "resetApp": "Restablecer aplicación",
       "resetAppTooltip": "Restablecer configuración de ventana y eliminar datos almacenados",
       "myMods": "Mis Mods",
-      "server": "Servidor"
+      "server": "Servidor",
+      "modCollections": "Colecciones de Mods",
+      "modPresets": "Preajustes de Mods"
     },
     "filters": {
       "adultLabel": "Tiene contenido para adultos",
@@ -188,7 +190,6 @@
       "data": "Datos que utiliza la aplicación",
       "features": "Características",
       "server": "Gestión de servidores",
-      "mediaPlayer": "Reproductor multimedia",
       "logInspector": "Inspector de registros",
       "folderSetup": "Configuración de carpetas",
       "tauri": "Integración de escritorio (Tauri)",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Detalles de fila</strong>: expande una fila para ver más información sobre un mod (cuando esté disponible).",
       "bullet3": "<strong>Abrir en Steam</strong>: abre la página de Workshop en su navegador predeterminado para modificaciones con una identificación de taller válida.",
       "bullet4": "<strong>Abrir carpeta</strong>: abre la carpeta del mod seleccionado en tu explorador de archivos.",
-      "mediaPlayer": "<strong>Reproductor multimedia</strong>: reproduce pistas de música de Project Zomboid desde la barra lateral. Consulte <a routerLink=\"/documentation\" fragment=\"media-player\">Reproductor multimedia</a>.",
       "logInspectorPrefix": "<strong>Inspector de registro</strong>: cargue y filtre archivos de registro (como <code>console.txt</code>) para encontrar rápidamente errores y advertencias. Ver",
       "logInspectorLink": "Inspector de registro",
       "bullet6": "<strong>Panel de control</strong>: muestra estadísticas rápidas (por ejemplo: mods totales detectados) y otros indicadores de alto nivel."
-    },
-    "mediaPlayer": {
-      "title": "Reproductor multimedia",
-      "intro": "La barra lateral incluye un reproductor de música liviano que puede buscar pistas de audio de Project Zomboid (OGG) y reproducirlas en la aplicación.",
-      "bullet1": "<strong>Lista de reproducción</strong>: muestra pistas detectadas y metadatos básicos (título/artista/álbum cuando disponible).",
-      "bullet2": "<strong>Reproducción</strong>: reproducir/pausar más la pista anterior/siguiente.",
-      "bullet3": "<strong>Buscar + volumen</strong>: desplazarse por la pista y ajustar el volumen/silenciar."
     },
     "server": {
       "title": "Gestión de servidores",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Actualizar",
+      "createNewServer": "Crear servidor nuevo",
+      "copy": "Copiar",
+      "deleteServer": "Eliminar servidor",
       "createBackupOnSave": "Crear copia de seguridad al guardar",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Variables de Sandbox",
+        "spawnpoints": "Puntos de aparición",
+        "spawnregions": "Regiones de aparición"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Variables de configuración del servidor",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Restablecer",
+      "saveChanges": "Guardar cambios",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Variables de Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

@@ -50,7 +50,9 @@
       "resetApp": "Resetovat aplikaci",
       "resetAppTooltip": "Obnovte nastavení okna a odstraňte uložená data",
       "myMods": "Moje mody",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Kolekce modů",
+      "modPresets": "Předvolby modů"
     },
     "filters": {
       "adultLabel": "Obsahuje obsah pro dospělé",
@@ -188,7 +190,6 @@
       "data": "Data, která aplikace používá",
       "features": "Vlastnosti",
       "server": "Správa serveru",
-      "mediaPlayer": "Přehrávač médií",
       "logInspector": "Log inspektor",
       "folderSetup": "Nastavení složky",
       "tauri": "Desktopová (Tauri) integrace",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Podrobnosti řádku</strong> – rozbalením řádku zobrazíte další informace o modu (pokud je k dispozici).",
       "bullet3": "<strong>Otevřít ve službě Steam</strong> – otevře stránku Workshop ve vašem výchozím prohlížeči pro mody s platným ID dílny.",
       "bullet4": "<strong>Otevřít složku</strong> – otevře vybranou složku mod v průzkumníku souborů.",
-      "mediaPlayer": "<strong>Přehrávač médií</strong> – přehrávejte hudební skladby Project Zomboid z postranního panelu. Viz <a routerLink=\"/documentation\" fragment=\"media-player\">Přehrávač médií</a>.",
       "logInspectorPrefix": "<strong>Inspektor protokolu</strong> – načte a filtruje soubory protokolu (jako <code>console.txt</code>), abyste rychle našli chyby a varování. Vidět",
       "logInspectorLink": "Log inspektor",
       "bullet6": "<strong>Hlavní panel</strong> – zobrazuje rychlé statistiky (například: celkový počet zjištěných modů) a další ukazatele na vysoké úrovni."
-    },
-    "mediaPlayer": {
-      "title": "Přehrávač médií",
-      "intro": "Postranní panel obsahuje lehký hudební přehrávač, který dokáže vyhledávat zvukové stopy Project Zomboid (OGG) a přehrávat je v aplikaci.",
-      "bullet1": "<strong>Seznam skladeb</strong> – zobrazuje zjištěné skladby a základní metadata (název/interpret/album, jsou-li k dispozici).",
-      "bullet2": "<strong>Přehrávání</strong> – přehrávání/pozastavení plus předchozí/následující skladba.",
-      "bullet3": "<strong>Hledat + hlasitost</strong> – procházejte skladbu a upravte hlasitost/ztlumení."
     },
     "server": {
       "title": "Správa serveru",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Obnovit",
+      "createNewServer": "Vytvořit nový server",
+      "copy": "Kopírovat",
+      "deleteServer": "Odstranit server",
       "createBackupOnSave": "Vytvořit zálohu při ukládání",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox proměnné",
+        "spawnpoints": "Body spawnu",
+        "spawnregions": "Oblasti spawnu"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Proměnné konfigurace serveru",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Obnovit",
+      "saveChanges": "Uložit změny",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox proměnné",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

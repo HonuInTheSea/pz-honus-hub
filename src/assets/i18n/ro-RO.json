@@ -50,7 +50,9 @@
       "supportKofi": "Support on Ko-fi",
       "resetApp": "Reset Application",
       "resetAppTooltip": "Reset window settings and delete stored data",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Colecții de moduri",
+      "modPresets": "Preseturi de moduri"
     },
     "filters": {
       "adultLabel": "Has Adult Content",
@@ -330,7 +332,6 @@
       "data": "Data the app uses",
       "features": "Features",
       "server": "Gestionare server",
-      "mediaPlayer": "Media player",
       "logInspector": "Log inspector",
       "folderSetup": "Folder setup",
       "tauri": "Desktop (Tauri) integration",
@@ -387,17 +388,9 @@
       "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
       "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
       "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "mediaPlayer": "<strong>Media player</strong> - play Project Zomboid music tracks from the sidebar. See <a routerLink=\"/documentation\" fragment=\"media-player\">Media player</a>.",
       "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
       "logInspectorLink": "Log inspector",
       "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
-    },
-    "mediaPlayer": {
-      "title": "Media player",
-      "intro": "The sidebar includes a lightweight music player that can scan for Project Zomboid audio tracks (OGG) and play them in-app.",
-      "bullet1": "<strong>Playlist</strong> - shows detected tracks and basic metadata (title/artist/album when available).",
-      "bullet2": "<strong>Playback</strong> - play/pause plus previous/next track.",
-      "bullet3": "<strong>Seek + volume</strong> - scrub through the track and adjust volume/mute."
     },
     "server": {
       "title": "Gestionare server",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Actualizează",
+      "createNewServer": "Creează server nou",
+      "copy": "Copiază",
+      "deleteServer": "Șterge serverul",
       "createBackupOnSave": "Creează o copie de rezervă la salvare",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Variabile Sandbox",
+        "spawnpoints": "Puncte de spawn",
+        "spawnregions": "Regiuni de spawn"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Variabile de configurare ale serverului",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Resetează",
+      "saveChanges": "Salvează modificările",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Variabile Sandbox",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

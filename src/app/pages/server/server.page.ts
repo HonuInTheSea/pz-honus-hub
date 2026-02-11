@@ -1,5 +1,4 @@
-import {
-  AfterViewInit,
+import { AfterViewInit,
   Component,
   DestroyRef,
   ElementRef,
@@ -106,6 +105,10 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   iniText = '';
   iniLines: IniLine[] = [];
   iniOriginalValues = new Map<string, string>();
+  private iniDirty = false;
+  private sandboxDirty = false;
+  private spawnpointsDirty = false;
+  private spawnregionsDirty = false;
   originalSandboxVarsText = '';
   originalSpawnpointsText = '';
   originalSpawnregionsText = '';
@@ -138,9 +141,10 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   deletingServer = false;
 
   presets: Loadout[] = [];
+  private serverPresetOptionsCache: Array<{ label: string; value: string }> = [];
   selectedPresetId = '';
   selectedIniKey = '';
-  iniEntryOptions: Array<{ label: string; key: string }> = [];
+  iniEntryOptions: Array<{ label: string; key: string; changed?: boolean }> = [];
   selectedSandboxKey = '';
   sandboxEntryOptions: Array<{
     id: string;
@@ -148,6 +152,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     value: string;
     lineIndex: number;
     label: string;
+    changed?: boolean;
   }> = [];
   iniListboxHeight = 'auto';
   iniListboxScrollHeight = 'auto';
@@ -159,12 +164,15 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   activeTab = 'ini';
   serverSelectWidth = 320;
   backupOnSave = true;
+  private lastLoadedServerKey = '';
   private readonly cachedTabs = new Set<string>();
   private readonly loadedServerTabs = new Set<string>();
   private readonly iniEntryOptionsByLocale = new Map<
     string,
-    Array<{ label: string; key: string }>
+    Array<{ label: string; key: string; changed?: boolean }>
   >();
+  private readonly iniLabelCache = new Map<string, string>();
+  private readonly sandboxLabelCache = new Map<string, string>();
   private sandboxOriginalValues = new Map<string, string>();
   private readonly backupOnSaveKey = 'pz_server_backup_on_save';
   booleanOptions: Array<{ label: string; value: string }> = [];
@@ -202,12 +210,16 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   ) {}
 
   async ngOnInit(): Promise<void> {
-    const storedUserDir = await this.store.getItem<string>('pz_user_dir');
-    const storedBackupOnSave =
-      await this.store.getItem<boolean>(this.backupOnSaveKey);
+    const [storedUserDir, storedBackupOnSave, presets, defaultUserDir] =
+      await Promise.all([
+        this.store.getItem<string>('pz_user_dir'),
+        this.store.getItem<boolean>(this.backupOnSaveKey),
+        this.loadoutsState.load(),
+        this.loadoutsApi.getDefaultZomboidUserDir(),
+      ]);
     this.userDir =
       (storedUserDir ?? '').trim() ||
-      (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
+      defaultUserDir ||
       '';
     if (storedBackupOnSave === null) {
       this.backupOnSave = true;
@@ -215,7 +227,8 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     } else {
       this.backupOnSave = storedBackupOnSave;
     }
-    this.presets = await this.loadoutsState.load();
+    this.presets = presets;
+    this.refreshServerPresetOptions();
     await this.loadServerTabTranslations(
       this.activeTab,
       this.transloco.getActiveLang() || 'en-US',
@@ -229,6 +242,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       )
       .subscribe(() => {
         const lang = this.transloco.getActiveLang() || 'en-US';
+        this.clearLabelCaches();
         this.refreshBooleanOptions();
         this.applyCachedIniOptions(lang);
         void this.loadServerTabTranslations(this.activeTab, lang);
@@ -254,13 +268,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   }
 
   get serverPresetOptions(): Array<{ label: string; value: string }> {
-    return (this.presets ?? [])
-      .filter((l) =>
-        (l.targetModes ?? []).some((m) => m === 'host' || m === 'dedicated'),
-      )
-      .slice()
-      .sort((a, b) => a.name.localeCompare(b.name))
-      .map((p) => ({ label: p.name, value: p.id }));
+    return this.serverPresetOptionsCache;
   }
 
   get iniEntryRows(): IniLine[] {
@@ -283,23 +291,19 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   }
 
   get isIniDirty(): boolean {
-    return this.iniLines.some(
-      (line) =>
-        line.kind === 'entry' &&
-        this.isIniValueChanged(line.key, line.value),
-    );
+    return this.iniDirty;
   }
 
   get isSandboxDirty(): boolean {
-    return (this.sandboxVarsText ?? '') !== (this.originalSandboxVarsText ?? '');
+    return this.sandboxDirty;
   }
 
   get isSpawnpointsDirty(): boolean {
-    return (this.spawnpointsText ?? '') !== (this.originalSpawnpointsText ?? '');
+    return this.spawnpointsDirty;
   }
 
   get isSpawnregionsDirty(): boolean {
-    return (this.spawnregionsText ?? '') !== (this.originalSpawnregionsText ?? '');
+    return this.spawnregionsDirty;
   }
 
   async refreshServerList(): Promise<void> {
@@ -320,6 +324,16 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
 
   async selectServer(name: string): Promise<void> {
     if (!name || this.loadingServer) {
+      return;
+    }
+    const nextKey = `${this.userDir}|${name}`;
+    if (
+      this.selectedServerName === name &&
+      this.lastLoadedServerKey === nextKey &&
+      this.iniLines.length > 0
+    ) {
+      this.scheduleHeightRecalc();
+      this.updateServerSelectWidth();
       return;
     }
     this.selectedServerName = name;
@@ -522,6 +536,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       this.iniText = '';
       this.iniLines = [];
       this.iniOriginalValues = new Map<string, string>();
+      this.updateIniDirtyFlag();
       this.iniEntryOptions = [];
       this.sandboxVarsText = '';
       this.spawnpointsText = '';
@@ -530,6 +545,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       this.sandboxOriginalValues = new Map<string, string>();
       this.originalSpawnpointsText = '';
       this.originalSpawnregionsText = '';
+      this.updateOtherDirtyFlags();
       await this.refreshServerList();
       this.messageService.add({
         severity: 'success',
@@ -700,13 +716,24 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       return;
     }
     const files = this.buildServerFileSet(this.selectedServerName);
+    const activeLocale = this.normalizeLocale(this.transloco.getActiveLang());
     this.loadingServer = true;
     try {
-      this.iniText = await this.safeReadFile(files.iniPath);
+      const [iniText, sandboxVarsText, spawnpointsText, spawnregionsText] =
+        await Promise.all([
+          this.safeReadFile(files.iniPath),
+          this.safeReadFile(files.sandboxVarsPath),
+          this.safeReadFile(files.spawnpointsPath),
+          this.safeReadFile(files.spawnregionsPath),
+        ]);
+
+      this.iniText = iniText;
       this.iniLines = this.parseIniText(this.iniText);
       this.iniOriginalValues = this.buildIniOriginalValues(this.iniLines);
+      this.updateIniDirtyFlag();
+      this.ensureIniTranslationsForLocale(this.iniLines, activeLocale);
       this.refreshIniEntryOptions();
-      this.sandboxVarsText = await this.safeReadFile(files.sandboxVarsPath);
+      this.sandboxVarsText = sandboxVarsText;
       const parsedSandbox = this.parseSandboxText(this.sandboxVarsText);
       const normalizedSandbox = this.normalizeSandboxDecimalValues(parsedSandbox);
       this.sandboxLines = normalizedSandbox.lines;
@@ -715,12 +742,15 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       this.sandboxOriginalValues = this.buildSandboxOriginalValues(
         this.sandboxEntries,
       );
+      this.ensureSandboxTranslationsForLocale(this.sandboxEntries, activeLocale);
       this.refreshSandboxEntryOptions();
-      this.spawnpointsText = await this.safeReadFile(files.spawnpointsPath);
-      this.spawnregionsText = await this.safeReadFile(files.spawnregionsPath);
+      this.spawnpointsText = spawnpointsText;
+      this.spawnregionsText = spawnregionsText;
       this.originalSandboxVarsText = this.sandboxVarsText;
       this.originalSpawnpointsText = this.spawnpointsText;
       this.originalSpawnregionsText = this.spawnregionsText;
+      this.updateOtherDirtyFlags();
+      this.lastLoadedServerKey = `${this.userDir}|${this.selectedServerName}`;
     } finally {
       this.loadingServer = false;
     }
@@ -845,6 +875,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     );
     this.iniText = iniPayload;
     this.iniOriginalValues = this.buildIniOriginalValues(this.iniLines);
+    this.updateIniDirtyFlag();
     this.refreshIniEntryOptions();
     this.originalSandboxVarsText = this.sandboxVarsText ?? '';
     this.sandboxOriginalValues = this.buildSandboxOriginalValues(
@@ -852,6 +883,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     );
     this.originalSpawnpointsText = this.spawnpointsText ?? '';
     this.originalSpawnregionsText = this.spawnregionsText ?? '';
+    this.updateOtherDirtyFlags();
   }
 
   private buildBackupTimestamp(): string {
@@ -877,6 +909,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       line.value = this.iniOriginalValues.get(line.key) ?? '';
     }
     this.iniText = this.serializeIni(this.iniLines);
+    this.updateIniDirtyFlag();
     this.refreshIniEntryOptions();
   }
 
@@ -926,6 +959,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       this.sandboxEntries,
     );
     this.refreshSandboxEntryOptions();
+    this.updateOtherDirtyFlags();
   }
 
   async saveSpawnpointsChanges(): Promise<void> {
@@ -967,6 +1001,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       return;
     }
     this.spawnpointsText = this.originalSpawnpointsText ?? '';
+    this.updateOtherDirtyFlags();
   }
 
   async saveSpawnregionsChanges(): Promise<void> {
@@ -1008,6 +1043,27 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       return;
     }
     this.spawnregionsText = this.originalSpawnregionsText ?? '';
+    this.updateOtherDirtyFlags();
+  }
+
+  onSpawnpointsTextChanged(value: string): void {
+    this.spawnpointsText = value ?? '';
+    this.updateOtherDirtyFlags();
+  }
+
+  onSpawnregionsTextChanged(value: string): void {
+    this.spawnregionsText = value ?? '';
+    this.updateOtherDirtyFlags();
+  }
+
+  private refreshServerPresetOptions(): void {
+    this.serverPresetOptionsCache = (this.presets ?? [])
+      .filter((l) =>
+        (l.targetModes ?? []).some((m) => m === 'host' || m === 'dedicated'),
+      )
+      .slice()
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((p) => ({ label: p.name, value: p.id }));
   }
 
   applyPresetToIni(): void {
@@ -1023,6 +1079,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     this.upsertIniEntry(this.iniLines, 'WorkshopItems', values.workshopItems);
     this.upsertIniEntry(this.iniLines, 'Map', values.map);
     this.iniText = this.serializeIni(this.iniLines);
+    this.updateIniDirtyFlag();
     this.refreshIniEntryOptions();
   }
 
@@ -1250,7 +1307,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
 
   private async safeReadFile(path: string): Promise<string> {
     try {
-      return await this.loadoutsApi.readTextFile(path);
+      return await this.loadoutsApi.readTextFile(path, { cacheTtlMs: 5000 });
     } catch {
       return '';
     }
@@ -1363,13 +1420,21 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     if (!raw) {
       return '';
     }
+    const locale = this.normalizeLocale(this.transloco.getActiveLang());
+    const cacheKey = `${locale}|${raw}`;
+    const cached = this.iniLabelCache.get(cacheKey);
+    if (cached) {
+      return cached;
+    }
     const translationKey = this.getIniLabelKey(raw);
     const translated = this.transloco.translate(translationKey);
     const label =
       translated && translated !== translationKey
         ? translated
         : this.formatIniLabelFallback(raw);
-    return `${label} (${raw})`;
+    const formatted = `${label} (${raw})`;
+    this.iniLabelCache.set(cacheKey, formatted);
+    return formatted;
   }
 
   isIniValueChanged(key: string | undefined, value: string | undefined): boolean {
@@ -1389,15 +1454,6 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   fieldInputId(key: string | undefined): string {
     const safe = (key ?? '').trim().replace(/[^a-zA-Z0-9_-]+/g, '-');
     return `ini-input-${safe}`;
-  }
-
-  getIniValueByKey(key: string | undefined): string {
-    const normalizedKey = (key ?? '').trim();
-    if (!normalizedKey) {
-      return '';
-    }
-    const line = this.iniLines.find((l) => l.kind === 'entry' && l.key === normalizedKey);
-    return line?.value ?? '';
   }
 
   async openIniEditDialog(key: string): Promise<void> {
@@ -1452,6 +1508,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     this.editIniValue = '';
     this.editIniNumber = null;
     this.editIniUsesDecimals = false;
+    this.updateIniDirtyFlag();
     this.refreshIniEntryOptions();
   }
 
@@ -1505,6 +1562,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       this.sandboxLines[entry.lineIndex] = line;
       this.sandboxVarsText = this.sandboxLines.join('\n');
       this.refreshSandboxEntryOptions();
+      this.updateOtherDirtyFlags();
     }
     this.editSandboxVisible = false;
     this.editSandboxEntry = null;
@@ -1545,6 +1603,7 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     this.upsertIniEntry(this.iniLines, 'Mods', payload.modsValue ?? '');
     this.upsertIniEntry(this.iniLines, 'WorkshopItems', payload.workshopValue ?? '');
     this.modsDialogVisible = false;
+    this.updateIniDirtyFlag();
     this.refreshIniEntryOptions();
   }
 
@@ -1695,12 +1754,14 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
         const displayValue = this.shouldUseSandboxDecimalFormat(entry.commentLines)
           ? this.formatSandboxDecimalValue(entry.value)
           : (entry.value ?? '');
+        const changed = this.isSandboxValueChanged(entry.id, entry.value);
         return {
           id: entry.id,
           key: entry.key,
           value: entry.value ?? '',
           lineIndex: entry.lineIndex,
           label: `${this.formatSandboxLabel(entry.key)} = ${displayValue}`,
+          changed,
         };
       });
   }
@@ -1710,13 +1771,21 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     if (!raw) {
       return '';
     }
+    const locale = this.normalizeLocale(this.transloco.getActiveLang());
+    const cacheKey = `${locale}|${raw}`;
+    const cached = this.sandboxLabelCache.get(cacheKey);
+    if (cached) {
+      return cached;
+    }
     const translationKey = this.getSandboxLabelKey(raw);
     const translated = this.transloco.translate(translationKey);
     const label =
       translated && translated !== translationKey
         ? translated
         : this.formatSandboxLabelFallback(raw);
-    return `${label} (${raw})`;
+    const formatted = `${label} (${raw})`;
+    this.sandboxLabelCache.set(cacheKey, formatted);
+    return formatted;
   }
 
   private getSandboxLabelKey(raw: string): string {
@@ -2035,9 +2104,6 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
     entries: Array<{ key: string }>,
     locale: string,
   ): void {
-    if ((locale || '').trim() !== 'en-US') {
-      return;
-    }
     const labels: Record<string, string> = {};
     for (const entry of entries) {
       const raw = (entry.key ?? '').trim();
@@ -2069,9 +2135,6 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   }
 
   private ensureIniTranslationsForLocale(lines: IniLine[], locale: string): void {
-    if ((locale || '').trim() !== 'en-US') {
-      return;
-    }
     const labels: Record<string, string> = {};
     for (const line of lines) {
       if (line.kind !== 'entry' || !line.key) {
@@ -2110,14 +2173,33 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
       const displayValue = this.shouldUseIniDecimalFormat(line.comment)
         ? this.formatIniDecimalValue(line.value)
         : (line.value ?? '');
+      const changed = this.isIniValueChanged(line.key, line.value);
       return {
         label: `${this.formatIniLabel(line.key)} = ${displayValue}`,
         key: line.key ?? '',
+        changed,
       };
     });
     this.iniEntryOptions = options;
     const locale = this.normalizeLocale(this.transloco.getActiveLang());
     this.iniEntryOptionsByLocale.set(locale, options);
+  }
+
+  private updateIniDirtyFlag(): void {
+    this.iniDirty = this.iniLines.some(
+      (line) =>
+        line.kind === 'entry' &&
+        this.isIniValueChanged(line.key, line.value),
+    );
+  }
+
+  private updateOtherDirtyFlags(): void {
+    this.sandboxDirty =
+      (this.sandboxVarsText ?? '') !== (this.originalSandboxVarsText ?? '');
+    this.spawnpointsDirty =
+      (this.spawnpointsText ?? '') !== (this.originalSpawnpointsText ?? '');
+    this.spawnregionsDirty =
+      (this.spawnregionsText ?? '') !== (this.originalSpawnregionsText ?? '');
   }
 
   private applyCachedIniOptions(locale: string): void {
@@ -2132,6 +2214,11 @@ export class ServerPageComponent implements OnInit, AfterViewInit {
   private normalizeLocale(locale: string | undefined | null): string {
     const raw = (locale ?? '').trim();
     return raw || 'en-US';
+  }
+
+  private clearLabelCaches(): void {
+    this.iniLabelCache.clear();
+    this.sandboxLabelCache.clear();
   }
 
   private async fetchJsonWithTimeout(

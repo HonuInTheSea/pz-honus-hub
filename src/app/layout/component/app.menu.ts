@@ -29,7 +29,7 @@ import { AccordionModule } from 'primeng/accordion';
 import { ImageModule } from 'primeng/image';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { TooltipModule } from 'primeng/tooltip';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { HonuModInfoQolService } from '../../services/honu-mod-info-qol.service';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
@@ -44,6 +44,7 @@ import {
 } from '../../services/mod-collection-filters.service';
 import { LocalizationService } from '../../services/localization.service';
 import { LOCALE_OPTIONS } from '../../i18n/locales';
+import { SteamApiKeyService } from '../../services/steam-api-key.service';
 
 @Component({
   selector: 'app-menu',
@@ -119,6 +120,10 @@ export class AppMenu {
   selectedLocale = 'en-US';
   localeLoading = false;
   private readonly loadedTranslations = new Set<string>();
+  readonly hasAdultContentOnly: () => boolean;
+  readonly hasRulesOnly: () => boolean;
+  readonly missingSteamOnly: () => boolean;
+  readonly outdatedOnly: () => boolean;
 
   constructor(
     private readonly router: Router,
@@ -134,7 +139,21 @@ export class AppMenu {
     private readonly collectionFilters: ModCollectionFiltersService,
     private readonly localization: LocalizationService,
     private readonly transloco: TranslocoService,
+    private readonly steamApiKeyService: SteamApiKeyService,
   ) {
+    this.hasAdultContentOnly = toSignal(this.tagsService.hasAdultContentOnly$, {
+      initialValue: false,
+    });
+    this.hasRulesOnly = toSignal(this.tagsService.hasRulesOnly$, {
+      initialValue: false,
+    });
+    this.missingSteamOnly = toSignal(this.tagsService.missingSteamOnly$, {
+      initialValue: false,
+    });
+    this.outdatedOnly = toSignal(this.tagsService.outdatedOnly$, {
+      initialValue: false,
+    });
+
     this.refreshPresetFilterCopy();
     this.refreshCollectionLabels();
     this.router.events
@@ -213,9 +232,14 @@ export class AppMenu {
   }
 
   private async ensureHonuModsDbFile(): Promise<void> {
-    const storedHonu =
-      (await this.store.getItem<string>('pz_honu_mod_info_qol_dir')) ?? '';
-    const storedUser = (await this.store.getItem<string>('pz_user_dir')) ?? '';
+    const bootstrap = await this.store.getItems([
+      'pz_honu_mod_info_qol_dir',
+      'pz_user_dir',
+    ]);
+    const storedHonuRaw = bootstrap['pz_honu_mod_info_qol_dir'] as string | null;
+    const storedUserRaw = bootstrap['pz_user_dir'] as string | null;
+    const storedHonu = storedHonuRaw ?? '';
+    const storedUser = storedUserRaw ?? '';
     const baseDir = storedHonu.trim() || this.toHonuModInfoQolDir(storedUser);
     const trimmedBase = baseDir.trim();
     if (!trimmedBase) {
@@ -294,18 +318,27 @@ export class AppMenu {
   }
 
   async loadSteamApiKey(): Promise<void> {
-    const stored = await this.store.getItem<string>('steam_api_key');
+    const stored = await this.steamApiKeyService.get();
     this.steamApiKey = (stored ?? '').toString();
   }
 
   async openFoldersDialog(): Promise<void> {
-    const storedGame = await this.store.getItem<string>('pz_game_dir');
-    const storedWorkshop = await this.store.getItem<string>('pz_mod_folder');
-    const storedUserDir = await this.store.getItem<string>('pz_user_dir');
+    const [
+      storedState,
+      defaultGameDir,
+      defaultWorkshopDir,
+    ] = await Promise.all([
+      this.store.getItems(['pz_game_dir', 'pz_mod_folder', 'pz_user_dir']),
+      this.pzDefaults.getDefaultGameDir(),
+      this.pzDefaults.getDefaultWorkshopDir(),
+    ]);
+    const storedGame = storedState['pz_game_dir'] as string | null;
+    const storedWorkshop = storedState['pz_mod_folder'] as string | null;
+    const storedUserDir = storedState['pz_user_dir'] as string | null;
 
     const defaults = {
-      pzGameDir: await this.pzDefaults.getDefaultGameDir(),
-      pzWorkshopDir: await this.pzDefaults.getDefaultWorkshopDir(),
+      pzGameDir: defaultGameDir,
+      pzWorkshopDir: defaultWorkshopDir,
       pzUserDir: '',
     };
     this.foldersDraft = {
@@ -322,10 +355,12 @@ export class AppMenu {
       return;
     }
 
-    const previousWorkshop =
-      (await this.store.getItem<string>('pz_mod_folder')) ?? '';
-    const previousHonu =
-      (await this.store.getItem<string>('pz_honu_mod_info_qol_dir')) ?? '';
+    const [previousWorkshopRaw, previousHonuRaw] = await Promise.all([
+      this.store.getItem<string>('pz_mod_folder'),
+      this.store.getItem<string>('pz_honu_mod_info_qol_dir'),
+    ]);
+    const previousWorkshop = previousWorkshopRaw ?? '';
+    const previousHonu = previousHonuRaw ?? '';
 
     const nextWorkshop = this.foldersDraft.pzWorkshopDir.trim();
     const nextHonu = this.toHonuModInfoQolDir(this.foldersDraft.pzUserDir);
@@ -408,10 +443,12 @@ export class AppMenu {
   }
 
   private async refreshPresetFilterOptions(): Promise<void> {
-    const stored = await this.store.getItem<string[]>(this.presetFilterKey);
+    const [stored, presets] = await Promise.all([
+      this.store.getItem<string[]>(this.presetFilterKey),
+      this.loadoutsState.load(),
+    ]);
     this.selectedPresetIds = Array.isArray(stored) ? stored : [];
 
-    const presets = await this.loadoutsState.load();
     this.presetOptions = presets
       .slice()
       .sort((a, b) => a.name.localeCompare(b.name))
@@ -461,7 +498,7 @@ export class AppMenu {
 
   async onSaveSteamApiKey(): Promise<void> {
     const value = this.steamApiKey.trim();
-    await this.store.setItem('steam_api_key', value);
+    await this.steamApiKeyService.set(value);
     this.steamApiKeyDialogVisible = false;
   }
 
@@ -555,11 +592,6 @@ export class AppMenu {
       {
         label: this.transloco.translate('menu.sections.hub'),
         items: [
-          // {
-          //   label: 'Characters',
-          //   icon: 'pi pi-fw pi-users',
-          //   routerLink: ['/characters'],
-          // },
           {
             label: this.transloco.translate('menu.items.dashboard'),
             icon: 'pi pi-fw pi-chart-bar',
@@ -570,8 +602,16 @@ export class AppMenu {
             icon: 'pi pi-fw pi-file',
             routerLink: ['/log-inspector'],
           },
-          // { label: 'Mod Collections', icon: 'pi pi-fw pi-th-large', routerLink: ['/collections'] },
-          // { label: 'Mod Presets', icon: 'pi pi-fw pi-list', routerLink: ['/loadouts'] },
+          // {
+          //   label: this.transloco.translate('menu.items.modCollections'),
+          //   icon: 'pi pi-fw pi-th-large',
+          //   routerLink: ['/collections'],
+          // },
+          // {
+          //   label: this.transloco.translate('menu.items.modPresets'),
+          //   icon: 'pi pi-fw pi-list',
+          //   routerLink: ['/loadouts'],
+          // },
           {
             label: this.transloco.translate('menu.items.myMods'),
             icon: 'pi pi-fw pi-table',

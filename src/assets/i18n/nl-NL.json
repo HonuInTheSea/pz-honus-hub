@@ -50,7 +50,9 @@
       "resetApp": "Toepassing opnieuw instellen",
       "resetAppTooltip": "Vensterinstellingen opnieuw instellen en opgeslagen gegevens verwijderen",
       "myMods": "Mijn mods",
-      "server": "Server"
+      "server": "Server",
+      "modCollections": "Modcollecties",
+      "modPresets": "Mod-voorinstellingen"
     },
     "filters": {
       "adultLabel": "Heeft inhoud voor volwassenen",
@@ -188,7 +190,6 @@
       "data": "Gegevens die de app gebruikt",
       "features": "Functies",
       "server": "Serverbeheer",
-      "mediaPlayer": "Mediaspeler",
       "logInspector": "Loginspector",
       "folderSetup": "Mappen instellen",
       "tauri": "Desktop (Tauri)-integratie",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>Rijdetails</strong> - vouw een rij uit om meer informatie over een mod te zien (indien beschikbaar).",
       "bullet3": "<strong>Openen in Steam</strong> - opent de workshop pagina in uw standaardbrowser voor mods met een geldig workshop-ID.",
       "bullet4": "<strong>Map openen</strong> - opent de geselecteerde mod-map in uw bestandsverkenner.",
-      "mediaPlayer": "<strong>Mediaspeler</strong> - speel Project Zomboid-muziektracks af vanuit de zijbalk. Zie <a routerLink=\"/documentation\" fragment=\"media-player\">Mediaspeler</a>.",
       "logInspectorPrefix": "<strong>Loginspector</strong> - laad en filter logbestanden (zoals <code>console.txt</code>) om snel fouten en waarschuwingen te vinden. Zie",
       "logInspectorLink": "Loginspector",
       "bullet6": "<strong>Dashboard</strong> - toont snelle statistieken (bijvoorbeeld: totaal aantal gedetecteerde mods) en andere indicatoren op hoog niveau."
-    },
-    "mediaPlayer": {
-      "title": "Mediaspeler",
-      "intro": "De zijbalk bevat een lichtgewicht muziekspeler die kan zoeken naar Project Zomboid-audiotracks (OGG) en deze in de app kan afspelen.",
-      "bullet1": "<strong>Afspeellijst</strong> - toont gedetecteerde tracks en basismetagegevens (titel/artiest/album indien beschikbaar).",
-      "bullet2": "<strong>Afspelen</strong> - afspelen/pauzeren plus vorige/volgende track.",
-      "bullet3": "<strong>Zoeken + volume</strong> - door de track bladeren en volume/dempen aanpassen."
     },
     "server": {
       "title": "Serverbeheer",
@@ -900,10 +893,10 @@
     },
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "Vernieuwen",
+      "createNewServer": "Nieuwe server maken",
+      "copy": "Kopiëren",
+      "deleteServer": "Server verwijderen",
       "createBackupOnSave": "Back-up maken bij opslaan",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -911,17 +904,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox-variabelen",
+        "spawnpoints": "Spawnpunten",
+        "spawnregions": "Spawnregio's"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "Serverconfiguratievariabelen",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "Resetten",
+      "saveChanges": "Wijzigingen opslaan",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox-variabelen",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

@@ -50,7 +50,9 @@
       "resetApp": "애플리케이션 재설정",
       "resetAppTooltip": "창 설정 재설정 및 저장된 데이터 삭제",
       "myMods": "내 모드",
-      "server": "섬기는 사람"
+      "server": "섬기는 사람",
+      "modCollections": "모드 컬렉션",
+      "modPresets": "모드 프리셋"
     },
     "filters": {
       "adultLabel": "성인용 콘텐츠가 있음",
@@ -188,7 +190,6 @@
       "data": "앱이 사용하는 데이터",
       "features": "특징",
       "server": "서버 관리",
-      "mediaPlayer": "미디어 플레이어",
       "logInspector": "로그 검사기",
       "folderSetup": "폴더 설정",
       "tauri": "데스크탑(Tauri) 통합",
@@ -245,17 +246,9 @@
       "bullet2": "<strong>행 세부정보</strong> - 행을 확장하면 모드에 대한 자세한 정보를 볼 수 있습니다(가능한 경우).",
       "bullet3": "<strong>Steam에서 열기</strong> - 유효한 워크샵 ID가 있는 모드에 대한 워크샵 페이지를 기본 브라우저에서 엽니다.",
       "bullet4": "<strong>폴더 열기</strong> - 파일 탐색기에서 선택한 모드 폴더를 엽니다.",
-      "mediaPlayer": "<strong>미디어 플레이어</strong> - 사이드바에서 Project Zomboid 음악 트랙을 재생합니다. <a routerLink=\"/documentation\" 조각=\"media-player\">미디어 플레이어</a>를 참조하세요.",
       "logInspectorPrefix": "<strong>로그 검사기</strong> - 로그 파일(예: <code>console.txt</code>)을 로드하고 필터링하여 오류와 경고를 빠르게 찾습니다. 보다",
       "logInspectorLink": "로그 검사기",
       "bullet6": "<strong>대시보드</strong> - 빠른 통계(예: 감지된 총 모드) 및 기타 상위 수준 지표를 표시합니다."
-    },
-    "mediaPlayer": {
-      "title": "미디어 플레이어",
-      "intro": "사이드바에는 Project Zomboid 오디오 트랙(OGG)을 검색하고 앱 내에서 재생할 수 있는 경량 음악 플레이어가 포함되어 있습니다.",
-      "bullet1": "<strong>재생목록</strong> - 감지된 트랙과 기본 메타데이터(사용 가능한 경우 제목/아티스트/앨범)를 표시합니다.",
-      "bullet2": "<strong>재생</strong> - 재생/일시 정지 및 이전/다음 트랙.",
-      "bullet3": "<strong>탐색 + 볼륨</strong> - 트랙을 탐색하고 볼륨/음소거를 조정합니다."
     },
     "server": {
       "title": "서버 관리",
@@ -737,10 +730,10 @@
   "server": {
     "ui": {
       "serversHeader": "Servers",
-      "refresh": "Refresh",
-      "createNewServer": "Create New Server",
-      "copy": "Copy",
-      "deleteServer": "Delete Server",
+      "refresh": "새로 고침",
+      "createNewServer": "새 서버 만들기",
+      "copy": "복사",
+      "deleteServer": "서버 삭제",
       "createBackupOnSave": "저장 시 백업 생성",
       "noServerFiles": "No server files were found.",
       "selectServerPlaceholder": "Select a server",
@@ -748,17 +741,17 @@
       "selectServerPrompt": "Select a server to begin editing.",
       "tabs": {
         "ini": "INI",
-        "sandbox": "Sandbox Variables",
-        "spawnpoints": "Spawn Points",
-        "spawnregions": "Spawn Regions"
+        "sandbox": "Sandbox 변수",
+        "spawnpoints": "스폰 지점",
+        "spawnregions": "스폰 지역"
       },
       "noIniEntries": "No INI entries found.",
-      "serverConfigVars": "Server Configuration Variables",
+      "serverConfigVars": "서버 구성 변수",
       "searchFields": "Search fields",
-      "reset": "Reset",
-      "saveChanges": "Save Changes",
+      "reset": "초기화",
+      "saveChanges": "변경 사항 저장",
       "noSandboxEntries": "No sandbox variables found.",
-      "sandboxVariables": "Sandbox Variables",
+      "sandboxVariables": "Sandbox 변수",
       "searchVariables": "Search variables",
       "createServerTitle": "Create New Server",
       "copyServerTitle": "Copy Server",

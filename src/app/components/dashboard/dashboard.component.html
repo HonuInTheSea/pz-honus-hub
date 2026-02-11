@@ -13,7 +13,7 @@
             />
           </div>
         } @else {
-          <div>{{ t('dashboard.labels.totalMods') }}: {{ formatNumber(totalMods) }}</div>
+          <div>{{ t('dashboard.labels.totalMods') }}: {{ totalModsDisplay }}</div>
           <div>
             {{ t('dashboard.labels.lastLocalSync') }}:
             {{ formatSyncDate(lastLocalSyncAt) }}
@@ -40,11 +40,20 @@
         </div>
       } @else {
         <div class="dashboard-chart-container dashboard-chart-container--fill">
-          <p-chart
-            type="doughnut"
-            [data]="updateStatusChartData"
-            [options]="updateStatusChartOptions"
-          ></p-chart>
+          @defer (on viewport) {
+            <p-chart
+              type="doughnut"
+              [data]="updateStatusChartData"
+              [options]="updateStatusChartOptions"
+            ></p-chart>
+          } @placeholder {
+            <p-progress-spinner
+              strokeWidth="6"
+              fill="transparent"
+              animationDuration=".5s"
+              [style]="{ width: '28px', height: '28px' }"
+            />
+          }
         </div>
       }
     </div>
@@ -67,21 +76,21 @@
             {{ t('dashboard.messages.steamTimeout') }}
           </p>
         } @else {
-          @if (!topInstalledWorkshopItems.length) {
+          @if (!topInstalledWorkshopItemsView.length) {
             <p>{{ t('dashboard.messages.noInstalledSubs') }}</p>
           } @else {
             <ul class="dashboard-list">
-              @for (item of topInstalledWorkshopItems; track item.publishedfileid) {
+              @for (entry of topInstalledWorkshopItemsView; track (entry.item.publishedfileid ?? '') + ':' + $index) {
                 <li>
                   <a
                     class="dashboard-news-link"
                     href="#"
-                    (click)="$event.preventDefault(); openInstalledItemDetails(item)"
+                    (click)="$event.preventDefault(); openInstalledItemDetails(entry.item)"
                   >
-                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                    <strong>{{ entry.item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
                   </a>
                   <span>
-                    {{ formatNumber(item.subscriptions || item.lifetime_subscriptions || 0) }}
+                    {{ entry.subscribersDisplay }}
                     {{ t('dashboard.labels.subscribers') }}
                   </span>
                 </li>
@@ -109,12 +118,12 @@
           <p>{{ t('dashboard.messages.noWorkshopUpdateInfo') }}</p>
         } @else {
           <ul class="dashboard-list">
-            @for (mod of lastUpdatedMods; track mod.id) {
-              <li class="dashboard-clickable" (click)="openModDetails(mod)">
-                <strong>{{ mod.name }}</strong>
+            @for (entry of lastUpdatedModsView; track (entry.mod.id ?? '') + ':' + $index) {
+              <li class="dashboard-clickable" (click)="openModDetails(entry.mod)">
+                <strong>{{ entry.mod.name }}</strong>
                 <span>
                   {{ t('dashboard.labels.updated') }}
-                  {{ formatWorkshopDate(mod.workshop?.time_updated ?? null) }}
+                  {{ entry.updatedDisplay }}
                 </span>
               </li>
             }
@@ -140,11 +149,20 @@
         </div>
       } @else {
         <div class="dashboard-chart-container dashboard-chart-container--fill">
-          <p-chart
-            type="line"
-            [data]="installsChartData"
-            [options]="installsChartOptions"
-          ></p-chart>
+          @defer (on viewport) {
+            <p-chart
+              type="line"
+              [data]="installsChartData"
+              [options]="installsChartOptions"
+            ></p-chart>
+          } @placeholder {
+            <p-progress-spinner
+              strokeWidth="6"
+              fill="transparent"
+              animationDuration=".5s"
+              [style]="{ width: '28px', height: '28px' }"
+            />
+          }
         </div>
       }
     </div>
@@ -165,21 +183,30 @@
           />
         </div>
       } @else {
-        @if (largestModsBySize.length === 0) {
+        @if (largestModsBySizeView.length === 0) {
           <p>{{ t('dashboard.messages.noSizeData') }}</p>
         } @else {
           <div class="dashboard-chart-container dashboard-chart-container--fill">
-            <p-chart
-              type="line"
-              [data]="sizeChartData"
-              [options]="sizeChartOptions"
-            ></p-chart>
+            @defer (on viewport) {
+              <p-chart
+                type="line"
+                [data]="sizeChartData"
+                [options]="sizeChartOptions"
+              ></p-chart>
+            } @placeholder {
+              <p-progress-spinner
+                strokeWidth="6"
+                fill="transparent"
+                animationDuration=".5s"
+                [style]="{ width: '28px', height: '28px' }"
+              />
+            }
           </div>
           <ul class="dashboard-list mt-3">
-            @for (entry of largestModsBySize; track entry.mod.id) {
+            @for (entry of largestModsBySizeView; track (entry.mod.id ?? '') + ':' + $index) {
               <li class="dashboard-clickable" (click)="openModDetails(entry.mod)">
                 <strong>{{ entry.mod.name }}</strong>
-                <span> {{ formatBytes(entry.sizeBytes) }}</span>
+                <span> {{ entry.sizeDisplay }}</span>
               </li>
             }
           </ul>
@@ -240,7 +267,7 @@
           />
         </div>
       } @else {
-        @if (!popularWorkshopItemsThisWeek.length) {
+        @if (!popularWorkshopItemsThisWeekView.length) {
           @if (popularWorkshopItemsThisWeekTimeout) {
             <p class="dashboard-timeout">
               {{ t('dashboard.messages.steamTimeout') }}
@@ -254,24 +281,25 @@
             (scroll)="onPopularWorkshopItemsThisWeekScroll($event)"
           >
             <ul class="dashboard-list">
-              @for (item of popularWorkshopItemsThisWeek; track item.publishedfileid) {
+              @for (entry of popularWorkshopItemsThisWeekView; track (entry.item.publishedfileid ?? '') + ':' + $index) {
                 <li>
-                  <span
-                    *ngIf="isWorkshopItemInstalled(item)"
-                    class="installed-indicator"
-                    pTooltip="{{ t('dashboard.labels.installedTooltip') }}"
-                    tooltipPosition="right"
-                  ></span>
+                  @if (entry.installed) {
+                    <span
+                      class="installed-indicator"
+                      pTooltip="{{ t('dashboard.labels.installedTooltip') }}"
+                      tooltipPosition="right"
+                    ></span>
+                  }
                   <a
                     class="dashboard-news-link"
-                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (entry.item.publishedfileid || '')"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                    <strong>{{ entry.item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
                   </a>
                   <span>
-                    {{ formatNumber(item.subscriptions || item.lifetime_subscriptions || 0) }}
+                    {{ entry.subscribersDisplay }}
                     {{ t('dashboard.labels.subscribers') }}
                   </span>
                 </li>
@@ -310,7 +338,7 @@
           />
         </div>
       } @else {
-        @if (!latestWorkshopItems.length) {
+        @if (!latestWorkshopItemsView.length) {
           @if (latestWorkshopTimeout) {
             <p class="dashboard-timeout">
               {{ t('dashboard.messages.steamTimeout') }}
@@ -324,19 +352,19 @@
             (scroll)="onLatestWorkshopScroll($event)"
           >
             <ul class="dashboard-list">
-              @for (item of latestWorkshopItems; track item.publishedfileid) {
+              @for (entry of latestWorkshopItemsView; track (entry.item.publishedfileid ?? '') + ':' + $index) {
                 <li>
                   <a
                     class="dashboard-news-link"
-                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (entry.item.publishedfileid || '')"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                    <strong>{{ entry.item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
                   </a>
                   <span>
                     {{ t('dashboard.labels.created') }}
-                    {{ item.time_created ? formatWorkshopDate(item.time_created) : t('dashboard.labels.unknown') }}
+                    {{ entry.createdDisplay }}
                   </span>
                 </li>
               }
@@ -374,7 +402,7 @@
           />
         </div>
       } @else {
-        @if (!latestUpdatedWorkshopItems.length) {
+        @if (!latestUpdatedWorkshopItemsView.length) {
           @if (latestUpdatedWorkshopTimeout) {
             <p class="dashboard-timeout">
               {{ t('dashboard.messages.steamTimeout') }}
@@ -388,19 +416,19 @@
             (scroll)="onLatestUpdatedWorkshopScroll($event)"
           >
             <ul class="dashboard-list">
-              @for (item of latestUpdatedWorkshopItems; track item.publishedfileid) {
+              @for (entry of latestUpdatedWorkshopItemsView; track (entry.item.publishedfileid ?? '') + ':' + $index) {
                 <li>
                   <a
                     class="dashboard-news-link"
-                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (item.publishedfileid || '')"
+                    [href]="'https://steamcommunity.com/sharedfiles/filedetails/?id=' + (entry.item.publishedfileid || '')"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <strong>{{ item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
+                    <strong>{{ entry.item.title || t('dashboard.fallbacks.untitledItem') }}</strong>
                   </a>
                   <span>
                     {{ t('dashboard.labels.updated') }}
-                    {{ item.time_updated ? formatWorkshopDate(item.time_updated) : t('dashboard.labels.unknown') }}
+                    {{ entry.updatedDisplay }}
                   </span>
                 </li>
               }

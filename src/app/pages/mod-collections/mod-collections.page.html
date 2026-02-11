@@ -215,16 +215,16 @@
           </td>
           <td>{{ item.title || 'Untitled collection' }}</td>
           <td
-            [title]="getCollectionDescription(item)"
+            [title]="item.description_full"
             style="max-width: 16rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"
           >
-            {{ getCollectionDescriptionDisplay(item) }}
+            {{ item.description_short }}
           </td>
           <td>{{ item.publishedfileid }}</td>
-          <td>{{ getChildrenCount(item) }}</td>
+          <td>{{ item.children_count }}</td>
           <td>{{ item.subscriptions ?? item.lifetime_subscriptions ?? 0 }}</td>
           <td>{{ item.views ?? 0 }}</td>
-          <td>{{ formatDateTime(item.time_updated ?? item.time_created) }}</td>
+          <td>{{ item.updated_display }}</td>
           <td class="text-right">
             <p-menu
               #menu
@@ -275,9 +275,9 @@
                 <ng-template pTemplate="body" let-mod>
                   <tr>
                     <td>
-                    @if (getModThumbnail(mod)) {
+                    @if (mod.thumbnail) {
                         <p-image
-                          [src]="getModThumbnail(mod)"
+                          [src]="mod.thumbnail"
                           alt="Mod preview"
                           width="64"
                           [preview]="true"
@@ -295,20 +295,20 @@
                     <td>{{ mod.publishedfileid }}</td>
                     <td>
                       <p-tag
-                        [value]="formatStatus(mod)"
-                        [severity]="getStatusSeverity(mod)"
+                        [value]="mod.statusLabel"
+                        [severity]="mod.statusSeverity"
                       ></p-tag>
                     </td>
                     <td>
                       <p-tag
                         [value]="mod.installed ? 'Installed' : 'Missing'"
-                        [severity]="getInstalledSeverity(mod)"
+                        [severity]="mod.installedSeverity"
                       ></p-tag>
                     </td>
                     <td>
                       <p-tag
                         [value]="mod.activated ? 'Active' : 'Inactive'"
-                        [severity]="getActiveSeverity(mod)"
+                        [severity]="mod.activeSeverity"
                       ></p-tag>
                     </td>
                     <td class="text-right">

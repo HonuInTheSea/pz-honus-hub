@@ -71,6 +71,33 @@ export class DashboardComponent implements OnChanges {
   private unknownLabel = 'Unknown';
   private neverLabel = 'Never';
   private numberFormatter = new Intl.NumberFormat('en-US');
+  totalModsDisplay = '0';
+
+  topInstalledWorkshopItemsView: Array<{
+    item: WorkshopQueryItem;
+    subscribersDisplay: string;
+  }> = [];
+  lastUpdatedModsView: Array<{
+    mod: ModSummary;
+    updatedDisplay: string;
+  }> = [];
+  largestModsBySizeView: Array<{
+    mod: ModSummary;
+    sizeDisplay: string;
+  }> = [];
+  popularWorkshopItemsThisWeekView: Array<{
+    item: WorkshopQueryItem;
+    installed: boolean;
+    subscribersDisplay: string;
+  }> = [];
+  latestWorkshopItemsView: Array<{
+    item: WorkshopQueryItem;
+    createdDisplay: string;
+  }> = [];
+  latestUpdatedWorkshopItemsView: Array<{
+    item: WorkshopQueryItem;
+    updatedDisplay: string;
+  }> = [];
 
   constructor(
     private readonly localization: LocalizationService,
@@ -84,12 +111,14 @@ export class DashboardComponent implements OnChanges {
       .subscribe((locale) => {
         this.currentLocale = locale;
         this.numberFormatter = new Intl.NumberFormat(this.currentLocale || 'en-US');
+        this.recomputeDerivedData();
       });
     this.updateTranslations();
     this.transloco.langChanges$
       .pipe(takeUntilDestroyed(this.destroyRef))
       .subscribe(() => {
         this.updateTranslations();
+        this.recomputeDerivedData();
         this.updateCharts();
       });
   }
@@ -115,6 +144,13 @@ export class DashboardComponent implements OnChanges {
   sizeChartOptions: any;
   detailsDialogVisible = false;
   selectedMod: ModSummary | null = null;
+  totalMods = 0;
+  outdatedMods: ModSummary[] = [];
+  outdatedCount = 0;
+  upToDateCount = 0;
+  lastUpdatedMods: ModSummary[] = [];
+  largestModsBySize: { mod: ModSummary; sizeBytes: number }[] = [];
+  topInstalledWorkshopItems: WorkshopQueryItem[] = [];
 
   get allModsForLinks(): ModSummary[] {
     return (this.allMods?.length ? this.allMods : this.mods) ?? [];
@@ -129,76 +165,6 @@ export class DashboardComponent implements OnChanges {
       .getPropertyValue('--text-color')
       .trim();
     return value || '#495057';
-  }
-
-  get totalMods(): number {
-    return this.mods.length;
-  }
-
-  get outdatedMods(): ModSummary[] {
-    return this.mods.filter((mod) => this.isOutdated(mod));
-  }
-
-  get outdatedCount(): number {
-    return this.outdatedMods.length;
-  }
-
-  get upToDateCount(): number {
-    return Math.max(this.totalMods - this.outdatedCount, 0);
-  }
-
-  get lastUpdatedMods(): ModSummary[] {
-    const withUpdated = this.mods
-      .map((mod) => ({
-        mod,
-        updatedAt: this.getWorkshopTimestamp(mod.workshop?.time_updated),
-      }))
-      .filter((x) => x.updatedAt != null) as { mod: ModSummary; updatedAt: number }[];
-
-    withUpdated.sort((a, b) => b.updatedAt - a.updatedAt);
-    // Show the 10 most recently updated mods
-    return withUpdated.slice(0, 10).map((x) => x.mod);
-  }
-
-  get largestModsBySize(): { mod: ModSummary; sizeBytes: number }[] {
-    const items: { mod: ModSummary; sizeBytes: number }[] = [];
-
-    for (const mod of this.mods) {
-      const rawSize = mod.workshop?.file_size;
-      if (rawSize == null) {
-        continue;
-      }
-
-      const numeric = typeof rawSize === 'number' ? rawSize : Number(rawSize);
-      if (!Number.isFinite(numeric) || numeric <= 0) {
-        continue;
-      }
-
-      items.push({ mod, sizeBytes: numeric });
-    }
-
-    items.sort((a, b) => b.sizeBytes - a.sizeBytes);
-    return items.slice(0, 5);
-  }
-
-  get topWorkshopItemsLimited(): WorkshopQueryItem[] {
-    return (this.topWorkshopItems || []).slice(0, 10);
-  }
-
-  get topInstalledWorkshopItems(): WorkshopQueryItem[] {
-    const installedSet = new Set(this.installedWorkshopIds || []);
-
-    const installedItems = (this.topWorkshopItems || []).filter((item) =>
-      installedSet.has((item.publishedfileid || '').trim()),
-    );
-
-    installedItems.sort((a, b) => {
-      const aSubs = a.subscriptions ?? a.lifetime_subscriptions ?? 0;
-      const bSubs = b.subscriptions ?? b.lifetime_subscriptions ?? 0;
-      return bSubs - aSubs;
-    });
-
-    return installedItems.slice(0, 10);
   }
 
   openInstalledItemDetails(item: WorkshopQueryItem): void {
@@ -236,7 +202,87 @@ export class DashboardComponent implements OnChanges {
   }
 
   ngOnChanges(): void {
+    this.recomputeDerivedData();
     this.updateCharts();
+  }
+
+  private recomputeDerivedData(): void {
+    this.totalMods = this.mods.length;
+    this.totalModsDisplay = this.formatNumber(this.totalMods);
+    this.outdatedMods = this.mods.filter((mod) => this.isOutdated(mod));
+    this.outdatedCount = this.outdatedMods.length;
+    this.upToDateCount = Math.max(this.totalMods - this.outdatedCount, 0);
+
+    const withUpdated = this.mods
+      .map((mod) => ({
+        mod,
+        updatedAt: this.getWorkshopTimestamp(mod.workshop?.time_updated),
+      }))
+      .filter((x) => x.updatedAt != null) as { mod: ModSummary; updatedAt: number }[];
+    withUpdated.sort((a, b) => b.updatedAt - a.updatedAt);
+    this.lastUpdatedMods = withUpdated.slice(0, 10).map((x) => x.mod);
+
+    const bySize: { mod: ModSummary; sizeBytes: number }[] = [];
+    for (const mod of this.mods) {
+      const rawSize = mod.workshop?.file_size;
+      if (rawSize == null) {
+        continue;
+      }
+      const numeric = typeof rawSize === 'number' ? rawSize : Number(rawSize);
+      if (!Number.isFinite(numeric) || numeric <= 0) {
+        continue;
+      }
+      bySize.push({ mod, sizeBytes: numeric });
+    }
+    bySize.sort((a, b) => b.sizeBytes - a.sizeBytes);
+    this.largestModsBySize = bySize.slice(0, 5);
+
+    const installedSet = new Set(this.installedWorkshopIds || []);
+    const installedItems = (this.topWorkshopItems || []).filter((item) =>
+      installedSet.has((item.publishedfileid || '').trim()),
+    );
+    installedItems.sort((a, b) => {
+      const aSubs = a.subscriptions ?? a.lifetime_subscriptions ?? 0;
+      const bSubs = b.subscriptions ?? b.lifetime_subscriptions ?? 0;
+      return bSubs - aSubs;
+    });
+    this.topInstalledWorkshopItems = installedItems.slice(0, 10);
+
+    this.topInstalledWorkshopItemsView = this.topInstalledWorkshopItems.map((item) => ({
+      item,
+      subscribersDisplay: this.formatNumber(item.subscriptions || item.lifetime_subscriptions || 0),
+    }));
+
+    this.lastUpdatedModsView = this.lastUpdatedMods.map((mod) => ({
+      mod,
+      updatedDisplay: this.formatWorkshopDate(mod.workshop?.time_updated ?? null),
+    }));
+
+    this.largestModsBySizeView = this.largestModsBySize.map((entry) => ({
+      mod: entry.mod,
+      sizeDisplay: this.formatBytes(entry.sizeBytes),
+    }));
+
+    const installedWorkshopSet = new Set(this.installedWorkshopIds || []);
+    this.popularWorkshopItemsThisWeekView = (this.popularWorkshopItemsThisWeek || []).map((item) => ({
+      item,
+      installed: installedWorkshopSet.has((item.publishedfileid || '').trim()),
+      subscribersDisplay: this.formatNumber(item.subscriptions || item.lifetime_subscriptions || 0),
+    }));
+
+    this.latestWorkshopItemsView = (this.latestWorkshopItems || []).map((item) => ({
+      item,
+      createdDisplay: item.time_created
+        ? this.formatWorkshopDate(item.time_created)
+        : this.unknownLabel,
+    }));
+
+    this.latestUpdatedWorkshopItemsView = (this.latestUpdatedWorkshopItems || []).map((item) => ({
+      item,
+      updatedDisplay: item.time_updated
+        ? this.formatWorkshopDate(item.time_updated)
+        : this.unknownLabel,
+    }));
   }
 
   openModDetails(mod: ModSummary): void {
@@ -305,14 +351,6 @@ export class DashboardComponent implements OnChanges {
     }
     const locale = this.currentLocale || undefined;
     return d.toLocaleDateString(locale);
-  }
-
-  isWorkshopItemInstalled(item: WorkshopQueryItem): boolean {
-    const id = (item.publishedfileid || '').trim();
-    if (!id || !this.installedWorkshopIds || !this.installedWorkshopIds.length) {
-      return false;
-    }
-    return this.installedWorkshopIds.includes(id);
   }
 
   onLatestWorkshopScroll(event: Event): void {

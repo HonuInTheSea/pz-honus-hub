@@ -343,6 +343,71 @@
     align-self: center;
 }
 
+.server-actions-toolbar .p-button.server-btn-refresh {
+    color: #36efc1;
+}
+
+.server-actions-toolbar .p-button.server-btn-refresh:enabled:hover {
+    color: #4ff6cd;
+    background: rgba(54, 239, 193, 0.12);
+}
+
+.server-actions-toolbar .p-button.server-btn-create {
+    background: #39f0c2;
+    border-color: #39f0c2;
+    color: #12332d;
+}
+
+.server-actions-toolbar .p-button.server-btn-create:enabled:hover {
+    background: #2dd8ad;
+    border-color: #2dd8ad;
+    color: #0e2a25;
+}
+
+.server-actions-toolbar .p-button.server-btn-copy {
+    background: #f5a739;
+    border-color: #f5a739;
+    color: #382200;
+}
+
+.server-actions-toolbar .p-button.server-btn-copy:enabled:hover {
+    background: #e09226;
+    border-color: #e09226;
+    color: #2f1d00;
+}
+
+.server-actions-toolbar .p-button.server-btn-export {
+    background: #54cdf8;
+    border-color: #54cdf8;
+    color: #0b3651;
+}
+
+.server-actions-toolbar .p-button.server-btn-export:enabled:hover {
+    background: #3abbe9;
+    border-color: #3abbe9;
+    color: #0a2f46;
+}
+
+.server-actions-toolbar .p-button.server-btn-delete {
+    background: #f28a8a;
+    border-color: #f28a8a;
+    color: #4a1515;
+}
+
+.server-actions-toolbar .p-button.server-btn-delete:enabled:hover {
+    background: #e77777;
+    border-color: #e77777;
+    color: #411111;
+}
+
+.server-actions-toolbar .p-button:disabled {
+    opacity: 0.65;
+}
+
+.server-backup-toggle-accent {
+    color: #36efc1;
+}
+
 .pz-ini-listbox-wrap {
     height: calc(100vh - 20rem);
     max-height: calc(100vh - 20rem);
@@ -389,23 +454,6 @@
   color: rgba(255, 255, 255, 0.7);
   font-size: 0.95rem;
   padding: 1.5rem;
-}
-
-.sidebar-media-accordion {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.sidebar-media-accordion .p-accordion-content {
-  padding: 0;
-  margin: 0;
-}
-
-.sidebar-media-accordion .p-accordion-panel,
-.sidebar-media-accordion .p-accordion-header {
-  border-bottom: none;
 }
 
 .locale-flag {

@@ -12,11 +12,13 @@ import { ToggleSwitchModule } from 'primeng/toggleswitch';
 import { invoke } from '@tauri-apps/api/core';
 import { open as openDialog } from '@tauri-apps/plugin-dialog';
 import { TauriStoreService } from '../../services/tauri-store.service';
+import { LoadoutsService } from '../../services/loadouts.service';
 import { PzDefaultPathsService } from '../../services/pz-default-paths.service';
 import { LocalizationService } from '../../services/localization.service';
 import { formatLocalizedDateTime } from '../../i18n/date-time';
 import { TranslocoModule, TranslocoService } from '@jsverse/transloco';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { profileAsync, profileSync } from '../../utils/perf-trace';
 
 type LogLevel = 'ERROR' | 'WARN' | 'LOG' | 'DEBUG' | 'TRACE' | 'OTHER';
 
@@ -199,6 +201,7 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private readonly store: TauriStoreService,
+    private readonly loadoutsApi: LoadoutsService,
     private readonly pzDefaults: PzDefaultPathsService,
     private readonly transloco: TranslocoService,
     private readonly destroyRef: DestroyRef,
@@ -217,16 +220,18 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
   }
 
   async ngOnInit(): Promise<void> {
-    this.filePathPlaceholder = await this.pzDefaults.getDefaultConsoleLogPathExample();
-    const storedUserDir = await this.store.getItem<string>('pz_user_dir');
-    const defaultUserDir = (storedUserDir ?? '').trim();
-    const defaultFile = defaultUserDir ? joinPath(defaultUserDir, 'console.txt') : '';
+    await profileAsync('logInspector.ngOnInit', async () => {
+      this.filePathPlaceholder = await this.pzDefaults.getDefaultConsoleLogPathExample();
+      const storedUserDir = await this.store.getItem<string>('pz_user_dir');
+      const defaultUserDir = (storedUserDir ?? '').trim();
+      const defaultFile = defaultUserDir ? joinPath(defaultUserDir, 'console.txt') : '';
 
-    const storedPath = await this.store.getItem<string>('log_inspector_file_path');
-    const stored = (storedPath ?? '').trim();
-    this.filePath = stored || defaultFile;
+      const storedPath = await this.store.getItem<string>('log_inspector_file_path');
+      const stored = (storedPath ?? '').trim();
+      this.filePath = stored || defaultFile;
 
-    await this.reload();
+      await this.reload();
+    });
   }
 
   ngOnDestroy(): void {
@@ -277,13 +282,17 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
       const prevBySourceLine = this.pollingEnabled
         ? new Set((this.entries ?? []).map((e) => e.sourceLine))
         : null;
-      const text = await invoke<string>('read_text_file', { path: this.filePath });
+      const text = await this.loadoutsApi.readTextFile(this.filePath, {
+        force,
+        cacheTtlMs: this.pollingEnabled ? 0 : 500,
+        profileLabel: 'invoke.read_text_file.logInspector',
+      });
       if (!force && text.length === this.lastLoadedTextLength) {
         this.applyFilters();
         return;
       }
       this.lastLoadedTextLength = text.length;
-      this.entries = parseLogText(text);
+      this.entries = profileSync('logInspector.parseLogText', () => parseLogText(text));
       if (prevBySourceLine) this.pulseNewEntries(prevBySourceLine);
       this.applyFilters();
     } catch (e: any) {
@@ -338,6 +347,7 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
   }
 
   applyFilters(): void {
+    profileSync('logInspector.applyFilters', () => {
     const selectedLevelsRaw = Array.isArray(this.selectedLevels)
       ? this.selectedLevels
       : this.selectedLevels
@@ -364,24 +374,7 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
 
     this.filteredEntries = filtered;
     this.tableFirst = 0;
-  }
-
-  tagSeverity(
-    level: LogLevel,
-  ): 'success' | 'info' | 'warn' | 'secondary' | 'contrast' | 'danger' | undefined {
-    if (level === 'ERROR') return 'danger';
-    if (level === 'WARN') return 'warn';
-    if (level === 'DEBUG') return 'secondary';
-    if (level === 'TRACE') return 'info';
-    if (level === 'LOG') return 'success';
-    return undefined;
-  }
-
-  rowClass(entry: LogEntry): string {
-    const classes: string[] = [];
-    if (entry.level === 'ERROR') classes.push('log-row-error');
-    if (this.pollingEnabled && entry.isNew) classes.push('log-row-new');
-    return classes.join(' ');
+    });
   }
 
   onTablePage(event: { first?: number; rows?: number }): void {
@@ -442,6 +435,24 @@ export class LogInspectorPageComponent implements OnInit, OnDestroy {
       { label: this.transloco.translate('logInspector.levels.trace'), value: 'TRACE' },
       { label: this.transloco.translate('logInspector.levels.other'), value: 'OTHER' },
     ];
+  }
+
+  tagSeverity(
+    level: LogLevel,
+  ): 'success' | 'info' | 'warn' | 'secondary' | 'contrast' | 'danger' | undefined {
+    if (level === 'ERROR') return 'danger';
+    if (level === 'WARN') return 'warn';
+    if (level === 'DEBUG') return 'secondary';
+    if (level === 'TRACE') return 'info';
+    if (level === 'LOG') return 'success';
+    return undefined;
+  }
+
+  rowClass(entry: LogEntry): string {
+    const classes: string[] = [];
+    if (entry.level === 'ERROR') classes.push('log-row-error');
+    if (this.pollingEnabled && entry.isNew) classes.push('log-row-new');
+    return classes.join(' ');
   }
 
   formatTimestamp(entry: LogEntry): string {

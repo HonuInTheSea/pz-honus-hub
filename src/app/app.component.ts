@@ -20,6 +20,8 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { AppUpdateService } from './services/app-update.service';
 import { PzDefaultPathsService } from './services/pz-default-paths.service';
 import { TranslocoModule } from '@jsverse/transloco';
+import { installPerfConsoleHelpers, profileAsync } from './utils/perf-trace';
+import { SteamApiKeyService } from './services/steam-api-key.service';
 
 @Component({
   selector: 'app-root',
@@ -63,48 +65,64 @@ export class AppComponent implements OnInit {
     private readonly loadoutsApi: LoadoutsService,
     private readonly appUpdate: AppUpdateService,
     private readonly pzDefaults: PzDefaultPathsService,
+    private readonly steamApiKeyService: SteamApiKeyService,
   ) {}
 
   async ngOnInit(): Promise<void> {
-    this.skipContentLoading = this.isReloadNavigation();
-    void this.appUpdate.checkForUpdate();
+    await profileAsync('app.ngOnInit', async () => {
+      installPerfConsoleHelpers();
+      void this.store.prewarm();
+      this.skipContentLoading = this.isReloadNavigation();
+      void this.appUpdate.checkForUpdate();
 
-    this.contentLoading.ready$
-      .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe((ready) => {
-        this.contentReady = ready;
-      });
+      this.contentLoading.ready$
+        .pipe(takeUntilDestroyed(this.destroyRef))
+        .subscribe((ready) => {
+          this.contentReady = ready;
+        });
 
-    const hasAnyData =
-      (await this.store.hasKey('pz_mods')) ||
-      (await this.store.hasKey('pz_mod_folder')) ||
-      (await this.store.hasKey('pz_game_dir')) ||
-      (await this.store.hasKey('steam_api_key'));
+      const [bootstrapState, apiKey] = await Promise.all([
+        this.store.getItems(['pz_mods', 'pz_mod_folder', 'pz_game_dir']),
+        this.steamApiKeyService.get(),
+      ]);
+      const hasAnyData =
+        bootstrapState['pz_mods'] !== null ||
+        bootstrapState['pz_mod_folder'] !== null ||
+        bootstrapState['pz_game_dir'] !== null ||
+        !!apiKey;
 
-    this.onboardingVisible = !hasAnyData;
+      this.onboardingVisible = !hasAnyData;
 
-    if (this.onboardingVisible) {
-      const defaultGameDir = await this.pzDefaults.getDefaultGameDir();
-      const defaultWorkshopDir = await this.pzDefaults.getDefaultWorkshopDir();
-      const storedGame = await this.store.getItem<string>('pz_game_dir');
-      const storedWorkshop = await this.store.getItem<string>('pz_mod_folder');
-      const storedUserDir = await this.store.getItem<string>('pz_user_dir');
-      const storedKey = await this.store.getItem<string>('steam_api_key');
+      if (this.onboardingVisible) {
+        const [
+          defaultGameDir,
+          defaultWorkshopDir,
+          onboardingState,
+        ] = await Promise.all([
+          this.pzDefaults.getDefaultGameDir(),
+          this.pzDefaults.getDefaultWorkshopDir(),
+          this.store.getItems(['pz_game_dir', 'pz_mod_folder', 'pz_user_dir']),
+        ]);
 
-      const detectedUserDir =
-        (storedUserDir || '').trim() ||
-        (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
-        '';
+        const storedGame = onboardingState['pz_game_dir'] as string | null;
+        const storedWorkshop = onboardingState['pz_mod_folder'] as string | null;
+        const storedUserDir = onboardingState['pz_user_dir'] as string | null;
 
-      this.foldersDraft = {
-        pzGameDir:
-          (storedGame || '').trim() || defaultGameDir,
-        pzWorkshopDir:
-          (storedWorkshop || '').trim() || defaultWorkshopDir,
-        pzUserDir: detectedUserDir,
-      };
-      this.steamApiKeyDraft = (storedKey ?? '').toString();
-    }
+        const detectedUserDir =
+          (storedUserDir || '').trim() ||
+          (await this.loadoutsApi.getDefaultZomboidUserDir()) ||
+          '';
+
+        this.foldersDraft = {
+          pzGameDir:
+            (storedGame || '').trim() || defaultGameDir,
+          pzWorkshopDir:
+            (storedWorkshop || '').trim() || defaultWorkshopDir,
+          pzUserDir: detectedUserDir,
+        };
+        this.steamApiKeyDraft = (apiKey ?? '').toString();
+      }
+    });
   }
 
   get showContentLoading(): boolean {
@@ -123,7 +141,7 @@ export class AppComponent implements OnInit {
       nextHonu,
     );
     await this.store.setItem('pz_user_dir', this.foldersDraft.pzUserDir.trim());
-    await this.store.setItem('steam_api_key', this.steamApiKeyDraft.trim());
+    await this.steamApiKeyService.set(this.steamApiKeyDraft.trim());
 
     const honuChanged = previousHonu.trim() !== nextHonu;
     if (honuChanged) {
