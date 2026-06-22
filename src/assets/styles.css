@@ -1,8 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@fontsource/noto-sans/index.css';
+@import '@fontsource/noto-sans-kr/index.css';
 @import './tailwind.css';
 @import './layout/layout.css';
 @import 'primeicons/primeicons.css';
 @import 'country-flag-icons/3x2/flags.css';
+
+/*
+ * Override PrimeNG's default font stack so every component
+ * (inputs, textareas, selects, chips, etc.) can render
+ * Korean (Noto Sans KR) and Cyrillic (Noto Sans) glyphs.
+ */
+:root {
+  --font-sans: "Lato", "Noto Sans", "Noto Sans KR", ui-sans-serif, system-ui,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --default-font-family: "Lato", "Noto Sans", "Noto Sans KR", ui-sans-serif,
+    system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
 
 @font-face {
     font-family: 'icomoon';

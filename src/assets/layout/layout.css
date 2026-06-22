@@ -93,7 +93,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Noto Sans", "Noto Sans KR", sans-serif;
   color: var(--text-color);
   background-color: var(--surface-ground);
   margin: 0;
@@ -102,6 +102,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.2;
+}
+
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
 }
 
 a {

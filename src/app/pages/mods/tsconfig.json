@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": false,
+    "module": "ESNext",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": true,
+    "types": ["vite/client", "node"],
+    "paths": {
+      "@app/*": ["./src/app/*"],
+      "@pages/mods/*": ["./src/app/pages/mods/*"],
+      "@actions/*": ["./src/app/pages/mods/actions/*"],
+      "@filters/*": ["./src/app/pages/mods/filters/*"],
+      "@workshop/*": ["./src/app/pages/mods/workshop/*"],
+      "@persistence/*": ["./src/app/pages/mods/persistence/*"],
+      "@utils/*": ["./src/app/pages/mods/utils/*"],
+      "@utils/perf-trace": ["./src/utils/perf-trace"],
+      "@utils/destruction-guard": ["./src/utils/destruction-guard"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/app/pages/mods/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src-tauri",
+    "src/**/*.spec.ts",
+    "src/**/*.test.ts"
+  ],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}

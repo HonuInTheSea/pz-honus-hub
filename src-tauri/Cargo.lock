@@ -3288,6 +3288,7 @@ name = "pz-honus-hub"
 version = "0.5.2"
 dependencies = [
  "chrono",
+ "encoding_rs",
  "rayon",
  "rfd 0.15.4",
  "serde",

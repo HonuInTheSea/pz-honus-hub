@@ -426,7 +426,7 @@
       "tips": "Tips"
     },
     "welcome": {
-      "title": "Welcome to Project Zomboid Mod Manager",
+      "title": "Welcome to the Project Zomboid Mod Manager",
       "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
       "bullet1": "Choose your Project Zomboid folders.",
       "bullet2": "Add your Steam Web API key for Workshop metadata.",
