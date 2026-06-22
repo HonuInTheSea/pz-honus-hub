@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Redd verden hvert minutt",
     "PlayerSafehouse": "Spiller Safehouse",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Tillat Trepass",
+    "SafehouseAllowTrepass": "Safehouse Tillat Trespass",
     "SafehouseAllowFire": "Safehouse Tillat brann",
     "SafehouseAllowLoot": "Safehouse Tillat bytte",
     "SafehouseAllowRespawn": "Safehouse Tillat respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Chat Message Character Limit",
     "ChatMessageSlowModeTime": "Chat Melding Sakte modus Tid",
     "comments": {
-"PVP": [
+      "PVP": [
         "Spillere kan skade og drepe andre spillere"
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Maks: 60 Standard: 60"
       ],
       "TrashDeleteAll": [
-        "Hvis aktivert kan spilleren bruke knappen \\"slett alt\\" på søppelkasser."
+        "Hvis aktivert kan spilleren bruke knappen \"slett alt\" på søppelkasser."
       ],
       "UDPPort": [
         "Min: 0 Maks: 65535 Standard: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

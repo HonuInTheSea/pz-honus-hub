@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limite de caracteres de mensagens de bate-papo",
     "ChatMessageSlowModeTime": "Tempo do modo lento da mensagem de bate-papo",
     "comments": {
-"PVP": [
+      "PVP": [
         "Os jogadores podem ferir e matar outros jogadores"
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Mín: 0 Máx: 60 Padrão: 60"
       ],
       "TrashDeleteAll": [
-        "Se ativado, o jogador pode usar o botão \\"excluir tudo\\" nas lixeiras."
+        "Se ativado, o jogador pode usar o botão \"excluir tudo\" nas lixeiras."
       ],
       "UDPPort": [
         "Mín: 0 Máx: 65535 Padrão: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

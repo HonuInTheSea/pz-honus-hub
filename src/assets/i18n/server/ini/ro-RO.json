@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Salvați lumea în fiecare minut",
     "PlayerSafehouse": "Jucător Safehouse",
     "AdminSafehouse": "Administrator Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
     "SafehouseAllowFire": "Safehouse Allow Fire",
     "SafehouseAllowLoot": "Safehouse Allow Loot",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limita de caractere a mesajului de chat",
     "ChatMessageSlowModeTime": "Timp în mod lent pentru mesajul de chat",
     "comments": {
-"PVP": [
+      "PVP": [
         "Jucătorii pot răni alți jucători."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Implicit: 60"
       ],
       "TrashDeleteAll": [
-        "Dacă este activat, jucătorul poate folosi butonul \\"șterge tot\\" la coșuri."
+        "Dacă este activat, jucătorul poate folosi butonul \"șterge tot\" la coșuri."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Implicit: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

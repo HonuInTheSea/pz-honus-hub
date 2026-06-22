@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Batas Karakter Pesan Obrolan",
     "ChatMessageSlowModeTime": "Pesan Obrolan Waktu Mode Lambat",
     "comments": {
-"PVP": [
+      "PVP": [
         "Player dapat melukai Player lain."
       ],
       "PVPLogToolChat": [
@@ -541,7 +541,7 @@
         "Min: 0 Maks: 60 Default: 60"
       ],
       "TrashDeleteAll": [
-        "Jika diaktifkan, pemain dapat menggunakan tombol \\"hapus semua\\" pada tempat sampah."
+        "Jika diaktifkan, pemain dapat menggunakan tombol \"hapus semua\" pada tempat sampah."
       ],
       "UDPPort": [
         "Min: 0 Maks: 65535 Default: 16262"
@@ -549,5 +549,3 @@
     }
   }
 }
-
-

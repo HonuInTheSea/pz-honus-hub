@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Pelasta maailma joka minuutti",
     "PlayerSafehouse": "Pelaajien turvatalo",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Salli Trepass",
+    "SafehouseAllowTrepass": "Safehouse Salli Trespass",
     "SafehouseAllowFire": "Turvahuone Salli tulipalo",
     "SafehouseAllowLoot": "Safehouse Salli ryöstö",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Chat-viestien merkkirajoitus",
     "ChatMessageSlowModeTime": "Chat Viesti Hidas tilan aika",
     "comments": {
-"PVP": [
+      "PVP": [
         "Pelaajat voivat satuttaa ja tappaa muita pelaajia"
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Maks: 60 Oletus: 60"
       ],
       "TrashDeleteAll": [
-        "Jos käytössä, pelaaja voi käyttää \\"poista kaikki\\" -painiketta roskiksissa."
+        "Jos käytössä, pelaaja voi käyttää \"poista kaikki\" -painiketta roskiksissa."
       ],
       "UDPPort": [
         "Min: 0 Maks: 65535 Oletus: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

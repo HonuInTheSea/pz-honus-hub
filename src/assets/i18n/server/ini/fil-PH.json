@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Iligtas ang Mundo Bawat Minuto",
     "PlayerSafehouse": "Player Safehouse",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
     "SafehouseAllowFire": "Safehouse Allow Fire",
     "SafehouseAllowLoot": "Safehouse Allow Loot",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limitasyon sa Character ng Mensahe sa Chat",
     "ChatMessageSlowModeTime": "Oras ng Slow Mode ng Mensahe sa Chat",
     "comments": {
-"PVP": [
+      "PVP": [
         "Maaaring saktan at pumatay ng mga manlalaro ang ibang mga manlalaro"
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Default: 60"
       ],
       "TrashDeleteAll": [
-        "Kapag naka-enable, maaaring gamitin ng manlalaro ang button na \\"tanggalin lahat\\" sa mga basurahan."
+        "Kapag naka-enable, maaaring gamitin ng manlalaro ang button na \"tanggalin lahat\" sa mga basurahan."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Default: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

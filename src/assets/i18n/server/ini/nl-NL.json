@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Karakterlimiet voor chatberichten",
     "ChatMessageSlowModeTime": "Chatbericht Langzame modustijd",
     "comments": {
-"PVP": [
+      "PVP": [
         "Spelers kunnen andere spelers beschadigen en doden."
       ],
       "PVPLogToolChat": [
@@ -541,7 +541,7 @@
         "Min: 0 Max: 60 Standaard: 60"
       ],
       "TrashDeleteAll": [
-        "Als dit is ingeschakeld, kan de speler de knop \\"alles verwijderen\\" op prullenbakken gebruiken."
+        "Als dit is ingeschakeld, kan de speler de knop \"alles verwijderen\" op prullenbakken gebruiken."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Standaard: 16262"
@@ -549,5 +549,3 @@
     }
   }
 }
-
-

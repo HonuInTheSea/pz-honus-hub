@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limite di caratteri del messaggio di chat",
     "ChatMessageSlowModeTime": "Tempo modalità lenta del messaggio chat",
     "comments": {
-"PVP": [
+      "PVP": [
         "I giocatori possono ferirsi e uccidersi tra di loro."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Predefinito: 60"
       ],
       "TrashDeleteAll": [
-        "Se attivo, il giocatore può usare il pulsante \\"elimina tutto\\" sui bidoni."
+        "Se attivo, il giocatore può usare il pulsante \"elimina tutto\" sui bidoni."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Predefinito: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Zachraňte svět každou minutu",
     "PlayerSafehouse": "Player Safehouse",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Povolit Trepass",
+    "SafehouseAllowTrepass": "Safehouse Povolit Trespass",
     "SafehouseAllowFire": "Safehouse Allow Fire",
     "SafehouseAllowLoot": "Safehouse Allow Loot",
     "SafehouseAllowRespawn": "Safehouse Povolit Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Omezení počtu znaků chatové zprávy",
     "ChatMessageSlowModeTime": "Doba pomalého režimu chatové zprávy",
     "comments": {
-"PVP": [
+      "PVP": [
         "Hr��i mohou ubl�it ostatn�m hr���m."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Výchozí: 60"
       ],
       "TrashDeleteAll": [
-        "Pokud je zapnuto, hráč může používat tlačítko \\"smazat vše\\" na koších."
+        "Pokud je zapnuto, hráč může používat tlačítko \"smazat vše\" na koších."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Výchozí: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Ratuj świat co minutę",
     "PlayerSafehouse": "Kryjówka gracza",
     "AdminSafehouse": "Sejf administratora",
-    "SafehouseAllowTrepass": "Kryjówka Zezwalaj na Trepass",
+    "SafehouseAllowTrepass": "Kryjówka Zezwalaj na Trespass",
     "SafehouseAllowFire": "Kryjówka Pozwól na ogień",
     "SafehouseAllowLoot": "Kryjówka Zezwalaj na łupy",
     "SafehouseAllowRespawn": "Kryjówka Zezwól na odrodzenie",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limit znaków wiadomości czatu",
     "ChatMessageSlowModeTime": "Wiadomość czatu Czas trybu wolnego",
     "comments": {
-"PVP": [
+      "PVP": [
         "Gracze mogą zadawać obrażenia innym graczom."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Maks: 60 Domyślne: 60"
       ],
       "TrashDeleteAll": [
-        "Jeśli włączone, gracz może używać przycisku \\"usuń wszystko\\" na koszach."
+        "Jeśli włączone, gracz może używać przycisku \"usuń wszystko\" na koszach."
       ],
       "UDPPort": [
         "Min: 0 Maks: 65535 Domyślne: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

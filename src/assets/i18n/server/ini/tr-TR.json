@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Sohbet Mesajı Karakter Limiti",
     "ChatMessageSlowModeTime": "Sohbet Mesajı Yavaş Mod Süresi",
     "comments": {
-"PVP": [
+      "PVP": [
         "Oyuncular diğer oyunculara zarar verebilir."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Maks: 60 Varsayılan: 60"
       ],
       "TrashDeleteAll": [
-        "Etkinse, oyuncu çöp kutularında \\"tümünü sil\\" düğmesini kullanabilir."
+        "Etkinse, oyuncu çöp kutularında \"tümünü sil\" düğmesini kullanabilir."
       ],
       "UDPPort": [
         "Min: 0 Maks: 65535 Varsayılan: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

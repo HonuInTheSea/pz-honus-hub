@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Save World Every Minutes",
     "PlayerSafehouse": "Player Safehouse",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
     "SafehouseAllowFire": "Safehouse Allow Fire",
     "SafehouseAllowLoot": "Safehouse Allow Loot",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Chat Message Character Limit",
     "ChatMessageSlowModeTime": "Chat Message Slow Mode Time",
     "comments": {
-"PVP": [
+      "PVP": [
         "Players can hurt and kill other players"
       ],
       "PVPLogToolChat": [
@@ -155,7 +155,7 @@
         "Clients may join without already having an account in the whitelist. If set to false, administrators must manually create username/password combos."
       ],
       "ServerWelcomeMessage": [
-        "The first welcome message visible in the chat panel. This will be displayed immediately after player login. you can use RGB colours to chance the colour of the welcome message. You can also use < LINE>, without the space, to create a separate lines within your text. Use: \\<RGB:1,0,0> This message will show up red!"
+        "The first welcome message visible in the chat panel. This will be displayed immediately after player login. You can use RGB colours to change the colour of the welcome message. You can also use < LINE>, without the space, to create separate lines within your text. Use: \\<RGB:1,0,0> This message will show up red!"
       ],
       "SneakModeHideFromOtherPlayers": [
         "If true, players in sneak mode are hidden from other players."
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Default: 60"
       ],
       "TrashDeleteAll": [
-        "If true, player can use the \\"delete all\\" button on bins."
+        "If true, player can use the \"delete all\" button on bins."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Default: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

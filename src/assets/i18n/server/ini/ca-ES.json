@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Salva el món cada minut",
     "PlayerSafehouse": "Jugador Safehouse",
     "AdminSafehouse": "Administrador Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trepass",
+    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
     "SafehouseAllowFire": "Safehouse Allow Fire",
     "SafehouseAllowLoot": "Safehouse Allow Loot",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Límit de caràcters del missatge de xat",
     "ChatMessageSlowModeTime": "Temps de mode lent del missatge de xat",
     "comments": {
-"PVP": [
+      "PVP": [
         "Els jugadors poden ferir i matar d'altres jugadors."
       ],
       "PVPLogToolChat": [
@@ -541,7 +541,7 @@
         "Mín: 0 Màx: 60 Per defecte: 60"
       ],
       "TrashDeleteAll": [
-        "Si s'activa, el jugador pot usar el botó \\"esborra-ho tot\\" als contenidors."
+        "Si s'activa, el jugador pot usar el botó \"esborra-ho tot\" als contenidors."
       ],
       "UDPPort": [
         "Mín: 0 Màx: 65535 Per defecte: 16262"
@@ -549,5 +549,3 @@
     }
   }
 }
-
-

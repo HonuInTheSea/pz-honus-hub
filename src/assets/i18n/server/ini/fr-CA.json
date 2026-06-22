@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Sauver le monde toutes les minutes",
     "PlayerSafehouse": "Refuge des joueurs",
     "AdminSafehouse": "Refuge administratif",
-    "SafehouseAllowTrepass": "Safehouse Autoriser Trepass",
+    "SafehouseAllowTrepass": "Safehouse Autoriser Trespass",
     "SafehouseAllowFire": "Safehouse Autoriser le feu",
     "SafehouseAllowLoot": "Safehouse Autoriser le butin",
     "SafehouseAllowRespawn": "Safehouse Autoriser la réapparition",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Limite de caractères des messages de discussion",
     "ChatMessageSlowModeTime": "Temps de mode lent des messages de discussion",
     "comments": {
-"PVP": [
+      "PVP": [
         "Les joueurs peuvent blesser et tuer les autres joueurs"
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Par défaut: 60"
       ],
       "TrashDeleteAll": [
-        "Si activé, le joueur peut utiliser le bouton \\"tout supprimer\\" sur les bennes."
+        "Si activé, le joueur peut utiliser le bouton \"tout supprimer\" sur les bennes."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Par défaut: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

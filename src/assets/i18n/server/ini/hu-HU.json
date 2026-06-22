@@ -38,7 +38,7 @@
     "SaveWorldEveryMinutes": "Mentse meg a világot minden percben",
     "PlayerSafehouse": "Player Safehouse",
     "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "A Safehouse Trepass engedélyezése",
+    "SafehouseAllowTrepass": "A Safehouse Trespass engedélyezése",
     "SafehouseAllowFire": "Safehouse Engedélyezze a tüzet",
     "SafehouseAllowLoot": "Safehouse Engedélyezze a zsákmányt",
     "SafehouseAllowRespawn": "Safehouse Allow Respawn",
@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Csevegőüzenet Karakterkorlát",
     "ChatMessageSlowModeTime": "Chat Üzenet Lassú üzemmód ideje",
     "comments": {
-"PVP": [
+      "PVP": [
         "A játékosok árthatnak és megölhetnek más játékosokat."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Min: 0 Max: 60 Alapértelmezett: 60"
       ],
       "TrashDeleteAll": [
-        "Ha engedélyezett, a játékos használhatja a \\"törlés mindent\\" gombot a kukákon."
+        "Ha engedélyezett, a játékos használhatja a \"törlés mindent\" gombot a kukákon."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Alapértelmezett: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

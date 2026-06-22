@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Límite de caracteres de mensajes de chat",
     "ChatMessageSlowModeTime": "Mensaje de chat Modo lento Tiempo",
     "comments": {
-"PVP": [
+      "PVP": [
         "Los jugadores pueden herir y matar a otros jugadores."
       ],
       "PVPLogToolChat": [
@@ -542,7 +542,7 @@
         "Mín: 0 Máx: 60 Predeterminado: 60"
       ],
       "TrashDeleteAll": [
-        "Si está activado, el jugador puede usar el botón \\"eliminar todo\\" en los contenedores."
+        "Si está activado, el jugador puede usar el botón \"eliminar todo\" en los contenedores."
       ],
       "UDPPort": [
         "Mín: 0 Máx: 65535 Predeterminado: 16262"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

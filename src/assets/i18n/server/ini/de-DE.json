@@ -136,7 +136,7 @@
     "ChatMessageCharacterLimit": "Zeichenbeschränkung für Chat-Nachrichten",
     "ChatMessageSlowModeTime": "Chat-Nachrichtenzeit im langsamen Modus",
     "comments": {
-"PVP": [
+      "PVP": [
         "Die Spieler können andere Spieler verletzten."
       ],
       "PVPLogToolChat": [
@@ -544,7 +544,7 @@
         "Min: 0 Max: 60 Standard: 60"
       ],
       "TrashDeleteAll": [
-        "Wenn aktiviert, kann der Spieler den Button \\"Alles löschen\\" an Mülltonnen verwenden."
+        "Wenn aktiviert, kann der Spieler den Button \"Alles löschen\" an Mülltonnen verwenden."
       ],
       "UDPPort": [
         "Min: 0 Max: 65535 Standard: 16262"
@@ -552,5 +552,3 @@
     }
   }
 }
-
-
