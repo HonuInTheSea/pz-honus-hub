@@ -293,7 +293,7 @@
       "4 = Keine"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie darf in leere Zellen migrieren."
     ],
     "DayLength": [
       "Standard = 1 Stunde, 30 Minuten",
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Ob sich die Tageszeit auf natürliche Weise ändert oder immer Tag/Nacht ist. ",
       "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Endloser Tag",
+      "3 = Endlose Nacht"
     ],
     "ClimateCycle": [
       "Ob sich das Wetter ändert oder in einem einzigen Zustand bleibt. ",
       "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Kein Wetter",
+      "3 = Endloser Regen",
+      "4 = Endloser Sturm",
+      "5 = Endloser Schnee",
+      "6 = Endloser Schneesturm"
     ],
     "FogCycle": [
       "Ob Nebel natürlich vorkommt, nie auftritt oder immer vorhanden ist. ",
       "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Kein Nebel",
+      "3 = Endloser Nebel"
     ],
     "WaterShut": [
       "Wie lange nach dem Standardstartdatum (9. Juli 1993) vergeht, bis Sanitärarmaturen (z. B. Waschbecken) keine unendlichen Wasserquellen mehr sind? ",
@@ -604,7 +604,7 @@
       "3 = Normal",
       "4 = Viele",
       "5 = Sehr Viele",
-      "6 = No decay"
+      "6 = Kein Verfall"
     ],
     "SeenHoursPreventLootRespawn": [
       "Wenn der Wert größer als 0 ist, wird die Beute die gesehen wurde, nicht vor ablauf dieser Zeit (in Stunden) respawnen. Min: 0 Max: 2147483647 Standard: 0"
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Geschwindigkeit, mit der die Werte der Tiere (Hunger, Durst usw.) abnehmen. ",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Geschwindigkeit, mit der die Tierstatistiken (Hunger, Durst usw.) im Meta reduziert werden. ",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Wie lange werden Tiere schwanger sein, bevor sie ein Kind zur Welt bringen? ",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Geschwindigkeit, mit der Tiere altern. ",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Standard = Schnell",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Standard = Schnell",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Wie lange dauert es, bis Tierbabys aus Eiern schlüpfen? ",
-      "1 = Ultra Fast",
+      "1 = Ultraschnell",
       "2 = Sehr schnell",
       "3 = Schnell",
       "4 = Normal",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Wenn ein Medium nicht vollständig angezeigt oder gelesen wurde, bestimmt diese Einstellung, ob es vollständig angezeigt, als „???“ angezeigt oder vollständig ausgeblendet wird. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Vollständig enthüllt",
+      "2 = Angezeigt als ???",
+      "3 = Völlig ausgeblendet"
     ],
     "SeeNotLearntRecipe": [
       "Wenn dies zutrifft, können Sie alle Rezepte sehen, die mit einer Station durchgeführt werden können, auch wenn Sie sie noch nicht gelernt haben."
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Wenn die Erträge aus Bonusmerkmalspunkten durch die Auswahl mehrerer negativer Merkmale sinken. ",
       "1 = Keine",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 Strafpunkt für alle 3 ausgewählten negativen Eigenschaften",
+      "3 = 1 Strafpunkt für jeweils 2 ausgewählte negative Eigenschaften",
       "4 = 1 Strafpunkt für jedes negative Merkmal, das nach dem ersten ausgewählt wird"
     ],
     "MinutesPerPage": [
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

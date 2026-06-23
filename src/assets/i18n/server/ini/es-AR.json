@@ -140,10 +140,10 @@
         "Los jugadores pueden da�ar a otros jugadores."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PvP está registrado en el chat de administración."
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP está registrado en el archivo"
       ],
       "PauseEmpty": [
         "El tiempo de juego se detiene cuando no hay jugadores conectados"
@@ -280,10 +280,10 @@
         "Tiempo en segundos antes de que comience la guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Duración de la guerra en segundos."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Límite de puntos de vida del refugio."
       ],
       "ServerPlayerID": [
         "Escrito en los archivos del personaje del jugador, as� que los jugadores no pueden usar archivos de personaje del juego individual o de otros servidores."
@@ -325,7 +325,7 @@
         "Los jugadores se cansan y necesitan dormir. Sin efecto si SleepAllowed"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Activar esta configuración puede causar desincronización visual de las posiciones de los jugadores."
       ],
       "WorkshopItems": [
         "Lista los IDs de los mods del Worksho para descargar. Cada uno debe estar separado con punto y coma. Ejemplo: WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=Ocultos 2=Amigos 3=Todos"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Desactiva el remolque del vehículo"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Desactiva el remolque de remolque"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Inhabilita el remolque de vehículos quemados."
       ],
       "BadWordListFile": [
         "Ruta al archivo con la lista de palabras a prohibir. "
@@ -464,37 +464,37 @@
         "El símbolo o fragmento de texto que reemplazará la mala palabra."
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Desactiva la protección antitrampas del sistema de seguridad."
       ],
       "AntiCheatMovement": [
         "Desactiva la protección antitrampas de movimiento."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Desactiva la protección antitrampas contra golpes de personajes."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Desactiva la protección anti-trampas de verificación de paquetes."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Desactiva la protección anti-trampas de los permisos del jugador."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Desactiva la protección anti-trampas de XP del jugador."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Desactiva la protección antitrampas de controles de incendio."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Desactiva la protección antitrampas del refugio."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Desactiva la protección anti-trampas de las comprobaciones de recetas."
       ],
       "AntiCheatPlayer": [
         "Desactiva la protección antitrampas de jugadores."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Desactiva la protección anti-trampas de suma de comprobación."
       ],
       "AntiCheatItem": [
         "Desactiva la protección anti-trampas de los controles de elementos."
@@ -506,7 +506,7 @@
         "Establece el período de actualización multijugador en segundos. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Desactiva el marcador."
       ],
       "HideAdminsInPlayerList": [
         "Oculta administradores en la lista de jugadores."

@@ -310,7 +310,7 @@
       "tags": "Теги",
       "noTags": "Немає тегів",
       "packs": "Пакети",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "Визначення тайлів",
       "workshopTitle": "Назва майстерні",
       "workshopCreator": "Творець майстерні",
       "fileSize": "Розмір файлу",
@@ -352,8 +352,8 @@
     "clothing_armor": "Одяг/Обладунки",
     "farming": "Сільське господарство",
     "food": "Їжа",
-    "framework": "Framework",
-    "hardmode": "Hardmode",
+    "framework": "Каркас",
+    "hardmode": "Жорсткий режим",
     "interface": "Інтерфейс",
     "items": "Елементи",
     "language_translation": "Мова/Переклад",
@@ -484,11 +484,11 @@
         "detail": "Отримано {{received}} з {{total}} елементів майстерні. Відсутні ідентифікатори: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
+        "summary": "Майстерня Steam синхронізована",
         "detail": "Метадані майстерні успішно збережено."
       },
       "workshopUnauthorized": {
-        "summary": "Steam Web API Unauthorized",
+        "summary": "Steam Web API неавторизовано",
         "detail": "Steam повернув 401 Unauthorized. Перевірте ключ веб-інтерфейсу Steam і повторіть спробу."
       },
       "workshopSyncFailed": {
@@ -589,12 +589,12 @@
         "detailMissing": "Введіть ім’я сервера.",
         "detailInvalidChars": "Назва сервера містить недійсні символи назви файлу.",
         "detailTrailing": "Назва сервера не може закінчуватися крапкою чи пробілом.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "Ім’я сервера має складатися з одного слова без пробілів.",
+        "detailAscii": "Використовуйте лише символи ASCII (англійські літери, цифри та символи)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Назва сервера вже зайнята",
+        "detail": "Це ім’я сервера вже зайнято. Виберіть іншу назву для нового сервера."
       },
       "missingUserFolder": {
         "summary": "Відсутня папка користувача",
@@ -639,76 +639,76 @@
   },
   "dashboard": {
     "headers": {
-      "overview": "Overview",
-      "updateStatus": "Mods Update Status",
-      "topInstalled": "Top Installed Mods (by Subscriptions)",
-      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
-      "installsOverTime": "Mod Installs Over Time",
-      "largestMods": "Largest Mods (by File Size)",
-      "latestNews": "Latest Project Zomboid News",
-      "popularThisWeek": "Popular Mods This Week",
-      "latestMods": "Latest Mods",
-      "updatedMods": "Updated Mods"
+      "overview": "Огляд",
+      "updateStatus": "Статус оновлення модів",
+      "topInstalled": "Топ встановлених модів (за підписками)",
+      "lastUpdatedInstalled": "Встановлені моди, які були востаннє оновлені",
+      "installsOverTime": "Мод встановлюється з часом",
+      "largestMods": "Найбільші моди (за розміром файлу)",
+      "latestNews": "Останні новини проекту Zomboid",
+      "popularThisWeek": "Популярні моди цього тижня",
+      "latestMods": "Останні моди",
+      "updatedMods": "Оновлені моди"
     },
     "labels": {
-      "totalMods": "Total Mods",
-      "lastLocalSync": "Last Local Mod Sync",
-      "lastWorkshopSync": "Last Workshop Sync",
-      "subscribers": "subscribers",
-      "updated": "updated",
-      "created": "created",
-      "installedTooltip": "Installed locally",
-      "unknown": "Unknown",
-      "never": "Never"
+      "totalMods": "Усього модів",
+      "lastLocalSync": "Остання синхронізація локального моду",
+      "lastWorkshopSync": "Синхронізація останньої майстерні",
+      "subscribers": "підписників",
+      "updated": "оновлено",
+      "created": "створений",
+      "installedTooltip": "Встановлюється локально",
+      "unknown": "Невідомий",
+      "never": "Ніколи"
     },
     "messages": {
-      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
-      "noInstalledSubs": "No installed mods with subscription data are available.",
-      "noWorkshopUpdateInfo": "No Workshop update information is available.",
-      "noSizeData": "No mod file size data is available.",
-      "noNews": "No news items were found.",
-      "noPopularMods": "No popular mods were found.",
-      "noModsFound": "No mods were found.",
-      "noRecentUpdates": "No recently updated mods were found."
+      "steamTimeout": "Steam Web API не відповідає. Спробуйте пізніше.",
+      "noInstalledSubs": "Немає встановлених модів з даними підписки.",
+      "noWorkshopUpdateInfo": "Інформація про оновлення Workshop недоступна.",
+      "noSizeData": "Немає даних про розмір файлу мода.",
+      "noNews": "Новин не знайдено.",
+      "noPopularMods": "Популярних модів не знайдено.",
+      "noModsFound": "Модів не знайдено.",
+      "noRecentUpdates": "Не знайдено нещодавно оновлених модів."
     },
     "fallbacks": {
-      "untitledItem": "Untitled item"
+      "untitledItem": "Елемент без назви"
     },
     "charts": {
       "installs": {
-        "label": "Mods by install month",
-        "xAxis": "Month",
-        "yAxis": "Mods"
+        "label": "Моди за місяць встановлення",
+        "xAxis": "місяць",
+        "yAxis": "Моди"
       },
       "status": {
-        "outdated": "Outdated",
-        "upToDate": "Up to date"
+        "outdated": "Застаріла",
+        "upToDate": "В актуальному стані"
       },
       "size": {
-        "label": "Workshop file size (bytes)",
-        "yAxis": "Size (bytes)"
+        "label": "Розмір файлу семінару (байти)",
+        "yAxis": "Розмір (байти)"
       }
     }
   },
   "logInspector": {
-    "title": "Log Inspector",
+    "title": "Інспектор журналу",
     "fields": {
-      "logFile": "Log file",
-      "types": "Types",
-      "typesPlaceholder": "Select types",
-      "maxEntries": "Max entries",
-      "from": "From",
-      "to": "To",
-      "livePolling": "Live polling",
-      "pollingEverySeconds": "Every (s)",
-      "searchMessage": "Search message",
-      "searchPlaceholder": "Search..."
+      "logFile": "Файл журналу",
+      "types": "Типи",
+      "typesPlaceholder": "Виберіть типи",
+      "maxEntries": "Максимальна кількість записів",
+      "from": "Від",
+      "to": "до",
+      "livePolling": "Опитування в прямому ефірі",
+      "pollingEverySeconds": "кожні (и)",
+      "searchMessage": "Пошукове повідомлення",
+      "searchPlaceholder": "пошук..."
     },
     "table": {
-      "pageReport": "Showing {first} to {last} of {totalRecords}",
-      "timestamp": "Timestamp",
-      "type": "Type",
-      "message": "Message"
+      "pageReport": "Показано від {first} до {last} з {totalRecords}",
+      "timestamp": "Мітка часу",
+      "type": "Тип",
+      "message": "повідомлення"
     },
     "levels": {
       "error": "ERROR",
@@ -719,53 +719,53 @@
       "other": "OTHER"
     },
     "dialog": {
-      "logFilesFilter": "Log Files"
+      "logFilesFilter": "Файли журналів"
     },
     "errors": {
-      "noFilePath": "Set a file path to load logs.",
-      "loadFailed": "Failed to load log file.",
-      "clearFailed": "Failed to clear log file."
+      "noFilePath": "Встановіть шлях до файлу для завантаження журналів.",
+      "loadFailed": "Не вдалося завантажити файл журналу.",
+      "clearFailed": "Не вдалося очистити файл журналу."
     }
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Сервери",
       "refresh": "Оновити",
       "createNewServer": "Створити новий сервер",
       "copy": "Копіювати",
       "deleteServer": "Видалити сервер",
       "createBackupOnSave": "Створювати резервну копію під час збереження",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Файли сервера не знайдено.",
+      "selectServerPlaceholder": "Виберіть сервер",
+      "serverEditor": "Редактор сервера",
+      "selectServerPrompt": "Виберіть сервер, щоб почати редагування.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Змінні Sandbox",
         "spawnpoints": "Точки спавну",
         "spawnregions": "Регіони спавну"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Записів INI не знайдено.",
       "serverConfigVars": "Змінні конфігурації сервера",
-      "searchFields": "Search fields",
+      "searchFields": "Поля пошуку",
       "reset": "Скинути",
       "saveChanges": "Зберегти зміни",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Змінні пісочниці не знайдено.",
       "sandboxVariables": "Змінні Sandbox",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "Пошук змінних",
+      "createServerTitle": "Створити новий сервер",
+      "copyServerTitle": "Сервер копіювання",
+      "copyServerPrompt": "Скопіюйте {{name}} і створіть такі файли:",
+      "serverName": "Ім'я сервера",
+      "createServerHint": "Створює .ini, _SandboxVars.lua, _spawnpoints.lua та _spawnregions.lua",
       "cancel": "Скасувати",
-      "create": "Create",
+      "create": "Створити",
       "editServerVariableTitle": "Редагувати змінну сервера",
       "editSandboxVariableTitle": "Редагувати змінну пісочниці",
-      "noDescription": "No description available.",
+      "noDescription": "Немає опису.",
       "save": "зберегти",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "Видалити сервер",
+      "deleteServerPrompt": "Видалити {{name}} і всі пов’язані файли сервера?",
       "trueLabel": "правда",
       "falseLabel": "Неправда",
       "exportServer": "Експорт"

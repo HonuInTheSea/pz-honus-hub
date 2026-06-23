@@ -1,146 +1,146 @@
 {
   "common": {
-    "loadingContent": "Loading content...",
-    "next": "Next",
-    "back": "Back",
-    "finish": "Finish",
-    "cancel": "Cancel",
-    "browse": "Browse",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save"
+    "loadingContent": "Memuat konten...",
+    "next": "Selanjutnya",
+    "back": "Kembali",
+    "finish": "Selesai",
+    "cancel": "Batalkan",
+    "browse": "Jelajahi",
+    "yes": "Ya",
+    "no": "Tidak",
+    "save": "Simpan"
   },
   "app": {
     "title": "Honu's Hub"
   },
   "menu": {
-    "languageLabel": "Language",
-    "languagePlaceholder": "Select a language",
+    "languageLabel": "Bahasa",
+    "languagePlaceholder": "Pilih bahasa",
     "sections": {
       "hub": "HUB",
-      "modFilters": "MOD FILTERS",
-      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "modFilters": "FILTER MOD",
+      "modCollectionFilters": "FILTER KOLEKSI MOD",
       "actions": "ACTIONS",
-      "getStarted": "Get Started",
-      "resources": "Resources",
-      "dangerZone": "Danger Zone"
+      "getStarted": "Memulai",
+      "resources": "Sumber daya",
+      "dangerZone": "Zona Bahaya"
     },
     "items": {
-      "dashboard": "Dashboard",
-      "logInspector": "Log Inspector",
-      "myMods": "My Mods",
-      "configureFolders": "Configure Folders",
-      "setSteamApiKey": "Set Steam API Key",
-      "syncHonu": "Sync Honu's Mod Info QoL",
-      "syncLocal": "Sync Local Mod Data",
-      "syncWorkshop": "Sync With Steam Workshop",
-      "changelog": "Changelog",
-      "documentation": "Documentation",
-      "viewSource": "View Source",
+      "dashboard": "Dasbor",
+      "logInspector": "Inspektur Log",
+      "myMods": "Modifikasi saya",
+      "configureFolders": "Konfigurasikan Folder",
+      "setSteamApiKey": "Setel Kunci API Steam",
+      "syncHonu": "Sinkronkan Info Mod Honu QoL",
+      "syncLocal": "Sinkronkan Data Mod Lokal",
+      "syncWorkshop": "Sinkronisasi Dengan Steam Workshop",
+      "changelog": "log perubahan",
+      "documentation": "Dokumentasi",
+      "viewSource": "Lihat Sumber",
       "projectZomboid": "Project Zomboid",
-      "pzWiki": "Official Project Zomboid Wiki",
+      "pzWiki": "Wiki Zomboid Proyek Resmi",
       "b41Map": "B41 Map",
       "b42Map": "B42 Map",
-      "workshop": "Project Zomboid Steam Workshop",
+      "workshop": "Lokakarya Uap Zomboid Proyek",
       "subreddit": "r/projectzomboid",
       "discord": "Project Zomboid",
-      "moddingDiscord": "PZ Modding Community",
-      "mappingDiscord": "Unofficial PZ Mapping",
-      "honuWorkshop": "HonuInTheSea's Steam Workshop",
-      "supportKofi": "Support on Ko-fi",
-      "resetApp": "Reset Application",
-      "resetAppTooltip": "Reset window settings and delete stored data",
+      "moddingDiscord": "Komunitas Modifikasi PZ",
+      "mappingDiscord": "Pemetaan PZ Tidak Resmi",
+      "honuWorkshop": "Lokakarya Uap HonuInTheSea",
+      "supportKofi": "Dukungan pada Ko-fi",
+      "resetApp": "Setel Ulang Aplikasi",
+      "resetAppTooltip": "Atur ulang pengaturan jendela dan hapus data yang disimpan",
       "server": "pelayan",
       "modCollections": "Koleksi Mod",
       "modPresets": "Preset Mod"
     },
     "filters": {
-      "adultLabel": "Has Adult Content",
-      "adultTooltip": "Filter mods where Steam metadata reports maybe_inappropriate_sex as true.",
-      "rulesLabel": "Has Rules",
-      "rulesTooltip": "Mod contains a require, incompatible, loadModAfter, loadModBefore statement in their mod.info file",
-      "missingSteamLabel": "Missing Steam Data",
-      "missingSteamTooltip": "Mod may have been marked as private or removed from the Steam Workshop",
-      "outdatedLabel": "Outdated Mods",
-      "outdatedTooltip": "Mod may need to be unsubscribed and resubscribed to get the latest version from the Steam Workshop"
+      "adultLabel": "Memiliki Konten Dewasa",
+      "adultTooltip": "Filter mod yang metadata Steamnya melaporkan might_inappropriate_sex sebagai benar.",
+      "rulesLabel": "Memiliki Aturan",
+      "rulesTooltip": "Mod berisi pernyataan yang memerlukan, tidak kompatibel, loadModAfter, loadModBefore dalam file mod.info mereka",
+      "missingSteamLabel": "Data Uap Hilang",
+      "missingSteamTooltip": "Mod mungkin telah ditandai sebagai pribadi atau dihapus dari Steam Workshop",
+      "outdatedLabel": "Modifikasi yang Kedaluwarsa",
+      "outdatedTooltip": "Mod mungkin perlu berhenti berlangganan dan berlangganan kembali untuk mendapatkan versi terbaru dari Steam Workshop"
     },
     "collections": {
-      "searchLabel": "Search Collections",
-      "searchPlaceholder": "Search collections",
-      "sortLabel": "Sort by",
-      "periodLabel": "Over time period",
-      "tagsLabel": "Tags",
-      "tagsPlaceholder": "Select tags",
-      "sortMostPopular": "Most Popular",
-      "sortMostRecent": "Most Recent",
-      "sortLastUpdated": "Last Updated",
-      "periodToday": "Today",
-      "periodWeek": "One Week",
-      "periodThirtyDays": "Thirty Days",
-      "periodThreeMonths": "Three Months",
-      "periodSixMonths": "Six Months",
-      "periodYear": "One Year"
+      "searchLabel": "Koleksi Pencarian",
+      "searchPlaceholder": "Koleksi pencarian",
+      "sortLabel": "Urutkan berdasarkan",
+      "periodLabel": "Selama jangka waktu tertentu",
+      "tagsLabel": "Tag",
+      "tagsPlaceholder": "Pilih tag",
+      "sortMostPopular": "Paling Populer",
+      "sortMostRecent": "Terbaru",
+      "sortLastUpdated": "Terakhir Diperbarui",
+      "periodToday": "Hari ini",
+      "periodWeek": "Satu Minggu",
+      "periodThirtyDays": "Tiga Puluh Hari",
+      "periodThreeMonths": "Tiga Bulan",
+      "periodSixMonths": "Enam Bulan",
+      "periodYear": "Satu Tahun"
     },
-    "presetsUnavailable": "Set your Project Zomboid user folder and/or define presets first.",
+    "presetsUnavailable": "Atur folder pengguna Project Zomboid Anda dan/atau tentukan preset terlebih dahulu.",
     "steamApi": {
-      "dialogTitle": "Set Steam Web API Key",
-      "dialogIntro": "Enter your Steam Web API Key. This key is stored locally on your machine.",
-      "keyLabel": "Steam Web API Key",
-      "needKey": "Need a key?",
-      "getKeyLink": "Get your Steam Web API Key",
-      "helpButton": "How to create a Steam Web API Key",
-      "helpTitle": "How to create a Steam Web API Key",
-      "helpCardTitle": "How to Register a Steam Web API Key",
-      "helpCardBody": "This guide provides a step-by-step walkthrough for registering a Steam Web API Key. A Steam Web API Key lets applications securely access specific data from your Steam account, such as game libraries or statistics, when you authorize them to do so.",
-      "step1Title": "1. Prerequisites",
-      "step1Intro": "Before you can register a Steam Web API Key, make sure that:",
-      "step1Bullet1": "You have an active Steam account in good standing, secured with Steam Guard (email or mobile authenticator).",
-      "step1Bullet2": "Your account owns at least one purchased game. Brand-new or empty accounts cannot obtain an API key.",
-      "step1Bullet3": "You are using a trusted device and network (never register or view your key on a public or shared computer).",
-      "step2Title": "2. Important Security Notes",
-      "step2Intro": "Your Steam Web API Key is sensitive information. Anyone who has your key can make API requests on your behalf. Treat it like a password:",
-      "step2Bullet1": "Never share your key with other people, and never post it publicly (for example, on forums or GitHub).",
-      "step2Bullet2": "Only paste your key into tools or websites you fully trust.",
-      "step2Bullet3": "If you suspect your key has been exposed, revoke it immediately and generate a new one.",
-      "step3Title": "3. Step-by-Step: Registering a Steam Web API Key",
-      "step3_1Title": "Step 1 - Sign in to Steam",
-      "step3_1Bullet1": "Open your web browser and go to <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
-      "step3_1Bullet2": "Click <strong>\"Log In\"</strong> in the top-right corner.",
-      "step3_1Bullet3": "Enter your Steam account name and password.",
-      "step3_1Bullet4": "If prompted, complete Steam Guard verification.",
-      "step3_2Title": "Step 2 - Open the Steam Web API Key page",
-      "step3_2Bullet1": "While logged in, open the Steam Web API Key registration page: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
-      "step3_2Bullet2": "The page will display a short description of the Steam Web API and a form titled <strong>\"Register for a new Steam Web API Key.\"</strong>",
-      "step3_3Title": "Step 3 - Enter a domain name and agree to the terms",
-      "step3_3Intro": "On the registration form:",
-      "step3_3Bullet1": "In the <strong>\"Domain Name\"</strong> field, enter the domain of the website or service that will use the key. <ul class=\"p-ml-3\"><li>If you do not have a domain, you can enter a placeholder such as <code>localhost</code>, <code>127.0.0.1</code>, or <code>example.com</code>.</li></ul>",
-      "step3_3Bullet2": "Read the Steam Web API Terms of Use.",
-      "step3_3Bullet3": "Tick the checkbox to confirm that you agree to the terms.",
-      "step3_3Bullet4": "Click the <strong>\"Register\"</strong> button to submit the form.",
-      "step3_4Title": "Step 4 - View and copy your new Steam Web API Key",
-      "step3_4Intro": "After a successful registration:",
-      "step3_4Bullet1": "The page reloads and shows your Steam Web API Key near the top.",
-      "step3_4Bullet2": "The key is a long string of letters and numbers (for example: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
-      "step3_4Bullet3": "Select the entire key and copy it (Ctrl+C / Cmd+C).",
-      "step3_4Bullet4": "Store it in a secure location, such as a password manager or an encrypted notes app.",
-      "step4Title": "4. Basic Example of Using Your Steam Web API Key",
-      "step4Intro": "Once you have a key, you can call Steam Web API endpoints by adding it as a <code>key=</code> parameter to the URL. For example, a simple HTTP request might look like this (replace <code>YOURKEYHERE</code> with your real key):",
-      "step4Outro": "The exact URLs and parameters depend on which Steam Web API interface you are using. Always consult the official documentation for the endpoints you need.",
-      "step5Title": "5. Revoking or Regenerating Your Steam Web API Key",
-      "step5Intro": "If you no longer need your Steam Web API Key, or you believe it has been compromised, you should revoke it:",
-      "step5Bullet1": "Sign in to your Steam account if you are not already logged in.",
-      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> again.",
-      "step5Bullet3": "Click the button labeled <strong>\"Revoke My Steam Web API Key\"</strong>.",
-      "step5Bullet4": "If you need a new key later, return to the same page and register again using the steps above.",
-      "step6Title": "6. Troubleshooting Tips",
-      "step6Intro": "You may see one of the following issues when trying to register a key:",
-      "step6Bullet1": "<strong>Message:</strong> <em>\"You will be granted access to Steam Web API keys when you have games in your Steam account.\"</em> In this case, your account does not yet meet the minimum requirements. Purchase at least one game on Steam, wait for the purchase to clear, and try again later.",
-      "step6Bullet2": "<strong>Page keeps asking you to sign in</strong> - Make sure cookies and JavaScript are enabled in your browser, and that you are logging in with the correct account.",
-      "step6Bullet3": "<strong>Security concerns</strong> - If any third-party site or person asks for your key and you are unsure why, do not share it. Revoke your key and change your Steam password if you think it has been exposed.",
-      "footerNote": "You now have a registered Steam Web API Key and a basic understanding of how to manage it safely. Keep this page handy as a reference when you need to register, use, or revoke your key."
+      "dialogTitle": "Setel Kunci API Web Steam",
+      "dialogIntro": "Masukkan Kunci API Web Steam Anda. Kunci ini disimpan secara lokal di mesin Anda.",
+      "keyLabel": "Kunci API Web Uap",
+      "needKey": "Butuh kunci?",
+      "getKeyLink": "Dapatkan Kunci API Web Steam Anda",
+      "helpButton": "Cara membuat Kunci API Web Steam",
+      "helpTitle": "Cara membuat Kunci API Web Steam",
+      "helpCardTitle": "Cara Mendaftarkan Kunci API Web Steam",
+      "helpCardBody": "Panduan ini memberikan panduan langkah demi langkah untuk mendaftarkan Kunci API Web Steam. Kunci API Web Steam memungkinkan aplikasi mengakses data tertentu dengan aman dari akun Steam Anda, seperti perpustakaan game atau statistik, saat Anda mengizinkannya melakukannya.",
+      "step1Title": "1. Prasyarat",
+      "step1Intro": "Sebelum Anda dapat mendaftarkan Kunci API Web Steam, pastikan bahwa:",
+      "step1Bullet1": "Anda memiliki akun Steam aktif yang bereputasi baik, diamankan dengan Steam Guard (email atau autentikator seluler).",
+      "step1Bullet2": "Akun Anda memiliki setidaknya satu game yang dibeli. Akun baru atau kosong tidak dapat memperoleh kunci API.",
+      "step1Bullet3": "Anda menggunakan perangkat dan jaringan tepercaya (jangan pernah mendaftar atau melihat kunci Anda di komputer umum atau komputer bersama).",
+      "step2Title": "2. Catatan Keamanan Penting",
+      "step2Intro": "Kunci API Web Steam Anda adalah informasi sensitif. Siapa pun yang memiliki kunci Anda dapat membuat permintaan API atas nama Anda. Perlakukan itu seperti kata sandi:",
+      "step2Bullet1": "Jangan pernah membagikan kunci Anda kepada orang lain, dan jangan pernah mempostingnya secara publik (misalnya, di forum atau GitHub).",
+      "step2Bullet2": "Hanya tempelkan kunci Anda ke alat atau situs web yang Anda percayai sepenuhnya.",
+      "step2Bullet3": "Jika Anda curiga kunci Anda telah terekspos, segera cabut dan buat yang baru.",
+      "step3Title": "3. Langkah-demi-Langkah: Mendaftarkan Kunci API Web Steam",
+      "step3_1Title": "Langkah 1 - Masuk ke Steam",
+      "step3_1Bullet1": "Buka browser web Anda dan buka <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Klik <strong>\"Masuk\"</strong> di pojok kanan atas.",
+      "step3_1Bullet3": "Masukkan nama akun Steam dan kata sandi Anda.",
+      "step3_1Bullet4": "Jika diminta, selesaikan verifikasi Steam Guard.",
+      "step3_2Title": "Langkah 2 - Buka halaman Kunci Steam Web API",
+      "step3_2Bullet1": "Saat masuk, buka halaman registrasi Steam Web API Key: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Halaman tersebut akan menampilkan deskripsi singkat tentang Steam Web API dan formulir berjudul <strong>\"Daftar untuk Kunci Steam Web API baru.\"</strong>",
+      "step3_3Title": "Langkah 3 - Masukkan nama domain dan setujui persyaratannya",
+      "step3_3Intro": "Pada formulir pendaftaran:",
+      "step3_3Bullet1": "Di kolom <strong>\"Nama Domain\"</strong>, masukkan domain situs web atau layanan yang akan menggunakan kunci tersebut. <ul class=\"p-ml-3\"><li>Jika Anda tidak memiliki domain, Anda dapat memasukkan placeholder seperti <code>localhost</code>, <code>127.0.0.1</code>, atau <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Baca Ketentuan Penggunaan Steam Web API.",
+      "step3_3Bullet3": "Centang kotak untuk mengonfirmasi bahwa Anda menyetujui persyaratan.",
+      "step3_3Bullet4": "Klik tombol <strong>\"Daftar\"</strong> untuk mengirimkan formulir.",
+      "step3_4Title": "Langkah 4 - Lihat dan salin Kunci API Web Steam baru Anda",
+      "step3_4Intro": "Setelah pendaftaran berhasil:",
+      "step3_4Bullet1": "Halaman dimuat ulang dan menampilkan Kunci API Web Steam Anda di dekat bagian atas.",
+      "step3_4Bullet2": "Kuncinya berupa rangkaian huruf dan angka yang panjang (misalnya: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Pilih seluruh kunci dan salin (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Simpan di lokasi yang aman, seperti pengelola kata sandi atau aplikasi catatan terenkripsi.",
+      "step4Title": "4. Contoh Dasar Penggunaan Kunci API Web Steam Anda",
+      "step4Intro": "Setelah Anda memiliki kunci, Anda dapat memanggil titik akhir Steam Web API dengan menambahkannya sebagai parameter <code>key=</code> ke URL. Misalnya, permintaan HTTP sederhana mungkin terlihat seperti ini (ganti <code>YOURKEYHERE</code> dengan kunci asli Anda):",
+      "step4Outro": "URL dan parameter yang tepat bergantung pada antarmuka Steam Web API yang Anda gunakan. Selalu lihat dokumentasi resmi untuk titik akhir yang Anda perlukan.",
+      "step5Title": "5. Mencabut atau Meregenerasi Kunci Steam Web API Anda",
+      "step5Intro": "Jika Anda tidak lagi memerlukan Kunci API Web Steam Anda, atau Anda yakin kunci tersebut telah disusupi, Anda harus mencabutnya:",
+      "step5Bullet1": "Masuk ke akun Steam Anda jika Anda belum masuk.",
+      "step5Bullet2": "Buka <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> lagi.",
+      "step5Bullet3": "Klik tombol berlabel <strong> \"Cabut Kunci Steam Web API Saya\" </strong>.",
+      "step5Bullet4": "Jika nanti Anda memerlukan kunci baru, kembali ke halaman yang sama dan daftar lagi menggunakan langkah di atas.",
+      "step6Title": "6. Tip Mengatasi Masalah",
+      "step6Intro": "Anda mungkin melihat salah satu masalah berikut saat mencoba mendaftarkan kunci:",
+      "step6Bullet1": "<strong>Pesan:</strong> <em>\"Anda akan diberikan akses ke kunci Steam Web API saat Anda memiliki game di akun Steam Anda.\"</em> Dalam hal ini, akun Anda belum memenuhi persyaratan minimum. Beli setidaknya satu game di Steam, tunggu hingga pembelian selesai, dan coba lagi nanti.",
+      "step6Bullet2": "<strong>Page terus meminta Anda untuk masuk</strong> - Pastikan cookie dan JavaScript diaktifkan di browser Anda, dan Anda masuk dengan akun yang benar.",
+      "step6Bullet3": "<strong>Masalah keamanan</strong> - Jika ada situs atau orang pihak ketiga yang meminta kunci Anda dan Anda tidak yakin alasannya, jangan bagikan. Cabut kunci Anda dan ubah kata sandi Steam Anda jika menurut Anda kunci tersebut telah terekspos.",
+      "footerNote": "Anda sekarang memiliki Kunci API Web Steam terdaftar dan pemahaman dasar tentang cara mengelolanya dengan aman. Simpan halaman ini sebagai referensi ketika Anda perlu mendaftar, menggunakan, atau mencabut kunci Anda."
     },
     "folders": {
-      "dialogTitle": "Configure Folders"
+      "dialogTitle": "Konfigurasikan Folder"
     },
     "loadingLocale": "Memuat bahasa..."
   },
@@ -180,217 +180,217 @@
     }
   },
   "onboarding": {
-    "title": "Get Started",
+    "title": "Memulai",
     "steps": {
-      "welcome": "Welcome",
-      "folders": "Folders",
-      "steamKey": "Steam API Key",
-      "tips": "Tips"
+      "welcome": "Selamat datang",
+      "folders": "Folder",
+      "steamKey": "Kunci API Uap",
+      "tips": "Kiat"
     },
     "welcome": {
-      "title": "Welcome to the Project Zomboid Mod Manager",
-      "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
-      "bullet1": "Choose your Project Zomboid folders.",
-      "bullet2": "Add your Steam Web API key for Workshop metadata.",
-      "bullet3": "Finish setup and start managing your mods."
+      "title": "Selamat datang di Manajer Mod Proyek Zomboid",
+      "body": "Penyiapan cepat ini membantu Anda menghubungkan folder, menambahkan kunci Steam Web API, dan mulai menyinkronkan mod.",
+      "bullet1": "Pilih folder Project Zomboid Anda.",
+      "bullet2": "Tambahkan kunci Steam Web API Anda untuk metadata Lokakarya.",
+      "bullet3": "Selesaikan penyiapan dan mulai kelola mod Anda."
     },
     "tips": {
-      "title": "Quick Tips",
-      "bullet1": "You can update folders and your Steam API key anytime from the sidebar.",
-      "bullet2": "Run Sync Local Mod Data before syncing Workshop metadata.",
-      "bullet3": "Use Mod Filters to narrow the list quickly."
+      "title": "Tip Cepat",
+      "bullet1": "Anda dapat memperbarui folder dan kunci Steam API Anda kapan saja dari sidebar.",
+      "bullet2": "Jalankan Sinkronkan Data Mod Lokal sebelum menyinkronkan metadata Lokakarya.",
+      "bullet3": "Gunakan Filter Mod untuk mempersempit daftar dengan cepat."
     }
   },
   "tags": {
-    "animals": "Animals",
+    "animals": "Hewan",
     "audio": "Audio",
-    "balance": "Balance",
-    "build_41": "Build 41",
-    "build_42": "Build 42",
-    "build_40": "Build 40",
-    "buildings": "Buildings",
-    "clothing_armor": "Clothing/Armor",
-    "farming": "Farming",
-    "food": "Food",
-    "framework": "Framework",
-    "hardmode": "Hardmode",
-    "interface": "Interface",
-    "items": "Items",
-    "language_translation": "Language/Translation",
-    "literature": "Literature",
-    "map": "Map",
-    "military": "Military",
-    "misc": "Misc",
-    "models": "Models",
-    "multiplayer": "Multiplayer",
-    "pop_culture": "Pop Culture",
+    "balance": "Keseimbangan",
+    "build_41": "Bangun 41",
+    "build_42": "Bangun 42",
+    "build_40": "Bangun 40",
+    "buildings": "Bangunan",
+    "clothing_armor": "Pakaian/Armor",
+    "farming": "Pertanian",
+    "food": "Makanan",
+    "framework": "Kerangka",
+    "hardmode": "Mode keras",
+    "interface": "Antarmuka",
+    "items": "Barang",
+    "language_translation": "Bahasa/Terjemahan",
+    "literature": "Sastra",
+    "map": "Peta",
+    "military": "Militer",
+    "misc": "Lain-lain",
+    "models": "Model",
+    "multiplayer": "Multipemain",
+    "pop_culture": "Budaya Pop",
     "qol": "QoL",
-    "realistic": "Realistic",
-    "silly_fun": "Silly/Fun",
-    "skills": "Skills",
-    "textures": "Textures",
-    "traits": "Traits",
-    "vehicles": "Vehicles",
-    "weapons": "Weapons",
+    "realistic": "Realistis",
+    "silly_fun": "Konyol/Menyenangkan",
+    "skills": "Keterampilan",
+    "textures": "Tekstur",
+    "traits": "Sifat",
+    "vehicles": "Kendaraan",
+    "weapons": "Senjata",
     "wip": "WIP"
   },
   "tagFilter": {
-    "label": "Tags",
-    "matchLabel": "Match",
+    "label": "Tag",
+    "matchLabel": "Cocok",
     "matchAny": "ATAU",
     "matchAll": "DAN",
-    "placeholder": "Select tags"
+    "placeholder": "Pilih tag"
   },
   "modsTable": {
-    "clearFilters": "Clear",
-    "searchPlaceholder": "Search keyword",
-    "detailsTitle": "Mod Details",
+    "clearFilters": "Jelas",
+    "searchPlaceholder": "Kata kunci pencarian",
+    "detailsTitle": "Detail Mod",
     "columns": {
-      "name": "Name",
-      "author": "Author",
-      "workshopId": "Workshop ID",
-      "lastModified": "Last Modified Date"
+      "name": "Nama",
+      "author": "Penulis",
+      "workshopId": "ID bengkel",
+      "lastModified": "Tanggal Modifikasi Terakhir"
     },
     "filters": {
-      "name": "Search by name",
-      "author": "Search by author",
-      "workshopId": "Search by workshop ID",
-      "date": "Filter date"
+      "name": "Cari berdasarkan nama",
+      "author": "Cari berdasarkan penulis",
+      "workshopId": "Cari berdasarkan ID bengkel",
+      "date": "Filter tanggal"
     }
   },
   "modsPage": {
-    "toastHelp": "Where do I find this?",
+    "toastHelp": "Di mana saya menemukan ini?",
     "workshopPrompt": {
-      "title": "Fetch Steam Workshop Data",
-      "body": "Do you want to fetch the latest metadata from the Steam Workshop for your mods?",
-      "alwaysFetch": "Always fetch automatically without asking"
+      "title": "Ambil Data Lokakarya Steam",
+      "body": "Apakah Anda ingin mengambil metadata terbaru dari Steam Workshop untuk mod Anda?",
+      "alwaysFetch": "Selalu ambil secara otomatis tanpa diminta"
     },
-    "loadingLocal": "Scanning Local Mod Data...",
-    "loadingWorkshop": "Fetching Steam Workshop Data...",
-    "loading": "Loading data..."
+    "loadingLocal": "Memindai Data Mod Lokal...",
+    "loadingWorkshop": "Mengambil Data Lokakarya Steam...",
+    "loading": "Memuat data..."
   },
   "folders": {
-    "title": "Set Required Folders",
-    "description": "These folders are used to scan your mods and read your Project Zomboid installation details.",
-    "gameDirLabel": "Project Zomboid game folder",
-    "workshopDirLabel": "Local mods (Steam Workshop) folder",
-    "userDirLabel": "Project Zomboid user folder (optional)",
-    "userDirNote": "Used for exporting server presets and (optional) advanced apply targets."
+    "title": "Tetapkan Folder yang Diperlukan",
+    "description": "Folder ini digunakan untuk memindai mod Anda dan membaca detail instalasi Project Zomboid Anda.",
+    "gameDirLabel": "Folder permainan Proyek Zomboid",
+    "workshopDirLabel": "Folder mod lokal (Steam Workshop).",
+    "userDirLabel": "Folder pengguna Project Zomboid (opsional)",
+    "userDirNote": "Digunakan untuk mengekspor preset server dan target penerapan lanjutan (opsional)."
   },
   "modDetails": {
     "fields": {
-      "name": "Name",
-      "modId": "Mod ID",
-      "author": "Author",
-      "version": "Mod Version",
-      "versionMin": "Minimum Game Version",
-      "versionMax": "Maximum Game Version",
+      "name": "Nama",
+      "modId": "ID mod",
+      "author": "Penulis",
+      "version": "Versi Mod",
+      "versionMin": "Versi Permainan Minimum",
+      "versionMax": "Versi Game Maksimum",
       "url": "URL",
-      "description": "Description",
-      "tags": "Tags",
-      "noTags": "No tags",
-      "packs": "Packs",
-      "tiledefs": "Tiledefs",
-      "workshopTitle": "Workshop Title",
-      "workshopCreator": "Workshop Creator",
-      "fileSize": "File Size",
-      "timeCreated": "Time Created",
-      "timeUpdated": "Time Updated",
-      "workshopViews": "Workshop Views",
-      "workshopSubscriptions": "Workshop Subscriptions",
-      "adultContent": "Has Adult Content"
+      "description": "Deskripsi",
+      "tags": "Tag",
+      "noTags": "Tidak ada tag",
+      "packs": "Paket",
+      "tiledefs": "ubinef",
+      "workshopTitle": "Judul Lokakarya",
+      "workshopCreator": "Pencipta Lokakarya",
+      "fileSize": "Ukuran Berkas",
+      "timeCreated": "Waktu Tercipta",
+      "timeUpdated": "Waktu Diperbarui",
+      "workshopViews": "Tampilan Lokakarya",
+      "workshopSubscriptions": "Langganan Lokakarya",
+      "adultContent": "Memiliki Konten Dewasa"
     },
     "links": {
-      "requiredMods": "Required Mods",
-      "loadAfter": "Load Mod After",
-      "loadBefore": "Load Mod Before",
-      "incompatibleMods": "Incompatible Mods",
-      "requiredBy": "Required By",
-      "incompatibleWith": "Incompatible With"
+      "requiredMods": "Modifikasi yang Diperlukan",
+      "loadAfter": "Muat Mod Setelah",
+      "loadBefore": "Muat Mod Sebelumnya",
+      "incompatibleMods": "Modifikasi yang Tidak Kompatibel",
+      "requiredBy": "Diperlukan Oleh",
+      "incompatibleWith": "Tidak Kompatibel Dengan"
     },
     "buttons": {
-      "visitWorkshop": "Visit Steam Workshop Page",
-      "authorWorkshop": "Author's Steam Workshop Page",
-      "openFolder": "Open mod folder"
+      "visitWorkshop": "Kunjungi Halaman Lokakarya Steam",
+      "authorWorkshop": "Halaman Lokakarya Steam Penulis",
+      "openFolder": "Buka folder mod"
     },
     "tooltips": {
-      "modInfoReadonly": "This field is read-only and populated from mod.info.",
-      "steamReadonly": "This field is read-only and populated from the Steam Workshop.",
-      "modMissing": "The following mod could not be found",
-      "syncToActivate": "Sync With Steam Workshop to Activate",
-      "modFolderUnavailable": "Mod folder path is not available."
+      "modInfoReadonly": "Bidang ini bersifat baca-saja dan diisi dari mod.info.",
+      "steamReadonly": "Bidang ini bersifat read-only dan diisi dari Steam Workshop.",
+      "modMissing": "Mod berikut tidak dapat ditemukan",
+      "syncToActivate": "Sinkronkan Dengan Steam Workshop untuk Mengaktifkan",
+      "modFolderUnavailable": "Jalur folder mod tidak tersedia."
     }
   },
   "docs": {
-    "title": "Documentation",
+    "title": "Dokumentasi",
     "intro": "Hub Honu membantu Anda menelusuri, memeriksa, dan mengelola Proyek Zomboid lokal Anda, dengan integrasi desktop melalui Tauri.",
     "toc": {
-      "aria": "Table of contents",
-      "title": "Table of contents",
-      "overview": "Overview",
-      "workflow": "Workflow",
-      "data": "Data the app uses",
-      "features": "Features",
+      "aria": "Daftar isi",
+      "title": "Daftar isi",
+      "overview": "Ikhtisar",
+      "workflow": "Alur kerja",
+      "data": "Data yang digunakan aplikasi",
+      "features": "Fitur",
       "server": "Manajemen Server",
-      "logInspector": "Log inspector",
-      "folderSetup": "Folder setup",
-      "tauri": "Desktop (Tauri) integration",
-      "privacy": "Privacy & storage",
-      "troubleshooting": "Troubleshooting",
+      "logInspector": "Pemeriksa log",
+      "folderSetup": "Pengaturan folder",
+      "tauri": "Integrasi Desktop (Tauri).",
+      "privacy": "Privasi & penyimpanan",
+      "troubleshooting": "Pemecahan masalah",
       "faq": "FAQ"
     },
     "overview": {
-      "title": "Overview",
-      "body": "The app scans a chosen mods directory, derives metadata from common Project Zomboid mod conventions, and presents everything in a table and summary dashboard."
+      "title": "Ikhtisar",
+      "body": "Aplikasi ini memindai direktori mod yang dipilih, memperoleh metadata dari konvensi mod Project Zomboid yang umum, dan menyajikan semuanya dalam tabel dan dasbor ringkasan."
     },
     "workflow": {
-      "title": "Workflow",
-      "intro": "Follow this end-to-end flow to connect your folders, sync metadata, and generate the Honu Mod Info QoL output.",
+      "title": "Alur kerja",
+      "intro": "Ikuti alur end-to-end ini untuk menghubungkan folder Anda, menyinkronkan metadata, dan menghasilkan output QoL Info Mod Honu.",
       "step1": {
-        "title": "Map folders",
-        "body": "Open <strong>Configure Folders</strong> from the sidebar actions and set your Project Zomboid game, workshop, and user directories.",
-        "screenshot": "Screenshot: Configure Folders"
+        "title": "Folder peta",
+        "body": "Buka <strong>Konfigurasi Folder</strong> dari tindakan sidebar dan atur game Project Zomboid, bengkel, dan direktori pengguna Anda.",
+        "screenshot": "Tangkapan Layar: Konfigurasikan Folder"
       },
       "step2": {
-        "title": "Create/enter Steam Workshop key",
-        "body": "Use <strong>Set Steam API Key</strong> to paste your key so the app can fetch Workshop metadata.",
-        "screenshot": "Screenshot: Set Steam API Key"
+        "title": "Buat/masukkan kunci Steam Workshop",
+        "body": "Gunakan <strong>Set Steam API Key</strong> untuk menempelkan kunci Anda sehingga aplikasi dapat mengambil metadata Lokakarya.",
+        "screenshot": "Tangkapan layar: Setel Kunci API Steam"
       },
       "step3": {
-        "title": "Sync local mod data",
-        "body": "Run <strong>Sync Local Mod Data</strong> to scan your Workshop folder and build the local mod list.",
-        "screenshot": "Screenshot: Sync Local Mod Data"
+        "title": "Sinkronkan data mod lokal",
+        "body": "Jalankan <strong>Sync Local Mod Data</strong> untuk memindai folder Workshop Anda dan membuat daftar mod lokal.",
+        "screenshot": "Tangkapan Layar: Sinkronkan Data Mod Lokal"
       },
       "step4": {
-        "title": "Sync with Steam Workshop",
-        "body": "Run <strong>Sync With Steam Workshop</strong> to pull workshop titles, authors, sizes, and extra metadata.",
-        "screenshot": "Screenshot: Sync With Steam Workshop"
+        "title": "Sinkronisasi dengan Steam Workshop",
+        "body": "Jalankan <strong>Sync Dengan Steam Workshop</strong> untuk mengambil judul lokakarya, penulis, ukuran, dan metadata tambahan.",
+        "screenshot": "Tangkapan Layar: Sinkronisasi Dengan Steam Workshop"
       },
       "step5": {
-        "title": "Sync Honu's Mod Info QoL",
-        "body": "Use <strong>Sync Honu's Mod Info QoL</strong> to generate/update <code>honus_miqol_db.lua</code> inside your Project Zomboid user folder.",
-        "screenshot": "Screenshot: Sync Honu's Mod Info QoL"
+        "title": "Sinkronkan Info Mod Honu QoL",
+        "body": "Gunakan Info Mod <strong>Sync Honu QoL</strong> untuk menghasilkan/memperbarui <code>honus_miqol_db.lua</code> di dalam folder pengguna Project Zomboid Anda.",
+        "screenshot": "Tangkapan layar: Sinkronkan Info Mod Honu QoL"
       }
     },
     "data": {
-      "title": "Data the app uses",
-      "intro": "The app builds a mod listing from information available on disk.",
-      "bullet1": "<strong>Mod folder path</strong> - resolved absolute path to the mod directory.",
-      "bullet2": "<strong>Mod id</strong> - extracted from mod metadata when available (commonly from <code>mod.info</code>).",
-      "bullet3": "<strong>Name</strong> - a display name derived from metadata and/or folder naming.",
-      "bullet4": "<strong>Workshop id (optional)</strong> - if detected and numeric, the app enables a Steam Workshop link button.",
-      "bullet5": "<strong>Status/health indicators</strong> - basic signals such as missing or incomplete metadata (where detectable).",
-      "outro": "Not all mods contain complete metadata. When fields are missing, the UI will display best-effort values and may disable actions that require specific data (for example, the Steam link)."
+      "title": "Data yang digunakan aplikasi",
+      "intro": "Aplikasi ini membuat daftar mod dari informasi yang tersedia di disk.",
+      "bullet1": "Jalur folder <strong>Mod</strong> - menyelesaikan jalur absolut ke direktori mod.",
+      "bullet2": "<strong>Mod id</strong> - diekstraksi dari metadata mod bila tersedia (biasanya dari <code>mod.info</code>).",
+      "bullet3": "<strong>Name</strong> - nama tampilan yang berasal dari metadata dan/atau penamaan folder.",
+      "bullet4": "<strong>Workshop id (opsional)</strong> - jika terdeteksi dan numerik, aplikasi mengaktifkan tombol tautan Steam Workshop.",
+      "bullet5": "<strong>Indikator status/kesehatan</strong> - sinyal dasar seperti metadata yang hilang atau tidak lengkap (jika terdeteksi).",
+      "outro": "Tidak semua mod berisi metadata lengkap. Jika kolom tidak ada, UI akan menampilkan nilai upaya terbaik dan mungkin menonaktifkan tindakan yang memerlukan data tertentu (misalnya, tautan Steam)."
     },
     "features": {
-      "title": "Features",
-      "bullet1": "<strong>Mods table</strong> - lists detected mods with key fields (name, id, workshop link when available, and path).",
-      "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
-      "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
-      "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
-      "logInspectorLink": "Log inspector",
-      "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
+      "title": "Fitur",
+      "bullet1": "<strong>Mods table</strong> - mencantumkan mod yang terdeteksi dengan bidang kunci (nama, id, tautan bengkel bila tersedia, dan jalur).",
+      "bullet2": "<strong>Rincian baris</strong> - perluas baris untuk melihat informasi lebih lanjut tentang mod (bila tersedia).",
+      "bullet3": "<strong>Open di Steam</strong> - membuka halaman Lokakarya di browser default Anda untuk mod dengan id bengkel yang valid.",
+      "bullet4": "<strong>Buka folder</strong> - membuka folder mod yang dipilih di file explorer Anda.",
+      "logInspectorPrefix": "<strong>Log inspektur</strong> - memuat dan memfilter file log (seperti <code>console.txt</code>) untuk menemukan kesalahan dan peringatan dengan cepat. Lihat",
+      "logInspectorLink": "Pemeriksa log",
+      "bullet6": "<strong>Dashboard</strong> - menampilkan statistik cepat (misalnya: total mod terdeteksi) dan indikator tingkat tinggi lainnya."
     },
     "server": {
       "title": "Manajemen Server",
@@ -400,242 +400,242 @@
       "bullet3": "<strong>Edit</strong> variabel INI dan Sandbox, serta perbarui spawnpoints/spawnregions langsung di aplikasi."
     },
     "logInspector": {
-      "title": "Log inspector",
-      "intro": "The log inspector helps you open and filter log files (for example, <code>console.txt</code>) to troubleshoot crashes, mod load problems, and server startup issues.",
-      "bullet1": "<strong>Select a file</strong> - browse to any <code>.txt</code> or <code>.log</code> file, or use a default path when available.",
-      "bullet2": "<strong>Filter</strong> - choose log levels (ERROR/WARN/LOG/DEBUG/TRACE), set a date/time window, and limit the maximum number of entries displayed.",
-      "bullet3": "<strong>Search</strong> - filter entries by text across the parsed message and the raw source line.",
-      "bullet4": "<strong>Live polling</strong> - optionally refresh on a timer to watch logs update while the game/server is running.",
-      "bullet5": "<strong>Clear</strong> - truncate the selected log file (use with care)."
+      "title": "Pemeriksa log",
+      "intro": "Pemeriksa log membantu Anda membuka dan memfilter file log (misalnya, <code>console.txt</code>) untuk memecahkan masalah kerusakan, masalah pemuatan mod, dan masalah pengaktifan server.",
+      "bullet1": "<strong>Pilih file</strong> - telusuri file <code>.txt</code> atau <code>.log</code> mana pun, atau gunakan jalur default bila tersedia.",
+      "bullet2": "<strong>Filter</strong> - pilih level log (ERROR/WARN/LOG/DEBUG/TRACE), atur jendela tanggal/waktu, dan batasi jumlah maksimum entri yang ditampilkan.",
+      "bullet3": "<strong>Search</strong> - memfilter entri berdasarkan teks di seluruh pesan yang diurai dan baris sumber mentah.",
+      "bullet4": "<strong>Polling langsung</strong> - secara opsional menyegarkan pengatur waktu untuk melihat pembaruan log saat game/server sedang berjalan.",
+      "bullet5": "<strong>Clear</strong> - potong file log yang dipilih (gunakan dengan hati-hati)."
     },
     "folderSetup": {
-      "title": "Folder setup",
-      "step1": "Open the <strong>Mods</strong> page from the left sidebar (under <em>HOME</em>).",
-      "step2": "Use <strong>Browse Mods Folder</strong> in the <em>ACTIONS</em> menu to select your Project Zomboid mods directory (commonly <code>projectzomboid/mods</code>).",
-      "step3": "After selection, the app scans the directory and populates the mods table and dashboard.",
-      "tip": "Tip: If you switch machines or move your mods directory, simply browse again to update the stored path."
+      "title": "Pengaturan folder",
+      "step1": "Buka halaman <strong>Mods</strong> dari sidebar kiri (di bawah <em>HOME</em>).",
+      "step2": "Gunakan <strong>Jelajahi Folder Mods</strong> di menu <em>ACTIONS</em> untuk memilih direktori mod Project Zomboid Anda (biasanya <code>projectzomboid/mods</code>).",
+      "step3": "Setelah pemilihan, aplikasi memindai direktori dan mengisi tabel mod dan dasbor.",
+      "tip": "Tip: Jika Anda berpindah mesin atau memindahkan direktori mod, cukup telusuri lagi untuk memperbarui jalur yang disimpan."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
-      "bullet1": "<strong>Filesystem access</strong> - directory browsing and scanning is performed via the desktop shell.",
-      "bullet2": "<strong>Open external links</strong> - Steam Workshop links open using your OS default browser.",
-      "bullet3": "<strong>Open folders</strong> - launches the OS file explorer focused on the mod directory."
+      "title": "Integrasi Desktop (Tauri).",
+      "bullet1": "<strong>Akses sistem file</strong> - penjelajahan dan pemindaian direktori dilakukan melalui shell desktop.",
+      "bullet2": "<strong>Buka tautan eksternal</strong> - Tautan Steam Workshop dibuka menggunakan browser default OS Anda.",
+      "bullet3": "<strong>Buka folder</strong> - meluncurkan penjelajah file OS yang berfokus pada direktori mod."
     },
     "privacy": {
-      "title": "Privacy & storage",
-      "bullet1": "<strong>Local data</strong> - the selected mods folder path and scan results may be cached locally to improve UX."
+      "title": "Privasi & penyimpanan",
+      "bullet1": "<strong>Data lokal</strong> - jalur folder mod yang dipilih dan hasil pemindaian mungkin di-cache secara lokal untuk meningkatkan UX."
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "bullet1": "<strong>No mods appear after scanning</strong> - verify the selected folder is your actual Project Zomboid mods directory and that it contains mod subfolders.",
-      "bullet2": "<strong>Steam links are disabled</strong> - ensure the mod has a valid numeric workshop id (not all mods are Workshop-based).",
-      "bullet3": "<strong>Open folder does nothing</strong> - confirm the Tauri backend is running and that OS permissions allow opening the file explorer."
+      "title": "Pemecahan masalah",
+      "bullet1": "<strong>Tidak ada mod yang muncul setelah pemindaian</strong> - pastikan folder yang dipilih adalah direktori mod Project Zomboid Anda yang sebenarnya dan berisi subfolder mod.",
+      "bullet2": "<strong>Tautan uap dinonaktifkan</strong> - pastikan mod memiliki id bengkel numerik yang valid (tidak semua mod berbasis Lokakarya).",
+      "bullet3": "<strong>Folder terbuka tidak melakukan apa pun</strong> - mengonfirmasi bahwa backend Tauri sedang berjalan dan izin OS mengizinkan pembukaan file explorer."
     },
     "faq": {
       "title": "FAQ",
-      "q1": "Does the app edit my mods?",
-      "a1": "No. The core workflow is read-only: it scans folders and displays metadata. Actions such as opening folders or Workshop links do not modify mod files.",
-      "q2": "Why is some information missing for a mod?",
-      "a2": "Mods vary in how consistently they include metadata. If fields like id or workshop id are missing, the app will show what it can and disable features that rely on those fields."
+      "q1": "Apakah aplikasi mengedit mod saya?",
+      "a1": "Tidak. Alur kerja inti bersifat baca-saja: ia memindai folder dan menampilkan metadata. Tindakan seperti membuka folder atau tautan Lokakarya tidak mengubah file mod.",
+      "q2": "Mengapa beberapa informasi untuk mod hilang?",
+      "a2": "Mod bervariasi dalam seberapa konsisten mereka menyertakan metadata. Jika kolom seperti id atau id bengkel tidak ada, aplikasi akan menampilkan kemampuannya dan menonaktifkan fitur yang mengandalkan kolom tersebut."
     }
   },
   "toasts": {
     "menu": {
       "honuSync": {
-        "failedSummary": "Honu Mod Info QoL Sync Failed",
-        "missingUserDetail": "Project Zomboid user folder is not configured.",
-        "successSummary": "Honu's Mod Info QoL Synced",
-        "successCreatedDetail": "honus_miqol_db.lua created.",
-        "successUpdatedDetail": "honus_miqol_db.lua updated.",
-        "failedDetail": "Failed to sync Honu Mod Info QoL."
+        "failedSummary": "Sinkronisasi QoL Info Mod Honu Gagal",
+        "missingUserDetail": "Folder pengguna Project Zomboid tidak dikonfigurasi.",
+        "successSummary": "Info Mod Honu QoL Disinkronkan",
+        "successCreatedDetail": "honus_miqol_db.lua dibuat.",
+        "successUpdatedDetail": "honus_miqol_db.lua diperbarui.",
+        "failedDetail": "Gagal menyinkronkan Honu Mod Info QoL."
       }
     },
     "mods": {
       "dataMigration": {
-        "summary": "Data Migration",
-        "detail": "Your local mod data is being updated. A new scan is running to refresh dependencies."
+        "summary": "Migrasi Data",
+        "detail": "Data mod lokal Anda sedang diperbarui. Pemindaian baru sedang berjalan untuk menyegarkan dependensi."
       },
       "syncInProgress": {
-        "summary": "Sync in Progress",
-        "detail": "A sync operation is already running. Please wait for it to complete."
+        "summary": "Sinkronisasi Sedang Berlangsung",
+        "detail": "Operasi sinkronisasi sudah berjalan. Silakan tunggu hingga selesai."
       },
       "localSyncComplete": {
-        "summary": "Local Mod Sync Complete",
-        "detail": "Local mod data has been refreshed successfully."
+        "summary": "Sinkronisasi Mod Lokal Selesai",
+        "detail": "Data mod lokal telah berhasil di-refresh."
       },
       "localSyncFailed": {
-        "summary": "Local Mod Sync Failed",
-        "detail": "Failed to sync local mods."
+        "summary": "Sinkronisasi Mod Lokal Gagal",
+        "detail": "Gagal menyinkronkan mod lokal."
       },
       "invalidDirectory": {
-        "summary": "Invalid Directory",
-        "detail": "The selected folder does not appear to be a valid Project Zomboid Workshop directory (AppID 108600)."
+        "summary": "Direktori Tidak Valid",
+        "detail": "Folder yang dipilih tampaknya bukan direktori Project Zomboid Workshop yang valid (AppID 108600)."
       },
       "steamApiRequired": {
-        "summary": "Steam Web API Key Required",
-        "detail": "Please use \"Set Steam API Key\" in the menu, then try syncing again."
+        "summary": "Kunci API Web Steam Diperlukan",
+        "detail": "Silakan gunakan \"Setel Kunci API Steam\" di menu, lalu coba sinkronkan lagi."
       },
       "workshopNoData": {
         "summary": "",
-        "detail": "No workshop metadata was returned; nothing was saved."
+        "detail": "Tidak ada metadata lokakarya yang dikembalikan; tidak ada yang terselamatkan."
       },
       "workshopPartial": {
         "summary": "Steam Workshop tersinkron sebagian",
-        "detail": "Received {{received}} of {{total}} workshop items. Missing IDs: {{missing}}{{suffix}}"
+        "detail": "Menerima item bengkel {{received}} dari {{total}}. ID yang hilang: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
-        "detail": "Workshop metadata has been saved successfully."
+        "summary": "Lokakarya Steam Disinkronkan",
+        "detail": "Metadata lokakarya telah berhasil disimpan."
       },
       "workshopUnauthorized": {
-        "summary": "Steam Web API Unauthorized",
-        "detail": "Steam returned 401 Unauthorized. Please verify your Steam Web API key and try again."
+        "summary": "Steam Web API Tidak Sah",
+        "detail": "Steam mengembalikan 401 Tidak Sah. Harap verifikasi kunci Steam Web API Anda dan coba lagi."
       },
       "workshopSyncFailed": {
         "summary": "",
-        "detail": "Failed to sync Steam Workshop metadata."
+        "detail": "Gagal menyinkronkan metadata Steam Workshop."
       }
     },
     "modDetails": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Nama preset sudah ada",
+        "detail": "Silakan pilih nama lain untuk \"{{name}}\"."
       },
       "removeFailed": {
-        "summary": "Remove Failed",
-        "missingUserDetail": "Project Zomboid user directory is not configured.",
-        "missingModDetail": "Mod ID was not found in mods.txt.",
-        "failedDetail": "Failed to remove mod from preset."
+        "summary": "Hapus Gagal",
+        "missingUserDetail": "Direktori pengguna Project Zomboid tidak dikonfigurasi.",
+        "missingModDetail": "ID Mod tidak ditemukan di mods.txt.",
+        "failedDetail": "Gagal menghapus mod dari preset."
       },
       "removed": {
-        "summary": "Removed",
-        "detailMultiple": "Selected mods were removed from the preset.",
-        "detailSingle": "Mod was removed from the preset."
+        "summary": "Dihapus",
+        "detailMultiple": "Mod yang dipilih telah dihapus dari preset.",
+        "detailSingle": "Mod telah dihapus dari preset."
       },
       "presetUpdated": {
-        "summary": "Preset updated",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Prasetel diperbarui",
+        "detailFallback": "pz_modlist_settings.cfg tidak dapat diperbarui.",
+        "detailFailed": "Gagal memperbarui pz_modlist_settings.cfg."
       }
     },
     "loadouts": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Nama preset sudah ada",
+        "detail": "Silakan pilih nama lain untuk \"{{name}}\"."
       },
       "noModsToExport": {
-        "summary": "No mods to export",
-        "detailCode": "Add at least one mod before generating code.",
-        "detailPreset": "Add at least one mod before saving a preset."
+        "summary": "Tidak ada mod untuk diekspor",
+        "detailCode": "Tambahkan setidaknya satu mod sebelum membuat kode.",
+        "detailPreset": "Tambahkan setidaknya satu mod sebelum menyimpan preset."
       },
       "copied": {
-        "summary": "Copied",
-        "detail": "{{label}} copied to clipboard."
+        "summary": "Disalin",
+        "detail": "{{label}} disalin ke papan klip."
       },
       "presetImported": {
-        "summary": "Preset imported",
-        "detail": "Imported {{count}} mods."
+        "summary": "Prasetel diimpor",
+        "detail": "Mod {{count}} yang diimpor."
       },
       "importFailed": {
-        "summary": "Import failed",
-        "detail": "Failed to import preset."
+        "summary": "Impor gagal",
+        "detail": "Gagal mengimpor preset."
       },
       "presetSaved": {
-        "summary": "Preset saved",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Prasetel disimpan",
+        "detailFallback": "pz_modlist_settings.cfg tidak dapat diperbarui.",
+        "detailFailed": "Gagal memperbarui pz_modlist_settings.cfg."
       },
       "presetSaveNotice": {
-        "reordered": "Reordered mods by dependency rules.",
-        "missingDependencies": "Missing dependencies: {{count}}.",
-        "missingWorkshopIds": "Missing workshop IDs: {{count}}.",
-        "incompatibilities": "Incompatibilities: {{count}}.",
-        "cycles": "Cycles detected: {{count}}.",
-        "conflicts": "File conflicts: {{count}}."
+        "reordered": "Mod yang disusun ulang berdasarkan aturan ketergantungan.",
+        "missingDependencies": "Ketergantungan yang hilang: {{count}}.",
+        "missingWorkshopIds": "ID bengkel tidak ada: {{count}}.",
+        "incompatibilities": "Ketidakcocokan: {{count}}.",
+        "cycles": "Siklus terdeteksi: {{count}}.",
+        "conflicts": "Konflik file: {{count}}."
       },
       "presetDeleted": {
-        "summary": "Preset deleted",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Prasetel dihapus",
+        "detailFallback": "pz_modlist_settings.cfg tidak dapat diperbarui.",
+        "detailFailed": "Gagal memperbarui pz_modlist_settings.cfg."
       }
     },
     "modCollections": {
       "loadFailed": {
         "summary": "",
-        "detail": "Unable to load collections. Verify your Steam Web API key and try again."
+        "detail": "Tidak dapat memuat koleksi. Verifikasi kunci Steam Web API Anda dan coba lagi."
       },
-      "steamUnauthorized": "Steam returned 401 Unauthorized. Verify your Steam Web API key.",
-      "queryFailed": "Failed to query Steam Workshop collections.",
+      "steamUnauthorized": "Steam mengembalikan 401 Tidak Sah. Verifikasi kunci Steam Web API Anda.",
+      "queryFailed": "Gagal menanyakan koleksi Steam Workshop.",
       "presetNotCreated": {
-        "summary": "Preset Not Created",
-        "detail": "No workshop items were found for this collection."
+        "summary": "Preset Tidak Dibuat",
+        "detail": "Tidak ada item bengkel yang ditemukan untuk koleksi ini."
       },
       "presetCreated": {
-        "summary": "Preset Created",
-        "detail": "Collection preset saved as \"{{name}}\"."
+        "summary": "Prasetel Dibuat",
+        "detail": "Prasetel koleksi disimpan sebagai \"{{name}}\"."
       },
       "presetUpdated": {
-        "summary": "Preset Updated",
-        "detail": "Collection preset \"{{name}}\" refreshed."
+        "summary": "Prasetel Diperbarui",
+        "detail": "Prasetel koleksi \"{{name}}\" disegarkan."
       },
       "presetRemoved": {
-        "summary": "Preset Removed",
-        "detail": "Collection preset has been removed."
+        "summary": "Prasetel Dihapus",
+        "detail": "Prasetel koleksi telah dihapus."
       }
     },
     "server": {
       "invalidName": {
-        "summary": "Invalid server name",
-        "detailMissing": "Enter a server name.",
-        "detailInvalidChars": "Server name contains invalid filename characters.",
-        "detailTrailing": "Server name cannot end with a dot or space.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "summary": "Nama server tidak valid",
+        "detailMissing": "Masukkan nama server.",
+        "detailInvalidChars": "Nama server berisi karakter nama file yang tidak valid.",
+        "detailTrailing": "Nama server tidak boleh diakhiri dengan titik atau spasi.",
+        "detailNoSpaces": "Nama server harus berupa satu kata tanpa spasi.",
+        "detailAscii": "Gunakan karakter ASCII saja (huruf, angka, dan simbol bahasa Inggris)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Nama server sudah dipakai",
+        "detail": "Nama server itu sudah dipakai. Pilih nama lain untuk server baru."
       },
       "missingUserFolder": {
-        "summary": "Missing user folder",
-        "detail": "Set your Project Zomboid user folder first."
+        "summary": "Folder pengguna tidak ada",
+        "detail": "Atur folder pengguna Project Zomboid Anda terlebih dahulu."
       },
       "createFailed": {
-        "summary": "Create failed",
-        "detail": "Failed to create server files."
+        "summary": "Pembuatan gagal",
+        "detail": "Gagal membuat file server."
       },
       "saved": {
-        "summary": "Saved",
-        "detail": "Server files updated."
+        "summary": "Disimpan",
+        "detail": "File server diperbarui."
       },
       "saveFailed": {
-        "summary": "Save failed",
-        "detail": "Failed to save server files."
+        "summary": "Gagal menyimpan",
+        "detail": "Gagal menyimpan file server."
       }
     }
   },
   "primeng": {
-    "startsWith": "Starts with",
-    "contains": "Contains",
-    "notContains": "Not contains",
-    "endsWith": "Ends with",
-    "equals": "Equals",
-    "notEquals": "Not equals",
-    "noFilter": "No filter",
-    "lt": "Less than",
-    "lte": "Less than or equal to",
-    "gt": "Greater than",
-    "gte": "Greater than or equal to",
-    "dateIs": "Date is",
-    "dateIsNot": "Date is not",
-    "dateBefore": "Date is before",
-    "dateAfter": "Date is after",
-    "clear": "Clear",
-    "apply": "Apply",
-    "matchAll": "Match all",
-    "matchAny": "Match any",
-    "addRule": "Add rule",
-    "removeRule": "Remove rule"
+    "startsWith": "Dimulai dengan",
+    "contains": "Berisi",
+    "notContains": "Tidak berisi",
+    "endsWith": "Berakhir dengan",
+    "equals": "Setara",
+    "notEquals": "Tidak setara",
+    "noFilter": "Tidak ada filter",
+    "lt": "Kurang dari",
+    "lte": "Kurang dari atau sama dengan",
+    "gt": "Lebih besar dari",
+    "gte": "Lebih besar dari atau sama dengan",
+    "dateIs": "Tanggal adalah",
+    "dateIsNot": "Tanggal tidak",
+    "dateBefore": "Tanggal sebelumnya",
+    "dateAfter": "Tanggal setelahnya",
+    "clear": "Jelas",
+    "apply": "Terapkan",
+    "matchAll": "Cocokkan semuanya",
+    "matchAny": "Cocokkan apa saja",
+    "addRule": "Tambahkan aturan",
+    "removeRule": "Hapus aturan"
   },
   "dashboard": {
     "headers": {
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Server",
       "refresh": "Muat Ulang",
       "createNewServer": "Buat Server Baru",
       "copy": "Salin",
       "deleteServer": "Hapus Server",
       "createBackupOnSave": "Buat cadangan saat menyimpan",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Tidak ada file server yang ditemukan.",
+      "selectServerPlaceholder": "Pilih server",
+      "serverEditor": "Penyunting Server",
+      "selectServerPrompt": "Pilih server untuk mulai mengedit.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Variabel Sandbox",
         "spawnpoints": "Titik Spawn",
         "spawnregions": "Wilayah Spawn"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Tidak ada entri INI yang ditemukan.",
       "serverConfigVars": "Variabel Konfigurasi Server",
-      "searchFields": "Search fields",
+      "searchFields": "Bidang pencarian",
       "reset": "Atur Ulang",
       "saveChanges": "Simpan Perubahan",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Tidak ada variabel sandbox yang ditemukan.",
       "sandboxVariables": "Variabel Sandbox",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
-      "cancel": "Cancel",
-      "create": "Create",
+      "searchVariables": "Variabel pencarian",
+      "createServerTitle": "Buat Server Baru",
+      "copyServerTitle": "Salin Server",
+      "copyServerPrompt": "Salin {{name}} dan buat file berikut:",
+      "serverName": "Nama server",
+      "createServerHint": "Membuat .ini, _SandboxVars.lua, _spawnpoints.lua, dan _spawnregions.lua",
+      "cancel": "Batalkan",
+      "create": "Buat",
       "editServerVariableTitle": "Edit Variabel Server",
       "editSandboxVariableTitle": "Edit Variabel Kotak Pasir",
-      "noDescription": "No description available.",
-      "save": "Save",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "noDescription": "Tidak ada deskripsi yang tersedia.",
+      "save": "Simpan",
+      "deleteServerTitle": "Hapus Server",
+      "deleteServerPrompt": "Hapus {{name}} dan semua file server terkait?",
       "trueLabel": "BENAR",
       "falseLabel": "PALSU",
       "exportServer": "Ekspor"

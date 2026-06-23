@@ -140,10 +140,10 @@
         "ผู้เล่นทำร้ายผู้เล่นคนอื่นได้"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP เข้าสู่ระบบการแชทของผู้ดูแลระบบ"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP ถูกบันทึกลงในไฟล์"
       ],
       "PauseEmpty": [
         "เวลาในเกมจะหยุดเมื่อไม่มีผู้เล่นออนไลน์"
@@ -281,10 +281,10 @@
         "เวลาเป็นวินาทีก่อนที่สงครามจะเริ่มต้น"
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "ระยะเวลาสงครามเป็นวินาที"
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "ขีดจำกัด Hit Point ของเซฟเฮาส์"
       ],
       "ServerPlayerID": [
         "ServerPlayerID เป็นตัวบ่งชี้ว่าตัวละครมาจากเซิร์ฟเวอร์อื่นหรือผู้เล่นคนเดียว ค่านี้อาจเปลี่ยนแปลงได้โดยการซอฟต์รีเซ็ต หากตัวเลขนี้ตรงกับไคลเอ็นต์ ฝั่งไคลเอ็นต์ ต้องสร้างตัวละครใหม่ ซึ่งใช้ร่วมกับ ResetID แนะนำให้คุณสำรองข้อมูลไอดีเหล่านี้ไว้ด้วย"
@@ -308,7 +308,7 @@
         "ไอดีช่อง Discord (ใช้งานเมื่อพบปัญหากับตัวเลือกชื่อช่อง Discord)"
       ],
       "WebhookAddress": [
-        "The Slack incoming webhook URL"
+        "URL เว็บฮุคขาเข้าของ Slack"
       ],
       "Password": [
         "ไคลเอ็นต์ต้องรู้รหัสผ่านนี้เพื่อเข้าร่วมเซิร์ฟเวอร์ (ละเว้นเมื่อโฮสต์เซิร์ฟเวอร์โดยใช้ปุ่มโฮสต์)"
@@ -326,7 +326,7 @@
         "ผู้เล่นมีอาการเหนื่อยล้าได้และจำเป็นต้องนอน (ละเว้นหาก SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "งานระหว่างทำ: การเปิดใช้งานการตั้งค่านี้อาจทำให้ตำแหน่งของผู้เล่นไม่ตรงกัน"
       ],
       "WorkshopItems": [
         "ระบุไอดีม็อดในเวิร์กชอปเพื่อให้เซิร์ฟเวอร์ดาวน์โหลด ต้องคั่นม็อดแต่ละรายการด้วยเครื่องหมายอัฒภาค ตัวอย่าง: WorkshopItems=514427485;513111049"
@@ -396,8 +396,8 @@
       ],
       "ClientCommandFilter": [
         "รายการคำสั่งที่คั่นด้วยอัฒภาคซึ่งจะไม่ถูกเขียนลงในบันทึกเซิร์ฟเวอร์ cmd.txt ",
-        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
-        "+vehicle.installPart means DO write that command"
+        "-ยานพาหนะ การป้อน * หมายถึง ห้ามเขียนคำสั่งยานพาหนะใดๆ การป้อนข้อมูล:",
+        "+vehicle.installPart หมายถึง DO เขียนคำสั่งนั้น"
       ],
       "ClientActionLogs": [
         "รายการกิจกรรมที่คั่นด้วยอัฒภาคจะถูกเขียนไปยังบันทึกของเซิร์ฟเวอร์ ClientActionLogs.txt"
@@ -443,13 +443,13 @@
         "1=ไม่แสดง 2=เพื่อนเท่านั้น 3=ทุกคน"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "ปิดการใช้งานการลากจูงยานพาหนะ"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "ปิดการใช้งานการลากจูงรถพ่วง"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "ปิดการใช้งานการลากจูงยานพาหนะที่ถูกไฟไหม้"
       ],
       "BadWordListFile": [
         "พาธไปยังไฟล์พร้อมรายการคำต้องห้าม "
@@ -464,40 +464,40 @@
         "สัญลักษณ์หรือข้อความที่จะมาแทนที่คำที่ไม่ดี"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "ปิดใช้งานการป้องกันการโกงของระบบความปลอดภัย"
       ],
       "AntiCheatMovement": [
         "ปิดการป้องกันการโกงสำหรับการเคลื่อนไหว"
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "ปิดการใช้งานการป้องกันการโกงการโจมตีของตัวละคร"
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "ปิดใช้งานการป้องกันการโกงการตรวจสอบแพ็คเก็ต"
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "ปิดการใช้งานการป้องกันการโกงการอนุญาตของผู้เล่น"
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "ปิดใช้งานการป้องกันการโกง XP ของผู้เล่น"
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "ปิดการใช้งานการป้องกันการโกงการตรวจสอบไฟ"
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "ปิดใช้งานการป้องกันการโกงของเซฟเฮาส์"
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "ปิดใช้งานการตรวจสอบสูตรการป้องกันการป้องกันการโกง"
       ],
       "AntiCheatPlayer": [
         "ปิดการป้องกันการโกงสำหรับผู้เล่น"
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "ปิดใช้งานการป้องกันการโกงเช็คซัม"
       ],
       "AntiCheatItem": [
-        "Disables item checks anti-cheat protection."
+        "ปิดใช้งานการตรวจสอบรายการการป้องกันการป้องกันการโกง"
       ],
       "AntiCheatServerCustomization": [
         "ปิดการป้องกันการโกงสำหรับการปรับแต่งเซิร์ฟเวอร์"
@@ -506,10 +506,10 @@
         "กำหนดระยะเวลาการอัปเดตผู้เล่นหลายคนเป็นวินาที "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "ปิดการใช้งานกระดานคะแนน"
       ],
       "HideAdminsInPlayerList": [
-        "Hides admins in the player list."
+        "ซ่อนผู้ดูแลระบบในรายการผู้เล่น"
       ],
       "Seed": [
         "เมล็ดพันธุ์ worldgen ที่ใช้ในการสร้างโลก<br>หากคุณต้องการเปลี่ยนแปลง ให้ใส่ค่าใหม่เข้าไปแล้วลบ map_worldgen.bin ในไดเร็กทอรีบันทึกของคุณ"

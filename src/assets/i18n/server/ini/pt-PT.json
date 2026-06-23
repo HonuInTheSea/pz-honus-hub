@@ -140,10 +140,10 @@
         "Os jogadores podem ferir e matar outros jogadores"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP está conectado ao chat do administrador"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP está registrado no arquivo"
       ],
       "PauseEmpty": [
         "O tempo do jogo para quando não há jogadores online"
@@ -173,10 +173,10 @@
         "Adicione nomes de usuário desconhecidos à lista de permissões quando os jogadores entrarem. "
       ],
       "DisplayUserName": [
-        "Display usernames above player's heads in-game."
+        "Exibir nomes de usuários acima das cabeças dos jogadores no jogo."
       ],
       "ShowFirstAndLastName": [
-        "Display first & last name above player's heads."
+        "Exiba o nome e o sobrenome acima das cabeças dos jogadores."
       ],
       "SpawnPoint": [
         "Force cada novo jogador a aparecer nessas coordenadas mundiais definidas x, y, z. "
@@ -196,7 +196,7 @@
       "SpawnItems": [
         "Tipos de itens com os quais novos jogadores aparecem.",
         "Separe vários tipos de itens com vírgulas.",
-        "Example: Base.Axe,Base.Bag_BigHikingBag"
+        "Exemplo: Base.Axe,Base.Bag_BigHikingBag"
       ],
       "DefaultPort": [
         "Porta inicial padrão para dados do jogador. "
@@ -233,7 +233,7 @@
         "Remova as contas dos jogadores da lista de permissões após a morte. "
       ],
       "NoFire": [
-        "All forms of fire are disabled - except for campfires"
+        "Todas as formas de fogo estão desativadas - exceto fogueiras"
       ],
       "AnnounceDeath": [
         "Se marcada, toda vez que um jogador morrer uma mensagem global será exibida no chat"
@@ -281,10 +281,10 @@
         "Tempo em segundos antes do início da guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Duração da guerra em segundos."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limite de pontos de vida do Safehouse."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determina se um personagem é de outro servidor ou de um único jogador. "
@@ -293,13 +293,13 @@
         "A porta para o RCON (Console Remoto)"
       ],
       "RCONPassword": [
-        "RCON password (Pick a strong password)"
+        "Senha RCON (escolha uma senha forte)"
       ],
       "DiscordEnable": [
-        "Enables global text chat integration with a Discord channel"
+        "Permite integração global de chat de texto com um canal Discord"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Token de acesso do bot Discord"
       ],
       "DiscordChannel": [
         "O nome do canal Discord. "
@@ -326,7 +326,7 @@
         "Os jogadores ficam cansados ​​e precisam dormir. "
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Ativar esta configuração pode causar dessincronização visual das posições dos jogadores."
       ],
       "WorkshopItems": [
         "Liste os IDs dos Mods do Workshop para download no servidor. "
@@ -350,7 +350,7 @@
         "A distância máxima do bloco na qual os sons VOIP podem ser ouvidos."
       ],
       "Voice3D": [
-        "Toggle directional audio for VOIP"
+        "Alternar áudio direcional para VOIP"
       ],
       "server_browser_announced_ip": [
         "Defina o IP do qual o servidor é transmitido. "
@@ -396,14 +396,14 @@
       ],
       "ClientCommandFilter": [
         "Lista de comandos separados por ponto e vírgula que não serão gravados no log do servidor cmd.txt. ",
-        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
-        "+vehicle.installPart means DO write that command"
+        "-veículo. Inserir * significa NÃO escrever nenhum comando do veículo. Inserindo:",
+        "+vehicle.installPart significa Escreva esse comando"
       ],
       "ClientActionLogs": [
         "Lista de ações separadas por ponto e vírgula que serão gravadas no log do servidor ClientActionLogs.txt."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Acompanhe as alterações nos níveis de vantagens do jogador no log do servidor PerkLog.txt"
       ],
       "ItemNumbersLimitPerContainer": [
         "Número máximo de itens que podem ser colocados em um contêiner.  "
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Controla a exibição de jogadores remotos no mapa do jogo.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Oculto 2=Amigos 3=Todos"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Desativa o reboque do veículo"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Desativa o reboque do trailer"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Desativa reboque de veículo queimado"
       ],
       "BadWordListFile": [
         "Caminho para o arquivo com a lista de palavras a serem proibidas. "
@@ -464,37 +464,37 @@
         "O símbolo ou pedaço de texto que substituirá o palavrão"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Desativa a proteção anti-cheat do sistema de segurança."
       ],
       "AntiCheatMovement": [
         "Desativa a proteção antitrapa de movimento."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Desativa a proteção anti-cheat do personagem."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de pacotes."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Desativa a proteção anti-cheat das permissões do jogador."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Desativa a proteção anti-cheat do XP do jogador."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de fogo."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Desativa a proteção anti-cheat do safehouse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de receitas."
       ],
       "AntiCheatPlayer": [
         "Desativa a proteção antitrapa de jogadores."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Desativa a proteção anti-cheat de checksum."
       ],
       "AntiCheatItem": [
         "Desativa a proteção anti-cheat das verificações de itens."
@@ -506,7 +506,7 @@
         "Define o período de atualização multijogador em segundos. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Desativa o placar."
       ],
       "HideAdminsInPlayerList": [
         "Oculta administradores na lista de jogadores."

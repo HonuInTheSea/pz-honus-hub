@@ -55,7 +55,7 @@
   "CompostTime": "Komposttid",
   "StatsDecrease": "Statistikminskning",
   "NatureAbundance": "Naturens överflöd",
-  "Alarm": "Alarm",
+  "Alarm": "Larm",
   "LockedHouses": "Låsta hus",
   "StarterKit": "Startkit",
   "Nutrition": "Näring",
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

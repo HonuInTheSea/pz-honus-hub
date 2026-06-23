@@ -140,10 +140,10 @@
         "Os jogadores podem ferir e matar outros jogadores"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP está conectado ao chat do administrador"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP está registrado no arquivo"
       ],
       "PauseEmpty": [
         "O tempo do jogo é parado quando não há jogadores online"
@@ -281,10 +281,10 @@
         "Tempo em segundos antes do início da guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Duração da guerra em segundos."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limite de pontos de vida do Safehouse."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determina se um personagem é de outro servidor ou single player. Este valor pode ser alterado por soft resets. Se este número corresponder ao jogador, o jogador deve criar um novo personagem. Isso é usado em conjunto com ResetID. É altamente recomendável que você faça backup desses IDs em algum lugar"
@@ -326,7 +326,7 @@
         "Os jogadores se cansam e precisam dormir. (Ignorado se SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Ativar esta configuração pode causar dessincronização visual das posições dos jogadores."
       ],
       "WorkshopItems": [
         "Liste os IDs de Mods do Workshop para o servidor baixar. Cada um deve ser separado por um ponto e vírgula. Exemplo: WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1 = Oculto 2 = Amigos 3 = Todos"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Desativa o reboque do veículo"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Desativa o reboque do trailer"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Desativa reboque de veículo queimado"
       ],
       "BadWordListFile": [
         "Caminho para o arquivo com a lista de palavras a serem proibidas. "
@@ -464,37 +464,37 @@
         "O símbolo ou pedaço de texto que substituirá o palavrão"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Desativa a proteção anti-cheat do sistema de segurança."
       ],
       "AntiCheatMovement": [
         "Desativa a proteção antitrapa de movimento."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Desativa a proteção anti-cheat do personagem."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de pacotes."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Desativa a proteção anti-cheat das permissões do jogador."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Desativa a proteção anti-cheat do XP do jogador."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de fogo."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Desativa a proteção anti-cheat do safehouse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Desativa a proteção anti-cheat das verificações de receitas."
       ],
       "AntiCheatPlayer": [
         "Desativa a proteção antitrapa de jogadores."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Desativa a proteção anti-cheat de checksum."
       ],
       "AntiCheatItem": [
         "Desativa a proteção anti-cheat das verificações de itens."
@@ -506,7 +506,7 @@
         "Define o período de atualização multijogador em segundos. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Desativa o placar."
       ],
       "HideAdminsInPlayerList": [
         "Oculta administradores na lista de jogadores."

@@ -1,7 +1,7 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolChat": "PVP naplóeszköz csevegés",
     "PVPLogToolFile": "PVP naplóeszköz fájl",
     "PauseEmpty": "Szünet Üres",
     "GlobalChat": "Globális csevegés",
@@ -13,7 +13,7 @@
     "AutoCreateUserInWhiteList": "Felhasználó automatikus létrehozása a fehér listán",
     "DisplayUserName": "Felhasználónév megjelenítése",
     "ShowFirstAndLastName": "Utó- és vezetéknév megjelenítése",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Újraéledési pont",
     "SafetySystem": "Biztonsági rendszer",
     "ShowSafety": "Mutasd a Biztonságot",
     "SafetyToggleTimer": "Biztonsági kapcsoló időzítő",
@@ -23,7 +23,7 @@
     "DefaultPort": "Alapértelmezett port",
     "UDPPort": "UDP port",
     "ResetID": "Az azonosító visszaállítása",
-    "Mods": "Mods",
+    "Mods": "Modok",
     "Map": "Térkép",
     "DoLuaChecksum": "Csinálj Lua ellenőrző összeget",
     "Public": "Nyilvános",
@@ -36,12 +36,12 @@
     "NoFire": "Nincs Tűz",
     "AnnounceDeath": "Hirdesse a Halált",
     "SaveWorldEveryMinutes": "Mentse meg a világot minden percben",
-    "PlayerSafehouse": "Player Safehouse",
-    "AdminSafehouse": "Admin Safehouse",
+    "PlayerSafehouse": "Játékos menedékház",
+    "AdminSafehouse": "Admin menedékház",
     "SafehouseAllowTrepass": "A Safehouse Trespass engedélyezése",
     "SafehouseAllowFire": "Safehouse Engedélyezze a tüzet",
     "SafehouseAllowLoot": "Safehouse Engedélyezze a zsákmányt",
-    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseAllowRespawn": "Újraéledés engedélyezése menedékházban",
     "SafehouseDaySurvivedToClaim": "A Safehouse Day túlélte az igényt",
     "SafeHouseRemovalTime": "Biztonságos házeltávolítási idő",
     "SafehouseAllowNonResidential": "Safehouse Engedélyezi nem lakossági",
@@ -55,7 +55,7 @@
     "RCONPort": "RCON port",
     "RCONPassword": "RCON jelszó",
     "DiscordEnable": "Discord engedélyezése",
-    "DiscordToken": "Discord Token",
+    "DiscordToken": "Discord token",
     "DiscordChannel": "Discord csatorna",
     "DiscordChannelID": "Discord csatornaazonosító",
     "WebhookAddress": "Webhook címe",
@@ -77,8 +77,8 @@
     "SpeedLimit": "Sebességhatár",
     "LoginQueueConnectTimeout": "Bejelentkezési sor csatlakozási időkorlát",
     "server_browser_announced_ip": "Szerverböngésző bejelentette ip",
-    "PlayerRespawnWithSelf": "Player Respawn With Self",
-    "PlayerRespawnWithOther": "Player Respawn With Other",
+    "PlayerRespawnWithSelf": "Játékos újraéledése saját magával",
+    "PlayerRespawnWithOther": "Játékos újraéledése mással",
     "FastForwardMultiplier": "Gyors előre szorzó",
     "DisableSafehouseWhenPlayerConnected": "A Safehouse letiltása a lejátszó csatlakoztatásakor",
     "Faction": "Frakció",
@@ -104,7 +104,7 @@
     "PVPMeleeDamageModifier": "PVP közelharci sebzésmódosító",
     "PVPFirearmDamageModifier": "PVP lőfegyver sérülés módosító",
     "CarEngineAttractionModifier": "Autómotor vonzásmódosító",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Játékos ütközése játékossal",
     "MapRemotePlayerVisibility": "Térkép távoli lejátszó láthatósága",
     "BackupsCount": "Biztonsági másolatok száma",
     "BackupsOnStart": "Biztonsági mentések induláskor",
@@ -118,14 +118,14 @@
     "BadWordReplacement": "Rossz szócsere",
     "AntiCheatSafety": "Csalás elleni biztonság",
     "AntiCheatMovement": "Csalás elleni mozgalom",
-    "AntiCheatHit": "Anti Cheat Hit",
-    "AntiCheatPacket": "Anti Cheat Packet",
+    "AntiCheatHit": "Anti-cheat találat",
+    "AntiCheatPacket": "Anti-cheat csomag",
     "AntiCheatPermission": "Csalás elleni engedély",
-    "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatXP": "Anti-cheat XP",
+    "AntiCheatFire": "Anti-cheat tűz",
+    "AntiCheatSafeHouse": "Anti-cheat menedékház",
     "AntiCheatRecipe": "Csalás elleni recept",
-    "AntiCheatPlayer": "Anti Cheat Player",
+    "AntiCheatPlayer": "Anti-cheat játékos",
     "AntiCheatChecksum": "Csalás elleni ellenőrző összeg",
     "AntiCheatItem": "Anti Cheat elem",
     "AntiCheatServerCustomization": "Anti Cheat Server testreszabása",
@@ -140,10 +140,10 @@
         "A játékosok árthatnak és megölhetnek más játékosokat."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "A PVP bejelentkezett az adminisztrátori csevegésbe"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "A PVP be van naplózva a fájlba"
       ],
       "PauseEmpty": [
         "A játékidő leáll, ha nincs online játékos."
@@ -281,10 +281,10 @@
         "A háború kezdete előtti idő másodpercekben."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "A háború időtartama másodpercben."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse találati ponthatár."
       ],
       "ServerPlayerID": [
         "A ServerPlayerID meghatározza, hogy egy karakter másik Szerverről, vagy egyjátékos játékból származik-e. Ezt az értéket a finom-újraindítások módosíthatják. Ha ez a szám megegyezik a klienssel, akkor a kliensnek új karaktert kell létrehoznia. Ez a ResetID azonosítóval együtt használható. Erősen ajánlott, hogy készíts biztonsági másolatot valahová ezekről az azonosítókról."
@@ -326,7 +326,7 @@
         "A játékosok elfáradnak és aludniuk kell. (Figyelmen kívül hagyja, ha a SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: A beállítás aktiválása a játékosok pozícióinak vizuális deszinkronizálását okozhatja."
       ],
       "WorkshopItems": [
         "Műhely-azonosítók listája, amit a szerver letölt. Mindegyiket pontosvesszővel kell elválasztani egymástól. Például: WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=Rejtett 2=Barátok 3=Mindenki"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Letiltja a jármű vontatását"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Letiltja az utánfutó vontatását"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Letiltja a leégett jármű vontatását"
       ],
       "BadWordListFile": [
         "A tiltandó szavak listáját tartalmazó fájl elérési útja. "
@@ -464,37 +464,37 @@
         "Az a szimbólum vagy szövegrész, amely felváltja a rossz szót"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Letiltja a biztonsági rendszer csalás elleni védelmét."
       ],
       "AntiCheatMovement": [
         "Letiltja a mozgás elleni csalásvédelmet."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Letiltja a karakterütés elleni csalás elleni védelmet."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Letiltja a csomagellenőrzések csalás elleni védelmét."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Letiltja a játékos engedélyek csalás elleni védelmét."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Letiltja a Player XP csalás elleni védelmét."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Letiltja a tűzellenőrzések csalás elleni védelmét."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Letiltja a safehouse csalás elleni védelmet."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Letiltja a receptellenőrzést a csalás elleni védelemben."
       ],
       "AntiCheatPlayer": [
         "Letiltja a játékosok elleni csalásvédelmet."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Letiltja az ellenőrzőösszegű csalás elleni védelmet."
       ],
       "AntiCheatItem": [
         "Letiltja az elemellenőrzések csalás elleni védelmét."
@@ -506,7 +506,7 @@
         "Beállítja a többjátékos frissítési időszakot másodpercekben. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Letiltja az eredménytáblát."
       ],
       "HideAdminsInPlayerList": [
         "Elrejti az adminokat a játékoslistában."

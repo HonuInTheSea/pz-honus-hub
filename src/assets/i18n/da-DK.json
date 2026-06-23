@@ -26,7 +26,7 @@
       "dangerZone": "Farezone"
     },
     "items": {
-      "dashboard": "Dashboard",
+      "dashboard": "Kontrolpanel",
       "logInspector": "Log Inspektør",
       "configureFolders": "Konfigurer mapper",
       "setSteamApiKey": "Indstil Steam API-nøgle",
@@ -40,7 +40,7 @@
       "pzWiki": "Officiel Project Zomboid Wiki",
       "b41Map": "B41 kort",
       "b42Map": "B42 kort",
-      "workshop": "Project Zomboid Steam Workshop",
+      "workshop": "Project Zomboid Steam-værksted",
       "subreddit": "r/projectzomboid",
       "discord": "Projekt Zomboid",
       "moddingDiscord": "PZ Modding Community",
@@ -69,7 +69,7 @@
       "searchPlaceholder": "Søg i samlinger",
       "sortLabel": "Sorter efter",
       "periodLabel": "Over tidsperiode",
-      "tagsLabel": "Tags",
+      "tagsLabel": "Mærker",
       "tagsPlaceholder": "Vælg tags",
       "sortMostPopular": "Mest populær",
       "sortMostRecent": "Seneste",
@@ -192,7 +192,7 @@
       "server": "Serverstyring",
       "logInspector": "Log inspektør",
       "folderSetup": "Opsætning af mappe",
-      "tauri": "Desktop (Tauri) integration",
+      "tauri": "Desktop-integration (Tauri)",
       "privacy": "Privatliv og opbevaring",
       "troubleshooting": "Fejlfinding",
       "faq": "FAQ"
@@ -274,7 +274,7 @@
       "tip": "Tip: Hvis du skifter maskine eller flytter din mods-mappe, skal du blot gennemse igen for at opdatere den gemte sti."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
+      "title": "Desktop-integration (Tauri)",
       "bullet1": "<strong>Filsystemadgang</strong> - mappesøgning og scanning udføres via skrivebordsskallen.",
       "bullet2": "<strong>Åbn eksterne links</strong> - Steam Workshop-links åbnes ved hjælp af din OS-standardbrowser.",
       "bullet3": "<strong>Åbne mapper</strong> - starter OS-filstifinderen med fokus på mod-mappen."
@@ -300,17 +300,17 @@
   "modDetails": {
     "fields": {
       "name": "Navn",
-      "modId": "Mod ID",
+      "modId": "Mod-id",
       "author": "Forfatter",
-      "version": "Mod Version",
+      "version": "Mod version",
       "versionMin": "Minimum spilversion",
       "versionMax": "Maksimal spilversion",
       "url": "URL",
       "description": "Beskrivelse",
-      "tags": "Tags",
+      "tags": "Mærker",
       "noTags": "Ingen tags",
       "packs": "Pakker",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "Tile-definitioner",
       "workshopTitle": "Workshop titel",
       "workshopCreator": "Workshop skaber",
       "fileSize": "Filstørrelse",
@@ -344,7 +344,7 @@
   "tags": {
     "animals": "Dyr",
     "audio": "Lyd",
-    "balance": "Balance",
+    "balance": "Balancering",
     "build_41": "Byg 41",
     "build_42": "Byg 42",
     "build_40": "Byg 40",
@@ -353,7 +353,7 @@
     "farming": "Landbrug",
     "food": "Fødsel",
     "framework": "Ramme",
-    "hardmode": "Hardmode",
+    "hardmode": "Svær tilstand",
     "interface": "Grænseflade",
     "items": "Elementer",
     "language_translation": "Sprog/Oversættelse",
@@ -362,12 +362,12 @@
     "military": "Militær",
     "misc": "Diverse",
     "models": "Modeller",
-    "multiplayer": "Multiplayer",
+    "multiplayer": "Flerspiller",
     "pop_culture": "Popkultur",
     "qol": "QoL",
     "realistic": "Realistisk",
     "silly_fun": "Sjove/Sjove",
-    "skills": "Skills",
+    "skills": "Færdigheder",
     "textures": "Teksturer",
     "traits": "Trækker",
     "vehicles": "Køretøjer",
@@ -375,7 +375,7 @@
     "wip": "WIP"
   },
   "tagFilter": {
-    "label": "Tags",
+    "label": "Mærker",
     "matchLabel": "Kamp",
     "matchAny": "ELLER",
     "matchAll": "OG",
@@ -388,7 +388,7 @@
     "columns": {
       "name": "Navn",
       "author": "Forfatter",
-      "workshopId": "Workshop ID",
+      "workshopId": "Værksteds-id",
       "lastModified": "Sidst ændret dato"
     },
     "filters": {
@@ -589,12 +589,12 @@
         "detailMissing": "Indtast et servernavn.",
         "detailInvalidChars": "Servernavnet indeholder ugyldige filnavntegn.",
         "detailTrailing": "Servernavnet må ikke slutte med en prik eller et mellemrum.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "Servernavnet skal være et enkelt ord uden mellemrum.",
+        "detailAscii": "Brug kun ASCII-tegn (engelske bogstaver, tal og symboler)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Servernavnet er allerede taget",
+        "detail": "Det servernavn er allerede taget. Vælg et andet navn til den nye server."
       },
       "missingUserFolder": {
         "summary": "Manglende brugermappe",
@@ -651,7 +651,7 @@
       "updatedMods": "Opdaterede mods"
     },
     "labels": {
-      "totalMods": "Total Mods",
+      "totalMods": "Mods i alt",
       "lastLocalSync": "Sidste Local Mod Sync",
       "lastWorkshopSync": "Sidste Workshop Sync",
       "subscribers": "abonnenter",
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Servere",
       "refresh": "Opdater",
       "createNewServer": "Opret ny server",
       "copy": "Kopiér",
       "deleteServer": "Slet server",
       "createBackupOnSave": "Opret sikkerhedskopi ved gemning",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Der blev ikke fundet nogen serverfiler.",
+      "selectServerPlaceholder": "Vælg en server",
+      "serverEditor": "Servereditor",
+      "selectServerPrompt": "Vælg en server for at begynde redigeringen.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox-variabler",
         "spawnpoints": "Spawn-punkter",
         "spawnregions": "Spawn-regioner"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Ingen INI-poster fundet.",
       "serverConfigVars": "Serverkonfigurationsvariabler",
-      "searchFields": "Search fields",
+      "searchFields": "Søgefelter",
       "reset": "Nulstil",
       "saveChanges": "Gem ændringer",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Ingen sandkassevariabler fundet.",
       "sandboxVariables": "Sandbox-variabler",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "Søg variabler",
+      "createServerTitle": "Opret ny server",
+      "copyServerTitle": "Kopier server",
+      "copyServerPrompt": "Kopier {{name}} og opret følgende filer:",
+      "serverName": "Servernavn",
+      "createServerHint": "Opretter .ini, _SandboxVars.lua, _spawnpoints.lua og _spawnregions.lua",
       "cancel": "Ophæve",
-      "create": "Create",
+      "create": "Opret",
       "editServerVariableTitle": "Rediger servervariabel",
       "editSandboxVariableTitle": "Rediger Sandbox Variable",
-      "noDescription": "No description available.",
+      "noDescription": "Ingen beskrivelse tilgængelig.",
       "save": "Spare",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "Slet server",
+      "deleteServerPrompt": "Vil du slette {{name}} og alle relaterede serverfiler?",
       "trueLabel": "ægte",
       "falseLabel": "falsk",
       "exportServer": "Eksportér"

@@ -310,7 +310,7 @@
       "tags": "Etiketler",
       "noTags": "Etiket yok",
       "packs": "Paketler",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "Tiledef'ler",
       "workshopTitle": "Atölye Başlığı",
       "workshopCreator": "Atölye Oluşturucu",
       "fileSize": "Dosya Boyutu",
@@ -589,12 +589,12 @@
         "detailMissing": "Bir sunucu adı girin.",
         "detailInvalidChars": "Sunucu adı geçersiz dosya adı karakterleri içeriyor.",
         "detailTrailing": "Sunucu adı nokta veya boşlukla bitemez.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "Sunucu adı boşluksuz tek kelimeden oluşmalıdır.",
+        "detailAscii": "Yalnızca ASCII karakterlerini kullanın (İngilizce harfler, sayılar ve simgeler)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Sunucu adı zaten alınmış",
+        "detail": "Bu sunucu adı zaten alınmış. Yeni sunucu için başka bir ad seçin."
       },
       "missingUserFolder": {
         "summary": "Eksik kullanıcı klasörü",
@@ -639,76 +639,76 @@
   },
   "dashboard": {
     "headers": {
-      "overview": "Overview",
-      "updateStatus": "Mods Update Status",
-      "topInstalled": "Top Installed Mods (by Subscriptions)",
-      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
-      "installsOverTime": "Mod Installs Over Time",
-      "largestMods": "Largest Mods (by File Size)",
-      "latestNews": "Latest Project Zomboid News",
-      "popularThisWeek": "Popular Mods This Week",
-      "latestMods": "Latest Mods",
-      "updatedMods": "Updated Mods"
+      "overview": "Genel Bakış",
+      "updateStatus": "Mod Güncelleme Durumu",
+      "topInstalled": "En Çok Yüklenen Modlar (Aboneliklere göre)",
+      "lastUpdatedInstalled": "En Son Güncellenen Yüklü Modlar",
+      "installsOverTime": "Mod Zamanla Yüklenir",
+      "largestMods": "En Büyük Modlar (Dosya Boyutuna Göre)",
+      "latestNews": "Son Proje Zomboid Haberleri",
+      "popularThisWeek": "Bu Hafta Popüler Modlar",
+      "latestMods": "En Son Modlar",
+      "updatedMods": "Güncellenen Modlar"
     },
     "labels": {
-      "totalMods": "Total Mods",
-      "lastLocalSync": "Last Local Mod Sync",
-      "lastWorkshopSync": "Last Workshop Sync",
-      "subscribers": "subscribers",
-      "updated": "updated",
-      "created": "created",
-      "installedTooltip": "Installed locally",
-      "unknown": "Unknown",
-      "never": "Never"
+      "totalMods": "Toplam Modlar",
+      "lastLocalSync": "Son Yerel Mod Senkronizasyonu",
+      "lastWorkshopSync": "Son Atölye Senkronizasyonu",
+      "subscribers": "aboneler",
+      "updated": "güncellendi",
+      "created": "yaratıldı",
+      "installedTooltip": "Yerel olarak kuruldu",
+      "unknown": "Bilinmiyor",
+      "never": "Asla"
     },
     "messages": {
-      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
-      "noInstalledSubs": "No installed mods with subscription data are available.",
-      "noWorkshopUpdateInfo": "No Workshop update information is available.",
-      "noSizeData": "No mod file size data is available.",
-      "noNews": "No news items were found.",
-      "noPopularMods": "No popular mods were found.",
-      "noModsFound": "No mods were found.",
-      "noRecentUpdates": "No recently updated mods were found."
+      "steamTimeout": "Steam Web API'si yanıt vermiyordu. Lütfen daha sonra tekrar deneyin.",
+      "noInstalledSubs": "Abonelik verilerine sahip yüklü mod mevcut değil.",
+      "noWorkshopUpdateInfo": "Atölye güncelleme bilgisi mevcut değil.",
+      "noSizeData": "Mod dosyası boyutu verisi mevcut değil.",
+      "noNews": "Hiçbir haber bulunamadı.",
+      "noPopularMods": "Hiçbir popüler mod bulunamadı.",
+      "noModsFound": "Hiçbir mod bulunamadı.",
+      "noRecentUpdates": "Yakın zamanda güncellenen mod bulunamadı."
     },
     "fallbacks": {
-      "untitledItem": "Untitled item"
+      "untitledItem": "Başlıksız öğe"
     },
     "charts": {
       "installs": {
-        "label": "Mods by install month",
-        "xAxis": "Month",
-        "yAxis": "Mods"
+        "label": "Yükleme ayına göre modlar",
+        "xAxis": "Ay",
+        "yAxis": "Modlar"
       },
       "status": {
-        "outdated": "Outdated",
-        "upToDate": "Up to date"
+        "outdated": "Modası geçmiş",
+        "upToDate": "güncel"
       },
       "size": {
-        "label": "Workshop file size (bytes)",
-        "yAxis": "Size (bytes)"
+        "label": "Atölye dosyası boyutu (bayt)",
+        "yAxis": "Boyut (bayt)"
       }
     }
   },
   "logInspector": {
-    "title": "Log Inspector",
+    "title": "Günlük Denetçisi",
     "fields": {
-      "logFile": "Log file",
-      "types": "Types",
-      "typesPlaceholder": "Select types",
-      "maxEntries": "Max entries",
-      "from": "From",
-      "to": "To",
-      "livePolling": "Live polling",
-      "pollingEverySeconds": "Every (s)",
-      "searchMessage": "Search message",
-      "searchPlaceholder": "Search..."
+      "logFile": "Günlük dosyası",
+      "types": "Türler",
+      "typesPlaceholder": "Türleri seçin",
+      "maxEntries": "Maksimum giriş",
+      "from": "Gönderen",
+      "to": "Kime",
+      "livePolling": "Canlı oylama",
+      "pollingEverySeconds": "Her (ler)",
+      "searchMessage": "Mesaj ara",
+      "searchPlaceholder": "Ara..."
     },
     "table": {
-      "pageReport": "Showing {first} to {last} of {totalRecords}",
-      "timestamp": "Timestamp",
-      "type": "Type",
-      "message": "Message"
+      "pageReport": "{totalRecords} içinden {first} - {last} arası gösteriliyor",
+      "timestamp": "Zaman damgası",
+      "type": "Tür",
+      "message": "Mesaj"
     },
     "levels": {
       "error": "ERROR",
@@ -719,53 +719,53 @@
       "other": "OTHER"
     },
     "dialog": {
-      "logFilesFilter": "Log Files"
+      "logFilesFilter": "Günlük Dosyaları"
     },
     "errors": {
-      "noFilePath": "Set a file path to load logs.",
-      "loadFailed": "Failed to load log file.",
-      "clearFailed": "Failed to clear log file."
+      "noFilePath": "Günlükleri yüklemek için bir dosya yolu ayarlayın.",
+      "loadFailed": "Günlük dosyası yüklenemedi.",
+      "clearFailed": "Günlük dosyası temizlenemedi."
     }
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Sunucular",
       "refresh": "Yenile",
       "createNewServer": "Yeni Sunucu Oluştur",
       "copy": "Kopyala",
       "deleteServer": "Sunucuyu Sil",
       "createBackupOnSave": "Kaydederken yedek oluştur",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Hiçbir sunucu dosyası bulunamadı.",
+      "selectServerPlaceholder": "Bir sunucu seçin",
+      "serverEditor": "Sunucu Düzenleyici",
+      "selectServerPrompt": "Düzenlemeye başlamak için bir sunucu seçin.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox Değişkenleri",
         "spawnpoints": "Doğma Noktaları",
         "spawnregions": "Doğma Bölgeleri"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "INI girişi bulunamadı.",
       "serverConfigVars": "Sunucu Yapılandırma Değişkenleri",
-      "searchFields": "Search fields",
+      "searchFields": "Arama alanları",
       "reset": "Sıfırla",
       "saveChanges": "Değişiklikleri Kaydet",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Korumalı alan değişkeni bulunamadı.",
       "sandboxVariables": "Sandbox Değişkenleri",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "Değişkenleri ara",
+      "createServerTitle": "Yeni Sunucu Oluştur",
+      "copyServerTitle": "Sunucuyu Kopyala",
+      "copyServerPrompt": "{{name}}'yi kopyalayın ve aşağıdaki dosyaları oluşturun:",
+      "serverName": "Sunucu adı",
+      "createServerHint": ".ini, _SandboxVars.lua, _spawnpoints.lua ve _spawnregions.lua'yı oluşturur",
       "cancel": "İptal etmek",
-      "create": "Create",
+      "create": "Oluştur",
       "editServerVariableTitle": "Sunucu Değişkenini Düzenle",
       "editSandboxVariableTitle": "Korumalı Alan Değişkenini Düzenle",
-      "noDescription": "No description available.",
+      "noDescription": "Açıklama mevcut değil.",
       "save": "Kaydetmek",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "Sunucuyu Sil",
+      "deleteServerPrompt": "{{name}} ve ilgili tüm sunucu dosyaları silinsin mi?",
       "trueLabel": "Doğru",
       "falseLabel": "YANLIŞ",
       "exportServer": "Dışa aktar"

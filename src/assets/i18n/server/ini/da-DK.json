@@ -1,7 +1,7 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolChat": "PVP-logværktøj chat",
     "PVPLogToolFile": "PVP-logværktøjsfil",
     "PauseEmpty": "Pause Tom",
     "GlobalChat": "Global chat",
@@ -13,7 +13,7 @@
     "AutoCreateUserInWhiteList": "Opret bruger automatisk på hvidliste",
     "DisplayUserName": "Vis brugernavn",
     "ShowFirstAndLastName": "Vis for- og efternavn",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Spawnpunkt",
     "SafetySystem": "Sikkerhedssystem",
     "ShowSafety": "Vis sikkerhed",
     "SafetyToggleTimer": "Sikkerhedsskift-timer",
@@ -37,7 +37,7 @@
     "AnnounceDeath": "Meddel Døden",
     "SaveWorldEveryMinutes": "Red verden hvert minut",
     "PlayerSafehouse": "Spiller Safehouse",
-    "AdminSafehouse": "Admin Safehouse",
+    "AdminSafehouse": "Admin-sikkert hus",
     "SafehouseAllowTrepass": "Safehouse Tillad Trespass",
     "SafehouseAllowFire": "Safehouse Tillad Brand",
     "SafehouseAllowLoot": "Safehouse Tillad tyveri",
@@ -50,7 +50,7 @@
     "SledgehammerOnlyInSafehouse": "Forhammer kun i safehouse",
     "WarStartDelay": "Forsinket krigsstart",
     "WarDuration": "Krigens varighed",
-    "WarSafehouseHitPoints": "War Safehouse Hit Points",
+    "WarSafehouseHitPoints": "Krigs-hitpoints for sikkert hus",
     "ServerPlayerID": "Server Spiller ID",
     "RCONPort": "RCON port",
     "RCONPassword": "RCON adgangskode",
@@ -72,7 +72,7 @@
     "UPnP": "UPnP",
     "VoiceEnable": "Stemmeaktivering",
     "VoiceMinDistance": "Stemme min afstand",
-    "VoiceMaxDistance": "Voice Max Distance",
+    "VoiceMaxDistance": "Maks. stemmeafstand",
     "Voice3D": "Stemme 3D",
     "SpeedLimit": "Hastighedsgrænse",
     "LoginQueueConnectTimeout": "Log ind Kø Connect Timeout",
@@ -92,19 +92,19 @@
     "DisableRadioInvisible": "Deaktiver Radio Invisible",
     "ClientCommandFilter": "Klientkommandofilter",
     "ClientActionLogs": "Klienthandlingslogs",
-    "PerkLogs": "Perk Logs",
+    "PerkLogs": "Perk-logge",
     "ItemNumbersLimitPerContainer": "Varenummergrænse pr. container",
-    "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+    "BloodSplatLifespanDays": "Blodstænk levetid i dage",
     "AllowNonAsciiUsername": "Tillad Non Ascii-brugernavn",
     "RemovePlayerCorpsesOnCorpseRemoval": "Fjern spillerlig ved fjernelse af lig",
     "TrashDeleteAll": "Papirkurv Slet alle",
     "PVPMeleeWhileHitReaction": "PVP nærkamp mens hitreaktion",
     "MouseOverToSeeDisplayName": "Hold musen over for at se det viste navn",
     "HidePlayersBehindYou": "Skjul spillere bag dig",
-    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPMeleeDamageModifier": "PVP nærkampsskademodifikator",
     "PVPFirearmDamageModifier": "PVP-skydevåbenskademodifikator",
     "CarEngineAttractionModifier": "Modifikator for bilmotorer",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Spiller skubber spiller",
     "MapRemotePlayerVisibility": "Kort fjernafspillerens synlighed",
     "BackupsCount": "Sikkerhedskopier tæller",
     "BackupsOnStart": "Sikkerhedskopier ved start",
@@ -122,11 +122,11 @@
     "AntiCheatPacket": "Anti-snyde-pakke",
     "AntiCheatPermission": "Anti-snydetilladelse",
     "AntiCheatXP": "Anti snyde XP",
-    "AntiCheatFire": "Anti Cheat Fire",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatFire": "Anti-cheat brand",
+    "AntiCheatSafeHouse": "Anti-cheat sikkert hus",
     "AntiCheatRecipe": "Anti snyde opskrift",
     "AntiCheatPlayer": "Anti snyde spiller",
-    "AntiCheatChecksum": "Anti Cheat Checksum",
+    "AntiCheatChecksum": "Anti-cheat checksum",
     "AntiCheatItem": "Anti snyde vare",
     "AntiCheatServerCustomization": "Anti Cheat Server tilpasning",
     "MultiplayerStatisticsPeriod": "Multiplayer Statistik Periode",
@@ -140,10 +140,10 @@
         "Spillere kan såre og dræbe andre spillere"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP er logget på admin chat"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP er logget til fil"
       ],
       "PauseEmpty": [
         "Spilletiden stopper, når der ikke er nogen spillere online"
@@ -173,10 +173,10 @@
         "Tilføj ukendte brugernavne til hvidlisten, når spillere tilmelder sig. "
       ],
       "DisplayUserName": [
-        "Display usernames above player's heads in-game."
+        "Vis brugernavne over spillerens hoveder i spillet."
       ],
       "ShowFirstAndLastName": [
-        "Display first & last name above player's heads."
+        "Vis for- og efternavn over spillerens hoveder."
       ],
       "SpawnPoint": [
         "Tving hver ny spiller til at spawne på disse sæt x,y,z verdenskoordinater. "
@@ -196,7 +196,7 @@
       "SpawnItems": [
         "Genstandstyper nye spillere gyder med.",
         "Adskil flere elementtyper med kommaer.",
-        "Example: Base.Axe,Base.Bag_BigHikingBag"
+        "Eksempel: Base.Axe,Base.Bag_BigHikingBag"
       ],
       "DefaultPort": [
         "Standard startport for afspillerdata. "
@@ -233,7 +233,7 @@
         "Fjern spillerkonti fra hvidlisten efter døden. "
       ],
       "NoFire": [
-        "All forms of fire are disabled - except for campfires"
+        "Alle former for ild er deaktiveret - undtagen bål"
       ],
       "AnnounceDeath": [
         "Hvis markeret, vil der hver gang en spiller dør, blive vist en global besked i chatten"
@@ -281,10 +281,10 @@
         "Tid i sekunder før krigen starter."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Krigsvarighed i sekunder."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse hit pointgrænse."
       ],
       "ServerPlayerID": [
         "ServerPlayerID bestemmer, om en karakter er fra en anden server eller enkeltspiller. "
@@ -293,13 +293,13 @@
         "Porten til RCON (Remote Console)"
       ],
       "RCONPassword": [
-        "RCON password (Pick a strong password)"
+        "RCON-adgangskode (Vælg en stærk adgangskode)"
       ],
       "DiscordEnable": [
-        "Enables global text chat integration with a Discord channel"
+        "Muliggør global tekstchat-integration med en Discord-kanal"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Discord bot adgangstoken"
       ],
       "DiscordChannel": [
         "Discord-kanalens navn. "
@@ -326,7 +326,7 @@
         "Spillere bliver trætte og har brug for at sove. "
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Aktivering af denne indstilling kan forårsage visuel desynkronisering af spillerpositioner."
       ],
       "WorkshopItems": [
         "Liste Workshop Mod ID'er for serveren til download. "
@@ -350,7 +350,7 @@
         "Den maksimale fliseafstand, over hvilken VOIP-lyde kan høres."
       ],
       "Voice3D": [
-        "Toggle directional audio for VOIP"
+        "Skift retningsbestemt lyd til VOIP"
       ],
       "server_browser_announced_ip": [
         "Indstil den IP, som serveren udsendes fra. "
@@ -396,14 +396,14 @@
       ],
       "ClientCommandFilter": [
         "Semikolon-separeret liste over kommandoer, der ikke vil blive skrevet til cmd.txt-serverloggen. ",
-        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
-        "+vehicle.installPart means DO write that command"
+        "-køretøj. Indtastning af * betyder IKKE at skrive nogen køretøjskommando. Indtastning:",
+        "+vehicle.installPart betyder, at du skal skrive den kommando"
       ],
       "ClientActionLogs": [
         "Semikolon-separeret liste over handlinger, der vil blive skrevet til ClientActionLogs.txt-serverloggen."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Spor ændringer i spillerfrynseniveauer i PerkLog.txt-serverlog"
       ],
       "ItemNumbersLimitPerContainer": [
         "Maksimalt antal genstande, der kan placeres i en container.  "
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Styrer visning af fjernspillere på kortet i spillet.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Skjult 2=Venner 3=Alle"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Deaktiverer bugsering af køretøjer"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Deaktiverer anhængertræk"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Deaktiverer bugsering af brændt køretøj"
       ],
       "BadWordListFile": [
         "Sti til filen med listen over ord, der skal forbydes. "
@@ -464,37 +464,37 @@
         "Symbolet eller stykke tekst, der skal erstatte det dårlige ord"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Deaktiverer sikkerhedssystemets anti-snydebeskyttelse."
       ],
       "AntiCheatMovement": [
         "Deaktiverer anti-cheat-beskyttelse for bevægelse."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Deaktiverer beskyttelse mod snyd."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Deaktiverer beskyttelse af pakketjek mod snyd."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Deaktiverer spillertilladelser mod snydebeskyttelse."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Deaktiverer afspiller XP anti-snyd beskyttelse."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Deaktiverer brandkontrolbeskyttelse mod snyd."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Deaktiverer safehouse anti-cheat beskyttelse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Deaktiverer opskriftstjek beskyttelse mod snyd."
       ],
       "AntiCheatPlayer": [
         "Deaktiverer anti-cheat-beskyttelse for spillere."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Deaktiverer checksum anti-cheat beskyttelse."
       ],
       "AntiCheatItem": [
         "Deaktiverer varetjek-beskyttelse mod snyd."
@@ -506,7 +506,7 @@
         "Indstiller multiplayer-opdateringsperioden i sekunder. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Deaktiverer resultattavlen."
       ],
       "HideAdminsInPlayerList": [
         "Skjuler administratorer i spillerlisten."

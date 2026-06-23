@@ -140,10 +140,10 @@
         "Spelers kunnen andere spelers beschadigen en doden."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP is ingelogd in de beheerderchat"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP is vastgelegd in bestand"
       ],
       "PauseEmpty": [
         "Game tijd stopt als er geen spelers online zijn"
@@ -176,7 +176,7 @@
         "Toont de gebruikersnaam van spelers boven hun hoofden."
       ],
       "ShowFirstAndLastName": [
-        "Display first & last name above player's heads."
+        "Toon voor- en achternaam boven de hoofden van de speler."
       ],
       "SpawnPoint": [
         "Dwingt iedere speler bij deze coï¿½rdinaten te spawnen. De coï¿½rdinaten staan op map.projectzomboid.com. Genegeerd bij 0,0,0."
@@ -280,10 +280,10 @@
         "Tijd in seconden voordat de oorlog begint."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Oorlogsduur in seconden."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse-hitpuntenlimiet."
       ],
       "ServerPlayerID": [
         "Stelt vast of de speler uit een andere server of single player wereld komt. Deze waarde kan aangepast worden bij soft resets."
@@ -298,7 +298,7 @@
         "Schakel integratie met Discord in"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Discord-bottoegangstoken"
       ],
       "DiscordChannel": [
         "Discord kanaal naam. Als dit problemen geeft, gebruik dan in plaats daarvan het kanaal-ID"
@@ -325,7 +325,7 @@
         "Spelers worden moe, en hebben slaap nodig."
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Het activeren van deze instelling kan visuele desynchronisatie van spelersposities veroorzaken."
       ],
       "WorkshopItems": [
         "Lijst van Workshop Mod IDs voor de server om te downloaden. Gescheiden door een puntkomma. Voorbeeld WorkshopItems"
@@ -402,7 +402,7 @@
         "Door puntkomma's gescheiden lijst met acties die naar het ClientActionLogs.txt-serverlogboek worden geschreven."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Houd veranderingen in de spelersvoordelen bij in het PerkLog.txt-serverlogboek"
       ],
       "ItemNumbersLimitPerContainer": [
         "Maximaal aantal items dat in een container kan worden geplaatst. "
@@ -439,16 +439,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Regelt de weergave van externe spelers op de in-game kaart.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Verborgen 2=Vrienden 3=Iedereen"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Schakelt het slepen van voertuigen uit"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Schakelt het trekken van een aanhanger uit"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Schakelt het slepen van een verbrand voertuig uit"
       ],
       "BadWordListFile": [
         "Pad naar het bestand met de lijst met te verbieden woorden. "
@@ -463,37 +463,37 @@
         "Het symbool of stuk tekst dat het slechte woord zal vervangen"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Schakelt de bescherming tegen cheats van het veiligheidssysteem uit."
       ],
       "AntiCheatMovement": [
         "Schakelt de anti-cheatbeveiliging voor beweging uit."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Schakelt de anti-cheat-bescherming van karakterhits uit."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Schakelt de anti-cheat-beveiliging van pakketcontroles uit."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Schakelt de bescherming tegen cheats van spelersrechten uit."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Schakelt speler XP anti-cheat bescherming uit."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Schakelt de anti-cheat-bescherming van brandcontroles uit."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Schakelt de anti-cheat-beveiliging van safehouse uit."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Schakelt receptcontroles uit tegen cheat-beveiliging."
       ],
       "AntiCheatPlayer": [
         "Schakelt de anti-cheatbeveiliging voor spelers uit."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Schakelt de controlesom-anti-cheat-beveiliging uit."
       ],
       "AntiCheatItem": [
         "Schakelt de anti-cheat-bescherming van itemcontroles uit."
@@ -505,7 +505,7 @@
         "Stelt de multiplayer-updateperiode in seconden in. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Schakelt scorebord uit."
       ],
       "HideAdminsInPlayerList": [
         "Verbergt beheerders in de spelerslijst."

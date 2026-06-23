@@ -1,146 +1,146 @@
 {
   "common": {
-    "loadingContent": "Loading content...",
-    "next": "Next",
-    "back": "Back",
-    "finish": "Finish",
-    "cancel": "Cancel",
-    "browse": "Browse",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save"
+    "loadingContent": "Tartalom betöltése...",
+    "next": "Következő",
+    "back": "Vissza",
+    "finish": "Befejezés",
+    "cancel": "Mégsem",
+    "browse": "Tallózás",
+    "yes": "Igen",
+    "no": "Nem",
+    "save": "Mentés"
   },
   "app": {
     "title": "Honu's Hub"
   },
   "menu": {
-    "languageLabel": "Language",
-    "languagePlaceholder": "Select a language",
+    "languageLabel": "Nyelv",
+    "languagePlaceholder": "Válasszon nyelvet",
     "sections": {
       "hub": "HUB",
-      "modFilters": "MOD FILTERS",
-      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "modFilters": "MOD SZŰRŐK",
+      "modCollectionFilters": "MOD COLLECTION SZŰRŐK",
       "actions": "ACTIONS",
-      "getStarted": "Get Started",
-      "resources": "Resources",
-      "dangerZone": "Danger Zone"
+      "getStarted": "Kezdje el",
+      "resources": "Erőforrások",
+      "dangerZone": "Veszélyzóna"
     },
     "items": {
-      "dashboard": "Dashboard",
-      "logInspector": "Log Inspector",
-      "myMods": "My Mods",
-      "configureFolders": "Configure Folders",
-      "setSteamApiKey": "Set Steam API Key",
-      "syncHonu": "Sync Honu's Mod Info QoL",
-      "syncLocal": "Sync Local Mod Data",
-      "syncWorkshop": "Sync With Steam Workshop",
-      "changelog": "Changelog",
-      "documentation": "Documentation",
-      "viewSource": "View Source",
+      "dashboard": "Irányítópult",
+      "logInspector": "Log Ellenőr",
+      "myMods": "Saját modok",
+      "configureFolders": "Mappák konfigurálása",
+      "setSteamApiKey": "Állítsa be a Steam API kulcsot",
+      "syncHonu": "Honu Mod Info QoL szinkronizálása",
+      "syncLocal": "Helyi mod adatok szinkronizálása",
+      "syncWorkshop": "Szinkronizálás a Steam Műhellyel",
+      "changelog": "Változásnapló",
+      "documentation": "Dokumentáció",
+      "viewSource": "Forrás megtekintése",
       "projectZomboid": "Project Zomboid",
-      "pzWiki": "Official Project Zomboid Wiki",
+      "pzWiki": "Hivatalos Project Zomboid Wiki",
       "b41Map": "B41 Map",
       "b42Map": "B42 Map",
-      "workshop": "Project Zomboid Steam Workshop",
+      "workshop": "Project Zomboid Steam Műhely",
       "subreddit": "r/projectzomboid",
       "discord": "Project Zomboid",
-      "moddingDiscord": "PZ Modding Community",
-      "mappingDiscord": "Unofficial PZ Mapping",
-      "honuWorkshop": "HonuInTheSea's Steam Workshop",
-      "supportKofi": "Support on Ko-fi",
-      "resetApp": "Reset Application",
-      "resetAppTooltip": "Reset window settings and delete stored data",
+      "moddingDiscord": "PZ Modding közösség",
+      "mappingDiscord": "Nem hivatalos PZ-térképezés",
+      "honuWorkshop": "HonuInTheSea gőzműhelye",
+      "supportKofi": "Támogatás a Ko-fi-n",
+      "resetApp": "Alkalmazás visszaállítása",
+      "resetAppTooltip": "Állítsa vissza az ablakbeállításokat és törölje a tárolt adatokat",
       "server": "Szerver",
       "modCollections": "Mod gyűjtemények",
       "modPresets": "Mod előbeállítások"
     },
     "filters": {
-      "adultLabel": "Has Adult Content",
-      "adultTooltip": "Filter mods where Steam metadata reports maybe_inappropriate_sex as true.",
-      "rulesLabel": "Has Rules",
-      "rulesTooltip": "Mod contains a require, incompatible, loadModAfter, loadModBefore statement in their mod.info file",
-      "missingSteamLabel": "Missing Steam Data",
-      "missingSteamTooltip": "Mod may have been marked as private or removed from the Steam Workshop",
-      "outdatedLabel": "Outdated Mods",
-      "outdatedTooltip": "Mod may need to be unsubscribed and resubscribed to get the latest version from the Steam Workshop"
+      "adultLabel": "Felnőtt tartalommal rendelkezik",
+      "adultTooltip": "Szűrje ki azokat a modokat, amelyeknél a Steam metaadatai a Maybe_inappropriate_sex értéket igaznak jelzik.",
+      "rulesLabel": "Szabályai vannak",
+      "rulesTooltip": "A Mod a mod.info fájljában egy követelmény, inkompatibilis, loadModAfter, loadModBefore utasítást tartalmaz.",
+      "missingSteamLabel": "Hiányzó Steam adatok",
+      "missingSteamTooltip": "Lehet, hogy a modot privátként jelölték meg, vagy eltávolították a Steam Workshopból",
+      "outdatedLabel": "Elavult modok",
+      "outdatedTooltip": "Előfordulhat, hogy le kell iratkozni a Mod-ról, és újra elő kell fizetni a Steam Workshop legújabb verziójának letöltéséhez"
     },
     "collections": {
-      "searchLabel": "Search Collections",
-      "searchPlaceholder": "Search collections",
-      "sortLabel": "Sort by",
-      "periodLabel": "Over time period",
-      "tagsLabel": "Tags",
-      "tagsPlaceholder": "Select tags",
-      "sortMostPopular": "Most Popular",
-      "sortMostRecent": "Most Recent",
-      "sortLastUpdated": "Last Updated",
-      "periodToday": "Today",
-      "periodWeek": "One Week",
-      "periodThirtyDays": "Thirty Days",
-      "periodThreeMonths": "Three Months",
-      "periodSixMonths": "Six Months",
-      "periodYear": "One Year"
+      "searchLabel": "Keresés a gyűjteményekben",
+      "searchPlaceholder": "Keresés a gyűjteményekben",
+      "sortLabel": "Rendezés",
+      "periodLabel": "Idővel",
+      "tagsLabel": "Címkék",
+      "tagsPlaceholder": "Válassza ki a címkéket",
+      "sortMostPopular": "Legnépszerűbb",
+      "sortMostRecent": "Legújabb",
+      "sortLastUpdated": "Utoljára frissítve",
+      "periodToday": "Ma",
+      "periodWeek": "Egy hét",
+      "periodThirtyDays": "Harminc nap",
+      "periodThreeMonths": "Három hónap",
+      "periodSixMonths": "Hat hónap",
+      "periodYear": "Egy év"
     },
-    "presetsUnavailable": "Set your Project Zomboid user folder and/or define presets first.",
+    "presetsUnavailable": "Először állítsa be Project Zomboid felhasználói mappáját és/vagy határozza meg az előre beállított értékeket.",
     "steamApi": {
-      "dialogTitle": "Set Steam Web API Key",
-      "dialogIntro": "Enter your Steam Web API Key. This key is stored locally on your machine.",
-      "keyLabel": "Steam Web API Key",
-      "needKey": "Need a key?",
-      "getKeyLink": "Get your Steam Web API Key",
-      "helpButton": "How to create a Steam Web API Key",
-      "helpTitle": "How to create a Steam Web API Key",
-      "helpCardTitle": "How to Register a Steam Web API Key",
-      "helpCardBody": "This guide provides a step-by-step walkthrough for registering a Steam Web API Key. A Steam Web API Key lets applications securely access specific data from your Steam account, such as game libraries or statistics, when you authorize them to do so.",
-      "step1Title": "1. Prerequisites",
-      "step1Intro": "Before you can register a Steam Web API Key, make sure that:",
-      "step1Bullet1": "You have an active Steam account in good standing, secured with Steam Guard (email or mobile authenticator).",
-      "step1Bullet2": "Your account owns at least one purchased game. Brand-new or empty accounts cannot obtain an API key.",
-      "step1Bullet3": "You are using a trusted device and network (never register or view your key on a public or shared computer).",
-      "step2Title": "2. Important Security Notes",
-      "step2Intro": "Your Steam Web API Key is sensitive information. Anyone who has your key can make API requests on your behalf. Treat it like a password:",
-      "step2Bullet1": "Never share your key with other people, and never post it publicly (for example, on forums or GitHub).",
-      "step2Bullet2": "Only paste your key into tools or websites you fully trust.",
-      "step2Bullet3": "If you suspect your key has been exposed, revoke it immediately and generate a new one.",
-      "step3Title": "3. Step-by-Step: Registering a Steam Web API Key",
-      "step3_1Title": "Step 1 - Sign in to Steam",
-      "step3_1Bullet1": "Open your web browser and go to <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
-      "step3_1Bullet2": "Click <strong>\"Log In\"</strong> in the top-right corner.",
-      "step3_1Bullet3": "Enter your Steam account name and password.",
-      "step3_1Bullet4": "If prompted, complete Steam Guard verification.",
-      "step3_2Title": "Step 2 - Open the Steam Web API Key page",
-      "step3_2Bullet1": "While logged in, open the Steam Web API Key registration page: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
-      "step3_2Bullet2": "The page will display a short description of the Steam Web API and a form titled <strong>\"Register for a new Steam Web API Key.\"</strong>",
-      "step3_3Title": "Step 3 - Enter a domain name and agree to the terms",
-      "step3_3Intro": "On the registration form:",
-      "step3_3Bullet1": "In the <strong>\"Domain Name\"</strong> field, enter the domain of the website or service that will use the key. <ul class=\"p-ml-3\"><li>If you do not have a domain, you can enter a placeholder such as <code>localhost</code>, <code>127.0.0.1</code>, or <code>example.com</code>.</li></ul>",
-      "step3_3Bullet2": "Read the Steam Web API Terms of Use.",
-      "step3_3Bullet3": "Tick the checkbox to confirm that you agree to the terms.",
-      "step3_3Bullet4": "Click the <strong>\"Register\"</strong> button to submit the form.",
-      "step3_4Title": "Step 4 - View and copy your new Steam Web API Key",
-      "step3_4Intro": "After a successful registration:",
-      "step3_4Bullet1": "The page reloads and shows your Steam Web API Key near the top.",
-      "step3_4Bullet2": "The key is a long string of letters and numbers (for example: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
-      "step3_4Bullet3": "Select the entire key and copy it (Ctrl+C / Cmd+C).",
-      "step3_4Bullet4": "Store it in a secure location, such as a password manager or an encrypted notes app.",
-      "step4Title": "4. Basic Example of Using Your Steam Web API Key",
-      "step4Intro": "Once you have a key, you can call Steam Web API endpoints by adding it as a <code>key=</code> parameter to the URL. For example, a simple HTTP request might look like this (replace <code>YOURKEYHERE</code> with your real key):",
-      "step4Outro": "The exact URLs and parameters depend on which Steam Web API interface you are using. Always consult the official documentation for the endpoints you need.",
-      "step5Title": "5. Revoking or Regenerating Your Steam Web API Key",
-      "step5Intro": "If you no longer need your Steam Web API Key, or you believe it has been compromised, you should revoke it:",
-      "step5Bullet1": "Sign in to your Steam account if you are not already logged in.",
-      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> again.",
-      "step5Bullet3": "Click the button labeled <strong>\"Revoke My Steam Web API Key\"</strong>.",
-      "step5Bullet4": "If you need a new key later, return to the same page and register again using the steps above.",
-      "step6Title": "6. Troubleshooting Tips",
-      "step6Intro": "You may see one of the following issues when trying to register a key:",
-      "step6Bullet1": "<strong>Message:</strong> <em>\"You will be granted access to Steam Web API keys when you have games in your Steam account.\"</em> In this case, your account does not yet meet the minimum requirements. Purchase at least one game on Steam, wait for the purchase to clear, and try again later.",
-      "step6Bullet2": "<strong>Page keeps asking you to sign in</strong> - Make sure cookies and JavaScript are enabled in your browser, and that you are logging in with the correct account.",
-      "step6Bullet3": "<strong>Security concerns</strong> - If any third-party site or person asks for your key and you are unsure why, do not share it. Revoke your key and change your Steam password if you think it has been exposed.",
-      "footerNote": "You now have a registered Steam Web API Key and a basic understanding of how to manage it safely. Keep this page handy as a reference when you need to register, use, or revoke your key."
+      "dialogTitle": "Állítsa be a Steam Web API kulcsot",
+      "dialogIntro": "Adja meg Steam Web API-kulcsát. Ez a kulcs helyileg a gépén van tárolva.",
+      "keyLabel": "Steam Web API kulcs",
+      "needKey": "Kulcsra van szüksége?",
+      "getKeyLink": "Szerezze be Steam Web API-kulcsát",
+      "helpButton": "Steam Web API kulcs létrehozása",
+      "helpTitle": "Steam Web API kulcs létrehozása",
+      "helpCardTitle": "Steam Web API-kulcs regisztrálása",
+      "helpCardBody": "Ez az útmutató lépésről lépésre bemutatja a Steam Web API kulcs regisztrálását. A Steam Web API-kulcs lehetővé teszi az alkalmazások számára, hogy biztonságosan hozzáférjenek a Steam-fiókod bizonyos adataihoz, például a játékkönyvtárakhoz vagy a statisztikákhoz, ha erre felhatalmadod őket.",
+      "step1Title": "1. Előfeltételek",
+      "step1Intro": "Mielőtt regisztrálna egy Steam Web API-kulcsot, győződjön meg a következőkről:",
+      "step1Bullet1": "Aktív, jó állapotú Steam fiókod van, Steam Guarddal (e-mail vagy mobil hitelesítő) védett.",
+      "step1Bullet2": "A fiókod legalább egy megvásárolt játékkal rendelkezik. A vadonatúj vagy üres fiókok nem kaphatnak API-kulcsot.",
+      "step1Bullet3": "Megbízható eszközt és hálózatot használ (soha ne regisztrálja vagy tekintse meg kulcsát nyilvános vagy megosztott számítógépen).",
+      "step2Title": "2. Fontos biztonsági megjegyzések",
+      "step2Intro": "A Steam Web API-kulcs érzékeny információ. Bárki, aki rendelkezik a kulcsával, API-kérelmeket küldhet az Ön nevében. Kezelje úgy, mint egy jelszót:",
+      "step2Bullet1": "Soha ne ossza meg kulcsát másokkal, és soha ne tegye közzé nyilvánosan (például fórumokon vagy GitHubon).",
+      "step2Bullet2": "Csak olyan eszközökbe vagy webhelyekre illessze be a kulcsot, amelyekben teljes mértékben megbízik.",
+      "step2Bullet3": "Ha azt gyanítja, hogy kulcsa nyilvánosságra került, azonnal vonja vissza, és hozzon létre egy újat.",
+      "step3Title": "3. Lépésről lépésre: Steam Web API kulcs regisztrálása",
+      "step3_1Title": "1. lépés – Jelentkezzen be a Steambe",
+      "step3_1Bullet1": "Nyissa meg webböngészőjét, és lépjen a <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>. oldalra",
+      "step3_1Bullet2": "Kattintson a <strong>\"Bejelentkezés\"</strong> elemre a jobb felső sarokban.",
+      "step3_1Bullet3": "Adja meg a Steam fiók nevét és jelszavát.",
+      "step3_1Bullet4": "Ha a rendszer kéri, hajtsa végre a Steam Guard ellenőrzését.",
+      "step3_2Title": "2. lépés – Nyissa meg a Steam Web API Key oldalt",
+      "step3_2Bullet1": "Bejelentkezve nyissa meg a Steam Web API kulcs regisztrációs oldalát: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Az oldalon megjelenik a Steam Web API rövid leírása, valamint egy <strong>\"Regisztráció új Steam Web API kulcshoz.\"</strong> űrlap.",
+      "step3_3Title": "3. lépés – Adjon meg egy domain nevet, és fogadja el a feltételeket",
+      "step3_3Intro": "A regisztrációs űrlapon:",
+      "step3_3Bullet1": "A <strong>\"Domain Name\"</strong> mezőbe írja be a kulcsot használó webhely vagy szolgáltatás domainjét. <ul class=\"p-ml-3\"><li>Ha nem rendelkezik domainnel, megadhat egy helyőrzőt, például <code>localhost</code>, <code>127.0.0.1</code> vagy <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Olvassa el a Steam Web API használati feltételeit.",
+      "step3_3Bullet3": "Jelölje be a jelölőnégyzetet, hogy megerősítse, hogy elfogadja a feltételeket.",
+      "step3_3Bullet4": "Kattintson a <strong>\"Regisztráció\"</strong> gombra az űrlap elküldéséhez.",
+      "step3_4Title": "4. lépés – Tekintse meg és másolja ki az új Steam Web API-kulcsot",
+      "step3_4Intro": "Sikeres regisztráció után:",
+      "step3_4Bullet1": "Az oldal újra betöltődik, és a tetején megjelenik a Steam Web API-kulcs.",
+      "step3_4Bullet2": "A kulcs egy hosszú betű- és számsor (például: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Jelölje ki a teljes kulcsot, és másolja (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Tárolja biztonságos helyen, például egy jelszókezelőben vagy egy titkosított jegyzetalkalmazásban.",
+      "step4Title": "4. Alapvető példa a Steam Web API-kulcs használatára",
+      "step4Intro": "Miután megvan a kulcs, meghívhatja a Steam Web API-végpontokat úgy, hogy <code>key=</code> paraméterként adja hozzá az URL-hez. Például egy egyszerű HTTP-kérés így nézhet ki (cserélje ki a <code>YOURKEYHERE</code> kifejezést a valódi kulcsra):",
+      "step4Outro": "A pontos URL-ek és paraméterek attól függenek, hogy melyik Steam Web API felületet használja. Mindig olvassa el a hivatalos dokumentációt a szükséges végpontokról.",
+      "step5Title": "5. A Steam Web API-kulcs visszavonása vagy újragenerálása",
+      "step5Intro": "Ha már nincs szüksége a Steam Web API-kulcsára, vagy úgy gondolja, hogy feltörték, vonja vissza:",
+      "step5Bullet1": "Jelentkezzen be Steam fiókjába, ha még nem jelentkezett be.",
+      "step5Bullet2": "Nyissa meg újra a <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> elemet.",
+      "step5Bullet3": "Kattintson a <strong>\"Steam Web API kulcs visszavonása\"</strong> gombra.",
+      "step5Bullet4": "Ha később új kulcsra van szüksége, térjen vissza ugyanarra az oldalra, és regisztráljon újra a fenti lépésekkel.",
+      "step6Title": "6. Hibaelhárítási tippek",
+      "step6Intro": "A kulcs regisztrálásakor a következő problémák egyike jelenhet meg:",
+      "step6Bullet1": "<strong>Üzenet:</strong> <em>\"Hozzáférést kapsz a Steam Web API-kulcsokhoz, ha játékaid vannak a Steam-fiókodban.\"</em> Ebben az esetben a fiókod még nem felel meg a minimális követelményeknek. Vásároljon legalább egy játékot a Steamen, várja meg, amíg a vásárlás törlődik, és próbálkozzon újra később.",
+      "step6Bullet2": "A <strong>Page folyamatosan kéri, hogy jelentkezzen be</strong> - Győződjön meg arról, hogy a cookie-k és a JavaScript engedélyezve vannak a böngészőjében, és hogy a megfelelő fiókkal jelentkezik be.",
+      "step6Bullet3": "<strong>Biztonsági aggályok</strong> – Ha harmadik fél webhelye vagy személy kéri a kulcsát, és nem tudja biztosan, miért, ne ossza meg. Vonja vissza a kulcsát, és változtassa meg Steam jelszavát, ha úgy gondolja, hogy nyilvánosságra került.",
+      "footerNote": "Mostantól rendelkezik egy regisztrált Steam Web API-kulccsal, és rendelkezik annak biztonságos kezelésének alapvető ismereteivel. Tartsa kéznél ezt az oldalt referenciaként, amikor regisztrálnia, használnia vagy visszavonnia kell kulcsát."
     },
     "folders": {
-      "dialogTitle": "Configure Folders"
+      "dialogTitle": "Mappák konfigurálása"
     },
     "loadingLocale": "Nyelv betöltése..."
   },
@@ -180,217 +180,217 @@
     }
   },
   "onboarding": {
-    "title": "Get Started",
+    "title": "Kezdje el",
     "steps": {
-      "welcome": "Welcome",
-      "folders": "Folders",
-      "steamKey": "Steam API Key",
-      "tips": "Tips"
+      "welcome": "Üdvözöljük",
+      "folders": "Mappák",
+      "steamKey": "Steam API kulcs",
+      "tips": "Tippek"
     },
     "welcome": {
-      "title": "Welcome to the Project Zomboid Mod Manager",
-      "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
-      "bullet1": "Choose your Project Zomboid folders.",
-      "bullet2": "Add your Steam Web API key for Workshop metadata.",
-      "bullet3": "Finish setup and start managing your mods."
+      "title": "Üdvözöljük a Project Zomboid Mod Managerben",
+      "body": "Ez a gyors beállítás segít a mappák összekapcsolásában, a Steam Web API-kulcs hozzáadásában és a modok szinkronizálásában.",
+      "bullet1": "Válassza ki Project Zomboid mappáit.",
+      "bullet2": "Adja hozzá Steam Web API-kulcsát a Workshop metaadataihoz.",
+      "bullet3": "Fejezze be a beállítást, és kezdje el kezelni a modjait."
     },
     "tips": {
-      "title": "Quick Tips",
-      "bullet1": "You can update folders and your Steam API key anytime from the sidebar.",
-      "bullet2": "Run Sync Local Mod Data before syncing Workshop metadata.",
-      "bullet3": "Use Mod Filters to narrow the list quickly."
+      "title": "Gyors tippek",
+      "bullet1": "Az oldalsávról bármikor frissítheti a mappákat és a Steam API-kulcsot.",
+      "bullet2": "Futtassa a Sync Local Mod Data alkalmazást a Workshop metaadatok szinkronizálása előtt.",
+      "bullet3": "A Mod Filters segítségével gyorsan szűkítheti a listát."
     }
   },
   "tags": {
-    "animals": "Animals",
-    "audio": "Audio",
-    "balance": "Balance",
-    "build_41": "Build 41",
-    "build_42": "Build 42",
-    "build_40": "Build 40",
-    "buildings": "Buildings",
-    "clothing_armor": "Clothing/Armor",
-    "farming": "Farming",
-    "food": "Food",
-    "framework": "Framework",
-    "hardmode": "Hardmode",
-    "interface": "Interface",
-    "items": "Items",
-    "language_translation": "Language/Translation",
-    "literature": "Literature",
-    "map": "Map",
-    "military": "Military",
-    "misc": "Misc",
-    "models": "Models",
-    "multiplayer": "Multiplayer",
-    "pop_culture": "Pop Culture",
+    "animals": "Állatok",
+    "audio": "Hang",
+    "balance": "Egyenleg",
+    "build_41": "41. építmény",
+    "build_42": "42. építmény",
+    "build_40": "Építés 40",
+    "buildings": "Épületek",
+    "clothing_armor": "Ruházat/Páncél",
+    "farming": "Gazdálkodás",
+    "food": "Élelmiszer",
+    "framework": "Keretrendszer",
+    "hardmode": "Nehéz mód",
+    "interface": "Interfész",
+    "items": "Tételek",
+    "language_translation": "Nyelv/fordítás",
+    "literature": "Irodalom",
+    "map": "Térkép",
+    "military": "Katonai",
+    "misc": "Egyéb",
+    "models": "Modellek",
+    "multiplayer": "Többjátékos",
+    "pop_culture": "Popkultúra",
     "qol": "QoL",
-    "realistic": "Realistic",
-    "silly_fun": "Silly/Fun",
-    "skills": "Skills",
-    "textures": "Textures",
-    "traits": "Traits",
-    "vehicles": "Vehicles",
-    "weapons": "Weapons",
+    "realistic": "Reális",
+    "silly_fun": "Hülye/Szórakoztató",
+    "skills": "Készségek",
+    "textures": "Textúrák",
+    "traits": "Tulajdonságok",
+    "vehicles": "Járművek",
+    "weapons": "Fegyverek",
     "wip": "WIP"
   },
   "tagFilter": {
-    "label": "Tags",
-    "matchLabel": "Match",
+    "label": "Címkék",
+    "matchLabel": "Egyezés",
     "matchAny": "VAGY",
     "matchAll": "ES",
-    "placeholder": "Select tags"
+    "placeholder": "Válassza ki a címkéket"
   },
   "modsTable": {
-    "clearFilters": "Clear",
-    "searchPlaceholder": "Search keyword",
-    "detailsTitle": "Mod Details",
+    "clearFilters": "Világos",
+    "searchPlaceholder": "Keresési kulcsszó",
+    "detailsTitle": "Mod Részletek",
     "columns": {
-      "name": "Name",
-      "author": "Author",
-      "workshopId": "Workshop ID",
-      "lastModified": "Last Modified Date"
+      "name": "Név",
+      "author": "Szerző",
+      "workshopId": "Műhelyazonosító",
+      "lastModified": "Utolsó módosítás dátuma"
     },
     "filters": {
-      "name": "Search by name",
-      "author": "Search by author",
-      "workshopId": "Search by workshop ID",
-      "date": "Filter date"
+      "name": "Keresés név szerint",
+      "author": "Keresés szerző szerint",
+      "workshopId": "Keresés műhelyazonosító alapján",
+      "date": "Szűrési dátum"
     }
   },
   "modsPage": {
-    "toastHelp": "Where do I find this?",
+    "toastHelp": "Hol találom ezt?",
     "workshopPrompt": {
-      "title": "Fetch Steam Workshop Data",
-      "body": "Do you want to fetch the latest metadata from the Steam Workshop for your mods?",
-      "alwaysFetch": "Always fetch automatically without asking"
+      "title": "Steam műhelyadatok lekérése",
+      "body": "Szeretnéd lekérni a legújabb metaadatokat a Steam Workshopból a modjaidhoz?",
+      "alwaysFetch": "Mindig kérés nélkül töltse le automatikusan"
     },
-    "loadingLocal": "Scanning Local Mod Data...",
-    "loadingWorkshop": "Fetching Steam Workshop Data...",
-    "loading": "Loading data..."
+    "loadingLocal": "Helyi mod adatok beolvasása...",
+    "loadingWorkshop": "Steam műhelyadatok lekérése...",
+    "loading": "Adatok betöltése..."
   },
   "folders": {
-    "title": "Set Required Folders",
-    "description": "These folders are used to scan your mods and read your Project Zomboid installation details.",
-    "gameDirLabel": "Project Zomboid game folder",
-    "workshopDirLabel": "Local mods (Steam Workshop) folder",
-    "userDirLabel": "Project Zomboid user folder (optional)",
-    "userDirNote": "Used for exporting server presets and (optional) advanced apply targets."
+    "title": "Állítsa be a szükséges mappákat",
+    "description": "Ezek a mappák a modok átvizsgálására és a Project Zomboid telepítési részleteinek olvasására szolgálnak.",
+    "gameDirLabel": "Project Zomboid játékmappa",
+    "workshopDirLabel": "Helyi modok (Steam Workshop) mappa",
+    "userDirLabel": "Project Zomboid felhasználói mappa (opcionális)",
+    "userDirNote": "Szerver-előbeállítások és (opcionális) speciális alkalmazási célok exportálására szolgál."
   },
   "modDetails": {
     "fields": {
-      "name": "Name",
-      "modId": "Mod ID",
-      "author": "Author",
-      "version": "Mod Version",
-      "versionMin": "Minimum Game Version",
-      "versionMax": "Maximum Game Version",
+      "name": "Név",
+      "modId": "Modazonosító",
+      "author": "Szerző",
+      "version": "Mod verzió",
+      "versionMin": "Minimális játékverzió",
+      "versionMax": "Maximális játékverzió",
       "url": "URL",
-      "description": "Description",
-      "tags": "Tags",
-      "noTags": "No tags",
-      "packs": "Packs",
-      "tiledefs": "Tiledefs",
-      "workshopTitle": "Workshop Title",
-      "workshopCreator": "Workshop Creator",
-      "fileSize": "File Size",
-      "timeCreated": "Time Created",
-      "timeUpdated": "Time Updated",
-      "workshopViews": "Workshop Views",
-      "workshopSubscriptions": "Workshop Subscriptions",
-      "adultContent": "Has Adult Content"
+      "description": "Leírás",
+      "tags": "Címkék",
+      "noTags": "Nincsenek címkék",
+      "packs": "Csomagok",
+      "tiledefs": "Csempék",
+      "workshopTitle": "Műhely címe",
+      "workshopCreator": "Műhelyteremtő",
+      "fileSize": "Fájl mérete",
+      "timeCreated": "Létrehozott idő",
+      "timeUpdated": "Idő frissítve",
+      "workshopViews": "Műhelynézetek",
+      "workshopSubscriptions": "Műhely előfizetések",
+      "adultContent": "Felnőtt tartalommal rendelkezik"
     },
     "links": {
-      "requiredMods": "Required Mods",
-      "loadAfter": "Load Mod After",
-      "loadBefore": "Load Mod Before",
-      "incompatibleMods": "Incompatible Mods",
-      "requiredBy": "Required By",
-      "incompatibleWith": "Incompatible With"
+      "requiredMods": "Kötelező modok",
+      "loadAfter": "Mod betöltése után",
+      "loadBefore": "Mod betöltése előtt",
+      "incompatibleMods": "Nem kompatibilis modok",
+      "requiredBy": "Kötelező által",
+      "incompatibleWith": "Nem kompatibilis a következővel"
     },
     "buttons": {
-      "visitWorkshop": "Visit Steam Workshop Page",
-      "authorWorkshop": "Author's Steam Workshop Page",
-      "openFolder": "Open mod folder"
+      "visitWorkshop": "Látogassa meg a Steam műhely oldalát",
+      "authorWorkshop": "A szerző Steam Workshop oldala",
+      "openFolder": "Nyissa meg a mod mappát"
     },
     "tooltips": {
-      "modInfoReadonly": "This field is read-only and populated from mod.info.",
-      "steamReadonly": "This field is read-only and populated from the Steam Workshop.",
-      "modMissing": "The following mod could not be found",
-      "syncToActivate": "Sync With Steam Workshop to Activate",
-      "modFolderUnavailable": "Mod folder path is not available."
+      "modInfoReadonly": "Ez a mező csak olvasható, és a mod.info-ból van kitöltve.",
+      "steamReadonly": "Ez a mező csak olvasható, és a Steam Workshopból van kitöltve.",
+      "modMissing": "A következő mod nem található",
+      "syncToActivate": "Az aktiváláshoz szinkronizálja a Steam Workshop szolgáltatással",
+      "modFolderUnavailable": "A mod mappa elérési útja nem érhető el."
     }
   },
   "docs": {
-    "title": "Documentation",
+    "title": "Dokumentáció",
     "intro": "A Honu's Hub segít a helyi Project Zomboid böngészésében, ellenőrzésében és kezelésében, a Tauri-n keresztüli asztali integrációval.",
     "toc": {
-      "aria": "Table of contents",
-      "title": "Table of contents",
-      "overview": "Overview",
-      "workflow": "Workflow",
-      "data": "Data the app uses",
-      "features": "Features",
+      "aria": "Tartalomjegyzék",
+      "title": "Tartalomjegyzék",
+      "overview": "Áttekintés",
+      "workflow": "Munkafolyamat",
+      "data": "Az alkalmazás által használt adatok",
+      "features": "Jellemzők",
       "server": "Szerverkezelés",
-      "logInspector": "Log inspector",
-      "folderSetup": "Folder setup",
-      "tauri": "Desktop (Tauri) integration",
-      "privacy": "Privacy & storage",
-      "troubleshooting": "Troubleshooting",
+      "logInspector": "Rönkvizsgáló",
+      "folderSetup": "Mappa beállítása",
+      "tauri": "Asztali (Tauri) integráció",
+      "privacy": "Adatvédelem és tárolás",
+      "troubleshooting": "Hibaelhárítás",
       "faq": "FAQ"
     },
     "overview": {
-      "title": "Overview",
-      "body": "The app scans a chosen mods directory, derives metadata from common Project Zomboid mod conventions, and presents everything in a table and summary dashboard."
+      "title": "Áttekintés",
+      "body": "Az alkalmazás átvizsgálja a kiválasztott modkönyvtárat, metaadatokat származtat a Project Zomboid általános mod-konvencióiból, és mindent megjelenít egy táblázatban és egy összefoglaló irányítópulton."
     },
     "workflow": {
-      "title": "Workflow",
-      "intro": "Follow this end-to-end flow to connect your folders, sync metadata, and generate the Honu Mod Info QoL output.",
+      "title": "Munkafolyamat",
+      "intro": "Kövesse ezt a végpontok közötti folyamatot a mappák összekapcsolásához, a metaadatok szinkronizálásához és a Honu Mod Info QoL kimenet létrehozásához.",
       "step1": {
-        "title": "Map folders",
-        "body": "Open <strong>Configure Folders</strong> from the sidebar actions and set your Project Zomboid game, workshop, and user directories.",
-        "screenshot": "Screenshot: Configure Folders"
+        "title": "Térképes mappák",
+        "body": "Nyissa meg a <strong>Configure Folders</strong> mappát az oldalsáv műveletei közül, és állítsa be Project Zomboid játék-, műhely- és felhasználói könyvtárait.",
+        "screenshot": "Képernyőkép: Mappák konfigurálása"
       },
       "step2": {
-        "title": "Create/enter Steam Workshop key",
-        "body": "Use <strong>Set Steam API Key</strong> to paste your key so the app can fetch Workshop metadata.",
-        "screenshot": "Screenshot: Set Steam API Key"
+        "title": "Hozzon létre/adja meg a Steam Workshop kulcsot",
+        "body": "A <strong>Set Steam API Key</strong> használatával illessze be kulcsát, hogy az alkalmazás lekérhesse a Workshop metaadatait.",
+        "screenshot": "Képernyőkép: Állítsa be a Steam API-kulcsot"
       },
       "step3": {
-        "title": "Sync local mod data",
-        "body": "Run <strong>Sync Local Mod Data</strong> to scan your Workshop folder and build the local mod list.",
-        "screenshot": "Screenshot: Sync Local Mod Data"
+        "title": "Helyi mod adatok szinkronizálása",
+        "body": "Futtassa a <strong>Sync Local Mod Data</strong> programot a Workshop mappa átvizsgálásához és a helyi modlista összeállításához.",
+        "screenshot": "Képernyőkép: Helyi mod adatok szinkronizálása"
       },
       "step4": {
-        "title": "Sync with Steam Workshop",
-        "body": "Run <strong>Sync With Steam Workshop</strong> to pull workshop titles, authors, sizes, and extra metadata.",
-        "screenshot": "Screenshot: Sync With Steam Workshop"
+        "title": "Szinkronizálás a Steam Workshoppal",
+        "body": "Futtassa a <strong>Sync alkalmazást a Steam Workshop</strong> alkalmazással a műhelycímek, szerzők, méretek és extra metaadatok lekéréséhez.",
+        "screenshot": "Képernyőkép: Szinkronizálás a Steam Workshoppal"
       },
       "step5": {
-        "title": "Sync Honu's Mod Info QoL",
-        "body": "Use <strong>Sync Honu's Mod Info QoL</strong> to generate/update <code>honus_miqol_db.lua</code> inside your Project Zomboid user folder.",
-        "screenshot": "Screenshot: Sync Honu's Mod Info QoL"
+        "title": "Honu Mod Info QoL szinkronizálása",
+        "body": "A <strong>Sync Honu Mod Info QoL</strong> használatával generálja/frissítse a <code>honus_miqol_db.lua</code> fájlt a Project Zomboid felhasználói mappájában.",
+        "screenshot": "Képernyőkép: A Honu Mod Info QoL szinkronizálása"
       }
     },
     "data": {
-      "title": "Data the app uses",
-      "intro": "The app builds a mod listing from information available on disk.",
-      "bullet1": "<strong>Mod folder path</strong> - resolved absolute path to the mod directory.",
-      "bullet2": "<strong>Mod id</strong> - extracted from mod metadata when available (commonly from <code>mod.info</code>).",
-      "bullet3": "<strong>Name</strong> - a display name derived from metadata and/or folder naming.",
-      "bullet4": "<strong>Workshop id (optional)</strong> - if detected and numeric, the app enables a Steam Workshop link button.",
-      "bullet5": "<strong>Status/health indicators</strong> - basic signals such as missing or incomplete metadata (where detectable).",
-      "outro": "Not all mods contain complete metadata. When fields are missing, the UI will display best-effort values and may disable actions that require specific data (for example, the Steam link)."
+      "title": "Az alkalmazás által használt adatok",
+      "intro": "Az alkalmazás a lemezen elérhető információkból modlistát készít.",
+      "bullet1": "<strong>Mod mappa elérési útja</strong> – feloldott abszolút elérési út a mod könyvtárhoz.",
+      "bullet2": "<strong>Mod id</strong> – a mod metaadataiból kinyerhető, ha elérhető (általában a <code>mod.info</code> webhelyről).",
+      "bullet3": "<strong>Name</strong> – metaadatokból és/vagy mappaelnevezésekből származó megjelenített név.",
+      "bullet4": "<strong>Workshop azonosítója (opcionális)</strong> – ha a rendszer észleli és numerikus, az alkalmazás engedélyezi a Steam Workshop hivatkozás gombját.",
+      "bullet5": "<strong>Állapot-/állapotjelzők</strong> – alapvető jelek, például hiányzó vagy hiányos metaadatok (ahol észlelhetők).",
+      "outro": "Nem minden mod tartalmaz teljes metaadatokat. Ha hiányoznak a mezők, a felhasználói felület a legjobb erőfeszítést igénylő értékeket jeleníti meg, és letilthatja a konkrét adatokat igénylő műveleteket (például a Steam hivatkozást)."
     },
     "features": {
-      "title": "Features",
-      "bullet1": "<strong>Mods table</strong> - lists detected mods with key fields (name, id, workshop link when available, and path).",
-      "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
-      "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
-      "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
-      "logInspectorLink": "Log inspector",
-      "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
+      "title": "Jellemzők",
+      "bullet1": "<strong>Mods table</strong> – kulcsmezőkkel (név, azonosító, műhelyhivatkozás, ha elérhető, és elérési út) felsorolja az észlelt modokat.",
+      "bullet2": "<strong>Sor részletei</strong> – bontsa ki a sort, ha további információkat szeretne látni egy modról (ha elérhető).",
+      "bullet3": "<strong>Open in Steam</strong> – megnyitja a Műhely oldalt az alapértelmezett böngészőben az érvényes műhelyazonosítóval rendelkező modokhoz.",
+      "bullet4": "<strong>Mappa megnyitása</strong> – megnyitja a kiválasztott mod mappát a fájlkezelőben.",
+      "logInspectorPrefix": "<strong>Log Inspector</strong> – naplófájlok (például <code>console.txt</code>) betöltése és szűrése a hibák és figyelmeztetések gyors megtalálásához. Lásd",
+      "logInspectorLink": "Rönkvizsgáló",
+      "bullet6": "<strong>Dashboard</strong> – gyors statisztikákat mutat (például: összes észlelt mod) és más magas szintű mutatókat."
     },
     "server": {
       "title": "Szerverkezelés",
@@ -400,242 +400,242 @@
       "bullet3": "<strong>Szerkeszd</strong> az INI- és Sandbox-változókat, és frissítsd a spawnpoints/spawnregions fájlokat közvetlenül az appban."
     },
     "logInspector": {
-      "title": "Log inspector",
-      "intro": "The log inspector helps you open and filter log files (for example, <code>console.txt</code>) to troubleshoot crashes, mod load problems, and server startup issues.",
-      "bullet1": "<strong>Select a file</strong> - browse to any <code>.txt</code> or <code>.log</code> file, or use a default path when available.",
-      "bullet2": "<strong>Filter</strong> - choose log levels (ERROR/WARN/LOG/DEBUG/TRACE), set a date/time window, and limit the maximum number of entries displayed.",
-      "bullet3": "<strong>Search</strong> - filter entries by text across the parsed message and the raw source line.",
-      "bullet4": "<strong>Live polling</strong> - optionally refresh on a timer to watch logs update while the game/server is running.",
-      "bullet5": "<strong>Clear</strong> - truncate the selected log file (use with care)."
+      "title": "Rönkvizsgáló",
+      "intro": "A naplóvizsgáló segít a naplófájlok (például <code>console.txt</code>) megnyitásában és szűrésében az összeomlások, a mod-betöltési problémák és a kiszolgálóindítási problémák hibaelhárítása érdekében.",
+      "bullet1": "<strong>Válasszon egy fájlt</strong> – tallózzon bármely <code>.txt</code> vagy <code>.log</code> fájlhoz, vagy használjon alapértelmezett elérési utat, ha elérhető.",
+      "bullet2": "<strong>Filter</strong> – válassza ki a naplózási szinteket (HIBA/WARN/LOG/DEBUG/TRACE), állítson be egy dátum/idő ablakot, és korlátozza a megjelenített bejegyzések maximális számát.",
+      "bullet3": "<strong>Search</strong> – szűrje a bejegyzéseket szöveg alapján az elemzett üzenetben és a nyers forrássorban.",
+      "bullet4": "<strong>Élő lekérdezés</strong> – opcionálisan frissítsen egy időzítőt, hogy figyelje a naplók frissítését, miközben a játék/szerver fut.",
+      "bullet5": "<strong>Clear</strong> - csonkolja a kiválasztott naplófájlt (használja óvatosan)."
     },
     "folderSetup": {
-      "title": "Folder setup",
-      "step1": "Open the <strong>Mods</strong> page from the left sidebar (under <em>HOME</em>).",
-      "step2": "Use <strong>Browse Mods Folder</strong> in the <em>ACTIONS</em> menu to select your Project Zomboid mods directory (commonly <code>projectzomboid/mods</code>).",
-      "step3": "After selection, the app scans the directory and populates the mods table and dashboard.",
-      "tip": "Tip: If you switch machines or move your mods directory, simply browse again to update the stored path."
+      "title": "Mappa beállítása",
+      "step1": "Nyissa meg a <strong>Mods</strong> oldalt a bal oldalsávról (a <em>HOME</em> alatt).",
+      "step2": "Használja a <strong>Browse Mods Folder</strong> elemet a <em>ACTIONS</em> menüben a Project Zomboid modkönyvtárának kiválasztásához (általában <code>projectzomboid/mods</code>).",
+      "step3": "A kiválasztás után az alkalmazás átvizsgálja a könyvtárat, és feltölti a modok táblázatát és az irányítópultot.",
+      "tip": "Tipp: Ha gépet vált, vagy áthelyezi a modkönyvtárat, egyszerűen böngésszen újra a tárolt elérési út frissítéséhez."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
-      "bullet1": "<strong>Filesystem access</strong> - directory browsing and scanning is performed via the desktop shell.",
-      "bullet2": "<strong>Open external links</strong> - Steam Workshop links open using your OS default browser.",
-      "bullet3": "<strong>Open folders</strong> - launches the OS file explorer focused on the mod directory."
+      "title": "Asztali (Tauri) integráció",
+      "bullet1": "<strong>Fájlrendszer-hozzáférés</strong> - a címtárböngészés és -ellenőrzés az asztali rendszerhéjon keresztül történik.",
+      "bullet2": "<strong>Külső hivatkozások megnyitása</strong> – A Steam Workshop hivatkozásai az operációs rendszer alapértelmezett böngészőjében nyílnak meg.",
+      "bullet3": "<strong>Mappák megnyitása</strong> - elindítja az operációs rendszer fájlkezelőjét a mod könyvtárra összpontosítva."
     },
     "privacy": {
-      "title": "Privacy & storage",
-      "bullet1": "<strong>Local data</strong> - the selected mods folder path and scan results may be cached locally to improve UX."
+      "title": "Adatvédelem és tárolás",
+      "bullet1": "<strong>Helyi adatok</strong> – a kiválasztott mods mappa elérési útja és a vizsgálati eredmények lokálisan gyorsítótárazhatók az UX javítása érdekében."
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "bullet1": "<strong>No mods appear after scanning</strong> - verify the selected folder is your actual Project Zomboid mods directory and that it contains mod subfolders.",
-      "bullet2": "<strong>Steam links are disabled</strong> - ensure the mod has a valid numeric workshop id (not all mods are Workshop-based).",
-      "bullet3": "<strong>Open folder does nothing</strong> - confirm the Tauri backend is running and that OS permissions allow opening the file explorer."
+      "title": "Hibaelhárítás",
+      "bullet1": "<strong>Nem jelennek meg modok a szkennelés után</strong> – ellenőrizze, hogy a kiválasztott mappa a tényleges Project Zomboid mod könyvtára, és hogy tartalmaz-e mod almappákat.",
+      "bullet2": "<strong>Steam linkek le vannak tiltva</strong> – győződjön meg arról, hogy a mod érvényes numerikus műhelyazonosítóval rendelkezik (nem minden mod műhelyalapú).",
+      "bullet3": "<strong>A mappa megnyitása nem csinál semmit</strong> – győződjön meg arról, hogy a Tauri háttérrendszer fut, és hogy az operációs rendszer engedélyei lehetővé teszik a fájlkezelő megnyitását."
     },
     "faq": {
       "title": "FAQ",
-      "q1": "Does the app edit my mods?",
-      "a1": "No. The core workflow is read-only: it scans folders and displays metadata. Actions such as opening folders or Workshop links do not modify mod files.",
-      "q2": "Why is some information missing for a mod?",
-      "a2": "Mods vary in how consistently they include metadata. If fields like id or workshop id are missing, the app will show what it can and disable features that rely on those fields."
+      "q1": "Az alkalmazás szerkeszti a modjaimat?",
+      "a1": "Nem. Az alapvető munkafolyamat csak olvasható: átvizsgálja a mappákat és megjeleníti a metaadatokat. Az olyan műveletek, mint a mappák megnyitása vagy a műhelyhivatkozások, nem módosítják a mod fájlokat.",
+      "q2": "Miért hiányzik néhány információ egy modról?",
+      "a2": "A modok eltérő módon tartalmazzák a metaadatokat. Ha olyan mezők hiányoznak, mint az azonosító vagy a műhelyazonosító, az alkalmazás megmutatja, mit tud, és letiltja azokat a funkciókat, amelyek ezekre a mezőkre támaszkodnak."
     }
   },
   "toasts": {
     "menu": {
       "honuSync": {
-        "failedSummary": "Honu Mod Info QoL Sync Failed",
-        "missingUserDetail": "Project Zomboid user folder is not configured.",
-        "successSummary": "Honu's Mod Info QoL Synced",
-        "successCreatedDetail": "honus_miqol_db.lua created.",
-        "successUpdatedDetail": "honus_miqol_db.lua updated.",
-        "failedDetail": "Failed to sync Honu Mod Info QoL."
+        "failedSummary": "Honu Mod Info QoL Sync nem sikerült",
+        "missingUserDetail": "A Project Zomboid felhasználói mappa nincs konfigurálva.",
+        "successSummary": "Honu Mod Info QoL szinkronizálva",
+        "successCreatedDetail": "honus_miqol_db.lua létrehozva.",
+        "successUpdatedDetail": "honus_miqol_db.lua frissítve.",
+        "failedDetail": "A Honu Mod Info QoL szinkronizálása nem sikerült."
       }
     },
     "mods": {
       "dataMigration": {
-        "summary": "Data Migration",
-        "detail": "Your local mod data is being updated. A new scan is running to refresh dependencies."
+        "summary": "Adatmigráció",
+        "detail": "A helyi modadatok frissítése folyamatban van. Egy új vizsgálat fut a függőségek frissítésére."
       },
       "syncInProgress": {
-        "summary": "Sync in Progress",
-        "detail": "A sync operation is already running. Please wait for it to complete."
+        "summary": "Szinkronizálás folyamatban",
+        "detail": "Egy szinkronizálási művelet már fut. Kérjük, várja meg, amíg befejeződik."
       },
       "localSyncComplete": {
-        "summary": "Local Mod Sync Complete",
-        "detail": "Local mod data has been refreshed successfully."
+        "summary": "A helyi mod szinkronizálás befejeződött",
+        "detail": "A helyi mod adatok frissítése sikeresen megtörtént."
       },
       "localSyncFailed": {
-        "summary": "Local Mod Sync Failed",
-        "detail": "Failed to sync local mods."
+        "summary": "A helyi mod szinkronizálás nem sikerült",
+        "detail": "Nem sikerült szinkronizálni a helyi modokat."
       },
       "invalidDirectory": {
-        "summary": "Invalid Directory",
-        "detail": "The selected folder does not appear to be a valid Project Zomboid Workshop directory (AppID 108600)."
+        "summary": "Érvénytelen könyvtár",
+        "detail": "Úgy tűnik, hogy a kiválasztott mappa nem érvényes Project Zomboid Workshop könyvtár (AppID 108600)."
       },
       "steamApiRequired": {
-        "summary": "Steam Web API Key Required",
-        "detail": "Please use \"Set Steam API Key\" in the menu, then try syncing again."
+        "summary": "Steam Web API kulcs szükséges",
+        "detail": "Kérjük, használja a menüben a \"Set Steam API Key\" parancsot, majd próbálja meg újra a szinkronizálást."
       },
       "workshopNoData": {
         "summary": "",
-        "detail": "No workshop metadata was returned; nothing was saved."
+        "detail": "A műhely metaadatait nem küldték vissza; semmit sem sikerült megmenteni."
       },
       "workshopPartial": {
         "summary": "Steam Workshop részben szinkronizálva",
-        "detail": "Received {{received}} of {{total}} workshop items. Missing IDs: {{missing}}{{suffix}}"
+        "detail": "{{received}} {{total}} műhelycikkeket kapott. Hiányzó azonosítók: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
-        "detail": "Workshop metadata has been saved successfully."
+        "summary": "Steam Workshop szinkronizálva",
+        "detail": "A műhely metaadatainak mentése sikeresen megtörtént."
       },
       "workshopUnauthorized": {
-        "summary": "Steam Web API Unauthorized",
-        "detail": "Steam returned 401 Unauthorized. Please verify your Steam Web API key and try again."
+        "summary": "A Steam Web API jogosulatlan",
+        "detail": "A Steam 401-et igazolt vissza. Kérjük, ellenőrizze Steam Web API-kulcsát, és próbálja újra."
       },
       "workshopSyncFailed": {
         "summary": "",
-        "detail": "Failed to sync Steam Workshop metadata."
+        "detail": "Nem sikerült szinkronizálni a Steam Workshop metaadatait."
       }
     },
     "modDetails": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Az előre beállított név már létezik",
+        "detail": "Kérjük, válasszon másik nevet a \"{{name}}\" számára."
       },
       "removeFailed": {
-        "summary": "Remove Failed",
-        "missingUserDetail": "Project Zomboid user directory is not configured.",
-        "missingModDetail": "Mod ID was not found in mods.txt.",
-        "failedDetail": "Failed to remove mod from preset."
+        "summary": "Eltávolítás sikertelen",
+        "missingUserDetail": "A Project Zomboid felhasználói könyvtára nincs konfigurálva.",
+        "missingModDetail": "A mod ID nem található a mods.txt fájlban.",
+        "failedDetail": "Nem sikerült eltávolítani a modot az előbeállításból."
       },
       "removed": {
-        "summary": "Removed",
-        "detailMultiple": "Selected mods were removed from the preset.",
-        "detailSingle": "Mod was removed from the preset."
+        "summary": "Eltávolítva",
+        "detailMultiple": "A kiválasztott modokat eltávolítottuk az előbeállításból.",
+        "detailSingle": "A mod eltávolítva az előbeállításból."
       },
       "presetUpdated": {
-        "summary": "Preset updated",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Előbeállítás frissítve",
+        "detailFallback": "A pz_modlist_settings.cfg nem frissíthető.",
+        "detailFailed": "Nem sikerült frissíteni a pz_modlist_settings.cfg fájlt."
       }
     },
     "loadouts": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Az előre beállított név már létezik",
+        "detail": "Kérjük, válasszon másik nevet a \"{{name}}\" számára."
       },
       "noModsToExport": {
-        "summary": "No mods to export",
-        "detailCode": "Add at least one mod before generating code.",
-        "detailPreset": "Add at least one mod before saving a preset."
+        "summary": "Nincs exportálható mod",
+        "detailCode": "Adjon hozzá legalább egy modot a kód generálása előtt.",
+        "detailPreset": "Adjon hozzá legalább egy modot, mielőtt elmentene egy preset."
       },
       "copied": {
-        "summary": "Copied",
-        "detail": "{{label}} copied to clipboard."
+        "summary": "Másolva",
+        "detail": "{{label}} a vágólapra másolva."
       },
       "presetImported": {
-        "summary": "Preset imported",
-        "detail": "Imported {{count}} mods."
+        "summary": "Előbeállítás importálva",
+        "detail": "Importált {{count}} modok."
       },
       "importFailed": {
-        "summary": "Import failed",
-        "detail": "Failed to import preset."
+        "summary": "Az importálás sikertelen",
+        "detail": "Nem sikerült importálni az előre beállított értékeket."
       },
       "presetSaved": {
-        "summary": "Preset saved",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Előbeállítás mentve",
+        "detailFallback": "A pz_modlist_settings.cfg nem frissíthető.",
+        "detailFailed": "Nem sikerült frissíteni a pz_modlist_settings.cfg fájlt."
       },
       "presetSaveNotice": {
-        "reordered": "Reordered mods by dependency rules.",
-        "missingDependencies": "Missing dependencies: {{count}}.",
-        "missingWorkshopIds": "Missing workshop IDs: {{count}}.",
-        "incompatibilities": "Incompatibilities: {{count}}.",
-        "cycles": "Cycles detected: {{count}}.",
-        "conflicts": "File conflicts: {{count}}."
+        "reordered": "Átrendezett modok a függőségi szabályok szerint.",
+        "missingDependencies": "Hiányzó függőségek: {{count}}.",
+        "missingWorkshopIds": "Hiányzó műhelyazonosítók: {{count}}.",
+        "incompatibilities": "Összeférhetetlenség: {{count}}.",
+        "cycles": "Az észlelt ciklusok: {{count}}.",
+        "conflicts": "Fájlütközések: {{count}}."
       },
       "presetDeleted": {
-        "summary": "Preset deleted",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Előbeállítás törölve",
+        "detailFallback": "A pz_modlist_settings.cfg nem frissíthető.",
+        "detailFailed": "Nem sikerült frissíteni a pz_modlist_settings.cfg fájlt."
       }
     },
     "modCollections": {
       "loadFailed": {
         "summary": "",
-        "detail": "Unable to load collections. Verify your Steam Web API key and try again."
+        "detail": "Nem sikerült betölteni a gyűjteményeket. Ellenőrizze Steam Web API-kulcsát, és próbálja újra."
       },
-      "steamUnauthorized": "Steam returned 401 Unauthorized. Verify your Steam Web API key.",
-      "queryFailed": "Failed to query Steam Workshop collections.",
+      "steamUnauthorized": "A Steam 401-et igazolt vissza. Ellenőrizze a Steam Web API-kulcsot.",
+      "queryFailed": "Nem sikerült lekérdezni a Steam Workshop gyűjteményeit.",
       "presetNotCreated": {
-        "summary": "Preset Not Created",
-        "detail": "No workshop items were found for this collection."
+        "summary": "Előbeállítás nincs létrehozva",
+        "detail": "Ehhez a gyűjteményhez nem található műhelyelem."
       },
       "presetCreated": {
-        "summary": "Preset Created",
-        "detail": "Collection preset saved as \"{{name}}\"."
+        "summary": "Előbeállítás létrehozva",
+        "detail": "Gyűjtemény előbeállítása \"{{name}}\" néven mentve."
       },
       "presetUpdated": {
-        "summary": "Preset Updated",
-        "detail": "Collection preset \"{{name}}\" refreshed."
+        "summary": "Előre beállított frissítve",
+        "detail": "A „{{name}}” gyűjteménybeállítás frissítve."
       },
       "presetRemoved": {
-        "summary": "Preset Removed",
-        "detail": "Collection preset has been removed."
+        "summary": "Előre beállított eltávolítva",
+        "detail": "Gyűjtemény előbeállítása eltávolítva."
       }
     },
     "server": {
       "invalidName": {
-        "summary": "Invalid server name",
-        "detailMissing": "Enter a server name.",
-        "detailInvalidChars": "Server name contains invalid filename characters.",
-        "detailTrailing": "Server name cannot end with a dot or space.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "summary": "Érvénytelen szervernév",
+        "detailMissing": "Adja meg a szerver nevét.",
+        "detailInvalidChars": "A kiszolgálónév érvénytelen fájlnév karaktereket tartalmaz.",
+        "detailTrailing": "A kiszolgáló neve nem végződhet ponttal vagy szóközzel.",
+        "detailNoSpaces": "A kiszolgáló nevének egyetlen szóból kell állnia, szóközök nélkül.",
+        "detailAscii": "Csak ASCII karaktereket használjon (angol betűk, számok és szimbólumok)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "A szervernév már foglalt",
+        "detail": "Ez a szervernév már foglalt. Válasszon másik nevet az új szervernek."
       },
       "missingUserFolder": {
-        "summary": "Missing user folder",
-        "detail": "Set your Project Zomboid user folder first."
+        "summary": "Hiányzó felhasználói mappa",
+        "detail": "Először állítsa be a Project Zomboid felhasználói mappáját."
       },
       "createFailed": {
-        "summary": "Create failed",
-        "detail": "Failed to create server files."
+        "summary": "A létrehozás nem sikerült",
+        "detail": "Nem sikerült létrehozni a szerverfájlokat."
       },
       "saved": {
-        "summary": "Saved",
-        "detail": "Server files updated."
+        "summary": "Mentve",
+        "detail": "A szerver fájlok frissítve."
       },
       "saveFailed": {
-        "summary": "Save failed",
-        "detail": "Failed to save server files."
+        "summary": "A mentés nem sikerült",
+        "detail": "Nem sikerült menteni a szerver fájljait."
       }
     }
   },
   "primeng": {
-    "startsWith": "Starts with",
-    "contains": "Contains",
-    "notContains": "Not contains",
-    "endsWith": "Ends with",
-    "equals": "Equals",
-    "notEquals": "Not equals",
-    "noFilter": "No filter",
-    "lt": "Less than",
-    "lte": "Less than or equal to",
-    "gt": "Greater than",
-    "gte": "Greater than or equal to",
-    "dateIs": "Date is",
-    "dateIsNot": "Date is not",
-    "dateBefore": "Date is before",
-    "dateAfter": "Date is after",
-    "clear": "Clear",
-    "apply": "Apply",
-    "matchAll": "Match all",
-    "matchAny": "Match any",
-    "addRule": "Add rule",
-    "removeRule": "Remove rule"
+    "startsWith": "Ezzel kezdődik",
+    "contains": "Tartalmaz",
+    "notContains": "Nem tartalmaz",
+    "endsWith": "Ezzel végződik",
+    "equals": "Egyenlő",
+    "notEquals": "Nem egyenlő",
+    "noFilter": "Nincs szűrő",
+    "lt": "Kevesebb mint",
+    "lte": "Kisebb vagy egyenlő",
+    "gt": "Nagyobb mint",
+    "gte": "Nagyobb vagy egyenlő",
+    "dateIs": "A dátum az",
+    "dateIsNot": "A dátum nem",
+    "dateBefore": "A dátum korábban van",
+    "dateAfter": "A dátum után",
+    "clear": "Világos",
+    "apply": "Alkalmazni",
+    "matchAll": "Egyezik minden",
+    "matchAny": "Egyezik bármelyik",
+    "addRule": "Szabály hozzáadása",
+    "removeRule": "Szabály eltávolítása"
   },
   "dashboard": {
     "headers": {
@@ -678,7 +678,7 @@
       "installs": {
         "label": "Modok a telepítés hónapja szerint",
         "xAxis": "Hónap",
-        "yAxis": "Mods"
+        "yAxis": "Modok"
       },
       "status": {
         "outdated": "Elavult",
@@ -698,7 +698,7 @@
       "typesPlaceholder": "Válasszon típusokat",
       "maxEntries": "Max bejegyzések",
       "from": "Tól",
-      "to": "To",
+      "to": "Ig",
       "livePolling": "Élő szavazás",
       "pollingEverySeconds": "Minden(ek)",
       "searchMessage": "Üzenet keresése",
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Szerverek",
       "refresh": "Frissítés",
       "createNewServer": "Új szerver létrehozása",
       "copy": "Másolás",
       "deleteServer": "Szerver törlése",
       "createBackupOnSave": "Biztonsági mentés készítése mentéskor",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Nem találhatók szerverfájlok.",
+      "selectServerPlaceholder": "Válasszon ki egy szervert",
+      "serverEditor": "Szerverszerkesztő",
+      "selectServerPrompt": "Válassza ki a szervert a szerkesztés megkezdéséhez.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox változók",
         "spawnpoints": "Spawn pontok",
         "spawnregions": "Spawn régiók"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Nem található INI bejegyzés.",
       "serverConfigVars": "Szerverkonfigurációs változók",
-      "searchFields": "Search fields",
+      "searchFields": "Keresési mezők",
       "reset": "Visszaállítás",
       "saveChanges": "Módosítások mentése",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Nem található sandbox változó.",
       "sandboxVariables": "Sandbox változók",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
-      "cancel": "Cancel",
-      "create": "Create",
+      "searchVariables": "Keresési változók",
+      "createServerTitle": "Új szerver létrehozása",
+      "copyServerTitle": "Másolószerver",
+      "copyServerPrompt": "Másolja a {{name}} fájlt, és hozza létre a következő fájlokat:",
+      "serverName": "Szerver neve",
+      "createServerHint": "Létrehozza az .ini, _SandboxVars.lua, _spawnpoints.lua és _spawnregions.lua fájlokat",
+      "cancel": "Mégsem",
+      "create": "Létrehozása",
       "editServerVariableTitle": "Szerverváltozó szerkesztése",
       "editSandboxVariableTitle": "Sandbox változó szerkesztése",
-      "noDescription": "No description available.",
-      "save": "Save",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "noDescription": "Nem áll rendelkezésre leírás.",
+      "save": "Mentés",
+      "deleteServerTitle": "Szerver törlése",
+      "deleteServerPrompt": "Törli a {{name}}-t és az összes kapcsolódó szerverfájlt?",
       "trueLabel": "Igaz",
       "falseLabel": "Hamis",
       "exportServer": "Exportálás"

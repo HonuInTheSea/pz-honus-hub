@@ -140,10 +140,10 @@
         "Игроки могут атаковать других игроков."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP записывается в чат администратора"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP записывается в файл"
       ],
       "PauseEmpty": [
         "Мировое время в игре остановится, если на сервере отсутствуют игроки."
@@ -280,10 +280,10 @@
         "Время в секундах до начала войны."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Продолжительность войны в секундах."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Предел очков жизни убежища."
       ],
       "ServerPlayerID": [
         "Считывает клиентские файлы игрока, чтобы игроки не могли обманом использовать файлы из одиночной игры или файлы с другого сервера. Это значение может быть изменено путем софт-сброса. Если этот номер соответствует клиенту, клиент должен создать нового персонажа. Используется в сочетании с ResetID. Пожалуйста, сделайте резервную копию этих ID где-нибудь."
@@ -325,7 +325,7 @@
         "Игроки устают и хотят спать. Игнорируется если SleepAllowed=false (выкл)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Активация этой настройки может привести к визуальной десинхронизации позиций игроков."
       ],
       "WorkshopItems": [
         "Список Workshop модов ID для загрузки сервера. Разделяйте точкой с запятой. Пример WorkshopItems=514427485;513111049"
@@ -402,7 +402,7 @@
         "Список действий, разделенных точкой с запятой, которые будут записаны в журнал сервера ClientActionLogs.txt."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Отслеживайте изменения уровней перков игроков в журнале сервера PerkLog.txt."
       ],
       "ItemNumbersLimitPerContainer": [
         "Максимальное количество предметов, которые можно поместить в контейнер. Ноль означает без ограничений."
@@ -439,16 +439,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Управляет отображением удаленных игроков на внутриигровой карте.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Скрытый 2=Друзья 3=Все"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Отключает буксировку автомобиля"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Отключает буксировку прицепа"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Отключает буксировку сгоревшего автомобиля."
       ],
       "BadWordListFile": [
         "Путь к файлу со списком запрещенных слов. "
@@ -463,37 +463,37 @@
         "Символ или фрагмент текста, который заменит плохое слово"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Отключает античит-защиту системы безопасности."
       ],
       "AntiCheatMovement": [
         "Отключает античит-защиту движения."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Отключает защиту от мошенничества при попадании персонажа."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Отключает проверку пакетов и защиту от мошенничества."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Отключает защиту прав игрока от мошенничества."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Отключает защиту от мошенничества с XP игрока."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Отключает проверку огня и античит-защиту."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Отключает защиту от мошенничества в убежище."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Отключает проверку рецептов и защиту от читов."
       ],
       "AntiCheatPlayer": [
         "Отключает античит-защиту для игроков."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Отключает защиту от мошенничества с помощью контрольной суммы."
       ],
       "AntiCheatItem": [
         "Отключает проверку предметов от защиты от мошенничества."
@@ -505,7 +505,7 @@
         "Устанавливает период обновления многопользовательской игры в секундах. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Отключает табло."
       ],
       "HideAdminsInPlayerList": [
         "Скрывает администраторов в списке игроков."

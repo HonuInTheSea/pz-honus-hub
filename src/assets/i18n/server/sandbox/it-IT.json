@@ -293,7 +293,7 @@
       "4 = Nessuna"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Allo zombi è consentito migrare verso celle vuote."
     ],
     "DayLength": [
       "Predefinito = 1 Ora e 30 Minuti",
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Se l'ora del giorno cambia naturalmente o se è sempre giorno/notte. ",
       "1 = Normale",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Giorno senza fine",
+      "3 = Notte infinita"
     ],
     "ClimateCycle": [
       "Se il tempo cambia o rimane in un unico stato. ",
       "1 = Normale",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Nessun tempo",
+      "3 = Pioggia infinita",
+      "4 = Tempesta infinita",
+      "5 = Neve infinita",
+      "6 = Bufera di neve infinita"
     ],
     "FogCycle": [
       "Se la nebbia si verifica naturalmente, non si verifica mai o è sempre presente. ",
       "1 = Normale",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Nessuna nebbia",
+      "3 = Nebbia infinita"
     ],
     "WaterShut": [
       "Quanto tempo dopo la data di inizio predefinita (9 luglio 1993) gli impianti idraulici (ad esempio i lavandini) smettono di essere infinite fonti d'acqua. ",
@@ -604,7 +604,7 @@
       "3 = Normale",
       "4 = Alto",
       "5 = Molto Alta",
-      "6 = No decay"
+      "6 = Nessun decadimento"
     ],
     "SeenHoursPreventLootRespawn": [
       "Quando > 0, il bottino non si rigenererà nelle zone che sono state visitate entro questo numero di ore in gioco. Min: 0 Max: 2147483647 Predefinito: 0"
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Velocità con cui le statistiche degli animali (fame, sete, ecc.) si riducono. ",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Velocità con cui le statistiche degli animali (fame, sete, ecc.) si riducono durante il meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Per quanto tempo gli animali rimarranno incinti prima del parto. ",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Velocità con cui gli animali invecchiano. ",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Predefinito = Veloce",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Predefinito = Veloce",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Quanto tempo ci vorrà prima che i cuccioli si schiudano dalle uova. ",
-      "1 = Ultra Fast",
+      "1 = Ultraveloce",
       "2 = Molto veloce",
       "3 = Veloce",
       "4 = Normale",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Se un elemento multimediale non è stato visto o letto completamente, questa impostazione determina se verrà visualizzato completamente, visualizzato come \"???\" o nascosto completamente. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Completamente rivelato",
+      "2 = Mostrato come ???",
+      "3 = Completamente nascosto"
     ],
     "SeeNotLearntRecipe": [
       "Se è vero, potrai vedere tutte le ricette che si possono realizzare con una stazione, anche se non le hai ancora imparate."
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Se ci sono rendimenti decrescenti sui punti tratto bonus forniti dalla selezione di più tratti negativi. ",
       "1 = Nessuna",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 punto di penalità per ogni 3 tratti negativi selezionati",
+      "3 = 1 punto di penalità per ogni 2 tratti negativi selezionati",
       "4 = 1 punto di penalità per ogni tratto negativo selezionato dopo il primo"
     ],
     "MinutesPerPage": [
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

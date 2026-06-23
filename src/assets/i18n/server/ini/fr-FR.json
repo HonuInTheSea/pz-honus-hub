@@ -140,10 +140,10 @@
         "Les joueurs peuvent blesser et tuer les autres joueurs"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP est connecté au chat administrateur"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP est connecté au fichier"
       ],
       "PauseEmpty": [
         "Le temps du jeu s'arrête lorsqu'il n'y a aucun joueur connecté"
@@ -281,10 +281,10 @@
         "Temps en secondes avant le début de la guerre."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Durée de la guerre en secondes."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limite de points de vie du refuge."
       ],
       "ServerPlayerID": [
         "ServerPlayerID détermine si un personnage vient d'un autre serveur ou d'une partie solo. Cette valeur peut être modifiée lors d'un Soft Reset (réinitialisation partielle). Si ce nombre correspond au client, le client devra créer un nouveau personnage. Ceci est utilisé en conjonction avec ResetID. Il est fortement recommandé de conserver ces IDs quelque part."
@@ -326,7 +326,7 @@
         "Les joueurs ressentent la fatigue et ont besoin de dormir. (Ignoré si SleepAllowed est désactivé)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP : L'activation de ce paramètre peut provoquer une désynchronisation visuelle des positions des joueurs."
       ],
       "WorkshopItems": [
         "Liste les IDs de mod du Workshop que le serveur doit télécharger. Séparés par un point-virgule. Exemple : WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=Personne 2=Amis uniquement 3=Tout le monde"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Désactive le remorquage du véhicule"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Désactive le remorquage de la remorque"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Désactive le remorquage de véhicules brûlés"
       ],
       "BadWordListFile": [
         "Chemin d'accès au fichier avec la liste des mots à interdire. "
@@ -464,37 +464,37 @@
         "Le symbole ou le morceau de texte qui remplacera le gros mot"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Désactive la protection anti-triche du système de sécurité."
       ],
       "AntiCheatMovement": [
         "Désactive la protection anti-triche des déplacements."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Désactive la protection anti-triche contre les coups de personnage."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Désactive la protection anti-triche des vérifications de paquets."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Désactive la protection anti-triche des autorisations du joueur."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Désactive la protection anti-triche du joueur XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Désactive la protection anti-triche des contrôles incendie."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Désactive la protection anti-triche du refuge."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Désactive la protection anti-triche des contrôles de recettes."
       ],
       "AntiCheatPlayer": [
         "Désactive la protection anti-triche des joueurs."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Désactive la protection anti-triche par somme de contrôle."
       ],
       "AntiCheatItem": [
         "Désactive la protection anti-triche des vérifications d'éléments."
@@ -506,7 +506,7 @@
         "Définit la période de mise à jour multijoueur en secondes. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Désactive le tableau de bord."
       ],
       "HideAdminsInPlayerList": [
         "Masque les administrateurs dans la liste des joueurs."

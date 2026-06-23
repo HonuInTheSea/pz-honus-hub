@@ -293,7 +293,7 @@
       "4 = Gens"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie permet migrar a cel·les buides."
     ],
     "DayLength": [
       "Per defecte = 2 hores",
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Tant si l'hora del dia canvia de manera natural, com si sempre és de dia/nit. ",
       "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Dia sense fi",
+      "3 = Nit sense fi"
     ],
     "ClimateCycle": [
       "Tant si el temps canvia com si es manté en un sol estat. ",
       "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Sense temps",
+      "3 = Pluja sense fi",
+      "4 = Tempesta sense fi",
+      "5 = Neu sense fi",
+      "6 = Tempesta de neu sense fi"
     ],
     "FogCycle": [
       "Si la boira es produeix de manera natural, no es produeix mai o és sempre present. ",
       "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Sense boira",
+      "3 = Boira infinita"
     ],
     "WaterShut": [
       "Quant de temps després de la data d'inici predeterminada (9 de juliol de 1993) que els accessoris de fontaneria (p. ex. piques) deixen de ser fonts infinites d'aigua. ",
@@ -604,7 +604,7 @@
       "3 = Normal",
       "4 = Alt",
       "5 = Molt alt",
-      "6 = No decay"
+      "6 = Sense decadència"
     ],
     "SeenHoursPreventLootRespawn": [
       "Quan > 0, no reapareixer� res a zones que han sigut visitades per davall d'aqueix nombre d'hores internes del joc. "
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Velocitat a la qual es redueixen les estadístiques dels animals (fam, set, etc.). ",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Velocitat amb la qual les estadístiques dels animals (fam, set, etc.) es redueixen mentre estan en meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Quant de temps estaran embarassades els animals abans de donar a llum. ",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Velocitat amb què els animals envelleixen. ",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Per defecte = R�pida",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Per defecte = R�pida",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Quant de temps abans que els nadons eclosionin dels ous? ",
-      "1 = Ultra Fast",
+      "1 = Ultra ràpid",
       "2 = Molt r�pida",
       "3 = R�pida",
       "4 = Normal",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Si un material multimèdia no s'ha vist ni llegit completament, aquesta configuració determina si es mostra completament, es mostra com a \"???\" o s'amaga completament. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Totalment revelat",
+      "2 = Es mostra com ???",
+      "3 = Totalment amagat"
     ],
     "SeeNotLearntRecipe": [
       "Si és cert, podreu veure totes les receptes que es puguin fer amb una estació, encara que encara no les hàgiu après."
@@ -1078,12 +1078,12 @@
       "Si es pot afegir verí als aliments. ",
       "1 = S�",
       "2 = No",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Només està desactivada la intoxicació amb lleixiu"
     ],
     "MaggotSpawn": [
       "Si/quan els cucs poden engendrar als cadàvers. ",
       "1 = Dins i al voltant dels cossos",
-      "2 = In Bodies Only",
+      "2 = Només en cossos",
       "3 = Mai"
     ],
     "LightBulbLifespan": [
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Si hi ha rendiments decreixents dels punts de bonificació proporcionats a partir de seleccionar múltiples trets negatius. ",
       "1 = Gens",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 punt de penalització per cada 3 trets negatius seleccionats",
+      "3 = 1 punt de penalització per cada 2 trets negatius seleccionats",
       "4 = 1 punt de penalització per cada tret negatiu seleccionat després del primer"
     ],
     "MinutesPerPage": [
@@ -1348,7 +1348,7 @@
     ],
     "DisableFakeDead": [
       "Si alguns zombis d'aspecte mort es reanimaran i atacaran el jugador. ",
-      "1 = World Zombies",
+      "1 = Zombis del món",
       "2 = Món i Combat Zombies",
       "3 = Mai"
     ],
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

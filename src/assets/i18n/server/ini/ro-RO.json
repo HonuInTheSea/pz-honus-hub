@@ -25,7 +25,7 @@
     "ResetID": "Resetați ID-ul",
     "Mods": "Moduri",
     "Map": "Harta",
-    "DoLuaChecksum": "Do Lua Checksum",
+    "DoLuaChecksum": "Verificare checksum Lua",
     "Public": "Public",
     "PublicName": "Nume Public",
     "PublicDescription": "Descriere publică",
@@ -38,10 +38,10 @@
     "SaveWorldEveryMinutes": "Salvați lumea în fiecare minut",
     "PlayerSafehouse": "Jucător Safehouse",
     "AdminSafehouse": "Administrator Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
-    "SafehouseAllowFire": "Safehouse Allow Fire",
-    "SafehouseAllowLoot": "Safehouse Allow Loot",
-    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseAllowTrepass": "Permite intrarea în casă sigură",
+    "SafehouseAllowFire": "Permite focul în casă sigură",
+    "SafehouseAllowLoot": "Permite prada în casă sigură",
+    "SafehouseAllowRespawn": "Permite reapariția în casă sigură",
     "SafehouseDaySurvivedToClaim": "Safehouse Day a supraviețuit pentru a revendica",
     "SafeHouseRemovalTime": "Timp de îndepărtare a casei în siguranță",
     "SafehouseAllowNonResidential": "Safehouse Allow Non-Rezidential",
@@ -104,7 +104,7 @@
     "PVPMeleeDamageModifier": "Modificator de daune PVP corp la corp",
     "PVPFirearmDamageModifier": "Modificator de daune ale armelor de foc PVP",
     "CarEngineAttractionModifier": "Modificator de atracție a motorului auto",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Jucătorul împinge jucătorul",
     "MapRemotePlayerVisibility": "Hartă Vizibilitatea jucătorului de la distanță",
     "BackupsCount": "Număr de copii de rezervă",
     "BackupsOnStart": "Backup-uri la pornire",
@@ -118,12 +118,12 @@
     "BadWordReplacement": "Înlocuirea cuvintelor proaste",
     "AntiCheatSafety": "Siguranță anti-cheat",
     "AntiCheatMovement": "Mișcarea anti-cheat",
-    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatHit": "Anti-cheat lovituri",
     "AntiCheatPacket": "Pachet anti-cheat",
     "AntiCheatPermission": "Permisiune anti-cheat",
-    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatXP": "Anti-cheat XP",
     "AntiCheatFire": "Foc anti-cheat",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatSafeHouse": "Anti-cheat casă sigură",
     "AntiCheatRecipe": "Rețetă anti-cheat",
     "AntiCheatPlayer": "Jucător anti-cheat",
     "AntiCheatChecksum": "Sumă de control anti-cheat",
@@ -140,10 +140,10 @@
         "Jucătorii pot răni alți jucători."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP este conectat la chatul administrativ"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP este înregistrat în fișier"
       ],
       "PauseEmpty": [
         "Timpul jocului se oprește atunci când nu există jucători online"
@@ -176,7 +176,7 @@
         "Afișează numele de utilizator deasupra altor jucători."
       ],
       "ShowFirstAndLastName": [
-        "Display first & last name above player's heads."
+        "Afișați numele și prenumele deasupra capetelor jucătorului."
       ],
       "SpawnPoint": [
         "Obligă toți jucătorii noi să se Spawneze în coordonatele x,y,z. Poți vedea coordonatele pe map.projectzomboid.com. Dezactivat când coordonatele sunt 0,0,0."
@@ -196,7 +196,7 @@
       "SpawnItems": [
         "Tipuri de articole cu care apar jucătorii noi.",
         "Separați mai multe tipuri de articole prin virgule.",
-        "Example: Base.Axe,Base.Bag_BigHikingBag"
+        "Exemplu: Base.Axe,Base.Bag_BigHikingBag"
       ],
       "DefaultPort": [
         "Port de pornire pentru datele jucătorului. Dacă UDP, acesta este unul dintre cele două porturi utilizate. Dacă legacy TCP, un port este folosit pentru fiecare jucător, începând cu acel port"
@@ -281,10 +281,10 @@
         "Timp în secunde înainte de începerea războiului."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Durata războiului în secunde."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limita punctelor de lovitura Safehouse."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determină dacă un personaj este de pe alt server sau de pe un singur jucător. "
@@ -326,7 +326,7 @@
         "Jucătorii obosesc și au nevoie să doarmă. "
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Activarea acestei setări poate cauza desincronizarea vizuală a pozițiilor jucătorilor."
       ],
       "WorkshopItems": [
         "Listați ID-urile modurilor de atelier pentru descărcare de server. "
@@ -396,14 +396,14 @@
       ],
       "ClientCommandFilter": [
         "Lista de comenzi separate prin punct și virgulă care nu vor fi scrise în jurnalul serverului cmd.txt. ",
-        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
-        "+vehicle.installPart means DO write that command"
+        "- vehicul. Introducerea * înseamnă NU scrieți nicio comandă pentru vehicul. Introducerea:",
+        "+vehicle.installPart înseamnă DO scrie acea comandă"
       ],
       "ClientActionLogs": [
         "Lista de acțiuni separate prin punct și virgulă care vor fi scrise în jurnalul serverului ClientActionLogs.txt."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Urmăriți modificările nivelurilor de avantaje ale jucătorilor în jurnalul serverului PerkLog.txt"
       ],
       "ItemNumbersLimitPerContainer": [
         "Numărul maxim de articole care pot fi plasate într-un container.  "
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Controlează afișarea jucătorilor de la distanță pe harta din joc.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Ascuns 2=Prieteni 3=Toată lumea"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Dezactivează remorcarea vehiculului"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Dezactivează remorcarea remorcii"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Dezactivează remorcarea vehiculului ars"
       ],
       "BadWordListFile": [
         "Calea către fișierul cu lista de cuvinte care trebuie interzise. "
@@ -464,37 +464,37 @@
         "Simbolul sau fragmentul de text care va înlocui cuvântul rău"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Dezactivează protecția anti-cheat a sistemului de siguranță."
       ],
       "AntiCheatMovement": [
         "Dezactivează protecția anti-cheat pentru mișcare."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Dezactivează protecția anti-cheat cu lovituri de caractere."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Dezactivează protecția anti-cheat a verificărilor de pachete."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Dezactivează protecția anti-cheat a permisiunilor jucătorului."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Dezactivează protecția anti-cheat player XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Dezactivează protecția anti-cheat a verificărilor de incendiu."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Dezactivează protecția anti-cheat safehouse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Dezactivează protecția anti-cheat a verificărilor de rețetă."
       ],
       "AntiCheatPlayer": [
         "Dezactivează protecția anti-cheat pentru jucători."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Dezactivează protecția anti-cheat a sumei de control."
       ],
       "AntiCheatItem": [
         "Dezactivează protecția anti-cheat a verificărilor articolelor."
@@ -506,7 +506,7 @@
         "Setează perioada de actualizare multiplayer în secunde. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Dezactivează tabloul de bord."
       ],
       "HideAdminsInPlayerList": [
         "Ascunde administratorii din lista de jucători."

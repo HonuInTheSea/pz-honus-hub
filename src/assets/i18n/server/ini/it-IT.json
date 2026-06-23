@@ -59,7 +59,7 @@
     "DiscordChannel": "Canale Discordia",
     "DiscordChannelID": "ID canale discorde",
     "WebhookAddress": "Indirizzo del webhook",
-    "Password": "Password",
+    "Password": "Parola d'ordine",
     "MaxAccountsPerUser": "Account massimi per utente",
     "AllowCoop": "Consenti Coop",
     "SleepAllowed": "Dormire consentito",
@@ -140,10 +140,10 @@
         "I giocatori possono ferirsi e uccidersi tra di loro."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "Il PVP è registrato nella chat dell'amministratore"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP viene registrato nel file"
       ],
       "PauseEmpty": [
         "Il tempo della partita si ferma quando non ci sono giocatori nel server."
@@ -281,10 +281,10 @@
         "Tempo in secondi prima dell'inizio della guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Durata della guerra in secondi."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limite dei punti ferita del rifugio."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determina se un personaggio è di un altro server o di un giocatore singolo. Questo valore può essere modificato da soft reset. Se questo numero corrisponde al cliente, il cliente deve creare un nuovo personaggio. Questo è usato insieme a ResetID. Si consiglia vivamente di fare il backup di questi ID da qualche parte"
@@ -326,7 +326,7 @@
         "I giocatori si stancano e hanno bisogno di dormire. (Ignorato se SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: l'attivazione di questa impostazione può causare la desincronizzazione visiva delle posizioni dei giocatori."
       ],
       "WorkshopItems": [
         "Elenca gli ID dei Mod delle officine che il server deve scaricare. Ognuno deve essere separato da un punto e virgola. Esempio: WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=Nascosto 2=Amici 3=Tutti"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Disabilita il traino del veicolo"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Disabilita il traino del rimorchio"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Disabilita il traino del veicolo bruciato"
       ],
       "BadWordListFile": [
         "Percorso del file con l'elenco delle parole da vietare. "
@@ -464,37 +464,37 @@
         "Il simbolo o la parte di testo che sostituirà la parolaccia"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Disabilita la protezione anti-cheat del sistema di sicurezza."
       ],
       "AntiCheatMovement": [
         "Disattiva la protezione anticheat del movimento."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Disabilita la protezione anti-cheat colpita dal personaggio."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Disabilita la protezione anti-cheat dei controlli dei pacchetti."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Disabilita la protezione anti-cheat dei permessi del giocatore."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Disabilita la protezione anti-cheat dei XP del giocatore."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Disabilita i controlli antincendio e la protezione anti-cheat."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Disabilita la protezione anti-cheat del rifugio."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Disabilita i controlli delle ricette e la protezione anti-cheat."
       ],
       "AntiCheatPlayer": [
         "Disattiva la protezione anticheat dei giocatori."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Disabilita la protezione anti-cheat del checksum."
       ],
       "AntiCheatItem": [
         "Disabilita la protezione anti-cheat dei controlli degli oggetti."
@@ -506,7 +506,7 @@
         "Imposta il periodo di aggiornamento multiplayer in secondi. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Disabilita il tabellone segnapunti."
       ],
       "HideAdminsInPlayerList": [
         "Nasconde gli amministratori nell'elenco dei giocatori."

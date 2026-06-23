@@ -1,146 +1,146 @@
 {
   "common": {
-    "loadingContent": "Loading content...",
-    "next": "Next",
-    "back": "Back",
-    "finish": "Finish",
-    "cancel": "Cancel",
-    "browse": "Browse",
-    "yes": "Yes",
+    "loadingContent": "S'està carregant el contingut...",
+    "next": "A continuació",
+    "back": "Enrere",
+    "finish": "Acabar",
+    "cancel": "Cancel·la",
+    "browse": "Navega",
+    "yes": "Sí",
     "no": "No",
-    "save": "Save"
+    "save": "Desa"
   },
   "app": {
     "title": "Honu's Hub"
   },
   "menu": {
-    "languageLabel": "Language",
-    "languagePlaceholder": "Select a language",
+    "languageLabel": "Llengua",
+    "languagePlaceholder": "Seleccioneu un idioma",
     "sections": {
       "hub": "HUB",
-      "modFilters": "MOD FILTERS",
-      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "modFilters": "FILTRS MOD",
+      "modCollectionFilters": "FILTRES DE COL·LECCIÓ MOD",
       "actions": "ACTIONS",
-      "getStarted": "Get Started",
-      "resources": "Resources",
-      "dangerZone": "Danger Zone"
+      "getStarted": "Comença",
+      "resources": "Recursos",
+      "dangerZone": "Zona de perill"
     },
     "items": {
-      "dashboard": "Dashboard",
-      "logInspector": "Log Inspector",
-      "myMods": "My Mods",
-      "configureFolders": "Configure Folders",
-      "setSteamApiKey": "Set Steam API Key",
-      "syncHonu": "Sync Honu's Mod Info QoL",
-      "syncLocal": "Sync Local Mod Data",
-      "syncWorkshop": "Sync With Steam Workshop",
-      "changelog": "Changelog",
-      "documentation": "Documentation",
-      "viewSource": "View Source",
+      "dashboard": "Tauler de control",
+      "logInspector": "Inspector de registre",
+      "myMods": "Els meus mods",
+      "configureFolders": "Configura carpetes",
+      "setSteamApiKey": "Estableix la clau de l'API de Steam",
+      "syncHonu": "Sincronitza la informació del mod d'Honu QoL",
+      "syncLocal": "Sincronitza les dades del mod local",
+      "syncWorkshop": "Sincronització amb Steam Workshop",
+      "changelog": "Registre de canvis",
+      "documentation": "Documentació",
+      "viewSource": "Visualitza la font",
       "projectZomboid": "Project Zomboid",
-      "pzWiki": "Official Project Zomboid Wiki",
+      "pzWiki": "Projecte oficial Zomboid Wiki",
       "b41Map": "B41 Map",
       "b42Map": "B42 Map",
-      "workshop": "Project Zomboid Steam Workshop",
+      "workshop": "Projecte Zomboid Steam Workshop",
       "subreddit": "r/projectzomboid",
       "discord": "Project Zomboid",
-      "moddingDiscord": "PZ Modding Community",
-      "mappingDiscord": "Unofficial PZ Mapping",
-      "honuWorkshop": "HonuInTheSea's Steam Workshop",
-      "supportKofi": "Support on Ko-fi",
-      "resetApp": "Reset Application",
-      "resetAppTooltip": "Reset window settings and delete stored data",
+      "moddingDiscord": "Comunitat PZ Modding",
+      "mappingDiscord": "Cartografia PZ no oficial",
+      "honuWorkshop": "Taller de vapor de HonuInTheSea",
+      "supportKofi": "Suport a Ko-fi",
+      "resetApp": "Restableix l'aplicació",
+      "resetAppTooltip": "Restableix la configuració de la finestra i elimina les dades emmagatzemades",
       "server": "Servidor",
       "modCollections": "Col·leccions de Mods",
       "modPresets": "Predefinits de Mods"
     },
     "filters": {
-      "adultLabel": "Has Adult Content",
-      "adultTooltip": "Filter mods where Steam metadata reports maybe_inappropriate_sex as true.",
-      "rulesLabel": "Has Rules",
-      "rulesTooltip": "Mod contains a require, incompatible, loadModAfter, loadModBefore statement in their mod.info file",
-      "missingSteamLabel": "Missing Steam Data",
-      "missingSteamTooltip": "Mod may have been marked as private or removed from the Steam Workshop",
-      "outdatedLabel": "Outdated Mods",
-      "outdatedTooltip": "Mod may need to be unsubscribed and resubscribed to get the latest version from the Steam Workshop"
+      "adultLabel": "Té contingut per a adults",
+      "adultTooltip": "Filtreu les modificacions on les metadades de Steam indiquen que maybe_inappropriate_sex és cert.",
+      "rulesLabel": "Té Regles",
+      "rulesTooltip": "El mod conté una declaració require, incompatible, loadModAfter, loadModBefore al fitxer mod.info",
+      "missingSteamLabel": "Falten dades de Steam",
+      "missingSteamTooltip": "És possible que el mod s'hagi marcat com a privat o s'hagi eliminat de Steam Workshop",
+      "outdatedLabel": "Mods obsolets",
+      "outdatedTooltip": "És possible que s'hagi de donar de baixa i tornar a subscriure el mod per obtenir la darrera versió del Steam Workshop"
     },
     "collections": {
-      "searchLabel": "Search Collections",
-      "searchPlaceholder": "Search collections",
-      "sortLabel": "Sort by",
-      "periodLabel": "Over time period",
-      "tagsLabel": "Tags",
-      "tagsPlaceholder": "Select tags",
-      "sortMostPopular": "Most Popular",
-      "sortMostRecent": "Most Recent",
-      "sortLastUpdated": "Last Updated",
-      "periodToday": "Today",
-      "periodWeek": "One Week",
-      "periodThirtyDays": "Thirty Days",
-      "periodThreeMonths": "Three Months",
-      "periodSixMonths": "Six Months",
-      "periodYear": "One Year"
+      "searchLabel": "Cerca col·leccions",
+      "searchPlaceholder": "Cerca col·leccions",
+      "sortLabel": "Ordena per",
+      "periodLabel": "Al llarg del període de temps",
+      "tagsLabel": "Etiquetes",
+      "tagsPlaceholder": "Seleccioneu etiquetes",
+      "sortMostPopular": "El més popular",
+      "sortMostRecent": "Més recent",
+      "sortLastUpdated": "Última actualització",
+      "periodToday": "Avui",
+      "periodWeek": "Una setmana",
+      "periodThirtyDays": "Trenta dies",
+      "periodThreeMonths": "Tres mesos",
+      "periodSixMonths": "Sis mesos",
+      "periodYear": "Un any"
     },
-    "presetsUnavailable": "Set your Project Zomboid user folder and/or define presets first.",
+    "presetsUnavailable": "Configureu la vostra carpeta d'usuari Project Zomboid i/o definiu primer els valors predefinits.",
     "steamApi": {
-      "dialogTitle": "Set Steam Web API Key",
-      "dialogIntro": "Enter your Steam Web API Key. This key is stored locally on your machine.",
-      "keyLabel": "Steam Web API Key",
-      "needKey": "Need a key?",
-      "getKeyLink": "Get your Steam Web API Key",
-      "helpButton": "How to create a Steam Web API Key",
-      "helpTitle": "How to create a Steam Web API Key",
-      "helpCardTitle": "How to Register a Steam Web API Key",
-      "helpCardBody": "This guide provides a step-by-step walkthrough for registering a Steam Web API Key. A Steam Web API Key lets applications securely access specific data from your Steam account, such as game libraries or statistics, when you authorize them to do so.",
-      "step1Title": "1. Prerequisites",
-      "step1Intro": "Before you can register a Steam Web API Key, make sure that:",
-      "step1Bullet1": "You have an active Steam account in good standing, secured with Steam Guard (email or mobile authenticator).",
-      "step1Bullet2": "Your account owns at least one purchased game. Brand-new or empty accounts cannot obtain an API key.",
-      "step1Bullet3": "You are using a trusted device and network (never register or view your key on a public or shared computer).",
-      "step2Title": "2. Important Security Notes",
-      "step2Intro": "Your Steam Web API Key is sensitive information. Anyone who has your key can make API requests on your behalf. Treat it like a password:",
-      "step2Bullet1": "Never share your key with other people, and never post it publicly (for example, on forums or GitHub).",
-      "step2Bullet2": "Only paste your key into tools or websites you fully trust.",
-      "step2Bullet3": "If you suspect your key has been exposed, revoke it immediately and generate a new one.",
-      "step3Title": "3. Step-by-Step: Registering a Steam Web API Key",
-      "step3_1Title": "Step 1 - Sign in to Steam",
-      "step3_1Bullet1": "Open your web browser and go to <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
-      "step3_1Bullet2": "Click <strong>\"Log In\"</strong> in the top-right corner.",
-      "step3_1Bullet3": "Enter your Steam account name and password.",
-      "step3_1Bullet4": "If prompted, complete Steam Guard verification.",
-      "step3_2Title": "Step 2 - Open the Steam Web API Key page",
-      "step3_2Bullet1": "While logged in, open the Steam Web API Key registration page: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
-      "step3_2Bullet2": "The page will display a short description of the Steam Web API and a form titled <strong>\"Register for a new Steam Web API Key.\"</strong>",
-      "step3_3Title": "Step 3 - Enter a domain name and agree to the terms",
-      "step3_3Intro": "On the registration form:",
-      "step3_3Bullet1": "In the <strong>\"Domain Name\"</strong> field, enter the domain of the website or service that will use the key. <ul class=\"p-ml-3\"><li>If you do not have a domain, you can enter a placeholder such as <code>localhost</code>, <code>127.0.0.1</code>, or <code>example.com</code>.</li></ul>",
-      "step3_3Bullet2": "Read the Steam Web API Terms of Use.",
-      "step3_3Bullet3": "Tick the checkbox to confirm that you agree to the terms.",
-      "step3_3Bullet4": "Click the <strong>\"Register\"</strong> button to submit the form.",
-      "step3_4Title": "Step 4 - View and copy your new Steam Web API Key",
-      "step3_4Intro": "After a successful registration:",
-      "step3_4Bullet1": "The page reloads and shows your Steam Web API Key near the top.",
-      "step3_4Bullet2": "The key is a long string of letters and numbers (for example: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
-      "step3_4Bullet3": "Select the entire key and copy it (Ctrl+C / Cmd+C).",
-      "step3_4Bullet4": "Store it in a secure location, such as a password manager or an encrypted notes app.",
-      "step4Title": "4. Basic Example of Using Your Steam Web API Key",
-      "step4Intro": "Once you have a key, you can call Steam Web API endpoints by adding it as a <code>key=</code> parameter to the URL. For example, a simple HTTP request might look like this (replace <code>YOURKEYHERE</code> with your real key):",
-      "step4Outro": "The exact URLs and parameters depend on which Steam Web API interface you are using. Always consult the official documentation for the endpoints you need.",
-      "step5Title": "5. Revoking or Regenerating Your Steam Web API Key",
-      "step5Intro": "If you no longer need your Steam Web API Key, or you believe it has been compromised, you should revoke it:",
-      "step5Bullet1": "Sign in to your Steam account if you are not already logged in.",
-      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> again.",
-      "step5Bullet3": "Click the button labeled <strong>\"Revoke My Steam Web API Key\"</strong>.",
-      "step5Bullet4": "If you need a new key later, return to the same page and register again using the steps above.",
-      "step6Title": "6. Troubleshooting Tips",
-      "step6Intro": "You may see one of the following issues when trying to register a key:",
-      "step6Bullet1": "<strong>Message:</strong> <em>\"You will be granted access to Steam Web API keys when you have games in your Steam account.\"</em> In this case, your account does not yet meet the minimum requirements. Purchase at least one game on Steam, wait for the purchase to clear, and try again later.",
-      "step6Bullet2": "<strong>Page keeps asking you to sign in</strong> - Make sure cookies and JavaScript are enabled in your browser, and that you are logging in with the correct account.",
-      "step6Bullet3": "<strong>Security concerns</strong> - If any third-party site or person asks for your key and you are unsure why, do not share it. Revoke your key and change your Steam password if you think it has been exposed.",
-      "footerNote": "You now have a registered Steam Web API Key and a basic understanding of how to manage it safely. Keep this page handy as a reference when you need to register, use, or revoke your key."
+      "dialogTitle": "Estableix la clau de l'API web de Steam",
+      "dialogIntro": "Introduïu la vostra clau de l'API web de Steam. Aquesta clau s'emmagatzema localment a la vostra màquina.",
+      "keyLabel": "Clau de l'API web de Steam",
+      "needKey": "Necessites una clau?",
+      "getKeyLink": "Obteniu la vostra clau de l'API web de Steam",
+      "helpButton": "Com crear una clau d'API web de Steam",
+      "helpTitle": "Com crear una clau d'API web de Steam",
+      "helpCardTitle": "Com registrar una clau d'API web de Steam",
+      "helpCardBody": "Aquesta guia ofereix una guia pas a pas per registrar una clau d'API web de Steam. Una clau d'API web de Steam permet que les aplicacions accedeixin de manera segura a dades específiques del vostre compte de Steam, com ara biblioteques de jocs o estadístiques, quan les autoritzeu a fer-ho.",
+      "step1Title": "1. Requisits previs",
+      "step1Intro": "Abans de poder registrar una clau d'API web de Steam, assegureu-vos que:",
+      "step1Bullet1": "Tens un compte de Steam actiu en bon estat, assegurat amb Steam Guard (correu electrònic o autenticador mòbil).",
+      "step1Bullet2": "El teu compte és propietari d'almenys un joc comprat. Els comptes nous o buits no poden obtenir una clau API.",
+      "step1Bullet3": "Esteu utilitzant un dispositiu i una xarxa de confiança (mai us registreu ni visualitzeu la vostra clau en un ordinador públic o compartit).",
+      "step2Title": "2. Notes importants de seguretat",
+      "step2Intro": "La vostra clau de l'API web de Steam és informació confidencial. Qualsevol persona que tingui la vostra clau pot fer sol·licituds d'API en nom vostre. Tracteu-lo com una contrasenya:",
+      "step2Bullet1": "No compartiu mai la vostra clau amb altres persones ni la publiqueu mai públicament (per exemple, en fòrums o GitHub).",
+      "step2Bullet2": "Enganxeu la vostra clau només a eines o llocs web en els quals confieu plenament.",
+      "step2Bullet3": "Si sospiteu que la vostra clau ha estat exposada, revoqueu-la immediatament i genereu-ne una de nova.",
+      "step3Title": "3. Pas a pas: registre d'una clau d'API web de Steam",
+      "step3_1Title": "Pas 1: inicieu la sessió a Steam",
+      "step3_1Bullet1": "Obriu el vostre navegador web i aneu a <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Feu clic a <strong>\"Iniciar sessió\"</strong> a l'extrem superior dret.",
+      "step3_1Bullet3": "Introduïu el nom i la contrasenya del vostre compte de Steam.",
+      "step3_1Bullet4": "Si se us demana, completeu la verificació de Steam Guard.",
+      "step3_2Title": "Pas 2: obriu la pàgina Clau de l'API web de Steam",
+      "step3_2Bullet1": "Mentre inicieu sessió, obriu la pàgina de registre de la clau de l'API web de Steam: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "La pàgina mostrarà una breu descripció de l'API web de Steam i un formulari titulat <strong>\"Registreu-vos per a una nova clau de l'API web de Steam.\" </strong>",
+      "step3_3Title": "Pas 3: introduïu un nom de domini i accepteu els termes",
+      "step3_3Intro": "Al formulari d'inscripció:",
+      "step3_3Bullet1": "Al camp <strong>\"Nom de domini\"</strong>, introduïu el domini del lloc web o servei que utilitzarà la clau. <ul class=\"p-ml-3\"><li>Si no teniu cap domini, podeu introduir un marcador de posició com ara <code>localhost</code>, <code>127.0.0.1</code> o <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Llegiu les Condicions d'ús de l'API web de Steam.",
+      "step3_3Bullet3": "Marqueu la casella de selecció per confirmar que accepteu les condicions.",
+      "step3_3Bullet4": "Feu clic al botó <strong>\"Registrar\"</strong> per enviar el formulari.",
+      "step3_4Title": "Pas 4: visualitzeu i copieu la vostra nova clau de l'API web de Steam",
+      "step3_4Intro": "Després d'un registre satisfactori:",
+      "step3_4Bullet1": "La pàgina es torna a carregar i mostra la vostra clau de l'API web de Steam a prop de la part superior.",
+      "step3_4Bullet2": "La clau és una cadena llarga de lletres i números (per exemple: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Seleccioneu la clau sencera i copieu-la (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Emmagatzemeu-lo en una ubicació segura, com ara un gestor de contrasenyes o una aplicació de notes xifrades.",
+      "step4Title": "4. Exemple bàsic d'ús de la clau de l'API web de Steam",
+      "step4Intro": "Un cop tingueu una clau, podeu trucar als punts finals de l'API web de Steam afegint-la com a paràmetre <code>key=</code> a l'URL. Per exemple, una sol·licitud HTTP senzilla podria semblar així (substituïu <code>YOURKEYHERE</code> per la vostra clau real):",
+      "step4Outro": "Els URL i els paràmetres exactes depenen de la interfície de l'API web de Steam que utilitzeu. Consulteu sempre la documentació oficial dels endpoints que necessiteu.",
+      "step5Title": "5. Revocar o regenerar la clau de l'API web de Steam",
+      "step5Intro": "Si ja no necessiteu la vostra clau de l'API web de Steam o creieu que s'ha vist compromesa, hauríeu de revocar-la:",
+      "step5Bullet1": "Inicieu la sessió al vostre compte de Steam si encara no heu iniciat sessió.",
+      "step5Bullet2": "Torneu a obrir <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>.",
+      "step5Bullet3": "Feu clic al botó amb l'etiqueta <strong>\"Revoca la meva clau de l'API web de Steam\"</strong>.",
+      "step5Bullet4": "Si necessiteu una clau nova més tard, torneu a la mateixa pàgina i torneu a registrar-vos seguint els passos anteriors.",
+      "step6Title": "6. Consells de resolució de problemes",
+      "step6Intro": "És possible que vegeu un dels problemes següents quan intenteu registrar una clau:",
+      "step6Bullet1": "<strong>Missatge:</strong> <em> \"Se us concedirà accés a les claus de l'API web de Steam quan tingueu jocs al vostre compte de Steam.\" </em> En aquest cas, el vostre compte encara no compleix els requisits mínims. Compra almenys un joc a Steam, espera que s'esborri la compra i torna-ho a provar més tard.",
+      "step6Bullet2": "<strong>Page us demana que inicieu la sessió</strong> - Assegureu-vos que les galetes i JavaScript estiguin activades al vostre navegador i que inicieu sessió amb el compte correcte.",
+      "step6Bullet3": "<strong>Problemes de seguretat</strong> - Si algun lloc o persona de tercers demana la vostra clau i no sabeu per què, no la compartiu. Revoca la teva clau i canvia la contrasenya de Steam si creus que ha estat exposada.",
+      "footerNote": "Ara teniu una clau de l'API web de Steam registrada i una comprensió bàsica de com gestionar-la de manera segura. Mantingueu aquesta pàgina a mà com a referència quan necessiteu registrar, utilitzar o revocar la vostra clau."
     },
     "folders": {
-      "dialogTitle": "Configure Folders"
+      "dialogTitle": "Configura carpetes"
     },
     "loadingLocale": "S'està carregant l'idioma..."
   },
@@ -180,217 +180,217 @@
     }
   },
   "onboarding": {
-    "title": "Get Started",
+    "title": "Comença",
     "steps": {
-      "welcome": "Welcome",
-      "folders": "Folders",
-      "steamKey": "Steam API Key",
-      "tips": "Tips"
+      "welcome": "Benvingut",
+      "folders": "Carpetes",
+      "steamKey": "Clau de l'API de Steam",
+      "tips": "Consells"
     },
     "welcome": {
       "title": "Welcome to Project Zomboid Mod Manager",
-      "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
-      "bullet1": "Choose your Project Zomboid folders.",
-      "bullet2": "Add your Steam Web API key for Workshop metadata.",
-      "bullet3": "Finish setup and start managing your mods."
+      "body": "Aquesta configuració ràpida us ajuda a connectar les vostres carpetes, afegir la vostra clau de l'API web de Steam i començar a sincronitzar modificacions.",
+      "bullet1": "Trieu les carpetes de Project Zomboid.",
+      "bullet2": "Afegiu la vostra clau de l'API web de Steam per a les metadades del taller.",
+      "bullet3": "Acabeu la configuració i comenceu a gestionar els vostres mods."
     },
     "tips": {
-      "title": "Quick Tips",
-      "bullet1": "You can update folders and your Steam API key anytime from the sidebar.",
-      "bullet2": "Run Sync Local Mod Data before syncing Workshop metadata.",
-      "bullet3": "Use Mod Filters to narrow the list quickly."
+      "title": "Consells ràpids",
+      "bullet1": "Podeu actualitzar les carpetes i la vostra clau de l'API de Steam en qualsevol moment des de la barra lateral.",
+      "bullet2": "Executeu Sync Local Mod Data abans de sincronitzar les metadades del taller.",
+      "bullet3": "Utilitzeu els filtres de modificacions per restringir la llista ràpidament."
     }
   },
   "tags": {
     "animals": "Animals",
-    "audio": "Audio",
-    "balance": "Balance",
-    "build_41": "Build 41",
-    "build_42": "Build 42",
-    "build_40": "Build 40",
-    "buildings": "Buildings",
-    "clothing_armor": "Clothing/Armor",
-    "farming": "Farming",
-    "food": "Food",
-    "framework": "Framework",
-    "hardmode": "Hardmode",
-    "interface": "Interface",
-    "items": "Items",
-    "language_translation": "Language/Translation",
-    "literature": "Literature",
-    "map": "Map",
-    "military": "Military",
-    "misc": "Misc",
+    "audio": "Àudio",
+    "balance": "Balanç",
+    "build_41": "Construcció 41",
+    "build_42": "Construcció 42",
+    "build_40": "Construcció 40",
+    "buildings": "Edificis",
+    "clothing_armor": "Roba/Armadura",
+    "farming": "L'agricultura",
+    "food": "Menjar",
+    "framework": "Marc",
+    "hardmode": "Mode dur",
+    "interface": "Interfície",
+    "items": "Elements",
+    "language_translation": "Llengua/Traducció",
+    "literature": "Literatura",
+    "map": "Mapa",
+    "military": "Militars",
+    "misc": "Diversos",
     "models": "Models",
-    "multiplayer": "Multiplayer",
-    "pop_culture": "Pop Culture",
+    "multiplayer": "Multijugador",
+    "pop_culture": "Cultura Pop",
     "qol": "QoL",
-    "realistic": "Realistic",
-    "silly_fun": "Silly/Fun",
-    "skills": "Skills",
+    "realistic": "Realista",
+    "silly_fun": "Ximple/Divertit",
+    "skills": "Habilitats",
     "textures": "Textures",
-    "traits": "Traits",
+    "traits": "Trets",
     "vehicles": "Vehicles",
-    "weapons": "Weapons",
+    "weapons": "Armes",
     "wip": "WIP"
   },
   "tagFilter": {
-    "label": "Tags",
-    "matchLabel": "Match",
+    "label": "Etiquetes",
+    "matchLabel": "Partit",
     "matchAny": "O",
     "matchAll": "I",
-    "placeholder": "Select tags"
+    "placeholder": "Seleccioneu etiquetes"
   },
   "modsTable": {
-    "clearFilters": "Clear",
-    "searchPlaceholder": "Search keyword",
-    "detailsTitle": "Mod Details",
+    "clearFilters": "Clar",
+    "searchPlaceholder": "Cerca clau",
+    "detailsTitle": "Detalls del mod",
     "columns": {
-      "name": "Name",
-      "author": "Author",
-      "workshopId": "Workshop ID",
-      "lastModified": "Last Modified Date"
+      "name": "Nom",
+      "author": "Autor",
+      "workshopId": "ID del taller",
+      "lastModified": "Data darrera modificació"
     },
     "filters": {
-      "name": "Search by name",
-      "author": "Search by author",
-      "workshopId": "Search by workshop ID",
-      "date": "Filter date"
+      "name": "Cerca per nom",
+      "author": "Cerca per autor",
+      "workshopId": "Cerca per ID de taller",
+      "date": "Data del filtre"
     }
   },
   "modsPage": {
-    "toastHelp": "Where do I find this?",
+    "toastHelp": "On trobo això?",
     "workshopPrompt": {
-      "title": "Fetch Steam Workshop Data",
-      "body": "Do you want to fetch the latest metadata from the Steam Workshop for your mods?",
-      "alwaysFetch": "Always fetch automatically without asking"
+      "title": "Obteniu dades del taller de Steam",
+      "body": "Voleu obtenir les últimes metadades de Steam Workshop per a les vostres modificacions?",
+      "alwaysFetch": "Obteniu sempre automàticament sense demanar-ho"
     },
-    "loadingLocal": "Scanning Local Mod Data...",
-    "loadingWorkshop": "Fetching Steam Workshop Data...",
-    "loading": "Loading data..."
+    "loadingLocal": "Escanejant dades de modificacions locals...",
+    "loadingWorkshop": "S'estan obtenint dades del taller de Steam...",
+    "loading": "S'estan carregant dades..."
   },
   "folders": {
-    "title": "Set Required Folders",
-    "description": "These folders are used to scan your mods and read your Project Zomboid installation details.",
-    "gameDirLabel": "Project Zomboid game folder",
-    "workshopDirLabel": "Local mods (Steam Workshop) folder",
-    "userDirLabel": "Project Zomboid user folder (optional)",
-    "userDirNote": "Used for exporting server presets and (optional) advanced apply targets."
+    "title": "Estableix les carpetes necessàries",
+    "description": "Aquestes carpetes s'utilitzen per escanejar els vostres mods i llegir els detalls d'instal·lació del projecte Zomboid.",
+    "gameDirLabel": "Carpeta del joc Project Zomboid",
+    "workshopDirLabel": "Carpeta de modificacions locals (Steam Workshop).",
+    "userDirLabel": "Carpeta d'usuari del projecte Zomboid (opcional)",
+    "userDirNote": "S'utilitza per exportar presets de servidor i objectius d'aplicació avançada (opcional)."
   },
   "modDetails": {
     "fields": {
-      "name": "Name",
-      "modId": "Mod ID",
-      "author": "Author",
-      "version": "Mod Version",
-      "versionMin": "Minimum Game Version",
-      "versionMax": "Maximum Game Version",
+      "name": "Nom",
+      "modId": "ID del mod",
+      "author": "Autor",
+      "version": "Versió mod",
+      "versionMin": "Versió mínima del joc",
+      "versionMax": "Versió màxima del joc",
       "url": "URL",
-      "description": "Description",
-      "tags": "Tags",
-      "noTags": "No tags",
-      "packs": "Packs",
-      "tiledefs": "Tiledefs",
-      "workshopTitle": "Workshop Title",
-      "workshopCreator": "Workshop Creator",
-      "fileSize": "File Size",
-      "timeCreated": "Time Created",
-      "timeUpdated": "Time Updated",
-      "workshopViews": "Workshop Views",
-      "workshopSubscriptions": "Workshop Subscriptions",
-      "adultContent": "Has Adult Content"
+      "description": "Descripció",
+      "tags": "Etiquetes",
+      "noTags": "Sense etiquetes",
+      "packs": "Paquets",
+      "tiledefs": "Definicions de tiles",
+      "workshopTitle": "Títol del taller",
+      "workshopCreator": "Creador de tallers",
+      "fileSize": "Mida del fitxer",
+      "timeCreated": "Temps creat",
+      "timeUpdated": "Hora actualitzada",
+      "workshopViews": "Vistes del taller",
+      "workshopSubscriptions": "Subscripcions de tallers",
+      "adultContent": "Té contingut per a adults"
     },
     "links": {
-      "requiredMods": "Required Mods",
-      "loadAfter": "Load Mod After",
-      "loadBefore": "Load Mod Before",
-      "incompatibleMods": "Incompatible Mods",
-      "requiredBy": "Required By",
-      "incompatibleWith": "Incompatible With"
+      "requiredMods": "Mods necessaris",
+      "loadAfter": "Carregueu el mod després",
+      "loadBefore": "Carregueu el mod abans",
+      "incompatibleMods": "Mods incompatibles",
+      "requiredBy": "Requerit per",
+      "incompatibleWith": "Incompatible amb"
     },
     "buttons": {
-      "visitWorkshop": "Visit Steam Workshop Page",
-      "authorWorkshop": "Author's Steam Workshop Page",
-      "openFolder": "Open mod folder"
+      "visitWorkshop": "Visiteu la pàgina del taller de Steam",
+      "authorWorkshop": "Pàgina del taller de Steam de l'autor",
+      "openFolder": "Obre la carpeta de modificacions"
     },
     "tooltips": {
-      "modInfoReadonly": "This field is read-only and populated from mod.info.",
-      "steamReadonly": "This field is read-only and populated from the Steam Workshop.",
-      "modMissing": "The following mod could not be found",
-      "syncToActivate": "Sync With Steam Workshop to Activate",
-      "modFolderUnavailable": "Mod folder path is not available."
+      "modInfoReadonly": "Aquest camp és només de lectura i s'omple des de mod.info.",
+      "steamReadonly": "Aquest camp és només de lectura i s'omple des de Steam Workshop.",
+      "modMissing": "No s'ha pogut trobar el següent mod",
+      "syncToActivate": "Sincronitza amb Steam Workshop per activar",
+      "modFolderUnavailable": "El camí de la carpeta de modificacions no està disponible."
     }
   },
   "docs": {
-    "title": "Documentation",
+    "title": "Documentació",
     "intro": "Honu's Hub us ajuda a navegar, inspeccionar i gestionar el vostre projecte local Zomboid, amb la integració d'escriptori mitjançant Tauri.",
     "toc": {
-      "aria": "Table of contents",
-      "title": "Table of contents",
-      "overview": "Overview",
-      "workflow": "Workflow",
-      "data": "Data the app uses",
-      "features": "Features",
+      "aria": "Taula de continguts",
+      "title": "Taula de continguts",
+      "overview": "Visió general",
+      "workflow": "Flux de treball",
+      "data": "Dades que utilitza l'aplicació",
+      "features": "Característiques",
       "server": "Gestió de servidors",
-      "logInspector": "Log inspector",
-      "folderSetup": "Folder setup",
-      "tauri": "Desktop (Tauri) integration",
-      "privacy": "Privacy & storage",
-      "troubleshooting": "Troubleshooting",
+      "logInspector": "Inspector de registre",
+      "folderSetup": "Configuració de la carpeta",
+      "tauri": "Integració d'escriptori (Tauri).",
+      "privacy": "Privacitat i emmagatzematge",
+      "troubleshooting": "Resolució de problemes",
       "faq": "FAQ"
     },
     "overview": {
-      "title": "Overview",
-      "body": "The app scans a chosen mods directory, derives metadata from common Project Zomboid mod conventions, and presents everything in a table and summary dashboard."
+      "title": "Visió general",
+      "body": "L'aplicació escaneja un directori de modificacions escollit, obté metadades de les convencions de modificacions habituals de Project Zomboid i ho presenta tot en una taula i un tauler de resum."
     },
     "workflow": {
-      "title": "Workflow",
-      "intro": "Follow this end-to-end flow to connect your folders, sync metadata, and generate the Honu Mod Info QoL output.",
+      "title": "Flux de treball",
+      "intro": "Seguiu aquest flux d'extrem a extrem per connectar les vostres carpetes, sincronitzar les metadades i generar la sortida de QoL de la informació del mod Honu.",
       "step1": {
-        "title": "Map folders",
-        "body": "Open <strong>Configure Folders</strong> from the sidebar actions and set your Project Zomboid game, workshop, and user directories.",
-        "screenshot": "Screenshot: Configure Folders"
+        "title": "Carpetes de mapes",
+        "body": "Obriu <strong>Configura les carpetes</strong> des de les accions de la barra lateral i configureu el vostre joc de Project Zomboid, el taller i els directoris d'usuaris.",
+        "screenshot": "Captura de pantalla: Configura carpetes"
       },
       "step2": {
-        "title": "Create/enter Steam Workshop key",
-        "body": "Use <strong>Set Steam API Key</strong> to paste your key so the app can fetch Workshop metadata.",
-        "screenshot": "Screenshot: Set Steam API Key"
+        "title": "Crea/introdueix la clau de Steam Workshop",
+        "body": "Utilitzeu <strong>Set Steam API Key</strong> per enganxar la vostra clau perquè l'aplicació pugui obtenir les metadades del taller.",
+        "screenshot": "Captura de pantalla: estableix la clau de l'API de Steam"
       },
       "step3": {
-        "title": "Sync local mod data",
-        "body": "Run <strong>Sync Local Mod Data</strong> to scan your Workshop folder and build the local mod list.",
-        "screenshot": "Screenshot: Sync Local Mod Data"
+        "title": "Sincronitza les dades de modificacions locals",
+        "body": "Executeu <strong>Sync Local Mod Data</strong> per escanejar la carpeta del taller i crear la llista de mod local.",
+        "screenshot": "Captura de pantalla: Sincronitza les dades del mod local"
       },
       "step4": {
-        "title": "Sync with Steam Workshop",
-        "body": "Run <strong>Sync With Steam Workshop</strong> to pull workshop titles, authors, sizes, and extra metadata.",
-        "screenshot": "Screenshot: Sync With Steam Workshop"
+        "title": "Sincronitza amb Steam Workshop",
+        "body": "Executeu <strong>Sync amb Steam Workshop</strong> per extreure títols del taller, autors, mides i metadades addicionals.",
+        "screenshot": "Captura de pantalla: Sincronització amb Steam Workshop"
       },
       "step5": {
-        "title": "Sync Honu's Mod Info QoL",
-        "body": "Use <strong>Sync Honu's Mod Info QoL</strong> to generate/update <code>honus_miqol_db.lua</code> inside your Project Zomboid user folder.",
-        "screenshot": "Screenshot: Sync Honu's Mod Info QoL"
+        "title": "Sincronitza la informació del mod d'Honu QoL",
+        "body": "Utilitzeu la informació de modificació de <strong>Sync Honu QoL</strong> per generar/actualitzar <code>honus_miqol_db.lua</code> dins de la carpeta d'usuari del projecte Zomboid.",
+        "screenshot": "Captura de pantalla: Sincronitza la QoL de la informació del mod d'Honu"
       }
     },
     "data": {
-      "title": "Data the app uses",
-      "intro": "The app builds a mod listing from information available on disk.",
-      "bullet1": "<strong>Mod folder path</strong> - resolved absolute path to the mod directory.",
-      "bullet2": "<strong>Mod id</strong> - extracted from mod metadata when available (commonly from <code>mod.info</code>).",
-      "bullet3": "<strong>Name</strong> - a display name derived from metadata and/or folder naming.",
-      "bullet4": "<strong>Workshop id (optional)</strong> - if detected and numeric, the app enables a Steam Workshop link button.",
-      "bullet5": "<strong>Status/health indicators</strong> - basic signals such as missing or incomplete metadata (where detectable).",
-      "outro": "Not all mods contain complete metadata. When fields are missing, the UI will display best-effort values and may disable actions that require specific data (for example, the Steam link)."
+      "title": "Dades que utilitza l'aplicació",
+      "intro": "L'aplicació crea una llista de modificacions a partir de la informació disponible al disc.",
+      "bullet1": "<strong>Mod carpeta ruta</strong> - ruta absoluta resolta al directori mod.",
+      "bullet2": "<strong>Mod id</strong>: extret de les metadades de modificacions quan estiguin disponibles (normalment de <code>mod.info</code>).",
+      "bullet3": "<strong>Name</strong>: un nom de visualització derivat de metadades i/o nomenclatura de carpetes.",
+      "bullet4": "<strong>Workshop id (opcional)</strong>: si es detecta i numèrica, l'aplicació habilita un botó d'enllaç de Steam Workshop.",
+      "bullet5": "<strong>indicadors d'estat/salut</strong>: senyals bàsics com ara metadades que falten o estan incompletes (on es detecten).",
+      "outro": "No totes les modificacions contenen metadades completes. Quan falten camps, la interfície d'usuari mostrarà els valors del millor esforç i pot desactivar les accions que requereixen dades específiques (per exemple, l'enllaç de Steam)."
     },
     "features": {
-      "title": "Features",
-      "bullet1": "<strong>Mods table</strong> - lists detected mods with key fields (name, id, workshop link when available, and path).",
-      "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
-      "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
-      "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
-      "logInspectorLink": "Log inspector",
-      "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
+      "title": "Característiques",
+      "bullet1": "<strong>Mods table</strong>: enumera els mods detectats amb camps clau (nom, identificador, enllaç del taller quan estigui disponible i camí).",
+      "bullet2": "<strong>Detalls de la fila</strong>: amplieu una fila per veure més informació sobre un mod (quan estigui disponible).",
+      "bullet3": "<strong>Open a Steam</strong>: obre la pàgina del taller al vostre navegador predeterminat per a modificacions amb un identificador de taller vàlid.",
+      "bullet4": "<strong>Open carpeta</strong>: obre la carpeta de modificacions seleccionada al vostre explorador de fitxers.",
+      "logInspectorPrefix": "<strong>Log inspector</strong>: carregueu i filtreu fitxers de registre (com <code>console.txt</code>) per trobar ràpidament errors i advertències. Vegeu",
+      "logInspectorLink": "Inspector de registre",
+      "bullet6": "<strong>Dashboard</strong>: mostra estadístiques ràpides (per exemple: modificacions totals detectades) i altres indicadors d'alt nivell."
     },
     "server": {
       "title": "Gestió de servidors",
@@ -400,242 +400,242 @@
       "bullet3": "<strong>Edita</strong> les variables INI i Sandbox i actualitza spawnpoints/spawnregions directament a l'app."
     },
     "logInspector": {
-      "title": "Log inspector",
-      "intro": "The log inspector helps you open and filter log files (for example, <code>console.txt</code>) to troubleshoot crashes, mod load problems, and server startup issues.",
-      "bullet1": "<strong>Select a file</strong> - browse to any <code>.txt</code> or <code>.log</code> file, or use a default path when available.",
-      "bullet2": "<strong>Filter</strong> - choose log levels (ERROR/WARN/LOG/DEBUG/TRACE), set a date/time window, and limit the maximum number of entries displayed.",
-      "bullet3": "<strong>Search</strong> - filter entries by text across the parsed message and the raw source line.",
-      "bullet4": "<strong>Live polling</strong> - optionally refresh on a timer to watch logs update while the game/server is running.",
-      "bullet5": "<strong>Clear</strong> - truncate the selected log file (use with care)."
+      "title": "Inspector de registre",
+      "intro": "L'inspector de registre us ajuda a obrir i filtrar fitxers de registre (per exemple, <code>console.txt</code>) per resoldre problemes de bloquejos, problemes de càrrega de modificacions i problemes d'inici del servidor.",
+      "bullet1": "<strong>Seleccioneu un fitxer</strong>: busqueu qualsevol fitxer <code>.txt</code> o <code>.log</code> o utilitzeu una ruta predeterminada quan estigui disponible.",
+      "bullet2": "<strong>Filter</strong>: trieu els nivells de registre (ERROR/WARN/LOG/DEBUG/TRACE), establiu una finestra de data/hora i limiteu el nombre màxim d'entrades que es mostren.",
+      "bullet3": "<strong>Search</strong>: filtra les entrades per text a través del missatge analitzat i de la línia d'origen en brut.",
+      "bullet4": "<strong>Live polling</strong>: opcionalment actualitzeu-vos en un temporitzador per veure l'actualització dels registres mentre el joc/servidor s'està executant.",
+      "bullet5": "<strong>Clear</strong> - trunqueu el fitxer de registre seleccionat (useu-lo amb cura)."
     },
     "folderSetup": {
-      "title": "Folder setup",
-      "step1": "Open the <strong>Mods</strong> page from the left sidebar (under <em>HOME</em>).",
-      "step2": "Use <strong>Browse Mods Folder</strong> in the <em>ACTIONS</em> menu to select your Project Zomboid mods directory (commonly <code>projectzomboid/mods</code>).",
-      "step3": "After selection, the app scans the directory and populates the mods table and dashboard.",
-      "tip": "Tip: If you switch machines or move your mods directory, simply browse again to update the stored path."
+      "title": "Configuració de la carpeta",
+      "step1": "Obriu la pàgina <strong>Mods</strong> des de la barra lateral esquerra (a <em>HOME</em>).",
+      "step2": "Utilitzeu <strong>Examina la carpeta de modificacions</strong> al menú <em>ACTIONS</em> per seleccionar el directori de modificacions de Project Zomboid (normalment <code>projectzomboid/mods</code>).",
+      "step3": "Després de la selecció, l'aplicació escaneja el directori i omple la taula i el tauler de modificacions.",
+      "tip": "Consell: si canvieu de màquina o moveu el directori de modificacions, simplement navegueu de nou per actualitzar el camí emmagatzemat."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
-      "bullet1": "<strong>Filesystem access</strong> - directory browsing and scanning is performed via the desktop shell.",
-      "bullet2": "<strong>Open external links</strong> - Steam Workshop links open using your OS default browser.",
-      "bullet3": "<strong>Open folders</strong> - launches the OS file explorer focused on the mod directory."
+      "title": "Integració d'escriptori (Tauri).",
+      "bullet1": "<strong>Accés al sistema de fitxers</strong>: la navegació i l'exploració de directoris es realitza mitjançant l'intèrpret d'ordres de l'escriptori.",
+      "bullet2": "<strong>Open els enllaços externs</strong> - Els enllaços de Steam Workshop s'obren amb el navegador predeterminat del vostre sistema operatiu.",
+      "bullet3": "<strong>Open carpetes</strong>: llança l'explorador de fitxers del sistema operatiu centrat en el directori mod."
     },
     "privacy": {
-      "title": "Privacy & storage",
-      "bullet1": "<strong>Local data</strong> - the selected mods folder path and scan results may be cached locally to improve UX."
+      "title": "Privacitat i emmagatzematge",
+      "bullet1": "<strong>Dades locals</strong>: la ruta de la carpeta de modificacions seleccionades i els resultats de l'escaneig es poden guardar a la memòria cau localment per millorar l'UX."
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "bullet1": "<strong>No mods appear after scanning</strong> - verify the selected folder is your actual Project Zomboid mods directory and that it contains mod subfolders.",
-      "bullet2": "<strong>Steam links are disabled</strong> - ensure the mod has a valid numeric workshop id (not all mods are Workshop-based).",
-      "bullet3": "<strong>Open folder does nothing</strong> - confirm the Tauri backend is running and that OS permissions allow opening the file explorer."
+      "title": "Resolució de problemes",
+      "bullet1": "<strong>No apareixen modificacions després d'escanejar</strong>: verifiqueu que la carpeta seleccionada sigui el vostre directori de mods de Project Zomboid real i que conté subcarpetes de modificacions.",
+      "bullet2": "Els enllaços <strong>Steam estan desactivats</strong>: assegureu-vos que el mod tingui un identificador de taller numèric vàlid (no tots els mods estan basats en el taller).",
+      "bullet3": "<strong>Oobrir la carpeta no fa res</strong>: confirmeu que el backend Tauri s'està executant i que els permisos del sistema operatiu permeten obrir l'explorador de fitxers."
     },
     "faq": {
       "title": "FAQ",
-      "q1": "Does the app edit my mods?",
-      "a1": "No. The core workflow is read-only: it scans folders and displays metadata. Actions such as opening folders or Workshop links do not modify mod files.",
-      "q2": "Why is some information missing for a mod?",
-      "a2": "Mods vary in how consistently they include metadata. If fields like id or workshop id are missing, the app will show what it can and disable features that rely on those fields."
+      "q1": "L'aplicació edita els meus mods?",
+      "a1": "No. El flux de treball principal és només de lectura: escaneja carpetes i mostra metadades. Accions com obrir carpetes o enllaços del taller no modifiquen els fitxers de modificacions.",
+      "q2": "Per què falta informació per a un mod?",
+      "a2": "Els mods varien en la coherència amb què inclouen metadades. Si falten camps com l'identificador o l'identificador del taller, l'aplicació mostrarà el que pot i desactivarà les funcions que es basen en aquests camps."
     }
   },
   "toasts": {
     "menu": {
       "honuSync": {
-        "failedSummary": "Honu Mod Info QoL Sync Failed",
-        "missingUserDetail": "Project Zomboid user folder is not configured.",
-        "successSummary": "Honu's Mod Info QoL Synced",
-        "successCreatedDetail": "honus_miqol_db.lua created.",
-        "successUpdatedDetail": "honus_miqol_db.lua updated.",
-        "failedDetail": "Failed to sync Honu Mod Info QoL."
+        "failedSummary": "La sincronització de la QoL de la informació del mod Honu ha fallat",
+        "missingUserDetail": "La carpeta d'usuari del projecte Zomboid no està configurada.",
+        "successSummary": "Informació de la modificació d'Honu QoL sincronitzada",
+        "successCreatedDetail": "honus_miqol_db.lua creat.",
+        "successUpdatedDetail": "honus_miqol_db.lua actualitzat.",
+        "failedDetail": "No s'ha pogut sincronitzar Honu Mod Info QoL."
       }
     },
     "mods": {
       "dataMigration": {
-        "summary": "Data Migration",
-        "detail": "Your local mod data is being updated. A new scan is running to refresh dependencies."
+        "summary": "Migració de dades",
+        "detail": "Les vostres dades de modificacions locals s'estan actualitzant. S'està executant una nova exploració per actualitzar les dependències."
       },
       "syncInProgress": {
-        "summary": "Sync in Progress",
-        "detail": "A sync operation is already running. Please wait for it to complete."
+        "summary": "Sincronització en curs",
+        "detail": "Ja s'està executant una operació de sincronització. Si us plau, espereu que es completi."
       },
       "localSyncComplete": {
-        "summary": "Local Mod Sync Complete",
-        "detail": "Local mod data has been refreshed successfully."
+        "summary": "S'ha completat la sincronització de modificacions locals",
+        "detail": "Les dades de modificacions locals s'han actualitzat correctament."
       },
       "localSyncFailed": {
-        "summary": "Local Mod Sync Failed",
-        "detail": "Failed to sync local mods."
+        "summary": "No s'ha pogut sincronitzar la modificació local",
+        "detail": "No s'han pogut sincronitzar les modificacions locals."
       },
       "invalidDirectory": {
-        "summary": "Invalid Directory",
-        "detail": "The selected folder does not appear to be a valid Project Zomboid Workshop directory (AppID 108600)."
+        "summary": "Directori no vàlid",
+        "detail": "La carpeta seleccionada no sembla ser un directori de Project Zomboid Workshop vàlid (AppID 108600)."
       },
       "steamApiRequired": {
-        "summary": "Steam Web API Key Required",
-        "detail": "Please use \"Set Steam API Key\" in the menu, then try syncing again."
+        "summary": "Es requereix la clau de l'API web de Steam",
+        "detail": "Si us plau, fes servir \"Estableix la clau de l'API de Steam\" al menú i torna a provar de sincronitzar."
       },
       "workshopNoData": {
         "summary": "",
-        "detail": "No workshop metadata was returned; nothing was saved."
+        "detail": "No s'ha retornat cap metadades del taller; no es va salvar res."
       },
       "workshopPartial": {
         "summary": "Steam Workshop sincronitzat parcialment",
-        "detail": "Received {{received}} of {{total}} workshop items. Missing IDs: {{missing}}{{suffix}}"
+        "detail": "S'ha rebut {{received}} d'articles de taller {{total}}. Falten identificadors: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
-        "detail": "Workshop metadata has been saved successfully."
+        "summary": "Steam Workshop sincronitzat",
+        "detail": "Les metadades del taller s'han desat correctament."
       },
       "workshopUnauthorized": {
-        "summary": "Steam Web API Unauthorized",
-        "detail": "Steam returned 401 Unauthorized. Please verify your Steam Web API key and try again."
+        "summary": "Steam Web API no autoritzada",
+        "detail": "Steam va retornar 401 no autoritzat. Verifiqueu la vostra clau de l'API web de Steam i torneu-ho a provar."
       },
       "workshopSyncFailed": {
         "summary": "",
-        "detail": "Failed to sync Steam Workshop metadata."
+        "detail": "No s'han pogut sincronitzar les metadades de Steam Workshop."
       }
     },
     "modDetails": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "El nom predefinit ja existeix",
+        "detail": "Si us plau, trieu un nom diferent per a \"{{name}}\"."
       },
       "removeFailed": {
-        "summary": "Remove Failed",
-        "missingUserDetail": "Project Zomboid user directory is not configured.",
-        "missingModDetail": "Mod ID was not found in mods.txt.",
-        "failedDetail": "Failed to remove mod from preset."
+        "summary": "Ha fallat l'eliminació",
+        "missingUserDetail": "El directori d'usuaris del projecte Zomboid no està configurat.",
+        "missingModDetail": "No s'ha trobat l'identificador de mod a mods.txt.",
+        "failedDetail": "No s'ha pogut eliminar el mod del valor predefinit."
       },
       "removed": {
-        "summary": "Removed",
-        "detailMultiple": "Selected mods were removed from the preset.",
-        "detailSingle": "Mod was removed from the preset."
+        "summary": "Eliminat",
+        "detailMultiple": "Les modificacions seleccionades s'han eliminat del valor predefinit.",
+        "detailSingle": "El mod s'ha eliminat del valor predefinit."
       },
       "presetUpdated": {
-        "summary": "Preset updated",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "S'ha actualitzat el valor predefinit",
+        "detailFallback": "No s'ha pogut actualitzar pz_modlist_settings.cfg.",
+        "detailFailed": "No s'ha pogut actualitzar pz_modlist_settings.cfg."
       }
     },
     "loadouts": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "El nom predefinit ja existeix",
+        "detail": "Si us plau, trieu un nom diferent per a \"{{name}}\"."
       },
       "noModsToExport": {
-        "summary": "No mods to export",
-        "detailCode": "Add at least one mod before generating code.",
-        "detailPreset": "Add at least one mod before saving a preset."
+        "summary": "No hi ha modificacions per exportar",
+        "detailCode": "Afegiu almenys un mod abans de generar el codi.",
+        "detailPreset": "Afegiu almenys un mod abans de desar un valor predefinit."
       },
       "copied": {
-        "summary": "Copied",
-        "detail": "{{label}} copied to clipboard."
+        "summary": "Copiat",
+        "detail": "{{label}} s'ha copiat al porta-retalls."
       },
       "presetImported": {
-        "summary": "Preset imported",
-        "detail": "Imported {{count}} mods."
+        "summary": "Preestablert importat",
+        "detail": "Modificacions {{count}} importades."
       },
       "importFailed": {
-        "summary": "Import failed",
-        "detail": "Failed to import preset."
+        "summary": "La importació ha fallat",
+        "detail": "No s'ha pogut importar el valor predefinit."
       },
       "presetSaved": {
-        "summary": "Preset saved",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "S'ha guardat el valor predefinit",
+        "detailFallback": "No s'ha pogut actualitzar pz_modlist_settings.cfg.",
+        "detailFailed": "No s'ha pogut actualitzar pz_modlist_settings.cfg."
       },
       "presetSaveNotice": {
-        "reordered": "Reordered mods by dependency rules.",
-        "missingDependencies": "Missing dependencies: {{count}}.",
-        "missingWorkshopIds": "Missing workshop IDs: {{count}}.",
-        "incompatibilities": "Incompatibilities: {{count}}.",
-        "cycles": "Cycles detected: {{count}}.",
-        "conflicts": "File conflicts: {{count}}."
+        "reordered": "Modificacions reordenades per regles de dependència.",
+        "missingDependencies": "Falten dependències: {{count}}.",
+        "missingWorkshopIds": "Falten identificadors del taller: {{count}}.",
+        "incompatibilities": "Incompatibilitats: {{count}}.",
+        "cycles": "Cicles detectats: {{count}}.",
+        "conflicts": "Conflictes de fitxers: {{count}}."
       },
       "presetDeleted": {
-        "summary": "Preset deleted",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "S'ha suprimit el valor predefinit",
+        "detailFallback": "No s'ha pogut actualitzar pz_modlist_settings.cfg.",
+        "detailFailed": "No s'ha pogut actualitzar pz_modlist_settings.cfg."
       }
     },
     "modCollections": {
       "loadFailed": {
         "summary": "",
-        "detail": "Unable to load collections. Verify your Steam Web API key and try again."
+        "detail": "No es poden carregar les col·leccions. Verifiqueu la vostra clau de l'API web de Steam i torneu-ho a provar."
       },
-      "steamUnauthorized": "Steam returned 401 Unauthorized. Verify your Steam Web API key.",
-      "queryFailed": "Failed to query Steam Workshop collections.",
+      "steamUnauthorized": "Steam va retornar 401 no autoritzat. Verifiqueu la vostra clau de l'API web de Steam.",
+      "queryFailed": "No s'han pogut consultar les col·leccions de Steam Workshop.",
       "presetNotCreated": {
-        "summary": "Preset Not Created",
-        "detail": "No workshop items were found for this collection."
+        "summary": "Preestablert no creat",
+        "detail": "No s'han trobat articles de taller per a aquesta col·lecció."
       },
       "presetCreated": {
-        "summary": "Preset Created",
-        "detail": "Collection preset saved as \"{{name}}\"."
+        "summary": "Preestablert creat",
+        "detail": "El valor predefinit de la col·lecció s'ha desat com a \"{{name}}\"."
       },
       "presetUpdated": {
-        "summary": "Preset Updated",
-        "detail": "Collection preset \"{{name}}\" refreshed."
+        "summary": "Preconfiguració actualitzada",
+        "detail": "S'ha actualitzat el valor predefinit de la col·lecció \"{{name}}\"."
       },
       "presetRemoved": {
-        "summary": "Preset Removed",
-        "detail": "Collection preset has been removed."
+        "summary": "Preestablert eliminat",
+        "detail": "S'ha eliminat el valor predefinit de la col·lecció."
       }
     },
     "server": {
       "invalidName": {
-        "summary": "Invalid server name",
-        "detailMissing": "Enter a server name.",
-        "detailInvalidChars": "Server name contains invalid filename characters.",
-        "detailTrailing": "Server name cannot end with a dot or space.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "summary": "Nom de servidor no vàlid",
+        "detailMissing": "Introduïu un nom de servidor.",
+        "detailInvalidChars": "El nom del servidor conté caràcters de nom de fitxer no vàlids.",
+        "detailTrailing": "El nom del servidor no pot acabar amb un punt o espai.",
+        "detailNoSpaces": "El nom del servidor ha de ser una paraula única sense espais.",
+        "detailAscii": "Utilitzeu només caràcters ASCII (lletres, números i símbols anglesos)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "El nom del servidor ja s'ha pres",
+        "detail": "Aquest nom de servidor ja s'ha pres. Trieu un altre nom per al nou servidor."
       },
       "missingUserFolder": {
-        "summary": "Missing user folder",
-        "detail": "Set your Project Zomboid user folder first."
+        "summary": "Falta la carpeta d'usuari",
+        "detail": "Configureu primer la vostra carpeta d'usuari Project Zomboid."
       },
       "createFailed": {
-        "summary": "Create failed",
-        "detail": "Failed to create server files."
+        "summary": "No s'ha pogut crear",
+        "detail": "No s'han pogut crear els fitxers del servidor."
       },
       "saved": {
-        "summary": "Saved",
-        "detail": "Server files updated."
+        "summary": "Desat",
+        "detail": "Fitxers del servidor actualitzats."
       },
       "saveFailed": {
-        "summary": "Save failed",
-        "detail": "Failed to save server files."
+        "summary": "No s'ha pogut desar",
+        "detail": "No s'han pogut desar els fitxers del servidor."
       }
     }
   },
   "primeng": {
-    "startsWith": "Starts with",
-    "contains": "Contains",
-    "notContains": "Not contains",
-    "endsWith": "Ends with",
-    "equals": "Equals",
-    "notEquals": "Not equals",
-    "noFilter": "No filter",
-    "lt": "Less than",
-    "lte": "Less than or equal to",
-    "gt": "Greater than",
-    "gte": "Greater than or equal to",
-    "dateIs": "Date is",
-    "dateIsNot": "Date is not",
-    "dateBefore": "Date is before",
-    "dateAfter": "Date is after",
-    "clear": "Clear",
-    "apply": "Apply",
-    "matchAll": "Match all",
-    "matchAny": "Match any",
-    "addRule": "Add rule",
-    "removeRule": "Remove rule"
+    "startsWith": "Comença amb",
+    "contains": "Conté",
+    "notContains": "No conté",
+    "endsWith": "Acaba amb",
+    "equals": "Iguals",
+    "notEquals": "No iguals",
+    "noFilter": "Sense filtre",
+    "lt": "Menys de",
+    "lte": "Menor o igual a",
+    "gt": "Més gran que",
+    "gte": "Major o igual a",
+    "dateIs": "La data és",
+    "dateIsNot": "La data no ho és",
+    "dateBefore": "La data és abans",
+    "dateAfter": "La data és posterior",
+    "clear": "Clar",
+    "apply": "Aplicar",
+    "matchAll": "Coincideix amb tots",
+    "matchAny": "Coincideix amb qualsevol",
+    "addRule": "Afegeix una regla",
+    "removeRule": "Elimina la regla"
   },
   "dashboard": {
     "headers": {
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Servidors",
       "refresh": "Actualitza",
       "createNewServer": "Crea un servidor nou",
       "copy": "Copia",
       "deleteServer": "Suprimeix el servidor",
       "createBackupOnSave": "Crea una copia de seguretat en desar",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "No s'han trobat fitxers del servidor.",
+      "selectServerPlaceholder": "Seleccioneu un servidor",
+      "serverEditor": "Editor del servidor",
+      "selectServerPrompt": "Seleccioneu un servidor per començar a editar-lo.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Variables de Sandbox",
         "spawnpoints": "Punts d'aparició",
         "spawnregions": "Regions d'aparició"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "No s'han trobat entrades INI.",
       "serverConfigVars": "Variables de configuració del servidor",
-      "searchFields": "Search fields",
+      "searchFields": "Camps de cerca",
       "reset": "Restableix",
       "saveChanges": "Desa els canvis",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "No s'han trobat variables de sandbox.",
       "sandboxVariables": "Variables de Sandbox",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
-      "cancel": "Cancel",
-      "create": "Create",
+      "searchVariables": "Cerca variables",
+      "createServerTitle": "Crea un nou servidor",
+      "copyServerTitle": "Servidor de còpia",
+      "copyServerPrompt": "Copieu {{name}} i creeu els fitxers següents:",
+      "serverName": "Nom del servidor",
+      "createServerHint": "Crea .ini, _SandboxVars.lua, _spawnpoints.lua i _spawnregions.lua",
+      "cancel": "Cancel·la",
+      "create": "Crear",
       "editServerVariableTitle": "Edita la variable del servidor",
       "editSandboxVariableTitle": "Edita la variable Sandbox",
-      "noDescription": "No description available.",
-      "save": "Save",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "noDescription": "No hi ha descripció disponible.",
+      "save": "Desa",
+      "deleteServerTitle": "Suprimeix el servidor",
+      "deleteServerPrompt": "Vols suprimir {{name}} i tots els fitxers de servidor relacionats?",
       "trueLabel": "És cert",
       "falseLabel": "Fals",
       "exportServer": "Exporta"

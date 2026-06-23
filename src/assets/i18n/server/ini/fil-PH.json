@@ -1,10 +1,10 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
-    "PVPLogToolFile": "PVP Log Tool File",
+    "PVPLogToolChat": "Chat ng tool sa log ng PVP",
+    "PVPLogToolFile": "File ng tool sa log ng PVP",
     "PauseEmpty": "I-pause ang Walang laman",
-    "GlobalChat": "Global Chat",
+    "GlobalChat": "Pandaigdigang chat",
     "Open": "Bukas",
     "ServerWelcomeMessage": "Mensahe ng Welcome ng Server",
     "ServerImageLoginScreen": "Screen sa Pag-login ng Larawan ng Server",
@@ -13,15 +13,15 @@
     "AutoCreateUserInWhiteList": "Awtomatikong Gumawa ng User Sa White List",
     "DisplayUserName": "Ipakita ang User Name",
     "ShowFirstAndLastName": "Ipakita ang Pangalan at Apelyido",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Spawn point",
     "SafetySystem": "Sistema ng Kaligtasan",
     "ShowSafety": "Ipakita ang Kaligtasan",
-    "SafetyToggleTimer": "Safety Toggle Timer",
-    "SafetyCooldownTimer": "Safety Cooldown Timer",
+    "SafetyToggleTimer": "Timer ng safety toggle",
+    "SafetyCooldownTimer": "Cooldown timer ng safety",
     "SafetyDisconnectDelay": "Pagkaantala sa Pagdiskonekta ng Kaligtasan",
     "SpawnItems": "Mga Spawn Item",
     "DefaultPort": "Default na Port",
-    "UDPPort": "UDP Port",
+    "UDPPort": "UDP port",
     "ResetID": "I-reset ang ID",
     "Mods": "Mga mod",
     "Map": "Mapa",
@@ -36,30 +36,30 @@
     "NoFire": "Walang Sunog",
     "AnnounceDeath": "Ipahayag ang Kamatayan",
     "SaveWorldEveryMinutes": "Iligtas ang Mundo Bawat Minuto",
-    "PlayerSafehouse": "Player Safehouse",
-    "AdminSafehouse": "Admin Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
-    "SafehouseAllowFire": "Safehouse Allow Fire",
-    "SafehouseAllowLoot": "Safehouse Allow Loot",
-    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "PlayerSafehouse": "Safehouse ng manlalaro",
+    "AdminSafehouse": "Safehouse ng admin",
+    "SafehouseAllowTrepass": "Payagan ang pagpasok sa safehouse",
+    "SafehouseAllowFire": "Payagan ang apoy sa safehouse",
+    "SafehouseAllowLoot": "Payagan ang loot sa safehouse",
+    "SafehouseAllowRespawn": "Payagan ang respawn sa safehouse",
     "SafehouseDaySurvivedToClaim": "Safehouse Day Nakaligtas Para Mag-claim",
     "SafeHouseRemovalTime": "Oras ng Pag-alis ng Ligtas na Bahay",
-    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "SafehouseAllowNonResidential": "Payagan ang hindi residential na safehouse",
     "MaxSafezoneSize": "Pinakamataas na Laki ng Safezone",
     "AllowDestructionBySledgehammer": "Payagan ang Pagkasira Sa pamamagitan ng Sledgehammer",
     "SledgehammerOnlyInSafehouse": "Sledgehammer Lamang Sa Safehouse",
     "WarStartDelay": "Pagkaantala sa Pagsisimula ng Digmaan",
     "WarDuration": "Tagal ng Digmaan",
     "WarSafehouseHitPoints": "Mga Hit Point sa War Safehouse",
-    "ServerPlayerID": "Server Player ID",
-    "RCONPort": "RCON Port",
+    "ServerPlayerID": "Server player ID",
+    "RCONPort": "RCON port",
     "RCONPassword": "Password ng RCON",
     "DiscordEnable": "Paganahin ang Discord",
-    "DiscordToken": "Discord Token",
-    "DiscordChannel": "Discord Channel",
-    "DiscordChannelID": "Discord Channel ID",
+    "DiscordToken": "Discord token",
+    "DiscordChannel": "Discord channel",
+    "DiscordChannelID": "Discord channel ID",
     "WebhookAddress": "Address ng Webhook",
-    "Password": "Password",
+    "Password": "Kontrasenyas",
     "MaxAccountsPerUser": "Mga Max na Account Bawat User",
     "AllowCoop": "Payagan ang Coop",
     "SleepAllowed": "Pinapayagan ang Matulog",
@@ -67,22 +67,22 @@
     "KnockedDownAllowed": "Itinutok Pinayagan",
     "SneakModeHideFromOtherPlayers": "Sneak Mode Itago Mula sa Iba Pang Manlalaro",
     "WorkshopItems": "Mga Item sa Workshop",
-    "SteamScoreboard": "Steam Scoreboard",
+    "SteamScoreboard": "Steam scoreboard",
     "SteamVAC": "Steam VAC",
     "UPnP": "UPnP",
     "VoiceEnable": "Paganahin ang Boses",
     "VoiceMinDistance": "Boses Min Distansya",
     "VoiceMaxDistance": "Pinakamataas na Distansya ng Boses",
-    "Voice3D": "Voice 3D",
-    "SpeedLimit": "Speed Limit",
+    "Voice3D": "3D voice",
+    "SpeedLimit": "Limitasyon ng bilis",
     "LoginQueueConnectTimeout": "Pag-login Queue Connect Timeout",
     "server_browser_announced_ip": "Inanunsyo ng browser ng server ang ip",
-    "PlayerRespawnWithSelf": "Player Respawn With Self",
-    "PlayerRespawnWithOther": "Player Respawn With Other",
-    "FastForwardMultiplier": "Fast Forward Multiplier",
+    "PlayerRespawnWithSelf": "Respawn ng manlalaro sa sarili",
+    "PlayerRespawnWithOther": "Respawn ng manlalaro sa iba",
+    "FastForwardMultiplier": "Multiplier ng fast forward",
     "DisableSafehouseWhenPlayerConnected": "I-disable ang Safehouse Kapag Nakakonekta ang Player",
     "Faction": "pangkatin",
-    "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
+    "FactionDaySurvivedToCreate": "Araw na nabuhay para gumawa ng faction",
     "FactionPlayersRequiredForTag": "Mga Faction Player na Kinakailangan Para sa Tag",
     "DisableRadioStaff": "Huwag paganahin ang Radio Staff",
     "DisableRadioAdmin": "Huwag paganahin ang Radio Admin",
@@ -94,17 +94,17 @@
     "ClientActionLogs": "Mga Log ng Aksyon ng Kliyente",
     "PerkLogs": "Mga Log ng Perk",
     "ItemNumbersLimitPerContainer": "Limitasyon ng Mga Numero ng Item Bawat Lalagyan",
-    "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+    "BloodSplatLifespanDays": "Tagal ng blood splat sa araw",
     "AllowNonAsciiUsername": "Payagan ang Non Ascii Username",
     "RemovePlayerCorpsesOnCorpseRemoval": "Alisin ang mga Bangkay ng Manlalaro Sa Pagtanggal ng Bangkay",
     "TrashDeleteAll": "Basura Tanggalin Lahat",
     "PVPMeleeWhileHitReaction": "PVP Melee Habang Hit Reaction",
     "MouseOverToSeeDisplayName": "Mouse Over Upang Makita ang Display Name",
     "HidePlayersBehindYou": "Itago ang mga Manlalaro sa Likod Mo",
-    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
-    "PVPFirearmDamageModifier": "PVP Firearm Damage Modifier",
+    "PVPMeleeDamageModifier": "Modifier ng melee damage sa PVP",
+    "PVPFirearmDamageModifier": "Modifier ng firearm damage sa PVP",
     "CarEngineAttractionModifier": "Modifier ng Atraksyon sa Makina ng Sasakyan",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Player bump player",
     "MapRemotePlayerVisibility": "Mapa Remote Player Visibility",
     "BackupsCount": "Bilang ng Mga Backup",
     "BackupsOnStart": "Mga Backup Sa Simula",
@@ -114,20 +114,20 @@
     "DisableBurntTowing": "Huwag paganahin ang Burnt Towing",
     "BadWordListFile": "Masamang Word List File",
     "GoodWordListFile": "Magandang Word List File",
-    "BadWordPolicy": "Bad Word Policy",
+    "BadWordPolicy": "Patakaran sa masasamang salita",
     "BadWordReplacement": "Masamang Kapalit na Salita",
     "AntiCheatSafety": "Kaligtasan ng Anti Cheat",
-    "AntiCheatMovement": "Anti Cheat Movement",
-    "AntiCheatHit": "Anti Cheat Hit",
-    "AntiCheatPacket": "Anti Cheat Packet",
+    "AntiCheatMovement": "Anti-cheat sa galaw",
+    "AntiCheatHit": "Anti-cheat sa tama",
+    "AntiCheatPacket": "Anti-cheat packet",
     "AntiCheatPermission": "Pahintulot sa Anti Cheat",
-    "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
-    "AntiCheatRecipe": "Anti Cheat Recipe",
-    "AntiCheatPlayer": "Anti Cheat Player",
-    "AntiCheatChecksum": "Anti Cheat Checksum",
-    "AntiCheatItem": "Anti Cheat Item",
+    "AntiCheatXP": "Anti-cheat XP",
+    "AntiCheatFire": "Anti-cheat sa apoy",
+    "AntiCheatSafeHouse": "Anti-cheat sa safehouse",
+    "AntiCheatRecipe": "Anti-cheat recipe",
+    "AntiCheatPlayer": "Anti-cheat player",
+    "AntiCheatChecksum": "Anti-cheat checksum",
+    "AntiCheatItem": "Anti-cheat item",
     "AntiCheatServerCustomization": "Pag-customize ng Anti Cheat Server",
     "MultiplayerStatisticsPeriod": "Panahon ng Multiplayer Statistics",
     "DisableScoreboard": "Huwag paganahin ang Scoreboard",
@@ -140,10 +140,10 @@
         "Maaaring saktan at pumatay ng mga manlalaro ang ibang mga manlalaro"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "Naka-log ang PVP sa admin chat"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "Naka-log sa file ang PVP"
       ],
       "PauseEmpty": [
         "Hihinto ang oras ng laro kapag walang mga manlalarong online"
@@ -173,10 +173,10 @@
         "Magdagdag ng mga hindi kilalang username sa whitelist kapag sumali ang mga manlalaro. "
       ],
       "DisplayUserName": [
-        "Display usernames above player's heads in-game."
+        "Ipakita ang mga username sa itaas ng ulo ng manlalaro sa laro."
       ],
       "ShowFirstAndLastName": [
-        "Display first & last name above player's heads."
+        "Ipakita ang pangalan at apelyido sa itaas ng ulo ng manlalaro."
       ],
       "SpawnPoint": [
         "Pilitin ang bawat bagong manlalaro na mag-spawn sa set na x,y,z world coordinates na ito. "
@@ -196,7 +196,7 @@
       "SpawnItems": [
         "Mga uri ng item na pinagsasama-sama ng mga bagong manlalaro.",
         "Paghiwalayin ang maraming uri ng item gamit ang mga kuwit.",
-        "Example: Base.Axe,Base.Bag_BigHikingBag"
+        "Halimbawa: Base.Axe,Base.Bag_BigHikingBag"
       ],
       "DefaultPort": [
         "Default na panimulang port para sa data ng player."
@@ -233,7 +233,7 @@
         "Alisin ang mga account ng manlalaro mula sa whitelist pagkatapos ng kamatayan. "
       ],
       "NoFire": [
-        "All forms of fire are disabled - except for campfires"
+        "Lahat ng anyo ng apoy ay hindi pinagana - maliban sa mga campfire"
       ],
       "AnnounceDeath": [
         "Kung nilagyan ng check, sa tuwing ang isang manlalaro ay mamatay, isang pandaigdigang mensahe ang ipapakita sa chat"
@@ -281,7 +281,7 @@
         "Oras sa mga segundo bago magsimula ang digmaan."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Tagal ng digmaan sa mga segundo."
       ],
       "WarSafehouseHitPoints": [
         "Safehouse hit points limit."
@@ -293,10 +293,10 @@
         "Ang port para sa RCON (Remote Console)"
       ],
       "RCONPassword": [
-        "RCON password (Pick a strong password)"
+        "RCON password (Pumili ng malakas na password)"
       ],
       "DiscordEnable": [
-        "Enables global text chat integration with a Discord channel"
+        "Pinapagana ang pandaigdigang pagsasama ng text chat sa isang Discord channel"
       ],
       "DiscordToken": [
         "Discord bot access token"
@@ -326,7 +326,7 @@
         "Ang mga manlalaro ay napapagod at kailangang matulog. "
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Ang pag-activate sa setting na ito ay maaaring magdulot ng visual na desynchronization ng mga posisyon ng manlalaro."
       ],
       "WorkshopItems": [
         "Maglista ng mga Workshop Mod ID para ma-download ng server. "
@@ -350,7 +350,7 @@
         "Ang maximum na distansya ng tile kung saan maririnig ang mga tunog ng VOIP."
       ],
       "Voice3D": [
-        "Toggle directional audio for VOIP"
+        "I-toggle ang direksyong audio para sa VOIP"
       ],
       "server_browser_announced_ip": [
         "Itakda ang IP kung saan nai-broadcast ang server. "
@@ -396,14 +396,14 @@
       ],
       "ClientCommandFilter": [
         "Listahan ng mga command na pinaghihiwalay ng semicolon na hindi isusulat sa log ng server ng cmd.txt. ",
-        "-vehicle. Inputting * means do NOT write any vehicle command. Inputting:",
-        "+vehicle.installPart means DO write that command"
+        "-sasakyan. Ang pag-input ng * ay nangangahulugang HUWAG sumulat ng anumang utos ng sasakyan. Pag-input:",
+        "Ang ibig sabihin ng +vehicle.installPart ay DO write that command"
       ],
       "ClientActionLogs": [
         "Listahan ng mga aksyon na pinaghihiwalay ng semicolon na isusulat sa log ng server ng ClientActionLogs.txt."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Subaybayan ang mga pagbabago sa mga antas ng perk ng manlalaro sa log ng server ng PerkLog.txt"
       ],
       "ItemNumbersLimitPerContainer": [
         "Pinakamataas na bilang ng mga item na maaaring ilagay sa isang lalagyan.  "
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Kinokontrol ang pagpapakita ng mga malalayong manlalaro sa in-game na mapa.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Nakatago 2=Mga Kaibigan 3=Lahat"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Hindi pinapagana ang paghatak ng sasakyan"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Hindi pinapagana ang paghila ng trailer"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Hindi pinapagana ang paghatak ng nasunog na sasakyan"
       ],
       "BadWordListFile": [
         "Path sa file na may listahan ng mga salitang ipagbabawal. "
@@ -464,37 +464,37 @@
         "Ang simbolo o piraso ng teksto na papalit sa masamang salita"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Hindi pinapagana ang proteksyon ng anti-cheat ng sistema ng kaligtasan."
       ],
       "AntiCheatMovement": [
         "I-disable ang anti-cheat na proteksyon para sa paggalaw."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Hindi pinapagana ang proteksyon ng anti-cheat ng character hit."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Hindi pinapagana ang packet checks na proteksyon laban sa cheat."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Hindi pinapagana ang proteksyon laban sa cheat ng mga pahintulot ng player."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Hindi pinapagana ang proteksyon ng anti-cheat ng player XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Hindi pinapagana ang proteksyon laban sa mga pagsusuri sa sunog."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Hindi pinapagana ang proteksyon ng safehouse anti-cheat."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Hindi pinapagana ang mga pagsusuri ng recipe na anti-cheat na proteksyon."
       ],
       "AntiCheatPlayer": [
         "I-disable ang anti-cheat na proteksyon para sa mga manlalaro."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Hindi pinapagana ang proteksyon ng checksum anti-cheat."
       ],
       "AntiCheatItem": [
         "Hindi pinapagana ang mga pagsusuri sa item na proteksyon laban sa cheat."
@@ -506,7 +506,7 @@
         "Itinatakda ang panahon ng pag-update ng multiplayer sa ilang segundo. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Hindi pinapagana ang scoreboard."
       ],
       "HideAdminsInPlayerList": [
         "Itinatago ang mga admin sa listahan ng player."

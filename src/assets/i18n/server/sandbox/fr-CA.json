@@ -1,5 +1,5 @@
 {
-  "Zombies": "Zombies",
+  "Zombies": "Zombis",
   "Distribution": "Distribution",
   "ZombieVoronoiNoise": "Bruit Voronoï des zombies",
   "ZombieRespawn": "Réapparition des zombies",
@@ -58,7 +58,7 @@
   "Alarm": "Alarme",
   "LockedHouses": "Maisons verrouillées",
   "StarterKit": "Kit de départ",
-  "Nutrition": "Nutrition",
+  "Nutrition": "Alimentation",
   "FoodRotSpeed": "Vitesse de pourriture de la nourriture",
   "FridgeFactor": "Facteur de réfrigérateur",
   "SeenHoursPreventLootRespawn": "Heures vues empêchent la réapparition du butin",
@@ -232,7 +232,7 @@
   "RallyGroupRadius": "Rayon du groupe",
   "ZombiesCountBeforeDelete": "Zombies avant suppression",
   "MultiplierConfig": "Configuration des multiplicateurs",
-  "Global": "Global",
+  "Global": "Mondial",
   "GlobalToggle": "Basculer global",
   "Fitness": "Condition physique",
   "Sprinting": "Course",
@@ -273,7 +273,7 @@
       "1 = Hardcore",
       "2 = Très Élevé",
       "3 = Élevé",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Faible",
       "6 = Aucun"
     ],
@@ -288,12 +288,12 @@
     "ZombieRespawn": [
       "Définit la fréquence à laquelle les zombies réapparaissent. ",
       "1 = Élevé",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Faible",
       "4 = Aucun"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie autorisé à migrer vers des cellules vides."
     ],
     "DayLength": [
       "Par défaut = 1 heure, 30 minutes",
@@ -357,24 +357,24 @@
     ],
     "DayNightCycle": [
       "Que l'heure de la journée change naturellement ou que ce soit toujours jour/nuit. ",
-      "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "1 = Normale",
+      "2 = Journée sans fin",
+      "3 = Nuit sans fin"
     ],
     "ClimateCycle": [
       "Que le temps change ou reste au même état. ",
-      "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "1 = Normale",
+      "2 = Pas de météo",
+      "3 = Pluie sans fin",
+      "4 = Tempête sans fin",
+      "5 = Neige sans fin",
+      "6 = Blizzard sans fin"
     ],
     "FogCycle": [
       "Que le brouillard se produise naturellement, ne se produit jamais ou soit toujours présent. ",
-      "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "1 = Normale",
+      "2 = Pas de brouillard",
+      "3 = Brouillard sans fin"
     ],
     "WaterShut": [
       "Combien de temps après la date de début par défaut (9 juillet 1993) les appareils de plomberie (par exemple les éviers) cessent d'être des sources d'eau infinies. ",
@@ -512,7 +512,7 @@
       "Contrôle la température globale. Par défaut = Normal",
       "1 = Très froid",
       "2 = Froid",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Chaud",
       "5 = Très chaud"
     ],
@@ -520,7 +520,7 @@
       "Contrôle la fréquence de la pluie. Par défaut = Normal",
       "1 = Très rare",
       "2 = Rare",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Fréquente",
       "5 = Très fréquente"
     ],
@@ -553,7 +553,7 @@
       "Vitesse à laquelle la faim, la soif et la fatigue du personnage diminueront. Par défaut = Normal",
       "1 = Très rapide",
       "2 = Rapide",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Lente",
       "5 = Très lente"
     ],
@@ -561,7 +561,7 @@
       "Contrôle l'abondance des poissons et de la recherche globale. Par défaut = Normal",
       "1 = Très pauvre",
       "2 = Pauvre",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Abondante",
       "5 = Très abondante"
     ],
@@ -593,7 +593,7 @@
       "Définit à quelle vitesse la nourriture va périmer. Par défaut = Normal",
       "1 = Très rapide",
       "2 = Rapide",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Lente",
       "5 = Très lente"
     ],
@@ -601,10 +601,10 @@
       "Définit à quel point le réfrigérateur sera efficace. Par défaut = Normal",
       "1 = Très peu efficace",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé",
-      "6 = No decay"
+      "6 = Pas de dégradation"
     ],
     "SeenHoursPreventLootRespawn": [
       "Quand > 0, le butin ne réapparaîtra pas dans les zones qui ont été visitées durant ce nombre d'heures en jeu. Min: 0 Max: 2147483647 Par défaut: 0"
@@ -647,7 +647,7 @@
       "Influencera la quantité d'eau quotidienne que les plantes perdront et leur capacité à éviter les maladies. Par défaut = Normal",
       "1 = Très Élevé",
       "2 = Élevé",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Faible",
       "5 = Très peu efficace"
     ],
@@ -655,7 +655,7 @@
       "Contrôle le rendement des plantations lors de la récolte. Par défaut = Normal",
       "1 = Très pauvre",
       "2 = Pauvre",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Abondante",
       "5 = Très abondante"
     ],
@@ -663,7 +663,7 @@
       "Récupération de la fatigue après avoir effectué des actions. Par défaut = Normal",
       "1 = Très rapide",
       "2 = Rapide",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Lente",
       "5 = Très lente"
     ],
@@ -695,7 +695,7 @@
       "2 = Rare",
       "3 = Très rare",
       "4 = Rare",
-      "5 = Normal",
+      "5 = Normale",
       "6 = Commun",
       "7 = Abondante"
     ],
@@ -715,7 +715,7 @@
       "Donne aux constructions construites par les joueurs des points de vie supplémentaires afin qu'elles soient plus résistantes aux dégâts des zombies. ",
       "1 = Très peu efficace",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé"
     ],
@@ -723,14 +723,14 @@
       "Détermine l'éclairage global la nuit. Par défaut = Normal",
       "1 = Nuit noire",
       "2 = Sombre",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Claire"
     ],
     "NightLength": [
       "Détermine la durée de la nuit, du crépuscule jusqu'à l'aube. Par défaut = Normal",
       "1 = Nuit permanente",
       "2 = Longue",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Courte",
       "5 = Jour permanent"
     ],
@@ -740,7 +740,7 @@
     "InjurySeverity": [
       "Augmente ou diminue l'impact des blessures sur votre corps, et leur temps de guérison. Par défaut = Normal",
       "1 = Faible",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Élevé"
     ],
     "HoursForCorpseRemoval": [
@@ -750,7 +750,7 @@
       "Détermine l'impact de la proximité de corps en décomposition sur la santé et les émotions des joueurs. Par défaut = Normal",
       "1 = Aucun",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Hardcore"
     ],
@@ -761,7 +761,7 @@
       "À quel point le sang gicle au sol et sur les murs. Par défaut = Normal",
       "1 = Aucun",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Ultra Gore"
     ],
@@ -769,7 +769,7 @@
       "Détermine la rapidité à laquelle les vêtements s'usent, se salissent et se tachent de sang. Par défaut = Normal",
       "1 = Désactivée",
       "2 = Lente",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Rapide"
     ],
     "FireSpread": [
@@ -783,14 +783,14 @@
     ],
     "MaxFogIntensity": [
       "Contrôle l'intensité maximale du brouillard. Par défaut = Normal",
-      "1 = Normal",
+      "1 = Normale",
       "2 = Modérée",
       "3 = Faible",
       "4 = Aucun"
     ],
     "MaxRainFxIntensity": [
       "Contrôle l'intensité maximale de la pluie. Par défaut = Normal",
-      "1 = Normal",
+      "1 = Normale",
       "2 = Modérée",
       "3 = Faible"
     ],
@@ -844,7 +844,7 @@
       "1 = Aucun",
       "2 = Très peu efficace",
       "3 = Faible",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Élevé"
     ],
     "ZombieAttractionMultiplier": [
@@ -857,7 +857,7 @@
       "Gère le niveau de carburant des véhicules que vous découvrirez. Par défaut = Faible",
       "1 = Très peu efficace",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé",
       "6 = Plein"
@@ -890,7 +890,7 @@
       "Détermine la condition générale des véhicules découverts sur la carte. Par défaut = Faible",
       "1 = Très peu efficace",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé"
     ],
@@ -898,7 +898,7 @@
       "Gère les dégâts infligés aux véhicules qui ont un accident. Par défaut = Normal",
       "1 = Très peu efficace",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé"
     ],
@@ -906,7 +906,7 @@
       "Dégâts reçus par les joueurs lors d'une collision avec un véhicule. Par défaut = Aucun",
       "1 = Aucun",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé",
       "5 = Très Élevé"
     ],
@@ -931,14 +931,14 @@
     "ChanceHasGas": [
       "Gère les chances de trouver des véhicules contenant du carburant. Par défaut = Faible",
       "1 = Faible",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Élevé"
     ],
     "RecentlySurvivorVehicles": [
       "Si un joueur peut découvrir une voiture qui a été entretenue après l'infection de Knox. ",
       "1 = Aucun",
       "2 = Faible",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Élevé"
     ],
     "MultiHitZombies": [
@@ -955,55 +955,55 @@
     ],
     "AnimalStatsModifier": [
       "Vitesse à laquelle les statistiques des animaux (faim, soif, etc.) diminuent. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
     "AnimalMetaStatsModifier": [
       "Vitesse à laquelle les statistiques des animaux (faim, soif, etc.) diminuent en méta. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
     "AnimalPregnancyTime": [
       "Combien de temps les animaux resteront enceintes avant de mettre bas. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
     "AnimalAgeModifier": [
       "Vitesse à laquelle les animaux vieillissent. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
     "AnimalMilkIncModifier": [
       "Par défaut = Rapide",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
     "AnimalWoolIncModifier": [
       "Par défaut = Rapide",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
@@ -1028,10 +1028,10 @@
     ],
     "AnimalEggHatch": [
       "Combien de temps avant que les bébés animaux éclosent des œufs. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapide",
       "2 = Très rapide",
       "3 = Rapide",
-      "4 = Normal",
+      "4 = Normale",
       "5 = Lente",
       "6 = Très lente"
     ],
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Si un élément multimédia n'a pas été entièrement vu ou lu, ce paramètre détermine s'il est affiché entièrement, affiché sous la forme \"???\" ou complètement masqué. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Entièrement révélé",
+      "2 = Affiché comme ???",
+      "3 = Complètement caché"
     ],
     "SeeNotLearntRecipe": [
       "Si c'est vrai, vous pourrez voir toutes les recettes pouvant être réalisées avec une station, même si vous ne les avez pas encore apprises."
@@ -1078,12 +1078,12 @@
       "Si du poison peut être ajouté à la nourriture. ",
       "1 = Oui",
       "2 = Non",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Seul l'empoisonnement à l'eau de Javel est désactivé"
     ],
     "MaggotSpawn": [
       "Si/quand les asticots peuvent apparaître dans les cadavres. ",
       "1 = Dans et autour des corps",
-      "2 = In Bodies Only",
+      "2 = Dans les corps uniquement",
       "3 = Jamais"
     ],
     "LightBulbLifespan": [
@@ -1093,7 +1093,7 @@
       "L'abondance de poissons dans les rivières et les lacs. ",
       "1 = Très pauvre",
       "2 = Pauvre",
-      "3 = Normal",
+      "3 = Normale",
       "4 = Abondante",
       "5 = Très abondante"
     ],
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "S'il y a des rendements décroissants sur les points de trait bonus fournis par la sélection de plusieurs traits négatifs. ",
       "1 = Aucun",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 point de pénalité pour 3 traits négatifs sélectionnés",
+      "3 = 1 point de pénalité pour 2 traits négatifs sélectionnés",
       "4 = 1 point de pénalité pour chaque trait négatif sélectionné après le premier"
     ],
     "MinutesPerPage": [
@@ -1235,7 +1235,7 @@
     "Toughness": [
       "Contrôlez la difficulté à tuer les zombies. ",
       "1 = Résistants",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Fragiles",
       "4 = Aléatoire"
     ],
@@ -1285,7 +1285,7 @@
     "Memory": [
       "Contrôlez à quel point les zombies se souviennent d'un joueur après l'avoir vu ou entendu. ",
       "1 = Longue",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Courte",
       "4 = Aucun",
       "5 = Aléatoire",
@@ -1294,7 +1294,7 @@
     "Sight": [
       "Contrôlez le rayon de détection visuel des zombies. ",
       "1 = Vue aiguisée",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Pauvre",
       "4 = Aléatoire",
       "5 = Aléatoire entre Normal et Mauvais"
@@ -1302,7 +1302,7 @@
     "Hearing": [
       "Contrôlez le rayon de détection auditif des zombies. ",
       "1 = Précise",
-      "2 = Normal",
+      "2 = Normale",
       "3 = Pauvre",
       "4 = Aléatoire",
       "5 = Aléatoire entre Normal et Mauvais"
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

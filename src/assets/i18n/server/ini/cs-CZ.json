@@ -1,7 +1,7 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolChat": "Chat nástroje protokolu PVP",
     "PVPLogToolFile": "Soubor nástroje PVP Log Tool",
     "PauseEmpty": "Pauza Prázdná",
     "GlobalChat": "Globální chat",
@@ -13,7 +13,7 @@
     "AutoCreateUserInWhiteList": "Automatické vytvoření uživatele v bílé listině",
     "DisplayUserName": "Zobrazit uživatelské jméno",
     "ShowFirstAndLastName": "Zobrazit jméno a příjmení",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Bod zrození",
     "SafetySystem": "Bezpečnostní systém",
     "ShowSafety": "Ukaž bezpečnost",
     "SafetyToggleTimer": "Bezpečnostní přepínací časovač",
@@ -23,28 +23,28 @@
     "DefaultPort": "Výchozí port",
     "UDPPort": "Port UDP",
     "ResetID": "Resetovat ID",
-    "Mods": "Mods",
+    "Mods": "Mody",
     "Map": "Mapa",
     "DoLuaChecksum": "Proveďte kontrolní součet Lua",
     "Public": "Veřejné",
     "PublicName": "Veřejné jméno",
     "PublicDescription": "Veřejný popis",
     "MaxPlayers": "Maximální počet hráčů",
-    "PingLimit": "Ping Limit",
+    "PingLimit": "Limit pingu",
     "SafehousePreventsLootRespawn": "Safehouse zabraňuje opětovnému spawnování kořisti",
     "DropOffWhiteListAfterDeath": "Po smrti vyhoďte Bílou listinu",
     "NoFire": "Žádný oheň",
     "AnnounceDeath": "Oznámit Smrt",
     "SaveWorldEveryMinutes": "Zachraňte svět každou minutu",
-    "PlayerSafehouse": "Player Safehouse",
-    "AdminSafehouse": "Admin Safehouse",
+    "PlayerSafehouse": "Hráčský úkryt",
+    "AdminSafehouse": "Administrátorský úkryt",
     "SafehouseAllowTrepass": "Safehouse Povolit Trespass",
-    "SafehouseAllowFire": "Safehouse Allow Fire",
-    "SafehouseAllowLoot": "Safehouse Allow Loot",
+    "SafehouseAllowFire": "Povolit oheň v úkrytu",
+    "SafehouseAllowLoot": "Povolit kořist v úkrytu",
     "SafehouseAllowRespawn": "Safehouse Povolit Respawn",
     "SafehouseDaySurvivedToClaim": "Safehouse Day Survival k reklamaci",
     "SafeHouseRemovalTime": "Čas bezpečného odstranění domu",
-    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "SafehouseAllowNonResidential": "Povolit neobytné úkryty",
     "MaxSafezoneSize": "Maximální velikost bezpečnostní zóny",
     "AllowDestructionBySledgehammer": "Povolit zničení Sledgehammer",
     "SledgehammerOnlyInSafehouse": "Perlík Pouze V Safehouse",
@@ -55,8 +55,8 @@
     "RCONPort": "Port RCON",
     "RCONPassword": "Heslo RCON",
     "DiscordEnable": "Discord Povolit",
-    "DiscordToken": "Discord Token",
-    "DiscordChannel": "Discord Channel",
+    "DiscordToken": "Token Discordu",
+    "DiscordChannel": "Kanál Discordu",
     "DiscordChannelID": "ID kanálu Discord",
     "WebhookAddress": "Adresa webhooku",
     "Password": "Heslo",
@@ -92,19 +92,19 @@
     "DisableRadioInvisible": "Zakázat Radio Invisible",
     "ClientCommandFilter": "Filtr příkazů klienta",
     "ClientActionLogs": "Protokoly akcí klienta",
-    "PerkLogs": "Perk Logs",
+    "PerkLogs": "Protokoly perků",
     "ItemNumbersLimitPerContainer": "Limit počtu položek na kontejner",
     "BloodSplatLifespanDays": "Dny životnosti Blood Splat",
     "AllowNonAsciiUsername": "Povolit uživatelské jméno bez Ascii",
-    "RemovePlayerCorpsesOnCorpseRemoval": "Remove Player Corpses On Corpse Removal",
+    "RemovePlayerCorpsesOnCorpseRemoval": "Odstranit těla hráčů při odstraňování mrtvol",
     "TrashDeleteAll": "Koš Smazat vše",
-    "PVPMeleeWhileHitReaction": "PVP Melee While Hit Reaction",
+    "PVPMeleeWhileHitReaction": "PVP Meee While Hit Reaction",
     "MouseOverToSeeDisplayName": "Přejetím myší zobrazíte zobrazované jméno",
     "HidePlayersBehindYou": "Skryjte hráče za sebou",
-    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPMeleeDamageModifier": "Modifikátor poškození nablízko v PVP",
     "PVPFirearmDamageModifier": "PVP modifikátor poškození střelné zbraně",
     "CarEngineAttractionModifier": "Modifikátor přitažlivosti motoru automobilu",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Kolize hráče s hráčem",
     "MapRemotePlayerVisibility": "Viditelnost vzdáleného přehrávače mapy",
     "BackupsCount": "Počet záloh",
     "BackupsOnStart": "Zálohy při spuštění",
@@ -118,14 +118,14 @@
     "BadWordReplacement": "Náhrada špatných slov",
     "AntiCheatSafety": "Bezpečnost proti cheatům",
     "AntiCheatMovement": "Hnutí proti cheatům",
-    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatHit": "Anti-cheat zásahů",
     "AntiCheatPacket": "Balíček Anti Cheat",
     "AntiCheatPermission": "Anti Cheat povolení",
-    "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatXP": "Anti-cheat XP",
+    "AntiCheatFire": "Anti-cheat ohně",
+    "AntiCheatSafeHouse": "Anti-cheat úkrytů",
     "AntiCheatRecipe": "Recept proti cheatům",
-    "AntiCheatPlayer": "Anti Cheat Player",
+    "AntiCheatPlayer": "Anti-cheat hráče",
     "AntiCheatChecksum": "Kontrolní součet Anti Cheat",
     "AntiCheatItem": "Položka proti cheatům",
     "AntiCheatServerCustomization": "Anti Cheat Server přizpůsobení",
@@ -140,10 +140,10 @@
         "Hr��i mohou ubl�it ostatn�m hr���m."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP je přihlášen do administrátorského chatu"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP je přihlášen do souboru"
       ],
       "PauseEmpty": [
         "�as hern�ho sv�ta se zastav�, pokud na serveru nejsou ��dn� hr��i."
@@ -280,10 +280,10 @@
         "Čas v sekundách před začátkem války."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Trvání války v sekundách."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limit životů v Safehouse."
       ],
       "ServerPlayerID": [
         "Zapsan� v souborech klienta hr��e, tak�e klient nem��e pou��vat soubory ze singleplayeru nebo jin�ch server�."
@@ -325,7 +325,7 @@
         "Hr��i se unavuj� a pot�ebuj� sp�nek.  Ignorovan�, pokud SleepAllowed"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Aktivace tohoto nastavení může způsobit vizuální desynchronizaci pozic hráčů."
       ],
       "WorkshopItems": [
         "Vypište Workshop Mod ID pro server ke stažení. "
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Ovládá zobrazení vzdálených hráčů na mapě ve hře.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Skrytý 2=Přátelé 3=Všichni"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Deaktivuje tažení vozidla"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Deaktivuje tažení přívěsu"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Deaktivuje odtah spáleného vozidla"
       ],
       "BadWordListFile": [
         "Cesta k souboru se seznamem slov, která mají být zakázána. "
@@ -464,37 +464,37 @@
         "Symbol nebo část textu, která nahradí špatné slovo"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Deaktivuje bezpečnostní systém ochrany proti podvádění."
       ],
       "AntiCheatMovement": [
         "Vypne ochranu proti podvádění pohybu."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Deaktivuje ochranu proti podvádění proti zásahům postav."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Vypne ochranu proti cheatům na kontrolu paketů."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Deaktivuje ochranu proti cheatování oprávnění hráče."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Deaktivuje ochranu hráče XP proti cheatování."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Deaktivuje protipožární ochranu proti podvádění."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Deaktivuje ochranu proti podvádění v trezoru."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Deaktivuje anti-cheat ochranu receptur."
       ],
       "AntiCheatPlayer": [
         "Vypne ochranu proti podvádění pro hráče."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Deaktivuje kontrolní součet anti-cheat ochrany."
       ],
       "AntiCheatItem": [
         "Vypne kontrolu položek anti-cheat ochranu."
@@ -506,7 +506,7 @@
         "Nastavuje periodu aktualizace pro více hráčů v sekundách. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Deaktivuje výsledkovou tabulku."
       ],
       "HideAdminsInPlayerList": [
         "Skryje administrátory v seznamu hráčů."

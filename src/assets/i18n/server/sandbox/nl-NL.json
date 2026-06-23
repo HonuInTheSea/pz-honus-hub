@@ -1,5 +1,5 @@
 {
-  "Zombies": "Zombies",
+  "Zombies": "Zombieën",
   "Distribution": "Verdeling",
   "ZombieVoronoiNoise": "Zombie Voronoi-ruis",
   "ZombieRespawn": "Zombie her-spawn",
@@ -293,7 +293,7 @@
       "4 = Geen"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie mag migreren naar lege cellen."
     ],
     "DayLength": [
       "Standaard = 1 uur, 30 minuten",
@@ -330,15 +330,15 @@
       "1 = Januari",
       "2 = Februari",
       "3 = Maart",
-      "4 = April",
+      "4 = april",
       "5 = Mei",
       "6 = Juni",
       "7 = Juli",
       "8 = Augustus",
-      "9 = September",
+      "9 = september",
       "10 = Oktober",
-      "11 = November",
-      "12 = December"
+      "11 = november",
+      "12 = december"
     ],
     "StartDay": [
       "Dag van de maand waarin de spelen beginnen."
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Of het tijdstip van de dag op natuurlijke wijze verandert, of dat het altijd dag/nacht is. ",
       "1 = Weinig",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Eindeloze dag",
+      "3 = Eindeloze nacht"
     ],
     "ClimateCycle": [
       "Of het weer nu verandert of in één staat blijft. ",
       "1 = Weinig",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Geen weer",
+      "3 = Eindeloze regen",
+      "4 = Eindeloze storm",
+      "5 = Eindeloze sneeuw",
+      "6 = Eindeloze sneeuwstorm"
     ],
     "FogCycle": [
       "Of mist van nature voorkomt, nooit voorkomt of altijd aanwezig is. ",
       "1 = Weinig",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Geen mist",
+      "3 = Eindeloze mist"
     ],
     "WaterShut": [
       "Hoe lang na de standaard startdatum (9 juli 1993) zullen sanitaire voorzieningen (bijv. gootstenen) niet langer oneindige bronnen van water zijn. ",
@@ -540,7 +540,7 @@
     ],
     "CompostTime": [
       "Hoe lang het duurt voordat voedsel is afgebroken in een composteerder. ",
-      "1 = 1 Week",
+      "1 = 1 week",
       "2 = 2 Weken",
       "3 = 3 Weken",
       "4 = 4 Weken",
@@ -604,7 +604,7 @@
       "3 = Weinig",
       "4 = Normaal",
       "5 = Veel",
-      "6 = No decay"
+      "6 = Geen verval"
     ],
     "SeenHoursPreventLootRespawn": [
       "Wanneer > 0, zal de buit niet respawnen in de zones die bezocht worden binnen dit aantal aan uren. "
@@ -947,7 +947,7 @@
     "RearVulnerability": [
       "Kans op een zombie beet wanneer deze van achteren aanvalt. Standaard = Normaal",
       "1 = Geen",
-      "2 = Medium",
+      "2 = Gemiddeld",
       "3 = Normaal"
     ],
     "SirenEffectsZombies": [
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Snelheid waarmee de statistieken van dieren (honger, dorst etc.) afnemen. ",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Snelheid waarmee de statistieken van dieren (honger, dorst enz.) afnemen in meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Hoe lang zullen dieren drachtig zijn voordat ze gaan bevallen. ",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Snelheid waarmee dieren ouder worden. ",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Standaard = Snel",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Standaard = Snel",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Hoe lang duurt het voordat babydieren uit de eieren komen? ",
-      "1 = Ultra Fast",
+      "1 = Ultrasnel",
       "2 = Erg Snel",
       "3 = Snel",
       "4 = Weinig",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Als een stukje media niet volledig is gezien of gelezen, bepaalt deze instelling of het volledig wordt weergegeven, weergegeven als \"???\", of volledig verborgen is. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Volledig onthuld",
+      "2 = Weergegeven als ???",
+      "3 = Volledig verborgen"
     ],
     "SeeNotLearntRecipe": [
       "Als dit waar is, kun je alle recepten zien die je met een station kunt maken, zelfs als je ze nog niet hebt geleerd."
@@ -1078,12 +1078,12 @@
       "Als gif aan voedsel kan worden toegevoegd. ",
       "1 = Aan",
       "2 = Uit",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Alleen bleekmiddelvergiftiging is uitgeschakeld"
     ],
     "MaggotSpawn": [
       "Als/wanneer maden in lijken kunnen spawnen. ",
       "1 = In en rond lichamen",
-      "2 = In Bodies Only",
+      "2 = Alleen in lichamen",
       "3 = Nooit"
     ],
     "LightBulbLifespan": [
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Als er een afnemend rendement is op de bonuseigenschapspunten die worden verkregen door het selecteren van meerdere negatieve eigenschappen. ",
       "1 = Geen",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 strafpunt voor elke 3 geselecteerde negatieve eigenschappen",
+      "3 = 1 strafpunt voor elke 2 geselecteerde negatieve eigenschappen",
       "4 = 1 strafpunt voor elke negatieve eigenschap die na de eerste wordt geselecteerd"
     ],
     "MinutesPerPage": [
@@ -1274,7 +1274,7 @@
     ],
     "CrawlUnderVehicle": [
       "Hoe vaak zombies onder geparkeerde voertuigen kunnen kruipen. ",
-      "1 = Crawlers Only",
+      "1 = Alleen crawlers",
       "2 = Extreem Zeldzaam",
       "3 = Zeldzaam",
       "4 = Soms",
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

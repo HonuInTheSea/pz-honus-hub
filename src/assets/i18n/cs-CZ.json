@@ -26,7 +26,7 @@
       "dangerZone": "Nebezpečná zóna"
     },
     "items": {
-      "dashboard": "Dashboard",
+      "dashboard": "Přehled",
       "logInspector": "Inspektor protokolu",
       "configureFolders": "Konfigurace složek",
       "setSteamApiKey": "Nastavte klíč API Steam",
@@ -310,7 +310,7 @@
       "tags": "Značky",
       "noTags": "Žádné štítky",
       "packs": "Balíčky",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "Definice dlaždic",
       "workshopTitle": "Název workshopu",
       "workshopCreator": "Tvůrce workshopu",
       "fileSize": "Velikost souboru",
@@ -352,7 +352,7 @@
     "clothing_armor": "Oděvy/brnění",
     "farming": "Farmařství",
     "food": "Jídlo",
-    "framework": "Framework",
+    "framework": "Rámec",
     "hardmode": "Pevný režim",
     "interface": "Rozhraní",
     "items": "Položky",
@@ -362,7 +362,7 @@
     "military": "Vojenské jednotky",
     "misc": "Různé",
     "models": "Modely",
-    "multiplayer": "Multiplayer",
+    "multiplayer": "Hra pro více hráčů",
     "pop_culture": "Popová kultura",
     "qol": "QoL",
     "realistic": "Realistické",
@@ -444,7 +444,7 @@
       "honuSync": {
         "failedSummary": "Synchronizace informací o kvalitě Honu Mod se nezdařila",
         "missingUserDetail": "Uživatelská složka Project Zomboid není nakonfigurována.",
-        "successSummary": "Honu's Mod Info QoL Synced",
+        "successSummary": "Honu's Mod Info QoL synchronizováno",
         "successCreatedDetail": "vytvořen honus_miqol_db.lua.",
         "successUpdatedDetail": "honus_miqol_db.lua aktualizován.",
         "failedDetail": "Synchronizace Honu Mod Info QoL se nezdařila."
@@ -484,7 +484,7 @@
         "detail": "Přijato {{received}} z {{total}} dílenských položek. Chybějící ID: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
+        "summary": "Steam Workshop synchronizován",
         "detail": "Metadata workshopu byla úspěšně uložena."
       },
       "workshopUnauthorized": {
@@ -589,12 +589,12 @@
         "detailMissing": "Zadejte název serveru.",
         "detailInvalidChars": "Název serveru obsahuje neplatné znaky názvu souboru.",
         "detailTrailing": "Název serveru nesmí končit tečkou ani mezerou.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "Název serveru musí být jedno slovo bez mezer.",
+        "detailAscii": "Používejte pouze znaky ASCII (anglická písmena, čísla a symboly)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Název serveru je již obsazen",
+        "detail": "Tento název serveru již byl obsazen. Zvolte jiný název pro nový server."
       },
       "missingUserFolder": {
         "summary": "Chybí uživatelská složka",
@@ -678,7 +678,7 @@
       "installs": {
         "label": "Mody podle měsíce instalace",
         "xAxis": "měsíc",
-        "yAxis": "Mods"
+        "yAxis": "Mody"
       },
       "status": {
         "outdated": "Zastaralé",
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "servery",
       "refresh": "Obnovit",
       "createNewServer": "Vytvořit nový server",
       "copy": "Kopírovat",
       "deleteServer": "Odstranit server",
       "createBackupOnSave": "Vytvořit zálohu při ukládání",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Nebyly nalezeny žádné soubory serveru.",
+      "selectServerPlaceholder": "Vyberte server",
+      "serverEditor": "Editor serveru",
+      "selectServerPrompt": "Vyberte server pro zahájení úprav.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox proměnné",
         "spawnpoints": "Body spawnu",
         "spawnregions": "Oblasti spawnu"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Nebyly nalezeny žádné záznamy INI.",
       "serverConfigVars": "Proměnné konfigurace serveru",
-      "searchFields": "Search fields",
+      "searchFields": "Vyhledávací pole",
       "reset": "Obnovit",
       "saveChanges": "Uložit změny",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Nebyly nalezeny žádné proměnné sandboxu.",
       "sandboxVariables": "Sandbox proměnné",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "Hledat proměnné",
+      "createServerTitle": "Vytvořit nový server",
+      "copyServerTitle": "Kopírovat server",
+      "copyServerPrompt": "Zkopírujte {{name}} a vytvořte následující soubory:",
+      "serverName": "Název serveru",
+      "createServerHint": "Vytvoří .ini, _SandboxVars.lua, _spawnpoints.lua a _spawnregions.lua",
       "cancel": "Zrušit",
-      "create": "Create",
+      "create": "Vytvořit",
       "editServerVariableTitle": "Upravit proměnnou serveru",
       "editSandboxVariableTitle": "Upravit proměnnou sandboxu",
-      "noDescription": "No description available.",
+      "noDescription": "Popis není k dispozici.",
       "save": "Uložit",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "Smazat server",
+      "deleteServerPrompt": "Smazat {{name}} a všechny související soubory serveru?",
       "trueLabel": "Věrný",
       "falseLabel": "Falešný",
       "exportServer": "Exportovat"

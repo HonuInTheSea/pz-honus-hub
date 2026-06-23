@@ -73,7 +73,7 @@
   "PlantAbundance": "Kasaganaan ng Halaman",
   "EndRegen": "Regenerasyon ng Stamina",
   "Helicopter": "Helikopter",
-  "MetaEvent": "Meta Event",
+  "MetaEvent": "Meta event",
   "SleepingEvent": "Kaganapan habang Natutulog",
   "GeneratorFuelConsumption": "Konsumo ng Gasolina ng Generator",
   "GeneratorSpawning": "Paglitaw ng Generator",
@@ -138,7 +138,7 @@
   "AnimalSoundAttractZombies": "Tunog ng Hayop ay Umaakit ng Zombi",
   "AnimalTrackChance": "Tsansa ng Bakas ng Hayop",
   "AnimalPathChance": "Tsansa ng Daan ng Hayop",
-  "MaximumRatIndex": "Maximum Rat Index",
+  "MaximumRatIndex": "Maximum rat index",
   "DaysUntilMaximumRatIndex": "Mga Araw hanggang Maximum Rat Index",
   "MetaKnowledge": "Kaalamang Meta",
   "SeeNotLearntRecipe": "Tingnan ang Mga Hindi Natutunang Resipe",
@@ -179,7 +179,7 @@
   "ClayRiverChance": "Tsansa ng Luad sa Ilog",
   "GeneratorTileRange": "Saklaw ng Tile ng Generator",
   "GeneratorVerticalPowerRange": "Patayong Saklaw ng Kuryente ng Generator",
-  "Basement": "Basement",
+  "Basement": "Silong",
   "SpawnFrequency": "Dalas ng Paglitaw",
   "Map": "Mapa",
   "AllowMiniMap": "Pahintulutan ang MiniMap",
@@ -247,59 +247,59 @@
   "Spear": "Sibat",
   "Maintenance": "Pagpapanatili",
   "Woodwork": "Pagkakahoy",
-  "Cooking": "Cooking",
-  "Doctor": "Doctor",
-  "Electricity": "Electricity",
-  "MetalWelding": "Metal Welding",
+  "Cooking": "Pagluluto",
+  "Doctor": "Doktor",
+  "Electricity": "Kuryente",
+  "MetalWelding": "Metal welding",
   "Mechanics": "Mechanics",
-  "Tailoring": "Tailoring",
-  "Aiming": "Aiming",
-  "Reloading": "Reloading",
-  "Fishing": "Fishing",
-  "Trapping": "Trapping",
-  "PlantScavenging": "Plant Scavenging",
-  "FlintKnapping": "Flint Knapping",
-  "Masonry": "Masonry",
-  "Pottery": "Pottery",
-  "Carving": "Carving",
-  "Husbandry": "Husbandry",
-  "Tracking": "Tracking",
-  "Blacksmith": "Blacksmith",
-  "Butchering": "Butchering",
-  "Glassmaking": "Glassmaking",
+  "Tailoring": "Pananahi",
+  "Aiming": "Pagpuntirya",
+  "Reloading": "Nire-reload",
+  "Fishing": "Pangingisda",
+  "Trapping": "Pagbibitag",
+  "PlantScavenging": "Pag-scavenging ng Halaman",
+  "FlintKnapping": "Flint knapping",
+  "Masonry": "Pagmamason",
+  "Pottery": "Palayok",
+  "Carving": "Pag-ukit",
+  "Husbandry": "Pag-aasawa",
+  "Tracking": "Pagsubaybay",
+  "Blacksmith": "panday",
+  "Butchering": "Pagkatay",
+  "Glassmaking": "Paggawa ng salamin",
   "comments": {
     "Zombies": [
       "Ang pagpapalit nito ay nagtatakda din ng \"Population Multiplier\" sa Advanced Zombie Options.",
-      "1 = Insane",
-      "2 = Very High",
-      "3 = High",
+      "1 = Baliw",
+      "2 = Napakataas",
+      "3 = Mataas",
       "4 = Normal",
-      "5 = Low",
-      "6 = None"
+      "5 = Mababa",
+      "6 = Wala"
     ],
     "Distribution": [
       "Paano ipinamamahagi ang mga zombie sa buong mapa. ",
-      "1 = Urban Focused",
-      "2 = Uniform"
+      "1 = Nakatuon sa Urban",
+      "2 = Uniporme"
     ],
     "ZombieVoronoiNoise": [
       "Kinokontrol kung ang ilang randomization ay inilalapat sa pamamahagi ng zombie."
     ],
     "ZombieRespawn": [
       "Gaano kadalas naidagdag ang mga bagong zombie sa mundo. ",
-      "1 = High",
+      "1 = Mataas",
       "2 = Normal",
-      "3 = Low",
-      "4 = None"
+      "3 = Mababa",
+      "4 = Wala"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Pinapayagan ang zombie na lumipat sa mga walang laman na cell."
     ],
     "DayLength": [
       "Default = 1 Oras, 30 Minuto",
       "1 = 15 Minuto",
       "2 = 30 Minuto",
-      "3 = 1 Hour",
+      "3 = 1 Oras",
       "4 = 1 Oras, 30 Minuto",
       "5 = 2 Oras",
       "6 = 3 Oras",
@@ -327,18 +327,18 @@
     ],
     "StartMonth": [
       "Buwan kung saan magsisimula ang laro. ",
-      "1 = January",
-      "2 = February",
-      "3 = March",
-      "4 = April",
-      "5 = May",
-      "6 = June",
-      "7 = July",
-      "8 = August",
-      "9 = September",
-      "10 = October",
-      "11 = November",
-      "12 = December"
+      "1 = Enero",
+      "2 = Pebrero",
+      "3 = Marso",
+      "4 = Abril",
+      "5 = Mayo",
+      "6 = Hunyo",
+      "7 = Hulyo",
+      "8 = Agosto",
+      "9 = Setyembre",
+      "10 = Oktubre",
+      "11 = Nobyembre",
+      "12 = Disyembre"
     ],
     "StartDay": [
       "Araw ng buwan kung saan magsisimula ang mga laro."
@@ -358,56 +358,56 @@
     "DayNightCycle": [
       "Kung natural na nagbabago ang oras ng araw, o palaging araw/gabi. ",
       "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Walang katapusang Araw",
+      "3 = Walang katapusang Gabi"
     ],
     "ClimateCycle": [
       "Kung nagbabago ang panahon o nananatili sa isang estado. ",
       "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Walang Panahon",
+      "3 = Walang katapusang Ulan",
+      "4 = Walang katapusang Bagyo",
+      "5 = Walang katapusang Niyebe",
+      "6 = Walang katapusang Blizzard"
     ],
     "FogCycle": [
       "Kung ang fog ay natural na nangyayari, hindi kailanman nangyayari, o palaging naroroon. ",
       "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Walang Ulap",
+      "3 = Walang katapusang Ulap"
     ],
     "WaterShut": [
       "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang mga kagamitan sa pagtutubero (hal. lababo) ay hihinto sa pagiging walang katapusang pinagmumulan ng tubig. ",
       "1 = Instant",
       "2 = 0-30 Araw",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years",
-      "7 = 2-6 Months",
-      "8 = 6-12 Months",
-      "9 = Disabled"
+      "3 = 0-2 Buwan",
+      "4 = 0-6 na Buwan",
+      "5 = 0-1 Taon",
+      "6 = 0-5 Taon",
+      "7 = 2-6 na Buwan",
+      "8 = 6-12 Buwan",
+      "9 = Hindi pinagana"
     ],
     "ElecShut": [
       "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang koryente sa mundo ay tuluyang napatay. ",
       "1 = Instant",
       "2 = 0-30 Araw",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years",
-      "7 = 2-6 Months",
-      "8 = 6-12 Months",
-      "9 = Disabled"
+      "3 = 0-2 Buwan",
+      "4 = 0-6 na Buwan",
+      "5 = 0-1 Taon",
+      "6 = 0-5 Taon",
+      "7 = 2-6 na Buwan",
+      "8 = 6-12 Buwan",
+      "9 = Hindi pinagana"
     ],
     "AlarmDecay": [
       "Gaano katagal maaaring tumagal ang mga baterya ng alarma pagkatapos patayin ang kuryente. ",
       "1 = Instant",
       "2 = 0-30 Araw",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years"
+      "3 = 0-2 Buwan",
+      "4 = 0-6 na Buwan",
+      "5 = 0-1 Taon",
+      "6 = 0-5 Taon"
     ],
     "WaterShutModifier": [
       "Gaano katagal pagkatapos ng default na petsa ng pagsisimula (Hulyo 9, 1993) na ang mga kagamitan sa pagtutubero (hal. lababo) ay huminto sa pagiging walang katapusang pinagmumulan ng tubig. "
@@ -510,19 +510,19 @@
     ],
     "Temperature": [
       "Ang pandaigdigang temperatura. ",
-      "1 = Very Cold",
-      "2 = Cold",
+      "1 = Napakalamig",
+      "2 = Malamig",
       "3 = Normal",
-      "4 = Hot",
-      "5 = Very Hot"
+      "4 = Mainit",
+      "5 = Napakainit"
     ],
     "Rain": [
       "Gaano kadalas umuulan. ",
-      "1 = Very Dry",
-      "2 = Dry",
+      "1 = Napakatuyo",
+      "2 = tuyo",
       "3 = Normal",
-      "4 = Rainy",
-      "5 = Very Rainy"
+      "4 = Maulan",
+      "5 = Napaka-Ulan"
     ],
     "ErosionSpeed": [
       "Bilang ng mga araw bago ang sistema ng pagguho (na nagdaragdag ng mga baging, mahabang damo, bagong puno atbp. sa mundo) ay aabot sa 100% na paglago. ",
@@ -540,48 +540,48 @@
     ],
     "CompostTime": [
       "Gaano katagal bago masira ang pagkain sa isang composter. ",
-      "1 = 1 Week",
-      "2 = 2 Weeks",
-      "3 = 3 Weeks",
-      "4 = 4 Weeks",
-      "5 = 6 Weeks",
-      "6 = 8 Weeks",
-      "7 = 10 Weeks",
-      "8 = 12 Weeks"
+      "1 = 1 Linggo",
+      "2 = 2 Linggo",
+      "3 = 3 Linggo",
+      "4 = 4 na Linggo",
+      "5 = 6 na Linggo",
+      "6 = 8 Linggo",
+      "7 = 10 Linggo",
+      "8 = 12 Linggo"
     ],
     "StatsDecrease": [
       "Gaano kabilis ang gutom, uhaw, at pagod ng manlalaro ay bababa. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Napakabilis",
+      "2 = Mabilis",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Mabagal",
+      "5 = Napakabagal"
     ],
     "NatureAbundance": [
       "Ang kasaganaan ng mga item na makikita sa Foraging mode. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Napakahirap",
+      "2 = Mahina",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Sagana",
+      "5 = Napakasagana"
     ],
     "Alarm": [
       "Gaano ang posibilidad na ang manlalaro ay mag-activate ng alarma sa bahay kapag pumasok sa isang bagong bahay. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "LockedHouses": [
       "Gaano kadalas isasara ang mga pinto ng mga bahay at gusali kapag natuklasan. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "StarterKit": [
       "Spawn na may Chip, Bote ng Tubig, Maliit na Backpack, Baseball Bat, at Martilyo."
@@ -591,20 +591,20 @@
     ],
     "FoodRotSpeed": [
       "Gaano kabilis masira ang pagkain na iyon, sa loob o labas ng refrigerator. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Napakabilis",
+      "2 = Mabilis",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Mabagal",
+      "5 = Napakabagal"
     ],
     "FridgeFactor": [
       "Gaano kabisa ang isang refrigerator sa pagpapanatiling sariwa ng pagkain nang mas matagal. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Napakababa",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High",
-      "6 = No decay"
+      "4 = Mataas",
+      "5 = Napakataas",
+      "6 = Walang pagkabulok"
     ],
     "SeenHoursPreventLootRespawn": [
       "Kapag mas malaki sa 0, hindi na respawn ang loot sa mga zone na binisita sa loob ng bilang na ito ng in-game na oras. "
@@ -645,93 +645,93 @@
     ],
     "PlantResilience": [
       "Gaano karaming tubig ang mawawala sa mga halaman bawat araw, at ang kanilang kakayahang maiwasan ang sakit. ",
-      "1 = Very High",
-      "2 = High",
+      "1 = Napakataas",
+      "2 = Mataas",
       "3 = Normal",
-      "4 = Low",
-      "5 = Very Low"
+      "4 = Mababa",
+      "5 = Napakababa"
     ],
     "PlantAbundance": [
       "Ang ani ng mga halaman kapag inani. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Napakahirap",
+      "2 = Mahina",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Sagana",
+      "5 = Napakasagana"
     ],
     "EndRegen": [
       "Pagbawi mula sa pagod pagkatapos magsagawa ng mga aksyon. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Napakabilis",
+      "2 = Mabilis",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Mabagal",
+      "5 = Napakabagal"
     ],
     "Helicopter": [
       "Gaano kadalas na dumadaan ang isang helicopter sa Event Zone. ",
       "1 = Hindi kailanman",
-      "2 = Once",
-      "3 = Sometimes",
-      "4 = Often"
+      "2 = Minsan",
+      "3 = Minsan",
+      "4 = Madalas"
     ],
     "MetaEvent": [
       "Gaano kadalas magaganap ang mga kaganapang metagame na nakakaakit ng zombie tulad ng malalayong putok ng baril. ",
       "1 = Hindi kailanman",
-      "2 = Sometimes",
-      "3 = Often"
+      "2 = Minsan",
+      "3 = Madalas"
     ],
     "SleepingEvent": [
       "Gaano kadalas nangyayari ang mga kaganapan sa pagtulog ng manlalaro, tulad ng mga bangungot. ",
       "1 = Hindi kailanman",
-      "2 = Sometimes",
-      "3 = Often"
+      "2 = Minsan",
+      "3 = Madalas"
     ],
     "GeneratorFuelConsumption": [
       "Gaano karaming gasolina ang natupok ng mga generator kada in-game hour. "
     ],
     "GeneratorSpawning": [
       "Ang pagkakataon ng mga de-koryenteng generator na lumilitaw sa mapa. ",
-      "1 = None (not recommended)",
+      "1 = Wala (hindi inirerekomenda)",
       "2 = Insanely Rare",
-      "3 = Extremely Rare",
-      "4 = Rare",
+      "3 = Lubhang Bihira",
+      "4 = Bihira",
       "5 = Normal",
-      "6 = Common",
-      "7 = Abundant"
+      "6 = Karaniwan",
+      "7 = Sagana"
     ],
     "AnnotatedMapChance": [
       "Gaano kadalas magkakaroon ng mga tala ang isang ninakaw na mapa, na isinulat ng isang namatay na nakaligtas. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "CharacterFreePoints": [
       "Nagdaragdag ng mga libreng puntos sa paggawa ng character. "
     ],
     "ConstructionBonusPoints": [
       "Nagbibigay ng dagdag na hit point sa mga constructions na binuo ng player para mas lumalaban ang mga ito sa pinsala ng zombie. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Napakababa",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Mataas",
+      "5 = Napakataas"
     ],
     "NightDarkness": [
       "Ang antas ng ambient lighting sa gabi. ",
       "1 = Pitch Black",
-      "2 = Dark",
+      "2 = Madilim",
       "3 = Normal",
-      "4 = Bright"
+      "4 = Maliwanag"
     ],
     "NightLength": [
       "Ang oras mula dapit-hapon hanggang madaling araw. ",
       "1 = Laging Gabi",
-      "2 = Long",
+      "2 = Mahaba",
       "3 = Normal",
-      "4 = Short",
+      "4 = Maikli",
       "5 = Laging Araw"
     ],
     "BoneFracture": [
@@ -739,38 +739,38 @@
     ],
     "InjurySeverity": [
       "Ang epekto ng mga pinsala sa iyong katawan, at ang kanilang oras ng pagpapagaling. ",
-      "1 = Low",
+      "1 = Mababa",
       "2 = Normal",
-      "3 = High"
+      "3 = Mataas"
     ],
     "HoursForCorpseRemoval": [
       "Gaano katagal, sa mga oras, bago mawala ang mga patay na katawan ng zombie sa mundo.  "
     ],
     "DecayingCorpseHealthImpact": [
       "Ang epekto ng malalapit na nabubulok na katawan sa kalusugan at emosyon ng manlalaro. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Wala",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Insane"
+      "4 = Mataas",
+      "5 = Baliw"
     ],
     "ZombieHealthImpact": [
       "Kung ang mga kalapit na \"nabubuhay\" na zombie ay may parehong epekto sa kalusugan at emosyon ng manlalaro."
     ],
     "BloodLevel": [
       "Gaano karaming dugo ang na-spray sa sahig at dingding dahil sa mga pinsala. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Wala",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
+      "4 = Mataas",
       "5 = Ultra Gore"
     ],
     "ClothingDegradation": [
       "Gaano kabilis masira ang damit, marumi, at duguan. ",
-      "1 = Disabled",
-      "2 = Slow",
+      "1 = Hindi pinagana",
+      "2 = Mabagal",
       "3 = Normal",
-      "4 = Fast"
+      "4 = Mabilis"
     ],
     "FireSpread": [
       "Kung kumalat ang apoy kapag nagsimula."
@@ -784,15 +784,15 @@
     "MaxFogIntensity": [
       "Pinakamataas na intensity ng fog. ",
       "1 = Normal",
-      "2 = Moderate",
-      "3 = Low",
-      "4 = None"
+      "2 = Katamtaman",
+      "3 = Mababa",
+      "4 = Wala"
     ],
     "MaxRainFxIntensity": [
       "Pinakamataas na intensity ng ulan. ",
       "1 = Normal",
-      "2 = Moderate",
-      "3 = Low"
+      "2 = Katamtaman",
+      "3 = Mababa"
     ],
     "EnableSnowOnGround": [
       "Kung ang snow ay maipon sa lupa.  "
@@ -803,31 +803,31 @@
     "SurvivorHouseChance": [
       "Ang pagkakataong makahanap ng mga random na gusali sa mapa (hal. nasunog na mga bahay, mga naglalaman ng mga nakatagong pagnanakaw o mga bangkay). ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging Sinusubukan"
     ],
     "VehicleStoryChance": [
       "Ang pagkakataon ng mga kwento sa kalsada (hal. mga hadlang sa kalsada ng pulisya) na mag-spawning. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging Sinusubukan"
     ],
     "ZoneStoryChance": [
       "Ang pagkakataon ng mga kuwentong partikular sa mga zone ng mapa (hal. isang campsite sa isang kagubatan) na nag-spawning. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging Sinusubukan"
     ],
     "AllClothesUnlocked": [
@@ -841,11 +841,11 @@
     ],
     "CarSpawnRate": [
       "Gaano kadalas matutuklasan ang mga sasakyan sa mapa. ",
-      "1 = None",
-      "2 = Very Low",
-      "3 = Low",
+      "1 = Wala",
+      "2 = Napakababa",
+      "3 = Mababa",
       "4 = Normal",
-      "5 = High"
+      "5 = Mataas"
     ],
     "ZombieAttractionMultiplier": [
       "Pangkalahatang lakas ng makina sa mga zombie. "
@@ -855,12 +855,12 @@
     ],
     "InitialGas": [
       "Kung gaano kapuno ang tangke ng gas ng mga natuklasang sasakyan. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Napakababa",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High",
-      "6 = Full"
+      "4 = Mataas",
+      "5 = Napakataas",
+      "6 = Puno"
     ],
     "FuelStationGasInfinite": [
       "Kung pinagana, ang mga gas pump ay hindi mauubusan ng gasolina"
@@ -877,38 +877,38 @@
     "LockedCar": [
       "Gaano kalamang na mai-lock ang mga sasakyan Default = Rare",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "CarGasConsumption": [
       "Kung gaano kagutom ang mga sasakyan. "
     ],
     "CarGeneralCondition": [
       "Pangkalahatang kondisyon na natuklasang mga sasakyan ay papasok. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Napakababa",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Mataas",
+      "5 = Napakataas"
     ],
     "CarDamageOnImpact": [
       "Ang dami ng pinsalang natamo sa mga sasakyang nag-crash. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Napakababa",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Mataas",
+      "5 = Napakataas"
     ],
     "DamageToPlayerFromHitByACar": [
       "Pinsala na natanggap ng player mula sa pagkakabangga. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Wala",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Mataas",
+      "5 = Napakataas"
     ],
     "TrafficJam": [
       "Kung ang mga jam ng trapiko na binubuo ng mga nasirang sasakyan ay lilitaw sa mga pangunahing kalsada."
@@ -916,11 +916,11 @@
     "CarAlarm": [
       "Gaano kadalas natuklasang may mga aktibong alarma ang mga sasakyan. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "PlayerDamageFromCrash": [
       "Kung ang manlalaro ay maaaring masugatan mula sa isang aksidente sa sasakyan."
@@ -930,91 +930,91 @@
     ],
     "ChanceHasGas": [
       "Ang pagkakataong makahanap ng sasakyan na may gas sa tangke nito. ",
-      "1 = Low",
+      "1 = Mababa",
       "2 = Normal",
-      "3 = High"
+      "3 = Mataas"
     ],
     "RecentlySurvivorVehicles": [
       "Kung matutuklasan ng isang manlalaro ang isang kotse na inalagaan pagkatapos tumama ang impeksyon sa Knox. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Wala",
+      "2 = Mababa",
       "3 = Normal",
-      "4 = High"
+      "4 = Mataas"
     ],
     "MultiHitZombies": [
       "Kung ang ilang mga suntukan na armas ay makakapag-atake ng maraming zombie sa isang hit."
     ],
     "RearVulnerability": [
       "Tsansang makagat kapag may zombie na umatake mula sa likod. ",
-      "1 = Low",
-      "2 = Medium",
-      "3 = High"
+      "1 = Mababa",
+      "2 = Katamtaman",
+      "3 = Mataas"
     ],
     "SirenEffectsZombies": [
       "Kung ang mga zombie ay tutungo sa tunog ng mga sirena ng sasakyan."
     ],
     "AnimalStatsModifier": [
       "Ang bilis ng pagbabawas ng mga istatistika ng hayop (gutom, uhaw atbp.). ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalMetaStatsModifier": [
       "Ang bilis ng pagbabawas ng mga istatistika ng hayop (gutom, uhaw atbp.) habang nasa meta. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalPregnancyTime": [
       "Gaano katagal magbubuntis ang mga hayop bago manganak. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalAgeModifier": [
       "Bilis sa edad ng mga hayop. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalMilkIncModifier": [
       "Default = Mabilis",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalWoolIncModifier": [
       "Default = Mabilis",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalRanchChance": [
       "Ang pagkakataon na makahanap ng mga hayop sa bukid. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging"
     ],
     "AnimalGrassRegrowTime": [
@@ -1028,12 +1028,12 @@
     ],
     "AnimalEggHatch": [
       "Gaano katagal bago mapisa ang mga sanggol na hayop mula sa mga itlog. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Napakabilis",
+      "2 = Napakabilis",
+      "3 = Mabilis",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Mabagal",
+      "6 = Napakabagal"
     ],
     "AnimalSoundAttractZombies": [
       "Kung totoo, ang mga tawag sa hayop ay makakaakit ng mga kalapit na zombie."
@@ -1041,20 +1041,20 @@
     "AnimalTrackChance": [
       "Ang pagkakataon ng mga hayop na umalis sa mga track. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "AnimalPathChance": [
       "Ang pagkakataon na lumikha ng isang landas para sa mga hayop upang mahuli. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas"
     ],
     "MaximumRatIndex": [
       "Ang dalas at intensity ng hal. "
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Kung ang isang piraso ng media ay hindi pa ganap na nakikita o nabasa, tinutukoy ng setting na ito kung ito ay ganap na ipinapakita, ipinapakita bilang \"???\", o ganap na nakatago. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Ganap na inihayag",
+      "2 = Ipinapakita bilang ???",
+      "3 = Ganap na nakatago"
     ],
     "SeeNotLearntRecipe": [
       "Kung totoo, makikita mo ang anumang mga recipe na maaaring gawin sa isang istasyon, kahit na hindi mo pa natutunan ang mga ito."
@@ -1076,14 +1076,14 @@
     ],
     "EnablePoisoning": [
       "Kung maaring magdagdag ng lason sa pagkain. ",
-      "1 = True",
-      "2 = False",
-      "3 = Only bleach poisoning is disabled"
+      "1 = Totoo",
+      "2 = Mali",
+      "3 = Tanging ang bleach poisoning ay hindi pinagana"
     ],
     "MaggotSpawn": [
       "Kung/kung kailan maaaring mangitlog ang mga uod sa mga bangkay. ",
       "1 = Sa loob at Paligid ng mga Katawan",
-      "2 = In Bodies Only",
+      "2 = Sa Katawan Lamang",
       "3 = Hindi kailanman"
     ],
     "LightBulbLifespan": [
@@ -1091,11 +1091,11 @@
     ],
     "FishAbundance": [
       "Ang kasaganaan ng mga isda sa mga ilog at lawa. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Napakahirap",
+      "2 = Mahina",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Sagana",
+      "5 = Napakasagana"
     ],
     "LevelForMediaXPCutoff": [
       "Kapag ang isang kasanayan ay nasa antas na ito o mas mataas, ang telebisyon/VHS/ibang media ay hindi magbibigay ng XP para dito. "
@@ -1111,9 +1111,9 @@
     ],
     "NegativeTraitsPenalty": [
       "Kung may mga lumiliit na balik sa bonus na mga katangiang puntos na ibinigay mula sa pagpili ng maramihang mga negatibong katangian. ",
-      "1 = None",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "1 = Wala",
+      "2 = 1 puntos na parusa para sa bawat 3 negatibong katangian na napili",
+      "3 = 1 puntos na parusa para sa bawat 2 negatibong katangian na napili",
       "4 = 1 puntos na parusa para sa bawat negatibong katangiang pinili pagkatapos ng una"
     ],
     "MinutesPerPage": [
@@ -1200,11 +1200,11 @@
     "SpawnFrequency": [
       "Gaano kadalas umusbong ang mga basement sa mga random na lokasyon. ",
       "1 = Hindi kailanman",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging"
     ],
     "AllowMiniMap": [
@@ -1221,9 +1221,9 @@
     ],
     "Speed": [
       "Ang bilis gumalaw ng mga zombie. ",
-      "1 = Sprinters",
-      "2 = Fast Shamblers",
-      "3 = Shamblers",
+      "1 = Mga Sprinter",
+      "2 = Mabilis na Shamblers",
+      "3 = Mga Shambler",
       "4 = Random"
     ],
     "SprinterPercentage": [
@@ -1234,68 +1234,68 @@
     ],
     "Toughness": [
       "Ang hirap pumatay ng zombie. ",
-      "1 = Tough",
+      "1 = Matigas",
       "2 = Normal",
-      "3 = Fragile",
+      "3 = Marupok",
       "4 = Random"
     ],
     "Transmission": [
       "Paano kumakalat ang Knox Virus. ",
       "1 = Dugo at Laway",
-      "2 = Saliva Only",
-      "3 = Everyone's Infected",
-      "4 = None"
+      "2 = Laway Lang",
+      "3 = Lahat ay Nahawahan",
+      "4 = Wala"
     ],
     "Mortality": [
       "Gaano kabilis magkabisa ang impeksyon. ",
       "1 = Instant",
-      "2 = 0-30 Seconds",
+      "2 = 0-30 Segundo",
       "3 = 0-1 Minuto",
       "4 = 0-12 Oras",
       "5 = 2-3 Araw",
-      "6 = 1-2 Weeks",
+      "6 = 1-2 Linggo",
       "7 = Hindi kailanman"
     ],
     "Reanimate": [
       "Gaano kabilis tumaas ang mga nahawaang bangkay bilang mga zombie. ",
       "1 = Instant",
-      "2 = 0-30 Seconds",
+      "2 = 0-30 Segundo",
       "3 = 0-1 Minuto",
       "4 = 0-12 Oras",
       "5 = 2-3 Araw",
-      "6 = 1-2 Weeks"
+      "6 = 1-2 Linggo"
     ],
     "Cognition": [
       "Katalinuhan ng zombie. ",
       "1 = Mag-navigate at Gumamit ng Mga Pintuan",
-      "2 = Navigate",
-      "3 = Basic Navigation",
+      "2 = Mag-navigate",
+      "3 = Pangunahing Pag-navigate",
       "4 = Random"
     ],
     "CrawlUnderVehicle": [
       "Gaano kadalas maaaring gumapang ang mga zombie sa ilalim ng mga nakaparadang sasakyan. ",
-      "1 = Crawlers Only",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "1 = Mga Crawler Lang",
+      "2 = Lubhang Bihira",
+      "3 = Bihira",
+      "4 = Minsan",
+      "5 = Madalas",
+      "6 = Napakadalas",
       "7 = Laging"
     ],
     "Memory": [
       "Gaano katagal naaalala ng mga zombie ang isang manlalaro matapos silang makita o marinig. ",
-      "1 = Long",
+      "1 = Mahaba",
       "2 = Normal",
-      "3 = Short",
-      "4 = None",
+      "3 = Maikli",
+      "4 = Wala",
       "5 = Random",
       "6 = Random sa pagitan ng Normal at Wala"
     ],
     "Sight": [
       "Zombie vision radius. ",
-      "1 = Eagle",
+      "1 = Agila",
       "2 = Normal",
-      "3 = Poor",
+      "3 = Mahina",
       "4 = Random",
       "5 = Random sa pagitan ng Normal at Mahina"
     ],
@@ -1303,7 +1303,7 @@
       "Zombie hearing radius. ",
       "1 = Pinpoint",
       "2 = Normal",
-      "3 = Poor",
+      "3 = Mahina",
       "4 = Random",
       "5 = Random sa pagitan ng Normal at Mahina"
     ],
@@ -1318,9 +1318,9 @@
     ],
     "ActiveOnly": [
       "Kung ang mga zombie ay mas \"aktibo\" sa araw o gabi.  ",
-      "1 = Both",
-      "2 = Night",
-      "3 = Day"
+      "1 = Pareho",
+      "2 = Gabi",
+      "3 = Araw"
     ],
     "TriggerHouseAlarm": [
       "Kung ang mga zombie ay nag-trigger ng mga alarma sa bahay kapag sumisira sa mga bintana o pinto."
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

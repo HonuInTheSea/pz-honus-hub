@@ -140,10 +140,10 @@
         "Player dapat melukai Player lain."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP masuk ke obrolan admin"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP dicatat ke file"
       ],
       "PauseEmpty": [
         "Waktu permainan berhenti jika tidak ada Player yang online"
@@ -280,10 +280,10 @@
         "Waktu dalam hitungan detik sebelum perang dimulai."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Durasi perang dalam hitungan detik."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Batas poin hit Safehouse."
       ],
       "ServerPlayerID": [
         "Menentukan apakah karakter tersebut berasal dari server atau singleplayer lain. Nilai ini dapat diubah dengan soft-reset. Jika nomor ini cocok dengan klien, klien harus membuat karakter baru. Digunakan bersama dengan ResetID. Tolong, buat cadangan ID ini di suatu tempat"
@@ -298,7 +298,7 @@
         "Aktifkan integrasi dengan Discord"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Token akses bot perselisihan"
       ],
       "DiscordChannel": [
         "Discord nama saluran. Jika Anda mendapat masalah, gunakan ID saluran sebagai gantinya"
@@ -325,7 +325,7 @@
         "Player lelah dan perlu tidur. Diabaikan jika SleepAllowed=false"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Mengaktifkan pengaturan ini dapat menyebabkan desinkronisasi visual pada posisi pemain."
       ],
       "WorkshopItems": [
         "Daftar ID Mod Workshop untuk diunduh server. Dipisahkan dengan titik koma. Contoh WorkshopItems=514427485;513111049"
@@ -402,7 +402,7 @@
         "Daftar tindakan yang dipisahkan titik koma yang akan ditulis ke log server ClientActionLogs.txt."
       ],
       "PerkLogs": [
-        "Track changes in player perk levels in PerkLog.txt server log"
+        "Lacak perubahan tingkat keuntungan pemain di log server PerkLog.txt"
       ],
       "ItemNumbersLimitPerContainer": [
         "Jumlah maksimum item yang dapat ditempatkan dalam wadah. "
@@ -439,16 +439,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Mengontrol tampilan pemain jarak jauh di peta dalam game.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Tersembunyi 2=Teman 3=Semua orang"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Menonaktifkan penarik kendaraan"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Menonaktifkan penarik trailer"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Menonaktifkan penarik kendaraan yang terbakar"
       ],
       "BadWordListFile": [
         "Jalur ke file dengan daftar kata yang dilarang. "
@@ -463,37 +463,37 @@
         "Simbol atau potongan teks yang akan menggantikan kata buruk"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Menonaktifkan perlindungan anti-cheat sistem keamanan."
       ],
       "AntiCheatMovement": [
         "Menonaktifkan perlindungan anti-cheat untuk pergerakan."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Menonaktifkan perlindungan anti-cheat serangan karakter."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Menonaktifkan pemeriksaan paket perlindungan anti-cheat."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Menonaktifkan izin pemain, perlindungan anti-cheat."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Menonaktifkan perlindungan anti-cheat pemain XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Menonaktifkan pemeriksaan kebakaran perlindungan anti-cheat."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Menonaktifkan perlindungan anti-cheat safehouse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Menonaktifkan pemeriksaan resep perlindungan anti-cheat."
       ],
       "AntiCheatPlayer": [
         "Menonaktifkan perlindungan anti-cheat untuk pemain."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Menonaktifkan perlindungan anti-cheat checksum."
       ],
       "AntiCheatItem": [
         "Menonaktifkan item memeriksa perlindungan anti-cheat."
@@ -505,7 +505,7 @@
         "Menetapkan periode pembaruan multipemain dalam hitungan detik. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Menonaktifkan papan skor."
       ],
       "HideAdminsInPlayerList": [
         "Menyembunyikan admin di daftar pemain."

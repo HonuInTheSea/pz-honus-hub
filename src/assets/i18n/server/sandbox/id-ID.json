@@ -273,9 +273,9 @@
       "1 = Terlalu Tinggi",
       "2 = Sangat Tinggi",
       "3 = Tinggi",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Rendah",
-      "6 = None"
+      "6 = Tidak ada"
     ],
     "Distribution": [
       "Bagaimana zombie didistribusikan ke seluruh peta. ",
@@ -288,12 +288,12 @@
     "ZombieRespawn": [
       "Seberapa sering zombie akan spawn di dunia. Bawaan = Normal",
       "1 = Tinggi",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Rendah",
-      "4 = None"
+      "4 = Tidak ada"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombi diizinkan bermigrasi ke sel kosong."
     ],
     "DayLength": [
       "Bawaan = 2 Jam",
@@ -345,40 +345,40 @@
     ],
     "StartTime": [
       "Jam pada hari saat permainan dimulai. ",
-      "1 = 7 AM",
-      "2 = 9 AM",
-      "3 = 12 PM",
-      "4 = 2 PM",
-      "5 = 5 PM",
-      "6 = 9 PM",
-      "7 = 12 AM",
-      "8 = 2 AM",
-      "9 = 5 AM"
+      "1 = 7 pagi",
+      "2 = 9 pagi",
+      "3 = 12 siang",
+      "4 = 14.00",
+      "5 = 5 sore",
+      "6 = 9 malam",
+      "7 = 12 pagi",
+      "jam 8 = jam 2 pagi",
+      "jam 9 = jam 5 pagi"
     ],
     "DayNightCycle": [
       "Entah waktu siang hari berubah secara alami, atau selalu siang/malam. ",
-      "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "1 = Biasa",
+      "2 = Hari Tanpa Akhir",
+      "3 = Malam Tanpa Akhir"
     ],
     "ClimateCycle": [
       "Apakah cuaca berubah atau tetap pada satu keadaan. ",
-      "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "1 = Biasa",
+      "2 = Tidak Ada Cuaca",
+      "3 = Hujan Tanpa Akhir",
+      "4 = Badai Tak Berujung",
+      "5 = Salju Tak Berujung",
+      "6 = Badai Salju yang Tak Berujung"
     ],
     "FogCycle": [
       "Apakah kabut terjadi secara alami, tidak pernah terjadi, atau selalu ada. ",
-      "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "1 = Biasa",
+      "2 = Tidak Ada Kabut",
+      "3 = Kabut Tak Berujung"
     ],
     "WaterShut": [
       "Berapa lama setelah tanggal mulai default (9 Juli 1993) perlengkapan pipa (misalnya wastafel) tidak lagi menjadi sumber air yang tak terbatas. ",
-      "1 = Instant",
+      "1 = Instan",
       "2 = 0-30 Hari",
       "3 = 0-2 Bulan",
       "4 = 0-6 Bulan",
@@ -390,7 +390,7 @@
     ],
     "ElecShut": [
       "Berapa lama setelah tanggal mulai default (9 Juli 1993) listrik dunia padam untuk selamanya. ",
-      "1 = Instant",
+      "1 = Instan",
       "2 = 0-30 Hari",
       "3 = 0-2 Bulan",
       "4 = 0-6 Bulan",
@@ -402,7 +402,7 @@
     ],
     "AlarmDecay": [
       "Berapa lama baterai alarm dapat bertahan setelah listrik dimatikan. ",
-      "1 = Instant",
+      "1 = Instan",
       "2 = 0-30 Hari",
       "3 = 0-2 Bulan",
       "4 = 0-6 Bulan",
@@ -512,7 +512,7 @@
       "Suhu global. ",
       "1 = Sangat Dingin",
       "2 = Dingin",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Panas",
       "5 = Sangat Panas"
     ],
@@ -520,7 +520,7 @@
       "Seberapa sering hujan. ",
       "1 = Sangat kering",
       "2 = Kering",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Musim Hujan",
       "5 = Puncak Musim Hujan"
     ],
@@ -553,7 +553,7 @@
       "Seberapa cepat kelaparan, dahaga, dan kelelahan akan bertambah. Bawaan = Normal",
       "1 = Sangat Cepat",
       "2 = Cepat",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Lambat",
       "5 = Sangat Lambat"
     ],
@@ -561,7 +561,7 @@
       "Akan berpengaruh pada kesulitan memancing/memulung. Bawaan = Normal",
       "1 = Sangat sedikit",
       "2 = Sedikit",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Melimpah",
       "5 = Sangat melimpah"
     ],
@@ -593,7 +593,7 @@
       "Menetapkan seberapa cepat makanan akan membusuk di dalam atau di luar kulkas Bawaan = Normal",
       "1 = Sangat Cepat",
       "2 = Cepat",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Lambat",
       "5 = Sangat Lambat"
     ],
@@ -601,10 +601,10 @@
       "Menetapkan seberapa efektif kulkas berfungsi. Bawaan = Normal",
       "1 = Sangat Lemah",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi",
-      "6 = No decay"
+      "6 = Tidak ada pembusukan"
     ],
     "SeenHoursPreventLootRespawn": [
       "Jika nilai lebih besar dari 0, Loot tidak akan respawn pada zona yang sudah dikunjungi dalam jumlah jam yang ditentukan ini Min: 0 Maks: 2147483647 Bawaan: 0"
@@ -647,7 +647,7 @@
       "Akan mempengaruhi berapa banyak udara yang akan hilang dari tanaman per hari, dan kemampuan mereka untuk menghindari penyakit. ",
       "1 = Sangat Tinggi",
       "2 = Tinggi",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Rendah",
       "5 = Sangat Lemah"
     ],
@@ -655,7 +655,7 @@
       "Akan mempengaruhi berapa banyak buah/sayuran yang dihasilkan tanaman. Bawaan = Normal",
       "1 = Sangat sedikit",
       "2 = Sedikit",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Melimpah",
       "5 = Sangat melimpah"
     ],
@@ -663,7 +663,7 @@
       "Pemulihan dari rasa lelah setelah melakukan tindakan. ",
       "1 = Sangat Cepat",
       "2 = Cepat",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Lambat",
       "5 = Sangat Lambat"
     ],
@@ -695,7 +695,7 @@
       "2 = Langka",
       "3 = Sangat langka",
       "4 = Langka",
-      "5 = Normal",
+      "5 = Biasa",
       "6 = Melimpah",
       "7 = Melimpah"
     ],
@@ -715,7 +715,7 @@
       "Memberikan poin hit tambahan pada konstruksi buatan pemain sehingga lebih tahan terhadap kerusakan zombie. ",
       "1 = Sangat Lemah",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi"
     ],
@@ -723,14 +723,14 @@
       "Tingkat pencahayaan sekitar pada malam hari. ",
       "1 = Terlalu Gelap",
       "2 = Gelap",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Terang"
     ],
     "NightLength": [
       "Waktu dari senja hingga fajar. ",
       "1 = Selalu Malam",
       "2 = Baik",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Buruk",
       "5 = Selalu Siang"
     ],
@@ -740,7 +740,7 @@
     "InjurySeverity": [
       "Menambah/mengurangi efek cedera pada tubuh, dan waktu mereka akan sembuh. Bawaan = Normal",
       "1 = Rendah",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Tinggi"
     ],
     "HoursForCorpseRemoval": [
@@ -748,9 +748,9 @@
     ],
     "DecayingCorpseHealthImpact": [
       "Menetapkan seberapa parah pengaruh mayat membusuk pada kesehatan dan kesehatan mental player. Bawaan = Normal",
-      "1 = None",
+      "1 = Tidak ada",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Terlalu Tinggi"
     ],
@@ -759,9 +759,9 @@
     ],
     "BloodLevel": [
       "Berapa banyak darah yang disemprotkan ke lantai dan dinding karena cedera. ",
-      "1 = None",
+      "1 = Tidak ada",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Sadis"
     ],
@@ -769,7 +769,7 @@
       "Menetapkan seberapa cepat kualitas pakaian menurun, seperti jadi kotor atau berlumuran darah (bisa dinonaktifkan).  Bawaan = Normal",
       "1 = Nonaktif",
       "2 = Lambat",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Cepat"
     ],
     "FireSpread": [
@@ -783,14 +783,14 @@
     ],
     "MaxFogIntensity": [
       "Maximum intensity of fog. Bawaan = Normal",
-      "1 = Normal",
+      "1 = Biasa",
       "2 = Sedang",
       "3 = Rendah",
-      "4 = None"
+      "4 = Tidak ada"
     ],
     "MaxRainFxIntensity": [
       "Maximum intensity of rain. Bawaan = Normal",
-      "1 = Normal",
+      "1 = Biasa",
       "2 = Sedang",
       "3 = Rendah"
     ],
@@ -841,10 +841,10 @@
     ],
     "CarSpawnRate": [
       "Seberapa sering kendaraan dapat ditemukan di peta. ",
-      "1 = None",
+      "1 = Tidak ada",
       "2 = Sangat Lemah",
       "3 = Rendah",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Tinggi"
     ],
     "ZombieAttractionMultiplier": [
@@ -857,10 +857,10 @@
       "Menetapkan seberapa penuh tangki bensin yang ada pada mobil-mobil di dunia. Bawaan = Rendah",
       "1 = Sangat Lemah",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi",
-      "6 = Full"
+      "6 = Penuh"
     ],
     "FuelStationGasInfinite": [
       "Jika diaktifkan, pompa bensin tidak akan pernah kehabisan bahan bakar"
@@ -890,7 +890,7 @@
       "Dalam kondisi apa mobil-mobil baru akan spawn. Bawaan = Rendah",
       "1 = Sangat Lemah",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi"
     ],
@@ -898,15 +898,15 @@
       "Menetapkan berapa banyak kerusakan yang ditanggung kendaraan setelah tabrakan. Bawaan = Normal",
       "1 = Sangat Lemah",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi"
     ],
     "DamageToPlayerFromHitByACar": [
       "Cedera yang harus ditanggung player setelah tertabrak mobil. Bawaan = None",
-      "1 = None",
+      "1 = Tidak ada",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi",
       "5 = Sangat Tinggi"
     ],
@@ -931,14 +931,14 @@
     "ChanceHasGas": [
       "Menetapkan kemungkinan kendaraan dengan bensin di mobil. Bawaan = Rendah",
       "1 = Rendah",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Tinggi"
     ],
     "RecentlySurvivorVehicles": [
       "Apakah pemain dapat menemukan mobil yang telah dirawat setelah infeksi Knox menyerang. ",
-      "1 = None",
+      "1 = Tidak ada",
       "2 = Rendah",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Tinggi"
     ],
     "MultiHitZombies": [
@@ -955,55 +955,55 @@
     ],
     "AnimalStatsModifier": [
       "Kecepatan penurunan statistik hewan (kelaparan, haus, dll.). ",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
     "AnimalMetaStatsModifier": [
       "Kecepatan penurunan statistik hewan (lapar, haus, dll.) saat berada dalam meta. ",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
     "AnimalPregnancyTime": [
       "Berapa lama hewan akan bunting sebelum melahirkan. ",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
     "AnimalAgeModifier": [
       "Kecepatan penuaan hewan. ",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
     "AnimalMilkIncModifier": [
       "Bawaan = Cepat",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
     "AnimalWoolIncModifier": [
       "Bawaan = Cepat",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
@@ -1028,10 +1028,10 @@
     ],
     "AnimalEggHatch": [
       "Berapa lama sebelum bayi hewan menetas dari telur. ",
-      "1 = Ultra Fast",
+      "1 = Sangat Cepat",
       "2 = Sangat Cepat",
       "3 = Cepat",
-      "4 = Normal",
+      "4 = Biasa",
       "5 = Lambat",
       "6 = Sangat Lambat"
     ],
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Jika suatu media belum sepenuhnya dilihat atau dibaca, pengaturan ini menentukan apakah media tersebut ditampilkan sepenuhnya, ditampilkan sebagai \"???\", atau disembunyikan sepenuhnya. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Terungkap sepenuhnya",
+      "2 = Ditampilkan sebagai ???",
+      "3 = Benar-benar tersembunyi"
     ],
     "SeeNotLearntRecipe": [
       "Jika benar, Anda akan dapat melihat resep apa pun yang dapat dibuat dengan stasiun, meskipun Anda belum mempelajarinya."
@@ -1078,12 +1078,12 @@
       "Jika racun bisa ditambahkan ke makanan. ",
       "1 = Aktifkan",
       "2 = Matikan",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Hanya keracunan pemutih yang dinonaktifkan"
     ],
     "MaggotSpawn": [
       "Jika/kapan belatung bisa bertelur di mayat. ",
       "1 = Di Dalam dan Di Sekitar Badan",
-      "2 = In Bodies Only",
+      "2 = Di Badan Saja",
       "3 = Tidak ada"
     ],
     "LightBulbLifespan": [
@@ -1093,7 +1093,7 @@
       "Kelimpahan ikan di sungai dan danau. ",
       "1 = Sangat sedikit",
       "2 = Sedikit",
-      "3 = Normal",
+      "3 = Biasa",
       "4 = Melimpah",
       "5 = Sangat melimpah"
     ],
@@ -1111,9 +1111,9 @@
     ],
     "NegativeTraitsPenalty": [
       "Jika terdapat penurunan keuntungan atas poin sifat bonus yang diperoleh dari pemilihan beberapa sifat negatif. ",
-      "1 = None",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "1 = Tidak ada",
+      "2 = Penalti 1 poin untuk setiap 3 sifat negatif yang dipilih",
+      "3 = penalti 1 poin untuk setiap 2 sifat negatif yang dipilih",
       "4 = Penalti 1 poin untuk setiap sifat negatif yang dipilih setelah sifat pertama"
     ],
     "MinutesPerPage": [
@@ -1235,7 +1235,7 @@
     "Toughness": [
       "Kesulitan membunuh zombie. ",
       "1 = Kuat",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Rapuh",
       "4 = Random/acak"
     ],
@@ -1244,11 +1244,11 @@
       "1 = Darah + Air liur",
       "2 = Hanya air liur",
       "3 = Semua orang terinfeksi",
-      "4 = None"
+      "4 = Tidak ada"
     ],
     "Mortality": [
       "Seberapa cepat infeksi mulai berlaku. ",
-      "1 = Instant",
+      "1 = Instan",
       "2 = 0-30 Detik",
       "3 = 0-1 Menit",
       "4 = 0-12 Jam",
@@ -1258,7 +1258,7 @@
     ],
     "Reanimate": [
       "Seberapa cepat mayat yang terinfeksi menjadi zombie. ",
-      "1 = Instant",
+      "1 = Instan",
       "2 = 0-30 Detik",
       "3 = 0-1 Menit",
       "4 = 0-12 Jam",
@@ -1285,16 +1285,16 @@
     "Memory": [
       "Berapa lama zombie mengingat pemain setelah melihat atau mendengarnya. ",
       "1 = Baik",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Buruk",
-      "4 = None",
+      "4 = Tidak ada",
       "5 = Random/acak",
       "6 = Acak antara Normal dan Tidak Ada"
     ],
     "Sight": [
       "Radius penglihatan zombie. ",
       "1 = Mata Elang",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Sedikit",
       "4 = Random/acak",
       "5 = Acak antara Normal dan Buruk"
@@ -1302,7 +1302,7 @@
     "Hearing": [
       "Radius pendengaran zombie. ",
       "1 = Sangat Tajam",
-      "2 = Normal",
+      "2 = Biasa",
       "3 = Sedikit",
       "4 = Random/acak",
       "5 = Acak antara Normal dan Buruk"
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

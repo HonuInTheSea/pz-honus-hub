@@ -293,7 +293,7 @@
       "4 = Brak"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie pozwolono na migrację do pustych komórek."
     ],
     "DayLength": [
       "Domyślne = 1 godzina i 30 minut",
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Niezależnie od tego, czy pora dnia zmienia się naturalnie, czy też jest to zawsze dzień/noc. ",
       "1 = Normalna",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Niekończący się dzień",
+      "3 = Niekończąca się noc"
     ],
     "ClimateCycle": [
       "Czy pogoda się zmienia, czy pozostaje w jednym stanie. ",
       "1 = Normalna",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Brak pogody",
+      "3 = Niekończący się deszcz",
+      "4 = Niekończąca się burza",
+      "5 = Niekończący się śnieg",
+      "6 = Niekończąca się zamieć"
     ],
     "FogCycle": [
       "Niezależnie od tego, czy mgła pojawia się naturalnie, nigdy nie występuje, czy jest zawsze obecna. ",
       "1 = Normalna",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Brak mgły",
+      "3 = Niekończąca się mgła"
     ],
     "WaterShut": [
       "Jak długo po domyślnej dacie rozpoczęcia (9 lipca 1993 r.) armatura wodno-kanalizacyjna (np. zlewozmywaki) przestanie być nieskończonym źródłem wody. ",
@@ -604,7 +604,7 @@
       "3 = Normalna",
       "4 = Wysoka",
       "5 = Bardzo wysoka",
-      "6 = No decay"
+      "6 = Brak zaniku"
     ],
     "SeenHoursPreventLootRespawn": [
       "Jeśli > 0, przedmioty nie będą się ponownie pojawiać w obszarach odwiedzonych w wybranym okresie czasu. Min: 0 Maks: 2147483647 Domyślne: 0"
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Szybkość zmniejszania się statystyk zwierząt (głód, pragnienie itp.). ",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Szybkość, z jaką statystyki zwierząt (głód, pragnienie itp.) zmniejszają się w meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Jak długo zwierzęta będą w ciąży przed porodem. ",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Szybkość starzenia się zwierząt. ",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Domyślne = Szybko",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Domyślne = Szybko",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Po jakim czasie z jaj wylęgają się młode zwierzęta. ",
-      "1 = Ultra Fast",
+      "1 = Ultraszybki",
       "2 = Bardzo szybko",
       "3 = Szybko",
       "4 = Normalna",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Jeśli fragment multimediów nie został w całości obejrzany lub przeczytany, to ustawienie określa, czy będzie on wyświetlany w całości, wyświetlany jako „???”, czy też całkowicie ukryty. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Całkowicie ujawnione",
+      "2 = Pokazane jako ???",
+      "3 = Całkowicie ukryte"
     ],
     "SeeNotLearntRecipe": [
       "Jeśli to prawda, będziesz mógł zobaczyć wszystkie przepisy, które można wykonać za pomocą stacji, nawet jeśli jeszcze się ich nie nauczyłeś."
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Jeśli korzyści z dodatkowych punktów cechy są malejące w wyniku wybrania wielu cech negatywnych. ",
       "1 = Brak",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 punkt kary za każde 3 wybrane negatywne cechy",
+      "3 = 1 punkt kary za każde 2 wybrane negatywne cechy",
       "4 = 1 punkt kary za każdą negatywną cechę wybraną po pierwszej"
     ],
     "MinutesPerPage": [
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

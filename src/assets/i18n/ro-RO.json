@@ -1,146 +1,146 @@
 {
   "common": {
-    "loadingContent": "Loading content...",
-    "next": "Next",
-    "back": "Back",
-    "finish": "Finish",
-    "cancel": "Cancel",
-    "browse": "Browse",
-    "yes": "Yes",
-    "no": "No",
-    "save": "Save"
+    "loadingContent": "Se încarcă conținut...",
+    "next": "În continuare",
+    "back": "Înapoi",
+    "finish": "Termină",
+    "cancel": "Anulează",
+    "browse": "Răsfoiește",
+    "yes": "Da",
+    "no": "Nu",
+    "save": "Salvați"
   },
   "app": {
     "title": "Honu's Hub"
   },
   "menu": {
-    "languageLabel": "Language",
-    "languagePlaceholder": "Select a language",
+    "languageLabel": "Limba",
+    "languagePlaceholder": "Selectați o limbă",
     "sections": {
       "hub": "HUB",
-      "modFilters": "MOD FILTERS",
-      "modCollectionFilters": "MOD COLLECTION FILTERS",
+      "modFilters": "FILTRE MOD",
+      "modCollectionFilters": "FILTRE DE COLECȚIE MOD",
       "actions": "ACTIONS",
-      "getStarted": "Get Started",
-      "resources": "Resources",
-      "dangerZone": "Danger Zone"
+      "getStarted": "Începeți",
+      "resources": "Resurse",
+      "dangerZone": "Zona de pericol"
     },
     "items": {
-      "dashboard": "Dashboard",
-      "logInspector": "Log Inspector",
-      "myMods": "My Mods",
-      "configureFolders": "Configure Folders",
-      "setSteamApiKey": "Set Steam API Key",
-      "syncHonu": "Sync Honu's Mod Info QoL",
-      "syncLocal": "Sync Local Mod Data",
-      "syncWorkshop": "Sync With Steam Workshop",
-      "changelog": "Changelog",
-      "documentation": "Documentation",
-      "viewSource": "View Source",
+      "dashboard": "Tabloul de bord",
+      "logInspector": "Inspector de jurnal",
+      "myMods": "Modurile mele",
+      "configureFolders": "Configurați foldere",
+      "setSteamApiKey": "Setați cheia API Steam",
+      "syncHonu": "Sincronizați QoL informațiile mod de la Honu",
+      "syncLocal": "Sincronizați datele mod locale",
+      "syncWorkshop": "Sincronizare cu Atelierul Steam",
+      "changelog": "Jurnalul modificărilor",
+      "documentation": "Documentare",
+      "viewSource": "Vizualizați sursa",
       "projectZomboid": "Project Zomboid",
-      "pzWiki": "Official Project Zomboid Wiki",
+      "pzWiki": "Wiki oficial Project Zomboid",
       "b41Map": "B41 Map",
       "b42Map": "B42 Map",
-      "workshop": "Project Zomboid Steam Workshop",
+      "workshop": "Proiectul Zomboid Steam Workshop",
       "subreddit": "r/projectzomboid",
       "discord": "Project Zomboid",
-      "moddingDiscord": "PZ Modding Community",
-      "mappingDiscord": "Unofficial PZ Mapping",
-      "honuWorkshop": "HonuInTheSea's Steam Workshop",
-      "supportKofi": "Support on Ko-fi",
-      "resetApp": "Reset Application",
-      "resetAppTooltip": "Reset window settings and delete stored data",
+      "moddingDiscord": "Comunitatea PZ Modding",
+      "mappingDiscord": "Cartografiere PZ neoficială",
+      "honuWorkshop": "Atelierul de aburi de la HonuInTheSea",
+      "supportKofi": "Asistență pe Ko-fi",
+      "resetApp": "Resetați aplicația",
+      "resetAppTooltip": "Resetați setările ferestrei și ștergeți datele stocate",
       "server": "Server",
       "modCollections": "Colecții de moduri",
       "modPresets": "Preseturi de moduri"
     },
     "filters": {
-      "adultLabel": "Has Adult Content",
-      "adultTooltip": "Filter mods where Steam metadata reports maybe_inappropriate_sex as true.",
-      "rulesLabel": "Has Rules",
-      "rulesTooltip": "Mod contains a require, incompatible, loadModAfter, loadModBefore statement in their mod.info file",
-      "missingSteamLabel": "Missing Steam Data",
-      "missingSteamTooltip": "Mod may have been marked as private or removed from the Steam Workshop",
-      "outdatedLabel": "Outdated Mods",
-      "outdatedTooltip": "Mod may need to be unsubscribed and resubscribed to get the latest version from the Steam Workshop"
+      "adultLabel": "Are conținut pentru adulți",
+      "adultTooltip": "Filtrați modurile în care metadatele Steam raportează sexul poate_inadecvat ca adevărat.",
+      "rulesLabel": "Are Reguli",
+      "rulesTooltip": "Mod conține o declarație require, incompatibil, loadModAfter, loadModBefore în fișierul lor mod.info",
+      "missingSteamLabel": "Lipsesc date Steam",
+      "missingSteamTooltip": "Este posibil ca modul să fi fost marcat ca privat sau eliminat din Atelierul Steam",
+      "outdatedLabel": "Moduri învechite",
+      "outdatedTooltip": "Este posibil ca modul să fie dezabonat și reabonat pentru a obține cea mai recentă versiune de la Steam Workshop"
     },
     "collections": {
-      "searchLabel": "Search Collections",
-      "searchPlaceholder": "Search collections",
-      "sortLabel": "Sort by",
-      "periodLabel": "Over time period",
-      "tagsLabel": "Tags",
-      "tagsPlaceholder": "Select tags",
-      "sortMostPopular": "Most Popular",
-      "sortMostRecent": "Most Recent",
-      "sortLastUpdated": "Last Updated",
-      "periodToday": "Today",
-      "periodWeek": "One Week",
-      "periodThirtyDays": "Thirty Days",
-      "periodThreeMonths": "Three Months",
-      "periodSixMonths": "Six Months",
-      "periodYear": "One Year"
+      "searchLabel": "Căutați colecții",
+      "searchPlaceholder": "Căutați colecții",
+      "sortLabel": "Sortați după",
+      "periodLabel": "De-a lungul perioadei de timp",
+      "tagsLabel": "Etichete",
+      "tagsPlaceholder": "Selectați etichete",
+      "sortMostPopular": "Cele mai populare",
+      "sortMostRecent": "Cele mai recente",
+      "sortLastUpdated": "Ultima actualizare",
+      "periodToday": "Astăzi",
+      "periodWeek": "O săptămână",
+      "periodThirtyDays": "Treizeci de zile",
+      "periodThreeMonths": "Trei luni",
+      "periodSixMonths": "Șase luni",
+      "periodYear": "Un an"
     },
-    "presetsUnavailable": "Set your Project Zomboid user folder and/or define presets first.",
+    "presetsUnavailable": "Setați folderul utilizatorului Project Zomboid și/sau definiți mai întâi presetări.",
     "steamApi": {
-      "dialogTitle": "Set Steam Web API Key",
-      "dialogIntro": "Enter your Steam Web API Key. This key is stored locally on your machine.",
-      "keyLabel": "Steam Web API Key",
-      "needKey": "Need a key?",
-      "getKeyLink": "Get your Steam Web API Key",
-      "helpButton": "How to create a Steam Web API Key",
-      "helpTitle": "How to create a Steam Web API Key",
-      "helpCardTitle": "How to Register a Steam Web API Key",
-      "helpCardBody": "This guide provides a step-by-step walkthrough for registering a Steam Web API Key. A Steam Web API Key lets applications securely access specific data from your Steam account, such as game libraries or statistics, when you authorize them to do so.",
-      "step1Title": "1. Prerequisites",
-      "step1Intro": "Before you can register a Steam Web API Key, make sure that:",
-      "step1Bullet1": "You have an active Steam account in good standing, secured with Steam Guard (email or mobile authenticator).",
-      "step1Bullet2": "Your account owns at least one purchased game. Brand-new or empty accounts cannot obtain an API key.",
-      "step1Bullet3": "You are using a trusted device and network (never register or view your key on a public or shared computer).",
-      "step2Title": "2. Important Security Notes",
-      "step2Intro": "Your Steam Web API Key is sensitive information. Anyone who has your key can make API requests on your behalf. Treat it like a password:",
-      "step2Bullet1": "Never share your key with other people, and never post it publicly (for example, on forums or GitHub).",
-      "step2Bullet2": "Only paste your key into tools or websites you fully trust.",
-      "step2Bullet3": "If you suspect your key has been exposed, revoke it immediately and generate a new one.",
-      "step3Title": "3. Step-by-Step: Registering a Steam Web API Key",
-      "step3_1Title": "Step 1 - Sign in to Steam",
-      "step3_1Bullet1": "Open your web browser and go to <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
-      "step3_1Bullet2": "Click <strong>\"Log In\"</strong> in the top-right corner.",
-      "step3_1Bullet3": "Enter your Steam account name and password.",
-      "step3_1Bullet4": "If prompted, complete Steam Guard verification.",
-      "step3_2Title": "Step 2 - Open the Steam Web API Key page",
-      "step3_2Bullet1": "While logged in, open the Steam Web API Key registration page: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
-      "step3_2Bullet2": "The page will display a short description of the Steam Web API and a form titled <strong>\"Register for a new Steam Web API Key.\"</strong>",
-      "step3_3Title": "Step 3 - Enter a domain name and agree to the terms",
-      "step3_3Intro": "On the registration form:",
-      "step3_3Bullet1": "In the <strong>\"Domain Name\"</strong> field, enter the domain of the website or service that will use the key. <ul class=\"p-ml-3\"><li>If you do not have a domain, you can enter a placeholder such as <code>localhost</code>, <code>127.0.0.1</code>, or <code>example.com</code>.</li></ul>",
-      "step3_3Bullet2": "Read the Steam Web API Terms of Use.",
-      "step3_3Bullet3": "Tick the checkbox to confirm that you agree to the terms.",
-      "step3_3Bullet4": "Click the <strong>\"Register\"</strong> button to submit the form.",
-      "step3_4Title": "Step 4 - View and copy your new Steam Web API Key",
-      "step3_4Intro": "After a successful registration:",
-      "step3_4Bullet1": "The page reloads and shows your Steam Web API Key near the top.",
-      "step3_4Bullet2": "The key is a long string of letters and numbers (for example: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
-      "step3_4Bullet3": "Select the entire key and copy it (Ctrl+C / Cmd+C).",
-      "step3_4Bullet4": "Store it in a secure location, such as a password manager or an encrypted notes app.",
-      "step4Title": "4. Basic Example of Using Your Steam Web API Key",
-      "step4Intro": "Once you have a key, you can call Steam Web API endpoints by adding it as a <code>key=</code> parameter to the URL. For example, a simple HTTP request might look like this (replace <code>YOURKEYHERE</code> with your real key):",
-      "step4Outro": "The exact URLs and parameters depend on which Steam Web API interface you are using. Always consult the official documentation for the endpoints you need.",
-      "step5Title": "5. Revoking or Regenerating Your Steam Web API Key",
-      "step5Intro": "If you no longer need your Steam Web API Key, or you believe it has been compromised, you should revoke it:",
-      "step5Bullet1": "Sign in to your Steam account if you are not already logged in.",
-      "step5Bullet2": "Open <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> again.",
-      "step5Bullet3": "Click the button labeled <strong>\"Revoke My Steam Web API Key\"</strong>.",
-      "step5Bullet4": "If you need a new key later, return to the same page and register again using the steps above.",
-      "step6Title": "6. Troubleshooting Tips",
-      "step6Intro": "You may see one of the following issues when trying to register a key:",
-      "step6Bullet1": "<strong>Message:</strong> <em>\"You will be granted access to Steam Web API keys when you have games in your Steam account.\"</em> In this case, your account does not yet meet the minimum requirements. Purchase at least one game on Steam, wait for the purchase to clear, and try again later.",
-      "step6Bullet2": "<strong>Page keeps asking you to sign in</strong> - Make sure cookies and JavaScript are enabled in your browser, and that you are logging in with the correct account.",
-      "step6Bullet3": "<strong>Security concerns</strong> - If any third-party site or person asks for your key and you are unsure why, do not share it. Revoke your key and change your Steam password if you think it has been exposed.",
-      "footerNote": "You now have a registered Steam Web API Key and a basic understanding of how to manage it safely. Keep this page handy as a reference when you need to register, use, or revoke your key."
+      "dialogTitle": "Setați cheia API Web Steam",
+      "dialogIntro": "Introduceți cheia Steam Web API. Această cheie este stocată local pe aparatul dvs.",
+      "keyLabel": "Cheia API Web Steam",
+      "needKey": "Ai nevoie de o cheie?",
+      "getKeyLink": "Obțineți cheia Steam Web API",
+      "helpButton": "Cum se creează o cheie API Web Steam",
+      "helpTitle": "Cum se creează o cheie API Web Steam",
+      "helpCardTitle": "Cum să înregistrați o cheie API Web Steam",
+      "helpCardBody": "Acest ghid oferă o explicație pas cu pas pentru înregistrarea unei chei API Web Steam. O cheie Steam Web API permite aplicațiilor să acceseze în siguranță anumite date din contul dvs. Steam, cum ar fi biblioteci de jocuri sau statistici, atunci când le autorizați să facă acest lucru.",
+      "step1Title": "1. Cerințe preliminare",
+      "step1Intro": "Înainte de a putea înregistra o cheie API Web Steam, asigurați-vă că:",
+      "step1Bullet1": "Ai un cont Steam activ în stare bună, securizat cu Steam Guard (autentificare de e-mail sau mobil).",
+      "step1Bullet2": "Contul dvs. deține cel puțin un joc achiziționat. Conturile noi sau goale nu pot obține o cheie API.",
+      "step1Bullet3": "Utilizați un dispozitiv și o rețea de încredere (nu vă înregistrați și nu vizualizați niciodată cheia pe un computer public sau partajat).",
+      "step2Title": "2. Note importante de securitate",
+      "step2Intro": "Cheia dvs. API Web Steam este informații sensibile. Oricine are cheia dvs. poate face solicitări API în numele dvs. Tratează-l ca pe o parolă:",
+      "step2Bullet1": "Nu împărtășiți niciodată cheia cu alte persoane și nu o publicați niciodată public (de exemplu, pe forumuri sau GitHub).",
+      "step2Bullet2": "Lipiți cheia doar în instrumente sau site-uri web în care aveți încredere deplină.",
+      "step2Bullet3": "Dacă bănuiți că cheia dvs. a fost expusă, revocați-o imediat și generați una nouă.",
+      "step3Title": "3. Pas cu pas: Înregistrarea unei chei API Web Steam",
+      "step3_1Title": "Pasul 1 - Conectați-vă la Steam",
+      "step3_1Bullet1": "Deschideți browserul web și accesați <a href=\"https://steamcommunity.com\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com</a>.",
+      "step3_1Bullet2": "Faceți clic pe <strong>\"Log In\"</strong> în colțul din dreapta sus.",
+      "step3_1Bullet3": "Introduceți numele și parola contului dvs. Steam.",
+      "step3_1Bullet4": "Dacă vi se solicită, finalizați verificarea Steam Guard.",
+      "step3_2Title": "Pasul 2 - Deschideți pagina Steam Web API Key",
+      "step3_2Bullet1": "În timp ce sunteți autentificat, deschideți pagina de înregistrare a cheii API Web Steam: <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a>",
+      "step3_2Bullet2": "Pagina va afișa o scurtă descriere a Steam Web API și un formular intitulat <strong> „Înregistrați-vă pentru o nouă cheie Steam Web API.” </strong>",
+      "step3_3Title": "Pasul 3 - Introduceți un nume de domeniu și acceptați termenii",
+      "step3_3Intro": "Pe formularul de înregistrare:",
+      "step3_3Bullet1": "În câmpul <strong>\"Nume domeniu\"</strong>, introduceți domeniul site-ului web sau al serviciului care va folosi cheia. <ul class=\"p-ml-3\"><li>Dacă nu aveți un domeniu, puteți introduce un substituent, cum ar fi <code>localhost</code>, <code>127.0.0.1</code> sau <code>example.com</code>.</li></ul>",
+      "step3_3Bullet2": "Citiți Termenii de utilizare a Steam Web API.",
+      "step3_3Bullet3": "Bifați caseta de selectare pentru a confirma că sunteți de acord cu termenii.",
+      "step3_3Bullet4": "Faceți clic pe butonul <strong> „Înregistrare”</strong> pentru a trimite formularul.",
+      "step3_4Title": "Pasul 4 - Vizualizați și copiați noua cheie Steam Web API",
+      "step3_4Intro": "După o înregistrare cu succes:",
+      "step3_4Bullet1": "Pagina se reîncarcă și afișează cheia Steam Web API în partea de sus.",
+      "step3_4Bullet2": "Cheia este un șir lung de litere și cifre (de exemplu: <code>0123456789ABCDEFGHIJKLMNOPQRSTUV</code>).",
+      "step3_4Bullet3": "Selectați întreaga cheie și copiați-o (Ctrl+C / Cmd+C).",
+      "step3_4Bullet4": "Stocați-l într-o locație sigură, cum ar fi un manager de parole sau o aplicație de note criptate.",
+      "step4Title": "4. Exemplu de bază de utilizare a cheii Steam Web API",
+      "step4Intro": "Odată ce aveți o cheie, puteți apela punctele finale Steam Web API adăugând-o ca parametru <code>key=</code> la adresa URL. De exemplu, o cerere HTTP simplă ar putea arăta astfel (înlocuiți <code>YOURKEYHERE</code> cu cheia dvs. reală):",
+      "step4Outro": "Adresele URL și parametrii exacti depind de interfața Steam Web API pe care o utilizați. Consultați întotdeauna documentația oficială pentru punctele finale de care aveți nevoie.",
+      "step5Title": "5. Revocarea sau regenerarea cheii Steam Web API",
+      "step5Intro": "Dacă nu mai aveți nevoie de cheia Steam Web API sau credeți că a fost compromisă, ar trebui să o revocați:",
+      "step5Bullet1": "Conectați-vă la contul dvs. Steam dacă nu sunteți deja autentificat.",
+      "step5Bullet2": "Deschideți <a href=\"https://steamcommunity.com/dev/apikey\" target=\"_blank\" rel=\"noopener noreferrer\">https://steamcommunity.com/dev/apikey</a> din nou.",
+      "step5Bullet3": "Faceți clic pe butonul etichetat <strong> „Revocați cheia API Web Steam” </strong>.",
+      "step5Bullet4": "Dacă mai târziu aveți nevoie de o nouă cheie, reveniți la aceeași pagină și înregistrați-vă din nou urmând pașii de mai sus.",
+      "step6Title": "6. Sfaturi de depanare",
+      "step6Intro": "Este posibil să vedeți una dintre următoarele probleme când încercați să înregistrați o cheie:",
+      "step6Bullet1": "<strong>Message:</strong> <em> „Vi se va acorda acces la cheile Steam Web API atunci când aveți jocuri în contul dvs. Steam.” </em> În acest caz, contul dumneavoastră nu îndeplinește încă cerințele minime. Cumpărați cel puțin un joc pe Steam, așteptați ca achiziția să se șteargă și încercați din nou mai târziu.",
+      "step6Bullet2": "<strong>Page vă solicită în permanență să vă conectați</strong> - Asigurați-vă că cookie-urile și JavaScript sunt activate în browser și că vă conectați cu contul corect.",
+      "step6Bullet3": "<strong>Preocupări privind securitatea</strong> - Dacă un site sau o persoană terță parte vă solicită cheia și nu sunteți sigur de ce, nu o distribuiți. Revocați cheia și schimbați-vă parola Steam dacă credeți că a fost expusă.",
+      "footerNote": "Acum aveți o cheie API Web Steam înregistrată și o înțelegere de bază despre cum să o gestionați în siguranță. Păstrați această pagină la îndemână ca referință atunci când trebuie să vă înregistrați, să utilizați sau să vă revocați cheia."
     },
     "folders": {
-      "dialogTitle": "Configure Folders"
+      "dialogTitle": "Configurați foldere"
     },
     "loadingLocale": "Se încarcă limba..."
   },
@@ -180,217 +180,217 @@
     }
   },
   "onboarding": {
-    "title": "Get Started",
+    "title": "Începeți",
     "steps": {
-      "welcome": "Welcome",
-      "folders": "Folders",
-      "steamKey": "Steam API Key",
-      "tips": "Tips"
+      "welcome": "Bun venit",
+      "folders": "Foldere",
+      "steamKey": "Cheie API Steam",
+      "tips": "Sfaturi"
     },
     "welcome": {
-      "title": "Welcome to the Project Zomboid Mod Manager",
-      "body": "This quick setup helps you connect your folders, add your Steam Web API key, and start syncing mods.",
-      "bullet1": "Choose your Project Zomboid folders.",
-      "bullet2": "Add your Steam Web API key for Workshop metadata.",
-      "bullet3": "Finish setup and start managing your mods."
+      "title": "Bun venit la Project Zomboid Mod Manager",
+      "body": "Această configurare rapidă vă ajută să vă conectați folderele, să adăugați cheia Steam Web API și să începeți sincronizarea modurilor.",
+      "bullet1": "Alegeți folderele Project Zomboid.",
+      "bullet2": "Adăugați cheia Steam Web API pentru metadatele Workshop.",
+      "bullet3": "Terminați configurarea și începeți să vă gestionați modurile."
     },
     "tips": {
-      "title": "Quick Tips",
-      "bullet1": "You can update folders and your Steam API key anytime from the sidebar.",
-      "bullet2": "Run Sync Local Mod Data before syncing Workshop metadata.",
-      "bullet3": "Use Mod Filters to narrow the list quickly."
+      "title": "Sfaturi rapide",
+      "bullet1": "Puteți actualiza oricând folderele și cheia API Steam din bara laterală.",
+      "bullet2": "Rulați Sync Local Mod Data înainte de a sincroniza metadatele Workshop.",
+      "bullet3": "Utilizați Filtrele de mod pentru a restrânge rapid lista."
     }
   },
   "tags": {
-    "animals": "Animals",
+    "animals": "Animale",
     "audio": "Audio",
-    "balance": "Balance",
-    "build_41": "Build 41",
-    "build_42": "Build 42",
-    "build_40": "Build 40",
-    "buildings": "Buildings",
-    "clothing_armor": "Clothing/Armor",
-    "farming": "Farming",
-    "food": "Food",
-    "framework": "Framework",
-    "hardmode": "Hardmode",
-    "interface": "Interface",
-    "items": "Items",
-    "language_translation": "Language/Translation",
-    "literature": "Literature",
-    "map": "Map",
-    "military": "Military",
-    "misc": "Misc",
-    "models": "Models",
-    "multiplayer": "Multiplayer",
-    "pop_culture": "Pop Culture",
+    "balance": "Echilibru",
+    "build_41": "Construcția 41",
+    "build_42": "Construcția 42",
+    "build_40": "Construcția 40",
+    "buildings": "Clădiri",
+    "clothing_armor": "Îmbrăcăminte/Armură",
+    "farming": "Agricultura",
+    "food": "Mâncare",
+    "framework": "Cadru",
+    "hardmode": "Mod dificil",
+    "interface": "Interfață",
+    "items": "Articole",
+    "language_translation": "Limba/Traducere",
+    "literature": "Literatura",
+    "map": "Harta",
+    "military": "Militari",
+    "misc": "Diverse",
+    "models": "Modele",
+    "multiplayer": "Joc multiplayer",
+    "pop_culture": "Cultura Pop",
     "qol": "QoL",
-    "realistic": "Realistic",
-    "silly_fun": "Silly/Fun",
-    "skills": "Skills",
-    "textures": "Textures",
-    "traits": "Traits",
-    "vehicles": "Vehicles",
-    "weapons": "Weapons",
+    "realistic": "Realist",
+    "silly_fun": "Prost/Distractiv",
+    "skills": "Abilități",
+    "textures": "Texturi",
+    "traits": "Trăsături",
+    "vehicles": "Vehicule",
+    "weapons": "Arme",
     "wip": "WIP"
   },
   "tagFilter": {
-    "label": "Tags",
-    "matchLabel": "Match",
+    "label": "Etichete",
+    "matchLabel": "Se potrivește",
     "matchAny": "SAU",
     "matchAll": "SI",
-    "placeholder": "Select tags"
+    "placeholder": "Selectați etichete"
   },
   "modsTable": {
-    "clearFilters": "Clear",
-    "searchPlaceholder": "Search keyword",
-    "detailsTitle": "Mod Details",
+    "clearFilters": "Clar",
+    "searchPlaceholder": "Căutare cuvânt cheie",
+    "detailsTitle": "Detalii mod",
     "columns": {
-      "name": "Name",
-      "author": "Author",
-      "workshopId": "Workshop ID",
-      "lastModified": "Last Modified Date"
+      "name": "Nume",
+      "author": "autor",
+      "workshopId": "ID atelier",
+      "lastModified": "Data ultimei modificări"
     },
     "filters": {
-      "name": "Search by name",
-      "author": "Search by author",
-      "workshopId": "Search by workshop ID",
-      "date": "Filter date"
+      "name": "Căutați după nume",
+      "author": "Căutați după autor",
+      "workshopId": "Căutați după ID atelier",
+      "date": "Data filtrului"
     }
   },
   "modsPage": {
-    "toastHelp": "Where do I find this?",
+    "toastHelp": "Unde gasesc asta?",
     "workshopPrompt": {
-      "title": "Fetch Steam Workshop Data",
-      "body": "Do you want to fetch the latest metadata from the Steam Workshop for your mods?",
-      "alwaysFetch": "Always fetch automatically without asking"
+      "title": "Preluați datele atelierului Steam",
+      "body": "Doriți să obțineți cele mai recente metadate de la Steam Workshop pentru modurile dvs.?",
+      "alwaysFetch": "Preluați întotdeauna automat fără a cere"
     },
-    "loadingLocal": "Scanning Local Mod Data...",
-    "loadingWorkshop": "Fetching Steam Workshop Data...",
-    "loading": "Loading data..."
+    "loadingLocal": "Se scanează datele mod locale...",
+    "loadingWorkshop": "Se preiau datele Steam Workshop...",
+    "loading": "Se încarcă datele..."
   },
   "folders": {
-    "title": "Set Required Folders",
-    "description": "These folders are used to scan your mods and read your Project Zomboid installation details.",
-    "gameDirLabel": "Project Zomboid game folder",
-    "workshopDirLabel": "Local mods (Steam Workshop) folder",
-    "userDirLabel": "Project Zomboid user folder (optional)",
-    "userDirNote": "Used for exporting server presets and (optional) advanced apply targets."
+    "title": "Setați folderele necesare",
+    "description": "Aceste foldere sunt folosite pentru a vă scana modurile și pentru a citi detaliile de instalare a proiectului Zomboid.",
+    "gameDirLabel": "Dosarul jocului Project Zomboid",
+    "workshopDirLabel": "Dosarul Moduri locale (Steam Workshop).",
+    "userDirLabel": "Dosarul utilizatorului Project Zomboid (opțional)",
+    "userDirNote": "Folosit pentru exportul presetărilor de server și a țintelor de aplicare avansate (opțional)."
   },
   "modDetails": {
     "fields": {
-      "name": "Name",
-      "modId": "Mod ID",
-      "author": "Author",
-      "version": "Mod Version",
-      "versionMin": "Minimum Game Version",
-      "versionMax": "Maximum Game Version",
+      "name": "Nume",
+      "modId": "ID mod",
+      "author": "autor",
+      "version": "Versiune Mod",
+      "versionMin": "Versiune minimă de joc",
+      "versionMax": "Versiune maximă de joc",
       "url": "URL",
-      "description": "Description",
-      "tags": "Tags",
-      "noTags": "No tags",
-      "packs": "Packs",
-      "tiledefs": "Tiledefs",
-      "workshopTitle": "Workshop Title",
-      "workshopCreator": "Workshop Creator",
-      "fileSize": "File Size",
-      "timeCreated": "Time Created",
-      "timeUpdated": "Time Updated",
-      "workshopViews": "Workshop Views",
-      "workshopSubscriptions": "Workshop Subscriptions",
-      "adultContent": "Has Adult Content"
+      "description": "Descriere",
+      "tags": "Etichete",
+      "noTags": "Fără etichete",
+      "packs": "Pachete",
+      "tiledefs": "Definiții de dale",
+      "workshopTitle": "Titlul atelierului",
+      "workshopCreator": "Creator atelier",
+      "fileSize": "Dimensiunea fișierului",
+      "timeCreated": "Timpul creat",
+      "timeUpdated": "Ora actualizată",
+      "workshopViews": "Vizualizările atelierului",
+      "workshopSubscriptions": "Abonamente la ateliere",
+      "adultContent": "Are conținut pentru adulți"
     },
     "links": {
-      "requiredMods": "Required Mods",
-      "loadAfter": "Load Mod After",
-      "loadBefore": "Load Mod Before",
-      "incompatibleMods": "Incompatible Mods",
-      "requiredBy": "Required By",
-      "incompatibleWith": "Incompatible With"
+      "requiredMods": "Moduri necesare",
+      "loadAfter": "Încărcați modul după",
+      "loadBefore": "Încărcați modul înainte",
+      "incompatibleMods": "Moduri incompatibile",
+      "requiredBy": "Solicitat de",
+      "incompatibleWith": "Incompatibil cu"
     },
     "buttons": {
-      "visitWorkshop": "Visit Steam Workshop Page",
-      "authorWorkshop": "Author's Steam Workshop Page",
-      "openFolder": "Open mod folder"
+      "visitWorkshop": "Vizitați pagina Atelierului Steam",
+      "authorWorkshop": "Pagina Atelierului Steam a autorului",
+      "openFolder": "Deschideți folderul mod"
     },
     "tooltips": {
-      "modInfoReadonly": "This field is read-only and populated from mod.info.",
-      "steamReadonly": "This field is read-only and populated from the Steam Workshop.",
-      "modMissing": "The following mod could not be found",
-      "syncToActivate": "Sync With Steam Workshop to Activate",
-      "modFolderUnavailable": "Mod folder path is not available."
+      "modInfoReadonly": "Acest câmp este doar pentru citire și este populat de pe mod.info.",
+      "steamReadonly": "Acest câmp este doar pentru citire și este completat din Steam Workshop.",
+      "modMissing": "Următorul mod nu a putut fi găsit",
+      "syncToActivate": "Sincronizare cu Steam Workshop pentru a activa",
+      "modFolderUnavailable": "Calea folderului Mod nu este disponibilă."
     }
   },
   "docs": {
-    "title": "Documentation",
+    "title": "Documentare",
     "intro": "Honu's Hub vă ajută să răsfoiți, să inspectați și să vă gestionați proiectul local Zomboid, cu integrarea desktop prin Tauri.",
     "toc": {
-      "aria": "Table of contents",
-      "title": "Table of contents",
-      "overview": "Overview",
-      "workflow": "Workflow",
-      "data": "Data the app uses",
-      "features": "Features",
+      "aria": "Cuprins",
+      "title": "Cuprins",
+      "overview": "Prezentare generală",
+      "workflow": "Fluxul de lucru",
+      "data": "Datele pe care aplicația le folosește",
+      "features": "Caracteristici",
       "server": "Gestionare server",
-      "logInspector": "Log inspector",
-      "folderSetup": "Folder setup",
-      "tauri": "Desktop (Tauri) integration",
-      "privacy": "Privacy & storage",
-      "troubleshooting": "Troubleshooting",
+      "logInspector": "Inspector de jurnal",
+      "folderSetup": "Configurarea folderului",
+      "tauri": "Integrare desktop (Tauri).",
+      "privacy": "Confidențialitate și stocare",
+      "troubleshooting": "Depanare",
       "faq": "FAQ"
     },
     "overview": {
-      "title": "Overview",
-      "body": "The app scans a chosen mods directory, derives metadata from common Project Zomboid mod conventions, and presents everything in a table and summary dashboard."
+      "title": "Prezentare generală",
+      "body": "Aplicația scanează un director de mods ales, derivă metadate din convențiile obișnuite ale modurilor Project Zomboid și prezintă totul într-un tabel și un tablou de bord rezumat."
     },
     "workflow": {
-      "title": "Workflow",
-      "intro": "Follow this end-to-end flow to connect your folders, sync metadata, and generate the Honu Mod Info QoL output.",
+      "title": "Fluxul de lucru",
+      "intro": "Urmați acest flux de la capăt la capăt pentru a vă conecta folderele, a sincroniza metadatele și a genera ieșirea Honu Mod Info QoL.",
       "step1": {
-        "title": "Map folders",
-        "body": "Open <strong>Configure Folders</strong> from the sidebar actions and set your Project Zomboid game, workshop, and user directories.",
-        "screenshot": "Screenshot: Configure Folders"
+        "title": "Hărți foldere",
+        "body": "Deschideți <strong>Configurați folderele</strong> din acțiunile din bara laterală și setați-vă directoarele de jocuri, ateliere și utilizatori Project Zomboid.",
+        "screenshot": "Captură de ecran: Configurați foldere"
       },
       "step2": {
-        "title": "Create/enter Steam Workshop key",
-        "body": "Use <strong>Set Steam API Key</strong> to paste your key so the app can fetch Workshop metadata.",
-        "screenshot": "Screenshot: Set Steam API Key"
+        "title": "Creați/introduceți cheia Steam Workshop",
+        "body": "Utilizați <strong>Set Steam API Key</strong> pentru a lipi cheia, astfel încât aplicația să poată prelua metadatele Workshop.",
+        "screenshot": "Captură de ecran: Setați cheia API Steam"
       },
       "step3": {
-        "title": "Sync local mod data",
-        "body": "Run <strong>Sync Local Mod Data</strong> to scan your Workshop folder and build the local mod list.",
-        "screenshot": "Screenshot: Sync Local Mod Data"
+        "title": "Sincronizați datele mod locale",
+        "body": "Rulați <strong>Sync Local Mod Data</strong> pentru a vă scana folderul Workshop și a crea lista locală de mod.",
+        "screenshot": "Captură de ecran: sincronizați datele mod locale"
       },
       "step4": {
-        "title": "Sync with Steam Workshop",
-        "body": "Run <strong>Sync With Steam Workshop</strong> to pull workshop titles, authors, sizes, and extra metadata.",
-        "screenshot": "Screenshot: Sync With Steam Workshop"
+        "title": "Sincronizare cu Steam Workshop",
+        "body": "Rulați <strong>Sync cu Steam Workshop</strong> pentru a extrage titluri de atelier, autori, dimensiuni și metadate suplimentare.",
+        "screenshot": "Captură de ecran: Sincronizare cu Atelierul Steam"
       },
       "step5": {
-        "title": "Sync Honu's Mod Info QoL",
-        "body": "Use <strong>Sync Honu's Mod Info QoL</strong> to generate/update <code>honus_miqol_db.lua</code> inside your Project Zomboid user folder.",
-        "screenshot": "Screenshot: Sync Honu's Mod Info QoL"
+        "title": "Sincronizați QoL informațiile mod de la Honu",
+        "body": "Utilizați <strong>Sync Honu's Mod Info QoL</strong> pentru a genera/actualiza <code>honus_miqol_db.lua</code> în folderul dvs. de utilizator Project Zomboid.",
+        "screenshot": "Captură de ecran: Sincronizați QoL informații despre mod de la Honu"
       }
     },
     "data": {
-      "title": "Data the app uses",
-      "intro": "The app builds a mod listing from information available on disk.",
-      "bullet1": "<strong>Mod folder path</strong> - resolved absolute path to the mod directory.",
-      "bullet2": "<strong>Mod id</strong> - extracted from mod metadata when available (commonly from <code>mod.info</code>).",
-      "bullet3": "<strong>Name</strong> - a display name derived from metadata and/or folder naming.",
-      "bullet4": "<strong>Workshop id (optional)</strong> - if detected and numeric, the app enables a Steam Workshop link button.",
-      "bullet5": "<strong>Status/health indicators</strong> - basic signals such as missing or incomplete metadata (where detectable).",
-      "outro": "Not all mods contain complete metadata. When fields are missing, the UI will display best-effort values and may disable actions that require specific data (for example, the Steam link)."
+      "title": "Datele pe care aplicația le folosește",
+      "intro": "Aplicația creează o listă de mod din informațiile disponibile pe disc.",
+      "bullet1": "<strong>Mod folder path</strong> - calea absolută rezolvată către directorul mod.",
+      "bullet2": "<strong>Mod id</strong> - extras din metadatele mod atunci când sunt disponibile (de obicei din <code>mod.info</code>).",
+      "bullet3": "<strong>Name</strong> - un nume afișat derivat din metadate și/sau denumirea folderului.",
+      "bullet4": "<strong>Workshop id (opțional)</strong> - dacă este detectată și numerică, aplicația activează un buton de legătură Steam Workshop.",
+      "bullet5": "<strong>Indicatori de stare/sănătate</strong> - semnale de bază, cum ar fi metadatele lipsă sau incomplete (unde sunt detectabile).",
+      "outro": "Nu toate modurile conțin metadate complete. Când câmpurile lipsesc, interfața de utilizare va afișa valorile cele mai bune și poate dezactiva acțiunile care necesită date specifice (de exemplu, legătura Steam)."
     },
     "features": {
-      "title": "Features",
-      "bullet1": "<strong>Mods table</strong> - lists detected mods with key fields (name, id, workshop link when available, and path).",
-      "bullet2": "<strong>Row details</strong> - expand a row to see more information about a mod (when available).",
-      "bullet3": "<strong>Open in Steam</strong> - opens the Workshop page in your default browser for mods with a valid workshop id.",
-      "bullet4": "<strong>Open folder</strong> - opens the selected mod folder in your file explorer.",
-      "logInspectorPrefix": "<strong>Log inspector</strong> - load and filter log files (like <code>console.txt</code>) to quickly find errors and warnings. See ",
-      "logInspectorLink": "Log inspector",
-      "bullet6": "<strong>Dashboard</strong> - shows quick stats (for example: total mods detected) and other high-level indicators."
+      "title": "Caracteristici",
+      "bullet1": "<strong>Mods table</strong> - listează modurile detectate cu câmpuri cheie (nume, id, link-ul atelierului când este disponibil și calea).",
+      "bullet2": "<strong>Detalii rând</strong> - extindeți un rând pentru a vedea mai multe informații despre un mod (când este disponibil).",
+      "bullet3": "<strong>Open în Steam</strong> - deschide pagina Workshop în browser-ul dvs. implicit pentru modurile cu un ID valid de atelier.",
+      "bullet4": "<strong>Open folder</strong> - deschide folderul mod selectat în exploratorul de fișiere.",
+      "logInspectorPrefix": "<strong>Log inspector</strong> - încărcați și filtrați fișierele jurnal (cum ar fi <code>console.txt</code>) pentru a găsi rapid erori și avertismente. Vezi",
+      "logInspectorLink": "Inspector de jurnal",
+      "bullet6": "<strong>Dashboard</strong> - arată statistici rapide (de exemplu: total mods detectate) și alți indicatori de nivel înalt."
     },
     "server": {
       "title": "Gestionare server",
@@ -400,242 +400,242 @@
       "bullet3": "<strong>Editează</strong> variabilele INI și Sandbox și actualizează spawnpoints/spawnregions direct în aplicație."
     },
     "logInspector": {
-      "title": "Log inspector",
-      "intro": "The log inspector helps you open and filter log files (for example, <code>console.txt</code>) to troubleshoot crashes, mod load problems, and server startup issues.",
-      "bullet1": "<strong>Select a file</strong> - browse to any <code>.txt</code> or <code>.log</code> file, or use a default path when available.",
-      "bullet2": "<strong>Filter</strong> - choose log levels (ERROR/WARN/LOG/DEBUG/TRACE), set a date/time window, and limit the maximum number of entries displayed.",
-      "bullet3": "<strong>Search</strong> - filter entries by text across the parsed message and the raw source line.",
-      "bullet4": "<strong>Live polling</strong> - optionally refresh on a timer to watch logs update while the game/server is running.",
-      "bullet5": "<strong>Clear</strong> - truncate the selected log file (use with care)."
+      "title": "Inspector de jurnal",
+      "intro": "Inspectorul de jurnal vă ajută să deschideți și să filtrați fișierele jurnal (de exemplu, <code>console.txt</code>) pentru a depana erorile, problemele de încărcare a modului și problemele de pornire a serverului.",
+      "bullet1": "<strong>Selectați un fișier</strong> - răsfoiți la orice fișier <code>.txt</code> sau <code>.log</code> sau utilizați o cale implicită atunci când este disponibilă.",
+      "bullet2": "<strong>Filter</strong> - alegeți nivelurile de jurnal (EROARE/WARN/LOG/DEBUG/TRACE), setați o fereastră de dată/oră și limitați numărul maxim de intrări afișate.",
+      "bullet3": "<strong>Search</strong> - filtrați intrările după text în mesajul analizat și linia sursă brută.",
+      "bullet4": "<strong>Sondaj în direct</strong> - opțional, reîmprospătați cu un cronometru pentru a urmări actualizarea jurnalelor în timp ce jocul/serverul rulează.",
+      "bullet5": "<strong>Clear</strong> - trunchiați fișierul jurnal selectat (utilizați cu grijă)."
     },
     "folderSetup": {
-      "title": "Folder setup",
-      "step1": "Open the <strong>Mods</strong> page from the left sidebar (under <em>HOME</em>).",
-      "step2": "Use <strong>Browse Mods Folder</strong> in the <em>ACTIONS</em> menu to select your Project Zomboid mods directory (commonly <code>projectzomboid/mods</code>).",
-      "step3": "After selection, the app scans the directory and populates the mods table and dashboard.",
-      "tip": "Tip: If you switch machines or move your mods directory, simply browse again to update the stored path."
+      "title": "Configurarea folderului",
+      "step1": "Deschideți pagina <strong>Mods</strong> din bara laterală din stânga (sub <em>HOME</em>).",
+      "step2": "Folosiți <strong>Răsfoiți folderul Mods</strong> în meniul <em>ACTIONS</em> pentru a selecta directorul de mods Project Zomboid (de obicei <code>projectzomboid/mods</code>).",
+      "step3": "După selecție, aplicația scanează directorul și completează tabelul de mods și tabloul de bord.",
+      "tip": "Sfat: Dacă schimbați mașina sau mutați directorul de mods, pur și simplu răsfoiți din nou pentru a actualiza calea stocată."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
-      "bullet1": "<strong>Filesystem access</strong> - directory browsing and scanning is performed via the desktop shell.",
-      "bullet2": "<strong>Open external links</strong> - Steam Workshop links open using your OS default browser.",
-      "bullet3": "<strong>Open folders</strong> - launches the OS file explorer focused on the mod directory."
+      "title": "Integrare desktop (Tauri).",
+      "bullet1": "<strong>Acces la sistemul de fișiere</strong> - parcurgerea și scanarea directoarelor se efectuează prin intermediul shell-ului desktopului.",
+      "bullet2": "<strong>Deschideți linkurile externe</strong> - Linkurile Steam Workshop se deschid folosind browserul implicit al sistemului de operare.",
+      "bullet3": "<strong>Deschideți folderele</strong> - lansează exploratorul de fișiere al sistemului de operare concentrat pe directorul mod."
     },
     "privacy": {
-      "title": "Privacy & storage",
-      "bullet1": "<strong>Local data</strong> - the selected mods folder path and scan results may be cached locally to improve UX."
+      "title": "Confidențialitate și stocare",
+      "bullet1": "<strong>Date locale</strong> - calea folderului de mods selectat și rezultatele scanării pot fi stocate în cache local pentru a îmbunătăți UX."
     },
     "troubleshooting": {
-      "title": "Troubleshooting",
-      "bullet1": "<strong>No mods appear after scanning</strong> - verify the selected folder is your actual Project Zomboid mods directory and that it contains mod subfolders.",
-      "bullet2": "<strong>Steam links are disabled</strong> - ensure the mod has a valid numeric workshop id (not all mods are Workshop-based).",
-      "bullet3": "<strong>Open folder does nothing</strong> - confirm the Tauri backend is running and that OS permissions allow opening the file explorer."
+      "title": "Depanare",
+      "bullet1": "<strong>Nu apar modificări după scanare</strong> - verificați că folderul selectat este directorul dvs. actual de moduri Project Zomboid și că conține subfoldere de mod.",
+      "bullet2": "<strong>Legăturile Steam sunt dezactivate</strong> - asigurați-vă că modulul are un ID numeric valid de atelier (nu toate modurile sunt bazate pe atelier).",
+      "bullet3": "<strong>ODeschideți folderul nu face nimic</strong> - confirmați că backend-ul Tauri rulează și că permisiunile sistemului de operare permit deschiderea exploratorului de fișiere."
     },
     "faq": {
       "title": "FAQ",
-      "q1": "Does the app edit my mods?",
-      "a1": "No. The core workflow is read-only: it scans folders and displays metadata. Actions such as opening folders or Workshop links do not modify mod files.",
-      "q2": "Why is some information missing for a mod?",
-      "a2": "Mods vary in how consistently they include metadata. If fields like id or workshop id are missing, the app will show what it can and disable features that rely on those fields."
+      "q1": "Aplicația îmi editează modurile?",
+      "a1": "Nu. Fluxul de lucru principal este doar pentru citire: scanează folderele și afișează metadate. Acțiuni precum deschiderea folderelor sau link-urile Workshop nu modifică fișierele modificate.",
+      "q2": "De ce lipsesc unele informații pentru un mod?",
+      "a2": "Modurile variază în funcție de cât de consistent includ metadate. Dacă lipsesc câmpuri precum ID sau ID atelier, aplicația va arăta ce poate și va dezactiva funcțiile care se bazează pe acele câmpuri."
     }
   },
   "toasts": {
     "menu": {
       "honuSync": {
-        "failedSummary": "Honu Mod Info QoL Sync Failed",
-        "missingUserDetail": "Project Zomboid user folder is not configured.",
-        "successSummary": "Honu's Mod Info QoL Synced",
-        "successCreatedDetail": "honus_miqol_db.lua created.",
-        "successUpdatedDetail": "honus_miqol_db.lua updated.",
-        "failedDetail": "Failed to sync Honu Mod Info QoL."
+        "failedSummary": "Informații despre modul Honu Sincronizarea QoL a eșuat",
+        "missingUserDetail": "Dosarul utilizatorului Project Zomboid nu este configurat.",
+        "successSummary": "Informații despre modul lui Honu QoL sincronizate",
+        "successCreatedDetail": "honus_miqol_db.lua creat.",
+        "successUpdatedDetail": "honus_miqol_db.lua actualizat.",
+        "failedDetail": "Nu s-a putut sincroniza Honu Mod Info QoL."
       }
     },
     "mods": {
       "dataMigration": {
-        "summary": "Data Migration",
-        "detail": "Your local mod data is being updated. A new scan is running to refresh dependencies."
+        "summary": "Migrarea datelor",
+        "detail": "Datele dvs. locale ale modului sunt actualizate. Se execută o nouă scanare pentru a reîmprospăta dependențele."
       },
       "syncInProgress": {
-        "summary": "Sync in Progress",
-        "detail": "A sync operation is already running. Please wait for it to complete."
+        "summary": "Sincronizare în curs",
+        "detail": "O operație de sincronizare rulează deja. Vă rugăm să așteptați să se finalizeze."
       },
       "localSyncComplete": {
-        "summary": "Local Mod Sync Complete",
-        "detail": "Local mod data has been refreshed successfully."
+        "summary": "Sincronizarea mod local este finalizată",
+        "detail": "Datele mod locale au fost reîmprospătate cu succes."
       },
       "localSyncFailed": {
-        "summary": "Local Mod Sync Failed",
-        "detail": "Failed to sync local mods."
+        "summary": "Sincronizarea modului local a eșuat",
+        "detail": "Sincronizarea modurilor locale nu a reușit."
       },
       "invalidDirectory": {
-        "summary": "Invalid Directory",
-        "detail": "The selected folder does not appear to be a valid Project Zomboid Workshop directory (AppID 108600)."
+        "summary": "Director invalid",
+        "detail": "Dosarul selectat nu pare a fi un director valid Project Zomboid Workshop (AppID 108600)."
       },
       "steamApiRequired": {
-        "summary": "Steam Web API Key Required",
-        "detail": "Please use \"Set Steam API Key\" in the menu, then try syncing again."
+        "summary": "Cheia Steam Web API este necesară",
+        "detail": "Utilizați „Set Steam API Key” din meniu, apoi încercați din nou să sincronizați."
       },
       "workshopNoData": {
         "summary": "",
-        "detail": "No workshop metadata was returned; nothing was saved."
+        "detail": "Nu au fost returnate metadate ale atelierului; nimic nu a fost salvat."
       },
       "workshopPartial": {
         "summary": "Steam Workshop sincronizat parțial",
-        "detail": "Received {{received}} of {{total}} workshop items. Missing IDs: {{missing}}{{suffix}}"
+        "detail": "Am primit {{received}} de articole de atelier {{total}}. ID-uri lipsă: {{missing}}{{suffix}}"
       },
       "workshopSynced": {
-        "summary": "Steam Workshop Synced",
-        "detail": "Workshop metadata has been saved successfully."
+        "summary": "Atelierul Steam sincronizat",
+        "detail": "Metadatele atelierului au fost salvate cu succes."
       },
       "workshopUnauthorized": {
-        "summary": "Steam Web API Unauthorized",
-        "detail": "Steam returned 401 Unauthorized. Please verify your Steam Web API key and try again."
+        "summary": "Steam Web API neautorizat",
+        "detail": "Steam a returnat 401 Neautorizat. Vă rugăm să vă verificați cheia Steam Web API și să încercați din nou."
       },
       "workshopSyncFailed": {
         "summary": "",
-        "detail": "Failed to sync Steam Workshop metadata."
+        "detail": "Nu s-au sincronizat metadatele Steam Workshop."
       }
     },
     "modDetails": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Numele presetat există deja",
+        "detail": "Vă rugăm să alegeți un alt nume pentru „{{name}}”."
       },
       "removeFailed": {
-        "summary": "Remove Failed",
-        "missingUserDetail": "Project Zomboid user directory is not configured.",
-        "missingModDetail": "Mod ID was not found in mods.txt.",
-        "failedDetail": "Failed to remove mod from preset."
+        "summary": "Eliminare a eșuat",
+        "missingUserDetail": "Directorul utilizatorului Project Zomboid nu este configurat.",
+        "missingModDetail": "ID-ul mod nu a fost găsit în mods.txt.",
+        "failedDetail": "Eroare la eliminarea modului din presetare."
       },
       "removed": {
-        "summary": "Removed",
-        "detailMultiple": "Selected mods were removed from the preset.",
-        "detailSingle": "Mod was removed from the preset."
+        "summary": "Eliminat",
+        "detailMultiple": "Modurile selectate au fost eliminate din presetare.",
+        "detailSingle": "Mod a fost eliminat din presetare."
       },
       "presetUpdated": {
-        "summary": "Preset updated",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Presetarea actualizată",
+        "detailFallback": "pz_modlist_settings.cfg nu a putut fi actualizat.",
+        "detailFailed": "Actualizarea pz_modlist_settings.cfg a eșuat."
       }
     },
     "loadouts": {
       "presetNameExists": {
-        "summary": "Preset name already exists",
-        "detail": "Please choose a different name for \"{{name}}\"."
+        "summary": "Numele presetat există deja",
+        "detail": "Vă rugăm să alegeți un alt nume pentru „{{name}}”."
       },
       "noModsToExport": {
-        "summary": "No mods to export",
-        "detailCode": "Add at least one mod before generating code.",
-        "detailPreset": "Add at least one mod before saving a preset."
+        "summary": "Fără modificări de exportat",
+        "detailCode": "Adăugați cel puțin un mod înainte de a genera codul.",
+        "detailPreset": "Adăugați cel puțin un mod înainte de a salva o presetare."
       },
       "copied": {
-        "summary": "Copied",
-        "detail": "{{label}} copied to clipboard."
+        "summary": "Copiat",
+        "detail": "{{label}} a fost copiat în clipboard."
       },
       "presetImported": {
-        "summary": "Preset imported",
-        "detail": "Imported {{count}} mods."
+        "summary": "Preset importat",
+        "detail": "Moduri {{count}} importate."
       },
       "importFailed": {
-        "summary": "Import failed",
-        "detail": "Failed to import preset."
+        "summary": "Importul nu a reușit",
+        "detail": "Nu s-a putut importa presetarea."
       },
       "presetSaved": {
-        "summary": "Preset saved",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Presetarea salvată",
+        "detailFallback": "pz_modlist_settings.cfg nu a putut fi actualizat.",
+        "detailFailed": "Actualizarea pz_modlist_settings.cfg a eșuat."
       },
       "presetSaveNotice": {
-        "reordered": "Reordered mods by dependency rules.",
-        "missingDependencies": "Missing dependencies: {{count}}.",
-        "missingWorkshopIds": "Missing workshop IDs: {{count}}.",
-        "incompatibilities": "Incompatibilities: {{count}}.",
-        "cycles": "Cycles detected: {{count}}.",
-        "conflicts": "File conflicts: {{count}}."
+        "reordered": "Modificări reordonate după reguli de dependență.",
+        "missingDependencies": "Dependențe lipsă: {{count}}.",
+        "missingWorkshopIds": "Lipsesc coduri de atelier: {{count}}.",
+        "incompatibilities": "Incompatibilități: {{count}}.",
+        "cycles": "Cicluri detectate: {{count}}.",
+        "conflicts": "Conflicte de fișiere: {{count}}."
       },
       "presetDeleted": {
-        "summary": "Preset deleted",
-        "detailFallback": "pz_modlist_settings.cfg could not be updated.",
-        "detailFailed": "Failed to update pz_modlist_settings.cfg."
+        "summary": "Presetarea a fost ștearsă",
+        "detailFallback": "pz_modlist_settings.cfg nu a putut fi actualizat.",
+        "detailFailed": "Actualizarea pz_modlist_settings.cfg a eșuat."
       }
     },
     "modCollections": {
       "loadFailed": {
         "summary": "",
-        "detail": "Unable to load collections. Verify your Steam Web API key and try again."
+        "detail": "Nu se pot încărca colecțiile. Verificați-vă cheia Steam Web API și încercați din nou."
       },
-      "steamUnauthorized": "Steam returned 401 Unauthorized. Verify your Steam Web API key.",
-      "queryFailed": "Failed to query Steam Workshop collections.",
+      "steamUnauthorized": "Steam a returnat 401 Neautorizat. Verificați-vă cheia Steam Web API.",
+      "queryFailed": "Nu s-au putut interoga colecțiile Steam Workshop.",
       "presetNotCreated": {
-        "summary": "Preset Not Created",
-        "detail": "No workshop items were found for this collection."
+        "summary": "Presetarea nu a fost creată",
+        "detail": "Nu au fost găsite articole de atelier pentru această colecție."
       },
       "presetCreated": {
-        "summary": "Preset Created",
-        "detail": "Collection preset saved as \"{{name}}\"."
+        "summary": "Presetare creată",
+        "detail": "Setare prestabilită de colecție salvată ca „{{name}}”."
       },
       "presetUpdated": {
-        "summary": "Preset Updated",
-        "detail": "Collection preset \"{{name}}\" refreshed."
+        "summary": "Preset actualizat",
+        "detail": "Setare prestabilită de colecție „{{name}}” reîmprospătată."
       },
       "presetRemoved": {
-        "summary": "Preset Removed",
-        "detail": "Collection preset has been removed."
+        "summary": "Presetarea a fost eliminată",
+        "detail": "Presetarea colecției a fost eliminată."
       }
     },
     "server": {
       "invalidName": {
-        "summary": "Invalid server name",
-        "detailMissing": "Enter a server name.",
-        "detailInvalidChars": "Server name contains invalid filename characters.",
-        "detailTrailing": "Server name cannot end with a dot or space.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "summary": "Nume server nevalid",
+        "detailMissing": "Introduceți un nume de server.",
+        "detailInvalidChars": "Numele serverului conține caractere de nume de fișier nevalide.",
+        "detailTrailing": "Numele serverului nu se poate termina cu un punct sau un spațiu.",
+        "detailNoSpaces": "Numele serverului trebuie să fie un singur cuvânt, fără spații.",
+        "detailAscii": "Utilizați numai caractere ASCII (litere, numere și simboluri în limba engleză)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Numele serverului este deja luat",
+        "detail": "Numele serverului a fost deja luat. Alegeți un alt nume pentru noul server."
       },
       "missingUserFolder": {
-        "summary": "Missing user folder",
-        "detail": "Set your Project Zomboid user folder first."
+        "summary": "Lipsește dosarul utilizatorului",
+        "detail": "Setați mai întâi folderul de utilizator Project Zomboid."
       },
       "createFailed": {
-        "summary": "Create failed",
-        "detail": "Failed to create server files."
+        "summary": "Crearea a eșuat",
+        "detail": "Nu s-au putut crea fișiere de server."
       },
       "saved": {
-        "summary": "Saved",
-        "detail": "Server files updated."
+        "summary": "Salvat",
+        "detail": "Fișierele serverului au fost actualizate."
       },
       "saveFailed": {
-        "summary": "Save failed",
-        "detail": "Failed to save server files."
+        "summary": "Salvarea nu a reușit",
+        "detail": "Nu s-au salvat fișierele serverului."
       }
     }
   },
   "primeng": {
-    "startsWith": "Starts with",
-    "contains": "Contains",
-    "notContains": "Not contains",
-    "endsWith": "Ends with",
-    "equals": "Equals",
-    "notEquals": "Not equals",
-    "noFilter": "No filter",
-    "lt": "Less than",
-    "lte": "Less than or equal to",
-    "gt": "Greater than",
-    "gte": "Greater than or equal to",
-    "dateIs": "Date is",
-    "dateIsNot": "Date is not",
-    "dateBefore": "Date is before",
-    "dateAfter": "Date is after",
-    "clear": "Clear",
-    "apply": "Apply",
-    "matchAll": "Match all",
-    "matchAny": "Match any",
-    "addRule": "Add rule",
-    "removeRule": "Remove rule"
+    "startsWith": "Începe cu",
+    "contains": "Conține",
+    "notContains": "Nu conține",
+    "endsWith": "Se termină cu",
+    "equals": "Egal",
+    "notEquals": "Nu este egal",
+    "noFilter": "Fără filtru",
+    "lt": "Mai puțin decât",
+    "lte": "Mai mic sau egal cu",
+    "gt": "Mai mare decât",
+    "gte": "Mai mare sau egal cu",
+    "dateIs": "Data este",
+    "dateIsNot": "Data nu este",
+    "dateBefore": "Data este înainte",
+    "dateAfter": "Data este după",
+    "clear": "Clar",
+    "apply": "Aplicați",
+    "matchAll": "Se potrivesc cu toate",
+    "matchAny": "Potriviți oricare",
+    "addRule": "Adăugați o regulă",
+    "removeRule": "Eliminați regula"
   },
   "dashboard": {
     "headers": {
@@ -729,43 +729,43 @@
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Servere",
       "refresh": "Actualizează",
       "createNewServer": "Creează server nou",
       "copy": "Copiază",
       "deleteServer": "Șterge serverul",
       "createBackupOnSave": "Creează o copie de rezervă la salvare",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Nu au fost găsite fișiere de server.",
+      "selectServerPlaceholder": "Selectați un server",
+      "serverEditor": "Editor de server",
+      "selectServerPrompt": "Selectați un server pentru a începe editarea.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Variabile Sandbox",
         "spawnpoints": "Puncte de spawn",
         "spawnregions": "Regiuni de spawn"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Nu s-au găsit intrări INI.",
       "serverConfigVars": "Variabile de configurare ale serverului",
-      "searchFields": "Search fields",
+      "searchFields": "Câmpuri de căutare",
       "reset": "Resetează",
       "saveChanges": "Salvează modificările",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Nu s-au găsit variabile sandbox.",
       "sandboxVariables": "Variabile Sandbox",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
-      "cancel": "Cancel",
-      "create": "Create",
+      "searchVariables": "Caută variabile",
+      "createServerTitle": "Creați un server nou",
+      "copyServerTitle": "Server de copiere",
+      "copyServerPrompt": "Copiați {{name}} și creați următoarele fișiere:",
+      "serverName": "Numele serverului",
+      "createServerHint": "Creează .ini, _SandboxVars.lua, _spawnpoints.lua și _spawnregions.lua",
+      "cancel": "Anulează",
+      "create": "Creați",
       "editServerVariableTitle": "Editați variabila server",
       "editSandboxVariableTitle": "Editați variabila Sandbox",
-      "noDescription": "No description available.",
-      "save": "Save",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "noDescription": "Nu există descriere disponibilă.",
+      "save": "Salvați",
+      "deleteServerTitle": "Șterge serverul",
+      "deleteServerPrompt": "Ștergeți {{name}} și toate fișierele de server asociate?",
       "trueLabel": "Adevărat",
       "falseLabel": "Fals",
       "exportServer": "Exportă"

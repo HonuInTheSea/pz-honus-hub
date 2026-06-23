@@ -1,7 +1,7 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolChat": "PVP-loggverktøy chat",
     "PVPLogToolFile": "PVP-loggverktøyfil",
     "PauseEmpty": "Pause Tom",
     "GlobalChat": "Global chat",
@@ -13,7 +13,7 @@
     "AutoCreateUserInWhiteList": "Opprett bruker automatisk i hvitliste",
     "DisplayUserName": "Vis brukernavn",
     "ShowFirstAndLastName": "Vis for- og etternavn",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Startpunkt",
     "SafetySystem": "Sikkerhetssystem",
     "ShowSafety": "Vis sikkerhet",
     "SafetyToggleTimer": "Sikkerhetsvekslingstimer",
@@ -23,7 +23,7 @@
     "DefaultPort": "Standard port",
     "UDPPort": "UDP-port",
     "ResetID": "Tilbakestill ID",
-    "Mods": "Mods",
+    "Mods": "Modder",
     "Map": "Kart",
     "DoLuaChecksum": "Gjør Lua Checksum",
     "Public": "Offentlig",
@@ -37,7 +37,7 @@
     "AnnounceDeath": "Kunngjør døden",
     "SaveWorldEveryMinutes": "Redd verden hvert minutt",
     "PlayerSafehouse": "Spiller Safehouse",
-    "AdminSafehouse": "Admin Safehouse",
+    "AdminSafehouse": "Admin-trygt hus",
     "SafehouseAllowTrepass": "Safehouse Tillat Trespass",
     "SafehouseAllowFire": "Safehouse Tillat brann",
     "SafehouseAllowLoot": "Safehouse Tillat bytte",
@@ -50,7 +50,7 @@
     "SledgehammerOnlyInSafehouse": "Slegger kun i safehouse",
     "WarStartDelay": "Forsinket krigsstart",
     "WarDuration": "Krigens varighet",
-    "WarSafehouseHitPoints": "War Safehouse Hit Points",
+    "WarSafehouseHitPoints": "Treffpoeng for trygt hus i krig",
     "ServerPlayerID": "Serverspiller-ID",
     "RCONPort": "RCON-port",
     "RCONPassword": "RCON-passord",
@@ -72,7 +72,7 @@
     "UPnP": "UPnP",
     "VoiceEnable": "Stemmeaktivering",
     "VoiceMinDistance": "Stemme min avstand",
-    "VoiceMaxDistance": "Voice Max Distance",
+    "VoiceMaxDistance": "Maks stemmeavstand",
     "Voice3D": "Stemme 3D",
     "SpeedLimit": "Fartsgrense",
     "LoginQueueConnectTimeout": "Påloggingskø Connect Timeout",
@@ -94,14 +94,14 @@
     "ClientActionLogs": "Klienthandlingslogger",
     "PerkLogs": "Perk Logger",
     "ItemNumbersLimitPerContainer": "Varenummergrense per beholder",
-    "BloodSplatLifespanDays": "Blood Splat Lifespan Days",
+    "BloodSplatLifespanDays": "Levetid for blodsprut i dager",
     "AllowNonAsciiUsername": "Tillat Non Ascii-brukernavn",
     "RemovePlayerCorpsesOnCorpseRemoval": "Fjern spillerlik ved fjerning av lik",
     "TrashDeleteAll": "Papirkurv Slett alle",
     "PVPMeleeWhileHitReaction": "PVP nærkamp mens treffreaksjon",
     "MouseOverToSeeDisplayName": "Hold musen over for å se visningsnavn",
     "HidePlayersBehindYou": "Skjul spillere bak deg",
-    "PVPMeleeDamageModifier": "PVP Melee Damage Modifier",
+    "PVPMeleeDamageModifier": "PVP nærkampsskademodifikator",
     "PVPFirearmDamageModifier": "PVP-skytevåpenskademodifikator",
     "CarEngineAttractionModifier": "Modifikator for bilmotorattraksjon",
     "PlayerBumpPlayer": "Spiller Bump Player",
@@ -116,34 +116,34 @@
     "GoodWordListFile": "God ordlistefil",
     "BadWordPolicy": "Dårlig ordpolitikk",
     "BadWordReplacement": "Dårlig orderstatning",
-    "AntiCheatSafety": "Anti Cheat Safety",
+    "AntiCheatSafety": "Anti-cheat sikkerhet",
     "AntiCheatMovement": "Anti-juksebevegelse",
-    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatHit": "Anti-cheat treff",
     "AntiCheatPacket": "Anti-jukse-pakke",
     "AntiCheatPermission": "Anti-juksetillatelse",
-    "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
-    "AntiCheatSafeHouse": "Anti Cheat Safe House",
+    "AntiCheatXP": "Anti-cheat XP",
+    "AntiCheatFire": "Anti-cheat brann",
+    "AntiCheatSafeHouse": "Anti-cheat trygt hus",
     "AntiCheatRecipe": "Anti-jukseoppskrift",
     "AntiCheatPlayer": "Anti-juksespiller",
-    "AntiCheatChecksum": "Anti Cheat Checksum",
+    "AntiCheatChecksum": "Anti-cheat kontrollsum",
     "AntiCheatItem": "Anti-jukseelement",
     "AntiCheatServerCustomization": "Anti Cheat Server-tilpasning",
     "MultiplayerStatisticsPeriod": "Flerspillerstatistikkperiode",
     "DisableScoreboard": "Deaktiver resultattavle",
     "HideAdminsInPlayerList": "Skjul administratorer i spillerlisten",
     "Seed": "Frø",
-    "ChatMessageCharacterLimit": "Chat Message Character Limit",
+    "ChatMessageCharacterLimit": "Tegngrense for chatmelding",
     "ChatMessageSlowModeTime": "Chat Melding Sakte modus Tid",
     "comments": {
       "PVP": [
         "Spillere kan skade og drepe andre spillere"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP er logget på admin chat"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP er logget til fil"
       ],
       "PauseEmpty": [
         "Spilltiden stopper når det ikke er noen spillere online"
@@ -281,10 +281,10 @@
         "Tid i sekunder før krigen starter."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Krigsvarighet i sekunder."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse treffpoenggrense."
       ],
       "ServerPlayerID": [
         "ServerPlayerID bestemmer om et tegn er fra en annen server, eller enkeltspiller. Denne verdien kan endres ved myke tilbakestillinger. Hvis dette nummeret stemmer med klienten, må klienten opprette et nytt tegn. Dette brukes sammen med ResetID. Det anbefales på det sterkeste at du sikkerhetskopierer disse IDene et sted"
@@ -326,7 +326,7 @@
         "Spillere blir slitne og trenger å sove. (Ignorert hvis SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Aktivering av denne innstillingen kan føre til visuell desynkronisering av spillerposisjoner."
       ],
       "WorkshopItems": [
         "Liste Workshop Mod ID-er for serveren som skal lastes ned. Hver ID  må være adskilt med semikolon. Eksempel: WorkshopItems=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=Skjult 2=Venner 3=Alle"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Deaktiverer sleping av kjøretøy"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Deaktiverer tilhengersleping"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Deaktiverer tauing av brent kjøretøy"
       ],
       "BadWordListFile": [
         "Sti til filen med listen over ord som skal forbys. "
@@ -464,37 +464,37 @@
         "Symbolet eller teksten som skal erstatte det dårlige ordet"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Deaktiverer sikkerhetssystemets anti-juksebeskyttelse."
       ],
       "AntiCheatMovement": [
         "Deaktiverer anti-juks-beskyttelse for bevegelse."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Deaktiverer beskyttelse mot juks mot karaktertreff."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Deaktiverer anti-juksebeskyttelse for pakkesjekker."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Deaktiverer spillertillatelser anti-juksebeskyttelse."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Deaktiverer beskyttelse mot juks for spiller XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Deaktiverer beskyttelse mot juks mot brannsjekker."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Deaktiverer safehouse anti-juksebeskyttelse."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Deaktiverer oppskriftssjekk-beskyttelse mot juks."
       ],
       "AntiCheatPlayer": [
         "Deaktiverer anti-juks-beskyttelse for spillere."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Deaktiverer kontrollsum anti-juksebeskyttelse."
       ],
       "AntiCheatItem": [
         "Deaktiverer beskyttelse mot juks for elementsjekker."
@@ -506,7 +506,7 @@
         "Stiller inn oppdateringsperioden for flere spillere i sekunder. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Deaktiverer resultattavlen."
       ],
       "HideAdminsInPlayerList": [
         "Skjuler administratorer i spillerlisten."

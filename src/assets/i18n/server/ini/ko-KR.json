@@ -140,10 +140,10 @@
         "적용 시 플레이어는 다른 플레이어를 살상할 수 있게 됩니다."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP가 관리자 채팅에 기록됩니다"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP가 파일에 기록됩니다."
       ],
       "PauseEmpty": [
         "적용 시 플레이어가 호스트 서버에 없을 때, 게임 세계의 시간이 정지됩니다."
@@ -278,10 +278,10 @@
         "전쟁이 시작되기까지의 시간(초)입니다."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "전쟁 기간(초)입니다."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse 히트 포인트 제한."
       ],
       "ServerPlayerID": [
         "클라이언트는 싱글플레이어 또는 다른 서버에서 플레이어 파일을 사용할 수 없습니다."
@@ -323,7 +323,7 @@
         "적용 시 플레이어는 피곤하고 잠을 자는 것이 필요하게 됩니다.'Sleep Allowed'가 유효하게 되어있는 경우에는 이 기능은 무효가 됩니다."
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: 이 설정을 활성화하면 플레이어 위치가 시각적으로 비동기화될 수 있습니다."
       ],
       "WorkshopItems": [
         "다운로드할 서버의 Workshop Mod 아이디를 표시합니다. 세미콜론으로 구분합니다.예 : WorkshopItems"
@@ -439,13 +439,13 @@
         "1=모두 숨겨짐 2=같은 편만 3=모두 보임"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "차량 견인을 비활성화합니다."
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "트레일러 견인을 비활성화합니다."
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "불에 탄 차량 견인을 비활성화합니다."
       ],
       "BadWordListFile": [
         "금지할 단어 목록이 포함된 파일의 경로입니다. "
@@ -460,37 +460,37 @@
         "나쁜 단어를 대체할 기호나 텍스트 조각"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "안전 시스템 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatMovement": [
         "이동 반치트 보호를 비활성화합니다."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "캐릭터 히트 방지 치트 보호를 비활성화합니다."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "패킷 검사 안티 치트 보호를 비활성화합니다."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "플레이어 권한 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "플레이어 XP 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "화재 확인 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "은신처 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "레시피 확인 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatPlayer": [
         "플레이어 반치트 보호를 비활성화합니다."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "체크섬 치트 방지 보호를 비활성화합니다."
       ],
       "AntiCheatItem": [
         "아이템 확인 치트 방지 보호를 비활성화합니다."
@@ -502,7 +502,7 @@
         "멀티플레이어 업데이트 기간을 초 단위로 설정합니다. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "점수판을 비활성화합니다."
       ],
       "HideAdminsInPlayerList": [
         "플레이어 목록에서 관리자를 숨깁니다."

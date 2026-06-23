@@ -280,7 +280,7 @@
     "Distribution": [
       "Cum sunt distribuiți zombii pe hartă. ",
       "1 = Concentrați pe Așezările Urbane",
-      "2 = Uniform"
+      "2 = Uniformă"
     ],
     "ZombieVoronoiNoise": [
       "Controlează dacă se aplică o anumită randomizare distribuției zombi."
@@ -293,7 +293,7 @@
       "4 = Nici unul"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie a permis să migreze în celulele goale."
     ],
     "DayLength": [
       "Implicit = 2 Ore",
@@ -334,7 +334,7 @@
       "5 = Mai",
       "6 = Iunie",
       "7 = Iulie",
-      "8 = August",
+      "8 = august",
       "9 = Septembrie",
       "10 = Octombrie",
       "11 = Noiembrie",
@@ -358,27 +358,27 @@
     "DayNightCycle": [
       "Indiferent dacă ora din zi se schimbă în mod natural, fie că este întotdeauna zi/noapte. ",
       "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Zi nesfârșită",
+      "3 = Noapte fără sfârșit"
     ],
     "ClimateCycle": [
       "Indiferent dacă vremea se schimbă sau rămâne într-o singură stare. ",
       "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Fără vreme",
+      "3 = Ploaie fără sfârșit",
+      "4 = Furtună nesfârșită",
+      "5 = Zăpadă nesfârșită",
+      "6 = Viscol fără sfârșit"
     ],
     "FogCycle": [
       "Indiferent dacă ceața apare în mod natural, nu apare niciodată sau este întotdeauna prezentă. ",
       "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Fără ceață",
+      "3 = Ceață fără sfârșit"
     ],
     "WaterShut": [
       "Cât timp după data de începere implicită (9 iulie 1993) corpurile sanitare (de ex. chiuvete) încetează să mai fie surse infinite de apă. ",
-      "1 = Instant",
+      "1 = Instantaneu",
       "2 = 0-30 Zile",
       "3 = 0-2 Luni",
       "4 = 0-6 Luni",
@@ -386,11 +386,11 @@
       "6 = 0-5 Ani",
       "7 = 2-6 Luni",
       "8 = 6-12 Luni",
-      "9 = Disabled"
+      "9 = Dezactivat"
     ],
     "ElecShut": [
       "Cât timp după data implicită de începere (9 iulie 1993) se oprește definitiv electricitatea din lume. ",
-      "1 = Instant",
+      "1 = Instantaneu",
       "2 = 0-30 Zile",
       "3 = 0-2 Luni",
       "4 = 0-6 Luni",
@@ -398,11 +398,11 @@
       "6 = 0-5 Ani",
       "7 = 2-6 Luni",
       "8 = 6-12 Luni",
-      "9 = Disabled"
+      "9 = Dezactivat"
     ],
     "AlarmDecay": [
       "Cât timp pot dura bateriile de alarmă după oprirea alimentării. ",
-      "1 = Instant",
+      "1 = Instantaneu",
       "2 = 0-30 Zile",
       "3 = 0-2 Luni",
       "4 = 0-6 Luni",
@@ -559,11 +559,11 @@
     ],
     "NatureAbundance": [
       "Afectează dificultatea pescuitului/adunatului din tufișuri. Implicit = Normal",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Foarte sărac",
+      "2 = Sărac",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Abundent",
+      "5 = Foarte Abundent"
     ],
     "Alarm": [
       "Cât de probabil este jucătorul să activeze o alarmă de casă atunci când intră într-o casă nouă. ",
@@ -604,7 +604,7 @@
       "3 = Normal",
       "4 = Mulți",
       "5 = Foarte Mulți",
-      "6 = No decay"
+      "6 = Fără degradare"
     ],
     "SeenHoursPreventLootRespawn": [
       "Când este mai mare de 0, prada nu va reapare în zonele care au fost vizitate în acest număr de ore în joc. "
@@ -653,11 +653,11 @@
     ],
     "PlantAbundance": [
       "Influențează câte de multe roade poate avea o plantă. Implicit = Normal",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Foarte sărac",
+      "2 = Sărac",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Abundent",
+      "5 = Foarte Abundent"
     ],
     "EndRegen": [
       "Recuperarea după oboseala după efectuarea acțiunilor. ",
@@ -696,8 +696,8 @@
       "3 = Extrem de Rar",
       "4 = Rar",
       "5 = Normal",
-      "6 = Common",
-      "7 = Abundant"
+      "6 = comun",
+      "7 = Abundent"
     ],
     "AnnotatedMapChance": [
       "Impactul asupra frecvenței cu care o hartă jefuită va avea adnotări marcate pe ea de un supraviețuitor decedat. ",
@@ -729,9 +729,9 @@
     "NightLength": [
       "Timpul de la amurg până în zori. ",
       "1 = Întotdeauna noaptea",
-      "2 = Long",
+      "2 = Lung",
       "3 = Normal",
-      "4 = Short",
+      "4 = Scurt",
       "5 = Întotdeauna Ziua"
     ],
     "BoneFracture": [
@@ -767,7 +767,7 @@
     ],
     "ClothingDegradation": [
       "Cât de repede se degradează hainele, devin murdare și însângerate. ",
-      "1 = Disabled",
+      "1 = Dezactivat",
       "2 = Lent",
       "3 = Normal",
       "4 = Rapid"
@@ -947,7 +947,7 @@
     "RearVulnerability": [
       "Șansa de a fi mușcat atunci când un zombi te atacă de la spate. Implicit = Mulți",
       "1 = Puțini",
-      "2 = Medium",
+      "2 = Mediu",
       "3 = Mulți"
     ],
     "SirenEffectsZombies": [
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Viteza cu care statisticile animalelor (foame, sete etc.) se reduc. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "Viteza cu care statisticile animalelor (foame, sete etc.) se reduc în meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "Cât timp vor rămâne animalele însărcinate înainte de a naște. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "Viteza cu care animalele îmbătrânesc. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "Implicit = Rapid",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "Implicit = Rapid",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "Cu cât timp înainte ca puii de animale să iasă din ouă. ",
-      "1 = Ultra Fast",
+      "1 = Ultra rapid",
       "2 = Foarte Rapid",
       "3 = Rapid",
       "4 = Normal",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Dacă o bucată de conținut media nu a fost văzută sau citită complet, această setare determină dacă este afișată complet, afișată ca „???” sau ascuns complet. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Complet dezvăluit",
+      "2 = Afișat ca ???",
+      "3 = Complet ascuns"
     ],
     "SeeNotLearntRecipe": [
       "Dacă este adevărat, vei putea vedea orice rețetă care se poate face cu o stație, chiar dacă nu le-ai învățat încă."
@@ -1078,12 +1078,12 @@
       "Dacă în alimente se poate adăuga otravă. ",
       "1 = Adevărat",
       "2 = Fals",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Numai intoxicația cu înălbitor este dezactivată"
     ],
     "MaggotSpawn": [
       "Dacă/când virmele pot apărea în cadavre. ",
       "1 = În și în jurul corpului",
-      "2 = In Bodies Only",
+      "2 = Numai în corpuri",
       "3 = Niciodată"
     ],
     "LightBulbLifespan": [
@@ -1091,11 +1091,11 @@
     ],
     "FishAbundance": [
       "Abundența peștilor în râuri și lacuri. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Foarte sărac",
+      "2 = Sărac",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Abundent",
+      "5 = Foarte Abundent"
     ],
     "LevelForMediaXPCutoff": [
       "Când o abilitate este la acest nivel sau mai sus, televiziunea/VHS/alte media nu va oferi XP pentru aceasta. "
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Dacă există randamente descrescătoare ale punctelor de trăsătură bonus oferite din selectarea mai multor trăsături negative. ",
       "1 = Nici unul",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 punct penalizare pentru fiecare 3 trăsături negative selectate",
+      "3 = 1 punct penalizare pentru fiecare 2 trăsături negative selectate",
       "4 = 1 punct penalizare pentru fiecare trăsătură negativă selectată după prima"
     ],
     "MinutesPerPage": [
@@ -1221,7 +1221,7 @@
     ],
     "Speed": [
       "Cât de repede se mișcă zombii. ",
-      "1 = Sprinters",
+      "1 = Sprinteri",
       "2 = Fast Shamblers",
       "3 = Shamblers",
       "4 = Aleator"
@@ -1234,21 +1234,21 @@
     ],
     "Toughness": [
       "Dificultatea de a ucide un zombi. ",
-      "1 = Tough",
+      "1 = Dur",
       "2 = Normal",
-      "3 = Fragile",
+      "3 = Fragil",
       "4 = Aleator"
     ],
     "Transmission": [
       "Cum se răspândește virusul Knox. ",
       "1 = Sânge și Salivă",
-      "2 = Saliva Only",
-      "3 = Everyone's Infected",
+      "2 = Numai saliva",
+      "3 = Toată lumea este infectată",
       "4 = Nici unul"
     ],
     "Mortality": [
       "Cât de repede își face efectul infecția. ",
-      "1 = Instant",
+      "1 = Instantaneu",
       "2 = 0-30 Secunde",
       "3 = 0-1 Minute",
       "4 = 0-12 Ore",
@@ -1258,7 +1258,7 @@
     ],
     "Reanimate": [
       "Cât de repede se ridică cadavrele infectate ca zombi. ",
-      "1 = Instant",
+      "1 = Instantaneu",
       "2 = 0-30 Secunde",
       "3 = 0-1 Minute",
       "4 = 0-12 Ore",
@@ -1274,7 +1274,7 @@
     ],
     "CrawlUnderVehicle": [
       "Cât de des se pot târî zombii sub vehiculele parcate. ",
-      "1 = Crawlers Only",
+      "1 = Numai crawlers",
       "2 = Extrem de Rar",
       "3 = Rar",
       "4 = Câteodată",
@@ -1284,26 +1284,26 @@
     ],
     "Memory": [
       "Cât timp își amintesc zombii de un jucător după ce i-au văzut sau auzit. ",
-      "1 = Long",
+      "1 = Lung",
       "2 = Normal",
-      "3 = Short",
+      "3 = Scurt",
       "4 = Nici unul",
       "5 = Aleator",
       "6 = Aleatoriu între Normal și Nici unul"
     ],
     "Sight": [
       "Raza de viziune zombie. ",
-      "1 = Eagle",
+      "1 = Vultur",
       "2 = Normal",
-      "3 = Poor",
+      "3 = Sărac",
       "4 = Aleator",
       "5 = Aleatoriu între Normal și Slab"
     ],
     "Hearing": [
       "Raza de auz zombie. ",
-      "1 = Pinpoint",
+      "1 = Punct",
       "2 = Normal",
-      "3 = Poor",
+      "3 = Sărac",
       "4 = Aleator",
       "5 = Aleatoriu între Normal și Slab"
     ],
@@ -1318,9 +1318,9 @@
     ],
     "ActiveOnly": [
       "Indiferent dacă zombii sunt mai „activi” ziua sau noaptea.  ",
-      "1 = Both",
-      "2 = Night",
-      "3 = Day"
+      "1 = Ambele",
+      "2 = Noapte",
+      "3 = Ziua"
     ],
     "TriggerHouseAlarm": [
       "Dacă zombii declanșează alarmele casei atunci când sparg ferestre sau uși."
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

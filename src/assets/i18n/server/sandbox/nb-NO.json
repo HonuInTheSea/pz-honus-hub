@@ -232,7 +232,7 @@
   "RallyGroupRadius": "Grupperadius",
   "ZombiesCountBeforeDelete": "Zombier før sletting",
   "MultiplierConfig": "Multiplikator-konfigurasjon",
-  "Global": "Global",
+  "Global": "Globalt",
   "GlobalToggle": "Global-bryter",
   "Fitness": "Kondisjon",
   "Sprinting": "Sprint",
@@ -293,7 +293,7 @@
       "4 = Ingen"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie får lov til å migrere til tomme celler."
     ],
     "DayLength": [
       "Standard = 1 time, 30 minutter",
@@ -330,14 +330,14 @@
       "1 = Januar",
       "2 = Februar",
       "3 = Mars",
-      "4 = April",
+      "4 = april",
       "5 = Mai",
       "6 = Juni",
       "7 = Juli",
-      "8 = August",
-      "9 = September",
+      "8 = august",
+      "9 = september",
       "10 = Oktober",
-      "11 = November",
+      "11 = november",
       "12 = Desember"
     ],
     "StartDay": [
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "Om tidspunktet på døgnet endres naturlig, eller det alltid er dag/natt. ",
       "1 = Normalt",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Uendelig dag",
+      "3 = Endeløs natt"
     ],
     "ClimateCycle": [
       "Om været endrer seg eller forblir i en enkelt tilstand. ",
       "1 = Normalt",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
+      "2 = Ingen vær",
+      "3 = Uendelig regn",
+      "4 = Uendelig storm",
+      "5 = Uendelig snø",
       "6 = Endless Blizzard"
     ],
     "FogCycle": [
       "Om tåke oppstår naturlig, aldri forekommer eller alltid er tilstede. ",
       "1 = Normalt",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Ingen tåke",
+      "3 = Uendelig tåke"
     ],
     "WaterShut": [
       "Hvor lenge etter standard startdato (9. juli 1993) slutter rørleggerarmaturer (f.eks. vasker) å være uendelige vannkilder. ",
@@ -554,7 +554,7 @@
       "1 = Veldig rask",
       "2 = Rask",
       "3 = Normalt",
-      "4 = Slow",
+      "4 = Sakte",
       "5 = Veldig sakte"
     ],
     "NatureAbundance": [
@@ -594,7 +594,7 @@
       "1 = Veldig rask",
       "2 = Rask",
       "3 = Normalt",
-      "4 = Slow",
+      "4 = Sakte",
       "5 = Veldig sakte"
     ],
     "FridgeFactor": [
@@ -604,7 +604,7 @@
       "3 = Normalt",
       "4 = Høyt",
       "5 = Veldig høyt",
-      "6 = No decay"
+      "6 = Ingen forfall"
     ],
     "SeenHoursPreventLootRespawn": [
       "Når > 0, vil ikke varer gjenoppstå i soner som har blitt besøkt innenfor dette antallet timer i spillet. Min: 0 Maks: 2147483647 Standard: 0"
@@ -664,7 +664,7 @@
       "1 = Veldig rask",
       "2 = Rask",
       "3 = Normalt",
-      "4 = Slow",
+      "4 = Sakte",
       "5 = Veldig sakte"
     ],
     "Helicopter": [
@@ -768,7 +768,7 @@
     "ClothingDegradation": [
       "Regulerer hvor raskt klær nedbrytes, blir skitne og blodige. Standard = Normalt",
       "1 = Deaktivert",
-      "2 = Slow",
+      "2 = Sakte",
       "3 = Normalt",
       "4 = Rask"
     ],
@@ -947,7 +947,7 @@
     "RearVulnerability": [
       "Sanse for å bli bitt når en zombie angriper bakfra. Standard = Høyt",
       "1 = Lavt",
-      "2 = Medium",
+      "2 = Middels",
       "3 = Høyt"
     ],
     "SirenEffectsZombies": [
@@ -955,56 +955,56 @@
     ],
     "AnimalStatsModifier": [
       "Hastigheten som dyrestatistikken (sult, tørst osv.) reduserer. ",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalMetaStatsModifier": [
       "Hastigheten som dyrestatistikken (sult, tørst osv.) reduserer mens den er i meta. ",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalPregnancyTime": [
       "Hvor lenge dyr skal være drektige før fødsel. ",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalAgeModifier": [
       "Hastigheten som dyrene eldes med. ",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalMilkIncModifier": [
       "Standard = Rask",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalWoolIncModifier": [
       "Standard = Rask",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalRanchChance": [
@@ -1028,11 +1028,11 @@
     ],
     "AnimalEggHatch": [
       "Hvor lenge før babydyr vil klekkes fra egg. ",
-      "1 = Ultra Fast",
+      "1 = Ultra Rask",
       "2 = Veldig rask",
       "3 = Rask",
       "4 = Normalt",
-      "5 = Slow",
+      "5 = Sakte",
       "6 = Veldig sakte"
     ],
     "AnimalSoundAttractZombies": [
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Hvis et mediestykke ikke har blitt fullstendig sett eller lest, bestemmer denne innstillingen om det skal vises i sin helhet, vises som \"???\", eller skjules helt. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Fullt avslørt",
+      "2 = Vist som ???",
+      "3 = Helt skjult"
     ],
     "SeeNotLearntRecipe": [
       "Hvis det er sant, vil du kunne se alle oppskrifter som kan gjøres med en stasjon, selv om du ikke har lært dem ennå."
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Hvis det er avtagende avkastning på bonusegenskapspoeng gitt fra å velge flere negative egenskaper. ",
       "1 = Ingen",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 poengstraff for hver 3 valgte negative egenskaper",
+      "3 = 1 poengstraff for hver 2 valgte negative egenskaper",
       "4 = 1 poengstraff for hver negativ egenskap valgt etter den første"
     ],
     "MinutesPerPage": [
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

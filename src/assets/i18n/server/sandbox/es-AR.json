@@ -232,7 +232,7 @@
   "RallyGroupRadius": "Radio del grupo",
   "ZombiesCountBeforeDelete": "Zombis antes de eliminar",
   "MultiplierConfig": "Configuración de multiplicadores",
-  "Global": "Global",
+  "Global": "Mundial",
   "GlobalToggle": "Alternar global",
   "Fitness": "Aptitud física",
   "Sprinting": "Correr",
@@ -273,7 +273,7 @@
       "1 = Zombicidio",
       "2 = Muy alto",
       "3 = Alto",
-      "4 = Normal",
+      "4 = normales",
       "5 = Bajo",
       "6 = Nada"
     ],
@@ -288,12 +288,12 @@
     "ZombieRespawn": [
       "Una zona no debe ser visitada el tiempo seleccionado con el fin de reaparecer zombis. Predeterminado = Normal",
       "1 = Alto",
-      "2 = Normal",
+      "2 = normales",
       "3 = Bajo",
       "4 = Nada"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "A Zombie se le permitió migrar a celdas vacías."
     ],
     "DayLength": [
       "Predeterminado = 2 horas",
@@ -357,24 +357,24 @@
     ],
     "DayNightCycle": [
       "Si la hora del día cambia naturalmente o si siempre es de día/noche. ",
-      "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "1 = normal",
+      "2 = Día sin fin",
+      "3 = Noche sin fin"
     ],
     "ClimateCycle": [
       "Si el clima cambia o permanece en un solo estado. ",
-      "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "1 = normal",
+      "2 = Sin clima",
+      "3 = Lluvia sin fin",
+      "4 = Tormenta sin fin",
+      "5 = Nieve sin fin",
+      "6 = Ventisca sin fin"
     ],
     "FogCycle": [
       "Si la niebla ocurre naturalmente, nunca ocurre o siempre está presente. ",
-      "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "1 = normal",
+      "2 = Sin niebla",
+      "3 = Niebla sin fin"
     ],
     "WaterShut": [
       "¿Cuánto tiempo después de la fecha de inicio predeterminada (9 de julio de 1993) los accesorios de plomería (por ejemplo, lavabos) dejan de ser fuentes infinitas de agua? ",
@@ -512,7 +512,7 @@
       "La temperatura global. ",
       "1 = Mucho fr�o",
       "2 = Fr�o",
-      "3 = Normal",
+      "3 = normales",
       "4 = Calor",
       "5 = Mucho calor"
     ],
@@ -520,7 +520,7 @@
       "Con qué frecuencia llueve. ",
       "1 = Muy seco",
       "2 = Seco",
-      "3 = Normal",
+      "3 = normales",
       "4 = Lluvioso",
       "5 = Muy lluvioso"
     ],
@@ -553,7 +553,7 @@
       "C�mo de r�pido el hambre, sed y cansancio de tu personaje desciende. Predeterminado = Normal",
       "1 = Muy r�pido",
       "2 = R�pido",
-      "3 = Normal",
+      "3 = normales",
       "4 = Lento",
       "5 = Muy lento"
     ],
@@ -561,7 +561,7 @@
       "Afecta a la dificultad de pescar/rebuscar. Predeterminado = Normal",
       "1 = Muy pobre",
       "2 = Pobre",
-      "3 = Normal",
+      "3 = normales",
       "4 = Abundante",
       "5 = Muy abundante"
     ],
@@ -593,7 +593,7 @@
       "Ajusta c�mo de r�pido se pudre la comida dentro o fuera de la heladera. Predeterminado = Normal",
       "1 = Muy r�pido",
       "2 = R�pido",
-      "3 = Normal",
+      "3 = normales",
       "4 = Lento",
       "5 = Muy lento"
     ],
@@ -601,10 +601,10 @@
       "Ajusta que tan efectiva es la heladera. Predeterminado = Normal",
       "1 = Muy baja",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto",
-      "6 = No decay"
+      "6 = Sin deterioro"
     ],
     "SeenHoursPreventLootRespawn": [
       "Cuando > 0, el botín no volverá a reaparecer en las zonas que han sido visitadas dentro de este número de horas. "
@@ -647,7 +647,7 @@
       "Influye en la cantidad de agua que consume una planta por d�a y su capacidad para no enfermar. Predeterminado = Normal",
       "1 = Muy alto",
       "2 = Alto",
-      "3 = Normal",
+      "3 = normales",
       "4 = Bajo",
       "5 = Muy baja"
     ],
@@ -655,7 +655,7 @@
       "Influye en cuantos vegetales o frutas dar� una planta. Predeterminado = Normal",
       "1 = Muy pobre",
       "2 = Pobre",
-      "3 = Normal",
+      "3 = normales",
       "4 = Abundante",
       "5 = Muy abundante"
     ],
@@ -663,7 +663,7 @@
       "Recuperación del cansancio después de realizar acciones. ",
       "1 = Muy r�pido",
       "2 = R�pido",
-      "3 = Normal",
+      "3 = normales",
       "4 = Lento",
       "5 = Muy lento"
     ],
@@ -695,8 +695,8 @@
       "2 = Raro",
       "3 = Muy raro",
       "4 = Raro",
-      "5 = Normal",
-      "6 = Common",
+      "5 = normales",
+      "6 = Común",
       "7 = Abundante"
     ],
     "AnnotatedMapChance": [
@@ -715,7 +715,7 @@
       "Otorga puntos de vida adicionales a las construcciones construidas por jugadores para que sean más resistentes al daño de los zombis. ",
       "1 = Muy baja",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto"
     ],
@@ -723,14 +723,14 @@
       "El nivel de iluminación ambiental durante la noche. ",
       "1 = Noche cerrada",
       "2 = Oscuro",
-      "3 = Normal",
+      "3 = normales",
       "4 = Claro"
     ],
     "NightLength": [
       "El tiempo desde el anochecer hasta el amanecer. ",
       "1 = Siempre de noche",
       "2 = Larga",
-      "3 = Normal",
+      "3 = normales",
       "4 = Corta",
       "5 = Siempre Día"
     ],
@@ -740,7 +740,7 @@
     "InjurySeverity": [
       "Aumenta o disminuye el impacto de las lesiones en tu cuerpo, as� como el tiempo de curaci�n. Predeterminado = Normal",
       "1 = Bajo",
-      "2 = Normal",
+      "2 = normales",
       "3 = Alto"
     ],
     "HoursForCorpseRemoval": [
@@ -750,7 +750,7 @@
       "Ajusta el impacto que tendr� en la salud y las emociones del personaje los cad�veres en descomposici�n cercanos a �l. Predeterminado = Normal",
       "1 = Nada",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Zombicidio"
     ],
@@ -761,7 +761,7 @@
       "Cuánta sangre se rocía sobre pisos y paredes debido a las lesiones. ",
       "1 = Nada",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Sangriento"
     ],
@@ -769,7 +769,7 @@
       "Ajusta la velocidad con la que la ropa se desgasta, se ensucia o se llena de sangre. (Se puede deshabilitar.) Predeterminado = Normal",
       "1 = Deshabilitado",
       "2 = Lento",
-      "3 = Normal",
+      "3 = normales",
       "4 = R�pido"
     ],
     "FireSpread": [
@@ -783,14 +783,14 @@
     ],
     "MaxFogIntensity": [
       "Maximum intensity of fog. Predeterminado = Normal",
-      "1 = Normal",
+      "1 = normal",
       "2 = Moderada",
       "3 = Bajo",
       "4 = Nada"
     ],
     "MaxRainFxIntensity": [
       "Maximum intensity of rain. Predeterminado = Normal",
-      "1 = Normal",
+      "1 = normal",
       "2 = Moderada",
       "3 = Bajo"
     ],
@@ -844,7 +844,7 @@
       "1 = Nada",
       "2 = Muy baja",
       "3 = Bajo",
-      "4 = Normal",
+      "4 = normales",
       "5 = Alto"
     ],
     "ZombieAttractionMultiplier": [
@@ -857,7 +857,7 @@
       "Determina qu� tan llenos estar�n los tanques de nafta en los veh�culos encontrados. Predeterminado = Bajo",
       "1 = Muy baja",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto",
       "6 = Lleno"
@@ -890,7 +890,7 @@
       "Determina la condici�n en la que aparecer� los veh�culos. Predeterminado = Bajo",
       "1 = Muy baja",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto"
     ],
@@ -898,7 +898,7 @@
       "Determina la cantidad de da�os causados a los veh�culos en caso de un choque. Predeterminado = Normal",
       "1 = Muy baja",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto"
     ],
@@ -906,7 +906,7 @@
       "Da�os sufridos por el jugador en caso de ser atropellado. Predeterminado = Nada",
       "1 = Nada",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto",
       "5 = Muy alto"
     ],
@@ -931,14 +931,14 @@
     "ChanceHasGas": [
       "Determina la probabilidad de encontrar veh�culos con nafta. Predeterminado = Bajo",
       "1 = Bajo",
-      "2 = Normal",
+      "2 = normales",
       "3 = Alto"
     ],
     "RecentlySurvivorVehicles": [
       "Si un jugador puede descubrir un automóvil que ha sido cuidado después de que se produjo la infección de Knox. ",
       "1 = Nada",
       "2 = Bajo",
-      "3 = Normal",
+      "3 = normales",
       "4 = Alto"
     ],
     "MultiHitZombies": [
@@ -955,55 +955,55 @@
     ],
     "AnimalStatsModifier": [
       "Velocidad a la que se reducen las estadísticas de los animales (hambre, sed, etc.). ",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
     "AnimalMetaStatsModifier": [
       "Velocidad a la que las estadísticas de los animales (hambre, sed, etc.) se reducen en el meta. ",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
     "AnimalPregnancyTime": [
       "Cuánto tiempo estarán preñados los animales antes de dar a luz. ",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
     "AnimalAgeModifier": [
       "Velocidad a la que envejecen los animales. ",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
     "AnimalMilkIncModifier": [
       "Predeterminado = R�pido",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
     "AnimalWoolIncModifier": [
       "Predeterminado = R�pido",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
@@ -1028,10 +1028,10 @@
     ],
     "AnimalEggHatch": [
       "¿Cuánto tiempo pasará antes de que los animales bebés nazcan de los huevos? ",
-      "1 = Ultra Fast",
+      "1 = ultrarrápido",
       "2 = Muy r�pido",
       "3 = R�pido",
-      "4 = Normal",
+      "4 = normales",
       "5 = Lento",
       "6 = Muy lento"
     ],
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Si un elemento multimedia no se ha visto o leído por completo, esta configuración determina si se muestra por completo, se muestra como \"???\" o se oculta por completo. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Totalmente revelado",
+      "2 = Se muestra como ???",
+      "3 = Completamente oculto"
     ],
     "SeeNotLearntRecipe": [
       "Si es así, podrás ver las recetas que se pueden hacer con una estación, incluso si aún no las has aprendido."
@@ -1078,12 +1078,12 @@
       "Si se puede agregar veneno a los alimentos. ",
       "1 = Verdadero",
       "2 = Falso",
-      "3 = Only bleach poisoning is disabled"
+      "3 = Sólo se desactiva el envenenamiento por lejía."
     ],
     "MaggotSpawn": [
       "Si/cuándo los gusanos pueden aparecer en los cadáveres. ",
       "1 = Dentro y alrededor de los cuerpos",
-      "2 = In Bodies Only",
+      "2 = Sólo en cuerpos",
       "3 = Nunca"
     ],
     "LightBulbLifespan": [
@@ -1093,7 +1093,7 @@
       "La abundancia de peces en ríos y lagos. ",
       "1 = Muy pobre",
       "2 = Pobre",
-      "3 = Normal",
+      "3 = normales",
       "4 = Abundante",
       "5 = Muy abundante"
     ],
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "Si hay rendimientos decrecientes en los puntos de bonificación de rasgos obtenidos al seleccionar múltiples rasgos negativos. ",
       "1 = Nada",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 1 punto de penalización por cada 3 rasgos negativos seleccionados",
+      "3 = 1 punto de penalización por cada 2 rasgos negativos seleccionados",
       "4 = 1 punto de penalización por cada rasgo negativo seleccionado después del primero."
     ],
     "MinutesPerPage": [
@@ -1235,7 +1235,7 @@
     "Toughness": [
       "La dificultad de matar a un zombie. ",
       "1 = Duros",
-      "2 = Normal",
+      "2 = normales",
       "3 = Fr�giles",
       "4 = Aleatorio"
     ],
@@ -1285,7 +1285,7 @@
     "Memory": [
       "Cuánto tiempo recuerdan los zombis a un jugador después de verlo u oírlo. ",
       "1 = Larga",
-      "2 = Normal",
+      "2 = normales",
       "3 = Corta",
       "4 = Nada",
       "5 = Aleatorio",
@@ -1294,7 +1294,7 @@
     "Sight": [
       "Radio de visión zombie. ",
       "1 = Vista de �guila",
-      "2 = Normal",
+      "2 = normales",
       "3 = Pobre",
       "4 = Aleatorio",
       "5 = Aleatorio entre Normal y Pobre"
@@ -1302,7 +1302,7 @@
     "Hearing": [
       "Radio de audición zombie. ",
       "1 = Muy bueno",
-      "2 = Normal",
+      "2 = normales",
       "3 = Pobre",
       "4 = Aleatorio",
       "5 = Aleatorio entre Normal y Pobre"
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

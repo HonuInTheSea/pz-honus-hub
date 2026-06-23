@@ -232,7 +232,7 @@
   "RallyGroupRadius": "Grupperadius",
   "ZombiesCountBeforeDelete": "Zombier før sletning",
   "MultiplierConfig": "Multiplikatorkonfiguration",
-  "Global": "Global",
+  "Global": "Globalt",
   "GlobalToggle": "Global til/fra",
   "Fitness": "Kondition",
   "Sprinting": "Sprint",
@@ -270,16 +270,16 @@
   "comments": {
     "Zombies": [
       "Ændring af dette sætter også \"befolkningsmultiplikatoren\" i avancerede zombieindstillinger. ",
-      "1 = Insane",
-      "2 = Very High",
-      "3 = High",
+      "1 = sindssyg",
+      "2 = Meget høj",
+      "3 = Høj",
       "4 = Normal",
-      "5 = Low",
-      "6 = None"
+      "5 = Lav",
+      "6 = Ingen"
     ],
     "Distribution": [
       "Hvordan zombier er fordelt over hele kortet. ",
-      "1 = Urban Focused",
+      "1 = Byfokuseret",
       "2 = Uniform"
     ],
     "ZombieVoronoiNoise": [
@@ -287,19 +287,19 @@
     ],
     "ZombieRespawn": [
       "Hvor ofte tilføjes nye zombier til verden. ",
-      "1 = High",
+      "1 = Høj",
       "2 = Normal",
-      "3 = Low",
-      "4 = None"
+      "3 = Lav",
+      "4 = Ingen"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "Zombie får lov til at migrere til tomme celler."
     ],
     "DayLength": [
       "Standard = 1 time, 30 minutter",
       "1 = 15 minutter",
       "2 = 30 minutter",
-      "3 = 1 Hour",
+      "3 = 1 time",
       "4 = 1 time, 30 minutter",
       "5 = 2 timer",
       "6 = 3 timer",
@@ -327,87 +327,87 @@
     ],
     "StartMonth": [
       "Måned, hvor spillet starter. ",
-      "1 = January",
-      "2 = February",
-      "3 = March",
-      "4 = April",
-      "5 = May",
-      "6 = June",
-      "7 = July",
-      "8 = August",
-      "9 = September",
-      "10 = October",
-      "11 = November",
-      "12 = December"
+      "1 = januar",
+      "2 = februar",
+      "3 = marts",
+      "4 = april",
+      "5 = maj",
+      "6 = juni",
+      "7 = juli",
+      "8 = august",
+      "9 = september",
+      "10 = oktober",
+      "11 = november",
+      "12 = december"
     ],
     "StartDay": [
       "Dag i måneden, hvor spillene starter."
     ],
     "StartTime": [
       "Time på dagen, hvor spillet starter. ",
-      "1 = 7 AM",
-      "2 = 9 AM",
-      "3 = 12 PM",
-      "4 = 2 PM",
-      "5 = 5 PM",
-      "6 = 9 PM",
-      "7 = 12 AM",
-      "8 = 2 AM",
-      "9 = 5 AM"
+      "1 = 7 om morgenen",
+      "2 = 9 om morgenen",
+      "3 = 12.00",
+      "4 = 14.00",
+      "5 = 17.00",
+      "6 = 21.00",
+      "7 = 12 om morgenen",
+      "8 = 02:00",
+      "9 = 5 om morgenen"
     ],
     "DayNightCycle": [
       "Om tidspunktet på dagen ændrer sig naturligt, eller det altid er dag/nat. ",
       "1 = Normal",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = Uendelig dag",
+      "3 = Endeløs nat"
     ],
     "ClimateCycle": [
       "Om vejret ændrer sig eller forbliver i en enkelt tilstand. ",
       "1 = Normal",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = Intet vejr",
+      "3 = Uendelig regn",
+      "4 = Uendelig Storm",
+      "5 = Uendelig sne",
+      "6 = Endeløs snestorm"
     ],
     "FogCycle": [
       "Om tåge opstår naturligt, aldrig forekommer eller altid er til stede. ",
       "1 = Normal",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = Ingen tåge",
+      "3 = Uendelig tåge"
     ],
     "WaterShut": [
       "Hvor længe efter standardstartdatoen (9. juli 1993), holder VVS-armaturer (f.eks. dræn) op med at være uendelige kilder til vand. ",
-      "1 = Instant",
+      "1 = Øjeblikkelig",
       "2 = 0-30 dage",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years",
-      "7 = 2-6 Months",
-      "8 = 6-12 Months",
-      "9 = Disabled"
+      "3 = 0-2 måneder",
+      "4 = 0-6 måneder",
+      "5 = 0-1 år",
+      "6 = 0-5 år",
+      "7 = 2-6 måneder",
+      "8 = 6-12 måneder",
+      "9 = Deaktiveret"
     ],
     "ElecShut": [
       "Hvor længe efter standardstartdatoen (9. juli 1993), at verdens elektricitet slukker for altid. ",
-      "1 = Instant",
+      "1 = Øjeblikkelig",
       "2 = 0-30 dage",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years",
-      "7 = 2-6 Months",
-      "8 = 6-12 Months",
-      "9 = Disabled"
+      "3 = 0-2 måneder",
+      "4 = 0-6 måneder",
+      "5 = 0-1 år",
+      "6 = 0-5 år",
+      "7 = 2-6 måneder",
+      "8 = 6-12 måneder",
+      "9 = Deaktiveret"
     ],
     "AlarmDecay": [
       "Hvor længe kan alarmbatterier holde, efter at strømmen er slukket. ",
-      "1 = Instant",
+      "1 = Øjeblikkelig",
       "2 = 0-30 dage",
-      "3 = 0-2 Months",
-      "4 = 0-6 Months",
-      "5 = 0-1 Year",
-      "6 = 0-5 Years"
+      "3 = 0-2 måneder",
+      "4 = 0-6 måneder",
+      "5 = 0-1 år",
+      "6 = 0-5 år"
     ],
     "WaterShutModifier": [
       "Hvor længe efter standardstartdatoen (9. juli 1993), holder VVS-armaturer (f.eks. dræn) op med at være uendelige kilder til vand. "
@@ -510,19 +510,19 @@
     ],
     "Temperature": [
       "Den globale temperatur. ",
-      "1 = Very Cold",
-      "2 = Cold",
+      "1 = Meget koldt",
+      "2 = Koldt",
       "3 = Normal",
-      "4 = Hot",
-      "5 = Very Hot"
+      "4 = Varmt",
+      "5 = Meget varmt"
     ],
     "Rain": [
       "Hvor ofte det regner. ",
-      "1 = Very Dry",
-      "2 = Dry",
+      "1 = Meget tør",
+      "2 = Tør",
       "3 = Normal",
-      "4 = Rainy",
-      "5 = Very Rainy"
+      "4 = Regnfuldt",
+      "5 = Meget regnfuldt"
     ],
     "ErosionSpeed": [
       "Antal dage indtil erosionssystemet (som tilføjer vinstokke, langt græs, nye træer osv. til verden) vil nå 100% vækst. ",
@@ -540,48 +540,48 @@
     ],
     "CompostTime": [
       "Hvor lang tid det tager for mad at nedbryde i en komposter. ",
-      "1 = 1 Week",
-      "2 = 2 Weeks",
-      "3 = 3 Weeks",
-      "4 = 4 Weeks",
-      "5 = 6 Weeks",
-      "6 = 8 Weeks",
-      "7 = 10 Weeks",
-      "8 = 12 Weeks"
+      "1 = 1 uge",
+      "2 = 2 uger",
+      "3 = 3 uger",
+      "4 = 4 uger",
+      "5 = 6 uger",
+      "6 = 8 uger",
+      "7 = 10 uger",
+      "8 = 12 uger"
     ],
     "StatsDecrease": [
       "Hvor hurtigt vil spillerens sult, tørst og træthed falde. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Meget hurtig",
+      "2 = Hurtigt",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Langsomt",
+      "5 = Meget langsom"
     ],
     "NatureAbundance": [
       "Overfloden af ​​genstande fundet i Foraging-tilstand. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Meget dårlig",
+      "2 = Dårlig",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Rigelig",
+      "5 = Meget rigeligt"
     ],
     "Alarm": [
       "Hvor sandsynligt er det, at spilleren aktiverer en husalarm, når han bryder ind i et nyt hus. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "LockedHouses": [
       "Hvor ofte døre til boliger og bygninger vil blive låst, når de opdages. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "StarterKit": [
       "Spawn med chips, en vandflaske, en lille rygsæk, et baseballbat og en hammer."
@@ -591,20 +591,20 @@
     ],
     "FoodRotSpeed": [
       "Hvor hurtigt vil maden blive fordærvet, i eller uden for et køleskab. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Meget hurtig",
+      "2 = Hurtigt",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Langsomt",
+      "5 = Meget langsom"
     ],
     "FridgeFactor": [
       "Hvor effektivt et køleskab vil være til at holde mad frisk i længere tid. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Meget lav",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High",
-      "6 = No decay"
+      "4 = Høj",
+      "5 = Meget høj",
+      "6 = Intet henfald"
     ],
     "SeenHoursPreventLootRespawn": [
       "Når det er større end 0, vil loot ikke genopstå i zoner, der er blevet besøgt inden for dette antal timer i spillet. "
@@ -645,93 +645,93 @@
     ],
     "PlantResilience": [
       "Hvor meget vand planter vil miste om dagen, og deres evne til at undgå sygdom. ",
-      "1 = Very High",
-      "2 = High",
+      "1 = Meget høj",
+      "2 = Høj",
       "3 = Normal",
-      "4 = Low",
-      "5 = Very Low"
+      "4 = Lav",
+      "5 = Meget lav"
     ],
     "PlantAbundance": [
       "Udbyttet af planter ved høst. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Meget dårlig",
+      "2 = Dårlig",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Rigelig",
+      "5 = Meget rigeligt"
     ],
     "EndRegen": [
       "Restitution efter at være træt efter at have udført handlinger. ",
-      "1 = Very Fast",
-      "2 = Fast",
+      "1 = Meget hurtig",
+      "2 = Hurtigt",
       "3 = Normal",
-      "4 = Slow",
-      "5 = Very Slow"
+      "4 = Langsomt",
+      "5 = Meget langsom"
     ],
     "Helicopter": [
       "Hvor regelmæssigt en helikopter passerer over Event Zone. ",
       "1 = Aldrig",
-      "2 = Once",
-      "3 = Sometimes",
-      "4 = Often"
+      "2 = En gang",
+      "3 = Nogle gange",
+      "4 = Ofte"
     ],
     "MetaEvent": [
       "Hvor ofte vil zombie-tiltrækkende metagame-begivenheder som fjerne pistolskud forekomme. ",
       "1 = Aldrig",
-      "2 = Sometimes",
-      "3 = Often"
+      "2 = Nogle gange",
+      "3 = Ofte"
     ],
     "SleepingEvent": [
       "Hvor ofte opstår begivenheder under spillerens søvn, såsom mareridt. ",
       "1 = Aldrig",
-      "2 = Sometimes",
-      "3 = Often"
+      "2 = Nogle gange",
+      "3 = Ofte"
     ],
     "GeneratorFuelConsumption": [
       "Hvor meget brændstof forbruges af generatorer pr. time i spillet. "
     ],
     "GeneratorSpawning": [
       "Chancen for, at elektriske generatorer gyder på kortet. ",
-      "1 = None (not recommended)",
-      "2 = Insanely Rare",
-      "3 = Extremely Rare",
-      "4 = Rare",
+      "1 = Ingen (anbefales ikke)",
+      "2 = sindssygt sjældent",
+      "3 = Ekstremt sjælden",
+      "4 = Sjælden",
       "5 = Normal",
-      "6 = Common",
-      "7 = Abundant"
+      "6 = Fælles",
+      "7 = Rigelig"
     ],
     "AnnotatedMapChance": [
       "Hvor ofte vil et plyndret kort have noter skrevet af en afdød overlevende. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "CharacterFreePoints": [
       "Adds free points during character creation. Min: -100 Maks: 100 Standard: 0"
     ],
     "ConstructionBonusPoints": [
       "Giver spillerbyggede konstruktioner ekstra hitpoint, så de er mere modstandsdygtige over for zombieskader. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Meget lav",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Høj",
+      "5 = Meget høj"
     ],
     "NightDarkness": [
       "Niveauet af omgivende belysning om natten. ",
-      "1 = Pitch Black",
-      "2 = Dark",
+      "1 = kulsort",
+      "2 = Mørk",
       "3 = Normal",
-      "4 = Bright"
+      "4 = Lys"
     ],
     "NightLength": [
       "Tiden fra solnedgang til daggry. ",
       "1 = Altid nat",
-      "2 = Long",
+      "2 = lang",
       "3 = Normal",
-      "4 = Short",
+      "4 = Kort",
       "5 = Altid Dag"
     ],
     "BoneFracture": [
@@ -739,38 +739,38 @@
     ],
     "InjurySeverity": [
       "Den indvirkning, som skader har på din krop, og deres helbredende tid. ",
-      "1 = Low",
+      "1 = Lav",
       "2 = Normal",
-      "3 = High"
+      "3 = Høj"
     ],
     "HoursForCorpseRemoval": [
       "Hvor længe, ​​i timer, før døde zombie-kroppe forsvinder fra verden.  "
     ],
     "DecayingCorpseHealthImpact": [
       "Den indflydelse, som nærliggende forfaldne kroppe har på spillerens helbred og følelser. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Ingen",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Insane"
+      "4 = Høj",
+      "5 = sindssyg"
     ],
     "ZombieHealthImpact": [
       "Om \"levende\" zombier i nærheden har samme indflydelse på spillerens helbred og følelser."
     ],
     "BloodLevel": [
       "Hvor meget blod sprøjtes der på gulve og vægge ved skader. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Ingen",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
+      "4 = Høj",
       "5 = Ultra Gore"
     ],
     "ClothingDegradation": [
       "Hvor hurtigt tøj nedbrydes, bliver snavset og blodigt. ",
-      "1 = Disabled",
-      "2 = Slow",
+      "1 = Deaktiveret",
+      "2 = Langsomt",
       "3 = Normal",
-      "4 = Fast"
+      "4 = Hurtigt"
     ],
     "FireSpread": [
       "Hvis brande breder sig ved opstart."
@@ -784,15 +784,15 @@
     "MaxFogIntensity": [
       "Maximum intensity of fog. Standard = Normal",
       "1 = Normal",
-      "2 = Moderate",
-      "3 = Low",
-      "4 = None"
+      "2 = Moderat",
+      "3 = Lav",
+      "4 = Ingen"
     ],
     "MaxRainFxIntensity": [
       "Maximum intensity of rain. Standard = Normal",
       "1 = Normal",
-      "2 = Moderate",
-      "3 = Low"
+      "2 = Moderat",
+      "3 = Lav"
     ],
     "EnableSnowOnGround": [
       "Hvis sne vil samle sig på jorden.  "
@@ -803,31 +803,31 @@
     "SurvivorHouseChance": [
       "Chancen for at finde tilfældige bygninger på kortet (f.eks. udbrændte huse, huse, der indeholder tyvegods eller døde kroppe). ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Forsøger altid"
     ],
     "VehicleStoryChance": [
       "Chancen for, at vejhistorier (f.eks. politispærringer) gyder. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Forsøger altid"
     ],
     "ZoneStoryChance": [
       "Muligheden for, at historier, der er specifikke for kortzoner (f.eks. en campingplads i en skov), gyder. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Forsøger altid"
     ],
     "AllClothesUnlocked": [
@@ -841,11 +841,11 @@
     ],
     "CarSpawnRate": [
       "Hvor ofte kan køretøjer opdages på kortet. ",
-      "1 = None",
-      "2 = Very Low",
-      "3 = Low",
+      "1 = Ingen",
+      "2 = Meget lav",
+      "3 = Lav",
       "4 = Normal",
-      "5 = High"
+      "5 = Høj"
     ],
     "ZombieAttractionMultiplier": [
       "Generel motorlydstyrke til zombier. "
@@ -855,12 +855,12 @@
     ],
     "InitialGas": [
       "Hvor fuld vil benzintanken med opdagede køretøjer være. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Meget lav",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High",
-      "6 = Full"
+      "4 = Høj",
+      "5 = Meget høj",
+      "6 = Fuld"
     ],
     "FuelStationGasInfinite": [
       "Hvis den er aktiveret, løber benzinpumperne aldrig tør for brændstof"
@@ -877,38 +877,38 @@
     "LockedCar": [
       "Hvor sandsynligt er biler låst Standard = Sjælden",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "CarGasConsumption": [
       "Hvor gashungrende køretøjer er. "
     ],
     "CarGeneralCondition": [
       "Generel stand opdagede køretøjer vil være i. Standard = Lav",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Meget lav",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Høj",
+      "5 = Meget høj"
     ],
     "CarDamageOnImpact": [
       "Mængden af ​​skader på køretøjer, der styrtede ned. ",
-      "1 = Very Low",
-      "2 = Low",
+      "1 = Meget lav",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Høj",
+      "5 = Meget høj"
     ],
     "DamageToPlayerFromHitByACar": [
       "Skader modtaget af spilleren ved at blive styrtet ind. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Ingen",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High",
-      "5 = Very High"
+      "4 = Høj",
+      "5 = Meget høj"
     ],
     "TrafficJam": [
       "Hvis der opstår trafikpropper bestående af ødelagte biler på hovedvejene."
@@ -916,11 +916,11 @@
     "CarAlarm": [
       "Hvor ofte opdagede køretøjer har aktive alarmer. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "PlayerDamageFromCrash": [
       "Hvis spilleren kan komme til skade ved en bilulykke."
@@ -930,91 +930,91 @@
     ],
     "ChanceHasGas": [
       "Chancen for at finde et køretøj med gas i tanken. ",
-      "1 = Low",
+      "1 = Lav",
       "2 = Normal",
-      "3 = High"
+      "3 = Høj"
     ],
     "RecentlySurvivorVehicles": [
       "Om en spiller kan opdage en bil, der er blevet plejet efter Knox-infektionen ramte. ",
-      "1 = None",
-      "2 = Low",
+      "1 = Ingen",
+      "2 = Lav",
       "3 = Normal",
-      "4 = High"
+      "4 = Høj"
     ],
     "MultiHitZombies": [
       "Hvis visse nærkampsvåben vil være i stand til at slå flere zombier i ét hit."
     ],
     "RearVulnerability": [
       "Mulighed for at blive bidt, når en zombie angriber bagfra. ",
-      "1 = Low",
+      "1 = Lav",
       "2 = Medium",
-      "3 = High"
+      "3 = Høj"
     ],
     "SirenEffectsZombies": [
       "Hvis zombier vil lede mod lyden af ​​køretøjssirener."
     ],
     "AnimalStatsModifier": [
       "Den hastighed, hvormed dyrestatistikker (sult, tørst osv.) reducerer. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalMetaStatsModifier": [
       "Hastighed, hvormed dyrestatistikker (sult, tørst osv.) reduceres, mens de er i meta. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalPregnancyTime": [
       "Hvor længe vil dyr være drægtige inden fødslen. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalAgeModifier": [
       "Den hastighed, hvormed dyr ældes. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalMilkIncModifier": [
       "Standard = Fast",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalWoolIncModifier": [
       "Standard = Fast",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalRanchChance": [
       "Chancen for at finde dyr i gården. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Altid"
     ],
     "AnimalGrassRegrowTime": [
@@ -1028,12 +1028,12 @@
     ],
     "AnimalEggHatch": [
       "Hvor lang tid før babydyr klækkes fra æg. ",
-      "1 = Ultra Fast",
-      "2 = Very Fast",
-      "3 = Fast",
+      "1 = Ultrahurtig",
+      "2 = Meget hurtig",
+      "3 = Hurtigt",
       "4 = Normal",
-      "5 = Slow",
-      "6 = Very Slow"
+      "5 = Langsomt",
+      "6 = Meget langsom"
     ],
     "AnimalSoundAttractZombies": [
       "Hvis det er sandt, vil dyrekald tiltrække nærliggende zombier."
@@ -1041,20 +1041,20 @@
     "AnimalTrackChance": [
       "Muligheden for, at dyr forlader spor. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "AnimalPathChance": [
       "Chancen for at skabe en sti for dyr, der kan jages. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often"
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte"
     ],
     "MaximumRatIndex": [
       "Hyppigheden og intensiteten af ​​f.eks. "
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "Hvis et stykke medie ikke er blevet set eller læst fuldt ud, bestemmer denne indstilling, om det skal vises fuldt ud, vises som \"???\" eller skjules helt. ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = Fuldt afsløret",
+      "2 = Vist som ???",
+      "3 = Helt skjult"
     ],
     "SeeNotLearntRecipe": [
       "Hvis det er sandt, vil du kunne se alle opskrifter, der kan laves med en station, selvom du ikke har lært dem endnu."
@@ -1076,14 +1076,14 @@
     ],
     "EnablePoisoning": [
       "Hvis der kan tilsættes gift til maden. ",
-      "1 = True",
-      "2 = False",
-      "3 = Only bleach poisoning is disabled"
+      "1 = Sandt",
+      "2 = Falsk",
+      "3 = Kun blegemiddelforgiftning er deaktiveret"
     ],
     "MaggotSpawn": [
       "Hvis/når maddiker kan gyde i lig. ",
       "1 = I og omkring legemer",
-      "2 = In Bodies Only",
+      "2 = Kun i kroppe",
       "3 = Aldrig"
     ],
     "LightBulbLifespan": [
@@ -1091,11 +1091,11 @@
     ],
     "FishAbundance": [
       "Overfloden af ​​fisk i floder og søer. ",
-      "1 = Very Poor",
-      "2 = Poor",
+      "1 = Meget dårlig",
+      "2 = Dårlig",
       "3 = Normal",
-      "4 = Abundant",
-      "5 = Very Abundant"
+      "4 = Rigelig",
+      "5 = Meget rigeligt"
     ],
     "LevelForMediaXPCutoff": [
       "Når en færdighed er på dette niveau eller derover, vil tv/VHS/andre medier ikke give XP til det. "
@@ -1111,9 +1111,9 @@
     ],
     "NegativeTraitsPenalty": [
       "Hvis der er faldende afkast på bonusegenskaber, der gives ved at vælge flere negative egenskaber. ",
-      "1 = None",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "1 = Ingen",
+      "2 = 1 point straf for hver 3 valgte negative egenskaber",
+      "3 = 1 point straf for hver 2 valgte negative egenskaber",
       "4 = 1 point straf for hver negativ egenskab valgt efter den første"
     ],
     "MinutesPerPage": [
@@ -1200,11 +1200,11 @@
     "SpawnFrequency": [
       "Hvor ofte kældre gyder på tilfældige steder. ",
       "1 = Aldrig",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Altid"
     ],
     "AllowMiniMap": [
@@ -1221,10 +1221,10 @@
     ],
     "Speed": [
       "Hvor hurtigt zombier bevæger sig. ",
-      "1 = Sprinters",
-      "2 = Fast Shamblers",
-      "3 = Shamblers",
-      "4 = Random"
+      "1 = Sprintere",
+      "2 = Hurtige Shambles",
+      "3 = Shambles",
+      "4 = Tilfældig"
     ],
     "SprinterPercentage": [
       "Hvis Random Speed ​​​​er aktiveret, styrer dette, hvor stor en procentdel af zombier der er sprintere."
@@ -1234,77 +1234,77 @@
     ],
     "Toughness": [
       "Vanskeligheden ved at dræbe en zombie. ",
-      "1 = Tough",
+      "1 = hård",
       "2 = Normal",
-      "3 = Fragile",
-      "4 = Random"
+      "3 = Skrøbelig",
+      "4 = Tilfældig"
     ],
     "Transmission": [
       "Hvordan Knox Virus spredes. ",
       "1 = Blod og spyt",
-      "2 = Saliva Only",
-      "3 = Everyone's Infected",
-      "4 = None"
+      "2 = Kun spyt",
+      "3 = Alle er inficerede",
+      "4 = Ingen"
     ],
     "Mortality": [
       "Hvor hurtigt infektionen træder i kraft. ",
-      "1 = Instant",
-      "2 = 0-30 Seconds",
+      "1 = Øjeblikkelig",
+      "2 = 0-30 sekunder",
       "3 = 0-1 minutter",
       "4 = 0-12 timer",
       "5 = 2-3 dage",
-      "6 = 1-2 Weeks",
+      "6 = 1-2 uger",
       "7 = Aldrig"
     ],
     "Reanimate": [
       "Hvor hurtigt rejser inficerede lig sig som zombier. ",
-      "1 = Instant",
-      "2 = 0-30 Seconds",
+      "1 = Øjeblikkelig",
+      "2 = 0-30 sekunder",
       "3 = 0-1 minutter",
       "4 = 0-12 timer",
       "5 = 2-3 dage",
-      "6 = 1-2 Weeks"
+      "6 = 1-2 uger"
     ],
     "Cognition": [
       "Zombie intelligence. Standard = Basic Navigation",
       "1 = Naviger og brug døre",
-      "2 = Navigate",
-      "3 = Basic Navigation",
-      "4 = Random"
+      "2 = Naviger",
+      "3 = Grundlæggende navigation",
+      "4 = Tilfældig"
     ],
     "CrawlUnderVehicle": [
       "Hvor ofte kan zombier kravle under parkerede køretøjer. ",
-      "1 = Crawlers Only",
-      "2 = Extremely Rare",
-      "3 = Rare",
-      "4 = Sometimes",
-      "5 = Often",
-      "6 = Very Often",
+      "1 = Kun webcrawlere",
+      "2 = Ekstremt sjælden",
+      "3 = Sjælden",
+      "4 = Nogle gange",
+      "5 = Ofte",
+      "6 = Meget ofte",
       "7 = Altid"
     ],
     "Memory": [
       "Hvor længe zombier husker en spiller efter at have set eller hørt dem. ",
-      "1 = Long",
+      "1 = lang",
       "2 = Normal",
-      "3 = Short",
-      "4 = None",
-      "5 = Random",
+      "3 = Kort",
+      "4 = Ingen",
+      "5 = Tilfældig",
       "6 = Tilfældig mellem Normal og Ingen"
     ],
     "Sight": [
       "Zombie vision radius. ",
-      "1 = Eagle",
+      "1 = Ørn",
       "2 = Normal",
-      "3 = Poor",
-      "4 = Random",
+      "3 = Dårlig",
+      "4 = Tilfældig",
       "5 = Tilfældig mellem Normal og Dårlig"
     ],
     "Hearing": [
       "Zombie høreradius. ",
-      "1 = Pinpoint",
+      "1 = Find ud af",
       "2 = Normal",
-      "3 = Poor",
-      "4 = Random",
+      "3 = Dårlig",
+      "4 = Tilfældig",
       "5 = Tilfældig mellem Normal og Dårlig"
     ],
     "SpottedLogic": [
@@ -1318,9 +1318,9 @@
     ],
     "ActiveOnly": [
       "Om zombier er mere \"aktive\" i løbet af dagen eller natten.  ",
-      "1 = Both",
-      "2 = Night",
-      "3 = Day"
+      "1 = Begge",
+      "2 = Nat",
+      "3 = dag"
     ],
     "TriggerHouseAlarm": [
       "Hvis zombier udløser husalarmer, når de bryder gennem vinduer eller døre."
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

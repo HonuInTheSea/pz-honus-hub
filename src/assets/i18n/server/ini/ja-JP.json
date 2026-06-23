@@ -136,14 +136,14 @@
     "ChatMessageCharacterLimit": "チャットメッセージの文字数制限",
     "ChatMessageSlowModeTime": "チャットメッセージスローモード時間",
     "comments": {
-"PVP": [
+      "PVP": [
         "プレイヤーが他のプレイヤーを殺傷することができます"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP は管理者チャットに記録されます"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP はファイルに記録されます"
       ],
       "PauseEmpty": [
         "オンラインプレーヤーがいなくなると、ゲームタイムが停止します。"
@@ -281,10 +281,10 @@
         "戦争が始まるまでの秒数。"
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "戦争時間（秒単位）。"
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "セーフハウスのヒットポイント制限。"
       ],
       "ServerPlayerID": [
         "ServerPlayerIDは、キャラクターが他のサーバーのものか、シングルプレイヤーかを判断します。この値はソフトリセットによって変更されることがあります。<br>この数値がクライアントと一致する場合、クライアントは新しいキャラクターを作成する必要があります。<br>リセットIDと一緒に使用されます。これらのIDはどこかに控えておくことを強くお勧めします。"
@@ -326,7 +326,7 @@
         "プレイヤーが疲れるようになり睡眠が必要になります。 (SleepAllowed=falseの場合は無効になります)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: この設定を有効にすると、プレーヤーの位置の視覚的な非同期が発生する可能性があります。"
       ],
       "WorkshopItems": [
         "サーバーがダウンロードするWORKSHOPのMODのIDをリストアップします。それぞれをセミコロンで区切ってください。 例: WorkshopItems=514427485;513111049"
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "ゲーム内のマップに表示されるリモートプレーヤーの表示を制御します。",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=非表示 2=友達 3=全員"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "車両の牽引を無効にします"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "トレーラー牽引を無効にします"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "焼けた車両の牽引を無効にします"
       ],
       "BadWordListFile": [
         "禁止される単語のリストが含まれるファイルへのパス。"
@@ -464,37 +464,37 @@
         "悪い単語を置き換える記号またはテキスト"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "安全システムのアンチチート保護を無効にします。"
       ],
       "AntiCheatMovement": [
         "移動のアンチチート保護を無効にします。"
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "キャラクターヒットのアンチチート保護を無効にします。"
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "パケット チェックのアンチチート保護を無効にします。"
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "プレイヤーの許可のチート防止保護を無効にします。"
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "プレーヤー XP のアンチチート保護を無効にします。"
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "ファイアチェックのアンチチート保護を無効にします。"
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "セーフハウスのアンチチート保護を無効にします。"
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "レシピチェックのチート防止保護を無効にします。"
       ],
       "AntiCheatPlayer": [
         "プレイヤーのアンチチート保護を無効にします。"
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "チェックサムのアンチチート保護を無効にします。"
       ],
       "AntiCheatItem": [
         "アイテムチェックのアンチチート保護を無効にします。"
@@ -506,7 +506,7 @@
         "マルチプレイヤーの更新期間を秒単位で設定します。"
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "スコアボードを無効にします。"
       ],
       "HideAdminsInPlayerList": [
         "プレーヤーリストで管理者を非表示にします。"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

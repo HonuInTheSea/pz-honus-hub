@@ -293,7 +293,7 @@
       "4 = 没有"
     ],
     "ZombieMigrate": [
-      "Zombie allowed to migrate to empty cells."
+      "僵尸允许迁移到空的单元格。"
     ],
     "DayLength": [
       "默认 = 1 小时 30 分钟",
@@ -358,23 +358,23 @@
     "DayNightCycle": [
       "一天中的时间是否自然变化，或者始终是白天/黑夜。 ",
       "1 = 普通",
-      "2 = Endless Day",
-      "3 = Endless Night"
+      "2 = 无尽的一天",
+      "3 = 无尽的夜晚"
     ],
     "ClimateCycle": [
       "天气是否变化或保持在单一状态。 ",
       "1 = 普通",
-      "2 = No Weather",
-      "3 = Endless Rain",
-      "4 = Endless Storm",
-      "5 = Endless Snow",
-      "6 = Endless Blizzard"
+      "2 = 无天气",
+      "3 = 无尽的雨",
+      "4 = 无尽风暴",
+      "5 = 无尽的雪",
+      "6 = 无尽的暴风雪"
     ],
     "FogCycle": [
       "雾是自然发生、从未发生还是始终存在。 ",
       "1 = 普通",
-      "2 = No Fog",
-      "3 = Endless Fog"
+      "2 = 无雾",
+      "3 = 无尽的迷雾"
     ],
     "WaterShut": [
       "在默认开始日期（1993 年 7 月 9 日）之后多久，管道装置（例如水槽）不再是无限水源。 ",
@@ -604,7 +604,7 @@
       "3 = 普通",
       "4 = 多",
       "5 = 非常多",
-      "6 = No decay"
+      "6 = 无衰减"
     ],
     "SeenHoursPreventLootRespawn": [
       "当 > 0时,物品将不会在此小时内访问过的区域中重新生成. 最小: 0 最大: 2147483647 默认: 0"
@@ -955,7 +955,7 @@
     ],
     "AnimalStatsModifier": [
       "Speed at which animals stats (hunger, thirst etc.) reduce. ",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -964,7 +964,7 @@
     ],
     "AnimalMetaStatsModifier": [
       "动物在元状态下统计数据（饥饿、口渴等）减少的速度。 ",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -973,7 +973,7 @@
     ],
     "AnimalPregnancyTime": [
       "动物在分娩前会怀孕多长时间。 ",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -982,7 +982,7 @@
     ],
     "AnimalAgeModifier": [
       "动物衰老的速度。 ",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -991,7 +991,7 @@
     ],
     "AnimalMilkIncModifier": [
       "默认 = 快",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -1000,7 +1000,7 @@
     ],
     "AnimalWoolIncModifier": [
       "默认 = 快",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -1028,7 +1028,7 @@
     ],
     "AnimalEggHatch": [
       "小动物从蛋中孵化出来需要多长时间。 ",
-      "1 = Ultra Fast",
+      "1 = 超快",
       "2 = 非常快",
       "3 = 快",
       "4 = 普通",
@@ -1064,9 +1064,9 @@
     ],
     "MetaKnowledge": [
       "如果一段媒体尚未完全查看或读取，此设置将确定它是完全显示、显示为“???”还是完全隐藏。 ",
-      "1 = Fully revealed",
-      "2 = Shown as ???",
-      "3 = Completely hidden"
+      "1 = 完全显露",
+      "2 = 显示为 ???",
+      "3 = 完全隐藏"
     ],
     "SeeNotLearntRecipe": [
       "如果属实，您将能够看到可以通过工作站完成的任何食谱，即使您尚未学习它们。"
@@ -1112,8 +1112,8 @@
     "NegativeTraitsPenalty": [
       "如果选择多个负面特征所提供的奖励特征点的回报递减。 ",
       "1 = 没有",
-      "2 = 1 point penalty for every 3 negative traits selected",
-      "3 = 1 point penalty for every 2 negative traits selected",
+      "2 = 每选择 3 个负面特征扣 1 分",
+      "3 = 每选择 2 个负面特征扣 1 分",
       "4 = 第一个之后选择的每个负面特征扣 1 分"
     ],
     "MinutesPerPage": [
@@ -1517,5 +1517,3 @@
     ]
   }
 }
-
-

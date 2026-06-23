@@ -140,10 +140,10 @@
         "Los jugadores pueden herir y matar a otros jugadores."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PvP está registrado en el chat de administración."
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP está registrado en el archivo"
       ],
       "PauseEmpty": [
         "El tiempo de juego se detiene cuando no hay jugadores conectados."
@@ -233,7 +233,7 @@
         "Eliminar las cuentas de los jugadores de la lista blanca después de la muerte. Esto evita que los jugadores creen un nuevo personaje después de la muerte en los servidores Open=false"
       ],
       "NoFire": [
-        "All forms of fire are disabled - except for campfires"
+        "Todas las formas de fuego están desactivadas, excepto las fogatas."
       ],
       "AnnounceDeath": [
         "Si está marcado, cada vez que un jugador muere, se mostrará un mensaje global en el chat."
@@ -281,10 +281,10 @@
         "Tiempo en segundos antes de que comience la guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Duración de la guerra en segundos."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Límite de puntos de vida del refugio."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determina si un personaje es de otro servidor, o de un solo jugador. Este valor puede cambiarse mediante reinicios simples. Si este número coincide con el cliente, el cliente debe crear un nuevo personaje. Esto se utiliza junto con ResetID. Se recomienda encarecidamente hacer una copia de seguridad de estos ID en algún lugar."
@@ -293,13 +293,13 @@
         "El puerto para RCON (Consola remota)"
       ],
       "RCONPassword": [
-        "RCON password (Pick a strong password)"
+        "Contraseña RCON (Elija una contraseña segura)"
       ],
       "DiscordEnable": [
-        "Enables global text chat integration with a Discord channel"
+        "Permite la integración global del chat de texto con un canal de Discord"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Token de acceso al bot de Discord"
       ],
       "DiscordChannel": [
         "El nombre del canal de Discord. "
@@ -326,7 +326,7 @@
         "Los jugadores se cansan y necesitan dormir. (Se ignora si SleepAllowed=false)."
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Activar esta configuración puede causar desincronización visual de las posiciones de los jugadores."
       ],
       "WorkshopItems": [
         "Enumere los ID de mod de Workshop para que el servidor los descargue. "
@@ -350,7 +350,7 @@
         "La distancia máxima del mosaico sobre la cual se pueden escuchar los sonidos VOIP."
       ],
       "Voice3D": [
-        "Toggle directional audio for VOIP"
+        "Alternar audio direccional para VOIP"
       ],
       "server_browser_announced_ip": [
         "Configure la IP desde la que se transmite el servidor. "
@@ -443,13 +443,13 @@
         "1=Oculto 2=Amigos 3=Todos"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Desactiva el remolque del vehículo"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Desactiva el remolque de remolque"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Inhabilita el remolque de vehículos quemados."
       ],
       "BadWordListFile": [
         "Ruta al archivo con la lista de palabras a prohibir. "
@@ -464,37 +464,37 @@
         "El símbolo o fragmento de texto que reemplazará la mala palabra."
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Desactiva la protección antitrampas del sistema de seguridad."
       ],
       "AntiCheatMovement": [
         "Desactiva la protección antitrampas de movimiento."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Desactiva la protección antitrampas contra golpes de personajes."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Desactiva la protección anti-trampas de verificación de paquetes."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Desactiva la protección anti-trampas de los permisos del jugador."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Desactiva la protección anti-trampas de XP del jugador."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Desactiva la protección antitrampas de controles de incendio."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Desactiva la protección antitrampas del refugio."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Desactiva la protección anti-trampas de las comprobaciones de recetas."
       ],
       "AntiCheatPlayer": [
         "Desactiva la protección antitrampas de jugadores."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Desactiva la protección anti-trampas de suma de comprobación."
       ],
       "AntiCheatItem": [
         "Desactiva la protección anti-trampas de los controles de elementos."
@@ -506,7 +506,7 @@
         "Establece el período de actualización multijugador en segundos. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Desactiva el marcador."
       ],
       "HideAdminsInPlayerList": [
         "Oculta administradores en la lista de jugadores."

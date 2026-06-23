@@ -136,14 +136,14 @@
     "ChatMessageCharacterLimit": "聊天消息字符限制",
     "ChatMessageSlowModeTime": "聊天消息慢速模式時間",
     "comments": {
-"PVP": [
+      "PVP": [
         "玩家可以傷害或擊殺其它玩家"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP 已記錄到管理員聊天中"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP 已記錄到檔案中"
       ],
       "PauseEmpty": [
         "沒有玩家在線上時暫停遊戲時間流動"
@@ -281,10 +281,10 @@
         "戰爭開始前的時間（以秒為單位）。"
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "戰爭持續時間以秒為單位。"
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "安全屋生命值限制。"
       ],
       "ServerPlayerID": [
         "ServerPlayerID 決定角色是來自其它伺服器, 或單人遊戲. 此數值可被軟重置改變. 若此號碼與客戶端相符, 客戶端必須建立新角色. 與 ResetID 一起使用. 強烈建議備份這些 ID"
@@ -326,7 +326,7 @@
         "玩家會感覺疲憊並且需要睡覺. (若 SleepAllowed 則忽略"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP：啟動此設定可能會導致玩家位置的視覺不同步。"
       ],
       "WorkshopItems": [
         "列出伺服器要下載的工作坊模組 ID. 使用分號區隔每個項目. 範例: WorkshopItems"
@@ -443,13 +443,13 @@
         "1=隱藏 2=好友 3=所有人"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "禁用車輛牽引"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "禁用拖車牽引"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "禁用燒毀車輛牽引"
       ],
       "BadWordListFile": [
         "包含要禁止的單詞列表的文件路徑。每個單詞必須單獨占一行"
@@ -464,37 +464,37 @@
         "將替換壞詞的符號或文本片段"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "停用安全系統反作弊保護。"
       ],
       "AntiCheatMovement": [
         "停用移動反作弊保護。"
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "停用角色命中反作弊保護。"
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "停用資料包檢查反作弊保護。"
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "停用玩家權限反作弊保護。"
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "停用玩家 XP 反作弊保護。"
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "停用防火檢查反作弊保護。"
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "停用安全屋反作弊保護。"
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "停用配方檢查反作弊保護。"
       ],
       "AntiCheatPlayer": [
         "停用玩家反作弊保護。"
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "停用校驗和反作弊保護。"
       ],
       "AntiCheatItem": [
         "禁用項目檢查反作弊保護。"
@@ -506,7 +506,7 @@
         "設置多人遊戲更新周期（以秒為單位）。如果值為 0，則禁用統計。"
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "禁用記分板。"
       ],
       "HideAdminsInPlayerList": [
         "在玩家列表中隱藏管理員。"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

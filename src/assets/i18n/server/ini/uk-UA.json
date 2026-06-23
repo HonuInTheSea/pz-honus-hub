@@ -39,12 +39,12 @@
     "PlayerSafehouse": "Притулок гравця",
     "AdminSafehouse": "Притулок адміністратора",
     "SafehouseAllowTrepass": "Safehouse Дозволити перехід",
-    "SafehouseAllowFire": "Safehouse Allow Fire",
+    "SafehouseAllowFire": "Дозволити вогонь у сховищі",
     "SafehouseAllowLoot": "Safehouse Дозволити здобич",
     "SafehouseAllowRespawn": "Safehouse Дозволити відродження",
-    "SafehouseDaySurvivedToClaim": "Safehouse Day Survived To Claim",
+    "SafehouseDaySurvivedToClaim": "Днів виживання для отримання сховища",
     "SafeHouseRemovalTime": "Час видалення безпечного будинку",
-    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "SafehouseAllowNonResidential": "Дозволити нежитлові сховища",
     "MaxSafezoneSize": "Максимальний розмір Safezone",
     "AllowDestructionBySledgehammer": "Дозволити знищення кувалдою",
     "SledgehammerOnlyInSafehouse": "Кувалда тільки в Safehouse",
@@ -82,7 +82,7 @@
     "FastForwardMultiplier": "Множник швидкого перемотування вперед",
     "DisableSafehouseWhenPlayerConnected": "Вимкнути Safehouse, коли гравець підключений",
     "Faction": "Фракція",
-    "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
+    "FactionDaySurvivedToCreate": "Днів виживання для створення фракції",
     "FactionPlayersRequiredForTag": "Гравці фракції необхідні для тегу",
     "DisableRadioStaff": "Вимкнути Radio Staff",
     "DisableRadioAdmin": "Вимкнути адміністратора радіо",
@@ -104,7 +104,7 @@
     "PVPMeleeDamageModifier": "PVP Модифікатор шкоди в ближньому бою",
     "PVPFirearmDamageModifier": "Модифікатор шкоди від вогнепальної зброї PVP",
     "CarEngineAttractionModifier": "Модифікатор привабливості двигуна автомобіля",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Гравець штовхає гравця",
     "MapRemotePlayerVisibility": "Карта видимості віддаленого гравця",
     "BackupsCount": "Кількість резервних копій",
     "BackupsOnStart": "Резервне копіювання під час запуску",
@@ -127,7 +127,7 @@
     "AntiCheatRecipe": "Рецепт проти читів",
     "AntiCheatPlayer": "Програвач проти читів",
     "AntiCheatChecksum": "Контрольна сума проти обману",
-    "AntiCheatItem": "Anti Cheat Item",
+    "AntiCheatItem": "Античит предметів",
     "AntiCheatServerCustomization": "Налаштування сервера античітів",
     "MultiplayerStatisticsPeriod": "Період статистики багатокористувацької гри",
     "DisableScoreboard": "Вимкнути табло",
@@ -140,10 +140,10 @@
         "Гравці можуть атакувати інших гравців."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP реєструється в чаті адміністратора"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP реєструється у файлі"
       ],
       "PauseEmpty": [
         "Світовий час в грі зупиниться, якщо на сервері відсутні гравці."
@@ -280,10 +280,10 @@
         "Час у секундах до початку війни."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Тривалість війни в секундах."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Обмеження очок здоров'я Safehouse."
       ],
       "ServerPlayerID": [
         "Зчитувати клієнтські файли гравця, щоб гравці не могли обманом використовувати файли з одиночної гри або файли з іншого сервера. Це значення може бути змінено шляхом софт-скидання. Якщо цей номер відповідає клієнту, клієнт повинен створити нового персонажа. Використовується в поєднанні з ResetID. Будь ласка, зробіть резервну копію цих ID будь-де"
@@ -307,7 +307,7 @@
         "Discord ID каналу. Не вимагається. Використовуйте в разі проблем з назвою каналу"
       ],
       "WebhookAddress": [
-        "The Slack incoming webhook URL"
+        "URL-адреса вхідного вебхуку Slack"
       ],
       "Password": [
         "Гравці повинні знати пароль, щоб могли приєднатися до сервера. Ігнорується, якщо хост Steam сервер."
@@ -325,7 +325,7 @@
         "Гравці втомлюються і хочуть спати. Ігнорується якщо SleepAllowed=false (вимк.)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: активація цього параметра може призвести до візуальної десинхронізації позицій гравців."
       ],
       "WorkshopItems": [
         "Список Workshop модів ID для завантаження сервера. Розділіть крапкою з комою. Приклад WorkshopItems=514427485;513111049"
@@ -439,16 +439,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Керує відображенням віддалених гравців на карті в грі.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Приховано 2=Друзі 3=Всі"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Відключає буксирування автомобіля"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Відключає буксирування причепа"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Відключає буксирування згорілого автомобіля"
       ],
       "BadWordListFile": [
         "Шлях до файлу зі списком заборонених слів. "
@@ -463,40 +463,40 @@
         "Символ або фрагмент тексту, який замінить погане слово"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Відключає захист системи безпеки від обману."
       ],
       "AntiCheatMovement": [
         "Вимикає античит-захист руху."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Вимикає захист від ударів персонажа."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Вимикає перевірку пакетів, захист від читів."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Вимикає захист дозволів гравця від читів."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Вимикає захист XP від чітів."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Вимикає пожежні перевірки, захист від читів."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Вимикає захист від шахрайства."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Вимикає перевірку рецептів, захист від читів."
       ],
       "AntiCheatPlayer": [
         "Вимикає античит-захист для гравців."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Вимикає захист контрольної суми від читів."
       ],
       "AntiCheatItem": [
-        "Disables item checks anti-cheat protection."
+        "Вимикає перевірку елементів, захист від читів."
       ],
       "AntiCheatServerCustomization": [
         "Вимикає античит-захист налаштувань сервера."
@@ -505,10 +505,10 @@
         "Встановлює період оновлення мультиплеєра в секундах. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Вимикає табло."
       ],
       "HideAdminsInPlayerList": [
-        "Hides admins in the player list."
+        "Приховує адмінів у списку гравців."
       ],
       "Seed": [
         "Начальний код worldgen, який використовувався для створення світу.<br>Якщо ви хочете це змінити, вставте нове значення та видаліть map_worldgen.bin у своєму каталозі збереження."

@@ -23,21 +23,21 @@
       "actions": "ÅTGÄRDER",
       "getStarted": "Kom igång",
       "resources": "Resurser",
-      "dangerZone": "Danger Zone"
+      "dangerZone": "Farozon"
     },
     "items": {
-      "dashboard": "Dashboard",
+      "dashboard": "Instrumentbräda",
       "logInspector": "Logg Inspector",
       "configureFolders": "Konfigurera mappar",
       "setSteamApiKey": "Ställ in Steam API-nyckel",
       "syncHonu": "Synkronisera Honu's Mod Info QoL",
       "syncLocal": "Synkronisera lokal moddata",
       "syncWorkshop": "Synkronisera med Steam Workshop",
-      "changelog": "Changelog",
+      "changelog": "Ändringslogg",
       "documentation": "Dokumentation",
       "viewSource": "Visa källa",
       "projectZomboid": "Project Zomboid",
-      "pzWiki": "Official Project Zomboid Wiki",
+      "pzWiki": "Officiell Project Zomboid Wiki",
       "b41Map": "B41 Map",
       "b42Map": "B42 Map",
       "workshop": "Project Zomboid Steam Workshop",
@@ -45,7 +45,7 @@
       "discord": "Project Zomboid",
       "moddingDiscord": "PZ Modding Community",
       "mappingDiscord": "Inofficiell PZ-mappning",
-      "honuWorkshop": "HonuInTheSea's Steam Workshop",
+      "honuWorkshop": "HonuInTheSeas Steam Workshop",
       "supportKofi": "Support på Ko-fi",
       "resetApp": "Återställ applikation",
       "resetAppTooltip": "Återställ fönsterinställningar och radera lagrad data",
@@ -274,7 +274,7 @@
       "tip": "Tips: Om du byter maskin eller flyttar din modskatalog, bläddra helt enkelt igen för att uppdatera den lagrade sökvägen."
     },
     "tauri": {
-      "title": "Desktop (Tauri) integration",
+      "title": "Desktop-integration (Tauri)",
       "bullet1": "<strong>Åtkomst till filsystem</strong> - katalogbläddring och skanning utförs via skrivbordsskalet.",
       "bullet2": "<strong>Öppna externa länkar</strong> - Steam Workshop-länkar öppnas med din OS-standardwebbläsare.",
       "bullet3": "<strong>Öppna mappar</strong> - startar OS-filutforskaren fokuserad på mod-katalogen."
@@ -310,9 +310,9 @@
       "tags": "Taggar",
       "noTags": "Inga taggar",
       "packs": "Förpackningar",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "Tile-definitioner",
       "workshopTitle": "Workshop Titel",
-      "workshopCreator": "Workshop Creator",
+      "workshopCreator": "Verkstadsskapare",
       "fileSize": "Filstorlek",
       "timeCreated": "Tid skapad",
       "timeUpdated": "Tid uppdaterad",
@@ -362,11 +362,11 @@
     "military": "Militär",
     "misc": "Övrigt",
     "models": "Modeller",
-    "multiplayer": "Multiplayer",
+    "multiplayer": "Flerspelare",
     "pop_culture": "Popkultur",
     "qol": "QoL",
     "realistic": "Realistisk",
-    "silly_fun": "Silly/Fun",
+    "silly_fun": "Dumt/kul",
     "skills": "Färdigheter",
     "textures": "Texturer",
     "traits": "egenskaper",
@@ -376,7 +376,7 @@
   },
   "tagFilter": {
     "label": "Taggar",
-    "matchLabel": "Match",
+    "matchLabel": "Matchning",
     "matchAny": "ELLER",
     "matchAll": "OCH",
     "placeholder": "Välj taggar"
@@ -388,7 +388,7 @@
     "columns": {
       "name": "Namn",
       "author": "Författare",
-      "workshopId": "Workshop ID",
+      "workshopId": "Verkstads-ID",
       "lastModified": "Senast ändringsdatum"
     },
     "filters": {
@@ -589,12 +589,12 @@
         "detailMissing": "Ange ett servernamn.",
         "detailInvalidChars": "Servernamnet innehåller ogiltiga filnamnstecken.",
         "detailTrailing": "Servernamnet får inte sluta med en punkt eller ett mellanslag.",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "Servernamnet måste vara ett enda ord utan mellanslag.",
+        "detailAscii": "Använd endast ASCII-tecken (engelska bokstäver, siffror och symboler)."
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "Servernamnet har redan tagits",
+        "detail": "Det servernamnet har redan tagits. Välj ett annat namn för den nya servern."
       },
       "missingUserFolder": {
         "summary": "Saknad användarmapp",
@@ -639,76 +639,76 @@
   },
   "dashboard": {
     "headers": {
-      "overview": "Overview",
-      "updateStatus": "Mods Update Status",
-      "topInstalled": "Top Installed Mods (by Subscriptions)",
-      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
-      "installsOverTime": "Mod Installs Over Time",
-      "largestMods": "Largest Mods (by File Size)",
-      "latestNews": "Latest Project Zomboid News",
-      "popularThisWeek": "Popular Mods This Week",
-      "latestMods": "Latest Mods",
-      "updatedMods": "Updated Mods"
+      "overview": "Översikt",
+      "updateStatus": "Uppdateringsstatus för mods",
+      "topInstalled": "Toppinstallerade mods (efter prenumerationer)",
+      "lastUpdatedInstalled": "Installerade mods som uppdaterades senast",
+      "installsOverTime": "Modinstallationer över tid",
+      "largestMods": "Största mods (efter filstorlek)",
+      "latestNews": "Senaste Project Zomboid News",
+      "popularThisWeek": "Populära mods den här veckan",
+      "latestMods": "Senaste mods",
+      "updatedMods": "Uppdaterade mods"
     },
     "labels": {
-      "totalMods": "Total Mods",
-      "lastLocalSync": "Last Local Mod Sync",
-      "lastWorkshopSync": "Last Workshop Sync",
-      "subscribers": "subscribers",
-      "updated": "updated",
-      "created": "created",
-      "installedTooltip": "Installed locally",
-      "unknown": "Unknown",
-      "never": "Never"
+      "totalMods": "Totala mods",
+      "lastLocalSync": "Senaste Local Mod Sync",
+      "lastWorkshopSync": "Senaste verkstadssynkronisering",
+      "subscribers": "abonnenter",
+      "updated": "uppdaterad",
+      "created": "skapas",
+      "installedTooltip": "Installerad lokalt",
+      "unknown": "Okänd",
+      "never": "Aldrig"
     },
     "messages": {
-      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
-      "noInstalledSubs": "No installed mods with subscription data are available.",
-      "noWorkshopUpdateInfo": "No Workshop update information is available.",
-      "noSizeData": "No mod file size data is available.",
-      "noNews": "No news items were found.",
-      "noPopularMods": "No popular mods were found.",
-      "noModsFound": "No mods were found.",
-      "noRecentUpdates": "No recently updated mods were found."
+      "steamTimeout": "Steam Web API svarade inte. Försök igen senare.",
+      "noInstalledSubs": "Inga installerade moddar med prenumerationsdata är tillgängliga.",
+      "noWorkshopUpdateInfo": "Ingen verkstadsuppdateringsinformation är tillgänglig.",
+      "noSizeData": "Inga mod-filstorleksdata är tillgängliga.",
+      "noNews": "Inga nyheter hittades.",
+      "noPopularMods": "Inga populära mods hittades.",
+      "noModsFound": "Inga mods hittades.",
+      "noRecentUpdates": "Inga nyligen uppdaterade mods hittades."
     },
     "fallbacks": {
-      "untitledItem": "Untitled item"
+      "untitledItem": "Namnlös artikel"
     },
     "charts": {
       "installs": {
-        "label": "Mods by install month",
-        "xAxis": "Month",
+        "label": "Mods efter installationsmånad",
+        "xAxis": "Månad",
         "yAxis": "Mods"
       },
       "status": {
-        "outdated": "Outdated",
-        "upToDate": "Up to date"
+        "outdated": "Föråldrad",
+        "upToDate": "Upp till datum"
       },
       "size": {
-        "label": "Workshop file size (bytes)",
-        "yAxis": "Size (bytes)"
+        "label": "Verkstadsfilstorlek (byte)",
+        "yAxis": "Storlek (byte)"
       }
     }
   },
   "logInspector": {
-    "title": "Log Inspector",
+    "title": "Logginspektör",
     "fields": {
-      "logFile": "Log file",
-      "types": "Types",
-      "typesPlaceholder": "Select types",
-      "maxEntries": "Max entries",
-      "from": "From",
-      "to": "To",
-      "livePolling": "Live polling",
-      "pollingEverySeconds": "Every (s)",
-      "searchMessage": "Search message",
-      "searchPlaceholder": "Search..."
+      "logFile": "Loggfil",
+      "types": "Typer",
+      "typesPlaceholder": "Välj typer",
+      "maxEntries": "Max antal anmälningar",
+      "from": "Från",
+      "to": "Till",
+      "livePolling": "Omröstning live",
+      "pollingEverySeconds": "Varje (s)",
+      "searchMessage": "Sök meddelande",
+      "searchPlaceholder": "Sök..."
     },
     "table": {
-      "pageReport": "Showing {first} to {last} of {totalRecords}",
-      "timestamp": "Timestamp",
-      "type": "Type",
-      "message": "Message"
+      "pageReport": "Visar {first} till {last} av {totalRecords}",
+      "timestamp": "Tidsstämpel",
+      "type": "Typ",
+      "message": "Meddelande"
     },
     "levels": {
       "error": "ERROR",
@@ -719,53 +719,53 @@
       "other": "OTHER"
     },
     "dialog": {
-      "logFilesFilter": "Log Files"
+      "logFilesFilter": "Loggfiler"
     },
     "errors": {
-      "noFilePath": "Set a file path to load logs.",
-      "loadFailed": "Failed to load log file.",
-      "clearFailed": "Failed to clear log file."
+      "noFilePath": "Ställ in en sökväg för att ladda loggar.",
+      "loadFailed": "Det gick inte att ladda loggfilen.",
+      "clearFailed": "Det gick inte att rensa loggfilen."
     }
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "Servrar",
       "refresh": "Uppdatera",
       "createNewServer": "Skapa ny server",
       "copy": "Kopiera",
       "deleteServer": "Ta bort server",
       "createBackupOnSave": "Skapa säkerhetskopia vid sparning",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "Inga serverfiler hittades.",
+      "selectServerPlaceholder": "Välj en server",
+      "serverEditor": "Serverredigerare",
+      "selectServerPrompt": "Välj en server för att börja redigera.",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox-variabler",
         "spawnpoints": "Spawnpunkter",
         "spawnregions": "Spawnregioner"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "Inga INI-poster hittades.",
       "serverConfigVars": "Serverkonfigurationsvariabler",
-      "searchFields": "Search fields",
+      "searchFields": "Sökfält",
       "reset": "Återställ",
       "saveChanges": "Spara ändringar",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "Inga sandlådevariabler hittades.",
       "sandboxVariables": "Sandbox-variabler",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "Sök variabler",
+      "createServerTitle": "Skapa ny server",
+      "copyServerTitle": "Kopiera server",
+      "copyServerPrompt": "Kopiera {{name}} och skapa följande filer:",
+      "serverName": "Servernamn",
+      "createServerHint": "Skapar .ini, _SandboxVars.lua, _spawnpoints.lua och _spawnregions.lua",
       "cancel": "Avbryt",
-      "create": "Create",
+      "create": "Skapa",
       "editServerVariableTitle": "Redigera servervariabel",
       "editSandboxVariableTitle": "Redigera Sandbox-variabel",
-      "noDescription": "No description available.",
+      "noDescription": "Ingen beskrivning tillgänglig.",
       "save": "Spara",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "Ta bort server",
+      "deleteServerPrompt": "Ta bort {{name}} och alla relaterade serverfiler?",
       "trueLabel": "Sann",
       "falseLabel": "Falsk",
       "exportServer": "Exportera"

@@ -140,10 +140,10 @@
         "Oyuncular diğer oyunculara zarar verebilir."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP yönetici sohbetine kaydedildi"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP dosyaya kaydedildi"
       ],
       "PauseEmpty": [
         "Sunucuda hiç oyuncu yoksa oyun dünyasının zamanı durur."
@@ -280,10 +280,10 @@
         "Savaşın başlamasından saniyeler önce geçen süre."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Saniye cinsinden savaş süresi."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehouse can puanı sınırı."
       ],
       "ServerPlayerID": [
         "Karakterin başka bir sunucudan mı yoksa tek oyunculu moddan mı olduğunu belirlemek için kullanılır. Bu değer soft-reset ile değiştirilebilir. Bu sayı istemci ile eşleşiyorsa, istemcinin yeni bir karakter oluşturması gerekmektedir. ResetID ile bağlantılıdır. Lütfen, bu kimlikleri bir yere yedekleyin."
@@ -325,7 +325,7 @@
         "Oyuncular yorulur ve uykuya ihtiyaç duyarlar.  SleepAllowed"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Bu ayarın etkinleştirilmesi, oynatıcı konumlarının görsel senkronizasyonunun bozulmasına neden olabilir."
       ],
       "WorkshopItems": [
         "Sunucuya indirilecek Atölye Mod'larını listelemek için kullanılır. Noktalı virgülle ayrılmalıdır. Örnek: WorkshopItems"
@@ -443,13 +443,13 @@
         "1"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Araç çekmeyi devre dışı bırakır"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Römork çekmeyi devre dışı bırakır"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Yanmış aracın çekilmesini devre dışı bırakır"
       ],
       "BadWordListFile": [
         "Yasaklanacak kelimelerin listesini içeren dosyanın yolu. "
@@ -464,37 +464,37 @@
         "Kötü kelimenin yerini alacak sembol veya metin parçası"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Güvenlik sisteminin hileye karşı korumasını devre dışı bırakır."
       ],
       "AntiCheatMovement": [
         "Hareket için hile karşıtı korumayı devre dışı bırakır."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Karakter vuruşuna karşı hile korumasını devre dışı bırakır."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Paket kontrollerini hile karşıtı korumayı devre dışı bırakır."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Oyuncu izinlerinin hileye karşı korumasını devre dışı bırakır."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Oyuncu XP'sinin hileye karşı korumasını devre dışı bırakır."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Yangın kontrollerinin hile karşıtı korumasını devre dışı bırakır."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Hile karşıtı güvenli korumayı devre dışı bırakır."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Tarif kontrollerini hileye karşı korumayı devre dışı bırakır."
       ],
       "AntiCheatPlayer": [
         "Oyuncular için hile karşıtı korumayı devre dışı bırakır."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Sağlama toplamı hile korumasını devre dışı bırakır."
       ],
       "AntiCheatItem": [
         "Hile karşıtı korumayı öğe kontrollerini devre dışı bırakır."
@@ -506,7 +506,7 @@
         "Çok oyunculu güncelleme süresini saniye cinsinden ayarlar. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Puan tablosunu devre dışı bırakır."
       ],
       "HideAdminsInPlayerList": [
         "Oyuncu listesindeki yöneticileri gizler."

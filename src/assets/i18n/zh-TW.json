@@ -300,7 +300,7 @@
   "modDetails": {
     "fields": {
       "name": "名稱",
-      "modId": "Mod ID",
+      "modId": "模組 ID",
       "author": "作者",
       "version": "Mod 版本",
       "versionMin": "最低遊戲版本",
@@ -310,7 +310,7 @@
       "tags": "標籤",
       "noTags": "無標籤",
       "packs": "包",
-      "tiledefs": "Tiledefs",
+      "tiledefs": "磁磚定義",
       "workshopTitle": "研討會標題",
       "workshopCreator": "研討會創建者",
       "fileSize": "文件大小",
@@ -345,9 +345,9 @@
     "animals": "動物",
     "audio": "音頻",
     "balance": "平衡",
-    "build_41": "Build 41",
-    "build_42": "Build 42",
-    "build_40": "Build 40",
+    "build_41": "41號樓",
+    "build_42": "42號樓",
+    "build_40": "建造 40",
     "buildings": "建築物",
     "clothing_armor": "服裝/盔甲",
     "farming": "農業",
@@ -589,12 +589,12 @@
         "detailMissing": "輸入服務器名稱。 ",
         "detailInvalidChars": "服務器名稱包含無效的文件名字符。 ",
         "detailTrailing": "服務器名稱不能以點或空格結尾。 ",
-        "detailNoSpaces": "Server name must be a single word with no spaces.",
-        "detailAscii": "Use ASCII characters only (English letters, numbers, and symbols)."
+        "detailNoSpaces": "伺服器名稱必須是單字，不含空格。",
+        "detailAscii": "僅使用 ASCII 字元（英文字母、數字和符號）。"
       },
       "nameExists": {
-        "summary": "Server name already taken",
-        "detail": "That server name has already been taken. Choose another name for the new server."
+        "summary": "伺服器名稱已被佔用",
+        "detail": "該伺服器名稱已被佔用。為新伺服器選擇另一個名稱。"
       },
       "missingUserFolder": {
         "summary": "缺少用戶文件夾",
@@ -639,76 +639,76 @@
   },
   "dashboard": {
     "headers": {
-      "overview": "Overview",
-      "updateStatus": "Mods Update Status",
-      "topInstalled": "Top Installed Mods (by Subscriptions)",
-      "lastUpdatedInstalled": "Installed Mods That Were Last Updated",
-      "installsOverTime": "Mod Installs Over Time",
-      "largestMods": "Largest Mods (by File Size)",
-      "latestNews": "Latest Project Zomboid News",
-      "popularThisWeek": "Popular Mods This Week",
-      "latestMods": "Latest Mods",
-      "updatedMods": "Updated Mods"
+      "overview": "概述",
+      "updateStatus": "模組更新狀態",
+      "topInstalled": "安裝最多的 Mod（按訂閱）",
+      "lastUpdatedInstalled": "最後更新的已安裝模組",
+      "installsOverTime": "隨著時間的推移模組安裝",
+      "largestMods": "最大的模組（按檔案大小）",
+      "latestNews": "最新專案 Zomboid 新聞",
+      "popularThisWeek": "本週熱門模組",
+      "latestMods": "最新模組",
+      "updatedMods": "更新模組"
     },
     "labels": {
-      "totalMods": "Total Mods",
-      "lastLocalSync": "Last Local Mod Sync",
-      "lastWorkshopSync": "Last Workshop Sync",
-      "subscribers": "subscribers",
-      "updated": "updated",
-      "created": "created",
-      "installedTooltip": "Installed locally",
-      "unknown": "Unknown",
-      "never": "Never"
+      "totalMods": "模組總數",
+      "lastLocalSync": "最後一次本地 Mod 同步",
+      "lastWorkshopSync": "上次研討會同步",
+      "subscribers": "訂戶",
+      "updated": "已更新",
+      "created": "已創建",
+      "installedTooltip": "本地安裝",
+      "unknown": "未知",
+      "never": "從來沒有"
     },
     "messages": {
-      "steamTimeout": "Steam Web API was unresponsive. Please try again later.",
-      "noInstalledSubs": "No installed mods with subscription data are available.",
-      "noWorkshopUpdateInfo": "No Workshop update information is available.",
-      "noSizeData": "No mod file size data is available.",
-      "noNews": "No news items were found.",
-      "noPopularMods": "No popular mods were found.",
-      "noModsFound": "No mods were found.",
-      "noRecentUpdates": "No recently updated mods were found."
+      "steamTimeout": "Steam Web API 無回應。請稍後重試。",
+      "noInstalledSubs": "沒有可用的已安裝模組和訂閱資料。",
+      "noWorkshopUpdateInfo": "沒有可用的創意工坊更新資訊。",
+      "noSizeData": "沒有可用的 mod 檔案大小資料。",
+      "noNews": "沒有找到任何新聞。",
+      "noPopularMods": "沒有找到流行的模組。",
+      "noModsFound": "沒有找到模組。",
+      "noRecentUpdates": "沒有找到最近更新的模組。"
     },
     "fallbacks": {
-      "untitledItem": "Untitled item"
+      "untitledItem": "無標題項目"
     },
     "charts": {
       "installs": {
-        "label": "Mods by install month",
-        "xAxis": "Month",
-        "yAxis": "Mods"
+        "label": "按安裝月份分類的模組",
+        "xAxis": "月",
+        "yAxis": "模組"
       },
       "status": {
-        "outdated": "Outdated",
-        "upToDate": "Up to date"
+        "outdated": "過時的",
+        "upToDate": "最新"
       },
       "size": {
-        "label": "Workshop file size (bytes)",
-        "yAxis": "Size (bytes)"
+        "label": "創意工坊文件大小（位元組）",
+        "yAxis": "大小（位元組）"
       }
     }
   },
   "logInspector": {
-    "title": "Log Inspector",
+    "title": "日誌檢查器",
     "fields": {
-      "logFile": "Log file",
-      "types": "Types",
-      "typesPlaceholder": "Select types",
-      "maxEntries": "Max entries",
-      "from": "From",
-      "to": "To",
-      "livePolling": "Live polling",
-      "pollingEverySeconds": "Every (s)",
-      "searchMessage": "Search message",
-      "searchPlaceholder": "Search..."
+      "logFile": "紀錄檔案",
+      "types": "類型",
+      "typesPlaceholder": "選擇類型",
+      "maxEntries": "最大條目數",
+      "from": "來自",
+      "to": "至",
+      "livePolling": "即時投票",
+      "pollingEverySeconds": "每（s）",
+      "searchMessage": "搜尋留言",
+      "searchPlaceholder": "搜尋..."
     },
     "table": {
-      "pageReport": "Showing {first} to {last} of {totalRecords}",
-      "timestamp": "Timestamp",
-      "type": "Type",
-      "message": "Message"
+      "pageReport": "顯示 {totalRecords} 條中的第 {first} 條到 {last} 條",
+      "timestamp": "時間戳",
+      "type": "類型",
+      "message": "留言"
     },
     "levels": {
       "error": "ERROR",
@@ -719,53 +719,53 @@
       "other": "OTHER"
     },
     "dialog": {
-      "logFilesFilter": "Log Files"
+      "logFilesFilter": "紀錄檔案"
     },
     "errors": {
-      "noFilePath": "Set a file path to load logs.",
-      "loadFailed": "Failed to load log file.",
-      "clearFailed": "Failed to clear log file."
+      "noFilePath": "設定載入日誌的檔案路徑。",
+      "loadFailed": "無法載入日誌檔。",
+      "clearFailed": "無法清除日誌檔。"
     }
   },
   "server": {
     "ui": {
-      "serversHeader": "Servers",
+      "serversHeader": "伺服器",
       "refresh": "重新整理",
       "createNewServer": "建立新伺服器",
       "copy": "複製",
       "deleteServer": "刪除伺服器",
       "createBackupOnSave": "儲存時建立備份",
-      "noServerFiles": "No server files were found.",
-      "selectServerPlaceholder": "Select a server",
-      "serverEditor": "Server Editor",
-      "selectServerPrompt": "Select a server to begin editing.",
+      "noServerFiles": "未找到伺服器檔案。",
+      "selectServerPlaceholder": "選擇伺服器",
+      "serverEditor": "伺服器編輯器",
+      "selectServerPrompt": "選擇一個伺服器開始編輯。",
       "tabs": {
         "ini": "INI",
         "sandbox": "Sandbox 變數",
         "spawnpoints": "出生點",
         "spawnregions": "出生區域"
       },
-      "noIniEntries": "No INI entries found.",
+      "noIniEntries": "未找到 INI 條目。",
       "serverConfigVars": "伺服器設定變數",
-      "searchFields": "Search fields",
+      "searchFields": "搜尋字段",
       "reset": "重設",
       "saveChanges": "儲存變更",
-      "noSandboxEntries": "No sandbox variables found.",
+      "noSandboxEntries": "未找到沙箱變數。",
       "sandboxVariables": "Sandbox 變數",
-      "searchVariables": "Search variables",
-      "createServerTitle": "Create New Server",
-      "copyServerTitle": "Copy Server",
-      "copyServerPrompt": "Copy {{name}} and create the following files:",
-      "serverName": "Server name",
-      "createServerHint": "Creates .ini, _SandboxVars.lua, _spawnpoints.lua, and _spawnregions.lua",
+      "searchVariables": "搜尋變數",
+      "createServerTitle": "建立新伺服器",
+      "copyServerTitle": "複製伺服器",
+      "copyServerPrompt": "複製 {{name}} 並建立以下檔案：",
+      "serverName": "伺服器名稱",
+      "createServerHint": "創建 .ini、_SandboxVars.lua、_spawnpoints.lua 和 _spawnregions.lua",
       "cancel": "取消",
-      "create": "Create",
+      "create": "創建",
       "editServerVariableTitle": "編輯服務器變量",
       "editSandboxVariableTitle": "編輯沙箱變量",
-      "noDescription": "No description available.",
+      "noDescription": "沒有可用的描述。",
       "save": "節省",
-      "deleteServerTitle": "Delete Server",
-      "deleteServerPrompt": "Delete {{name}} and all related server files?",
+      "deleteServerTitle": "刪除伺服器",
+      "deleteServerPrompt": "刪除{{name}}和所有相關的伺服器檔案？",
       "trueLabel": "真的",
       "falseLabel": "錯誤的",
       "exportServer": "匯出"

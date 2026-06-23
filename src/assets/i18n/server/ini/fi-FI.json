@@ -1,7 +1,7 @@
 {
   "ini": {
     "PVP": "PVP",
-    "PVPLogToolChat": "PVP Log Tool Chat",
+    "PVPLogToolChat": "PVP-lokityökalun chat",
     "PVPLogToolFile": "PVP-lokityökalutiedosto",
     "PauseEmpty": "Tauko Tyhjä",
     "GlobalChat": "Globaali chat",
@@ -13,7 +13,7 @@
     "AutoCreateUserInWhiteList": "Luo käyttäjä automaattisesti valkoiselle listalle",
     "DisplayUserName": "Näytä käyttäjänimi",
     "ShowFirstAndLastName": "Näytä etu- ja sukunimi",
-    "SpawnPoint": "Spawn Point",
+    "SpawnPoint": "Syntymispiste",
     "SafetySystem": "Turvajärjestelmä",
     "ShowSafety": "Näytä Turvallisuus",
     "SafetyToggleTimer": "Turvakytkinajastin",
@@ -37,17 +37,17 @@
     "AnnounceDeath": "Ilmoita Kuolema",
     "SaveWorldEveryMinutes": "Pelasta maailma joka minuutti",
     "PlayerSafehouse": "Pelaajien turvatalo",
-    "AdminSafehouse": "Admin Safehouse",
+    "AdminSafehouse": "Ylläpitäjän turvatalo",
     "SafehouseAllowTrepass": "Safehouse Salli Trespass",
     "SafehouseAllowFire": "Turvahuone Salli tulipalo",
     "SafehouseAllowLoot": "Safehouse Salli ryöstö",
-    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseAllowRespawn": "Salli uudelleensyntyminen turvatalossa",
     "SafehouseDaySurvivedToClaim": "Safehouse Day Survived to Claim",
     "SafeHouseRemovalTime": "Turvallinen talon poistoaika",
-    "SafehouseAllowNonResidential": "Safehouse Allow Non Residential",
+    "SafehouseAllowNonResidential": "Salli muut kuin asuintalot turvataloiksi",
     "MaxSafezoneSize": "Safezonen enimmäiskoko",
     "AllowDestructionBySledgehammer": "Salli tuhoaminen vasaralla",
-    "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+    "SledgehammerOnlyInSafehouse": "Moukari vain turvatalossa",
     "WarStartDelay": "Sodan alkamisen viive",
     "WarDuration": "Sodan kesto",
     "WarSafehouseHitPoints": "War Safehousen osumapisteet",
@@ -55,7 +55,7 @@
     "RCONPort": "RCON-portti",
     "RCONPassword": "RCON salasana",
     "DiscordEnable": "Discord käytössä",
-    "DiscordToken": "Discord Token",
+    "DiscordToken": "Discord-tunnus",
     "DiscordChannel": "Discord kanava",
     "DiscordChannelID": "Discord-kanavan tunnus",
     "WebhookAddress": "Webhook-osoite",
@@ -77,7 +77,7 @@
     "SpeedLimit": "Nopeusrajoitus",
     "LoginQueueConnectTimeout": "Kirjautumisjonon yhteyden aikakatkaisu",
     "server_browser_announced_ip": "Palvelinselain ilmoitti ip",
-    "PlayerRespawnWithSelf": "Player Respawn With Self",
+    "PlayerRespawnWithSelf": "Pelaaja syntyy uudelleen omalla hahmolla",
     "PlayerRespawnWithOther": "Player Respawn muiden kanssa",
     "FastForwardMultiplier": "Pikakelauskerroin",
     "DisableSafehouseWhenPlayerConnected": "Poista Safehouse käytöstä, kun pelaaja yhdistetään",
@@ -104,7 +104,7 @@
     "PVPMeleeDamageModifier": "PVP lähitaisteluvaurion muuntaja",
     "PVPFirearmDamageModifier": "PVP ampuma-asevaurion muuntaja",
     "CarEngineAttractionModifier": "Auton moottorin vetovoiman muokkaaja",
-    "PlayerBumpPlayer": "Player Bump Player",
+    "PlayerBumpPlayer": "Pelaaja tönäisee pelaajaa",
     "MapRemotePlayerVisibility": "Kartta-etäsoittimen näkyvyys",
     "BackupsCount": "Varmuuskopioiden määrä",
     "BackupsOnStart": "Varmuuskopiot alkaessa",
@@ -118,11 +118,11 @@
     "BadWordReplacement": "Huono sanan vaihto",
     "AntiCheatSafety": "Huijausten vastainen turvallisuus",
     "AntiCheatMovement": "Huijauksen vastainen liike",
-    "AntiCheatHit": "Anti Cheat Hit",
+    "AntiCheatHit": "Huijauksenesto osumille",
     "AntiCheatPacket": "Huijauksenestopaketti",
     "AntiCheatPermission": "Huijaamisen esto lupa",
-    "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
+    "AntiCheatXP": "Huijauksenesto XP:lle",
+    "AntiCheatFire": "Huijauksenesto tulelle",
     "AntiCheatSafeHouse": "Huijauksen vastainen turvallinen talo",
     "AntiCheatRecipe": "Huijauksen vastainen resepti",
     "AntiCheatPlayer": "Huijauksen vastainen pelaaja",
@@ -140,10 +140,10 @@
         "Pelaajat voivat satuttaa ja tappaa muita pelaajia"
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP on kirjautunut järjestelmänvalvojan chattiin"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP on kirjautunut tiedostoon"
       ],
       "PauseEmpty": [
         "Peliaika pysähtyy, kun verkossa ei ole yhtään pelaajaa"
@@ -281,10 +281,10 @@
         "Aika sekunneissa ennen sodan alkamista."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Sodan kesto sekunneissa."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Safehousen osumapisteraja."
       ],
       "ServerPlayerID": [
         "ServerPlayerID määrittää, onko merkki toiselta palvelimelta vai yhdeltä pelaajalta. Tätä arvoa voidaan muuttaa soft resetin avulla. Jos tämä numero vastaa asiakasohjelmaa, asiakkaan on luotava uusi merkki. Tätä käytetään yhdessä ResetID:n kanssa. On erittäin suositeltavaa varmuuskopioida nämä tunnukset jonnekin"
@@ -299,7 +299,7 @@
         "Ottaa käyttöön maailmanlaajuisen tekstikeskustelun integroinnin Discord-kanavan kanssa"
       ],
       "DiscordToken": [
-        "Discord bot access token"
+        "Discord-botin käyttöoikeustunnus"
       ],
       "DiscordChannel": [
         "Discord-kanavan nimi. (Kokeile erillistä kanavatunnusvaihtoehtoa, jos sinulla on ongelmia)"
@@ -326,7 +326,7 @@
         "Pelaajat väsyvät ja heidän täytyy nukkua. (Ohitetaan, jos SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Tämän asetuksen aktivointi voi aiheuttaa pelaajapaikkojen visuaalisen epäsynkronoinnin."
       ],
       "WorkshopItems": [
         "Luettelo palvelimelle ladattavat Workshop Mod ID -tunnukset. Jokainen on erotettava puolipisteellä. Esimerkki: WorkshopItems=514427485;513111049"
@@ -440,16 +440,16 @@
       ],
       "MapRemotePlayerVisibility": [
         "Ohjaa etäpelaajien näyttöä pelin sisäisellä kartalla.",
-        "1=Hidden 2=Friends 3=Everyone"
+        "1=Piilotettu 2=Ystävät 3=Kaikki"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Poistaa ajoneuvon hinauksen käytöstä"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Poistaa perävaunun hinauksen käytöstä"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Poistaa palaneen ajoneuvon hinauksen käytöstä"
       ],
       "BadWordListFile": [
         "Polku tiedostoon, jossa on luettelo kiellettävistä sanoista. "
@@ -464,37 +464,37 @@
         "Symboli tai tekstikappale, joka korvaa huonon sanan"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Poistaa turvajärjestelmän huijaussuojan käytöstä."
       ],
       "AntiCheatMovement": [
         "Poistaa liikkeen huijauksenestonsuojauksen."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Poistaa huijaussuojan käytöstä."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Poistaa pakettien tarkistuksen huijaussuojan käytöstä."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Poistaa pelaajalupien huijaussuojan käytöstä."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Poistaa pelaaja XP:n huijaussuojan käytöstä."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Poistaa palotarkistusten huijaussuojan käytöstä."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Poistaa huijaussuojan käytöstä."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Poistaa käytöstä reseptitarkistukset huijaussuojan."
       ],
       "AntiCheatPlayer": [
         "Poistaa pelaajien huijauksenestonsuojauksen."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Poistaa käytöstä tarkistussumman huijaamisen eston."
       ],
       "AntiCheatItem": [
         "Poistaa huijaussuojan käytöstä."
@@ -506,7 +506,7 @@
         "Asettaa moninpelin päivitysjakson sekunneissa. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Poistaa tulostaulun käytöstä."
       ],
       "HideAdminsInPlayerList": [
         "Piilottaa järjestelmänvalvojat pelaajaluettelosta."

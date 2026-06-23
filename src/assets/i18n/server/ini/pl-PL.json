@@ -121,7 +121,7 @@
     "AntiCheatHit": "Hit przeciwdziałający oszustwom",
     "AntiCheatPacket": "Pakiet przeciwdziałający oszustwom",
     "AntiCheatPermission": "Zezwolenie na ochronę przed oszustwami",
-    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatXP": "Anti-cheat XP",
     "AntiCheatFire": "Przeciwdziałanie oszustwom",
     "AntiCheatSafeHouse": "Bezpieczny dom chroniący przed oszustwami",
     "AntiCheatRecipe": "Przepis na przeciwdziałanie oszustwom",
@@ -140,10 +140,10 @@
         "Gracze mogą zadawać obrażenia innym graczom."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP jest zalogowany na czacie administratora"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP jest rejestrowane w pliku"
       ],
       "PauseEmpty": [
         "Czas w świecie gry zatrzymuje się, gdy na serwerze nie ma żadnych graczy."
@@ -280,10 +280,10 @@
         "Czas w sekundach do rozpoczęcia wojny."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Czas trwania wojny w sekundach."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Limit punktów życia kryjówki."
       ],
       "ServerPlayerID": [
         "Zapisane w zapisie postaci gracza, zapobiegając korzystaniu z postaci z gry dla jednego gracza lub z postaci z innych serwerów."
@@ -325,7 +325,7 @@
         "Gracze robią się zmęczeni i potrzebują snu. Ignorowane, jeśli „SleepAllowed” nie jest zaznaczone"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: Aktywacja tego ustawienia może spowodować wizualną desynchronizację pozycji graczy."
       ],
       "WorkshopItems": [
         "Lista identyfikatorów modów z Warsztatu do pobrania przez serwer. Każdy z nich musi być oddzielony średnikiem. Przykład: WorkshopItems"
@@ -443,13 +443,13 @@
         "1=Niewidoczni 2=Znajomi 3=Wszyscy"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Uniemożliwia holowanie pojazdu"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Wyłącza holowanie przyczepy"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Wyłącza holowanie spalonego pojazdu"
       ],
       "BadWordListFile": [
         "Ścieżka do pliku z listą słów, które mają być zabronione. "
@@ -464,37 +464,37 @@
         "Symbol lub fragment tekstu, który zastąpi złe słowo"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Wyłącza ochronę systemu bezpieczeństwa przed oszustwami."
       ],
       "AntiCheatMovement": [
         "Wyłącza ochronę antycheat dotyczącą ruchu."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami przy trafieniach postaci."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami przy sprawdzaniu pakietów."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami uprawnień gracza."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami XP gracza."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami podczas testów ogniowych."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami w kryjówce."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami, sprawdzającą przepisy."
       ],
       "AntiCheatPlayer": [
         "Wyłącza ochronę antycheat dla graczy."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Wyłącza ochronę przed oszustwami za pomocą sumy kontrolnej."
       ],
       "AntiCheatItem": [
         "Wyłącza ochronę przed oszustwami podczas sprawdzania przedmiotów."
@@ -506,7 +506,7 @@
         "Ustawia okres aktualizacji dla trybu wieloosobowego w sekundach. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Wyłącza tablicę wyników."
       ],
       "HideAdminsInPlayerList": [
         "Ukrywa administratorów na liście graczy."

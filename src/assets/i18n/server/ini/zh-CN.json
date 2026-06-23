@@ -136,14 +136,14 @@
     "ChatMessageCharacterLimit": "聊天消息字符限制",
     "ChatMessageSlowModeTime": "聊天消息慢速模式时间",
     "comments": {
-"PVP": [
+      "PVP": [
         "玩家可以攻击其他玩家."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP 已记录到管理员聊天中"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP 已记录到文件中"
       ],
       "PauseEmpty": [
         "服务器没有玩家时,自动暂停服务器"
@@ -281,10 +281,10 @@
         "战争开始前的时间（以秒为单位）。"
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "战争持续时间以秒为单位。"
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "安全屋生命值限制。"
       ],
       "ServerPlayerID": [
         "玩家服务器ID 决定一个角色是来自另一个服务器,还是来自单个玩家,这个值可能会被软重置改变.<br>如果这个数字与客户端匹配,客户端必须创建一个新角色.<br>这与 重置ID 一起使用.<br>强烈建议你在某处备份这些 ID"
@@ -326,7 +326,7 @@
         "玩家会有疲劳状态.如果SleepAllowed设置为false则禁用"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP：激活此设置可能会导致玩家位置的视觉不同步。"
       ],
       "WorkshopItems": [
         "列出供服务器下载的创意工坊模组 ID.每个必须用分号分隔.示例：创意工坊项目=514427485;513111049"
@@ -443,13 +443,13 @@
         "1=隐藏 2=朋友 3=所有"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "禁用车辆牵引"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "禁用拖车牵引"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "禁用烧毁车辆牵引"
       ],
       "BadWordListFile": [
         "包含要禁止的单词列表的文件路径。"
@@ -464,37 +464,37 @@
         "将替换坏词的符号或文本片段"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "禁用安全系统反作弊保护。"
       ],
       "AntiCheatMovement": [
         "禁用移动反作弊保护。"
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "禁用角色命中反作弊保护。"
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "禁用数据包检查反作弊保护。"
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "禁用玩家权限反作弊保护。"
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "禁用玩家 XP 反作弊保护。"
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "禁用防火检查反作弊保护。"
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "禁用安全屋反作弊保护。"
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "禁用配方检查反作弊保护。"
       ],
       "AntiCheatPlayer": [
         "禁用玩家反作弊保护。"
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "禁用校验和反作弊保护。"
       ],
       "AntiCheatItem": [
         "禁用项目检查反作弊保护。"
@@ -506,7 +506,7 @@
         "设置多人游戏更新周期（以秒为单位）。"
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "禁用记分板。"
       ],
       "HideAdminsInPlayerList": [
         "在玩家列表中隐藏管理员。"
@@ -550,5 +550,3 @@
     }
   }
 }
-
-

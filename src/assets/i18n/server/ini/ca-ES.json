@@ -25,7 +25,7 @@
     "ResetID": "Restableix l'identificador",
     "Mods": "Mods",
     "Map": "Mapa",
-    "DoLuaChecksum": "Do Lua Checksum",
+    "DoLuaChecksum": "Fer comprovació Lua",
     "Public": "Públic",
     "PublicName": "Nom Públic",
     "PublicDescription": "Descripció pública",
@@ -38,10 +38,10 @@
     "SaveWorldEveryMinutes": "Salva el món cada minut",
     "PlayerSafehouse": "Jugador Safehouse",
     "AdminSafehouse": "Administrador Safehouse",
-    "SafehouseAllowTrepass": "Safehouse Allow Trespass",
-    "SafehouseAllowFire": "Safehouse Allow Fire",
-    "SafehouseAllowLoot": "Safehouse Allow Loot",
-    "SafehouseAllowRespawn": "Safehouse Allow Respawn",
+    "SafehouseAllowTrepass": "Permetre entrada a la casa segura",
+    "SafehouseAllowFire": "Permetre foc a la casa segura",
+    "SafehouseAllowLoot": "Permetre botí a la casa segura",
+    "SafehouseAllowRespawn": "Permetre reaparició a la casa segura",
     "SafehouseDaySurvivedToClaim": "Safehouse Day va sobreviure per reclamar",
     "SafeHouseRemovalTime": "Temps de retirada de casa segura",
     "SafehouseAllowNonResidential": "Safehouse Allow No residencial",
@@ -121,7 +121,7 @@
     "AntiCheatHit": "Hit anti-trampa",
     "AntiCheatPacket": "Paquet anti-trampa",
     "AntiCheatPermission": "Permís anti-trampa",
-    "AntiCheatXP": "Anti Cheat XP",
+    "AntiCheatXP": "Anti-trampes XP",
     "AntiCheatFire": "Foc anti-trampa",
     "AntiCheatSafeHouse": "Casa segura anti-trampa",
     "AntiCheatRecipe": "Recepta anti-trampa",
@@ -140,10 +140,10 @@
         "Els jugadors poden ferir i matar d'altres jugadors."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP està registrat al xat d'administrador"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP està registrat al fitxer"
       ],
       "PauseEmpty": [
         "El temps del joc para quan no hi ha jugadors en l�nia"
@@ -280,10 +280,10 @@
         "Temps en segons abans que comenci la guerra."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Durada de la guerra en segons."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Límit de punts de vida de Safehouse."
       ],
       "ServerPlayerID": [
         "ServerPlayerID determina si un personatge �s d'un altre servidor o del joc en solitari. Aquest valor pot canviar mitjan�ant reinicis suaus. Si aquest nombre no coincidix amb el del client, el client haur� de crear un nou personatge. S'usa juntament amb ResetID. Es recomana fer una c�pia de seguretat d'aquestes ID a algun lloc"
@@ -325,7 +325,7 @@
         "Els jugadors es cansen i necessiten dormir. (S'ignora si SleepAllowed=false)"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "WIP: activar aquesta configuració pot provocar una desincronització visual de les posicions dels jugadors."
       ],
       "WorkshopItems": [
         "Llista de les ID dels mods del taller perqu� el servidor els descarregue. "
@@ -442,13 +442,13 @@
         "1=Amagat 2=Amics 3=Tothom"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Inhabilita el remolc del vehicle"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Desactiva el remolc del remolc"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Inhabilita el remolc del vehicle cremat"
       ],
       "BadWordListFile": [
         "Camí al fitxer amb la llista de paraules a prohibir. "
@@ -463,37 +463,37 @@
         "El símbol o fragment de text que substituirà la paraula dolenta"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Desactiva la protecció anti-trampa del sistema de seguretat."
       ],
       "AntiCheatMovement": [
         "Desactiva la protecció antitrampes del moviment."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Desactiva la protecció anti-trampa de cops de personatges."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Desactiva la protecció anti-trampa de comprovacions de paquets."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Desactiva la protecció anti-trampa dels permisos dels jugadors."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Desactiva la protecció anti-trampa del jugador XP."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Desactiva la protecció anti-trampes de les comprovacions de foc."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Desactiva la protecció anti-trampa de la casa de seguretat."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Desactiva la protecció anti-trampes de les comprovacions de receptes."
       ],
       "AntiCheatPlayer": [
         "Desactiva la protecció antitrampes dels jugadors."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Desactiva la protecció anti-trampa de suma de verificació."
       ],
       "AntiCheatItem": [
         "Desactiva la protecció anti-trampa de comprovacions d'elements."
@@ -505,7 +505,7 @@
         "Estableix el període d'actualització multijugador en segons. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Desactiva el marcador."
       ],
       "HideAdminsInPlayerList": [
         "Amaga els administradors a la llista de jugadors."

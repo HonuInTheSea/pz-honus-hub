@@ -140,10 +140,10 @@
         "Die Spieler können andere Spieler verletzten."
       ],
       "PVPLogToolChat": [
-        "PVP is logged to admin chat"
+        "PVP ist im Admin-Chat angemeldet"
       ],
       "PVPLogToolFile": [
-        "PVP is logged to file"
+        "PVP wird in der Datei protokolliert"
       ],
       "PauseEmpty": [
         "Die Spielwelt-Zeit wird angehalten wenn sich kein Spieler auf dem Server befindet."
@@ -280,10 +280,10 @@
         "Zeit in Sekunden, bevor der Krieg beginnt."
       ],
       "WarDuration": [
-        "War duration in seconds."
+        "Kriegsdauer in Sekunden."
       ],
       "WarSafehouseHitPoints": [
-        "Safehouse hit points limit."
+        "Maximale Trefferpunkte im Safehouse."
       ],
       "ServerPlayerID": [
         "Wird in den Client-Spieler-Dateien geschrieben, so dass Spieler keine Sicherungsdateien von 'Einzelspieler' oder einem anderen Server verwenden können."
@@ -325,7 +325,7 @@
         "Spieler werden müde und müssen schlafen.  Wird ignoriert, wenn SleepAllowed: false"
       ],
       "KnockedDownAllowed": [
-        "WIP: Activating this setting may cause visual desynchronization of player positions."
+        "In Bearbeitung: Die Aktivierung dieser Einstellung kann zu einer visuellen Desynchronisierung der Spielerpositionen führen."
       ],
       "WorkshopItems": [
         "Liste von Workshop Mod IDs für den Server zum Download. Getrennt durch ein Semikolon ( ; ). Beispiel: WorkshopItems"
@@ -445,13 +445,13 @@
         "1"
       ],
       "DisableVehicleTowing": [
-        "Disables vehicle towing"
+        "Deaktiviert das Abschleppen des Fahrzeugs"
       ],
       "DisableTrailerTowing": [
-        "Disables trailer towing"
+        "Deaktiviert das Ziehen eines Anhängers"
       ],
       "DisableBurntTowing": [
-        "Disables burnt vehicle towing"
+        "Verhindert das Abschleppen eines verbrannten Fahrzeugs"
       ],
       "BadWordListFile": [
         "Pfad zur Datei mit der Liste der zu verbietenden Wörter. "
@@ -466,37 +466,37 @@
         "Das Symbol oder der Text, der das schlechte Wort ersetzt"
       ],
       "AntiCheatSafety": [
-        "Disables safety system anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz des Sicherheitssystems."
       ],
       "AntiCheatMovement": [
         "Deaktiviert den Bewegungsschutz gegen Cheating."
       ],
       "AntiCheatHit": [
-        "Disables character hit anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz gegen Charaktertreffer."
       ],
       "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz für Paketprüfungen."
       ],
       "AntiCheatPermission": [
-        "Disables player permissions anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz für Spielerberechtigungen."
       ],
       "AntiCheatXP": [
-        "Disables player XP anti-cheat protection."
+        "Deaktiviert den Spieler-XP-Anti-Cheat-Schutz."
       ],
       "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz für Brandprüfungen."
       ],
       "AntiCheatSafeHouse": [
-        "Disables safehouse anti-cheat protection."
+        "Deaktiviert den Safehouse-Anti-Cheat-Schutz."
       ],
       "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
+        "Deaktiviert den Anti-Cheat-Schutz für Rezeptprüfungen."
       ],
       "AntiCheatPlayer": [
         "Deaktiviert den Anti-Cheat-Schutz für Spieler."
       ],
       "AntiCheatChecksum": [
-        "Disables checksum anti-cheat protection."
+        "Deaktiviert den Prüfsummen-Anti-Cheat-Schutz."
       ],
       "AntiCheatItem": [
         "Deaktiviert den Anti-Cheat-Schutz für Gegenstandsprüfungen."
@@ -508,7 +508,7 @@
         "Legt den Multiplayer-Aktualisierungszeitraum in Sekunden fest. "
       ],
       "DisableScoreboard": [
-        "Disables scoreboard."
+        "Deaktiviert die Anzeigetafel."
       ],
       "HideAdminsInPlayerList": [
         "Versteckt Admins in der Spielerliste."
