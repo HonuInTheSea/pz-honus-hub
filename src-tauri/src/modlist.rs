@@ -1,4 +1,4 @@
-use crate::utils::ensure_parent_dir;
+use crate::utils::{ensure_parent_dir, safe_relative_path};
 use serde_json::Value as JsonValue;
 use std::fs;
 use std::path::Path;
@@ -21,9 +21,12 @@ fn rewrite_mods_txt(path: &Path, mod_id: &str) -> Result<bool, String> {
         if !in_mods {
             continue;
         }
-        if trimmed.to_lowercase().starts_with("mod=") && trimmed.contains(mod_id) {
-            *line = String::new();
-            updated = true;
+        if let Some((key, value)) = trimmed.split_once('=') {
+            let value = value.trim().trim_end_matches(',').trim_start_matches('\\');
+            if key.trim().eq_ignore_ascii_case("mod") && value.eq_ignore_ascii_case(mod_id.trim()) {
+                *line = String::new();
+                updated = true;
+            }
         }
     }
     if !updated {
@@ -44,10 +47,7 @@ pub fn remove_mod_from_active_mods(
     rel_dir: String,
     mod_id: String,
 ) -> Result<JsonValue, String> {
-    let path = Path::new(&user_dir)
-        .join("Saves")
-        .join(&rel_dir)
-        .join("mods.txt");
+    let path = safe_relative_path(&Path::new(&user_dir).join("Saves"), &rel_dir)?.join("mods.txt");
     let updated = if path.exists() {
         rewrite_mods_txt(&path, &mod_id)?
     } else {
@@ -83,7 +83,7 @@ fn rewrite_modlist_settings(path: &Path, mod_id: &str) -> Result<bool, String> {
             let cleaned = mods_part
                 .split(';')
                 .map(|chunk| chunk.replace('\\', "").trim().to_string())
-                .filter(|chunk| !chunk.is_empty() && chunk != mod_id)
+                .filter(|chunk| !chunk.is_empty() && !chunk.eq_ignore_ascii_case(mod_id.trim()))
                 .collect::<Vec<String>>();
             let rebuilt = build_pz_modlist_entry(name, &cleaned);
             if rebuilt != *line {
@@ -191,7 +191,7 @@ pub fn upsert_pz_modlist_settings_preset(
     }
 
     if !replaced {
-        if !lines.is_empty() && !lines.last().unwrap().trim().is_empty() {
+        if lines.last().is_some_and(|line| !line.trim().is_empty()) {
             lines.push(String::new());
         }
         lines.push(preset_entry);

@@ -1,6 +1,7 @@
-import { Component, DestroyRef, OnInit } from '@angular/core';
+import { Component, DestroyRef, NgZone, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterOutlet } from '@angular/router';
+import { getCurrentWindow } from '@tauri-apps/api/window';
 import { AppConfigurator } from './layout/component/app.configurator';
 import { WindowStateService } from './services/window-state.service';
 import { DialogModule } from 'primeng/dialog';
@@ -9,6 +10,7 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { TauriStoreService } from './services/tauri-store.service';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { ProgressBarModule } from 'primeng/progressbar';
 import {
   RequiredFoldersComponent,
   RequiredFoldersDraft,
@@ -22,6 +24,11 @@ import { PzDefaultPathsService } from './services/pz-default-paths.service';
 import { TranslocoModule } from '@jsverse/transloco';
 import { installPerfConsoleHelpers, profileAsync } from './utils/perf-trace';
 import { SteamApiKeyService } from './services/steam-api-key.service';
+import { PROJECT_ZOMBOID } from './models/pz.models';
+import {
+  MapBuildStatus,
+  Pzmap2DziJobService,
+} from './services/pzmap2dzi-job.service';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +42,7 @@ import { SteamApiKeyService } from './services/steam-api-key.service';
     ButtonModule,
     CardModule,
     ProgressSpinnerModule,
+    ProgressBarModule,
     RequiredFoldersComponent,
     SteamApiKeyStepComponent,
     TranslocoModule,
@@ -49,12 +57,19 @@ export class AppComponent implements OnInit {
   onboardingStep = 0;
   foldersDraft: RequiredFoldersDraft = {
     pzGameDir: 'C:\\Program Files (x86)\\Steam\\steamapps\\common\\ProjectZomboid',
-    pzWorkshopDir: 'C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\108600',
+    pzWorkshopDir: `C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\${PROJECT_ZOMBOID.workshopAppId}`,
     pzUserDir: '',
   };
   steamApiKeyDraft = '';
   contentReady = false;
+  mapJobStatus: MapBuildStatus | null = null;
+  mapJobToastDismissed = false;
   private skipContentLoading = false;
+  private closeRequestInProgress = false;
+  private allowWindowClose = false;
+  closeConfirmationVisible = false;
+  closeConfirmationBusy = false;
+  closeConfirmationError = '';
 
   constructor(
     private readonly windowState: WindowStateService,
@@ -66,12 +81,23 @@ export class AppComponent implements OnInit {
     private readonly appUpdate: AppUpdateService,
     private readonly pzDefaults: PzDefaultPathsService,
     private readonly steamApiKeyService: SteamApiKeyService,
+    private readonly mapJob: Pzmap2DziJobService,
+    private readonly ngZone: NgZone,
   ) {}
 
   async ngOnInit(): Promise<void> {
     await profileAsync('app.ngOnInit', async () => {
       installPerfConsoleHelpers();
       void this.store.prewarm();
+      this.mapJob.status$
+        .pipe(takeUntilDestroyed(this.destroyRef))
+        .subscribe((status) => {
+          this.mapJobStatus = status;
+          if (this.mapJob.isActive(status)) {
+            this.mapJobToastDismissed = false;
+          }
+        });
+      void this.installCloseGuard();
       this.skipContentLoading = this.isReloadNavigation();
       void this.appUpdate.checkForUpdate();
 
@@ -161,6 +187,141 @@ export class AppComponent implements OnInit {
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new Event('pz-onboarding-finished'));
     }
+  }
+
+  isMapJobActive(status: MapBuildStatus | null = this.mapJobStatus): boolean {
+    return this.mapJob.isActive(status);
+  }
+
+  mapJobStateLabel(state: string): string {
+    switch (state) {
+      case 'starting':
+        return 'starting';
+      case 'running':
+        return 'running';
+      case 'stopping':
+        return 'stopping';
+      case 'completed':
+        return 'complete';
+      case 'stopped':
+        return 'stopped';
+      case 'error':
+        return 'failed';
+      default:
+        return state;
+    }
+  }
+
+  formatElapsed(seconds: number | null | undefined): string {
+    const total = Math.max(0, Math.floor(seconds ?? 0));
+    const hours = Math.floor(total / 3600);
+    const minutes = Math.floor((total % 3600) / 60);
+    const remaining = total % 60;
+    return hours > 0
+      ? `${hours}h ${minutes.toString().padStart(2, '0')}m ${remaining.toString().padStart(2, '0')}s`
+      : `${minutes}m ${remaining.toString().padStart(2, '0')}s`;
+  }
+
+  formatBytes(bytes: number | null | undefined): string {
+    const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+    let value = Math.max(0, bytes ?? 0);
+    let unit = 0;
+    while (value >= 1024 && unit < units.length - 1) {
+      value /= 1024;
+      unit += 1;
+    }
+    return `${value.toFixed(1)} ${units[unit]}`;
+  }
+
+  async stopMapJob(): Promise<void> {
+    try {
+      await this.mapJob.stop();
+    } catch {
+      // The job status toast will continue showing the last known state.
+    }
+  }
+
+  cancelApplicationClose(): void {
+    if (this.closeConfirmationBusy) {
+      return;
+    }
+    this.closeConfirmationVisible = false;
+    this.closeConfirmationError = '';
+  }
+
+  async confirmApplicationClose(): Promise<void> {
+    if (this.closeConfirmationBusy) {
+      return;
+    }
+    this.closeConfirmationBusy = true;
+    this.closeConfirmationError = '';
+    try {
+      const status = await this.mapJob.refresh();
+      if (this.mapJob.isActive(status)) {
+        await this.mapJob.terminate();
+      }
+      this.allowWindowClose = true;
+      this.closeConfirmationVisible = false;
+      await getCurrentWindow().destroy();
+    } catch (error) {
+      this.closeConfirmationError =
+        `The application could not stop the active map job: ${String(error)}`;
+    } finally {
+      this.closeConfirmationBusy = false;
+    }
+  }
+
+  private async installCloseGuard(): Promise<void> {
+    if (!this.isTauriRuntime()) {
+      return;
+    }
+    try {
+      await getCurrentWindow().onCloseRequested(async (event) => {
+        if (this.allowWindowClose) {
+          return;
+        }
+        if (this.closeRequestInProgress || this.closeConfirmationVisible) {
+          event.preventDefault();
+          return;
+        }
+
+        this.closeRequestInProgress = true;
+        try {
+          // Use the service's current snapshot so the native close request is
+          // resolved synchronously. Waiting on an invoke here can leave the
+          // native close event pending in WebView2.
+          if (!this.mapJob.isActive()) {
+            // Do not prevent the close request. Tauri's onCloseRequested
+            // implementation will finish the native close for us.
+            return;
+          }
+          event.preventDefault();
+          this.ngZone.run(() => {
+            this.closeConfirmationError = '';
+            this.closeConfirmationVisible = true;
+          });
+        } catch {
+          // Keep the window open if the active-job check fails.
+          event.preventDefault();
+        } finally {
+          this.closeRequestInProgress = false;
+        }
+      });
+    } catch {
+      // Browser mode and older Tauri runtimes do not expose close interception.
+    }
+  }
+
+  private isTauriRuntime(): boolean {
+    return typeof window !== 'undefined' &&
+      (('__TAURI__' in window) || ('__TAURI_INTERNALS__' in window));
+  }
+
+  dismissMapJobToast(): void {
+    if (this.isMapJobActive()) {
+      return;
+    }
+    this.mapJobToastDismissed = true;
   }
 
   private toHonuModInfoQolDir(userDir: string): string {

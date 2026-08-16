@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Talaan ng mga pagbabago",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Bagong Tampok",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Nagdagdag ng nakalaang entry para sa Maps</li><li>Na-update ang schema ng na-export na LUA table</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Maliliit na pag-aayos",
         "version": "0.5.1",

@@ -1,0 +1,290 @@
+<p-toast position="top-center"></p-toast>
+
+<div class="character-editor-page p-3">
+  <p-card>
+    <div class="flex justify-content-between align-items-center gap-3 flex-wrap">
+      <div>
+        <h2 class="mt-0 mb-1">Character Editor</h2>
+        <p class="mt-0 mb-0 text-color-secondary">Inspect B42.20 survivors, preview their visual loadout, and make safe copies of save directories.</p>
+      </div>
+      <div class="flex gap-2">
+        <button pButton type="button" label="Refresh" icon="pi pi-refresh" class="p-button-text" (click)="refreshSlots()" [disabled]="loading"></button>
+        <button pButton type="button" label="Copy Save Directory" icon="pi pi-copy" (click)="openCopyDialog()" [disabled]="!snapshot || loading"></button>
+        <button pButton type="button" label="Save" icon="pi pi-save" (click)="saveStats()" [disabled]="!statsDirty || loading"></button>
+      </div>
+    </div>
+    <div class="text-sm text-color-secondary mt-3">Save root: {{ userDir }}\Saves</div>
+  </p-card>
+
+  @if (loading && !snapshot) {
+    <div class="flex justify-content-center p-6"><p-progressSpinner></p-progressSpinner></div>
+  } @else if (!slots.length) {
+    <p-message severity="info" text="No save directories containing players.db were found."></p-message>
+  } @else {
+    <div class="editor-layout-toolbar mt-1">
+      <span class="text-sm text-color-secondary"><i class="pi pi-arrows-alt mr-1"></i>Drag a panel by its grip to move it between columns or reorder it.</span>
+      <button pButton type="button" label="Reset Layout" icon="pi pi-refresh" class="p-button-text p-button-sm" (click)="resetPanelLayout()"></button>
+    </div>
+
+    <div class="character-editor-layout">
+      @for (column of panelColumns; track column.id) {
+        <section
+          class="panel-column"
+          [attr.aria-label]="column.label"
+          [attr.data-panel-column]="column.id">
+          @for (panel of columnPanels(column.id); track panel; let panelIndex = $index) {
+            <div
+              class="editor-panel-shell"
+              [attr.data-panel-shell]="panel"
+              [attr.data-panel-column]="column.id"
+              [attr.data-panel-index]="panelIndex"
+              [class.panel-dragging]="draggedPanel === panel"
+              [class.panel-drop-target]="dropTarget === column.id + ':' + panelIndex || dropTarget === column.id + ':' + (panelIndex + 1)"
+              >
+              @if (panel === 'save-directories' || panel === 'preview' || !selectedCharacter) {
+                <div
+                  class="panel-drag-handle"
+                  role="button"
+                  tabindex="0"
+                  [attr.aria-label]="'Move ' + panelLabel(panel)"
+                  [title]="'Move ' + panelLabel(panel)"
+                  (pointerdown)="beginPanelPointerDrag($event, panel)">
+                  <i class="pi pi-arrows-alt" aria-hidden="true"></i>
+                </div>
+              }
+
+              @switch (panel) {
+                @case ('save-directories') {
+                  <p-card header="Save Directories" styleClass="h-full">
+                    <div class="save-slot-list">
+                      @for (slot of slots; track slot.relativePath) {
+                        <div class="save-slot-row">
+                          <button type="button" class="save-slot" [class.selected]="slot.relativePath === selectedSlotPath" (click)="selectSlot(slot.relativePath)">
+                            <span class="font-semibold">{{ slot.saveName }}</span>
+                            <span class="text-sm text-color-secondary">{{ slot.mode }} · {{ slot.fileCount }} files</span>
+                            <span class="text-xs text-color-secondary">{{ formatBytes(slot.sizeBytes) }}</span>
+                          </button>
+                          <button pButton type="button" icon="pi pi-trash" class="p-button-danger p-button-text save-delete-button" [attr.aria-label]="'Delete ' + slot.saveName" [title]="'Delete ' + slot.saveName" [disabled]="loading" (click)="openDeleteDialog($event, slot)"></button>
+                        </div>
+                      }
+                    </div>
+                  </p-card>
+                }
+                @case ('preview') {
+                  <p-card [header]="selectedCharacter ? selectedCharacter.summary.name : 'Character Preview'">
+                    @if (snapshot && selectedCharacter) {
+                      <app-character-preview [character]="selectedCharacter" [gameDir]="gameDir" [visualRevision]="visualRevision"></app-character-preview>
+                    } @else {
+                      <p class="text-color-secondary">Select a save directory to inspect its characters.</p>
+                    }
+                  </p-card>
+                }
+                @case ('customization') {
+                  <p-panel header="Customize Character" [toggleable]="true" [collapsed]="true">
+                    <ng-template #icons>
+                      <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                    </ng-template>
+                    @if (selectedCharacter; as character) {
+                      <p class="text-sm text-color-secondary mt-0">Preview changes use the installed Build 42.20 hair, beard, and clothing definitions. Save-directory serialization for visual changes is not enabled yet.</p>
+                      <div class="customization-grid">
+                        <label>Forename
+                          <input pInputText [ngModel]="character.forename || ''" (ngModelChange)="updateName(character, 'forename', $event)" />
+                        </label>
+                        <label>Surname
+                          <input pInputText [ngModel]="character.surname || ''" (ngModelChange)="updateName(character, 'surname', $event)" />
+                        </label>
+                        <label>Body
+                          <select class="character-select" [ngModel]="character.visuals.gender" (ngModelChange)="updateVisuals(character, { gender: $event }); loadCustomizationOptions($event)">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                          </select>
+                        </label>
+                        <label>Skin color
+                          <input type="color" [ngModel]="character.visuals.skinColor || '#C58F70'" (ngModelChange)="updateVisuals(character, { skinColor: $event })" />
+                        </label>
+                        <label>Hair type
+                          <app-character-option-picker [options]="customizationOptions?.hairModels ?? []" [value]="character.visuals.hairModel || ''" (valueChange)="updateVisuals(character, { hairModel: $event || null })"></app-character-option-picker>
+                        </label>
+                        <label>Hair color
+                          <input type="color" [ngModel]="character.visuals.hairColor || '#6B4A32'" (ngModelChange)="updateVisuals(character, { hairColor: $event })" />
+                        </label>
+                        @if (character.visuals.gender === 'Male') {
+                          <label>Beard / stubble
+                            <app-character-option-picker [options]="customizationOptions?.beardModels ?? []" [value]="character.visuals.beardModel || ''" (valueChange)="updateVisuals(character, { beardModel: $event || null })"></app-character-option-picker>
+                          </label>
+                          <label>Beard color
+                            <input type="color" [ngModel]="character.visuals.beardColor || character.visuals.hairColor || '#6B4A32'" (ngModelChange)="updateVisuals(character, { beardColor: $event })" />
+                          </label>
+                        }
+                        @for (slot of clothingSlots(); track slot) {
+                          <label>{{ slot }}
+                            <app-character-option-picker [options]="clothingOptions(slot)" [value]="clothingId(character, slot)" (valueChange)="updateClothing(character, slot, $event)"></app-character-option-picker>
+                          </label>
+                        }
+                      </div>
+                    } @else {
+                      <p class="text-color-secondary">Select a character to customize it.</p>
+                    }
+                  </p-panel>
+                }
+                @case ('identity') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Identity and Location" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <div class="detail-grid">
+                        <span>Name</span><strong>{{ character.summary.name }}</strong>
+                        <span>Profession</span><strong class="profession-value">@if (character.professionIcon?.dataUrl) { <img class="profession-icon" [src]="character.professionIcon?.dataUrl" [alt]="label(character.profession)" /> } {{ label(character.profession) }}</strong>
+                        <span>Gender</span><strong>{{ character.visuals.gender }}</strong>
+                        <span>Map cell</span><strong>{{ character.summary.worldX }}, {{ character.summary.worldY }}</strong>
+                        <span>Coordinates</span><strong>{{ character.summary.x | number:'1.1-1' }}, {{ character.summary.y | number:'1.1-1' }}, {{ character.summary.z | number:'1.0-1' }}</strong>
+                        <span>World version</span><strong>{{ character.summary.worldVersion }}</strong>
+                        <span>Status</span><p-tag [value]="character.summary.isDead ? 'Dead' : 'Alive'" [severity]="character.summary.isDead ? 'danger' : 'success'"></p-tag>
+                      </div>
+                    </p-panel>
+                  }
+                }
+                @case ('info') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Info" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <div class="detail-grid">
+                        <span>Weight</span><strong>{{ character.info.weight === null ? 'Unknown' : (character.info.weight | number:'1.0-2') }}</strong>
+                        <span>Zombies killed</span><strong>{{ character.info.zombiesKilled === null ? 'Unknown' : character.info.zombiesKilled }}</strong>
+                        <span>Hours survived</span><strong>{{ character.info.hoursSurvived === null ? 'Unknown' : (character.info.hoursSurvived | number:'1.0-1') }}</strong>
+                        <span>Known recipes</span><strong>{{ character.info.knownRecipes }}</strong>
+                        <span>Known media</span><strong>{{ character.info.knownMedia }}</strong>
+                        <span>Hair</span><strong>{{ label(character.visuals.hairModel) }}</strong>
+                        <span>Beard</span><strong>{{ label(character.visuals.beardModel) }}</strong>
+                      </div>
+                    </p-panel>
+                  }
+                }
+                @case ('visual-features') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Visual Features" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <div class="chip-list">
+                        <p-tag [value]="'Skin ' + (character.visuals.skinColor || 'unknown')"></p-tag>
+                        <p-tag [value]="'Hair ' + (character.visuals.hairModel || 'unknown')"></p-tag>
+                        @for (item of character.visuals.clothing; track item) { <p-tag [value]="label(item)"></p-tag> }
+                        @for (item of character.visuals.gear; track item) { <p-tag severity="info" [value]="label(item)"></p-tag> }
+                      </div>
+                    </p-panel>
+                  }
+                }
+                @case ('traits') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Traits" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <div class="trait-list">
+                        @for (trait of character.traits; track trait.id) {
+                          <div class="trait-row">
+                            <span class="trait-category">{{ trait.category }}</span>
+                            @if (trait.icon?.dataUrl) { <img class="trait-icon" [src]="trait.icon?.dataUrl" [alt]="trait.label" [title]="trait.description || trait.label" /> } @else { <span class="trait-icon trait-icon-fallback" [title]="trait.description || trait.label">?</span> }
+                            <div class="trait-copy"><strong>{{ trait.label }}</strong>@if (trait.description) { <small>{{ trait.description }}</small> }</div>
+                          </div>
+                        }
+                      </div>
+                    </p-panel>
+                  }
+                }
+                @case ('skills') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Skills" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      @for (group of skillGroups(character); track group.category) {
+                        <div class="skill-group"><h4>{{ group.category }}</h4>
+                          @for (skill of group.skills; track skill.id) {
+                            <div class="skill-row"><span>{{ label(skill.id) }}</span><div class="skill-level-control"><div class="skill-level-boxes" aria-hidden="true">@for (box of levelBoxes(); track box) { <span class="skill-level-box" [class.filled]="box < skill.level"></span> }</div><input pInputText type="number" min="0" max="10" step="1" [(ngModel)]="skill.level" (ngModelChange)="statsDirty = true" [attr.aria-label]="label(skill.id) + ' level'" /></div></div>
+                          }
+                        </div>
+                      }
+                    </p-panel>
+                  }
+                }
+                @case ('protection') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Protection" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <p class="text-sm text-color-secondary mt-0">Bite and scratch protection is derived from worn clothing definitions. Values are shown when the selected save contains resolvable clothing defense data.</p>
+                      <div class="protection-list"><div class="protection-header"><span>Part</span><strong>Bite</strong><strong>Scratch</strong></div>@for (part of character.protection; track part.id) { <div><span>{{ bodyPartLabel(part.id) }}</span><strong>{{ part.bite === null ? '—' : (part.bite | number:'1.0-0') + '%' }}</strong><strong>{{ part.scratch === null ? '—' : (part.scratch | number:'1.0-0') + '%' }}</strong></div> }</div>
+                    </p-panel>
+                  }
+                }
+                @case ('temperature') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Temperature" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <div class="detail-grid"><span>Core temperature (metric)</span><strong>{{ character.temperature.coreTemperature === null ? 'Unknown' : (character.temperature.coreTemperature | number:'1.2-3') + ' °C' }}</strong><span>Core temperature (imperial)</span><strong>{{ temperatureFahrenheit(character.temperature.coreTemperature) }}</strong><span>Body heat generation</span><strong>{{ character.temperature.bodyHeatGeneration === null ? 'Unknown' : (character.temperature.bodyHeatGeneration | number:'1.2-2') }}</strong><span>Real heat generation</span><strong>{{ character.temperature.bodyHeatReal === null ? 'Unknown' : (character.temperature.bodyHeatReal | number:'1.2-2') }}</strong><span>Skin temperature (metric)</span><strong>{{ character.temperature.skinTemperature === null ? 'Unknown' : (character.temperature.skinTemperature | number:'1.2-2') + ' °C' }}</strong><span>Skin temperature (imperial)</span><strong>{{ temperatureFahrenheit(character.temperature.skinTemperature) }}</strong><span>Body response</span><strong>{{ character.temperature.bodyResponse === null ? 'Unknown' : (character.temperature.bodyResponse | number:'1.2-3') }}</strong><span>Insulation</span><strong>{{ character.temperature.insulation === null ? 'Unknown' : (character.temperature.insulation | number:'1.2-3') }}</strong></div>
+                    </p-panel>
+                  }
+                }
+                @case ('needs-moodles') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Needs and Moodles" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <p class="text-sm text-color-secondary mt-0">PZ Pulse’s needs/moodles pane is compatible with these persisted character stats. Values can be edited and saved to the selected players.db.</p>
+                      <div class="stat-list">@for (stat of character.stats; track stat.id) { <label class="stat-editor"><span class="stat-label">@if (stat.moodleIcon?.dataUrl) { <img class="moodle-icon" [src]="stat.moodleIcon?.dataUrl" [alt]="stat.label" [title]="stat.label" /> }<span>{{ stat.label || label(stat.id) }}</span></span><input pInputText type="number" step="0.01" [(ngModel)]="stat.value" (ngModelChange)="statsDirty = true" /></label> }</div>
+                    </p-panel>
+                  }
+                }
+                @case ('loadout') {
+                  @if (selectedCharacter; as character) {
+                    <p-panel header="Loadout" [toggleable]="true" [collapsed]="true">
+                      <ng-template #icons>
+                        <div class="panel-drag-handle panel-drag-handle-inline" role="button" tabindex="0" [attr.aria-label]="'Move ' + panelLabel(panel)" [title]="'Move ' + panelLabel(panel)" (pointerdown)="beginPanelPointerDrag($event, panel)"><i class="pi pi-arrows-alt" aria-hidden="true"></i></div>
+                      </ng-template>
+                      <p class="text-sm text-color-secondary mt-0">A save-backed companion to PZ Pulse’s Clothing and Quickload panes. Live condition, weapon, and hotbar telemetry is only available while the game is running.</p>
+                      <div class="loadout-list">
+                        @for (item of character.visuals.items; track item.fullType) {
+                          <div class="loadout-row"><span class="loadout-slot">{{ loadoutSlot(item) }}</span><strong>{{ loadoutLabel(item) }}</strong><span class="text-color-secondary">{{ item.alternateModel || 'Equipped' }}</span></div>
+                        }
+                        @for (item of character.visuals.gear; track item) { <div class="loadout-row"><span class="loadout-slot">Gear</span><strong>{{ label(item) }}</strong><span class="text-color-secondary">Equipped</span></div> }
+                      </div>
+                      @if (!character.visuals.items.length && !character.visuals.gear.length) { <p class="text-color-secondary mb-0">No equipped loadout items were recorded.</p> }
+                    </p-panel>
+                  }
+                }
+              }
+            </div>
+          }
+        </section>
+      }
+    </div>
+  }
+</div>
+
+<p-dialog header="Copy Save Directory" [(visible)]="copyVisible" [modal]="true" [style]="{ width: '34rem', maxWidth: '95vw' }">
+  <p class="mt-0">Create a sibling copy of <strong>{{ snapshot?.saveName }}</strong> under the same game mode folder.</p>
+  <label for="copy-name" class="font-semibold">New folder name</label>
+  <input id="copy-name" type="text" pInputText class="w-full mt-2" [(ngModel)]="copyName" autocomplete="off" />
+  <div class="flex justify-content-end gap-2 mt-4">
+    <button pButton type="button" label="Cancel" class="p-button-text" (click)="copyVisible = false"></button>
+    <button pButton type="button" label="Create Copy" icon="pi pi-copy" (click)="copySave()" [disabled]="!copyName.trim() || loading"></button>
+  </div>
+</p-dialog>
+
+<p-dialog header="Delete Save Directory" [(visible)]="deleteVisible" [modal]="true" [style]="{ width: '34rem', maxWidth: '95vw' }">
+  <p class="mt-0">Are you sure you want to permanently delete <strong>{{ deleteSlot?.saveName }}</strong> and all of its files from disk?</p>
+  <p class="text-color-secondary">This action cannot be undone. Create a copy first if you may need the save later.</p>
+  <div class="flex justify-content-end gap-2 mt-4">
+    <button pButton type="button" label="Cancel" class="p-button-text" (click)="deleteVisible = false"></button>
+    <button pButton type="button" label="Delete Save" icon="pi pi-trash" class="p-button-danger" (click)="deleteSave()" [disabled]="!deleteSlot || loading"></button>
+  </div>
+</p-dialog>

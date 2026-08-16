@@ -33,6 +33,7 @@ import { takeUntilDestroyed, toSignal } from '@angular/core/rxjs-interop';
 import { HonuModInfoQolService } from '../../services/honu-mod-info-qol.service';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
+import { PROJECT_ZOMBOID } from '../../models/pz.models';
 import { PzDefaultPathsService } from '../../services/pz-default-paths.service';
 import { SelectModule } from 'primeng/select';
 import { ProgressBarModule } from 'primeng/progressbar';
@@ -613,6 +614,11 @@ export class AppMenu {
           //   routerLink: ['/loadouts'],
           // },
           {
+            label: this.transloco.translate('menu.items.maps'),
+            icon: 'pi pi-fw pi-map-marker',
+            routerLink: ['/maps'],
+          },
+          {
             label: this.transloco.translate('menu.items.myMods'),
             icon: 'pi pi-fw pi-table',
             routerLink: ['/'],
@@ -718,21 +724,9 @@ export class AppMenu {
             target: '_blank',
           },
           {
-            label: this.transloco.translate('menu.items.b41Map'),
-            icon: 'pi pi-fw pi-map-marker',
-            url: 'https://map.projectzomboid.com/',
-            target: '_blank',
-          },
-          {
-            label: this.transloco.translate('menu.items.b42Map'),
-            icon: 'pi pi-fw pi-map-marker',
-            url: 'https://b42map.com/',
-            target: '_blank',
-          },
-          {
             label: this.transloco.translate('menu.items.workshop'),
             icon: 'pi pi-fw icon-steam2',
-            url: 'https://steamcommunity.com/app/108600/workshop/',
+            url: `https://steamcommunity.com/app/${PROJECT_ZOMBOID.workshopAppId}/workshop/`,
             target: '_blank',
           },
           {

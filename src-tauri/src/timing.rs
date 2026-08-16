@@ -1,5 +1,8 @@
 use std::env;
+use std::sync::atomic::{AtomicBool, Ordering};
 use std::time::Instant;
+
+static PROFILE_ENABLED: AtomicBool = AtomicBool::new(false);
 
 pub(crate) struct ScopedTimer {
     name: &'static str,
@@ -18,16 +21,21 @@ impl Drop for ScopedTimer {
 }
 
 pub(crate) fn scoped_timer(name: &'static str) -> ScopedTimer {
-    let enabled = env::var("PZ_PROFILE_TIMING")
-        .map(|v| {
-            let lower = v.trim().to_ascii_lowercase();
-            lower == "1" || lower == "true" || lower == "on"
-        })
-        .unwrap_or(false);
+    let enabled = PROFILE_ENABLED.load(Ordering::Relaxed)
+        || env::var("PZ_PROFILE_TIMING")
+            .map(|v| {
+                let lower = v.trim().to_ascii_lowercase();
+                lower == "1" || lower == "true" || lower == "on"
+            })
+            .unwrap_or(false);
 
     ScopedTimer {
         name,
         started_at: Instant::now(),
         enabled,
     }
+}
+
+pub(crate) fn set_profile_enabled(enabled: bool) {
+    PROFILE_ENABLED.store(enabled, Ordering::Relaxed);
 }

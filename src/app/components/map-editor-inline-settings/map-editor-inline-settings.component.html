@@ -1,0 +1,145 @@
+<div class="map-editor-inline-settings">
+  <strong>{{ editing ? 'Edit graphic' : 'Graphic settings' }}</strong>
+  <small class="map-editor-help">
+    @if (isPathTool) {
+      Customize the {{ mode }} while drawing.
+    } @else if (editing) {
+      Update the selected graphic, then save your changes.
+    } @else {
+      Set the style before saving the graphic.
+    }
+  </small>
+
+  <label class="map-editor-field-label" for="editor-label">Label</label>
+  <input
+    pInputText
+    id="editor-label"
+    class="map-editor-input"
+    [(ngModel)]="draft.label"
+    (ngModelChange)="notifyStyleChange()"
+    placeholder="e.g. Safe route"
+    maxlength="80"
+  />
+
+  <label class="map-editor-field-label" for="editor-description">Description</label>
+  <textarea
+    id="editor-description"
+    class="map-editor-description"
+    [(ngModel)]="draft.description"
+    (ngModelChange)="notifyStyleChange()"
+    placeholder="Add notes or other information"
+    rows="3"
+    maxlength="500"
+  ></textarea>
+
+  @if (isPointTool) {
+    <div class="map-editor-field-grid">
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-icon">Icon</label>
+        <select
+          id="editor-icon"
+          class="map-editor-select"
+          [(ngModel)]="draft.icon"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of iconOptions; track option.value) {
+            <option [value]="option.value">{{ option.value }} {{ option.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-shape">Shape</label>
+        <select
+          id="editor-shape"
+          class="map-editor-select"
+          [(ngModel)]="draft.shape"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of shapeOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-size">Size</label>
+        <select
+          id="editor-size"
+          class="map-editor-select"
+          [(ngModel)]="draft.size"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of sizeOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+    </div>
+  } @else if (mode === 'text') {
+    <div class="map-editor-field-grid">
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-text-size">Size</label>
+        <select
+          id="editor-text-size"
+          class="map-editor-select"
+          [(ngModel)]="draft.size"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of sizeOptions; track option.value) {
+            <option [value]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+    </div>
+  } @else if (isPathTool) {
+    <div class="map-editor-field-grid map-editor-path-fields">
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-stroke-width">Width / thickness</label>
+        <select
+          id="editor-stroke-width"
+          class="map-editor-select"
+          [(ngModel)]="draft.strokeWidth"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of strokeWidthOptions; track option.value) {
+            <option [ngValue]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+      <div class="map-editor-field">
+        <label class="map-editor-field-label" for="editor-line-pattern">Connector</label>
+        <select
+          id="editor-line-pattern"
+          class="map-editor-select"
+          [(ngModel)]="draft.linePattern"
+          (ngModelChange)="notifyStyleChange()"
+        >
+          @for (option of linePatternOptions; track option.value) {
+            <option [ngValue]="option.value">{{ option.label }}</option>
+          }
+        </select>
+      </div>
+    </div>
+  }
+
+  <div class="map-editor-color-field">
+    <label class="map-editor-field-label" for="editor-color">Color</label>
+    <input
+      id="editor-color"
+      class="map-editor-color-input"
+      type="color"
+      [(ngModel)]="draft.color"
+      (ngModelChange)="notifyStyleChange()"
+    />
+  </div>
+
+  @if (mode === 'point' || mode === 'shape' || mode === 'text') {
+    <small class="map-editor-help">
+      @if (pendingCoordinate) {
+        Placed at {{ pendingCoordinate.squareX | number:'1.0-0' }},
+        {{ pendingCoordinate.squareY | number:'1.0-0' }}.
+      } @else {
+        Click the map to place this graphic.
+      }
+    </small>
+  }
+</div>

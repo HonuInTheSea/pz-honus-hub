@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Wijzigingslogboek",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Nieuwe functie",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Een speciaal Maps-item toegevoegd</li><li>Het schema van de geëxporteerde LUA-tabel bijgewerkt</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Kleine fixes",
         "version": "0.5.1",

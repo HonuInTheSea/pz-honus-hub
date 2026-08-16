@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Endringslogg",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Ny funksjon",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>La til et eget Maps-element</li><li>Oppdaterte skjemaet for den eksporterte LUA-tabellen</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Mindre rettelser",
         "version": "0.5.1",

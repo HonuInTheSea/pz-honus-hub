@@ -1,0 +1,40 @@
+:host {
+  display: block;
+}
+
+.map-editor-toolset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.map-editor-toolset > button {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.map-editor-toolset > button.map-editor-tool-selected {
+  border-color: var(--primary-color);
+  background: var(--primary-color);
+  color: var(--primary-color-text, #ffffff);
+}
+
+.map-editor-active-tool-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0.15rem 0 0.25rem;
+  padding: 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--primary-color) 32%, var(--surface-border));
+  border-radius: var(--border-radius, 6px);
+  background: color-mix(in srgb, var(--primary-color) 7%, transparent);
+}
+
+.map-editor-status {
+  padding: 0.4rem 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--primary-color) 35%, var(--surface-border));
+  border-radius: var(--border-radius, 6px);
+  background: color-mix(in srgb, var(--primary-color) 9%, transparent);
+  color: var(--primary-color);
+  line-height: 1.35;
+}

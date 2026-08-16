@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { fetch } from '@tauri-apps/plugin-http';
 import { SteamApiKeyService } from './steam-api-key.service';
+import { PROJECT_ZOMBOID } from '../models/pz.models';
 
 export const STEAM_API_TIMEOUT_CODE = 'STEAM_API_TIMEOUT';
 
@@ -587,7 +588,7 @@ export class WorkshopMetadataService {
     }
 
     const params = new URLSearchParams({
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       count: String(count),
       feeds: 'steam_community_announcements',
     }).toString();
@@ -625,7 +626,7 @@ export class WorkshopMetadataService {
     }
 
     return {
-      appid: Number(appnews.appid ?? 108600) || 108600,
+      appid: Number(appnews.appid ?? PROJECT_ZOMBOID.workshopAppId) || Number(PROJECT_ZOMBOID.workshopAppId),
       newsitems: appnews.newsitems as SteamNewsItem[],
     };
   }
@@ -656,7 +657,7 @@ export class WorkshopMetadataService {
 
     const params: Record<string, string> = {
       key: apiKey,
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       return_short_description: 'true',
       query_type: '9',
       sortmethod,
@@ -787,7 +788,7 @@ export class WorkshopMetadataService {
 
       const params: Record<string, string> = {
         key: apiKey,
-        appid: '108600',
+        appid: PROJECT_ZOMBOID.workshopAppId,
         return_short_description: 'true',
         return_previews: 'true',
         return_children: 'true',
@@ -952,7 +953,7 @@ export class WorkshopMetadataService {
 
       const params: Record<string, string> = {
         key: apiKey,
-        appid: '108600',
+        appid: PROJECT_ZOMBOID.workshopAppId,
         totalonly: 'true',
         filetype: '1',
       };
@@ -1031,7 +1032,7 @@ export class WorkshopMetadataService {
 
     const params: Record<string, string> = {
       key: apiKey,
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       return_short_description: 'true',
       query_type: '12',
       search_text: trimmed,
@@ -1156,7 +1157,7 @@ export class WorkshopMetadataService {
 
     const params: Record<string, string> = {
       key: apiKey,
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       return_short_description: 'true',
       // Ranked by publication date (most recent created items).
       query_type: '1',
@@ -1290,7 +1291,7 @@ export class WorkshopMetadataService {
 
     const params: Record<string, string> = {
       key: apiKey,
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       return_short_description: 'true',
       // Ranked by last updated date.
       query_type: '21',
@@ -1418,7 +1419,7 @@ export class WorkshopMetadataService {
 
     const params: Record<string, string> = {
       key: apiKey,
-      appid: '108600',
+      appid: PROJECT_ZOMBOID.workshopAppId,
       return_short_description: 'true',
       query_type: '3',
       days: '7',
@@ -1550,7 +1551,7 @@ export class WorkshopMetadataService {
     for (let page = 1; page <= maxPages; page += 1) {
       const queryParams: Record<string, string> = {
         key: apiKey,
-        appid: '108600',
+        appid: PROJECT_ZOMBOID.workshopAppId,
         return_short_description: 'true',
         query_type: '9',
         sortmethod,

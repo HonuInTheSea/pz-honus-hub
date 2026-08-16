@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Журнал змін",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Нова функція",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Додано окремий пункт Maps</li><li>Оновлено схему експортованої таблиці LUA</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Невеликі виправлення",
         "version": "0.5.1",

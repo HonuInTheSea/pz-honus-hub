@@ -147,6 +147,12 @@
   "changelog": {
     "title": "บันทึกการเปลี่ยนแปลง",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "ฟีเจอร์ใหม่",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>เพิ่มรายการ Maps โดยเฉพาะ</li><li>อัปเดตสคีมาของตาราง LUA ที่ส่งออกแล้ว</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "การแก้ไขเล็กน้อย",
         "version": "0.5.1",

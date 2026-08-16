@@ -8,6 +8,7 @@ Desktop hub app for Project Zomboid built with Angular (frontend) and Tauri (Rus
 
 - Mod metadata browsing, filtering, and Workshop enrichment
 - Server management: create, copy, edit INI/Sandbox variables, manage spawn files, and export server configs
+- Character Editor: inspect B42.20 save directories, switch between survivors, edit serialized stats, view decoded traits/gear/location, preview selected Build 42 `.X`/`.FBX` models with installed PNG textures, and create a sibling save copy with a custom folder name
 
 ## Tech Stack
 
@@ -15,6 +16,7 @@ Desktop hub app for Project Zomboid built with Angular (frontend) and Tauri (Rus
 - Desktop shell: Tauri v2
 - Data: local-first storage via Tauri Store plugin
 - Integrations: Steam Web API, Steam Workshop metadata
+- Project Zomboid compatibility: Build 42.20 (world version 249, sandbox version 6)
 
 ## Prerequisites
 
@@ -26,6 +28,28 @@ Desktop hub app for Project Zomboid built with Angular (frontend) and Tauri (Rus
   - Linux: webkit2gtk + build essentials
 
 Reference: https://tauri.app/start/prerequisites/
+
+Angular 21 requires Node.js 20.19+, 22.12+, or 24.0+ and TypeScript 5.9.x. Keep
+the game-specific compatibility values in `src/app/models/pz.models.ts` and
+`src-tauri/src/pz_compat.rs` synchronized when Project Zomboid changes its
+server or save formats.
+
+### Character save inspection
+
+The Character Editor reads `Saves/**/players.db` in the configured Project Zomboid
+user directory. It uses the B42.20 `localPlayers`/`networkPlayers` SQLite schema
+and the serialized `IsoPlayer` data documented by the decompiled game sources.
+The original save is read-only; the copy action creates a new sibling directory
+and refuses to overwrite an existing directory.
+
+The 3D preview keeps asset resolution in Rust and only sends the selected
+character's media files to the Angular WebView. It uses the game's
+`media/models_X/Skinned` meshes, clothing XML model mappings, and PNG textures;
+the inspected Build 42.20 installation does not contain `.pak` files, so no PAK
+loader is required for the installed character assets. The preview uses the
+current Three.js X-loader compatibility adapter for the game's skinned meshes,
+composites clothing textures from the save's worn-item identifiers, and exposes
+the installed Idle, Walk, Run, and Sit animation clips.
 
 ## Local Development
 
@@ -64,7 +88,7 @@ If you see `401 Unauthorized` when loading Workshop data, verify the key and try
 ### Frontend (Angular)
 
 - App code lives in `src/app`
-- Shared styles live in `src/assets/styles.scss`
+- Shared styles live in `src/assets/styles.css`
 - UI components are built with PrimeNG; app-wide styling uses TailwindCSS
 
 Common workflows:

@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Änderungsprotokoll",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Neue Funktion",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Einen eigenen Maps-Eintrag hinzugefügt</li><li>Schema der exportierten LUA-Tabelle aktualisiert</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Kleinere Korrekturen",
         "version": "0.5.1",

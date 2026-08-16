@@ -147,6 +147,12 @@
   "changelog": {
     "title": "變更日誌",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "新功能",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>新增專用的 Maps 項目</li><li>更新了匯出的 LUA 表格結構</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "小幅修正",
         "version": "0.5.1",

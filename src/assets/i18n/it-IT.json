@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Registro modifiche",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Nuova funzionalità",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Aggiunta una voce dedicata a Maps</li><li>Aggiornato lo schema della tabella LUA esportata</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Correzioni minori",
         "version": "0.5.1",

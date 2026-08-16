@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Değişiklik günlüğü",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Yeni özellik",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Özel bir Maps girişi eklendi</li><li>Dışa aktarılan LUA tablo şeması güncellendi</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Küçük düzeltmeler",
         "version": "0.5.1",

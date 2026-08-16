@@ -1,0 +1,630 @@
+<p-card class="pzmap2dzi-config-card">
+  <ng-template #header>
+    <div class="config-form-header">
+      <div>
+        <div class="text-xl font-semibold">Map Builder</div>
+        <p class="config-form-subtitle">Start with a profile, then customize only if you need to.</p>
+      </div>
+      <i class="pi pi-sliders-h config-form-icon" aria-hidden="true"></i>
+    </div>
+  </ng-template>
+
+  <form class="config-form" (ngSubmit)="buildMap()">
+    <ng-template #configField let-field>
+      <div class="config-field" [class.config-field-wide]="field.type === 'textarea'">
+        <label [for]="inputId(field)">{{ field.label }}</label>
+        <small>{{ field.description }}</small>
+        @if (field.type === 'textarea') {
+          <textarea
+            pTextarea
+            [id]="inputId(field)"
+            [name]="field.path"
+            [rows]="field.rows ?? 3"
+            [ngModel]="getFieldValue(field.path)"
+            (ngModelChange)="setFieldValue(field.path, $event)"
+          ></textarea>
+        } @else if (field.type === 'number') {
+          <p-inputnumber
+            [inputId]="inputId(field)"
+            [name]="field.path"
+            [min]="field.min"
+            [max]="field.max"
+            [useGrouping]="false"
+            [ngModel]="getFieldValue(field.path)"
+            (ngModelChange)="setFieldValue(field.path, $event)"
+          ></p-inputnumber>
+        } @else if (field.type === 'select') {
+          <p-select
+            [inputId]="inputId(field)"
+            [name]="field.path"
+            [options]="field.options ?? []"
+            optionLabel="label"
+            optionValue="value"
+            [ngModel]="getFieldValue(field.path)"
+            (ngModelChange)="setFieldValue(field.path, $event)"
+          ></p-select>
+        } @else if (field.type === 'toggle') {
+          <p-toggleswitch
+            [inputId]="inputId(field)"
+            [name]="field.path"
+            [ngModel]="getFieldValue(field.path)"
+            (ngModelChange)="setFieldValue(field.path, $event)"
+          ></p-toggleswitch>
+        } @else if (isFolderField(field)) {
+          <div class="path-field-controls">
+            <input
+              pInputText
+              [id]="inputId(field)"
+              [name]="field.path"
+              [ngModel]="getFieldValue(field.path)"
+              (ngModelChange)="setFieldValue(field.path, $event)"
+            />
+            <button
+              pButton
+              type="button"
+              icon="pi pi-folder-open"
+              severity="secondary"
+              [outlined]="true"
+              [disabled]="!isTauriRuntime"
+              [attr.aria-label]="'Select ' + field.label"
+              [attr.title]="isTauriRuntime ? 'Select folder' : 'Folder selection is available in the desktop app'"
+              (click)="browseForFolder(field)"
+            ></button>
+          </div>
+        } @else {
+          <input
+            pInputText
+            [id]="inputId(field)"
+            [name]="field.path"
+            [ngModel]="getFieldValue(field.path)"
+            (ngModelChange)="setFieldValue(field.path, $event)"
+          />
+        }
+      </div>
+    </ng-template>
+
+    <ng-template #colorField let-field>
+      <div class="color-field">
+        <label [for]="colorInputId(field)">{{ field.label }}</label>
+        <small>{{ field.description }}</small>
+        <div class="color-control-row">
+          <input
+            class="color-picker-input"
+            type="color"
+            [id]="colorInputId(field)"
+            [name]="field.path + '-picker'"
+            [value]="colorPickerValue(field)"
+            [attr.aria-label]="field.label + ' picker'"
+            (input)="setColorFromPicker(field, $event)"
+          />
+          <input
+            pInputText
+            class="color-text-input"
+            [name]="field.path + '-text'"
+            [value]="getFieldValue(field.path)"
+            (input)="setColorText(field, $any($event.target).value)"
+            aria-label="CSS color value"
+          />
+        </div>
+        <div class="rgb-controls" [attr.aria-label]="field.label + ' RGB channels'">
+          @for (channel of colorChannels; track channel) {
+            <label class="rgb-channel">
+              <span>{{ channel | uppercase }}</span>
+              <p-inputnumber
+                [name]="field.path + '-' + channel"
+                [min]="0"
+                [max]="255"
+                [useGrouping]="false"
+                [ngModel]="colorRgb(field)[channel]"
+                (ngModelChange)="setColorChannel(field, channel, $event)"
+              ></p-inputnumber>
+            </label>
+          }
+        </div>
+      </div>
+    </ng-template>
+
+    @if (buildError) {
+      <p-message severity="error" [text]="buildError"></p-message>
+    }
+
+    @if (!showBuildStatus) {
+      <section class="builder-welcome">
+        <div>
+          <h2>Build a map package</h2>
+          <p>
+            The Rust builder scans Project Zomboid map cells and textures, renders the selected coverage into Deep Zoom tiles, then adds overlays such as rooms, objects, zombies, foraging, and saves.
+          </p>
+        </div>
+        <div class="builder-welcome-tip">
+          <i class="pi pi-lightbulb" aria-hidden="true"></i>
+          <span>New to map building? Choose Medium, fill in the required paths, and run Build Sample before starting a full build.</span>
+        </div>
+      </section>
+
+      <section class="preset-section" aria-labelledby="preset-heading">
+        <div class="section-heading-row">
+          <div>
+            <h2 id="preset-heading">1. Choose an output profile</h2>
+            <p class="section-description">Profiles preserve the selected map area while changing floor coverage, image quality, and storage settings.</p>
+          </div>
+          <span class="preset-current-label">{{ selectedPreset.label }}</span>
+        </div>
+        <p-selectbutton
+          class="preset-select"
+          [options]="presetOptions"
+          optionLabel="label"
+          optionValue="value"
+          name="presetMode"
+          [allowEmpty]="false"
+          [(ngModel)]="presetMode"
+          (ngModelChange)="onPresetChanged($event)"
+        ></p-selectbutton>
+        <div class="preset-description">
+          <strong>{{ selectedPreset.description }}</strong>
+          <span>{{ selectedPreset.detail }}</span>
+          @if (presetMode !== 'custom') {
+            <small>Changing output or rendering settings switches this profile to Custom. Required paths and map selections can be updated without changing the profile.</small>
+          }
+        </div>
+      </section>
+
+      <section class="estimate-dashboard" aria-label="Build estimates">
+        <div class="estimate-heading">
+          <div>
+            <h2>2. Plan before you build</h2>
+          </div>
+          <i class="pi pi-chart-line" aria-hidden="true"></i>
+        </div>
+        <div class="estimate-metrics">
+          <div class="estimate-metric">
+            <span>Estimated output</span>
+            <strong>{{ formatBytes(estimatedOutputBytes) }}</strong>
+            <small>Includes map tiles and generated overlays.</small>
+          </div>
+          <div class="estimate-metric">
+            <span>Estimated processing</span>
+            <strong>{{ formatDuration(estimatedDurationMinutes) }}</strong>
+            <small>Use Build Sample to validate paths first.</small>
+          </div>
+          <div class="estimate-metric">
+            <span>Quality trade-off</span>
+            <strong>{{ imageFormatLabelForReview() }}</strong>
+            <small>{{ layerRangeLabel(getFieldValue('render_conf.layer_range')) }}; {{ displayValue(getFieldValue('render_conf.omit_levels')) }} zoom levels omitted.</small>
+          </div>
+          <div class="estimate-metric">
+            <span>Peak memory planning</span>
+            <strong>{{ formatBytes(estimatedPeakMemoryBytes) }}</strong>
+            <small>Based on worker count; isometric rendering is the larger memory stage.</small>
+          </div>
+        </div>
+        @if (buildEstimate && !buildEstimate.enough_space && !showBuildStatus) {
+          <p-message
+            severity="warn"
+            [text]="'The current configuration needs about ' + formatBytes(buildEstimate.output_bytes) + ', but only ' + formatBytes(buildEstimate.available_bytes) + ' is available on ' + buildEstimate.output_path + '.'"
+          ></p-message>
+        }
+        @if (buildEstimate && !showBuildStatus) {
+          <small class="backend-estimate-note">Rust planning estimate: {{ buildEstimate.explanation }} Estimated time {{ formatDuration(buildEstimate.estimated_seconds / 60) }}; peak memory {{ formatBytes(buildEstimate.peak_memory_bytes) }}. @if (buildEstimate.historical_run_count > 0) {Calibrated from {{ buildEstimate.historical_run_count }} prior run(s). }{{ buildEstimate.estimate_basis }}</small>
+        }
+      </section>
+
+      <section class="builder-documentation" aria-labelledby="builder-documentation-heading">
+        <div class="section-heading-row">
+          <div>
+            <h2 id="builder-documentation-heading">How the Rust map job works</h2>
+            <p class="section-description">These notes explain which settings affect work, storage, and memory.</p>
+          </div>
+          <i class="pi pi-info-circle" aria-hidden="true"></i>
+        </div>
+        <div class="builder-documentation-grid">
+          <div>
+            <strong>Build stages</strong>
+            <p>Deploy writes the viewer, scan reads map headers, textures indexes and caches packs, then the renderer creates base isometric tiles, top-view tiles, overlays, saves, and each Additional map. The live log reports each texture pack and plant-texture step.</p>
+          </div>
+          <div>
+            <strong>Coverage controls</strong>
+            <p>DZI cell range sets the image boundary. Render cell range limits the cells that receive tiles. A range such as <code>all_mod_maps</code> includes configured Additional maps; explicit rectangles reduce work most.</p>
+          </div>
+          <div>
+            <strong>Reference resources</strong>
+            <p>The upstream notes use 32 GB RAM and 500 GB free space as an isometric baseline, with 1 TB recommended. Planning memory is about 500 MB per worker plus 4 GB shared for isometric rendering.</p>
+          </div>
+          <div>
+            <strong>Overlays and cache</strong>
+            <p>Zombie and foraging raster tiles use the selected logical CPU core count and skip full-size allocations for transparent tiles. The cache limit controls decoded texture-page RAM; larger tiles require more RAM per worker. GPU mode is limited to the pyramid compositing/downsample step; image codecs and disk output remain native CPU work.</p>
+          </div>
+        </div>
+        <small class="backend-estimate-note">Estimates combine the upstream B42.6 performance table, the complete local Ultra output calibration, and prior completed, stopped, or errored runs when available. Actual results vary with map coverage, save size, CPU, storage, and whether source tiles are already cached.</small>
+      </section>
+
+      <section class="settings-file-actions" aria-label="YAML settings">
+        <div>
+          <h2>Settings files</h2>
+          <p class="section-description">Import or export the complete builder configuration as readable YAML. Importing a file opens Custom mode.</p>
+        </div>
+        <div class="settings-file-buttons">
+          <button pButton type="button" icon="pi pi-upload" label="Import YAML" severity="secondary" [outlined]="true" [disabled]="!isTauriRuntime" (click)="importSettings()"></button>
+          <button pButton type="button" icon="pi pi-download" label="Export YAML" severity="secondary" [outlined]="true" [disabled]="!isTauriRuntime" (click)="exportSettings()"></button>
+        </div>
+      </section>
+
+      @if (presetMode !== 'custom') {
+        <section class="config-section quick-start-section">
+          <div class="section-heading-row">
+            <div>
+              <h2>3. Enter the required paths and map</h2>
+              <p class="section-description">These values let the Rust process find the game data and decide where to write the viewer package. Defaults work for a typical Steam installation, but verify each path.</p>
+            </div>
+            <span class="required-badge">Required</span>
+          </div>
+          <div class="config-grid">
+            @for (field of requiredRootFields; track field.path) {
+              <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+            }
+          </div>
+          <div class="performance-settings">
+            <h3>Build performance</h3>
+            <p class="section-description">These options are safe to change without changing map coverage. CPU workers control native parallelism. GPU mode uses WGPU for pyramid resizing when the hardware supports it; decoding, encoding, and disk writes remain CPU/storage work.</p>
+            <div class="config-grid">
+              @for (field of performanceFields; track field.path) {
+                <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+              }
+            </div>
+          </div>
+        </section>
+
+        <section class="preset-summary-section">
+          <div class="section-heading-row">
+            <div>
+              <h2>4. Review this profile</h2>
+              <p class="section-description">The settings below will be used when you build. Update the required paths above as needed; select Custom to change the output or rendering settings.</p>
+            </div>
+            <button pButton type="button" icon="pi pi-sliders-h" label="Change settings" severity="secondary" [outlined]="true" (click)="editPresetSettings()"></button>
+          </div>
+          <div class="preset-summary-grid">
+            @for (item of presetSummaryItems; track item.label) {
+              <div class="preset-summary-item">
+                <span>{{ item.label }}</span>
+                <strong>{{ item.value }}</strong>
+                <small>{{ item.description }}</small>
+              </div>
+            }
+          </div>
+        </section>
+      } @else {
+        <section class="custom-stepper-section" aria-label="Custom map builder settings">
+          <div class="section-heading-row">
+            <div>
+              <a
+                id="map-builder-stepper-anchor"
+                class="stepper-anchor"
+                tabindex="-1"
+                aria-label="Map builder steps"
+              ></a>
+              <h2>3. Customize the build</h2>
+              <p class="section-description">Move through the steps in order. You can return to any step before building.</p>
+            </div>
+            <span class="custom-mode-badge">Custom mode</span>
+          </div>
+
+          <p-stepper [(value)]="activeStep">
+            <p-step-list>
+              <p-step [value]="1">Basics</p-step>
+              <p-step [value]="2">Coverage</p-step>
+              <p-step [value]="3">Quality</p-step>
+              <p-step [value]="4">Appearance</p-step>
+              <p-step [value]="5">Review</p-step>
+            </p-step-list>
+            <p-step-panels>
+              <p-step-panel [value]="1">
+                <ng-template #content let-activateCallback="activateCallback">
+                  <div class="step-panel-content">
+                    <div class="step-panel-intro">
+                      <h3>Basics: connect the renderer to your files</h3>
+                      <p>These paths are the foundation of the build. If the Rust process cannot find the game or map descriptions, it cannot render a map.</p>
+                    </div>
+                    <div class="config-grid">
+                      @for (field of customBasicsRootFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <div class="step-panel-actions">
+                      <button pButton type="button" label="Next: Coverage" icon="pi pi-arrow-right" iconPos="right" (click)="goToStep(activateCallback, 2)"></button>
+                    </div>
+                  </div>
+                </ng-template>
+              </p-step-panel>
+
+              <p-step-panel [value]="2">
+                <ng-template #content let-activateCallback="activateCallback">
+                  <div class="step-panel-content">
+                    <div class="step-panel-intro">
+                      <h3>Coverage: decide what else is included</h3>
+                      <p>Base map coverage comes from the DZI and render cell ranges. Additional maps (the upstream <code>mod_maps</code> list) and saves add extra output folders and can multiply build time and disk use.</p>
+                    </div>
+                    <div class="config-grid">
+                      @for (field of coverageRootFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <div class="custom-maps-header">
+                      <div>
+                        <h3>Additional maps</h3>
+                        <p class="section-description">Add each map once. This is the same role as upstream <code>mod_maps</code>. The name is required; a folder is optional and overrides automatic map-description or Workshop discovery.</p>
+                      </div>
+                      <button pButton type="button" icon="pi pi-plus" label="Add map" severity="secondary" [outlined]="true" (click)="addAdditionalMap()"></button>
+                    </div>
+                    <div class="custom-maps-list">
+                      @for (map of additionalMaps; track $index; let index = $index) {
+                        <div class="custom-map-row">
+                          <div class="config-field">
+                            <label [for]="'additional-map-name-' + index">Map name</label>
+                            <small>Name as it appears in the map configuration and generated output folder.</small>
+                            <input pInputText [id]="'additional-map-name-' + index" [name]="'additional-map-name-' + index" [ngModel]="map.name" (ngModelChange)="updateAdditionalMap(index, 'name', $event)" placeholder="e.g. Bedford Falls" />
+                          </div>
+                          <div class="config-field">
+                            <label [for]="'additional-map-folder-' + index">Folder override (optional)</label>
+                            <small>Leave blank to let Rust find the map from its description or Workshop root.</small>
+                            <div class="path-field-controls">
+                              <input pInputText [id]="'additional-map-folder-' + index" [name]="'additional-map-folder-' + index" [ngModel]="map.folder" (ngModelChange)="updateAdditionalMap(index, 'folder', $event)" placeholder="Optional path to the map folder" />
+                              <button pButton type="button" icon="pi pi-folder-open" severity="secondary" [outlined]="true" [disabled]="!isTauriRuntime" [attr.aria-label]="'Select folder for ' + (map.name || 'additional map')" (click)="browseForAdditionalMapFolder(index)"></button>
+                            </div>
+                          </div>
+                          <button pButton type="button" icon="pi pi-trash" severity="danger" [text]="true" [attr.aria-label]="'Remove ' + (map.name || 'additional map')" title="Remove map" (click)="removeAdditionalMap(index)"></button>
+                        </div>
+                      }
+                    </div>
+                    <div class="step-panel-actions">
+                      <button pButton type="button" label="Back: Basics" icon="pi pi-arrow-left" severity="secondary" [outlined]="true" (click)="goToStep(activateCallback, 1)"></button>
+                      <button pButton type="button" label="Next: Quality" icon="pi pi-arrow-right" iconPos="right" (click)="goToStep(activateCallback, 3)"></button>
+                    </div>
+                  </div>
+                </ng-template>
+              </p-step-panel>
+
+              <p-step-panel [value]="3">
+                <ng-template #content let-activateCallback="activateCallback">
+                  <div class="step-panel-content">
+                    <div class="step-panel-intro">
+                      <h3>Quality: balance detail, speed, and storage</h3>
+                      <p>These are the renderer controls that most affect the size and zoom detail of the output. “Omit levels” is the main storage lever; cell ranges are the main work lever. Settings with parentheses are upstream per-job overrides such as <code>tile_size(zombie)</code>.</p>
+                    </div>
+                    <div class="config-grid">
+                      @for (field of renderFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <div class="step-panel-actions">
+                      <button pButton type="button" label="Back: Coverage" icon="pi pi-arrow-left" severity="secondary" [outlined]="true" (click)="goToStep(activateCallback, 2)"></button>
+                      <button pButton type="button" label="Next: Appearance" icon="pi pi-arrow-right" iconPos="right" (click)="goToStep(activateCallback, 4)"></button>
+                    </div>
+                  </div>
+                </ng-template>
+              </p-step-panel>
+
+              <p-step-panel [value]="4">
+                <ng-template #content let-activateCallback="activateCallback">
+                  <div class="step-panel-content">
+                    <div class="step-panel-intro">
+                      <h3>Appearance: tune labels, colors, and plants</h3>
+                      <p>These choices change what is drawn into the tiles. Plants usually affect processing time more than storage; setting foraging colors to <code>skip</code> or disabling room/object marks can also reduce overlay work and output.</p>
+                    </div>
+                    <h4>Render colors</h4>
+                    <div class="color-config-grid">
+                      @for (field of generalColorFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="colorField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <h4>Foraging colors</h4>
+                    <div class="color-config-grid">
+                      @for (field of foragingColorFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="colorField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <h4>Object colors</h4>
+                    <div class="color-config-grid">
+                      @for (field of objectColorFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="colorField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <h4>Plants</h4>
+                    <div class="config-grid">
+                      @for (field of plantFields; track field.path) {
+                        <ng-container *ngTemplateOutlet="configField; context: { $implicit: field }"></ng-container>
+                      }
+                    </div>
+                    <div class="step-panel-actions">
+                      <button pButton type="button" label="Back: Quality" icon="pi pi-arrow-left" severity="secondary" [outlined]="true" (click)="goToStep(activateCallback, 3)"></button>
+                      <button pButton type="button" label="Next: Review" icon="pi pi-arrow-right" iconPos="right" (click)="goToStep(activateCallback, 5)"></button>
+                    </div>
+                  </div>
+                </ng-template>
+              </p-step-panel>
+
+              <p-step-panel [value]="5">
+                <ng-template #content let-activateCallback="activateCallback">
+                  <div class="step-panel-content">
+                    <div class="step-panel-intro">
+                      <h3>Review: check the build before starting</h3>
+                      <p>Use the step buttons to change anything. The estimates update as you edit settings.</p>
+                    </div>
+                    <div class="estimate-metrics">
+                      <div class="estimate-metric"><span>Estimated output</span><strong>{{ formatBytes(estimatedOutputBytes) }}</strong><small>Calibrated against the Ultra WebP reference.</small></div>
+                      <div class="estimate-metric"><span>Estimated processing</span><strong>{{ formatDuration(estimatedDurationMinutes) }}</strong><small>Actual time varies with CPU and storage.</small></div>
+                      <div class="estimate-metric"><span>Base map</span><strong>{{ displayValue(getFieldValue('base_map')) }}</strong><small>Map definition used for the primary render.</small></div>
+                    </div>
+                    <div class="review-grid">
+                      <div><span>Output root</span><strong>{{ displayValue(getFieldValue('output_root')) }}</strong></div>
+                      <div><span>Map cells</span><strong>{{ displayValue(getFieldValue('render_conf.render_cell_range')) }}</strong></div>
+                      <div><span>Floors</span><strong>{{ layerRangeLabel(getFieldValue('render_conf.layer_range')) }}</strong></div>
+                      <div><span>Format</span><strong>{{ imageFormatLabelForReview() }}</strong></div>
+                      <div><span>Omitted levels</span><strong>{{ displayValue(getFieldValue('render_conf.omit_levels')) }}</strong></div>
+                      <div><span>Save overlays</span><strong>{{ displayValue(getFieldValue('save_games')) }}</strong></div>
+                    </div>
+                    <div class="step-panel-actions">
+                      <button pButton type="button" label="Back: Appearance" icon="pi pi-arrow-left" severity="secondary" [outlined]="true" (click)="goToStep(activateCallback, 4)"></button>
+                      <button pButton type="button" label="Edit quality" icon="pi pi-sliders-h" severity="secondary" [outlined]="true" (click)="goToStep(activateCallback, 3)"></button>
+                    </div>
+                  </div>
+                </ng-template>
+              </p-step-panel>
+            </p-step-panels>
+          </p-stepper>
+        </section>
+      }
+
+      <div class="config-form-footer">
+        <button pButton type="button" icon="pi pi-bolt" label="Build Sample" severity="secondary" [outlined]="true" [loading]="!!buildStatus && buildStatus.state === 'starting'" [disabled]="!!buildStatus && buildStatus.state === 'starting'" title="Render one available map cell to verify the Rust pipeline" (click)="buildMap(true)"></button>
+        <button pButton type="submit" icon="pi pi-hammer" label="Build Map" [loading]="!!buildStatus && buildStatus.state === 'starting'"></button>
+      </div>
+    } @else {
+      <section class="build-status-page" aria-live="polite">
+        <div class="build-status-header">
+          <div>
+            <h2>Building map data</h2>
+            <p class="section-description">{{ buildStatus?.message }}</p>
+          </div>
+          <i class="pi pi-cog build-status-icon" aria-hidden="true"></i>
+        </div>
+
+        <p-progressbar [value]="buildStatus?.progress ?? 0"></p-progressbar>
+        <div class="build-progress-summary">
+          <span>{{ (buildStatus?.progress ?? 0) | number:'1.0-0' }}% complete</span>
+          <span>{{ buildStatus?.current_command }}</span>
+          <span>Elapsed {{ formatElapsed(buildStatus?.elapsed_seconds) }}</span>
+          @if (buildStatus?.state === 'starting' || buildStatus?.state === 'running' || buildStatus?.state === 'stopping') {
+            <span>Last worker update {{ formatElapsed(buildStatusAgeSeconds) }} ago</span>
+          }
+        </div>
+
+        @if (buildStatusStale) {
+          <p-message
+            severity="warn"
+            text="The worker has not reported a status event for 30 seconds. It may be processing a large texture page or be stalled; check the verbose log, CPU usage, and stop the build if those remain unchanged."
+          ></p-message>
+        }
+
+        @if (buildStatus?.estimate) {
+          <div class="build-estimate-summary">
+            <span>Estimated output: {{ formatBytes(buildStatus?.estimate?.output_bytes ?? 0) }}</span>
+            <span>Estimated remaining: {{ formatDuration((buildStatus?.estimate?.estimated_seconds ?? 0) / 60) }}</span>
+            <span>Available: {{ formatBytes(buildStatus?.estimate?.available_bytes ?? 0) }}</span>
+            <span>Drive used: {{ formatBytes(buildStatus?.metrics?.disk_used_bytes ?? 0) }}</span>
+            <span>{{ buildStatus?.metrics?.sample_count ?? 0 }} metric samples · {{ buildStatus?.metrics?.cells_scanned ?? 0 }} cells scanned</span>
+          </div>
+        }
+
+        @if (buildStatus?.metrics_path || buildStatus?.log_path) {
+          <small class="backend-estimate-note">
+            Live metrics and verbose logs are saved in the application temporary data directory:
+            {{ buildStatus?.metrics_path }}{{ buildStatus?.log_path ? ' · ' + buildStatus?.log_path : '' }}
+          </small>
+        }
+
+        <div class="build-command-output">
+          <div class="build-command-output-header">
+            <span>Complete Rust command output</span>
+            <span>{{ buildStatus?.logs?.length ?? 0 }} messages retained</span>
+          </div>
+          <pre #buildLogOutput>@for (line of buildStatus?.logs ?? []; track $index; let lineIndex = $index) {<span
+            [class.build-log-newest]="lineIndex === (buildStatus?.logs?.length ?? 0) - 1"
+            [class.build-log-flashing]="lineIndex === flashingLogIndex"
+          >{{ line }}
+</span>}</pre>
+        </div>
+
+        <div class="build-status-actions">
+          @if (buildStatus?.state === 'starting' || buildStatus?.state === 'running') {
+            <button
+              pButton
+              type="button"
+              icon="pi pi-stop"
+              label="Stop build"
+              severity="danger"
+              [outlined]="true"
+              (click)="stopBuild()"
+            ></button>
+          } @else if (buildStatus?.state === 'completed') {
+            <button
+              pButton
+              type="button"
+              icon="pi pi-map"
+              label="Open map"
+              (click)="returnToMap()"
+            ></button>
+          }
+        </div>
+      </section>
+    }
+</form>
+</p-card>
+
+<p-dialog
+  [header]="resumeCandidate ? 'Resume or replace map output?' : 'Replace existing map output?'"
+  [(visible)]="outputReplacementDialogVisible"
+  [modal]="true"
+  [draggable]="false"
+  [closable]="true"
+  [dismissableMask]="false"
+  [style]="{ width: '34rem', maxWidth: '92vw' }"
+  (onHide)="resolveOutputReplacement('cancel')"
+>
+  <div class="output-replacement-dialog-content">
+    <i class="pi pi-exclamation-triangle" aria-hidden="true"></i>
+    <div>
+      @if (resumeCandidate) {
+        <p>A previous map job is available at:</p>
+      } @else {
+        <p>The map output directory already exists at:</p>
+      }
+      <code>{{ outputReplacementPath }}</code>
+      @if (resumeCandidate) {
+        <p>
+          The previous job stopped or was interrupted at
+          <strong>{{ resumeCandidate.progress | number:'1.0-1' }}%</strong>
+          during <strong>{{ resumeCandidate.current_command }}</strong>.
+        </p>
+        <p>Resume with its saved settings and keep completed output, or delete it and start a new job with the current settings?</p>
+      } @else {
+        <p>It will be deleted before the new map job starts. Continue?</p>
+      }
+    </div>
+  </div>
+  <ng-template pTemplate="footer">
+    <button
+      pButton
+      type="button"
+      label="Cancel"
+      severity="secondary"
+      [outlined]="true"
+      (click)="resolveOutputReplacement('cancel')"
+    ></button>
+    @if (resumeCandidate) {
+      <button
+        pButton
+        type="button"
+        label="Start new job"
+        icon="pi pi-trash"
+        severity="danger"
+        [outlined]="true"
+        (click)="resolveOutputReplacement('replace')"
+      ></button>
+      <button
+        pButton
+        type="button"
+        [label]="resumeCandidate.state === 'stopped' ? 'Resume stopped job' : 'Resume interrupted job'"
+        icon="pi pi-play"
+        (click)="resolveOutputReplacement('resume')"
+      ></button>
+    } @else {
+      <button
+        pButton
+        type="button"
+        label="Delete and start"
+        severity="danger"
+        (click)="resolveOutputReplacement('replace')"
+      ></button>
+    }
+  </ng-template>
+</p-dialog>

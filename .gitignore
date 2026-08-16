@@ -25,12 +25,16 @@ yarn-error.log
 
 # Miscellaneous
 .angular/
+.github/
 .sass-cache/
 /connect.lock
 /coverage
 /libpeerconnection.log
 testem.log
 /typings
+/artifacts
+/scripts
+/docs
 
 # System files
 .DS_Store

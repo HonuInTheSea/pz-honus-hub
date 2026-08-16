@@ -1,0 +1,584 @@
+<div class="map-viewer-shell">
+  <p-card>
+    <ng-template #header>
+      <div class="map-settings-header">
+        <div class="text-xl font-semibold">Map source</div>
+        @if (mapInfo) {
+          <p-tag [value]="mapInfo.pz_version ?? 'Project Zomboid'" severity="info"></p-tag>
+        }
+      </div>
+    </ng-template>
+
+    <div class="map-settings-grid">
+      <div class="map-field map-source-location">
+        @if (sourceType === 'local') {
+          <label for="map-source-location">Map package folder</label>
+          <div class="map-location-controls">
+            <input
+              pInputText
+              id="map-source-location"
+              class="w-full"
+              [(ngModel)]="sourceLocation"
+              placeholder="D:\\pzmap\\html\\map_data"
+              (keyup.enter)="applySource()"
+            />
+            <button
+              pButton
+              type="button"
+              icon="pi pi-folder-open"
+              severity="secondary"
+              [outlined]="true"
+              label="Browse"
+              (click)="browseForSource()"
+            ></button>
+            <button
+              pButton
+              type="button"
+              icon="pi pi-refresh"
+              label="Load map"
+              [loading]="loading"
+              (click)="applySource()"
+            ></button>
+          </div>
+          <small class="text-color-secondary">
+            The selected root must contain <code>base\map_info.json</code> and the layer DZI files.
+          </small>
+        } @else {
+          <label for="map-web-source">Map site</label>
+          <div class="map-web-source-controls">
+            <p-select
+              inputId="map-web-source"
+              [options]="webMapSourceOptions"
+              optionLabel="label"
+              optionValue="value"
+              appendTo="self"
+              [overlayOptions]="mapWebSourceOverlayOptions"
+              [panelStyle]="{ 'z-index': '10001' }"
+              (onShow)="onMapSourceDropdownShown()"
+              (onHide)="onMapSourceDropdownHidden()"
+              [(ngModel)]="webMapSource"
+              (ngModelChange)="webMapSourceChanged()"
+              aria-label="Map site"
+            ></p-select>
+            <button
+              pButton
+              type="button"
+              icon="pi pi-external-link"
+              label="Open in browser"
+              severity="secondary"
+              [outlined]="true"
+              [loading]="openingMapInBrowser"
+              (click)="openSelectedMapInBrowser()"
+            ></button>
+          </div>
+          <small class="text-color-secondary">
+            Select a site to load its interactive map here.
+          </small>
+        }
+      </div>
+
+    </div>
+
+    @if (error) {
+      <p-message severity="warn" styleClass="map-message">
+        {{ error }}
+      </p-message>
+    }
+    @if (tileError) {
+      <p-message severity="warn" styleClass="map-message">
+        {{ tileError }}
+      </p-message>
+    }
+  </p-card>
+
+  @if (sourceType === 'url') {
+    <section class="map-canvas-card map-web-site-card" aria-label="{{ webMapSource }} interactive map">
+      <div #webSiteHost class="map-web-site-host">
+        @if (!isTauriRuntime) {
+          <iframe
+            class="map-web-site-frame"
+            [src]="webMapSiteUrl"
+            [title]="webMapSource + ' interactive map'"
+            loading="eager"
+            allowfullscreen
+          ></iframe>
+        }
+      </div>
+    </section>
+  } @else {
+    @if (localMapMetadataMissing) {
+      <app-pzmap2dzi-config-form (refreshRequested)="refreshLocalMap()"></app-pzmap2dzi-config-form>
+    } @else {
+      <section class="map-canvas-card" aria-label="Project Zomboid map viewer">
+    <div
+      #mapHost
+      class="project-zomboid-map-host"
+      tabindex="0"
+      aria-label="Interactive Project Zomboid map. Drag to pan, use the mouse wheel to zoom, and use the keyboard arrow keys to pan."
+      (mousedown)="onMapPointerDown($event)"
+      (mouseup)="onMapPointerUp()"
+      (mousemove)="onMapPointerMove($event)"
+      (mouseleave)="onMapPointerLeave()"
+      (contextmenu)="onMapContextMenu($event)"
+    >
+      <div class="map-container-controls" aria-label="Map controls">
+        <button
+          #zoomOutButton
+          pButton
+          type="button"
+          class="map-map-control"
+          icon="pi pi-minus"
+          severity="secondary"
+          [rounded]="true"
+          aria-label="Zoom out"
+        ></button>
+        <button
+          #homeButton
+          pButton
+          type="button"
+          class="map-map-control"
+          icon="pi pi-home"
+          severity="secondary"
+          [rounded]="true"
+          aria-label="Reset map view"
+        ></button>
+        <button
+          #zoomInButton
+          pButton
+          type="button"
+          class="map-map-control"
+          icon="pi pi-plus"
+          severity="secondary"
+          [rounded]="true"
+          aria-label="Zoom in"
+        ></button>
+        <button
+          #fullPageButton
+          pButton
+          type="button"
+          class="map-map-control"
+          icon="pi pi-window-maximize"
+          severity="secondary"
+          [rounded]="true"
+          aria-label="Toggle full page map"
+        ></button>
+      </div>
+      <nav
+        class="map-tool-rail"
+        [class.map-tool-rail-collapsed]="navigationCollapsed"
+        aria-label="Map tools"
+      >
+        <button
+          pButton
+          type="button"
+          icon="pi pi-bars"
+          class="map-tool-rail-toggle"
+          severity="secondary"
+          [text]="true"
+          [attr.aria-label]="navigationCollapsed ? 'Expand map tools' : 'Collapse map tools'"
+          [attr.title]="navigationCollapsed ? 'Map Tools' : 'Collapse map tools'"
+          (click)="toggleNavigation()"
+        ></button>
+        @if (!navigationCollapsed) {
+          <div class="map-tool-rail-content">
+            <div class="map-tool-section map-view-section">
+              <span id="map-view-label" class="map-tool-section-label">Map view</span>
+              <p-select
+                inputId="map-view-select"
+                [options]="mapViewOptions"
+                optionLabel="label"
+                optionValue="value"
+                [(ngModel)]="mapView"
+                (ngModelChange)="mapViewChanged()"
+                aria-labelledby="map-view-label"
+              ></p-select>
+            </div>
+            <div class="map-tool-section map-layer-section">
+              <label id="map-layer-label" for="map-layer-select">Map layer</label>
+              <p-select
+                inputId="map-layer-select"
+                [options]="layerOptions"
+                optionLabel="label"
+                optionValue="value"
+                [(ngModel)]="selectedLayer"
+                [disabled]="!mapInfo || loading"
+                (ngModelChange)="selectLayer($event)"
+                [placeholder]="layerOptions.length ? 'Select a map layer' : 'No rendered layers available'"
+                aria-labelledby="map-layer-label"
+              ></p-select>
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('editor')"
+                [attr.aria-expanded]="isToolSectionExpanded('editor')"
+                (click)="toggleToolSection('editor')"
+              >
+                <i class="pi pi-pencil" aria-hidden="true"></i>
+                <span>DRAW</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('editor')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('editor')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('editor')) {
+                <div class="map-tool-section-body">
+                  <app-map-editor-toolset
+                    [options]="editorToolsetOptions"
+                    [mode]="editorMode"
+                    [message]="editorMessage"
+                    [finishLabel]="editorFinishLabel"
+                    [finishDisabled]="editorFinishDisabled"
+                    [disabled]="!mapInfo || loading"
+                    (toolSelected)="startEditor($event)"
+                    (finish)="finishEditor()"
+                    (cancel)="cancelDrawing()"
+                  >
+                    <ng-template #mapEditorCustomization>
+                      <app-map-editor-inline-settings
+                        [mode]="editorToolMode!"
+                        [draft]="poiDraft"
+                        [editing]="editingPoiId !== null"
+                        [pendingCoordinate]="pendingPoiCoordinate"
+                        [iconOptions]="poiIconOptions"
+                        [shapeOptions]="poiShapeOptions"
+                        [sizeOptions]="poiSizeOptions"
+                        [strokeWidthOptions]="poiStrokeWidthOptions"
+                        [linePatternOptions]="linePatternOptions"
+                        (styleChange)="onEditorStyleChange()"
+                      ></app-map-editor-inline-settings>
+                    </ng-template>
+                  </app-map-editor-toolset>
+                </div>
+              }
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('overlay')"
+                [attr.aria-expanded]="isToolSectionExpanded('overlay')"
+                (click)="toggleToolSection('overlay')"
+              >
+                <i class="pi pi-sliders-h" aria-hidden="true"></i>
+                <span>Overlay</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('overlay')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('overlay')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('overlay')) {
+                <div class="map-tool-section-body">
+                  <select
+                    id="map-overlay-select"
+                    class="map-tool-select"
+                    [ngModel]="selectedOverlay"
+                    (ngModelChange)="selectOverlay($event)"
+                    aria-label="Overlay"
+                  >
+                    @for (option of overlayOptions; track option.value) {
+                      <option [value]="option.value">{{ option.label }}</option>
+                    }
+                  </select>
+                </div>
+              }
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('legend')"
+                [attr.aria-expanded]="isToolSectionExpanded('legend')"
+                (click)="toggleToolSection('legend')"
+              >
+                <i class="pi pi-info-circle" aria-hidden="true"></i>
+                <span>Legend</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('legend')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('legend')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('legend')) {
+                <div class="map-tool-section-body map-legend-body">
+                  @for (group of legendSections; track group.title) {
+                    <div class="map-legend-group">
+                      <span class="map-legend-group-title">{{ group.title }}</span>
+                      @for (entry of group.entries; track $index) {
+                        <div class="map-legend-entry">
+                          <span
+                            class="map-legend-swatch"
+                            [style.background-color]="entry.color"
+                            [attr.aria-label]="entry.color"
+                          ></span>
+                          <span>{{ entry.label }}</span>
+                        </div>
+                      }
+                    </div>
+                  }
+                </div>
+              }
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('layers')"
+                [attr.aria-expanded]="isToolSectionExpanded('layers')"
+                (click)="toggleToolSection('layers')"
+              >
+                <i class="pi pi-map" aria-hidden="true"></i>
+                <span>Layers</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('layers')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('layers')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('layers')) {
+                <div class="map-tool-section-body">
+                  @for (option of overlayLayerOptions; track option.value) {
+                    <label class="map-tool-check">
+                      <input
+                        type="checkbox"
+                        [checked]="isOverlayLayerActive(option.value)"
+                        (change)="toggleOverlayLayer(option.value)"
+                      />
+                      <span>{{ option.label }}</span>
+                    </label>
+                  }
+                </div>
+              }
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('markers')"
+                [attr.aria-expanded]="isToolSectionExpanded('markers')"
+                (click)="toggleToolSection('markers')"
+              >
+                <i class="pi pi-map-marker" aria-hidden="true"></i>
+                <span>Markers</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('markers')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('markers')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('markers')) {
+                <div class="map-tool-section-body">
+                  <label
+                    class="map-tool-check"
+                    [title]="isTauriRuntime ? 'Show character save locations from Project Zomboid players.db files' : 'Save markers are available in the desktop application'"
+                  >
+                    <input
+                      type="checkbox"
+                      [checked]="showSaves"
+                      [disabled]="!isTauriRuntime"
+                      (change)="toggleSaves()"
+                    />
+                    <i class="pi pi-database" aria-hidden="true"></i>
+                    <span>Saves</span>
+                    @if (saveLoading) {
+                      <i class="pi pi-spin pi-spinner" aria-hidden="true"></i>
+                    }
+                  </label>
+                  <label class="map-tool-check map-tool-check-emphasis">
+                    <input
+                      type="checkbox"
+                      [checked]="showAnnotations"
+                      (change)="toggleAnnotations()"
+                    />
+                    <i class="pi pi-pencil" aria-hidden="true"></i>
+                    <span>Annotations</span>
+                  </label>
+                  @for (option of markerGroupOptions; track option.value) {
+                    <label class="map-tool-check">
+                      <input
+                        type="checkbox"
+                        [checked]="isMarkerGroupVisible(option.value)"
+                        (change)="toggleMarkerGroup(option.value)"
+                      />
+                      <i [class]="option.icon" aria-hidden="true"></i>
+                      <span>{{ option.label }}</span>
+                    </label>
+                  }
+                  @for (option of areaNameGroupOptions; track option.value) {
+                    <label class="map-tool-check">
+                      <input
+                        type="checkbox"
+                        [checked]="isAreaGroupVisible(option.value)"
+                        (change)="toggleAreaGroup(option.value)"
+                      />
+                      <i [class]="option.icon" aria-hidden="true"></i>
+                      <span>{{ option.label }}</span>
+                    </label>
+                  }
+                </div>
+              }
+            </div>
+            <div class="map-tool-section">
+              <button
+                type="button"
+                class="map-tool-section-toggle"
+                [class.map-tool-section-open]="isToolSectionExpanded('coordinates')"
+                [attr.aria-expanded]="isToolSectionExpanded('coordinates')"
+                (click)="toggleToolSection('coordinates')"
+              >
+                <i class="pi pi-compass" aria-hidden="true"></i>
+                <span>Coordinates</span>
+                <i
+                  class="pi"
+                  [class.pi-chevron-down]="isToolSectionExpanded('coordinates')"
+                  [class.pi-chevron-right]="!isToolSectionExpanded('coordinates')"
+                  aria-hidden="true"
+                ></i>
+              </button>
+              @if (isToolSectionExpanded('coordinates')) {
+                <div class="map-tool-section-body">
+                  <span class="map-tool-help">Move over the map to inspect coordinates or navigate directly.</span>
+                  <label for="map-coordinate-x">X coordinate</label>
+                  <input
+                    id="map-coordinate-x"
+                    class="map-tool-input"
+                    type="number"
+                    step="1"
+                    inputmode="numeric"
+                    placeholder="X"
+                    [(ngModel)]="manualCoordinateX"
+                  />
+                  <label for="map-coordinate-y">Y coordinate</label>
+                  <input
+                    id="map-coordinate-y"
+                    class="map-tool-input"
+                    type="number"
+                    step="1"
+                    inputmode="numeric"
+                    placeholder="Y"
+                    [(ngModel)]="manualCoordinateY"
+                  />
+                  <button
+                    pButton
+                    type="button"
+                    icon="pi pi-map-marker"
+                    label="Set marker and zoom"
+                    severity="primary"
+                    (click)="goToManualCoordinate()"
+                  ></button>
+                  <small class="map-coordinate-readout" aria-live="polite">{{ coordinateReadout }}</small>
+                  @if (coordinateEntryError) {
+                    <small class="map-tool-error">{{ coordinateEntryError }}</small>
+                  }
+                </div>
+              }
+            </div>
+            <button
+              pButton
+              type="button"
+              icon="pi pi-home"
+              [text]="true"
+              severity="secondary"
+              label="Reset view"
+              (click)="resetMapView()"
+            ></button>
+            @if (poiError) {
+              <small class="map-tool-error">{{ poiError }}</small>
+            }
+            @if (saveError) {
+              <small class="map-tool-error">{{ saveError }}</small>
+            }
+            @if (streetError) {
+              <small class="map-tool-error">{{ streetError }}</small>
+            }
+            @if (overlayError) {
+              <small class="map-tool-error">{{ overlayError }}</small>
+            }
+          </div>
+        }
+      </nav>
+      <canvas #mapOverlayCanvas class="map-overlay-canvas" aria-hidden="true"></canvas>
+      @if (contextMenu) {
+        <div
+          class="map-context-menu"
+          [style.left.px]="contextMenu.x"
+          [style.top.px]="contextMenu.y"
+          role="menu"
+          (click)="$event.stopPropagation()"
+        >
+          @if (contextMenu.vertexIndex !== null) {
+            <button
+              type="button"
+              role="menuitem"
+              class="map-context-menu-danger"
+              [disabled]="editorToolsetOptions.allowDelete === false"
+              (click)="deleteEditorVertex(contextMenu.vertexIndex)"
+            >
+              <i class="pi pi-trash" aria-hidden="true"></i>
+              <span>Delete vertex {{ contextMenu.vertexIndex + 1 }}</span>
+            </button>
+          } @else {
+            <button type="button" role="menuitem" (click)="beginAddCustomPoi()">
+              <i class="pi pi-map-marker" aria-hidden="true"></i>
+              <span>Add point here</span>
+            </button>
+            @if (contextMenu.clusterCount > 1) {
+              <span class="map-context-menu-summary">
+                {{ contextMenu.clusterCount }} points at this location
+              </span>
+            }
+            @for (poi of contextMenu.customPois; track poi.id) {
+              @if (poi.geometry === 'point' || editorToolsetOptions.allowVertexEditing !== false) {
+                <button type="button" role="menuitem" (click)="beginEditCustomPoi(poi.id)">
+                  <i class="pi pi-pencil" aria-hidden="true"></i>
+                  <span>Edit {{ geometryLabel(poi.geometry) }} “{{ poi.label }}”</span>
+                </button>
+              }
+              @if (editorToolsetOptions.allowDelete !== false) {
+                <button
+                  type="button"
+                  role="menuitem"
+                  class="map-context-menu-danger"
+                  (click)="deleteCustomPoi(poi.id)"
+                >
+                  <i class="pi pi-trash" aria-hidden="true"></i>
+                  <span>Delete {{ poi.label }}</span>
+                </button>
+              }
+            }
+          }
+        </div>
+      }
+      @if (hoverCard) {
+        <div
+          class="map-hover-card"
+          [style.left.px]="hoverCard.x"
+          [style.top.px]="hoverCard.y"
+          role="status"
+          aria-live="polite"
+        >
+          <strong>{{ hoverCard.title }}</strong>
+          <span>{{ hoverCard.category }}</span>
+          @if (hoverCard.detail) {
+            <small>{{ hoverCard.detail }}</small>
+          }
+        </div>
+      }
+      @if (loading) {
+        <div class="map-status">Loading map tiles…</div>
+      } @else if (!hasLoadedMap && !error) {
+        <div class="map-status">Configure a map source to begin.</div>
+      }
+    </div>
+      </section>
+    }
+  }
+</div>

@@ -1,0 +1,96 @@
+:host {
+  display: block;
+}
+
+.map-editor-inline-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.map-editor-inline-settings > strong {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+}
+
+.map-editor-help {
+  color: var(--text-color-secondary);
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.map-editor-field-label {
+  min-height: 1rem;
+  color: var(--text-color-secondary);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.map-editor-field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.map-editor-field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.map-editor-path-fields {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.map-editor-input,
+.map-editor-select,
+.map-editor-description {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 0.8rem;
+}
+
+.map-editor-select {
+  min-height: 2rem;
+  padding: 0.25rem 0.4rem;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--border-radius, 6px);
+  background: var(--surface-ground);
+  color: var(--text-color);
+}
+
+.map-editor-description {
+  min-height: 3.5rem;
+  resize: vertical;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--border-radius, 6px);
+  background: var(--surface-ground);
+  color: var(--text-color);
+}
+
+.map-editor-color-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.map-editor-color-input {
+  width: 100%;
+  min-height: 2rem;
+  padding: 0.15rem;
+  border: 1px solid var(--surface-border);
+  border-radius: var(--border-radius, 6px);
+  background: var(--surface-ground);
+  cursor: pointer;
+}
+
+@media (max-width: 19rem) {
+  .map-editor-field-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

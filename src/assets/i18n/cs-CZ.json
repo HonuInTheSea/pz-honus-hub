@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Seznam změn",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Nová funkce",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Přidána samostatná položka Mapy</li><li>Aktualizováno schéma exportované tabulky LUA</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Menší opravy",
         "version": "0.5.1",

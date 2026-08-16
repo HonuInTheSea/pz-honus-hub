@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { homeDir, join } from '@tauri-apps/api/path';
 import { platform } from '@tauri-apps/plugin-os';
 import { TauriStoreService } from './tauri-store.service';
+import { PROJECT_ZOMBOID } from '../models/pz.models';
 
 type PlatformKey = 'windows' | 'macos' | 'linux' | 'unknown';
 
@@ -11,8 +12,7 @@ type PlatformKey = 'windows' | 'macos' | 'linux' | 'unknown';
 export class PzDefaultPathsService {
   private readonly windowsGameDir =
     'C:\\Program Files (x86)\\Steam\\steamapps\\common\\ProjectZomboid';
-  private readonly windowsWorkshopDir =
-    'C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\108600';
+  private readonly windowsWorkshopDir = `C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\${PROJECT_ZOMBOID.workshopAppId}`;
 
   constructor(private readonly store: TauriStoreService) {}
 
@@ -138,7 +138,7 @@ export class PzDefaultPathsService {
         'steamapps',
         'workshop',
         'content',
-        '108600',
+        PROJECT_ZOMBOID.workshopAppId,
       );
     }
     if (platformKey === 'linux' && home) {
@@ -150,7 +150,7 @@ export class PzDefaultPathsService {
         'steamapps',
         'workshop',
         'content',
-        '108600',
+        PROJECT_ZOMBOID.workshopAppId,
       );
     }
     return this.windowsWorkshopDir;

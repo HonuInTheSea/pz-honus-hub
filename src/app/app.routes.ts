@@ -19,6 +19,18 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'maps',
+        loadComponent: () =>
+          import('./pages/maps/maps.page').then((m) => m.MapsPageComponent),
+      },
+      {
+        path: 'character-editor',
+        loadComponent: () =>
+          import('./pages/character-editor/character-editor.page').then(
+            (m) => m.CharacterEditorPageComponent,
+          ),
+      },
+      {
         path: 'documentation',
         loadComponent: () =>
           import('./pages/documentation/documentation.page').then(

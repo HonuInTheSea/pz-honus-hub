@@ -1,5 +1,5 @@
 use crate::timing::scoped_timer;
-use crate::utils::{ensure_parent_dir, sanitize_filename_component};
+use crate::utils::{ensure_parent_dir, safe_relative_path, sanitize_filename_component};
 use serde_json::Value as JsonValue;
 use std::fs;
 use std::path::Path;
@@ -107,9 +107,7 @@ pub fn plan_singleplayer_save_mods(
     _workshop_ids: Vec<String>,
 ) -> Result<JsonValue, String> {
     let _timer = scoped_timer("plan_singleplayer_save_mods");
-    let target = Path::new(&zomboid_user_dir)
-        .join("Saves")
-        .join(&save_rel_path)
+    let target = safe_relative_path(&Path::new(&zomboid_user_dir).join("Saves"), &save_rel_path)?
         .join("mods.txt");
     let preview = build_mods_txt(&mod_ids);
     Ok(serde_json::json!({
@@ -127,9 +125,7 @@ pub fn write_singleplayer_save_mods(
     _workshop_ids: Vec<String>,
 ) -> Result<(), String> {
     let _timer = scoped_timer("write_singleplayer_save_mods");
-    let target = Path::new(&zomboid_user_dir)
-        .join("Saves")
-        .join(&save_rel_path)
+    let target = safe_relative_path(&Path::new(&zomboid_user_dir).join("Saves"), &save_rel_path)?
         .join("mods.txt");
     ensure_parent_dir(&target)?;
     let content = build_mods_txt(&mod_ids);

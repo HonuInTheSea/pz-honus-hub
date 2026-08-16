@@ -147,6 +147,12 @@
   "changelog": {
     "title": "변경 내역",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "새 기능",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>전용 Maps 항목 추가</li><li>내보낸 LUA 테이블 스키마 업데이트</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "사소한 수정",
         "version": "0.5.1",

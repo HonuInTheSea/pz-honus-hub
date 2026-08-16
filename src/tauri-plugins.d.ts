@@ -6,9 +6,19 @@ declare module '@tauri-apps/plugin-dialog' {
     filters?: Array<{ name: string; extensions: string[] }>;
   }
 
+  export interface ConfirmDialogOptions {
+    title?: string;
+    kind?: 'info' | 'warning' | 'error';
+  }
+
   export function open(
     options?: OpenDialogOptions,
   ): Promise<string | string[] | null>;
+
+  export function ask(
+    message: string,
+    options?: string | ConfirmDialogOptions,
+  ): Promise<boolean>;
 }
 
 declare module '@tauri-apps/plugin-opener' {

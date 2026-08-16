@@ -142,5 +142,122 @@
         </p-step-panels>
       </p-stepper>
     </p-dialog>
+    <p-dialog
+      header="Close application?"
+      [(visible)]="closeConfirmationVisible"
+      [modal]="true"
+      [closable]="!closeConfirmationBusy"
+      [dismissableMask]="false"
+      [draggable]="false"
+      [style]="{ width: '34rem', maxWidth: '92vw' }"
+    >
+      <p>
+        A map build is still running. Closing the application will stop and kill
+        the active map job.
+      </p>
+      <p>
+        Do you want to close the application?
+      </p>
+      @if (closeConfirmationError) {
+        <p class="close-confirmation-error">{{ closeConfirmationError }}</p>
+      }
+      <ng-template pTemplate="footer">
+        <button
+          pButton
+          type="button"
+          label="Keep application open"
+          [outlined]="true"
+          [disabled]="closeConfirmationBusy"
+          (click)="cancelApplicationClose()"
+        ></button>
+        <button
+          pButton
+          type="button"
+          label="Close and stop job"
+          severity="danger"
+          [loading]="closeConfirmationBusy"
+          (click)="confirmApplicationClose()"
+        ></button>
+      </ng-template>
+    </p-dialog>
     <router-outlet></router-outlet>
+    @if (mapJobStatus; as status) {
+      @if (status.state !== 'idle' && (!mapJobToastDismissed || isMapJobActive(status))) {
+        <aside
+          class="map-job-toast"
+          [class.map-job-toast-error]="status.state === 'error'"
+          [class.map-job-toast-complete]="status.state === 'completed'"
+          role="status"
+          aria-live="polite"
+        >
+          <div class="map-job-toast-heading">
+            <i
+              class="pi"
+              [class.pi-spin]="isMapJobActive(status)"
+              [class.pi-spinner]="isMapJobActive(status)"
+              [class.pi-check-circle]="status.state === 'completed'"
+              [class.pi-stop-circle]="status.state === 'stopped'"
+              [class.pi-exclamation-triangle]="status.state === 'error'"
+              aria-hidden="true"
+            ></i>
+            <strong>Map build {{ mapJobStateLabel(status.state) }}</strong>
+          </div>
+          <p>{{ status.message }}</p>
+          @if (status.state === 'stopping') {
+            <p>Saving the current job state and completed output so this map build can be continued.</p>
+          }
+          @if (isMapJobActive(status)) {
+            <p-progressbar [value]="status.progress" [showValue]="false"></p-progressbar>
+            <div class="map-job-toast-progress">
+              <span>{{ status.progress | number:'1.0-0' }}%</span>
+              <span>{{ status.current_command }}</span>
+            </div>
+            <div class="map-job-toast-progress">
+              <span>Elapsed {{ formatElapsed(status.elapsed_seconds) }}</span>
+              <span>{{ formatBytes(status.metrics.disk_used_bytes) }} used</span>
+            </div>
+            <small>
+              {{ status.metrics.sample_count }} metric samples ·
+              {{ status.metrics.cells_scanned || 0 }} cells scanned
+            </small>
+            @if (status.metrics_path) {
+              <small>Metrics: {{ status.metrics_path }}</small>
+            }
+            <button
+              pButton
+              type="button"
+              label="Stop job"
+              icon="pi pi-stop"
+              severity="danger"
+              [outlined]="true"
+              (click)="stopMapJob()"
+            ></button>
+          } @else if (status.state === 'completed') {
+            <small>The generated map output is ready.</small>
+          } @else if (status.state === 'stopped') {
+            <small>The job state and completed output were saved. This map build can be continued.</small>
+            <button
+              pButton
+              type="button"
+              label="Close"
+              icon="pi pi-times"
+              severity="secondary"
+              [outlined]="true"
+              (click)="dismissMapJobToast()"
+            ></button>
+          } @else if (status.state === 'error') {
+            <small>Review the map builder logs for details.</small>
+            <button
+              pButton
+              type="button"
+              label="Close"
+              icon="pi pi-times"
+              severity="secondary"
+              [outlined]="true"
+              (click)="dismissMapJobToast()"
+            ></button>
+          }
+        </aside>
+      }
+    }
 </ng-container>

@@ -126,3 +126,88 @@ button {
   width: 28rem;
   max-width: 90vw;
 }
+
+.map-job-toast {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 12000;
+  width: min(28rem, calc(100vw - 2rem));
+  padding: 1rem;
+  min-height: 10rem;
+  max-height: min(32rem, calc(100vh - 2rem));
+  overflow-y: auto;
+  border: 1px solid color-mix(in srgb, var(--primary-color, #22c55e) 60%, transparent);
+  border-left: 0.25rem solid var(--primary-color, #22c55e);
+  border-radius: 0.75rem;
+  color: var(--text-color, #f8fafc);
+  background: color-mix(in srgb, var(--surface-overlay, #1f2937) 94%, transparent);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(0.5rem);
+}
+
+.map-job-toast-error {
+  border-color: color-mix(in srgb, var(--red-500, #ef4444) 70%, transparent);
+  border-left-color: var(--red-500, #ef4444);
+}
+
+.map-job-toast-complete {
+  border-color: color-mix(in srgb, var(--green-500, #22c55e) 70%, transparent);
+  border-left-color: var(--green-500, #22c55e);
+}
+
+.map-job-toast-heading,
+.map-job-toast-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.map-job-toast-heading {
+  justify-content: flex-start;
+  color: var(--primary-color, #4ade80);
+}
+
+.map-job-toast p {
+  margin: 0.5rem 0;
+  color: var(--text-color-secondary, #cbd5e1);
+  font-size: 0.875rem;
+}
+
+.map-job-toast-progress {
+  margin: 0.35rem 0 0.75rem;
+  color: var(--text-color-secondary, #cbd5e1);
+  font-size: 0.75rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.map-job-toast small {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--text-color-secondary, #cbd5e1);
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.map-job-toast-progress span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.map-job-toast-progress span:last-child {
+  margin-left: auto;
+  text-align: right;
+}
+
+.map-job-toast > button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 0.9rem;
+}
+
+.close-confirmation-error {
+  color: var(--red-500, #ef4444);
+}

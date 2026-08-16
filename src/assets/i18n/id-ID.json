@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Catatan perubahan",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Fitur baru",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Menambahkan entri khusus Maps</li><li>Memperbarui skema tabel LUA yang diekspor</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Perbaikan kecil",
         "version": "0.5.1",

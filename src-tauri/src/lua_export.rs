@@ -1,7 +1,9 @@
 use crate::models::{HonuModsDbResult, ModSummary, RequiredByInfo};
+use crate::pz_compat::WORKSHOP_APP_ID;
 use crate::utils::ensure_parent_dir;
 use chrono::DateTime;
 use serde_json::Value as JsonValue;
+use std::collections::BTreeMap;
 use std::fs;
 use std::path::Path;
 
@@ -208,6 +210,21 @@ fn json_value_to_id(value: &JsonValue) -> Option<String> {
     }
 }
 
+fn add_mod_id_aliases(index: &mut BTreeMap<String, usize>, value: &str, record_index: usize) {
+    let trimmed = value.trim();
+    if trimmed.is_empty() {
+        return;
+    }
+
+    let stripped = trimmed.trim_start_matches('\\');
+    let base = stripped.split("::").next().unwrap_or(stripped);
+    for alias in [trimmed, stripped, base] {
+        if !alias.is_empty() {
+            index.entry(alias.to_string()).or_insert(record_index);
+        }
+    }
+}
+
 fn workshop_key_for_mod(mod_item: &ModSummary) -> Option<String> {
     if let Some(workshop_id) = mod_item.workshop_id.as_ref() {
         let trimmed = workshop_id.trim();
@@ -237,9 +254,17 @@ pub fn ensure_honu_mods_db(
     ensure_parent_dir(&path)?;
 
     let mut lines = Vec::new();
+    let mut by_mod_id = BTreeMap::new();
+    let mut by_workshop_id = BTreeMap::new();
     lines.push("return {".to_string());
+    lines.push("  schema_version = 2,".to_string());
+    lines.push(format!(
+        "  workshop_app_id = {},",
+        lua_string(WORKSHOP_APP_ID)
+    ));
     lines.push("  mods = {".to_string());
-    for mod_item in mods {
+    for (record_offset, mod_item) in mods.into_iter().enumerate() {
+        let record_index = record_offset + 1;
         let mod_id = mod_item.mod_id.as_deref().unwrap_or("").to_string();
         let mod_id_trimmed = mod_id.trim();
         let id_value = if mod_id_trimmed.is_empty() {
@@ -258,6 +283,18 @@ pub fn ensure_honu_mods_db(
         } else {
             format!("{}::{}", id_value, workshop_id)
         };
+        let canonical_mod_id = id_value
+            .split("::")
+            .next()
+            .unwrap_or(id_value.as_str())
+            .to_string();
+        add_mod_id_aliases(&mut by_mod_id, &id_value, record_index);
+        add_mod_id_aliases(&mut by_mod_id, &composite_id, record_index);
+        if !workshop_id.is_empty() {
+            by_workshop_id
+                .entry(workshop_id.clone())
+                .or_insert(record_index);
+        }
         let creator_name = mod_item
             .workshop
             .as_ref()
@@ -274,6 +311,7 @@ pub fn ensure_honu_mods_db(
 
         lines.push("    {".to_string());
         lines.push(format!("      id = {},", lua_string(&composite_id)));
+        lines.push(format!("      mod_id = {},", lua_string(&canonical_mod_id)));
         lines.push(format!("      workshop_id = {},", lua_string(&workshop_id)));
         let author_value = mod_item
             .author
@@ -393,11 +431,12 @@ pub fn ensure_honu_mods_db(
                         if let Some(url) = field_value.as_str() {
                             let trimmed = url.trim();
                             if !trimmed.is_empty() {
-                                let appended = if trimmed.contains("appid=108600") {
-                                    trimmed.to_string()
-                                } else {
-                                    format!("{}?appid=108600", trimmed)
-                                };
+                                let appended =
+                                    if trimmed.contains(&format!("appid={WORKSHOP_APP_ID}")) {
+                                        trimmed.to_string()
+                                    } else {
+                                        format!("{}?appid={WORKSHOP_APP_ID}", trimmed)
+                                    };
                                 lines.push(format!(
                                     "      {} = {},",
                                     lua_key(field),
@@ -416,6 +455,16 @@ pub fn ensure_honu_mods_db(
             }
         }
         lines.push("    },".to_string());
+    }
+    lines.push("  },".to_string());
+    lines.push("  by_mod_id = {".to_string());
+    for (key, record_index) in by_mod_id {
+        lines.push(format!("    [{}] = {},", lua_string(&key), record_index));
+    }
+    lines.push("  },".to_string());
+    lines.push("  by_workshop_id = {".to_string());
+    for (key, record_index) in by_workshop_id {
+        lines.push(format!("    [{}] = {},", lua_string(&key), record_index));
     }
     lines.push("  }".to_string());
     lines.push("}".to_string());

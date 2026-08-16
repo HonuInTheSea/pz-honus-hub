@@ -1,11 +1,14 @@
+use crate::pz_compat::{server_config_paths, server_dir, validate_server_name};
 use crate::timing::scoped_timer;
 use std::fs;
-use std::path::Path;
 
 #[tauri::command]
 pub fn list_server_names(user_dir: String) -> Result<Vec<String>, String> {
     let _timer = scoped_timer("list_server_names");
-    let base = Path::new(&user_dir).join("Server");
+    let base = server_dir(&user_dir);
+    if !base.exists() {
+        return Ok(Vec::new());
+    }
     let entries = fs::read_dir(&base).map_err(|e| e.to_string())?;
     let mut names: Vec<String> = entries
         .flatten()
@@ -30,17 +33,8 @@ pub fn list_server_names(user_dir: String) -> Result<Vec<String>, String> {
 
 #[tauri::command]
 pub fn delete_server_files(user_dir: String, server_name: String) -> Result<(), String> {
-    let base = Path::new(&user_dir).join("Server");
-    let trimmed = server_name.trim();
-    if trimmed.is_empty() {
-        return Err("Server name is empty.".to_string());
-    }
-    let files = vec![
-        base.join(format!("{}.ini", trimmed)),
-        base.join(format!("{}_SandboxVars.lua", trimmed)),
-        base.join(format!("{}_spawnregions.lua", trimmed)),
-        base.join(format!("{}_spawnpoints.lua", trimmed)),
-    ];
+    let trimmed = validate_server_name(&server_name)?;
+    let files = server_config_paths(&user_dir, trimmed);
     for path in files {
         if path.exists() {
             fs::remove_file(&path).map_err(|e| e.to_string())?;

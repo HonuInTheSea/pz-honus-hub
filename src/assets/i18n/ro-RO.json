@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Jurnal de modificări",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Funcție nouă",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>A fost adăugată o intrare dedicată pentru Maps</li><li>A fost actualizată schema tabelului LUA exportat</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Remedieri minore",
         "version": "0.5.1",

@@ -107,7 +107,7 @@ pub fn open_mod_in_explorer(path: String) -> Result<(), String> {
     if cfg!(target_os = "windows") {
         let mut cmd = Command::new("explorer.exe");
         if let Some(file) = select_file {
-            cmd.arg("/select,").arg(file);
+            cmd.arg(format!("/select,{}", file.to_string_lossy()));
         } else {
             cmd.arg(open_dir);
         }
@@ -142,6 +142,8 @@ pub fn export_store_snapshot(payload: StoreSnapshotPayload) -> Result<(), String
     ensure_parent_dir(&path)?;
     let json = serde_json::to_string_pretty(&serde_json::json!({
         "mods": payload.mods,
+        "browserStorage": payload.browser_storage,
+        "workshop": payload.workshop,
     }))
     .map_err(|e| e.to_string())?;
     fs::write(&path, json).map_err(|e| e.to_string())?;

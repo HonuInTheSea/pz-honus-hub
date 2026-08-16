@@ -48,6 +48,7 @@
     "MaxSafezoneSize": "Max Safezone Size",
     "AllowDestructionBySledgehammer": "Allow Destruction By Sledgehammer",
     "SledgehammerOnlyInSafehouse": "Sledgehammer Only In Safehouse",
+    "War": "War",
     "WarStartDelay": "War Start Delay",
     "WarDuration": "War Duration",
     "WarSafehouseHitPoints": "War Safehouse Hit Points",
@@ -56,8 +57,9 @@
     "RCONPassword": "RCON Password",
     "DiscordEnable": "Discord Enable",
     "DiscordToken": "Discord Token",
-    "DiscordChannel": "Discord Channel",
-    "DiscordChannelID": "Discord Channel ID",
+    "DiscordChatChannel": "Discord Chat Channel",
+    "DiscordLogChannel": "Discord Log Channel",
+    "DiscordCommandChannel": "Discord Command Channel",
     "WebhookAddress": "Webhook Address",
     "Password": "Password",
     "MaxAccountsPerUser": "Max Accounts Per User",
@@ -80,7 +82,7 @@
     "PlayerRespawnWithSelf": "Player Respawn With Self",
     "PlayerRespawnWithOther": "Player Respawn With Other",
     "FastForwardMultiplier": "Fast Forward Multiplier",
-    "DisableSafehouseWhenPlayerConnected": "Disable Safehouse When Player Connected",
+    "DisableSafehouseWhenOwnerConnected": "Disable Safehouse When Owner Connected",
     "Faction": "Faction",
     "FactionDaySurvivedToCreate": "Faction Day Survived To Create",
     "FactionPlayersRequiredForTag": "Faction Players Required For Tag",
@@ -117,21 +119,20 @@
     "BadWordPolicy": "Bad Word Policy",
     "BadWordReplacement": "Bad Word Replacement",
     "AntiCheatSafety": "Anti Cheat Safety",
-    "AntiCheatMovement": "Anti Cheat Movement",
+    "AntiCheatSpeed": "Anti Cheat Speed",
+    "AntiCheatNoClip": "Anti Cheat No Clip",
     "AntiCheatHit": "Anti Cheat Hit",
-    "AntiCheatPacket": "Anti Cheat Packet",
+    "AntiCheatPacketException": "Anti Cheat Packet Exception",
     "AntiCheatPermission": "Anti Cheat Permission",
     "AntiCheatXP": "Anti Cheat XP",
-    "AntiCheatFire": "Anti Cheat Fire",
     "AntiCheatSafeHouse": "Anti Cheat Safe House",
-    "AntiCheatRecipe": "Anti Cheat Recipe",
     "AntiCheatPlayer": "Anti Cheat Player",
     "AntiCheatChecksum": "Anti Cheat Checksum",
-    "AntiCheatItem": "Anti Cheat Item",
-    "AntiCheatServerCustomization": "Anti Cheat Server Customization",
     "MultiplayerStatisticsPeriod": "Multiplayer Statistics Period",
     "DisableScoreboard": "Disable Scoreboard",
     "HideAdminsInPlayerList": "Hide Admins In Player List",
+    "MaxPacketsPerSecond": "Max Packets Per Second",
+    "ShowCoordinates": "Show Coordinates",
     "Seed": "Seed",
     "ChatMessageCharacterLimit": "Chat Message Character Limit",
     "ChatMessageSlowModeTime": "Chat Message Slow Mode Time",
@@ -301,11 +302,14 @@
       "DiscordToken": [
         "Discord bot access token"
       ],
-      "DiscordChannel": [
-        "The Discord channel name. (Try the separate channel ID option if having difficulties)"
+      "DiscordChatChannel": [
+        "The Discord channel used for global chat messages."
       ],
-      "DiscordChannelID": [
-        "The Discord channel ID. (Use if having difficulties with Discord channel name option)"
+      "DiscordLogChannel": [
+        "The Discord channel used for server log messages."
+      ],
+      "DiscordCommandChannel": [
+        "The Discord channel used for server commands."
       ],
       "WebhookAddress": [
         "The Slack incoming webhook URL"
@@ -364,8 +368,8 @@
       "FastForwardMultiplier": [
         "Governs how fast time passes while players sleep. Value multiplies the speed of the time that passes during sleeping."
       ],
-      "DisableSafehouseWhenPlayerConnected": [
-        "Safehouse acts like a normal house if a member of the safehouse is connected (so secure when players are offline)"
+      "DisableSafehouseWhenOwnerConnected": [
+        "Safehouse acts like a normal house while its owner is connected."
       ],
       "Faction": [
         "Players can create factions when true"
@@ -466,14 +470,17 @@
       "AntiCheatSafety": [
         "Disables safety system anti-cheat protection."
       ],
-      "AntiCheatMovement": [
-        "Disables movement anti-cheat protection."
+      "AntiCheatSpeed": [
+        "Disables speed anti-cheat protection."
+      ],
+      "AntiCheatNoClip": [
+        "Disables no-clip anti-cheat protection."
       ],
       "AntiCheatHit": [
         "Disables character hit anti-cheat protection."
       ],
-      "AntiCheatPacket": [
-        "Disables packet checks anti-cheat protection."
+      "AntiCheatPacketException": [
+        "Disables packet exception anti-cheat protection."
       ],
       "AntiCheatPermission": [
         "Disables player permissions anti-cheat protection."
@@ -481,26 +488,14 @@
       "AntiCheatXP": [
         "Disables player XP anti-cheat protection."
       ],
-      "AntiCheatFire": [
-        "Disables fire checks anti-cheat protection."
-      ],
       "AntiCheatSafeHouse": [
         "Disables safehouse anti-cheat protection."
-      ],
-      "AntiCheatRecipe": [
-        "Disables recipe checks anti-cheat protection."
       ],
       "AntiCheatPlayer": [
         "Disables player anti-cheat protection."
       ],
       "AntiCheatChecksum": [
         "Disables checksum anti-cheat protection."
-      ],
-      "AntiCheatItem": [
-        "Disables item checks anti-cheat protection."
-      ],
-      "AntiCheatServerCustomization": [
-        "Disables server customization anti-cheat protection."
       ],
       "MultiplayerStatisticsPeriod": [
         "Sets the multiplayer update period in seconds. Statistics is disabled if value is 0."
@@ -510,6 +505,12 @@
       ],
       "HideAdminsInPlayerList": [
         "Hides admins in the player list."
+      ],
+      "MaxPacketsPerSecond": [
+        "Maximum number of packets sent to each client per second."
+      ],
+      "ShowCoordinates": [
+        "Show player coordinates in the in-game UI."
       ],
       "Seed": [
         "The worldgen seed used to generate the world.<br>If you want to change this, put a new value in and delete map_worldgen.bin in your save directory."

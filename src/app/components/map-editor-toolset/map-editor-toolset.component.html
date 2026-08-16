@@ -1,0 +1,65 @@
+<div class="map-editor-toolset">
+  @if (showHelp) {
+    <span class="map-tool-help">
+      Choose a tool, click the map to draw, then save its details.
+    </span>
+  }
+
+  @for (tool of configuredTools; track tool.value) {
+    <button
+      pButton
+      type="button"
+      [icon]="tool.icon"
+      [label]="tool.label"
+      [outlined]="mode !== tool.value"
+      [class.map-editor-tool-selected]="mode === tool.value"
+      [attr.aria-pressed]="mode === tool.value"
+      [disabled]="isToolDisabled()"
+      (click)="selectTool(tool.value)"
+    ></button>
+
+    @if (mode === tool.value) {
+      <div class="map-editor-active-tool-panel">
+        @if (customizationTemplate) {
+          <ng-container [ngTemplateOutlet]="customizationTemplate"></ng-container>
+        }
+
+        @if (showStatus) {
+          <small class="map-editor-status">
+            {{ modeLabel }}@if (message) {<br />{{ message }} }
+          </small>
+        }
+
+        @if (showFinish) {
+          <button
+            pButton
+            type="button"
+            icon="pi pi-check"
+            [label]="finishLabel"
+            severity="success"
+            [disabled]="isToolDisabled() || finishDisabled"
+            (click)="finish.emit()"
+          ></button>
+        }
+
+        @if (showCancel) {
+          <button
+            pButton
+            type="button"
+            icon="pi pi-times"
+            label="Cancel"
+            severity="secondary"
+            [outlined]="true"
+            (click)="cancel.emit()"
+          ></button>
+        }
+      </div>
+    }
+  }
+
+  @if (showHelp) {
+    <small class="map-tool-help">
+      Right-click an existing graphic to edit its details, reshape it, or delete it.
+    </small>
+  }
+</div>

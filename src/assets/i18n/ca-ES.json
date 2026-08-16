@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Registre de canvis",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "Nova funció",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>S'ha afegit una entrada dedicada a Maps</li><li>S'ha actualitzat l'esquema de la taula LUA exportada</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Correccions menors",
         "version": "0.5.1",

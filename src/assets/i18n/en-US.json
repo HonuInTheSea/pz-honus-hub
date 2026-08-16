@@ -27,6 +27,7 @@
     },
     "items": {
       "dashboard": "Dashboard",
+      "characterEditor": "Character Editor",
       "logInspector": "Log Inspector",
       "myMods": "My Mods",
       "configureFolders": "Configure Folders",
@@ -39,8 +40,6 @@
       "viewSource": "View Source",
       "projectZomboid": "Project Zomboid",
       "pzWiki": "Official Project Zomboid Wiki",
-      "b41Map": "B41 Map",
-      "b42Map": "B42 Map",
       "workshop": "Project Zomboid Steam Workshop",
       "subreddit": "r/projectzomboid",
       "discord": "Project Zomboid",
@@ -51,6 +50,7 @@
       "resetApp": "Reset Application",
       "resetAppTooltip": "Reset window settings and delete stored data",
       "server": "Server",
+      "maps": "Maps",
       "modCollections": "Mod Collections",
       "modPresets": "Mod Presets"
     },
@@ -147,6 +147,12 @@
   "changelog": {
     "title": "Changelog",
     "events": {
+      "newFeature_0_7_0": {
+        "title": "New Feature",
+        "version": "0.7.0",
+        "date": "2026-08-14",
+        "description": "<ul><li>Added a dedicated Maps entry</li><li>Updated the exported LUA table schema</li></ul>"
+      },
       "minorFixes_0_5_1": {
         "title": "Minor fixes",
         "version": "0.5.1",

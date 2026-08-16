@@ -1,4 +1,5 @@
 use crate::models::{ModFileInfo, ModFolderScanResult, ModSummary, RequiredByInfo};
+use crate::pz_compat::WORKSHOP_APP_ID;
 use crate::timing::scoped_timer;
 use crate::utils::to_iso_string;
 use encoding_rs::{EUC_KR, WINDOWS_1252};
@@ -44,15 +45,13 @@ fn resolve_relative_path(base: &Path, value: &str) -> Option<String> {
 }
 
 fn derive_workshop_id(base: &str, mod_info_path: &str) -> Option<String> {
-    let base_norm = base.replace('\\', "/");
-    let mod_norm = mod_info_path.replace('\\', "/");
-
-    if !mod_norm.starts_with(&base_norm) {
-        return None;
-    }
-
-    let relative = mod_norm[base_norm.len()..].trim_start_matches('/');
-    let mut parts = relative.split('/').filter(|p| !p.is_empty());
+    let base_path = Path::new(base);
+    let mod_path = Path::new(mod_info_path);
+    let relative = mod_path.strip_prefix(base_path).ok()?;
+    let mut parts = relative.components().filter_map(|component| {
+        let value = component.as_os_str().to_string_lossy();
+        (!value.is_empty()).then_some(value.into_owned())
+    });
     let first = parts.next()?;
     if first.chars().all(|c| c.is_ascii_digit()) {
         return Some(first.to_string());
@@ -299,12 +298,14 @@ pub fn validate_pz_workshop_path(path: String) -> Result<bool, String> {
     }
 
     let last = dir.file_name().and_then(|s| s.to_str()).unwrap_or("");
-    let contains_108600 = last == "108600"
-        || dir
-            .components()
-            .any(|c| c.as_os_str().to_string_lossy() == "108600");
+    let contains_workshop_app = last.eq_ignore_ascii_case(WORKSHOP_APP_ID)
+        || dir.components().any(|c| {
+            c.as_os_str()
+                .to_string_lossy()
+                .eq_ignore_ascii_case(WORKSHOP_APP_ID)
+        });
 
-    if !contains_108600 {
+    if !contains_workshop_app {
         return Ok(false);
     }
 
