@@ -1,6 +1,6 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "Honu's Project Zomboid Hub",
+  "productName": "Honus Project Zomboid Hub",
   "version": "0.7.0",
   "identifier": "com.honuinthesea.pz-honus-hub",
   "build": {
